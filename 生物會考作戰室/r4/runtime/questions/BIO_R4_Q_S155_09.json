@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S155_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S155"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲地有10種且每種約10隻；乙地有12種但其中一種占總數九成。哪項判斷最謹慎？",
+  "options": [
+    "乙地物種較豐富，甲地較均勻",
+    "乙地各面向都較多樣",
+    "甲地物種較豐富",
+    "沒有個體數也可判乙較均勻"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "乙地十二種多於甲地十種，但甲地各種數量接近，分別在兩指標較高。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙地雖物種較多，九成集中單一物種，不能說均勻度等各面向都較高。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "甲地只有十種而乙地有十二種，所以甲地不是物種較豐富的一方。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹已給九成集中資訊，且該分配顯示乙地較不均勻，不支持此敘述。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "雙指標判讀"
+  ],
+  "representationType": "量化敘述",
+  "misconceptionTargets": [
+    "只憑物種數判全部多樣性"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-001"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "豐富度核對只比較十與十二，結果指向乙地；均勻度核對則指向甲地。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "指標分離核對確認『乙地物種較豐富、甲地較均勻』沒有把方向不同的結果硬合成總排名。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S153_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S153"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "學生把葉、器官、物種排成由小到大。哪項評語最恰當？",
+  "options": [
+    "順序完全正確",
+    "葉與器官屬組成概念，物種屬分類概念，不能直接同列",
+    "只需把物種放最前面",
+    "只需把葉改成根"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "葉是器官實例，物種卻是分類單位，把兩套系統並排不能稱為正確大小順序。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "葉與器官可談身體組成，物種回答生物歸屬，這項判讀指出真正的框架錯誤。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "把物種移到前面仍然把分類單位與身體構造放在同一條大小軸上。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "根與葉同樣都是植物器官，替換名稱不會解決混入物種分類的問題。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "診斷概念混用"
+  ],
+  "representationType": "學生作答評析",
+  "misconceptionTargets": [
+    "將兩套層次強行排序"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "系統歸屬核對先把三詞分到組成與分類兩欄，發現錯誤不是單純次序。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "修正效果核對顯示拆開組成與分類兩套概念才能消除混用，移動或替換名詞均無效。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

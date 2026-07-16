@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_072_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S072"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "一株菌造成疾病，何種結論最適當？",
+  "options": [
+    "所有微生物都會造成同病",
+    "該菌株在受測條件下可能致病",
+    "所有細菌都應完全清除",
+    "任何宿主都必定死亡"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單一菌株不能代表功能多樣的所有微生物種類。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "結論限制在受測菌株、宿主與條件，符合實驗證據範圍。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "其他細菌可能無害或有益，不能由一株病原推論全部清除。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "疾病嚴重度受宿主與劑量影響，題目不支持任何宿主必死。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "科學結論需限定樣本和條件，避免把單一結果變成無限制全稱。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若不同宿主或劑量也重複出現相應病變，才能逐步擴大適用範圍。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

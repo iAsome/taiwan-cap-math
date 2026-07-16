@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_150_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S150"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GB-4-1",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "報告不確定性範圍有何價值？",
+  "options": [
+    "讓結果看起來較複雜",
+    "證明測量完全沒有用",
+    "說明估計精確度與結論邊界",
+    "允許任意選擇喜歡的數值"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "複雜不是目的，範圍用來傳達證據限制。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "有不確定性不代表沒有資訊，仍可比較與預測。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "範圍讓使用者知道數值可能變動程度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "範圍需由資料和方法計算，不是任意選值。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把不確定性誤解成資料毫無價值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GB-4-1",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「說明估計精確度與結論邊界」使決策者能區分穩健方向與尚不精確的細節。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "新樣本增加後範圍可能縮小，顯示證據累積如何提高精度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

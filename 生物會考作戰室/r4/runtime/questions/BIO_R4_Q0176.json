@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q0176",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某影像比例尺標示五十微米，螢幕上量得二公分；細胞量得六公分。細胞約多長？",
+  "options": [
+    "十六點七微米",
+    "五十二微米",
+    "三百微米",
+    "一百五十微米"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "十六點七是把比例方向反轉，低估三倍長度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "五十二是把五十與二相加，未使用細胞六公分。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "三百把六直接乘五十，忽略比例尺線長二公分。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "細胞為比例尺三倍，三乘五十得到一百五十微米。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "比例計算"
+  ],
+  "representationType": "測量情境",
+  "misconceptionTargets": [
+    "直接用螢幕公分"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先算六除以二等於三，再把三倍乘比例尺五十微米。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "螢幕公分只用來求比值，最終單位應回到微米。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

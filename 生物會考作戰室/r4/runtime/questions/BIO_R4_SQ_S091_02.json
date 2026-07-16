@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_S091_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S091",
+  "stem": "哪項資料最支持胰島素參與飯後血糖回降？",
+  "options": [
+    "0分鐘兩項數值都存在",
+    "30分鐘血糖高於空腹",
+    "餐點在測量前已吃完",
+    "胰島素升高後，血糖由132逐步降到92"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單一空腹時點不能呈現回降過程。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "血糖升高只呈現刺激，尚未呈現調節結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "吃完餐點是程序資訊，不能單獨證明激素作用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "激素增加與後續血糖下降形成相符的時間序列。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "證據整合"
+  ],
+  "representationType": "時間表",
+  "misconceptionTargets": [
+    "只用單一時點推論因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-002",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-008",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-020"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "支持調節需同時看到激素變化與血糖反向回復。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "胰島素先升高、血糖後回降的資料最符合降糖機制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

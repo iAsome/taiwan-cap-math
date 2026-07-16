@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_SQ_S181_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S181"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S181",
+  "stem": "依平均密度估計整片草地約有多少株？",
+  "options": [
+    "約四十株",
+    "約一千株",
+    "約二百株",
+    "約五株"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "四十只是八個樣區實際計數總和。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "每平方公尺五株乘二百平方公尺，得到約一千株。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "二百是面積數值，未乘平均密度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "五是單位面積平均，不是總數。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "外推總族群數"
+  ],
+  "representationType": "估算題",
+  "misconceptionTargets": [
+    "樣本總數就是族群總數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-027",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-014",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-021"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "量綱核對株每平方公尺乘平方公尺後得到株。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "倍率核對總地是單區兩百倍，五乘兩百為一千。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

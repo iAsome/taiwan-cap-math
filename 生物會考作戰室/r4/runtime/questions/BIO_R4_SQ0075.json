@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ0075",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S025"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST025",
+  "stem": "若要比較此膜對葡萄糖與另一種小分子的通過性，哪項改進最必要？",
+  "options": [
+    "讓兩種物質使用不同溫度",
+    "只比較膜袋的外觀顏色",
+    "設定相同起始條件並量化相同時間的通過量",
+    "只記錄研究者預期哪一種較快"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "溫度不同會改變分子運動，無法公平比較物質差異。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "外觀顏色不會提供跨膜通過量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "相同條件與量化結果可比較兩種物質的相對通過程度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "預期是待檢驗的想法，不能代替實際測量。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "實驗改進"
+  ],
+  "representationType": "資料延伸",
+  "misconceptionTargets": [
+    "檢出等同速率"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-024"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "原表只有檢出與否；比較通過性強弱還需要相同時間的量化資料。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "公平比較需控制膜面積、溫度與起始濃度等條件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

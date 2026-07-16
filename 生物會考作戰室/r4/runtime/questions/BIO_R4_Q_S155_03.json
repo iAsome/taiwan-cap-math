@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S155_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S155"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "比較兩地物種均勻度需要哪項資料？",
+  "options": [
+    "地名筆畫",
+    "觀察者身高",
+    "各物種個體數",
+    "照片檔案大小"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "地名有幾個筆畫不會改變各物種在群集中的相對數量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "觀察者身高與樣地內哪個物種占多數沒有可檢驗的關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "各物種個體數能算出是否集中於少數物種，正是均勻度所需資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "照片檔案大小受解析度影響，不能代表照片中物種或個體的真實數量。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "選擇多樣性資料"
+  ],
+  "representationType": "資料需求",
+  "misconceptionTargets": [
+    "只看物種名單"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-001"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "定義核對以均勻度描述各物種個體數分配，因此需要逐種計數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "可計算性核對顯示各物種個體數可換算相對比例，進而比較分配是否接近。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

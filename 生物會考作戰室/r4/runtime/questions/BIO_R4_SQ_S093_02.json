@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_SQ_S093_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S093",
+  "stem": "根據資料，哪個推論最合理？",
+  "options": [
+    "甲狀腺素偏高證明所有器官都已損壞",
+    "甲狀腺素過多可能與心跳偏快及怕熱有關",
+    "心跳偏快一定只由運動造成",
+    "三次數值相近代表不需再檢查"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "資料不能證明所有器官都損壞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "甲狀腺素持續偏高，並伴隨代謝相關表現。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "檢測期間活動量相近，且為休息心跳。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "持續異常反而需要專業評估原因。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "整合資料"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "把資料推成絕對診斷"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "多次檢測的激素與生理指標同時偏高，支持調節失衡的可能性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "資料只能支持關聯與合理機制，不能取代完整診斷或排除其他病因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

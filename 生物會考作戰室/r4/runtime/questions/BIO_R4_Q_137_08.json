@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_137_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S137"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某班發現常喝牛奶的學生平均身高較高。僅憑此結果，為何不能說牛奶是唯一原因？",
+  "options": [
+    "身高完全不能測量",
+    "平均值永遠沒有意義",
+    "牛奶不含任何營養",
+    "遺傳、年齡與整體飲食等因素可能同時不同"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "身高可用標準工具測量，問題在因果解讀而非不可測。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "平均值能描述群體，但仍需檢查組間其他差異。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "牛奶含有營養成分，否定其成分不能解決研究混雜。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "觀察分組未控制多項因素，相關結果不足以建立唯一因果。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把觀察相關直接當成唯一因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "自願飲用牛奶的兩群可能在家庭、飲食與年齡上也不同，形成混雜因素。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "較可靠做法是收集相關背景、使用適當對照，並避免把相關直接寫成因果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "BIO_R4_Q_S082_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S082"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "自動灑水器由濕度感測器、控制器、訊號線與水閥組成。若感測器有資料、控制器已下令，但水閥未收到訊號，故障最像人體哪個環節？",
+  "options": [
+    "受器接收刺激",
+    "中樞整合訊息",
+    "傳出路徑傳送命令",
+    "動器官產生反應後的結果"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "感測器已有資料，表示接收刺激的功能存在。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "控制器已下令，表示整合與決策已完成。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "命令未到水閥，對應中樞到動器官的傳出受阻。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "水閥尚未收到命令，不能先歸為反應後結果。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "類比",
+    "遷移"
+  ],
+  "representationType": "工程系統",
+  "misconceptionTargets": [
+    "只依元件名稱而非流程類比"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-024",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-024",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-009",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-012"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "依已完成與未完成的界線，故障位於命令傳送階段。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "感測器已有資料且控制器已下令，表示接收與整合完成；水閥未收到訊號，故障位在兩者間的輸出線。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

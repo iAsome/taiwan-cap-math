@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ0060",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S020"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST020",
+  "stem": "若另一植物根細胞沒有葉綠體，系統應如何避免誤判成動物細胞？",
+  "options": [
+    "只要無綠色便判動物",
+    "刪除根細胞資料",
+    "把所有細胞都判植物",
+    "再檢查細胞壁、組織來源與其他構造"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "根細胞提供植物無葉綠體的反例，規則會誤判。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "刪除反例只會隱藏系統缺陷，無法提高可靠度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "全判植物同樣忽略動物細胞，沒有分類能力。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "多項證據可處理葉綠體因組織分工缺席的情況。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "例外處理"
+  ],
+  "representationType": "分類系統",
+  "misconceptionTargets": [
+    "單一特徵分類"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "穩健分類器需納入植物細胞壁等較廣泛特徵與標本脈絡。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "保留反例測試能揭露規則邊界，促使系統由單一特徵升級。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

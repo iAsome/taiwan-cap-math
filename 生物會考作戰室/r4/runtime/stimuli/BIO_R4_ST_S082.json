@@ -1,0 +1,91 @@
+{
+  "id": "BIO_R4_ST_S082",
+  "subject": "biology",
+  "skillId": "BIO_R4_S082",
+  "type": "experiment-sequence",
+  "content": {
+    "title": "燈號反應裝置的分段測試",
+    "context": "學生看到燈亮後按鍵。裝置把過程分成四段：A 為燈亮到眼內受器產生訊息，B 為訊息到達中樞，C 為中樞形成按鍵命令，D 為命令到達手指肌肉。三次測試只暫停其中一段，並記錄能否看到燈及能否按鍵。",
+    "columns": [
+      "測試",
+      "暫停段",
+      "能看到燈",
+      "能按鍵"
+    ],
+    "rows": [
+      [
+        "一",
+        "B",
+        "否",
+        "否"
+      ],
+      [
+        "二",
+        "D",
+        "是",
+        "否"
+      ],
+      [
+        "三",
+        "無",
+        "是",
+        "是"
+      ]
+    ],
+    "note": "每次燈光強度相同，按鍵與手指肌肉在測試前均確認可正常運作。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [
+    "CAP-106-MAIN-INTEGRATED-NATURAL-024",
+    "CAP-107-MAIN-INTEGRATED-NATURAL-024",
+    "CAP-112-ALTERNATE-INTEGRATED-NATURAL-009",
+    "CAP-114-MAIN-INTEGRATED-NATURAL-012"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-024",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-024",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-009",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-012"
+    ]
+  },
+  "accessibility": {
+    "summary": "表格呈現暫停訊息傳入或命令傳出不同階段時，受試者看到燈與按鍵的結果。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "測試",
+        "文字結果"
+      ],
+      "rows": [
+        [
+          "一",
+          "暫停B，看不到燈且不能按鍵"
+        ],
+        [
+          "二",
+          "暫停D，看得到燈但不能按鍵"
+        ],
+        [
+          "三",
+          "未暫停，兩項都能完成"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

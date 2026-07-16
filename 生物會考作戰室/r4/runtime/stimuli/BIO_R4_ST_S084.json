@@ -1,0 +1,93 @@
+{
+  "id": "BIO_R4_ST_S084",
+  "subject": "biology",
+  "skillId": "BIO_R4_S084",
+  "type": "diagnostic-table",
+  "content": {
+    "title": "眼部三段功能檢查",
+    "context": "檢查者把視覺路徑分成光線進入眼球、視網膜產生訊息、視神經把訊息傳到腦三段。甲、乙、丙接受相同亮度的符號刺激，表中「正常」只代表該段測試結果在本次檢查範圍內正常。",
+    "columns": [
+      "受試者",
+      "光線進入",
+      "視網膜反應",
+      "視神經傳導",
+      "能否辨認符號"
+    ],
+    "rows": [
+      [
+        "甲",
+        "正常",
+        "正常",
+        "異常",
+        "不能"
+      ],
+      [
+        "乙",
+        "正常",
+        "異常",
+        "未形成可傳訊息",
+        "不能"
+      ],
+      [
+        "丙",
+        "正常",
+        "正常",
+        "正常",
+        "能"
+      ]
+    ],
+    "note": "本表不以顏色表示結果，所有狀態均直接寫成文字。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [
+    "CAP-107-MAIN-INTEGRATED-NATURAL-032",
+    "CAP-108-MAIN-INTEGRATED-NATURAL-025",
+    "CAP-111-MAIN-INTEGRATED-NATURAL-050"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-032",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-025",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-050"
+    ]
+  },
+  "accessibility": {
+    "summary": "甲的視神經傳導異常，乙的視網膜反應異常，丙三段均正常；甲乙不能辨認符號，丙能辨認。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "受試者",
+        "檢查摘要"
+      ],
+      "rows": [
+        [
+          "甲",
+          "入光與視網膜正常，視神經異常，不能辨認"
+        ],
+        [
+          "乙",
+          "入光正常，視網膜異常，不能辨認"
+        ],
+        [
+          "丙",
+          "三段正常，能辨認"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

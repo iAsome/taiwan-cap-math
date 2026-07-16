@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S098_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S098"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "機械夾爪要能開合，若拉索只能拉不能推，哪種設計最符合拮抗肌原理？",
+  "options": [
+    "只用一條拉索並期待它主動推回",
+    "把轉軸完全焊死",
+    "在轉軸兩側設置拉索，分別拉動開啟與閉合",
+    "讓硬桿自行縮短"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單一拉索放鬆不會產生相反推力。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "轉軸若完全焊死，夾爪便無法繞連接處開合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩側拉索輪流拉可形成相反方向轉動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "硬桿對應骨骼，不需主動縮短。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "仿生夾爪"
+  ],
+  "representationType": "遷移應用",
+  "misconceptionTargets": [
+    "單一拉索能推"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "拉索與肌肉同樣只能產生拉力，因此要用相對配置完成往返動作。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩側拉索的收緊時機還須協調，才能控制夾爪位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

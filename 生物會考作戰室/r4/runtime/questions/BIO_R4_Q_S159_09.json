@@ -1,0 +1,85 @@
+{
+  "id": "BIO_R4_Q_S159_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S159"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "哪項證據最能檢驗未知顆粒是否依賴宿主增殖？",
+  "options": [
+    "比較有無活細胞時顆粒數量是否增加",
+    "只比較顆粒顏色",
+    "詢問名稱是否好聽",
+    "量一次培養瓶重量"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "設置活細胞有無的條件並追蹤數量，可直接檢查宿主是否為增殖必要條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "顆粒顏色不能顯示其是否利用宿主的複製與蛋白質合成系統。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "名稱的語音感受與生物增殖機制無關，不能作為宿主依賴證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "培養瓶總重量受液體與容器影響，無法靈敏反映微小顆粒是否增加。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "設計宿主依賴實驗"
+  ],
+  "representationType": "方法選擇",
+  "misconceptionTargets": [
+    "外觀可證明增殖方式"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-050",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-028",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-004"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "操弄核對顯示研究者直接改變活細胞有無，正對應待檢驗的必要條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "依變項核對要求計數未知顆粒而非量整瓶重量，結果才能連到實際增殖。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

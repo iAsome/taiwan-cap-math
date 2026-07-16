@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_119_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S119"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST119",
+  "stem": "若只憑表格判定丙的某激素濃度最高，主要問題為何？",
+  "options": [
+    "表中沒有任何身高資料",
+    "丙並未出現生長變化",
+    "同齡者不能互相比較任何資料",
+    "身高增加是間接表現，未直接測量激素濃度"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "表中確實列有一年身高增加量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "丙增加八公分，明確有生長變化。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "同齡資料可以比較，只是結論需符合變項。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "沒有濃度測量，不能從單一表現精確反推。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "由外觀或身高變化精確推定激素濃度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "研究問題是激素濃度，但表格只量身高與月份，「身高增加是間接表現，未直接測量激素濃度」指出測量落差。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "資料可支持生長差異，卻不能替代內分泌檢測或排除其他影響因素。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

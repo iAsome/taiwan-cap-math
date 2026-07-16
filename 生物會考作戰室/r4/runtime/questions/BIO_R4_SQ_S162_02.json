@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S162_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S162",
+  "stem": "比較兩箱堆肥處理結果，資料最支持哪項解釋？",
+  "options": [
+    "適中含水與翻堆通氣伴隨較快分解",
+    "密封過濕一定增加好氧分解",
+    "氣味強證明材料全消失",
+    "乙箱沒有任何代謝"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "甲的操作改善水分與通氣，並同時出現較少剩餘材料與較淡氣味。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "密封過濕限制空氣，乙的較大剩餘量也不支持好氧分解增加。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "乙氣味強但仍剩47公斤，不能把氣味解讀成材料全部消失。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "乙仍減少13公斤且產生異味，顯示可能有代謝，不能說完全沒有。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "解釋堆肥條件"
+  ],
+  "representationType": "對照資料",
+  "misconceptionTargets": [
+    "過濕必使分解更快"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "處理核對把翻堆適濕與密封過濕作為主要操作差異，再比較結果方向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "多指標核對同時使用剩餘量與缺氧異味，兩條證據都支持甲條件較合適。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

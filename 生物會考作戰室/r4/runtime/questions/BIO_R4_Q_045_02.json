@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_045_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S045"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "酵素反應在30°C速率12、40°C速率7，哪個溫度的觀察速率較高？",
+  "options": [
+    "40°C",
+    "30°C",
+    "兩者皆為零",
+    "無法比較數字"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "40°C數值7小於12。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "30°C數值12是兩者中較高者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "表中速率分別為12與7，兩個數值都不是零。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "相同單位的速率數字可以直接比較。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-045",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-044",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-041"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "比較12與7即可判定30°C觀察速率較高，不需額外假設。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "此題只問兩個測量點，不等於確認真正最適溫度位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

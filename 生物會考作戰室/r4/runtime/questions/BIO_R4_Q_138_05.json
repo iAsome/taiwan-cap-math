@@ -1,0 +1,89 @@
+{
+  "id": "BIO_R4_Q_138_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S138"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "研究發現某序列差異與低酵素活性同時出現，下一步哪項最能加強因果證據？",
+  "options": [
+    "在控制條件下比較兩種版本產生的酵素活性",
+    "只替兩組個體拍攝外觀照片",
+    "刪除活性較高的反例",
+    "先宣布該差異是唯一原因"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "直接比較版本與產物功能，可檢驗資訊差異是否改變酵素。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "外觀照片沒有量測題目關注的酵素功能與作用機制。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "選擇性刪除資料會扭曲關聯，不能形成可靠因果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "未排除其他差異前宣稱唯一原因超出現有證據。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把序列與性狀關聯直接當成因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-038"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "控制背景後測量酵素，是從相關走向作用機制所需的關鍵步驟。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "還可重複實驗並檢查蛋白質量，確認活性差不是樣本或測量偶然。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

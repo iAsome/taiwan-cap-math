@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0359",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "校園探究要比較鹽度對蘿蔔片失水，哪項方案最佳？",
+  "options": [
+    "各鹽度使用不同厚度與時間",
+    "只測最高鹽度一片",
+    "相同厚度隨機分組，各鹽度同時間處理並重複稱量",
+    "先看結果再決定哪些組保留"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "厚度與時間同時不同會混淆鹽度效果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "只有一濃度與一片，無法比較趨勢或變異。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "方案控制尺寸與時間、安排重複，能公平檢驗鹽度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "依結果選組會產生選擇偏差。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "完整設計"
+  ],
+  "representationType": "校園情境",
+  "misconceptionTargets": [
+    "單樣本即可"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "完整方案應包含操弄濃度、控制條件、量化結果與獨立重複。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "可再加入零鹽對照與多個濃度，以觀察是否呈連續趨勢。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

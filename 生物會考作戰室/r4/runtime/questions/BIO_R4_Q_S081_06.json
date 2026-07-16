@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S081_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S081"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "若連接右手肌肉的某條周圍神經受損，最可能直接出現哪種情況？",
+  "options": [
+    "腦完全不能產生動作命令",
+    "命令難以完整傳到右手肌肉",
+    "脊髓立即消失所有功能",
+    "左手必定同時失去感覺"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "局部周圍神經受損不表示腦無法產生命令。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "受損路徑會妨礙中樞命令到達其連接的肌肉。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "單一周圍神經損傷不會使整個脊髓失去功能。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "右手局部路徑受損不能推出左手必定受影響。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "因果推論"
+  ],
+  "representationType": "受損情境",
+  "misconceptionTargets": [
+    "把局部神經損傷推成全身失能"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-006",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-028",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-010"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "依受損位置追蹤，直接影響是右手命令的傳出路徑。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "局部右手神經受損不會使腦停止下令、脊髓全面失能，也不能推出左手感覺必然消失。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

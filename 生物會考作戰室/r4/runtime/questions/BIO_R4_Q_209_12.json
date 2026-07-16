@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_209_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S209"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "甲報告稱低濃度無害，但只觀察兩天死亡率。最重要的修正為何？",
+  "options": [
+    "移除濃度單位",
+    "只增加照片",
+    "把所有個體視為相同",
+    "延長觀察並加入生長、繁殖等指標"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單位是理解暴露濃度必要資訊，不應移除。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "照片無法取代長期量化的生物反應。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "忽略個體差異會降低結論可信度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "長期與次致死指標可檢驗低濃度慢性影響。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "評鑑"
+  ],
+  "representationType": "研究改進",
+  "misconceptionTargets": [
+    "短期死亡率代表全部影響"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩天死亡率只能回答狹窄的短期致死問題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "結論若談無害，研究範圍就必須涵蓋更長時間與多種反應。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

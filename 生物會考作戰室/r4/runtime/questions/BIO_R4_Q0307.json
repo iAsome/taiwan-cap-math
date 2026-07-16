@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0307",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S026"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲側濃度由十降至七，乙側由二升至五，最合理的判讀為何？",
+  "options": [
+    "淨移動由乙到甲",
+    "兩側物質都憑空增加",
+    "物質淨由甲移向乙，使濃度差縮小",
+    "粒子已全部停止"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲下降而乙上升，不支持由乙淨移向甲。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "若兩側體積等其他條件合適，變化可由重新分布解釋，不必憑空生成。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "高濃度甲下降、低濃度乙上升，符合淨擴散使差距縮小。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "濃度正在改變，且粒子即使達平衡也不會全部停止。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "趨勢判讀"
+  ],
+  "representationType": "前後數據",
+  "misconceptionTargets": [
+    "數值只看終點"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "前後變化能補強淨方向判斷：來源側下降、接收側上升。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "濃度差縮小是擴散常見結果，但仍需確認物質可通過邊界。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

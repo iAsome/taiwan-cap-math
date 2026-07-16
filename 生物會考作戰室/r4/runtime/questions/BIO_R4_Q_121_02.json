@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_121_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S121"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "帶X的卵與帶Y的精子結合後，受精卵組合為何？",
+  "options": [
+    "XX",
+    "XY",
+    "YY",
+    "只有Y"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "XX需要精子也提供X，與題幹不符。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "卵的X與精子的Y結合，形成XY。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "卵不提供Y，因此不會由此形成YY。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "受精卵各收一條，不會只剩精子的Y。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "合併配子時漏掉其中一方染色體"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐一合併兩個配子提供的染色體，結果明確是XY。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「XY」保留父母雙方各一條，其餘組合遺漏或改寫了題幹。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

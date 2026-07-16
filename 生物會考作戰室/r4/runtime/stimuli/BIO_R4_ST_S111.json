@@ -1,0 +1,85 @@
+{
+  "id": "BIO_R4_ST_S111",
+  "subject": "biology",
+  "skillId": "BIO_R4_S111",
+  "type": "stage-table",
+  "content": {
+    "title": "授粉後階段紀錄",
+    "context": "研究者將等量花粉放到三組同種花柱頭，十二小時後記錄結果。",
+    "columns": [
+      "組別",
+      "柱頭有花粉",
+      "形成花粉管",
+      "配子在胚珠融合"
+    ],
+    "rows": [
+      [
+        "甲",
+        "是",
+        "是",
+        "是"
+      ],
+      [
+        "乙",
+        "是",
+        "否",
+        "否"
+      ],
+      [
+        "丙",
+        "否",
+        "否",
+        "否"
+      ]
+    ],
+    "note": "三組除指定處理外，溫度與供水相同。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [
+    "CAP-110-MAIN-INTEGRATED-NATURAL-006"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "accessibility": {
+    "summary": "甲組柱頭有花粉、形成花粉管且胚珠內配子融合；乙組柱頭有花粉，但沒有花粉管與融合；丙組柱頭無花粉，也無花粉管及融合。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "組別",
+        "階段結果"
+      ],
+      "rows": [
+        [
+          "甲",
+          "授粉、花粉管、融合皆有"
+        ],
+        [
+          "乙",
+          "有授粉，無花粉管與融合"
+        ],
+        [
+          "丙",
+          "三者皆無"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

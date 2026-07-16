@@ -1,0 +1,110 @@
+{
+  "id": "BIO_R4_Q_218_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S218"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "結果變異大，盲目增加同一錯誤測量次數有何不足？",
+  "options": [
+    "重複永遠無用",
+    "變異必定消失",
+    "樣本越多越錯",
+    "若偏差來自方法，重複只會精確重現偏差"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "合適重複仍可估計隨機變異。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "增加次數不保證變異消失。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "樣本多本身不是錯誤來源。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "系統偏差需校正方法才能改善。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析"
+  ],
+  "representationType": "誤差類型",
+  "misconceptionTargets": [
+    "增加次數解決偏差"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "固定方向的讀值偏差須先校正方法，增加次數只能縮小隨機波動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "樣本增加主要降低隨機不穩定，不能自動修正錯誤方法。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

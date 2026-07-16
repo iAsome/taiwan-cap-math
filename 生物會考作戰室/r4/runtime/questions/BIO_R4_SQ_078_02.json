@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_078_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S078"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S078",
+  "stem": "乙組汗量低最合理的原因為何？",
+  "options": [
+    "升溫訊息未有效傳入，使中樞輸出偏低",
+    "汗腺一定不存在",
+    "受器訊號過高",
+    "血液完全停止"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "傳入值八使中樞缺少升溫資訊，散熱輸出與汗量都低。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題目只阻斷傳入訊號，沒有說汗腺構造一定不存在。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "乙受器傳入只有八，與過高的敘述方向相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "模型仍有各項量測，沒有全身血液完全停止的證據。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "由最前端異常沿流程解釋後續下降，比只看到少汗便怪罪汗腺更合理。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "若直接刺激汗腺仍能分泌，可進一步證明效應器本身仍有功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

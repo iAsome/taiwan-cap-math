@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S170_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S170"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "社區要評估增植樹木是否降低夏季地表溫度，哪項監測方案最佳？",
+  "options": [
+    "只在植樹區量一次清晨溫度",
+    "植樹前後改用不同型號且未校正的溫度計",
+    "只詢問一位居民的感覺",
+    "在相近天候下同步量植樹區與對照區，跨多日記錄遮陰與土壤含水"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單一地點與單一清晨沒有同時對照，也錯過主要日照時段。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "儀器差異可能造成系統偏差，無法確定變化來自植樹。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "主觀感受不能取代多地點、可重複的溫度資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "同步配對並記錄相關環境條件，可檢查降溫是否穩定及其機制。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移社區監測"
+  ],
+  "representationType": "調查設計",
+  "misconceptionTargets": [
+    "單次主觀感覺足以證明"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "比較核對植樹區和相似對照區同時量測，可降低每日天候差的干擾。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "機制核對遮陰與含水資料能分別連結輻射阻隔及蒸散，不只報一個溫度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_080_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S080"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "水分不足時尿量下降，對恆定有何意義？",
+  "options": [
+    "使水分流失更多",
+    "減少水分排出以抵消不足",
+    "讓腎臟變成肺",
+    "停止所有血液循環"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "尿量下降通常會減少而不是增加經尿液流失的水。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "保留較多水分可抵消原本缺水的偏差，符合負回饋方向。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "尿量調節不會使腎臟組織轉變成氣體交換的肺。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "循環仍需把訊號與物質送往腎臟，不會因此全部停止。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先辨認原偏差是水分不足，再看少尿是否朝保存水分方向作用。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "少尿是調節結果之一，不表示完全沒有其他途徑的水分流失。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

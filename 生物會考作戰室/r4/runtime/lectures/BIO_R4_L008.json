@@ -1,0 +1,158 @@
+{
+  "id": "BIO_R4_L008",
+  "subject": "biology",
+  "unitId": "BIO_R4_U01",
+  "skillId": "BIO_R4_S008",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-MB-4-2",
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S007"
+  ],
+  "objectives": [
+    "能檢查科學報導的資料來源、研究設計與結論範圍。",
+    "能辨認相關、因果、樣本限制與利益揭露。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L008_S1",
+      "title": "追查證據來源",
+      "content": "可靠報導應指出研究者、研究機構或可查閱報告，並交代研究對象、樣本數與資料取得方式。只寫『專家說』或沒有來源連結，讀者難以查核。"
+    },
+    {
+      "id": "BIO_R4_L008_S2",
+      "title": "看研究怎麼做",
+      "content": "先確認是控制實驗、觀察調查或個案。控制實驗較能檢驗因果，觀察到兩項一起變化通常只能說相關，仍可能受年齡、環境等其他因素影響。"
+    },
+    {
+      "id": "BIO_R4_L008_S3",
+      "title": "比較標題與結果",
+      "content": "新聞標題常把『可能相關』改寫成『造成』，或把小幅平均差異寫成驚人成效。應回到實際數據、對照組、變異與研究者原本結論。"
+    },
+    {
+      "id": "BIO_R4_L008_S4",
+      "title": "限制與利益",
+      "content": "樣本太小、只含單一族群、研究時間短或測量方式受限，都會限制推廣。經費來源不等於研究必然錯誤，但應揭露並與方法透明度、獨立重複一起評估。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L008_E1",
+      "prompt": "報導稱吃某水果使成績提高，依據是學生飲食與成績問卷。",
+      "steps": [
+        "辨認這是觀察資料而非隨機控制實驗。",
+        "列出睡眠、家庭資源或學習時間等可能共同因素。"
+      ],
+      "answer": "可說兩者在樣本中相關，不能直接說水果造成成績提高。",
+      "why": "問卷沒有控制其他差異，也未安排飲食處理；相關可形成後續假說，但不足以單獨支持因果標題。"
+    },
+    {
+      "id": "BIO_R4_L008_E2",
+      "prompt": "新聞只寫『研究證實』，沒有樣本數與來源。",
+      "steps": [
+        "查找原始研究、作者與發布機構。",
+        "核對樣本、對照、測量與限制是否被報導。"
+      ],
+      "answer": "現有資訊不足，應先追查可驗證來源。",
+      "why": "權威字樣不能替代可查核方法；缺少來源時無法判斷研究品質，也不能確認標題是否忠實轉述。"
+    },
+    {
+      "id": "BIO_R4_L008_E3",
+      "prompt": "產品公司資助研究，處理組平均只高百分之二。",
+      "steps": [
+        "檢查是否揭露資助與研究者角色。",
+        "查看原始數據、變異、對照與其他團隊是否重現。"
+      ],
+      "answer": "不能只因資助否定，也不能忽略利益關係與效果大小。",
+      "why": "合理評估需同時看透明度和證據；百分之二是否穩定及實用，取決於樣本變異與獨立驗證。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "刊登在新聞網站就等於經過科學審查。",
+      "whyWrong": "媒體發布流程與學術審查不同，仍需追查原始資料與方法。",
+      "correction": "把新聞當線索，回到研究來源、樣本與完整結論查核。"
+    },
+    {
+      "belief": "兩件事一起出現，就證明其中一件造成另一件。",
+      "whyWrong": "相關可能來自共同因素、反向關係或偶然，未必是直接因果。",
+      "correction": "查看是否有合理控制、時間順序與重複證據，再評估因果。"
+    },
+    {
+      "belief": "樣本多就不必檢查取樣方式。",
+      "whyWrong": "大量偏向單一族群的樣本仍可能不能代表欲推廣的人群。",
+      "correction": "同時檢查樣本數、選取方式與研究對象是否匹配主張。"
+    },
+    {
+      "belief": "有公司經費的研究一定錯誤。",
+      "whyWrong": "經費來源提示利益風險，但不能單獨決定數據與方法是否有效。",
+      "correction": "要求完整揭露、預先方法、原始數據與獨立重複來綜合判斷。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "報導只說『科學家發現』，最先要追問什麼？",
+      "answer": "原始研究來源、樣本與方法在哪裡。",
+      "reason": "可查核來源是評估證據的入口，沒有它便難確認標題與研究是否一致。"
+    },
+    {
+      "prompt": "問卷顯示運動時間與睡眠品質相關，能直接稱運動造成好睡嗎？",
+      "answer": "不能，只能先說兩者在樣本中相關。",
+      "reason": "問卷未控制健康、作息等共同因素，也無法單獨確立因果方向。"
+    },
+    {
+      "prompt": "為何報導應列出研究限制？",
+      "answer": "讓讀者知道結論可推廣到哪些對象與情境。",
+      "reason": "限制不是否定研究，而是防止把局部、短期或特定方法的結果過度延伸。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-MB-4-2",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_213_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S213"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "哪組數據最適合比較兩種河川淨化方案？",
+  "options": [
+    "不同污染物與不同年份",
+    "一組有單位一組無單位",
+    "只選各自最佳一天",
+    "相同指標、基線期間、方法與觀察長度"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "污染物與年份都不同，難以公平比較。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "缺少單位的數據無法正確解讀。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "最佳一天會忽略一般表現與變異。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "一致條件能使方案差異較可能來自處理本身。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "應用"
+  ],
+  "representationType": "方案比較",
+  "misconceptionTargets": [
+    "不同條件硬比較"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "數據可比性來自共同指標定義、基線與一致的測量條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若無法完全一致，至少要清楚校正並揭露限制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

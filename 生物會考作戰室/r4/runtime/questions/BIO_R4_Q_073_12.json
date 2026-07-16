@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_073_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S073"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "新物種由體表排出代謝產生的氨，應如何分類？",
+  "options": [
+    "因不經腎臟所以不是排泄",
+    "因由體表所以必是排遺",
+    "因是氣味物質所以屬消化",
+    "屬排泄，因氨是代謝廢物"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "排泄不限定必須經腎臟，其他構造也可能移除代謝廢物。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "出口在體表不會把代謝產物改成未消化食物殘餘。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "氣味不能決定生理來源，氨也不是食物分解的消化過程。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "氨由代謝產生並離開身體，符合排泄的核心定義。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "面對不同物種仍使用來源判準，就不會被器官差異誤導。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "人體常把含氮廢物轉成尿素，但其他動物直接排氨仍可屬排泄。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

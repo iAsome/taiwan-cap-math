@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S106_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S106"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "傷口處細胞分裂速率先升高，癒合後回到原水平，最支持哪項推論？",
+  "options": [
+    "細胞分裂可依修復需求暫時增加",
+    "傷口形成了新的完整人體",
+    "所有分裂都是配子形成",
+    "癒合代表細胞永遠停止分裂"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "分裂變化與傷口修復時間一致。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "傷口癒合後仍是原來同一個體，沒有形成新的完整人體。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "身體細胞分裂不等於配子形成。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "回到原水平不代表永久停止。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "時間序列"
+  ],
+  "representationType": "資料推論",
+  "misconceptionTargets": [
+    "修復等於新個體"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-006",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-030"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "時間序列顯示需求出現時分裂增加，完成修復後再下降。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "這種動態資料比只測單一時間點更能連結分裂與修復。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

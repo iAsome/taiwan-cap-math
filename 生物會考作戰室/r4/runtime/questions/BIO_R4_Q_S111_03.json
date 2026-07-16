@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S111_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S111"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "典型開花植物中，授粉與受精的順序通常為何？",
+  "options": [
+    "受精後才形成柱頭",
+    "受精先於花粉離開花藥",
+    "先授粉，後經花粉管運送而受精",
+    "兩者必定在同一瞬間完成"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "柱頭在授粉前已是雌蕊的一部分。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "雄性配子需先隨花粉相關路徑移動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "花粉先到柱頭，再可能把雄性配子送入胚珠。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "授粉與受精位置不同，通常存在時間間隔。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "過程順序"
+  ],
+  "representationType": "流程",
+  "misconceptionTargets": [
+    "受精早於授粉"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先後順序可沿花粉路徑判斷：花藥、柱頭、花柱、胚珠，最後才配子融合。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "授粉是受精的前提之一，但前提發生並不保證結果一定成功。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

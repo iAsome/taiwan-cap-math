@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q0188",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S016"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "整張圖等比例縮小一半時，比例尺應如何處理？",
+  "options": [
+    "只把數值加倍",
+    "線段保持原長不動",
+    "刪除比例尺單位",
+    "線段同步縮小一半，代表數值不變"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "代表數值描述實物長度，不因圖片輸出尺寸任意加倍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "圖縮小而線不縮會破壞兩者原比例。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "刪單位使讀者無法知道線段代表何種尺度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "同步縮放保持比值，原實際長度標示仍有效。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "縮放應用"
+  ],
+  "representationType": "比例尺",
+  "misconceptionTargets": [
+    "比例尺獨立縮放"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "比例尺與圖必須接受同一幾何縮放，才能維持尺寸判讀。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "代表微米數不變，因為玻片上的標本實體並未改變。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

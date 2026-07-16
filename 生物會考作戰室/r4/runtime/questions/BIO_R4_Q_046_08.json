@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_046_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S046"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩組pH不同且酵素量也不同，為何不能只歸因於酸鹼值？",
+  "options": [
+    "pH無法測量",
+    "酵素不受任何條件影響",
+    "產物沒有質量",
+    "酵素量也可能影響速率"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "pH可用適當儀器或試紙測量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "酵素會受環境與用量影響。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "產物可用質量、體積或數量等合適方式進行測量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩個變因同時不同會混淆因果。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-042",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-032"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "公平比較需讓除酸鹼外的條件一致，酵素量不同就是混淆變因。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「酵素量也可能影響速率」指出設計問題，「pH無法測量」、「酵素不受任何條件影響」、「產物沒有質量」都是否定可測量性或基本作用。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,58 @@
+{
+  "id": "BIO_R4_ST_S195",
+  "subject": "biology",
+  "skillId": "BIO_R4_S195",
+  "type": "gas-table",
+  "content": {
+    "title": "水草日夜二氧化碳紀錄",
+    "text": "相同水草缸連續量測溶解二氧化碳。清晨6時為18毫克／公升，受光至下午2時降為9毫克／公升；遮光至晚間10時升為15毫克／公升。水量與水草量未改變。",
+    "note": "數值是全缸淨結果，不能單獨視為光合作用或呼吸總量。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "三個時間、光照狀態、二氧化碳數值與單位均以文字表格呈現。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "時間與處理",
+        "二氧化碳（毫克／公升）"
+      ],
+      "rows": [
+        [
+          "6時，開始受光",
+          "18"
+        ],
+        [
+          "14時，受光結束",
+          "9"
+        ],
+        [
+          "22時，遮光結束",
+          "15"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

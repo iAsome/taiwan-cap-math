@@ -1,0 +1,73 @@
+{
+  "id": "BIO_R4_ST_S045",
+  "subject": "biology",
+  "skillId": "BIO_R4_S045",
+  "type": "temperature-series",
+  "content": {
+    "title": "酵素T溫度試驗",
+    "text": "學生以相同酵素量、受質量、酸鹼條件與反應時間，測量酵素T在五種溫度下每分鐘產物量。每組重複三次後取平均，表格數值僅代表本次受測酵素與所列溫度。",
+    "note": "未測溫度沒有資料，不可由折線想像出精確數值。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "calibrationRefs": [
+    "CAP-108-MAIN-INTEGRATED-NATURAL-045",
+    "CAP-111-MAIN-INTEGRATED-NATURAL-044",
+    "CAP-113-MAIN-INTEGRATED-NATURAL-041"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-045",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-044",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-041"
+    ]
+  },
+  "accessibility": {
+    "summary": "表格列出五個溫度及酵素T每分鐘平均產物量。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "溫度",
+        "平均產物量"
+      ],
+      "rows": [
+        [
+          "10°C",
+          "3"
+        ],
+        [
+          "20°C",
+          "8"
+        ],
+        [
+          "30°C",
+          "15"
+        ],
+        [
+          "40°C",
+          "9"
+        ],
+        [
+          "50°C",
+          "2"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

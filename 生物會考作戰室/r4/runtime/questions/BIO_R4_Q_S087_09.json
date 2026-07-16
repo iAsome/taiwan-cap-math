@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S087_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S087"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某人汗腺可正常分泌，但高溫時中樞送往汗腺的神經命令受阻。哪項最受支持？",
+  "options": [
+    "散熱反應可能無法依體溫變化適時增加",
+    "汗腺必定自行知道體溫並完全補償",
+    "高溫會使視網膜直接分泌汗液",
+    "所有內部恆定機制必定同時消失"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "執行器正常但命令不到，調節性分泌仍可能不足。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "汗腺主要執行命令，不能假設能完全取代中樞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "視網膜是感光構造，不會取代汗腺分泌。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "單一路徑受阻不能推出所有調節機制消失。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "系統推論"
+  ],
+  "representationType": "功能定位",
+  "misconceptionTargets": [
+    "認為動器官可自行取代中樞"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題幹區分汗腺能力與神經命令，直接後果是適時啟動受影響。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「散熱反應可能無法依體溫變化適時增加」限制在該散熱路徑，避免誇大到所有恆定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_143_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S143"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "生質能源的淨能源應如何計算？",
+  "options": [
+    "能源產出減去製程能源投入",
+    "只看燃料燃燒的最高溫度",
+    "把運輸距離當成零",
+    "只計算原料重量"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "相同單位下扣除栽培、運輸與轉換投入，才能得知淨增加。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "最高溫度不能代表整個流程的能源收支。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "運輸確實耗能，任意歸零會高估方案效益。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "原料重量未反映能量含量與製程消耗。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "只看能源產出而忽略流程投入"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「能源產出減去製程能源投入」同時納入產出和必要投入，是判斷方案是否真正供能的基礎。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "比較不同燃料時還要採共同能源單位，避免重量與含水量造成誤導。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

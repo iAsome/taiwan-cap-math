@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S163_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S163",
+  "stem": "為何A棟資訊值得進一步分析？",
+  "options": [
+    "A棟名稱較短",
+    "只有A棟學生需要計數",
+    "施工必定保護健康",
+    "棟別可能同時關聯飲水與其他腸胃風險"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "名稱字數不會造成飲水或腸胃症狀，沒有生物機制。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "仍需保留其他棟比較，否則無法判斷A棟風險是否不同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "施工可能帶來環境差異，不能在未分析前宣稱必定保護。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "飲用者較常住A棟，而外食等因素也可能影響症狀，可能形成混淆。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "辨識調查混淆"
+  ],
+  "representationType": "資料限制",
+  "misconceptionTargets": [
+    "第三因素不需分析"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "雙連結核對檢查A棟是否同時影響飲水選擇與症狀替代來源。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "分層預測核對可在同棟內比較飲用與否，觀察原比例差是否仍存在。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

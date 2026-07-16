@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S097_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S097"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S097",
+  "stem": "比較甲組與乙組，最能支持哪項結論？",
+  "options": [
+    "轉軸可動時不需要連接",
+    "完整連接有助於把彈力帶拉力傳到硬棒",
+    "連接中斷會增加位移",
+    "硬棒會主動收縮"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩組轉軸都可動，但位移仍有差異。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "主要差異是連接狀態，完整組位移較大。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "乙組位移低於甲組，並未增加。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "硬棒長度固定，不是主動收縮元件。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "控制比較"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "肌腱不影響動作"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "控制轉軸狀態後，甲乙位移差異可連結到傳力連接是否完整。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "模型中的連接對應肌腱，結果支持其傳遞肌肉力量的功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

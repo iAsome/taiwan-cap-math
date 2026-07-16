@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S152_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S152"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "語音版檢索工具要避免使用者忘記路徑，最有用的功能是？",
+  "options": [
+    "播放背景音樂",
+    "隨機改變選項順序",
+    "只朗讀最後名稱",
+    "每步重述已選特徵並允許返回"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "背景音樂沒有保存任何已選特徵，還可能干擾使用者聽清楚下一個判定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "每次隨機換序會增加記憶負擔，使使用者更難知道先前究竟選了哪個特徵敘述。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "只朗讀終點名稱會隱去所有中間證據，使用者無法檢查何處可能誤選。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "逐步重述可維持路徑記憶，返回功能則讓使用者在發現矛盾時修正特定步驟。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移檢索原則"
+  ],
+  "representationType": "無障礙工具",
+  "misconceptionTargets": [
+    "只呈現終點不保留證據"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "工作記憶核對要求工具保存先前選擇，逐步重述可把路徑摘要轉成可聽資訊。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "錯誤修正核對再確認使用者可返回前一步，而不是只能接受無法驗證的終點名稱。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

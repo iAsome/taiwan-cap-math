@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q0248",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S021"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "二維切片未出現細胞核，最合理的解釋是什麼？",
+  "options": [
+    "一定是無生命物",
+    "細胞膜已不存在",
+    "所有細胞都沒有核",
+    "切面可能沒有通過細胞核"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "缺一個切面構造不足以否定全部生命特徵。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "膜是否存在需由邊界觀察，不能由未見核推論。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "其他細胞與其他切片可能有核，不能過度概括。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "三維細胞被切成二維時，核可能落在別的切面。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "切面推理"
+  ],
+  "representationType": "二維影像",
+  "misconceptionTargets": [
+    "未見即不存在"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "二維影像只取樣有限厚度，未見核不等於整個細胞無核。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "查看連續切片可檢驗核是否出現在相鄰平面。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

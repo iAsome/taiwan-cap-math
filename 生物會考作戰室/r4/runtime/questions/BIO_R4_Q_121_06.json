@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_121_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S121"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某家庭已有兩名XY子女，第三次受精形成XX的機會應如何理解？",
+  "options": [
+    "已變成零，因XY用完了",
+    "仍是一次新的配子組合事件",
+    "必定形成XX以維持平衡",
+    "由前兩名子女的意願決定"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "X或Y精子不會因先前結果而永久用完。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "每次受精由新的卵與精子相遇，事件重新開始。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "機率近似各半不保證短期結果自動平衡。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兄姊的意願不能控制配子染色體組合。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把獨立事件誤認為會自動補償"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先前兩次結果不會改變下一次是哪個精子受精，「仍是一次新的配子組合事件」正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "不能用用完、補平衡或意願解釋隨機配子組合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

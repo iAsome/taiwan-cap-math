@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_131_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S131"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST131",
+  "stem": "哪筆資料最直接用來判定P為顯性？",
+  "options": [
+    "甲PP呈紫",
+    "丙pp呈白",
+    "乙Pp呈紫",
+    "所有環境相同"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "同型PP無法比較P與p在同一個體中的表現。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "pp白可確認隱性表現，但異型合子更直接定義顯性。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "異型Pp呈紫，直接顯示P所對應性狀表現。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "控制環境有助比較，但不單獨指出哪個版本顯性。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "不用異型合子判定顯性"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "顯性定義需看異型合子，「乙Pp呈紫」乙Pp提供唯一直接證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其他資料可支持模型，卻不能單獨比較兩版本在同一組合的表現。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

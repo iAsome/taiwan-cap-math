@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_046_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S046"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "受質濃度為4、6、8時速率皆為18，最合理的判讀為何？",
+  "options": [
+    "三組反應都停止",
+    "此範圍已出現速率平台",
+    "受質濃度沒有改變",
+    "酵素量必定為零"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "速率18表示反應仍在進行。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "受質增加而速率固定符合平台。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "濃度數值4、6、8明顯不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "酵素量為零不會有持續速率18。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-042",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-032"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "橫軸濃度增加但速率連續相同，資料特徵就是平台。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "平台不等於停止，反應仍以每單位時間18的速率進行。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

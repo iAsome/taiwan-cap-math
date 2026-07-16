@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_212_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S212"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "測試新微生物處理法，哪個設計最完整？",
+  "options": [
+    "只有一個處理槽",
+    "每槽條件不同",
+    "處理與對照各有重複並測原物、產物和生物反應",
+    "只記處理槽氣味"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單槽無法估計自然變異或偶然結果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "條件不同會混入其他因素。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此設計兼顧效益、轉化結果、風險與重複。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "氣味不能定量代表污染去除及毒性。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "設計"
+  ],
+  "representationType": "實驗設計",
+  "misconceptionTargets": [
+    "只測效益不測風險"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "完整技術試驗同時回答是否有效與是否產生新風險。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "對照、重複與多種指標缺一都會限制解讀。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

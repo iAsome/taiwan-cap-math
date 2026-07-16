@@ -1,0 +1,133 @@
+{
+  "id": "BIO_R4_L_S179",
+  "subject": "biology",
+  "unitId": "BIO_R4_U25",
+  "skillId": "BIO_R4_S179",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S178"
+  ],
+  "objectives": [
+    "依生物種類、時空範圍與環境成分區分五個生態層次",
+    "將同一觀察情境由個體逐步擴展到生物圈"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S179_SEC_01",
+      "title": "個體與族群",
+      "content": "個體是單一生物；族群是同一時間生活在同一地區的同種個體集合。不同時間或隔離地點的同種生物，不宜未經範圍定義就合併成一個族群。"
+    },
+    {
+      "id": "BIO_R4_L_S179_SEC_02",
+      "title": "群集",
+      "content": "群集包含某地區同時存在的多個不同物種族群，例如池塘中的魚、藻類、昆蟲與微生物。群集只描述生物成分，不把水溫或岩石列為族群。"
+    },
+    {
+      "id": "BIO_R4_L_S179_SEC_03",
+      "title": "生態系",
+      "content": "生態系由群集和與其交互作用的非生物環境組成。池塘生物加上水、光、溫度、溶氧與底泥，才構成較完整的池塘生態系。"
+    },
+    {
+      "id": "BIO_R4_L_S179_SEC_04",
+      "title": "生物圈與尺度",
+      "content": "地球上所有生態系及生物可活動的範圍合稱生物圈。層次大小依序為個體、族群、群集、生態系、生物圈；判題仍要先讀清楚時間與空間界線。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S179_EX_01",
+      "prompt": "校園池塘內同時記錄到二十隻同種魚，屬哪一層？",
+      "steps": [
+        "確認全是同一物種",
+        "確認時間與池塘範圍相同",
+        "由同種集合判為族群"
+      ],
+      "answer": "這二十隻魚構成該時段池塘中的一個族群。",
+      "why": "族群判準同時包含同種、同地與同時；題幹三項皆具備，因此不是單一個體，也尚未包含多種生物。"
+    },
+    {
+      "id": "BIO_R4_L_S179_EX_02",
+      "prompt": "池塘中的魚、藻與水生昆蟲合在一起屬哪一層？",
+      "steps": [
+        "辨認包含多個物種",
+        "確認目前只列生物",
+        "由多族群判為群集"
+      ],
+      "answer": "多個不同物種族群共同構成池塘群集。",
+      "why": "三類生物在同一地點共存，已超過單一族群；題幹未加入光、水溫等非生物成分，所以不必提升為生態系。"
+    },
+    {
+      "id": "BIO_R4_L_S179_EX_03",
+      "prompt": "池塘生物加上水溫、溶氧與光照，應如何分類？",
+      "steps": [
+        "先辨認多種生物形成群集",
+        "再找到非生物環境資料",
+        "判為群集與環境組成的生態系"
+      ],
+      "answer": "這些生物與環境共同構成池塘生態系。",
+      "why": "生態系的關鍵不只是範圍較大，而是同時納入群集及其非生物環境，且兩者會發生物質與能量交互作用。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "同種生物不論住在哪裡都算同一族群。",
+      "whyWrong": "族群除同種外還有限定共同時間與空間，隔離地點可能沒有直接交流。",
+      "correction": "描述族群時應標示物種、地點與時間，例如今年春季某池塘的鯽魚。"
+    },
+    {
+      "belief": "群集包含水、陽光與所有岩石。",
+      "whyWrong": "群集由多個生物族群組成，水與光屬於非生物環境。",
+      "correction": "群集加上與其交互作用的非生物因子，才形成生態系層次。"
+    },
+    {
+      "belief": "一片森林只能稱為族群。",
+      "whyWrong": "森林通常有多種植物、動物與微生物，不符合單一物種集合。",
+      "correction": "只談同種樹可稱族群；談所有生物是群集；再加環境則是生態系。"
+    },
+    {
+      "belief": "生物圈只是所有動物的集合。",
+      "whyWrong": "生物圈涵蓋各類生物及地球上所有生態系，不限於動物類群。",
+      "correction": "應包含陸域、水域與大氣相關生態系，以及其中的植物、微生物和動物。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "同池塘同種魚的集合屬哪一層？",
+      "answer": "族群。",
+      "reason": "同種、同地與同時三個條件符合族群的基本判準。"
+    },
+    {
+      "prompt": "群集和生態系的主要差別是什麼？",
+      "answer": "生態系另包含非生物環境。",
+      "reason": "群集只含多種族群，加入水、光及溫度等交互作用後才是生態系。"
+    },
+    {
+      "prompt": "地球所有生態系合稱什麼？",
+      "answer": "生物圈。",
+      "reason": "生物圈是最大的生態層次，涵蓋全球生物生活範圍與各生態系。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q0127",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "低倍視野全黑時，哪項檢查應早於升高倍率？",
+  "options": [
+    "把答案寫在圖上",
+    "更換桌面顏色",
+    "確認光源、光圈與通光孔對準",
+    "直接改用最高倍"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "書寫答案不會讓光線進入顯微鏡。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "桌面顏色通常不參與內部透射光路。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "光路未通是全黑的直接可能原因，應先排除。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "高倍視野更暗且更小，不能修復照明問題。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "問題排除"
+  ],
+  "representationType": "照明情境",
+  "misconceptionTargets": [
+    "黑暗靠升倍解決"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "完全黑暗表示成像前提可能未建立，先檢查光路最有效。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "確認光線穿過標本後才有意義繼續調焦或改變倍率。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

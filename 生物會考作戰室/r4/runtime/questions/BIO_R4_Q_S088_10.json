@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S088_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S088"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "研究者在內分泌腺附近與遠處血管都測到同一激素，且附近濃度先升高。哪項解釋較合理？",
+  "options": [
+    "遠處血管製造了腺體",
+    "激素由腺體附近進血，再隨血流到遠處",
+    "激素由皮膚表面逆流進入血管",
+    "所有器官同時自行產生該激素"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "血管中的激素不能製造一個完整腺體。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "先近後遠符合由分泌處隨循環擴散運送。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題幹沒有皮膚表面分泌或逆流證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "時間差不支持所有器官同時自行製造。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "資料解釋"
+  ],
+  "representationType": "時空紀錄",
+  "misconceptionTargets": [
+    "把運送處誤認為製造處"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-032",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-005"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "空間與時間順序共同支持腺體為來源、血液為運輸。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「激素由腺體附近進血，再隨血流到遠處」能解釋兩地都測到且附近較早升高。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

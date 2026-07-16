@@ -1,0 +1,128 @@
+{
+  "id": "BIO_R4_L_S195",
+  "subject": "biology",
+  "unitId": "BIO_R4_U27",
+  "skillId": "BIO_R4_S195",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S194"
+  ],
+  "objectives": [
+    "連結光合作用與呼吸作用在碳循環中的方向。",
+    "由二氧化碳資料判斷淨吸收或淨釋放，不把淨值誤當單一作用停止。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S195_SEC_01",
+      "title": "光合作用使碳進入有機物",
+      "content": "植物、藻類等生產者利用二氧化碳製造有機物，使碳由空氣或水中進入生物碳庫。這是多數食物網中有機碳的重要入口。"
+    },
+    {
+      "id": "BIO_R4_L_S195_SEC_02",
+      "title": "呼吸作用使碳回環境",
+      "content": "植物、動物與分解者都會呼吸，分解有機物取得能量並產生二氧化碳。植物白天也呼吸，不能把呼吸誤認為只有動物或只在夜間發生。"
+    },
+    {
+      "id": "BIO_R4_L_S195_SEC_03",
+      "title": "淨值是兩作用相減",
+      "content": "有光時植物可同時光合作用與呼吸。若光合作用吸收二氧化碳的速率大於呼吸釋放速率，環境二氧化碳呈淨下降；淨下降不表示呼吸停止。"
+    },
+    {
+      "id": "BIO_R4_L_S195_SEC_04",
+      "title": "環境條件會改變速率",
+      "content": "光照、溫度、水分與生物量都可能影響兩作用速率。比較實驗需控制其他條件，並量測相同時間內的二氧化碳變化，才能合理判讀碳移動。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S195_EX_01",
+      "prompt": "密閉透明箱有植物，光照後二氧化碳下降，最合理解釋為何？",
+      "steps": [
+        "植物同時可能光合作用與呼吸。",
+        "淨下降表示吸收量大於釋放量。"
+      ],
+      "answer": "光合作用速率大於呼吸速率。",
+      "why": "資料是吸收與釋放相減的淨結果，只能比較速率大小，不能說植物完全沒有呼吸。"
+    },
+    {
+      "id": "BIO_R4_L_S195_EX_02",
+      "prompt": "同一植物黑暗處二氧化碳上升，碳如何移動？",
+      "steps": [
+        "黑暗時光合作用大幅受限。",
+        "呼吸仍可分解有機物並釋出二氧化碳。"
+      ],
+      "answer": "有機物碳→環境二氧化碳。",
+      "why": "黑暗組的淨釋放可由呼吸作用解釋，不代表植物在黑暗中停止所有生命活動。"
+    },
+    {
+      "id": "BIO_R4_L_S195_EX_03",
+      "prompt": "白天葉片二氧化碳淨吸收5單位，能否說光合作用只吸收5單位？",
+      "steps": [
+        "淨值等於吸收量減去呼吸釋放量。",
+        "缺少呼吸量，無法求光合作用總吸收。"
+      ],
+      "answer": "不能。",
+      "why": "實際光合作用吸收量可能大於5單位，其中一部分被同時發生的呼吸釋放抵銷。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "植物只行光合作用，不會呼吸。",
+      "whyWrong": "植物細胞也需分解有機物取得能量，白天與夜間都會呼吸。",
+      "correction": "有光時同時考慮兩作用，並以淨二氧化碳變化比較速率。"
+    },
+    {
+      "belief": "黑暗時植物完全停止碳的移動。",
+      "whyWrong": "黑暗限制光合作用，但呼吸仍可使有機碳轉為二氧化碳。",
+      "correction": "黑暗組仍量測呼吸造成的氣體變化，不寫成完全靜止。"
+    },
+    {
+      "belief": "二氧化碳下降等於呼吸停止。",
+      "whyWrong": "下降可能只是光合作用吸收量超過同時呼吸釋放量。",
+      "correction": "把觀察寫成淨吸收，再以獨立方法估計兩個總速率。"
+    },
+    {
+      "belief": "呼吸會把碳元素變成能量而消失。",
+      "whyWrong": "呼吸轉換化學能，碳原子仍存在於二氧化碳等產物。",
+      "correction": "分開描述能量轉換與碳由有機物回到環境的路徑。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "植物在白天是否仍進行呼吸？",
+      "answer": "是。",
+      "reason": "植物細胞持續需要能量，光照不會使呼吸作用自動停止。"
+    },
+    {
+      "prompt": "黑暗箱中二氧化碳上升最能支持哪一作用？",
+      "answer": "呼吸作用。",
+      "reason": "沒有光合作用大量吸收時，呼吸釋出的二氧化碳形成淨上升。"
+    },
+    {
+      "prompt": "環境二氧化碳淨下降能否直接等於光合作用總量？",
+      "answer": "不能。",
+      "reason": "淨值已扣除同時呼吸釋放量，還需額外資料求總光合作用。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

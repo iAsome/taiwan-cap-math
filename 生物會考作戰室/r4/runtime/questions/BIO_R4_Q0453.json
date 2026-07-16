@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q0453",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S038"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "某細胞直徑十五微米，另一細胞直徑三十微米。哪項可直接確定？",
+  "options": [
+    "後者直徑是前者兩倍",
+    "後者體積一定是前者兩倍",
+    "後者功能一定較重要",
+    "前者一定不是活細胞"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "三十除以十五為二，直接支持直徑倍數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "體積與三維形狀有關，不會只依直徑線性變化。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "尺寸不能決定功能重要性。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "細胞是否存活要看生命活動證據，較小的直徑不代表無法存活。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "倍數限制"
+  ],
+  "representationType": "數值比較",
+  "misconceptionTargets": [
+    "長度倍數等同體積"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目只提供直徑，因此結論也應停在線性尺度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "不要把長度倍數擴大成體積、數量或功能倍數。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

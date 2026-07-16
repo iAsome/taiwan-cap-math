@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S095_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S095"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某脊椎骨骨折後，患者除了軀幹支撐受影響，也出現下肢感覺異常。最合理的解釋為何？",
+  "options": [
+    "脊椎骨直接產生所有感覺",
+    "骨折可能同時影響支撐功能與椎管內脊髓的保護",
+    "下肢感覺只由皮膚顏色決定",
+    "骨折使所有肌肉立刻消失"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "感覺訊息由神經系統處理，不是骨直接產生。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "椎骨既承重也包圍脊髓，受傷可影響兩方面。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "皮膚顏色不能解釋骨折後的神經症狀。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "局部骨折不會使全身肌肉立即消失。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "脊柱損傷"
+  ],
+  "representationType": "整合推論",
+  "misconceptionTargets": [
+    "骨骼只有支撐功能"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "支撐與神經症狀同時出現，符合椎骨兼具承重與保護脊髓。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "這項推論連結構造位置與兩種功能，比單一用途更完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0312",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S026"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某氣體在膜外濃度高，但實驗中完全未跨膜。最合理的下一項判斷為何？",
+  "options": [
+    "濃度差理論必定錯誤",
+    "膜外氣體其實一定較少",
+    "所有粒子都已停止運動",
+    "先檢查此膜是否允許該氣體通過及檢測方法是否足夠"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "擴散方向判斷以物質可跨越邊界為前提，資料不必推翻濃度概念。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題幹已說膜外濃度高，不能無證據改寫資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "未跨膜不表示粒子完全停止，也可能是膜不通透。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "檢查通透性與偵測能力，能辨認是邊界限制或未測到。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "條件檢核"
+  ],
+  "representationType": "反常資料",
+  "misconceptionTargets": [
+    "有濃差必可過"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "濃度差只能驅動可通過邊界的物質，通透性是必要前提。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "陰性結果也可能受方法靈敏度影響，應先查條件再下結論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

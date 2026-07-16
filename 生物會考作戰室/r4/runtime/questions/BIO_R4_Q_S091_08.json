@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S091_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某人飯後血糖升高，但胰島素完全沒有增加。依機制最可能影響什麼？",
+  "options": [
+    "升高訊息一定使血糖立刻歸零",
+    "肝糖一定全部分解",
+    "血糖會由汗液直接排光",
+    "促進葡萄糖攝取與儲存的降糖反應可能不足"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "缺少胰島素增加不會使血糖立刻歸零。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "肝糖分解較符合升糖素作用方向。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "汗液不是排除全部血糖的主要機制。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "胰島素反應不足會減弱攝取與儲存。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "機制推論"
+  ],
+  "representationType": "調節異常",
+  "misconceptionTargets": [
+    "把缺少胰島素誤認為升糖"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-002",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-008",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-020"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "由缺少的激素功能推論，最直接受影響的是飯後降糖路徑。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "促進攝取與儲存不足能合理解釋血糖較難回降。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

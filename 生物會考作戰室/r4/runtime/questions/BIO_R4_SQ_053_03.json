@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_SQ_053_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S053"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S053",
+  "stem": "若甲只在小腸腔中被檢出，尚未進入微血管，應如何判斷？",
+  "options": [
+    "已完成排泄",
+    "已完成排遺",
+    "可能完成消化但尚未證明吸收",
+    "已成為細胞代謝廢物"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲不是由肺腎等排出的代謝廢物。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "仍在小腸腔中也尚未由肛門排出。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "小分子已形成，但沒有跨腸壁證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "來源是澱粉分解而非細胞代謝。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "消化系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "判讀需同時看分子狀態與位置：形成小分子可支持消化，留在腔內未支持吸收。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「可能完成消化但尚未證明吸收」保留證據界線，沒有把尚未發生的跨壁運輸先行認定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q0283",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S024"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲模型顯示胞器位置，乙模型模擬物質進出速率。研究細胞膜通透性時應如何選擇？",
+  "options": [
+    "只選體積較大的甲",
+    "只選顏色較多的模型",
+    "優先選能改變條件並輸出進出速率的乙",
+    "任選一個，因所有模型用途相同"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "體積大小與是否能模擬通透性沒有直接關係。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "配色數量不能決定模型是否表現物質移動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "通透性問題需要濃度、條件與速率資訊，乙保留了相關特徵。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩模型目的不同，不能假設可互相取代。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "依問題選模型"
+  ],
+  "representationType": "模型比較",
+  "misconceptionTargets": [
+    "一模通用"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "研究問題提到速率時，模型必須能表現過程與可比較的量。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "選模型要比對問題需求，而非以尺寸、顏色或熟悉程度決定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

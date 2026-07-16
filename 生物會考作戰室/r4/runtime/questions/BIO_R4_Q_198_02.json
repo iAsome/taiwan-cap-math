@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_198_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S198"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要判斷今天的魚數是否異常，最有用的比較資料為何？",
+  "options": [
+    "其他魚種的名稱",
+    "相同方法取得的長期常見範圍",
+    "今天調查員的衣服",
+    "報表頁數"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "名稱不能提供本族群的數量基線。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "長期範圍可顯示自然波動與異常位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "衣著與魚數異常通常沒有直接關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "頁數多寡不能代表生態狀態。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "選擇異常基準"
+  ],
+  "representationType": "基線比較",
+  "misconceptionTargets": [
+    "一次量測就能定平衡"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「相同方法取得的長期常見範圍」建立判斷基準，避免只用單次印象決定異常。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "方法也須一致，否則範圍可能混入採樣差異。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

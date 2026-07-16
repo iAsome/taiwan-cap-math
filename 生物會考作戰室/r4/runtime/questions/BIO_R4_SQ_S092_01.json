@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_SQ_S092_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S092"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S092",
+  "stem": "哪組同時具有均衡飼料與正常生長激素？",
+  "options": [
+    "乙組",
+    "甲組",
+    "丙組",
+    "三組都符合"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "乙組攝取的是低蛋白飼料，並非均衡飼料。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "甲組的兩項條件都符合題意。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丙組的生長激素分泌不足。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "乙、丙各有一項條件不符合。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料判讀"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "只比較增重"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "表格明列甲組攝取均衡飼料，且生長激素分泌正常。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "判讀時須同時核對飼料與激素狀態，不能只看增重數值。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

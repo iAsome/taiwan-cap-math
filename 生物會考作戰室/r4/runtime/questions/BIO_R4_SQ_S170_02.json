@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S170_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S170"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S170",
+  "stem": "丙比甲少流出 8.2 公升水，最合理的水量去向解釋是？",
+  "options": [
+    "較多水被截留、入滲或暫存在坡面",
+    "水全部消失且不在系統中",
+    "植物把水立即變成泥沙",
+    "量筒會自動減少讀值"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "覆蓋可攔截降雨並增加入滲時間，使地表出口量降低。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "水不會無故消失，應尋找其他儲存或輸出路徑。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "水不會因植物存在就直接轉換成礦物泥沙。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有儀器故障證據，不能用假設錯誤取代水量分析。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "推論水量去向"
+  ],
+  "representationType": "水量平衡",
+  "misconceptionTargets": [
+    "低逕流代表水消失"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "收支核對相同輸入下地表輸出較少，差量應留在其他水庫或通路。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "機制核對葉莖截留、根系孔隙與地表粗糙度都能支持此去向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

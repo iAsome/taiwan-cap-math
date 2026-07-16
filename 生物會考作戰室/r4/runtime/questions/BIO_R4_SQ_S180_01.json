@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_S180_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S180"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S180",
+  "stem": "比較甲與乙最能檢查哪項因子？",
+  "options": [
+    "水溫這項非生物因子",
+    "掠食螺數這項生物因子",
+    "潮池面積",
+    "海水是否存在"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲乙都為二十六度，不能檢查水溫差。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "兩池溫度相同，掠食螺數差異大，可比較捕食者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "面積已控制相同，不是主要處理差異。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩者都是潮池，海水存在沒有組間差異。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "辨識生物配對"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "忽略控制欄"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "配對核對甲乙水溫相同，隔離掠食螺數差。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "結果核對螺多的乙藤壺較少，符合捕食候選機制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_S155_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S155"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S155",
+  "stem": "若要判斷兩地基因多樣性，還需哪類資料？",
+  "options": [
+    "地點名稱",
+    "昆蟲總重量",
+    "同種個體間的遺傳差異",
+    "調查表字體"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲地或乙地的名稱只是位置標籤，不能顯示同種昆蟲的遺傳變異。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "多種昆蟲合計重量混合物種與體型，無法辨識同種個體間差異。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "基因多樣性發生在物種內，需比較同種個體的遺傳標記或可遺傳性狀。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "字體大小只影響表格閱讀，與昆蟲遺傳資料沒有生物關聯。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "辨識資料缺口"
+  ],
+  "representationType": "調查延伸",
+  "misconceptionTargets": [
+    "由物種數直接推基因多樣"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-001"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "尺度核對顯示現表只有逐物種個體數與棲地，沒有任何種內資料。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "證據需求核對把問題鎖定同種個體，遺傳標記才能直接補上缺少層次。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

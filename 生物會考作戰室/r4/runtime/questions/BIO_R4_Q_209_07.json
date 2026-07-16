@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_209_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S209"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "三組魚暴露濃度相同，頻率為每週一次、三次、七次。應固定何者以比較頻率效應？",
+  "options": [
+    "每組魚種不同",
+    "每次濃度不同",
+    "每次暴露時長與其他環境條件相同",
+    "每組使用不同飼料量"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "魚種不同會混入敏感度差異。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "濃度不同就無法隔離頻率作用。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "固定每次條件後，組間主要差異才是暴露頻率。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "飼料量不同可能影響生長與反應。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "設計"
+  ],
+  "representationType": "控制變因",
+  "misconceptionTargets": [
+    "未控制伴隨條件"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "要比較某一因素，其他可能影響結果的條件應一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "頻率實驗仍需記錄每次濃度與時長，才能解釋總暴露。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

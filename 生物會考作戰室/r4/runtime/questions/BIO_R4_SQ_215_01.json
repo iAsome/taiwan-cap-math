@@ -1,0 +1,110 @@
+{
+  "id": "BIO_R4_SQ_215_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S215"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S215",
+  "stem": "呈現這六個月趨勢最適合哪種圖？",
+  "options": [
+    "流程圖",
+    "無順序物種長條圖",
+    "以月份為橫軸的折線圖",
+    "只寫最大值"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "流程圖不能表示濃度隨時間變化。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "物種類別不是本資料的橫軸。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "月份連續有序，折線可呈現溶氧下降趨勢。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "只寫最大值會遺失其他月份。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "依時間序列選擇圖形"
+  ],
+  "representationType": "月份溶氧表",
+  "misconceptionTargets": [
+    "任何比較都適合長條圖"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "圖形選擇必須同時考慮資料型態及想傳達的比較目的。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "時間序列用折線呈現相鄰時間點的變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

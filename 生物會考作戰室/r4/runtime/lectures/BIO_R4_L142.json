@@ -1,0 +1,134 @@
+{
+  "id": "BIO_R4_L142",
+  "subject": "biology",
+  "unitId": "BIO_R4_U19",
+  "skillId": "BIO_R4_S142",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S141"
+  ],
+  "objectives": [
+    "從健康、生態、社會與倫理面向分析生物技術風險",
+    "提出監測、隔離、標示與公平參與等風險管理方法"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L142_SEC1",
+      "title": "風險由機率與後果構成",
+      "content": "風險評估不能只問事件是否可能，還要估計發生機率、影響範圍、嚴重度與可逆性。低機率但後果重大的事件仍需預防；常見但輕微的影響則可用監測與操作改善處理。"
+    },
+    {
+      "id": "BIO_R4_L142_SEC2",
+      "title": "生態影響與基因流動",
+      "content": "生物技術作物可能與近緣野生族群交換花粉，外來菌株也可能影響原有生物群落。評估需檢查存活、擴散、非目標生物與食物網，並依地區親緣物種和環境條件設計隔離與長期監測。"
+    },
+    {
+      "id": "BIO_R4_L142_SEC3",
+      "title": "倫理與社會公平",
+      "content": "醫療遺傳資料涉及隱私、知情同意與可能歧視；農業技術則可能牽涉種子價格、專利與農民依賴。倫理分析要讓受影響者參與，說明誰承擔風險、誰取得利益，以及是否有可接受替代方案。"
+    },
+    {
+      "id": "BIO_R4_L142_SEC4",
+      "title": "證據更新與風險管理",
+      "content": "沒有觀察到傷害不等於永久零風險，短期研究也可能漏掉延遲或稀有結果。可採分階段試驗、可追溯紀錄、停用門檻與獨立審查，隨新證據調整措施，而不是只在完全接受與全面禁止間二選一。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L142_EX1",
+      "prompt": "抗蟲作物可能影響非目標昆蟲，應如何設計監測？",
+      "steps": [
+        "選定可能受影響的非目標物種與對照田",
+        "跨季量測數量、繁殖及農藥使用並設定警戒值"
+      ],
+      "answer": "進行有對照的長期生態監測。",
+      "why": "只有單季作物產量無法回答食物網影響，跨季對照與警戒門檻能及早辨認變化並觸發管理。"
+    },
+    {
+      "id": "BIO_R4_L142_EX2",
+      "prompt": "醫院建立遺傳資料庫，為何不能只強調研究效益？",
+      "steps": [
+        "辨認資料可連結個人與家族健康資訊",
+        "檢查同意、存取權、退出機制與歧視風險"
+      ],
+      "answer": "需同時保障隱私與知情選擇。",
+      "why": "研究效益不會自動消除資料外洩或不當使用的風險，參與者需要理解用途並能控制合理範圍。"
+    },
+    {
+      "id": "BIO_R4_L142_EX3",
+      "prompt": "田間試驗未見基因流動，能否宣布永遠不會發生？",
+      "steps": [
+        "確認試驗年數、距離與樣本偵測範圍",
+        "評估低頻事件是否可能在更長時間或不同地區出現"
+      ],
+      "answer": "不能，只能說本試驗範圍未檢出。",
+      "why": "零次觀察受樣本與偵測限制，較精確說法應保留範圍，並以隔離和後續監測管理不確定性。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只要技術有益，就不需要討論任何風險。",
+      "whyWrong": "效益與風險可以同時存在，受益者與承擔者也可能不是同一群人。",
+      "correction": "以共同指標分別評估利益、傷害與分配，再決定管理方式。"
+    },
+    {
+      "belief": "研究中沒有傷害案例，就證明風險永遠是零。",
+      "whyWrong": "樣本小、時間短或偵測不足都可能漏掉低頻與延遲結果。",
+      "correction": "說明證據範圍並持續監測，不把未觀察到誤寫成不可能。"
+    },
+    {
+      "belief": "標示技術名稱本身就能解決所有倫理問題。",
+      "whyWrong": "標示若缺乏用途、限制與選擇機制，仍不能保障知情同意或公平取得。",
+      "correction": "提供可理解資訊、隱私保護與申訴退出方式，並讓受影響者參與。"
+    },
+    {
+      "belief": "風險管理只能全面禁止或完全開放。",
+      "whyWrong": "分區、隔離、分階段試驗與停用門檻能依證據調整，選項並非只有兩端。",
+      "correction": "依風險層級採比例原則管理，並預先規劃修正與復原措施。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "評估基因流動時，為何要調查附近近緣野生種？",
+      "answer": "確認可能的花粉交換對象。",
+      "reason": "只有能交配的近緣族群才構成主要傳遞路徑，地區物種資料會改變風險判斷。"
+    },
+    {
+      "prompt": "遺傳資料研究最基本的倫理措施包含什麼？",
+      "answer": "知情同意與隱私保護。",
+      "reason": "參與者應理解資料用途與風險，存取也需受控以降低外洩和歧視。"
+    },
+    {
+      "prompt": "試驗未見傷害時，結論應如何表述？",
+      "answer": "在研究範圍內未觀察到。",
+      "reason": "限定時間、樣本與檢測方法可避免把有限的零次觀察誇大成永久零風險。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  }
+}

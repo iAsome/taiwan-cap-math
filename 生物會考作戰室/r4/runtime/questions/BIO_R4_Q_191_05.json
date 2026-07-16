@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_191_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S191"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "鳥同時吃毛毛蟲與果實。毛毛蟲減少時，僅憑食物網可得哪項結論？",
+  "options": [
+    "鳥仍有果實這條已知食物路徑",
+    "鳥必定在一天內滅絕",
+    "果實一定增加十倍",
+    "鳥會立即停止所有攝食"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "另一支入箭頭顯示果實可作為已知食物。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "是否滅絕還需食物量與族群資料，不能斷言。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "網絡沒有支持精確十倍變化的數據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "仍有替代食物，不能推論完全停止攝食。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "限制替代食物推論"
+  ],
+  "representationType": "雜食者情境",
+  "misconceptionTargets": [
+    "一種食物少就必然滅絕"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "食物網能證明替代路徑存在，不能證明它必然足以維生。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「鳥仍有果實這條已知食物路徑」嚴守資料範圍，是唯一不過度延伸的敘述。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

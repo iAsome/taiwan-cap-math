@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S157_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S157"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "居民多年記錄某鳥每年秋季抵達，這項資料最能提供什麼？",
+  "options": [
+    "長期物候線索",
+    "鳥的全部基因序列",
+    "全球所有族群數",
+    "器官組成圖"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "多年抵達日期能呈現季節性出現時間及年際變動，屬長期物候線索。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "到達時間的目視紀錄沒有核酸序列，無法推出該鳥全部基因資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "單一地方的抵達紀錄只涵蓋當地觀察，不能代表全球所有族群數量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹沒有解剖或影像構造資料，不能畫出器官之間的組成關係。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "辨識在地觀察價值"
+  ],
+  "representationType": "長期紀錄",
+  "misconceptionTargets": [
+    "由地方資料推全球"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "時間尺度核對抓到『多年』與『每年秋季』，資料核心是週期性生物事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "推論範圍核對限制在當地抵達時間，長期物候線索沒有擴張到基因、全球或器官。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q0170",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某細胞約占四十微米比例尺的一半，細胞長約多少？",
+  "options": [
+    "八十微米",
+    "二十微米",
+    "四十點五微米",
+    "兩微米"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "八十是把比例尺加倍，與一半長度相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "四十的一半為二十微米，計算正確。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "四十點五是加上零點五，未使用比例關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩微米把數值縮小過多，沒有正確除以二。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "比例計算"
+  ],
+  "representationType": "文字比例尺",
+  "misconceptionTargets": [
+    "一半誤用加法"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "細胞影像只有比例尺線的一半長，實際長度也取四十的一半。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "比例尺與細胞在同圖中，線性比例可直接用於估算。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

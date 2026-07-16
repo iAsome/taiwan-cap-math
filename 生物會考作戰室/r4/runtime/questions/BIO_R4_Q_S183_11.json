@@ -1,0 +1,89 @@
+{
+  "id": "BIO_R4_Q_S183_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S183"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "農田蚜蟲增加，想檢驗瓢蟲的捕食效果，哪項設計最佳？",
+  "options": [
+    "只看一株有瓢蟲作物",
+    "同時改農藥與肥料",
+    "設有瓢蟲與排除瓢蟲網籠，控制其他條件並重複",
+    "只記瓢蟲顏色"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單株無對照且易受偶然差異影響。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩項農務同改會遮蔽瓢蟲效果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "排除對照只改捕食者可達性，可比較蚜蟲變化。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "顏色不能量化捕食或蚜蟲數量。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移生物防治"
+  ],
+  "representationType": "農業實驗",
+  "misconceptionTargets": [
+    "看到天敵就證明控制"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-049",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-001",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-036",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-044",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-003"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "對照核對網籠處理讓兩組主要差在瓢蟲能否接觸蚜蟲。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "重複核對多區作物可降低單株密度與微環境造成的偏差。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

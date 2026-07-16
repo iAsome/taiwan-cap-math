@@ -1,0 +1,112 @@
+{
+  "id": "BIO_R4_Q0012",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S001"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-MB-4-2",
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "醫院人員記錄傷口變化，哪一作法最能降低主觀推論混入資料？",
+  "options": [
+    "只寫病人看起來好多了",
+    "依印象挑最嚴重的一天記錄",
+    "先寫感染再補找符合的現象",
+    "固定距離拍照並量測傷口長寬"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "好多了沒有定義指標，且把整體印象當成可比較資料。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "依印象選日會遺漏時間序列，也容易受到預期結果影響。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "先定感染結論會引導選擇性記錄，不能區分觀察與推論。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "固定拍攝條件與長寬量測可提供可重複查核的變化資料。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移應用"
+  ],
+  "representationType": "實務情境",
+  "misconceptionTargets": [
+    "醫療判斷不需量測"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-MB-4-2",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "實務紀錄仍需一致條件與明確尺度，固定距離和尺寸可供追蹤。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "固定距離拍照與量測長寬可重複查核；「好多了」、挑特定日期與先判感染都會混入主觀判斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

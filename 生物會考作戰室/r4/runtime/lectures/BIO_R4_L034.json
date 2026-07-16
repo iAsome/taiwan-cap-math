@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L034",
+  "subject": "biology",
+  "unitId": "BIO_R4_U05",
+  "skillId": "BIO_R4_S034",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "prerequisites": [
+    "BIO_R4_S033"
+  ],
+  "objectives": [
+    "能依構成單位區分細胞、組織、器官與器官系統。",
+    "能由局部受損情境追蹤相鄰生命層次的影響。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L034_S1",
+      "title": "辨認構成單位",
+      "content": "細胞是單一基本單位；組織由許多細胞及細胞間物質形成；器官整合多種組織；器官系統則由多個器官合作。辨認時先問目標由什麼直接構成。"
+    },
+    {
+      "id": "BIO_R4_L034_S2",
+      "title": "人體實例",
+      "content": "紅血球是細胞，血液可視為結締組織，心臟是含肌肉、神經等組織的器官，循環系統則整合心臟、血管與血液運送功能。"
+    },
+    {
+      "id": "BIO_R4_L034_S3",
+      "title": "植物也有層次",
+      "content": "保衛細胞屬細胞，表皮屬組織，葉與根屬器官；根系與莖葉系統則由多個植物器官協調。不能把生命層次只當成人體專用分類。"
+    },
+    {
+      "id": "BIO_R4_L034_S4",
+      "title": "相鄰與跨層影響",
+      "content": "細胞功能改變先影響其所屬組織，組織受損再可能降低器官與系統功能。說明影響時應依層次逐步連結，避免從單一細胞直接斷言整個個體必然死亡。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L034_E1",
+      "prompt": "血液含多種血球與液態細胞間物質，應歸在哪一層次？",
+      "steps": [
+        "辨認血液不是單一細胞。",
+        "確認多種細胞與細胞間物質共同運作。"
+      ],
+      "answer": "血液可歸為組織層次。",
+      "why": "組織不一定是堅硬連續薄片；只要細胞與其間物質共同完成工作，液態血液仍符合組織概念。"
+    },
+    {
+      "id": "BIO_R4_L034_E2",
+      "prompt": "葉片含表皮、葉肉與維管束等組織，葉片是哪一層？",
+      "steps": [
+        "列出葉片含多種組織。",
+        "確認這些組織共同完成光合作用與交換等功能。"
+      ],
+      "answer": "葉片屬植物器官。",
+      "why": "多種組織在有界構造內整合功能，與動物器官的判準相同，不因植物名稱不同而改變。"
+    },
+    {
+      "id": "BIO_R4_L034_E3",
+      "prompt": "心肌細胞收縮減弱，如何逐層解釋循環影響？",
+      "steps": [
+        "先連到心肌組織收縮力。",
+        "再連到心臟泵血及循環系統運送。"
+      ],
+      "answer": "細胞收縮減弱可降低組織力量，進而影響心臟與循環功能。",
+      "why": "逐層說明保留合理因果，也避免把一個細胞的改變直接誇大成全身必然停止。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只有排列成薄片的細胞集合才叫組織。",
+      "whyWrong": "血液等組織可呈液態，關鍵是細胞與細胞間物質共同完成功能。",
+      "correction": "依構成與合作判斷，不以外觀是否成片限制。"
+    },
+    {
+      "belief": "葉片只是植物的一部分，不能叫器官。",
+      "whyWrong": "葉片由多種組織構成並完成光合作用、交換等整合功能。",
+      "correction": "用與動物相同的多組織整合判準辨認植物器官。"
+    },
+    {
+      "belief": "器官系統就是體積很大的單一器官。",
+      "whyWrong": "系統由多個器官分工協調，判準是合作關係而非單純尺寸。",
+      "correction": "列出參與器官與共同大功能，確認是否形成系統。"
+    },
+    {
+      "belief": "一個細胞受損就能直接證明整個系統完全失效。",
+      "whyWrong": "組織通常含許多細胞並可能有補償，一個細胞的影響需看範圍。",
+      "correction": "逐層評估受損比例與功能資料，不跳到絕對結論。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "血液為何可視為組織而不是單一細胞？",
+      "answer": "它含多種細胞與液態細胞間物質，並共同完成運送等功能。",
+      "reason": "組織判準是細胞集合及合作，不要求一定呈固體片狀。"
+    },
+    {
+      "prompt": "葉片被歸為器官的兩項證據是什麼？",
+      "answer": "含多種植物組織，且這些組織共同完成整合功能。",
+      "reason": "植物與動物的器官都可用多組織構成和主要功能辨認。"
+    },
+    {
+      "prompt": "如何由心肌細胞連到循環系統？",
+      "answer": "心肌細胞形成組織，組織構成心臟，心臟參與循環系統。",
+      "reason": "依相鄰層次連結能清楚顯示局部功能如何逐步放大。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  }
+}

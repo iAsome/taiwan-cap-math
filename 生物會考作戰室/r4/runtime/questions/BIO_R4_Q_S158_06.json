@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S158_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S158"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "水樣同時出現魚死亡與某細菌。為何不能只憑這項紀錄就說細菌是原因？",
+  "options": [
+    "魚不可能接觸細菌",
+    "同時出現尚未排除缺氧或污染物",
+    "細菌一定保護魚",
+    "死亡不算可觀察結果"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "水域中的魚可接觸許多微生物，否定接觸不是質疑因果的合理理由。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "共現只顯示時間與地點重疊，缺氧、毒物或溫度也可能造成魚死亡。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題幹沒有細菌改善魚隻存活的比較資料，不能反向宣稱一定保護。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "魚死亡是明確可記錄結果，問題在原因證據不足而不是結果不可觀察。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "區分共現與作用"
+  ],
+  "representationType": "因果判讀",
+  "misconceptionTargets": [
+    "檢出即證明致害"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "替代原因核對列出溶氧與污染物，顯示細菌以外仍有可檢驗解釋。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "研究設計核對要求比較細菌改變前後的死亡率，單次共現沒有這條因果路徑。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

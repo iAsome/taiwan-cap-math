@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0351",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "只測處理三十分鐘後的質量，最不能回答哪一問題？",
+  "options": [
+    "三十分鐘時哪組較重",
+    "三十分鐘總變化多少",
+    "前十分鐘與後十分鐘哪段速率較快",
+    "各組終點質量是否不同"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "終點測量可直接比較當時質量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "若有起始質量便可算三十分鐘總變化。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "缺少中間時間點，不能分段計算兩時段速率。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "各組終點值可用來檢查是否不同。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "時間資料限制"
+  ],
+  "representationType": "終點資料",
+  "misconceptionTargets": [
+    "終點等同速率"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "速率問題必須知道特定時間間隔內變化多少。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "單一終點只能回答累積結果，不能還原中途曲線。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

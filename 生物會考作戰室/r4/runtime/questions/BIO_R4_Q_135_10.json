@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_135_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S135"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "排除一個基因型後，為何不一定已得到唯一答案？",
+  "options": [
+    "家系圖永遠沒有用",
+    "仍可能有多個候選與全部資料相容",
+    "基因型不能遺傳",
+    "所有表現型都相同"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "家系資料可有效提供排除與必要條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "一項排除未必消除所有其他合法組合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "基因版本正可經配子傳遞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "家系通常同時記錄有無性狀，不會全相同。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把排除一項誤作證明唯一"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-033"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「仍可能有多個候選與全部資料相容」說明排除法的邏輯界線，需要繼續檢查剩餘候選。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其他選項否定家系、遺傳或資料差異，均不是原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_122_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S122"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一張圖只顯示群體平均身高，哪項是最安全的解讀？",
+  "options": [
+    "可描述群體平均，但不能知道每個人的數值",
+    "每個人都恰好等於平均",
+    "平均以下者一定生病",
+    "可由平均判定所有人的激素"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "平均是群體摘要，單憑它無法還原每個個體。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "不同數值也可能形成相同平均，並非人人相等。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "低於平均不等同疾病，還需範圍與健康證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "平均身高不能直接提供個別激素濃度。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "由群體摘要反推每個個體資料"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「可描述群體平均，但不能知道每個人的數值」正確限制平均資料能回答的範圍，也保留個體差異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其他選項把單一摘要過度擴張成個體數值、診斷或激素檢測。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

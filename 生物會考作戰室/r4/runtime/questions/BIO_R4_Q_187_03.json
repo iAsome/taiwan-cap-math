@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_187_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "藻類被小蝦吃，小蝦被魚吃，正確食物鏈是哪一條？",
+  "options": [
+    "魚→小蝦→藻類",
+    "小蝦→藻類→魚",
+    "藻類→小蝦→魚",
+    "藻類→魚→小蝦"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "整條方向與物質及能量傳遞相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "藻類不是攝食小蝦者，順序錯置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩段都由食物指向攝食者，完全符合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹沒有魚直接吃藻類或小蝦吃魚。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "串接兩段攝食關係"
+  ],
+  "representationType": "三節點食物鏈",
+  "misconceptionTargets": [
+    "只反轉整條順序"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "依兩句攝食關係逐段連接，可得藻類到小蝦再到魚。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "只有「藻類→小蝦→魚」同時保留兩段關係，其餘至少一段相反。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

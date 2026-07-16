@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_044_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S044"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S044",
+  "stem": "若要確認組別二的少量產物是否來自測量誤差，下一步何者最佳？",
+  "options": [
+    "刪除所有對照組",
+    "重複組別二並增加未加酵素的乙受質對照",
+    "同時更換溫度與受質",
+    "直接宣布E能完全分解所有受質"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "刪除對照會降低判讀可靠性。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "重複與對照可檢查少量產物是否穩定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "同時改兩因素無法釐清誤差來源。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一次少量結果不能支持全面結論。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-018",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-041",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-036"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "釐清小差異需重複測量並建立相同受質的無酵素基準。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「重複組別二並增加未加酵素的乙受質對照」能區分背景值與酵素作用，其他方案都會減少證據品質。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L_S211",
+  "subject": "biology",
+  "unitId": "BIO_R4_U29",
+  "skillId": "BIO_R4_S211",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S210"
+  ],
+  "objectives": [
+    "分析全球暖化對物種分布與物候的影響",
+    "由長期資料評估生態系互動變化"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S211_SEC_01",
+      "title": "天氣與氣候",
+      "content": "單日冷熱是天氣，氣候則是較長時間的平均與變異型態。判斷暖化影響需看多年資料，不能用一次寒流否定長期趨勢。"
+    },
+    {
+      "id": "BIO_R4_L_S211_SEC_02",
+      "title": "分布範圍改變",
+      "content": "溫度升高可能使適冷物種向高海拔或高緯度移動，也可能讓原本受低溫限制的物種擴張，實際結果還受棲地連通性影響。"
+    },
+    {
+      "id": "BIO_R4_L_S211_SEC_03",
+      "title": "物候與失配",
+      "content": "開花、昆蟲羽化、繁殖與遷徙時間可能對升溫反應不同。若互相依賴的物種改變幅度不一，可能出現食物或授粉時機失配。"
+    },
+    {
+      "id": "BIO_R4_L_S211_SEC_04",
+      "title": "複合壓力",
+      "content": "暖化常與棲地破碎、乾旱、海洋酸化或污染共同作用。評估生態影響時需考慮多重壓力及物種適應能力，因交互作用可能放大或抵銷單一效應。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S211_EX_01",
+      "prompt": "高山蝶二十年平均分布上界上移，且同期均溫升高，可推論什麼？",
+      "steps": [
+        "確認是多年趨勢",
+        "比較溫度與分布變化方向"
+      ],
+      "answer": "資料支持升溫與分布上移有關。",
+      "why": "長期溫度與分布同步變化提供關聯證據，但仍需檢查土地利用等其他可能影響因素。"
+    },
+    {
+      "id": "BIO_R4_L_S211_EX_02",
+      "prompt": "植物提早開花二十日，授粉昆蟲只提早三日，可能有何影響？",
+      "steps": [
+        "比較兩者物候改變幅度",
+        "檢查開花期與昆蟲活動重疊"
+      ],
+      "answer": "授粉時段可能減少而形成物候失配。",
+      "why": "互相依賴物種對升溫反應幅度不同，會縮短同時出現的時間，進而降低有效授粉機會。"
+    },
+    {
+      "id": "BIO_R4_L_S211_EX_03",
+      "prompt": "一次強烈寒流能否否定全球暖化？",
+      "steps": [
+        "區分短期天氣事件",
+        "檢視全球長期平均趨勢"
+      ],
+      "answer": "不能。",
+      "why": "寒流屬短期區域天氣變動，全球暖化判斷依據是多年大尺度氣候資料，兩者時間尺度不同。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "今年有寒流，所以全球暖化不存在。",
+      "whyWrong": "單次天氣事件不能代表多年全球平均氣候趨勢。",
+      "correction": "應使用數十年、多地點的溫度與相關氣候資料。"
+    },
+    {
+      "belief": "升溫會使所有物種都往高山移動。",
+      "whyWrong": "物種耐受範圍、移動能力與棲地需求不同，反應不會一致。",
+      "correction": "應依各物種長期分布與環境資料分別判斷。"
+    },
+    {
+      "belief": "兩物種都提早出現，就一定不會物候失配。",
+      "whyWrong": "若提早幅度不同，兩者活動期間仍可能減少重疊。",
+      "correction": "需比較彼此關鍵時段的重疊天數而非只看方向。"
+    },
+    {
+      "belief": "暖化是唯一會影響物種分布的因素。",
+      "whyWrong": "棲地破壞、降雨、競爭與人為移動也可能改變分布。",
+      "correction": "研究應同時記錄可能的替代因素與複合壓力。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "判斷氣候趨勢需要什麼時間尺度？",
+      "answer": "多年到數十年的連續資料。",
+      "reason": "長期紀錄能降低單次天氣波動造成的誤判。"
+    },
+    {
+      "prompt": "何謂物候失配？",
+      "answer": "互相依賴物種的活動時機重疊減少。",
+      "reason": "不同物種對升溫反應幅度不一，可能錯開食物或授粉時段。"
+    },
+    {
+      "prompt": "為何高山物種可能面臨較大風險？",
+      "answer": "向上移動空間有限且棲地面積可能縮小。",
+      "reason": "接近山頂後缺少更高冷涼棲地，使分布調整受到地形限制。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  }
+}

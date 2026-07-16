@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_128_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S128"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST128",
+  "stem": "有人說『G2永遠比G1高三公分』，最佳評析為何？",
+  "options": [
+    "完全正確，可推廣所有環境",
+    "錯誤，因高度不是表現型",
+    "錯誤，因基因型不能比較",
+    "現有兩溫度恰差三公分，但不足以保證所有環境固定差值"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "只有兩個溫度資料，不能推廣到所有環境。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "高度是可測量表現型，理由不成立。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "不同基因型可在控制環境下比較。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此項忠實描述資料並限制外推範圍。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把有限環境資料外推成永遠固定效果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩次相同差值是觀察結果，不等於建立永遠固定的普遍定律。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「現有兩溫度恰差三公分，但不足以保證所有環境固定差值」避免由少量資料過度外推，同時保留表格確實呈現的差異。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

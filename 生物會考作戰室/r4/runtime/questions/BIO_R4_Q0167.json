@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q0167",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S014"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "手機宣稱可把顯微影像數位放大十倍，應如何評估新增細節？",
+  "options": [
+    "畫面變大就一定有新細節",
+    "只看檔名是否變長",
+    "檢查原本相鄰結構能否被分辨，而非只看像素變大",
+    "把亮度調到全白"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "插值放大可能只增加畫面尺寸，不能保證新資訊。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "檔名長度與影像解析能力沒有任何關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "能否分開相鄰結構才是有效解析改善的證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "全白會造成曝光飽和，反而抹去影像細節。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "技術評估"
+  ],
+  "representationType": "數位影像",
+  "misconceptionTargets": [
+    "數位放大等於解析"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "數位放大與光學解析要分開評估，尺寸增加不是充分證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "比較放大前後可辨識邊界，才能判斷是否真正獲得更多資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

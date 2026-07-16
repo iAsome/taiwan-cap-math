@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_075_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S075"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S075",
+  "stem": "乙組廢物累積最合理的解釋為何？",
+  "options": [
+    "乙組完全沒有細胞代謝",
+    "廢物全部變成氧氣",
+    "乙組肺泡數量增加",
+    "血流下降使廢物帶走速度降低"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "肌肉仍以相同強度收縮，不支持完全沒有代謝與廢物產生。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "代謝廢物不會因血流下降就全部轉變成氧氣。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "局部肌肉資料沒有測量肺泡數量，也不能解釋組織累積。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "乙血流只有四分之一且每分鐘帶走量低，符合移除變慢。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "低血流、低帶走量與高組織濃度三項資料共同支持運輸限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "這是本實驗下的因果推論，仍應注意低氧可能改變廢物產生種類。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

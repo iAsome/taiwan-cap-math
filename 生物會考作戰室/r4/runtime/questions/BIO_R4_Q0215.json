@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q0215",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S018"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "數位影像辨識軟體要分割細胞邊界，最應優先找哪種特徵？",
+  "options": [
+    "檔名中的細胞字樣",
+    "圖片上方標題",
+    "包圍細胞質的連續界面",
+    "研究者滑鼠顏色"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "檔名可供管理，不能定位每個細胞實際邊界。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "標題說明內容，也不會沿著每個細胞輪廓。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "連續界面對應細胞膜或外圍邊界，適合分割。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "滑鼠顏色與影像內的生物構造無關。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "技術遷移"
+  ],
+  "representationType": "影像分析",
+  "misconceptionTargets": [
+    "文字標籤等於構造"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "分割任務需要影像中的空間特徵，包圍內部的連續線最直接。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "文字中繼資料可輔助分類，但不能替代像素層次的邊界證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_123_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S123"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST123",
+  "stem": "若要避免學生誤認模型按真實大小製作，應加哪句說明？",
+  "options": [
+    "模型呈現包含關係，盒子比例不代表真實尺度",
+    "基因實際比細胞核更大",
+    "套盒顏色決定遺傳功能",
+    "所有構造在細胞中同樣大"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "此句清楚限定模型能表達與不能表達的資訊。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "基因是DNA片段，實際不會比細胞核更大。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "顏色只是模型設計，不決定遺傳功能。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "細胞內構造尺度並不完全相同。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把示意模型外觀當成真實比例"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "模型只為呈現層次，「模型呈現包含關係，盒子比例不代表真實尺度」可阻止由盒子尺寸推到真實比例。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其他說明本身包含錯誤尺度或把無關顏色當成功能依據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_079_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S079",
+  "stem": "運動後至恢復二十分鐘呈現何種趨勢？",
+  "options": [
+    "持續遠離參考範圍",
+    "先降到零再升高",
+    "三次完全相同",
+    "由138降到116再到96，逐步回復"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "數值逐步靠近並進入範圍，不是持續遠離。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "表中沒有零值，也沒有先降為零再上升的紀錄。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一百三十八、一百一十六與九十六彼此不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "時間序列連續下降，最後九十六回到七十至一百之間。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "依時間順序而非大小任意排列，可看見偏高狀態逐步縮小。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "資料支持回復趨勢，但不能單靠它確定是哪一器官或訊號造成調節。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

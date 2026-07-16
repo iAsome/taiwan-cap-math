@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_125_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S125"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩個同種個體染色體數相同，能否保證毛色相同？",
+  "options": [
+    "能，染色體數決定全部外觀",
+    "不能，基因版本與環境仍可能不同",
+    "能，因同種沒有個體差異",
+    "不能，因其中一個必定沒有DNA"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "染色體數目不是全部外觀資訊。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "相同數目仍可有不同基因版本及環境。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "同種生物仍存在正常個體差異。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "正常個體都具有DNA，不能用缺少DNA解釋。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "認為染色體數相同就外觀相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「不能，基因版本與環境仍可能不同」區分染色體總數、基因版本與環境三種資訊。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其他選項否定個體差異或捏造個體缺少DNA，均不合理。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

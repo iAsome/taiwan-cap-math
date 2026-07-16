@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_079_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "穿戴裝置顯示一次超界警示，最合理回應為何？",
+  "options": [
+    "立刻自行確定病名",
+    "刪除警示不留紀錄",
+    "認定裝置永遠錯誤",
+    "確認量測條件、重測並結合症狀與專業建議"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單一穿戴讀值不足以自行確定特定疾病，可能有量測誤差。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "刪除資料會失去後續比較依據，也無法釐清警示原因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一次可疑數值不能證明裝置在所有時候都永遠錯誤。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "查佩戴與環境、重測及考慮症狀，能更安全地評估。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "警示適合當作需要確認的線索，而不是自動診斷或自動忽略。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若數值持續異常或伴隨不適，應依裝置用途尋求適當專業協助。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

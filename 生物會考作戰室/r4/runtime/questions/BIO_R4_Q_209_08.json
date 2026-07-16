@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_209_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S209"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "甲組10 mg/L暴露1小時，乙組1 mg/L暴露10小時，能否直接判定影響相同？",
+  "options": [
+    "可以，因數字乘積相同",
+    "可以，因物種相同",
+    "可以，因單位相同",
+    "不行，峰值濃度、吸收速率與恢復過程可能不同"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "乘積相同不能涵蓋非線性與急性峰值反應。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "物種相同只控制一項條件，暴露型態仍不同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "單位相同使數值可比較，不能保證生物結果相同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "高峰與長時低濃度可能觸發不同機制，需實測。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析"
+  ],
+  "representationType": "劑量情境",
+  "misconceptionTargets": [
+    "乘積相同等於影響相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "濃度乘時間可作描述，但不是所有生物反應的定律。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "遇到不同暴露型態，應以對照實驗測量實際反應。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

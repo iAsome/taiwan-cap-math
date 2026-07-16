@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S100_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S100"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "長時間維持同一負重姿勢後，動作開始晃動。最合理的解釋為何？",
+  "options": [
+    "骨骼已完全失去支撐功能",
+    "重物的質量隨時間自動增加",
+    "肌肉疲勞使維持張力與精細修正的能力下降",
+    "關節開始主動收縮"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "骨骼仍可支撐，晃動不表示功能完全消失。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題目沒有重物質量改變的資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "持續用力會造成疲勞並降低姿勢控制。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "關節提供活動處，不會主動收縮產力。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "肌肉疲勞"
+  ],
+  "representationType": "因果推論",
+  "misconceptionTargets": [
+    "力量足夠即可無限維持"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "負重與姿勢相同而表現隨時間下降，符合肌肉疲勞累積的影響。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "評估運動需求須納入持續時間，不能只看開始時是否有足夠力量。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

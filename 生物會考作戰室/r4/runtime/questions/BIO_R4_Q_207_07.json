@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_207_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S207"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "比較兩種蛙經皮膚吸收污染物能力，哪個設計最適當？",
+  "options": [
+    "接觸不同濃度只量體重",
+    "只記錄叫聲",
+    "相同濃度與時間暴露後測組織濃度",
+    "只測池水顏色"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "濃度不同且體重不能直接表示吸收量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "叫聲不能直接量得污染物吸收。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "控制濃度與時間再測組織濃度，可公平比較吸收。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "水色不能代表污染物或蛙體內劑量。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "設計"
+  ],
+  "representationType": "實驗設計",
+  "misconceptionTargets": [
+    "未控制暴露條件"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "比較生物特徵時，外部暴露條件要盡量一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "組織濃度比外觀或行為更直接反映吸收結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

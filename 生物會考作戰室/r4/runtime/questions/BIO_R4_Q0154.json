@@ -1,0 +1,89 @@
+{
+  "id": "BIO_R4_Q0154",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S013"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "同學把右側目標置中時向左推玻片，結果目標更靠右。原因為何？",
+  "options": [
+    "細胞主動逃跑",
+    "影像與玻片移動方向相反",
+    "倍率突然變成零",
+    "光源改變影像方向"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "固定標本不會因推片便主動選方向逃跑。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "玻片左移使影像右移，所以目標更靠右緣。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "推玻片不會改變鏡頭倍率，更不會歸零。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "光源影響亮度，並不把左右移動關係反轉。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "錯誤診斷"
+  ],
+  "representationType": "操作結果",
+  "misconceptionTargets": [
+    "影像會追隨玻片"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-018",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-025",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-031"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "觀察結果正符合相反移動規則，問題在玻片方向選錯。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若要把右側影像移左，應將玻片改向右小幅移動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

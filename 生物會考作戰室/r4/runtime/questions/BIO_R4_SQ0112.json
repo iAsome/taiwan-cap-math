@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ0112",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S038"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": "BIO_R4_ST038",
+  "stem": "紅血球尺度約為膜蛋白尺度的多少倍？",
+  "options": [
+    "一萬倍",
+    "十倍",
+    "一百倍",
+    "一千倍"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "一萬倍比正確換算多一個十倍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "十倍忽略微米與奈米的千倍差。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一百倍仍比正確的一千倍少一個十倍，表示單位換算不足。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "八微米等於八千奈米，除以八奈米為一千。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "單位換算"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "數字相同即尺度同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩列數字同為八，單位卻使尺度相差一千倍。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先換同單位再相除，是所有尺度題的固定步驟。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

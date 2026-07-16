@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S175_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S175"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "低光時補二氧化碳幾乎無效，高光時補碳有效，最合理解釋是？",
+  "options": [
+    "二氧化碳只在夜間作用",
+    "低光使葉片死亡",
+    "兩次實驗必有錯",
+    "限制因素依光強改變，低光先受光限制"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "二氧化碳在有光時參與光合作用，並非只在夜間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "低光下仍可能有較慢光合，不能直接判死亡。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "交互結果符合限制因素理論，不必先假設錯誤。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "低光能量不足時補碳難利用，高光解除光限後碳源效果顯現。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析交互限制"
+  ],
+  "representationType": "雙因子資料",
+  "misconceptionTargets": [
+    "限制因素永不改變"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "分層核對相同補碳處理在不同光背景產生不同反應。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "瓶頸核對系統先受最短缺因素限制，改善後另一因素才顯現。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

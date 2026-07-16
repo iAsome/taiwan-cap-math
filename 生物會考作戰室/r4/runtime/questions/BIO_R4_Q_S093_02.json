@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S093_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某激素分泌不足時，最直接可能造成哪種情況？",
+  "options": [
+    "激素自動變成養分",
+    "需要此訊號的標的細胞反應減弱",
+    "所有器官反應都增強",
+    "受體數量必定無限增加"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "激素是訊號，不會自動轉變成養分。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "訊號不足時，相關標的細胞得到的刺激可能減少。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "分泌不足不會使所有器官反應一致增強。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題目沒有受體無限增加的機制與證據。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "分泌不足"
+  ],
+  "representationType": "因果辨識",
+  "misconceptionTargets": [
+    "把局部作用推成全身一致"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "激素不足首先影響能接收該訊號的標的細胞及相關生理活動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "不同激素有不同標的，不能推成全身所有器官都出現相同反應。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

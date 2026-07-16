@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q_208_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S208"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "甲鏈各階層濃度為0.1、0.8、5.0，乙鏈為0.1、0.1、0.2 mg/kg，何者合理？",
+  "options": [
+    "兩鏈放大程度必定相同",
+    "乙鏈沒有任何污染物",
+    "甲鏈頂級生物製造污染物",
+    "甲鏈較明顯支持生物放大"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲鏈的逐級增幅遠大於乙鏈，不能說程度相同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙鏈仍測得0.1與0.2，並非完全沒有污染物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "濃度高不能證明頂級生物製造該物質。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "甲鏈濃度連續且大幅升高，較符合放大證據。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析"
+  ],
+  "representationType": "數據比較",
+  "misconceptionTargets": [
+    "有檢出就等於同等放大"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-012",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-014"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "比較趨勢時要看各階層是否一致升高及增幅大小。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "乙鏈有污染物，但其資料不呈現甲鏈般明顯的逐級增加。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

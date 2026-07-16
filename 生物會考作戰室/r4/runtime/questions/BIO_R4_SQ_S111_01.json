@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_S111_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S111"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S111",
+  "stem": "哪一組可確認已完成授粉但尚未完成受精？",
+  "options": [
+    "丙組",
+    "甲組",
+    "乙組",
+    "甲組與丙組"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "丙柱頭沒有花粉，連授粉都未確認。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "甲已有胚珠內配子融合，受精已完成。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "乙柱頭有花粉，但胚珠內沒有配子融合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "甲丙分別是已受精與未授粉，不符合題意。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "階段讀取"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "有花粉即受精"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "同時比對柱頭花粉與胚珠融合，乙組清楚停在授粉後、受精前。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "有無花粉管也提供中間證據，乙組的阻礙可能發生在花粉萌發階段。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

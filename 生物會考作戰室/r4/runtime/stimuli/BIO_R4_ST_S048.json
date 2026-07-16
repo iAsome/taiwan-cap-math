@@ -1,0 +1,67 @@
+{
+  "id": "BIO_R4_ST_S048",
+  "subject": "biology",
+  "skillId": "BIO_R4_S048",
+  "type": "time-course",
+  "content": {
+    "title": "有無酵素的時間序列",
+    "text": "甲乙兩組含相同種類與數量的受質，溫度、pH與體積一致。甲組加入酵素E，乙組不加。研究者在不同時間測量累積產物量，兩組最後都停止增加，沒有直接測量能量。",
+    "note": "累積產物量相同不代表各時間點的反應速率相同。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "表格比較有酵素與無酵素組在四個時間點的累積產物量。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "時間",
+        "甲組有酵素",
+        "乙組無酵素"
+      ],
+      "rows": [
+        [
+          "5分鐘",
+          "12",
+          "3"
+        ],
+        [
+          "10分鐘",
+          "20",
+          "8"
+        ],
+        [
+          "20分鐘",
+          "20",
+          "15"
+        ],
+        [
+          "40分鐘",
+          "20",
+          "20"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S182_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S182"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "呈現物種與溫度分布時，哪種無障礙設計最佳？",
+  "options": [
+    "只畫紅藍漸層",
+    "只寫適合二字",
+    "隱藏取樣數",
+    "用文字表列溫度、密度、樣本數與適用範圍"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "只靠色階不利辨色，也缺少精確數值。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "模糊標籤無法看出峰值與耐受界線。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "取樣數影響可靠度，不應隱藏。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "完整數值和限制可供獨立重算與解讀。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移分布圖表"
+  ],
+  "representationType": "無障礙資料",
+  "misconceptionTargets": [
+    "色階是唯一表法"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "內容核對環境值、反應值與證據量三類資訊皆存在。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "可及性核對表格文字可由螢幕閱讀器讀取，不依賴顏色。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

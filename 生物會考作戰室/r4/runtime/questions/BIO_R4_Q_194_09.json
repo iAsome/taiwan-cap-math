@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_194_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S194"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "若森林固定的碳增加，但河流輸出與呼吸釋碳也增加，可否只看固定量判定淨碳增加？",
+  "options": [
+    "不能，還需比較所有主要輸入與輸出",
+    "可以，輸出永遠不重要",
+    "可以，呼吸不涉及碳",
+    "不能，因植物不含碳"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "淨變化由多項碳收支共同決定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "輸出增加可能抵銷固定量，不能忽略。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "呼吸可釋出二氧化碳，明確涉及碳。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "植物有機物含大量碳，是重要碳庫。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析碳收支"
+  ],
+  "representationType": "多路徑資料",
+  "misconceptionTargets": [
+    "只看光合作用即可判淨碳"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「不能，還需比較所有主要輸入與輸出」以碳收支而非單一箭頭判定淨變化，方法正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "固定量增加只是輸入之一，仍需量化呼吸與輸出。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

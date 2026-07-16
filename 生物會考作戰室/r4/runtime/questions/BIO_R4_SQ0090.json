@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ0090",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST030",
+  "stem": "若各組試材起始質量仍有小差異，報告時應如何改進？",
+  "options": [
+    "刪除所有較重試材",
+    "計算百分比變化並同時呈現重複測量的變異",
+    "只呈現最後質量",
+    "把所有起始質量改寫成十克"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "起始較重不等於無效，應用相對值校正。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "百分比校正起始差異，變異資訊則呈現組內可靠程度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "終值仍混合起始大小與處理效果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "任意改寫原始資料不符合科學紀錄。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "資料改進"
+  ],
+  "representationType": "資料延伸",
+  "misconceptionTargets": [
+    "改寫原始值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "相對變化與重複變異解決不同問題，兩者都應保留。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若試材差異過大，還需在實驗前標準化與隨機分組。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

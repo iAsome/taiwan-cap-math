@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S086_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S086"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "智慧門偵測到人後開門，工程師要量「偵測到開始開門」的反應時間，最重要先做什麼？",
+  "options": [
+    "只記錄門的顏色",
+    "每次改用不同偵測距離",
+    "把最慢資料自動隱藏",
+    "明確定義計時起點與開門開始的判準"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "門色不能界定反應時間的兩個事件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "距離每次不同會使刺激條件不一致。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "隱藏慢值會造成不透明的選擇偏差。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "清楚起終點才能讓各次測量具有一致意義。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "測量設計",
+    "遷移"
+  ],
+  "representationType": "工程情境",
+  "misconceptionTargets": [
+    "未定義測量起終點"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反應時間是兩事件之差，首先須操作化定義兩事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "門色與計時無關，偵測距離應固定，慢值也應保留查核；明確定義偵測與開門事件才能比較各次時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

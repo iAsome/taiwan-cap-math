@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_137_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S137"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "園藝社想判斷繡球花色差異主要是否受土壤酸鹼值影響，哪項方案最合適？",
+  "options": [
+    "在不同花園各挑一株並直接比較",
+    "只詢問栽培者記憶中的花色",
+    "同品系扦插苗隨機分組，調整酸鹼值並維持其他條件",
+    "將不同品系固定分配到不同酸鹼土壤"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "花園間還有光照、品系與管理差異，結果無法唯一歸因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "回憶資料缺少一致測量，也沒有實際控制酸鹼值。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "共同遺傳背景配合單一處理，可直接檢驗花色是否隨酸鹼值改變。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "品系和酸鹼值綁定，會把遺傳差異混入環境效果。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "用不同品系檢驗環境導致因果混雜"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "扦插苗降低遺傳背景差異，隨機分組與固定管理則控制位置及照護因素。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "還應量測實際酸鹼值並設多株重複，避免只依標示或單株偶然結果判斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

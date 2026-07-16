@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_068_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "連續量三次休息脈搏為72、74、73，最合理的處理為何？",
+  "options": [
+    "只保留最高值",
+    "把最低值當成錯誤刪除",
+    "計算代表值並保留三次變異",
+    "宣稱脈搏永遠固定73"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "只保留最高值會偏向較大結果，無法代表三次量測全貌。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "最低值只差一至二次，沒有證據可任意視為錯誤並刪除。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "平均或中位數搭配範圍，可同時呈現典型值與小幅變異。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "三次接近不代表未來永遠固定，生理數值本來會隨狀態改變。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "重複量測的價值在於看一致性和偶然差異，不能只挑有利的一筆。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "可報告平均每分鐘七十三次，並說明三次結果介於七十二到七十四次。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

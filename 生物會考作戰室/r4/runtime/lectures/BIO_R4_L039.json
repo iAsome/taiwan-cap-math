@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L039",
+  "subject": "biology",
+  "unitId": "BIO_R4_U05",
+  "skillId": "BIO_R4_S039",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "prerequisites": [
+    "BIO_R4_S038"
+  ],
+  "objectives": [
+    "能計算並解釋不同生命構造的線性尺度比值。",
+    "能以數量級估算並辨認長度、面積、體積及數量不可任意互換。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L039_S1",
+      "title": "比值先同單位",
+      "content": "尺度比值等於較大尺度除以較小尺度，但必須先統一單位。公尺、毫米、微米與奈米依序常相差一千倍，漏換單位會使答案差數個數量級。"
+    },
+    {
+      "id": "BIO_R4_L039_S2",
+      "title": "線性比值的意義",
+      "content": "一百微米構造與十微米細胞的線性比值為十，表示指定方向長度約十倍；它不表示前者恰含十個細胞，也不直接表示體積十倍。"
+    },
+    {
+      "id": "BIO_R4_L039_S3",
+      "title": "數量級估算",
+      "content": "若資料只給約值，答案也應用『約』或範圍。十倍是一個十進位數量級，千倍是三個數量級；估算可快速檢查計算是否合理。"
+    },
+    {
+      "id": "BIO_R4_L039_S4",
+      "title": "排列與空隙限制",
+      "content": "以器官長度除以細胞直徑，只能估算沿直線最多可排多少個理想化細胞。真實組織有不同方向、形狀、細胞間物質與空隙，不能當成精確細胞總數。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L039_E1",
+      "prompt": "一毫米厚組織與十微米細胞的線性比值為何？",
+      "steps": [
+        "把一毫米換成一千微米。",
+        "以一千除以十。"
+      ],
+      "answer": "組織厚度約為細胞直徑的一百倍。",
+      "why": "比值描述同方向長度；若估算排列數，還要假設細胞等大、緊密且方向一致。"
+    },
+    {
+      "id": "BIO_R4_L039_E2",
+      "prompt": "細胞直徑增加兩倍，能直接說體積增加兩倍嗎？",
+      "steps": [
+        "區分直徑是線性尺度。",
+        "檢查是否知道三維形狀與各方向變化。"
+      ],
+      "answer": "不能；相似形狀下體積可能隨線性尺度的三次方改變。",
+      "why": "直徑的線性倍數不能直接當成體積倍數，若真實細胞形狀也改變，還須分別量測三個方向才能估算體積。"
+    },
+    {
+      "id": "BIO_R4_L039_E3",
+      "prompt": "一公尺個體與十微米細胞相差多少線性倍數？",
+      "steps": [
+        "把一公尺換成一百萬微米。",
+        "以一百萬除以十。"
+      ],
+      "answer": "線性尺度約相差十萬倍。",
+      "why": "換算顯示巨觀個體跨越五個十進位數量級，但不代表個體只含十萬個細胞。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "兩構造的數字可直接相除，不必看單位。",
+      "whyWrong": "不同單位代表不同尺度，直接相除可能差一千倍以上。",
+      "correction": "先把兩個尺度轉成同一單位，再計算並標示比值方向。"
+    },
+    {
+      "belief": "長度十倍表示體積也一定十倍。",
+      "whyWrong": "體積涉及三個方向，相似形狀下可能是線性倍數的三次方。",
+      "correction": "先說清楚資料比較的是線性長度、表面積還是三維體積。"
+    },
+    {
+      "belief": "器官長度除以細胞直徑就是器官精確細胞總數。",
+      "whyWrong": "此計算只估一維排列，忽略寬度、厚度、空隙與多種細胞。",
+      "correction": "應把結果標為理想化線性估算，不能當成視野內細胞總數的實測值。"
+    },
+    {
+      "belief": "約值計算後可以報很多位小數並視為精確。",
+      "whyWrong": "輸入資料本身有變異與取整，過多小數會製造假精確。",
+      "correction": "依資料精度使用約數、範圍或適當有效位數。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "一毫米與一微米相差多少線性倍數？",
+      "answer": "一毫米是一千微米，因此相差一千倍。",
+      "reason": "必須先把毫米換成微米，才能得到正確數量級。"
+    },
+    {
+      "prompt": "線性尺度十倍能否直接代表細胞數十倍？",
+      "answer": "不能，細胞數還受面積、體積、排列、形狀與空隙影響。",
+      "reason": "單一方向比值只提供一維估算，不能替代總數測量。"
+    },
+    {
+      "prompt": "為何約二十微米不宜換算後報十位小數？",
+      "answer": "原始尺度只是約值，計算精度不能超過資料所支持範圍。",
+      "reason": "適當的『約』與有效位數能誠實呈現測量不確定性。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  }
+}

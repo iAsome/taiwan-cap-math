@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q0465",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S039"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "甲長度是乙的一千倍，可說兩者相差幾個十進位數量級？",
+  "options": [
+    "三個",
+    "一個",
+    "兩個",
+    "一千個"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "一千等於十的三次方，因此相差三個數量級。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "相差一個十進位數量級只代表十倍，不能表示一千倍。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "相差兩個十進位數量級代表一百倍，仍少於一千倍。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "數量級不是直接等於倍數數字。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "數量級"
+  ],
+  "representationType": "概念題",
+  "misconceptionTargets": [
+    "倍數等同級數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把倍數寫成十的次方，可快速辨認數量級差。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "數量級是粗略尺度語言，不取代精確比值。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

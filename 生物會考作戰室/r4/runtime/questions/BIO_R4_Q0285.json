@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q0285",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S024"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某模型把所有植物細胞畫成相同方形。這項簡化最不適合回答哪個問題？",
+  "options": [
+    "不同植物細胞形態如何配合各自功能",
+    "植物細胞通常具有哪些主要構造",
+    "細胞壁位於細胞外圍的大致關係",
+    "教學圖中各標籤所指的名稱"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "相同方形刪除了形態差異，無法研究根毛、保衛細胞等構造功能關係。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "若模型保留主要構造，仍可用於初步辨認共同特徵。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "外圍位置可能仍被模型保留，可作為基本空間說明。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "標籤名稱可由圖例讀取，不必依賴真實形態差異。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "限制對應問題"
+  ],
+  "representationType": "模型評估",
+  "misconceptionTargets": [
+    "簡化一律無害"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "指出模型限制時要連到一個受影響的具體問題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "同一簡化可能不妨礙構造辨認，卻會破壞形態與功能的比較。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

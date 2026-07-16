@@ -1,0 +1,92 @@
+{
+  "id": "BIO_R4_ST_S087",
+  "subject": "biology",
+  "skillId": "BIO_R4_S087",
+  "type": "temperature-series",
+  "content": {
+    "title": "運動與休息期間的體溫及出汗",
+    "context": "受試者在室溫穩定的環境慢跑20分鐘，之後坐下休息30分鐘。研究者每隔一段時間測量體溫並記錄出汗程度。出汗程度以0至3級表示，0為未觀察到，3為最明顯；此分級使用文字與數字，不依顏色。",
+    "columns": [
+      "時間與階段",
+      "體溫（°C）",
+      "出汗程度"
+    ],
+    "rows": [
+      [
+        "運動前",
+        "36.7",
+        "0"
+      ],
+      [
+        "運動10分鐘",
+        "37.2",
+        "1"
+      ],
+      [
+        "運動20分鐘",
+        "37.7",
+        "3"
+      ],
+      [
+        "休息15分鐘",
+        "37.3",
+        "2"
+      ],
+      [
+        "休息30分鐘",
+        "36.9",
+        "0"
+      ]
+    ],
+    "note": "受試者衣著、飲水與室溫在觀察期間依研究規範維持一致。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "體溫由運動前36.7°C升到運動20分鐘37.7°C，出汗由0增至3；休息30分鐘後體溫降至36.9°C，出汗回到0。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "階段",
+        "體溫與出汗"
+      ],
+      "rows": [
+        [
+          "運動前",
+          "36.7°C，出汗0級"
+        ],
+        [
+          "運動20分鐘",
+          "37.7°C，出汗3級"
+        ],
+        [
+          "休息15分鐘",
+          "37.3°C，出汗2級"
+        ],
+        [
+          "休息30分鐘",
+          "36.9°C，出汗0級"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_S168_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S168"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S168",
+  "stem": "苗圃希望在不停止供水下短暫降低幼苗失水，依資料應優先選哪種環境？",
+  "options": [
+    "低濕且有風",
+    "低濕且無風",
+    "較高濕度且增加強風",
+    "較高濕度且減少風流"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "乙組型態的失水量最高，不符合降低水分散失的目標。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "無風雖有幫助，但低濕組仍高於高濕無風的丙組。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丁組有風時失水高於丙組，並非資料中最低的組合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "丙組條件的失水量最低，兩項因素都朝減少蒸散的方向。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移苗圃管理"
+  ],
+  "representationType": "決策應用",
+  "misconceptionTargets": [
+    "降低失水應選低濕強風"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-005",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-011",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-044",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-045"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "數據核對四組最低值是丙的二點三克，對應高濕且無風。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "機制核對潮濕縮小水蒸氣差、減風避免帶走葉面濕空氣，兩者相符。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

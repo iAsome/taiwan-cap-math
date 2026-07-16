@@ -1,0 +1,112 @@
+{
+  "id": "BIO_R4_Q0070",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S006"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-MB-4-2",
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "長條圖把縱軸從九十九開始且未標斷軸，可能造成什麼效果？",
+  "options": [
+    "資料自動更精確",
+    "小差異看起來被大幅放大",
+    "所有長條變成零",
+    "類別變成時間"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "改變顯示起點不會提升原始測量精度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "窄範圍會放大高度比例，未標示時容易誤導。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "長條仍有數值，不會因起點改變全部變零。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "軸起點不會改變橫軸類別的資料性質。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "圖表批判"
+  ],
+  "representationType": "截斷坐標",
+  "misconceptionTargets": [
+    "圖形不影響判讀"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-MB-4-2",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "未說明截斷縱軸會誇張視覺差距，正確敘述正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "數據本身未變，但讀者對差異幅度的感受可能被操弄。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

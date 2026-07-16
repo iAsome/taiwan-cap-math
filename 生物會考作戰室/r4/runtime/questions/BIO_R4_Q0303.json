@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0303",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S026"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲到乙每分鐘七粒，乙到甲每分鐘三粒，淨結果為何？",
+  "options": [
+    "淨三粒由乙到甲",
+    "淨十粒由甲到乙",
+    "淨四粒由甲到乙",
+    "完全沒有淨移動"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "乙到甲只有三粒，且不是較多方向。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "相反方向的移動會抵銷，不能把七與三直接相加。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "七減三為四，較多方向是甲到乙。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩方向數量不相等，因此仍有淨移動。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "淨量計算"
+  ],
+  "representationType": "數量資料",
+  "misconceptionTargets": [
+    "雙向相加"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "計算淨量時做方向相反的量相減，並保留較多方向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "雙向都有移動不等於沒有淨移動，只有兩量相等才會抵銷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

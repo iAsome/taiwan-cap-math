@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_136_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S136"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "AB型與O型親代不可能有哪種子代血型？",
+  "options": [
+    "AB型",
+    "A型",
+    "B型",
+    "A型與B型"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "子代只能IAi或IBi，沒有同時取得IA與IB的途徑。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "IA配子與i可形成A型。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "IB配子與i可形成B型。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "A與B正是兩種合法結果。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "未檢查AB子代需雙方版本來源"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-011"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「AB型」AB型需要兩個顯性版本，但O型親代只能給i。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "AB 親代提供 IA 或 IB，O 型親代只提供 i，因此只形成 A 型或 B 型。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_080_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S080"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S080",
+  "stem": "哪項最支持散熱反應屬負回饋？",
+  "options": [
+    "體溫上升時散熱反應下降",
+    "所有數值始終相同",
+    "體溫偏高後散熱增強，隨後體溫下降",
+    "散熱反應使體溫持續升到更高"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "表中升溫期間散熱值由二十升到九十，並非下降。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "體溫與反應值都隨時間改變，不是始終相同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "反應增強後體溫由三十八降至三十六點九，抵消原偏差。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "十分鐘後體溫逐步下降，沒有持續升到更高。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "負回饋證據需要反應方向和後續結果，不能只看到反應增加。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "此時間順序符合偏高引發散熱，再使體溫朝參考範圍回復。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

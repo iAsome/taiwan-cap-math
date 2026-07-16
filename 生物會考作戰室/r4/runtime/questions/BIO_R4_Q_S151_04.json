@@ -1,0 +1,90 @@
+{
+  "id": "BIO_R4_Q_S151_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S151"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某規則將動物分為會飛與住水邊兩組。主要問題為何？",
+  "options": [
+    "沒有使用顏色",
+    "組名太短",
+    "兩組數量未知",
+    "同一動物可能同時符合兩組"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "有效分類不必使用顏色，只要所選特徵可觀察並能形成清楚分流即可。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "組名長短只影響表達版面，不會決定兩組在生物特徵上是否重疊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "分類規則允許兩組數量不同，未知個體數不會造成邏輯上的歸組衝突。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "蜻蜓能飛且生活史與水邊相連，會同時符合兩項，證明兩組沒有互斥。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "檢查分類規則"
+  ],
+  "representationType": "反例判讀",
+  "misconceptionTargets": [
+    "忽略組別重疊"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-031",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-004",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-031",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-043",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-020",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-039",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-024",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-034"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "規則結構核對專看同層條件能否同時成立，會飛與住水邊顯然不是相反條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反例核對把蜻蜓代入規則會同時進入兩組，直接證明這套分流不具互斥性。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

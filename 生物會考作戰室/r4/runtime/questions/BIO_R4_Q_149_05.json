@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_149_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S149"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GB-4-1",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲乙序列差三處，甲丙差十五處，初步支持什麼？",
+  "options": [
+    "甲與乙具有較近的共同祖先",
+    "甲與丙必定是同一物種",
+    "乙沒有任何遺傳物質",
+    "三者生活環境完全相同"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "相同片段中甲乙差異較少，支持較近分支。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "差異十五處不支持同一物種，且序列不能單獨定種。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "所有生物都具有遺傳資訊，乙不例外。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "序列差異不能直接推定生活環境一致。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把序列差異數誤讀為環境或物種身分"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GB-4-1",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-012",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-052"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「甲與乙具有較近的共同祖先」限定為初步且只依這段序列，沒有把親緣推成物種完全相同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "增加丙乙比較與其他基因，可建立更完整的三者樹形。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

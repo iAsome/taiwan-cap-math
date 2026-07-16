@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S105_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S105"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某胚已由一個受精卵分裂成八個細胞。這段紀錄能直接支持什麼？",
+  "options": [
+    "發生了八次不同配子的受精",
+    "受精後細胞分裂使胚的細胞數增加",
+    "每個胚細胞都是新的親代",
+    "八個細胞都屬不同物種"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "後續分裂沒有新配子反覆融合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "一個起始細胞經分裂可形成多細胞胚。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "胚細胞是同一新個體的組成。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "細胞數增加不會使物種身分改變。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "胚發育"
+  ],
+  "representationType": "流程推論",
+  "misconceptionTargets": [
+    "每次分裂都是受精"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-009",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-044",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-017"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "紀錄起點已是受精卵，後續一到八的變化屬細胞數增加。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目不能單靠細胞數推回受精地點，卻能確認胚正在分裂發育。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

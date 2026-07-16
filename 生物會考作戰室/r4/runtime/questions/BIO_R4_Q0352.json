@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0352",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "四組馬鈴薯條濃度不同，且長度也不同。這個設計的主要問題為何？",
+  "options": [
+    "不能使用馬鈴薯",
+    "糖液不能有濃度",
+    "質量不能測量",
+    "試材尺寸同時改變，會混淆濃度效果"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "馬鈴薯可作為觀察組織水分變化的試材。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "溶液濃度正是此研究可合理操弄的自變因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "質量可用相同天平量化並計算前後變化。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "長度改變會連帶影響質量與表面積，使差異來源不清。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "設計評估"
+  ],
+  "representationType": "實驗設計",
+  "misconceptionTargets": [
+    "尺寸無影響"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "試材尺寸會影響可交換面積與起始量，因此需標準化。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若起始大小仍略有差異，可用百分比變化增加可比性。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

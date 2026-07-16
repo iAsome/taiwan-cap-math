@@ -1,0 +1,89 @@
+{
+  "id": "BIO_R4_SQ_139_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S139"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST139",
+  "stem": "若丙的下一批十隻子代都未檢出 R，應如何解讀？",
+  "options": [
+    "短期可因機率出現零隻，應合併資料並再次檢測精子",
+    "證明丙的所有精子已永久失去 R",
+    "表示遺傳機率規則在小樣本完全失效",
+    "證明前一批二十一筆一定造假"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "保留抽樣波動並複核配子狀態，是與證據相稱的處理。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一次十隻未檢出不能證明所有配子永久改變。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "機率模型本就允許小樣本波動，不是規則失效。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩批結果不同不等於前批造假，需先查核與整體評估。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把短期零觀察當成永久不可能"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-032"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "配子傳遞不是固定交替，小樣本可能偏離長期比例，因此不應由十隻直接推翻前批。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "合併批次前仍要確認交配條件與檢測方法一致，避免把真正的時間變化誤當抽樣波動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

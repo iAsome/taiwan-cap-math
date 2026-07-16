@@ -1,0 +1,112 @@
+{
+  "id": "BIO_R4_Q0055",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S005"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-MB-4-2",
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "量筒刻度每格一毫升，學生記錄水量二十點零零七毫升。問題為何？",
+  "options": [
+    "水量不能測量",
+    "量筒不能使用毫升",
+    "記錄精度超過刻度可支持範圍",
+    "所有小數都必須刪除"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "量筒正是用來測量液體體積的常見器材。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "毫升是量筒常用體積單位，使用本身沒有問題。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "三位小數沒有一毫升刻度的讀值依據，誇大精度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "是否保留估讀位需看器材，不能宣稱所有小數都錯。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "評估"
+  ],
+  "representationType": "器材刻度",
+  "misconceptionTargets": [
+    "儀器不限制位數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-MB-4-2",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "器材每格一毫升，無法支持千分之一毫升的細微差異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "正確敘述指出精度與刻度不匹配，並未過度否定所有小數記錄。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S111_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S111"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "記錄顯示先有柱頭花粉，六小時後花粉管入胚珠，最支持何種關係？",
+  "options": [
+    "授粉通常先於受精所需的配子運送",
+    "受精會讓花粉倒退回花藥",
+    "柱頭花粉是胚珠直接形成的",
+    "授粉與受精位置及時間完全相同"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "時間紀錄符合先接粉、再建立通往胚珠路徑。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "資料沒有花粉倒退回花藥的現象。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "花粉來源是花藥，不是由胚珠直接形成。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩階段的位置和時間都可由資料區分。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "時間序列"
+  ],
+  "representationType": "資料推論",
+  "misconceptionTargets": [
+    "混淆先後"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "時間序列提供因果方向線索，先有授粉相關證據，之後才有受精路徑證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "花粉管進入胚珠仍應再確認配子融合，不能只靠抵達位置宣稱所有受精完成。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

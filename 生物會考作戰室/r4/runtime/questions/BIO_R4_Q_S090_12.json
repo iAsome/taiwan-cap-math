@@ -1,0 +1,79 @@
+{
+  "id": "BIO_R4_Q_S090_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S090"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "智慧建築用有線警報立即關門，也用中央訊息調整整棟空調。這最像人體哪項情況？",
+  "options": [
+    "只有單一調節機制能存在",
+    "快速反應一定作用全身",
+    "較廣調節一定不用訊息",
+    "快速特定與較廣持續的調節可並行"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "同一系統可同時使用不同時間與範圍的控制。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "關門是特定位置，不代表必定作用全身。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "空調調整仍需中央訊息與接收裝置。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩條路徑可類比神經與內分泌共同協調。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "系統類比",
+    "遷移"
+  ],
+  "representationType": "建築控制",
+  "misconceptionTargets": [
+    "認為調節機制互斥"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "建築同時保留快速局部與全棟調整，對應兩種調節並行。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "共同運作比排除任一路徑更能解釋題幹的兩項功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

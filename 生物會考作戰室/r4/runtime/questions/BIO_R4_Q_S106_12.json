@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S106_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S106"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "文章寫著「觀察到細胞分裂就證明生物正在繁殖」。應如何修正？",
+  "options": [
+    "正確，生長不需分裂",
+    "正確，修復不會增加細胞",
+    "錯誤，生殖完全不需要分裂",
+    "細胞分裂也可用於生長與修復，須確認是否形成新個體"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "多細胞生物生長常需要細胞數增加。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "傷口修復也會啟動細胞分裂。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "許多生殖與胚發育仍涉及分裂。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "修正以個體數與分裂產物去向作判準。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "科學表述"
+  ],
+  "representationType": "批判思考",
+  "misconceptionTargets": [
+    "細胞分裂必定繁殖"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-006",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-030"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "原文把細胞層級事件直接等同個體層級結果，推論過度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "補上新個體證據後，才能判斷該次分裂是否屬生殖。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

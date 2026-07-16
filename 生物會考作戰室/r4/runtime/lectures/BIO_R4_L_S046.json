@@ -1,0 +1,128 @@
+{
+  "id": "BIO_R4_L_S046",
+  "subject": "biology",
+  "unitId": "BIO_R4_U06",
+  "skillId": "BIO_R4_S046",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S045"
+  ],
+  "objectives": [
+    "由酸鹼值與濃度資料判斷酵素反應速率。",
+    "辨識不同酵素適合的酸鹼環境與受質增加後的速率平台。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S046_SEC_01",
+      "title": "酸鹼值影響酵素構造",
+      "content": "酵素在某段酸鹼範圍內較能維持適合受質的構造，反應速率因而較高。環境過酸或過鹼都可能降低作用；不同酵素所處器官與構造不同，適合的酸鹼值不必相同。"
+    },
+    {
+      "id": "BIO_R4_L_S046_SEC_02",
+      "title": "由資料找酸鹼趨勢",
+      "content": "判讀酸鹼資料時，先比較各組速率，再描述哪個受測值最高及兩側如何變化。若酸鹼值只測整數，最高觀察點不等於已精確找到真正最適值，也不能延伸到其他酵素。"
+    },
+    {
+      "id": "BIO_R4_L_S046_SEC_03",
+      "title": "受質濃度與有效接觸",
+      "content": "酵素量固定時，低受質濃度下增加受質，酵素與受質相遇機會提高，速率常上升。當多數酵素作用部位都持續被受質占用，再增加受質對速率的提升就會變小。"
+    },
+    {
+      "id": "BIO_R4_L_S046_SEC_04",
+      "title": "平台與限制因素",
+      "content": "速率平台表示在當時條件下受質已不再是主要限制因素，酵素量可能成為限制。若增加酵素後平台上升，可支持此解釋；但若溫度、酸鹼也改變，就不能只把結果歸因於濃度。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S046_EX_01",
+      "prompt": "pH 5、7、9的速率為3、12、4，本次哪個酸鹼值觀察速率最高？",
+      "steps": [
+        "比較三個速率數值。",
+        "把最大值12對應回pH 7。"
+      ],
+      "answer": "pH 7",
+      "why": "本次三個測量點中pH 7速率最高，只能說受測條件下的觀察峰值；pH 6或8未測，仍不能確定精確最適值。"
+    },
+    {
+      "id": "BIO_R4_L_S046_EX_02",
+      "prompt": "受質濃度由1增至3單位時速率上升，可能原因為何？",
+      "steps": [
+        "確認酵素量與其他條件固定。",
+        "連結受質增加與有效接觸機會增加。"
+      ],
+      "answer": "酵素與受質有效接觸機會增加",
+      "why": "在尚未達平台的範圍，更多受質可提高與酵素作用部位相遇的機會，因此固定時間內形成較多產物。"
+    },
+    {
+      "id": "BIO_R4_L_S046_EX_03",
+      "prompt": "受質濃度再提高，速率卻維持20不變，最合理解釋為何？",
+      "steps": [
+        "辨識連續數值不再上升形成平台。",
+        "判斷受質是否仍為主要限制因素。"
+      ],
+      "answer": "固定酵素量已限制最高速率",
+      "why": "在酵素量固定時，多數作用部位已持續參與反應，再增加受質也難以提高處理速率；此時增加酵素才可能提高平台。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "所有酵素都在中性環境作用最好。",
+      "whyWrong": "不同酵素的構造與所在環境不同，適合的酸鹼範圍可能偏酸或偏鹼。",
+      "correction": "依受測酵素資料判斷，不把單一酵素結果套用全部酵素。"
+    },
+    {
+      "belief": "酸鹼值越大，酵素速率一定越高。",
+      "whyWrong": "酸鹼值代表環境酸鹼程度，不是速率大小；過鹼也可能使速率下降。",
+      "correction": "逐點比較實測速率，找出峰值與兩側趨勢，不按pH數字排序答案。"
+    },
+    {
+      "belief": "受質越多，反應速率會無限增加。",
+      "whyWrong": "酵素量固定時作用部位有限，受質過多後速率可能進入平台。",
+      "correction": "先看資料是否已達平台，再判斷受質或酵素量何者限制速率。"
+    },
+    {
+      "belief": "速率平台表示反應完全停止。",
+      "whyWrong": "平台表示速率維持近似固定，不代表產物不再形成或數值等於零。",
+      "correction": "區分速率不再增加與速率停止；平台仍可持續產生產物。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "pH數字較大是否必定代表酵素速率較快？",
+      "answer": "不是",
+      "reason": "酸鹼值與速率是不同變項，必須依各組實測反應數值判斷。"
+    },
+    {
+      "prompt": "固定酵素量下受質持續增加，速率可能出現什麼？",
+      "answer": "平台",
+      "reason": "作用部位有限，受質不再是限制時速率可能維持近似固定。"
+    },
+    {
+      "prompt": "平台期增加哪一項較可能提高最高速率？",
+      "answer": "酵素量",
+      "reason": "增加可用作用部位，可能讓更多受質同時接受催化而提高平台。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  }
+}

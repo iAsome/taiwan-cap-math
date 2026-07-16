@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ0117",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S039"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": "BIO_R4_ST039",
+  "stem": "若用葉片長除以細胞尺度估算葉片細胞總數，應如何評估？",
+  "options": [
+    "只能作一維排列估算，總數還需寬厚與密度",
+    "所得必為零",
+    "可得精確總數",
+    "能直接得到葉片體積"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "答案保留線性估算用途並指出總數所需資料。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩個正尺度相除不會必然為零。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "葉片是三維且含多種細胞，不能精確計數。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "單一方向的長度比缺少寬度與厚度資料，不能直接給出葉片體積。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "估算限制"
+  ],
+  "representationType": "資料延伸",
+  "misconceptionTargets": [
+    "線性比即總數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "理想化估算有價值，但必須明確說明簡化與缺漏。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "增加面積、厚度、細胞密度與組織比例才可改進總數估計。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_046_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S046"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "製程已達受質濃度平台，若想測試是否受酵素量限制，應怎麼做？",
+  "options": [
+    "同時改變溫度與pH",
+    "只再增加大量受質",
+    "固定其他條件並增加酵素量",
+    "不記錄任何產物"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "同時改兩條件無法檢驗單一限制。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "平台期再加受質通常資訊有限。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "平台若隨酵素量提高可支持此假設。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有產物資料就無法比較速率。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-042",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-032"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "檢驗酵素量限制需只操縱酵素量，並維持受質與環境條件一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「固定其他條件並增加酵素量」能產生可比較結果，符合單一變因與限制因素推理。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

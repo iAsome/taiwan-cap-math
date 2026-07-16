@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S083_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S083"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "工廠機器遇到障礙時，安全開關不等主電腦分析影像就先切斷馬達，之後才傳送事件紀錄。此設計最像哪項神經機制？",
+  "options": [
+    "肌肉自行形成視覺",
+    "腦神經完全停止傳導",
+    "反射先產生保護反應，訊息仍可再送往腦",
+    "受器只在反應結束後才接收刺激"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "馬達只能執行，不會自行形成視覺或知覺。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "後續仍有事件紀錄傳送，不是所有傳導停止。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "快速安全反應與後續上傳，功能上近似反射機制。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "安全開關必須先偵測障礙，接收不會晚於反應。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "類比",
+    "遷移"
+  ],
+  "representationType": "安全系統",
+  "misconceptionTargets": [
+    "誤認快速反應排除後續傳訊"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "局部快速處理加上後續中央紀錄，對應反射與知覺上傳。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「反射先產生保護反應，訊息仍可再送往腦」保留先保護、後分析的兩階段，最完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

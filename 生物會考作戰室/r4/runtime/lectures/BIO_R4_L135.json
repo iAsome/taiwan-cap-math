@@ -1,0 +1,128 @@
+{
+  "id": "BIO_R4_L135",
+  "subject": "biology",
+  "unitId": "BIO_R4_U18",
+  "skillId": "BIO_R4_S135",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S134"
+  ],
+  "objectives": [
+    "能由親子表現排除不可能的顯隱性基因組合。",
+    "能以版本來源逐代檢查家系假設。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L135_SEC1",
+      "title": "先設定模型",
+      "content": "解題前先明定研究性狀為顯性或隱性及使用的字母。若性狀為隱性，具有性狀者可直接記aa；若為顯性，具有性狀者可能AA或Aa。"
+    },
+    {
+      "id": "BIO_R4_L135_SEC2",
+      "title": "利用必要條件",
+      "content": "隱性子代aa必須從雙親各得一個a，因此未呈隱性性狀的親代若生出aa子代，兩人都必須至少為Aa。這種必要條件能快速排除AA親代。"
+    },
+    {
+      "id": "BIO_R4_L135_SEC3",
+      "title": "追蹤版本來源",
+      "content": "每個子代的兩個版本必須各能追溯到一名親代的合法配子。若假設要求aa親代提供A，或AA親代提供a，該組合即不可能。"
+    },
+    {
+      "id": "BIO_R4_L135_SEC4",
+      "title": "排除不等於證明唯一",
+      "content": "一筆反例可排除某假設，但剩下的模式未必唯一。應檢查整個家系、考慮樣本有限與模型範圍，再說哪些組合可能、哪些已被排除。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L135_EX1",
+      "prompt": "兩名未呈隱性性狀的親代生出aa子代，雙親可能基因型為何？",
+      "steps": [
+        "aa子代需雙親各給a。",
+        "雙親未呈隱性，排除aa。"
+      ],
+      "answer": "雙親都必須為Aa。",
+      "why": "每名親代既要含a又要呈顯性，因此在完全顯性模型中只能是Aa，兩人各能提供一個a。"
+    },
+    {
+      "id": "BIO_R4_L135_EX2",
+      "prompt": "AA與aa親代能否生出aa子代？",
+      "steps": [
+        "列AA配子只有A。",
+        "檢查形成aa是否需要兩個a。"
+      ],
+      "answer": "不能。",
+      "why": "AA親代無法提供a，因此所有子代只能從AA方得到A，形成Aa而非aa，缺少形成aa所需的第二個a。"
+    },
+    {
+      "id": "BIO_R4_L135_EX3",
+      "prompt": "有性狀親代與無性狀子代能否單獨證明性狀為顯性？",
+      "steps": [
+        "列出可能遺傳模式。",
+        "檢查是否還有其他基因型或模式能解釋。"
+      ],
+      "answer": "不能單獨證明，需更多家系資料。",
+      "why": "一組親子表現可能符合多種模型；排除一種組合不代表已唯一確認完整遺傳模式。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "未呈隱性性狀者一定是AA。",
+      "whyWrong": "未呈隱性者也可能是Aa攜帶者，外觀不能區分兩者。",
+      "correction": "用隱性子代或基因檢測尋找a版本證據，以區分AA與Aa。"
+    },
+    {
+      "belief": "aa子代的兩個a可都由同一親代提供。",
+      "whyWrong": "每個正常配子只提供一個版本，受精時雙親各貢獻一個。",
+      "correction": "逐一標示母方與父方配子來源，避免版本重複歸給一方。"
+    },
+    {
+      "belief": "排除一個基因型就已證明另一個模式。",
+      "whyWrong": "家系可能仍有多種未被排除組合，需檢查所有個體與假設。",
+      "correction": "列出完整候選並逐項找衝突，最後再評估是否唯一。"
+    },
+    {
+      "belief": "家系中每名顯性表現者都能直接寫AA。",
+      "whyWrong": "顯性表現者可能AA或Aa，需由親代或子代的a來源進一步辨認。",
+      "correction": "先保留A_，有必要條件時才縮小到AA或Aa，不要只靠顯性外觀定型。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "aa子代的a來自哪裡？",
+      "answer": "雙親各提供一個a。",
+      "reason": "受精卵兩版本分別來自兩個配子，不能都由同一方提供。"
+    },
+    {
+      "prompt": "顯性表現親代生出aa子代，可排除其為何？",
+      "answer": "AA。",
+      "reason": "能生出aa表示親代必須提供a，因此不能是只有A的AA。"
+    },
+    {
+      "prompt": "排除一個假設後能否總稱其餘唯一正確？",
+      "answer": "未必。",
+      "reason": "仍需檢查是否存在多個與全部家系資料相容的候選。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_135_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S135"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "程式檢查家系基因型時，哪項規則最關鍵？",
+  "options": [
+    "所有填實者都寫AA",
+    "相鄰個體必為手足",
+    "每個子代版本都能由雙親合法配子提供",
+    "空白個體全部刪除"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "填實是否AA取決於遺傳模式，不能一律指定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "手足需共同親代，不由版面相鄰決定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此規則直接驗證每個基因版本的來源。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "空白個體可能是重要攜帶者，不能刪除。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "自動檢核未追蹤子代版本來源"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-033"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「每個子代版本都能由雙親合法配子提供」可抓出AA提供a或aa提供A等不可能組合。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其他規則錯用表現、位置或刪除必要家系資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

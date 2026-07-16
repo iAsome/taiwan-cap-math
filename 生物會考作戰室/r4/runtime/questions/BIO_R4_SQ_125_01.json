@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_125_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S125"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST125",
+  "stem": "表格最直接顯示四隻甲蟲共有哪項特徵？",
+  "options": [
+    "染色體數皆為十二條",
+    "體長相同",
+    "基因版本都相同",
+    "飼養溫度都相同"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "染色體數欄每一筆都記錄十二條。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "四筆體長由十八到二十三毫米不等。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "M1與M2兩種版本都出現在資料中。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "資料含二十度與二十八度兩種溫度。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "忽略表格欄位而假定同種全相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐列比較只有染色體數完全相同，因此「染色體數皆為十二條」直接受到資料支持。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其他欄位都有至少兩種數值，不能當成四者共同特徵。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

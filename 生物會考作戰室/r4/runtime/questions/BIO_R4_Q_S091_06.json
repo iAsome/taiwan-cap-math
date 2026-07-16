@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S091_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "飯後胰島素增加，血糖回降後胰島素刺激減弱。這最能說明什麼？",
+  "options": [
+    "反應持續放大血糖升高",
+    "偏離修正後調節訊號隨之減弱",
+    "胰島素把血液完全移除",
+    "肝臟不參與任何血糖調節"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "胰島素作用方向是降低而非放大血糖。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "血糖回復使原刺激減弱，符合負回饋。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "激素調節不會把全身血液移除。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "肝臟在葡萄糖儲存與釋放中具有角色。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "理解"
+  ],
+  "representationType": "回饋終止",
+  "misconceptionTargets": [
+    "認為負回饋會無限進行"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-002",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-008",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-020"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "原偏離下降後，促使調節的刺激也減少，形成可停止的修正。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "這種回復後減弱的特徵避免降糖反應無限制持續。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

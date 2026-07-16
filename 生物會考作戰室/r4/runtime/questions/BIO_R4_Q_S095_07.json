@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S095_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S095"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某人骨骼完整，但連接骨骼的肌肉無法收縮。最可能出現哪種情況？",
+  "options": [
+    "骨骼會自行縮短完成動作",
+    "關節會分泌力量拉動骨骼",
+    "骨骼雖能支持身體，主動運動仍會明顯受限",
+    "保護功能消失且所有內臟外露"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "骨組織不能主動縮短提供動力。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "關節提供連接與活動處，不會分泌拉力。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "缺少肌肉拉力時，骨槓桿難以主動移動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "肌肉失去收縮不會使骨骼立即消失。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "系統配合"
+  ],
+  "representationType": "情境推論",
+  "misconceptionTargets": [
+    "骨骼可自行運動"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "骨骼與肌肉功能不同，骨骼完整只能保留部分支持與保護。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "主動運動需要肌肉產生拉力，因此該功能會直接受到限制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

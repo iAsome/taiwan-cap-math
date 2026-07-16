@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q0171",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "在長度單位換算中，一毫米等於多少微米？",
+  "options": [
+    "十微米",
+    "一百微米",
+    "一千微米",
+    "一萬微米"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "十微米只是一毫米的百分之一，換算不足。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一百微米等於零點一毫米，仍非一毫米。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "一毫米等於一千微米，尺度關係正確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一萬微米等於十毫米，換算大了十倍。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "單位換算"
+  ],
+  "representationType": "尺度關係",
+  "misconceptionTargets": [
+    "毫米微米相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "毫米到微米要乘一千，因此一毫米換成一千微米。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "記住千分之一毫米是一微米，可反向確認換算。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

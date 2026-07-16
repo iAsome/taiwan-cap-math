@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_Q_056_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S056"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "判斷一份餐點是否均衡，哪種資料最有用？",
+  "options": [
+    "餐盤顏色是否漂亮",
+    "食物種類、份量與食用者需求",
+    "餐具價格是否昂貴",
+    "食物名稱字數是否相同"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "顏色可提示種類但不能單獨判定養分。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "三類資料共同支持組合與適量分析。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "餐具價格不代表食物營養價值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "名稱字數也與養分內容無關。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "消化系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "均衡需同時看吃了什麼、吃多少與誰要吃。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「食物種類、份量與食用者需求」提供必要資訊，其他選項只涉及外觀、價格或文字形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

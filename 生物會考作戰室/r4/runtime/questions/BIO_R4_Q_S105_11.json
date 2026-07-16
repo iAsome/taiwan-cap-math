@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S105_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S105"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "人工授精技術把精細胞送到較接近卵細胞的位置。依受精定義，成功仍須確認什麼？",
+  "options": [
+    "精細胞只要被注入就算成功",
+    "親代是否在同一房間",
+    "精卵實際融合並形成能正常開始分裂的受精卵",
+    "培養容器是否透明"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "送達位置只是增加相遇機會，不等於融合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "親代位置不是細胞受精的完成證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "融合產物與後續分裂共同顯示成功。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "容器透明與受精機制沒有必然關係。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "技術評估"
+  ],
+  "representationType": "遷移應用",
+  "misconceptionTargets": [
+    "操作完成等於受精成功"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-009",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-044",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-017"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "技術操作與生物結果須分開判斷，完成程序不保證完成受精。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "確認受精卵形成與正常早期分裂，才有直接結果證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

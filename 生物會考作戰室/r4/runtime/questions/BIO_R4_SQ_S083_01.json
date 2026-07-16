@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S083_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S083"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S083",
+  "stem": "依三次紀錄，哪個事件在每次測試中都較早發生？",
+  "options": [
+    "兩事件同時",
+    "按鍵報告疼痛",
+    "手開始移開",
+    "資料沒有記錄時間"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩欄數值並不相同，不能判為同時。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "按鍵時間在三次中都比移手時間晚。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "每次手移開時間都小於疼痛按鍵時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "表格已用毫秒列出兩個事件的時間。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料判讀"
+  ],
+  "representationType": "時間表",
+  "misconceptionTargets": [
+    "誤讀數值大小與時間先後"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "直接比較每列數值，小者都是手開始移開。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "三次結果方向一致，「手開始移開」有完整資料支持。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

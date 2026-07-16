@@ -1,0 +1,132 @@
+{
+  "id": "BIO_R4_L_S202",
+  "subject": "biology",
+  "unitId": "BIO_R4_U28",
+  "skillId": "BIO_R4_S202",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-LB-4-3",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LC-MD-4-1",
+    "AUTH-NATURAL-LC-NA-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S201"
+  ],
+  "objectives": [
+    "由族群數量、趨勢、分布與繁殖資料判斷保育優先需求。",
+    "辨認資料不足與調查偏差，提出符合風險的補充監測。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S202_SEC_01",
+      "title": "族群大小只是起點",
+      "content": "個體數少通常提高隨機事件與近親繁殖風險，但不同物種自然密度不同。比較前要看調查範圍、方法與可繁殖成體數，不能只看總數字。"
+    },
+    {
+      "id": "BIO_R4_L_S202_SEC_02",
+      "title": "下降速度顯示急迫性",
+      "content": "目前仍多但快速下降的族群也可能需要優先介入。計算相同期間的下降比例，可比較不同起始數量的趨勢，並檢查下降是否持續。"
+    },
+    {
+      "id": "BIO_R4_L_S202_SEC_03",
+      "title": "分布集中會放大風險",
+      "content": "若全部個體集中在單一小棲地，一次火災、疾病或開發就可能同時影響多數族群。分布地點數與連通性是總數之外的重要風險指標。"
+    },
+    {
+      "id": "BIO_R4_L_S202_SEC_04",
+      "title": "優先不等於放棄其他物種",
+      "content": "資源有限時可依滅絕風險、措施可行性與生態功能排序，但仍要持續監測其他物種。資料不確定時應標示信賴範圍並改善調查。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S202_EX_01",
+      "prompt": "甲種200隻且五年降60%，乙種80隻但穩定，哪種較急迫？",
+      "steps": [
+        "比較現況數量與相同期間趨勢。",
+        "甲雖較多，但快速持續下降。"
+      ],
+      "answer": "甲種可能較需立即找出下降原因。",
+      "why": "優先判斷不能只看現存數量；快速下降會在短期內使風險迅速升高，但仍須查明下降原因與資料可靠性。"
+    },
+    {
+      "id": "BIO_R4_L_S202_EX_02",
+      "prompt": "兩物種各100隻，甲分布五地、乙全在一島，哪個有集中風險？",
+      "steps": [
+        "總數相同。",
+        "比較一次事件可影響的比例。"
+      ],
+      "answer": "乙種。",
+      "why": "乙的所有個體集中一處，單次災害可能同時影響整個族群；甲分布五地則較可能保留未受波及的個體。"
+    },
+    {
+      "id": "BIO_R4_L_S202_EX_03",
+      "prompt": "夜行種只在白天調查到10隻，能直接判極小族群嗎？",
+      "steps": [
+        "調查時段與物種活動不匹配。",
+        "低偵測率可能低估實際數量。"
+      ],
+      "answer": "不能，應改用夜間標準化調查。",
+      "why": "保育決策需先改善偵測偏差，否則可能把方法造成的低數誤認為真實族群大小。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "數量最少者永遠最優先。",
+      "whyWrong": "下降率、分布集中、繁殖失敗與威脅急迫性也會改變風險。",
+      "correction": "整合多項指標與資料品質，再說明排序依據。"
+    },
+    {
+      "belief": "目前數量多就不可能有危險。",
+      "whyWrong": "快速下降的族群可能在短期內跨入高風險狀態。",
+      "correction": "比較相同期間的趨勢，不能只看單一年度總數。"
+    },
+    {
+      "belief": "調查數就是實際全部個體數。",
+      "whyWrong": "漏看、活動時段與棲地可達性都會影響偵測率。",
+      "correction": "標明調查方法與不確定性，必要時校正偵測機率。"
+    },
+    {
+      "belief": "列為低優先就可停止監測。",
+      "whyWrong": "威脅可能改變，停止監測會錯過新的快速下降。",
+      "correction": "依風險調整監測頻率，而非完全移除其他族群。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "族群總數相同時，為何單一地點分布風險較高？",
+      "answer": "一次事件可影響較大比例。",
+      "reason": "沒有其他地點分散風險，災害可能同時波及全部個體。"
+    },
+    {
+      "prompt": "比較不同起始數量的下降，哪個值常比減少隻數更合適？",
+      "answer": "相同期間的下降比例。",
+      "reason": "比例把減少量放回各自起始規模，較便於比較趨勢急迫性。"
+    },
+    {
+      "prompt": "低調查數在決策前應先確認什麼？",
+      "answer": "調查努力與偵測率。",
+      "reason": "方法不合物種習性時，觀察數可能嚴重低估真實族群。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-LB-4-3",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LC-MD-4-1",
+      "AUTH-NATURAL-LC-NA-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  }
+}

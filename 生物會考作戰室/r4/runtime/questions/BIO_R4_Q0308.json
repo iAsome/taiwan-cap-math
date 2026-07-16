@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0308",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S026"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲側體積很大但溶質濃度低，乙側體積小但濃度高。溶質淨方向應如何判斷？",
+  "options": [
+    "一定由體積大的甲到乙",
+    "一定由總溶質量多的一側決定",
+    "只看哪個容器較高",
+    "若膜可通過，通常由高濃度乙側淨移向甲側"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "體積大不代表單位體積粒子多，不能由甲的體積定方向。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "擴散方向看局部濃度差，不只看全容器的總量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "容器高度不能直接替代溶質濃度測量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "乙的濃度較高，因此可通過時整體淨移向濃度較低的甲。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "排除總量干擾"
+  ],
+  "representationType": "複合情境",
+  "misconceptionTargets": [
+    "體積等同濃度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "濃度是單位體積中的粒子多寡，與容器體積或總量不同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題目同時給體積與濃度時，以目標物質的濃度差判斷淨方向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

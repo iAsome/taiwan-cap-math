@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_072_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S072"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "太空艙計畫消除所有微生物，評估時最不能忽略什麼？",
+  "options": [
+    "微生物名稱排列",
+    "艙體油漆顏色",
+    "乘員座位編號",
+    "有益菌與分解功能也可能同時被移除"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "名稱排列不會決定微生物在封閉系統中的生態作用。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "油漆顏色若不影響生長，不能代表全面清除的功能後果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "座位編號與菌群代謝或物質循環沒有直接因果關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "全面消除不只移除病原，也可能破壞共生與廢物分解等功能。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "風險管理需比較病原危害與正常微生物功能，不能只追求總量為零。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "封閉系統尤其依賴物質循環，應測試替代功能而非假設微生物全無價值。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

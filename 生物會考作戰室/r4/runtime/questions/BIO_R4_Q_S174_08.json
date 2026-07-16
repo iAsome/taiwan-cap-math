@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S174_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S174"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某光強下葉片二氧化碳濃度不變，最合理推論是？",
+  "options": [
+    "兩作用都停止",
+    "葉片沒有活細胞",
+    "只有呼吸作用",
+    "光合吸收量可能恰好抵消呼吸釋出量"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "外界淨值為零不代表內部通量都為零。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "活葉仍可代謝，濃度不變沒有死亡證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "若只有呼吸，二氧化碳應呈現淨增加。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩個反方向量相等時，外界讀值可保持不變。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析補償狀態"
+  ],
+  "representationType": "淨值推理",
+  "misconceptionTargets": [
+    "淨零等於無代謝"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-023",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-018"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "數學核對淨交換等於光合吸收減呼吸釋出，相等時結果為零。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "代謝核對有光且是活葉，兩作用同時存在比全停更合理。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S163_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "哪項最能加強某菌造成疾病的推論？",
+  "options": [
+    "暴露後發病且移除該菌後風險下降",
+    "菌名很長",
+    "病例照片背景相同",
+    "研究者都相信"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "疾病在暴露後出現，移除菌後又下降，形成方向一致的介入證據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "名稱字數不反映病原進入、繁殖或造成組織損傷的機制。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "照片背景可能只代表拍攝地點，不能證明該菌造成疾病。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "研究者信念不能取代對照、時間與可重複的結果資料。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "評估病因證據"
+  ],
+  "representationType": "證據選擇",
+  "misconceptionTargets": [
+    "權威相信即證明"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "時間核對由菌暴露先於疾病，符合原因先於結果的必要條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "介入核對由移除後風險下降，提供不同於觀察共現的可預測變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

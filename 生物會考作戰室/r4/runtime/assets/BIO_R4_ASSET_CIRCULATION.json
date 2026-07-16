@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_ASSET_CIRCULATION",
+  "skillIds": [
+    "BIO_R4_S065",
+    "BIO_R4_S066",
+    "BIO_R4_S067",
+    "BIO_R4_S075"
+  ],
+  "type": "science-diagram",
+  "path": "生物會考作戰室/r4/assets/circulation.svg",
+  "calibrationRefs": [
+    "CAP-115-MAIN-INTEGRATED-NATURAL-039"
+  ],
+  "caption": "肺循環與體循環的血流方向",
+  "altText": "心臟、肺與全身組織之間的雙循環箭頭圖，實線與虛線分別代表含氧較多與較少的血液。",
+  "longDescription": "中央心臟分成右心與左心。右心把含氧較少的血液送往肺，肺部氣體交換後回到左心；左心再把含氧較多的血液送往全身組織，組織交換後回到右心。線型與箭頭同時表達血液狀態及方向，不只依賴顏色。",
+  "dataFallback": {
+    "summary": "中央心臟分成右心與左心。右心把含氧較少的血液送往肺，肺部氣體交換後回到左心；左心再把含氧較多的血液送往全身組織，組織交換後回到右心。線型與箭頭同時表達血液狀態及方向，不只依賴顏色。",
+    "columns": [
+      "循環段",
+      "起點",
+      "終點",
+      "主要變化"
+    ],
+    "rows": [
+      [
+        "肺循環去程",
+        "右心",
+        "肺",
+        "運送含氧較少的血液"
+      ],
+      [
+        "肺循環回程",
+        "肺",
+        "左心",
+        "氣體交換後含氧較多"
+      ],
+      [
+        "體循環去程",
+        "左心",
+        "全身組織",
+        "供應氧與養分"
+      ],
+      [
+        "體循環回程",
+        "全身組織",
+        "右心",
+        "帶回二氧化碳等物質"
+      ]
+    ]
+  },
+  "technical": {
+    "drawingMode": "schematic",
+    "labels": [
+      "右心",
+      "左心",
+      "肺",
+      "全身組織",
+      "血流方向",
+      "含氧較多",
+      "含氧較少"
+    ],
+    "units": [],
+    "controlledVariables": []
+  },
+  "subject": "biology",
+  "creator": "CAP R4 biology authoring team",
+  "source": "Original data-driven SVG calibrated against official CAP representation conventions",
+  "license": "Repository-owned original educational asset",
+  "originality": "original",
+  "transformationRecord": "Created from curriculum concepts and independently authored data; no external artwork copied",
+  "accessibility": {
+    "colorIndependent": true,
+    "printSafe": true
+  },
+  "sha256": "68fffa715518ae1cfdde97467edd702ef2dda81166f6d9f6201c2c8dbfdd3bc4"
+}

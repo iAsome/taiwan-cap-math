@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q_190_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S190"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲生態系某兩相鄰階層傳遞率為14%，最合理的處理方式是？",
+  "options": [
+    "強制改寫為10%",
+    "保留14%，因實際比例可隨條件改變",
+    "改成100%，因能量守恆",
+    "判定資料一定造假"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "十分之一是示意，不應凌駕實測資料。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "實際效率並非固定，14%是可能的結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "能量守恆不代表可用化學能全數傳遞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "單憑不同於示意值不能判定資料造假。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀非固定效率"
+  ],
+  "representationType": "研究數據",
+  "misconceptionTargets": [
+    "每層固定傳十分之一"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-038",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-041",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-003",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-028",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-023",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-020"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "傳遞率會受生物與環境影響，因此應依資料保留14%。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "能量雖守恆，仍會轉成不易被下一階層利用的熱。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

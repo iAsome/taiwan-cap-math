@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_S182_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S182"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S182",
+  "stem": "為何不能由資料斷定水溫是唯一原因？",
+  "options": [
+    "水溫升高時溶氧也下降，兩因子共變",
+    "昆蟲不受溫度影響",
+    "密度沒有變化",
+    "溪流沒有水"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩欄同步改變，幼體可同時受溫度與氧限制。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "溫度可能有作用，不能反向宣稱完全無影響。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "密度明顯先升後降，並非固定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "溶氧與水溫資料證明溪中有水體環境。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "辨識梯度混淆"
+  ],
+  "representationType": "因果推理",
+  "misconceptionTargets": [
+    "一條相關線等於唯一因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "共變核對水溫由十二升二十八時，溶氧由十點二降五點八。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "因果核對需分別控制溫度與溶氧，才能拆開各自效果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

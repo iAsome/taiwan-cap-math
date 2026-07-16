@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_191_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S191"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S191",
+  "stem": "哪一條食物網路徑最符合這組農田資料？",
+  "options": [
+    "田鼠→稻→猛禽",
+    "猛禽→田鼠→稻",
+    "稻→田鼠→猛禽",
+    "稻→猛禽→田鼠"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "稻不會攝食田鼠，猛禽也未直接吃稻。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此項把食物與攝食者的方向全部反轉。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "田鼠吃稻且猛禽吃田鼠，箭頭方向完整。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "資料沒有猛禽吃稻或田鼠吃猛禽。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "由監測資料對應食物鏈"
+  ],
+  "representationType": "前後資料",
+  "misconceptionTargets": [
+    "依數量大小排列箭頭"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "受啃與猛禽棲架情境可對應稻、田鼠、猛禽的兩段鏈。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「稻→田鼠→猛禽」也能用來提出田鼠下降後稻受啃減少的間接解釋。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

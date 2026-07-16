@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_130_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S130"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST130",
+  "stem": "三次結果略有不同，最合理的解釋為何？",
+  "options": [
+    "有限樣本的隨機組合會造成比例波動",
+    "親代每次都變成不同物種",
+    "控制條件必定全失敗",
+    "白花資料應全部刪除"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "此項符合機率試驗的正常樣本波動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "相同親代組合不會因此變成不同物種。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "差異不大且程序相同，不能斷定控制全失敗。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "刪除白花會破壞資料完整性。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把比例波動誤認為實驗必然失敗"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "三次都接近預測且方向不固定，「有限樣本的隨機組合會造成比例波動」是最合理的樣本解釋。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "這不排除檢查程序，但現有資料不支持極端錯誤結論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

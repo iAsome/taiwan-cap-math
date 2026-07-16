@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S153_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S153"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "分類階層由較廣往較窄移動時，通常會如何？",
+  "options": [
+    "物種數增加且共同點減少",
+    "物種數減少且共同點增加",
+    "物種數與共同點都固定",
+    "共同點完全消失"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "往較窄類群會排除部分物種，不會增加成員；保留者的共同點反而較多。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "範圍縮小使包含物種減少，留下的成員通常共享更多具體分類特徵。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "從科縮到屬會移除不屬該屬的物種，物種數與共同特徵都不會固定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "較窄類群正因共享更多特徵才被歸在一起，共同點不可能完全消失。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "掌握分類趨勢"
+  ],
+  "representationType": "雙變量判斷",
+  "misconceptionTargets": [
+    "誤判階層趨勢"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "成員數核對沿上位到下位追蹤，集合只會縮小或維持，不會任意增加。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "特徵核對顯示更窄分類需滿足更多共同條件，正好伴隨物種數減少且共同點增加。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

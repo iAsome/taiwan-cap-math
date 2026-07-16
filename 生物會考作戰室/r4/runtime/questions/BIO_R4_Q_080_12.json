@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_080_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S080"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "極端熱浪中持續出汗但體溫仍升高，最合理解釋為何？",
+  "options": [
+    "出汗一定沒有發生",
+    "負回饋會製造熱浪",
+    "恆定代表不需離開環境",
+    "刺激超過散熱能力，調節不足以抵消偏差"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題幹明示持續出汗，不能否認調節反應存在。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "熱浪來自環境，負回饋是身體回應而不是製造熱浪。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "恆定能力有限，危險環境仍需外在降溫與離開暴露。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "散熱雖啟動但小於熱負荷，核心溫度仍可能持續上升。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "有調節反應不等於調節一定成功，還要比較反應能力與刺激強度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "這種持續升溫可能有熱傷害風險，不能以仍在出汗作為安全保證。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

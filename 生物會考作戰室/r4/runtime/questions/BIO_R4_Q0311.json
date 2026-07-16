@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0311",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S026"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "密閉水槽一端加入可溶色素，最後顏色均勻。若再在同一端加入色素，短時間內如何變化？",
+  "options": [
+    "原有色素全部停止，新色素也不移動",
+    "新色素只會留在加入處",
+    "加入處濃度再次較高，色素會向其他區域淨擴散",
+    "其他區域的水會立刻全部變成色素"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "原有與新色素粒子都持續運動，不會因曾達平衡而停止。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "濃度差形成後，新色素不會永久只留在加入處。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "新加入造成新的濃度梯度，因此再次出現向低濃度區的淨擴散。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "水不會變成色素，均勻分布也需要時間。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "動態重建"
+  ],
+  "representationType": "新條件情境",
+  "misconceptionTargets": [
+    "平衡不可打破"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "動態平衡可因新增物質而被改變，系統會依新的濃度差重新擴散。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先判斷操作如何改變濃度，再判斷新的淨方向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

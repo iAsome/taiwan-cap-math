@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_128_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S128"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "研究表格要避免混淆，哪個欄位安排最合適？",
+  "options": [
+    "把基因型與株高寫在同一欄",
+    "只記環境不記結果",
+    "分列基因型、環境條件與表現型",
+    "用好壞取代所有測量"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "混在一欄會失去不同資料層次。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有結果就無法分析環境效果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "分欄可清楚比較遺傳、環境與表現。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "好壞是評價詞，不能取代客觀測量。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "未分開記錄基因環境與表現"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「分列基因型、環境條件與表現型」保留每類變項的獨立性，最利於控制與推論。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其他安排合併、遺漏或模糊資料，會降低可檢驗性。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_SQ_054_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S054"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S054",
+  "stem": "若淋巴管阻塞但微血管正常，預測哪項最合理？",
+  "options": [
+    "葡萄糖與脂質都完全不消化",
+    "脂質標記進入血液的速度較可能下降",
+    "葡萄糖一定改走氣管",
+    "小腸立刻變成大腸"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "阻塞運輸管路不等於消化酵素失效。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "脂質初始淋巴路徑受阻會延緩後續入血。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "葡萄糖不會因阻塞進入呼吸道。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "器官不會因管路阻塞改變種類。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "消化系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "資料顯示脂質先進淋巴，故淋巴阻塞最直接影響其後續匯入血液。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「脂質標記進入血液的速度較可能下降」是由路徑作出的有限預測，沒有誇大為全部消化停止。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

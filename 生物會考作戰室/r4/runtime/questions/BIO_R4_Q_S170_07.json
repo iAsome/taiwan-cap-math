@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S170_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S170"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "只在晴天下午測一次樹蔭與裸地溫度，最適當的結論是？",
+  "options": [
+    "全年每小時都相差同樣溫度",
+    "夜間樹蔭必定更熱",
+    "該次下午樹蔭地表較涼，仍需多時段重複",
+    "植物是唯一能影響溫度的因素"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單次測量不能外推到全年，也不能保證固定差值。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "資料沒有夜間測量，不能對夜間方向作必然宣稱。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "保留觀察到的範圍並提出重複測量，符合證據強度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "雲量、風與含水量也會影響溫度，不能排除所有其他因素。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "限制溫度結論"
+  ],
+  "representationType": "科學論證",
+  "misconceptionTargets": [
+    "一次測量可代表全年"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "範圍核對證據只涵蓋某個晴天下午，結論應限定在同一時段。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "可靠度核對跨日與跨時段重複可檢查效果是否穩定，而非過度外推。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

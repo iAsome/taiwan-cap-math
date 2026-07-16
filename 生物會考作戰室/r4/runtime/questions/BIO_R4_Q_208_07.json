@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q_208_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S208"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "哪種取樣最適合檢驗湖泊是否發生生物放大？",
+  "options": [
+    "只測一天湖水溫度",
+    "只數岸邊植物",
+    "同時測藻類、食藻魚、食魚鳥同種污染物濃度",
+    "只問遊客感受"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "水溫不能顯示污染物跨階層濃度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "植物數量不等於污染物在食物關係中的傳遞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "三者有攝食關係且測同物質，可比較階層濃度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "感受不是組織濃度或攝食關係證據。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "設計"
+  ],
+  "representationType": "取樣設計",
+  "misconceptionTargets": [
+    "取樣未涵蓋階層"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-012",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-014"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "取樣物種必須形成有證據支持的連續攝食關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "各樣本須測同一污染物並使用可比較單位。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S185_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S185"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "外來草增加、原生草下降，但同時開始乾旱，為何不能只歸因外來草？",
+  "options": [
+    "外來草一定無影響",
+    "乾旱不會影響植物",
+    "原生草沒有生命",
+    "競爭與水分壓力同時改變，效果尚未隔離"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "外來草可能競爭，不能反向完全排除。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "水分是植物重要限制因子，乾旱可能造成下降。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "原生草是活植物，說法不成立。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩條合理機制共變，需要控制或排除實驗。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "辨識衝擊混淆"
+  ],
+  "representationType": "因果批判",
+  "misconceptionTargets": [
+    "共變時可指定單因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "時間核對外來草增加與乾旱在同一期間發生。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "實驗核對補水並排除外來草的交叉設計可拆分兩項效果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

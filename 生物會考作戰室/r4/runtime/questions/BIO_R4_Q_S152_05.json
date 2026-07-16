@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S152_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S152"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "到達名稱後，最適當的下一步是？",
+  "options": [
+    "核對標本是否符合沿途特徵",
+    "把其他選項刪除",
+    "將名稱改成俗名",
+    "停止記錄觀察"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "逐步回查可確認標本真的符合每個所選敘述，並找出可能的誤讀步驟。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "刪除其他分支會破壞檢索表，讓下一個具有不同特徵的標本無法使用。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "把終點名稱改成俗名只換了標籤，沒有驗證前面觀察是否正確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "停止記錄會失去所走路徑，其他人無法判斷名稱由哪些特徵得到。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "驗證辨識結果"
+  ],
+  "representationType": "程序選擇",
+  "misconceptionTargets": [
+    "抵達終點便視為必對"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "路徑核對從終點逆查每個選項，能直接測試這個名稱是否有完整證據支持。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "重現性核對要求保留觀察與分支，逆查沿途特徵可驗證名稱而不破壞檢索表。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

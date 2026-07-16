@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_194_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S194"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "哪一條路徑最能表示碳由空氣進入肉食鳥？",
+  "options": [
+    "空氣→肉食鳥→植物",
+    "肉食鳥→空氣→昆蟲",
+    "空氣→昆蟲→植物→鳥",
+    "空氣→植物→昆蟲→肉食鳥"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "肉食鳥不能先於植物直接固定題述二氧化碳。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此項由消費者開始，且次序不符合攝食。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "昆蟲通常不先固定空氣碳再傳給植物。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "植物固定碳，之後沿攝食逐級傳入鳥。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "追蹤多階碳路徑"
+  ],
+  "representationType": "四節點路徑",
+  "misconceptionTargets": [
+    "肉食者直接吸收空氣碳"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「空氣→植物→昆蟲→肉食鳥」包含固定與兩段攝食，是完整且方向正確的碳路徑。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "動物碳主要沿食物進入，不能跳過生產者直接由空氣取得。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

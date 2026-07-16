@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S098_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S098"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某人持續握住重物不動，屈肌張力高、伸肌也有中等張力。哪項推論較合理？",
+  "options": [
+    "沒有位移表示兩條肌肉都沒作用",
+    "屈肌抵抗重物，伸肌張力協助穩定關節",
+    "伸肌一定正在使肘部快速伸直",
+    "重物由骨骼主動吸附"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "等長維持姿勢時仍可有肌肉張力。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "兩側張力可抵抗外力並提高位置控制。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "角度未變表示伸展拉力未造成快速位移。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "骨骼不具主動吸附重物的功能。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "姿勢維持"
+  ],
+  "representationType": "資料推論",
+  "misconceptionTargets": [
+    "無位移等於無肌肉活動"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "張力資料與固定姿勢並不矛盾，反而顯示肌肉持續抵抗外力。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "共同收縮可增加穩定，但兩側張力不必完全相等。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

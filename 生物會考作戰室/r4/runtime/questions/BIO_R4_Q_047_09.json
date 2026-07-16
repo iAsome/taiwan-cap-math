@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_047_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S047"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "研究酵素濃度時，哪一組條件配置最公平？",
+  "options": [
+    "只改酵素濃度，固定受質、pH、溫度與時間",
+    "每組同時改受質與溫度",
+    "濃度越高反應時間越長",
+    "各組使用不同測量方法"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "此配置只有研究因素不同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "同時改兩條件會產生混淆。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "時間不同也會影響產物量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "方法不同使數值缺乏可比性。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-032",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-037"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "研究酵素濃度需控制所有其他可能影響速率的條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「只改酵素濃度，固定受質、pH、溫度與時間」符合單一變因且測量一致，能把差異合理歸因於濃度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

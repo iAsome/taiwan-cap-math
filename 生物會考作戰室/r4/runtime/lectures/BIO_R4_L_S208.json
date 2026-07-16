@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L_S208",
+  "subject": "biology",
+  "unitId": "BIO_R4_U29",
+  "skillId": "BIO_R4_S208",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S207"
+  ],
+  "objectives": [
+    "區分生物累積與生物放大",
+    "由營養階層濃度資料判斷放大現象"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S208_SEC_01",
+      "title": "難分解污染物",
+      "content": "難被生物代謝或排出的污染物，可在攝入速度高於排出速度時留在體內。是否累積需用時間序列或體內外濃度證據判斷。"
+    },
+    {
+      "id": "BIO_R4_L_S208_SEC_02",
+      "title": "生物累積",
+      "content": "生物累積描述同一個體由水、土壤或食物持續吸收污染物，使體內濃度隨時間增加，重點在個體內的收支，並比較攝入與排除速率。"
+    },
+    {
+      "id": "BIO_R4_L_S208_SEC_03",
+      "title": "生物放大",
+      "content": "生物放大描述難分解污染物沿食物關係傳遞後，較高營養階層平均濃度更高，需比較不同階層的可靠樣本，並確認食物關係與採樣條件可比。"
+    },
+    {
+      "id": "BIO_R4_L_S208_SEC_04",
+      "title": "讀濃度資料",
+      "content": "判讀時要確認單位一致、物種食性與取樣地點相符。頂級消費者濃度較高不代表牠製造污染物，而是長期攝食累積。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S208_EX_01",
+      "prompt": "同一尾魚三個月內體內汞濃度持續增加，稱為何種現象？",
+      "steps": [
+        "確認比較的是同一個體",
+        "確認濃度隨暴露時間增加"
+      ],
+      "answer": "生物累積。",
+      "why": "資料追蹤單一生物體內濃度隨時間增加，尚未比較不同營養階層，因此屬於個體累積。"
+    },
+    {
+      "id": "BIO_R4_L_S208_EX_02",
+      "prompt": "藻類、小魚、大魚的濃度依序為0.02、0.4、3.1 mg/kg，可判斷什麼？",
+      "steps": [
+        "確認單位一致",
+        "依攝食關係比較各階層平均濃度"
+      ],
+      "answer": "資料支持污染物發生生物放大。",
+      "why": "濃度隨營養階層升高而增加，且物種間有攝食連結，符合沿食物關係放大的判準。"
+    },
+    {
+      "id": "BIO_R4_L_S208_EX_03",
+      "prompt": "頂級魚濃度最高，是否表示牠製造污染物？",
+      "steps": [
+        "區分污染物來源與體內濃度",
+        "檢查長期攝食與排出能力"
+      ],
+      "answer": "不能如此推論。",
+      "why": "高濃度可由攝食許多已受污染獵物且不易排出造成，沒有證據顯示頂級魚自行製造污染物。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "任何污染物都一定會發生生物放大。",
+      "whyWrong": "容易分解或快速排出的物質未必在食物關係中逐級增濃。",
+      "correction": "應確認物質持久性及各營養階層實測濃度。"
+    },
+    {
+      "belief": "一隻魚體內濃度隨時間上升就是生物放大。",
+      "whyWrong": "單一個體隨時間增濃描述的是生物累積，沒有階層比較。",
+      "correction": "生物放大必須比較食物關係中不同營養階層。"
+    },
+    {
+      "belief": "頂級消費者濃度高是因為牠會製造污染物。",
+      "whyWrong": "污染物多來自外部環境，較高濃度可由長期攝食受污染獵物形成。",
+      "correction": "應沿來源與攝食路徑追蹤污染物，而非假設生物製造。"
+    },
+    {
+      "belief": "只要四種生物濃度不同，就能證明生物放大。",
+      "whyWrong": "仍需確認食物關係、單位、地點與樣本是否可比較。",
+      "correction": "濃度須沿已知營養階層呈一致上升，才支持放大。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "同一隻貝類體內濃度隨月份增加，屬於何種現象？",
+      "answer": "生物累積。",
+      "reason": "比較的是同一個體隨時間的體內濃度變化，並未跨營養階層。"
+    },
+    {
+      "prompt": "證明生物放大最重要的資料是什麼？",
+      "answer": "相連營養階層的可比濃度。",
+      "reason": "放大是沿攝食關係逐級增濃，必須同時有食性與一致單位資料。"
+    },
+    {
+      "prompt": "為何高階消費者容易有較高濃度？",
+      "answer": "長期攝食許多受污染獵物且污染物不易排出。",
+      "reason": "每次攝食帶入污染物，持續保留可使體內總量與濃度升高。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  }
+}

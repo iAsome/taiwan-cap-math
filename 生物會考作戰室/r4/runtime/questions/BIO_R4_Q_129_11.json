@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_129_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S129"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "互動教材把模型預測寫成『每四名子代必有一名某表現』，應如何修正？",
+  "options": [
+    "改成每個家庭都固定輪替",
+    "刪除所有機率",
+    "改成大量事件比例可能接近預測，少量結果可波動",
+    "改成模型能指定每次結果"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "機率模型不保證每個小家庭固定順序。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "機率仍是模型重要資訊，不需全部刪除。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此項正確區分長期比例與小樣本結果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "模型預測機會，不能指定單次受精結果。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把模型機率當成每四次固定配額"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「改成大量事件比例可能接近預測，少量結果可波動」修正把比例當配額的錯誤，也保留模型真正能提供的預測。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其他修改仍把隨機事件寫成固定或可控制的結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S170_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S170"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要公平比較草地與裸地的逕流量，哪組條件最應保持一致？",
+  "options": [
+    "植物覆蓋率",
+    "是否有根系",
+    "地表是否有葉片",
+    "坡度、土壤、面積與降雨強度"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "植物覆蓋率正是待比較因素，不應強迫兩組相同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "根系存在與否是植被處理的一部分，不是額外控制條件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "地表葉片也屬植被差異，不能為了控制而移除研究效果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "這些條件都會獨立影響入滲與流水，應在兩組間匹配。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "選擇控制變因"
+  ],
+  "representationType": "實驗設計",
+  "misconceptionTargets": [
+    "不需控制坡度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "變因核對植被是自變因，其餘能影響逕流的因素需控制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "公平核對相同雨量落在同面積與坡度，流出水量才具有可比性。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

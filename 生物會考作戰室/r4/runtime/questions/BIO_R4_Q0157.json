@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q0157",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S014"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "十倍目鏡搭配四倍物鏡時，總放大倍率是多少？",
+  "options": [
+    "四十倍",
+    "十四倍",
+    "六倍",
+    "四百倍"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "十乘四等於四十，符合複式顯微鏡總倍率公式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "十四是十加四的結果，錯把倍率使用加法。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "六是倍率相減結果，沒有光學依據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "四百需搭配四十倍物鏡，不符合題目數值。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "計算"
+  ],
+  "representationType": "倍率數值",
+  "misconceptionTargets": [
+    "倍率相加"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "總倍率由目鏡與物鏡倍率相乘，計算得到四十倍。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐段成像是乘法關係，因此加法與其他數值都不能成立。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

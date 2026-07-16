@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q0461",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S039"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "一公尺個體與十微米細胞的線性尺度約相差多少倍？",
+  "options": [
+    "十萬倍",
+    "一千倍",
+    "一百倍",
+    "一億倍"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "一公尺是一百萬微米，除以十得十萬。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一千倍只相當於一公分對十微米。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一百倍比正確的十萬倍低估三個十倍。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一億倍比正確的十萬倍高估三個十倍。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "跨單位比值"
+  ],
+  "representationType": "數值題",
+  "misconceptionTargets": [
+    "公尺微米混淆"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "公尺到微米跨越一百萬倍，再除以細胞數值。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "線性十萬倍不代表個體只有十萬個細胞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

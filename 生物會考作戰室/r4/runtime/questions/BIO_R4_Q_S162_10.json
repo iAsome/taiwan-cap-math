@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S162_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩個堆肥箱原料相同，甲定期翻堆、乙完全密封；甲分解較快。最謹慎結論是？",
+  "options": [
+    "翻堆創造新元素",
+    "本次條件下通氣較佳伴隨較快分解",
+    "乙沒有任何微生物",
+    "所有堆肥都必須每天翻動"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "翻堆改變氧氣與混合，不能從無到有創造碳氮等新元素。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "兩箱主要差在通氣處理，結果支持本次較佳通氣與較快分解相連。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "乙分解較慢不等於完全無微生物，缺氧微生物仍可能存在與代謝。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "實驗只有特定原料與翻堆頻率，不能推出所有堆肥每天必須相同操作。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "由對照判讀通氣"
+  ],
+  "representationType": "堆肥實驗",
+  "misconceptionTargets": [
+    "單次結果建立普遍規則"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "處理核對固定原料後比較翻堆與密封，使通氣成為最相關差異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "語氣核對保留『本次條件』，不把單次箱體結果擴張為所有堆肥規則。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

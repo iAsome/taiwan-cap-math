@@ -1,0 +1,133 @@
+{
+  "id": "BIO_R4_L_S181",
+  "subject": "biology",
+  "unitId": "BIO_R4_U25",
+  "skillId": "BIO_R4_S181",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S180"
+  ],
+  "objectives": [
+    "由隨機樣區資料計算平均密度並估計棲地族群數",
+    "評估樣區數、配置與群聚分布對估計可靠度的影響"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S181_SEC_01",
+      "title": "樣區取樣",
+      "content": "樣區法適合估計不易快速移動的生物，例如草本植物或附著生物。研究者在已知總面積內隨機或系統配置相同面積樣區，計數目標物種個體。"
+    },
+    {
+      "id": "BIO_R4_L_S181_SEC_02",
+      "title": "平均與外推",
+      "content": "先將各樣區個體數加總，除以樣區數得到每樣區平均；再以總棲地面積除以單一樣區面積，得到面積倍率，兩者相乘可估計總數。"
+    },
+    {
+      "id": "BIO_R4_L_S181_SEC_03",
+      "title": "代表性",
+      "content": "樣區應涵蓋棲地不同位置，不能只挑個體密集處。增加獨立樣區通常可降低偶然差異；若棲地分區明顯，可分層取樣後依各區面積加權。"
+    },
+    {
+      "id": "BIO_R4_L_S181_SEC_04",
+      "title": "限制與報告",
+      "content": "群聚分布、邊界效應、季節與個體辨識都會影響估計。結果應寫成約數並附取樣日期、總面積、樣區大小、配置方式與樣區間變異，不宜冒充精確普查。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S181_EX_01",
+      "prompt": "五個一平方公尺樣區共有四十株，總地十平方公尺，如何估計？",
+      "steps": [
+        "四十除以五得每樣區八株",
+        "總地除以樣區面積得十倍",
+        "八乘十得到估計總數"
+      ],
+      "answer": "估計約有八十株。",
+      "why": "隨機樣區平均密度為每平方公尺八株，若取樣能代表十平方公尺棲地，乘以總面積可得到約八十株。"
+    },
+    {
+      "id": "BIO_R4_L_S181_EX_02",
+      "prompt": "只在花叢最密處放樣區，估計會有何風險？",
+      "steps": [
+        "辨認取樣位置並非隨機",
+        "密集處平均高於整體",
+        "推論外推結果可能高估"
+      ],
+      "answer": "選點偏向密集處，總數容易被高估。",
+      "why": "樣區平均值被人為挑選的高密度位置拉高，再把此值乘到整片棲地，會把密集斑塊誤當成普遍狀態。"
+    },
+    {
+      "id": "BIO_R4_L_S181_EX_03",
+      "prompt": "甲區與乙區密度差很多，如何改善估算？",
+      "steps": [
+        "先把棲地依環境分層",
+        "各層獨立隨機取樣",
+        "以各層面積分別估算後加總"
+      ],
+      "answer": "採分層隨機取樣並依面積加權。",
+      "why": "各環境層都有樣區後，不會讓面積小的高密度區或大面積低密度區失去代表，分層估計再加總更符合棲地組成。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "找到一個樣區就能精確代表整片棲地。",
+      "whyWrong": "單一位置可能恰好落在密集斑塊或空缺區，無法估計空間變異。",
+      "correction": "應配置多個獨立且具代表性的樣區，並報告平均與樣區間差異。"
+    },
+    {
+      "belief": "樣區越靠近步道越方便，所以全部放在步道旁。",
+      "whyWrong": "步道邊可能有踩踏、光照與排水差異，造成系統性邊界偏差。",
+      "correction": "應依隨機位置或預先規則配置，必要時把邊界列成獨立分層。"
+    },
+    {
+      "belief": "樣區平均乘總面積後就是絕對真實個體數。",
+      "whyWrong": "外推值受取樣誤差、分布型態與辨識錯誤影響，只是估計。",
+      "correction": "結果使用約數並附方法、樣本量與變異，與完整普查清楚區分。"
+    },
+    {
+      "belief": "不同大小樣區的個體數可以直接平均。",
+      "whyWrong": "大樣區涵蓋面積較多，原始個體數通常自然較高，直接平均不公平。",
+      "correction": "先換算成單位面積密度，或使用相同面積樣區後再進行比較。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "樣區平均每平方公尺六株，總地二十平方公尺，估計多少株？",
+      "answer": "約一百二十株。",
+      "reason": "每平方公尺六株乘二十平方公尺，得到估計總數一百二十。"
+    },
+    {
+      "prompt": "為何樣區位置要隨機或依固定規則？",
+      "answer": "降低研究者選點造成的偏差。",
+      "reason": "避免只挑密集或容易到達位置，讓樣本較能代表整片棲地。"
+    },
+    {
+      "prompt": "不同面積樣區如何公平比較？",
+      "answer": "先換算成單位面積密度。",
+      "reason": "除以各自面積後，個體數才具有共同尺度並能加權外推。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  }
+}

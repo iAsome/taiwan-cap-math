@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S101_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S101",
+  "stem": "若要比較三版本在不同負載下的可靠性，最合適的後續測試為何？",
+  "options": [
+    "每版使用不同底面與高度",
+    "只重新命名版本",
+    "保持尺寸與方法相同，分級加載並重複記錄變形與恢復",
+    "只拍攝外觀照片"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "改變尺寸會混入結構尺度差異。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "名稱不會提供承重可靠性資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "分級與重複測量可呈現負載範圍和穩定性。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "外觀照片不能量化變形與恢復。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "測試設計"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "單次測試即可證明可靠"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "可靠性需要多個負載與重複結果，不能只依單次600牛頓測試。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "控制尺寸與測法後，版本差異才可合理連結到支架設計。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

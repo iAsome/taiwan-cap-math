@@ -1,0 +1,71 @@
+{
+  "id": "BIO_R4_ST121",
+  "subject": "biology",
+  "skillId": "BIO_R4_S121",
+  "type": "文字與資料表",
+  "content": {
+    "title": "性染色體配子卡模擬",
+    "text": "模型固定使用一張X卵卡，再從盒中等量的X精子卡與Y精子卡隨機抽一張，組成一個受精卵。每次記錄後都把精子卡放回盒中並重新混合，共進行四次。結果依序為XX、XX、XY、XX。",
+    "data": "第1次：X卵＋X精子＝XX；第2次：X卵＋X精子＝XX；第3次：X卵＋Y精子＝XY；第4次：X卵＋X精子＝XX。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "四次模擬以次數、卵卡、精子卡與結果文字呈現，抽後放回的規則另行說明。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "summary": "四次模擬以次數、卵卡、精子卡與結果文字呈現，抽後放回的規則另行說明。",
+      "columns": [
+        "次數",
+        "卵卡",
+        "精子卡",
+        "受精卵"
+      ],
+      "rows": [
+        [
+          "1",
+          "X",
+          "X",
+          "XX"
+        ],
+        [
+          "2",
+          "X",
+          "X",
+          "XX"
+        ],
+        [
+          "3",
+          "X",
+          "Y",
+          "XY"
+        ],
+        [
+          "4",
+          "X",
+          "X",
+          "XX"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

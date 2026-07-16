@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S174_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S174"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲葉白天淨吸收二氧化碳 6 單位，已知呼吸釋出 2 單位，光合作用實際吸收多少？",
+  "options": [
+    "8 單位",
+    "6 單位",
+    "4 單位",
+    "2 單位"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "光合吸收八減呼吸釋出二，才得到淨吸收六。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "六是相減後淨值，不是未扣除呼吸的總吸收。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "四再減二只剩淨吸收二，與題目不符。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "二是呼吸釋出量，不能當成光合總吸收量。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "計算總光合量"
+  ],
+  "representationType": "量化題",
+  "misconceptionTargets": [
+    "淨值等於單一作用量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-023",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-018"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "方程核對光合吸收量減二等於六，移項得到八。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "方向核對呼吸把二氧化碳加回環境，光合必須多吸收才能仍淨減六。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

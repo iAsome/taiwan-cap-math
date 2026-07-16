@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S182_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S182"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "控制光照後，補水使幼苗存活率上升，最支持什麼？",
+  "options": [
+    "光是唯一限制",
+    "水分沒有作用",
+    "水分在該條件下限制存活",
+    "幼苗不需土壤"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "光已控制，不能把補水反應只歸於光。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "補水後存活上升，直接否定完全無作用。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "處理補足水分並改善存活，符合限制因素判準。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "試驗沒有移除土壤，不能推論不需要。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判斷水分限制"
+  ],
+  "representationType": "實驗推理",
+  "misconceptionTargets": [
+    "改善後仍不能判限制"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "介入核對唯一增加的是水，存活率隨後提高。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "條件核對結論限定於本光照與材料，不外推所有環境。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L132",
+  "subject": "biology",
+  "unitId": "BIO_R4_U18",
+  "skillId": "BIO_R4_S132",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S131"
+  ],
+  "objectives": [
+    "能以一致字母表示成對遺傳因子與基因型。",
+    "能由個體基因型列出配子可攜帶的單一版本。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L132_SEC1",
+      "title": "成對版本",
+      "content": "二倍體個體在特定基因位置通常有兩個版本，分別來自雙親。可寫成AA、Aa或aa；兩個字母共同表示個體基因型，不代表兩個不同性狀。"
+    },
+    {
+      "id": "BIO_R4_L132_SEC2",
+      "title": "符號約定",
+      "content": "完全顯性模型常以同一字母的大寫表示顯性版本、小寫表示隱性版本。A與a代表同一基因位置的不同版本，不宜用A與B造成不同基因的誤解。"
+    },
+    {
+      "id": "BIO_R4_L132_SEC3",
+      "title": "配子只帶一個",
+      "content": "形成配子時成對版本分開，因此AA只產生A配子，aa只產生a配子，Aa可產生A或a配子。受精時兩個配子版本重新成對，配子本身不保留成對狀態。"
+    },
+    {
+      "id": "BIO_R4_L132_SEC4",
+      "title": "符號與實體",
+      "content": "字母只是追蹤遺傳組合的模型。大寫不表示DNA較大或較強，小寫也不表示版本位於細胞較低處；判讀必須依題目定義。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L132_EX1",
+      "prompt": "顯性版本以R表示，隱性版本應如何記？",
+      "steps": [
+        "保持同一基因的字母。",
+        "用小寫表示題設隱性版本。"
+      ],
+      "answer": "r。",
+      "why": "R與r可清楚表示同一基因位置的兩種版本，避免換成其他字母造成層次混淆。"
+    },
+    {
+      "id": "BIO_R4_L132_EX2",
+      "prompt": "Aa個體可形成哪些配子？",
+      "steps": [
+        "形成配子時分開成對版本。",
+        "每個配子只記其中一個字母。"
+      ],
+      "answer": "A配子或a配子。",
+      "why": "Aa的兩個版本會分到不同配子，單一正常配子不會同時寫成Aa，受精後才由兩方版本重新成對。"
+    },
+    {
+      "id": "BIO_R4_L132_EX3",
+      "prompt": "AA個體能否產生a配子？",
+      "steps": [
+        "列出AA具有的兩個版本。",
+        "檢查配子可從中取得哪些版本。"
+      ],
+      "answer": "在此模型中不能。",
+      "why": "AA只有A版本可分配，若無變異等額外條件，配子來源中沒有a可取得，不能憑空加入親代不存在的版本。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "Aa表示一個配子同時帶兩個版本。",
+      "whyWrong": "Aa表示二倍體個體基因型，配子形成時通常只取得A或a其中一個。",
+      "correction": "先分清個體與配子，再決定寫兩個字母或一個字母。"
+    },
+    {
+      "belief": "A與a是兩個完全不同基因。",
+      "whyWrong": "同一字母大小寫通常表示同一基因位置的不同版本。",
+      "correction": "用一致字母追蹤版本，另一基因再使用另一組字母。"
+    },
+    {
+      "belief": "大寫A代表DNA片段比較大。",
+      "whyWrong": "大小寫是顯性與隱性的符號約定，不是物理尺寸測量。",
+      "correction": "依題目定義判讀表現關係，不用字體推論長度。"
+    },
+    {
+      "belief": "aa能產生A配子。",
+      "whyWrong": "aa個體只有a版本，正常分離後每個配子都只能取得a。",
+      "correction": "由親代現有版本列配子，不新增題目未提供的版本。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Aa代表個體有幾個版本？",
+      "answer": "兩個，A與a各一個。",
+      "reason": "二倍體基因型以兩個字母記錄成對版本，不是單一配子的內容。"
+    },
+    {
+      "prompt": "Aa可產生哪些配子？",
+      "answer": "A或a。",
+      "reason": "形成配子時成對版本分離，每個配子取得一個。"
+    },
+    {
+      "prompt": "大小寫是否表示DNA物理大小？",
+      "answer": "不是。",
+      "reason": "大小寫只是題設顯隱性符號，不提供片段長度資料。"
+    }
+  ],
+  "assets": [
+    "BIO_R4_ASSET_GENETICS"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": "BIO_R4_Q_133_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S133"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "前一名子代為aa，下一名為aa的機率如何變化？",
+  "options": [
+    "變成零",
+    "變成二分之一",
+    "維持原親代組合所給的機率",
+    "變成百分之百"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "前次結果不會讓a配子消失。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "是否二分之一需看親代，不能由前次結果決定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "每次受精獨立，「維持原親代組合所給的機率」正確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "前次aa不會迫使下一次也為aa。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "認為前次結果會改變下一次機率"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-010",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-047",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-017",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-015",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-019",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-014",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-012",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-030",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-025"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「維持原親代組合所給的機率」把機率連回不變的親代配子，而非短期歷史。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其他選項用補償或連勝想像改變獨立事件機率。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

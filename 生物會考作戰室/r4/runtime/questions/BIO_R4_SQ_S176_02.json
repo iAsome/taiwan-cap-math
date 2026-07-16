@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_S176_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S176"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S176",
+  "stem": "比較甲與丙最能支持哪項判斷？",
+  "options": [
+    "光不是必要條件",
+    "供水使甲葉片死亡",
+    "二氧化碳供應影響澱粉形成",
+    "溫度只在丙組降低"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲丙都有光，無法用此比較證明光不必要。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "甲十片皆陽性，沒有供水造成死亡的證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩組主要差在碳源，陽性由十片降為一片。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題目說溫度相同，不能擅自新增組間差異。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀碳源效果"
+  ],
+  "representationType": "對照推理",
+  "misconceptionTargets": [
+    "只看單組作結論"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-005"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "配對核對有光條件固定，二氧化碳是唯一主要差異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "數量核對十比一的大幅差距在十個重複中呈現，非單一葉偶然。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

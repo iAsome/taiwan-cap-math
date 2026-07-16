@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_213_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S213"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "報告將模擬最佳值當成實地保證值，主要問題為何？",
+  "options": [
+    "模擬不能用數字",
+    "實地不能監測",
+    "最佳值一定較低",
+    "未呈現模型假設、變異及實地驗證"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "模擬可以用量化數值探索情境。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "實地可透過採樣與感測器監測。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "最佳值通常偏高，且不是核心證據缺口。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "模型結果受假設影響，需以現地資料檢驗適用性。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "評鑑"
+  ],
+  "representationType": "模型宣稱",
+  "misconceptionTargets": [
+    "模型最佳值等於保證"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "預測值不是保證值，尤其不能只呈現最佳情境。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "應報告假設、可能範圍及模型與實測之間的差異。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

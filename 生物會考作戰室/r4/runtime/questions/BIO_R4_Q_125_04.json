@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_125_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S125"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲乙同種且核型相同，但某基因檢測結果不同。最合理的解釋為何？",
+  "options": [
+    "核型資料一定不存在",
+    "兩者必定不同物種",
+    "基因不在染色體上",
+    "相同核型仍可有細小基因版本差異"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "核型與基因檢測可同時提供不同尺度資料。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單一基因版本不同不會使同種判定必然失效。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "基因位於染色體DNA上，並非與染色體無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "核型解析數目外形，未必顯示小型序列差異。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把核型相同誤作全部基因相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩種檢測解析尺度不同，「相同核型仍可有細小基因版本差異」能讓結果同時成立。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "核型解析數目外形，未必顯示小型序列差異。核型與基因檢測可同時提供不同尺度資料。單一基因版本不同不會使同種判定必然失效。基因位於染色體DNA上，並非與染色體無關。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

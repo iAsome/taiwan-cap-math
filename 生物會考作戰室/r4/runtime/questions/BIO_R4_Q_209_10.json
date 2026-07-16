@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_209_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S209"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "每日濃度平均相同，但甲河有一次高峰，乙河濃度穩定。為何仍應分開評估？",
+  "options": [
+    "河名不同",
+    "甲的短時高峰可能造成乙河平均值未呈現的急性影響",
+    "平均值永遠錯誤",
+    "乙河必定無污染"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "河名與生物反應沒有因果關聯。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "相同平均值可能隱藏不同峰值與暴露型態。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "平均值有描述用途，只是不能呈現全部時間變化。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "穩定濃度仍可能造成長期暴露。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "整合"
+  ],
+  "representationType": "時間序列",
+  "misconceptionTargets": [
+    "平均相同等於風險相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "平均值會壓縮時間資訊，需搭配最大值與變化頻率。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "高峰偏急性風險，穩定濃度則仍可能涉及慢性風險。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

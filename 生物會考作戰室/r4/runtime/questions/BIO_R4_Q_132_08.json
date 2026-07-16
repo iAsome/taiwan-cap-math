@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_132_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S132"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "模型記錄親代一為Aa、親代二為aa。哪組配子種類正確？",
+  "options": [
+    "親代一只有Aa；親代二只有aa",
+    "親代一只有A；親代二有A或a",
+    "兩親代都產生AA或aa",
+    "親代一有A或a；親代二只有a"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "配子不保留Aa或aa成對組合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "親代一還可給a，親代二沒有A。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "AA與aa是個體基因型，不是單一配子。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此項依兩親代版本分離正確列出。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "列配子時未由親代基因型分離"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐一由Aa與aa拆成單一版本，「親代一有A或a；親代二只有a」完整且唯一。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "其他選項讓配子帶兩版本、遺漏版本或憑空產生A。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

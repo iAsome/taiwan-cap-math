@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_130_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S130"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "理論預測四分之一白花，一百六十株預期約幾株白花？",
+  "options": [
+    "二十株",
+    "四十株",
+    "八十株",
+    "一百二十株"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "二十是八分之一，不是四分之一。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "一百六十乘四分之一約為四十。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "八十是二分之一，比例過高。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一百二十是四分之三，屬另一類表現。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "不會把理論比例換成預期數量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "依理論機率計算期望數，「四十株」四十株正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "期望值用於比較整體資料，不保證實際結果恰好等於四十。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

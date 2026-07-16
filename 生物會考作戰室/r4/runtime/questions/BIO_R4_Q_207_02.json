@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_207_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S207"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "刺激性氣體由工廠排入空氣，再由陸生動物吸入。傳播介質為何？",
+  "options": [
+    "工廠",
+    "空氣",
+    "肺部",
+    "動物"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "工廠是污染來源，並非傳播介質。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "氣體隨空氣接觸動物，因此空氣是介質。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "肺部是接觸器官，不是環境傳播介質。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "動物是受體，不是連接來源的介質。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "辨認"
+  ],
+  "representationType": "關係式",
+  "misconceptionTargets": [
+    "混淆來源與介質"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "完整路徑可拆成來源、介質、暴露途徑與受體。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "工廠→空氣→吸入→動物，其中空氣負責承載污染物，是傳播介質。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

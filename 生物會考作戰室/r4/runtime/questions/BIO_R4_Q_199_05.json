@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_199_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S199"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "為何干擾後只量一次不適合判斷恢復速度？",
+  "options": [
+    "缺少偏離與回復的時間路徑",
+    "任何一次量測都沒有數值",
+    "恢復完全不需要時間",
+    "生態系不能重複調查"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "速度需要多個時間點估計變化快慢。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單次量測有數值，只是缺少趨勢。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "恢復涉及生長、繁殖與遷入，通常需要時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "可用一致方法連續監測同一系統。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "辨認時間序列需求"
+  ],
+  "representationType": "監測設計",
+  "misconceptionTargets": [
+    "一個終點可給完整速度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「缺少偏離與回復的時間路徑」指出估算速度必須知道不同時間的位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "至少需干擾前、偏離期與多個恢復期資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

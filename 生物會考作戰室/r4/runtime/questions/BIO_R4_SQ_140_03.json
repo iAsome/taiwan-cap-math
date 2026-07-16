@@ -1,0 +1,90 @@
+{
+  "id": "BIO_R4_SQ_140_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S140"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST140",
+  "stem": "若甲流程第五代抗病率提高，能否說每株後代都具所有理想性狀？",
+  "options": [
+    "可以，育種能指定所有版本",
+    "可以，五代後不再有任何變異",
+    "不能，因抗病率提高表示完全沒有遺傳作用",
+    "不能，仍需逐株檢查抗病與其他農藝性狀"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "有性生殖會重組多項資訊，育種無法指定每個後代全部版本。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "多代選擇可提高目標比例，卻不會消除所有個體差異。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "抗病率隨選擇提高反而支持性狀可受遺傳選擇影響。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "群體比例改善不代表每株相同，也不保證其他性狀合宜。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "由群體比例提高推成每個後代完全理想"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-032",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-013"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「不能，仍需逐株檢查抗病與其他農藝性狀」把育種結果限定在已量測的抗病率，並要求檢查產量與品質等伴隨結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "保留各代完整紀錄可評估性狀是否穩定，避免只選成功個體而忽略整體分布。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

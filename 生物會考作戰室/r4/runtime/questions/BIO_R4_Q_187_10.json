@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_187_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "若錯把食物鏈箭頭定義成攝食者指向食物，最可能造成哪項判讀錯誤？",
+  "options": [
+    "仍能正確讀出所有能量流向",
+    "把蛇→蛙誤讀成能量由蛇流向蛙",
+    "可自動辨認所有分解者",
+    "不影響營養階層的判定"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "定義顛倒會使每段能量方向都被錯讀。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "蛇吃蛙時正確能量方向應是蛙流向蛇。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "箭頭方向本身不能自動辨認生物功能。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "方向錯誤會連帶顛倒食物與攝食者位置。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析錯誤規則後果"
+  ],
+  "representationType": "概念診斷",
+  "misconceptionTargets": [
+    "箭頭方向不影響判讀"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "錯誤定義會把攻擊方向和能量方向混為一談，「把蛇→蛙誤讀成能量由蛇流向蛙」正中問題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "箭頭顛倒不可能仍正確讀出能量流向，也不能自動辨認分解者，營養階層判定同樣會受影響。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

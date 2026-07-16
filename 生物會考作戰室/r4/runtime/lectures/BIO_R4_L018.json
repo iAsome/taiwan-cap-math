@@ -1,0 +1,128 @@
+{
+  "id": "BIO_R4_L018",
+  "subject": "biology",
+  "unitId": "BIO_R4_U03",
+  "skillId": "BIO_R4_S018",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S017"
+  ],
+  "objectives": [
+    "能依位置辨識細胞膜、細胞質與細胞核。",
+    "能連結三種基本構造與物質進出、代謝環境及遺傳控制。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L018_S1",
+      "title": "細胞膜",
+      "content": "細胞膜位於細胞最外圍或緊貼細胞壁內側，界定細胞內外並選擇性控制物質進出。它很薄，普通光學觀察未必能看成粗厚邊線。"
+    },
+    {
+      "id": "BIO_R4_L018_S2",
+      "title": "細胞質",
+      "content": "細胞質位於細胞膜內、細胞核外，包含液態基質與多種胞器，是許多代謝反應進行的環境。它不是完全空白的水，也不是單一胞器。"
+    },
+    {
+      "id": "BIO_R4_L018_S3",
+      "title": "細胞核",
+      "content": "細胞核通常位於細胞內部，含主要遺傳物質並參與控制細胞活動。經適當染色後常較容易辨識，但不同細胞的核位置與形狀可不同。"
+    },
+    {
+      "id": "BIO_R4_L018_S4",
+      "title": "圖像辨識",
+      "content": "辨識構造應看相對位置與標示證據，不死背教材配色。最外界面通常是膜，膜內廣泛區域是細胞質，內部較集中的構造可能是細胞核。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L018_E1",
+      "prompt": "模式圖標示最外薄界線、內部膠狀區與一個圓形構造。",
+      "steps": [
+        "依位置把最外薄界線判為細胞膜。",
+        "把膜內區域判為細胞質，內部圓形構造判為細胞核。"
+      ],
+      "answer": "三者依序為細胞膜、細胞質與細胞核。",
+      "why": "構造的包圍與相鄰位置在不同配色下仍成立，比背誦固定顏色更可靠，也適用於不同染色影像。"
+    },
+    {
+      "id": "BIO_R4_L018_E2",
+      "prompt": "植物細胞圖有厚外層與其內側薄線，哪個是細胞膜？",
+      "steps": [
+        "辨認厚外層較符合細胞壁。",
+        "找緊貼細胞壁內側、包住細胞質的薄界面。"
+      ],
+      "answer": "細胞壁內側的薄界面是細胞膜。",
+      "why": "植物細胞同時有壁與膜，不能因外層醒目就把最外厚邊界一律稱為細胞膜。"
+    },
+    {
+      "id": "BIO_R4_L018_E3",
+      "prompt": "染色後看到深色圓形區，能否只靠顏色判定細胞核？",
+      "steps": [
+        "先檢查深色區是否位在細胞內並具合理形態。",
+        "結合染色目的與其他構造位置再判斷。"
+      ],
+      "answer": "顏色是線索但不是唯一依據，需配合位置與染色資訊。",
+      "why": "染劑可能同時附著其他物質，教材配色也非真實顏色；多項證據能降低誤判。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "細胞膜就是植物細胞最外面的厚壁。",
+      "whyWrong": "植物細胞最外厚層通常是細胞壁，膜位於其內側。",
+      "correction": "用厚薄、位置與是否包住細胞質來區分壁與膜。"
+    },
+    {
+      "belief": "細胞質是細胞內沒有構造的空白處。",
+      "whyWrong": "細胞質含基質與胞器，許多代謝反應在其中進行。",
+      "correction": "把它理解為膜內、核外的活動環境，而非空洞。"
+    },
+    {
+      "belief": "每個成熟細胞都一定有明顯正中央細胞核。",
+      "whyWrong": "核的位置與可見度依細胞類型、狀態與染色而異。",
+      "correction": "以實際觀察證據辨識，不用固定中央位置硬套。"
+    },
+    {
+      "belief": "模式圖畫成藍色的構造在真實細胞也必定藍色。",
+      "whyWrong": "模式圖顏色多用於區分構造，不一定是自然顏色。",
+      "correction": "依位置、形態與標示判斷，並查明是否使用染色。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "細胞膜位於細胞的哪個位置？",
+      "answer": "包圍細胞質，植物細胞中位於細胞壁內側。",
+      "reason": "它是細胞內外的界面，位置可支持物質進出控制功能。"
+    },
+    {
+      "prompt": "細胞質與細胞核如何依位置區分？",
+      "answer": "細胞質廣布於膜內核外，細胞核是內部較集中的構造。",
+      "reason": "用範圍與相對位置判斷，比只背圖中顏色可靠。"
+    },
+    {
+      "prompt": "細胞核的基本功能為何？",
+      "answer": "含主要遺傳物質並參與控制細胞活動。",
+      "reason": "遺傳資訊的表現影響細胞製造物質與執行各種活動。"
+    }
+  ],
+  "assets": [
+    "BIO_R4_ASSET_CELL_COMPARE"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  }
+}

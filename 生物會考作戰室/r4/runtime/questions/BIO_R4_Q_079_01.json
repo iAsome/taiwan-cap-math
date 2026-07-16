@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_079_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "題目給定參考範圍4至7，測得6，應如何判讀？",
+  "options": [
+    "位於參考範圍內",
+    "低於下限",
+    "高於上限",
+    "無法知道任何資訊"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "六介於四和七之間，因此位於題目提供的參考範圍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "六大於下限四，不能判定為低於下限。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "六小於上限七，不能判定為高於上限。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題目已有數值與範圍，可判讀相對位置而非毫無資訊。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "範圍包含從下限到上限的數值，六明確落在其中。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "範圍內不表示永遠健康，只表示本次此指標未超出題目界線。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

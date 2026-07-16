@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q0451",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S038"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "某蛋白質缺陷使肌肉細胞收縮下降，個體出現無力。哪項因果鏈最合理？",
+  "options": [
+    "個體先變小才改變蛋白質",
+    "蛋白質直接等同整個人體",
+    "分子缺陷影響細胞，許多細胞輸出下降後影響個體",
+    "肌肉細胞與蛋白質完全無關"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題幹方向是分子缺陷先出現。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "蛋白質只是人體眾多成分之一。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "答案逐層連結分子、細胞與個體症狀。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "細胞功能依賴蛋白質等分子作用。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "跨尺度因果"
+  ],
+  "representationType": "疾病情境",
+  "misconceptionTargets": [
+    "分子直接等同個體"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "跨尺度機制應保留中間細胞層，而不是由分子直接跳到症狀。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "仍可能有組織補償，因此症狀程度需實際測量。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

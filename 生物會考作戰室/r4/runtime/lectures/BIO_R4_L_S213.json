@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L_S213",
+  "subject": "biology",
+  "unitId": "BIO_R4_U29",
+  "skillId": "BIO_R4_S213",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S212"
+  ],
+  "objectives": [
+    "判斷環境數據來源與方法的可靠性",
+    "使用可比較數據評估污染防治方案"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S213_SEC_01",
+      "title": "查來源與方法",
+      "content": "可靠資料應說明發布者、採樣地點與時間、測量方法、樣本數及單位。只有結論而無方法，難以判斷數值品質，也要查明資料是否經機構或同儕審核。"
+    },
+    {
+      "id": "BIO_R4_L_S213_SEC_02",
+      "title": "建立可比基準",
+      "content": "比較方案要使用相同污染指標、基線、期間與計算方式。百分比若分母不同，即使數字相同也可能代表完全不同的改善量。"
+    },
+    {
+      "id": "BIO_R4_L_S213_SEC_03",
+      "title": "不確定性與利益",
+      "content": "數據應呈現重複、變異或誤差範圍，並揭露資助與利益關係。利益關係不會自動使資料錯誤，但提醒讀者加強查核。"
+    },
+    {
+      "id": "BIO_R4_L_S213_SEC_04",
+      "title": "多準則決策",
+      "content": "方案評估除污染減量，也要比較成本、維護、時間、轉移污染與副作用。結論應說明權衡與尚未確定之處，例如處理設備可能增加耗能。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S213_EX_01",
+      "prompt": "甲方案稱減量50%但未說基線，能否和乙方案直接比較？",
+      "steps": [
+        "確認兩方案百分比的分母",
+        "檢查指標、期間與測量方法"
+      ],
+      "answer": "不能直接比較。",
+      "why": "缺少起始濃度與計算方法，就不知道五成代表多少實際減量，也無法確認兩方案指標相同。"
+    },
+    {
+      "id": "BIO_R4_L_S213_EX_02",
+      "prompt": "廠商資助的報告是否必定錯誤？",
+      "steps": [
+        "記錄利益關係",
+        "獨立查核方法、原始資料與外部重複"
+      ],
+      "answer": "不能只因資助者判定錯誤。",
+      "why": "資助關係提示潛在偏誤，但資料可信度仍應由方法透明度、可重現性與獨立證據評估。"
+    },
+    {
+      "id": "BIO_R4_L_S213_EX_03",
+      "prompt": "A減量較高但變異大，B稍低且穩定，如何選擇？",
+      "steps": [
+        "比較平均效果與變異",
+        "納入成本、風險及決策容忍度"
+      ],
+      "answer": "需依多項準則權衡，不能只看平均值。",
+      "why": "平均效益與穩定性回答不同問題，實際選擇還取決於失敗代價、資源與可接受風險。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只要是政府或學校發布的數據就不必看方法。",
+      "whyWrong": "權威來源仍可能有取樣限制、誤差或不適合目前問題。",
+      "correction": "任何來源都要檢查方法、範圍、日期與原始資料。"
+    },
+    {
+      "belief": "兩方案都寫減量40%，效果一定相同。",
+      "whyWrong": "兩者可能使用不同基線、污染物、期間或計算分母。",
+      "correction": "先把指標、單位、基線與期間轉成可比較條件。"
+    },
+    {
+      "belief": "報告有利益關係就可直接丟棄所有數據。",
+      "whyWrong": "利益關係增加查核需求，但不能單獨證明方法或結果錯誤。",
+      "correction": "應尋找透明方法、原始資料與獨立重複證據。"
+    },
+    {
+      "belief": "平均去除率最高的方案必定是最佳方案。",
+      "whyWrong": "變異、成本、副作用及污染轉移也會影響整體效益。",
+      "correction": "應使用多準則表格並清楚說明各項效益與風險權衡。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "來源可靠性最先檢查哪些資訊？",
+      "answer": "發布者、方法、樣本、時間與單位。",
+      "reason": "這些資訊決定資料如何取得、適用範圍及能否被重複查核。"
+    },
+    {
+      "prompt": "為何百分比比較需要知道基線？",
+      "answer": "相同比例可能對應不同實際減量。",
+      "reason": "百分比以起始值為分母，基線不同會改變百分點代表的數量。"
+    },
+    {
+      "prompt": "利益揭露應如何使用？",
+      "answer": "作為加強查核的訊號，而非自動判真假。",
+      "reason": "可信度仍需結合方法透明、資料完整與獨立證據判斷。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  }
+}

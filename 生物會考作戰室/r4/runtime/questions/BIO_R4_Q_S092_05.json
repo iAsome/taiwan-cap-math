@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S092_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S092"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某人甲狀腺素長期不足，可能出現代謝變慢、精神不振等狀況。最合理的解釋是什麼？",
+  "options": [
+    "甲狀腺素參與全身多種細胞的代謝調節",
+    "甲狀腺素只控制甲狀腺本身",
+    "甲狀腺素是供細胞燃燒的養分",
+    "甲狀腺素不足會使神經訊息全部消失"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "甲狀腺素經血液運送，可影響具有受體的多種細胞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "激素由腺體分泌後可作用於其他標的細胞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "甲狀腺素是化學訊號，不是提供能量的養分。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "神經系統不會因甲狀腺素不足而完全停止傳訊。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "甲狀腺素不足"
+  ],
+  "representationType": "因果推論",
+  "misconceptionTargets": [
+    "誤認激素只作用於分泌腺"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "代謝與精神狀態同時受影響，符合甲狀腺素具有較廣泛調節作用。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "甲狀腺素不足可能影響神經功能表現，但不等於所有神經訊息消失。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

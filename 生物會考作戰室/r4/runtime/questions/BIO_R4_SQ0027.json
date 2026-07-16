@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_SQ0027",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S009"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST009",
+  "stem": "要改善丙狀況且保留原焦點，應優先怎麼做？",
+  "options": [
+    "改用粗調節輪大幅移動",
+    "取下所有鏡頭",
+    "檢查光圈與光路是否對準",
+    "快速晃動顯微鏡"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "粗調會破壞既有焦點，且不直接增加進光量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "取下鏡頭使成像系統中斷，也無法正常觀察。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "光圈與光路直接控制進光，且不需改動焦距。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "晃動可能損傷器材與標本，完全不安全。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "綜合排除"
+  ],
+  "representationType": "實驗室情境",
+  "misconceptionTargets": [
+    "暗視野等於未對焦"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-017",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-027"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "丙已保有焦點卻亮度不足，調整光圈與對準通光孔可增加進光而不移動鏡筒。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "照明問題應由光路構造處理，不能用調焦或危險動作替代。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

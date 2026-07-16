@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_067_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S067"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "人工透析管要模仿組織微血管，哪種設計最合適？",
+  "options": [
+    "厚實不透膜且遠離細胞",
+    "完全封閉且沒有液體流動",
+    "薄而可選擇通透，並讓液體持續流過",
+    "只增加外殼重量與顏色"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "厚而不透會阻止小分子交換，且遠離細胞會增加移動距離。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有流動便難維持濃度差，完全封閉也無法模擬跨壁交換。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "薄的選擇通透膜配合流動液體，最接近微血管的交換條件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "外殼重量與顏色不會直接縮短擴散距離或維持物質交換。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-008"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "模型需同時保留薄壁、可交換和持續流動，才能類比微血管。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "只有外形像細管仍不夠，功能性條件才是判斷模型是否合適的核心。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

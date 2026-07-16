@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0360",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩班資料的試材起始質量不同，如何較公平地合併比較？",
+  "options": [
+    "只比較最後質量最大的試材",
+    "忽略所有起始值",
+    "把數字直接相加",
+    "計算每條相對於自身起始值的百分比變化"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "最後質量會受起始大小影響，不能只看最大者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "忽略起始值會失去校正基準。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "直接加總仍受兩班試材數量與大小影響。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "各自標準化後可比較相對改變程度，再報告組別變異。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "資料標準化"
+  ],
+  "representationType": "跨組比較",
+  "misconceptionTargets": [
+    "終值直接比"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "標準化可改善可比性，但不能補救濃度、時間等設計條件不同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "合併前仍應確認兩班使用相同方法與單位。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q_S181_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S181"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "增加隨機樣區數量通常能改善什麼？",
+  "options": [
+    "保證估計完全等於真值",
+    "降低少數位置造成的偶然影響",
+    "讓所有個體均勻分布",
+    "取消記錄日期的需要"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "抽樣仍有不確定性，不能保證完全無誤。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "更多獨立位置可降低單一密集或空缺區主導平均。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "取樣不會改造生物實際空間分布。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "季節會影響族群，日期仍是必要資訊。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "理解增加樣本"
+  ],
+  "representationType": "可靠度題",
+  "misconceptionTargets": [
+    "樣本多就絕對精確"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-027",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-014",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-021"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "樣本核對獨立樣區增加後，可觀察更廣的空間變異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "平均核對極端單區在較多資料中的相對權重會降低。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_212_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S212"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S212",
+  "stem": "哪項最能表示微生物處理有超過自然下降的效果？",
+  "options": [
+    "每組都有名稱",
+    "處理組降至38而對照仍為82 mg/L",
+    "實驗進行十四日",
+    "使用本地微生物"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "組別名稱不能量化技術效果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "相同起點下，處理組比未處理對照多下降44 mg/L。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "天數是條件，需配合對照差異才可判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "本地來源不等於已證明有效。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "利用對照估計處理效果"
+  ],
+  "representationType": "技術試驗表",
+  "misconceptionTargets": [
+    "處理後下降全由技術造成"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "技術效果應以處理組相對對照組的變化估計。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "兩組具有相同起始濃度，使十四日後的濃度更容易公平比較。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,100 @@
+{
+  "id": "BIO_R4_ST_S174",
+  "subject": "biology",
+  "skillId": "BIO_R4_S174",
+  "type": "day-night-gas-table",
+  "content": {
+    "title": "葉片日夜氣體交換",
+    "text": "研究者將等葉面積葉片置於透明氣室，各測三小時。正午光照強，傍晚光照弱，午夜無光；溫度與起始氣體濃度相同。正值表示氣體由葉片淨釋出，負值表示淨吸收。",
+    "dataFallback": {
+      "summary": "三個時段的光照及氧氣、二氧化碳淨交換量。",
+      "columns": [
+        "時段",
+        "光照",
+        "氧氣淨交換",
+        "二氧化碳淨交換"
+      ],
+      "rows": [
+        [
+          "正午",
+          "強",
+          "+9",
+          "-8"
+        ],
+        [
+          "傍晚",
+          "弱",
+          "+1",
+          "-1"
+        ],
+        [
+          "午夜",
+          "無",
+          "-3",
+          "+3"
+        ]
+      ]
+    }
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "calibrationRefs": [
+    "CAP-110-ALTERNATE-INTEGRATED-NATURAL-023",
+    "CAP-111-MAIN-INTEGRATED-NATURAL-018"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-023",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-018"
+    ]
+  },
+  "accessibility": {
+    "summary": "正負符號與文字定義清楚寫出，不用箭頭顏色判斷氣體方向。",
+    "dataFallback": {
+      "summary": "三個時段的光照及氧氣、二氧化碳淨交換量。",
+      "columns": [
+        "時段",
+        "光照",
+        "氧氣淨交換",
+        "二氧化碳淨交換"
+      ],
+      "rows": [
+        [
+          "正午",
+          "強",
+          "+9",
+          "-8"
+        ],
+        [
+          "傍晚",
+          "弱",
+          "+1",
+          "-1"
+        ],
+        [
+          "午夜",
+          "無",
+          "-3",
+          "+3"
+        ]
+      ]
+    },
+    "colorIndependent": true
+  },
+  "assets": []
+}

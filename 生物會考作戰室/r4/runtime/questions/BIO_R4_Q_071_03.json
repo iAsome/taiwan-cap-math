@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_071_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S071"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "判斷某微生物致病，哪項資料最有用？",
+  "options": [
+    "名稱字數",
+    "培養皿顏色",
+    "暴露後出現特定症狀且對照組未出現",
+    "研究者是否喜歡該微生物"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "名稱長短是文字特徵，不能顯示微生物是否損傷宿主。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "培養皿顏色若與菌生長無關，不能建立疾病的因果關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "控制條件下暴露組發病而對照組未發病，可支持致病關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "研究者喜好是主觀態度，不能取代可重複的宿主症狀證據。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "致病判斷需要比較暴露與未暴露結果，並排除其他條件差異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若能再次分離相同微生物並確認組織損傷，證據鏈會更完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

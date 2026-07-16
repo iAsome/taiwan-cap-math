@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q0457",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S039"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "某胞器直徑約二微米，另一細胞直徑約五十微米；後者的線性尺度約為前者幾倍？",
+  "options": [
+    "二十五倍",
+    "四十八倍",
+    "五十二倍",
+    "一百倍"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩者同為微米，五十除以二等於二十五，後者約為前者二十五倍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "四十八是五十減二所得的差值，不是後者除以前者的倍數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "五十二是五十加二所得的總和，不能表示兩個尺度的倍數關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一百是把五十乘以二，運算方向不符合後者為前者幾倍。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "尺度倍數"
+  ],
+  "representationType": "數值比較",
+  "misconceptionTargets": [
+    "以差值代替倍數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "兩個尺度都以微米表示，不需換單位；題目問後者為前者幾倍，應計算五十除以二。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "商為二十五只描述線性尺度比，不能直接推成體積或構造數量也相差二十五倍。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

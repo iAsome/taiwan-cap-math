@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q_208_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S208"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "底泥濃度高、貝類濃度也高，但沒有捕食者資料，可支持哪個結論？",
+  "options": [
+    "已證明整條食物鏈放大",
+    "貝類可能有累積，但不足以證明跨階層放大",
+    "所有鳥類必定中毒",
+    "污染物由貝類製造"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "缺少相連營養階層資料，不能證明整條鏈放大。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "貝類體內檢出支持暴露或累積可能，但跨階層證據不足。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有鳥類濃度與反應，不能判定必然中毒。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "資料顯示環境已有污染物，不支持貝類製造。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "推論"
+  ],
+  "representationType": "證據限制",
+  "misconceptionTargets": [
+    "單一物種證明放大"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-012",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-014"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "單一物種濃度高與沿營養階層放大是不同判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "要證明放大，還需捕食者食性與可比組織濃度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

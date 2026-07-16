@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S087_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S087"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "體溫受器能偵測升溫，但訊息無法傳到中樞，最直接受影響的是什麼？",
+  "options": [
+    "外界溫度必定下降",
+    "中樞無法依該訊息適當協調散熱",
+    "汗液一定在皮膚外結冰",
+    "紅血球立即停止運送氧"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "傳入中斷不會直接改變外界溫度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "中樞缺少偏高訊息，會妨礙後續命令調整。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題幹沒有低溫結冰條件，也非直接結果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "局部調節訊息異常不等於循環運輸立即停止。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "路徑分析"
+  ],
+  "representationType": "受損情境",
+  "misconceptionTargets": [
+    "由局部中斷推成全身停止"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "沿調節路徑定位，受器後的傳入中斷使中樞缺少輸入。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「中樞無法依該訊息適當協調散熱」是直接功能後果，其他皆為無根據的外推。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

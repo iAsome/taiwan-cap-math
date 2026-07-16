@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_192_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S192"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "鯊魚向魚群游去，但魚群尚未被捕食。僅憑游動方向可否畫食物鏈？",
+  "options": [
+    "可以，所有游動都代表攝食",
+    "可以，體型大者一定是攝食者",
+    "不可以，還需實際食性或攝食證據",
+    "不可以，因海洋沒有食物鏈"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "靠近可能出於多種原因，不等於已知攝食。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "體型不能取代食性證據，也存在反例。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "食物鏈需知道誰吃誰，游動資料不足。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "海洋中同樣有生產者、消費者與食物網。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判斷移動證據不足"
+  ],
+  "representationType": "海洋觀察",
+  "misconceptionTargets": [
+    "接近就必然要捕食"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "移動方向只形成假說，不能直接確立食物與攝食者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「不可以，還需實際食性或攝食證據」要求補充胃含物或觀察等證據，最符合科學判讀。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

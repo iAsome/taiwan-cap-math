@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_080_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S080"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S080",
+  "stem": "若模型汗腺失效但其他環節正常，最合理預測為何？",
+  "options": [
+    "散熱反應量測一定更高且體溫更快下降",
+    "體溫不受任何影響",
+    "刺激會立刻消失",
+    "中樞可發出指令，但實際散熱不足使回復較慢"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "汗腺失效會降低實際蒸發散熱，不能預測更快下降。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "效應器受損會影響調節結果，不可能完全沒有影響。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "汗腺狀態不會使外界施加的升溫刺激在瞬間自行消失。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "控制訊號可能存在，但執行不足會使偏高體溫較難回復。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "區分控制指令與效應器結果，能定位有訊號但回復失敗的情境。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若量到中樞輸出高而汗量低，可進一步支持汗腺執行端受損。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

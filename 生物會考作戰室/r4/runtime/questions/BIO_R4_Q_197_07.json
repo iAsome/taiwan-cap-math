@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_197_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S197"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "水溫升高與溶氧下降同時發生時，哪項做法最有助判讀？",
+  "options": [
+    "刪除其中一項資料",
+    "只看單一天氣照片",
+    "連續量測兩者並比較未升溫地點",
+    "把所有數值改成相同"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "刪資料會失去檢查共同趨勢的機會。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單張照片不能量化水溫與溶氧。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "時間序列與對照可加強關聯及因果判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "任意改數值會破壞真實資料。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "設計環境趨勢比較"
+  ],
+  "representationType": "監測方案",
+  "misconceptionTargets": [
+    "資料不同就改成一樣"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「連續量測兩者並比較未升溫地點」提供重複量測和對照，是評估環境變化的合理設計。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "仍可同步記錄流量與生物量，檢查其他可能機制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

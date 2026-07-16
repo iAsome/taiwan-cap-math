@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S101_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "人工關節使用金屬與塑膠，而非骨與軟骨。這是否一定表示它不是仿生設計？",
+  "options": [
+    "是，仿生只能使用活細胞",
+    "否，只要元件關係能重現活動、承重或減摩等原理",
+    "是，材料不同就不可能有相似功能",
+    "否，因為任何產品都自動算仿生"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "仿生可使用人工材料實現生物原理。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "功能關係與測試結果比材料名稱更重要。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "不同材料仍可能提供相似的力學作用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "產品仍須有明確模仿原理，不能全部視為仿生。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "材料與原理"
+  ],
+  "representationType": "概念判斷",
+  "misconceptionTargets": [
+    "材料不同便非仿生"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "仿生重點是抽取可轉用的結構功能，不是複製生物成分。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "人工關節仍須通過活動角度、磨耗與承重等測試才算達成需求。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

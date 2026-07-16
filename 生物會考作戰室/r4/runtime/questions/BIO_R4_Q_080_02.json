@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_080_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S080"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "體溫升高後出汗增加，使體溫下降，屬於何者？",
+  "options": [
+    "排遺",
+    "負回饋",
+    "食物吸收",
+    "完全不變"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "出汗調節體溫不是排出未消化食物殘餘的排遺。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "出汗造成散熱，反向降低原本上升的體溫，符合負回饋。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "食物吸收讓養分進入體內，不能描述本題反向降溫。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "體溫先升後降且汗量改變，明顯不是完全不變。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "判斷回饋要比較原變化和反應效果，兩者方向相反即為重要線索。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "出汗也涉及水分流失，但本題功能焦點是它抵消體溫升高。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q0139",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "低倍視野中有三十個近似均勻分布的細胞，升高倍率後最可能如何？",
+  "options": [
+    "細胞總數增為六十",
+    "三十個仍全都可見",
+    "視野中可見細胞少於三十個",
+    "玻片上的細胞全部消失"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "倍率不會讓玻片上的細胞自行增殖一倍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "高倍視野縮小，通常不能保留低倍全部細胞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "只取中央較小範圍，因此可見數量通常減少。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "細胞仍在玻片上，只是部分落到視野外。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "結果預測"
+  ],
+  "representationType": "數量情境",
+  "misconceptionTargets": [
+    "倍率高可見數量多"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-030"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "均勻分布條件下，取景範圍縮小會直接降低視野內個體數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "這是可見數量變化，不是玻片實際細胞總數改變。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

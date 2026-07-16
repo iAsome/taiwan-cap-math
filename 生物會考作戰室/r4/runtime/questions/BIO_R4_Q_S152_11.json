@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S152_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S152"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "路徑1a→2b得到甲種，但標本不符合1a。可下何結論？",
+  "options": [
+    "甲種名稱仍必定正確",
+    "只要2b正確就足夠",
+    "這次辨識缺乏完整路徑支持",
+    "檢索表一定全部錯誤"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "標本不符合起點1a，就沒有合法理由進入2b所在支線，甲種名稱不能稱為必定正確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "終點需每一步都成立；2b單獨正確不能補回第一步已被標本否定的條件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "路徑起點已有反證，所以這一次的甲種結論缺少由1a到2b的完整支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一次可能是觀察者選錯1a，不能由單一辨識失敗推論整份檢索表全部錯誤。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "檢查推理鏈"
+  ],
+  "representationType": "路徑驗證",
+  "misconceptionTargets": [
+    "只重視最後一步"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "邏輯鏈核對把1a視為進入2b的必要條件，必要條件不成立時終點結論失去依據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "推論範圍核對只否定這次辨識的完整性，不把個別誤選擴大成整張表必然錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

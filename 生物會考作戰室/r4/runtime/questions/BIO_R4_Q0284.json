@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q0284",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S024"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "電腦模型預測細胞不會改變體積，但實驗多次測得體積下降。最合理的處理為何？",
+  "options": [
+    "刪除所有不符合模型的實驗",
+    "宣布模型永遠不可能修正",
+    "只把圖表縱軸改得較不明顯",
+    "檢查實驗與模型假設，必要時加入水分移動機制"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "刪除反例會掩蓋證據，除非有明確且一致的排除準則。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "模型本來就能依新證據修正，不能視為不可改變的真理。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "改變圖表呈現不會解決預測與測量的實質差異。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "重複差異提示模型可能漏掉機制，也仍需檢查實驗品質。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "模型修正"
+  ],
+  "representationType": "證據衝突",
+  "misconceptionTargets": [
+    "模型高於資料"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "證據衝突時同時審查模型假設與實驗方法，才能找到真正原因。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "修正應針對與問題相關的缺漏，而非用呈現技巧隱藏不符。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

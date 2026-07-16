@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S167_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S167"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某株植物根部吸水正常，葉脈卻長時間未出現染液；莖中段木質部被壓扁。何者最能解釋？",
+  "options": [
+    "染液在根部變成糖",
+    "莖中段的輸水連續性被破壞",
+    "葉脈不含任何維管組織",
+    "氣孔把染液吸入土壤"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "染液隨水移動，不會因進入根部就必然轉變成糖。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "根端有水但葉端無染液，且中段受壓，表示上運通道在中途受阻。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "葉脈含木質部與韌皮部，不能用完全沒有維管組織解釋。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "氣孔通常是水蒸氣散失出口，不會把葉內染液送入土壤。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "定位運輸阻點"
+  ],
+  "representationType": "故障診斷",
+  "misconceptionTargets": [
+    "只要根吸水葉就一定有水"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "區段核對入口正常而出口無訊號，問題應位於兩者之間的莖中段。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "構造核對受壓的是木質部，正好能中斷根到葉的水分連續路徑。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S175_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S175"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某曲線高光達平台，升溫後速率反而下降。最謹慎解釋是？",
+  "options": [
+    "溫度越高永遠越好",
+    "超出適宜範圍可能影響酵素與水分狀態",
+    "平台證明沒有呼吸",
+    "高溫製造二氧化碳原子"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "生理反應常有適溫，不能無限線性提升。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "過高溫可影響酵素功能並增加失水，合理造成下降。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "光合平台不提供呼吸是否存在的直接證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "溫度是能量狀態，不會創造碳原子。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "評估高溫限制"
+  ],
+  "representationType": "曲線推理",
+  "misconceptionTargets": [
+    "環境因子越多越好"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "曲線核對升溫後輸出下降，否定在此範圍越高越好的說法。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "限制核對高光已非唯一瓶頸，溫度與水分生理可能轉成主要限制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

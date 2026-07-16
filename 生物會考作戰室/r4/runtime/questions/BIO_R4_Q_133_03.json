@@ -1,0 +1,91 @@
+{
+  "id": "BIO_R4_Q_133_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S133"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Aa×Aa產生aa的理論機率為何？",
+  "options": [
+    "產生 aa 的機率為零",
+    "產生 aa 的機率為二分之一",
+    "產生 aa 的機率為四分之一",
+    "產生 aa 的機率為四分之三"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "雙親都能給a，因此機率不是零。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "二分之一是Aa基因型兩格的比例。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "四格中只有a與a一格形成aa。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "四分之三是完全顯性時顯性表現比例。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "混淆aa與顯性表現機率"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-010",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-047",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-017",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-015",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-019",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-014",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-012",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-030",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-025"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「產生 aa 的機率為四分之一」來自四個等機會配子組合中的唯一aa。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其他比例分別忽略a配子或混入Aa及顯性表現格。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

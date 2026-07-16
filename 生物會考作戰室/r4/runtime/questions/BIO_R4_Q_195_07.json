@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_195_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S195"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "只知道植物白天淨吸收6單位二氧化碳，能否求出光合作用總吸收量？",
+  "options": [
+    "能，必定等於6",
+    "能，必定等於12",
+    "不能，還需知道呼吸釋放量",
+    "不能，因植物沒有碳"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "淨值已扣除呼吸量，總吸收通常不等於淨值。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有呼吸數據，不能任意假設為另一倍數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "知道呼吸量後才能由淨值回推總吸收。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "植物有機物含碳，題幹也顯示二氧化碳交換。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "辨認淨值資訊限制"
+  ],
+  "representationType": "未知量判斷",
+  "misconceptionTargets": [
+    "淨吸收就是總光合作用"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "淨吸收＝光合作用吸收－呼吸釋出，缺一項無法求總量。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「不能，還需知道呼吸釋放量」指出所缺資料，不把單一淨值過度解讀。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

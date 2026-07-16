@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_045_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S045"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一份資料只測20與60°C，若20°C較快，研究者最不應直接宣稱什麼？",
+  "options": [
+    "兩個測量值可以比較",
+    "60°C可能使酵素作用降低",
+    "仍需測其他溫度了解趨勢",
+    "20°C就是精確最適溫度"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "相同方法得到的兩值可以進行比較。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "高溫作用降低是可檢驗的合理可能。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "只有兩點不足以描繪完整趨勢。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "未測其他溫度不能確定精確峰值。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-045",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-044",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-041"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩個溫度只能比較彼此，無法排除21至59°C或更低處有更高值。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "因此最不應把20°C直接定為精確最適溫度，需增加測量點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

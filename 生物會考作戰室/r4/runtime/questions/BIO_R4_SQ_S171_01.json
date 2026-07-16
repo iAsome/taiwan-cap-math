@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S171_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S171"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S171",
+  "stem": "比較甲與乙，最能支持哪項結論？",
+  "options": [
+    "材料不同造成全部差異",
+    "短鉤使拉脫力變成零",
+    "加入短鉤可提高扣件拉脫力",
+    "鉤密度不影響任何性能"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題目已控制材料相同，不能用未改變的因素解釋差異。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙仍有十一點八牛頓拉脫力，資料明顯不是零。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "材料與面積相同時，乙加入短鉤後拉脫力由二點五升至十一點八牛頓。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "乙與甲性能相差九點三牛頓，顯示是否有鉤與附著相關。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀鉤附效果"
+  ],
+  "representationType": "性能表",
+  "misconceptionTargets": [
+    "鉤結構不影響附著"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "控制核對甲乙材料及面積相同，主要差異是短鉤的存在。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "數值核對乙拉脫力約為甲的四點七倍，方向符合機械扣合原理。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

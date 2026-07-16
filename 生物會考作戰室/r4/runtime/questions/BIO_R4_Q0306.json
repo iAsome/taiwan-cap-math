@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0306",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S026"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "同一可通過物質在膜兩側濃度分別為六與六。下一分鐘最可能如何？",
+  "options": [
+    "只能由左向右移動",
+    "兩方向仍可移動，平均淨量接近零",
+    "只能由右向左移動",
+    "所有粒子失去運動能力"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "濃度相等時沒有理由只允許左向右。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "兩側條件相同時雙向通過量平均相當，呈動態平衡。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "同理也不能限定只有右向左。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "濃度相等不會使粒子的熱運動消失。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "平衡應用"
+  ],
+  "representationType": "數值情境",
+  "misconceptionTargets": [
+    "相等即停止"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "濃度相同限制的是整體淨結果，不是個別粒子的移動方向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "短時間隨機量可能略波動，但平均而言兩方向可互相抵銷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

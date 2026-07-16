@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S161_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S161"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S161",
+  "stem": "為何不能由資料宣稱『完整皮膚保證零細菌進入』？",
+  "options": [
+    "因為乙組沒有擦傷",
+    "甲組仍檢出2單位且實驗條件有限",
+    "因為兩組初始量不同",
+    "因為表中沒有任何數字"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "乙組明確記為淺擦傷，否定擦傷與表格紀錄不符。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "甲並非零檢出，而且單次組織模型不能涵蓋所有皮膚與暴露條件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩組初始量都為100單位，不能用不存在的劑量差解釋限制。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "表中列出初始量、時間與下層檢出量，並非沒有量化資料。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "限制屏障結論"
+  ],
+  "representationType": "資料推論",
+  "misconceptionTargets": [
+    "屏障等於絕對阻擋"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "語氣核對以『降低』取代『保證零』，因甲的實測結果仍有少量檢出。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "外推核對限制在十分鐘與此組織模型，不把一次結果推廣到所有病原和傷口。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

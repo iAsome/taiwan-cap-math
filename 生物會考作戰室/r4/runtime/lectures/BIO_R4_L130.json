@@ -1,0 +1,128 @@
+{
+  "id": "BIO_R4_L130",
+  "subject": "biology",
+  "unitId": "BIO_R4_U18",
+  "skillId": "BIO_R4_S130",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S129"
+  ],
+  "objectives": [
+    "能從孟德爾式雜交實驗辨認自變項、控制條件與結果。",
+    "能以子代數據檢查遺傳假設而不把比例當固定配額。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L130_SEC1",
+      "title": "選擇清楚性狀",
+      "content": "孟德爾選用具有明顯對比性狀且容易培育的豌豆，先確認親代性狀穩定。清楚定義紫花或白花等分類，才能讓後續子代計數具有一致標準。"
+    },
+    {
+      "id": "BIO_R4_L130_SEC2",
+      "title": "控制授粉",
+      "content": "研究者指定哪株提供花粉、哪株接受花粉，並避免其他花粉混入。若授粉來源不明，就無法把子代結果可靠連回設定的親代組合。"
+    },
+    {
+      "id": "BIO_R4_L130_SEC3",
+      "title": "控制與自變項",
+      "content": "比較不同親代組合時，親代性狀或基因組合是主要改變項；土壤、水分、光照與計數方法應盡量相同。控制條件能降低其他因素對結果的干擾。"
+    },
+    {
+      "id": "BIO_R4_L130_SEC4",
+      "title": "由數據形成結論",
+      "content": "子代表現數量可轉成比例與模型預測比較。有限樣本不必精確等於理論比例；增加樣本並重複試驗，可判斷偏差是隨機波動或模型需要修正。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L130_EX1",
+      "prompt": "兩組雜交只改變提供花粉的親代性狀，其他條件相同，自變項為何？",
+      "steps": [
+        "列出兩組唯一不同條件。",
+        "把被研究者主動改變的因素標出。"
+      ],
+      "answer": "提供花粉親代的性狀。",
+      "why": "水分與光照已被控制，只有花粉親代性狀改變，因此它是用來檢驗影響的自變項。"
+    },
+    {
+      "id": "BIO_R4_L130_EX2",
+      "prompt": "一組未隔離外來花粉，為何結果不宜直接與另一組比較？",
+      "steps": [
+        "確認授粉來源是否一致且已知。",
+        "判斷外來花粉會不會改變親代組合。"
+      ],
+      "answer": "外來花粉造成混淆，實際親代來源不確定。",
+      "why": "子代可能來自非設定花粉，結果差異就不能唯一歸因於原本安排的親代組合。"
+    },
+    {
+      "id": "BIO_R4_L130_EX3",
+      "prompt": "預測3比1，四十株卻得到二十八比十二，能否立即否定模型？",
+      "steps": [
+        "把觀察值與預期三十比十比較。",
+        "考慮有限樣本的隨機波動。"
+      ],
+      "answer": "不能立即否定，應增加樣本與重複試驗。",
+      "why": "二十八比十二接近但不等於三比一，有限樣本可波動；持續系統偏離才需進一步檢查。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "理論3比1表示每四株必定三紫一白。",
+      "whyWrong": "比例描述大量子代的機會趨勢，少量連續結果可以不按固定四株排列。",
+      "correction": "比較整體比例與樣本量，不把機率當成固定出生順序。"
+    },
+    {
+      "belief": "只要親代相同，其他條件不用控制。",
+      "whyWrong": "環境、授粉污染與計數方式都可能影響觀察結果或資料可靠性。",
+      "correction": "除研究因素外盡量維持條件一致，並記錄可能干擾。"
+    },
+    {
+      "belief": "樣本越少越容易證明精確比例。",
+      "whyWrong": "小樣本隨機波動通常較大，觀察比例可能偏離理論值。",
+      "correction": "增加獨立子代數並重複試驗，提升比例估計穩定性。"
+    },
+    {
+      "belief": "不合預測的子代應刪除。",
+      "whyWrong": "選擇性刪除會扭曲真實比例，也可能掩蓋授粉或模型問題。",
+      "correction": "保留全部合格觀察，異常資料另查測量與程序原因。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "雜交實驗為何需要隔離外來花粉？",
+      "answer": "確保子代來自設定的親代組合。",
+      "reason": "授粉來源若不確定，就不能把結果歸因於指定親代。"
+    },
+    {
+      "prompt": "比較親代組合時，水分光照應如何處理？",
+      "answer": "盡量維持一致。",
+      "reason": "控制環境可降低非遺傳因素造成的差異與混淆。"
+    },
+    {
+      "prompt": "觀察比例未精確等於理論值時先做什麼？",
+      "answer": "檢查程序並增加樣本重複觀察。",
+      "reason": "有限樣本可隨機波動，需更多資料判斷是否系統偏離。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

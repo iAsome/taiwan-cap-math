@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q0270",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S023"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "同一細胞在未染色影像中透明，在染色影像中細胞核較深。正確解讀為何？",
+  "options": [
+    "染色後細胞核才首次形成",
+    "染色提高部分構造的對比，不表示原本沒有細胞核",
+    "未染色影像中的細胞一定已死亡",
+    "深色證明細胞核溫度較低"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "染色改變可見度，不會因拍攝而新造出細胞核。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "染劑與特定成分作用可增加對比，使原有構造較容易辨認。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "透明與是否死亡沒有必然關係，需其他生命現象證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "影像深淺反映吸收或透光差異，不能直接推出溫度。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "染色判讀"
+  ],
+  "representationType": "雙影像情境",
+  "misconceptionTargets": [
+    "可見等同存在"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "染色是觀察方法的一部分，它改變影像呈現而非構造是否原本存在。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "比較影像時需找出改變的觀察條件，避免把顏色差異誤解成生命狀態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

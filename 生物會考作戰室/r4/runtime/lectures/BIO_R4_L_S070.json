@@ -1,0 +1,128 @@
+{
+  "id": "BIO_R4_L_S070",
+  "subject": "biology",
+  "unitId": "BIO_R4_U09",
+  "skillId": "BIO_R4_S070",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S069"
+  ],
+  "objectives": [
+    "說明淋巴管、淋巴結與免疫細胞在防禦中的角色",
+    "由淋巴回流或免疫反應資料推論受影響功能"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S070_SEC_01",
+      "title": "淋巴系統回收組織液",
+      "content": "部分血漿成分進入組織間形成組織液，淋巴管可回收多餘液體，最後送回血液循環。淋巴回流受阻時，組織液較易累積而腫脹。"
+    },
+    {
+      "id": "BIO_R4_L_S070_SEC_02",
+      "title": "淋巴結是過濾站",
+      "content": "淋巴液流經淋巴結時，其中外來物可與免疫細胞接觸。淋巴結不是把所有微生物機械磨碎，而是提供過濾與免疫反應的重要場所。"
+    },
+    {
+      "id": "BIO_R4_L_S070_SEC_03",
+      "title": "免疫細胞參與防禦",
+      "content": "不同免疫細胞可辨識、吞噬或協調對抗外來物。某些反應具有專一性，會針對特定抗原產生反應，不能把所有免疫作用視為完全相同。"
+    },
+    {
+      "id": "BIO_R4_L_S070_SEC_04",
+      "title": "免疫記憶與再次反應",
+      "content": "部分後天免疫反應後會留下記憶細胞，再遇到相同抗原時可能較快且較強地反應。這不表示對所有不同病原都同樣有效，也不保證永不感染。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S070_EX_01",
+      "prompt": "手臂淋巴回流受阻時為何可能腫脹？",
+      "steps": [
+        "確認淋巴管回收組織液",
+        "推論回收量下降的結果"
+      ],
+      "answer": "多餘組織液較易累積",
+      "why": "淋巴管原本會把組織間多餘液體收集並送回血液，回流受阻後液體移出速度下降，因此可能在局部累積並造成腫脹。"
+    },
+    {
+      "id": "BIO_R4_L_S070_EX_02",
+      "prompt": "感染附近淋巴結出現較多免疫細胞，最合理意義為何？",
+      "steps": [
+        "辨認淋巴結是淋巴過濾位置",
+        "連結外來物與免疫細胞接觸"
+      ],
+      "answer": "該處可能正在進行免疫防禦反應",
+      "why": "來自感染區域的淋巴液可把外來物帶到淋巴結，使免疫細胞在此接觸並反應；細胞增加不能解釋成淋巴結只負責儲水。"
+    },
+    {
+      "id": "BIO_R4_L_S070_EX_03",
+      "prompt": "再次接觸相同抗原時反應較快，可支持哪個概念？",
+      "steps": [
+        "比較初次與再次反應速度",
+        "確認抗原種類相同"
+      ],
+      "answer": "免疫系統可能形成對該抗原的記憶",
+      "why": "初次反應後留下的記憶細胞可在相同抗原再次出現時較快啟動反應；此證據只支持對該抗原的記憶，不能推廣為抵抗所有病原。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "淋巴液就是完全沒有細胞的清水",
+      "whyWrong": "淋巴液含有水與多種物質，也可含參與防禦的免疫細胞。",
+      "correction": "淋巴液由組織液進入淋巴管形成，兼具回流與運送防禦相關成分的作用。"
+    },
+    {
+      "belief": "淋巴結會主動把所有病原磨成碎片",
+      "whyWrong": "淋巴結提供過濾和免疫反應場所，並非機械研磨器官。",
+      "correction": "外來物隨淋巴到達後可被攔截並與免疫細胞接觸，反應仍有種類差異。"
+    },
+    {
+      "belief": "免疫記憶能同時防止所有不同病原",
+      "whyWrong": "免疫記憶通常具有抗原專一性，對不同病原不一定有效。",
+      "correction": "再次反應較快須限定在相同或高度相關抗原，不能無限推廣。"
+    },
+    {
+      "belief": "淋巴回流只和免疫有關，不影響液體平衡",
+      "whyWrong": "淋巴管也負責回收多餘組織液，受阻時可能造成局部腫脹。",
+      "correction": "淋巴系統同時參與體液回流與免疫防禦，兩項功能都需考慮。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "淋巴管回收多餘組織液後送往何處？",
+      "answer": "最後送回血液循環",
+      "reason": "淋巴回流可把組織間液體重新送回循環，協助維持局部液體平衡。"
+    },
+    {
+      "prompt": "淋巴結在防禦中的重要作用為何？",
+      "answer": "過濾淋巴並提供免疫細胞反應場所",
+      "reason": "外來物隨淋巴到達淋巴結後，可在此被攔截並接觸免疫細胞。"
+    },
+    {
+      "prompt": "再次遇相同抗原反應較快代表什麼？",
+      "answer": "可能存在針對該抗原的免疫記憶",
+      "reason": "記憶細胞可在相同抗原再出現時較快啟動專一性反應。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  }
+}

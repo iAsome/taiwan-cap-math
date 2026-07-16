@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_188_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S188"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "題示關係為甲→丙、乙→丙、丙→丁。下列哪條食物鏈可直接抽出？",
+  "options": [
+    "甲→乙→丁",
+    "乙→丙→丁",
+    "丁→丙→甲",
+    "丙→甲→乙"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題示沒有甲→乙這支箭頭。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "乙到丙再到丁的兩段都存在。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "此項將丙到丁及甲到丙都倒置。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題示沒有丙→甲或甲→乙的關係。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "從食物網抽取鏈條"
+  ],
+  "representationType": "代號網絡",
+  "misconceptionTargets": [
+    "節點出現在關係式就可任意連線"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-002"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "抽取食物鏈時，每一相鄰節點都須有同方向箭頭。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「乙→丙→丁」可逐段在題示關係核對，其餘均含不存在或反向箭頭。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

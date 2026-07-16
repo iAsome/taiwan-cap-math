@@ -1,0 +1,90 @@
+{
+  "id": "BIO_R4_Q_140_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S140"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某酒廠提高槽內氧氣後酒精產量下降。最合理的處理為何？",
+  "options": [
+    "斷言氧氣越多發酵永遠越快",
+    "把酒精下降解釋為葡萄成為新品種",
+    "不量溫度與菌數就直接加倍糖量",
+    "依酵母代謝需求檢查含氧量並設梯度試驗"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "目標產物的代謝路徑不同，氧氣並非越多越好。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "短期培養條件不會使葡萄品種自動改變。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "糖量也改變會新增因素，且未先排除菌數與溫度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "量測與梯度比較可找出適合酒精生成的條件範圍。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "認為所有發酵都需要越多氧氣越好"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-032",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-013"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「依酵母代謝需求檢查含氧量並設梯度試驗」用可控制的環境變因檢驗代謝反應，而非依單一口號調整。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "發酵管理還應監測污染、酸鹼值與活菌量，避免把所有下降只歸給氧氣。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

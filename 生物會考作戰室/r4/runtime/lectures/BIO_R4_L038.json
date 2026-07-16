@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L038",
+  "subject": "biology",
+  "unitId": "BIO_R4_U05",
+  "skillId": "BIO_R4_S038",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "prerequisites": [
+    "BIO_R4_S037"
+  ],
+  "objectives": [
+    "能區分分子、胞器、細胞與個體的尺度及功能敘述。",
+    "能將微觀分子變化逐層連結到細胞與個體現象。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L038_S1",
+      "title": "不同尺度單位",
+      "content": "分子常以奈米尺度討論，許多細胞以微米表示，器官與個體則常用毫米、公分或公尺。單位差一千倍時，數字大小不能直接比較，必須先換成同單位。"
+    },
+    {
+      "id": "BIO_R4_L038_S2",
+      "title": "分子與細胞",
+      "content": "蛋白質、脂質與核酸是分子，細胞膜與胞器由許多分子組成；完整細胞則整合多種構造進行交換、代謝與反應。分子有作用，不等於本身就是細胞。"
+    },
+    {
+      "id": "BIO_R4_L038_S3",
+      "title": "細胞到個體",
+      "content": "個體現象可追溯到細胞活動，例如肌肉收縮依賴細胞內蛋白質互動，血糖變化涉及分子運輸與多種細胞調節。跨尺度解釋需逐層連結。"
+    },
+    {
+      "id": "BIO_R4_L038_S4",
+      "title": "工具與可見度",
+      "content": "肉眼、光學顯微鏡與電子顯微鏡適合觀察的尺度不同。看不見某分子不能證明它不存在；選擇工具時要比較目標大小與儀器解析能力。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L038_E1",
+      "prompt": "細胞長二十微米，蛋白質寬五奈米，哪個較大？",
+      "steps": [
+        "把二十微米換成二萬奈米。",
+        "以二萬除以五比較倍數。"
+      ],
+      "answer": "細胞長度約為蛋白質寬度的四千倍。",
+      "why": "先統一單位可避免把二十與五直接比較；尺度倍數只描述線性長度，不代表體積或功能倍數。"
+    },
+    {
+      "id": "BIO_R4_L038_E2",
+      "prompt": "DNA 是遺傳物質，能否因此稱為一個細胞？",
+      "steps": [
+        "辨認 DNA 屬於分子。",
+        "檢查它是否具膜、細胞質與整合生命活動。"
+      ],
+      "answer": "不能；DNA 是細胞中的重要分子，不是完整細胞。",
+      "why": "具有關鍵功能不會改變組成尺度；細胞需整合多種分子與構造才能維持生命活動。"
+    },
+    {
+      "id": "BIO_R4_L038_E3",
+      "prompt": "某蛋白質缺陷造成肌肉無力，如何寫跨尺度解釋？",
+      "steps": [
+        "先連結蛋白質缺陷與肌肉細胞收縮。",
+        "再連結許多細胞輸出下降與個體力量。"
+      ],
+      "answer": "分子功能受損降低細胞收縮，累積後使個體肌力下降。",
+      "why": "逐層因果比直接說一個蛋白質就是肌肉更準確，也保留其他分子與組織合作。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "數字二十一定比數字五代表更大的實體。",
+      "whyWrong": "若單位不同，五公尺可大於二十微米，不能只比較數字。",
+      "correction": "先把長度、面積或體積換成相同單位，再比較數值大小或倍數。"
+    },
+    {
+      "belief": "具有生物功能的分子就是一個細胞。",
+      "whyWrong": "分子只完成部分作用，細胞由多種分子與構造整合而成。",
+      "correction": "依組成單位與能否獨立完成生命活動，區分細胞、組織與個體尺度。"
+    },
+    {
+      "belief": "個體現象與微觀分子之間沒有關係。",
+      "whyWrong": "分子作用影響細胞活動，許多細胞合作後可改變個體功能。",
+      "correction": "沿分子、胞器、細胞、組織到個體逐層建立作用因果鏈。"
+    },
+    {
+      "belief": "光學顯微鏡看不到就表示目標不存在。",
+      "whyWrong": "儀器有解析限制，目標可能小於可分辨尺度。",
+      "correction": "依目標大小選工具，並將未觀察到與不存在分開。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "一微米等於多少奈米？",
+      "answer": "一微米等於一千奈米。",
+      "reason": "跨分子與細胞尺度比較時，這個千倍換算是常用基礎。"
+    },
+    {
+      "prompt": "蛋白質為何不是細胞？",
+      "answer": "它是組成細胞的分子，只完成部分功能且缺少完整細胞整合。",
+      "reason": "重要性不決定層次，組成與整合能力才是判準。"
+    },
+    {
+      "prompt": "如何把分子缺陷連到個體症狀？",
+      "answer": "先說明它如何改變細胞活動，再連到組織與個體功能。",
+      "reason": "逐層連結可避免跳躍因果，也能指出可能受影響的中間機制。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  }
+}

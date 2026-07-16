@@ -1,0 +1,79 @@
+{
+  "id": "BIO_R4_SQ_S090_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S090"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S090",
+  "stem": "若乙的目標細胞受體被阻斷，哪項預測最合理？",
+  "options": [
+    "乙一定改沿神經傳導",
+    "乙仍可隨血液到達，但特定反應可能降低",
+    "乙會使所有非目標細胞反應",
+    "甲的神經路徑必定同時消失"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "受體阻斷不會把激素改成神經訊息。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "運送與辨識可分開，血液到達不保證作用。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "缺少受體不會使非目標細胞突然全部回應。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "乙的受體狀態不能直接使甲路徑消失。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "預測",
+    "遷移"
+  ],
+  "representationType": "受體介入",
+  "misconceptionTargets": [
+    "混淆運送與作用"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "受體影響目標細胞回應，不必阻止血液把乙運到附近。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "血中到達而反應降低能直接檢驗目標細胞受體功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

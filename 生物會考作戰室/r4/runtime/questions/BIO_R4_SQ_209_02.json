@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_209_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S209"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S209",
+  "stem": "連續暴露兩組最能支持哪個推論？",
+  "options": [
+    "濃度不影響存活",
+    "本實驗中1.0 mg/L比0.2 mg/L有更低存活率",
+    "所有物種反應相同",
+    "七天可證明終生安全"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩組存活率41%與78%，並非無差異。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "每日時間相同時，高濃度組存活率較低。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "實驗只使用水蚤，不能外推所有物種。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "七日資料不能證明終生結果。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "控制時間比較濃度效應"
+  ],
+  "representationType": "連續暴露組比較",
+  "misconceptionTargets": [
+    "不同濃度結果可外推所有物種"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先固定每日暴露時間，再比較污染濃度與水蚤存活率。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "結論應限定於實驗物種、時間與測量反應。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

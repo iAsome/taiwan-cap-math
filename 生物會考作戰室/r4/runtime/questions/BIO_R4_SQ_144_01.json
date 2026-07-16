@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_144_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S144"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GB-4-1",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST144",
+  "stem": "依這個剖面，菊石最後出現在哪個岩層？",
+  "options": [
+    "資料中的甲層（最老）",
+    "資料中的乙層（菊石最後檢出）",
+    "資料中的丙層（無菊石）",
+    "資料中的丁層（最晚）"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲層雖有菊石，但上方乙層仍有較晚紀錄。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "乙層有菊石，而更晚的丙、丁層都沒有。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丙層未檢出菊石，不能稱為最後出現層。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "丁層年代最晚但只記錄魚類化石。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把最老出現或最晚岩層誤當最後出現"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GB-4-1",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「資料中的乙層（菊石最後檢出）」依由老到新的順序找出最上方仍含菊石的岩層。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "最後出現不代表精確死亡時刻，但可界定現有紀錄的最晚存在。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_079_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "指標超界後，調節反應增強且數值朝範圍移動，最支持何者？",
+  "options": [
+    "負回饋可能正在修正偏差",
+    "調節使偏差繼續擴大",
+    "所有器官已停止",
+    "參考範圍沒有用途"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "反應增強伴隨數值回到範圍，符合抵消原偏差的調節。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "數值朝範圍移動而非遠離，不能說偏差持續擴大。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "有調節反應與連續數值，並不支持所有器官停止。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "資料正是利用參考範圍判斷回復方向，不能說範圍無用。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "要判斷回饋方向需同時看偏差、反應與後續結果，三者在此一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "這仍是功能推論，若阻斷該反應後偏差不再回復，可提供更強因果證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

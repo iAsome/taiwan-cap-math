@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_212_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S212"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "處理後化學濃度達標，但水蚤生存率仍低，下一步應如何判斷？",
+  "options": [
+    "忽略水蚤結果",
+    "調查未測副產物或其他毒性來源",
+    "直接宣布完全安全",
+    "刪除對照組"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "生物反應顯示仍可能有未辨認風險，不應忽略。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "化學指標與生物反應不一致時應搜尋其他原因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "生存率低不支持完全安全。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "刪除對照會降低判斷環境背景的能力。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "整合"
+  ],
+  "representationType": "證據整合",
+  "misconceptionTargets": [
+    "達標等於無風險"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "化學濃度分析與生物反應測試能提供彼此互補的證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "不一致結果是調查線索，可能來自副產物或其他環境因素。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_SQ_057_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S057"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S057",
+  "stem": "若支氣管完全阻塞，表中哪筆後續紀錄最可能消失？",
+  "options": [
+    "0秒鼻腔",
+    "1秒咽",
+    "5秒肺泡",
+    "2秒氣管"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "阻塞在更後方，不妨礙微粒先到鼻腔。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "微粒也可先通過咽再到阻塞處。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "無法通過支氣管就難以到達肺泡。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "氣管位於支氣管之前仍可能出現微粒。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "呼吸系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "阻塞會影響位置後方而非前方，肺泡位於支氣管之後。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「5秒肺泡」是唯一需要先通過阻塞處才可出現的紀錄。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

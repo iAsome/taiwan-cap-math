@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_141_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S141"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "微生物處理污水後，有機物濃度下降。這項結果最直接支持什麼？",
+  "options": [
+    "處理一定完全不耗能源",
+    "所有污染物都已消失",
+    "微生物方案具有削減該有機物的效益",
+    "處理後的水可不經檢驗直接飲用"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "濃度下降沒有提供能源消耗為零的資料。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "只量有機物不能代表其他污染物全部消失。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "前後數值改變直接支持目標有機物被削減。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "飲用安全需檢查病原與多項水質，不能由單一指標保證。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "由單一污染指標推成全面安全"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「微生物方案具有削減該有機物的效益」把結論限定在實際量測的有機物，沒有擴大成全面無污染。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若要比較整體效益，還應加入處理量、時間、耗能與副產物數據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_Q_052_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S052"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某藥物讓絨毛變平但不影響消化酵素，最可能觀察到什麼？",
+  "options": [
+    "食物完全不能被分解",
+    "胃立刻停止攪拌",
+    "唾液無法分泌",
+    "小分子形成正常但吸收量減少"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "酵素正常表示化學分解仍可進行。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "絨毛變平不直接控制胃肌肉。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "唾液腺也不由小腸絨毛控制。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "面積下降會使已形成小分子較難充分吸收。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "消化系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題幹分開消化與吸收，酵素正常保留小分子形成，絨毛平坦降低吸收。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「小分子形成正常但吸收量減少」同時符合兩個限定，其他選項錯把小腸構造影響擴張到別處。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

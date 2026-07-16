@@ -1,0 +1,89 @@
+{
+  "id": "BIO_R4_SQ0039",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S013"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST013",
+  "stem": "自動載物臺若要讓左下角目標置中，程式應控制玻片怎麼移？",
+  "options": [
+    "向右上大幅跳動",
+    "完全不移動",
+    "向左下小幅移動並依畫面修正",
+    "先關閉成像"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "玻片右上會使影像左下，目標更遠離中央。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "不移動無法改變左下角目標的位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "玻片左下使影像右上，小幅回饋可逐步置中。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "關閉成像後失去位置回饋，無法完成自動修正。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "自動化遷移"
+  ],
+  "representationType": "控制系統",
+  "misconceptionTargets": [
+    "自動設備不需方向規則"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-018",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-025",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-031"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "自動控制仍遵守相同光學反向關係，並需要閉環影像回饋。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "小幅移動能避免超過中央，也可逐次校正機械誤差。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

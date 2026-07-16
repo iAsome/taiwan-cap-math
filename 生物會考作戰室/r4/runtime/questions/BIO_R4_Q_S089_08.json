@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S089_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S089"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "細胞甲有Z受體但加入Z後不反應，哪項推論最適當？",
+  "options": [
+    "甲一定從未接觸Z",
+    "受體存在就保證所有反應正常",
+    "Z必定沒有進入培養環境",
+    "除受體外，後續反應路徑也可能異常"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題幹說已加入Z，不能直接否定接觸。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "受體只是辨識條件，後續機制仍可能失常。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有濃度測量，不能斷定Z完全不存在。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "有受體卻無反應，合理檢查受體功能與後續路徑。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "限制推論"
+  ],
+  "representationType": "異常情境",
+  "misconceptionTargets": [
+    "把受體存在視為充分條件"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "受體存在不等於受體及細胞內路徑都能運作。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「除受體外，後續反應路徑也可能異常」提出符合現象且不違反已知條件的可能性。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

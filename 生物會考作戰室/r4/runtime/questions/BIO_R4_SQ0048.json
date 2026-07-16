@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_SQ0048",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S016"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST016",
+  "stem": "若把甲圖縮小後上傳，應如何維持尺度可用？",
+  "options": [
+    "只縮圖、不縮比例尺",
+    "刪除倍率與標題",
+    "把微米改成公克",
+    "讓圖與比例尺同步縮放並保留單位"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "比例尺未同步會破壞線長與影像的原比值。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "刪除脈絡使讀者更難判讀觀察與尺度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "公克是質量單位，不能替代微米長度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "同步縮放及保留單位可維持實際尺寸換算。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "數位處理"
+  ],
+  "representationType": "分享情境",
+  "misconceptionTargets": [
+    "縮圖不影響比例尺"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "平台縮圖必須對整張圖做同一比例變換，尺度關係才不失真。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "上傳後可用已知比例尺檢查像素比值，確認系統沒有拉伸。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

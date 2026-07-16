@@ -1,0 +1,62 @@
+{
+  "id": "BIO_R4_ST_S079",
+  "subject": "biology",
+  "skillId": "BIO_R4_S079",
+  "type": "internal-state-series",
+  "content": {
+    "title": "運動後指標的回復紀錄",
+    "text": "某教學模型的指標參考範圍為70至100單位。學生在運動前、運動後立即及恢復期間以同一儀器量測，每個時點重複兩次取平均。",
+    "note": "此為教學模型數值，不作為真實醫療診斷標準。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "表格顯示指標由運動前範圍內，上升到運動後高於上限，再逐步回到範圍。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "時點",
+        "指標（單位）"
+      ],
+      "rows": [
+        [
+          "運動前",
+          "84"
+        ],
+        [
+          "運動後立即",
+          "138"
+        ],
+        [
+          "恢復10分鐘",
+          "116"
+        ],
+        [
+          "恢復20分鐘",
+          "96"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

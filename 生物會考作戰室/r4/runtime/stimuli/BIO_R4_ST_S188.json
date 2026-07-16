@@ -1,0 +1,67 @@
+{
+  "id": "BIO_R4_ST_S188",
+  "subject": "biology",
+  "skillId": "BIO_R4_S188",
+  "type": "diet-record",
+  "content": {
+    "title": "河口鳥類食性紀錄",
+    "text": "調查員確認蘆葦種子被小鼠與麻雀取食；小鼠被草鴞捕食；麻雀與招潮蟹都被遊隼捕食。資料來自糞便分析與直接觀察，只能畫入表列關係，不能以常見食性補線。",
+    "instruction": "箭頭統一由食物指向攝食者，相同物種在整合關係網中只列一個節點。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [
+    "CAP-106-MAIN-INTEGRATED-NATURAL-002"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-002"
+    ]
+  },
+  "accessibility": {
+    "summary": "所有攝食關係均用食物與攝食者文字列出，箭頭規則另有文字說明，不依賴顏色。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "食物",
+        "攝食者"
+      ],
+      "rows": [
+        [
+          "蘆葦種子",
+          "小鼠"
+        ],
+        [
+          "蘆葦種子",
+          "麻雀"
+        ],
+        [
+          "小鼠",
+          "草鴞"
+        ],
+        [
+          "麻雀",
+          "遊隼"
+        ],
+        [
+          "招潮蟹",
+          "遊隼"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

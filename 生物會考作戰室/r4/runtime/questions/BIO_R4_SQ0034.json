@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_SQ0034",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST012",
+  "stem": "依表格，哪種倍率的視野直徑較大？",
+  "options": [
+    "高倍",
+    "低倍",
+    "兩者相同",
+    "表中沒有直徑"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "高倍的直徑數值較小，不能判為較大。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "低倍四點八毫米大於高倍一點二毫米。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩個數值不同，並非相同視野直徑。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "表格第二欄已清楚提供兩種直徑。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料讀取"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "倍率高視野大"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-030"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "直接比較四點八與一點二，可確認低倍涵蓋範圍較大。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "結果符合倍率提高時視野縮小的一般光學關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

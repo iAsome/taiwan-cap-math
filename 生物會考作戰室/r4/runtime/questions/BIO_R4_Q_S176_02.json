@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S176_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S176"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "實驗前讓植株在黑暗中放置一段時間，主要目的為何？",
+  "options": [
+    "增加所有原有澱粉",
+    "消耗大部分原有澱粉",
+    "使葉綠體永久消失",
+    "讓植物停止呼吸"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "黑暗不利光合作用，通常不會增加所有葉的澱粉。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "呼吸持續利用有機物，可降低處理前的澱粉存量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "短期黑暗不會使全部葉綠體永久從細胞消失。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "呼吸不需光，黑暗中仍會持續而非停止。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "理解去澱粉"
+  ],
+  "representationType": "程序題",
+  "misconceptionTargets": [
+    "黑暗增加澱粉"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-005"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "起點核對去除舊澱粉後，陽性結果較能歸於本次處理。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "代謝核對暗處限制新合成，但呼吸可消耗既有有機物。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

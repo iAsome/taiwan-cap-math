@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_066_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S066"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "下列哪個肺循環順序正確？",
+  "options": [
+    "左心室→全身→右心房",
+    "右心房→全身→左心房",
+    "肺部→右心室→全身",
+    "右心室→肺動脈→肺部→肺靜脈→左心房"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "此路徑是體循環的主要方向，沒有呈現血液到肺部交換。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "右心房的血會先進右心室，不會直接送往全身並回左心房。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "肺部回流血先到左心房，不會直接回右心室再送全身。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "血液由右心室到肺部交換，再經肺靜脈回左心房，順序完整。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-037",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-037",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-031",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-034",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-016",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-026",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-039"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "完整肺循環必須同時包含右心室、肺部交換與左心房三個關鍵點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "檢查每一箭頭是否符合離心與回心方向，可排除跳過腔室或目的地錯置的路徑。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

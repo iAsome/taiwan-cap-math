@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S100_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S100"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "搬運相同箱子時，讓箱子靠近軀幹通常有何效果？",
+  "options": [
+    "使箱子重量完全消失",
+    "使所有關節固定",
+    "縮短負重力臂，降低部分肌肉負擔",
+    "讓骨骼主動收縮"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "箱子的重力不會因位置靠近而消失。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "靠近身體不等於所有關節完全固定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "距離縮短可減少對腰部與肩部的轉動效果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "骨骼不具主動收縮產力能力。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "搬抬位置"
+  ],
+  "representationType": "概念辨識",
+  "misconceptionTargets": [
+    "靠近身體使重量消失"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "改變負重位置雖不改變重量，卻能改變肌肉需要抵抗的力矩。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "靠近身體只是降低部分負擔，仍須控制箱重並保持穩定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

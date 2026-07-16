@@ -1,0 +1,106 @@
+{
+  "id": "BIO_R4_ST_S103",
+  "subject": "biology",
+  "skillId": "BIO_R4_S103",
+  "type": "marker-table",
+  "content": {
+    "title": "親代、配子與子代的遺傳標記",
+    "context": "研究者檢測親代甲、親代乙及三個子代的四個遺傳標記。符號有表示檢出該標記，無表示本次未檢出。",
+    "columns": [
+      "個體",
+      "標記A",
+      "標記B",
+      "標記C",
+      "標記D"
+    ],
+    "rows": [
+      [
+        "親代甲",
+        "有",
+        "有",
+        "無",
+        "無"
+      ],
+      [
+        "親代乙",
+        "無",
+        "無",
+        "有",
+        "有"
+      ],
+      [
+        "子代一",
+        "有",
+        "無",
+        "有",
+        "無"
+      ],
+      [
+        "子代二",
+        "無",
+        "有",
+        "無",
+        "有"
+      ],
+      [
+        "子代三",
+        "有",
+        "無",
+        "無",
+        "有"
+      ]
+    ],
+    "note": "本表用於練習來源判讀，不代表只靠四個標記即可完成真實親緣鑑定。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "親代甲有A、B；親代乙有C、D。子代一有A、C；子代二有B、D；子代三有A、D。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "個體",
+        "檢出標記"
+      ],
+      "rows": [
+        [
+          "親代甲",
+          "A、B"
+        ],
+        [
+          "親代乙",
+          "C、D"
+        ],
+        [
+          "子代一",
+          "A、C"
+        ],
+        [
+          "子代二",
+          "B、D"
+        ],
+        [
+          "子代三",
+          "A、D"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

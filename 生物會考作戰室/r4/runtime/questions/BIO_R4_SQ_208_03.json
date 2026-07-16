@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_SQ_208_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S208"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S208",
+  "stem": "若上游新增污染源，哪種監測最能追蹤其後續放大？",
+  "options": [
+    "只記水鳥數量",
+    "只量一天氣溫",
+    "只拍攝河岸",
+    "定期測水體及各營養階層同一污染物濃度"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "數量變化受多因素影響且沒有濃度資訊。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一天氣溫不能追蹤污染物傳遞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "照片不能取代污染物定量測量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "時間序列與跨階層濃度可追蹤輸入、累積及放大。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "設計跨階層長期監測"
+  ],
+  "representationType": "污染追蹤方案",
+  "misconceptionTargets": [
+    "只記水鳥數量即可追蹤污染物"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-012",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-014"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "追蹤新增來源需要基線、時間序列與相連階層樣本。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "使用相同方法與單位，才可比較濃度變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

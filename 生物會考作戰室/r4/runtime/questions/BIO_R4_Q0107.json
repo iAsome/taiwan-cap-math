@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q0107",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S009"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "實驗桌上的顯微鏡視野忽明忽暗，最合理先檢查什麼？",
+  "options": [
+    "標本名稱是否正確",
+    "載玻片是否有標籤",
+    "光源接觸與光圈位置是否穩定",
+    "鏡臂是否印有商標"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "名稱不會造成實際光量隨時間變化。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "標籤可能遮光但通常不會自行造成忽明忽暗。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "電源接觸或光圈移動會直接造成進光量不穩。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "商標只提供識別，與照明功能沒有關係。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "故障排除"
+  ],
+  "representationType": "實驗室情境",
+  "misconceptionTargets": [
+    "影像問題都靠物鏡"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-017",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-027"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "電源接觸不良會中斷供光，光圈鬆動則會反覆改變進入視野的光量。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其餘資訊不會產生時間上反覆變化的光線問題。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

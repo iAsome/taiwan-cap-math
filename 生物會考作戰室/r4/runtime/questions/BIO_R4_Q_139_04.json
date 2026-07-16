@@ -1,0 +1,89 @@
+{
+  "id": "BIO_R4_Q_139_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S139"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某男性一半精子帶版本 M，一半不帶。哪句最符合傳遞機率？",
+  "options": [
+    "第一名子女必定帶 M",
+    "每兩名子女固定一人帶 M",
+    "所有女兒帶 M、兒子不帶",
+    "每次受精都有機會由帶 M 或不帶 M 的精子參與"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "配子比例不能預告出生順序，第一名不具有固定結果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "二分之一是每次機會，不保證短短兩次恰好各一。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題目未指出版本位於性染色體，不能用子女性別分配。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "不同精子參與受精具有機率，長期比例不等於固定排列。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把遺傳機率誤解成固定出生順序"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-032"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「每次受精都有機會由帶 M 或不帶 M 的精子參與」正確把配子比例解讀為每次受精的可能性，而非子女出生的排班表。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若要預測子代表現，還需知道另一親本版本與 M 的作用方式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

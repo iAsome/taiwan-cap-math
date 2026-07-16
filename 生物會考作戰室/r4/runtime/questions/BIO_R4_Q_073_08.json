@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_073_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S073"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某物質一直留在腸腔，未被吸收便排出，最合理分類為何？",
+  "options": [
+    "一定是腎臟排泄",
+    "一定是細胞呼吸",
+    "一定是肺部換氣",
+    "屬排遺，因未成為細胞代謝產物"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "物質未進入血液，不會先由腎臟過濾形成尿液。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "細胞呼吸需發生在細胞內，而該物質一直留在腸腔。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "肺部換氣處理空氣進出，與腸腔殘餘排出不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "未吸收成分直接隨消化道殘餘離開，符合排遺。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題幹特別指出未被吸收，表示物質沒有進入細胞代謝流程。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "不能因物質離開身體就一律稱排泄，仍須區分消化道排遺。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

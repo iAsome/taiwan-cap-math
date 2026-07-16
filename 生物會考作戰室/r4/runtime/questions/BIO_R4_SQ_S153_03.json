@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S153_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S153"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S153",
+  "stem": "教材若把己物種接在戊個體之後形成單一路徑，最大的問題是什麼？",
+  "options": [
+    "把分類單位接到身體組成序列",
+    "卡片總數太少",
+    "個體不能觀察",
+    "物種一定小於細胞"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "戊個體是組成序列端點，己物種則是分類單位，直接相接混合兩套概念。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "八張卡已足以呈現兩列示例，錯誤不在卡片數量而在連接關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "個體可直接觀察與計數，不能用不可觀察解釋教材路徑問題。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "細胞與物種屬不同系統，沒有共同尺度可判物種一定小於細胞。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "評析資訊架構"
+  ],
+  "representationType": "教材設計",
+  "misconceptionTargets": [
+    "強行串接不同層次"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "資訊架構核對先依活動要求分成兩列，戊與己因此不應位於同一路徑。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "概念關係核對確認個體不會構成物種這個分類階層，混接系統才是核心錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

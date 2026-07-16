@@ -1,0 +1,85 @@
+{
+  "id": "BIO_R4_Q_S159_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S159"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "為何不能用抗細菌藥物必然治療病毒感染？",
+  "options": [
+    "病毒比所有細菌都大",
+    "病毒沒有遺傳物質",
+    "病毒一定生活在水中",
+    "病毒缺少藥物針對的細菌構造與代謝"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "病毒大小不能解釋藥物標的，且不同病毒與細菌的尺寸範圍也不宜如此概括。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "病毒具有DNA或RNA等遺傳物質，否定遺傳物質與其複製事實矛盾。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "病毒可感染多種生物與組織，並非所有種類都只存在於水域。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "抗細菌藥常針對細胞壁或細菌代謝，病毒沒有相同的完整細胞系統。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "連結構造與藥物"
+  ],
+  "representationType": "醫療概念",
+  "misconceptionTargets": [
+    "病毒是更小的細菌"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-050",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-028",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-004"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "作用標的核對把藥物機制對照病毒構造，找不到相同細菌細胞標的。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "分類核對確認病毒不是小型細菌，因此治療策略不能只依兩者都可能致病類推。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

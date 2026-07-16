@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_078_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S078"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "受器無法偵測體溫升高，即使汗腺正常，可能有何結果？",
+  "options": [
+    "汗腺必定持續最大分泌",
+    "體溫一定立即歸零",
+    "肺泡變成受器",
+    "散熱反應可能無法在適當時機啟動"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "缺少升溫訊息不會保證汗腺持續接受最大分泌指令。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "偵測異常可能使升溫加劇，不會讓核心體溫立即變為零。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "肺泡不會因體溫受器失效就轉變成新的受器組織。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "前端資訊缺失會使中樞難以針對偏差發出正確調節訊號。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "效應器構造正常不代表整條控制路徑正常，受器也是必要環節。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "可比較受器訊號與汗腺反應，定位問題在感受端還是執行端。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

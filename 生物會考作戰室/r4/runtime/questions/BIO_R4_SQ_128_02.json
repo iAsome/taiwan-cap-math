@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_128_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S128"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST128",
+  "stem": "比較同為二十度的G1與G2，最直接看到什麼？",
+  "options": [
+    "溫度不同造成五公分差",
+    "兩組高度完全相同",
+    "相同環境下不同基因型高度不同",
+    "G2已經沒有DNA"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩組溫度相同，不是溫差造成。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "十六與十九公分並不相同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "控制溫度後仍有三公分差，符合此描述。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "G2是基因型名稱，不表示沒有DNA。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "比較基因型時忽略環境是否相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "二十度是共同環境，表現差異可用來初步比較基因型。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「相同環境下不同基因型高度不同」只描述資料關係，沒有宣稱單一試驗已證明全部因果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

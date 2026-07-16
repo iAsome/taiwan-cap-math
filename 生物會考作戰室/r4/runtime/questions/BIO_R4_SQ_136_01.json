@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_136_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S136"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST136",
+  "stem": "依資料表，這對親本生下 O 型子女的理論機率是多少？",
+  "options": [
+    "O 型機率為 0",
+    "O 型機率為 1/4",
+    "O 型機率為 1/2",
+    "O 型機率為 3/4"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩位親本都帶有 i，因此 O 型並非不可能出現。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "只有 i 與 i 組合成 ii 時表現 O 型，四格中占一格。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "四格中只有一格是 ii，並未占到兩格。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "三格包含 A、B 或 AB 型，不能都算成 O 型。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "由配子組合表計算特定血型機率"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-011"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先把 O 型連回 ii 基因型，再由四種等可能組合計算一格所占比例。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "理論機率描述大量獨立出生的長期比例，不保證四名子女恰有一名 O 型。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

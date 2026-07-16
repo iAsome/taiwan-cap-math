@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S092_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S092"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲、乙兩位青少年年齡相同。甲的生長激素正常但飲食長期缺乏蛋白質；乙營養均衡但生長激素分泌不足。依現有資訊，何者最合理？",
+  "options": [
+    "兩人都可能生長受限，但原因並不相同",
+    "只有甲可能生長受限",
+    "只有乙可能生長受限",
+    "兩人身高必定完全相同"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "甲缺乏建造組織的原料，乙缺乏適當的生長調節訊號。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "營養不足本身即可限制生長，不能排除甲。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "激素不足會影響生長，但不能因此排除甲的營養問題。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題目沒有遺傳與其他健康資料，無法斷定身高相同。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "生長條件"
+  ],
+  "representationType": "比較推論",
+  "misconceptionTargets": [
+    "忽略生長的多因素性"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "一人缺少材料條件，另一人缺少調節訊號，兩者都可能影響生長。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "生長表現不能只看激素或只看飲食，還須綜合多項條件判斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S152_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S152"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "哪一對特徵最適合放在同一步？",
+  "options": [
+    "會飛／住樹上",
+    "綠色／有葉",
+    "有殼／無殼",
+    "大型／跑得快"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "鳥可能同時會飛又住樹上，標本將能選兩邊而失去唯一分流。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一片綠色的葉同時符合綠色與有葉，兩項不是互相排除的描述。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "同一標本在觀察時只能記為有殼或無殼，且兩項涵蓋殼的所有狀態。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "大型動物也可能跑得快，尺寸與速度是兩個可同時成立的變項。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "評估成對特徵"
+  ],
+  "representationType": "選項比較",
+  "misconceptionTargets": [
+    "接受可重疊特徵"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "互斥核對逐對尋找可同時成立的反例，只有有殼與無殼找不到重疊標本。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "涵蓋核對再確認任何可判讀殼的標本都會進入其中一邊，不會留下第三狀態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

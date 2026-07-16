@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L_S207",
+  "subject": "biology",
+  "unitId": "BIO_R4_U29",
+  "skillId": "BIO_R4_S207",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S206"
+  ],
+  "objectives": [
+    "辨認污染物由來源到生物體的完整暴露途徑",
+    "依介質與生物特徵推論可能的影響"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S207_SEC_01",
+      "title": "從來源追到受體",
+      "content": "分析污染影響時，依序確認污染來源、傳播介質、暴露途徑與受影響生物。污染物存在於環境中，不代表每種生物都已實際吸收。"
+    },
+    {
+      "id": "BIO_R4_L_S207_SEC_02",
+      "title": "常見暴露途徑",
+      "content": "生物可能藉由攝食、呼吸、皮膚接觸、鰓交換或根部吸收污染物。判斷時要配合污染物所在介質與生物生活方式。"
+    },
+    {
+      "id": "BIO_R4_L_S207_SEC_03",
+      "title": "暴露後的差異",
+      "content": "同一污染物對不同生物的影響可能不同，因為吸收量、暴露時間、代謝能力及作用器官不一，結論必須受題目證據限制。"
+    },
+    {
+      "id": "BIO_R4_L_S207_SEC_04",
+      "title": "危害不等於風險",
+      "content": "危害是物質造成傷害的能力，風險還要考慮實際暴露機會與劑量。沒有暴露資料時，不能僅憑物質名稱斷定個體受害。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S207_EX_01",
+      "prompt": "水蚤吃下附著農藥的藻類，主要經哪一途徑暴露？",
+      "steps": [
+        "確認農藥附著於藻類",
+        "水蚤把藻類吃入體內"
+      ],
+      "answer": "主要是攝食暴露。",
+      "why": "污染物隨食物進入消化道，題目直接指出攝食關係，並非由體表接觸或呼吸推定。"
+    },
+    {
+      "id": "BIO_R4_L_S207_EX_02",
+      "prompt": "兩種魚在同一水域，甲經鰓吸收較多金屬離子，可比較什麼？",
+      "steps": [
+        "確認外部水域條件相同",
+        "比較魚體組織內的實際含量"
+      ],
+      "answer": "可比較兩種魚經鰓暴露的程度。",
+      "why": "環境濃度相同仍可能因鰓交換與調節能力不同而有不同內部劑量，所以還要測量魚體。"
+    },
+    {
+      "id": "BIO_R4_L_S207_EX_03",
+      "prompt": "工廠排氣經葉片氣孔吸收後使生長變慢，完整路徑為何？",
+      "steps": [
+        "找出來源與介質",
+        "接上吸收途徑與生物反應"
+      ],
+      "answer": "工廠排氣→空氣→氣孔吸收→葉片生長受影響。",
+      "why": "完整敘述交代來源、傳播介質、進入途徑與生物反應，比只說空氣污染更具可檢驗性。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "環境中測到污染物，就表示附近所有生物都已受害。",
+      "whyWrong": "測得污染物只證明環境危害存在，未證明每個生物都有足量暴露。",
+      "correction": "還要調查接觸途徑、吸收劑量與實際生物反應。"
+    },
+    {
+      "belief": "水中污染物只能經由魚喝水進入體內。",
+      "whyWrong": "魚還可能經鰓交換、體表接觸或攝食污染食物而暴露。",
+      "correction": "應依污染物型態與題示生活史判斷主要途徑。"
+    },
+    {
+      "belief": "同地點的所有生物會吸收相同劑量。",
+      "whyWrong": "物種的攝食、呼吸、代謝與棲位不同，實際吸收量不會必然相同。",
+      "correction": "比較時須同時考慮環境濃度與各物種暴露特徵。"
+    },
+    {
+      "belief": "知道污染物有毒，就能判定某個個體的健康狀況。",
+      "whyWrong": "個體判定仍需暴露量、生理檢測及其他可能原因等證據。",
+      "correction": "環境資料可評估風險，不能取代個體層級的專業診斷。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "落塵附在菜葉後被昆蟲吃下，主要暴露途徑是什麼？",
+      "answer": "攝食。",
+      "reason": "污染物附在食物表面並隨取食進入消化道，屬於攝食暴露。"
+    },
+    {
+      "prompt": "判斷河川污染對魚的影響，除了水中濃度還應知道什麼？",
+      "answer": "魚的暴露途徑、吸收量與生物反應。",
+      "reason": "環境濃度不能單獨代表進入體內的劑量，也不能證明已造成反應。"
+    },
+    {
+      "prompt": "為何危害性高的物質不一定造成最高實際風險？",
+      "answer": "實際風險還取決於接觸機會與劑量。",
+      "reason": "若污染物被妥善隔離而無暴露途徑，受體承受的風險可以降低。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  }
+}

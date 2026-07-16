@@ -1,0 +1,89 @@
+{
+  "id": "BIO_R4_Q0150",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S013"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "影像向下移動時，玻片實際可能往哪個方向推？",
+  "options": [
+    "向下",
+    "向上",
+    "向左",
+    "向右"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "玻片向下會使影像向上，與題幹相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "玻片上移會形成向下移動的影像。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "向左主要使影像向右，不符合垂直結果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "向右主要使影像向左，也不符合題幹。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "反向推論"
+  ],
+  "representationType": "移動結果",
+  "misconceptionTargets": [
+    "由影像直接套玻片"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-018",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-025",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-031"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "這次由影像反推玻片，仍使用兩者方向相反的同一規則。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "影像下降對應玻片上移，不需加入左右方向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

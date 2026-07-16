@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S093_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲、乙兩人的血中激素濃度都低於正常。甲的分泌腺本身受損；乙則是負責刺激該腺體的上游激素不足。哪項判斷較合理？",
+  "options": [
+    "兩人的失衡機制必定完全相同",
+    "兩人只要補充相同劑量就一定恢復",
+    "濃度相同就不必檢查其他環節",
+    "相似濃度可能來自不同環節異常，治療策略未必相同"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲是分泌腺問題，乙是上游刺激不足，機制並不相同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "不同異常環節未必適用相同治療與固定劑量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "濃度資料不足以辨認失衡發生在哪個環節。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "相同結果可能有不同原因，須依機制選擇處理方式。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "機制比較"
+  ],
+  "representationType": "整合推論",
+  "misconceptionTargets": [
+    "相同數值等於相同病因"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題目已指出甲乙的異常環節不同，不能只因濃度相近就視為同一問題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "內分泌評估須追查上游控制與分泌腺功能，才能提出適當處置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

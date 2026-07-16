@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S174_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S174"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "夜間密閉溫室植物多，管理者最需監測哪項風險？",
+  "options": [
+    "光合作用產氧過多",
+    "植物完全停止代謝",
+    "呼吸使氧氣下降、二氧化碳上升",
+    "根部開始自行發光"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "夜間缺光使大量光合產氧不符合主要條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "植物夜間仍呼吸，不會因關燈全部停止代謝。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "大量活組織持續呼吸，密閉時氣體變化可能累積。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "根部呼吸不會使根自行產生可見光。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移溫室管理"
+  ],
+  "representationType": "生產情境",
+  "misconceptionTargets": [
+    "夜間植物不呼吸"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-023",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-018"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "時段核對夜間主要呈現呼吸淨效應，方向是耗氧排碳。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "系統核對密閉使氣體不易與外界交換，因此需實際監測濃度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

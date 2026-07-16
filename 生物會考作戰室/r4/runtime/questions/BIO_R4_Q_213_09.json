@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_213_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S213"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "方案聲稱減量80%，基線100 mg/L，處理後多次平均30 mg/L，如何檢核？",
+  "options": [
+    "依數值實際減量為70%，宣稱需查計算方式",
+    "80%必定正確",
+    "基線可忽略",
+    "處理後濃度應是80 mg/L"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "由100降到30是減少70 mg/L，即70%。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "實際計算與八成不符，不能直接接受。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "基線是百分比計算的分母。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "若減量80%，處理後應接近20 mg/L。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析"
+  ],
+  "representationType": "數量檢核",
+  "misconceptionTargets": [
+    "不檢查百分比"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把百分比還原成起始值與終值可發現不一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "若算法使用其他基線，報告必須明確說明。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

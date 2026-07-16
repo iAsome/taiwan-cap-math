@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_045_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S045"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S045",
+  "stem": "由30到50°C的資料，哪項趨勢描述正確？",
+  "options": [
+    "產物量持續增加",
+    "產物量隨溫度升高而下降",
+    "產物量完全不變",
+    "資料未測任何高溫"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "數值由15降到9再降到2。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "三個連續測量值呈下降趨勢。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "三個產物量依序15、9、2，數值明顯不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "40與50°C皆已列入測量。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-045",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-044",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-041"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "限定30到50°C後，平均產物量依序15、9、2，呈持續下降。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "此區段趨勢可描述，但不能單憑它代表10到30°C也下降。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

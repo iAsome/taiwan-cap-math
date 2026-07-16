@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_212_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S212"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S212",
+  "stem": "為何目前仍不能稱微生物處理完全安全？",
+  "options": [
+    "油濃度有單位",
+    "對照也下降",
+    "檢出產物P且水蚤存活率低於清水",
+    "實驗有重複"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "有單位是資料可解讀的優點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "對照下降影響效益估計，不直接證明不安全。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "副產物與生物反應提供尚待釐清的風險線索。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "重複能提升可信度，不是安全疑慮。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "整合效益與副產物風險"
+  ],
+  "representationType": "安全性證據評估",
+  "misconceptionTargets": [
+    "原污染物降低就等於完全安全"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "原污染物下降與總生物風險是兩個不同問題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "需分別測產物毒性並排除其他造成水蚤反應的因素。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

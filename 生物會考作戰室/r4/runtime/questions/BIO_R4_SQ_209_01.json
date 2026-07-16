@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_209_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S209"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S209",
+  "stem": "哪兩組最適合比較每日暴露時間的影響？",
+  "options": [
+    "兩個0.2 mg/L組",
+    "對照與高濃度組",
+    "對照與間歇組",
+    "所有組任選"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩組濃度相同，主要差異是每日暴露1或24小時。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "濃度與暴露條件同時不同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "是否含污染物與時間都不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "任選組別可能混入濃度差異。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "選擇單因子比較組"
+  ],
+  "representationType": "暴露條件表",
+  "misconceptionTargets": [
+    "任選兩組即可比較暴露時間"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "比較暴露時間效應時，必須先固定兩組的污染物濃度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "0.2 mg/L兩組能把主要差異集中在每日時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

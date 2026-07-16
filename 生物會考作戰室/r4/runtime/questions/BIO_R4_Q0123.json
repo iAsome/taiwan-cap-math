@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q0123",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "切到高倍後完全找不到原目標，最合理的下一步是？",
+  "options": [
+    "快速搖晃顯微鏡",
+    "盲目大幅推玻片",
+    "轉回低倍重新找像與置中",
+    "把物鏡壓到玻片上"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "搖晃儀器既危險也不能提供可靠定位。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "高倍視野小，大幅盲推會讓位置更難掌握。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "低倍擴大視野，可安全重建目標位置。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "物鏡撞片可能損傷器材與玻片，不能採用。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "故障排除"
+  ],
+  "representationType": "操作程序",
+  "misconceptionTargets": [
+    "高倍可亂找"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "失去目標時應回到較大視野重新定位，低倍是最有效的復原點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "重新置中後再升倍，能保留位置資訊並避免危險操作。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_213_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S213"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "判斷一組污染數據是否可查核，最需要哪項資訊？",
+  "options": [
+    "採樣方法、時間、地點與單位",
+    "報告封面顏色",
+    "作者姓名筆畫",
+    "檔案頁數"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "方法與時空範圍可說明數據如何產生及適用範圍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "封面顏色不影響量測品質。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "姓名筆畫與科學可靠性沒有關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "頁數多寡不能保證資料可重現。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "辨認"
+  ],
+  "representationType": "來源評估",
+  "misconceptionTargets": [
+    "權威名稱取代方法"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "評估資料可靠性必須追查數據實際取得與處理的完整過程。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "有來源名稱仍不足，還需看到方法與原始數值。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

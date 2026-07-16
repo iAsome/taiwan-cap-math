@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_ST_S110",
+  "subject": "biology",
+  "skillId": "BIO_R4_S110",
+  "type": "tracking-table",
+  "content": {
+    "title": "花粉管生長追蹤",
+    "context": "研究者把帶螢光標記的同種花粉放在柱頭，於不同時間記錄最遠標記位置與已受精胚珠數。",
+    "columns": [
+      "時間",
+      "最遠標記位置",
+      "已受精胚珠數"
+    ],
+    "rows": [
+      [
+        "2小時",
+        "柱頭",
+        "0"
+      ],
+      [
+        "8小時",
+        "花柱中段",
+        "0"
+      ],
+      [
+        "16小時",
+        "子房內胚珠",
+        "5"
+      ]
+    ],
+    "note": "花中共有六個胚珠，螢光標記不影響花粉活性。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "兩小時標記在柱頭且無胚珠受精；八小時標記到花柱中段且仍無受精；十六小時標記到子房內胚珠，六個胚珠中五個受精。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "時間",
+        "位置與受精"
+      ],
+      "rows": [
+        [
+          "2小時",
+          "柱頭，0個"
+        ],
+        [
+          "8小時",
+          "花柱中段，0個"
+        ],
+        [
+          "16小時",
+          "胚珠，5個"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

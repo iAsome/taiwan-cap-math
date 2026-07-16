@@ -1,0 +1,132 @@
+{
+  "id": "BIO_R4_L_S206",
+  "subject": "biology",
+  "unitId": "BIO_R4_U28",
+  "skillId": "BIO_R4_S206",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-LB-4-3",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LC-MD-4-1",
+    "AUTH-NATURAL-LC-NA-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S205"
+  ],
+  "objectives": [
+    "設計具有基線、方法與成效指標的公民保育行動。",
+    "區分投入、產出與生態成效，檢查資料品質、倫理及後續調整。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S206_SEC_01",
+      "title": "先把問題寫成可量測目標",
+      "content": "少一點垃圾過於模糊，可改成三個月內讓固定河段每百公尺塑膠件數下降30%。目標需標明地點、指標、期間與比較基準。"
+    },
+    {
+      "id": "BIO_R4_L_S206_SEC_02",
+      "title": "行動前建立基線",
+      "content": "若只量清理後，就不知道原本有多少垃圾或族群。以相同路線、時間、努力量先調查，再於行動後重複，才能比較變化。"
+    },
+    {
+      "id": "BIO_R4_L_S206_SEC_03",
+      "title": "投入不等於生態成效",
+      "content": "參與人數、活動場次與清出重量是投入或產出；垃圾密度持續下降、目標物種繁殖改善才更接近成效。兩類都可記，但不能互相替代。"
+    },
+    {
+      "id": "BIO_R4_L_S206_SEC_04",
+      "title": "資料品質與安全倫理",
+      "content": "志工需共用分類規則、單位與紀錄表，敏感物種位置要保密，危險廢棄物交由專業人員處理。結果應公開方法與限制，作為下一輪調整依據。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S206_EX_01",
+      "prompt": "淨溪活動撿了200公斤，能否直接說河川已恢復？",
+      "steps": [
+        "200公斤是清除產出。",
+        "還需清理後垃圾密度、水質與生物指標。"
+      ],
+      "answer": "不能。",
+      "why": "清出很多也可能表示污染很嚴重；只有持續結果與生物反應才能評估恢復。"
+    },
+    {
+      "id": "BIO_R4_L_S206_EX_02",
+      "prompt": "兩次鳥調查分別走1公里與3公里，看到20與30隻，可直接比較嗎？",
+      "steps": [
+        "調查努力量不同。",
+        "換算相同距離並考慮時間與偵測條件。"
+      ],
+      "answer": "不能直接比較。",
+      "why": "第二次總數較多可能只因路線較長，標準化為每公里後才較能判讀趨勢。"
+    },
+    {
+      "id": "BIO_R4_L_S206_EX_03",
+      "prompt": "志工發現珍稀巢位，資料平台應如何處理？",
+      "steps": [
+        "確認紀錄可供專業驗證。",
+        "遮蔽公開座標並限制敏感資訊權限。"
+      ],
+      "answer": "驗證但不公開精確位置。",
+      "why": "資料品質與物種安全要同時維持，公開座標可能帶來干擾、採集或盜獵風險。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "參加人越多，生態成效一定越好。",
+      "whyWrong": "人數是投入，若方法不一致或干擾棲地，成效可能有限。",
+      "correction": "同時記錄參與、行動品質及行動後環境與生物指標。"
+    },
+    {
+      "belief": "沒有行動前資料也能證明改善。",
+      "whyWrong": "缺少基線時，行動後數值沒有可比較的起點。",
+      "correction": "先用相同方法建立基線，保留對照地點更能判斷成效。"
+    },
+    {
+      "belief": "公民資料不需要品質控制。",
+      "whyWrong": "分類定義、努力量與重複紀錄差異會造成假趨勢。",
+      "correction": "提供分類訓練、欄位檢核、照片證據與專家抽樣複查。"
+    },
+    {
+      "belief": "所有保育資料都應精確公開。",
+      "whyWrong": "敏感物種位置公開可能增加干擾，個資也有倫理限制。",
+      "correction": "公開可用的彙整資料，限制敏感座標與個人資訊。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "清出垃圾重量屬於投入、產出或生態成效？",
+      "answer": "較接近行動產出。",
+      "reason": "它描述移除量，尚未證明垃圾來源下降或生物狀態改善。"
+    },
+    {
+      "prompt": "為何調查路線與時間要固定？",
+      "answer": "使不同次資料具有可比性。",
+      "reason": "努力量改變會影響觀察總數，可能製造不屬於環境的假趨勢。"
+    },
+    {
+      "prompt": "發現珍稀物種時為何要遮蔽座標？",
+      "answer": "降低干擾與非法採集風險。",
+      "reason": "資料開放需兼顧驗證價值與物種安全，不能無限制公開。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-LB-4-3",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LC-MD-4-1",
+      "AUTH-NATURAL-LC-NA-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S108_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S108"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一座池塘魚群總數一個月前後相同，何者是合理推論？",
+  "options": [
+    "期間一定完全沒有魚出生",
+    "可能同時有出生與死亡，使總數維持不變",
+    "所有魚都停止生長與細胞分裂",
+    "魚群必定沒有任何個體移入或移出"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "總數不變不能排除期間曾有新個體出生。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "出生增加與死亡減少可能互相抵銷，造成總數相同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "個體數不變與魚體生長或細胞分裂沒有必然關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "總數相同也可能是移入與移出數量恰好相近。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "族群數量"
+  ],
+  "representationType": "資料推論",
+  "misconceptionTargets": [
+    "以淨變化否定繁殖"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "調查總數是出生、死亡、移入與移出共同作用的結果，不能由淨變化直接否定某一過程。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若要知道是否繁殖，應另記錄卵孵化或幼魚形成，而不是只比較兩個時間點的總數。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

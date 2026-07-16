@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_136_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S136"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩名O型親代的子代在此模型中為何？",
+  "options": [
+    "可為任意血型",
+    "只能AB型",
+    "只能O型",
+    "只能A或B型"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩名親代都只有i，無法產生IA或IB。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "形成AB需一方給IA、一方給IB，來源皆無。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "i與i每次結合都形成ii，故為O型。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "A或B型都需要親代提供IA或IB。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "由O型親代憑空產生IA或IB"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-011"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「只能O型」追蹤兩名ii親代唯一的i配子，結果沒有歧義。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其餘血型都要求題目未提供的A或B版本。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

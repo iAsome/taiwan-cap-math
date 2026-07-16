@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_S091_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S091",
+  "stem": "餐後哪個時間測得最高血糖？",
+  "options": [
+    "0分鐘",
+    "60分鐘",
+    "30分鐘",
+    "120分鐘"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "0分鐘血糖為88，並非最高。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "60分鐘血糖112，低於132。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "30分鐘血糖132，是四次最大值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "120分鐘血糖92，已接近空腹值。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料判讀"
+  ],
+  "representationType": "時間表",
+  "misconceptionTargets": [
+    "跨欄比較錯誤"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-002",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-008",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-020"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "比較血糖欄四個數值，132 mg/dL 最大。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "最高值與胰島素相對量最高同列，資料讀取一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

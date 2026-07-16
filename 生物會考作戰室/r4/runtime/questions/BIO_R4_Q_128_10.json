@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_128_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S128"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要研究基因型對酵素活性的影響，哪組比較資訊最充分？",
+  "options": [
+    "同基因型但不同溫度",
+    "不同基因型置於相同溫度並測活性",
+    "不同基因型且不同營養",
+    "只比較個體名稱"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "此設計較適合研究溫度而非基因型。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "控制溫度並改變基因型，可比較遺傳效果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "營養同時不同會使原因混在一起。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "名稱不是酵素活性或遺傳變項。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "研究基因型時沒有控制環境"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「不同基因型置於相同溫度並測活性」提供適當控制與直接活性測量，能回答研究問題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "控制溫度並改變基因型，可比較遺傳效果。此設計較適合研究溫度而非基因型。營養同時不同會使原因混在一起。名稱不是酵素活性或遺傳變項。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

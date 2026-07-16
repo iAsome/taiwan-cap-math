@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_122_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S122"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "資料只記錄四人的身高，哪個結論超出證據？",
+  "options": [
+    "四人身高不完全相同",
+    "可計算身高平均值",
+    "可比較測量當時的高低",
+    "身高最高者品格一定最好"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "不同數值可直接支持身高有差異。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "有數值資料即可依規則計算平均。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "同一時間的身高數值可以相互比較。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "身高資料不能推論品格，且一定一詞越界。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "由生理測量推論人格價值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "身高資料不能推論品格，且一定一詞越界。不同數值可直接支持身高有差異。有數值資料即可依規則計算平均。同一時間的身高數值可以相互比較。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "所以「身高最高者品格一定最好」不是資料支持的生物結論，而是不當標籤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

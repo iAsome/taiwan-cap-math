@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_SQ_050_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S050"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S050",
+  "stem": "乙組檢出小分子而甲組未檢出，最能支持哪項結論？",
+  "options": [
+    "酵素液使澱粉發生化學性消化",
+    "水能分解所有澱粉",
+    "磨碎使乙組酵素量變零",
+    "甲組已完成全部吸收"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "唯一主要差異為酵素液，且形成新小分子。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "甲組有水卻未檢出小分子。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題幹沒有顯示酵素量變零。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "此為容器實驗，沒有腸壁可供吸收。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "消化系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "乙組相較甲組多了酵素，並出現澱粉分解的小分子。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "結果支持化學性消化，不能把作用歸給水、磨碎或不存在的吸收。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

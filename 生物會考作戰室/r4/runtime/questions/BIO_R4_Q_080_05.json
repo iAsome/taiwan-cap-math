@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_080_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S080"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "體溫在36.5至37.1度間規律波動，何者最合理？",
+  "options": [
+    "可仍屬範圍內動態恆定",
+    "必定代表所有調節失敗",
+    "體溫計一定故障",
+    "身體完全沒有代謝"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "小幅且受限的波動可反映活動與時間變化，仍符合動態恆定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有持續超界資料，不能判定所有調節必然失敗。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "多次規律讀值可能是真實變化，不能直接怪罪儀器。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "體溫存在與波動正顯示身體持續代謝，不是完全沒有代謝。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "恆定以適當範圍為目標，而不是強迫每次讀值等於同一數字。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "若波動逐步擴大並超界，才需要進一步檢查調節與量測。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S176_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S176"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "若未先去澱粉，照光區與遮光區都呈陽性，最大的解釋問題是？",
+  "options": [
+    "碘液一定失效",
+    "澱粉可能在遮光處理前已存在",
+    "葉片必定沒有光合作用",
+    "兩區一定缺水"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩區陽性不必然表示試劑失效，仍可能真有澱粉。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "舊存量使遮光區陽性，無法判斷本次光照是否形成。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "照光區仍可能光合作用，資料只是不易區分新舊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "同葉兩區共享供水，沒有缺水的必然證據。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "分析起始干擾"
+  ],
+  "representationType": "實驗批判",
+  "misconceptionTargets": [
+    "檢驗陽性都是新產物"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-005"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "時間核對檢驗只顯示最後存在，不能自行標示澱粉形成時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "程序核對去澱粉正是為了移除這條替代解釋，建立共同起點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

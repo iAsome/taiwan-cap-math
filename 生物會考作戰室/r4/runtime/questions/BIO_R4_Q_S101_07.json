@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S101_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "仿生腳掌加入壓力感測器，資料送入控制器後調整踝部馬達。這主要模仿什麼？",
+  "options": [
+    "顱骨保護腦",
+    "骨髓製造血球",
+    "感覺回傳與運動命令形成的修正循環",
+    "胃壁消化食物"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "設計重點在感測與控制，不是外殼保護。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "壓力控制也不對應血球製造。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "量測結果更新馬達輸出，形成閉環。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "腳掌壓力與胃部消化功能無直接關係。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "仿生回饋"
+  ],
+  "representationType": "系統判斷",
+  "misconceptionTargets": [
+    "感測不需影響輸出"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "感測器對應受器，控制器對應中樞，馬達則對應動作輸出。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "資料實際改變後續動作，因此比單純顯示數值更符合神經回饋。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

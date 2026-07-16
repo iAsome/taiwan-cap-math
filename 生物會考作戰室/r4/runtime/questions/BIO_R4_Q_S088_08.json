@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S088_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S088"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "實驗把某腺體分泌液直接導到體外，血中相關訊息量隨後下降。此腺體原本最可能如何傳遞訊息？",
+  "options": [
+    "沿骨骼內部傳到肌肉",
+    "經耳道傳到腦",
+    "經消化道直接到全身",
+    "分泌物進入血液後隨循環運送"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "骨骼不是化學訊息的全身運送管路。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "耳道傳聲波，不能把腺體分泌物送到全身。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "消化道內容物不等於直接進入全身血液。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "導到體外使血中量下降，支持原本進入血液。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "證據推論"
+  ],
+  "representationType": "實驗情境",
+  "misconceptionTargets": [
+    "不依血中資料判斷路徑"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-032",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-005"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "操弄分泌物去向後血中量下降，支持循環運送。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "骨骼、耳道與消化道都不能解釋血中訊息量隨分泌液改道而下降；分泌物原本進入血液才與結果相符。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

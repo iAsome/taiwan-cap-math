@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_047_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S047"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "每組重複三次並取平均，主要改善哪一項？",
+  "options": [
+    "讓操縱變因變多",
+    "保證假設一定正確",
+    "降低單次偶然誤差的影響",
+    "使所有數值完全相同"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "重複相同程序只增加測量次數，不會增加操縱變因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "實驗結果仍可能不支持假設。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "多次測量可減少異常單次值影響。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "自然測量含偶然誤差，多次結果通常仍會略有差異。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-032",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-037"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "重複與平均的功能是提高結果穩定性，降低偶然誤差影響。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "它不能保證理論正確，也不要求每次觀察值完全一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

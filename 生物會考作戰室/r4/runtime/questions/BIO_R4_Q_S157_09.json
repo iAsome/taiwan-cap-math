@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S157_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S157"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "多年口述指出開花期逐年提前，最適合加入哪項資料檢驗？",
+  "options": [
+    "歷年固定地點的開花日期與氣溫",
+    "今年一張無日期照片",
+    "植物俗名字數",
+    "訪談錄音音量"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "跨年開花日期可檢查提前趨勢，同地氣溫也能檢驗可能的環境關聯。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一張沒有日期的照片連今年何時開花都不清楚，更不能比較逐年變化。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "植物俗名有幾個字不會影響花芽發育，也不能形成物候時間序列。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "錄音音量反映設備與距離，並不是植物開花日期或環境溫度指標。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "設計長期驗證"
+  ],
+  "representationType": "時間序列",
+  "misconceptionTargets": [
+    "用單次資料證明趨勢"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "時間序列核對要求每年至少一個可比較日期，歷年固定地點的紀錄具備跨年資料。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "機制延伸核對加入氣溫，使研究能檢查提前是否伴隨環境變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S152_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S152"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S152",
+  "stem": "新標本葉片一部分漂浮、一部分挺立，現有表無法穩定選1a或1b。最合理的改進是？",
+  "options": [
+    "任選看起來較像的名稱",
+    "刪除1b",
+    "補充葉片位置的操作定義或另設分支",
+    "規定所有新標本都是荷花"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "任選相似名稱跳過第一步歧義，結果沒有任何可重複的特徵路徑支持。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "刪除1b會讓所有不漂浮葉片者失去路徑，反而擴大檢索表缺口。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "規定取樣葉片位置、比例界線或另設混合分支，可讓同類標本一致判讀。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "預設新標本都是荷花不依葉片證據，也無法辨識可能不在原表內的物種。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "改良檢索表"
+  ],
+  "representationType": "歧義案例",
+  "misconceptionTargets": [
+    "強迫選擇模糊分支"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "錯誤位置核對顯示不穩定發生在1a與1b界線，修正必須直接處理第一對。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "重現性核對要求他人能依相同規則判讀，補充操作定義能做到而不捏造名稱。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

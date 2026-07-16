@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_210_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S210"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "甲區污染較高且症狀率較高，但甲區高齡人口也較多，何者最合理？",
+  "options": [
+    "污染必定無影響",
+    "高齡必定是唯一原因",
+    "已可診斷每位居民",
+    "需調整年齡後再評估污染與症狀關聯"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "有混淆因素不表示污染必定沒有作用。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "高齡可能影響結果，但不能直接稱唯一原因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "群體比較不能取代個人臨床評估。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "年齡同時與地區及症狀相關，應先處理其影響。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析"
+  ],
+  "representationType": "資料推論",
+  "misconceptionTargets": [
+    "單一因素歸因"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "干擾因素會讓未調整的地區差異難以解釋。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "調整後若關聯仍在，證據會較原始比較更具資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

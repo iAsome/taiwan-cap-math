@@ -1,0 +1,69 @@
+{
+  "id": "BIO_R4_ST_S190",
+  "subject": "biology",
+  "skillId": "BIO_R4_S190",
+  "type": "energy-table",
+  "content": {
+    "title": "草澤三階層能量紀錄",
+    "text": "研究者以相同面積與時間估算草澤各營養階層可用能量：莎草為20000千焦，植食昆蟲為2600千焦，食蟲鳥為210千焦。數值是各階層總量，不代表單一個體所含能量。",
+    "caveat": "傳遞率以後一階層除以前一階層計算；本資料不可外推為所有生態系固定比例。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [
+    "CAP-106-MAIN-INTEGRATED-NATURAL-038",
+    "CAP-107-MAIN-INTEGRATED-NATURAL-041",
+    "CAP-109-ALTERNATE-INTEGRATED-NATURAL-003",
+    "CAP-109-MAIN-INTEGRATED-NATURAL-028",
+    "CAP-111-MAIN-INTEGRATED-NATURAL-023",
+    "CAP-112-ALTERNATE-INTEGRATED-NATURAL-020"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-038",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-041",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-003",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-028",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-023",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-020"
+    ]
+  },
+  "accessibility": {
+    "summary": "各階層名稱、能量數值、單位與計算限制均以文字及表格列出，不使用顏色編碼。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "營養階層",
+        "可用能量（千焦）"
+      ],
+      "rows": [
+        [
+          "莎草",
+          "20000"
+        ],
+        [
+          "植食昆蟲",
+          "2600"
+        ],
+        [
+          "食蟲鳥",
+          "210"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

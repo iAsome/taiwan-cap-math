@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_149_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S149"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GB-4-1",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST149",
+  "stem": "哪一對在序列資料中最相似？",
+  "options": [
+    "甲與乙，差四處",
+    "丙與丁，差六處",
+    "乙與丙，差二十七處",
+    "甲與丁，差三十處"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "四處是表中所有兩兩比較的最小差異。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "六處差異很少，但仍多於甲乙的四處。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "二十七處明顯高於四處與六處。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "三十處為最大差異，不是最相似。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "未從兩兩序列差異找最小值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GB-4-1",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-012",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-052"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「甲與乙，差四處」使用相同長度片段直接比較，甲乙差異數最低。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "這只代表此段序列證據，仍要和構造及其他基因一起判讀。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

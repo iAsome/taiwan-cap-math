@@ -1,0 +1,128 @@
+{
+  "id": "BIO_R4_L031",
+  "subject": "biology",
+  "unitId": "BIO_R4_U04",
+  "skillId": "BIO_R4_S031",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S030"
+  ],
+  "objectives": [
+    "能由組織質量或長度前後變化推論水的淨移動。",
+    "能計算變化量、百分比變化並辨認資料限制。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L031_S1",
+      "title": "前後差與方向",
+      "content": "變化量等於處理後數值減去處理前數值。若其他物質進出可忽略，質量或長度增加通常支持水淨進入，減少支持水淨移出；零變化代表淨量接近零。"
+    },
+    {
+      "id": "BIO_R4_L031_S2",
+      "title": "百分比變化",
+      "content": "百分比變化等於變化量除以初始值再乘百分之百。它能校正試材起始大小不同，正值表示增加、負值表示減少，計算時需保留符號與相同單位。"
+    },
+    {
+      "id": "BIO_R4_L031_S3",
+      "title": "找接近平衡濃度",
+      "content": "把不同外液濃度的百分比變化作圖，曲線穿越零的位置可估計組織與外液淨水移動接近平衡的濃度；若測點稀疏，只能說介於相鄰濃度。"
+    },
+    {
+      "id": "BIO_R4_L031_S4",
+      "title": "量測與限制",
+      "content": "稱量前擦拭表面液體、使用相同工具與操作，可避免附著液造成假增重。質量變化也可能受溶質進出或組織損傷影響，因此結論要符合實驗前提。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L031_E1",
+      "prompt": "馬鈴薯條由十克變成十一克，百分比變化為何？",
+      "steps": [
+        "以十一減十得到正一克。",
+        "用一除以十再乘百分之百。"
+      ],
+      "answer": "質量增加百分之十，支持水淨進入。",
+      "why": "正號、變化量與初始值都清楚；在忽略其他物質交換時，增重可合理連到淨進水。"
+    },
+    {
+      "id": "BIO_R4_L031_E2",
+      "prompt": "十二公分試材處理後十一點四公分，如何判讀？",
+      "steps": [
+        "計算十一點四減十二為負零點六。",
+        "用負零點六除以十二得到負百分之五。"
+      ],
+      "answer": "長度減少百分之五，支持組織失水收縮。",
+      "why": "使用相對變化能與其他初始長度不同的試材公平比較，負號表示縮短方向。"
+    },
+    {
+      "id": "BIO_R4_L031_E3",
+      "prompt": "百分之五濃度增重、百分之十濃度減重，平衡濃度在哪？",
+      "steps": [
+        "找變化符號由正轉負的相鄰處理。",
+        "確認兩點間沒有更密集測量。"
+      ],
+      "answer": "只能估計在百分之五與百分之十之間。",
+      "why": "零變化位置落在兩測點之間，但沒有中間數據便不能宣稱精確等於某個未測濃度。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "處理後數值較大就一定有水淨進入，不必看初始值。",
+      "whyWrong": "不同試材的終值受初始大小影響，必須比較同一試材前後。",
+      "correction": "先以處理後減處理前，再依差值正負判讀相對變化方向。"
+    },
+    {
+      "belief": "變化量相同代表變化程度一定相同。",
+      "whyWrong": "一克對十克與一克對二十克的百分比不同。",
+      "correction": "以變化量除以各自初始值，比較百分比變化。"
+    },
+    {
+      "belief": "質量零變化表示沒有任何水分子移動。",
+      "whyWrong": "雙向水流量相等也可使質量不變，仍可能持續交換。",
+      "correction": "將質量零變化解讀為雙向抵銷後的淨水移動接近零。"
+    },
+    {
+      "belief": "曲線跨零便能讀出無限精確的平衡濃度。",
+      "whyWrong": "估計精度受濃度間距、測量誤差與重複變異限制。",
+      "correction": "報告合理區間並增加零點附近的濃度測量。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "八克試材變成七點二克，百分比變化為何？",
+      "answer": "變化量負零點八克，百分比變化為負百分之十。",
+      "reason": "以處理後減處理前保留負號，再除以八克並乘百分之百。"
+    },
+    {
+      "prompt": "質量百分比變化為正，通常代表什麼？",
+      "answer": "在其他物質影響可忽略時，代表組織有水淨進入。",
+      "reason": "正值描述總質量增加，需結合實驗前提才能連到水分。"
+    },
+    {
+      "prompt": "相鄰兩濃度的變化一正一負，可得哪項結論？",
+      "answer": "淨水移動接近零的濃度可能位於兩者之間。",
+      "reason": "測點不足時只能估區間，不應自行指定未測的精確值。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_136_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S136"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某B型個體與O型個體生出O型子代，可判定B型親代為何？",
+  "options": [
+    "IBIB",
+    "IBi",
+    "IAIB",
+    "ii"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "IBIB不能提供i，無法形成O型子代。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "B型且能提供i，只能是IBi。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "IAIB表現AB型，不是B型。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "ii表現O型，與親代B型不符。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "未由O型子代反推B型親代基因型"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-011"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「IBi」結合表現型與子代i來源，唯一鎖定IBi。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其餘組合不是缺少i，就是親代表現型已不符合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

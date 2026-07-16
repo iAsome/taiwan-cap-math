@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S162_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要檢驗溫度是否影響乳酸菌發酵速率，哪種設計最佳？",
+  "options": [
+    "只改變溫度並定時量測酸度",
+    "每組使用不同牛奶與菌量",
+    "只聞成品一次",
+    "先刪除發酵慢的組"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "固定牛奶、菌量與時間，只調溫度並追蹤酸度，可比較發酵速率。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "原料與菌量同時不同會產生混淆，無法把酸度差只歸因於溫度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "嗅覺一次判斷主觀且沒有時間序列，難以量化速率變化。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "刪除慢組會移除溫度可能抑制發酵的重要結果，造成選擇偏差。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "設計發酵條件實驗"
+  ],
+  "representationType": "時間序列",
+  "misconceptionTargets": [
+    "同時改多條件仍可歸因"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "控制變因核對讓組間只有溫度不同，直接對應研究問題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "速率核對要求多時間點酸度變化，而不是只比較最後一次氣味。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

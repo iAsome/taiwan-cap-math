@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S099_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S099"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S099",
+  "stem": "比較甲與乙的視覺回饋及平均誤差，最能支持哪項推論？",
+  "options": [
+    "沒有視覺會使肌肉完全不能收縮",
+    "外力是甲乙差異的原因",
+    "視覺回饋只會增加誤差",
+    "移動中的視覺回饋有助於修正手指位置"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "乙仍完成觸碰，顯示肌肉仍可收縮。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "甲乙皆無外力，不能歸因於外力。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "甲有完整回饋且誤差較小。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩者外力相同，缺少移動回饋的乙誤差較大。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "控制比較"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "視覺等於肌肉力量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "控制外力後，回饋條件與誤差差異形成直接比較。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "結果支持視覺參與動作修正，但不表示視覺是唯一感覺來源。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

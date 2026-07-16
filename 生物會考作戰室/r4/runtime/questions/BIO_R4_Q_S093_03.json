@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S093_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "若某激素分泌過多，最合理的描述為何？",
+  "options": [
+    "標的細胞必定完全沒有受體",
+    "該激素會立刻離開血液",
+    "相關生理活動可能受到過度刺激",
+    "所有負回饋作用必定正常"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "受體存在與否不能由激素過多直接判定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "激素過多表示血中濃度偏高，不是立即消失。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "過強訊號可能使標的細胞反應超出適當範圍。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "持續過多反而可能顯示回饋調節未能恢復平衡。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "分泌過多"
+  ],
+  "representationType": "因果辨識",
+  "misconceptionTargets": [
+    "激素過多無害"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "激素過多會增加標的細胞接收到的訊號，可能造成作用過強。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "實際影響仍與受體和作用時間有關，但不能把過多視為必然有益。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

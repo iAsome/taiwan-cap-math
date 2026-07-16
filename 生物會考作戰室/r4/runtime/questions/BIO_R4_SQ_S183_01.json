@@ -1,0 +1,89 @@
+{
+  "id": "BIO_R4_SQ_S183_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S183"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S183",
+  "stem": "共同培養時兩種微藻表現如何改變？",
+  "options": [
+    "甲乙都高於單養",
+    "甲提高而乙不變",
+    "甲乙增加量都低於各自單養",
+    "只有乙受到影響"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩種共同培養值都低於單養基準。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "甲並未提高，乙也有明顯下降。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "甲由八十降三十九，乙由七十二降三十四。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "甲的下降幅度同樣清楚，不能說只有乙。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "讀取雙方反應"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "只看一方判關係"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-049",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-001",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-036",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-044",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-003"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "甲端核對八十與三十九，確認共同培養表現較低。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "乙端核對七十二與三十四，提供另一物種獨立下降證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

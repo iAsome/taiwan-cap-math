@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S163_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "支持甲暴露造成乙症狀時，時間順序至少應為何？",
+  "options": [
+    "乙先於甲",
+    "甲先於乙",
+    "兩者時間無需記錄",
+    "只記研究日期"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "症狀若先出現，之後暴露不能解釋前面已發生的結果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "疑似原因甲需在乙症狀前發生，才符合基本因果時間順序。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "缺少時間資料會無法區分原因、結果與疾病後伴隨變化。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "研究日期不能取代每位個體的暴露與症狀先後紀錄。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "理解因果時間順序"
+  ],
+  "representationType": "時間概念",
+  "misconceptionTargets": [
+    "結果可早於原因"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "時間線核對沿個體由暴露到症狀排列，原因必須位於結果之前。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "反向因果核對排除症狀改變行為後才接觸甲的可能，提供另一條檢查。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

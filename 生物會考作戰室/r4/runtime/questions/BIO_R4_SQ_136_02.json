@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_136_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S136"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST136",
+  "stem": "若這對親本已有一名 AB 型子女，下一名子女為 O 型的理論機率應如何判斷？",
+  "options": [
+    "降為 0，因為 AB 型已經出現",
+    "升為 1/2，以平衡前一次結果",
+    "仍為 1/4，每次受精的配子組合可獨立判斷",
+    "改為 3/4，因前一名子女取得 IA 與 IB"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "先前出現 AB 型不會排除下一次形成 ii 的可能。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "受精結果不會為了補償前一次而自動調整機率。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "每次形成與結合配子都是新的事件，四種組合機率維持不變。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "前一次取得 IA 與 IB 不會改變親本下一次形成各類配子的機率。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "判斷獨立出生事件的遺傳機率"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-011"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "同一對親本每次受精仍可能提供相同種類的配子，前一名子女不會改變其基因型。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把家庭中已發生的結果與下一次受精分開，可避免誤用短期次數改寫理論機率。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

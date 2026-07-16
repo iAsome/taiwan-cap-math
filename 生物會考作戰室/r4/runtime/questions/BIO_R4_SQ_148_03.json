@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_148_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S148"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GB-4-1",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST148",
+  "stem": "若停藥後 R 型繁殖較慢，應如何改寫預測？",
+  "options": [
+    "R 必定永遠維持七成六",
+    "所有 R 細菌立即變敏感",
+    "停藥會刪除先前資料",
+    "無藥時 R 可能有代價，比例可逐代下降"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "環境改變會改變相對適合度，趨勢不必永久。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "個體不會因停藥就主動切換遺傳版本。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "新條件要求更新解釋，不代表歷史資料失效。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "繁殖代價可使敏感型對下一代貢獻較高。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "停藥後仍把抗性趨勢視為永久固定"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GB-4-1",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「無藥時 R 可能有代價，比例可逐代下降」仍使用差異繁殖機制，只是依新環境更新選擇方向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "實際下降速度需追蹤繁殖、遷入與版本頻率，不能由代價名稱精確預告。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

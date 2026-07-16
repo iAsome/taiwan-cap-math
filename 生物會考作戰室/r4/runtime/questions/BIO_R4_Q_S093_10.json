@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S093_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某實驗動物的激素濃度很高，標的器官反應卻很弱。下列哪項最值得優先檢查？",
+  "options": [
+    "牠是否看見紅色物體",
+    "標的器官的受體是否減少或失去功能",
+    "血液是否含有任何水分",
+    "所有骨骼是否同時折斷"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "視覺刺激與此激素作用缺乏直接關聯。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "高濃度卻低反應，可能是標的細胞接收訊號的環節異常。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "正常血液本來就含水，不能解釋特定反應不足。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "全身骨折不是題目所示訊號反應的合理機制。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "受體功能"
+  ],
+  "representationType": "機制診斷",
+  "misconceptionTargets": [
+    "只看分泌量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "濃度很高證明訊號已存在，反應弱則應追查受體或細胞內傳訊。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "這項檢查可直接區分分泌過少與標的器官不敏感兩種情況。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S099_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S099"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "運動神經被阻斷後，受試者仍感到腳底被碰觸，但無法主動抬腳。最合理的解釋為何？",
+  "options": [
+    "感覺傳入仍在，運動命令傳出受阻",
+    "感覺與運動一定使用完全相同路徑",
+    "肌肉已變成感覺受器",
+    "碰觸訊息由骨骼製造"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩項觀察分別顯示傳入保留、傳出異常。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "功能可分離，表示路徑並非完全相同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "肌肉不會因神經阻斷改變組織身分。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "皮膚受器偵測碰觸，不是骨骼製造訊息。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "功能分離"
+  ],
+  "representationType": "整合推論",
+  "misconceptionTargets": [
+    "感覺運動路徑相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "能感覺表示訊息可到中樞，不能抬腳則符合運動命令無法到肌肉。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "這項解釋同時涵蓋兩個觀察，比宣稱全部神經失效更精確。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

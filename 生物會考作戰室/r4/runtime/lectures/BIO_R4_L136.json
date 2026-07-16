@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L136",
+  "subject": "biology",
+  "unitId": "BIO_R4_U18",
+  "skillId": "BIO_R4_S136",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S135"
+  ],
+  "objectives": [
+    "能以IA、IB、i三種版本解釋ABO血型基因型。",
+    "能由雙親血型與可能基因型排除不可能子代血型。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L136_SEC1",
+      "title": "三種基因版本",
+      "content": "ABO血型模型在族群中有IA、IB與i三種常見版本，但每個二倍體個體仍只具有其中兩個。多版本是族群概念，不表示單一個體同時有三個。"
+    },
+    {
+      "id": "BIO_R4_L136_SEC2",
+      "title": "共顯性與隱性",
+      "content": "IA與IB同時存在時兩者都表現，形成AB型，稱為共顯性；IA與IB各自都能在與i組合時表現，因此i對兩者為隱性，這兩套表現規則不可混用。"
+    },
+    {
+      "id": "BIO_R4_L136_SEC3",
+      "title": "表現型與基因型",
+      "content": "A型可為IAIA或IAi，B型可為IBIB或IBi，AB型只有IAIB，O型只有ii。A、B型外觀各對應兩種可能，不能只由血型唯一確定，必須結合親子或檢測資料。"
+    },
+    {
+      "id": "BIO_R4_L136_SEC4",
+      "title": "親子推論限制",
+      "content": "子代兩個版本各來自一名親代。血型可排除部分親子組合，但單靠ABO通常不能證明親子關係；還需考慮基因型不唯一及其他證據。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L136_EX1",
+      "prompt": "IAi個體的血型為何？",
+      "steps": [
+        "確認IA對i為顯性。",
+        "找出實際表現的抗原類型。"
+      ],
+      "answer": "A型。",
+      "why": "IA與i組合時IA表現而i未表現，因此表現型為A型，不是O型或AB型，因為i不會遮蔽IA，也不會形成雙重表現。"
+    },
+    {
+      "id": "BIO_R4_L136_EX2",
+      "prompt": "IAIB與ii親代的子代可能血型為何？",
+      "steps": [
+        "列前者配子IA或IB，後者只有i。",
+        "組合成IAi或IBi。"
+      ],
+      "answer": "A型或B型。",
+      "why": "子代不可能同時從ii親代取得IA或IB，因此不會形成AB型，也不會取得兩個i形成O型。"
+    },
+    {
+      "id": "BIO_R4_L136_EX3",
+      "prompt": "兩名A型親代能否生出O型子代？",
+      "steps": [
+        "A型親代各可能是IAIA或IAi。",
+        "O型ii需要雙親各提供i。"
+      ],
+      "answer": "若雙親都是IAi則可能。",
+      "why": "A型表現不能排除攜帶i；兩名異型合子各給i時可形成ii子代，兩方各提供一個i。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "AB型表示一個人有三種版本。",
+      "whyWrong": "AB型基因型IAIB只有兩個版本，族群才可能同時存在三種版本。",
+      "correction": "區分個體二倍體組合與族群的多版本現象。"
+    },
+    {
+      "belief": "IA一定壓過IB。",
+      "whyWrong": "IA與IB在IAIB個體中同時表現，兩者關係是共顯性，所以不是彼此壓制。",
+      "correction": "AB型要同時保留A與B表現，不套完全顯性，而要採共顯性模型。"
+    },
+    {
+      "belief": "A型一定是IAIA。",
+      "whyWrong": "A型也可能是IAi，表現型無法區分兩種基因型，需再查親子版本來源。",
+      "correction": "需要子代、親代或基因檢測資料進一步判斷。"
+    },
+    {
+      "belief": "血型相容就能證明親子關係。",
+      "whyWrong": "相容只表示未被此模型排除，許多無關個體也可能有相容血型。",
+      "correction": "ABO可作排除線索，不作單一證明工具，且相容不等於親子成立。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "AB型的基因型為何？",
+      "answer": "IAIB。",
+      "reason": "IA與IB共顯性，同時存在時兩種表現都出現，而非彼此遮蔽。"
+    },
+    {
+      "prompt": "O型的基因型為何？",
+      "answer": "ii。",
+      "reason": "只有兩個i時才沒有IA或IB的表現，才能形成O型血。"
+    },
+    {
+      "prompt": "A型血型能否唯一判定基因型？",
+      "answer": "不能。",
+      "reason": "A型可能是IAIA或IAi，需更多遺傳資料確認是否攜帶i版本。"
+    }
+  ],
+  "assets": [
+    "BIO_R4_ASSET_GENETICS"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

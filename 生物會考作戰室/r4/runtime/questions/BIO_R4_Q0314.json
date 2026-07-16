@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q0314",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S027"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "膜只讓水通過，甲側溶質濃度低於乙側，水通常如何淨移動？",
+  "options": [
+    "由乙側移向甲側",
+    "由甲側移向乙側",
+    "兩側水立即完全停止",
+    "方向只由容器顏色決定"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "乙側溶質較高，不是水通常淨移出的低溶質側。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "水由溶質較低的甲側淨移向較高的乙側。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "水分子持續運動，濃度差不使其完全停止。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "容器顏色與水的跨膜淨方向無關。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "方向判斷"
+  ],
+  "representationType": "濃度敘述",
+  "misconceptionTargets": [
+    "水往稀側"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-048",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-016",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-053",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-034"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先比較同一溶質的濃度，再將水的淨方向由低溶質側指向高溶質側。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "這是整體淨結果，反向水分子仍可能存在。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

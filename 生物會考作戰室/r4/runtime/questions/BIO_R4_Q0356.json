@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0356",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩濃度組分別處理十分鐘與四十分鐘後，後者變化較大。可否歸因濃度？",
+  "options": [
+    "可以，因為後者數字較大",
+    "可以，時間不影響交換",
+    "可以，濃度與時間效果必定相同",
+    "不宜，濃度與時間同時不同造成混淆"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "數字較大不能排除較長時間造成累積。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "時間通常影響通過量與接近平衡程度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩因素作用不同，不能假定效果相同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "同時改變兩因子，無法知道差異主要來自哪一項。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "因果評估"
+  ],
+  "representationType": "組間比較",
+  "misconceptionTargets": [
+    "大數值即濃度效應"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "因果比較要求除研究因素外的主要條件一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "可重新設計成每個濃度都在相同多個時間點測量。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

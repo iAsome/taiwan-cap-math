@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L_S212",
+  "subject": "biology",
+  "unitId": "BIO_R4_U29",
+  "skillId": "BIO_R4_S212",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S211"
+  ],
+  "objectives": [
+    "比較生物處理與新興科技的效益及風險",
+    "設計含監測與停止條件的技術評估"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S212_SEC_01",
+      "title": "生物處理原理",
+      "content": "生物處理利用微生物、植物或酵素吸收、轉化污染物。是否有效取決於環境條件、處理速率及產物，而非只看生物是否存活。"
+    },
+    {
+      "id": "BIO_R4_L_S212_SEC_02",
+      "title": "效益指標",
+      "content": "評估可比較污染物去除率、處理時間、成本、能耗與場址適用性。應設未處理對照，才能區分自然衰減與技術效果。"
+    },
+    {
+      "id": "BIO_R4_L_S212_SEC_03",
+      "title": "風險指標",
+      "content": "還要檢查副產物毒性、非目標生物影響、處理生物外逸及基因轉移等可能風險。天然或新穎都不等於必然安全。"
+    },
+    {
+      "id": "BIO_R4_L_S212_SEC_04",
+      "title": "分階段導入",
+      "content": "先做可控制的小規模試驗，設定監測頻率、成功標準與停止條件，再決定是否擴大。效益與風險都要用實測資料更新。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S212_EX_01",
+      "prompt": "微生物處理後原污染物下降，是否已證明完全安全？",
+      "steps": [
+        "確認原污染物濃度下降",
+        "檢查轉化產物與非目標生物反應"
+      ],
+      "answer": "尚未證明完全安全。",
+      "why": "處理可能把原物質轉成其他產物，只有原污染物下降不足以排除副產物與生態影響。"
+    },
+    {
+      "id": "BIO_R4_L_S212_EX_02",
+      "prompt": "處理池污染物下降30%，對照池也下降25%，如何解讀？",
+      "steps": [
+        "比較處理組與對照組變化",
+        "計算超過自然變化的額外效果"
+      ],
+      "answer": "技術的額外效果可能有限。",
+      "why": "對照池已出現大部分下降，處理組僅多下降五個百分點，不能把全部三成歸因技術。"
+    },
+    {
+      "id": "BIO_R4_L_S212_EX_03",
+      "prompt": "野外釋放處理生物前，應先做什麼？",
+      "steps": [
+        "在封閉系統測量效益與風險",
+        "設定外逸監測及停止條件"
+      ],
+      "answer": "先進行受控小規模試驗。",
+      "why": "受控試驗能在擴大前發現副產物、非目標影響或外逸問題，並保留停止與修正空間。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "使用天然微生物處理污染一定沒有風險。",
+      "whyWrong": "天然生物仍可能改變群落、產生副產物或在場址外擴散。",
+      "correction": "需實測非目標影響、轉化產物毒性與外逸情形。"
+    },
+    {
+      "belief": "新技術效率高，就不必設置對照組。",
+      "whyWrong": "沒有對照就難以分辨技術效果與污染物自然衰減。",
+      "correction": "應在相同環境條件設未處理對照，並以獨立樣本重複比較。"
+    },
+    {
+      "belief": "原污染物濃度下降，代表所有風險都消失。",
+      "whyWrong": "轉化產物可能仍有毒，處理也可能影響非目標生物。",
+      "correction": "應同時測量轉化產物、總毒性與非目標生物反應。"
+    },
+    {
+      "belief": "小規模有效就可直接全面釋放。",
+      "whyWrong": "規模放大會改變環境控制、外逸機會與處理均勻度。",
+      "correction": "應分階段擴大並預先設定監測和停止條件。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "為何生物處理實驗要設未處理對照？",
+      "answer": "區分技術效果與自然衰減。",
+      "reason": "污染物可能自行分解，對照可提供沒有技術介入的基準。"
+    },
+    {
+      "prompt": "原污染物下降後還應測什麼？",
+      "answer": "轉化產物及非目標生物反應。",
+      "reason": "污染物可能轉成仍有危害的產物，並對群落造成額外影響。"
+    },
+    {
+      "prompt": "何時適合由小試擴大？",
+      "answer": "效益達標且風險在預設界線內時。",
+      "reason": "成功標準與停止條件可避免只因單一好結果就倉促擴大。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  }
+}

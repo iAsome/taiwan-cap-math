@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_Q_057_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S057"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "醫師由鼻腔放入細管觀察支氣管，最合理的通過順序為何？",
+  "options": [
+    "鼻腔→胃→支氣管",
+    "鼻腔→食道→肺泡",
+    "鼻腔→咽→喉→氣管→支氣管",
+    "鼻腔→小腸→氣管"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "胃與支氣管沒有直接管腔連接。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "食道只把食物送往胃部，正常情況下不會通往肺泡進行換氣。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此項依呼吸道前後順序排列。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "小腸也不在鼻腔到氣管的路徑。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "呼吸系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "從鼻腔向內觀察支氣管，器械需沿正常呼吸道前段前進。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「鼻腔→咽→喉→氣管→支氣管」完整且連續，其他選項混入消化道器官。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

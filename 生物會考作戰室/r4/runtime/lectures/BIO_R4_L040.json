@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L040",
+  "subject": "biology",
+  "unitId": "BIO_R4_U05",
+  "skillId": "BIO_R4_S040",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "prerequisites": [
+    "BIO_R4_S039"
+  ],
+  "objectives": [
+    "能區分生命組成層次與生物分類階層的目的及關係。",
+    "能依問題是在問構成或親緣，選用正確階層系統。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L040_S1",
+      "title": "組成層次問構成",
+      "content": "細胞、組織、器官、器官系統與個體描述一個生物體內誰由誰構成，以及較低層次如何合作形成較高層次功能。它不比較不同物種的親緣。"
+    },
+    {
+      "id": "BIO_R4_L040_S2",
+      "title": "分類階層問親緣",
+      "content": "界、門、綱、目、科、屬、種用共同特徵與親緣關係整理不同生物。由界到種範圍逐漸縮小，共同特徵通常更具體，但不是把細胞堆成個體。"
+    },
+    {
+      "id": "BIO_R4_L040_S3",
+      "title": "同詞不同問題",
+      "content": "一隻臺灣獼猴是個體，也可被歸入某物種、屬與科。前者描述研究單位，後者描述它和其他生物的分類關係；同一對象可同時有兩套標示。"
+    },
+    {
+      "id": "BIO_R4_L040_S4",
+      "title": "判讀策略",
+      "content": "若題目問『由什麼組成』或『哪一層受損』，使用組成層次；若問『共同祖先』『同屬』『哪兩種較近』，使用分類階層。先辨問題目的，再看專有名稱。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L040_E1",
+      "prompt": "心臟屬器官，這是分類階層嗎？",
+      "steps": [
+        "辨認心臟是個體內構造。",
+        "檢查『器官』描述的是由多種組織構成。"
+      ],
+      "answer": "不是；器官屬生命組成層次。",
+      "why": "器官用來回答個體內多種組織如何構成功能單位，不能把不同生物依親緣分成科、屬或種。"
+    },
+    {
+      "id": "BIO_R4_L040_E2",
+      "prompt": "臺灣黑熊與棕熊同屬，『屬』代表什麼？",
+      "steps": [
+        "確認比較對象是不同物種。",
+        "辨認同屬是分類與親緣資訊。"
+      ],
+      "answer": "『屬』是生物分類階層，不是體內組成層次。",
+      "why": "同屬表示分類上較接近，不能說一種熊由另一種熊構成，也不能把屬當器官系統。"
+    },
+    {
+      "id": "BIO_R4_L040_E3",
+      "prompt": "一株樟樹既是個體又屬某物種，是否矛盾？",
+      "steps": [
+        "分辨個體回答單一生物單位。",
+        "分辨物種回答分類身分。"
+      ],
+      "answer": "不矛盾，兩詞回答不同問題。",
+      "why": "同一實體可在組織研究中視為一個個體，又在分類研究中被歸入某個物種。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "細胞、組織、器官就是界、門、綱的另一種名稱。",
+      "whyWrong": "前者描述體內構成，後者描述不同生物的分類與親緣。",
+      "correction": "先辨認題目在問體內組成或生物分類，再選用相應階層詞彙。"
+    },
+    {
+      "belief": "同屬表示一個物種由另一個物種構成。",
+      "whyWrong": "同屬表示分類位置接近，不是實體包含或組成關係。",
+      "correction": "用共同特徵與親緣解讀分類，不用誰組成誰。"
+    },
+    {
+      "belief": "一個生物只能有一種層次標示。",
+      "whyWrong": "同一生物可作為個體研究，也同時有物種、屬、科等分類身分。",
+      "correction": "依研究問題分別標示組成單位與分類位置。"
+    },
+    {
+      "belief": "分類範圍越大，生物彼此一定越相似。",
+      "whyWrong": "由界到種範圍縮小時，共同特徵通常更具體；大範圍含更多差異。",
+      "correction": "比較共同分類階層的深淺，並用實際特徵與親緣證據。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "『心臟由多種組織構成』使用哪套階層？",
+      "answer": "使用生命組成層次，心臟屬器官。",
+      "reason": "句子描述體內構成關係，沒有比較不同生物親緣。"
+    },
+    {
+      "prompt": "『甲乙兩物種同科』使用哪套階層？",
+      "answer": "使用生物分類階層，科是分類單位。",
+      "reason": "句子在比較不同物種的分類位置，不是描述器官構成。"
+    },
+    {
+      "prompt": "同一棵樹為何可同時是個體與某物種成員？",
+      "answer": "個體描述單一生物，物種成員描述它的分類身分。",
+      "reason": "兩種標示回答不同問題，因此可以同時成立。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  }
+}

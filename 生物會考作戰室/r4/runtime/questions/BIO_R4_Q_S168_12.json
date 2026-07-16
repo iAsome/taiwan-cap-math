@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S168_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S168"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "校園要比較兩種遮陰網是否減少植栽蒸散，哪項方案最可靠？",
+  "options": [
+    "兩組使用不同植物與不同盆土",
+    "只在一天中任選不同時段觀看",
+    "不封土面並只比較盆栽顏色",
+    "同種等葉面積植株、封土面、同時測量單位時間質量減少"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "植物種類與盆土都不同時，失水差有多個可能來源。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "不同時段的溫度與濕度可能改變，無法公平比較遮陰網。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "盆栽顏色不是蒸散量，土壤蒸發也會混入測量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "控制材料、面積、土壤蒸發與時間後，質量差較能歸因於遮陰。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移校園實驗"
+  ],
+  "representationType": "方案評估",
+  "misconceptionTargets": [
+    "觀察顏色可代表蒸散量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-005",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-011",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-044",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-045"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "控制核對兩組除遮陰網外的植物、葉面積及測量時間均保持一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "測量核對封住土面後以質量減少量化，可排除觀看顏色的主觀判斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

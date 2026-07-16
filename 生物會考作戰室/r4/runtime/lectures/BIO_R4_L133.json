@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L133",
+  "subject": "biology",
+  "unitId": "BIO_R4_U18",
+  "skillId": "BIO_R4_S133",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S132"
+  ],
+  "objectives": [
+    "能由雙親基因型列出配子並推論子代可能組合。",
+    "能區分理論機率、預期比例與單次受精結果。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L133_SEC1",
+      "title": "先列配子",
+      "content": "解遺傳組合先把每個親代的成對版本分開：AA只給A，Aa可給A或a，aa只給a。若配子種類列錯，後續方格即使排列整齊也不會正確。"
+    },
+    {
+      "id": "BIO_R4_L133_SEC2",
+      "title": "再組合子代",
+      "content": "把一方每種配子與另一方每種配子各配一次，填入子代兩版本。Aa×Aa可得AA、Aa、Aa、aa；相同Aa出現兩格，代表兩條來源路徑，每格都要追溯雙親來源。"
+    },
+    {
+      "id": "BIO_R4_L133_SEC3",
+      "title": "基因型與表現型比例",
+      "content": "Aa×Aa的基因型機率為四分之一AA、二分之一Aa、四分之一aa。完全顯性時表現型為四分之三顯性、四分之一隱性，兩種比例不可混用。"
+    },
+    {
+      "id": "BIO_R4_L133_SEC4",
+      "title": "機率的限制",
+      "content": "方格描述每次受精的可能性及大量事件趨勢，不保證四名子代恰好分占四格。先前子代結果也不會安排下一次配子組合。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L133_EX1",
+      "prompt": "Aa與aa雜交，子代可能有哪些基因型？",
+      "steps": [
+        "列Aa配子A或a，aa配子只有a。",
+        "逐一組合A×a與a×a。"
+      ],
+      "answer": "Aa或aa，各約二分之一。",
+      "why": "兩種合法配子組合各占方格一半，在模型假設下形成兩種等機會基因型。"
+    },
+    {
+      "id": "BIO_R4_L133_EX2",
+      "prompt": "Aa×Aa出現隱性表現的理論機率為何？",
+      "steps": [
+        "列出四格AA、Aa、Aa、aa。",
+        "完全顯性下找出唯一隱性基因型。"
+      ],
+      "answer": "四分之一。",
+      "why": "四格中只有aa呈隱性，其他三格至少含一個A，因此機率為一格除以四格，計算的是子代表現型的理論比例。"
+    },
+    {
+      "id": "BIO_R4_L133_EX3",
+      "prompt": "前兩名子代都是aa，第三名一定不是aa嗎？",
+      "steps": [
+        "確認每次受精使用新的配子。",
+        "不要用前次結果刪除合法方格。"
+      ],
+      "answer": "不一定，第三次仍有原本的aa機率。",
+      "why": "獨立受精事件的配子機會沒有被前兩次用完，先前結果不會迫使下一次補平衡。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "方格四格代表一定有四名子代。",
+      "whyWrong": "方格列出配子可能組合與機率，不規定實際出生數量。",
+      "correction": "把格數換成單次機率或大量比例，不當作人數名單。"
+    },
+    {
+      "belief": "Aa×Aa的顯性基因型比例是四分之三。",
+      "whyWrong": "四分之三是顯性表現型比例，基因型則分AA與Aa兩類。",
+      "correction": "先問基因型或表現型，再合併適當格子，避免把兩種比例混寫。"
+    },
+    {
+      "belief": "前次出現aa後，下次aa機率變零。",
+      "whyWrong": "每次受精是新的獨立配子組合，合法配子不會因前次結果消失。",
+      "correction": "每次都從親代配子重新列可能性，不用補償想法。"
+    },
+    {
+      "belief": "理論二分之一表示兩名子代必定各一種。",
+      "whyWrong": "二分之一描述每次機會與長期比例，小樣本可連續出現相同結果。",
+      "correction": "應把二分之一解讀為每次受精的理論機會，不能保證兩次恰好各一種。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Aa×aa可產生哪些子代基因型？",
+      "answer": "Aa或aa。",
+      "reason": "Aa親代給A或a，aa親代只給a，因此只有兩種組合，不會形成AA。"
+    },
+    {
+      "prompt": "Aa×Aa的aa機率為何？",
+      "answer": "四分之一。",
+      "reason": "四種等機會配子組合中只有a與a結合形成aa，另三格至少含一個A。"
+    },
+    {
+      "prompt": "機率四分之一是否保證四名中一名符合？",
+      "answer": "不保證。",
+      "reason": "理論機率不是固定小組配額，少量結果可隨機波動。"
+    }
+  ],
+  "assets": [
+    "BIO_R4_ASSET_GENETICS"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

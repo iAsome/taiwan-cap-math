@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S097_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S097"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S097",
+  "stem": "若要進一步測量拉力大小與位移的關係，最適合怎麼做？",
+  "options": [
+    "每次同時更換硬棒與轉軸",
+    "只比較模型顏色",
+    "維持連接與轉軸相同，分級改變彈力帶拉力並重複測量",
+    "移除硬棒後只測空氣"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "同時更換多項構造會混入其他變因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "顏色不能表示拉力與位移關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "只調整拉力可建立拉力和位移的對照。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有硬棒就無法測量其末端位移。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "實驗設計"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "同時改變多項變因"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "研究問題指定拉力為變因，因此其他力學條件應保持一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "分級與重複測量可看出趨勢，也能降低單次誤差的影響。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

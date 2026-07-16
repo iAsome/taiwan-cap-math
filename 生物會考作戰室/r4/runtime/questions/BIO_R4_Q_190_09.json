@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q_190_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S190"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某魚只攝食浮游動物。若浮游動物層可用能量下降，哪項推論最謹慎？",
+  "options": [
+    "魚層可獲能量可能下降，但程度還受其他條件影響",
+    "魚會立刻自行行光合作用",
+    "魚層能量必定增加相同數量",
+    "浮游動物下降與魚完全無關"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "能量來源減少可能影響魚，但未必一比一改變。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "魚不會因食物下降就獲得光合作用能力。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "上游供應下降不能支持高階能量增加。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹說魚只吃浮游動物，兩者明顯相關。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "推估上游能量下降"
+  ],
+  "representationType": "族群能量推論",
+  "misconceptionTargets": [
+    "上游減少會讓高階增加"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-038",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-041",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-003",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-028",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-023",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-020"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「魚層可獲能量可能下降，但程度還受其他條件影響」依能量路徑提出方向性推論，也保留生態系其他變因。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "魚不會因食物減少而開始光合作用，上游能量下降也不支持魚層等量增加，更不能說兩者完全無關。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

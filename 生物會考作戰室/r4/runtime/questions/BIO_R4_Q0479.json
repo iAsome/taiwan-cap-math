@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q0479",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S040"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "博物館比較兩種植物的 DNA 與共同特徵，主要要回答哪類問題？",
+  "options": [
+    "器官由哪些組織構成",
+    "細胞如何形成組織",
+    "兩種植物的分類與親緣關係",
+    "同一葉片的細胞數"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "器官構成需組織觀察，不是跨物種 DNA 比較核心。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "細胞形成組織是發育與組成問題。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "跨物種共同特徵與 DNA 可用來推論分類親緣。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "葉片細胞數不需比較兩物種 DNA。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "研究目的遷移"
+  ],
+  "representationType": "博物館情境",
+  "misconceptionTargets": [
+    "DNA研究等同細胞層次"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "研究材料在分子尺度，不代表研究問題必是組成層次。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "DNA 可作分類證據，尺度與分析目的需分開。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

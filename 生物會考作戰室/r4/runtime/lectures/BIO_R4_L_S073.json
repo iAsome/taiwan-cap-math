@@ -1,0 +1,128 @@
+{
+  "id": "BIO_R4_L_S073",
+  "subject": "biology",
+  "unitId": "BIO_R4_U10",
+  "skillId": "BIO_R4_S073",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S072"
+  ],
+  "objectives": [
+    "依物質來源區分排泄與排遺",
+    "由生活情境判斷二氧化碳、尿素與未消化殘餘物的排出類型"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S073_SEC_01",
+      "title": "排泄移除代謝廢物",
+      "content": "細胞進行代謝會產生二氧化碳、含氮廢物與多餘水分等。身體將這些物質移出體外屬於排泄，可由肺、腎臟與皮膚等器官參與。"
+    },
+    {
+      "id": "BIO_R4_L_S073_SEC_02",
+      "title": "排遺排出食物殘餘",
+      "content": "食物中未被消化或吸收的成分留在消化道內，經大腸形成糞便並由肛門排出，稱為排遺。這些殘餘物沒有先成為細胞代謝產物。"
+    },
+    {
+      "id": "BIO_R4_L_S073_SEC_03",
+      "title": "出口不能單獨分類",
+      "content": "分類關鍵是物質來源，不只是從哪個開口離開。糞便含未消化殘餘屬排遺；呼出的二氧化碳來自細胞代謝，即使由呼吸道離開仍屬排泄。"
+    },
+    {
+      "id": "BIO_R4_L_S073_SEC_04",
+      "title": "同一情境可能並存",
+      "content": "人體每天可能同時排尿、呼氣、流汗與排便，其中前三者可包含代謝廢物排出，排便則主要是排遺。不能把身體所有排出現象都用同一名詞概括。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S073_EX_01",
+      "prompt": "細胞呼吸產生的二氧化碳由肺排出，屬於何者？",
+      "steps": [
+        "追蹤二氧化碳是否由細胞代謝產生",
+        "再判斷移出體外的類型"
+      ],
+      "answer": "排泄",
+      "why": "二氧化碳是細胞呼吸的代謝產物，經血液送到肺部後排出；分類依物質來源，因此即使出口是呼吸道，仍屬排泄。"
+    },
+    {
+      "id": "BIO_R4_L_S073_EX_02",
+      "prompt": "纖維未被消化而隨糞便排出，屬於何者？",
+      "steps": [
+        "確認纖維仍在消化道內",
+        "檢查是否曾成為細胞代謝廢物"
+      ],
+      "answer": "排遺",
+      "why": "未消化纖維沒有先被吸收進入細胞，也不是細胞代謝產物；它只是消化道內容物的殘餘，因此排出屬於排遺。"
+    },
+    {
+      "id": "BIO_R4_L_S073_EX_03",
+      "prompt": "只看物質從肛門排出，能否判定是排泄？",
+      "steps": [
+        "區分出口與來源兩種判準",
+        "追查排出物是否來自細胞代謝"
+      ],
+      "answer": "不能，應先判斷物質來源",
+      "why": "出口位置無法取代來源證據；糞便主要是未消化食物殘餘與消化道成分，沒有先成為細胞代謝廢物，所以主要屬排遺。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "身體排出任何物質都叫排泄",
+      "whyWrong": "未消化食物殘餘排出屬排遺，和細胞代謝廢物不同。",
+      "correction": "先追查物質來源，代謝廢物移除稱排泄，消化道殘餘排出稱排遺。"
+    },
+    {
+      "belief": "排便是腎臟排泄的一部分",
+      "whyWrong": "糞便主要在大腸形成並由肛門排出，不是腎臟製造的尿液。",
+      "correction": "腎臟參與尿液形成與排泄，排便則是消化道完成的排遺。"
+    },
+    {
+      "belief": "呼出的二氧化碳不是排泄，因為沒有經過腎臟",
+      "whyWrong": "排泄器官不只腎臟，肺也能排出細胞代謝產生的二氧化碳。",
+      "correction": "凡移除代謝廢物可屬排泄，應依物質來源而非是否經腎臟判斷。"
+    },
+    {
+      "belief": "未吸收的食物會先進入細胞再成為糞便",
+      "whyWrong": "未吸收成分一直留在消化道管腔，沒有先進入體內細胞。",
+      "correction": "糞便主要由未消化殘餘與消化道成分構成，排出過程屬排遺。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "排泄與排遺最重要的分類依據是什麼？",
+      "answer": "排出物是否來自細胞代謝",
+      "reason": "代謝廢物移除屬排泄，未消化食物殘餘離開消化道則屬排遺。"
+    },
+    {
+      "prompt": "尿素隨尿液排出為何屬排泄？",
+      "answer": "尿素是蛋白質代謝後形成的含氮廢物",
+      "reason": "它由體內代謝產生並經血液送到腎臟，最後隨尿液移出體外。"
+    },
+    {
+      "prompt": "糞便排出為何主要屬排遺？",
+      "answer": "其中主要含未消化與未吸收的殘餘物",
+      "reason": "這些成分留在消化道管腔，並沒有先成為細胞的代謝廢物。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

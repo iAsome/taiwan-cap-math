@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_SQ0035",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST012",
+  "stem": "高倍下只看見五個細胞，最合理的解釋是什麼？",
+  "options": [
+    "十九個細胞已死亡",
+    "玻片細胞總數變成五",
+    "高倍視野較小，只涵蓋局部",
+    "低倍數據一定造假"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "倍率切換不會讓視野外細胞因而死亡。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "五個是視野內可見數，不是整張玻片總數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "直徑縮小表示只取低倍中央的一小部分。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩組數據符合視野變化，沒有造假證據。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "資料解釋"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "可見數等於總數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-030"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "直徑由四點八降為一點二，取景面積減少足以解釋可見數下降。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "細胞仍存在玻片其他位置，回低倍即可再次觀察較大範圍。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

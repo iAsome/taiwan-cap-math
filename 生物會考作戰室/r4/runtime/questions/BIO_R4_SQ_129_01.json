@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_129_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S129"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST129",
+  "stem": "第一版模型主要遺漏哪個已知因素？",
+  "options": [
+    "溫度對高度的影響",
+    "豆苗具有基因型",
+    "高度可以測量",
+    "G1與G2名稱"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "高溫資料一致偏高，顯示溫度變項未納入。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第一版正是用基因型作預測基準。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "模型已有公分預測，沒有否定高度測量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩種基因型名稱都已明確列在資料中。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "模型偏離時找錯遺漏因素"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "比較低高溫結果可見系統差異，「溫度對高度的影響」指出第一版缺少的變項。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其他資訊已經存在於模型或資料，不是造成偏離的遺漏。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

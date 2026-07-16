@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S097_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S097"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "神經受損使某肌肉收不到訊息，但肌肉、肌腱與骨骼外觀完整。最可能的影響為何？",
+  "options": [
+    "肌腱會主動產生神經訊息",
+    "骨骼會自行完成原動作",
+    "肌肉難以在適當時機收縮，相關動作受限",
+    "關節會立刻消失"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "肌腱負責傳力，不會取代神經控制。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "骨骼不會自行產生收縮力量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "缺少控制訊息會影響肌肉收縮的時機與強度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "神經受損不會使關節構造立刻消失。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "神經控制"
+  ],
+  "representationType": "情境推論",
+  "misconceptionTargets": [
+    "構造完整等於功能正常"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "外觀完整不等於功能正常，肌肉仍需神經訊息才能受控收縮。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "完整動作仰賴控制與力學構造共同運作，不能只檢查骨骼外形。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

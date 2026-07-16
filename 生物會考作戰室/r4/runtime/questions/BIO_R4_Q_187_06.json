@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_187_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "學生畫出「陽光→草→羊」。若題目要求只列生物構成的食物鏈，應如何修正？",
+  "options": [
+    "刪除草",
+    "刪除陽光，保留草→羊",
+    "把所有箭頭反向",
+    "只保留陽光→羊"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "刪除草會失去食物鏈中的生產者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "陽光不是生物，草到羊則是正確攝食關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "反向後會錯成草攝食羊，且仍含非生物。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "羊不是直接攝取陽光來取得有機養分。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "區分能量來源與鏈中生物"
+  ],
+  "representationType": "錯圖修正",
+  "misconceptionTargets": [
+    "太陽必是食物鏈第一節"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目限定生物，故移除陽光即可，不能連生產者一起刪除。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "草→羊仍完整表示羊攝食草及其能量傳遞方向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

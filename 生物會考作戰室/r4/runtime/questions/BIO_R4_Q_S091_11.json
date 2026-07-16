@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S091_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "水箱水位過高就關閉進水，過低就啟動進水。這最像血糖調節哪項特徵？",
+  "options": [
+    "偏離越大就朝同方向加強",
+    "只有過高時才有任何反應",
+    "依偏高或偏低啟動相反方向的修正",
+    "設定值永遠不能有波動"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "系統會抵銷而不是加強原偏離。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "過低時也會啟動進水調節。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩種偏離各有能使其回復的反向反應。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "實際水位可在範圍內波動後被修正。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "類比",
+    "遷移"
+  ],
+  "representationType": "水位系統",
+  "misconceptionTargets": [
+    "把負回饋視為固定不變"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-002",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-008",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-020"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "高時降低、低時升高，功能上對應血糖的雙向負回饋。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反向修正能維持範圍，而不要求每刻完全等於單一值。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

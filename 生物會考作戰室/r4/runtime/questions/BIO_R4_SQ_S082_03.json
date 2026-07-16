@@ -1,0 +1,85 @@
+{
+  "id": "BIO_R4_SQ_S082_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S082"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S082",
+  "stem": "若新增E段代表手指肌肉實際壓下按鍵，E在人體反應流程中應歸為哪一角色？",
+  "options": [
+    "受器接收刺激",
+    "動器官執行反應",
+    "傳入神經傳導",
+    "中樞形成知覺"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "光刺激由眼內受器接收，不是手指肌肉。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "肌肉收縮並壓鍵是命令末端的實際反應。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "傳入路徑發生在視覺訊息朝中樞移動時。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "形成知覺屬中樞處理，早於手指按鍵。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "模型延伸",
+    "遷移"
+  ],
+  "representationType": "流程模型",
+  "misconceptionTargets": [
+    "把肌肉動作當成神經傳導"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-024",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-024",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-009",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-012"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "E描述的是肌肉完成動作，功能上就是動器官執行。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "依完整流程位置，E位於D之後，不能再是接收或整合階段。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

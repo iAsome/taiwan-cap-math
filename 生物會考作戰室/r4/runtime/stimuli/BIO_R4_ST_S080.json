@@ -1,0 +1,72 @@
+{
+  "id": "BIO_R4_ST_S080",
+  "subject": "biology",
+  "skillId": "BIO_R4_S080",
+  "type": "homeostasis-time-series",
+  "content": {
+    "title": "升溫刺激後的體溫與散熱反應",
+    "text": "教學模型的體溫參考範圍為36.5至37.2度。零分鐘施加短暫升溫刺激，研究者記錄體溫與散熱反應相對值；反應值越高表示出汗與皮膚散熱作用越強。",
+    "note": "刺激在十分鐘停止，其後環境恢復原條件。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "表格顯示體溫先升高超界，散熱反應隨後增強，體溫再逐步回到參考範圍。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "時間（分鐘）",
+        "體溫（攝氏度）",
+        "散熱反應相對值"
+      ],
+      "rows": [
+        [
+          "0",
+          "36.8",
+          "20"
+        ],
+        [
+          "5",
+          "37.6",
+          "45"
+        ],
+        [
+          "10",
+          "38.0",
+          "90"
+        ],
+        [
+          "20",
+          "37.3",
+          "72"
+        ],
+        [
+          "30",
+          "36.9",
+          "28"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

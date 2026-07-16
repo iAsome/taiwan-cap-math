@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S087_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S087"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S087",
+  "stem": "運動結束後，哪項資料最支持散熱反應使體溫朝原範圍回復？",
+  "options": [
+    "運動前沒有出汗",
+    "運動10分鐘體溫高於運動前",
+    "每一時刻體溫都完全相同",
+    "休息期間仍出汗且體溫由37.7降到36.9°C"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "運動前未出汗不能單獨呈現回復過程。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此項只顯示運動中升溫，尚未顯示回降。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "表中體溫明顯不同，不能作此描述。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "出汗與休息期間體溫下降共同支持散熱後回復。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "證據整合"
+  ],
+  "representationType": "時間表",
+  "misconceptionTargets": [
+    "用單一時點證明動態過程"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "需要同時看調節反應及偏離值回降，「休息期間仍出汗且體溫由37.7降到36.9°C」具兩類證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "運動前單點與運動中升溫都沒有呈現回降；各時刻體溫也並非完全相同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

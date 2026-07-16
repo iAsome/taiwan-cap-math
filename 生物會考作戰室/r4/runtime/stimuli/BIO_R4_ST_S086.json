@@ -1,0 +1,92 @@
+{
+  "id": "BIO_R4_ST_S086",
+  "subject": "biology",
+  "skillId": "BIO_R4_S086",
+  "type": "reaction-time-table",
+  "content": {
+    "title": "兩種順序的反應時間測試",
+    "context": "研究者比較安靜與播放談話聲兩種條件。甲先做安靜再做談話聲，乙先做談話聲再做安靜；每個條件各做三次，單位為毫秒，數值越小代表按鍵反應越快。兩人使用同一電腦、同一隻手並有相同休息時間。",
+    "columns": [
+      "受試者與條件",
+      "第一次",
+      "第二次",
+      "第三次"
+    ],
+    "rows": [
+      [
+        "甲安靜（先）",
+        "260",
+        "248",
+        "242"
+      ],
+      [
+        "甲談話聲（後）",
+        "278",
+        "270",
+        "266"
+      ],
+      [
+        "乙談話聲（先）",
+        "284",
+        "276",
+        "271"
+      ],
+      [
+        "乙安靜（後）",
+        "250",
+        "244",
+        "240"
+      ]
+    ],
+    "note": "刺激出現時刻由電腦隨機決定，受試者不知道何時會亮燈。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "甲先安靜後談話聲，乙先談話聲後安靜；兩人各條件三次數值皆逐次略降，且安靜條件整體較談話聲短。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "資料列",
+        "三次反應時間"
+      ],
+      "rows": [
+        [
+          "甲安靜先做",
+          "260、248、242毫秒"
+        ],
+        [
+          "甲談話聲後做",
+          "278、270、266毫秒"
+        ],
+        [
+          "乙談話聲先做",
+          "284、276、271毫秒"
+        ],
+        [
+          "乙安靜後做",
+          "250、244、240毫秒"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

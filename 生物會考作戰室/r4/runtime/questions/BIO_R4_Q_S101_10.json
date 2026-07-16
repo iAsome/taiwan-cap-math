@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S101_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某仿生手指只能彎曲不能主動伸直。檢查發現只有屈曲側拉索。最合理的改進為何？",
+  "options": [
+    "移除轉軸使手指固定",
+    "在相反側增加可受控拉索，以形成反向拉力",
+    "讓原拉索主動向外推",
+    "把硬桿改成會消化食物的材料"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "固定轉軸會連彎曲能力也一起失去。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "相對拉索可模擬伸肌完成主動伸展。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "拉索只能拉，不能主動推回。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "消化功能與手指往返動作無關。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "設計修正"
+  ],
+  "representationType": "機制應用",
+  "misconceptionTargets": [
+    "單一拉索可往返"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "故障來自缺少反向動力路徑，應依拮抗肌原理補上另一側拉索。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "改進後仍需協調兩側收緊時機，避免同時過度拉緊造成僵硬。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

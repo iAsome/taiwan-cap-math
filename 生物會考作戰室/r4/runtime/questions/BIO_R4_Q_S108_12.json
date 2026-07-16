@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S108_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S108"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "密閉生態箱昆蟲總數由二十增至二十五，同期記錄十隻幼蟲孵化，最合理的推論為何？",
+  "options": [
+    "沒有昆蟲死亡，因為總數增加五隻",
+    "只有五隻幼蟲孵化，其他紀錄必定錯誤",
+    "總數增加完全由外界昆蟲移入造成",
+    "期間有繁殖，且可能同時有五隻昆蟲死亡"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "孵化十隻但淨增五隻，可能另有死亡抵銷部分增加。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "已有十隻孵化的直接紀錄，不能因淨增五隻就否定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "密閉條件排除外界昆蟲自由移入的合理性。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "二十加十再減五等於二十五，符合所有已知紀錄。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "數量收支"
+  ],
+  "representationType": "資料整合",
+  "misconceptionTargets": [
+    "把淨增加誤當成出生數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "淨數量只顯示各過程合併後的結果，直接孵化紀錄已支持生殖確實發生。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "用數量收支可推得可能有五隻死亡，但若要確認仍應查驗死亡個體或持續觀察。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

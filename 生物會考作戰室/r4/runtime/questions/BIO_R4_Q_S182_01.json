@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S182_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S182"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某植物在中等光照生長最佳，這最符合哪種概念？",
+  "options": [
+    "環境因子具有最適範圍",
+    "光照越強永遠越好",
+    "植物不受環境影響",
+    "只有生物因子能限制"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "中等值最佳表示過低與過高都可能不利。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題幹峰值在中等光，不支持無限增光。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "生長隨光不同而變，顯示確受環境影響。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "光是非生物因子，也能限制植物表現。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "辨識最適範圍"
+  ],
+  "representationType": "概念題",
+  "misconceptionTargets": [
+    "環境因子越多越好"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "峰值核對最佳表現位於梯度中段，而非最高端。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "範圍核對最適區與耐受界線比單向增加更能解釋。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

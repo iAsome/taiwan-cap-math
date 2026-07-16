@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_131_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S131"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "完全顯性模型中，哪種基因型呈隱性表現？",
+  "options": [
+    "AA",
+    "aa",
+    "Aa",
+    "AA與Aa"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "AA有兩個顯性版本，呈顯性表現。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "aa沒有顯性版本，因此呈隱性表現。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Aa含A，完全顯性下呈顯性表現。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "AA與Aa都屬顯性表現，不符合題意。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "認為一個隱性版本就必定表現"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "隱性表現需要兩個隱性版本，「aa」aa唯一符合。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其他選項至少含一個A，在題設模型中不會呈隱性。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

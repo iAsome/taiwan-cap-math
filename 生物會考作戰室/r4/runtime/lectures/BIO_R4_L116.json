@@ -1,0 +1,126 @@
+{
+  "id": "BIO_R4_L116",
+  "subject": "biology",
+  "unitId": "BIO_R4_U16",
+  "skillId": "BIO_R4_S116",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S115"
+  ],
+  "objectives": [
+    "能依位置與功能辨識人類主要生殖器官。",
+    "能用精子與卵的移動路徑判斷器官間的關係。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L116_SEC1",
+      "title": "男性生殖系統",
+      "content": "睪丸位於陰囊內，主要製造精子並分泌男性激素；副睪儲存逐漸成熟的精子，輸精管則把精子送往尿道。各構造的功能不能只靠名稱猜測。"
+    },
+    {
+      "id": "BIO_R4_L116_SEC2",
+      "title": "女性生殖系統",
+      "content": "卵巢產生卵並分泌女性激素，輸卵管承接排出的卵，也是精子與卵通常相遇之處；子宮具有適合胚胎著床及發育的內部環境。"
+    },
+    {
+      "id": "BIO_R4_L116_SEC3",
+      "title": "路徑與功能",
+      "content": "判讀器官圖時先找產生配子的器官，再沿管道追蹤配子。精子由睪丸形成後經副睪、輸精管與尿道排出，卵則由卵巢排出並進入輸卵管。"
+    },
+    {
+      "id": "BIO_R4_L116_SEC4",
+      "title": "生殖與排泄的區分",
+      "content": "男性尿液與精液最後可經同一條尿道離開，但來源與成分不同；女性尿道與陰道是不同開口。路徑部分重疊不表示器官功能完全相同。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L116_EX1",
+      "prompt": "某構造能製造精子，也能分泌影響青春期的激素，這是哪一器官？",
+      "steps": [
+        "先抓住製造精子這項專一功能。",
+        "再用分泌男性激素確認器官。"
+      ],
+      "answer": "睪丸。",
+      "why": "副睪只負責儲存與成熟精子，輸精管只負責運送；同時符合兩項功能的只有睪丸。"
+    },
+    {
+      "id": "BIO_R4_L116_EX2",
+      "prompt": "若女性兩側輸卵管都阻塞，最直接受影響的是哪個過程？",
+      "steps": [
+        "確認卵巢仍可排卵。",
+        "判斷精子與卵通常在哪裡相遇。"
+      ],
+      "answer": "精子與卵相遇並完成受精的機會大幅降低。",
+      "why": "輸卵管是兩種配子通常相遇的位置，阻塞會阻斷相遇路徑，但不等於卵巢停止製造卵。"
+    },
+    {
+      "id": "BIO_R4_L116_EX3",
+      "prompt": "某管道一端直接連接副睪，另一端向骨盆腔延伸，並把精子送往尿道方向，應判定為何者？",
+      "steps": [
+        "先確認管道起點直接連接副睪。",
+        "再依運送精子的方向辨識。"
+      ],
+      "answer": "輸精管。",
+      "why": "輸精管承接副睪中的精子並向尿道方向運送，連接位置與功能都符合題述，不是輸尿管。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "子宮會製造卵。",
+      "whyWrong": "卵是在卵巢內形成與成熟，子宮主要提供胚胎著床和發育的環境。",
+      "correction": "把配子來源記為卵巢，把胚胎發育場所記為子宮，兩者功能分開判斷。"
+    },
+    {
+      "belief": "精子在輸精管內製造。",
+      "whyWrong": "輸精管是運送精子的管道，沒有製造精子的功能；精子主要在睪丸形成。",
+      "correction": "沿路徑判讀時先標出睪丸為起點，再接副睪、輸精管與尿道。"
+    },
+    {
+      "belief": "女性尿道就是陰道。",
+      "whyWrong": "兩者是不同的管道與開口，尿道排出尿液，陰道屬於生殖系統的一部分。",
+      "correction": "依排出物與所屬系統辨識，不因位置相近就視為同一構造。"
+    },
+    {
+      "belief": "副睪和睪丸功能完全相同。",
+      "whyWrong": "睪丸製造精子並分泌激素，副睪主要讓精子儲存並逐漸成熟。",
+      "correction": "比較構造時分別問配子在哪裡形成、在哪裡暫存成熟，答案不同。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "製造卵並分泌女性激素的器官為何？",
+      "answer": "卵巢。",
+      "reason": "卵巢兼具產生女性配子與分泌相關激素兩項主要功能。"
+    },
+    {
+      "prompt": "精子從副睪離開後，通常先進入哪一條管道？",
+      "answer": "輸精管。",
+      "reason": "輸精管直接承接副睪並把精子向尿道方向運送。"
+    },
+    {
+      "prompt": "為何不能把男性尿道直接稱為生殖器官專用管？",
+      "answer": "因為尿液也經尿道排出。",
+      "reason": "男性尿道同時參與泌尿與生殖物質的排出，並非只服務一個系統。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

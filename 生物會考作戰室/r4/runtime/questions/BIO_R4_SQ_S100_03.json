@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S100_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S100"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S100",
+  "stem": "若要檢驗拿取時間對肌肉疲勞的影響，最適合新增哪項設計？",
+  "options": [
+    "每次同時更換箱重與受試者",
+    "只改箱子顏色",
+    "刪除所有張力資料",
+    "固定箱重、姿勢與距離，分別維持不同時間並重複測量"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "同時改變多項條件難以判斷時間作用。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "顏色不會直接改變負重持續需求。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有測量結果便無法比較疲勞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "只操縱時間可觀察張力或晃動隨時間的變化。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "實驗設計"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "同時改變多項變因"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "研究問題指定持續時間為變因，其他負重條件應保持一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "重複測量並記錄張力與穩定變化，可形成較可靠的疲勞證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

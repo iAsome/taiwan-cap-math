@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L_S075",
+  "subject": "biology",
+  "unitId": "BIO_R4_U10",
+  "skillId": "BIO_R4_S075",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S074"
+  ],
+  "objectives": [
+    "描述代謝廢物由細胞經循環送到排泄器官的路徑",
+    "由血流受阻情境推論廢物累積與排出量變化"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S075_SEC_01",
+      "title": "廢物先離開細胞",
+      "content": "細胞代謝產生二氧化碳與含氮廢物後，這些物質會由細胞進入組織液與微血管。若留在細胞周圍累積，可能影響內在環境。"
+    },
+    {
+      "id": "BIO_R4_L_S075_SEC_02",
+      "title": "血液負責運送",
+      "content": "循環系統把二氧化碳送到肺，把尿素等含氮廢物送到腎臟。血液是運輸媒介，心臟提供動力，血管提供通路，使組織周圍血液持續更新。"
+    },
+    {
+      "id": "BIO_R4_L_S075_SEC_03",
+      "title": "排泄器官完成移出",
+      "content": "肺讓二氧化碳由血液進入肺泡並呼出，腎臟把尿素與多餘水鹽形成尿液。循環把廢物送達，但真正跨出身體要靠相應排泄器官。"
+    },
+    {
+      "id": "BIO_R4_L_S075_SEC_04",
+      "title": "受阻位置決定結果",
+      "content": "局部血流下降時，該組織廢物帶走變慢；全身心輸出下降則可能廣泛影響運送。若腎臟或肺受損，即使血流送達，廢物仍可能難以移出。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S075_EX_01",
+      "prompt": "肌肉產生的二氧化碳如何到肺？",
+      "steps": [
+        "先由細胞進入附近微血管",
+        "再隨靜脈回心並送到肺部"
+      ],
+      "answer": "進入血液後隨循環運到肺",
+      "why": "二氧化碳不會從腿部直接穿越身體到肺泡，而是先進入肌肉微血管，隨血液回到心臟，再被送往肺部交換並呼出。"
+    },
+    {
+      "id": "BIO_R4_L_S075_EX_02",
+      "prompt": "通往腎臟血流大減，血中尿素可能如何？",
+      "steps": [
+        "確認尿素需由血送到腎",
+        "推論送達量下降的結果"
+      ],
+      "answer": "尿素清除可能下降並在血中累積",
+      "why": "腎臟只能處理流經其中的血液，供血下降會減少單位時間送達的尿素量，因此即使其他組織仍持續代謝，整體清除可能降低。"
+    },
+    {
+      "id": "BIO_R4_L_S075_EX_03",
+      "prompt": "血液把廢物送到腎臟是否等於已排出體外？",
+      "steps": [
+        "區分運送到器官與離開身體",
+        "追蹤尿液形成及排出"
+      ],
+      "answer": "不等於，還需形成尿液並排出",
+      "why": "循環只把尿素送到腎臟，廢物仍在體內；腎臟處理後形成尿液，並經泌尿道離開身體，才完成排泄的移出步驟。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "代謝廢物會從細胞直接跳到肺或腎臟",
+      "whyWrong": "遠端器官之間需要血液循環運送，廢物不會跨越組織瞬間抵達。",
+      "correction": "廢物先進入微血管，再隨血流到相應排泄器官接受處理。"
+    },
+    {
+      "belief": "血液本身會把所有廢物排到體外",
+      "whyWrong": "血液負責運送，真正移出需肺氣體交換或腎臟形成尿液。",
+      "correction": "循環與排泄器官分工合作，運送到器官不等於已完成排泄。"
+    },
+    {
+      "belief": "腎臟正常時不需要血液送入尿素",
+      "whyWrong": "腎臟處理的是流經其中的血液，尿素必須先隨循環到達。",
+      "correction": "腎功能與腎血流都會影響尿素清除，兩項條件不能互相取代。"
+    },
+    {
+      "belief": "局部血流阻塞只影響氧氣，不影響廢物",
+      "whyWrong": "血液同時送入物質與帶走二氧化碳等代謝產物。",
+      "correction": "局部血流下降會使供氧減少，也會讓該處廢物移除速度下降。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "細胞的代謝廢物如何到遠端排泄器官？",
+      "answer": "先進入血液並隨循環運送",
+      "reason": "血液流經組織微血管時接收廢物，再由心臟推動到肺或腎臟。"
+    },
+    {
+      "prompt": "循環把尿素送到腎臟後還缺哪一步？",
+      "answer": "腎臟形成尿液並使其排出",
+      "reason": "送達只完成運輸，尿素仍須進入尿液並離開身體才完成排泄。"
+    },
+    {
+      "prompt": "組織血流阻塞為何使廢物累積？",
+      "answer": "帶走廢物的血液更新速度下降",
+      "reason": "微血管流量降低時，二氧化碳與其他產物由組織移出的速率會變慢。"
+    }
+  ],
+  "assets": [
+    "BIO_R4_ASSET_CIRCULATION"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

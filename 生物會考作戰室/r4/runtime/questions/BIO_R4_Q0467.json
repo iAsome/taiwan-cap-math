@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q0467",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S039"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "顯微圖比例尺十微米在印刷後放大兩倍，應如何比較細胞真實大小？",
+  "options": [
+    "直接用新紙上長度當微米",
+    "忽略比例尺",
+    "讓細胞與比例尺一起量，使用兩者比值換算",
+    "認為細胞真實大小也變兩倍"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "紙上長度受排版縮放，不能直接當真實單位。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "比例尺正是換算依據，不能忽略。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "同圖縮放時兩者一起改變，比例仍保留真實關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "印刷只改圖片，不改標本。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "比例尺應用"
+  ],
+  "representationType": "圖像情境",
+  "misconceptionTargets": [
+    "印刷放大改實物"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "比例尺比單獨標示倍率更能承受後續版面縮放。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "量測需在同一張圖比較細胞與比例尺長度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

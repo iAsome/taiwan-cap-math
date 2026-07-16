@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_199_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S199"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S199",
+  "stem": "一年後的資料最適合如何描述？",
+  "options": [
+    "總數與敏感種比例都為零",
+    "所有面向都完全回復",
+    "總數接近恢復，但敏感種組成仍明顯偏低",
+    "污染前沒有任何昆蟲"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩項一年後數值都不是零。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "物種組成差距顯示不能稱完全回復。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "150接近160，但12%仍遠低於45%。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "污染前總數160且敏感種占45%。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "比較恢復面向"
+  ],
+  "representationType": "污染後表格",
+  "misconceptionTargets": [
+    "總數恢復就是完全恢復"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「總數接近恢復，但敏感種組成仍明顯偏低」分別判讀總量與組成，沒有讓總數掩蓋敏感種不足。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "這是部分恢復的證據，而非無恢復或完全恢復。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

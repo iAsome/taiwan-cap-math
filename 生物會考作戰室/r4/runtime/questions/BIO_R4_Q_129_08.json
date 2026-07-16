@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_129_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S129"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "研究中十次結果偏離預測，增加到一千次後仍一致偏離。下一步最合理為何？",
+  "options": [
+    "只公布符合預測的十次",
+    "把一千次全視為巧合",
+    "停止記錄實驗條件",
+    "檢查系統性因素與模型遺漏的變項"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "只選符合資料會造成嚴重選擇偏誤。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "大量一致偏離不宜未經分析就全歸為巧合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "條件紀錄正是找出偏離原因的重要證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此項針對持續偏離尋找方法或假設問題。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "用資料篩選掩蓋系統性偏離"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "樣本增加後偏離仍穩定，「檢查系統性因素與模型遺漏的變項」比刪除或忽略更能推進解釋。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "檢查控制條件及新變項可區分實驗偏差與模型不足。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

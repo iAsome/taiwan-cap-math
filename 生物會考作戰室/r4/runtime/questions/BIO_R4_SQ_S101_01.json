@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S101_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S101",
+  "stem": "哪個版本同時符合三項設計目標？",
+  "options": [
+    "版本乙：175克、變形3毫米且可恢復",
+    "版本甲：質量合格但變形7毫米超標",
+    "版本丙：變形合格但質量210克超標",
+    "三個版本的質量、變形與恢復情形都符合"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "版本乙的質量、變形與恢復皆符合標準。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "版本甲的變形7毫米超過設計上限。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "版本丙的質量210克超過設計上限。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "甲的變形與丙的質量各有一項未達設計標準。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "多欄判讀"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "只看單一指標"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "版本乙為一百七十五克、變形三毫米且可恢復，三項皆符合標準。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "版本甲雖符合質量與恢復要求，變形七毫米卻超標；版本丙雖符合變形與恢復要求，質量二百一十克卻超標。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,128 @@
+{
+  "id": "BIO_R4_L026",
+  "subject": "biology",
+  "unitId": "BIO_R4_U04",
+  "skillId": "BIO_R4_S026",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S025"
+  ],
+  "objectives": [
+    "能依濃度差判斷擴散的淨移動方向。",
+    "能區分粒子雙向隨機運動、淨移動與動態平衡。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L026_S1",
+      "title": "粒子持續運動",
+      "content": "液體或氣體中的粒子持續進行不規則運動，若邊界可通過，粒子可往兩側移動。擴散不需要粒子知道目的地，也不是只有單一方向的隊伍。"
+    },
+    {
+      "id": "BIO_R4_L026_S2",
+      "title": "淨移動方向",
+      "content": "當兩區濃度不同時，由高濃度區移向低濃度區的粒子數通常較多，因此整體呈現由高往低的淨移動，直到濃度差縮小。"
+    },
+    {
+      "id": "BIO_R4_L026_S3",
+      "title": "動態平衡",
+      "content": "兩側濃度相同時，粒子仍可能持續雙向通過；若相同時間內兩方向通過量相等，整體沒有淨改變，稱為動態平衡而非停止運動。"
+    },
+    {
+      "id": "BIO_R4_L026_S4",
+      "title": "影響與限制",
+      "content": "溫度、濃度差、距離與可交換面積會影響擴散快慢。判斷淨方向需比較同一物質在兩側的濃度，不能只比較溶液總量或不同物質的數值。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L026_E1",
+      "prompt": "氧在肺泡濃度高於微血管血液，氧的淨移動方向為何？",
+      "steps": [
+        "鎖定同一物質氧。",
+        "比較肺泡與血液的氧濃度。"
+      ],
+      "answer": "氧整體由肺泡淨移向血液。",
+      "why": "氧粒子仍可雙向移動，但濃度較高的肺泡側在同時間有較多氧移出，因此形成往血液的淨移動。"
+    },
+    {
+      "id": "BIO_R4_L026_E2",
+      "prompt": "兩側濃度相同後，膜兩側粒子會停止嗎？",
+      "steps": [
+        "確認溫度仍使粒子持續運動。",
+        "比較兩方向在相同時間的通過量。"
+      ],
+      "answer": "不會停止；兩方向通過量相等時沒有淨移動。",
+      "why": "平衡描述的是整體數量不再改變，不是每個粒子靜止；這也是『動態』平衡的意義。"
+    },
+    {
+      "id": "BIO_R4_L026_E3",
+      "prompt": "甲側十單位、乙側四單位，一分鐘內甲到乙六粒、乙到甲兩粒，淨移動量多少？",
+      "steps": [
+        "分別記錄兩方向通過數。",
+        "以較多方向減去相反方向。"
+      ],
+      "answer": "淨有四粒由甲側移向乙側。",
+      "why": "六粒與兩粒都是真實移動，但整體變化要扣除相反方向，因此淨量為四粒且方向由甲到乙。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "擴散時所有粒子只會由高濃度往低濃度。",
+      "whyWrong": "粒子可雙向隨機運動，只是由高濃度側移出的數量通常較多。",
+      "correction": "用雙向流量的差描述淨移動，不把個別粒子限制成單向。"
+    },
+    {
+      "belief": "濃度相同後粒子就完全停止。",
+      "whyWrong": "只要溫度高於絕對零度，粒子仍持續運動並可能跨越邊界。",
+      "correction": "把平衡理解為兩方向速率相等、整體沒有淨改變。"
+    },
+    {
+      "belief": "淨移動方向由溶液體積較大的一側決定。",
+      "whyWrong": "方向取決於同一物質的濃度差，不是單看各側液體總體積。",
+      "correction": "先比較單位體積中目標粒子的多寡，再判斷方向。"
+    },
+    {
+      "belief": "任何物質都能直接穿過任何細胞膜擴散。",
+      "whyWrong": "膜對不同物質的通透性不同，不可通過時濃度差也不會造成直接跨膜擴散。",
+      "correction": "判斷方向前先確認目標物質能否通過該邊界。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "甲側濃度八、乙側濃度三，淨移動通常朝哪裡？",
+      "answer": "由濃度較高的甲側淨移向濃度較低的乙側。",
+      "reason": "淨方向依同一物質的濃度差判斷，不等於每粒都只走此方向。"
+    },
+    {
+      "prompt": "動態平衡時粒子與整體分別是什麼狀態？",
+      "answer": "粒子持續雙向運動，整體因兩方向量相等而無淨改變。",
+      "reason": "同時說明微觀運動與巨觀結果，才能避免把平衡誤認為靜止。"
+    },
+    {
+      "prompt": "如何由雙向通過量算淨移動量？",
+      "answer": "用較多方向的通過量減去相反方向通過量。",
+      "reason": "兩方向都會發生，淨量必須扣除抵銷部分並標示剩餘方向。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

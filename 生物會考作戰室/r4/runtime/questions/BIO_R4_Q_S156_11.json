@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S156_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S156"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "若完全移除土壤分解者，長期最可能出現哪種變化？",
+  "options": [
+    "遺體立刻全部消失",
+    "元素回收速度增加",
+    "枯枝落葉累積且可利用養分回補變慢",
+    "能量開始永久循環"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "缺少分解者會讓遺體轉換變慢，不會使枯枝落葉立刻全部消失。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "元素需經分解回到土壤，移除分解者會降低而不是提高回收速度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "分解受阻使遺體累積，其中元素也較慢轉成植物可再利用形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "移除分解者不會阻止呼吸與熱散失，能量仍無法在系統內永久循環。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "預測移除效應"
+  ],
+  "representationType": "系統推論",
+  "misconceptionTargets": [
+    "沒有分解者物質照常回收"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "物質路徑核對從遺體經分解到土壤養分，移除中介會同時造成前端累積與後端不足。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "能量核對仍見呼吸與熱散失；枯枝累積及養分回補變慢才由分解受阻共同推出。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

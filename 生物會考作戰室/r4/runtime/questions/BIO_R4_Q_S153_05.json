@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S153_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S153"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某科包含甲屬與乙屬。甲屬中的一物種是否也屬於該科？",
+  "options": [
+    "該物種也屬於甲屬所在的科",
+    "該物種不屬於任何甲屬所在的科",
+    "只有該物種的幼體屬於此科",
+    "現有包含關係完全不能判斷科別"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "物種位於甲屬內，而甲屬位於該科內，巢狀包含可推出它也屬於此科。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "否定科別會切斷題幹已給的兩層包含，使屬內成員反而不在屬所屬的科。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "分類歸屬針對同一物種，不會因個體由幼體長成成體就切換科別。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹已提供物種在甲屬、甲屬在該科兩段資訊，足以完成傳遞推論。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "推論巢狀歸屬"
+  ],
+  "representationType": "包含關係",
+  "misconceptionTargets": [
+    "認為只能屬一級"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "集合傳遞核對依『物種在甲屬、甲屬在該科』推出物種也在該科。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "生命史核對排除幼體限定；分類針對物種歸屬，不是短暫發育階段。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

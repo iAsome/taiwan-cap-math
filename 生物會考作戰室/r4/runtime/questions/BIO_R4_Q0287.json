@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q0287",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S024"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩個模型都能預測細胞吸水，甲較簡單，乙加入許多未測量參數。現有資料下最合理的選擇為何？",
+  "options": [
+    "一定選參數最多的乙",
+    "一定選外觀最接近照片者",
+    "若預測表現相當，先用假設較少且可檢驗的甲",
+    "兩者都不可使用，因模型不能簡化"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "未測量參數增加不確定性，數量多不保證預測較好。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "外觀相似不一定與吸水機制或預測能力相關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "表現相當時，較簡單且可檢驗的模型較容易解釋與修正。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "簡化是模型的基本特性，只要適用範圍清楚即可使用。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "比較模型"
+  ],
+  "representationType": "決策情境",
+  "misconceptionTargets": [
+    "複雜等同精確"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "複雜度本身不是品質證據，應比較預測、假設與可檢驗性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "選較簡模型不表示永遠拒絕細節；新資料顯示需要時再加入相關機制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

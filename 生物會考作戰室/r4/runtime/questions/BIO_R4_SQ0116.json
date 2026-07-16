@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ0116",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S039"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": "BIO_R4_ST039",
+  "stem": "葉片長約是細菌尺度的多少倍？",
+  "options": [
+    "二百五十倍",
+    "二百五十萬倍",
+    "二千五百倍",
+    "二萬五千倍"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "二百五十倍只相當於五百微米。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "二百五十萬倍多兩個十倍。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "二千五百倍比正確的二萬五千倍少一個十倍。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "五公分是五萬微米，除以二為二萬五千。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "跨單位比值"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "公分微米換算"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "公分到微米需乘一萬，再除以細菌尺度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "這是線性差，不表示葉片只由二萬五千個細菌大小單位構成。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

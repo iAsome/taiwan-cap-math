@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_148_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S148"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GB-4-1",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "『細菌為了活下來才產生抗藥版本』主要錯在哪裡？",
+  "options": [
+    "細菌不具有遺傳物質",
+    "變異不會依需求指定方向，藥物主要篩選差異",
+    "所有藥物都不能殺菌",
+    "抗藥版本不可能傳給後代"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "細菌具有遺傳物質，並能把版本傳給後代。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此項正確區分變異產生與環境篩選。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "藥物可使敏感菌死亡，正是選擇差異來源。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "抗藥版本可隨細菌繁殖傳遞並增加比例。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "認為環境壓力會定向製造所需變異"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GB-4-1",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「變異不會依需求指定方向，藥物主要篩選差異」移除細菌預知環境的假設，改用可由前樣本驗證的機制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "施藥前若已有低頻抗性，會進一步支持先有變異再受選擇。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S160_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S160"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "語音防疫指南要讓使用者依暴露情境選措施，哪種架構最好？",
+  "options": [
+    "只按疾病可怕程度排序",
+    "隨機播放所有措施",
+    "只念出病原名稱",
+    "先詢問接觸方式，再提供對應的通風、洗手或防叮建議"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "可怕程度主觀且不說明入口，使用者無法由此選出能中斷路徑的措施。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "隨機播放會混合無關防護，不能協助使用者依情境作出決定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "名稱本身沒有交代此次是空氣、飲食、血液或病媒暴露。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "先辨認接觸方式可定位傳播環節，再把措施配到相應風險。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移無障礙風險工具"
+  ],
+  "representationType": "語音介面",
+  "misconceptionTargets": [
+    "病名足以決定所有防護"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-022"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "決策流程核對從暴露資料開始而非先猜病名，符合風險評估的資訊順序。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "配對核對確認室內交談連到通風、手口污染連到洗手、蚊媒連到防叮。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

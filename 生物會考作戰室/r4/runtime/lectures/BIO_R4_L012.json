@@ -1,0 +1,134 @@
+{
+  "id": "BIO_R4_L012",
+  "subject": "biology",
+  "unitId": "BIO_R4_U02",
+  "skillId": "BIO_R4_S012",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S011"
+  ],
+  "objectives": [
+    "能比較低倍與高倍下視野大小、亮度與可見細節。",
+    "能由倍率改變預測視野中標本數量與操作需求。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L012_S1",
+      "title": "倍率與視野",
+      "content": "物鏡倍率升高時，影像放大但視野範圍縮小，只能看見原低倍中央附近。倍率降低時視野擴大，適合搜尋與掌握整體分布。"
+    },
+    {
+      "id": "BIO_R4_L012_S2",
+      "title": "倍率與亮度",
+      "content": "在相同照明設定下，高倍視野通常較暗，因進入眼睛的有效光量與可見範圍改變。可適度調整光圈或光源，但不能為求明亮而讓細節失去對比。"
+    },
+    {
+      "id": "BIO_R4_L012_S3",
+      "title": "數量與細節",
+      "content": "高倍能看清單一細胞較多細節，卻因範圍小而常看到較少個體；低倍看到的個體較多，但每個影像較小。『看得多』可能指數量或細節，需先分清。"
+    },
+    {
+      "id": "BIO_R4_L012_S4",
+      "title": "公平比較",
+      "content": "比較倍率效果時應使用同一標本區域並先置中，其他照明條件也要交代。高倍下目標消失不代表標本消失，可能只是視野縮小或未置中。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L012_E1",
+      "prompt": "低倍看見二十個細胞，切高倍後可能有何變化？",
+      "steps": [
+        "確認高倍視野範圍比低倍小。",
+        "推論同一區域中能落入視野的細胞數會減少。"
+      ],
+      "answer": "通常只看見較少細胞，但單一細胞影像較大。",
+      "why": "倍率提高放大中央小區域，不會讓玻片上的細胞消失；數量變少是取景範圍縮小造成。"
+    },
+    {
+      "id": "BIO_R4_L012_E2",
+      "prompt": "切高倍後視野變暗，應如何處理？",
+      "steps": [
+        "先確認物鏡已正確對準並完成置中。",
+        "適度調大光圈或調整光源，再用細調修清楚。"
+      ],
+      "answer": "適度增加進光量，不用粗調大幅壓近玻片。",
+      "why": "亮度與焦距是不同問題；照明可由光圈處理，高倍工作距離短，粗調反而增加碰撞風險。"
+    },
+    {
+      "id": "BIO_R4_L012_E3",
+      "prompt": "要找出整張玻片上細胞最密集區，應先用何種倍率？",
+      "steps": [
+        "辨認任務需要比較較大範圍的分布。",
+        "先以低倍掃描，選定區域後置中再升倍。"
+      ],
+      "answer": "先用低倍搜尋整體分布。",
+      "why": "低倍一次涵蓋範圍大，較適合比較密度；高倍可在選定區域觀察細節，但不代表整張玻片。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "倍率越高，視野中看到的個體一定越多。",
+      "whyWrong": "高倍放大的是較小範圍，因此通常可見個體數反而減少。",
+      "correction": "分開判斷影像大小與視野範圍，不把兩者混為一談。"
+    },
+    {
+      "belief": "高倍視野較暗代表光源一定壞掉。",
+      "whyWrong": "在相同光源下高倍本來常較暗，不必先判定器材故障。",
+      "correction": "適度調整光圈與光源，並檢查物鏡是否到位。"
+    },
+    {
+      "belief": "高倍看到的細胞本身真的變大。",
+      "whyWrong": "改變的是影像放大倍率，玻片上的細胞實際尺寸沒有改變。",
+      "correction": "用『影像變大』描述觀察結果，不說標本實體變大。"
+    },
+    {
+      "belief": "視野變小就表示顯微鏡功能變差。",
+      "whyWrong": "縮小視野是提高倍率的正常結果，換來單一目標較多細節。",
+      "correction": "依任務選倍率：低倍看分布，高倍看局部細節。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "倍率提高時，視野範圍通常如何改變？",
+      "answer": "視野範圍縮小。",
+      "reason": "高倍只涵蓋低倍中央附近的小區域，因此切換前必須先置中。"
+    },
+    {
+      "prompt": "相同照明下，高倍視野通常較亮還是較暗？",
+      "answer": "通常較暗。",
+      "reason": "高倍的有效進光與可見範圍改變，常需適度調整光圈或光源。"
+    },
+    {
+      "prompt": "想比較整張玻片的細胞分布，應選何種倍率？",
+      "answer": "先選低倍。",
+      "reason": "低倍視野較大，能一次看到更多區域，適合搜尋與分布比較。"
+    }
+  ],
+  "assets": [
+    "BIO_R4_ASSET_MICROSCOPE"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  }
+}

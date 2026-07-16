@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S100_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S100"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "實驗以相同重量測量肩部肌肉張力：重物距肩20公分時張力較低，60公分時較高。最能支持哪項結論？",
+  "options": [
+    "負重距關節愈遠，維持姿勢所需肌肉張力可能愈大",
+    "肌肉張力只由重量決定",
+    "距離增加會讓重力消失",
+    "肩關節不參與手臂姿勢"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "相同重量下距離增加伴隨張力上升。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "重量相同但張力不同，顯示距離也有影響。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "重力不會因力臂增加而消失。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "肩關節是上臂改變位置的重要活動處。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "力臂資料"
+  ],
+  "representationType": "資料推論",
+  "misconceptionTargets": [
+    "只看重量判斷負擔"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "控制重量後的張力差異可連結到負重力臂改變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "結論使用可能而非絕對語氣，保留姿勢與個體差異等其他因素。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

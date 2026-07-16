@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_068_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S068",
+  "stem": "表中脈搏最高的時點為何？",
+  "options": [
+    "休息",
+    "運動後立即",
+    "恢復四分鐘",
+    "恢復六分鐘"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "休息值為七十二次，明顯低於運動後立即的一百三十二次。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "運動後立即為每分鐘一百三十二次，是表中所有時點最高值。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "恢復四分鐘為八十四次，已比運動後立即值下降許多。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "恢復六分鐘為七十四次，接近休息值而不是最高值。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐列比較同一單位的數字，一百三十二是表格中的最大值。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "資料已換算每分鐘且取兩次平均，因此不需再乘以四或重新挑單次值。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

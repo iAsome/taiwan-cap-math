@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S094_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S094"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "藥物只阻斷肌肉細胞對激素甲的受體，肝細胞受體仍正常。加入激素甲後最可能看到什麼？",
+  "options": [
+    "肝臟仍可反應，但肌肉的相關反應減弱",
+    "肝臟與肌肉反應都必定消失",
+    "肌肉反應增強且肝臟死亡",
+    "激素甲立刻變成另一種激素"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "阻斷僅發生在肌肉，肝細胞仍能接收訊號。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "肝細胞受體正常，不應推論肝臟作用必定消失。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "受體被阻斷通常使反應減弱，不會因此增強。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "受體阻斷不會改變激素的化學身分。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "局部受體阻斷"
+  ],
+  "representationType": "實驗推論",
+  "misconceptionTargets": [
+    "局部異常等於全身無反應"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "這個結果能顯示同一激素在不同組織的作用可被分別改變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "作用差異應依各組織受體狀態解釋，不能把局部阻斷推成全身失效。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

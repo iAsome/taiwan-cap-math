@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S099_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S099"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S099",
+  "stem": "哪個條件的平均誤差最小？",
+  "options": [
+    "條件丙：有側向外力，平均誤差5毫米",
+    "條件乙：遮蔽視覺，平均誤差11毫米",
+    "條件甲：完整視覺且無外力，平均誤差3毫米",
+    "三種條件的平均誤差數值完全相同"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "條件丙的誤差為5毫米，仍高於甲的數值。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "條件乙的誤差為11毫米，比甲與丙都大。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "條件甲的誤差3毫米，是三者最小。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "三個誤差分別為3、11與5毫米，數值並不相同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料判讀"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "誤讀數值大小"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "條件甲平均誤差三毫米，低於條件丙五毫米與條件乙十一毫米。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "完整視覺且沒有側向外力的條件，也與甲組誤差較小的結果一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

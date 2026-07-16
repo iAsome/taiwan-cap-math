@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q0174",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "整張顯微照片連同比例尺放大兩倍後，細胞估算尺寸如何？",
+  "options": [
+    "變成兩倍",
+    "維持不變",
+    "縮成一半",
+    "無法再使用比例尺"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "細胞與比例尺都加倍，兩者比值不會變成兩倍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "同步等比例縮放保持長度比，估算尺寸不變。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有任何實物縮小或比例減半的操作。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "比例尺同步縮放後仍能有效代表原實際長度。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "縮放理解"
+  ],
+  "representationType": "影像處理",
+  "misconceptionTargets": [
+    "照片變大等於實物變大"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "實際尺寸由細胞與比例尺比值決定，兩者同乘二後比值相同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "放大的只是顯示影像，不是玻片上的細胞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

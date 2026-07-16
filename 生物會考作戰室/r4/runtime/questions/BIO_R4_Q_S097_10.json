@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S097_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S097"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "模型的彈力繩縮短後，硬棒沒有移動；檢查發現轉軸已鎖死。這最能說明什麼？",
+  "options": [
+    "彈力繩沒有產生任何拉力",
+    "有肌肉拉力仍須關節可動，骨骼才可能轉動",
+    "硬棒應自行縮短",
+    "轉軸負責分泌拉力"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "繩子縮短顯示仍可能產生拉力。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "轉軸鎖死會阻止硬棒改變角度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "硬棒模擬骨骼，不需主動縮短。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "轉軸只模擬活動連接，不是動力來源。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "模型診斷"
+  ],
+  "representationType": "模型推論",
+  "misconceptionTargets": [
+    "只要肌肉收縮就必定運動"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "動作失敗可能來自關節被固定，不代表肌肉一定沒有收縮。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "模型呈現產力與活動條件缺一不可，支持運動系統分工。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

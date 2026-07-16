@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S111_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S111"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲處理阻止花粉到柱頭，乙處理阻止花粉管進入胚珠；兩者差異為何？",
+  "options": [
+    "甲只阻止受精但不影響授粉",
+    "乙只阻止花藥形成",
+    "兩者都不影響受精",
+    "甲阻斷授粉，乙可有授粉但阻斷後續受精"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲連花粉到柱頭都阻止，因此直接影響授粉。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙作用在花粉管路徑，不是花藥產粉。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩處理都可能降低受精，只是受阻階段不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此比較依各處理作用位置正確區分前後階段。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "阻斷比較"
+  ],
+  "representationType": "實驗推論",
+  "misconceptionTargets": [
+    "結果相同即機制相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "同樣造成無種子，不代表受阻機制相同；必須依花粉是否到柱頭分辨。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "甲沒有授粉證據，乙則可先觀察到柱頭花粉，之後才在胚珠前停止。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

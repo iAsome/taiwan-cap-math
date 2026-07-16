@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S093_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某人血中生長激素濃度正常，但標的組織缺乏相應受體。最可能的結果是什麼？",
+  "options": [
+    "相關組織對生長激素的反應不足",
+    "生長激素立刻變成甲狀腺素",
+    "所有組織都會過度生長",
+    "血液完全停止循環"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "缺乏受體時，標的組織難以接收生長激素訊號。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "受體缺乏不會改變激素的種類。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有受體的組織不會因該訊號而過度反應。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "受體問題不等於血液循環完全停止。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "受體異常"
+  ],
+  "representationType": "機制推論",
+  "misconceptionTargets": [
+    "濃度正常等於功能正常"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "血中濃度正常只代表有訊號，受體缺乏仍會使作用環節中斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "判斷激素作用須兼顧分泌量與標的細胞反應，不能只看濃度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

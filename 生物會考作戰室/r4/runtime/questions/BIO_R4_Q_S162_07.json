@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S162_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "處理後水中有機物下降但污泥增加，最合理的物質去向是？",
+  "options": [
+    "所有元素消失",
+    "水變成空無",
+    "部分有機物進入微生物生物量",
+    "微生物停止生長"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "元素只改變存在形式，不會因處理槽運作就違反物質守恆而消失。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "水體仍含水與溶解物質，污染指標下降不等於整槽變成空無。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "微生物利用有機物生長，部分碳氮等元素可累積於增加的污泥生物量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "污泥增加通常反映生物量或固體累積，與停止生長的方向不符。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "追蹤處理物質去向"
+  ],
+  "representationType": "守恆推理",
+  "misconceptionTargets": [
+    "污染下降等於物質消失"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "質量去向核對把有機物下降與污泥增加放在同一物質路徑中解釋。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "生物機制核對由微生物利用有機物合成細胞物質，支持生物量增加。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

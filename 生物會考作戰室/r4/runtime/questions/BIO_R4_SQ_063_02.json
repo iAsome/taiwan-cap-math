@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_SQ_063_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S063"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S063",
+  "stem": "停止跑步後，換氣量呈現何種趨勢？",
+  "options": [
+    "持續增加",
+    "三個時間完全相同",
+    "立刻降為零",
+    "由36降到16再降到8.4"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "恢復期數值逐步下降而沒有持續增加，因此不符合一路升高的說法。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "36、16與8.4並不相同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "停止運動後仍持續呼吸，資料只能顯示換氣量逐漸接近休息值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩個恢復點依序下降，符合逐步恢復。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "呼吸系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "時間序列顯示跑步後換氣量逐步下降，而非瞬間回到休息值。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「由36降到16再降到8.4」精確引用三個數值，其他選項與資料衝突。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

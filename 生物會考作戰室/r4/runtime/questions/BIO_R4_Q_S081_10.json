@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S081_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S081"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某訊息依序通過皮膚受器、甲、脊髓、腦。若甲為神經構造，甲最可能是什麼？",
+  "options": [
+    "大腦皮質",
+    "周圍神經",
+    "脊髓內部",
+    "腿部骨骼肌"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "大腦皮質位於流程末端的腦內，不在受器與脊髓之間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "周圍神經可連接皮膚受器與脊髓，位置符合流程。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "流程已另列脊髓，甲不應再是同一中樞構造。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "骨骼肌是動器官，不是把感覺送入脊髓的神經。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "路徑分析"
+  ],
+  "representationType": "序列模型",
+  "misconceptionTargets": [
+    "只看名稱不看流程位置"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-006",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-028",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-010"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "以甲的前後端點判斷，它必須連接受器與脊髓。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "大腦皮質和脊髓內部都屬中樞，骨骼肌則非神經；周圍神經才位在受器與脊髓之間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

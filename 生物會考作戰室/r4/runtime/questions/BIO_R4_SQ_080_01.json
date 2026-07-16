@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_080_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S080"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S080",
+  "stem": "依表中體溫紀錄，哪個量測時點的體溫最高？",
+  "options": [
+    "0分鐘",
+    "10分鐘",
+    "20分鐘",
+    "30分鐘"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "零分鐘三十六點八度，位於範圍內且不是最高。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "十分鐘為三十八度，是表中最高體溫。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "二十分鐘三十七點三度，低於十分鐘的三十八度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "三十分鐘三十六點九度，已回到範圍內。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "直接比較同單位體溫欄，十分鐘出現本次最大偏差。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "散熱反應在此時也最高，顯示系統正在回應而非體溫完全固定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

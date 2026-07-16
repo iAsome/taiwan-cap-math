@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_188_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S188"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "校園導覽要合併四組觀察，哪項原則能避免製作出錯誤食物網？",
+  "options": [
+    "把所有生物兩兩連線",
+    "同名生物各畫多次避免擁擠",
+    "相同生物合併，且每支箭頭都能回查觀察紀錄",
+    "為讓圖對稱而補上缺少的箭頭"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "全部連線會製造大量不存在的攝食關係。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "重複節點會隱藏多條路徑共享同一生物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "合併節點並保留證據來源，可兼顧正確與可查核。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "圖形美觀不能作為新增科學關係的依據。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "建立可查核展示網絡"
+  ],
+  "representationType": "科學傳播設計",
+  "misconceptionTargets": [
+    "圖形完整比證據重要"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-002"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「相同生物合併，且每支箭頭都能回查觀察紀錄」同時處理共享節點與證據邊界，是可靠建圖原則。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "導覽圖可以不對稱或不完全連通，不能為版面犧牲正確性。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

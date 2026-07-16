@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S112_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S112"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S112",
+  "stem": "甲花資料最支持哪項推論？",
+  "options": [
+    "九個胚珠全都沒有受精",
+    "一個子房形成了八個果實",
+    "至少一個已受精胚珠未形成正常成熟種子",
+    "成熟種子數必定多於受精胚珠數"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲已有九個胚珠被記錄為受精。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "註記顯示甲子房只形成一個果實。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "受精數九而成熟種子八，顯示後續少一。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "甲的成熟種子反而少於受精胚珠。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "差值推論"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "受精保證成熟"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-035",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-029"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "受精後仍可能發育失敗，因此成熟種子數可略低於受精胚珠數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "資料只能指出至少一個未成功成熟，尚不能唯一指定是何時或何種原因敗育。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_S182_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S182"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S182",
+  "stem": "哪個溪段的昆蟲幼體平均密度最高？",
+  "options": [
+    "五段密度完全相同",
+    "十二度的甲溪段",
+    "二十八度的戊溪段",
+    "二十度的丙溪段"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "五段數值由二到二十一，並不相同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "甲密度只有四，低於中溫溪段。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "戊密度二，是表中最低值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "丙密度二十一，是表中最高值。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "讀取密度峰值"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "只看最高溫選最大"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐列核對幼體密度欄最大數值為二十一。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "位置核對該最大值與丙溪段二十度同列。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

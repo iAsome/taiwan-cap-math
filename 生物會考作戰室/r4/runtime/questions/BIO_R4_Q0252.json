@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q0252",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S021"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "機器人沿植物細胞模型由外向內探測，哪個順序最合理？",
+  "options": [
+    "細胞核、壁、膜、外界",
+    "葉綠體、外界、壁、膜",
+    "細胞質、外界、壁、核",
+    "外界、細胞壁、細胞膜、細胞質"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "細胞核在內部，不可能先於外界與壁。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "葉綠體也在細胞質內，不能作為外部起點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "細胞質受膜包圍，不會出現在外界之前。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "由外入內依序穿過壁與膜，再進入細胞質。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "順序應用"
+  ],
+  "representationType": "探測情境",
+  "misconceptionTargets": [
+    "細胞層次亂序"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "空間順序由包圍關係唯一決定，不受模型朝向或機器人視角影響。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "細胞核與葉綠體可在進入細胞質後再遇到，因此不屬前段順序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

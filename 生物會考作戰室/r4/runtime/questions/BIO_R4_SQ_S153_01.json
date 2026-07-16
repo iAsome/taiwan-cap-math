@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S153_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S153"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S153",
+  "stem": "哪張卡不應放入身體構成列？",
+  "options": [
+    "代表細胞層次的甲卡",
+    "代表器官層次的丙卡",
+    "代表分類中屬層次的庚卡",
+    "代表完整個體層次的戊卡"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲卡代表細胞，屬於組成組織與更大身體構造的基本層次。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "丙卡代表器官，由多種組織構成，仍屬身體組成系統。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "庚卡代表屬，用來包含若干物種，應放在生物分類而非身體構成列。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "戊卡代表個體，位於細胞到器官系統之後的組成序列端點。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "分類兩套概念"
+  ],
+  "representationType": "卡片表",
+  "misconceptionTargets": [
+    "把屬當身體部分"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "系統歸屬核對把甲、丙、戊連成細胞、器官、個體的身體構成序列。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "名詞核對確認庚代表『屬』，它回答生物歸類而不是身體由何構成。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

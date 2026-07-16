@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q0161",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S014"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "八倍目鏡配二十倍物鏡，總倍率應記為何？",
+  "options": [
+    "一百六十倍",
+    "二十八倍",
+    "十二倍",
+    "二百八十倍"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "八乘二十等於一百六十，符合總倍率公式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "二十八是把兩個倍率相加，計算關係錯誤。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "十二沒有由題目兩個倍率合理算出。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "二百八十混合加法與位數，沒有公式支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "計算"
+  ],
+  "representationType": "倍率數值",
+  "misconceptionTargets": [
+    "加法代替乘法"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "目鏡八倍再次放大物鏡二十倍影像，總效果為一百六十倍。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "列式後再計算可避免只看數字直覺相加。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

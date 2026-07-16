@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S086_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S086"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某人五次反應時間中有一次特別長，研究者最適當的第一步為何？",
+  "options": [
+    "立刻刪除該次且不留紀錄",
+    "查看該次是否分心、漏按或設備延遲",
+    "把其他四次也全部改成同一數值",
+    "宣布操作變因必定無效"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "任意刪除會使處理不透明並可能造成偏差。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "查明極端值原因有助依一致規則處理。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "竄改其他數值會破壞原始資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一個極端值不能直接否定整個研究問題。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料處理"
+  ],
+  "representationType": "異常值",
+  "misconceptionTargets": [
+    "為美化結果任意刪除資料"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "科學處理應先查操作紀錄，保留可追溯性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「查看該次是否分心、漏按或設備延遲」不預設極端值真假，也能支持後續合理判斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

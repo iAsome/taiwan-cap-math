@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S173_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S173"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "顯微觀察發現甲細胞有葉綠體但置於黑暗，乙細胞無葉綠體但有光。短期誰較可能大量形成澱粉？",
+  "options": [
+    "甲一定大量形成",
+    "乙一定大量形成",
+    "兩者都因有水而大量形成",
+    "兩者都缺少關鍵條件，皆不太可能大量形成"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲雖有場所但缺光能，不能保證大量合成。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙雖有光卻缺主要光合胞器，不能利用該光進行主要反應。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "水只是原料之一，不能補足光或葉綠體缺失。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "光與葉綠體都需具備，兩細胞各缺一項關鍵條件。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "整合必要條件"
+  ],
+  "representationType": "雙條件推理",
+  "misconceptionTargets": [
+    "有葉綠體不需光"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "條件交集核對光合作用需場所與能量同時存在，而非任一項即可。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "個別核對甲缺光、乙缺葉綠體，兩者限制原因不同但結果相近。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

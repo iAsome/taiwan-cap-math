@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_199_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S199"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "評估森林火災後恢復，哪組資料較完整？",
+  "options": [
+    "只有一年後樹高",
+    "只有火災照片",
+    "植被量、物種組成、土壤與動物群時間序列",
+    "只記遊客人數"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單一樹高不能代表多物種與環境功能。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "照片可輔助但缺少定量及長期比較。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "多面向時間資料可評估恢復程度與速度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "遊客數主要反映人為使用，不足以代表生態恢復。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "選擇多指標恢復資料"
+  ],
+  "representationType": "火災監測",
+  "misconceptionTargets": [
+    "只看植物高度即可"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「植被量、物種組成、土壤與動物群時間序列」涵蓋生物與非生物面向，也能和火災前基線比較。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "實際調查還需未燒對照區與一致採樣方法。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S112_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S112"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S112",
+  "stem": "哪朵花的所有受精胚珠都形成成熟種子？",
+  "options": [
+    "甲花（九個受精胚珠形成八顆種子）",
+    "乙花（六個受精胚珠形成六顆種子）",
+    "丙花（兩個受精胚珠形成一顆種子）",
+    "三朵花都少形成一顆種子"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲少一顆成熟種子，表示有後續發育差異。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "乙的受精胚珠數與成熟種子數同為六。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丙也少一顆成熟種子，並非全部成功。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "乙沒有減少，因此三朵並非都少一顆。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "讀表"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "只看胚珠總數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-035",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-029"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "比較同一列的受精胚珠與成熟種子，乙兩數相等，符合全部完成發育。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "胚珠總數相同不代表結果相同，應使用受精後的兩欄作答。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "BIO_R4_Q_S177_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S177"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "太空站近似微重力環境中栽培幼苗，根的定向可能面臨什麼問題？",
+  "options": [
+    "根必定朝地球中心直線生長",
+    "莖會停止所有呼吸",
+    "缺少穩定重力線索，需以水分或光等方向性設計引導",
+    "葉綠體立即變成根毛"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "近似微重力使固定向下線索減弱，不能保證朝地球中心。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "重力線索改變不等於呼吸作用全部停止。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "根的向地定位受限時，可測試其他可控制的方向刺激。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "胞器不會因微重力直接轉換成另一種細胞構造。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移太空栽培"
+  ],
+  "representationType": "太空情境",
+  "misconceptionTargets": [
+    "微重力下根仍固定向下"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-046",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-014",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-005"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "環境核對地面常用重力作方向基準，太空環境削弱此資訊。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "工程核對可安排水分梯度或導引結構，再實測根尖是否穩定到達供水區。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_124_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S124"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "研究想區分基因與環境對花色的影響，哪個設計較合適？",
+  "options": [
+    "只看一株植物一次",
+    "同時更換品種與光照",
+    "不記錄任何生長條件",
+    "同基因型分置不同環境並比較花色"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單一個體一次觀察無法比較環境效果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩個變因同時改變，難以區分各自作用。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "不記錄條件就無法連結差異與環境。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "固定基因型並改變環境，可檢驗環境影響。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "實驗同時改變基因與環境"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "要區分因素需控制其中一項，「同基因型分置不同環境並比較花色」以相同基因型控制遺傳。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "其餘設計缺比較、混合變因或遺失條件紀錄，不能回答問題。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

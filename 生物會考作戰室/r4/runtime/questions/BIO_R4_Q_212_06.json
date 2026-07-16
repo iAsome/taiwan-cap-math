@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_212_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S212"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "天然植物能吸收金屬，是否可直接稱完全安全？",
+  "options": [
+    "可以，天然必安全",
+    "不行，還要處理含金屬植物體並評估食物鏈風險",
+    "可以，植物會消滅元素",
+    "不行，因植物不能吸收物質"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "天然來源不能保證沒有生態或管理風險。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "污染物可能轉移到植物體，需安全收集並避免被攝食。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "元素不會被生物憑空消滅，只會轉移或改變型態。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "部分植物確實能吸收金屬，問題在後續處置。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "推論"
+  ],
+  "representationType": "技術機制",
+  "misconceptionTargets": [
+    "天然等於安全"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "植物修復可能是把污染物由土壤轉移到生物量。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "技術評估要追蹤污染物最終去向，而非只看土壤下降。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

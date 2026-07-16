@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_209_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S209"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "固定暴露時間，提高污染濃度後存活率下降，可初步支持何種關係？",
+  "options": [
+    "時間使濃度下降",
+    "存活率決定濃度",
+    "濃度較高與存活率較低有關",
+    "所有個體必然死亡"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "暴露時間固定，資料不是在比較時間造成濃度變化。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "實驗操弄的是濃度，不能說存活率反過來決定濃度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "其他條件固定時，濃度升高伴隨存活率下降。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "存活率下降不等於每個個體必然死亡。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "辨認"
+  ],
+  "representationType": "趨勢判讀",
+  "misconceptionTargets": [
+    "顛倒因果方向"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先辨認研究者操弄的變因與測量結果之間的方向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "現有資料支持組別趨勢，不代表所有個體結果相同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

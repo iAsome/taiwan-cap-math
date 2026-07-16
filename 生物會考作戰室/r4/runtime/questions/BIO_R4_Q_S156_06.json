@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S156_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S156"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "若池中生產者大量減少，最先直接受影響的通常是哪類生物？",
+  "options": [
+    "完全不需食物者",
+    "直接攝食生產者的消費者",
+    "所有岩石",
+    "陽光本身"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "生物需要能量與物質來源，題中不存在完全不需食物的消費者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "直接吃藻類或水生植物者會立刻面臨食物量下降，是第一個攝食連結。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "岩石不攝食生產者，也不會因食物量下降而出現族群反應。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "陽光輸入不由池中誰攝食生產者決定，不是最先受食物影響者。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "推論功能連鎖"
+  ],
+  "representationType": "因果情境",
+  "misconceptionTargets": [
+    "生產者與消費者無關"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "食物鏈位置核對從生產者向外找第一條攝食箭頭，指向直接消費者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "直接性核對排除岩石、陽光等非生物項目，鎖定直接攝食生產者的消費者。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

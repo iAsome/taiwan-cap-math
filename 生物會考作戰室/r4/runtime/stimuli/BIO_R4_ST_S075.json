@@ -1,0 +1,60 @@
+{
+  "id": "BIO_R4_ST_S075",
+  "subject": "biology",
+  "skillId": "BIO_R4_S075",
+  "type": "waste-transport-table",
+  "content": {
+    "title": "肌肉血流與廢物濃度",
+    "text": "研究者讓兩組相同肌肉以相同強度收縮五分鐘。甲組血流維持正常，乙組局部血流降為甲的四分之一；記錄肌肉間液與流出靜脈中的廢物相對濃度。",
+    "note": "兩組初始濃度相同，數值越高表示本次測得的廢物越多。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "表格顯示低血流組的肌肉間液廢物較高，而流出靜脈帶走總量較低。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "組別",
+        "相對血流",
+        "肌肉間液廢物濃度",
+        "靜脈每分鐘帶走量"
+      ],
+      "rows": [
+        [
+          "甲",
+          "100%",
+          "18",
+          "64"
+        ],
+        [
+          "乙",
+          "25%",
+          "47",
+          "22"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

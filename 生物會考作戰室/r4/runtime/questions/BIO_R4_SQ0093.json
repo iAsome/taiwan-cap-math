@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ0093",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S031"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST031",
+  "stem": "若百分之三組三次結果其實為正二、零、負二百分比，報告應補充什麼？",
+  "options": [
+    "平均為零但需呈現變異，並增加重複確認",
+    "只留下零值",
+    "把三值都改成零",
+    "刪除正負結果以符合平衡"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "平均與變異共同呈現零點估計的不確定性。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "只保留中間的零值會造成明顯選擇偏差。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "改寫數據會掩蓋真實分散。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "正負值是有效重複結果，不能因不符簡單期待便刪除。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "變異評估"
+  ],
+  "representationType": "資料延伸",
+  "misconceptionTargets": [
+    "平均代表每個"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "平均零不表示每個試材都零，尤其樣本少時需保留原始分布。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "增加重複與標準化試材可提高平衡濃度估計的可靠性。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S154_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S154"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲乙丙都有特徵A，只有乙丙有特徵B。依此資料哪組較受支持？",
+  "options": [
+    "甲乙",
+    "甲丙",
+    "三者無法比較",
+    "乙丙"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲乙雖共享A，但A也見於丙，沒有額外特徵只連結這兩者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "甲丙同樣只共享三者普遍具有的A，支持度不如另有B的組合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "特徵B提供可比較的新增資料，因此不能說三者完全無法比較。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "乙丙共同具有A與B，比包含甲的組合多共享一項具區辨力特徵。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "矩陣分組推理"
+  ],
+  "representationType": "二元特徵",
+  "misconceptionTargets": [
+    "忽略新增共同特徵"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-050"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "交集核對計算各配對共同特徵，乙丙有A、B兩項而另兩組只有A。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "區辨力核對顯示B只出現在乙丙，這個配對因此獲得額外且專一的分組支持。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

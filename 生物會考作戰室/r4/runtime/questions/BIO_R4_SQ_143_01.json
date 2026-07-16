@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_SQ_143_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S143"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST143",
+  "stem": "依各階段能源收支，哪個方案的淨能源較高？",
+  "options": [
+    "乙方案，因轉換耗能較少",
+    "兩方案淨能源都等於一千",
+    "甲方案，淨能源為五百五十單位",
+    "無法使用相同單位計算"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "乙總投入五百五十，淨能源只有四百五十單位。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一千是總產出，尚未扣除收集、運輸和轉換投入。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "甲總投入四百五十，以一千扣除後得到五百五十。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "表格各階段都使用能量單位，可以加總後作差。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "只看單一階段耗能而忽略總收支"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「甲方案，淨能源為五百五十單位」完整加總甲的三項投入再由產出扣除，沒有只看單一轉換效率。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩方案產出相同，因此淨能源差異可直接反映整體流程投入。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

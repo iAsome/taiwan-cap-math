@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_068_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "要研究運動強度與脈搏的關係，哪個設計最合適？",
+  "options": [
+    "每次換不同受試者且不記強度",
+    "同一人做不同固定強度，統一時間量測並重複",
+    "只量運動前一次就結束",
+    "運動時任意改變強度與量測時間"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "同時改變受試者且不記強度，無法分辨差異由何種因素造成。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "控制受試者和量測法，只改固定強度並重複，可比較強度效果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "只量運動前沒有不同強度的結果，無法研究兩者關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "強度與量測時間同時任意改變會混入多個變因，結果難以解釋。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "研究關係時只系統改變運動強度，其餘重要條件盡量一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "重複量測可看趨勢是否穩定，並減少單次計數誤差對結論的影響。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

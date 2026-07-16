@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L125",
+  "subject": "biology",
+  "unitId": "BIO_R4_U17",
+  "skillId": "BIO_R4_S125",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S124"
+  ],
+  "objectives": [
+    "能比較同種生物染色體數目與基本組成的共同性。",
+    "能說明同種個體仍可能因基因版本與環境而有性狀差異。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L125_SEC1",
+      "title": "同種的共同特徵",
+      "content": "同種生物的正常體細胞通常具有相同的染色體數目與相似的成對型態，這是物種層次的穩定特徵。不能因個體身高或毛色不同就推論染色體總數必定不同。"
+    },
+    {
+      "id": "BIO_R4_L125_SEC2",
+      "title": "相同數目不等於相同資訊",
+      "content": "兩個同種個體可有相同染色體數目，但同一位置所帶的基因版本未必完全相同。染色體數目只能提供一部分資訊，不能直接保證所有DNA序列一致。"
+    },
+    {
+      "id": "BIO_R4_L125_SEC3",
+      "title": "性狀差異的來源",
+      "content": "個體差異可來自不同基因版本、基因組合與環境條件。即使某些遺傳資訊相近，營養、光照或發育經驗仍可能使表現不同。"
+    },
+    {
+      "id": "BIO_R4_L125_SEC4",
+      "title": "比較資料的方法",
+      "content": "比較同種個體時要分清測量層次：核型圖回答染色體數目與外形，基因檢測回答版本差異，外觀測量回答表現。不同資料不能互相冒充。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L125_EX1",
+      "prompt": "兩隻同種動物體細胞染色體數相同，但毛色不同，是否矛盾？",
+      "steps": [
+        "先區分染色體數目與基因版本。",
+        "再檢查毛色還可能受哪些因素影響。"
+      ],
+      "answer": "不矛盾。",
+      "why": "相同數目不表示每個基因版本完全相同，毛色也可能受到基因組合與環境共同影響。"
+    },
+    {
+      "id": "BIO_R4_L125_EX2",
+      "prompt": "甲乙核型都顯示二十四條染色體，能否斷定全部DNA序列相同？",
+      "steps": [
+        "確認核型資料只呈現數目與大致外形。",
+        "檢查是否有逐段DNA比較證據。"
+      ],
+      "answer": "不能。",
+      "why": "核型相同不足以檢出細小序列差異，仍需基因或DNA檢測才能比較特定版本。"
+    },
+    {
+      "id": "BIO_R4_L125_EX3",
+      "prompt": "同一品系植株在不同肥料條件下高度不同，如何解讀？",
+      "steps": [
+        "辨認品系相同降低遺傳差異。",
+        "找出肥料是主要改變的環境變項。"
+      ],
+      "answer": "環境可使遺傳背景相近的個體表現不同。",
+      "why": "資料支持肥料條件與高度差異有關，但不能據此說染色體數目已被肥料改變。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "同種個體的所有DNA都完全相同。",
+      "whyWrong": "同種個體通常有共同染色體架構，但仍可能攜帶不同基因版本與序列差異。",
+      "correction": "分開說明物種共同染色體特徵與個體基因差異。"
+    },
+    {
+      "belief": "外觀不同表示染色體數目一定不同。",
+      "whyWrong": "外觀可受少數基因版本與環境影響，不需伴隨染色體總數改變。",
+      "correction": "需要判斷數目時查看核型資料，不用外觀直接猜測。"
+    },
+    {
+      "belief": "染色體數目相同就會有完全相同性狀。",
+      "whyWrong": "相同數目仍可有不同基因組合，環境也能改變性狀表現。",
+      "correction": "以基因版本與環境資料補充染色體數目資訊。"
+    },
+    {
+      "belief": "環境造成表現差異就證明遺傳沒有作用。",
+      "whyWrong": "環境效應與遺傳影響可以同時存在，發現一者不會自動否定另一者。",
+      "correction": "設計控制變因比較，分別估計遺傳與環境的影響。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "同種正常體細胞通常共享哪項染色體特徵？",
+      "answer": "染色體數目與成對型態大致相同。",
+      "reason": "這是物種層次常見的穩定特徵，不等於全部DNA完全相同。"
+    },
+    {
+      "prompt": "核型數目相同能否證明所有基因版本相同？",
+      "answer": "不能。",
+      "reason": "核型解析度不足以顯示許多細小DNA與基因版本差異。"
+    },
+    {
+      "prompt": "外觀差異要區分遺傳與環境，應如何做？",
+      "answer": "控制其中一類條件並比較另一類。",
+      "reason": "控制變因能避免基因背景與環境同時變動造成混淆。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  }
+}

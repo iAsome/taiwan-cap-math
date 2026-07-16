@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S086_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S086"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "手機遊戲要比較兩種按鍵配置的反應速度，哪項設計最能類比公平的生物實驗？",
+  "options": [
+    "配置甲用右手，配置乙改用左手",
+    "配置甲在白天測，配置乙在熬夜後測",
+    "同一批人以平衡順序測兩配置並重複多次",
+    "只公布配置甲最快玩家的成績"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "更換手會混入慣用手與動作差異。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "作息與疲勞不同會混入額外變因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "同一批人、平衡順序和重複測量能降低混淆。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "只挑最快者不能代表兩配置的公平比較。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "實驗遷移"
+  ],
+  "representationType": "遊戲測試",
+  "misconceptionTargets": [
+    "挑選有利資料"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「同一批人以平衡順序測兩配置並重複多次」同時控制個體、順序與單次波動三類問題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "左右手不同會混入慣用手差異，白天與熬夜混入疲勞，只公布最快者則是選擇性呈現資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

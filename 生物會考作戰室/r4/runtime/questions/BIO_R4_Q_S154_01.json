@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S154_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S154"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲乙共享三項構造，甲丙只共享一項。就現有資料，哪組可能關係較近？",
+  "options": [
+    "甲與乙",
+    "甲與丙",
+    "乙與丙必定相同",
+    "三者完全無關"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "甲乙共享三項構造，比甲丙多兩項，現有構造證據對甲乙支持較強。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "甲丙只有一項共同構造，支持程度低於共享三項的甲乙組合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題幹沒有列出乙丙的完整特徵，更不能斷言兩者必定完全相同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "三者至少共享題中提到的構造，說完全無關會否定已提供的證據。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "比較共同特徵數"
+  ],
+  "representationType": "簡要資料",
+  "misconceptionTargets": [
+    "忽略多項證據"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-050"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "數量核對直接比較三項與一項，甲乙在現有資料下有較多共同構造。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "語氣核對保留題幹的『可能』，甲乙較近的判讀沒有把有限證據誇大成確定親緣。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

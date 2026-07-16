@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S158_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S158"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "皮膚檢出某微生物，但目前沒有紅腫、疼痛或功能改變。最謹慎的描述是？",
+  "options": [
+    "一定有益",
+    "一定致病",
+    "目前未見明顯影響",
+    "微生物不存在"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有觀察到益處指標，僅憑存在不能把該微生物直接歸為有益。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "紅腫與疼痛等疾病指標皆未出現，資料不足以判定它一定造成疾病。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "檢出微生物但未量到健康變化，只能限定為目前未見明顯影響。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "樣本已檢出微生物，說它不存在與題幹的檢測結果直接矛盾。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "限制無明顯影響結論"
+  ],
+  "representationType": "健康觀察",
+  "misconceptionTargets": [
+    "未見症狀等於永遠無作用"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "觀察結果核對列出的三種皮膚指標皆未改變，因此不能判為明顯有害。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "語氣強度核對保留『目前』，不把有限時間內未見變化寫成永遠無作用。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

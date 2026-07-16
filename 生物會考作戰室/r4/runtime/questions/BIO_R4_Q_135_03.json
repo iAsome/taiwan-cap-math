@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_135_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S135"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩名顯性表現親代生出aa子代，可排除雙親中的何種基因型？",
+  "options": [
+    "Aa",
+    "A_",
+    "AA",
+    "含a的基因型"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Aa能提供a，正可形成aa子代。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "A_仍可能是Aa，不能整類排除。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "AA沒有a可提供，因此可排除。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "形成aa反而要求雙親都含a。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "未用隱性子代排除AA親代"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-033"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「AA」利用a的必要來源排除只有A的AA。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其他選項包含可提供a的Aa，或是尚未唯一化的集合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

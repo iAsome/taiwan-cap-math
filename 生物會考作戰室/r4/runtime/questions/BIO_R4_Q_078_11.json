@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_078_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S078"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "自動空調的感測器、控制器與冷氣機，依序類比何者？",
+  "options": [
+    "效應器、受器、中樞",
+    "尿液、腎臟、血液",
+    "受器、中樞、效應器",
+    "肺、糞便、胃"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "感測器應先對應受器，不能把效應器放在流程起點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "三者功能是偵測、決策、執行，不類比尿液形成路徑。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "感測器偵測、控制器整合、冷氣機執行，順序相符。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "肺、糞便與胃無法依序對應這套資訊控制功能。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "類比以功能與資訊方向為準，不要求機械設備和人體構造外形相同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "人體還包含神經與荷爾蒙訊號，空調模型只呈現基本回饋架構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

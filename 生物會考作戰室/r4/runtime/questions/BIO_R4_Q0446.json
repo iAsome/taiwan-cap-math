@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q0446",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S038"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "在生命尺度單位換算中，一微米等於多少奈米？",
+  "options": [
+    "十奈米",
+    "一千奈米",
+    "一萬奈米",
+    "一百萬奈米"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "十奈米只是一微米的百分之一。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "微米轉換為奈米時需要乘以一千，因此正解是一千奈米。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一萬奈米除以一千後等於十微米，不是一微米。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一百萬奈米換算後等於一毫米，遠大於一微米。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "單位換算"
+  ],
+  "representationType": "數值題",
+  "misconceptionTargets": [
+    "微米奈米混淆"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先記住毫米、微米、奈米相鄰常相差一千倍。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先把分子與細胞尺度換成相同單位，才能公平比較兩者大小。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

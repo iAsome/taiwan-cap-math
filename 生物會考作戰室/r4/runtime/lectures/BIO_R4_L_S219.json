@@ -1,0 +1,156 @@
+{
+  "id": "BIO_R4_L_S219",
+  "subject": "biology",
+  "unitId": "BIO_R4_U30",
+  "skillId": "BIO_R4_S219",
+  "authorityRefs": [
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S218"
+  ],
+  "objectives": [
+    "比較重複實驗與不同來源結果",
+    "依方法可比性解釋一致或相反結果"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S219_SEC_01",
+      "title": "獨立重複",
+      "content": "同一處理使用多個獨立樣本，能估計自然變異。對同一樣本連量三次是技術重複，不能取代三個獨立樣本，否則會高估樣本數。"
+    },
+    {
+      "id": "BIO_R4_L_S219_SEC_02",
+      "title": "研究重現",
+      "content": "不同時間或不同團隊依相同方法重作，可檢查結果是否可重現。方向一致會增加可信度，但不表示所有條件相同。"
+    },
+    {
+      "id": "BIO_R4_L_S219_SEC_03",
+      "title": "來源可比性",
+      "content": "整合前要核對物種、劑量、時間、單位與測量方法。條件不同的結果不一定真正衝突，可能各自適用不同範圍，必要時先換算成相同尺度。"
+    },
+    {
+      "id": "BIO_R4_L_S219_SEC_04",
+      "title": "處理不一致",
+      "content": "結果不一致時應比較原始資料、變異、樣本與程序，提出可測試的差異原因，而不是只挑支持預期的來源，再以新實驗區分可能原因。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S219_EX_01",
+      "prompt": "同一片葉量三次是否等於三片葉？",
+      "steps": [
+        "辨認三次都來自同一生物樣本",
+        "區分技術誤差與個體變異"
+      ],
+      "answer": "不等於三個獨立樣本。",
+      "why": "同一葉重測可估計儀器穩定度，卻無法呈現不同葉片的生物變異，因此不能當三個獨立重複。"
+    },
+    {
+      "id": "BIO_R4_L_S219_EX_02",
+      "prompt": "兩研究方向相反，第一步做什麼？",
+      "steps": [
+        "核對物種、濃度、時間與單位",
+        "比較樣本數、變異及測量方法"
+      ],
+      "answer": "先檢查研究條件是否可比。",
+      "why": "若一項測幼體短期反應、另一項測成體長期反應，結果差異可能反映條件而非彼此否定。"
+    },
+    {
+      "id": "BIO_R4_L_S219_EX_03",
+      "prompt": "三團隊相同方法得到同方向結果，代表什麼？",
+      "steps": [
+        "確認團隊與樣本彼此獨立",
+        "檢查效果方向及變異範圍"
+      ],
+      "answer": "結果可重現性獲得較強支持。",
+      "why": "獨立團隊重現可降低單一實驗室程序或偶然樣本造成結果的可能，但外推仍受測試條件限制。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "同一樣本量很多次就是很多獨立樣本。",
+      "whyWrong": "重測只能反映測量誤差，沒有增加生物個體的獨立資訊。",
+      "correction": "同時安排多個獨立生物樣本與必要技術重測。"
+    },
+    {
+      "belief": "兩研究結論不同，必定至少一份造假。",
+      "whyWrong": "材料、劑量、時間或方法差異都可能造成不同結果。",
+      "correction": "先核對條件與原始資料，再判斷是否真正衝突。"
+    },
+    {
+      "belief": "多數來源同意就不必檢查研究品質。",
+      "whyWrong": "多份低品質或相互引用的資料不等於獨立可靠證據。",
+      "correction": "逐份檢查採樣與測量方法的品質，並確認資料來源是否真正獨立。"
+    },
+    {
+      "belief": "只要單位相同，兩研究就可直接合併。",
+      "whyWrong": "物種、指標定義、時間與處理方式仍可能不一致。",
+      "correction": "建立共同納入標準並清楚說明不可比項目。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "同一樣本重測主要估計什麼？",
+      "answer": "測量程序的穩定度。",
+      "reason": "重測可呈現儀器或操作變異，但不增加獨立個體資訊。"
+    },
+    {
+      "prompt": "整合不同來源前要先檢查什麼？",
+      "answer": "材料、方法、條件、指標與單位。",
+      "reason": "只有回答相近問題的資料才適合直接比較或合併。"
+    },
+    {
+      "prompt": "獨立團隊重現結果有何意義？",
+      "answer": "降低結果只來自單一團隊偶然因素的可能。",
+      "reason": "跨團隊一致性可提升可重現性，但仍需限定適用條件。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S099_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S099"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "刺激皮膚後中樞有訊號，但相關肌肉沒有反應；肌肉直接電刺激仍可收縮。最值得檢查哪個環節？",
+  "options": [
+    "皮膚是否能消化食物",
+    "中樞到肌肉的運動神經傳出路徑",
+    "骨骼是否能製造激素",
+    "紅血球是否具有視覺"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "皮膚消化與題述神經反應無關。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "肌肉可收縮且中樞有訊號，問題可能在傳出連接。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "骨骼製造激素不能解釋特定運動反應中斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "紅血球負責運送氣體，不具接收光線的視覺功能。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "路徑定位"
+  ],
+  "representationType": "實驗推論",
+  "misconceptionTargets": [
+    "只看肌肉無反應"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "直接刺激證明肌肉具收縮能力，感覺訊息也已到達中樞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "沿流程排除後，運動命令由中樞到肌肉的路徑最需優先檢查。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

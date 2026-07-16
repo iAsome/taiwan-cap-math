@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_S184_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S184"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S184",
+  "stem": "哪項最完整描述三十年間的覆蓋變化？",
+  "options": [
+    "三類都維持不變",
+    "草本下降，灌木先升後降，喬木持續增加",
+    "草本持續增加而喬木消失",
+    "只有第一年有植物"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "四個年份數值都有改變，並非固定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "草本八十二降二十一，灌木四升五十七後降四十四，喬木零升六十三。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "草本方向是下降，喬木則由零持續增加。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "後續年份仍有三類植物覆蓋資料。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "讀取演替趨勢"
+  ],
+  "representationType": "時間表",
+  "misconceptionTargets": [
+    "只看最後一年"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐欄核對三類植物各自的時間方向，不把百分比相加。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "轉折核對灌木峰值在十五年，與草本、喬木單向趨勢不同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_ST_S097",
+  "subject": "biology",
+  "skillId": "BIO_R4_S097",
+  "type": "experiment-table",
+  "content": {
+    "title": "肌肉模型的連接條件與骨端位移",
+    "context": "研究者以相同彈力帶模擬肌肉，硬棒模擬骨骼，轉軸模擬關節。每次把彈力帶縮短相同長度，記錄硬棒末端位移。",
+    "columns": [
+      "組別",
+      "彈力帶與硬棒連接",
+      "轉軸狀態",
+      "末端位移"
+    ],
+    "rows": [
+      [
+        "甲",
+        "完整",
+        "可轉動",
+        "9公分"
+      ],
+      [
+        "乙",
+        "中斷",
+        "可轉動",
+        "1公分"
+      ],
+      [
+        "丙",
+        "完整",
+        "鎖死",
+        "0公分"
+      ]
+    ],
+    "note": "各組硬棒長度、彈力帶縮短量與測量方向相同。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "甲組連接完整且轉軸可動，位移9公分；乙組連接中斷但轉軸可動，位移1公分；丙組連接完整但轉軸鎖死，位移0公分。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "組別",
+        "條件與位移"
+      ],
+      "rows": [
+        [
+          "甲",
+          "連接完整、轉軸可動、9公分"
+        ],
+        [
+          "乙",
+          "連接中斷、轉軸可動、1公分"
+        ],
+        [
+          "丙",
+          "連接完整、轉軸鎖死、0公分"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

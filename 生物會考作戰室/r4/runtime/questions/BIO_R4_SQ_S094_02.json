@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_SQ_S094_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S094"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S094",
+  "stem": "哪項結論最受此實驗支持？",
+  "options": [
+    "激素甲可作用於多種有受體的細胞，而且反應形式可不同",
+    "激素甲只作用於肝臟",
+    "只要加入激素甲，任何細胞都會反應",
+    "沒有受體的細胞反應一定最強"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "肝臟與肌肉都有受體，但分別改變合成與攝取。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "骨骼肌也有受體並出現反應。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "皮膚細胞未檢出受體且無明顯變化。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "本次資料顯示未檢出受體的皮膚細胞沒有明顯變化。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "整合資料"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "同一激素只能有一種反應"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "兩種有受體的細胞都反應，支持一種激素具有多個標的。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "肝臟與肌肉反應不同，說明共同接收訊號不要求反應形式一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

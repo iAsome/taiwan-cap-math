@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_072_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S072"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S072",
+  "stem": "若要判斷代謝物下降是否由特定有益菌減少造成，最適合補測什麼？",
+  "options": [
+    "受試者姓名字數",
+    "藥片外盒顏色",
+    "病房樓層高度",
+    "特定菌數量及其產生該代謝物的功能"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "姓名字數不會連結菌群組成與腸道代謝物來源。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "外盒顏色若不改變藥效，不能說明哪種菌產生代謝物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "病房樓層不是腸道菌代謝路徑的直接變項，無法回答機制。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "菌量與功能同步資料可測試特定菌減少是否連到產物下降。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "總菌種數只描述多樣性，不能指出是哪一菌或哪條代謝路徑改變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若再以培養或標記實驗驗證產物來源，會比相關性更接近因果證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

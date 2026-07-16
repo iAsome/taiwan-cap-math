@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_046_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S046"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲酵素在pH 2較快，乙酵素在pH 8較快，可得到什麼結論？",
+  "options": [
+    "甲乙必定是同一酵素",
+    "兩種酵素適合的酸鹼環境不同",
+    "所有反應都不需受質",
+    "pH 8一定比pH 2溫度高"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "不同酸鹼反應特徵不支持必定相同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "兩者最高作用條件分別偏酸與偏鹼。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "酵素反應仍需要相應受質。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "pH與溫度是不同測量變項。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-042",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-032"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "兩酵素速率較高的酸鹼值不同，直接支持適合環境有差異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "不能把酸鹼值混成溫度，也不能由結果否定受質需求。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

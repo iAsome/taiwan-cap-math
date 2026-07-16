@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S175_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S175"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "校園比較遮陰與補水對光合影響，哪項四組設計最完整？",
+  "options": [
+    "只設遮陰一組",
+    "每組使用不同植物種類",
+    "同時改變溫度且不記錄",
+    "不遮不補、只遮、只補、遮且補，其他條件相同"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "缺少基準與補水組，無法拆分兩因素效果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "物種差會混入處理效果，降低公平性。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "未控制溫度新增混淆，且無紀錄不能校正。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "四組形成二乘二比較，可估各自及組合效果。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移雙因子設計"
+  ],
+  "representationType": "校園實驗",
+  "misconceptionTargets": [
+    "單組即可判限制"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "組合核對每個因素都有有無兩水準，四種搭配沒有遺漏。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "控制核對同種等葉面積與同時測量，可把差異集中在遮陰與補水。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_197_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S197"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "報告寫「魚減少，所以一定是溶氧造成」。最佳修正為何？",
+  "options": [
+    "魚減少與環境永遠無關",
+    "溶氧不能量測",
+    "只需刪除魚數資料",
+    "魚減少可能與溶氧有關，仍需比較時間序列、對照與其他壓力"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "魚類會受多種環境條件影響，不能說永遠無關。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "溶氧可使用儀器進行標準化量測。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "刪除有效資料不能改善因果推論。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "修正後保留假說並列出驗證需求。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "修正過度因果結論"
+  ],
+  "representationType": "報告校訂",
+  "misconceptionTargets": [
+    "單一相關就是唯一因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「魚減少可能與溶氧有關，仍需比較時間序列、對照與其他壓力」把一定改成可能，也提出提高證據品質的方法。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "科學報告應區分觀察到的魚減少與尚待驗證的原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

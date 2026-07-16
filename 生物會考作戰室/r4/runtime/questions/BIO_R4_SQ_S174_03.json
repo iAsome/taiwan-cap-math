@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_S174_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S174"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S174",
+  "stem": "若水族箱午夜氧氣已偏低，依資料最適當的立即措施是？",
+  "options": [
+    "加入更多動物提高呼吸",
+    "適度增氧並檢查夜間生物量與通氣",
+    "完全密封水面",
+    "假設水草會自行淨產氧"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "更多動物會增加耗氧，使午夜風險更高。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "午夜水草仍耗氧，增氧與檢查總呼吸負荷能直接處理風險。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "完全密封會降低外界氣體補充，不利低氧改善。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "資料顯示無光時氧氣為負值，不能作相反假設。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移夜間低氧"
+  ],
+  "representationType": "管理決策",
+  "misconceptionTargets": [
+    "水草夜間淨產氧"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-023",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-018"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "資料核對午夜淨耗氧三單位，低氧時需先補充而非增加負荷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "系統核對水草、動物和微生物皆呼吸，管理應檢查總生物量及交換。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

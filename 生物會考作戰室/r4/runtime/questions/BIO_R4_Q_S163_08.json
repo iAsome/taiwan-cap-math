@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S163_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "暴露量越高發病比例越高，這項結果有何價值？",
+  "options": [
+    "證明沒有關係",
+    "表示時間可忽略",
+    "排除所有第三因素",
+    "提供劑量反應方向的支持"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "發病隨暴露增加呈同向變化，不能說資料證明完全無關。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "仍須確認暴露先於疾病，劑量趨勢不能取消時間條件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "其他因素也可能隨暴露量變化，單一趨勢不能排除全部混淆。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "劑量增加伴隨風險增加，符合原因作用增強時結果加重的預測。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "理解劑量反應"
+  ],
+  "representationType": "梯度資料",
+  "misconceptionTargets": [
+    "劑量趨勢可排除所有問題"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "趨勢核對比較多個暴露層級而非只分有無，確認發病比例逐級增加。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "限制核對仍保留混淆與量測誤差，因此稱為支持而不是唯一證明。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

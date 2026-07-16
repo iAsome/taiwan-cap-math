@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S090_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S090"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某反應先快速改變心跳，之後又有較持久的代謝變化。最適當的推論為何？",
+  "options": [
+    "神經與內分泌可能分階段共同參與",
+    "只能有神經，不能有激素",
+    "只能有激素，不能有神經",
+    "所有器官都自行決策"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "快速與持久兩階段可分別涉及兩種調節並協同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "較持久代謝變化不能在沒有資料下排除激素。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "快速初始反應也不能在沒有資料下排除神經。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "器官活動需訊息協調，不能都視為自行決策。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "整合推論"
+  ],
+  "representationType": "時間序列",
+  "misconceptionTargets": [
+    "認為兩系統互斥"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "同一事件呈現兩種時間尺度，保留共同參與最符合證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "分階段協同能解釋全部觀察，排除任一系統都過度武斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L_S210",
+  "subject": "biology",
+  "unitId": "BIO_R4_U29",
+  "skillId": "BIO_R4_S210",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S209"
+  ],
+  "objectives": [
+    "連結環境暴露資料與群體健康風險",
+    "區分風險評估與個人診斷的證據界線"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S210_SEC_01",
+      "title": "環境改變與風險",
+      "content": "空氣、水或土壤品質改變可能增加族群接觸有害因子的機會。風險評估需結合污染濃度、暴露途徑、時間與群體反應。"
+    },
+    {
+      "id": "BIO_R4_L_S210_SEC_02",
+      "title": "群體資料的用途",
+      "content": "比較不同地區或不同時期的暴露與健康指標，可找出需要關注的關聯，但還要檢查年齡、生活習慣等干擾因素。"
+    },
+    {
+      "id": "BIO_R4_L_S210_SEC_03",
+      "title": "關聯不是個人診斷",
+      "content": "群體中暴露較高且某症狀較多，不表示每位暴露者都由該污染造成。個人狀況仍須由專業人員依病史與檢測評估。"
+    },
+    {
+      "id": "BIO_R4_L_S210_SEC_04",
+      "title": "合宜的科學表述",
+      "content": "應說資料支持風險升高、需要進一步調查或採取預防，而不是宣稱所有個體必然患病。結論強度要與研究設計相稱。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S210_EX_01",
+      "prompt": "污染較高月份，某呼吸症狀就診率也較高，可直接診斷居民嗎？",
+      "steps": [
+        "辨認資料是月份與群體統計",
+        "檢查是否有個人暴露及臨床證據"
+      ],
+      "answer": "不能據此診斷個別居民。",
+      "why": "群體趨勢可提示環境風險與調查需求，但缺少個人接觸、病史及檢測，不能取代專業診斷。"
+    },
+    {
+      "id": "BIO_R4_L_S210_EX_02",
+      "prompt": "兩社區污染濃度不同，要比較健康指標還應注意什麼？",
+      "steps": [
+        "確認測量方法與時期可比",
+        "記錄年齡、吸菸與職業等因素"
+      ],
+      "answer": "應控制可能同時影響健康的干擾因素。",
+      "why": "若群體組成或生活習慣不同，健康差異可能不只來自污染，因此需調整或分層比較。"
+    },
+    {
+      "id": "BIO_R4_L_S210_EX_03",
+      "prompt": "資料顯示風險可能升高時，合宜行動為何？",
+      "steps": [
+        "依證據辨認可能的暴露來源",
+        "採取減少暴露並持續監測的措施"
+      ],
+      "answer": "先降低可避免的暴露並進一步調查。",
+      "why": "預防措施可在不替個人下診斷的前提下降低群體風險，後續監測則可檢驗措施成效。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "某地症狀較多，就證明每位患者都由當地污染造成。",
+      "whyWrong": "群體關聯不能排除感染、生活習慣或職業暴露等其他原因。",
+      "correction": "應限制為風險線索，個人原因仍需專業評估。"
+    },
+    {
+      "belief": "沒有個人診斷，就完全不能做環境預防。",
+      "whyWrong": "可靠群體資料可支持降低暴露與持續監測的預防行動。",
+      "correction": "區分預防性風險管理與對個人疾病原因的判定。"
+    },
+    {
+      "belief": "兩個變項同時上升，就一定是污染造成健康變化。",
+      "whyWrong": "共同時間趨勢可能受季節、人口組成或其他因素影響。",
+      "correction": "需檢查時間順序、干擾因素與更多研究證據。"
+    },
+    {
+      "belief": "平均污染濃度可代表每位居民的實際吸收量。",
+      "whyWrong": "活動地點、停留時間、呼吸量及防護使個人暴露不同。",
+      "correction": "個人劑量需更直接的暴露紀錄或生物監測。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "群體關聯資料最適合用來做什麼？",
+      "answer": "辨認風險線索並規劃進一步調查。",
+      "reason": "群體趨勢能指出需關注方向，但不足以單獨確認個人疾病原因。"
+    },
+    {
+      "prompt": "為何比較社區健康資料要控制年齡？",
+      "answer": "年齡可能同時影響症狀比例與暴露型態。",
+      "reason": "若兩地年齡組成不同，觀察差異可能被群體組成混淆。"
+    },
+    {
+      "prompt": "如何表述不超過環境資料的證據？",
+      "answer": "說風險可能升高並建議減少暴露與調查。",
+      "reason": "這種說法保留不確定性，也不把群體風險誤作個人診斷。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  }
+}

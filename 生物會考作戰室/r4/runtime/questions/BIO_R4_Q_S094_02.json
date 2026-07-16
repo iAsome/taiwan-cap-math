@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S094_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S094"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "同一種激素是否可能同時影響肝臟與肌肉？",
+  "options": [
+    "不可能，激素只能配對一個器官",
+    "可能，只要兩處都有能接收該激素的標的細胞",
+    "不可能，血液無法到達肌肉",
+    "可能，但兩處反應一定完全相同"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "一種激素可以有分布於多個器官的標的細胞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "相應受體能讓不同器官的細胞接收同一訊號。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "血液循環可將激素運送到肌肉等組織。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "不同細胞功能不同，接收同一訊號後反應可不同。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "多重標的"
+  ],
+  "representationType": "概念辨識",
+  "misconceptionTargets": [
+    "一種激素只對一個器官"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "激素的作用範圍由標的細胞分布決定，不受單一器官名稱限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "多個器官接收同一訊號時，可用不同反應共同完成全身調節。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

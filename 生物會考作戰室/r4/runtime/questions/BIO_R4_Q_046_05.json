@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_046_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S046"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某酵素在pH 3速率最高，能直接推論什麼？",
+  "options": [
+    "本次受測範圍以pH 3觀察值最高",
+    "所有酵素都適合強酸",
+    "pH 2的速率一定相同",
+    "此酵素不能再利用"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "此敘述忠實限定在本次資料範圍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單一酵素不能代表所有酵素。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "未測pH 2就不能指定數值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "酸鹼峰值與是否再利用無直接關係。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-042",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-032"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "資料能支持的最小結論是本次受測範圍的最高觀察值。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其他選項都跨越酵素種類、未測條件或不同性質，屬過度推論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

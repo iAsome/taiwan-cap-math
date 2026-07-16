@@ -1,0 +1,89 @@
+{
+  "id": "BIO_R4_SQ_138_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S138"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST138",
+  "stem": "依資料，哪個條件下兩版本的活性差異最大？",
+  "options": [
+    "P 在 25°C 與 Q 在 25°C 之間",
+    "無法由數值比較任何差異",
+    "P 自身兩溫度的差異",
+    "P 與 Q 都在 40°C 時的比較"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩者在 25°C 只差兩單位，不是最大版本差距。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "表格提供相同單位的數值，可以直接計算與比較。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "此項比較同一版本跨溫度，並非題目要求的兩版本差異。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "40°C 時兩版本相差五十八單位，明顯大於低溫差距。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "混淆同溫度版本比較與跨溫度比較"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-038"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "固定在同一溫度比較版本，40°C 的七十六與十八形成最大差距。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "回答時不可混入跨溫度比較，否則無法分辨版本效果在哪個環境最明顯。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

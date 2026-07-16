@@ -1,0 +1,89 @@
+{
+  "id": "BIO_R4_SQ_S183_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S183"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S183",
+  "stem": "資料最支持哪種生物關係？",
+  "options": [
+    "雙方互利",
+    "兩者完全無影響",
+    "甲捕食乙且甲增加",
+    "雙方可能競爭培養液中的有限資源"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "互利預期至少雙方表現改善，資料相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩者與單養值差距大，不能說無影響。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "甲共養時也下降，沒有捕食得益的表現。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "共養雙降符合資源重疊造成的競爭成本。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判斷競爭關係"
+  ],
+  "representationType": "對照推理",
+  "misconceptionTargets": [
+    "共養就是互利"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-049",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-001",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-036",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-044",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-003"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "得失核對雙方皆受負面影響，排除單方或雙方得益。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "資源核對光與培養液空間有限，提供競爭的合理機制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

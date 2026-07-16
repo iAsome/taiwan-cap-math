@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_SQ0044",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST015",
+  "stem": "不分別換算微米，只比較表中資料，丙細胞實際長度約為甲的幾倍？",
+  "options": [
+    "二倍",
+    "二十五倍",
+    "十倍",
+    "五倍"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "二倍低估丙五公分與甲一公分之間的長度差異。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "二十五倍把丙的五公分自行平方，沒有使用甲的一公分作比較。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "十倍誤把比例尺代表的二十微米加入兩細胞的相對比較。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "同張未變形影像共用比例尺，五公分除以一公分為五倍。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "跨列比較"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "把比例尺數值混入相對比"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "甲與丙共用相同比例尺，實際長度比等於螢幕長度比，無須先換算微米。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "由五除以一得到五倍；若各自換算為五十與十微米，也會得到相同比例。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

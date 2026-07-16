@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_188_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S188"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "保育員發現某鳥可吃甲蟲或果實。若只剩果實，食物網能支持哪項謹慎推論？",
+  "options": [
+    "鳥必定立刻滅絕",
+    "甲蟲一定增加十倍",
+    "果樹一定停止生長",
+    "鳥仍有一條已知食物路徑，但實際能否維持族群需更多資料"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "尚有果實路徑，不能斷言鳥立即滅絕。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "食物網沒有甲蟲數量變化的定量資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "鳥吃果實不代表果樹必然停止生長。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "圖可指出替代食物，卻不能單獨證明供應量足夠。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "以食物網評估替代路徑"
+  ],
+  "representationType": "保育推論",
+  "misconceptionTargets": [
+    "有替代食物就保證存活"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-002"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「鳥仍有一條已知食物路徑，但實際能否維持族群需更多資料」區分網絡提供的可能路徑與族群維持所需的定量證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "食物網適合提出方向性假設，不足以保證結果或精確倍數。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

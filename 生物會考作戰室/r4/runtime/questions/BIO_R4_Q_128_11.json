@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_128_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S128"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "健康報告以單次身高直接猜出完整基因型，最主要的問題為何？",
+  "options": [
+    "身高不能測量",
+    "所有基因都不影響身高",
+    "身高受多基因與環境影響，單次表現不足以還原完整基因型",
+    "基因型只存在植物"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "身高可用標準工具重複測量，因此不能說身高無法測量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "遺傳因素可能影響身高，不能全部否定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此項指出由複雜表現反推完整遺傳資訊的不足。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "人類也具有基因型，並非植物專有。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "由複雜表現型直接猜完整基因型"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "單一表現型含多重影響來源，「身高受多基因與環境影響，單次表現不足以還原完整基因型」正確限制反推能力。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "它沒有否定測量或遺傳作用，只要求與問題相符的基因證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S081_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S081"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一套校園警報系統的各感測器都正常，控制室也能作出判斷，但某區警鈴收不到啟動訊號。若對照神經系統，最應優先檢查哪項？",
+  "options": [
+    "感測器是否能接收刺激",
+    "控制室是否存在",
+    "其他區域的警鈴音量",
+    "控制室通往該區警鈴的傳出線路"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題幹已說明感測器正常，並非優先疑點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "控制室能作出判斷，表示其存在且可處理訊息。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "其他區域音量不能解釋特定區收不到訊號。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "命令已形成卻未到達，應檢查特定傳出線路。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "系統診斷",
+    "遷移"
+  ],
+  "representationType": "警報系統類比",
+  "misconceptionTargets": [
+    "忽略題幹已知條件"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-006",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-028",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-010"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先利用已知正常項目排除受器與中樞，再定位傳出連結。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "此情境對應中樞命令無法經周圍路徑到達動器官。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

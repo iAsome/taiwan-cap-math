@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S171_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S171"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "校園雨水收集器想仿葉脈分流，哪個原型方案最能檢驗效果？",
+  "options": [
+    "畫一張葉脈海報但不通水",
+    "只做分枝原型且不量出口",
+    "分枝與直管使用不同材料和總入水量",
+    "以相同材料及入水量比較分枝、直管的出口均勻度與積水量"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "海報沒有實際流路，不能回答雨水如何分送。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "缺少對照與輸出測量時，無法知道分枝是否優於其他配置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "材料和入水量都不同會混淆管路形狀的效果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "只改管路配置並量化兩項性能，可直接檢驗葉脈分枝原理。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移雨水裝置"
+  ],
+  "representationType": "原型實驗",
+  "misconceptionTargets": [
+    "只做外觀即可驗證"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "公平核對材料、總入水量及測量時間相同，使管路配置成為主要差異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "性能核對出口均勻度評估分送，積水量則檢查是否產生新的局部阻塞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

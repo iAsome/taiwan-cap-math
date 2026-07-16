@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S091_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "血糖由80降到68後，升糖素增加；之後血糖回到78。哪項解讀最佳？",
+  "options": [
+    "升糖素加強了血糖下降",
+    "升糖素作用方向抵銷原先下降",
+    "血糖完全沒有改變",
+    "資料證明只有神經參與"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "資料顯示升糖素增加後血糖回升。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "回升方向與原先下降相反，符合負回饋。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "80、68與78三個數值明顯不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹直接記錄激素變化，不能排除內分泌。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "資料解讀"
+  ],
+  "representationType": "時間序列",
+  "misconceptionTargets": [
+    "顛倒回饋方向"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-002",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-008",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-020"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "依時間順序，激素增加位於低值與後續回升之間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "抵銷下降的解讀能連結升糖素、肝臟釋糖與血糖回復。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

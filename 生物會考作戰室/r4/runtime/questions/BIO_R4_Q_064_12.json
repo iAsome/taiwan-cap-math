@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_Q_064_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S064"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "人工裝置可使血液含氧量正常，但病人的血液無法流過手部。最合理的預測為何？",
+  "options": [
+    "手部細胞必定取得更多氧氣，因全身血氧正常",
+    "手部會改由皮膚直接大量吸收空氣中的氧氣",
+    "肺部會把氧氣直接傳送到手部而不經血液",
+    "手部細胞仍可能缺氧，因氧氣無法隨血液送達"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "全身血氧值不能取代局部循環，血液未抵達便無法把氧氣交給手部細胞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "人體皮膚不是供應深部組織氧氣的主要呼吸器官，不能補足局部血流中斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "肺與手部之間沒有跳過循環的直接氧氣通道，氧氣仍須由血液運送。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "血液含氧正常仍需實際流到手部，局部無血流會使細胞難以取得氧氣。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "呼吸系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "區分血液含有氧氣與血液抵達組織兩件事，兩項條件都具備才有正常供氧。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "本題的限制在局部循環，不在肺部交換；因此即使血氧正常，手部仍可能缺氧。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

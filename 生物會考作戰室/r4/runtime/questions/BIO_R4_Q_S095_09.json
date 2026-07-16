@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S095_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S095"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "模型以硬棒代表骨、轉軸代表關節、橡皮筋代表肌肉。拉短橡皮筋時硬棒轉動，模型支持哪項解釋？",
+  "options": [
+    "肌肉縮短可拉動骨骼繞關節運動",
+    "骨骼縮短後產生肌肉",
+    "關節主動收縮拉動橡皮筋",
+    "硬棒負責傳遞神經訊息"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "橡皮筋縮短施力，硬棒在轉軸處改變位置。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "模型中硬棒長度沒有縮短。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "轉軸只提供可動連接，並未主動縮短。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "模型呈現力學運動，不支持硬棒傳神經訊息。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "模型推論"
+  ],
+  "representationType": "模型",
+  "misconceptionTargets": [
+    "骨骼主動產生動力"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "三個模型元件分別對應肌肉、骨骼與關節，作用關係清楚。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "結果支持骨骼為被拉動的槓桿，而非主動產生收縮力。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

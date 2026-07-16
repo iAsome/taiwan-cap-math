@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_SQ_190_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S190"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S190",
+  "stem": "莎草到植食昆蟲的能量傳遞率約為多少？",
+  "options": [
+    "13%",
+    "1.3%",
+    "26%",
+    "130%"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "2600÷20000＝0.13，即百分之十三。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "2600除以20000不是百分之一點三。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "百分之二十六會對應5200千焦。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "百分之一百三十代表後層反而大於前層。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "依表計算傳遞率"
+  ],
+  "representationType": "比例運算",
+  "misconceptionTargets": [
+    "固定回答百分之十"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-038",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-041",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-003",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-028",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-023",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-020"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "依資料計算後層除以前層，可得13%而不是套用10%。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "單位相同可直接相除，答案不受個體數或體型影響。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

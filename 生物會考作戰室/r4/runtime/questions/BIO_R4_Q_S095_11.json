@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S095_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S095"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "工程團隊設計救援機器人的軀幹框架，希望同時支撐重量並保護中央控制線路。最接近哪種骨骼設計原理？",
+  "options": [
+    "只增加柔軟外皮",
+    "取消所有連接處",
+    "以堅硬框架承重，並包圍易受損的控制構造",
+    "讓框架自行收縮產生電力"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "柔軟外皮不足以同時提供主要承重與硬式保護。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "取消連接會使機器人難以組裝與活動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "承重與包圍保護分別對應骨骼的兩項功能。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "骨骼不以自行收縮產生動力或電力。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "仿生設計"
+  ],
+  "representationType": "遷移應用",
+  "misconceptionTargets": [
+    "支架等於動力來源"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "設計需求同時包含支持與保護，應讓框架的形狀與位置服務兩項功能。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "此原理類似脊柱與胸廓，不必把框架誤當成主動動力來源。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

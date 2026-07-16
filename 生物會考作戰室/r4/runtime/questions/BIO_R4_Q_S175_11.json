@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S175_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S175"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "溫室光照已達平台，想提高產量，最合理的下一步是？",
+  "options": [
+    "無限增加燈具",
+    "先關閉全部通風",
+    "測試二氧化碳、水分與溫度是否成為限制",
+    "移除所有葉片"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "平台表示再加光可能浪費能源且未必提升速率。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "關閉通風會改變溫濕與氣體，未診斷前可能造成風險。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "量測其他必要條件能找出當下真正瓶頸再處理。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "移葉直接減少光合面積，與提高產量目標相反。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移溫室診斷"
+  ],
+  "representationType": "生產決策",
+  "misconceptionTargets": [
+    "平台後仍只加光"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "資料核對光已到飽和區，決策應轉向尚未測試的必要條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "成本核對先診斷再調整可避免持續加燈卻沒有產量回應。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

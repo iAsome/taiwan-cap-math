@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_080_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S080"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "恆溫器讓室溫在設定值附近上下小幅變化，最像何者？",
+  "options": [
+    "完全沒有控制",
+    "數值必須固定到無限小數",
+    "生理變項在範圍附近動態調節",
+    "所有刺激都無法影響系統"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "室溫能在偏差後回復，顯示控制器仍有作用。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "感測與設備啟停需要時間，不必固定到無限精確。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "設定值附近波動並被修正，功能上類似動態恆定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "開門或外溫仍會影響室溫，控制只是限制影響而非消除刺激。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "模型可呈現範圍、延遲與負回饋，不要求室溫永遠完全不動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "人體調節比恆溫器更複雜，類比不能取代器官與訊號的實際證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

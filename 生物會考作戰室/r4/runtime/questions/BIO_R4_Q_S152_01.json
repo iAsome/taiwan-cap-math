@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S152_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S152"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "二分檢索表每一步應提供什麼？",
+  "options": [
+    "兩個互斥敘述",
+    "四個物種名稱",
+    "一張彩色照片",
+    "一段生活故事"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "二分檢索每一步以兩個不能同時成立的特徵敘述，讓標本沿唯一方向前進。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "物種名稱通常是部分路徑的終點，不是每一步都要同時列出的四個選項。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "照片可以輔助看構造，但沒有照片仍能用文字特徵完成二分檢索。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "生活故事未必包含互斥特徵，不能取代每一步必須作出的成對判斷。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "記憶檢索表結構"
+  ],
+  "representationType": "概念辨識",
+  "misconceptionTargets": [
+    "把二分誤認為二個名稱"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "結構核對依『二分』定義檢查敘述數與互斥性，兩個互斥敘述同時滿足兩項條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "必要性核對移除名稱、照片或故事後檢索仍可進行，移除成對敘述則無法分流。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

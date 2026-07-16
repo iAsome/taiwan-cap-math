@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S087_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S087"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲運動後體溫由36.8升至37.6°C，休息並出汗後降至37.0°C。哪項解讀最合理？",
+  "options": [
+    "體溫曾改變，所以人體沒有調節",
+    "出汗使體溫繼續無限升高",
+    "數值不同證明受器全部失效",
+    "出汗後體溫朝原範圍回復，符合動態恆定"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "短暫偏離後回復正是調節可觀察的情況。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "資料顯示出汗後體溫下降，不是無限升高。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "能出現協調反應不支持受器全部失效。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "升溫、散熱與回降構成合理的調節證據。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "資料解讀"
+  ],
+  "representationType": "時間序列",
+  "misconceptionTargets": [
+    "看到波動就否定恆定"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "依時間順序看變化方向，體溫在反應後接近起始值。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "體溫曾改變不等於沒有調節，回降也否定無限升高；能出現協調反應更不支持受器全部失效。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

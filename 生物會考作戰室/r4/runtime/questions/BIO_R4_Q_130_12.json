@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_130_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S130"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "電腦模擬每四次固定產生三紫一白，與機率模型相比主要缺點為何？",
+  "options": [
+    "完全沒有花色類別",
+    "不能計算任何比例",
+    "樣本數一定太大",
+    "消除了隨機波動，誤導為固定順序"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "模擬保留紫白兩種可辨識的花色結果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "固定輸出仍可算比例，只是機制不正確。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "缺點與樣本大小無必然關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "固定每四次輸出不符合獨立隨機組合。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "用固定序列冒充隨機機率"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「消除了隨機波動，誤導為固定順序」指出表面比例正確卻錯誤呈現單次事件機制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "真實機率允許短期偏差，不能以固定排列取代。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

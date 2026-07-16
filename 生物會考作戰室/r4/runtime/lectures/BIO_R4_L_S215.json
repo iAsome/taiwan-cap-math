@@ -1,0 +1,158 @@
+{
+  "id": "BIO_R4_L_S215",
+  "subject": "biology",
+  "unitId": "BIO_R4_U30",
+  "skillId": "BIO_R4_S215",
+  "authorityRefs": [
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S214"
+  ],
+  "objectives": [
+    "依資料型態選擇合適圖形",
+    "正確標示座標軸、單位與刻度"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S215_SEC_01",
+      "title": "類別比較",
+      "content": "長條圖適合比較離散類別，如不同物種或處理組。各長條寬度一致並分開，座標軸要標示測量量與單位，類別順序也要採一致規則。"
+    },
+    {
+      "id": "BIO_R4_L_S215_SEC_02",
+      "title": "時間變化",
+      "content": "折線圖適合呈現同一變項隨連續時間的變化，依時間順序連點可看趨勢，但不應任意連接無順序類別，缺漏時間點不可假裝成實測值。"
+    },
+    {
+      "id": "BIO_R4_L_S215_SEC_03",
+      "title": "兩變項關係",
+      "content": "散布圖用每個樣本的一對數值作點，適合探索兩個連續變項是否相關。點群趨勢不會自動證明因果關係，離群點須先查測量品質。"
+    },
+    {
+      "id": "BIO_R4_L_S215_SEC_04",
+      "title": "完整圖形",
+      "content": "圖名、軸名、單位、等距刻度與圖例讓資料可獨立解讀。截斷座標軸可能放大視覺差異，必須清楚標示，避免讀者誤判效果大小。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S215_EX_01",
+      "prompt": "比較四種植物平均葉片數，宜用何圖？",
+      "steps": [
+        "辨認植物種類是離散類別",
+        "比較各類別的單一平均值"
+      ],
+      "answer": "長條圖。",
+      "why": "四種植物是互相分開的類別，長條高度可直接比較各類別平均葉片數，且不暗示連續變化。"
+    },
+    {
+      "id": "BIO_R4_L_S215_EX_02",
+      "prompt": "記錄池水十二個月溫度，宜用何圖？",
+      "steps": [
+        "辨認月份具有連續先後",
+        "需要呈現溫度隨時間趨勢"
+      ],
+      "answer": "折線圖。",
+      "why": "月份具有自然順序，依序連接各月溫度能呈現升降趨勢，座標軸仍須標示月份與攝氏度。"
+    },
+    {
+      "id": "BIO_R4_L_S215_EX_03",
+      "prompt": "檢查每株植物高度與種子數關係，宜用何圖？",
+      "steps": [
+        "確認每株有一對連續數值",
+        "以每株資料形成一個點"
+      ],
+      "answer": "散布圖。",
+      "why": "散布圖保留每個樣本的高度與種子數配對，可觀察關係方向與離群點，而不是只看平均。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "任何資料都適合畫成折線圖。",
+      "whyWrong": "無順序類別被連線會暗示不存在的連續變化。",
+      "correction": "類別比較用長條圖，連續時間資料才常用折線圖。"
+    },
+    {
+      "belief": "圖上有數字就不需要標示單位。",
+      "whyWrong": "缺少單位無法知道數值代表秒、日、克或其他量。",
+      "correction": "在橫軸與縱軸名稱旁清楚標示各自對應的測量單位。"
+    },
+    {
+      "belief": "散布圖有上升趨勢就證明甲造成乙。",
+      "whyWrong": "相關趨勢仍可能受第三因素或反向關係影響。",
+      "correction": "將散布圖用於描述關聯，因果需控制實驗等證據。"
+    },
+    {
+      "belief": "任意改變刻度間距不會影響圖形解讀。",
+      "whyWrong": "不等距刻度會扭曲資料差異與趨勢的視覺大小。",
+      "correction": "使用等距刻度並清楚標示截斷或轉換方式。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "比較不同處理組平均值通常選何圖？",
+      "answer": "長條圖。",
+      "reason": "處理組是離散類別，分開長條能比較各組測量值。"
+    },
+    {
+      "prompt": "折線圖最適合呈現何種資料？",
+      "answer": "同一變項隨連續時間的變化。",
+      "reason": "時間具有先後順序，連線可呈現相鄰時間點的趨勢。"
+    },
+    {
+      "prompt": "完整座標軸至少需要什麼？",
+      "answer": "變項名稱、單位與等距刻度。",
+      "reason": "這些標示讓讀者知道數值意義並避免錯估差異。"
+    }
+  ],
+  "assets": [
+    "BIO_R4_ASSET_EXPERIMENT_GRAPH"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

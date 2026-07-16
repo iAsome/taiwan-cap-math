@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S094_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S094"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某激素進入肝臟血管後，只有部分肝細胞產生反應。最合理的原因是什麼？",
+  "options": [
+    "只有部分肝細胞具有相應受體或反應途徑",
+    "激素只能穿過單數編號的細胞",
+    "沒有反應的細胞必定死亡",
+    "肝臟內完全沒有血液流動"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "同一器官內不同細胞的受體種類與功能可能不同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "細胞是否反應與任意編號無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "缺乏特定激素反應不表示細胞必定死亡。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題目已說激素進入肝臟血管，顯示有血液運送。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "器官內差異"
+  ],
+  "representationType": "機制推論",
+  "misconceptionTargets": [
+    "整個器官反應必然一致"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "標的範圍可細到特定細胞，不是只要同屬一個器官就全部反應。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "受體與細胞內途徑的差異，可解釋同一器官內反應不一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

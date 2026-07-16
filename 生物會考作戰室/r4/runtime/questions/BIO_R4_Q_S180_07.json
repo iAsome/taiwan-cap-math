@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S180_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S180"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要測水溫對蝌蚪生長的影響，哪項應保持相同？",
+  "options": [
+    "各缸水溫",
+    "每缸加熱強度",
+    "蝌蚪種類、數量、食物與觀察時間",
+    "最後體長結果"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "水溫是待測自變因，各組需要設定差異。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "加熱方式可因目標溫度不同，不能當主要共同結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "這些條件都會影響生長，需控制以隔離溫度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "體長是應變因，應允許因處理而不同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "設計溫度實驗"
+  ],
+  "representationType": "控制變因",
+  "misconceptionTargets": [
+    "自變因也要相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "變因核對只有設定的水溫應在各實驗組間系統改變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "公平核對生物量與食物相同，避免密度或養分造成成長差。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

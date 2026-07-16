@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S089_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S089"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲乙都接觸激素X，甲有X受體且反應，乙無X受體且不反應。哪項結論較合理？",
+  "options": [
+    "乙一定沒有接觸X",
+    "X只存在甲的血液",
+    "甲乙的血流方向必定相反",
+    "X受體與甲的反應有關"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題幹明示乙也接觸X，不能否定條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩者都接觸X，不支持X只在甲的血液。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有血流方向資料，不能作此推論。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "有受體與反應共同出現在甲，支持其關聯。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "證據推論"
+  ],
+  "representationType": "比較實驗",
+  "misconceptionTargets": [
+    "忽略控制條件"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "控制激素接觸後，比較受體差異可支持受體角色。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "甲乙都接觸X，所以不能說乙未接觸或X只在甲的血液；題幹也沒有兩者血流方向的資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

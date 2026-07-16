@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_079_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "比較兩份濃度資料前，哪項最重要？",
+  "options": [
+    "表格顏色相同",
+    "數字字型一致",
+    "受試者姓名長度相同",
+    "確認單位與量測時間可比較"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "顏色只影響呈現，不能保證濃度尺度一致。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "字型不會改變數值單位或量測時點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "姓名長度與生理濃度資料沒有直接關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "單位與時間不同可能造成表面數字誤導，需先統一。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "比較數值前先處理尺度和情境，能避免把不可比資料強行排序。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若單位可換算，應完成換算並保留原始紀錄，再做後續分析。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

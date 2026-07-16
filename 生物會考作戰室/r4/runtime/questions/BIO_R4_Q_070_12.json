@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_070_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S070"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某疫苗後只對病原甲反應加快，對病原乙無明顯改變，最合理解釋為何？",
+  "options": [
+    "所有免疫記憶完全相同",
+    "病原乙一定不是微生物",
+    "淋巴液不含任何細胞",
+    "形成的免疫記憶主要針對甲的抗原"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩種病原反應不同，正好不支持所有免疫記憶完全相同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有反應加快不能證明乙不是微生物，可能只是抗原不同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "免疫反應存在已不支持淋巴液完全沒有任何細胞的說法。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "對甲加快而乙不變，符合記憶具有抗原專一性的特徵。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "用差異反應判斷專一範圍，不能把對甲的效果推廣到不同抗原乙。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "這項結果支持記憶方向，實際保護程度仍需感染率或症狀等資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S108_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S108"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "溪流下游蝦數在豪雨後增加，但未見幼蝦，哪項後續證據最能檢驗是否為上游移入？",
+  "options": [
+    "測量每隻蝦的體色深淺",
+    "只比較豪雨前後的水溫一次",
+    "在上游標記成蝦並追蹤是否於下游被再次捕獲",
+    "記錄下游石頭的總重量"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "體色可能受多因素影響，無法直接指出移動來源。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單次水溫差異不能追蹤新增蝦隻來自何處。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "上游標記個體在下游重現，可直接支持順流移入。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "石頭重量與蝦隻來源沒有足以判斷的直接關聯。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "來源追蹤"
+  ],
+  "representationType": "探究設計",
+  "misconceptionTargets": [
+    "使用無法追蹤個體來源的資料"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "研究問題在於新增個體的來源，因此需要能連結上游個體與下游再捕獲紀錄的追蹤方法。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若新增蝦多帶有上游標記，便能用移入解釋數量增加，而不必先假設下游發生繁殖。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_ST_S093",
+  "subject": "biology",
+  "skillId": "BIO_R4_S093",
+  "type": "clinical-table",
+  "content": {
+    "title": "甲狀腺素濃度與生理指標追蹤",
+    "context": "同一位受試者在尚未接受治療時連續三次接受檢測。參考範圍為甲狀腺素8至12單位，休息心跳每分鐘60至100次。檢測期間活動量與室溫相近。",
+    "columns": [
+      "檢測日",
+      "甲狀腺素",
+      "休息心跳",
+      "自述狀況"
+    ],
+    "rows": [
+      [
+        "第1日",
+        "15單位",
+        "108次／分",
+        "怕熱"
+      ],
+      [
+        "第4日",
+        "16單位",
+        "112次／分",
+        "怕熱、難入睡"
+      ],
+      [
+        "第7日",
+        "15單位",
+        "110次／分",
+        "怕熱、易疲累"
+      ]
+    ],
+    "note": "本資料僅供練習判讀，疾病診斷仍需完整醫療評估。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "甲狀腺素參考範圍8至12單位，三次檢測皆為15或16單位；休息心跳參考範圍每分鐘60至100次，三次皆為108至112次，受試者持續怕熱。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "檢測日",
+        "甲狀腺素、心跳與狀況"
+      ],
+      "rows": [
+        [
+          "第1日",
+          "15單位、108次／分、怕熱"
+        ],
+        [
+          "第4日",
+          "16單位、112次／分、怕熱且難入睡"
+        ],
+        [
+          "第7日",
+          "15單位、110次／分、怕熱且易疲累"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S089_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S089"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲乙丙皆測到激素Q；只有甲丙有Q受體且產生反應。哪項分類合理？",
+  "options": [
+    "甲丙為Q的目標細胞，乙不是",
+    "三者都是目標細胞",
+    "只有乙是目標細胞",
+    "是否為目標只看激素有無到達"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "甲丙同時具有受體與反應，符合目標細胞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙雖接觸Q但缺受體且未反應，不宜列入。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "乙的證據正好不符合Q目標細胞特徵。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "激素到達不足以判定能否產生特定反應。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "資料分類"
+  ],
+  "representationType": "多細胞表述",
+  "misconceptionTargets": [
+    "把接觸激素等同目標"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "分類需結合受體與反應資料，不能只看激素測值。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "甲與丙都有Q受體且產生反應；乙雖測到Q，卻沒有受體與反應，因此不屬於Q的目標細胞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

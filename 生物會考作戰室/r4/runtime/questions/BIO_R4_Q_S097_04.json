@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S097_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S097"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "肌肉正常收縮，但連接該肌肉與骨的肌腱斷裂，最可能出現什麼結果？",
+  "options": [
+    "骨骼被推得更遠",
+    "關節自動產生更多力量",
+    "肌肉立即變成骨骼",
+    "力量難以有效傳到骨骼，相關動作受限"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "肌肉不能主動推動骨骼，且連接已中斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "關節提供活動處，不會自動產生拉力。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "肌肉不會因肌腱斷裂就轉變成骨。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "傳力路徑中斷可使骨槓桿難以移動。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "肌腱斷裂"
+  ],
+  "representationType": "因果推論",
+  "misconceptionTargets": [
+    "肌肉收縮即可完成動作"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "肌肉有收縮能力仍不足以完成動作，力量還須經肌腱到達骨骼。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "此情境把產力與傳力分開，能直接顯示肌腱的必要性。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

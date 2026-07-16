@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_130_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S130"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST130",
+  "stem": "若第四次未隔離外來花粉，應如何處理其結果？",
+  "options": [
+    "直接與前三次合併不註記",
+    "另行標示程序偏差，不作同等親代組合比較",
+    "假設外來花粉沒有任何影響",
+    "只保留符合3比1的植株"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "未註記合併會掩蓋授粉來源不同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此項保留資料並正確限制比較用途。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "來源不明時不能無證據假設沒有影響。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "依結果篩選會造成嚴重偏誤。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "程序偏差資料未註記就直接合併"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第四次的親代來源不再受控，「另行標示程序偏差，不作同等親代組合比較」最能維持紀錄透明。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "不必把資料刪除，但不能與受控試驗視為同條件證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

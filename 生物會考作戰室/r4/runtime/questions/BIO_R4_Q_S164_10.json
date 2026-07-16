@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S164_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S164"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一項措施降低呼吸道暴露，能否宣稱阻斷所有感染？",
+  "options": [
+    "可以，途徑都相同",
+    "不能，其他病原可能經血液、糞口或病媒",
+    "可以，因為有研究",
+    "不能，因為措施永遠無效"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "感染有多種入口與媒介，不能把所有途徑視為相同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "呼吸道效果有範圍，不能涵蓋針具、污染水或蚊媒暴露。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "研究只能支持其設計的族群與結果，不會自動擴張到全部感染。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "限制全稱不等於措施無效，它仍可降低對應途徑風險。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "限制防護外推"
+  ],
+  "representationType": "途徑比較",
+  "misconceptionTargets": [
+    "單一路徑效果可防所有感染"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "範圍核對將研究結果限定在呼吸道暴露。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "反例核對以共用針具與污染飲水證明仍有措施未作用的感染路徑。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

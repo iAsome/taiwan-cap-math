@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S163_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "校園發現喝瓶裝飲料者較常頭痛，但他們也較常熬夜。下一步最佳作法是？",
+  "options": [
+    "宣布飲料是唯一病因",
+    "忽略熬夜資料",
+    "在相近睡眠時數者中比較飲料與頭痛",
+    "禁止記錄未頭痛者"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "熬夜可能造成頭痛且與飲料攝取相關，尚不能指定唯一病因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "忽略已知第三因素會保留混淆，讓飲料效果可能被高估。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "分層控制睡眠後再比較，可檢查飲料關係是否仍然存在。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "未頭痛者提供暴露後沒有結果的比較，刪除會破壞比例估計。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移校園相關分析"
+  ],
+  "representationType": "健康調查",
+  "misconceptionTargets": [
+    "忽略共同第三因素"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "混淆核對確認熬夜同時連到飲料與頭痛，因此需要控制或分層。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "比較核對在睡眠相近時保留喝與不喝者，能更專一評估飲料關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q0100",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S009"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "影像已大致出現但邊緣模糊，應使用哪個構造微調？",
+  "options": [
+    "鏡座",
+    "玻片夾",
+    "光圈",
+    "細調節輪"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "鏡座只提供穩定支撐，不能改變焦距。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "玻片夾固定位置，不能讓影像輪廓對焦。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "光圈改亮度，通常不能修正焦距造成的模糊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "細調節輪作小幅移動，適合最後清晰對焦。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "應用"
+  ],
+  "representationType": "操作情境",
+  "misconceptionTargets": [
+    "粗細調混淆"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-017",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-027"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "影像已接近焦點，細調節輪的小幅移動能修正邊緣模糊而不致越過焦點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "粗調幅度較大且未列入選項，其他構造也不改焦距。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

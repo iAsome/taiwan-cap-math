@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L129",
+  "subject": "biology",
+  "unitId": "BIO_R4_U17",
+  "skillId": "BIO_R4_S129",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S128"
+  ],
+  "objectives": [
+    "能指出單基因與染色體示意模型的用途及省略。",
+    "能依新證據判斷模型應保留、限制或修正。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L129_SEC1",
+      "title": "模型為何簡化",
+      "content": "模型選取與問題最相關的變項，省略比例、細節或次要因素，使關係容易理解。例如字母模型可追蹤基因版本，卻不呈現DNA真實長度與全部基因。"
+    },
+    {
+      "id": "BIO_R4_L129_SEC2",
+      "title": "模型的適用範圍",
+      "content": "單基因模型適合說明某些簡化遺傳規律，但許多性狀受多基因與環境共同影響。模型在適用範圍內有用，不因無法涵蓋全部現實就毫無價值。"
+    },
+    {
+      "id": "BIO_R4_L129_SEC3",
+      "title": "符號不是實物",
+      "content": "Punnett方格、字母或套盒都是表徵工具。格子大小不代表配子真實尺寸，字母大小寫也不代表基因在細胞中真的有不同字體。"
+    },
+    {
+      "id": "BIO_R4_L129_SEC4",
+      "title": "用證據修正模型",
+      "content": "當觀察結果持續偏離預測，應檢查樣本、控制條件與模型假設，再增加變項或限定適用範圍。刪除不合資料來保護模型不符合科學態度。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L129_EX1",
+      "prompt": "單基因方格預測兩種表現，實驗卻受溫度影響，模型該如何處理？",
+      "steps": [
+        "確認原模型只含基因組合。",
+        "把溫度列為可能影響表現的新變項。"
+      ],
+      "answer": "保留遺傳組合用途，並加入或註明環境限制。",
+      "why": "模型仍能追蹤配子組合，但若問題問實際表現，就必須納入溫度或限制預測範圍。"
+    },
+    {
+      "id": "BIO_R4_L129_EX2",
+      "prompt": "放大的染色體示意畫得比細胞大，能否推論真實比例？",
+      "steps": [
+        "辨認圖的目的在顯示構造細節。",
+        "檢查是否標示按比例繪製。"
+      ],
+      "answer": "不能。",
+      "why": "放大示意為了可讀性而改變尺寸，若無比例尺或按比例說明，不能拿紙面大小推論真實尺度。"
+    },
+    {
+      "id": "BIO_R4_L129_EX3",
+      "prompt": "新資料不合模型預測時，直接刪掉新資料合理嗎？",
+      "steps": [
+        "先檢查資料品質與重複性。",
+        "再比較模型假設是否涵蓋觀察條件。"
+      ],
+      "answer": "不合理。",
+      "why": "可靠反例可能揭示模型缺少變項或適用範圍過大，應透明記錄並重新檢驗。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "模型越像真實照片就一定越科學。",
+      "whyWrong": "模型品質取決於能否回答問題與符合證據，不只取決於外觀逼真。",
+      "correction": "依目的選表徵，必要時用簡圖突出關係並註明省略。"
+    },
+    {
+      "belief": "模型有例外就完全沒有用途。",
+      "whyWrong": "模型可在限定條件下準確解釋常見關係，例外提醒使用者修正範圍。",
+      "correction": "評估哪些預測仍成立，再針對不足增加變項。"
+    },
+    {
+      "belief": "方格面積代表配子實際大小。",
+      "whyWrong": "Punnett方格用空間排列可能組合，格子尺寸只是版面設計。",
+      "correction": "把方格解讀為機會或組合位置，不當作細胞比例圖。"
+    },
+    {
+      "belief": "不符合預測的資料都應刪除。",
+      "whyWrong": "可靠的不一致資料是檢驗模型的重要證據，刪除會造成選擇偏誤。",
+      "correction": "保留完整資料，檢查方法、假設與替代解釋，再決定是否調整模型。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "單基因模型通常省略哪些真實因素？",
+      "answer": "其他基因、環境與部分分子細節。",
+      "reason": "簡化讓核心組合清楚，但不等於那些因素不存在。"
+    },
+    {
+      "prompt": "示意圖沒有比例尺時能否量紙面尺寸推論實物大小？",
+      "answer": "不能。",
+      "reason": "示意常為可讀性放大或縮小，缺乏比例資訊無法換算。"
+    },
+    {
+      "prompt": "可靠資料與模型衝突時應如何做？",
+      "answer": "保留資料並檢查、限制或修正模型。",
+      "reason": "科學模型必須接受證據檢驗，不能靠刪除反例維持。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  }
+}

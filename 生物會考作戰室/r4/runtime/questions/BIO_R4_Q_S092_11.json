@@ -1,0 +1,79 @@
+{
+  "id": "BIO_R4_Q_S092_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S092"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "農場以含未知物質的飼料餵養幼年動物，發現其體重增加但生殖器官成熟延遲。為釐清是否干擾性激素作用，最適合增加哪項檢測？",
+  "options": [
+    "只量飼料的總重量",
+    "只記錄每天日出時間",
+    "比較血中性激素濃度及標的組織的受體反應",
+    "只觀察動物毛色"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "飼料重量不能直接判定性激素訊號是否受干擾。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "日出時間不足以回答未知物質的內分泌作用。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "同時檢查激素與受體反應，可區分分泌量與接收作用的問題。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "毛色未必能反映生殖器官成熟的調節機制。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "實驗設計",
+    "性激素"
+  ],
+  "representationType": "探究設計",
+  "misconceptionTargets": [
+    "用無關外觀代替機制證據"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "生殖成熟延遲可能來自激素不足或標的細胞反應異常，兩者都應檢測。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "體重增加不能排除生殖調節受干擾，因此須取得直接相關的生理證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

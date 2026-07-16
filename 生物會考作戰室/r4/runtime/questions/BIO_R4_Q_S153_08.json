@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S153_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S153"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "若兩生物同屬但不同種，哪項必定成立？",
+  "options": [
+    "牠們是同一個體",
+    "牠們所有特徵相同",
+    "牠們不同科",
+    "牠們位於同一個較上位的屬"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩個不同種的生物可各有許多個體，同屬不會把牠們變成同一個體。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "同屬表示共享部分分類特徵，不代表兩個不同種的全部特徵完全相同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "同一屬只能位於同一個上位科內，所以不能由同屬推出兩者不同科。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "題幹直接規定兩者同屬，因此兩個不同種都包含在同一個較上位屬中。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "限制分類推論"
+  ],
+  "representationType": "語意推論",
+  "misconceptionTargets": [
+    "同屬誤當同種"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "必要資訊核對只保留『同屬』必然帶來的共同歸屬，不加入個體或全部特徵。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "階層核對顯示不同種仍可共享同一個較上位屬，這項敘述沒有把相近誇大成相同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

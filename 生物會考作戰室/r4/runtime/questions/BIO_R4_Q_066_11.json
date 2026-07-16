@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_066_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S066"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "追蹤物由左心室注入後，第一次回到心臟時最可能在哪裡被偵測？",
+  "options": [
+    "左心房",
+    "左心室",
+    "右心房",
+    "肺泡內"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "追蹤物先走體循環，必須再經肺循環後才會回到左心房。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "由左心室送出後不會立即原路回到同一心室，需先走完整循環。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "體循環從左心室到全身，回流血第一次進入心臟的腔室是右心房。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "追蹤物在血管內流動，不會直接進入肺泡空氣作為第一次回心位置。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-037",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-037",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-031",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-034",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-016",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-026",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-039"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "抓住第一次回心這個限制，從左心室出發先完成的是體循環，因此回右心房。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若繼續追蹤才會到右心室、肺、左心房，不能把後續位置當成第一次。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

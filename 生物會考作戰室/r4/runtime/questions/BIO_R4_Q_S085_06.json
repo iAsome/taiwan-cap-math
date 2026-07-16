@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S085_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S085"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲能接收光刺激且視神經正常，卻無法辨認熟悉物品。依現有資料，下一步最應檢查何者？",
+  "options": [
+    "光是否能到達地球",
+    "腦部視覺訊息整合功能",
+    "腿部反射是否存在",
+    "胃的消化速度"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題幹已顯示眼能接收當下光刺激，無須追查天文問題。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "受器與傳入正常後，辨認困難需檢查腦部整合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "腿部反射與熟悉物品的視覺辨認不是同一路徑。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "胃的消化功能不能直接形成視覺知覺。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "系統診斷"
+  ],
+  "representationType": "功能情境",
+  "misconceptionTargets": [
+    "只檢查感覺器官而忽略腦"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-014"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "沿刺激、傳入、整合流程定位，剩餘關鍵是腦部判讀。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "眼已接收當下光線，腿部反射和胃部消化又不屬視覺辨認路徑，因此應接著檢查腦部整合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

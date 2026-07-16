@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_213_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S213"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S213",
+  "stem": "A報告最需要補強哪項資訊？",
+  "options": [
+    "設備顏色",
+    "公開原始逐日資料及解釋結果變異",
+    "更換方案名稱",
+    "刪除40%結果"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "設備顏色與去除率可信度無關。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "原始資料可查核計算並追查40至88%的變異。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "更換方案名稱並不會改善研究方法與資料透明度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "刪除低值會造成選擇性呈現。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "辨認資料透明度缺口"
+  ],
+  "representationType": "報告品質評估",
+  "misconceptionTargets": [
+    "公開方法就不需公開原始資料"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "變異大的資料尤其需要完整原始紀錄與條件說明。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "保留所有高低結果能避免只展示對方案有利的數據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

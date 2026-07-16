@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S113_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S113"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "太空艙種子有水與適溫卻不萌發，最優先檢查哪項條件？",
+  "options": [
+    "花瓣是否鮮豔",
+    "柱頭是否有花粉",
+    "艙內氧氣供應與種子胚的活性",
+    "果實是否仍連在母株"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "成熟種子萌發不再依賴花瓣顏色。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "授粉在種子形成前完成，非當前條件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "缺氧或胚失活都可解釋有水有溫仍不萌發。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "種子可離開母株萌發，不必連著果實。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "太空應用"
+  ],
+  "representationType": "問題解決",
+  "misconceptionTargets": [
+    "忽略氧氣與胚活性"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-021"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "已知水與溫度適合後，應沿共同萌發條件檢查氧氣，再確認種子本身是否存活。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "可設通氧組及胚活性測試，避免只靠外觀把不萌發種子判成死亡。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

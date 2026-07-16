@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_134_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S134"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "資料只提供親屬與填實狀態，沒有顯隱性規則。最穩妥的結論為何？",
+  "options": [
+    "可確定所有基因型",
+    "填實者一定純合",
+    "空白者一定不帶版本",
+    "只能直接讀表現與親屬，基因型仍待規則"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "缺少遺傳模式，無法唯一確定所有基因型。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "填實不必然代表純合，取決於性狀模式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "空白者仍可能是未表現的攜帶者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此項正確限制目前資料能回答的範圍。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "在缺遺傳規則時強推基因型"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「只能直接讀表現與親屬，基因型仍待規則」保留可直接觀察資訊並指出基因型推論缺口。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "其他選項都把未提供的顯隱性假設偷偷加入。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

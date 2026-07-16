@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_136_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S136"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST136",
+  "stem": "醫院紀錄顯示某嬰兒為 O 型，而其生物學母親基因型為 IAIA。只根據 ABO 遺傳規則，哪一推論最合理？",
+  "options": [
+    "母親一定能提供 i，只是這次沒有表現",
+    "嬰兒的 O 型必由父親單獨決定",
+    "IA 會在嬰兒出生後自動變成 i",
+    "這組紀錄彼此不相容，應先複核檢體與紀錄"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "IAIA 母親形成的配子只帶 IA，不能提供形成 ii 所需的 i。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "O 型的 ii 必須由雙方各提供一個 i，不能只由父親完成。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "等位基因不會因出生而依需要自動轉換成另一版本。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "依規則該母親無法產生 ii 子代，先查核資料比直接下身分結論妥當。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "以遺傳規則辨認資料矛盾並提出審慎處置"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-011"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "遺傳模型可用來發現資料矛盾，但單一血型紀錄不足以直接認定親子關係或責任。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先複核採檢、標示與輸入流程，能區分紀錄錯誤與真正需要進一步檢驗的情況。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

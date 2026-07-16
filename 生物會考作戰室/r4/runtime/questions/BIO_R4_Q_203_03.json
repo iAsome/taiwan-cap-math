@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q_203_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S203"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-LB-4-3",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LC-MD-4-1",
+    "AUTH-NATURAL-LC-NA-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "判定採集是否永續，最重要的比較為何？",
+  "options": [
+    "採集者人數與服裝",
+    "產品價格與包裝",
+    "採集量與族群更新能力",
+    "道路長度與名稱"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "人數若無採集量仍不能判斷資源壓力。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "價格不能直接代表野外補充速度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "移除低於更新才可能長期維持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "道路資訊與資源收支沒有直接對應。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "辨認永續利用條件"
+  ],
+  "representationType": "資源收支",
+  "misconceptionTargets": [
+    "有利用就是永續或不永續"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-LB-4-3",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LC-MD-4-1",
+      "AUTH-NATURAL-LC-NA-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「採集量與族群更新能力」以族群收支定義永續，而非依市場標語。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "還需保留繁殖季與最低族群量，處理年際變異。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

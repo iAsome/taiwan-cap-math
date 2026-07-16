@@ -1,0 +1,156 @@
+{
+  "id": "BIO_R4_L_S217",
+  "subject": "biology",
+  "unitId": "BIO_R4_U30",
+  "skillId": "BIO_R4_S217",
+  "authorityRefs": [
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S216"
+  ],
+  "objectives": [
+    "區分相關趨勢與因果證據",
+    "評估因果推論所需的控制與時序"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S217_SEC_01",
+      "title": "相關趨勢",
+      "content": "兩變項一起增加、減少或反向變化，可描述為相關。相關能提出假說，但可能來自第三因素或抽樣方式，還要報告樣本數與變異。"
+    },
+    {
+      "id": "BIO_R4_L_S217_SEC_02",
+      "title": "時間順序",
+      "content": "若主張甲造成乙，甲應先於乙發生。時間順序是因果推論的必要線索，但只有先後仍不足以排除其他原因，也須確認測量間隔足以判定先後。"
+    },
+    {
+      "id": "BIO_R4_L_S217_SEC_03",
+      "title": "操弄與控制",
+      "content": "控制實驗主動改變甲並保持其他可能影響結果的條件一致，再測乙的反應，比單純觀察更能支持甲造成乙，並應以獨立樣本重複處理。"
+    },
+    {
+      "id": "BIO_R4_L_S217_SEC_04",
+      "title": "多項證據",
+      "content": "可信因果解釋通常結合可重複的控制實驗、合理機制、時間順序與不同研究結果，並說明限制與替代解釋；不同證據若衝突則需重新檢驗。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S217_EX_01",
+      "prompt": "氣溫與冰品銷量同升，可直接說冰品使氣溫升高嗎？",
+      "steps": [
+        "描述兩者為正相關",
+        "尋找季節炎熱這個共同因素"
+      ],
+      "answer": "不能直接作此因果結論。",
+      "why": "炎熱天氣可能同時提高氣溫與冰品銷量，觀察關聯沒有排除共同原因，也沒有操弄冰品銷量。"
+    },
+    {
+      "id": "BIO_R4_L_S217_EX_02",
+      "prompt": "隨機分組後只改肥料，植物生長不同，證據有何提升？",
+      "steps": [
+        "確認肥料先於生長結果",
+        "確認其他條件與分組方式受控制"
+      ],
+      "answer": "較能支持肥料造成生長差異。",
+      "why": "主動操弄肥料並控制其他條件，可降低原有差異與第三因素的影響，因此因果推論較強。"
+    },
+    {
+      "id": "BIO_R4_L_S217_EX_03",
+      "prompt": "睡眠少與成績低相關，還應調查什麼？",
+      "steps": [
+        "列出可能共同影響兩者的因素",
+        "收集壓力、健康或讀書時間資料"
+      ],
+      "answer": "應檢查可能的干擾因素。",
+      "why": "壓力可能同時減少睡眠並影響表現，若未測量與調整，就不能把成績差異只歸因睡眠。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "兩變項相關就表示其中一個必定造成另一個。",
+      "whyWrong": "第三因素、反向作用或抽樣偏差都可能形成相關。",
+      "correction": "需檢查時間先後、控制實驗、作用機制與可排除的替代解釋。"
+    },
+    {
+      "belief": "甲先發生、乙後發生就足以證明甲造成乙。",
+      "whyWrong": "共同原因也可能先後影響甲乙，只有時間順序仍不足。",
+      "correction": "還要加入適當控制比較，並檢查與排除合理的其他原因。"
+    },
+    {
+      "belief": "樣本很多就能把觀察研究變成控制實驗。",
+      "whyWrong": "大樣本提高估計穩定度，卻不會自動消除干擾因素。",
+      "correction": "仍要依研究設計與變因控制判斷因果強度。"
+    },
+    {
+      "belief": "一次控制實驗成功就能適用所有情境。",
+      "whyWrong": "物種、劑量、環境與時間不同時，結果可能改變。",
+      "correction": "以獨立重複和不同條件研究檢查適用範圍。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "兩變項同時上升可直接描述為什麼？",
+      "answer": "正相關。",
+      "reason": "共同上升描述關聯方向，但尚未確定其中一項造成另一項。"
+    },
+    {
+      "prompt": "因果推論為何要有時間順序？",
+      "answer": "原因應先於結果發生。",
+      "reason": "若結果早於所稱原因，該方向的因果說法就不合理。"
+    },
+    {
+      "prompt": "控制實驗如何提升因果證據？",
+      "answer": "操弄一項因素並固定其他條件。",
+      "reason": "組間差異集中在操弄因素，能減少第三因素的替代解釋。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

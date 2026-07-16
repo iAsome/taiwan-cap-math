@@ -1,0 +1,134 @@
+{
+  "id": "BIO_R4_L011",
+  "subject": "biology",
+  "unitId": "BIO_R4_U02",
+  "skillId": "BIO_R4_S011",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S010"
+  ],
+  "objectives": [
+    "能說明由低倍開始尋找標本的理由。",
+    "能依低倍視野中的位置把目標移到中央後再升高倍率。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L011_S1",
+      "title": "低倍先行",
+      "content": "低倍物鏡的視野範圍較大、亮度通常較高，且鏡頭與玻片距離較遠。初次搜尋時能看到較多標本，也較不容易因操作失誤撞擊玻片。"
+    },
+    {
+      "id": "BIO_R4_L011_S2",
+      "title": "放置與初焦",
+      "content": "把標本區域對準通光孔並以玻片夾固定，先調整亮度，再依安全程序用粗調與細調找到影像。若完全看不到，先回查光路與玻片位置。"
+    },
+    {
+      "id": "BIO_R4_L011_S3",
+      "title": "目標置中",
+      "content": "欲切換高倍前，必須把要看的細胞移到低倍視野中央。高倍視野只保留原視野中央附近，若目標停在邊緣，升倍後很容易消失。"
+    },
+    {
+      "id": "BIO_R4_L011_S4",
+      "title": "升倍後微調",
+      "content": "確認目標在中央後轉入高倍，通常只需調整光量與細調節輪。若目標消失，應先退回低倍重新找像與置中，不要在高倍下大幅亂移玻片。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L011_E1",
+      "prompt": "低倍視野中只有右上角看到一群細胞，下一步怎麼做？",
+      "steps": [
+        "先判斷要保留觀察的細胞群。",
+        "緩慢移動玻片，使該細胞群到視野中央。"
+      ],
+      "answer": "在低倍把目標置中，再切換高倍。",
+      "why": "高倍會縮小可見範圍，保留的是低倍中央附近；先置中能避免切換後找不到欲觀察部位。"
+    },
+    {
+      "id": "BIO_R4_L011_E2",
+      "prompt": "高倍下突然找不到標本，應如何恢復？",
+      "steps": [
+        "停止在高倍大幅移動，避免離目標更遠。",
+        "轉回低倍，重新找像、置中並確認清晰。"
+      ],
+      "answer": "退回低倍重新定位後再升高倍率。",
+      "why": "低倍視野大，較容易重新找到標本；高倍盲目搜尋範圍小，也增加鏡頭碰撞與錯失目標的風險。"
+    },
+    {
+      "id": "BIO_R4_L011_E3",
+      "prompt": "玻片已置中但低倍視野全黑，先查什麼？",
+      "steps": [
+        "確認光源、光圈與通光孔是否形成光路。",
+        "檢查標本區域是否真的位在通光孔上。"
+      ],
+      "answer": "先排除照明與玻片放置問題，再重新對焦。",
+      "why": "完全黑暗常表示光路未通或標本位置錯誤，直接升高倍率只會縮小視野，不能修復根本問題。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "高倍放大較多，所以尋找標本更快。",
+      "whyWrong": "高倍視野較小，只能看到低倍中央的一小部分，搜尋反而困難。",
+      "correction": "先用低倍安全找像與置中，再切高倍看細節。"
+    },
+    {
+      "belief": "低倍看到目標在邊緣也能直接升倍。",
+      "whyWrong": "高倍視野縮小後，邊緣目標通常會落在視野之外。",
+      "correction": "切換高倍前先把欲觀察部位移到低倍視野正中央。"
+    },
+    {
+      "belief": "高倍找不到就快速來回推玻片。",
+      "whyWrong": "大幅亂移可能使目標更遠，也會增加碰撞與玻片破損風險。",
+      "correction": "先退回低倍重建標本位置，再用小幅移動重新置中。"
+    },
+    {
+      "belief": "置中只為了讓圖看起來對稱。",
+      "whyWrong": "置中是保留目標於高倍小視野中的必要定位步驟。",
+      "correction": "把置中視為升倍前的功能性檢核，而非美觀要求。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "為何尋找標本要從低倍開始？",
+      "answer": "低倍視野大且工作距離較安全。",
+      "reason": "較大範圍可提高找到標本機會，也降低物鏡撞擊玻片的風險。"
+    },
+    {
+      "prompt": "切換高倍前，目標應位在哪裡？",
+      "answer": "低倍視野中央。",
+      "reason": "高倍只保留中央附近範圍，置中可防止目標在升倍後消失。"
+    },
+    {
+      "prompt": "高倍找不到標本時，最有效的復原步驟是什麼？",
+      "answer": "轉回低倍重新尋找與置中。",
+      "reason": "低倍擴大搜尋範圍，比在高倍盲目移動更安全且有效。"
+    }
+  ],
+  "assets": [
+    "BIO_R4_ASSET_MICROSCOPE"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  }
+}

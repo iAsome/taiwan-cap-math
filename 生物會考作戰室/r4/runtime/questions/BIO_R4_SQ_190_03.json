@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_SQ_190_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S190"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S190",
+  "stem": "若要比較另一草澤，哪項資料最能讓比較公平？",
+  "options": [
+    "只拍一隻最大的鳥",
+    "使用相同面積、時間與能量單位估算各階層",
+    "只記錄生物名稱不記面積",
+    "把另一地所有數值先改成10%"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單一個體不能代表整個營養階層總能量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "統一採樣尺度與單位，才能合理比較能量分布。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "缺少面積與時間，數值尺度無法一致。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "修改數據會破壞實際差異，不能作為比較方法。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "設計跨地點比較"
+  ],
+  "representationType": "研究方法",
+  "misconceptionTargets": [
+    "找最大個體就代表階層"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-038",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-041",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-003",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-028",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-023",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-020"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「使用相同面積、時間與能量單位估算各階層」控制面積、時間與單位，可降低尺度差異造成的偏誤。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "公平比較需保留實測結果，不能為符合示意模型而改寫資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_141_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S141"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "生物肥料使化學肥料用量下降，但作物產量相同。可如何描述效益？",
+  "options": [
+    "可能降低化學肥料投入而維持產量",
+    "證明生物肥料完全沒有微生物",
+    "表示土壤條件永遠不影響結果",
+    "代表任何作物都能取消所有肥料"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "在產量未降的前提下減少投入，是可量化的農業效益。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "生物肥料常含微生物，減少化肥不能證明其中沒有生物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "不同土壤可能影響效果，單次結果不能宣稱永遠無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "本作物與本條件的結果不能外推到任何作物和零肥料。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "由單一田間結果過度外推所有作物"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「可能降低化學肥料投入而維持產量」同時使用投入與產出兩個指標，避免只看其中一面。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "若要判斷環境收益，還應量測養分流失、土壤變化與製造運輸成本。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

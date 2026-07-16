@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0344",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S029"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某抑制劑使細胞吸收下降，為何仍不能立刻斷定它只阻斷主動運輸？",
+  "options": [
+    "所有抑制劑都沒有作用",
+    "吸收下降必定只是巧合",
+    "主動運輸不存在",
+    "抑制劑也可能損傷膜或影響其他生命活動"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "資料已顯示下降，不能先假定抑制劑都無作用。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "需重複與對照評估，不能無證據說必定巧合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "許多細胞確有需能量的運輸，不能直接否定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "非專一作用可能同時改變膜完整性或細胞健康，造成吸收下降。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "替代解釋"
+  ],
+  "representationType": "研究評估",
+  "misconceptionTargets": [
+    "抑制即專一"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "抑制實驗需有溶劑對照、細胞存活與膜完整性資料。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "觀察到相關變化後仍要排除其他受影響途徑，才能鎖定機制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

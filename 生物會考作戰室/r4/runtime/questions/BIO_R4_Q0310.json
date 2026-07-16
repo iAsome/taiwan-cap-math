@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0310",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S026"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "膜兩側濃度相同，但左到右五粒、右到左五粒。哪項描述最精確？",
+  "options": [
+    "沒有任何粒子跨膜",
+    "有雙向交換，淨移動量為零",
+    "淨十粒由左到右",
+    "淨五粒由右到左"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩方向各有五粒跨膜，並非沒有粒子移動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "相反方向的五粒互相抵銷，呈有交換但無淨量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "不能把相反方向直接相加成左到右。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩方向數量相等，右到左沒有剩餘淨量。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "流量判讀"
+  ],
+  "representationType": "雙向數據",
+  "misconceptionTargets": [
+    "有移動即有淨量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "淨量是相反方向流量的差，不是所有跨膜粒子的總數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "此資料直接展示動態平衡：微觀交換持續，巨觀分布穩定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

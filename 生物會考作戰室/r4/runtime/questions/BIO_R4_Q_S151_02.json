@@ -1,0 +1,90 @@
+{
+  "id": "BIO_R4_Q_S151_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S151"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲組為有翅，乙組為無翅。這組分類標準的優點是什麼？",
+  "options": [
+    "兩組數量一定相等",
+    "同一個體不會同時符合兩組",
+    "所有有翅生物都會飛",
+    "無翅生物都住地面"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "有翅與無翅只規定構造界線，完全沒有要求兩組收進相同數量的個體。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "針對同一時間的同一標本，翅的有與無互為否定，因此只能落入一組。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "有翅個體可能正在休息、受傷或翅未成熟，構造存在不能保證當下飛行。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "無翅只描述身體構造，蚯蚓可在土中、魚可在水中，無法決定共同棲地。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "判斷分類互斥性"
+  ],
+  "representationType": "規則判讀",
+  "misconceptionTargets": [
+    "誤以為分類需等量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-031",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-004",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-031",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-043",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-020",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-039",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-024",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-034"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "互斥性核對顯示，同一標本不可能同時被記為有翅與無翅，符合二分要求。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "行為與棲地核對顯示翅的有無不能保證飛行，也不能推定生物都住在地面。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

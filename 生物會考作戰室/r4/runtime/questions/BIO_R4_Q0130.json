@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q0130",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "學生低倍已對焦，卻在升倍前大幅移動玻片。最可能結果為何？",
+  "options": [
+    "標本自動更清楚",
+    "原先置中的目標可能離開高倍視野",
+    "倍率永久歸零",
+    "光源一定熄滅"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "移動位置不等於改善焦距，不能保證清晰。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "大幅位移會破壞置中，使小視野找不到目標。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "倍率由鏡頭組合決定，不會因推玻片歸零。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "玻片位移與電源開關沒有必然關係。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "結果預測"
+  ],
+  "representationType": "操作變化",
+  "misconceptionTargets": [
+    "置中後可大幅移動"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "高倍能看到的範圍有限，大幅移動會使原目標超出該範圍。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若發生遺失，應回低倍重新定位而不是繼續盲目推動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

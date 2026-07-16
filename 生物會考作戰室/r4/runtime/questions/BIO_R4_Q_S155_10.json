@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S155_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S155"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要比較兩地植物物種多樣性，哪種設計較公平？",
+  "options": [
+    "甲地查十次、乙地查一次",
+    "兩地用相同面積、季節與方法重複調查",
+    "甲用目測、乙只查網路",
+    "只記兩地最常見物種"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲地十次較容易發現稀有種，調查努力不等會讓比較偏向甲地。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "相同面積、季節與方法控制取樣差異，重複調查也降低單次偶然。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "目測與網路資料的時間及涵蓋範圍不同，兩地結果無法公平對照。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "只記最常見種會漏掉稀有與季節性植物，不能代表完整物種多樣性。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "設計多樣性調查"
+  ],
+  "representationType": "方法比較",
+  "misconceptionTargets": [
+    "忽略取樣努力"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-001"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "控制變因核對要求兩地只有地點不同，因此面積、季節與調查方法都須固定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "取樣努力核對確認兩地都重複同樣次數，發現物種的機會較為接近。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

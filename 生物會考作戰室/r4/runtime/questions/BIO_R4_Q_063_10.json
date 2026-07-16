@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_Q_063_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S063"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要比較運動前後呼吸變化，哪個設計較可靠？",
+  "options": [
+    "前後使用不同計時長度卻不換算",
+    "同一人、相同計時方法並重複測量",
+    "只憑感覺說很喘",
+    "運動前後換不同受試者"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "時間不同且不換算會失去可比性。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "同人同方法可降低個體與程序差異。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "主觀感覺缺少一致的量化標準，不適合取代呼吸次數等客觀數據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "換人會把個體差異混入前後比較。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "呼吸系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "前後比較需控制受試者與測量方法，並用重複檢查穩定性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「同一人、相同計時方法並重複測量」最能把差異合理連結到運動狀態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

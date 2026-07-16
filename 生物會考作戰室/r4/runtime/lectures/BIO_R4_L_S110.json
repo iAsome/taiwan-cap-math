@@ -1,0 +1,126 @@
+{
+  "id": "BIO_R4_L_S110",
+  "subject": "biology",
+  "unitId": "BIO_R4_U15",
+  "skillId": "BIO_R4_S110",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S109"
+  ],
+  "objectives": [
+    "說明花藥、花粉、雄性配子、胚珠與卵細胞之間的包含及形成關係。",
+    "依構造受損與追蹤資料，推論植物配子形成或受精受到的影響。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S110_SEC01",
+      "title": "花藥與花粉",
+      "content": "花藥是雄蕊的一部分，內部可形成許多花粉粒。成熟後花藥開裂，花粉才有機會離開花藥並被風或動物帶走，因此花藥與花粉不可視為同一層級。"
+    },
+    {
+      "id": "BIO_R4_L_S110_SEC02",
+      "title": "花粉與雄性配子",
+      "content": "花粉粒是能萌發並形成花粉管的構造，其中會形成或攜帶雄性配子。花粉粒不宜直接等同單一精細胞，判讀時要保留包含與運送的關係。"
+    },
+    {
+      "id": "BIO_R4_L_S110_SEC03",
+      "title": "子房與胚珠",
+      "content": "子房位在雌蕊基部，內部含一個或多個胚珠。胚珠中具有與雌性配子相關的構造，受精後胚珠通常發育成種子，因此子房、胚珠與卵細胞不是同義詞。"
+    },
+    {
+      "id": "BIO_R4_L_S110_SEC04",
+      "title": "配子相遇路徑",
+      "content": "花粉落到適合柱頭後萌發，花粉管沿花柱向子房生長，將雄性配子送往胚珠。雄性配子最後在胚珠內與卵細胞結合，完成受精。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S110_EX01",
+      "prompt": "花藥無法成熟開裂時，哪一過程最先受影響？",
+      "steps": [
+        "確認花粉形成於花藥內。",
+        "追蹤花粉離開花藥的必要步驟。"
+      ],
+      "answer": "花粉釋放。",
+      "why": "花藥即使形成花粉，若不能正常開裂，花粉仍難以散出並到達柱頭，後續傳粉機會會下降。"
+    },
+    {
+      "id": "BIO_R4_L_S110_EX02",
+      "prompt": "顯微觀察發現柱頭上花粉能萌發，卻無法形成花粉管，可能影響什麼？",
+      "steps": [
+        "辨認雄性配子需沿花粉管移動。",
+        "判斷胚珠內配子相遇是否可完成。"
+      ],
+      "answer": "雄性配子難以送到胚珠。",
+      "why": "花粉管連接柱頭與子房內胚珠，若無法形成，雄性配子便缺少正常運送路徑，受精率可能降低。"
+    },
+    {
+      "id": "BIO_R4_L_S110_EX03",
+      "prompt": "某子房有八個胚珠，受精後可能形成幾顆種子，還需哪些資料？",
+      "steps": [
+        "連結一個胚珠通常對應一顆種子。",
+        "檢查各胚珠是否都完成受精與發育。"
+      ],
+      "answer": "最多可能八顆，但須確認各胚珠是否成功。",
+      "why": "子房內胚珠數提供種子數上限線索，實際種子數仍受授粉、受精與胚珠後續發育是否正常影響。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "一粒花粉就是一個花藥。",
+      "whyWrong": "一個花藥內通常可形成並釋放許多花粉粒。",
+      "correction": "花藥是產生花粉的構造，花粉是由其中形成的粒狀構造。"
+    },
+    {
+      "belief": "花粉粒與精細胞完全是同一個構造。",
+      "whyWrong": "花粉可萌發形成花粉管，並在其中形成或攜帶雄性配子。",
+      "correction": "應表述為花粉萌發形成運送路徑，將其中的雄性配子送往胚珠。"
+    },
+    {
+      "belief": "胚珠就是子房，兩個名稱可以互換。",
+      "whyWrong": "子房位於雌蕊基部並包覆內部一個或多個胚珠，兩者層級不同。",
+      "correction": "受精後胚珠多形成種子，子房則多發育成果實。"
+    },
+    {
+      "belief": "雄性配子在花藥內直接與卵細胞受精。",
+      "whyWrong": "卵細胞位於子房內的胚珠中，和產生花粉的花藥相隔一段運送路徑。",
+      "correction": "花粉管把雄性配子送入胚珠後，才可能與卵細胞結合。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "花粉形成於雄蕊的哪個部位？",
+      "answer": "花藥。",
+      "reason": "花藥內部能形成許多花粉粒，成熟後可釋放。"
+    },
+    {
+      "prompt": "雄性配子如何由柱頭抵達胚珠？",
+      "answer": "經花粉管運送。",
+      "reason": "花粉萌發形成的管狀構造可向子房內延伸。"
+    },
+    {
+      "prompt": "胚珠通常位於雌蕊的哪個構造內？",
+      "answer": "子房。",
+      "reason": "子房位於雌蕊基部，內部可含一個或多個胚珠。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

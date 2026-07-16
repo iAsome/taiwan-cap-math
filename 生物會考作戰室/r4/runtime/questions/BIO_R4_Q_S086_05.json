@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S086_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S086"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "每次燈號都在倒數三秒後出現，受試者反應逐漸變快。哪項是最需注意的誤差來源？",
+  "options": [
+    "受試者可能預測燈號而提前按鍵",
+    "燈號完全沒有出現",
+    "按鍵一定比神經傳導慢一小時",
+    "受試者的視網膜會在三次後消失"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "固定倒數使刺激可預測，可能量到預按而非純反應。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "已有反應時間資料，不能說燈號完全未出現。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一小時的說法與正常測量尺度明顯不符。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "視網膜不會因少量測試而消失。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "誤差分析"
+  ],
+  "representationType": "程序情境",
+  "misconceptionTargets": [
+    "忽略預期效應"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "刺激時刻可預測會系統性縮短測值，是合理的設計風險。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "已有測值表示燈號確實出現，按鍵延遲不會長達一小時，少量測試也不會使視網膜消失。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

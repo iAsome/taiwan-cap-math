@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q0216",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S018"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "病理切片中細胞核位置不在正中央，最合理的判讀為何？",
+  "options": [
+    "一定不是細胞核",
+    "切片必定造假",
+    "所有細胞構造都失效",
+    "核位置可因細胞類型與切面而異，需結合形態染色判斷"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "細胞核不必固定在正中央，不能據此完全排除。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "位置偏移可能是真實結構或切面效果，不足以指控造假。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一個構造位置不同不代表所有細胞功能都失效。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "多項證據綜合判斷能處理細胞差異與二維切片限制。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "情境判讀"
+  ],
+  "representationType": "病理切片",
+  "misconceptionTargets": [
+    "核必定居中"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "真實細胞的核位置具有變異，切片也只呈現三維細胞的一個平面。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "染色、邊界與鄰近構造共同提供比固定中央規則更可靠的判讀。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

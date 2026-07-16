@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_070_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S070"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S070",
+  "stem": "哪個情境達到基準反應最快？",
+  "options": [
+    "三者都需八天",
+    "初次接觸甲",
+    "首次接觸乙",
+    "再次接觸甲"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "三組時間分別為七、二、八天，不能說都需要八天。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "初次甲需要七天，並不是表中達到基準最快的情境。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "首次乙需要八天，是三個情境中所需時間最長者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "再次甲只需兩天，少於初次甲七天與首次乙八天。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "直接比較達基準時間，數字越小表示反應啟動到基準越快。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "再次甲同時具有較快與較高反應，後續題可用來判斷免疫記憶。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,128 @@
+{
+  "id": "BIO_R4_L_S076",
+  "subject": "biology",
+  "unitId": "BIO_R4_U10",
+  "skillId": "BIO_R4_S076",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S075"
+  ],
+  "objectives": [
+    "計算飲水、食物與代謝產水相對於尿液、汗液、呼氣及糞便的水分收支",
+    "依活動與環境資料判斷補水需求及短期水分平衡"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S076_SEC_01",
+      "title": "水分有多種來源",
+      "content": "人體水分來源包括飲水、食物中的水及少量代謝產水。比較收支時應把同一段時間內各來源相加，不能只看直接喝下的水量。"
+    },
+    {
+      "id": "BIO_R4_L_S076_SEC_02",
+      "title": "水分由多途徑流失",
+      "content": "尿液、汗液、呼出氣水氣與糞便都會帶走水分。即使沒有流汗或排尿，呼吸與皮膚仍可能持續造成不易察覺的水分流失。"
+    },
+    {
+      "id": "BIO_R4_L_S076_SEC_03",
+      "title": "收支差代表趨勢",
+      "content": "同一時段攝取總量減去流失總量，可估計水分淨變化。負值表示該時段流失較多，需留意補充；正值也不代表水可無限制累積，身體會調節尿量。"
+    },
+    {
+      "id": "BIO_R4_L_S076_SEC_04",
+      "title": "活動與環境改變需求",
+      "content": "運動、高溫或乾燥環境常增加汗液或呼吸水分流失。補水策略要考慮活動時間、強度、環境與個體狀態，不能用固定單一數字套用所有人。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S076_EX_01",
+      "prompt": "兩小時攝取700毫升、流失900毫升，水分淨變化為何？",
+      "steps": [
+        "用攝取總量減去流失總量",
+        "判斷正負值代表的方向"
+      ],
+      "answer": "淨減少200毫升",
+      "why": "七百減九百等於負二百，表示這兩小時流失量比攝取量多二百毫升；此為估計收支，不表示所有水分都來自血液。"
+    },
+    {
+      "id": "BIO_R4_L_S076_EX_02",
+      "prompt": "沒有排尿是否代表完全沒有水分流失？",
+      "steps": [
+        "列出尿液以外的流失途徑",
+        "檢查呼吸與皮膚是否仍運作"
+      ],
+      "answer": "不是，仍可經汗液、皮膚、呼氣與糞便失水",
+      "why": "尿液只是水分流失途徑之一；呼出氣含水氣，皮膚也會有水分散失，因此短時間沒有排尿仍不能把總流失量視為零。"
+    },
+    {
+      "id": "BIO_R4_L_S076_EX_03",
+      "prompt": "相同飲水量下，炎熱跑步者為何較需留意補水？",
+      "steps": [
+        "比較環境與活動造成的汗量",
+        "把增加的流失納入總收支"
+      ],
+      "answer": "汗液與呼吸流失可能增加，使淨水分更易下降",
+      "why": "炎熱運動會提高散熱與換氣需求，汗液及呼吸水分常增加；若攝取量不變，總流失可能超過攝取而造成較大的負收支。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "水分攝取只包括直接喝水",
+      "whyWrong": "食物含水與代謝產水也可成為人體水分來源。",
+      "correction": "計算總攝取時應納入飲水、食物水分與題目提供的代謝產水。"
+    },
+    {
+      "belief": "一天沒有流汗就完全不會失水",
+      "whyWrong": "呼氣、皮膚不顯性散失、尿液與糞便仍可帶走水分。",
+      "correction": "總流失需逐項相加，不能只用肉眼可見的汗液代表全部途徑。"
+    },
+    {
+      "belief": "攝取比流失多就可以無限制繼續喝水",
+      "whyWrong": "身體調節有範圍，短時間過量攝取也可能造成水鹽失衡。",
+      "correction": "補水應依實際流失與健康情況調整，不追求越多越好的單一目標。"
+    },
+    {
+      "belief": "同樣活動下每個人的失水量一定相同",
+      "whyWrong": "體型、適應、衣著、溫濕度與活動強度都可能造成差異。",
+      "correction": "個人補水要結合量測與症狀，群體平均值不能取代每人的狀態。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "水分收支如何計算？",
+      "answer": "同時段攝取總量減去流失總量",
+      "reason": "統一時間並加總所有來源與途徑，才能判斷水分淨增加或淨減少。"
+    },
+    {
+      "prompt": "沒有排尿仍可能由哪些途徑失水？",
+      "answer": "呼氣、皮膚或汗液及糞便",
+      "reason": "人體持續呼吸且體表會散失水分，因此尿量零不等於總流失量零。"
+    },
+    {
+      "prompt": "炎熱運動為何常增加補水需求？",
+      "answer": "汗液與呼吸水分流失通常上升",
+      "reason": "身體為散熱與供應活動提高出汗和換氣，使總流失量更容易超過攝取。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

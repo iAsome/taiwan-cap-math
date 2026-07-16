@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_068_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "三十秒測得脈搏四十次，換算成每分鐘為多少次？",
+  "options": [
+    "四十",
+    "八十",
+    "一百二十",
+    "一百六十"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "四十是三十秒內的原始計數，尚未換算成一分鐘。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "一分鐘為三十秒的兩倍，因此四十乘以二得到八十次。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一百二十相當於把四十乘三，與時間倍數不相符。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一百六十相當於把四十乘四，那是十五秒計數的換算法。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先比較量測時間與六十秒的倍數，三十秒資料只需要乘以二。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "換算假設這段時間內速率近似穩定，結果才可與每分鐘資料比較。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

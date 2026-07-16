@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_SQ_190_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S190"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S190",
+  "stem": "依表中數據，哪一項能量大小關係正確？",
+  "options": [
+    "植食昆蟲＞莎草＞食蟲鳥",
+    "食蟲鳥＞植食昆蟲＞莎草",
+    "三者完全相等",
+    "莎草＞植食昆蟲＞食蟲鳥"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "植食昆蟲的2600小於莎草的20000。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此項把表中由多至少的順序完全反轉。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "三個數值明顯不同，不能視為相等。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "20000大於2600，2600又大於210。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "比較階層能量"
+  ],
+  "representationType": "數據表格",
+  "misconceptionTargets": [
+    "最高階能量最大"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-038",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-041",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-003",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-028",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-023",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-020"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "直接比較同單位數值，可見能量沿營養階層逐級下降。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「莎草＞植食昆蟲＞食蟲鳥」符合表格，也符合生產者到高階消費者的一般趨勢。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S097_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S097"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "設計以馬達、拉索、硬桿和轉軸組成的機械臂，哪個配置最接近人體屈肘？",
+  "options": [
+    "馬達直接把硬桿融化",
+    "拉索不連硬桿只在空中縮短",
+    "馬達拉緊跨過轉軸的拉索，使硬桿繞轉軸轉動",
+    "轉軸伸長把硬桿推走"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "人體屈肘依靠拉力傳遞，並不需要把骨骼融化。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "拉索未連硬桿就難以傳遞力量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "馬達、拉索、硬桿與轉軸分別對應產力與運動構造。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "關節不靠主動伸長推動骨骼。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "機械臂"
+  ],
+  "representationType": "遷移應用",
+  "misconceptionTargets": [
+    "元件存在即可運動"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "有效仿生配置須讓力量經連接構造傳到槓桿，並跨越可動轉軸。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "此設計能分別對應肌肉、肌腱、骨骼與關節的功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

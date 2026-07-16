@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_192_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S192"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S192",
+  "stem": "若只保留第1秒與第4秒，刪除吞食及標記紀錄，最適合的結論為何？",
+  "options": [
+    "已證明鷸一定吃小蟹",
+    "已證明小蟹吃鷸",
+    "只能描述兩者移動，尚不足確立攝食關係",
+    "兩者必定互相攝食"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "接近行為可能有其他原因，證據尚不足。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "小蟹移動沒有顯示牠攝食鷸。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "移動事實可描述，但缺少誰吃誰的直接證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "雙向攝食需要兩個方向的食性證據。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "評估刪減證據後結論"
+  ],
+  "representationType": "證據充分性",
+  "misconceptionTargets": [
+    "移動足以證明攝食"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "刪去關鍵紀錄後，只剩空間移動，不能建立食物鏈。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「只能描述兩者移動，尚不足確立攝食關係」清楚劃分可觀察事實與仍待驗證的解釋。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

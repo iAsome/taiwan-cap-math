@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q_S181_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S181"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "樣區大小不同時，最適合先做哪項處理？",
+  "options": [
+    "直接把所有原始數字相加",
+    "只保留最大樣區",
+    "換算各樣區的單位面積密度",
+    "把小樣區數量改成零"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "原始數量受面積影響，直接相加無法公平比較。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "刪除其他樣區會浪費資料並增加偏差。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "個體數除以面積後可得到共同密度尺度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "任意改值會破壞原始觀察與估計。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "標準化樣區資料"
+  ],
+  "representationType": "資料處理",
+  "misconceptionTargets": [
+    "不同面積可直接平均"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-027",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-014",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-021"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "尺度核對不同面積必須轉為每平方公尺等共同單位。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "保留核對換算利用全部樣區，不需要刪除或竄改資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

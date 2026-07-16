@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S082_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S082"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "腳底受器正常，但刺激訊息無法到達脊髓。最直接受影響的是哪個環節？",
+  "options": [
+    "傳入路徑",
+    "肌肉收縮",
+    "腦產生命令",
+    "腺體分泌"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "受器到脊髓是朝中樞前進的傳入路徑。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題幹尚未提供肌肉是否收縮的直接資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "訊息未到中樞前，不能先定位在命令產生。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "腺體分泌與腳底感覺傳入沒有直接對應。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "因果判斷"
+  ],
+  "representationType": "受損情境",
+  "misconceptionTargets": [
+    "跳過已知中斷位置"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-024",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-024",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-009",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-012"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "依訊息中止的兩端定位，問題就在受器與脊髓之間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題幹直接描述傳入失敗，不需推測後續肌肉或腺體。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

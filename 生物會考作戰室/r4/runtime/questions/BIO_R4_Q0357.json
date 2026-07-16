@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0357",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "若要找出何時接近平衡，最合適的資料收集方式為何？",
+  "options": [
+    "固定濃度並在多個時間點測量質量",
+    "每個時間點改用不同濃度",
+    "只測開始前一次",
+    "只記錄試材顏色"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "連續時間資料可顯示變化量何時逐漸趨近零。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "同時改濃度會使時間趨勢難以解讀。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "只有起始值無法知道後續何時穩定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "顏色通常不是淨水移動的量化指標。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "時間序列設計"
+  ],
+  "representationType": "研究設計",
+  "misconceptionTargets": [
+    "單終點判平衡"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "接近平衡表現在曲線斜率逐漸接近零，需要多個時間點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "每次取樣方式也要一致，避免擦拭或稱量操作造成系統差異。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

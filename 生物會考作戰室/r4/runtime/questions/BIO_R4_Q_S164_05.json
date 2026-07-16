@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S164_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S164"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "產品廣告只列使用者心得，缺少比較組。主要限制是什麼？",
+  "options": [
+    "無法估計未使用時的結果",
+    "文字太短",
+    "產品必定無效",
+    "使用者必定說謊"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "沒有未使用者作參照，無法知道未生病是否本來就會發生。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "限制來自研究設計，不是心得文字長短。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "證據不足不等於已證明產品完全無效，仍需公平研究。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "心得可能真實但受選擇與偶然影響，不能斷言每人說謊。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "評估心得證據"
+  ],
+  "representationType": "產品廣告",
+  "misconceptionTargets": [
+    "個人心得等於對照實驗"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "反事實核對要求未使用比較組，估計沒有產品時的疾病比例。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "選擇偏差核對注意廣告可能只呈現正面心得，與比較組問題不同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L131",
+  "subject": "biology",
+  "unitId": "BIO_R4_U18",
+  "skillId": "BIO_R4_S131",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S130"
+  ],
+  "objectives": [
+    "能以異型合子表現區分顯性與隱性。",
+    "能避免把顯性誤解為較好、較常見或較強。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L131_SEC1",
+      "title": "顯性與隱性的定義",
+      "content": "在簡化單基因模型中，異型合子同時具有兩種基因版本時，能表現在表現型上的版本稱顯性，未表現的版本稱隱性。這是版本間表現關係。"
+    },
+    {
+      "id": "BIO_R4_L131_SEC2",
+      "title": "三種基因型",
+      "content": "以A為顯性、a為隱性時，AA與Aa通常呈顯性表現，aa呈隱性表現。只看顯性表現不能區分AA與Aa，需更多親代或子代資料，因為兩者都含有A版本。"
+    },
+    {
+      "id": "BIO_R4_L131_SEC3",
+      "title": "名稱不代表價值",
+      "content": "顯性不表示版本較健康、較強或在族群中較多；隱性也不表示一定稀少或有害。常見程度由族群中的版本頻率決定，與顯隱性定義不同。"
+    },
+    {
+      "id": "BIO_R4_L131_SEC4",
+      "title": "適用模型範圍",
+      "content": "完全顯性是常用基礎模型，真實遺傳還可能有不完全顯性、共顯性與多基因性狀。題目若未提供完全顯性條件，不應任意套用。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L131_EX1",
+      "prompt": "Aa呈紫花，哪個版本為顯性？",
+      "steps": [
+        "確認Aa同時有A與a。",
+        "找出異型合子實際呈現的性狀版本。"
+      ],
+      "answer": "A為顯性。",
+      "why": "異型合子中A所對應的紫花表現可被觀察，因此依定義A為顯性、a為隱性，判準來自異型合子的實際表現。"
+    },
+    {
+      "id": "BIO_R4_L131_EX2",
+      "prompt": "一株呈顯性表現，能否直接斷定為AA？",
+      "steps": [
+        "列出可呈顯性表現的基因型。",
+        "檢查是否有子代或檢測資料排除Aa。"
+      ],
+      "answer": "不能，可能是AA或Aa。",
+      "why": "完全顯性模型中兩種基因型表現相同，只靠外觀沒有足夠資訊區分，必須再找能揭露a版本的證據。"
+    },
+    {
+      "id": "BIO_R4_L131_EX3",
+      "prompt": "隱性性狀在某族群很常見，是否矛盾？",
+      "steps": [
+        "區分表現關係與版本頻率。",
+        "確認常見程度不是顯隱性定義。"
+      ],
+      "answer": "不矛盾。",
+      "why": "隱性描述異型合子中是否表現，不限制該版本在族群中的數量或性狀價值。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "顯性性狀一定比較常見。",
+      "whyWrong": "顯性定義只涉及異型合子表現，族群頻率可高也可低。",
+      "correction": "分開判斷表現規則與族群中的實際比例，不可用顯性名稱推估數量。"
+    },
+    {
+      "belief": "隱性版本一定比較弱或有害。",
+      "whyWrong": "隱性只表示在異型合子中未表現，不含健康與價值評語。",
+      "correction": "使用顯性、隱性描述版本關係，不用來評價好壞。"
+    },
+    {
+      "belief": "顯性表現一定是AA。",
+      "whyWrong": "AA與Aa都可能呈顯性表現，外觀相同不代表基因型唯一。",
+      "correction": "需要親代、子代或基因檢測資料排除其中一種。"
+    },
+    {
+      "belief": "任何性狀都符合完全顯性。",
+      "whyWrong": "真實性狀還有共顯性、不完全顯性與多基因等模式。",
+      "correction": "先讀題目提供的遺傳規則，再決定能否使用A與a模型。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Aa呈A所對應性狀時，哪個版本顯性？",
+      "answer": "A。",
+      "reason": "異型合子呈現哪個版本的性狀，就以該版本為顯性。"
+    },
+    {
+      "prompt": "顯性表現個體可能有哪些基因型？",
+      "answer": "AA或Aa。",
+      "reason": "完全顯性下，一個A就足以呈現顯性表現，只有aa才會呈隱性。"
+    },
+    {
+      "prompt": "顯性是否等於族群中較常見？",
+      "answer": "不等於。",
+      "reason": "顯隱性是表現關係，常見程度是版本頻率，兩者不同。"
+    }
+  ],
+  "assets": [
+    "BIO_R4_ASSET_GENETICS"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

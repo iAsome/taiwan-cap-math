@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S094_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S094"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "關於同一器官接受激素調節的敘述，何者正確？",
+  "options": [
+    "只能接受最先到達的一種激素",
+    "只要有血液就對所有激素反應",
+    "可具有多類受體並整合不同激素訊號",
+    "一旦接受激素就永久維持同一活動"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "器官細胞可同時具有多種受體，不以到達先後決定全部反應。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "血液運送不代表細胞具有每種激素的受體。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "多類受體使器官可依不同訊號調整活動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "激素濃度與生理需求會變化，器官活動也可調整。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "訊號整合"
+  ],
+  "representationType": "概念辨識",
+  "misconceptionTargets": [
+    "一個器官只受一種激素控制"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "同一器官通常參與多項生理功能，因此能整合多種調節訊號。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "是否反應仍取決於受體，不能因激素經過就推論器官必定反應。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
