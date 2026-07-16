@@ -1,0 +1,70 @@
+{
+  "id": "EARTH_R4_ST_124",
+  "subject": "earth_science",
+  "unitId": "EARTH_R4_U17",
+  "skillIds": [
+    "EARTH_R4_S124"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-IB-4-5",
+    "AUTH-NATURAL-LC-IB-4-6",
+    "AUTH-NATURAL-LC-ING-4-1",
+    "AUTH-NATURAL-LC-MD-4-2",
+    "AUTH-NATURAL-LC-MD-4-3",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "type": "data-table-and-scenario",
+  "content": {
+    "title": "由路徑暴風圈與預報時間判讀風險資料組",
+    "scenario": "比較兩版路徑預報的不確定性",
+    "table": {
+      "columns": [
+        "預報時效小時",
+        "中心可能範圍半徑公里",
+        "最大風速m/s",
+        "24小時雨量mm"
+      ],
+      "rows": [
+        [
+          0,
+          20,
+          38,
+          80
+        ],
+        [
+          24,
+          90,
+          35,
+          180
+        ],
+        [
+          48,
+          180,
+          32,
+          260
+        ]
+      ]
+    },
+    "readingGuide": "先讀欄位、單位、時間與資料範圍；圖形資訊均有下列資料表替代。",
+    "skillSpecificCriterion": "本資料組用來檢驗「由路徑暴風圈與預報時間判讀風險」；判準為「路徑、暴風圈、預報時間、雷達雨量與地形是風險判讀資料，預報錐表示中心可能範圍而非受災邊界」。"
+  },
+  "accessibility": {
+    "textAlternative": "由路徑暴風圈與預報時間判讀風險資料表。欄位為預報時效小時、中心可能範圍半徑公里、最大風速m/s、24小時雨量mm；共有3列。颱風眼較平靜不表示風暴結束；中心未登陸也可能帶來豪雨、長浪與暴潮。",
+    "colorIndependent": true,
+    "printSafe": true
+  },
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Earth Science content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-IB-4-5",
+      "AUTH-NATURAL-LC-IB-4-6",
+      "AUTH-NATURAL-LC-ING-4-1",
+      "AUTH-NATURAL-LC-MD-4-2",
+      "AUTH-NATURAL-LC-MD-4-3",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  }
+}

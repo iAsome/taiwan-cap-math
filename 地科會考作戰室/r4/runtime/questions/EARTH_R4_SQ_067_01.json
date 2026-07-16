@@ -1,0 +1,84 @@
+{
+  "id": "EARTH_R4_SQ_067_01",
+  "subject": "earth_science",
+  "skillIds": [
+    "EARTH_R4_S067"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-HB-4-1",
+    "AUTH-NATURAL-LC-HB-4-2",
+    "AUTH-NATURAL-LC-IA-4-1",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "EARTH_R4_ST_067",
+  "stem": "根據「由沉積接觸關係辨認地質事件順序」資料組，哪一項結論有充分支持？",
+  "options": [
+    "就「由沉積接觸關係辨認地質事件順序」而言，所有上方岩層都必定較新而無例外",
+    "就「由沉積接觸關係辨認地質事件順序」而言，表格有數字，所以任何因果解釋都成立。",
+    "就「由沉積接觸關係辨認地質事件順序」而言，忽略資料時間與位置，直接推論全世界永遠相同。",
+    "就「由沉積接觸關係辨認地質事件順序」而言，先讀欄位與單位，再以表中可比較的量解釋資料。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是常見迷思；地層可能翻轉、缺失或受侵蝕；證據不足時可能有多個合理序列。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "數值共變不自動證明因果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "結論超出資料涵蓋範圍。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "結論使用表中可比較的量，且與本技能的專屬判準一致。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "derive-from-shared-data"
+  ],
+  "representationType": "shared-data-table",
+  "misconceptionTargets": [
+    "所有上方岩層都必定較新而無例外"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Earth Science content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-HB-4-1",
+      "AUTH-NATURAL-LC-HB-4-2",
+      "AUTH-NATURAL-LC-IA-4-1",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "earth-science-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項代回「由沉積接觸關係辨認地質事件順序」的定義與證據鏈，只有「就「由沉積接觸關係辨認地質事件順序」而言，先讀欄位與單位，再以表中可比較的量解釋資料。」符合；未翻轉沉積層通常下老上新；切過其他構造的岩脈或斷層通常較晚形成。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "earth-science-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "另從反例與邊界條件檢查四項，答案不依選項位置或語病，仍唯一指向「就「由沉積接觸關係辨認地質事件順序」而言，先讀欄位與單位，再以表中可比較的量解釋資料。」。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "EARTH_R4_ASSET_STRATIGRAPHY"
+  ]
+}

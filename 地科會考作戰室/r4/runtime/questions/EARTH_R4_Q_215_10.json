@@ -1,0 +1,114 @@
+{
+  "id": "EARTH_R4_Q_215_10",
+  "subject": "earth_science",
+  "skillIds": [
+    "EARTH_R4_S215"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-MB-4-2",
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "情境：把衛星像元與地面測站對準。附表提供「由多變量資料找出關聯並避免直接斷言因果」相關資料。開始比較前，哪個做法正確？",
+  "options": [
+    "就「由多變量資料找出關聯並避免直接斷言因果」而言，先核對表格欄位、單位與觀測範圍，再提出可檢驗問題。",
+    "就「由多變量資料找出關聯並避免直接斷言因果」而言，只找全表最大數字，不管它屬於哪個欄位。",
+    "就「由多變量資料找出關聯並避免直接斷言因果」而言，把缺值視為零，且不在結論中說明。",
+    "就「由多變量資料找出關聯並避免直接斷言因果」而言，只要資料列很多，就省略來源與取樣方式。"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "表格判讀必須先確認資料語意、技能判準與可比較性。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "不同欄位可能是不同變因與單位。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "缺值不是量測到零，會扭曲比較。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "樣本數無法補救來源不明或系統偏差。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "interpret-structured-data"
+  ],
+  "representationType": "data-table",
+  "misconceptionTargets": [
+    "刪除不合預期資料就能提高品質"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Earth Science content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-MB-4-2",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "earth-science-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐項代回「由多變量資料找出關聯並避免直接斷言因果」的定義與證據鏈，只有「就「由多變量資料找出關聯並避免直接斷言因果」而言，先核對表格欄位、單位與觀測範圍，再提出可檢驗問題。」符合；資料品質包含來源、單位、取樣、解析度、缺值與校正；結論強度不能超過證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "earth-science-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "另從反例與邊界條件檢查四項，答案不依選項位置或語病，仍唯一指向「就「由多變量資料找出關聯並避免直接斷言因果」而言，先核對表格欄位、單位與觀測範圍，再提出可檢驗問題。」。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "EARTH_R4_ASSET_DATA_REASONING"
+  ]
+}

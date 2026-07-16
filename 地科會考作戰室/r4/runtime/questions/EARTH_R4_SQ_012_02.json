@@ -1,0 +1,78 @@
+{
+  "id": "EARTH_R4_SQ_012_02",
+  "subject": "earth_science",
+  "skillIds": [
+    "EARTH_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FA-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "EARTH_R4_ST_012",
+  "stem": "根據「辨識解理與斷口的差異」資料組，哪一項限制最需要寫入報告？",
+  "options": [
+    "就「辨識解理與斷口的差異」而言，資料列超過兩列，因此沒有任何不確定性。",
+    "就「辨識解理與斷口的差異」而言，同時標示限制：風化、雜質與光線會改變外觀",
+    "就「辨識解理與斷口的差異」而言，圖表是電腦產生，所以來源必定正確。",
+    "就「辨識解理與斷口的差異」而言，結果符合預期，所以不必檢查反例。"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "樣本列數不會消除量測與取樣不確定性。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "這是由本技能判準、資料與模型範圍直接導出的必要限制。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "工具不會自動保證來源與推論品質。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "仍須檢查替代解釋與反例。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "evaluate-shared-data-limit"
+  ],
+  "representationType": "shared-data-table",
+  "misconceptionTargets": [
+    "硬度數值可直接相加比較"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Earth Science content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FA-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "earth-science-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項代回「辨識解理與斷口的差異」的定義與證據鏈，只有「就「辨識解理與斷口的差異」而言，同時標示限制：風化、雜質與光線會改變外觀」符合；鑑定需綜合條痕、光澤、硬度、解理、磁性等性質，不能只憑表面顏色。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "earth-science-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "另從反例與邊界條件檢查四項，答案不依選項位置或語病，仍唯一指向「就「辨識解理與斷口的差異」而言，同時標示限制：風化、雜質與光線會改變外觀」。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,88 @@
+{
+  "id": "EARTH_R4_Q_136_08",
+  "subject": "earth_science",
+  "skillIds": [
+    "EARTH_R4_S136"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-IB-4-6",
+    "AUTH-NATURAL-LC-IC-4-2",
+    "AUTH-NATURAL-LC-ID-4-1",
+    "AUTH-NATURAL-LC-ID-4-2",
+    "AUTH-NATURAL-LC-ID-4-3",
+    "AUTH-NATURAL-LC-ING-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "情境：檢查不同統計期間的氣候圖。處理「用多年資料檢查氣候結論而非單一事件」問題時，下列哪個推理順序最可靠？",
+  "options": [
+    "就「用多年資料檢查氣候結論而非單一事件」而言，先公布結論，再決定要量哪個變因。",
+    "就「用多年資料檢查氣候結論而非單一事件」而言，把不同時間與不同單位的資料直接相減。",
+    "就「用多年資料檢查氣候結論而非單一事件」而言，忽略反例，只保留最符合預期的一次觀察。",
+    "就「用多年資料檢查氣候結論而非單一事件」而言，依序執行：先分別找年溫差、最冷暖月與乾濕季"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "先定答案會造成確認偏誤。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "尚未對齊資料便運算，結果沒有意義。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "忽略變異與反例會高估結論強度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "順序保留從觀測、比較到結論的可檢核鏈。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "order-reasoning-steps"
+  ],
+  "representationType": "procedure",
+  "misconceptionTargets": [
+    "一年資料足以代表所有長期氣候"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Earth Science content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-IB-4-6",
+      "AUTH-NATURAL-LC-IC-4-2",
+      "AUTH-NATURAL-LC-ID-4-1",
+      "AUTH-NATURAL-LC-ID-4-2",
+      "AUTH-NATURAL-LC-ID-4-3",
+      "AUTH-NATURAL-LC-ING-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "earth-science-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項代回「用多年資料檢查氣候結論而非單一事件」的定義與證據鏈，只有「就「用多年資料檢查氣候結論而非單一事件」而言，依序執行：先分別找年溫差、最冷暖月與乾濕季」符合；月均溫與月降水圖須讀軸、單位、期間與資料年數，不能用單一天氣事件代替長期統計。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "earth-science-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "另從反例與邊界條件檢查四項，答案不依選項位置或語病，仍唯一指向「就「用多年資料檢查氣候結論而非單一事件」而言，依序執行：先分別找年溫差、最冷暖月與乾濕季」。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "EARTH_R4_ASSET_CLIMATE_GRAPH"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "EARTH_R4_SQ_150_01",
+  "subject": "earth_science",
+  "skillIds": [
+    "EARTH_R4_S150"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FB-4-1",
+    "AUTH-NATURAL-LC-FB-4-3",
+    "AUTH-NATURAL-LC-FB-4-4",
+    "AUTH-NATURAL-LC-ID-4-1",
+    "AUTH-NATURAL-LC-ID-4-3",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "EARTH_R4_ST_150",
+  "stem": "根據「判讀俯視與側視天體運動圖的一致關係」資料組，哪一項結論有充分支持？",
+  "options": [
+    "就「判讀俯視與側視天體運動圖的一致關係」而言，太陽每天實際繞地球一圈",
+    "就「判讀俯視與側視天體運動圖的一致關係」而言，表格有數字，所以任何因果解釋都成立。",
+    "就「判讀俯視與側視天體運動圖的一致關係」而言，先讀欄位與單位，再以表中可比較的量解釋資料。",
+    "就「判讀俯視與側視天體運動圖的一致關係」而言，忽略資料時間與位置，直接推論全世界永遠相同。"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是常見迷思；示意圖常同時放大天體並壓縮距離，圖上大小和距離通常不能直接當比例。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "數值共變不自動證明因果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "結論使用表中可比較的量，且與本技能的專屬判準一致。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "結論超出資料涵蓋範圍。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "derive-from-shared-data"
+  ],
+  "representationType": "shared-data-table",
+  "misconceptionTargets": [
+    "太陽每天實際繞地球一圈"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Earth Science content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FB-4-1",
+      "AUTH-NATURAL-LC-FB-4-3",
+      "AUTH-NATURAL-LC-FB-4-4",
+      "AUTH-NATURAL-LC-ID-4-1",
+      "AUTH-NATURAL-LC-ID-4-3",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "earth-science-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項代回「判讀俯視與側視天體運動圖的一致關係」的定義與證據鏈，只有「就「判讀俯視與側視天體運動圖的一致關係」而言，先讀欄位與單位，再以表中可比較的量解釋資料。」符合；判讀天體示意圖要先確認觀察方向、俯視或側視、比例是否失真以及光線方向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "earth-science-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "另從反例與邊界條件檢查四項，答案不依選項位置或語病，仍唯一指向「就「判讀俯視與側視天體運動圖的一致關係」而言，先讀欄位與單位，再以表中可比較的量解釋資料。」。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "EARTH_R4_ASSET_SKY"
+  ]
+}
