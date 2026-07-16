@@ -152,7 +152,8 @@ export async function loadChineseR4Source({ repoRoot = REPO_ROOT } = {}) {
   const stimulusQuestions = await readJson(path.join(root, "stimulus-questions.json"));
   const writingTasks = await readJson(path.join(root, "writing-tasks.json"));
   const assets = await readJson(path.join(root, "assets.json"));
-  return { units, stimuli, stimulusQuestions, writingTasks, assets };
+  const catalog = await readJson(path.join(root, "catalog.json"));
+  return { units, stimuli, stimulusQuestions, writingTasks, assets, catalog };
 }
 
 export async function validateChineseR4Source(source, { repoRoot = REPO_ROOT } = {}) {
@@ -165,6 +166,11 @@ export async function validateChineseR4Source(source, { repoRoot = REPO_ROOT } =
   assert.equal(source.stimulusQuestions.length, 1280, "Chinese requires four questions for each stimulus");
   assert.equal(source.writingTasks.length, 120, "Chinese requires 120 writing tasks");
   assert.equal(source.assets.length, 24, "Chinese mixed-media practice requires twelve data and twelve calligraphy assets");
+  assert.equal(source.catalog.schemaVersion, "cap8-r4-chinese-runtime-catalog-v1");
+  assert.equal(source.catalog.units.length, 48);
+  assert.equal(source.catalog.skills.length, 320);
+  assert.deepEqual(source.catalog.skills.map(({ id }) => id), skills.map(({ id }) => id), "runtime catalog skill order drift");
+  assert(source.catalog.skills.every((skill) => skills.some((record) => record.id === skill.id && record.unitId === skill.unitId && record.title === skill.title)), "runtime catalog differs from frozen skill graph");
 
   for (const asset of source.assets) validateAsset(asset, authorityIds);
   const assetIds = new Set(source.assets.map((asset) => asset.id));
@@ -228,9 +234,20 @@ export async function validateChineseR4Source(source, { repoRoot = REPO_ROOT } =
 export async function buildChineseR4({ repoRoot = REPO_ROOT } = {}) {
   const source = await loadChineseR4Source({ repoRoot });
   const counts = await validateChineseR4Source(source, { repoRoot });
+  const graph = await readJson(path.join(repoRoot, "tools", "cap8-r4", "authority", "frozen-authority-graph.json"));
   const subjectRoot = path.join(repoRoot, SUBJECT_FOLDER, "r4");
   const runtimeRoot = path.join(subjectRoot, "runtime");
   await replaceDirectory(path.join(runtimeRoot, "units"), source.units.map(({ name, value }) => [name, value]));
+  await replaceDirectory(path.join(runtimeRoot, "skills"), graph.skills.filter(({ subject }) => subject === "chinese").map((skill) => [`${skill.id}.json`, skill]));
+  await replaceDirectory(path.join(runtimeRoot, "authority"), graph.nodes.filter(({ reviewedSubjects }) => reviewedSubjects.includes("chinese")).map((node) => [`${node.id}.json`, {
+    id: node.id,
+    subject: "chinese",
+    kind: node.kind,
+    code: node.code,
+    text: node.text,
+    sourceIds: [node.sourceId],
+    applicable: true,
+  }]));
   await rm(path.join(runtimeRoot, "assets"), { recursive: true, force: true });
   await mkdir(path.join(runtimeRoot, "assets"), { recursive: true });
   await Promise.all(source.assets.map(async (asset) => writeFile(path.join(runtimeRoot, asset.file), await readFile(path.join(subjectRoot, "source", asset.file)))));
@@ -239,10 +256,11 @@ export async function buildChineseR4({ repoRoot = REPO_ROOT } = {}) {
     writeFile(path.join(runtimeRoot, "stimulus-questions.json"), json(source.stimulusQuestions), "utf8"),
     writeFile(path.join(runtimeRoot, "writing-tasks.json"), json(source.writingTasks), "utf8"),
     writeFile(path.join(runtimeRoot, "assets.json"), json(source.assets), "utf8"),
+    writeFile(path.join(runtimeRoot, "catalog.json"), json(source.catalog), "utf8"),
   ]);
   const sourceHashes = Object.fromEntries(await Promise.all([
     ...source.units.map(async ({ name }) => [name, sha256(await readFile(path.join(subjectRoot, "source", "units", name)))]),
-    ...["stimuli.json", "stimulus-questions.json", "writing-tasks.json", "assets.json"].map(async (name) => [name, sha256(await readFile(path.join(subjectRoot, "source", name)))]),
+    ...["stimuli.json", "stimulus-questions.json", "writing-tasks.json", "assets.json", "catalog.json"].map(async (name) => [name, sha256(await readFile(path.join(subjectRoot, "source", name)))]),
     ...source.assets.map(async ({ file }) => [file, sha256(await readFile(path.join(subjectRoot, "source", file)))]),
   ]));
   const manifest = {

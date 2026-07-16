@@ -7,7 +7,7 @@
   const nl = value => FRACTION_MARKUP.renderMath(value, esc).replace(/\n/g, "<br>");
   const letters = ["A", "B", "C", "D"];
   const abilityLabel = { identify: "擷取訊息", comprehend: "統整解釋", infer: "推論賞析" };
-  const viewNames = { home: "學習總覽", exam: "全範圍模擬考", quiz: "單元小考題庫", papers: "我的考卷", handbook: "國中國文全冊講義", atlas: "題型與技巧地圖", analysis: "逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" , paper: "官方考卷" };
+  const viewNames = { home: "學習總覽", r4: "R4 國文技能課程", exam: "全範圍模擬考", quiz: "R4 單元小考題庫", papers: "我的考卷", handbook: "舊版全冊講義", atlas: "題型與技巧地圖", analysis: "逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" , paper: "官方考卷" };
   let toastTimer;
 
   const state = {
@@ -26,7 +26,11 @@
     timerId: null,
     currentQuestion: 0,
     paperDateFilter: "all",
-    paperHistoryPage: 0
+    paperHistoryPage: 0,
+    r4UnitId: "CHI_R4_U01",
+    r4SkillId: "CHI_R4_S001",
+    r4Search: "",
+    writingIndex: 0
   };
 
   function formatDuration(seconds) {
@@ -48,25 +52,6 @@
     catch { return fallback; }
   }
 
-  function quizSignature(assessment) {
-    return assessment.questions.map(q => [q.unitId, q.quizLevel || "", q.text, q.choices?.join("|") || ""].join("∷")).join("§");
-  }
-
-  function uniqueQuizAssessment(quizId) {
-    const used = readJson(`capChinese.quizSignatures.${quizId}`, []);
-    for (let attempt = 0; attempt < 80; attempt++) {
-      const seed = Math.floor(Date.now() % 1000000000) + attempt * 9973 + Math.floor(Math.random() * 9000);
-      const assessment = window.EXAM_ENGINE.generateQuiz(quizId, seed);
-      const signature = quizSignature(assessment);
-      if (!used.includes(signature)) {
-        localStorage.setItem(`capChinese.quizSignatures.${quizId}`, JSON.stringify([signature, ...used].slice(0, 300)));
-        return assessment;
-      }
-    }
-    // ponytail: remembers 300 generated papers per quiz; after that, timestamp seed still changes values.
-    return window.EXAM_ENGINE.generateQuiz(quizId, Date.now());
-  }
-
   function paperHistory() { return readJson("capChinese.paperHistory", []); }
 
   function savePaperRecord(record) {
@@ -86,6 +71,7 @@
     document.body.classList.remove("menu-open");
     window.scrollTo({ top: 0, behavior: "smooth" });
     if (view === "exam") configureExamHeader();
+    if (view === "r4") renderR4().catch(showR4Error);
     if (view === "quiz") renderQuizCatalog();
     if (view === "papers") renderMyPapers();
     if (view === "handbook") renderHandbook();
@@ -97,11 +83,13 @@
   }
 
   function updateLearningProgress() {
-    const pct = Math.round(state.completed.size / units.length * 100);
-    $("#homeProgress").textContent = pct;
-    $(".score-ring").style.setProperty("--progress", `${pct * 3.6}deg`);
+    const legacyPct = Math.round(state.completed.size / units.length * 100);
+    const r4Progress = window.CHINESE_R4.catalog ? window.CHINESE_R4.progress().completedSkills.length / window.CHINESE_R4.catalog.skills.length : 0;
+    const r4Pct = Math.round(r4Progress * 100);
+    $("#homeProgress").textContent = r4Pct;
+    $(".score-ring").style.setProperty("--progress", `${r4Pct * 3.6}deg`);
     $("#completedUnits").textContent = `${state.completed.size} / ${units.length}`;
-    $("#handbookBar").style.width = `${pct}%`;
+    $("#handbookBar").style.width = `${legacyPct}%`;
   }
 
   function filteredUnits() {
@@ -267,8 +255,6 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     $("#auditCount").textContent = state.tipVerdict === "all" && !q ? tipAudits.length : `${list.length}/${tipAudits.length}`;
   }
 
-  function gradeName(grade) { return grade === 7 ? "一" : grade === 8 ? "二" : "三"; }
-
   function capItemsForUnits(unitIds) {
     const scope = new Set(unitIds);
     return Object.keys(capAnalysis.primaryUnits).map(Number).sort((a, b) => b - a).flatMap(year => {
@@ -279,70 +265,90 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     });
   }
 
-  function capSummary(item, compact = false) {
-    const items = capItemsForUnits(item.capUnitIds || item.unitIds);
-    const preview = items.slice(0, compact ? 6 : 10).map(x => `<span>${esc(x.label)}</span>`).join("");
-    return `<div class="quiz-cap-tags"><strong>會考標註 ${items.length} 題</strong><small>已完整轉錄年度主概念回查</small><div class="quiz-cap-preview">${preview || "<span>已建置年度尚未列為主概念；仍依課綱出題</span>"}</div></div>`;
+  function showR4Error(error) {
+    console.error("R4 render failed:", error);
+    const host = $("#r4Lesson");
+    if (host) host.innerHTML = `<div class="unit-empty" role="alert">R4 靜態資料載入失敗：${esc(error.message)}</div>`;
   }
 
-  function quizCard(item) {
-    const scopeUnits = item.unitIds.map(id => units.find(unit => unit.id === id)?.title).filter(Boolean);
-    const isChapter = item.scope === "chapter";
-    return `<article class="quiz-card ${item.term === "總複習" ? "total" : ""} ${isChapter ? "chapter" : ""}">
-      <div class="quiz-card-top"><span>${esc(isChapter ? `${item.book} ${item.chapter}` : item.term)}</span><small>${item.questionCount || 12} 題｜${item.minutes || 25} 分鐘</small></div>
-      <h3>${esc(item.title)}</h3>
-      <p>${isChapter ? "本單元獨立題庫，交卷後逐題顯示判斷方法、詳解、技巧與易錯點。" : "四選一、即時計分、逐題詳解；題目只從此範圍生成。"}</p>
-      <div class="quiz-unit-list">${scopeUnits.map(title => `<span>${esc(title)}</span>`).join("")}</div>
-      ${capSummary(item, true)}
-      <small class="quiz-official-code">課綱分類：${esc(item.officialCodes)}</small>
-      <a class="primary" href="?quiz=${item.id}">開始作答 →</a>
-    </article>`;
+  function r4AssetHtml(asset) {
+    const table = asset.dataTable ? `<table><thead><tr>${asset.dataTable.columns.map(value => `<th>${esc(value)}</th>`).join("")}</tr></thead><tbody>${asset.dataTable.rows.map(row => `<tr>${row.map(value => `<td>${esc(value)}</td>`).join("")}</tr>`).join("")}</tbody></table>` : "";
+    return `<figure class="r4-asset"><img src="${esc(asset.url)}" alt="${esc(asset.alt)}"><figcaption>${esc(asset.caption)}</figcaption><details><summary>圖表完整文字與資料表</summary><p>${esc(asset.longDescription)}</p>${table}<small>來源與授權：${esc(asset.source)}｜${esc(asset.license)}</small></details></figure>`;
   }
 
-  function quizTrack(title, subtitle, items, grade, key) {
-    return `<details class="quiz-track" name="quiz-grade-${grade}" id="quiz-g${grade}-${key}">
-      <summary><span>${esc(title)}</span><small>${esc(subtitle)}</small><b>點開 →</b></summary>
-      <div class="quiz-track-body">
-        <div class="quiz-card-grid ${key === "review" ? "review-grid" : "chapter-grid"}">${items.map(quizCard).join("")}</div>
+  async function renderWritingTask() {
+    const tasks = await window.CHINESE_R4.getWritingTasks();
+    const task = tasks[state.writingIndex % tasks.length];
+    const mode = { "narrative-reflection": "敘事反思", "argumentative": "論說", "expository": "說明", "letter": "書信", "mixed-mode": "綜合表達" }[task.mode] || "完整寫作";
+    $("#r4WritingTask").innerHTML = `<article class="writing-card"><div><span>${esc(mode)}</span><small>${esc(task.id)}</small></div><h3>${esc(task.title)}</h3><p>${nl(task.prompt)}</p><div class="writing-grid"><section><h4>作答要求</h4><ul>${task.taskRequirements.map(value => `<li>${nl(value)}</li>`).join("")}</ul></section><section><h4>評分焦點</h4><ul>${task.scoringFocus.map(value => `<li>${nl(value)}</li>`).join("")}</ul></section></div></article>`;
+  }
+
+  async function renderR4() {
+    const catalog = window.CHINESE_R4.catalog;
+    if (!catalog) return;
+    const selectedUnit = catalog.units.find(unit => unit.id === state.r4UnitId) || catalog.units[0];
+    state.r4UnitId = selectedUnit.id;
+    const unitSelect = $("#r4UnitSelect");
+    unitSelect.innerHTML = catalog.units.map((unit, index) => `<option value="${unit.id}" ${unit.id === selectedUnit.id ? "selected" : ""}>${String(index + 1).padStart(2, "0")}｜${esc(unit.title)}</option>`).join("");
+    const query = state.r4Search.trim().toLowerCase();
+    const skills = selectedUnit.skillIds.map(id => catalog.skills.find(skill => skill.id === id)).filter(skill => skill && (!query || skill.title.toLowerCase().includes(query)));
+    if (!skills.some(skill => skill.id === state.r4SkillId)) state.r4SkillId = skills[0]?.id || selectedUnit.skillIds[0];
+    const completed = new Set(window.CHINESE_R4.progress().completedSkills);
+    $("#r4SkillList").innerHTML = skills.length ? skills.map((skill, index) => `<button class="${skill.id === state.r4SkillId ? "active" : ""}" data-r4-skill="${skill.id}"><span>${String(index + 1).padStart(2, "0")}</span><b>${esc(skill.title)}</b><i>${completed.has(skill.id) ? "✓" : ""}</i></button>`).join("") : `<p class="unit-empty">這個單元沒有符合的技能。</p>`;
+    const progressPercent = Math.round(completed.size / catalog.skills.length * 100);
+    $("#r4Completed").textContent = `${completed.size} / ${catalog.skills.length}`;
+    $("#r4ProgressBar").style.width = `${progressPercent}%`;
+    $$('[data-r4-skill]', $("#r4SkillList")).forEach(button => button.addEventListener("click", () => {
+      state.r4SkillId = button.dataset.r4Skill;
+      renderR4().catch(showR4Error);
+      if (window.innerWidth < 841) $("#r4Lesson").scrollIntoView({ behavior: "smooth", block: "start" });
+    }));
+
+    const unit = await window.CHINESE_R4.loadUnit(selectedUnit.id);
+    const lecture = unit.lectures.find(item => item.skillId === state.r4SkillId) || unit.lectures[0];
+    state.r4SkillId = lecture.skillId;
+    const skill = catalog.skills.find(item => item.id === lecture.skillId);
+    const assetRecords = await window.CHINESE_R4.getAssets(lecture.assets);
+    $("#r4Lesson").innerHTML = `<article class="unit-card r4-lesson-card">
+      <header class="unit-hero"><div class="unit-meta"><span>${esc(selectedUnit.title)}</span><span>${esc(lecture.skillId)}</span></div><h2>${esc(skill.title)}</h2><p>${lecture.objectives.map(nl).join("；")}</p></header>
+      <div class="unit-body">
+        ${lecture.sections.map(section => `<section class="lesson-block"><div class="lesson-label">${esc(section.title)}</div><div class="lesson-content"><p>${nl(section.content)}</p></div></section>`).join("")}
+        <section class="lesson-block"><div class="lesson-label">完整示例</div><div class="lesson-content r4-example-list">${lecture.workedExamples.map((example, index) => `<article><h3>示例 ${index + 1}</h3><p>${nl(example.prompt)}</p><ol>${example.steps.map(step => `<li>${nl(step)}</li>`).join("")}</ol><p><strong>答案：</strong>${nl(example.answer)}</p><p><strong>理由：</strong>${nl(example.why)}</p></article>`).join("")}</div></section>
+        <section class="lesson-block"><div class="lesson-label">迷思澄清</div><div class="lesson-content r4-misconceptions">${lecture.misconceptions.map((item, index) => `<article><h3>迷思 ${index + 1}</h3><p><strong>常見想法：</strong>${nl(item.belief)}</p><p><strong>問題：</strong>${nl(item.whyWrong)}</p><p><strong>修正：</strong>${nl(item.correction)}</p></article>`).join("")}</div></section>
+        <section class="lesson-block"><div class="lesson-label">診斷與遷移</div><div class="lesson-content r4-checks">${lecture.checks.map((item, index) => `<details><summary>練習 ${index + 1}｜${esc(item.prompt)}</summary><p><strong>答案：</strong>${nl(item.answer)}</p><p>${nl(item.reason)}</p></details>`).join("")}</div></section>
+        ${assetRecords.length ? `<section class="lesson-block"><div class="lesson-label">必要圖像</div><div class="lesson-content">${assetRecords.map(r4AssetHtml).join("")}</div></section>` : ""}
       </div>
-    </details>`;
+      <div class="r4-lesson-actions"><button class="complete-button ${completed.has(lecture.skillId) ? "done" : ""}" data-r4-complete="${lecture.skillId}">${completed.has(lecture.skillId) ? "✓ 已掌握（按一下取消）" : "標記為已掌握"}</button><a class="primary" href="?quiz=r4-skill-${lecture.skillId.match(/\d{3}$/u)[0]}">做 12 題技能練習 →</a></div>
+    </article>`;
+    $("[data-r4-complete]").addEventListener("click", event => {
+      const skillId = event.currentTarget.dataset.r4Complete;
+      window.CHINESE_R4.setSkillCompleted(skillId, !completed.has(skillId));
+      updateLearningProgress();
+      renderR4().catch(showR4Error);
+      toast(completed.has(skillId) ? "已取消掌握標記" : "已記錄為掌握技能");
+    });
+    await renderWritingTask();
   }
 
   function renderQuizCatalog() {
-    const catalog = window.EXAM_ENGINE.quizCatalog;
-    $("#quizCatalog").innerHTML = [7, 8, 9].map(grade => {
-      const chapters = catalog.filter(item => item.grade === grade && item.scope === "chapter");
-      const reviews = ["上學期", "下學期", "總複習"].map(term => catalog.find(item => item.grade === grade && item.scope === "term" && item.term === term)).filter(Boolean);
-      const upper = chapters.filter(item => item.term === "上學期");
-      const lower = chapters.filter(item => item.term === "下學期");
-      return `<section class="quiz-grade-section">
-        <div class="quiz-grade-heading"><h2>國${gradeName(grade)}</h2><span>先選上學期、下學期或總複習</span></div>
-        <div class="quiz-track-grid">
-          ${quizTrack("上學期", `${upper.length} 個單元小考`, upper, grade, "upper")}
-          ${quizTrack("下學期", `${lower.length} 個單元小考`, lower, grade, "lower")}
-          ${quizTrack("總複習", "上學期總複習、下學期總複習、全年總複習", reviews, grade, "review")}
-        </div>
-      </section>`;
-    }).join("");
+    const catalog = window.CHINESE_R4.catalog;
+    if (!catalog) return;
+    $("#quizCatalog").innerHTML = catalog.units.map((unit, index) => `<article class="quiz-card chapter">
+      <div class="quiz-card-top"><span>單元 ${String(index + 1).padStart(2, "0")}</span><small>12 題｜20 分鐘</small></div>
+      <h3>${esc(unit.title)}</h3>
+      <p>${unit.skillIds.length} 項技能輪流取題；只選取與排序已審核靜態題目。</p>
+      <small class="quiz-official-code">第四學習階段國語文課綱</small>
+      <a class="primary" href="?quiz=r4-unit-${String(index + 1).padStart(2, "0")}">開始作答 →</a>
+    </article>`).join("");
   }
 
   function renderChapterLedger() {
-    const chapters = window.EXAM_ENGINE.quizCatalog.filter(item => item.scope === "chapter");
-    const books = [...new Set(chapters.map(item => item.book))];
-    $("#unitChapterLedger").innerHTML = books.map(book => {
-      const items = chapters.filter(item => item.book === book);
-      const count = items.reduce((sum, item) => sum + capItemsForUnits(item.capUnitIds || item.unitIds).length, 0);
-      return `<details class="unit-book-ledger" open><summary><strong>${esc(book)}</strong><span>${items.length} 個單元｜會考主概念標註 ${count} 題</span><b>展開／收合</b></summary>
-        <div class="unit-chapter-list">${items.map(item => {
-          const capItems = capItemsForUnits(item.capUnitIds || item.unitIds);
-          const unitNames = item.unitIds.map(id => units.find(unit => unit.id === id)?.title).filter(Boolean).join("、");
-          return `<article class="unit-chapter-item">
-            <div><strong>${esc(item.title)}</strong><small>${esc(unitNames)}｜${esc(item.officialCodes)}</small></div>
-            <span>會考 ${capItems.length} 題</span>
-            <div class="unit-cap-list">${capItems.map(cap => `<i title="${esc(cap.unitTitle)}">${esc(cap.label)}</i>`).join("") || "<i>已建置年度未列為主概念；仍依課綱出題</i>"}</div>
-            <a href="?quiz=${item.id}">進入本單元小考 →</a>
-          </article>`;
-        }).join("")}</div>
+    const catalog = window.CHINESE_R4.catalog;
+    if (!catalog) return;
+    $("#unitChapterLedger").innerHTML = Array.from({ length: 6 }, (_, group) => {
+      const items = catalog.units.slice(group * 8, group * 8 + 8);
+      return `<details class="unit-book-ledger" ${group === 0 ? "open" : ""}><summary><strong>R4 單元 ${group * 8 + 1}–${group * 8 + items.length}</strong><span>${items.length} 個單元｜${items.reduce((sum, item) => sum + item.skillIds.length, 0)} 項技能</span><b>展開／收合</b></summary>
+        <div class="unit-chapter-list">${items.map((item, offset) => `<article class="unit-chapter-item"><div><strong>${esc(item.title)}</strong><small>${item.skillIds.length} 項技能｜第四學習階段國語文課綱</small></div><span>12 題單元小考</span><div class="unit-cap-list"><i>靜態題庫</i><i>逐選項理由</i></div><a href="?quiz=r4-unit-${String(group * 8 + offset + 1).padStart(2, "0")}">進入本單元小考 →</a></article>`).join("")}</div>
       </details>`;
     }).join("");
   }
@@ -415,7 +421,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   function configureExamHeader() {
     const isQuiz = state.exam?.kind === "quiz";
     const isArchive = state.exam?.kind === "archive";
-    $("#examEyebrow").textContent = PAPER_HISTORY_UI.examKindEyebrow(state.exam.kind);
+    $("#examEyebrow").textContent = PAPER_HISTORY_UI.examKindEyebrow(state.exam?.kind || "mock");
     $("#examTitle").textContent = isQuiz || isArchive ? state.exam.title : "會考國文模擬考";
     $("#examDescription").textContent = isQuiz
       ? `${state.exam.questions.length} 題四選一，共 ${state.exam.minutes || 15} 分鐘。範圍分類：${state.exam.officialCodes}。`
@@ -429,7 +435,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   }
 
   function launchAssessment(assessment) {
-    assessment = window.TEXT_ONLY_POLICY?.prepareTextOnlyExam?.(assessment, "chinese") || assessment;
+    if (!assessment.blueprint?.startsWith("reviewed-static-id-selection")) assessment = window.TEXT_ONLY_POLICY?.prepareTextOnlyExam?.(assessment, "chinese") || assessment;
     state.exam = assessment;
     state.answers = assessment.questions.map(() => null);
     state.submitted = false;
@@ -451,18 +457,30 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     $("#examWorkspace").scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  function beginExam() {
+  async function beginExam() {
     const seed = Math.max(1, Math.min(999999, Number($("#seedInput").value) || Math.floor(Date.now() % 999999)));
-    const level = Number($("#levelSelect").value) || 2;
-    const assessment = window.EXAM_ENGINE.generate(seed, level);
-    assessment.kind = "mock";
-    assessment.title = "國中教育會考國文科模擬題本";
-    assessment.minutes = 70;
-    launchAssessment(assessment);
-    localStorage.setItem("capChinese.lastSeed", seed);
+    try {
+      const assessment = await window.CHINESE_R4.mockAssessment(seed);
+      launchAssessment(assessment);
+      localStorage.setItem("capChinese.lastSeed", seed);
+    } catch (error) {
+      console.error(error);
+      toast(`靜態考卷載入失敗：${error.message}`);
+    }
   }
 
-  function beginQuiz(quizId) { launchAssessment(uniqueQuizAssessment(quizId)); }
+  async function beginQuiz(quizId) {
+    const seed = Math.max(1, Number(new URLSearchParams(location.search).get("seed")) || Math.floor(Date.now() % 999999));
+    const unitMatch = /^r4-unit-(\d{2})$/u.exec(quizId);
+    const skillMatch = /^r4-skill-(\d{3})$/u.exec(quizId);
+    const assessment = unitMatch
+      ? await window.CHINESE_R4.unitAssessment(`CHI_R4_U${unitMatch[1]}`, seed)
+      : skillMatch
+      ? await window.CHINESE_R4.skillAssessment(`CHI_R4_S${skillMatch[1]}`, seed)
+      : null;
+    if (!assessment) throw new Error(`不支援的小考代碼：${quizId}`);
+    launchAssessment(assessment);
+  }
 
   function switchToFullExam() {
     clearInterval(state.timerId);
@@ -502,23 +520,24 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     if (!state.exam) return;
     const difficultyLabel = ["", "基礎", "核心", "進階", "整合", "高鑑別"];
     const qHtml = state.exam.questions.map((q, index) => {
-      const unit = units.find(item => item.id === q.unitId);
+      const unit = q.staticQuestionId ? { grade: 9, title: q.unitTitle } : units.find(item => item.id === q.unitId) || { grade: 9, title: q.unitTitle || "跨單元" };
       const choices = `<div class="choices">${q.choices.map((choice, ci) => {
         const attrs = EXAM_CHOICE_UI.choiceAttrs({ submitted: state.submitted, selected: state.answers[index] === ci, isAnswer: ci === q.answer });
         return EXAM_CHOICE_UI.choiceButton({ letter: letters[ci], textHtml: nl(choice), attrs, dataAttr: `data-choice="${index}:${ci}"`, disabled: state.submitted });
       }).join("")}</div>`;
       const passage = q.passageId && (!index || state.exam.questions[index - 1].passageId !== q.passageId) ? `<aside class="reading-passage"><p class="eyebrow">閱讀選文｜回答第 ${index + 1}～${index + state.exam.questions.filter(item => item.passageId === q.passageId).length} 題</p><h3>${esc(q.passageTitle || "共用選文")}</h3><p>${nl(q.passage)}</p></aside>` : "";
-      return `${passage}<article class="question" id="question-${index + 1}" data-question="${index}">
-        <div class="question-head"><span class="question-number">${index + 1}</span><div class="question-tags"><span class="question-tag grade">國${unit.grade === 7 ? "一" : unit.grade === 8 ? "二" : "三"}</span><span class="question-tag">${esc(unit.title)}</span>${q.quizLevel ? `<span class="question-tag level">${esc(q.quizLevel)}</span>` : ""}<span class="question-tag ability">${abilityLabel[q.ability] || "整合"}</span></div><span class="difficulty" aria-label="${difficultyLabel[q.difficulty]}">${"★".repeat(q.difficulty)}${"☆".repeat(5-q.difficulty)}</span></div>
+      const assetBlock = q.assets?.length && (!q.passageId || passage) ? `<div class="question-assets">${q.assets.map(r4AssetHtml).join("")}</div>` : "";
+      return `${passage}${assetBlock}<article class="question" id="question-${index + 1}" data-question="${index}">
+        <div class="question-head"><span class="question-number">${index + 1}</span><div class="question-tags"><span class="question-tag grade">${q.staticQuestionId ? "第四階段" : `國${unit.grade === 7 ? "一" : unit.grade === 8 ? "二" : "三"}`}</span><span class="question-tag">${esc(unit.title)}</span>${q.quizLevel ? `<span class="question-tag level">${esc(q.quizLevel)}</span>` : ""}<span class="question-tag ability">${abilityLabel[q.ability] || "整合"}</span></div><span class="difficulty" aria-label="${difficultyLabel[q.difficulty]}">${"★".repeat(q.difficulty)}${"☆".repeat(5-q.difficulty)}</span></div>
         <div class="question-text">${nl(q.text)}</div>${choices}${solutionHtml(q)}
       </article>`;
     }).join("");
     const isQuiz = state.exam.kind === "quiz";
     const isArchive = state.exam.kind === "archive";
     const questionCount = state.exam.questions.length;
-    const scopeTitles = isQuiz ? state.exam.unitIds.map(id => units.find(unit => unit.id === id)?.title).filter(Boolean).join("、") : "";
+    const scopeTitles = isQuiz ? state.exam.unitIds.map(id => window.CHINESE_R4.catalog?.units.find(unit => unit.id === id)?.title || units.find(unit => unit.id === id)?.title).filter(Boolean).join("、") : "";
     const cover = isQuiz ? `
-      <header class="paper-cover"><div><p class="eyebrow">課綱範圍分類</p><h2>${esc(state.exam.title)}</h2><p>${questionCount} 題四選一｜${state.exam.minutes || 15} 分鐘｜每個列出單元至少覆蓋 1 題</p></div><div class="paper-stamp">國${state.exam.grade === 7 ? "一" : state.exam.grade === 8 ? "二" : "三"}<br>${esc(state.exam.term)}</div></header>
+      <header class="paper-cover"><div><p class="eyebrow">課綱範圍分類</p><h2>${esc(state.exam.title)}</h2><p>${questionCount} 題四選一｜${state.exam.minutes || 15} 分鐘｜只選取與排序已審核靜態題目</p></div><div class="paper-stamp">R4<br>${esc(state.exam.term)}</div></header>
       <div class="paper-instructions"><div><strong>${questionCount}</strong><span>四選一｜即時計分</span></div><div><strong>${state.exam.unitIds.length}</strong><span>範圍單元｜無超綱單元</span></div><div><strong>${state.exam.minutes || 15} min</strong><span>依單元需要安排進階</span></div></div>
       <div class="quiz-paper-scope"><strong>本卷範圍</strong><span>${esc(scopeTitles)}</span><small>${esc(state.exam.officialCodes)}</small></div>` : isArchive ? `
       <header class="paper-cover"><div><p class="eyebrow">官方題本重現</p><h2>${state.exam.year} 年國中教育會考國文科題本</h2><p>${questionCount} 題選擇題｜依官方公布題目製作為可作答電子試卷｜計時結束仍可繼續作答</p></div><div class="paper-stamp">${state.exam.year}<br>官方題本</div></header>
@@ -586,7 +605,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     clearInterval(state.timerId);
     const total = state.exam.questions.length;
     const correct = state.exam.questions.filter((q, i) => state.answers[i] === q.answer).length;
-    const missed = [...new Set(state.exam.questions.map((q, i) => state.answers[i] === q.answer ? null : units.find(unit => unit.id === q.unitId)?.title).filter(Boolean))];
+    const missed = [...new Set(state.exam.questions.map((q, i) => state.answers[i] === q.answer ? null : q.unitTitle || units.find(unit => unit.id === q.unitId)?.title).filter(Boolean))];
     const answered = state.answers.filter(a => a !== null).length;
     const scoreRate = total ? correct / total : 0;
     const isQuiz = state.exam.kind === "quiz";
@@ -653,9 +672,25 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       $$('[data-verdict]', tipFilters).forEach(el => el.classList.toggle("active", el === button));
       renderTipAudits();
     }));
+    const r4UnitSelect = $("#r4UnitSelect");
+    if (r4UnitSelect) r4UnitSelect.addEventListener("change", event => {
+      state.r4UnitId = event.target.value;
+      state.r4SkillId = window.CHINESE_R4.catalog.units.find(unit => unit.id === state.r4UnitId)?.skillIds[0];
+      renderR4().catch(showR4Error);
+    });
+    const r4SkillSearch = $("#r4SkillSearch");
+    if (r4SkillSearch) r4SkillSearch.addEventListener("input", event => {
+      state.r4Search = event.target.value;
+      renderR4().catch(showR4Error);
+    });
+    const r4WritingNext = $("#r4WritingNext");
+    if (r4WritingNext) r4WritingNext.addEventListener("click", () => {
+      state.writingIndex += 1;
+      renderWritingTask().catch(showR4Error);
+    });
   }
 
-  function init() {
+  async function init() {
     bindStaticEvents();
     const lastSeed = localStorage.getItem("capChinese.lastSeed");
     const params = new URLSearchParams(window.location.search);
@@ -669,13 +704,14 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       if (themeButton) themeButton.textContent = "日";
     }
     try {
+      await window.CHINESE_R4.init();
       renderQuizCatalog(); renderHandbook(); renderAtlas(); renderAnalysis(); renderSources(); renderArchive(); updateLearningProgress();
     } catch (err) {
       console.error("capChinese init render failed:", err);
     }
     const requestedView = params.get("view");
     const requestedQuiz = params.get("quiz");
-    if (requestedQuiz && window.EXAM_ENGINE.quizCatalog.some(item => item.id === requestedQuiz)) beginQuiz(requestedQuiz);
+    if (requestedQuiz && /^r4-(?:unit-\d{2}|skill-\d{3})$/u.test(requestedQuiz)) beginQuiz(requestedQuiz).catch(error => { console.error(error); toast(error.message); });
     else if (requestedView && viewNames[requestedView]) setView(requestedView);
   }
   init();

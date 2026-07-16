@@ -68,6 +68,19 @@ export async function verifyChineseR4({ repoRoot = REPO_ROOT } = {}) {
     const runtimeBytes = await readFile(path.join(runtimeRoot, "units", name));
     assert.equal(sha256(runtimeBytes), sha256(sourceBytes), `${name}: runtime differs from authoritative source`);
   }
+  for (const name of ["stimuli.json", "stimulus-questions.json", "writing-tasks.json", "assets.json", "catalog.json"]) {
+    const sourceBytes = await readFile(path.join(repoRoot, "國文會考作戰室", "r4", "source", name));
+    const runtimeBytes = await readFile(path.join(runtimeRoot, name));
+    assert.equal(sha256(runtimeBytes), sha256(sourceBytes), `${name}: runtime differs from authoritative source`);
+  }
+  const graph = JSON.parse(await readFile(path.join(repoRoot, "tools", "cap8-r4", "authority", "frozen-authority-graph.json"), "utf8"));
+  const runtimeSkillFiles = (await readdir(path.join(runtimeRoot, "skills"))).filter((name) => name.endsWith(".json")).sort();
+  const runtimeAuthorityFiles = (await readdir(path.join(runtimeRoot, "authority"))).filter((name) => name.endsWith(".json")).sort();
+  assert.equal(runtimeSkillFiles.length, 320);
+  assert.equal(runtimeAuthorityFiles.length, 61);
+  for (const skill of graph.skills.filter(({ subject }) => subject === "chinese")) {
+    assert.deepEqual(JSON.parse(await readFile(path.join(runtimeRoot, "skills", `${skill.id}.json`), "utf8")), skill, `${skill.id}: runtime skill drift`);
+  }
   const sourceAssetIndex = await readFile(path.join(repoRoot, "國文會考作戰室", "r4", "source", "assets.json"));
   const runtimeAssetIndex = await readFile(path.join(runtimeRoot, "assets.json"));
   assert.equal(sha256(runtimeAssetIndex), sha256(sourceAssetIndex), "runtime asset index differs from authoritative source");

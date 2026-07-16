@@ -4011,6 +4011,22 @@ const writingTasks = MODES.flatMap((mode, modeIndex) => WRITING_TASK_SPECS[mode]
 
 assert.equal(new Set(writingTasks.map(({ title }) => title)).size, 120);
 
+const sourceCatalog = {
+  schemaVersion: "cap8-r4-chinese-runtime-catalog-v1",
+  subject: "chinese",
+  units: families.map((family, index) => {
+    const unitId = `CHI_R4_U${String(index + 1).padStart(2, "0")}`;
+    return {
+      id: unitId,
+      title: FAMILY_LABELS[index],
+      skillIds: chineseSkills.filter((skill) => skill.unitId === unitId).map((skill) => skill.id),
+    };
+  }),
+  skills: chineseSkills.map(({ id, unitId, title, prerequisites }) => ({ id, unitId, title, prerequisites: [...prerequisites] })),
+};
+assert.equal(sourceCatalog.units.length, 48);
+assert.equal(sourceCatalog.skills.length, 320);
+
 const sourceUnits = [];
 for (const [familyIndex, family] of families.entries()) {
   const unitId = `CHI_R4_U${String(familyIndex + 1).padStart(2, "0")}`;
@@ -4033,6 +4049,7 @@ await Promise.all([
   writeFile(path.join(SUBJECT_ROOT, "source", "stimulus-questions.json"), `${JSON.stringify(stimulusQuestions, null, 2)}\n`, "utf8"),
   writeFile(path.join(SUBJECT_ROOT, "source", "writing-tasks.json"), `${JSON.stringify(writingTasks, null, 2)}\n`, "utf8"),
   writeFile(path.join(SUBJECT_ROOT, "source", "assets.json"), `${JSON.stringify(sourceAssets, null, 2)}\n`, "utf8"),
+  writeFile(path.join(SUBJECT_ROOT, "source", "catalog.json"), `${JSON.stringify(sourceCatalog, null, 2)}\n`, "utf8"),
   ...DATA_ASSET_SPECS.map((asset) => writeFile(path.join(SUBJECT_ROOT, "source", "assets", `${asset.id}.svg`), `${svgForDataAsset(asset)}\n`, "utf8")),
   ...CALLIGRAPHY_ASSET_SPECS.map((asset) => writeFile(path.join(SUBJECT_ROOT, "source", "assets", `${asset.id}.svg`), `${svgForCalligraphyAsset(asset)}\n`, "utf8")),
 ]);
