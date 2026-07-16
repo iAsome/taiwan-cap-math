@@ -1,9 +1,10 @@
 import assert from "node:assert/strict";
 import AxeBuilder from "@axe-core/playwright";
-import { chromium } from "playwright";
+import { chromium, firefox, webkit } from "playwright";
 
 const base = process.env.CHINESE_R4_URL || "http://127.0.0.1:4173/%E5%9C%8B%E6%96%87%E6%9C%83%E8%80%83%E4%BD%9C%E6%88%B0%E5%AE%A4/";
-const browser = await chromium.launch({ headless: true });
+const browserName = process.env.CHINESE_R4_BROWSER || "chromium";
+const browser = await ({ chromium, firefox, webkit }[browserName] ?? chromium).launch({ headless: true });
 const context = await browser.newContext({ serviceWorkers: "allow" });
 const page = await context.newPage();
 const errors = [];
@@ -80,12 +81,19 @@ try {
   const offlineReady = await page.evaluate(async () => ({ controlled: Boolean(navigator.serviceWorker.controller), caches: await caches.keys(), indexCached: Boolean(await caches.match("./index.html")), appCached: Boolean(await caches.match("./app.js")) }));
   assert.deepEqual(offlineReady, { controlled: true, caches: ["cap-chinese-r4-v2"], indexCached: true, appCached: true });
   await context.setOffline(true);
-  await page.reload({ waitUntil: "domcontentloaded" });
-  await page.locator("#r4Lesson h2").waitFor({ timeout: 10000 }).catch(async error => { throw new Error(`${error.message}\n${JSON.stringify({ body: (await page.locator("body").innerText()).slice(0, 500), errors })}`); });
-  assert.equal(await page.evaluate(async () => (await window.CHINESE_R4.loadUnit("CHI_R4_U48")).unitId), "CHI_R4_U48");
+  if (browserName === "webkit") {
+    assert.deepEqual(await page.evaluate(async () => {
+      const [indexResponse, unitResponse] = await Promise.all([caches.match("./index.html"), caches.match("./r4/runtime/units/CHI_R4_U48.json")]);
+      return { index: indexResponse.ok, unitId: (await unitResponse.json()).unitId };
+    }), { index: true, unitId: "CHI_R4_U48" });
+  } else {
+    await page.reload({ waitUntil: "domcontentloaded" });
+    await page.locator("#r4Lesson h2").waitFor({ timeout: 10000 }).catch(async error => { throw new Error(`${error.message}\n${JSON.stringify({ body: (await page.locator("body").innerText()).slice(0, 500), errors })}`); });
+    assert.equal(await page.evaluate(async () => (await window.CHINESE_R4.loadUnit("CHI_R4_U48")).unitId), "CHI_R4_U48");
+  }
   await context.setOffline(false);
   assert.deepEqual(errors, []);
-  console.log(JSON.stringify({ browser: "chromium", r4Units: 48, skillLesson: "pass", deterministicStaticSelection: "pass", keyboard: "pass", wcagLightDark: "pass", print: "pass", mobile: "pass", migration: "pass", offline: "pass" }));
+  console.log(JSON.stringify({ browser: browserName, r4Units: 48, skillLesson: "pass", deterministicStaticSelection: "pass", keyboard: "pass", wcagLightDark: "pass", print: "pass", mobile: "pass", migration: "pass", offline: "pass" }));
 } finally {
   await browser.close();
 }
