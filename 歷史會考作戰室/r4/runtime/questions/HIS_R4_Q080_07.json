@@ -1,0 +1,91 @@
+{
+  "id": "HIS_R4_Q080_07",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S080"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-FA-4-1",
+    "AUTH-SOCIAL-LC-HIS-FA-4-2",
+    "AUTH-SOCIAL-LC-HIS-FA-4-4",
+    "AUTH-SOCIAL-LC-HIS-FB-4-1",
+    "AUTH-SOCIAL-LC-HIS-FB-4-2",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某表完整列出四個地區的投票率，這份表仍不能單獨回答哪個問題？",
+  "options": [
+    "哪個地區投票率最高",
+    "四地投票率是否完全相同",
+    "候選競爭、資訊與少數權利是否充分",
+    "哪個地區投票率最低"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "由四地百分比可找出最大值。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "比較四個百分比即可判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此項需要選舉規則、媒體與權利資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "由四地百分比可找出最小值。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "評估",
+    "指標界線"
+  ],
+  "representationType": "turnout-table",
+  "misconceptionTargets": [
+    "高投票率等同完整民主"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-FA-4-1",
+      "AUTH-SOCIAL-LC-HIS-FA-4-2",
+      "AUTH-SOCIAL-LC-HIS-FA-4-4",
+      "AUTH-SOCIAL-LC-HIS-FB-4-1",
+      "AUTH-SOCIAL-LC-HIS-FB-4-2",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項指出投票率的資訊邊界。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "民主品質不能用單一參與指標包辦。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

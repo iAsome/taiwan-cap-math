@@ -1,0 +1,80 @@
+{
+  "id": "HIS_R4_Q188_05",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S188"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QA-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲戶每週織布8匹；機械廠每臺每週織布40匹，但需固定維修。資料最支持什麼？",
+  "options": [
+    "機械廠在此項產品的週產量較高，仍有維修成本",
+    "家庭織布品質必定較差",
+    "工廠工人的週薪必為家庭的五倍",
+    "所有產業都會出現相同比率"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "數值直接支持產量比較，題幹也明列維修。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "資料沒有提供品質檢驗結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "產量比不能直接換算個人工資。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "單一產品不能概括全部產業。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料判讀"
+  ],
+  "representationType": "產量比較",
+  "misconceptionTargets": [
+    "產量等於品質與所得"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QA-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只陳述表中可見的產量差異並保留維修條件，沒有跨越證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其他選項把產量錯推為品質、薪資或所有行業普遍規律。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

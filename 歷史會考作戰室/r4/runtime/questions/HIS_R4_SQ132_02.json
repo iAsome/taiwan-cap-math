@@ -1,0 +1,84 @@
+{
+  "id": "HIS_R4_SQ132_02",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S132"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-KA-4-2",
+    "AUTH-SOCIAL-LC-HIS-KB-4-1",
+    "AUTH-SOCIAL-LC-HIS-KB-4-2",
+    "AUTH-SOCIAL-LC-HIS-M-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2"
+  ],
+  "stimulusId": "HIS_R4_ST132",
+  "stem": "帳冊丙能直接支持哪項結論？",
+  "options": [
+    "所有地區都達標",
+    "節糧政策完全失敗",
+    "五區都沒有任何資料",
+    "三區用量下降，另兩區現階段不能判定"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩區資料未齊，不能稱全部達標。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "三區下降不支持完全失敗。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "材料明示三區已有資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此項忠實區分已知與未知。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "資料範圍"
+  ],
+  "representationType": "統計判讀",
+  "misconceptionTargets": [
+    "資料缺漏自動補齊"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-KA-4-2",
+      "AUTH-SOCIAL-LC-HIS-KB-4-1",
+      "AUTH-SOCIAL-LC-HIS-KB-4-2",
+      "AUTH-SOCIAL-LC-HIS-M-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "帳冊只能證明三區下降與兩區缺資料。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項沒有把未知地區任意算入成敗。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

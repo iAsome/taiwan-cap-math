@@ -1,0 +1,89 @@
+{
+  "id": "HIS_R4_Q052_10",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S052"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-EA-4-1",
+    "AUTH-SOCIAL-LC-HIS-EA-4-2",
+    "AUTH-SOCIAL-LC-HIS-EA-4-3",
+    "AUTH-SOCIAL-LC-HIS-EB-4-1",
+    "AUTH-SOCIAL-LC-HIS-EB-4-2",
+    "AUTH-SOCIAL-LC-HIS-EB-4-3",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "病例在供水改善後下降，但同期也推行疫苗。應如何判斷原因？",
+  "options": [
+    "全部歸功自來水",
+    "比較供水與疫苗覆蓋、不同地區和疾病類型，避免單因結論",
+    "疫苗一定沒有作用",
+    "只看政策宣傳畫"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "同期措施使單因歸納不可靠。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "分組比較可檢查兩種機制。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有資料可排除疫苗作用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "宣傳畫不能量化健康結果。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析",
+    "多重因果"
+  ],
+  "representationType": "causal-inference",
+  "misconceptionTargets": [
+    "把同期改善全歸單一措施"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-EA-4-1",
+      "AUTH-SOCIAL-LC-HIS-EA-4-2",
+      "AUTH-SOCIAL-LC-HIS-EA-4-3",
+      "AUTH-SOCIAL-LC-HIS-EB-4-1",
+      "AUTH-SOCIAL-LC-HIS-EB-4-2",
+      "AUTH-SOCIAL-LC-HIS-EB-4-3",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "供水和疫苗可能對不同疾病或人群產生作用，單一前後曲線無法拆分。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項提出可操作的比較設計，而不是先指定一項政策為唯一原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

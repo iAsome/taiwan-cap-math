@@ -1,0 +1,80 @@
+{
+  "id": "HIS_R4_Q187_09",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QA-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "假設某國機械、煤與資金都充足，但國內外需求長期萎縮，最可能先遇到哪項限制？",
+  "options": [
+    "大量產品缺乏買家，企業降低擴產意願",
+    "機器會因此失去物理運作能力",
+    "煤礦會自動變成農田",
+    "所有工人會立刻成為企業主"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "銷路不足會增加庫存與投資風險。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "需求不會直接改變機械的物理原理。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "市場萎縮不會使礦場自然改變地貌用途。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "職業與所有權不會因需求下降自動翻轉。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "反事實推理"
+  ],
+  "representationType": "條件推演",
+  "misconceptionTargets": [
+    "供給條件足夠即必然擴產"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QA-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題幹刻意保留供給條件而移除需求，第一項指出產品銷售端的直接瓶頸。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "另外三項都不是市場萎縮的合理歷史機制，也未能回答投資為何放緩。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

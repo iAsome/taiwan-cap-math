@@ -1,0 +1,78 @@
+{
+  "id": "HIS_R4_Q003_02",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S003"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "甲在1905年，乙在甲之後四年，乙為何年？",
+  "options": [
+    "1901年",
+    "1909年",
+    "1910年",
+    "1904年"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是甲之前四年。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "乙在甲之後四年，1905加4得到1909。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "此算法把相隔年數多加了一年。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "只差一年且方向錯。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "相對時間"
+  ],
+  "representationType": "計算題",
+  "misconceptionTargets": [
+    "相對年距多算一年"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "『之後四年』以1905加4，定位1909。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "用年距而非含首尾年次計算，第二項正確。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

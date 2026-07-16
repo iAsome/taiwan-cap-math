@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#235347">
+  <meta name="description" content="依臺灣國中教育會考範圍建置的歷史講義與題庫。">
+  <title>歷史會考作戰室</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+  <header class="topbar">
+    <div><strong>歷史會考作戰室</strong><span>會考範圍學習版</span></div>
+    <nav aria-label="主要功能">
+      <button type="button" data-view="overview" aria-current="page">總覽</button>
+      <button type="button" data-view="lecture">講義</button>
+      <button type="button" data-view="practice">練習</button>
+      <button type="button" data-view="progress">進度</button>
+      <button type="button" data-view="archive">歷屆</button>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <section id="loading" class="status" role="status">正在載入歷史內容…</section>
+    <section id="overview" class="view" hidden>
+      <div class="heading"><div><p>臺灣國中會考社會領域</p><h1>歷史完整學習系統</h1></div><button id="offlineButton" type="button">下載完整離線內容</button></div>
+      <p class="notice">歷史是社會科的一部分，本站練習為原創學習內容，不是官方獨立考卷。範圍以第四學習階段課綱與 106–115 年官方題本為準。</p>
+      <dl id="counts" class="counts"></dl>
+      <h2>36 個學習單元</h2>
+      <div id="unitGrid" class="unit-grid"></div>
+    </section>
+    <section id="lecture" class="view" hidden>
+      <div class="heading"><div><p>從零開始</p><h1>完整講義</h1></div><label>選擇技能<select id="lectureSelect"></select></label></div>
+      <article id="lectureContent" class="lecture" aria-live="polite"></article>
+    </section>
+    <section id="practice" class="view" hidden>
+      <div class="heading"><div><p>依種子碼固定抽題</p><h1>歷史練習</h1></div></div>
+      <form id="practiceForm" class="setup">
+        <label>練習範圍<select id="practiceUnit"><option value="">全部單元</option></select></label>
+        <label>種子碼<input id="seedInput" inputmode="numeric" value="11501" required></label>
+        <label>一般題數<input id="questionCount" type="number" min="5" max="50" value="20" required></label>
+        <label>題組數<input id="stimulusCount" type="number" min="0" max="10" value="2" required></label>
+        <button type="submit">產生練習</button>
+      </form>
+      <form id="paper" class="paper" tabindex="-1" hidden></form>
+      <div class="paper-actions" id="paperActions" hidden><button id="submitButton" type="button">交卷並看詳解</button><button id="printButton" type="button">列印</button></div>
+      <section id="result" class="result" aria-live="polite" hidden></section>
+    </section>
+    <section id="progress" class="view" hidden>
+      <div class="heading"><div><p>僅儲存在本機</p><h1>學習進度</h1></div></div>
+      <div id="progressContent"></div>
+    </section>
+    <section id="archive" class="view" hidden>
+      <div class="heading"><div><p>官方社會科完整題本</p><h1>106–115 年歷屆資料</h1></div><a href="https://cap.rcpet.edu.tw/examination.html" target="_blank" rel="noopener">會考官方總頁</a></div>
+      <p class="notice">會考沒有獨立歷史題本；以下保留官方社會科整份題本、答案與試題說明，不改寫官方下載內容。</p>
+      <div id="archiveGrid" class="archive-grid"></div>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

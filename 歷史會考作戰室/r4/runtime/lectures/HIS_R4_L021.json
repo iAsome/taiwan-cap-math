@@ -1,0 +1,130 @@
+{
+  "id": "HIS_R4_L021",
+  "subject": "history",
+  "unitId": "HIS_R4_U03",
+  "skillId": "HIS_R4_S021",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-BA-4-1",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1"
+  ],
+  "prerequisites": [
+    "HIS_R4_S020"
+  ],
+  "objectives": [
+    "能整合地方遺址的地層、定年、器物型式與環境資料建立史前文化時間線，呈現年代範圍、不確定性、重疊及資料缺口。"
+  ],
+  "sections": [
+    {
+      "id": "HIS_R4_L021_SEC_1",
+      "title": "資料先標準化",
+      "content": "建立時間線前要統一年代表示、確認定年樣本與誤差，並保留原始紀錄。不同實驗室或文獻的年代範圍不能任意取中間值，更不能把『約』改成單一年份。"
+    },
+    {
+      "id": "HIS_R4_L021_SEC_2",
+      "title": "多種排序線索",
+      "content": "地層提供相對先後，科學定年提供年代範圍，器物型式可連結相似遺址。三者相符時時間線較穩定；若互相衝突，應先查擾動、樣本與分類問題。"
+    },
+    {
+      "id": "HIS_R4_L021_SEC_3",
+      "title": "表示重疊與缺口",
+      "content": "兩文化年代範圍重疊，不表示在同一聚落同時存在；可能是不同地點或定年誤差。沒有資料的時段也不能自動畫成文化中斷，應以空白或不確定區呈現。"
+    },
+    {
+      "id": "HIS_R4_L021_SEC_4",
+      "title": "地方時間線的用途",
+      "content": "地方時間線可比較聚落出現、技術變化與環境事件，但不能直接代表全臺灣。跨地區比較需使用相同年代標準，並說明調查密度與保存條件差異。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "HIS_R4_L021_EX_1",
+      "prompt": "A層定年約距今3000至2800年，覆蓋其上的B層約距今2700至2500年，順序如何？",
+      "steps": [
+        "先理解距今年數越大越早。",
+        "核對地層上下關係。",
+        "把兩段年代範圍依早晚排列。"
+      ],
+      "answer": "A層較早，B層較晚。",
+      "why": "A層距今年數較大且位在下方，兩種證據相符；時間線應保留各自範圍而非只寫2900與2600。"
+    },
+    {
+      "id": "HIS_R4_L021_EX_2",
+      "prompt": "同層兩個樣本分別定年距今2400至2200年與1800至1600年，應怎麼做？",
+      "steps": [
+        "不要直接平均兩個結果。",
+        "查樣本是否受污染或由舊物、晚期坑洞混入。",
+        "重新檢查地層並增加樣本。"
+      ],
+      "answer": "先標示衝突並查樣本與地層脈絡。",
+      "why": "兩範圍相隔甚遠，平均成距今2000年會掩蓋問題；衝突本身是需要解釋的證據。"
+    },
+    {
+      "id": "HIS_R4_L021_EX_3",
+      "prompt": "某地方在兩個文化層之間缺少五百年資料，能否直接說居民離開？",
+      "steps": [
+        "確認缺口是否來自侵蝕或未發掘。",
+        "查附近遺址及沉積環境。",
+        "把離開列為眾多可能之一。"
+      ],
+      "answer": "不能直接判定人口中斷。",
+      "why": "資料空白可能是保存或調查缺口，也可能真的無人居住；需其他遺址與環境證據區分。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "把距今年代數字較小者排在更早。",
+      "whyWrong": "距今年數越小越接近現代，因此實際年代較晚。",
+      "correction": "先確定時間方向再排列範圍。"
+    },
+    {
+      "belief": "把定年範圍縮成沒有誤差的單一年份。",
+      "whyWrong": "取中點會隱藏測量不確定性，也可能製造不存在的精確順序。",
+      "correction": "時間線保留上下限或機率範圍。"
+    },
+    {
+      "belief": "遇到衝突定年便直接平均。",
+      "whyWrong": "衝突可能揭示擾動、污染或樣本不是同一活動，平均無法解決原因。",
+      "correction": "回查樣本與地層並增加獨立測定。"
+    },
+    {
+      "belief": "用一處地方時間線代表全臺灣。",
+      "whyWrong": "不同區域文化、調查與保存條件不一，地方序列不能直接全島化。",
+      "correction": "跨區比較並明示適用範圍。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "距今3000年與距今2000年何者較早？",
+      "answer": "距今3000年。",
+      "reason": "距今年數較大代表離現在更遠。"
+    },
+    {
+      "prompt": "定年衝突時可以直接平均嗎？",
+      "answer": "不可以。",
+      "reason": "應先檢查樣本、污染、擾動與分類。"
+    },
+    {
+      "prompt": "時間線空白一定代表無人居住嗎？",
+      "answer": "不一定。",
+      "reason": "空白也可能源自未發現或未保存。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-BA-4-1",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1"
+    ]
+  }
+}

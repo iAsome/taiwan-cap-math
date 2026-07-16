@@ -1,0 +1,87 @@
+{
+  "id": "HIS_R4_Q044_08",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S044"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-CA-4-1",
+    "AUTH-SOCIAL-LC-HIS-CA-4-2",
+    "AUTH-SOCIAL-LC-HIS-CB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LC-HIS-D-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "地圖只標出口港，沒有畫產區。哪項推論超出地圖證據？",
+  "options": [
+    "打狗位於安平以南",
+    "滬尾位於北部西側",
+    "雞籠與滬尾皆屬北部口岸",
+    "每一株茶樹都種在滬尾港界內"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "點位可支持兩港南北關係。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "地圖方位可支持滬尾位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩點皆位於圖面北部。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "地圖沒有茶園分布，更不能支持『每一株』。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "評估",
+    "證據範圍"
+  ],
+  "representationType": "map-inference",
+  "misconceptionTargets": [
+    "從港口位置臆測全部產地"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-CA-4-1",
+      "AUTH-SOCIAL-LC-HIS-CA-4-2",
+      "AUTH-SOCIAL-LC-HIS-CB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LC-HIS-D-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "前三項只使用圖上點位與北向，第四項卻把出口地擴張成全部產地。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "帶有『每一』的絕對敘述還需要完整產區資料，現有地圖並未提供。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

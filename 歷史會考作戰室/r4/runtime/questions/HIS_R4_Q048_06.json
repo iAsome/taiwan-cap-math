@@ -1,0 +1,87 @@
+{
+  "id": "HIS_R4_Q048_06",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S048"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-CA-4-1",
+    "AUTH-SOCIAL-LC-HIS-CA-4-2",
+    "AUTH-SOCIAL-LC-HIS-CB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LC-HIS-D-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某年糖出口重量增加20%，出口值卻只增加5%。哪項可能解釋最值得檢查？",
+  "options": [
+    "港口名稱變短",
+    "平均出口單價下降",
+    "地圖北向箭頭改變",
+    "糖全部停止生產"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "名稱長短不會改變量價關係。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "重量增幅高於價值增幅，與平均單價下降相容。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "北向與商品價格無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "重量增加已否定停止生產。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "推論",
+    "量價"
+  ],
+  "representationType": "quantitative-reasoning",
+  "misconceptionTargets": [
+    "忽略價格對總值的影響"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-CA-4-1",
+      "AUTH-SOCIAL-LC-HIS-CA-4-2",
+      "AUTH-SOCIAL-LC-HIS-CB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LC-HIS-D-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "出口值受重量與單價共同影響；重量成長較快時，單價下降是合理待查假設。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項仍只是需由價格資料驗證的解釋，沒有把可能性直接當定論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,82 @@
+{
+  "id": "HIS_R4_Q015_09",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-BA-4-1",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "考古剖面顯示一個晚期坑洞切入兩層早期堆積。坑內物件應如何定年？",
+  "options": [
+    "先依坑洞邊界與填土判為同一晚期活動，再個別查混入物",
+    "全部依最深物件判為最早層",
+    "只看物件大小決定年代",
+    "把兩個早期地層視為同時形成"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "切割關係顯示坑洞晚於被切地層。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "深度受坑洞擾動，不能直接套地層序。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "物件大小與形成時間沒有固定關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "被同一坑切過不代表兩層同時。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "切割關係"
+  ],
+  "representationType": "剖面推理",
+  "misconceptionTargets": [
+    "擾動深度直接排序"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-BA-4-1",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "坑洞形成在兩層之後，填土可混入更早物件，須分開坑的活動年代與混入物年代。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項符合地層切割原則。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,94 @@
+{
+  "id": "HIS_R4_SQ012_01",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "stimulusId": "HIS_R4_ST012",
+  "stem": "現有材料可以直接確認哪件事？",
+  "options": [
+    "1905年登記人口為1,486人",
+    "人口每年都下降",
+    "所有青年都外出工作",
+    "鄰村人口同樣減少"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "戶口表明列1905年登記數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "缺少逐年人口，不能建立每年趨勢。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "村長只說有青年，沒有涵蓋全體。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "材料完全沒有鄰村人口數據。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "可回答問題"
+  ],
+  "representationType": "人口資料",
+  "misconceptionTargets": [
+    "單點外推"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "戶口表直接支持1905年的登記人口與戶數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項限定在資料時間點，其餘都超出現有涵蓋。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": "HIS_R4_Q003_06",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S003"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "一篇文章先談1945年，再回顧1895年。能否依段落順序判定1895較晚？",
+  "options": [
+    "能，文字後出一定較晚",
+    "不能，敘述順序可不同於時間順序",
+    "能，因1895數字較大",
+    "不能，因歷史沒有年份"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "文章可能採倒敘。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "明示年份才是排序依據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "1895其實小於1945。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "歷史可用年份定位。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "敘事與時序"
+  ],
+  "representationType": "文章結構",
+  "misconceptionTargets": [
+    "把敘述次序當時間"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "作者回顧較早事件，段落位置不會改變1895早於1945。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項區分敘事安排與事件時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,94 @@
+{
+  "id": "HIS_R4_Q010_04",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S010"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "一份日記寫『今天街上十分安靜』。僅依這份日記，哪項可確定？",
+  "options": [
+    "全城居民都支持政府",
+    "整座城市完全沒有衝突",
+    "作者看見所有街道",
+    "作者當天記下自己所見的安靜景象"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "安靜不能直接代表政治支持。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "個人觀察範圍不足以涵蓋全城。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "作者不可能同時看見每條街道。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此項只陳述文件與作者觀察。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "文件陳述界線"
+  ],
+  "representationType": "日記判讀",
+  "misconceptionTargets": [
+    "作者聲稱等於全貌"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "日記確實能證明作者留下這段觀察，但不能證明全城情況或居民心態。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項忠實區分『作者記載』與『事情全面如此』。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

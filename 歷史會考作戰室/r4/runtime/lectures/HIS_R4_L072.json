@@ -1,0 +1,136 @@
+{
+  "id": "HIS_R4_L072",
+  "subject": "history",
+  "unitId": "HIS_R4_U11",
+  "skillId": "HIS_R4_S072",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-FA-4-4",
+    "AUTH-SOCIAL-LC-HIS-FB-4-1",
+    "AUTH-SOCIAL-LC-HIS-FB-4-2",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1"
+  ],
+  "prerequisites": [
+    "HIS_R4_S071"
+  ],
+  "objectives": [
+    "由產值與就業資料辨識三級產業結構",
+    "整理農業、輕工業、重化工、高科技與服務業的轉換",
+    "區分比重下降與部門消失"
+  ],
+  "sections": [
+    {
+      "id": "HIS_R4_L072_SEC1",
+      "title": "產業結構的兩種比重",
+      "content": "農業、工業與服務業可用產值比重或就業比重衡量，兩者不必同步。農業就業可能仍多，產值比重卻因工業快速成長而下降；服務業產值上升，也不表示每項服務工作都有相同生產力與薪資。"
+    },
+    {
+      "id": "HIS_R4_L072_SEC2",
+      "title": "農業與早期工業",
+      "content": "戰後土地改革、農業技術與水利提高部分產量，農產加工和出口提供糧食、原料及外匯。1950至1960年代紡織、食品、塑膠與電子裝配等輕工業吸收勞動，農業不是被工業瞬間取代，而是功能與勞動配置逐步改變。"
+    },
+    {
+      "id": "HIS_R4_L072_SEC3",
+      "title": "重化工與高科技",
+      "content": "1970年代交通、能源與重化工建設擴大鋼鐵、石化、機械等基礎產業；1980年代後電子資訊與科學園區成長。政策投資提供條件，企業供應鏈、技術人才及全球需求則決定產業能否持續發展。"
+    },
+    {
+      "id": "HIS_R4_L072_SEC4",
+      "title": "服務業增加的意義",
+      "content": "所得提高、都市化、金融、運輸、零售、教育與醫療需求，使服務業比重上升。結構轉型不是品質自動升級：高薪專業服務與低薪零售照顧工作同屬服務業，分析時要拆分職類、工時及生產力。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "HIS_R4_L072_EX1",
+      "prompt": "農業產值由100增至120，總產值由200增至600，農業比重如何？",
+      "steps": [
+        "計算兩期分母",
+        "求農業占比",
+        "區分總量與比重"
+      ],
+      "answer": "農業產值增加，但比重由50%降至20%",
+      "why": "農業總量增加二成，其他部門成長更快，所以占比下降；比重下降不能寫成農業產量必然減少。"
+    },
+    {
+      "id": "HIS_R4_L072_EX2",
+      "prompt": "工業就業比重先升後降、服務業持續升，最可能反映什麼？",
+      "steps": [
+        "觀察轉折方向",
+        "連結產業階段",
+        "避免等同衰退"
+      ],
+      "answer": "經濟由工業化進一步轉向服務業比重提高",
+      "why": "工業就業占比下降可能來自自動化與服務需求增加，不必等於工業產值或出口同幅衰退。"
+    },
+    {
+      "id": "HIS_R4_L072_EX3",
+      "prompt": "半導體出口增加，能否證明所有製造業都轉成高科技？",
+      "steps": [
+        "辨認總體與子部門",
+        "檢查傳統產業",
+        "限制結論"
+      ],
+      "answer": "不能，只能證明特定高科技部門的重要性增加",
+      "why": "食品、紡織、金屬及機械仍可能存在，製造業內部也有技術與薪資差異，不能由一項出口概括全部。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "農業占比下降就等於農業產值一定下降。",
+      "whyWrong": "其他部門成長更快也會壓低農業占比。",
+      "correction": "同時比較絕對值、比重與就業人數。"
+    },
+    {
+      "belief": "加工出口區只生產高科技晶片。",
+      "whyWrong": "早期以勞力密集的裝配與輕工業為主。",
+      "correction": "依年代辨識產品、技術及勞動型態。"
+    },
+    {
+      "belief": "服務業是一種薪資與技能完全相同的工作。",
+      "whyWrong": "金融、零售、運輸與照顧的條件差異很大。",
+      "correction": "拆分服務業職類、工時、生產力與報酬。"
+    },
+    {
+      "belief": "高科技興起後，傳統製造業同日全部消失。",
+      "whyWrong": "產業轉型通常包含並存、外移與供應鏈調整。",
+      "correction": "使用分業產值、就業及廠商資料追蹤變化。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "產業比重下降是否必然代表產值下降？",
+      "answer": "不必然",
+      "reason": "分母若成長更快，占比會下降而總量仍可上升。"
+    },
+    {
+      "prompt": "早期加工出口區主要吸收何種生產？",
+      "answer": "勞力密集的出口裝配與輕工業",
+      "reason": "此階段利用較充足勞動承接國際訂單。"
+    },
+    {
+      "prompt": "比較產業結構至少要看哪兩種比重？",
+      "answer": "產值比重與就業比重",
+      "reason": "兩者反映生產貢獻與勞動配置，不一定同步。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-FA-4-4",
+      "AUTH-SOCIAL-LC-HIS-FB-4-1",
+      "AUTH-SOCIAL-LC-HIS-FB-4-2",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1"
+    ]
+  }
+}

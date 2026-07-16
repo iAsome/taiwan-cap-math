@@ -1,0 +1,87 @@
+{
+  "id": "HIS_R4_Q046_10",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S046"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-CA-4-1",
+    "AUTH-SOCIAL-LC-HIS-CA-4-2",
+    "AUTH-SOCIAL-LC-HIS-CB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LC-HIS-D-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "醫療站門診人數增加，可直接證明哪一項？",
+  "options": [
+    "所有居民都改信外來宗教",
+    "至少有更多就診紀錄，但信仰與整體評價仍需另查",
+    "地方傳統醫療全部消失",
+    "每位病人都獲得治癒"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "就診不必然等於宗教改信。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此項只推到資料直接支持的使用增加。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "門診增加不能證明其他醫療消失。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "人次資料沒有列出每位療效。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "評估",
+    "統計界限"
+  ],
+  "representationType": "data-inference",
+  "misconceptionTargets": [
+    "把使用服務等同接受全部文化"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-CA-4-1",
+      "AUTH-SOCIAL-LC-HIS-CA-4-2",
+      "AUTH-SOCIAL-LC-HIS-CB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LC-HIS-D-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "門診統計能確認服務使用情形，不能自動回答信仰、療效或其他醫療制度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時提出可支持的結論與仍待補證的問題，推論範圍最適當。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

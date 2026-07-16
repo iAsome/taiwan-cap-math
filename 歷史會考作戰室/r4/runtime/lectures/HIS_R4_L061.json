@@ -1,0 +1,138 @@
+{
+  "id": "HIS_R4_L061",
+  "subject": "history",
+  "unitId": "HIS_R4_U09",
+  "skillId": "HIS_R4_S061",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-EA-4-1",
+    "AUTH-SOCIAL-LC-HIS-EA-4-2",
+    "AUTH-SOCIAL-LC-HIS-EA-4-3",
+    "AUTH-SOCIAL-LC-HIS-EB-4-3",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "prerequisites": [
+    "HIS_R4_S060"
+  ],
+  "objectives": [
+    "辨識官方宣傳與個人經驗記錄",
+    "依作者目的評估材料能回答的問題",
+    "以交互查證避免把任一材料當完整真相"
+  ],
+  "sections": [
+    {
+      "id": "HIS_R4_L061_SEC1",
+      "title": "材料目的影響表達",
+      "content": "官方海報、新聞稿與宣傳演說通常希望說服民眾支持政策，因此會選擇有利資訊和情感語句。宣傳不必然每句都是虛假，但不能只因它是官方印製，就把其中的成效主張視為已被證實。"
+    },
+    {
+      "id": "HIS_R4_L061_SEC2",
+      "title": "個人紀錄也有位置限制",
+      "content": "日記、家書與回憶錄能呈現具體感受，卻受作者身分、資訊範圍、寫作對象和記憶影響。一人的害怕或支持是真實經驗證據，但不是全體居民態度的民意調查。"
+    },
+    {
+      "id": "HIS_R4_L061_SEC3",
+      "title": "區分主張與可核對事實",
+      "content": "『人人熱烈響應』是概括性主張，『某日有三百人出席』則可由名冊、照片或場地紀錄核對。閱讀時先標出可查證的時間、數量與行動，再判斷材料中的評價詞是否另有證據支持。"
+    },
+    {
+      "id": "HIS_R4_L061_SEC4",
+      "title": "交互查證不是互相抵銷",
+      "content": "宣傳稿、警察報告與私人日記若描述不同，不應立即選一份丟棄。先比較三者的作者、目的、時間和取樣範圍，差異本身可能揭示公開表現與私人感受、中央命令與地方執行之間的落差。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "HIS_R4_L061_EX1",
+      "prompt": "海報寫『全體居民踴躍獻納』，最需要哪類資料檢驗？",
+      "steps": [
+        "找出概括主張",
+        "設定可衡量指標",
+        "尋找獨立紀錄"
+      ],
+      "answer": "各地實際獻納清冊與居民紀錄",
+      "why": "『全體』和『踴躍』超出海報本身可證範圍。清冊能核對人數與數量，居民紀錄可補充參與方式和壓力。"
+    },
+    {
+      "id": "HIS_R4_L061_EX2",
+      "prompt": "一封家書寫市場缺油，能否推論全臺同日都缺油？",
+      "steps": [
+        "定位家書地點",
+        "辨認個案範圍",
+        "尋找跨地資料"
+      ],
+      "answer": "不能",
+      "why": "家書足以證明作者所在地的具體經驗，但全臺結論需要多地配給表、價格或運輸紀錄，不能從一戶直接放大。"
+    },
+    {
+      "id": "HIS_R4_L061_EX3",
+      "prompt": "官方報告與日記結論不同時，第一步應做什麼？",
+      "steps": [
+        "確認作者身分",
+        "比較寫作目的",
+        "核對時間和範圍"
+      ],
+      "answer": "先比較材料背景與可證範圍",
+      "why": "兩份資料可能各自描述政策成果與生活代價。先確定它們回答的問題，才能判斷是矛盾、互補，還是涵蓋不同地點。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "把官方宣傳一律判定為完全虛構而不再分析。",
+      "whyWrong": "宣傳仍可能包含可核對的日期、活動與政策訊息。",
+      "correction": "拆分事實陳述、評價語與說服目的。"
+    },
+    {
+      "belief": "因日記是親身書寫，就把一人的經驗當作全體情況。",
+      "whyWrong": "個人位置和接觸範圍有限，無法代表整體分布。",
+      "correction": "保留個案價值，再以多地材料檢查普遍性。"
+    },
+    {
+      "belief": "兩份材料語氣不同，就認定其中一份必然造假。",
+      "whyWrong": "作者目的與觀察層次不同也會造成描述差異。",
+      "correction": "比較作者、受眾、時間與資料來源後再判斷。"
+    },
+    {
+      "belief": "看到『熱烈』或『圓滿』便當成可直接計量的成果。",
+      "whyWrong": "評價詞沒有說明人數、比例或具體結果。",
+      "correction": "尋找清冊、統計與獨立紀錄驗證主張。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "宣傳材料是否毫無研究價值？",
+      "answer": "不是",
+      "reason": "它可呈現政策訊息、說服方式與官方期待。"
+    },
+    {
+      "prompt": "個人日記能直接代表全臺居民嗎？",
+      "answer": "不能",
+      "reason": "作者的身分、地點與經驗範圍都有侷限。"
+    },
+    {
+      "prompt": "遇到材料差異時應先比較什麼？",
+      "answer": "作者、目的、時間與範圍",
+      "reason": "這些條件決定材料可以支持的結論。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-EA-4-1",
+      "AUTH-SOCIAL-LC-HIS-EA-4-2",
+      "AUTH-SOCIAL-LC-HIS-EA-4-3",
+      "AUTH-SOCIAL-LC-HIS-EB-4-3",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  }
+}

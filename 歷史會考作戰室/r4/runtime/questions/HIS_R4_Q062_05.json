@@ -1,0 +1,89 @@
+{
+  "id": "HIS_R4_Q062_05",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S062"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-EA-4-1",
+    "AUTH-SOCIAL-LC-HIS-EA-4-2",
+    "AUTH-SOCIAL-LC-HIS-EA-4-3",
+    "AUTH-SOCIAL-LC-HIS-EB-4-3",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "人口10萬、米1,000噸，每千人平均可分多少噸？",
+  "options": [
+    "10噸",
+    "100噸",
+    "1噸",
+    "1,000噸"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "1,000÷100＝10噸。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此值多算了十倍。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "此值少算了十倍。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這是總量而非每千人量。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "應用",
+    "人均計算"
+  ],
+  "representationType": "numeric-table",
+  "misconceptionTargets": [
+    "總量當平均量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-EA-4-1",
+      "AUTH-SOCIAL-LC-HIS-EA-4-2",
+      "AUTH-SOCIAL-LC-HIS-EA-4-3",
+      "AUTH-SOCIAL-LC-HIS-EB-4-3",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "10萬人包含100個千人單位，因此1,000噸除以100等於每千人10噸。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第四項把總量原封不動當平均量。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

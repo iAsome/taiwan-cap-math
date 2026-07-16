@@ -1,0 +1,82 @@
+{
+  "id": "HIS_R4_Q209_05",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S209"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QB-4-3",
+    "AUTH-SOCIAL-LC-HIS-QC-4-1",
+    "AUTH-SOCIAL-LC-HIS-R-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "要確認某城市失業率是否真的上升，最可靠的資料組合是什麼？",
+  "options": [
+    "勞動人口定義、求職登記、人口普查與工廠就業名冊",
+    "一張空蕩街道照片",
+    "市長演說中的一個形容詞",
+    "餐廳菜單價格一項"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "四類資料可校正分母並交叉檢查就業狀態。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "照片不能量出全市勞動人口。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "政治語言不是失業統計。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "單一價格不等於就業變化。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "選證"
+  ],
+  "representationType": "勞動統計",
+  "misconceptionTargets": [
+    "影像直接代表總體"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QB-4-3",
+      "AUTH-SOCIAL-LC-HIS-QC-4-1",
+      "AUTH-SOCIAL-LC-HIS-R-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "普查提供勞動人口分母，登記與名冊則從求職及受僱兩面估計變化。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "定義資料可檢查家庭工作者或短工是否被漏計，避免跨年口徑不一。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

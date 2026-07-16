@@ -1,0 +1,94 @@
+{
+  "id": "HIS_R4_Q009_11",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S009"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "同一官員在公開演說中稱政策順利，在私人信中承認困難。最合理的分析是？",
+  "options": [
+    "公開材料一定是假，私人材料一定真",
+    "兩份材料必有一份屬不同作者",
+    "不同讀者與目的可能造成表達差異，仍需查執行資料",
+    "語氣不同證明政策從未實施"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "公開與私人性都不能單獨保證真偽。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題幹已說明兩者由同一官員留下。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "受眾差異可解釋語氣，成效另需證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "承認困難不等於政策未曾執行。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "跨文本脈絡"
+  ],
+  "representationType": "雙文本比較",
+  "misconceptionTargets": [
+    "私人信必然真實"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "官員可能對公眾強調成果，對熟人談執行阻力；兩種語氣都反映其溝通目的。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項先解釋差異，再要求以外部資料評估政策成效。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

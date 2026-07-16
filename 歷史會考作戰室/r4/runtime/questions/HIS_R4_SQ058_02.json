@@ -1,0 +1,89 @@
+{
+  "id": "HIS_R4_SQ058_02",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S058"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-EA-4-1",
+    "AUTH-SOCIAL-LC-HIS-EA-4-2",
+    "AUTH-SOCIAL-LC-HIS-EA-4-3",
+    "AUTH-SOCIAL-LC-HIS-EB-4-3",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": "HIS_R4_ST058",
+  "stem": "此戶每人每月米配給由多少降至多少？",
+  "options": [
+    "9公斤降至7公斤",
+    "45公斤降至35公斤",
+    "20公斤升至70公斤",
+    "5公斤維持不變"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "45÷5＝9，35÷5＝7公斤。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是全戶總量而非每人量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "20與70是排隊分鐘數。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "5是家庭人口不是米量。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "計算",
+    "人均"
+  ],
+  "representationType": "shared-stimulus",
+  "misconceptionTargets": [
+    "總量當人均與混用分鐘"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-EA-4-1",
+      "AUTH-SOCIAL-LC-HIS-EA-4-2",
+      "AUTH-SOCIAL-LC-HIS-EA-4-3",
+      "AUTH-SOCIAL-LC-HIS-EB-4-3",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "家庭人口兩年都為5人，所以45除以5得9，35除以5得7公斤。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項正確使用相同人口分母。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,142 @@
+{
+  "id": "HIS_R4_L012",
+  "subject": "history",
+  "unitId": "HIS_R4_U02",
+  "skillId": "HIS_R4_S012",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "prerequisites": [
+    "HIS_R4_S011"
+  ],
+  "objectives": [
+    "能依史料的內容、時間、範圍與製作方式，判斷它能回答哪些問題、不能回答哪些問題，並提出適當的補充證據。"
+  ],
+  "sections": [
+    {
+      "id": "HIS_R4_L012_SEC_1",
+      "title": "問題與證據配對",
+      "content": "帳冊適合回答數量與交易變化，私人日記可提供個人感受，法規文本能說明正式規定。材料可能間接提供線索，但不能超出其記錄對象與形成目的。"
+    },
+    {
+      "id": "HIS_R4_L012_SEC_2",
+      "title": "範圍限制",
+      "content": "一所學校、一座城市或一年份的資料不能自動代表全國與長期趨勢。研究結論的時間、空間與群體範圍，原則上不得大於證據能涵蓋的範圍。"
+    },
+    {
+      "id": "HIS_R4_L012_SEC_3",
+      "title": "沉默的多種意義",
+      "content": "材料沒有提某事，可能因作者不知道、認為不重要、刻意省略或該事未發生。『未記載』本身不是不存在的充分證明，除非該紀錄理應完整收錄。"
+    },
+    {
+      "id": "HIS_R4_L012_SEC_4",
+      "title": "補證策略",
+      "content": "先說清楚現有材料可支持到哪裡，再針對缺口尋找資料。要研究政策效果，除了法令還需執行紀錄與受影響者資料；要研究普遍性，則需不同地區與群體的比較。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "HIS_R4_L012_EX_1",
+      "prompt": "一份城市稅收表能否單獨回答居民是否支持新政府？",
+      "steps": [
+        "辨認稅表記錄的變項。",
+        "分開繳稅行為與政治態度。",
+        "提出民意材料需求。"
+      ],
+      "answer": "不能；稅收表可回答收入變化，不能直接證明支持程度。",
+      "why": "繳稅可能出於強制、習慣或執法，態度需用書信、調查、抗議與其他行動證據判斷。"
+    },
+    {
+      "id": "HIS_R4_L012_EX_2",
+      "prompt": "某班級名冊可否證明全縣學童入學率？",
+      "steps": [
+        "確認名冊只涵蓋一班。",
+        "找出計算入學率需要的分母。",
+        "要求全縣學齡人口與各校資料。"
+      ],
+      "answer": "不能；材料的空間與群體範圍不足。",
+      "why": "一班名冊只能說明該班成員。全縣入學率需要全縣入學人數與學齡人口，不能由單一名冊外推。"
+    },
+    {
+      "id": "HIS_R4_L012_EX_3",
+      "prompt": "會議紀錄未提反對意見，能否確定無人反對？",
+      "steps": [
+        "查紀錄是否逐字或摘要。",
+        "確認記錄者與刪節規則。",
+        "另找出席者筆記或表決資料。"
+      ],
+      "answer": "不能直接確定。",
+      "why": "摘要紀錄可能省略爭論，甚至只記決議；若有逐名表決或完整錄音，才較能回答是否存在反對。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "用首都資料概括所有地方居民。",
+      "whyWrong": "首都的制度、人口與資訊環境可能不同，不能代表其他區域。",
+      "correction": "限制結論範圍並增加地方比較材料。"
+    },
+    {
+      "belief": "把材料未記載當成事件一定沒發生。",
+      "whyWrong": "沉默可能源自記錄目的、遺失或刻意省略，而非事件不存在。",
+      "correction": "評估材料是否理應記錄，再找其他來源。"
+    },
+    {
+      "belief": "只看法令文本就判定政策效果。",
+      "whyWrong": "法令說明規定內容，不能保證各地執行或產生預期結果。",
+      "correction": "補入執行紀錄、統計與當事人經驗。"
+    },
+    {
+      "belief": "用一個年份推論長期變化方向。",
+      "whyWrong": "單點資料無法辨認趨勢、波動或轉折。",
+      "correction": "蒐集前後多期可比較資料。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "法令最直接能回答什麼？",
+      "answer": "政府正式規定的內容。",
+      "reason": "執行成效仍需其他資料。"
+    },
+    {
+      "prompt": "未記載能否直接等於未發生？",
+      "answer": "不能。",
+      "reason": "須判斷紀錄目的及完整程度。"
+    },
+    {
+      "prompt": "結論範圍應如何決定？",
+      "answer": "不得超過證據的時間、空間與群體範圍。",
+      "reason": "避免由局部材料過度外推。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  }
+}

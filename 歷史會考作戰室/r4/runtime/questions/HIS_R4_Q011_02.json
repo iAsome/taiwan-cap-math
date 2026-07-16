@@ -1,0 +1,94 @@
+{
+  "id": "HIS_R4_Q011_02",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "三家網站都轉載同一篇通訊社稿件，對稿件中的一項數字而言，主要算幾條獨立資訊來源？",
+  "options": [
+    "三條",
+    "一條",
+    "零條",
+    "至少六條"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "三個網址沒有新增獨立採訪。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "共同源頭仍是同一篇稿件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "稿件本身仍構成一條待查來源。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有證據支持把轉載倍增計數。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "來源獨立性"
+  ],
+  "representationType": "媒體來源鏈",
+  "misconceptionTargets": [
+    "轉載數當證據數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "三個網站共享同一通訊社源頭，因此只能算一條資訊鏈。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項依形成來源計算，而不是依頁面數量計算。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

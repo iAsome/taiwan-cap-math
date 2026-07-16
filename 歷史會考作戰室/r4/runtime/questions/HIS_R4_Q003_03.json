@@ -1,0 +1,78 @@
+{
+  "id": "HIS_R4_Q003_03",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S003"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A與B都只知發生於1921年。可以確定什麼？",
+  "options": [
+    "A一定先",
+    "B一定先",
+    "兩者同年，但年內先後未定",
+    "兩者互為因果"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有月日不能定A先。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "同樣不能定B先。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "這是資料能支持的精度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "同年不證明因果。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "資料精度"
+  ],
+  "representationType": "資訊判讀",
+  "misconceptionTargets": [
+    "同年硬排先後"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "材料只到年份，所以最多確定同年，不能補造月日。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項同時保留已知與未知，符合證據界線。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

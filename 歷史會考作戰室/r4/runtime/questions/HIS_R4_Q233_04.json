@@ -1,0 +1,90 @@
+{
+  "id": "HIS_R4_Q233_04",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S233"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-BB-4-1",
+    "AUTH-SOCIAL-LC-HIS-FA-4-4",
+    "AUTH-SOCIAL-LC-HIS-FB-4-1",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LC-HIS-LA-4-2",
+    "AUTH-SOCIAL-LC-HIS-LB-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "三家報紙逐字刊登同一通訊社消息，應算幾條獨立消息來源？",
+  "options": [
+    "三條，因有三個報頭",
+    "六條，因每篇有標題與正文",
+    "零條，因報紙都不能使用",
+    "主要是一條原始消息，除非各報另有獨立採訪或文件"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "報頭不同不會增加資訊來源。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "文章結構也不等於獨立取證。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "報紙仍可使用，只須追源。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此項正確區分刊登份數和來源路徑。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "來源追蹤"
+  ],
+  "representationType": "新聞轉載",
+  "misconceptionTargets": [
+    "篇數等於證據數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-BB-4-1",
+      "AUTH-SOCIAL-LC-HIS-FA-4-4",
+      "AUTH-SOCIAL-LC-HIS-FB-4-1",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LC-HIS-LA-4-2",
+      "AUTH-SOCIAL-LC-HIS-LB-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "三篇文字若都來自同一通訊稿，實際資訊鏈仍只有一條。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四個答案也保留例外：各報若增加獨立訪談或文件，新增部分才算另一證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

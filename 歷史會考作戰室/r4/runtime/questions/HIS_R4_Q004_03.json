@@ -1,0 +1,78 @@
+{
+  "id": "HIS_R4_Q004_03",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S004"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "時間軸上1900到1901與1901到1950被畫成相同距離且無說明。問題是？",
+  "options": [
+    "年份太少",
+    "事件太多",
+    "不等年距被畫成等距，會誤導時間長短",
+    "所有時間軸都不能畫比例"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "問題不在年份數量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題幹未說事件過多。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "1年與49年不應無說明地等距。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "時間軸可以採比例。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "刻度判讀"
+  ],
+  "representationType": "圖表評析",
+  "misconceptionTargets": [
+    "視覺距離不檢查"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "圖上等距通常暗示相同時間，這裡會把1年和49年誤為相等。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項指出具體扭曲，並未否定非等距軸可加註使用。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

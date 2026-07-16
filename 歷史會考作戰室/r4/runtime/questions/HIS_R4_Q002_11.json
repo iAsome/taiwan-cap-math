@@ -1,0 +1,78 @@
+{
+  "id": "HIS_R4_Q002_11",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S002"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "資料庫把民國108年轉成西元2020年。哪項檢查可發現錯誤？",
+  "options": [
+    "把108除以100",
+    "把2020減108",
+    "用108加1911應得2019",
+    "看兩個數字是否都為偶數"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "除以100不能換算。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "相減未使用紀年關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "正確公式得到2019。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "奇偶與紀年無關。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "資料校驗"
+  ],
+  "representationType": "資料庫情境",
+  "misconceptionTargets": [
+    "自動換算差一年"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "民國108年加1911等於2019，故資料庫結果多了一年。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項直接使用固定對照，可重現並定位錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

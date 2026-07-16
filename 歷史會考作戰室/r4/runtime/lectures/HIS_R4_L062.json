@@ -1,0 +1,138 @@
+{
+  "id": "HIS_R4_L062",
+  "subject": "history",
+  "unitId": "HIS_R4_U09",
+  "skillId": "HIS_R4_S062",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-EA-4-1",
+    "AUTH-SOCIAL-LC-HIS-EA-4-2",
+    "AUTH-SOCIAL-LC-HIS-EA-4-3",
+    "AUTH-SOCIAL-LC-HIS-EB-4-3",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "prerequisites": [
+    "HIS_R4_S061"
+  ],
+  "objectives": [
+    "由人口與物資資料判斷戰爭影響",
+    "區分總數、比例與每人平均",
+    "辨識資料缺項並限制推論"
+  ],
+  "sections": [
+    {
+      "id": "HIS_R4_L062_SEC1",
+      "title": "先確認統計單位",
+      "content": "人口數、戶數、人次、公斤與指數回答的問題不同。比較前要讀清楚年度、地區、分母與單位；總量下降可能來自人口變少，也可能是每人配額下降，不能跳過計算便指定原因。"
+    },
+    {
+      "id": "HIS_R4_L062_SEC2",
+      "title": "總量與人均可能相反",
+      "content": "若人口增加速度快於糧食總量，即使糧食總量上升，每人平均仍可能下降。反之，總量減少時若人口減得更多，人均值未必下降。會考常要求學生用除法或比例辨認這種差異。"
+    },
+    {
+      "id": "HIS_R4_L062_SEC3",
+      "title": "缺漏值限制結論",
+      "content": "統計表若只列配給登記人口，不一定包含未登記者；若只列官方收購量，也不能等同全部產量。缺少價格、黑市、家庭存糧或區域分布時，應把結論限定在表中指標。"
+    },
+    {
+      "id": "HIS_R4_L062_SEC4",
+      "title": "數字需要歷史情境",
+      "content": "人口遷移、徵調、空襲與運輸中斷都可能影響物資資料。數字可指出變化時間和幅度，原因則要由政策、交通或個人紀錄補充；不能看到同年發生兩件事，就自動認定只有一條因果。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "HIS_R4_L062_EX1",
+      "prompt": "某地人口10萬、配給米1,000噸；次年人口12萬、配給米1,080噸。人均供應如何？",
+      "steps": [
+        "統一重量單位",
+        "分別除以人口",
+        "比較兩年人均值"
+      ],
+      "answer": "次年人均供應下降",
+      "why": "總量增加8%，人口卻增加20%，所以每人可分得的平均量下降。只看1,080大於1,000會忽略分母改變。"
+    },
+    {
+      "id": "HIS_R4_L062_EX2",
+      "prompt": "表中『登記戶數』減少，能否直接說人口同幅減少？",
+      "steps": [
+        "辨識戶數與人口",
+        "檢查每戶人口",
+        "限制結論"
+      ],
+      "answer": "不能",
+      "why": "戶數不是人口數；合戶、遷移或登記制度變動都可能改變戶數。還需人口總數與登記說明才能判斷。"
+    },
+    {
+      "id": "HIS_R4_L062_EX3",
+      "prompt": "官方收購糧食減少，能否斷定農業總產量等量下降？",
+      "steps": [
+        "分清收購與生產",
+        "列出其他流向",
+        "尋找產量資料"
+      ],
+      "answer": "不能",
+      "why": "收購量只是一種流向，還可能受自用、隱匿、價格或運輸影響。總產量必須由生產調查或更完整帳冊判定。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "總配給量增加就認定每位居民一定分得更多。",
+      "whyWrong": "人口分母若增加更快，人均量反而會下降。",
+      "correction": "將總量除以同年度涵蓋人口再比較。"
+    },
+    {
+      "belief": "把戶數當成人口數直接計算人均供應。",
+      "whyWrong": "每戶人口不同，戶數無法代替個人分母。",
+      "correction": "使用人口總數或明確的每戶平均資料。"
+    },
+    {
+      "belief": "官方收購量等於地方全部農業產量。",
+      "whyWrong": "自用、其他交易與未登記流向不在收購數中。",
+      "correction": "區分生產、收購、運輸與配給各項統計。"
+    },
+    {
+      "belief": "兩個數字同年變動便斷定其中一個造成另一個。",
+      "whyWrong": "同期變化沒有排除人口、運輸與政策等因素。",
+      "correction": "用時序與補充證據檢驗可能因果。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "比較人均配給最需要哪兩項資料？",
+      "answer": "配給總量與涵蓋人口",
+      "reason": "人均值以總量除以相同範圍的人口。"
+    },
+    {
+      "prompt": "登記戶數可直接代替人口嗎？",
+      "answer": "不能",
+      "reason": "每戶人口不同，兩種統計單位不可混用。"
+    },
+    {
+      "prompt": "收購量是否必然等於產量？",
+      "answer": "不是",
+      "reason": "產品還可能自用或流向其他未列管管道。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-EA-4-1",
+      "AUTH-SOCIAL-LC-HIS-EA-4-2",
+      "AUTH-SOCIAL-LC-HIS-EA-4-3",
+      "AUTH-SOCIAL-LC-HIS-EB-4-3",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  }
+}

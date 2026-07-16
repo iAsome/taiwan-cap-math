@@ -1,0 +1,80 @@
+{
+  "id": "HIS_R4_SQ189_03",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S189"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QA-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": "HIS_R4_ST189",
+  "stem": "要檢驗供排水工程是否降低霍亂，最佳新增設計為何？",
+  "options": [
+    "比較接管與未接管街區工程前後的霍亂率，並查人口及其他措施",
+    "只數管線總長，不看病例",
+    "只訪問一戶接管家庭",
+    "用全市建築高度代替健康資料"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "分區前後對照可檢查工程效果與替代原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "管線長度不直接等於疾病結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "單戶代表性與統計力不足。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "建築高度不是霍亂指標。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "研究設計"
+  ],
+  "representationType": "共享材料",
+  "misconceptionTargets": [
+    "通管線即自動證成因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QA-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項同時建立時間與空間對照，並提醒人口變化或其他衛生措施可能干擾。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "這比只看工程投入或單一家庭，更能判斷霍亂下降是否與管線相關。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

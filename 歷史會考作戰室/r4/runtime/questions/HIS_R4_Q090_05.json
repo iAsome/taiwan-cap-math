@@ -1,0 +1,81 @@
+{
+  "id": "HIS_R4_Q090_05",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S090"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-HA-4-1",
+    "AUTH-SOCIAL-LC-HIS-HA-4-2",
+    "AUTH-SOCIAL-LC-HIS-J-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "文獻稱某城存在於西元前一千年，測年結果卻顯示現有城牆建於西元前八百年。合理處理方式是？",
+  "options": [
+    "區分文獻中的聚落記載與現存城牆年代，繼續查證",
+    "刪掉測年結果，只保留文獻",
+    "認定所有文獻都錯",
+    "把兩個年代平均成西元前九百年"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "聚落存在與城牆建造可能不是同一事件，應分開。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "不能因衝突就刪除不利證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "單一衝突不足以否定全部文獻。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "歷史年代不能用算術平均解決。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "處理衝突證據",
+    "年代分析"
+  ],
+  "representationType": "文獻與測年",
+  "misconceptionTargets": [
+    "為一致而任意改資料"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-HA-4-1",
+      "AUTH-SOCIAL-LC-HIS-HA-4-2",
+      "AUTH-SOCIAL-LC-HIS-J-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "兩項資料可能談不同對象，先區分聚落和城牆再查證，第一項保留可檢驗性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "刪資料、全盤否定或平均年代都沒有處理證據實際含義。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

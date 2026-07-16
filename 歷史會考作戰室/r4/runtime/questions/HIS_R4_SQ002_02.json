@@ -1,0 +1,78 @@
+{
+  "id": "HIS_R4_SQ002_02",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S002"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": "HIS_R4_ST002",
+  "stem": "昭和20年換算為1945年的計算方式何者正確？",
+  "options": [
+    "1926加20",
+    "1926減20",
+    "1926加19",
+    "1945加20"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "元年已算第一年，會多一年。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "1926減20的計算方向完全錯誤。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "元年加19到第二十年。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "把結果再加年次無意義。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "年號換算"
+  ],
+  "representationType": "檔案卡",
+  "misconceptionTargets": [
+    "元年多算"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "昭和元年1926，第二十年與元年相隔19年。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項得到1945，也和另外兩份檔案相符。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

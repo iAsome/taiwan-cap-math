@@ -1,0 +1,83 @@
+{
+  "id": "HIS_R4_Q173_03",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S173"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-OA-4-1",
+    "AUTH-SOCIAL-LC-HIS-OA-4-2",
+    "AUTH-SOCIAL-LC-HIS-OA-4-3",
+    "AUTH-SOCIAL-LC-HIS-P-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "伽利略用望遠鏡觀察木星衛星，最直接挑戰哪項說法？",
+  "options": [
+    "地球會自轉",
+    "所有行星軌道必為橢圓",
+    "所有天體都只繞地球運行",
+    "萬有引力可用公式表示"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "木星衛星不單獨證明地球自轉。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "橢圓需長期位置資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "木星衛星以木星為中心運行，否定一切天體僅繞地球的說法。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "引力公式是後來牛頓綜合。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "推論",
+    "觀測"
+  ],
+  "representationType": "evidence-inference",
+  "misconceptionTargets": [
+    "單一觀測證明完整理論"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-OA-4-1",
+      "AUTH-SOCIAL-LC-HIS-OA-4-2",
+      "AUTH-SOCIAL-LC-HIS-OA-4-3",
+      "AUTH-SOCIAL-LC-HIS-P-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項是觀測能直接否定的全稱主張，證據界線清楚。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "這項發現支持新宇宙觀，但不能單獨證明所有日心模型細節。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

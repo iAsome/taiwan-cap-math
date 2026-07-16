@@ -1,0 +1,85 @@
+{
+  "id": "HIS_R4_Q042_09",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S042"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-CA-4-1",
+    "AUTH-SOCIAL-LC-HIS-CA-4-2",
+    "AUTH-SOCIAL-LC-HIS-CB-4-1",
+    "AUTH-SOCIAL-LC-HIS-CB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "甲縣查緝多、乙縣查緝少，能否直接說乙縣違規較少？",
+  "options": [
+    "不能；查緝能力與記錄密度也會影響案件數",
+    "可以，案件數等於實際違規總數",
+    "可以，乙縣沒有居民",
+    "不能，因查緝資料完全無用"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "執法強度不同會造成觀察偏差。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "被查到的案件不等於全部違規。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "案件少不能證明沒有居民。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "查緝資料仍可在控制執法差異後使用。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析",
+    "資料偏差"
+  ],
+  "representationType": "enforcement-bias",
+  "misconceptionTargets": [
+    "案件少就代表違規少"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-CA-4-1",
+      "AUTH-SOCIAL-LC-HIS-CA-4-2",
+      "AUTH-SOCIAL-LC-HIS-CB-4-1",
+      "AUTH-SOCIAL-LC-HIS-CB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項指出行政資料受偵測能力影響，是跨地比較必須控制的變數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其他選項把記錄當真實總數，或全面否定人口和資料價值。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

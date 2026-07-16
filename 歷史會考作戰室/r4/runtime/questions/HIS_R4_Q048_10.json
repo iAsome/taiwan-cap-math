@@ -1,0 +1,87 @@
+{
+  "id": "HIS_R4_Q048_10",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S048"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-CA-4-1",
+    "AUTH-SOCIAL-LC-HIS-CA-4-2",
+    "AUTH-SOCIAL-LC-HIS-CB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LC-HIS-D-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某表缺少兩年資料，卻有人畫成每年平滑上升曲線。主要問題是什麼？",
+  "options": [
+    "曲線不能用於歷史",
+    "以未觀察年份補成連續趨勢，掩蓋資料缺口",
+    "所有缺值都等於零",
+    "表格必須改成地圖"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "歷史資料可用曲線，但須忠實標示。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "缺年資料不能自動假設平滑變化。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "未記錄不等於實際為零。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "地圖也不能補出缺少年份。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "評估",
+    "資料缺漏"
+  ],
+  "representationType": "chart-critique",
+  "misconceptionTargets": [
+    "用連線掩蓋缺值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-CA-4-1",
+      "AUTH-SOCIAL-LC-HIS-CA-4-2",
+      "AUTH-SOCIAL-LC-HIS-CB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LC-HIS-D-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "研究者可以連線協助觀察，但必須標出缺值並避免把插補當真實觀測。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項直接指出圖形把未知資料偽裝成已知趨勢的問題。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

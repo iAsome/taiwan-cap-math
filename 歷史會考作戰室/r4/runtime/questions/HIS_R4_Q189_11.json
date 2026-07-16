@@ -1,0 +1,80 @@
+{
+  "id": "HIS_R4_Q189_11",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S189"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QA-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "評估今日新捷運是否造成某區租金上升，哪項設計最接近歷史因果分析？",
+  "options": [
+    "只訪問一名乘客",
+    "只看開通當天的車站照片",
+    "比較開通前後、鄰近與相似未通車區，並控制其他建設",
+    "因為捷運很新，所以直接判定是唯一原因"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單一訪談不足以估計區域租金。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "照片不能提供價格變化與對照。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "時間和區域對照可排查共同趨勢及替代因素。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "設備新穎不是充分因果證據。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移"
+  ],
+  "representationType": "研究設計",
+  "misconceptionTargets": [
+    "前後變化即單一原因"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QA-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項結合時間序列和相似地區對照，也提醒同時發生的建設可能干擾判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其他做法都缺乏基準，無法區分捷運效果與原有租金趨勢。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

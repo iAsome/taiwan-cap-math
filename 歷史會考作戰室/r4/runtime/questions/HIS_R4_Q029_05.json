@@ -1,0 +1,83 @@
+{
+  "id": "HIS_R4_Q029_05",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S029"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-BB-4-1",
+    "AUTH-SOCIAL-LC-HIS-BB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "某港出口額增加，但貨物數量不變。最合理的初步解釋是什麼？",
+  "options": [
+    "單價或計價方式可能改變",
+    "港口一定增加兩倍人口",
+    "所有船隻運量都下降",
+    "出口商品已完全消失"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "數量不變而金額上升可由價格解釋。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "出口額不能直接換算港口人口。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "資料沒有提供各船運量變化。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "仍有出口數量，不能說商品消失。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "應用",
+    "資料判讀"
+  ],
+  "representationType": "quantitative-source",
+  "misconceptionTargets": [
+    "把出口額直接當數量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-BB-4-1",
+      "AUTH-SOCIAL-LC-HIS-BB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項區分金額與數量，提出能符合兩項統計的合理假設。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "人口、船運量與商品消失均不是現有數據可以直接推出的結論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

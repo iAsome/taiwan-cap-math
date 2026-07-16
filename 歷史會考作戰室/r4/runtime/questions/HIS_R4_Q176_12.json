@@ -1,0 +1,89 @@
+{
+  "id": "HIS_R4_Q176_12",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S176"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-BB-4-1",
+    "AUTH-SOCIAL-LC-HIS-OB-4-1",
+    "AUTH-SOCIAL-LC-HIS-OB-4-2",
+    "AUTH-SOCIAL-LC-HIS-OB-4-3",
+    "AUTH-SOCIAL-LC-HIS-P-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "若研究者要知道哥倫布船隊在加勒比海的每一停靠日期，應如何處理？",
+  "options": [
+    "由圖上虛線轉折點直接猜測",
+    "用尺量每段換算天數",
+    "把圖例年份除以線段數",
+    "承認本圖不足，另查航海日誌與分日紀錄"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "轉折是示意而非停靠符號。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "非比例線長不能換算時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "年份和線段數沒有此關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "航海日誌才有分日資訊。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "設計",
+    "補充來源"
+  ],
+  "representationType": "research-design",
+  "misconceptionTargets": [
+    "從示意圖捏造精確日期"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-BB-4-1",
+      "AUTH-SOCIAL-LC-HIS-OB-4-1",
+      "AUTH-SOCIAL-LC-HIS-OB-4-2",
+      "AUTH-SOCIAL-LC-HIS-OB-4-3",
+      "AUTH-SOCIAL-LC-HIS-P-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項遵守資產的不確定性說明，並提出能回答新問題的來源。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "其他三項都把示意線條誤作精確航程數據。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "HIS_R4_A002"
+  ]
+}

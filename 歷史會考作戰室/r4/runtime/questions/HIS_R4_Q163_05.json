@@ -1,0 +1,87 @@
+{
+  "id": "HIS_R4_Q163_05",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-NB-4-2",
+    "AUTH-SOCIAL-LC-HIS-NB-4-3",
+    "AUTH-SOCIAL-LC-HIS-OA-4-1",
+    "AUTH-SOCIAL-LC-HIS-OA-4-2",
+    "AUTH-SOCIAL-LC-HIS-P-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "一份莊園帳冊記錄賣出葡萄酒並買入鐵器，最直接說明什麼？",
+  "options": [
+    "該莊園與外部市場有雙向交換",
+    "莊園內已無任何農業",
+    "所有農民都成為商人",
+    "鐵器必定產自同一領主土地"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "賣出和買入分別呈現商品流出與流入。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "葡萄酒本身就是農業加工產品。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "帳冊交易不能改變全體居民職業。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "材料沒有提供鐵器產地所有權。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "推論",
+    "莊園帳冊"
+  ],
+  "representationType": "ledger-inference",
+  "misconceptionTargets": [
+    "莊園完全自給"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-NB-4-2",
+      "AUTH-SOCIAL-LC-HIS-NB-4-3",
+      "AUTH-SOCIAL-LC-HIS-OA-4-1",
+      "AUTH-SOCIAL-LC-HIS-OA-4-2",
+      "AUTH-SOCIAL-LC-HIS-P-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "兩筆相反方向的交易是市場連結的直接證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其餘結論跨越生產、人口職業或來源地資訊，超出帳冊可支持範圍。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

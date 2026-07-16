@@ -1,0 +1,80 @@
+{
+  "id": "HIS_R4_Q189_05",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S189"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QA-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "鐵路通車後內陸工廠的煤價下降、出貨時間縮短。哪項推論最合理？",
+  "options": [
+    "交通改善可能同時降低投入與銷售的部分時間成本",
+    "鐵路必使工廠不再需要任何資本",
+    "煤價下降證明空氣污染同步消失",
+    "出貨變快等於所有工人工時縮短"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩項變化分別作用於原料進廠與成品外運。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "建廠、設備和營運仍需要資金。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "更便宜的煤甚至可能增加燃燒量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "物流時間與工人班次不是同一指標。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "因果"
+  ],
+  "representationType": "通車前後",
+  "misconceptionTargets": [
+    "運輸改善自動改善一切"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QA-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項把題幹兩項結果連到交通成本，又以『可能』和『部分』保留其他條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其餘選項將物流改善錯推為無需資本、沒有污染或必然縮短工時。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

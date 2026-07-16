@@ -1,0 +1,87 @@
+{
+  "id": "HIS_R4_SQ048_03",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S048"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-CA-4-1",
+    "AUTH-SOCIAL-LC-HIS-CA-4-2",
+    "AUTH-SOCIAL-LC-HIS-CB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LC-HIS-D-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "stimulusId": "HIS_R4_ST048",
+  "stem": "能否由這張表判定茶葉產量增加三倍？",
+  "options": [
+    "能，因為出口值就是重量",
+    "不能，表中只有出口值，還缺重量、單價與品質資料",
+    "能，因為總出口增加100",
+    "不能，因為任何貿易表都無效"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "金額會受價格與品質影響，不等於重量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此項指出判斷產量所缺的直接變項。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "總出口包含糖和其他商品。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "貿易表可回答出口值與比例問題。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "評估",
+    "資料限制"
+  ],
+  "representationType": "shared-stimulus",
+  "misconceptionTargets": [
+    "把價值倍數當產量倍數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-CA-4-1",
+      "AUTH-SOCIAL-LC-HIS-CA-4-2",
+      "AUTH-SOCIAL-LC-HIS-CB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LC-HIS-D-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "茶出口值由20增至60是三倍，但產量是否三倍還取決於每單位價格與商品等級。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項限制的是產量推論，不是否定表格本身對出口值研究的價值。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

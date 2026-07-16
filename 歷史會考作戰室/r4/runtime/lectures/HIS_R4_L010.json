@@ -1,0 +1,142 @@
+{
+  "id": "HIS_R4_L010",
+  "subject": "history",
+  "unitId": "HIS_R4_U02",
+  "skillId": "HIS_R4_S010",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "prerequisites": [
+    "HIS_R4_S009"
+  ],
+  "objectives": [
+    "能把可由資料核對的歷史陳述與後人提出的原因、評價或意義解釋分開，並理解解釋仍可接受證據檢驗。"
+  ],
+  "sections": [
+    {
+      "id": "HIS_R4_L010_SEC_1",
+      "title": "可核對的陳述",
+      "content": "日期、法令條文、人口數、會議名單與某人曾寫下的句子，通常可透過來源核對。可核對不代表一定正確，而是說它具有明確證據與反證方式。"
+    },
+    {
+      "id": "HIS_R4_L010_SEC_2",
+      "title": "解釋性陳述",
+      "content": "『因為』『導致』『象徵』『最重要』等語句常在說明原因、影響或意義。解釋不是隨意意見，必須交代所用證據、推論過程與是否存在其他合理說法。"
+    },
+    {
+      "id": "HIS_R4_L010_SEC_3",
+      "title": "事實與解釋相連",
+      "content": "研究者先建立基本事實，再用比較和脈絡提出解釋。例如確認工廠數增加是資料陳述，判斷增加主要源於交通改善則需額外因果證據。兩層不能混成一句。"
+    },
+    {
+      "id": "HIS_R4_L010_SEC_4",
+      "title": "評價語的界線",
+      "content": "『成功』『進步』『衰退』都需要明確標準。政策可能提高產量卻加重不平等；若不說評價對象、時間與指標，價值判斷就容易遮蔽不同群體經驗。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "HIS_R4_L010_EX_1",
+      "prompt": "『該法令於1925年公布』與『該法令是社會轉型的主因』有何差別？",
+      "steps": [
+        "找出可直接查日期的部分。",
+        "辨認主因涉及因果比較。",
+        "列出主因判斷所需的其他證據。"
+      ],
+      "answer": "前者是可核對陳述；後者是需要論證的解釋。",
+      "why": "公布日期可由法令原件核對；要稱為主因，還須比較其他因素並證明法令如何改變社會。"
+    },
+    {
+      "id": "HIS_R4_L010_EX_2",
+      "prompt": "統計表顯示十年間城市人口增加，能否直接寫成『工業化造成城市人口增加』？",
+      "steps": [
+        "先確認表格只顯示人口變化。",
+        "拆出工業化與因果連結。",
+        "尋找就業、遷徙和產業資料。"
+      ],
+      "answer": "不能直接寫成因果；目前只能確認城市人口增加。",
+      "why": "人口表支持趨勢事實，卻未說明遷入原因。工業化可能是解釋之一，仍需產業與個人遷徙證據。"
+    },
+    {
+      "id": "HIS_R4_L010_EX_3",
+      "prompt": "『這次改革成功』至少要補什麼才能檢驗？",
+      "steps": [
+        "確認改革原定目標。",
+        "選擇衡量時間與指標。",
+        "比較不同受影響群體。"
+      ],
+      "answer": "成功的評量標準、期間及對象。",
+      "why": "若只看政府收入可能成功，若看生活負擔可能不同。明示標準才能讓同一證據接受檢驗。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到文件寫了某句話，就把句中主張當成事實。",
+      "whyWrong": "文件能證明作者曾如此表述，不能自動證明表述內容全部真實。",
+      "correction": "把『作者聲稱』與『事情確實如此』分開查證。"
+    },
+    {
+      "belief": "認為歷史解釋只是個人喜好。",
+      "whyWrong": "合理解釋必須與資料相容，也要能回應反例及競爭解釋。",
+      "correction": "檢查證據、推論和可被反駁的條件。"
+    },
+    {
+      "belief": "用單一數字直接判定政策成功。",
+      "whyWrong": "不同目標與群體可能呈現相反效果，單一指標會過度概括。",
+      "correction": "先界定成功標準，再使用多項適切資料。"
+    },
+    {
+      "belief": "因兩件事同時出現就寫成其中一件造成另一件。",
+      "whyWrong": "相關與因果不同，還缺少時間方向、作用機制及替代因素比較。",
+      "correction": "把共變當線索，再尋找因果鏈證據。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "『條約在某年簽署』通常是哪一類陳述？",
+      "answer": "可由文件核對的陳述。",
+      "reason": "簽署日期可查原件與檔案紀錄。"
+    },
+    {
+      "prompt": "『最重要原因』需要什麼？",
+      "answer": "比較各因素作用的證據與明確判準。",
+      "reason": "重要程度不是只靠語氣決定。"
+    },
+    {
+      "prompt": "資料與解釋可以完全分開嗎？",
+      "answer": "不能完全分開，但分析時應區分層次。",
+      "reason": "解釋以事實為基礎，事實選取也受問題影響。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  }
+}

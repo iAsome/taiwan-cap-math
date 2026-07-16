@@ -1,0 +1,87 @@
+{
+  "id": "HIS_R4_Q048_04",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S048"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-CA-4-1",
+    "AUTH-SOCIAL-LC-HIS-CA-4-2",
+    "AUTH-SOCIAL-LC-HIS-CB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LC-HIS-D-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "總出口值從200增為300，茶出口值從100增為120。茶的占比如何變化？",
+  "options": [
+    "由50%升為60%",
+    "由33%升為40%",
+    "維持50%",
+    "由50%降為40%"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "後期120除以300不是60%。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "前期100除以200不是33%。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "後期占比不是50%。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "前期50%，後期40%，占比下降。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "應用",
+    "比例"
+  ],
+  "representationType": "numeric-table",
+  "misconceptionTargets": [
+    "數值增加就認為占比上升"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-CA-4-1",
+      "AUTH-SOCIAL-LC-HIS-CA-4-2",
+      "AUTH-SOCIAL-LC-HIS-CB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LC-HIS-D-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "前期茶占100÷200＝50%，後期占120÷300＝40%。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "茶出口值雖增加20，總出口增幅更大，因此占比下降，第四項同時符合兩期計算。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

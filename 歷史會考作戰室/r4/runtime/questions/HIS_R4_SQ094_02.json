@@ -1,0 +1,82 @@
+{
+  "id": "HIS_R4_SQ094_02",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S094"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-HA-4-1",
+    "AUTH-SOCIAL-LC-HIS-HA-4-2",
+    "AUTH-SOCIAL-LC-HIS-HB-4-1",
+    "AUTH-SOCIAL-LC-HIS-IA-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2"
+  ],
+  "stimulusId": "HIS_R4_ST094",
+  "stem": "依第二段數據，哪戶稅負占年產比例較高？",
+  "options": [
+    "甲戶，因年產較多",
+    "兩戶比例相同",
+    "資料完全無法計算",
+    "乙戶，因十二石占三十石的比例較高"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲戶十二除以一百二十只有十分之一。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "名目同額不表示占產量比例相同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "產量與稅額均已提供，可以計算。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "乙戶十二除以三十為五分之二，比例較高。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "數據計算"
+  ],
+  "representationType": "共用土地材料",
+  "misconceptionTargets": [
+    "同額等於同負擔"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-HA-4-1",
+      "AUTH-SOCIAL-LC-HIS-HA-4-2",
+      "AUTH-SOCIAL-LC-HIS-HB-4-1",
+      "AUTH-SOCIAL-LC-HIS-IA-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "甲為百分之十，乙為百分之四十，因此第四項正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "計算使用材料原數據，沒有把名目稅額當成負擔比例。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

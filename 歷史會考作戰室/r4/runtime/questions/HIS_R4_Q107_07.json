@@ -1,0 +1,88 @@
+{
+  "id": "HIS_R4_Q107_07",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S107"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-HB-4-1",
+    "AUTH-SOCIAL-LC-HIS-HB-4-2",
+    "AUTH-SOCIAL-LC-HIS-IA-4-1",
+    "AUTH-SOCIAL-LC-HIS-IA-4-2",
+    "AUTH-SOCIAL-LC-HIS-IC-4-1",
+    "AUTH-SOCIAL-LC-HIS-IC-4-2",
+    "AUTH-SOCIAL-LC-HIS-J-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "一篇旅行記稱某條驛路『毫無危險』，要評估此說法，哪項資料最有用？",
+  "options": [
+    "作者姓名的筆畫數",
+    "同時代瓷器的顏色",
+    "同路段其他旅行者、驛站與衝突紀錄",
+    "後世小說對旅途的想像"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "姓名筆畫不影響敘述可靠性。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "器物顏色不能檢查道路安全。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "獨立同行資料可驗證是否普遍安全。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "後世虛構作品不及同時代紀錄直接。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "評估來源可信度"
+  ],
+  "representationType": "史料查核",
+  "misconceptionTargets": [
+    "單一旅行者代表全部經驗"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-HB-4-1",
+      "AUTH-SOCIAL-LC-HIS-HB-4-2",
+      "AUTH-SOCIAL-LC-HIS-IA-4-1",
+      "AUTH-SOCIAL-LC-HIS-IA-4-2",
+      "AUTH-SOCIAL-LC-HIS-IC-4-1",
+      "AUTH-SOCIAL-LC-HIS-IC-4-2",
+      "AUTH-SOCIAL-LC-HIS-J-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項提供同時代且針對相同路段的獨立觀察，可檢查作者是否只描述自身順利經驗。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其餘資料與道路風險缺乏直接連結，或時代和文類不合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

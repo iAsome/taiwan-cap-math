@@ -1,0 +1,78 @@
+{
+  "id": "HIS_R4_Q002_06",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S002"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "西元1912年以前的年份能否直接用『西元年減1911』得到正的民國年？",
+  "options": [
+    "能，任何年份都可",
+    "不能，民國紀年以1912年為元年",
+    "能，但要再加100",
+    "不能，因西元紀年不存在"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "公式有適用範圍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "1912以前尚未進入民國紀年。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "任意加100沒有根據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "西元紀年可適用於不同地區。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "公式範圍"
+  ],
+  "representationType": "概念題",
+  "misconceptionTargets": [
+    "無限制套公式"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "換算式建立在民國元年1912，早於此時不能得到正的民國年。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項指出起算邊界，其餘或濫用公式或否定西元。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

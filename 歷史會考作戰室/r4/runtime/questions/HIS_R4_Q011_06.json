@@ -1,0 +1,94 @@
+{
+  "id": "HIS_R4_Q011_06",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "甲信件說糧食短缺，乙官方表格顯示倉庫存量充足。下一步最合理的是？",
+  "options": [
+    "立刻判定甲信件造假",
+    "查兩份材料的地點、時間及糧食能否實際配送",
+    "把兩者數字相加",
+    "只保留官方表格"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "地方可能短缺而中央倉庫仍有存量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "供應位置與配送可解釋表面矛盾。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "信件沒有可與庫存直接相加的數值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "官方資料也可能只反映登記存量。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "矛盾追查"
+  ],
+  "representationType": "供應情境",
+  "misconceptionTargets": [
+    "官方材料自動優先"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "倉庫有糧不代表各地能取得，須核對空間、時間與運輸。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項把矛盾轉成可查問題，而非先選一方。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

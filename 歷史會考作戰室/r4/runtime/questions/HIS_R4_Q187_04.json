@@ -1,0 +1,80 @@
+{
+  "id": "HIS_R4_Q187_04",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QA-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某棉布廠的機器數量未變，海外訂單增加後開始增班，半年產量提高。最合理的解釋為何？",
+  "options": [
+    "工人突然不需休息",
+    "煤礦必在半年內增加一倍",
+    "機器數量是產量唯一條件",
+    "市場需求可促使既有設備延長運轉並擴產"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "增班仍需人力安排，不能假設無需休息。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "材料沒有提供煤礦產量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "同一設備在不同工時下產量可以不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "訂單先增加、增班隨後發生，機制與時序相符。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "因果"
+  ],
+  "representationType": "情境資料",
+  "misconceptionTargets": [
+    "機器數等於全部產能"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QA-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "材料呈現訂單、增班、產量的先後連結，第四項能解釋既有設備如何回應需求。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "其餘說法不是違反常理，就是把未出現的煤礦或單一設備數當成充分原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

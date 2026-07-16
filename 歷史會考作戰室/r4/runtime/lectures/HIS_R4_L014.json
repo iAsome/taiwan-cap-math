@@ -1,0 +1,142 @@
+{
+  "id": "HIS_R4_L014",
+  "subject": "history",
+  "unitId": "HIS_R4_U02",
+  "skillId": "HIS_R4_S014",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "prerequisites": [
+    "HIS_R4_S013"
+  ],
+  "objectives": [
+    "能依現有證據提出程度適當、可被修正的暫時性結論，清楚標示資料範圍、可信程度與尚未解決的問題。"
+  ],
+  "sections": [
+    {
+      "id": "HIS_R4_L014_SEC_1",
+      "title": "結論強度配合證據",
+      "content": "一份材料可支持『顯示』或『可能』，多份獨立且相符的證據才較能支持『很可能』。除非來源完整且可排除替代解釋，不宜使用『一定』『全部』『唯一』等絕對語。"
+    },
+    {
+      "id": "HIS_R4_L014_SEC_2",
+      "title": "寫出範圍",
+      "content": "結論需標明時間、地區、群體及材料類型。例如『依三所城市學校名冊』比『全國教育已普及』更準確，讓讀者知道證據涵蓋與未涵蓋之處。"
+    },
+    {
+      "id": "HIS_R4_L014_SEC_3",
+      "title": "說明限制",
+      "content": "限制不是否定研究，而是交代哪些資料缺少、來源可能偏向及何種新證據會改變判斷。明確限制可避免讀者把暫時結論誤讀成永遠不變的定論。"
+    },
+    {
+      "id": "HIS_R4_L014_SEC_4",
+      "title": "可修正的歷史知識",
+      "content": "新材料、較好的鑑定方法或不同問題可能修正舊結論。修正必須提出證據與理由，不是任意改口；原結論在舊證據範圍內仍可能具有價值。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "HIS_R4_L014_EX_1",
+      "prompt": "只有一封商人書信抱怨稅重，最恰當的結論怎麼寫？",
+      "steps": [
+        "限定材料為一位商人。",
+        "說明書信反映其感受。",
+        "避免外推所有居民。"
+      ],
+      "answer": "這封信顯示該商人認為稅負沉重，但不能代表全體居民。",
+      "why": "結論保留材料能直接支持的個人感受，同時指出樣本不足；若要談普遍性，需更多群體與稅務資料。"
+    },
+    {
+      "id": "HIS_R4_L014_EX_2",
+      "prompt": "三地獨立帳冊都顯示米價上升，可寫成全國米價必然上升嗎？",
+      "steps": [
+        "確認三地資料獨立且期間一致。",
+        "限制空間範圍。",
+        "提出全國結論所需的其他地區資料。"
+      ],
+      "answer": "可說三地米價均上升，尚不足以斷言全國情況。",
+      "why": "三份帳冊提高三地趨勢的可信度，卻未涵蓋全國市場；交通、收成與地方制度也可能造成區域差異。"
+    },
+    {
+      "id": "HIS_R4_L014_EX_3",
+      "prompt": "新發現的名冊與舊研究人數不同，應怎麼處理？",
+      "steps": [
+        "先驗證名冊年代與真實性。",
+        "比較兩者計數口徑。",
+        "在理由充分時修正結論並保留版本紀錄。"
+      ],
+      "answer": "核對後依新證據修正人數估計，並說明變更原因。",
+      "why": "歷史結論可修正，但不能只因資料較新就採用。須證明名冊可信、口徑相容，並公開尚存的不確定性。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "一份個人材料就寫成所有人都如此。",
+      "whyWrong": "個案只能直接支持該人的經驗，無法證明群體普遍分布。",
+      "correction": "限定個案結論，另蒐集可比較樣本。"
+    },
+    {
+      "belief": "為了顯得有把握而刪除『可能』與範圍。",
+      "whyWrong": "語氣強度超過證據會把推論偽裝成已確定事實。",
+      "correction": "依來源數量、獨立性與一致程度選擇用語。"
+    },
+    {
+      "belief": "把研究限制理解為研究毫無價值。",
+      "whyWrong": "限制交代的是適用邊界，不等於現有證據不能回答任何問題。",
+      "correction": "分別列出已支持的結論與仍待補證的部分。"
+    },
+    {
+      "belief": "發現新資料後直接抹去舊結論。",
+      "whyWrong": "若不記錄修正過程，就無法評估新舊證據與方法差異。",
+      "correction": "保留版本、證據鏈及修正理由。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "暫時性結論代表可以隨意改嗎？",
+      "answer": "不代表。",
+      "reason": "每次修正都需新的可靠證據與清楚理由。"
+    },
+    {
+      "prompt": "結論為何要標明地區？",
+      "answer": "防止把局部材料誤推為更大範圍。",
+      "reason": "空間邊界是證據適用條件。"
+    },
+    {
+      "prompt": "什麼會提高結論可信度？",
+      "answer": "多份獨立、來源清楚且彼此相符的證據。",
+      "reason": "來源數量只有在獨立且品質可評估時才有意義。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  }
+}

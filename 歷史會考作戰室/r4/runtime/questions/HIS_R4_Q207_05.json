@@ -1,0 +1,82 @@
+{
+  "id": "HIS_R4_Q207_05",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S207"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QB-4-3",
+    "AUTH-SOCIAL-LC-HIS-QC-4-1",
+    "AUTH-SOCIAL-LC-HIS-R-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "要估計某城平民因戰爭造成的超額死亡，哪種做法較可靠？",
+  "options": [
+    "比較戰前基準死亡率、戰時死亡登記、人口流動與疾病資料",
+    "只讀一篇將軍回憶錄",
+    "把失蹤者全部當成砲擊死亡",
+    "用戰後紀念碑高度換算人數"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "基準、分母與死因資料可共同估計異常增幅。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "將軍回憶不代表全城人口統計。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "失蹤原因可能包含遷移、俘虜或登記中斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "碑高與死亡人數沒有固定換算關係。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "方法"
+  ],
+  "representationType": "人口資料",
+  "misconceptionTargets": [
+    "總數不分死因"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QB-4-3",
+      "AUTH-SOCIAL-LC-HIS-QC-4-1",
+      "AUTH-SOCIAL-LC-HIS-R-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "戰前基準能判斷戰時增幅，死亡登記則提供具體時段與死因。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "人口流動和疾病資料可校正分母及間接死亡，避免把所有缺口歸為戰鬥。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

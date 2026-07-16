@@ -1,0 +1,78 @@
+{
+  "id": "HIS_R4_Q002_09",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S002"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "甲文件寫民國72年，乙報紙寫西元1983年。最穩妥的判斷是？",
+  "options": [
+    "兩者可能記錄同一年",
+    "甲一定早乙72年",
+    "乙一定是假資料",
+    "兩者無法換算"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "72加1911等於1983。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "72是年次，不是相隔年數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "紀年不同不能判偽。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "已有固定換算關係。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "跨資料對照"
+  ],
+  "representationType": "雙材料",
+  "misconceptionTargets": [
+    "把年次當年距"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "換算後兩個標示皆為1983，因此可能指同年。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留『可能』，仍未逾越文件內容去斷言同一事件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "HIS_R4_Q048_05",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S048"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-CA-4-1",
+    "AUTH-SOCIAL-LC-HIS-CA-4-2",
+    "AUTH-SOCIAL-LC-HIS-CB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LC-HIS-D-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "表格顯示茶出口值增加，最穩妥的直接結論是什麼？",
+  "options": [
+    "所列期間茶出口值上升",
+    "茶葉產量必然等比例上升",
+    "每位茶農收入都增加",
+    "國際茶價完全不變"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "這是表格直接呈現的數值趨勢。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "出口值還會受價格和品質影響。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "總值無法顯示個別農戶分配。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有價格資料不能判定不變。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "分析",
+    "推論界限"
+  ],
+  "representationType": "table-inference",
+  "misconceptionTargets": [
+    "把出口值當產量或所得"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-CA-4-1",
+      "AUTH-SOCIAL-LC-HIS-CA-4-2",
+      "AUTH-SOCIAL-LC-HIS-CB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LC-HIS-D-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "統計表直接支持的只有出口值在指定期間增加，不足以拆分價格、產量與收入。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項刻意限定指標和時間，避免把同一數字擴張成多項因果結論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

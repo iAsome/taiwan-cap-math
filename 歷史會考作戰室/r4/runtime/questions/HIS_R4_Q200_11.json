@@ -1,0 +1,86 @@
+{
+  "id": "HIS_R4_Q200_11",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S200"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-OB-4-2",
+    "AUTH-SOCIAL-LC-HIS-OB-4-3",
+    "AUTH-SOCIAL-LC-HIS-QB-4-1",
+    "AUTH-SOCIAL-LC-HIS-QB-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "閱讀今日非比例災害位置圖，哪項方法可由題組分布圖的限制遷移使用？",
+  "options": [
+    "用圖上圓圈直徑推算受災人口",
+    "空白地區必定零災害",
+    "先查符號是否編碼數值、資料是否完整，再決定可比較內容",
+    "把示意位置當成精確座標導航"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "只有圖例明示時才可把大小當數值。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "空白可能是未蒐集或未選入。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此項先確認視覺變項與涵蓋範圍。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "示意圖不能替代精確定位系統。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移"
+  ],
+  "representationType": "現代資料圖",
+  "misconceptionTargets": [
+    "示意符號可任意量化"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-OB-4-2",
+      "AUTH-SOCIAL-LC-HIS-OB-4-3",
+      "AUTH-SOCIAL-LC-HIS-QB-4-1",
+      "AUTH-SOCIAL-LC-HIS-QB-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項抽取的是通用地圖素養，而不是只背殖民案例。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "任何主題都要先知道圓點、顏色與空白代表什麼，才能避免製造圖面沒有的數據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

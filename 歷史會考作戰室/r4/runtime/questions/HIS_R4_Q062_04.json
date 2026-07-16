@@ -1,0 +1,89 @@
+{
+  "id": "HIS_R4_Q062_04",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S062"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-EA-4-1",
+    "AUTH-SOCIAL-LC-HIS-EA-4-2",
+    "AUTH-SOCIAL-LC-HIS-EA-4-3",
+    "AUTH-SOCIAL-LC-HIS-EB-4-3",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "糧食總量增加8%、人口增加20%，人均糧食最可能如何？",
+  "options": [
+    "必定增加20%",
+    "必定增加8%",
+    "一定完全不變",
+    "下降，因人口增幅大於糧食增幅"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "人均不是只看人口增幅。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "總量增幅不能直接當人均增幅。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩個增幅不同不會維持不變。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "分母增長較快會壓低人均值。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "應用",
+    "比例"
+  ],
+  "representationType": "rate-comparison",
+  "misconceptionTargets": [
+    "總量增加就認為人均增加"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-EA-4-1",
+      "AUTH-SOCIAL-LC-HIS-EA-4-2",
+      "AUTH-SOCIAL-LC-HIS-EA-4-3",
+      "AUTH-SOCIAL-LC-HIS-EB-4-3",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "人口增加速度超過糧食總量，平均到每人後會下降，第四項正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "判讀時必須同時處理分子與分母。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

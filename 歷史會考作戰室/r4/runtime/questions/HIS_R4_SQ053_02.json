@@ -1,0 +1,89 @@
+{
+  "id": "HIS_R4_SQ053_02",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S053"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-EA-4-1",
+    "AUTH-SOCIAL-LC-HIS-EA-4-2",
+    "AUTH-SOCIAL-LC-HIS-EA-4-3",
+    "AUTH-SOCIAL-LC-HIS-EB-4-1",
+    "AUTH-SOCIAL-LC-HIS-EB-4-2",
+    "AUTH-SOCIAL-LC-HIS-EB-4-3",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2"
+  ],
+  "stimulusId": "HIS_R4_ST053",
+  "stem": "公司獲利增加25%，能否證明每位農戶淨收入也增加25%？",
+  "options": [
+    "能，因所有百分比必須相同",
+    "能，因農戶沒有成本",
+    "不能；農戶另受租金、肥料、借款與收購條件影響",
+    "不能；公司帳冊完全無效"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "企業與農戶是不同計算單位。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "材料明列多項農戶成本。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此項直接指出分配與成本差異。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "帳冊仍可研究公司結果。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析",
+    "分配"
+  ],
+  "representationType": "shared-stimulus",
+  "misconceptionTargets": [
+    "把公司獲利率套到農戶"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-EA-4-1",
+      "AUTH-SOCIAL-LC-HIS-EA-4-2",
+      "AUTH-SOCIAL-LC-HIS-EA-4-3",
+      "AUTH-SOCIAL-LC-HIS-EB-4-1",
+      "AUTH-SOCIAL-LC-HIS-EB-4-2",
+      "AUTH-SOCIAL-LC-HIS-EB-4-3",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "公司獲利是企業端收入成本結果，農戶淨收入則扣除自己的生產和金融成本。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項解釋兩者為何不能套用同一百分比。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

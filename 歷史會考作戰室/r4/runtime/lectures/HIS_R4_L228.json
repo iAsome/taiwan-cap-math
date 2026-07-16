@@ -1,0 +1,139 @@
+{
+  "id": "HIS_R4_L228",
+  "subject": "history",
+  "unitId": "HIS_R4_U34",
+  "skillId": "HIS_R4_S228",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-LA-4-2",
+    "AUTH-SOCIAL-LC-HIS-LB-4-1",
+    "AUTH-SOCIAL-LC-HIS-LB-4-2",
+    "AUTH-SOCIAL-LC-HIS-QC-4-3",
+    "AUTH-SOCIAL-LC-HIS-R-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "prerequisites": [
+    "HIS_R4_S227"
+  ],
+  "objectives": [
+    "能辨認資料截止日、來源更新、暫定語氣與不確定性，避免把尚在發展的事件寫成固定不變的歷史結論。"
+  ],
+  "sections": [
+    {
+      "id": "HIS_R4_L228_SEC_1",
+      "title": "為何一定要標截止日",
+      "content": "正在發展的事件可能出現新決議、修正統計、改變邊界控制或新增證據。資料若寫『目前』卻不標日期，讀者日後無法知道它指哪一時點。可靠敘述要用『截至某年某月』，並保存來源發布與更新日期。"
+    },
+    {
+      "id": "HIS_R4_L228_SEC_2",
+      "title": "消息、紀錄與解釋的層次",
+      "content": "即時新聞可提供當下見聞，政府或組織資料呈現各自制度立場，後來的研究則可能取得更完整檔案。來源較晚不一定必然較真，來源較早也不必然無用；應問它形成時知道什麼、服務什麼目的。"
+    },
+    {
+      "id": "HIS_R4_L228_SEC_3",
+      "title": "使用保留語氣",
+      "content": "資料只支持部分地區或初步趨勢時，可寫『現有資料顯示』『在所列樣本中』或『尚待更多資料確認』。保留語氣不是逃避判斷，而是讓結論強度符合證據，避免把推測、預測和已發生事實混為一談。"
+    },
+    {
+      "id": "HIS_R4_L228_SEC_4",
+      "title": "更新不等於竄改歷史",
+      "content": "新資料出現後修正數字或解釋，是研究透明度的一部分。修訂時要保留舊版本、說明變更原因並重新檢查結論；不能悄悄換掉資料，也不能因可能更新就拒絕提出任何暫時性判斷。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "HIS_R4_L228_EX_1",
+      "prompt": "兩份報告數字不同，第一份發布較早，第二份標示修訂，怎麼處理？",
+      "steps": [
+        "記錄兩份報告的發布和修訂日期。",
+        "比較統計口徑與涵蓋範圍。",
+        "說明採用哪一版及原因。"
+      ],
+      "answer": "不能任選較大的數字，應先確認版本與口徑。",
+      "why": "數字差異可能來自新增資料、分類改變或錯誤更正。保留版本資訊後，讀者才能重現判斷，也能知道結論是否因修訂而改變。"
+    },
+    {
+      "id": "HIS_R4_L228_EX_2",
+      "prompt": "材料只涵蓋三個城市，適合寫成全國已確定趨勢嗎？",
+      "steps": [
+        "界定樣本地點。",
+        "比較三城選取方式。",
+        "限制外推範圍。"
+      ],
+      "answer": "不適合，只能先說明所列城市的結果。",
+      "why": "三城資料可支持局部觀察，若沒有全國抽樣或其他地區對照，就不能把樣本直接擴成全國定論。可提出暫定假設，再等待更多證據。"
+    },
+    {
+      "id": "HIS_R4_L228_EX_3",
+      "prompt": "一篇分析預測明年某政策必定成功，應檢查什麼？",
+      "steps": [
+        "分出預測與已發生事實。",
+        "找假設條件和可能反例。",
+        "到期後用實際資料回看。"
+      ],
+      "answer": "『必定成功』超出預測可保證的範圍。",
+      "why": "政策結果會受執行、資源和外部事件影響。預測可以比較情境，卻應寫明前提與不確定性，不能提前把未來結果當作既成歷史。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "資料寫『目前』就已足夠，不必標明日期。",
+      "whyWrong": "『目前』會隨閱讀時間改變，無法重建來源當時的狀態。",
+      "correction": "改用明確截止年月並保留版本。"
+    },
+    {
+      "belief": "較新的數字一定正確，不必閱讀它的統計口徑。",
+      "whyWrong": "新版也可能使用不同定義、樣本或估算方法，不能只比日期。",
+      "correction": "同時核對版本、方法與修訂說明。"
+    },
+    {
+      "belief": "保留語氣表示作者什麼都不知道。",
+      "whyWrong": "限制結論反而能精確呈現證據支持到哪裡。",
+      "correction": "把事實、推論和未確定部分分層寫出。"
+    },
+    {
+      "belief": "事件仍在發展，就完全不能做歷史分析。",
+      "whyWrong": "可以分析截至特定日期已知的材料，只須清楚標示範圍。",
+      "correction": "建立可更新且保留舊版的暫定解釋。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "診斷：『目前』為何不是充分時間標記？",
+      "answer": "因為閱讀日期改變時指涉不明。",
+      "reason": "明確年月才能重現資料狀態。"
+    },
+    {
+      "prompt": "練習：樣本有限時如何下結論？",
+      "answer": "限定為所列樣本，並標示外推限制。",
+      "reason": "結論強度應與證據涵蓋範圍相同。"
+    },
+    {
+      "prompt": "遷移：資料修訂後應保留什麼？",
+      "answer": "舊版本、修訂原因、日期與對結論的影響。",
+      "reason": "版本紀錄使更新可追溯。"
+    },
+    {
+      "prompt": "補救：若把預測寫成事實，應如何改？",
+      "answer": "標示它是有前提的預測，並列不確定因素。",
+      "reason": "未來結果尚未發生，不能使用確定完成語氣。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-LA-4-2",
+      "AUTH-SOCIAL-LC-HIS-LB-4-1",
+      "AUTH-SOCIAL-LC-HIS-LB-4-2",
+      "AUTH-SOCIAL-LC-HIS-QC-4-3",
+      "AUTH-SOCIAL-LC-HIS-R-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  }
+}

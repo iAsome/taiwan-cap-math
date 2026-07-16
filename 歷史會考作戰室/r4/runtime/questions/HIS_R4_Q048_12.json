@@ -1,0 +1,87 @@
+{
+  "id": "HIS_R4_Q048_12",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S048"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-CA-4-1",
+    "AUTH-SOCIAL-LC-HIS-CA-4-2",
+    "AUTH-SOCIAL-LC-HIS-CB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LC-HIS-D-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "資料顯示出口下降的同年發生風災。要判斷風災是否主因，下一步應怎麼做？",
+  "options": [
+    "看風災名稱是否嚴重",
+    "假定同年發生就必然有因果",
+    "刪除出口資料",
+    "比較受災產區、產量、港口運輸與前後年份，並檢查其他市場因素"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "名稱不能衡量實際受災程度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "同年只是時序條件，仍可能有其他原因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "刪除結果資料無法檢驗影響。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "多項前後資料可檢查風災作用與替代解釋。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "設計",
+    "因果檢驗"
+  ],
+  "representationType": "research-design",
+  "misconceptionTargets": [
+    "把同年發生直接判為因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-CA-4-1",
+      "AUTH-SOCIAL-LC-HIS-CA-4-2",
+      "AUTH-SOCIAL-LC-HIS-CB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LC-HIS-D-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "風災先於或同時發生是因果研究的起點，不是結論。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項把可能機制拆成產區受損、產量與運輸，也控制價格或需求等其他因素。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

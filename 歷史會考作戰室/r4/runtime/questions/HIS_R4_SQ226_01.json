@@ -1,0 +1,86 @@
+{
+  "id": "HIS_R4_SQ226_01",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S226"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-LA-4-2",
+    "AUTH-SOCIAL-LC-HIS-LB-4-1",
+    "AUTH-SOCIAL-LC-HIS-LB-4-2",
+    "AUTH-SOCIAL-LC-HIS-QC-4-3",
+    "AUTH-SOCIAL-LC-HIS-R-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "stimulusId": "HIS_R4_ST226",
+  "stem": "依材料，低薪家庭的實際居住負擔可能如何變化？",
+  "options": [
+    "薪資增幅大於房租，所以負擔必然下降",
+    "房租增幅高於名目薪資，若其他條件不變，負擔可能加重",
+    "房租與家庭預算無關",
+    "資料已證明每一戶支出完全相同"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "薪資增18%低於房租增25%。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "兩個增幅方向支持負擔可能加重的初步判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "房租是家庭重要支出。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "平均數沒有提供每戶相同的證據。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "計算判讀"
+  ],
+  "representationType": "共享資料表",
+  "misconceptionTargets": [
+    "名目薪資增加即改善"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-LA-4-2",
+      "AUTH-SOCIAL-LC-HIS-LB-4-1",
+      "AUTH-SOCIAL-LC-HIS-LB-4-2",
+      "AUTH-SOCIAL-LC-HIS-QC-4-3",
+      "AUTH-SOCIAL-LC-HIS-R-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "房租上升幅度比名目薪資多七個百分點，居住支出可能吃掉更多收入。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "材料未提供家庭分位，因此只能提出有條件的趨勢，不能宣稱所有家庭相同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

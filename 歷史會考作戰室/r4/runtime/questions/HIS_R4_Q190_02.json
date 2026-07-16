@@ -1,0 +1,80 @@
+{
+  "id": "HIS_R4_Q190_02",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S190"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QA-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "工人週薪由10先令增至11先令，同期生活必需品價格平均上升20%。最恰當的初步判斷為何？",
+  "options": [
+    "名目薪資下降10%",
+    "名目薪資上升，但實際購買力可能下降",
+    "物價與生活水準無關",
+    "工人必定能購買兩倍商品"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "週薪數字由十升至十一，並未下降。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "薪資增幅低於物價增幅，購買力可能受壓。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "生活必需品價格直接影響家庭支出。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹數值不支持購買量倍增。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "計算判讀"
+  ],
+  "representationType": "工資物價",
+  "misconceptionTargets": [
+    "名目工資等於實質生活"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QA-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項正確區分名目增加一成與物價增加兩成，沒有只看薪資表面數字。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "這仍是初步判斷，後續可加入房租、工時和家庭其他收入評估。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

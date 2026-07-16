@@ -1,0 +1,89 @@
+{
+  "id": "HIS_R4_Q062_09",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S062"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-EA-4-1",
+    "AUTH-SOCIAL-LC-HIS-EA-4-2",
+    "AUTH-SOCIAL-LC-HIS-EA-4-3",
+    "AUTH-SOCIAL-LC-HIS-EB-4-3",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲地總配給多於乙地，能否判定甲地每人分得較多？",
+  "options": [
+    "不能，還要比較兩地涵蓋人口",
+    "能，總量大就必定人均大",
+    "能，地名排在前面",
+    "不能，因任何配給表都無效"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "人均比較需要相同口徑人口。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "甲地人口也可能大得更多。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "排列位置不影響平均量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "配給表仍可回答總量問題。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "評估",
+    "跨區比較"
+  ],
+  "representationType": "regional-table",
+  "misconceptionTargets": [
+    "總量大等同人均大"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-EA-4-1",
+      "AUTH-SOCIAL-LC-HIS-EA-4-2",
+      "AUTH-SOCIAL-LC-HIS-EA-4-3",
+      "AUTH-SOCIAL-LC-HIS-EB-4-3",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項指出缺少兩地人口分母，所以不能從總量直接比較每人供應。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "補上人口後才能用相同單位計算。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

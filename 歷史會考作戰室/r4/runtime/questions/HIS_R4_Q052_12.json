@@ -1,0 +1,89 @@
+{
+  "id": "HIS_R4_Q052_12",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S052"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-EA-4-1",
+    "AUTH-SOCIAL-LC-HIS-EA-4-2",
+    "AUTH-SOCIAL-LC-HIS-EA-4-3",
+    "AUTH-SOCIAL-LC-HIS-EB-4-1",
+    "AUTH-SOCIAL-LC-HIS-EB-4-2",
+    "AUTH-SOCIAL-LC-HIS-EB-4-3",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "要製作基礎建設影響地圖，哪種資料配置最可靠？",
+  "options": [
+    "只標完工設施",
+    "只標官方宣稱受益範圍",
+    "只標抗議地點",
+    "同時標設施年代、服務範圍、使用量、徵地與未覆蓋地區"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "設施點位不等於實際服務。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "宣稱範圍仍需使用資料驗證。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "抗議點不能呈現全部效益。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此項能顯示時間、利用與空間不均。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "設計",
+    "歷史地圖"
+  ],
+  "representationType": "map-design",
+  "misconceptionTargets": [
+    "只畫設施不畫影響"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-EA-4-1",
+      "AUTH-SOCIAL-LC-HIS-EA-4-2",
+      "AUTH-SOCIAL-LC-HIS-EA-4-3",
+      "AUTH-SOCIAL-LC-HIS-EB-4-1",
+      "AUTH-SOCIAL-LC-HIS-EB-4-2",
+      "AUTH-SOCIAL-LC-HIS-EB-4-3",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "影響地圖不應只是工程位置圖，而要把誰被連結、誰未覆蓋和成本放入。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項用多層資料避免將基礎設施存在直接等同全面受益。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

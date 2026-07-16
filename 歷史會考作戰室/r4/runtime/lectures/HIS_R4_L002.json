@@ -1,0 +1,126 @@
+{
+  "id": "HIS_R4_L002",
+  "subject": "history",
+  "unitId": "HIS_R4_U01",
+  "skillId": "HIS_R4_S002",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "prerequisites": [
+    "HIS_R4_S001"
+  ],
+  "objectives": [
+    "能分辨民國紀年、西元紀年與帝王年號的起算方式，並在資料足夠時正確換算。"
+  ],
+  "sections": [
+    {
+      "id": "HIS_R4_L002_SEC_1",
+      "title": "民國與西元",
+      "content": "民國元年是西元1912年，因此民國年加1911可得西元年；西元1912年以後減1911可得民國年。民國紀年不能直接套用到1912年以前。"
+    },
+    {
+      "id": "HIS_R4_L002_SEC_2",
+      "title": "帝王年號",
+      "content": "帝王紀年以特定君主的年號起算，如某年號元年、二年。換算前必須知道該年號元年對應的西元年；不同王朝可能出現相同年號名稱，不能只看兩個字就換算。"
+    },
+    {
+      "id": "HIS_R4_L002_SEC_3",
+      "title": "同一年可有多種標示",
+      "content": "同一事件可能同時寫成西元年、民國年或日本年號。標示不同不代表事件發生三次，應先找各紀年的起點，再確認是否指向同一時間。"
+    },
+    {
+      "id": "HIS_R4_L002_SEC_4",
+      "title": "材料中的語境",
+      "content": "史料保留原紀年可呈現當時制度與觀點，研究說明則常附西元年方便比較。換算是建立對照，不是把原史料的紀年全部刪除。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "HIS_R4_L002_EX_1",
+      "prompt": "民國38年換算為西元何年？",
+      "steps": [
+        "民國年加1911。",
+        "38加1911得1949。",
+        "檢查是否晚於1912年。"
+      ],
+      "answer": "西元1949年。",
+      "why": "民國元年是西元1912年，民國38年與元年相隔37年；1912加37等於1949，因此答案是西元1949年。"
+    },
+    {
+      "id": "HIS_R4_L002_EX_2",
+      "prompt": "某年號元年是西元1723年，該年號十年是哪一年？",
+      "steps": [
+        "元年已算第一年。",
+        "從元年至十年相隔9年。",
+        "1723加9。"
+      ],
+      "answer": "西元1732年。",
+      "why": "年號元年已算第一年，從元年至十年只相隔9年；1723加9等於1732，所以該年號十年是西元1732年。"
+    },
+    {
+      "id": "HIS_R4_L002_EX_3",
+      "prompt": "一份文件同時標『昭和20年（西元1945年）』，可得什麼結論？",
+      "steps": [
+        "辨認括號是換算。",
+        "確認兩個標示指同一年。",
+        "不要把它拆成兩次事件。"
+      ],
+      "answer": "文件以兩種紀年標示同一個年份。",
+      "why": "年號與西元是不同計時系統；並列寫法是方便讀者對照，不表示內容跨越兩個年份。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "把民國100年換成西元2010年。",
+      "whyWrong": "少加了民國元年與西元元年的固定差1911。",
+      "correction": "用100加1911得到西元2011年。"
+    },
+    {
+      "belief": "把年號十年算成元年西元數加十。",
+      "whyWrong": "元年已經是第一年，這樣會多算一年。",
+      "correction": "換算第n年時，在元年西元數上加n減1。"
+    },
+    {
+      "belief": "看到相同年號就認定屬同一位君主。",
+      "whyWrong": "不同時空可能重複使用年號名稱。",
+      "correction": "同時核對王朝、君主與元年對照。"
+    },
+    {
+      "belief": "認為原史料用年號就不可信。",
+      "whyWrong": "紀年方式只反映當時制度，不決定內容真假。",
+      "correction": "保留原紀年並換算，再另做來源批判。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "民國1年對應西元何年？",
+      "answer": "1912年。",
+      "reason": "這是民國紀年的起點。"
+    },
+    {
+      "prompt": "年號元年為1603年，年號三年是哪年？",
+      "answer": "1605年。",
+      "reason": "1603加2得到第三年。"
+    },
+    {
+      "prompt": "兩種紀年可否指同一年？",
+      "answer": "可以。",
+      "reason": "不同紀年系統能對同一時間作不同標示。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  }
+}

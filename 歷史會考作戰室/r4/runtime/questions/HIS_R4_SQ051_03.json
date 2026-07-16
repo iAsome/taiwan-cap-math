@@ -1,0 +1,89 @@
+{
+  "id": "HIS_R4_SQ051_03",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S051"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-EA-4-1",
+    "AUTH-SOCIAL-LC-HIS-EA-4-2",
+    "AUTH-SOCIAL-LC-HIS-EA-4-3",
+    "AUTH-SOCIAL-LC-HIS-EB-4-1",
+    "AUTH-SOCIAL-LC-HIS-EB-4-2",
+    "AUTH-SOCIAL-LC-HIS-EB-4-3",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2"
+  ],
+  "stimulusId": "HIS_R4_ST051",
+  "stem": "要判斷夜間查驗是否普遍，應增加哪種資料？",
+  "options": [
+    "派出所屋頂高度",
+    "多月分時段查驗紀錄與不同街區住戶調查",
+    "火災照片色彩",
+    "警察姓名表"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "建築高度和查驗頻率無關。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "時間序列與跨區資料可檢查普遍程度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "火災照片不能衡量夜間查驗。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "姓名表不會記工作時段。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "設計",
+    "普遍性"
+  ],
+  "representationType": "shared-stimulus",
+  "misconceptionTargets": [
+    "以單一申訴推算所有居民"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-EA-4-1",
+      "AUTH-SOCIAL-LC-HIS-EA-4-2",
+      "AUTH-SOCIAL-LC-HIS-EA-4-3",
+      "AUTH-SOCIAL-LC-HIS-EB-4-1",
+      "AUTH-SOCIAL-LC-HIS-EB-4-2",
+      "AUTH-SOCIAL-LC-HIS-EB-4-3",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "一封抱怨可證明經驗存在，是否普遍需要更長時段和更多地點的資料。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項能估計頻率與分布，不把單一來函直接當成全村比例。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

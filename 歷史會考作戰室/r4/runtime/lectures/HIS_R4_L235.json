@@ -1,0 +1,171 @@
+{
+  "id": "HIS_R4_L235",
+  "subject": "history",
+  "unitId": "HIS_R4_U36",
+  "skillId": "HIS_R4_S235",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-D-4-2",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LC-HIS-J-4-1",
+    "AUTH-SOCIAL-LC-HIS-M-4-1",
+    "AUTH-SOCIAL-LC-HIS-P-4-1",
+    "AUTH-SOCIAL-LC-HIS-R-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3",
+    "AUTH-SOCIAL-LP-SOC-2C-4-3",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-3"
+  ],
+  "prerequisites": [
+    "HIS_R4_S234"
+  ],
+  "objectives": [
+    "能對齊史料、地圖、年表的年代、事件、空間與證據類型，避免把相鄰節點或圖線誤讀為直接因果。"
+  ],
+  "sections": [
+    {
+      "id": "HIS_R4_L235_SEC_1",
+      "title": "四個對齊欄位",
+      "content": "遇到多層圖表，先為每筆資料標出形成時間、描述事件、涉及空間及證據類型。時間回答先後，空間界定影響範圍，來源類型說明能回答什麼；四欄未對齊前，不宜把不同資料直接拼成因果。"
+    },
+    {
+      "id": "HIS_R4_L235_SEC_2",
+      "title": "讀上方時間軸圖的五個節點",
+      "content": "圖由1860年代開港、1885年臺灣建省、1895年日本統治開始、1915年噍吧哖事件到1935年地方選舉。每個節點另有空間或制度線索、可用證據與推論限制；連接線只表示時間排列，不表示前一事件必然造成下一事件。"
+    },
+    {
+      "id": "HIS_R4_L235_SEC_3",
+      "title": "地圖範圍和年代",
+      "content": "歷史地圖必須保留製圖年代、圖例、邊界性質和不確定性。圖上標示通商口岸，不能推成開港利益平均遍及全臺；標示某政權範圍，也不能把名義宣稱當成每地實際治理。"
+    },
+    {
+      "id": "HIS_R4_L235_SEC_4",
+      "title": "交叉對齊再推論",
+      "content": "年表可先定位事件，地圖補空間分布，文字史料說明制度或觀點，統計則呈現量化趨勢。若資料形成時間晚於事件，還要分辨同期紀錄與後來回顧；若空間尺度不同，結論應限制在共同涵蓋範圍。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "HIS_R4_L235_EX_1",
+      "prompt": "依上方時間軸圖，研究1915年噍吧哖事件應先找哪類證據？",
+      "steps": [
+        "定位1915節點與臺南山區。",
+        "查看判決、官方報告與地方材料。",
+        "比較形成目的與時間。"
+      ],
+      "answer": "應交叉使用判決、官方報告、地方記憶及後來研究。",
+      "why": "圖中1915年節點同時標出空間和證據類型，不能只沿時間線猜因果。不同來源目的不一，互證後才能重建事件與地方經驗。"
+    },
+    {
+      "id": "HIS_R4_L235_EX_2",
+      "prompt": "上方時間軸圖中1885與1895相鄰，能否說建省必然造成統治更替？",
+      "steps": [
+        "確認兩節點相隔十年。",
+        "找1895年戰爭與條約資料。",
+        "區分時間相鄰和因果。"
+      ],
+      "answer": "不能；時間線只顯示先後，統治更替另需戰爭與條約證據。",
+      "why": "連接線沒有因果箭頭，1885年的行政調整也不足以解釋1895年政權轉變。必須補入中間事件，才不會把相鄰誤認為必然。"
+    },
+    {
+      "id": "HIS_R4_L235_EX_3",
+      "prompt": "口岸地圖與全臺出口統計如何對齊？",
+      "steps": [
+        "確認兩者年代是否重疊。",
+        "把出口商品連到實際港口和產區。",
+        "標明統計無法呈現的地方差異。"
+      ],
+      "answer": "只有年代與商品範圍相符時，才能用口岸空間補充出口總量。",
+      "why": "地圖顯示流通節點，統計顯示總量；兩者尺度不同。對齊年份和商品後仍須保留未經口岸或未被統計活動的限制。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "時間線上相鄰的兩件事，一定有直接因果。",
+      "whyWrong": "時間先後只是因果必要條件之一，仍需中間機制與替代原因。",
+      "correction": "補入連接事件和可檢驗證據。"
+    },
+    {
+      "belief": "地圖上有顏色的區域，就代表政權實際控制每個角落。",
+      "whyWrong": "歷史地圖可能呈現名義範圍，治理密度和地方反應仍有差異。",
+      "correction": "加入行政、稅收、駐軍與地方材料。"
+    },
+    {
+      "belief": "後來回憶與事件當時紀錄可以不分形成時間。",
+      "whyWrong": "回憶會受後見、記憶與後來政治語境影響。",
+      "correction": "標示來源形成日並與同期材料分層。"
+    },
+    {
+      "belief": "有全臺統計便不必查看口岸和地方分布。",
+      "whyWrong": "總量不會顯示哪些地區、群體或節點造成變化。",
+      "correction": "以地圖和地方資料補足空間分配。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "診斷：上方時間軸圖的連接線是否代表必然因果？",
+      "answer": "不是。",
+      "reason": "圖示說明線條只用來對齊時間。"
+    },
+    {
+      "prompt": "練習：歷史地圖至少要保留什麼？",
+      "answer": "年代、圖例、範圍與不確定性。",
+      "reason": "四項資訊界定地圖能支持的結論。"
+    },
+    {
+      "prompt": "遷移：統計與地圖怎麼一起讀？",
+      "answer": "先對齊年份和指標，再比較總量與空間分布。",
+      "reason": "不同表徵要有共同範圍。"
+    },
+    {
+      "prompt": "補救：若把1885直接連成1895原因，應補什麼？",
+      "answer": "補甲午戰爭、條約與政權轉變的中間證據。",
+      "reason": "相鄰節點本身不構成因果。"
+    }
+  ],
+  "assets": [
+    "HIS_R4_A004"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-D-4-2",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LC-HIS-J-4-1",
+      "AUTH-SOCIAL-LC-HIS-M-4-1",
+      "AUTH-SOCIAL-LC-HIS-P-4-1",
+      "AUTH-SOCIAL-LC-HIS-R-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3",
+      "AUTH-SOCIAL-LP-SOC-2C-4-3",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-3"
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "HIS_R4_Q011_04",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "兩份名冊分別記錄82人與96人。最不適當的處理方式是？",
+  "options": [
+    "比較登記日期",
+    "確認是否包含臨時人員",
+    "查有無漏頁",
+    "直接平均成89人並稱為真實人數"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "日期差異可能解釋人數變動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "群體定義會影響統計口徑。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "保存缺漏也可能造成差異。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "平均值不是任一原始記錄的結果。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "矛盾處理"
+  ],
+  "representationType": "數量查證",
+  "misconceptionTargets": [
+    "數字矛盾取平均"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩數差異未釐清前，89人只是算術結果，不是有來源支持的歷史人數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項掩蓋口徑問題，前三項則可追查差異來源。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
