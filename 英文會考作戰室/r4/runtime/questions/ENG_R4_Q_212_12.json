@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_212_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S212"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "EXIT →\nKEEP RIGHT IN THE HALL",
+  "options": [
+    "Turn left and stop.",
+    "Use any side while running.",
+    "Stop and wait in the hall.",
+    "Move toward the exit on the right side."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "箭頭與靠右規定都不支持往左。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "標示指定右側，也沒有允許奔跑。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "內容沒有要求停下等候。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩項方向資訊共同要求靠右前往出口。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u31-s212-integrate-exit-arrow-and-keep-right",
+    "combine-direction-and-movement-rule"
+  ],
+  "representationType": "compound-direction-sign",
+  "misconceptionTargets": [
+    "follow-only-one-of-two-instructions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩個指示必須同時遵守。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答案沒有混淆走廊行進規則和出口方向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_211_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S211"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "WORKERS ONLY\nUse the front door for all visits. What should a visitor do?",
+  "options": [
+    "Wait for a worker",
+    "Use the front door",
+    "Enter through this door",
+    "Cancel the visit"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "公告沒有要求等候工作人員。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "第二行明確提供訪客可使用的入口。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第一行限制這扇門只供工作人員。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "已有另一個入口，不必取消拜訪。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s211-route-visitor-away-from-staff-door",
+    "combine-access-limit-with-alternative"
+  ],
+  "representationType": "access-sign-action",
+  "misconceptionTargets": [
+    "ignore-staff-only-restriction"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "訪客必須同時遵守兩行資訊。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "前門是替代入口，不是整棟建築關閉。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

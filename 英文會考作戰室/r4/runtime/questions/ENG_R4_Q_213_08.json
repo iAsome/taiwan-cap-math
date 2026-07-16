@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_213_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S213"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Use this sale card before August 1. On which date is it too late?",
+  "options": [
+    "August 1",
+    "July 31",
+    "July 20",
+    "June 30"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "八月一日不在八月一日以前。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "七月三十一日仍在期限前。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "七月二十日更早。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "六月三十日也更早。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u31-s213-locate-first-too-late-date-after-before-limit",
+    "exclude-named-boundary"
+  ],
+  "representationType": "exclusive-date-deadline",
+  "misconceptionTargets": [
+    "include-date-after-before"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目要找第一個被排除的日期。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "表示以前與表示最晚在某日的介系詞不能混為一談。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

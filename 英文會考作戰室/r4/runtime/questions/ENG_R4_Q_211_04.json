@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_211_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S211"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "VISITOR DESK\nMaps, directions, and day passes. What is the desk mainly for?",
+  "options": [
+    "Cooking lunch",
+    "Fixing computers",
+    "Selling school books",
+    "Helping visitors"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "清單中沒有供餐服務。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "內容沒有電腦維修。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "地圖與通行證不是學校書籍。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "地圖、方向與一日證都用來協助訪客。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s211-infer-visitor-desk-purpose-from-services",
+    "answer-function-instead-of-location"
+  ],
+  "representationType": "service-sign-purpose",
+  "misconceptionTargets": [
+    "name-a-building-when-purpose-is-asked"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題目問櫃檯用途，而不是建築名稱。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "列出的三項服務都以訪客為對象。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

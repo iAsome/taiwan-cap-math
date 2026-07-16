@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_215_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S215"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Contact person\nName: Rosa Lee\nPhone: 0988-222-111\nWhat should go in 'Contact person name'?",
+  "options": [
+    "0988-222-111",
+    "Rosa Lee",
+    "Contact",
+    "The student's name"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是聯絡人的電話。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "姓名行指出聯絡人的名字。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這是欄位用途，不是人名。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "表格要填另一位聯絡人，不是學生本人。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s215-fill-emergency-contact-name-subfield",
+    "separate-contact-person-from-contact-number"
+  ],
+  "representationType": "form-emergency-contact",
+  "misconceptionTargets": [
+    "repeat-student-data-in-contact-field"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "子欄位要求姓名而非電話。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "答案使用明確標示為聯絡人的人物。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

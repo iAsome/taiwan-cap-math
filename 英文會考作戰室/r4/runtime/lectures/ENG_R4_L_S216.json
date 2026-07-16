@@ -1,0 +1,131 @@
+{
+  "id": "ENG_R4_L_S216",
+  "subject": "english",
+  "unitId": "ENG_R4_U31",
+  "skillId": "ENG_R4_S216",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "prerequisites": [
+    "ENG_R4_S215"
+  ],
+  "objectives": [
+    "能先定位表格欄位，再交叉讀取同一資料列。",
+    "能比較多列資料並處理最低、最早、同時符合等條件。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S216_SEC_01",
+      "title": "先讀標題列再找資料列",
+      "content": "表格上方的 Time、Place、Price、Day 等標題決定每一欄代表什麼。先找到題目指定的人、活動或班次所在列，再沿同一列移動到目標欄，避免把相鄰列的資料接在一起。"
+    },
+    {
+      "id": "ENG_R4_L_S216_SEC_02",
+      "title": "相同數字可能代表不同量",
+      "content": "表格中的 8 可能是八點、八元、八人或八號。欄位名稱和單位才決定數字意義，因此抄答案時要保留 a.m.、p.m.、dollars、minutes 等必要資訊。"
+    },
+    {
+      "id": "ENG_R4_L_S216_SEC_03",
+      "title": "比較題要先建立條件",
+      "content": "first、cheapest、longest 或 after 3 p.m. 都需要比較多列。先排除不符合限制的列，再在剩下資料中找最早、最低或最長，不能只選表格第一列。"
+    },
+    {
+      "id": "ENG_R4_L_S216_SEC_04",
+      "title": "多條件題找交集",
+      "content": "A class that is on Friday and costs less than $10 同時限制日期與價格。可先篩選 Friday，再比較 price；若沒有任何一列同時符合，就應回答 none，而不是放寬其中一個條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S216_EX_01",
+      "prompt": "Art: Tue, 4 p.m., Room 2. Music: Wed, 5 p.m., Room 4. Where is Music?",
+      "steps": [
+        "定位 Music 資料列。",
+        "沿同一列找到 Place。",
+        "讀出 Room 4。"
+      ],
+      "answer": "Room 4.",
+      "why": "Music 那一列的地點欄是 Room 4；Room 2 屬於 Art。不能因 Room 2 較先出現，就把另一列的時間和地點混在一起。"
+    },
+    {
+      "id": "ENG_R4_L_S216_EX_02",
+      "prompt": "Bus A: 8:10, $30. Bus B: 8:30, $25. Which is cheaper?",
+      "steps": [
+        "只比較 Price 欄。",
+        "30 大於 25。",
+        "選擇 Bus B。"
+      ],
+      "answer": "Bus B.",
+      "why": "cheaper 問價格，不問出發時間。Bus B 雖然較晚出發，但票價二十五元低於 Bus A 的三十元，因此符合條件。"
+    },
+    {
+      "id": "ENG_R4_L_S216_EX_03",
+      "prompt": "Movie A: 90 min, starts 2 p.m. Movie B: 70 min, starts 3 p.m. Which lasts longer?",
+      "steps": [
+        "定位 Time 資訊。",
+        "比較 90 與 70。",
+        "不把開始時間當片長。"
+      ],
+      "answer": "Movie A.",
+      "why": "lasts longer 要比較分鐘數，Movie A 的九十分鐘比 Movie B 的七十分鐘長。二點和三點只是開始時間，不能直接用來判斷片長。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "表格第一列通常就是答案。",
+      "whyWrong": "答案取決於題目條件，不取決於排列位置。",
+      "correction": "先定位名稱或條件，再讀目標欄位。"
+    },
+    {
+      "belief": "橫向讀表時可以跨到下一列找較近的數字。",
+      "whyWrong": "不同列屬於不同人物或項目。",
+      "correction": "用手指或視線固定同一列後再移動。"
+    },
+    {
+      "belief": "看到最大數字就選，不必看欄位單位。",
+      "whyWrong": "數字可能分別代表時間、價格或人數。",
+      "correction": "比較前先確認量的種類和單位一致。"
+    },
+    {
+      "belief": "多條件題只符合其中一項也可以。",
+      "whyWrong": "and 表示所有限制必須同時成立。",
+      "correction": "逐項打勾，最後只保留條件交集。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "問 cheapest 時，需要比較 Time 欄嗎？",
+      "answer": "不需要",
+      "reason": "cheapest 只要求價格最低。"
+    },
+    {
+      "prompt": "同一列的資料通常描述同一個什麼？",
+      "answer": "人物、活動或項目",
+      "reason": "資料列把同一對象的各欄資訊放在一起。"
+    },
+    {
+      "prompt": "Friday and under $10 是一個還是兩個條件？",
+      "answer": "兩個",
+      "reason": "日期與價格都必須符合。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  }
+}

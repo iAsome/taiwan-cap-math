@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_216_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S216"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Meal | Price\nRice | $45\nNoodles | $50\nSoup | $30\nA student has $40. What can the student buy?",
+  "options": [
+    "Rice",
+    "Noodles",
+    "Soup",
+    "Rice and soup together"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "飯超出預算五元。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "麵超出預算十元。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "湯為三十元，在四十元預算內。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "飯和湯合計七十五元。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s216-apply-budget-to-menu-table",
+    "compare-all-options-with-maximum"
+  ],
+  "representationType": "table-budget-application",
+  "misconceptionTargets": [
+    "choose-nearest-price-over-budget"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "每個價格都已和四十元上限比較。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項是唯一買得起的列出餐點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

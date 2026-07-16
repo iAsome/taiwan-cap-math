@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_214_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S214"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Day Pass\nCan be used on city buses. Cannot be used on trains. Which trip can use the pass?",
+  "options": [
+    "A train trip",
+    "A city bus trip",
+    "Any trip outside the city",
+    "A taxi ride"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一行明確排除火車。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "市區公車是明確允許的交通方式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "市外交通不在使用範圍內。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "計程車不是市區公車。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u31-s214-select-transport-allowed-by-day-pass",
+    "contrast-valid-and-not-valid-lines"
+  ],
+  "representationType": "pass-scope",
+  "misconceptionTargets": [
+    "assume-day-pass-covers-all-transport"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "允許與禁止的交通方式都已核對。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "答案沒有超出指定交通系統。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

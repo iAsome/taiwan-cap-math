@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_216_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S216"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Student | Books read\nAva | 4\nLeo | 7\nMina | 5\nHow many more books did Leo read than Ava?",
+  "options": [
+    "2",
+    "3",
+    "4",
+    "11"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "七減五是在比較另一位學生。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "七減四等於三。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "四是閱讀總數，不是差。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "十一是相加，不是多出多少。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s216-calculate-difference-across-named-rows",
+    "distinguish-difference-from-sum"
+  ],
+  "representationType": "table-derived-value",
+  "misconceptionTargets": [
+    "subtract-wrong-row-or-add-values"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "指定兩列提供七本與四本。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "詢問多多少需要相減。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

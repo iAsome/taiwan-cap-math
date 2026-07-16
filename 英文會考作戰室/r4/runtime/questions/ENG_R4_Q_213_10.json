@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_213_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S213"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Breakfast served 6:30–10:00. Last order 9:45. A guest sits down at 9:50. What is the problem?",
+  "options": [
+    "Breakfast begins too late.",
+    "The last-order time has passed.",
+    "The guest arrived before the hotel opened.",
+    "The meal ended at 9:45."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "早餐在六點半已開始。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "九點五十分比最後點餐晚五分鐘。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題目沒有提供旅館開門時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "供餐到十點，但點餐更早停止。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u31-s213-diagnose-arrival-after-last-order",
+    "distinguish-order-cutoff-from-service-end"
+  ],
+  "representationType": "last-order-scenario",
+  "misconceptionTargets": [
+    "equate-last-order-with-closing"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "答案指出實際錯過的是點餐截止。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "沒有把最後點餐和供餐結束混在一起。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

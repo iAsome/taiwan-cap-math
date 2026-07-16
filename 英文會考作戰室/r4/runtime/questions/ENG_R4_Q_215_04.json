@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_215_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S215"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Home: 18 Lake Road, West Town\nWhere should this information go?",
+  "options": [
+    "Address",
+    "Phone number",
+    "E-mail",
+    "Sign here"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "道路與城鎮組成住址。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "電話欄應填聯絡號碼。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "電子郵件包含帳號與符號。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "簽名是本人寫下的姓名或識別。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s215-match-home-location-to-address-field",
+    "classify-form-data-type"
+  ],
+  "representationType": "form-field-matching",
+  "misconceptionTargets": [
+    "choose-field-by-space-size"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先辨認資料類型，再選填寫位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "只有第一項是位置資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

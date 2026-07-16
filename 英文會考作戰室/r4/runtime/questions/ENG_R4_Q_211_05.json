@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_211_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S211"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "LOST AND FOUND\nAsk here about bags, keys, or coats. Who should use this desk?",
+  "options": [
+    "People looking for lost things",
+    "People buying new coats",
+    "Workers making keys",
+    "Drivers paying for parking"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "這個櫃檯協助人們詢問遺失物。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "外套是可能遺失的物品，不是待售商品。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "鑰匙也是遺失物例子，不表示配鎖服務。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "停車付款和公告內容無關。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s211-identify-users-of-lost-and-found",
+    "interpret-example-list-by-service-heading"
+  ],
+  "representationType": "service-user-inference",
+  "misconceptionTargets": [
+    "read-example-object-as-product-for-sale"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "標題直接指出服務對象是遺失物品的人。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "袋子、鑰匙與外套都是可能遺失的物品。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

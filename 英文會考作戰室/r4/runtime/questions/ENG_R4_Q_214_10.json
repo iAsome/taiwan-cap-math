@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_214_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S214"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Bag card\nName: Eric Wu\nFlight: 503\nTo: North City. What does 503 mean?",
+  "options": [
+    "The bag's price",
+    "The owner's age",
+    "The flight number",
+    "The city gate"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有金錢符號或價格欄。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "卡片沒有年齡欄。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "欄名直接把五○三連到航班。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "北城是目的地，沒有登機門資訊。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u31-s214-map-number-to-flight-field-on-label",
+    "use-field-heading-to-type-number"
+  ],
+  "representationType": "label-field-meaning",
+  "misconceptionTargets": [
+    "guess-number-type-without-heading"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "欄位名稱決定數字代表的資料類型。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "答案沒有混淆目的地與航班。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

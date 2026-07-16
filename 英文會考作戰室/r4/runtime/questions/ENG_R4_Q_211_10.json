@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_211_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S211"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Buy tickets, see show times, and get snacks here. Which place offers all three?",
+  "options": [
+    "A bank",
+    "A movie theater",
+    "A post office",
+    "A doctor's office"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "銀行不會同時提供場次與零食。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "電影院會售票、列場次並販售零食。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "郵局處理郵件，不提供電影場次。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "醫師診間提供醫療服務。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u31-s211-integrate-ticket-showtime-snack-clues",
+    "avoid-answering-from-ticket-alone"
+  ],
+  "representationType": "multi-clue-place-inference",
+  "misconceptionTargets": [
+    "select-any-place-that-uses-tickets"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "三項服務必須同時符合一個場所。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "只有票券仍太廣，場次資訊使答案更明確。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

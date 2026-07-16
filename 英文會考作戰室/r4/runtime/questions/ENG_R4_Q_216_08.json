@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_216_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S216"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Room | Opens | Closes\nStudy | 8:00 | 18:00\nMusic | 10:00 | 16:00\nAt 9 a.m., which room is open?",
+  "options": [
+    "The Study room only",
+    "The Music room only",
+    "Both rooms",
+    "Neither room"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "九點在自習室時段內，但早於音樂室開放。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "音樂室十點才開。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩個空間開放時間不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "自習室已經開放。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u31-s216-test-one-time-against-two-room-ranges",
+    "evaluate-range-membership-per-row"
+  ],
+  "representationType": "table-time-range",
+  "misconceptionTargets": [
+    "look-only-at-closing-times"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "同一時刻分別代入兩個時段。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "只有自習室的範圍包含九點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

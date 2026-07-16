@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_215_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S215"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Check ONE box:\n□ Bus  □ Train  □ Walk\nA student checks Bus and Train. What must be fixed?",
+  "options": [
+    "Add Walk too.",
+    "Start a new form.",
+    "Write a phone number.",
+    "Leave only one choice checked."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "再勾一格會使錯誤更嚴重。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "不必重填整張表格。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "欄位問交通方式，不是電話。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "大寫單字明確限制只能留一格。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u31-s215-enforce-one-box-selection",
+    "apply-form-response-count-limit"
+  ],
+  "representationType": "form-instruction-violation",
+  "misconceptionTargets": [
+    "treat-checkboxes-as-unlimited"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "指示控制可選項目的數量。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "修正只處理實際發生的問題。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

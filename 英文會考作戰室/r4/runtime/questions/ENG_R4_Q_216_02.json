@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_216_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S216"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Bus | Leaves | Price\nA | 8:10 | $30\nB | 8:30 | $25\nWhich bus is cheaper?",
+  "options": [
+    "Bus A",
+    "Bus B",
+    "Both cost $30",
+    "The table does not show prices"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "三十元高於二十五元。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "第二班公車票價較低。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩個價格並不相同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "表格有明確價格欄。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u31-s216-compare-bus-prices-not-departures",
+    "select-minimum-in-target-column"
+  ],
+  "representationType": "table-comparison",
+  "misconceptionTargets": [
+    "choose-earliest-when-asked-cheapest"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "詢問較便宜時只比較價格欄。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "較早發車不會決定票價。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

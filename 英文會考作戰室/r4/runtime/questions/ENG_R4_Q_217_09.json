@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_217_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S217"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Return sports clothes by noon Friday. Ken returns them Friday at 1 p.m. How late is Ken?",
+  "options": [
+    "He is on time.",
+    "One day early",
+    "One hour late",
+    "The time is not given"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "下午一點已晚於中午。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是同一天較晚，不是早一天。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "歸還發生在截止後一小時。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "公告已提供星期五中午這個明確期限。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u31-s217-calculate-lateness-after-noon-deadline",
+    "apply-by-to-hour-boundary"
+  ],
+  "representationType": "notice-deadline-application",
+  "misconceptionTargets": [
+    "treat-any-friday-time-as-on-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "比較的是同一天的兩個時刻。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "答案也正確算出遲到時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

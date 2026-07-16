@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_216_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S216"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Club | Day | Cost\nChess | Mon | $5\nDance | Fri | $12\nPhoto | Fri | $8\nWhich Friday club costs less than $10?",
+  "options": [
+    "Chess",
+    "Dance",
+    "Photo",
+    "Both Friday clubs"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "西洋棋便宜但在星期一。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "舞蹈在星期五但超過十元。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "攝影同時符合星期五與低於十元。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "舞蹈不符合價格條件。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s216-filter-table-by-day-and-price",
+    "find-multi-condition-row"
+  ],
+  "representationType": "table-multi-condition-filter",
+  "misconceptionTargets": [
+    "accept-row-that-meets-one-condition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "答案是日期與價格兩個限制的交集。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩項條件都沒有被省略。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

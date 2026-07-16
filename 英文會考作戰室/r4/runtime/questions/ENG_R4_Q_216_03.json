@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_216_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S216"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Movie | Starts | Time\nSun Road | 2:00 | 90 min\nBlue Sea | 3:00 | 70 min\nWhich movie lasts longer?",
+  "options": [
+    "Sun Road",
+    "Blue Sea",
+    "Both last three hours",
+    "Blue Sea by twenty minutes"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "九十分鐘長於七十分鐘。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "藍海雖較晚開始，片長仍較短。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "開始時刻不是播放長度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "藍海短二十分鐘，不是長二十分鐘。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u31-s216-compare-movie-length-column",
+    "separate-start-time-from-duration"
+  ],
+  "representationType": "table-duration-comparison",
+  "misconceptionTargets": [
+    "compare-clock-numbers-as-length"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "要比較片長欄，不是時鐘時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "二十分鐘的差距支持第一部電影。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

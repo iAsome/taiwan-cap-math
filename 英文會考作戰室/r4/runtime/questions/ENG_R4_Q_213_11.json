@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_213_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S213"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "The pass can be used from September 3 to September 7. Which day is too early?",
+  "options": [
+    "September 4",
+    "September 7",
+    "September 3",
+    "September 2"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "九月四日在日期範圍內。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "九月七日是包含在內的結束日。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "九月三日就是開始日。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "九月二日早於開始日期。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u31-s213-detect-date-before-validity-range",
+    "evaluate-both-range-boundaries"
+  ],
+  "representationType": "date-range-application",
+  "misconceptionTargets": [
+    "check-only-ending-date"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "使用區間的兩端都已核對。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項違反的是開始邊界。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

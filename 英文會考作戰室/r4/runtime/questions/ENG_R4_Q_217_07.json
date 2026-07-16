@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_217_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S217"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "NOTICE: The clean-up day will be on a later day because of rain. A new date will be shared tomorrow. What should readers understand now?",
+  "options": [
+    "The event is happening today inside.",
+    "The event will never happen.",
+    "The event is on a later day, but no one knows the new date yet.",
+    "Tomorrow is the clean-up day."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "公告沒有室內活動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "延後不代表永久取消。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "活動延後，而且新日期尚未公布。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "明天是公布日期的時間，不一定是活動日。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s217-interpret-postponed-with-date-pending",
+    "separate-update-time-from-event-time"
+  ],
+  "representationType": "notice-status-inference",
+  "misconceptionTargets": [
+    "equate-postponed-with-canceled-or-tomorrow"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "延後狀態和未來更新要合併判讀。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "答案沒有把資訊公布日誤認為活動日。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

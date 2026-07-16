@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_213_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S213"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Pool hours: 8 a.m.–6 p.m.\nClosed 12–1 p.m. for cleaning. When can Omar swim?",
+  "options": [
+    "12:30 p.m.",
+    "6:30 p.m.",
+    "11:30 a.m.",
+    "7:30 a.m."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "十二點半正在清潔停用時段。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "六點半已超過每日關閉時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "十一點半在開放時間內，也早於清潔。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "七點半早於泳池開放。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s213-find-time-outside-midday-closure",
+    "apply-main-hours-and-exception"
+  ],
+  "representationType": "hours-with-closure-exception",
+  "misconceptionTargets": [
+    "ignore-midday-exception"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "正確時間同時通過主要時段與例外檢查。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "三個錯誤時間各自違反不同邊界。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_212_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S212"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "BRIDGE CLOSED DURING HEAVY RAIN",
+  "options": [
+    "The bridge closes every night.",
+    "People should cross faster in rain.",
+    "Only bikes may cross in rain.",
+    "Heavy rain closes the bridge."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "標示沒有提到夜間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "內容寫封閉，不是加速通過。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有自行車例外。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "大雨期間就是橋梁封閉的條件。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u31-s212-infer-weather-condition-for-bridge-closure",
+    "separate-conditional-from-permanent-status"
+  ],
+  "representationType": "weather-condition-sign",
+  "misconceptionTargets": [
+    "ignore-during-condition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答案把封閉狀態連到指定天氣。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "沒有誤判橋梁永遠關閉。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

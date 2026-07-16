@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_216_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S216"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Activity | Start | End\nRead | 4:00 | 4:30\nCook | 4:20 | 5:10\nWalk | 5:20 | 5:50\nWhich activities happen at the same time for part of their periods?",
+  "options": [
+    "Read and Cook",
+    "Cook and Walk",
+    "Read and Walk",
+    "All three"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "閱讀和烹飪在四點二十分到四點半重疊。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "烹飪結束後散步才開始。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "閱讀遠早於散步開始就結束。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "散步沒有和兩項較早活動重疊。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u31-s216-find-overlap-between-table-time-intervals",
+    "reason-across-start-and-end-columns"
+  ],
+  "representationType": "table-interval-inference",
+  "misconceptionTargets": [
+    "compare-start-times-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "開始與結束欄都要當成時間區間比較。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "重疊只發生在兩項指定活動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

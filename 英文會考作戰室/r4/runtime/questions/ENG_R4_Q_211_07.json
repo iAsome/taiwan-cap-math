@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_211_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S211"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Animal Care Center\nHealth checks and help for sick pets. Which person would most likely come here?",
+  "options": [
+    "A student returning a novel",
+    "A traveler buying a train ticket",
+    "A dog owner seeking help",
+    "A cook ordering fresh bread"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "還小說應前往圖書館。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "購買火車票應到車站或售票處。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "生病的寵物與健康檢查符合狗主人需求。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "訂購新鮮麵包應到麵包店。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s211-match-pet-care-service-to-dog-owner",
+    "select-user-by-stated-need"
+  ],
+  "representationType": "place-user-scenario",
+  "misconceptionTargets": [
+    "match-place-by-person-job-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "中心服務寵物及照顧牠們的人。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "答案只採用公告寫出的健康協助，沒有擴大服務。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_215_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S215"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Phone: 0912-345-678\nE-mail: joy@example.com\nWhat belongs in the E-mail box?",
+  "options": [
+    "0912-345-678",
+    "Joy's home address",
+    "joy@example.com",
+    "example"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是電話號碼。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "資料卡沒有提供住址。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "帶有郵件符號的完整值就是電子郵件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這只是郵件地址的一部分。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s215-select-email-from-contact-card",
+    "distinguish-phone-and-email-fields"
+  ],
+  "representationType": "form-contact-field",
+  "misconceptionTargets": [
+    "copy-nearest-contact-value"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩種聯絡資料必須分開。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "完整郵件值不能漏掉任何一段。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

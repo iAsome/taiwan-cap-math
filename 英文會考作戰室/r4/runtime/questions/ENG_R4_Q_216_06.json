@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_216_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S216"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Train | Leaves | Arrives\nK1 | 9:00 | 10:20\nK2 | 9:30 | 10:15\nWhich train arrives first?",
+  "options": [
+    "K1, because it leaves first",
+    "K1 at 9:00",
+    "Both at 10:20",
+    "K2 at 10:15"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "較早出發不代表本表中較早抵達。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "九點是第一班車出發時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第二班車抵達時間不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "十點十五分比十點二十分早五分鐘。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s216-find-earliest-arrival-despite-later-departure",
+    "compare-correct-time-column"
+  ],
+  "representationType": "table-arrival-comparison",
+  "misconceptionTargets": [
+    "equate-earliest-departure-with-earliest-arrival"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "比較依據是抵達欄。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "出發順序是具吸引力但錯誤的捷徑。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

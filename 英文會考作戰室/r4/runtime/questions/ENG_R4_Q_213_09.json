@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_213_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S213"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Office open weekdays 8:30–16:30, except public holidays. Monday is a public holiday. What is true on that Monday?",
+  "options": [
+    "The office opens at 8:30 as usual.",
+    "The office stays open later.",
+    "The office is closed that Monday.",
+    "Only students may enter."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "例外條件使一般平日時段不適用。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "公告沒有延長開放時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "星期一是公共假日，明確落在排除條件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "內容沒有指定訪客身分。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u31-s213-apply-public-holiday-exception-to-weekday-hours",
+    "prioritize-explicit-exception"
+  ],
+  "representationType": "schedule-exception",
+  "misconceptionTargets": [
+    "ignore-except-clause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "例外條款優先於一般星期一時段。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "結論只限該公共假日。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

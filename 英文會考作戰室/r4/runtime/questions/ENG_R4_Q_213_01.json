@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_213_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S213"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "OPEN\nMon–Fri 9:00–17:00\nSat 10:00–14:00\nSun closed\nCan a visitor enter at 3 p.m. Saturday?",
+  "options": [
+    "Yes, until 5 p.m.",
+    "No, Saturday hours end at 2 p.m.",
+    "Yes, because it is the weekend.",
+    "No, the place is closed every Saturday."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "五點關門只適用平日。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "星期六下午三點已超過兩點結束時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "週末身分不會取消列出的時段。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "星期六有營業時間，不是全天休息。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u31-s213-check-saturday-visit-against-own-hours",
+    "avoid-borrowing-weekday-closing-time"
+  ],
+  "representationType": "hours-schedule-application",
+  "misconceptionTargets": [
+    "apply-weekday-hours-to-saturday"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "星期六必須對應自己的時段。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "答案區分太晚到達與整天未營業。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

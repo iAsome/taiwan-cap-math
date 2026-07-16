@@ -1,0 +1,131 @@
+{
+  "id": "ENG_R4_L_S211",
+  "subject": "english",
+  "unitId": "ENG_R4_U31",
+  "skillId": "ENG_R4_S211",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "prerequisites": [
+    "ENG_R4_S210"
+  ],
+  "objectives": [
+    "能由標示中的物品、服務與動作推斷場所。",
+    "能區分場所名稱、標示功能與讀者下一步行動。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S211_SEC_01",
+      "title": "關鍵字要合起來看",
+      "content": "單一字常不足以決定場所。books 可能出現在書店或圖書館，但 return books、quiet reading area 和 library card 合起來，才支持圖書館。先圈出物品、服務與動作，再找能同時解釋這些線索的場所。"
+    },
+    {
+      "id": "ENG_R4_L_S211_SEC_02",
+      "title": "場所和標示用途是兩個問題",
+      "content": "Lost and Found 可能設在學校、車站或商場，主要用途都是協助找回遺失物。題目若問 Where would you see this? 才選場所；若問 What is this notice for? 則回答它要提供的服務。"
+    },
+    {
+      "id": "ENG_R4_L_S211_SEC_03",
+      "title": "讀者身分會限制答案",
+      "content": "Workers Only 指向工作人員，Visitors Please Sign In 指向訪客。兩個標示都可能在同一棟建築裡，卻要求不同的人採取不同動作，因此不能只靠背景地點判斷。"
+    },
+    {
+      "id": "ENG_R4_L_S211_SEC_04",
+      "title": "不加入標示沒有說的細節",
+      "content": "標示寫 Pick up your medicine here，只能推知這裡提供領藥服務；不能自行認定醫師也在此看診。會考閱讀重視可由文字支持的結論，合理但未寫出的資訊仍不能當答案。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S211_EX_01",
+      "prompt": "Return books here. Library cards ready in five minutes.",
+      "steps": [
+        "找出 books 和 library cards。",
+        "辨認 return 與領卡服務。",
+        "選擇同時提供兩項服務的場所。"
+      ],
+      "answer": "A library service desk.",
+      "why": "return books 和 library cards 都直接連到圖書館服務，desk 則指出辦理區。文字沒有提到買書或付款，因此不能判成書店櫃檯。"
+    },
+    {
+      "id": "ENG_R4_L_S211_EX_02",
+      "prompt": "Lost a bag? Ask at the desk beside Gate 3.",
+      "steps": [
+        "辨認 lost a bag 的問題。",
+        "找出 ask at the desk 的解決方式。",
+        "以 Gate 3 判斷是大型交通場所。"
+      ],
+      "answer": "A lost-and-found service near a gate.",
+      "why": "這則標示引導遺失物品的人到服務桌詢問，Gate 3 只協助定位。它沒有保證袋子已找到，也沒有要求旅客到第三個登機門搭機。"
+    },
+    {
+      "id": "ENG_R4_L_S211_EX_03",
+      "prompt": "Fresh bread every morning. Cakes made for special days.",
+      "steps": [
+        "找出 bread 與 cakes。",
+        "注意 made 和 fresh 描述販售食品。",
+        "推斷最符合的商店類型。"
+      ],
+      "answer": "A bakery.",
+      "why": "每天的新鮮麵包和為特別日子製作的蛋糕，都是麵包店的核心商品。標示沒有提到完整餐點、桌位或服務生，所以不應推成餐廳。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到 books 就直接選 bookstore。",
+      "whyWrong": "圖書館也有書，且 return、borrow、library card 等動作更能決定場所。",
+      "correction": "同時比對物品、動作與服務，不用單一名詞下結論。"
+    },
+    {
+      "belief": "標示在車站出現，答案就一定是搭車。",
+      "whyWrong": "車站裡也有失物招領、洗手間與服務櫃檯。",
+      "correction": "回答標示實際提供的服務，而不是整棟建築的一般用途。"
+    },
+    {
+      "belief": "把可能存在的服務都當成文字已證實。",
+      "whyWrong": "合理常識不能取代標示中的明確證據。",
+      "correction": "答案只能保留關鍵字直接支持的資訊。"
+    },
+    {
+      "belief": "把 Workers Only 解讀為所有人都能進入的入口。",
+      "whyWrong": "Workers 限定了可進入者的身分。",
+      "correction": "先找對象限制，再判斷讀者是否符合。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "標示同時寫 borrow books 和 reading room，最可能在哪裡？",
+      "answer": "圖書館",
+      "reason": "借書和閱覽空間共同支持圖書館。"
+    },
+    {
+      "prompt": "Lost and Found 的重點是場所名稱還是服務功能？",
+      "answer": "服務功能",
+      "reason": "它可出現在不同場所，功能都是處理遺失物。"
+    },
+    {
+      "prompt": "Visitors Please Sign In 要誰採取行動？",
+      "answer": "訪客",
+      "reason": "Visitors 明確限定公告對象。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  }
+}

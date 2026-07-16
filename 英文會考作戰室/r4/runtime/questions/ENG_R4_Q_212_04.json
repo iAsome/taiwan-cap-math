@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_212_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S212"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "KEEP OFF THE GRASS",
+  "options": [
+    "Water the grass.",
+    "Do not walk on the grass.",
+    "Sit on the grass quietly.",
+    "Cut the grass today."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "公告沒有澆水任務。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "這個片語要求人留在草地範圍外。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "安靜坐下仍然進入草地。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這是訪客規則，不是割草行程。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s212-paraphrase-keep-off-grass",
+    "reject-permitted-manner-inside-banned-area"
+  ],
+  "representationType": "prohibition-paraphrase",
+  "misconceptionTargets": [
+    "treat-quiet-behavior-as-exception"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項完整改述禁止行動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "即使保持安靜，也不能進入草地。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

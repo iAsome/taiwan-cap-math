@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_217_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S217"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "CHANGE: Friday's game starts at 4:30, not 4:00. What changed?",
+  "options": [
+    "The day",
+    "The teams",
+    "The place",
+    "The starting time"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "星期五保持不變。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有隊伍名稱被更改。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "公告沒有地點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "開始時間從四點改成四點半。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u31-s217-identify-start-time-change",
+    "preserve-unchanged-notice-fields"
+  ],
+  "representationType": "notice-change-identification",
+  "misconceptionTargets": [
+    "assume-all-event-details-changed"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "只有明確對比的欄位發生變更。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答案沒有假設整份行程都改了。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

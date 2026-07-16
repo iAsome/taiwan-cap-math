@@ -1,0 +1,131 @@
+{
+  "id": "ENG_R4_L_S213",
+  "subject": "english",
+  "unitId": "ENG_R4_U31",
+  "skillId": "ENG_R4_S213",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "prerequisites": [
+    "ENG_R4_S212"
+  ],
+  "objectives": [
+    "能整合星期、時刻、日期與例外說明判斷是否可使用服務。",
+    "能區分開始時間、截止時間、最後入場與有效期限。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S213_SEC_01",
+      "title": "先確認日期屬於哪一天",
+      "content": "Hours: Mon–Fri 9:00–17:00 表示星期一到五適用同一時段。Saturday 10:00–14:00 若另列一行，就不能沿用平日時段；Closed Sunday 則排除星期日。"
+    },
+    {
+      "id": "ENG_R4_L_S213_SEC_02",
+      "title": "open 和最後入場回答不同問題",
+      "content": "The museum closes at 5:00, last time to enter 4:30 表示館舍五點關門，但訪客最晚四點半入場。題目若問 arrive at 4:45，不可只看到 closes at 5:00 就判定能進入。"
+    },
+    {
+      "id": "ENG_R4_L_S213_SEC_03",
+      "title": "期限字決定邊界",
+      "content": "by Friday 通常表示最晚星期五完成，before Friday 則要求在星期五以前。Can be used through June 30 包含六月三十日；若只寫 until，實際邊界仍需配合完整標示，不自行延長。"
+    },
+    {
+      "id": "ENG_R4_L_S213_SEC_04",
+      "title": "例外條件優先核對",
+      "content": "Closed on public holidays、except Tuesday 或 school days only 都會改變一般時段。先讀主要時間，再找星號、括號或 except 後的例外，才能避免用常態規則回答特殊日期。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S213_EX_01",
+      "prompt": "Mon–Fri 9:00–17:00; Sat 10:00–14:00; Sun closed. Can Mia visit at 3 p.m. Saturday?",
+      "steps": [
+        "Saturday 使用第二行時段。",
+        "3 p.m. 等於 15:00。",
+        "15:00 晚於 14:00。"
+      ],
+      "answer": "No.",
+      "why": "星期六只開到下午兩點，三點到達已超過該日時段。平日五點關門的資訊不能套到星期六。"
+    },
+    {
+      "id": "ENG_R4_L_S213_EX_02",
+      "prompt": "Doors close 18:00. Last time to enter: 17:30. Leo arrives at 17:40.",
+      "steps": [
+        "分辨關門與最後入場。",
+        "比較 17:40 和 17:30。",
+        "判斷已錯過入場期限。"
+      ],
+      "answer": "Leo cannot enter.",
+      "why": "雖然門到十八點才關，但最後入場是十七點三十分。Leo 晚到十分鐘，因此不能用尚未關門作為可入場的理由。"
+    },
+    {
+      "id": "ENG_R4_L_S213_EX_03",
+      "prompt": "Use this card by May 12. Today is May 12.",
+      "steps": [
+        "by 表示不晚於所列日期。",
+        "今天正是五月十二日。",
+        "確認尚未超過期限。"
+      ],
+      "answer": "The card can still be used today.",
+      "why": "by May 12 把五月十二日列為最後可用日期，今天使用仍在期限內。若標示寫 before May 12，五月十二日就已太晚。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到建築尚未關門，就一定還能入場。",
+      "whyWrong": "last time to enter 可能早於 closing time。",
+      "correction": "分別比較抵達時間與最後入場、離場時間。"
+    },
+    {
+      "belief": "週末自動沿用星期一到五的營業時間。",
+      "whyWrong": "週六、週日常有獨立時段或休館。",
+      "correction": "先定位星期，再讀同一列的開始與結束時間。"
+    },
+    {
+      "belief": "before Friday 和 by Friday 都包含星期五整天。",
+      "whyWrong": "before 通常排除所列時間點，by 則把它當最後期限。",
+      "correction": "用一條時間線標出是否包含邊界。"
+    },
+    {
+      "belief": "忽略星號後的 holiday 或 except 說明。",
+      "whyWrong": "例外可能使一般開放時段在當天不適用。",
+      "correction": "讀完所有附註後再判斷。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Last order 8:30 p.m. 是關門時間嗎？",
+      "answer": "不一定",
+      "reason": "它只表示最後點餐時間，餐廳可能更晚關門。"
+    },
+    {
+      "prompt": "before June 1 是否包含六月一日？",
+      "answer": "不包含",
+      "reason": "before 要求在該日期以前。"
+    },
+    {
+      "prompt": "Closed Monday except school holidays 中，例外在哪裡？",
+      "answer": "學校假日期間",
+      "reason": "except 後指出星期一休息規則不適用的情況。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_212_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S212"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "OUT OF ORDER\nPlease use the machine on Floor 2.",
+  "options": [
+    "Repair this machine now.",
+    "Wait beside this machine all day.",
+    "Use this machine only once.",
+    "Go to Floor 2 for another machine."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "使用者沒有被要求維修。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "原地等候不是公告提供的方案。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "故障表示現在不能使用，不是限用一次。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "第二行明確提供樓下的替代機器。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u31-s212-follow-out-of-order-alternative",
+    "connect-status-to-replacement-action"
+  ],
+  "representationType": "equipment-status-instruction",
+  "misconceptionTargets": [
+    "interpret-out-of-order-as-limited-use"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "設備問題和替代方案都有明確文字。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "二樓是使用地點，不是故障程度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

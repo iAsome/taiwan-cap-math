@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_213_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S213"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Museum closes 5:00 p.m.\nLast time to enter: 4:30 p.m.\nNina arrives at 4:40. What happens?",
+  "options": [
+    "She cannot enter.",
+    "She has twenty minutes to enter.",
+    "She may enter because the museum is open.",
+    "She must wait until 5:00."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "她在最後入場時間後十分鐘到達。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "剩餘開館時間不會改變入場截止。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "最後入場後，即使場館尚未關門也不能進入。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "五點是關門，不是重新開放。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u31-s213-compare-arrival-with-last-entry",
+    "separate-admission-deadline-from-closing"
+  ],
+  "representationType": "last-entry-boundary",
+  "misconceptionTargets": [
+    "use-closing-time-as-entry-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "真正要比較的邊界是最後入場時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "答案沒有混淆入場截止與關門。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

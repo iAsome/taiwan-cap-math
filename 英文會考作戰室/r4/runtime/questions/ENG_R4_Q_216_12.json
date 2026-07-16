@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_216_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S216"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Team | Won | Lost\nRed | 5 | 2\nBlue | 4 | 1\nGreen | 6 | 3\nWhich team won more games than Red?",
+  "options": [
+    "Blue",
+    "No team",
+    "Blue and Green",
+    "Green"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "藍隊四勝，少於紅隊五勝。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "綠隊六勝，所以並非沒有隊伍勝場較多。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "只有綠隊超過紅隊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "六勝確實比五勝多。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u31-s216-evaluate-four-statements-against-team-table",
+    "verify-complete-propositions"
+  ],
+  "representationType": "table-proposition-check",
+  "misconceptionTargets": [
+    "compare-values-from-different-columns"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "所有隊伍都回到勝場欄比較。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答案沒有混入敗場數。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

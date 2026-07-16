@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_215_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S215"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Student card\nName: Ben Yu\nBorn: 2012\nForm asks: 'Year born.' What should Ben write?",
+  "options": [
+    "Ben",
+    "Yu",
+    "Student",
+    "2012"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Ben 是學生的個人名。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Yu 是學生卡上的姓氏。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這是人物身分。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "四位數值就是出生年份。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u31-s215-extract-year-of-birth-from-card",
+    "select-data-by-field-type"
+  ],
+  "representationType": "form-data-extraction",
+  "misconceptionTargets": [
+    "copy-prominent-name-instead-of-requested-number"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "欄位只要求年份。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答案沒有加入資料卡未提供的月與日。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_213_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S213"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Sign up by Friday. Today is Friday morning. Can a student still sign up?",
+  "options": [
+    "No, it ended Thursday.",
+    "Only after noon.",
+    "Yes, Friday is the final day.",
+    "Only next week."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是星期五以前才會成立的解讀。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "公告沒有中午限制。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "星期五以前完成包含星期五這個最後期限日。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "公告沒有把登記移到下週。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u31-s213-interpret-by-friday-as-inclusive-deadline",
+    "contrast-by-with-before"
+  ],
+  "representationType": "deadline-word-interpretation",
+  "misconceptionTargets": [
+    "treat-by-as-before"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "期限介系詞決定星期五是否包含。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "星期五上午仍在最後一天內。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

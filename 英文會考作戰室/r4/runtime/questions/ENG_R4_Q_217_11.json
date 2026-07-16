@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_217_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S217"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "People needed to help Saturday, 9–11 a.m. Sign up at the office before Thursday. Lina goes to the office Thursday afternoon. What went wrong?",
+  "options": [
+    "Saturday is not a weekend day.",
+    "The event lasts too long.",
+    "She signed up too late.",
+    "People who help cannot visit an office."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "星期六是週末。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "公告沒有說兩小時過長。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "星期四以前不包含星期四下午。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "辦公室正是報名地點。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u31-s217-diagnose-signup-after-before-thursday",
+    "separate-registration-deadline-from-event-schedule"
+  ],
+  "representationType": "notice-registration-deadline",
+  "misconceptionTargets": [
+    "assume-event-date-is-signup-deadline"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "實際報名時間已和排除邊界比較。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "活動時段與報名截止保持分開。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

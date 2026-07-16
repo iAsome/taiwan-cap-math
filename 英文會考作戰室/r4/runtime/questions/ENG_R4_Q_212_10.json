@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_212_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S212"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "SILENCE YOUR PHONE BEFORE ENTERING",
+  "options": [
+    "Turn off all lights.",
+    "Make sure the phone will not ring.",
+    "Leave the phone at home.",
+    "Call someone at the door."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "燈光和手機無聲無關。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "靜音能避免進入後響鈴。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "標示沒有禁止攜帶手機。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "打電話會產生聲音，和要求相反。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u31-s212-interpret-silence-phone-before-entry",
+    "avoid-overstating-device-ban"
+  ],
+  "representationType": "pre-entry-instruction",
+  "misconceptionTargets": [
+    "replace-silence-with-leave-behind"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "要求的結果是室內不出現手機聲響。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "不必擴大成把手機留在家裡。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_214_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S214"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "CHILD TICKET\nAges 6–12. Who may use it?",
+  "options": [
+    "A five-year-old child",
+    "A ten-year-old child",
+    "A thirteen-year-old child",
+    "Any adult with a child"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "五歲低於票券年齡範圍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "十歲位於六到十二歲之間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "十三歲高於上限。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "票券限制使用者年齡，不是陪同者。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u31-s214-check-age-range-on-child-ticket",
+    "apply-inclusive-user-range"
+  ],
+  "representationType": "ticket-user-eligibility",
+  "misconceptionTargets": [
+    "ignore-age-boundary"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "年齡區間直接決定使用資格。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "票面沒有成人陪同例外。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

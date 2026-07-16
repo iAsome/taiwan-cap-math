@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_213_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S213"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Library service desk\nWeekdays 9–6\nWednesday workers' meeting 1–2\nSaturday 9–12\nWhen is the desk closed?",
+  "options": [
+    "Tuesday at 1:30",
+    "Wednesday at 1:30",
+    "Wednesday at 3:00",
+    "Saturday at 10:00"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "星期二該時段沒有列出關閉。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "星期三一點到兩點的會議使櫃檯暫停。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "三點已在會議結束後。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "星期六十點在開放時段內。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u31-s213-integrate-weekly-meeting-exception",
+    "cross-check-day-time-and-special-closure"
+  ],
+  "representationType": "multi-line-hours-inference",
+  "misconceptionTargets": [
+    "apply-special-closure-to-wrong-day"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "特殊時段同時對應到正確星期與時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "只檢查一般營業時間不足以作答。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

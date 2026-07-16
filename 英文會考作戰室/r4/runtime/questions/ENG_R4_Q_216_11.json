@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_216_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S216"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Day | High | Low\nMon | 24°C | 18°C\nTue | 21°C | 16°C\nWed | 23°C | 19°C\nWhich day has the smallest change from high to low?",
+  "options": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Monday and Tuesday"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "星期一相差六度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "星期二相差五度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "星期三相差四度，是最小差值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "前兩天的差值不相等。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u31-s216-compare-high-low-differences-by-day",
+    "derive-and-rank-row-differences"
+  ],
+  "representationType": "table-derived-comparison",
+  "misconceptionTargets": [
+    "choose-smallest-low-instead-of-smallest-change"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "每一列先計算高低溫差。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "只看最低溫本身不能回答變化最小。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

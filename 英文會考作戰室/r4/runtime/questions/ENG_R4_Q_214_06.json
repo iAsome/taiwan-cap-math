@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_214_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S214"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Use this medicine after dinner once each day. How often should it be used?",
+  "options": [
+    "Once a week",
+    "Before every meal",
+    "Once each day",
+    "Only when hungry"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "說明寫每天，不是每週。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "要求晚餐後，不是每餐前。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "每天一次就是每日使用一次。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "飢餓不是使用條件。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s214-read-daily-frequency-from-label",
+    "separate-frequency-from-meal-timing"
+  ],
+  "representationType": "usage-frequency",
+  "misconceptionTargets": [
+    "count-meals-instead-of-days"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "使用頻率和一天中的時間分開判讀。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "答案沒有把一次改成多次使用。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

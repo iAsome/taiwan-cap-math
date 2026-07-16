@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_214_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S214"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Event Pass\nMorning program: Hall A\nAfternoon program: Hall C\nLunch: Room 6\nWhere should a visitor go after lunch for the afternoon program?",
+  "options": [
+    "Hall A",
+    "Room 6",
+    "The ticket office",
+    "Hall C"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一會堂屬於上午活動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第六教室只供午餐使用。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "流程沒有列出售票處。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "下午活動明確安排在第三會堂。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u31-s214-route-pass-holder-to-afternoon-hall",
+    "link-day-part-to-location-line"
+  ],
+  "representationType": "multi-line-pass-application",
+  "misconceptionTargets": [
+    "choose-most-recent-location-instead-of-next-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "時段資訊用來選擇正確一行。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "午餐後要找下午活動，不是停留在用餐地點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_214_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S214"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "1. Open the cover.\n2. Put in the card.\n3. Push Start. What happens right before the Start button is pushed?",
+  "options": [
+    "Closing the cover",
+    "Putting in the card",
+    "Taking out the card",
+    "Turning off the machine"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "步驟沒有要求關上外蓋。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "第二步正好在第三步之前。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "取出卡片不在清單中。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "最後動作是開始，不是關機。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s214-find-step-before-press-start",
+    "use-numbered-procedure-order"
+  ],
+  "representationType": "procedure-sequence",
+  "misconceptionTargets": [
+    "select-first-step-instead-of-previous-step"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "編號順序直接決定答案。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "緊接在前指的是上一個編號步驟。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

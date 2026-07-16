@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_212_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S212"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "NO FOOD OR DRINKS",
+  "options": [
+    "Eat only fruit here.",
+    "Bring water but no food.",
+    "Keep both food and drinks outside.",
+    "Leave only hot drinks outside."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "標示沒有讓水果例外。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "飲料也在禁止範圍內。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "否定同時涵蓋食物與飲料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "飲料溫度不會改變規則。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u31-s212-apply-no-food-or-drinks-to-both-items",
+    "resolve-negative-scope-over-or"
+  ],
+  "representationType": "prohibition-scope",
+  "misconceptionTargets": [
+    "apply-no-to-first-noun-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "完整禁止範圍包含兩個並列名詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "標示沒有提供任何例外。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

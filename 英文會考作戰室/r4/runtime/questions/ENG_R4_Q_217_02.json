@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_217_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S217"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Library members: Bring your card when you borrow a book. What must members bring?",
+  "options": [
+    "A library card",
+    "A new book",
+    "Money for every visit",
+    "A family member"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "公告明確要求借書時攜帶圖書證。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "要借的書由圖書館提供。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "內容沒有收費資訊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "也沒有要求家人陪同。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u31-s217-extract-required-item-from-member-notice",
+    "reject-unstated-requirements"
+  ],
+  "representationType": "notice-required-action",
+  "misconceptionTargets": [
+    "add-common-context-assumption"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "必要物品直接來自公告動作。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "答案沒有加入常見但未寫出的圖書館規則。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

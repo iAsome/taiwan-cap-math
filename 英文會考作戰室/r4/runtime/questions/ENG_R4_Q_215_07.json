@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_215_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S215"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Contact person: Mr. Ho\nWho is this person to the student: uncle. What does 'uncle' tell us?",
+  "options": [
+    "Where Mr. Ho lives",
+    "How Mr. Ho knows the student",
+    "Mr. Ho's phone number",
+    "The student's last name"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "內容沒有住址。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "這一欄說明兩人的親屬連結。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "叔叔不是電話號碼。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "它也不能指出任一人的姓氏。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s215-interpret-relationship-field-value",
+    "distinguish-relationship-from-identity-data"
+  ],
+  "representationType": "form-field-function",
+  "misconceptionTargets": [
+    "read-relationship-as-name"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "欄位名稱決定這個字的功能。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "答案描述關係，不是另一項聯絡資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

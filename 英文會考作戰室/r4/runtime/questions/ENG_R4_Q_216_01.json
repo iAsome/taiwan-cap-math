@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_216_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S216"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Class | Day | Room\nArt | Tue | 2\nMusic | Wed | 5\nWhere does Music meet?",
+  "options": [
+    "Room 2",
+    "Tuesday",
+    "Wednesday",
+    "Room 5"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第二教室屬於美術課。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "星期二是美術課日期，不是教室。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "星期三是音樂課日期，不是地點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "音樂課和第五教室位於同一列。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u31-s216-cross-music-row-to-room-column",
+    "avoid-adjacent-row-mixing"
+  ],
+  "representationType": "simple-table-lookup",
+  "misconceptionTargets": [
+    "take-first-room-value"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "從音樂課資料列移到教室欄即可定位。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答案保留教室名稱與數字。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_214_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S214"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Special offer: Save $5 when you spend $30 or more. Mia spends $28. What is true about Mia?",
+  "options": [
+    "She saves $5.",
+    "She receives $30.",
+    "She may use two offers.",
+    "She does not pay enough to save $5."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "二十八元低於所需三十元。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "優惠降低價格，不會支付三十元。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有可使用兩次的規則。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "消費金額尚未達到門檻。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u31-s214-compare-purchase-with-coupon-minimum",
+    "apply-or-more-threshold"
+  ],
+  "representationType": "coupon-condition",
+  "misconceptionTargets": [
+    "treat-near-threshold-as-enough"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "實際金額已和最低門檻比較。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "結論沒有假設另一種折扣。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_211_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S211"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Town Center\nRoom A: Dance\nRoom B: Cooking\nRoom C: Homework Help\nWhere should a student go for help with math?",
+  "options": [
+    "The dance room",
+    "The kitchen store",
+    "The front gate",
+    "Room C"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "舞蹈活動不提供課業協助。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "公告沒有列出廚具商店。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "入口沒有被指定為課程場所。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "第三教室提供包含數學在內的課業協助。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u31-s211-route-student-through-community-center-directory",
+    "map-need-to-listed-room"
+  ],
+  "representationType": "directory-application",
+  "misconceptionTargets": [
+    "choose-room-by-letter-order"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "房間清單直接把服務對應到地點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答案使用廣義課業協助，沒有杜撰數學專班。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

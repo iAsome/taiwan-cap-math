@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_211_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S211"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Platform 3\nTrain to Green City — 10:20. Where is a traveler reading this?",
+  "options": [
+    "At a hotel",
+    "At a park",
+    "At a train station",
+    "At a school office"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "旅館不會用月臺編號公告火車。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "公園可能有步道，卻沒有火車月臺與發車時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "月臺、目的地和時間共同指向火車站。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "學校辦公室不公告火車班次。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u31-s211-locate-traveler-at-station-from-platform",
+    "separate-destination-from-current-location"
+  ],
+  "representationType": "transport-sign-place-inference",
+  "misconceptionTargets": [
+    "choose-destination-as-current-place"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "三項資訊都支持目前位於火車站。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "綠城是目的地，不是讀者現在的位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

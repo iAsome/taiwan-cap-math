@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_214_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S214"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "KEEP THIS TICKET UNTIL YOU LEAVE",
+  "options": [
+    "Throw it away after entering.",
+    "Give it to another visitor.",
+    "Keep it during the whole visit.",
+    "Buy a second ticket inside."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "要求保留到離開，所以入場後仍不能丟棄。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "票券持有人沒有被要求轉交。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "整段參觀期間保留票券符合時間條件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "內容沒有要求再買一張。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s214-interpret-keep-ticket-until-leaving",
+    "translate-until-into-duration"
+  ],
+  "representationType": "ticket-retention-instruction",
+  "misconceptionTargets": [
+    "treat-entry-as-end-of-ticket-use"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "時間連接詞決定票券要保留多久。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "答案沒有自行杜撰保留票券的原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

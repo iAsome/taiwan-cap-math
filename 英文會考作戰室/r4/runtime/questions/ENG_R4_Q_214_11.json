@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_214_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S214"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Return by April 20\nDo not take this card off. A borrower returns the item on April 21. Which rule was broken?",
+  "options": [
+    "The item came back after April 20.",
+    "The card was too large.",
+    "The item needed a new owner.",
+    "The return place was wrong."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "四月二十一日比期限晚一天。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "卡片大小沒有被討論。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "借用不表示要更換所有人。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "公告沒有指定歸還地點。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u31-s214-identify-broken-return-date-rule",
+    "avoid-claiming-unmentioned-label-removal"
+  ],
+  "representationType": "label-rule-violation",
+  "misconceptionTargets": [
+    "choose-any-printed-rule-without-scenario-evidence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "情境只有證據證明日期規則被違反。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "沒有說借用者拿掉卡片。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

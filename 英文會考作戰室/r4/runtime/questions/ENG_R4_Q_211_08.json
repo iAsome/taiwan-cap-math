@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_211_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S211"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "GATE 6\nFlight 218 to South Island\nBoarding ends 14:10. What is this sign helping passengers find?",
+  "options": [
+    "A hotel room",
+    "A bus seat",
+    "A hospital bed",
+    "Their boarding place"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "登機門和航班資訊不會指出旅館房間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "標示寫的是航班，不是公車。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "內容沒有醫療服務。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "登機門編號告訴旅客在哪裡登機。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u31-s211-infer-boarding-place-from-flight-gate-sign",
+    "distinguish-gate-from-destination"
+  ],
+  "representationType": "airport-sign-purpose",
+  "misconceptionTargets": [
+    "treat-flight-destination-as-current-location"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "旅客必須在登機截止前找到第六號門。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "南島是目的地，不是登機門位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

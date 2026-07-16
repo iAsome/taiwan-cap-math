@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_213_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S213"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Orders before 2 p.m. leave today. Later orders leave tomorrow. An order arrives at 2:10 p.m. When will it leave?",
+  "options": [
+    "This morning",
+    "At 2 p.m.",
+    "Today before noon",
+    "Tomorrow"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "訂單在上午之後才送達。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "它不是兩點整收到。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "送達時間也晚於中午。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩點十分已超過當日出貨截止。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s213-apply-order-cutoff-to-late-arrival",
+    "map-post-cutoff-event-to-next-day"
+  ],
+  "representationType": "service-cutoff-application",
+  "misconceptionTargets": [
+    "treat-close-time-as-inclusive-after-boundary"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "送達時間必須和出貨邊界比較。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "較晚收到的訂單依規則延至明日。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

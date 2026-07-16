@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_212_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S212"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "NO LEFT TURN\n7–9 a.m.",
+  "options": [
+    "Drivers may never turn left here.",
+    "Drivers may not turn left during the stated morning hours.",
+    "Only buses may turn left all morning.",
+    "The road is closed from seven to nine."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "時間限制表示規則不是全天。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "早上七點到九點不得左轉。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "標示沒有公車例外。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "禁止左轉不等於整條道路封閉。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s212-apply-time-limited-no-left-turn",
+    "preserve-prohibition-boundary"
+  ],
+  "representationType": "time-bounded-road-sign",
+  "misconceptionTargets": [
+    "expand-timed-rule-to-all-day"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "答案保留動作和時間兩個範圍。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "沒有把限制擴張到標示之外。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_211_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S211"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Pick up your medicine here after the doctor sends the order. What is true?",
+  "options": [
+    "Doctors see every patient at this desk",
+    "All medicine is free",
+    "The desk gives medicine that has been ordered",
+    "Customers may order lunch here"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "標示沒有說醫師在此看診。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "內容沒有價格資訊，不能推論免費。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "領取與醫師送出的處方共同支持此結論。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "領藥櫃檯不是訂午餐服務。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u31-s211-draw-bounded-conclusion-from-medicine-pickup",
+    "reject-unstated-service-and-price"
+  ],
+  "representationType": "service-sign-bounded-inference",
+  "misconceptionTargets": [
+    "add-common-but-unstated-service"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "結論只使用標示明確提供的證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "沒有自行加入診療或價格資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

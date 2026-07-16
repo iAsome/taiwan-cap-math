@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_213_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S213"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Classes: Tuesday and Thursday, 6–7 p.m. How many classes are there each week, and how long is each one?",
+  "options": [
+    "Two classes; one hour each",
+    "One class; two hours",
+    "Two classes; seven hours each",
+    "Five classes; one hour each"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩個指定日期各有一小時課程。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "星期四也有課，而且每次只有一小時。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "七點是結束時間，不是課程長度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "清單只列兩個平日。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s213-summarize-two-day-one-hour-class-schedule",
+    "combine-day-count-and-duration"
+  ],
+  "representationType": "recurring-schedule-summary",
+  "misconceptionTargets": [
+    "read-two-days-as-two-hour-duration"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "課表同時提供每週次數與每次長度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項完整保留日期與六點到七點時段。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_211_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S211"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Fresh bread at 7 a.m.\nOrder a cake for your special day. What kind of shop posted this?",
+  "options": [
+    "A shoe shop",
+    "A bakery",
+    "A book store",
+    "A bike shop"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "標示沒有鞋類商品。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "新鮮麵包與訂製蛋糕都是麵包店商品。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "內容沒有提到書籍。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "標示也沒有自行車或維修服務。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u31-s211-identify-bakery-from-bread-and-cake",
+    "distinguish-product-clues-from-time-clue"
+  ],
+  "representationType": "shop-sign-place-inference",
+  "misconceptionTargets": [
+    "treat-any-morning-time-as-transport"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "兩種食品線索共同決定商店類型。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "早上七點描述出爐時間，不是交通班次。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

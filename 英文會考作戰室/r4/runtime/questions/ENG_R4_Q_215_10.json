@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_215_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S215"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Sign here: __________\nWhy is this line different from 'Full name'?",
+  "options": [
+    "It asks for a home address.",
+    "It asks for a date.",
+    "It asks the person to sign.",
+    "It asks for a family member."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "住址有自己的欄位。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "日期也使用另一類欄位。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "簽名欄要求本人寫下識別簽名。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "內容沒有提到其他家人。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u31-s215-distinguish-signature-from-full-name",
+    "identify-form-authentication-field"
+  ],
+  "representationType": "form-signature-function",
+  "misconceptionTargets": [
+    "treat-all-name-like-lines-as-full-name"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "回應由欄位功能決定，不由空格長度決定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "答案區分簽名與抄寫全名。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,131 @@
+{
+  "id": "ENG_R4_L_S215",
+  "subject": "english",
+  "unitId": "ENG_R4_U31",
+  "skillId": "ENG_R4_S215",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "prerequisites": [
+    "ENG_R4_S214"
+  ],
+  "objectives": [
+    "能依英文欄位名稱填入正確類型的個人資料。",
+    "能區分姓名、聯絡方式、日期與簽名等相近欄位。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S215_SEC_01",
+      "title": "欄位名稱決定資料類型",
+      "content": "First name、Last name、Birthday、Address、Phone number 和 E-mail 各要求不同資料。先把欄位翻成要填的資訊類型，再從資料卡找值，不憑欄位順序猜答案。"
+    },
+    {
+      "id": "ENG_R4_L_S215_SEC_02",
+      "title": "姓名欄要分清前後",
+      "content": "英文表格常把 first name 和 last name 分開。以 Amy Chen 為例，Amy 是 first name，Chen 是 last name；若表格寫 Full name，才填入完整姓名。"
+    },
+    {
+      "id": "ENG_R4_L_S215_SEC_03",
+      "title": "聯絡人不等於填表者",
+      "content": "Contact person name 和 Contact person phone 要填緊急時可聯絡之人的資料，不是再次填自己的姓名和電話。Who this person is to you 則說明聯絡人與填表者的關係，例如 mother、father 或 friend。"
+    },
+    {
+      "id": "ENG_R4_L_S215_SEC_04",
+      "title": "格式要求也屬於題目資訊",
+      "content": "MM/DD/YYYY、Please print、Check one box 或 Sign here 都指定填寫方式。即使資料內容正確，若把日期順序顛倒、勾了兩個互斥選項，仍不符合表格要求。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S215_EX_01",
+      "prompt": "Name: Lily Wang. What belongs in 'Last name'?",
+      "steps": [
+        "把完整姓名分成個人名與家族名。",
+        "辨認 Wang 位於姓名後。",
+        "填入 last name 欄。"
+      ],
+      "answer": "Wang.",
+      "why": "在 Lily Wang 這個英文排列中，Lily 是 first name，Wang 是 last name。題目只要求一個欄位，因此不應再抄完整姓名。"
+    },
+    {
+      "id": "ENG_R4_L_S215_EX_02",
+      "prompt": "Contact person: Ken Lee, 0912-345-678. Which number should enter the form?",
+      "steps": [
+        "確認欄位指向 contact person。",
+        "在資料卡找到 Ken Lee 的電話。",
+        "保留原有數字順序。"
+      ],
+      "answer": "0912-345-678.",
+      "why": "表格要的是緊急聯絡人的電話，資料卡已把這個號碼連到 Ken Lee。不能改填學生自己的號碼，也不能把電話誤當日期。"
+    },
+    {
+      "id": "ENG_R4_L_S215_EX_03",
+      "prompt": "Birthday (MM/DD/YYYY): March 5, 2012.",
+      "steps": [
+        "MM 代表月份。",
+        "DD 代表日期。",
+        "依指定順序組成年份格式。"
+      ],
+      "answer": "03/05/2012.",
+      "why": "March 是第三個月，所以月份寫 03；日期五日寫 05，最後放四位年份 2012。若寫 05/03/2012，就把月和日交換了。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "First name 是寫在中文姓名最前面的姓。",
+      "whyWrong": "英文 first name 指個人名，不是中文排列中的第一個字。",
+      "correction": "依表格定義區分 given name 與 family name。"
+    },
+    {
+      "belief": "Contact person 欄再填一次自己的資料。",
+      "whyWrong": "該欄要找緊急時可聯絡的另一個人。",
+      "correction": "先確認資料卡中誰被標為 contact。"
+    },
+    {
+      "belief": "日期只要三個數字都正確，順序可以任意。",
+      "whyWrong": "MM/DD/YYYY 和 DD/MM/YYYY 代表不同排列。",
+      "correction": "逐一對照格式中的月、日、年位置。"
+    },
+    {
+      "belief": "Sign here 欄可以填電話或電子郵件。",
+      "whyWrong": "Sign here 要求本人簽名，功能是確認身分或同意。",
+      "correction": "辨認欄位功能，不因空格大小選資料。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Full name 要填一部分還是完整姓名？",
+      "answer": "完整姓名",
+      "reason": "full 表示姓名各部分都要寫。"
+    },
+    {
+      "prompt": "Who is this person to you: mother 是聯絡人的姓名嗎？",
+      "answer": "不是",
+      "reason": "它說明聯絡人和填表者的關係。"
+    },
+    {
+      "prompt": "Check one box 可以勾兩格嗎？",
+      "answer": "不可以",
+      "reason": "one 明確限制只能選一項。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  }
+}

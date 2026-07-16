@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_212_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S212"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-1",
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LP-3-4-3",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "FIRE EXIT\nUse only when there is a fire. When may this door be used?",
+  "options": [
+    "During a fire",
+    "When the main door is busy",
+    "Only before lunch",
+    "For every daily visit"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "標示允許在火災時使用。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "主要入口忙碌不等於發生火災。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "內容沒有午餐時間限制。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "限定字排除一般日常使用。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u31-s212-identify-emergency-exit-condition",
+    "apply-only-to-event-condition"
+  ],
+  "representationType": "conditional-instruction",
+  "misconceptionTargets": [
+    "treat-emergency-exit-as-normal-shortcut"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-1",
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LP-3-4-3",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "使用許可只連到一項條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "答案沒有把火災出口擴大成方便通行。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
