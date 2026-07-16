@@ -17,6 +17,7 @@ const IRREGULAR = new Map(Object.entries({
   broke: "break",
   broken: "break",
   built: "build",
+  rebuilt: "rebuild",
   bought: "buy",
   came: "come",
   caught: "catch",
@@ -35,10 +36,14 @@ const IRREGULAR = new Map(Object.entries({
   eaten: "eat",
   felt: "feel",
   fell: "fall",
+  fallen: "fall",
+  feet: "foot",
   flown: "fly",
+  flew: "fly",
   found: "find",
   forgot: "forget",
   forgotten: "forget",
+  forbidden: "forbid",
   gave: "give",
   given: "give",
   gone: "go",
@@ -48,9 +53,11 @@ const IRREGULAR = new Map(Object.entries({
   has: "have",
   heard: "hear",
   held: "hold",
+  hid: "hide",
   knew: "know",
   known: "know",
   kept: "keep",
+  led: "lead",
   left: "leave",
   lent: "lend",
   lost: "lose",
@@ -69,21 +76,29 @@ const IRREGULAR = new Map(Object.entries({
   sang: "sing",
   seen: "see",
   sent: "send",
+  shook: "shake",
   slept: "sleep",
+  sold: "sell",
   spoke: "speak",
   spoken: "speak",
+  spent: "spend",
+  stood: "stand",
+  swam: "swim",
   taught: "teach",
   taken: "take",
   teeth: "tooth",
   thought: "think",
   told: "tell",
   took: "take",
+  threw: "throw",
   tying: "tie",
   went: "go",
   won: "win",
   worst: "bad",
+  worse: "bad",
   written: "write",
   wrote: "write",
+  rewrote: "rewrite",
 }));
 const CONTRACTIONS = new Map(Object.entries({
   "aren't": "are",
@@ -179,7 +194,8 @@ export async function inspectEnglishVocabularyScope(source, policy, { vocabulary
   const notation = new Set(policy.grammarNotation.flatMap((value) => value.toLowerCase().match(TOKEN_PATTERN) ?? []));
   const malformed = new Set(policy.malformedDistractors.map((value) => value.toLowerCase()));
   const governedAdditional = new Set(policy.additionalLearningTerms.map((value) => value.toLowerCase()));
-  const report = { basic: new Set(), additional: new Set(), names: new Set(), notation: new Set(), malformed: new Set(), unknown: new Set() };
+  const contextualizedAboveRange = new Set((policy.contextualizedAboveRangeTerms ?? []).map((value) => value.toLowerCase()));
+  const report = { basic: new Set(), additional: new Set(), contextualizedAboveRange: new Set(), names: new Set(), notation: new Set(), malformed: new Set(), unknown: new Set() };
   for (const value of studentVisibleStrings(source)) {
     for (const rawToken of value.match(TOKEN_PATTERN) ?? []) {
       const token = rawToken.toLowerCase().replaceAll("’", "'");
@@ -191,8 +207,10 @@ export async function inspectEnglishVocabularyScope(source, policy, { vocabulary
         const candidates = candidateLemmas(token);
         const basicLemma = candidates.find((candidate) => basic.has(candidate));
         const additionalLemma = candidates.find((candidate) => additional.has(candidate));
+        const contextualizedTerm = candidates.find((candidate) => contextualizedAboveRange.has(candidate));
         if (basicLemma) report.basic.add(basicLemma);
         else if (additionalLemma && governedAdditional.has(additionalLemma)) report.additional.add(additionalLemma);
+        else if (contextualizedTerm) report.contextualizedAboveRange.add(contextualizedTerm);
         else if (additionalLemma) report.unknown.add(`${token}->${additionalLemma}:table2-not-governed`);
         else report.unknown.add(token);
       }
@@ -204,12 +222,19 @@ export async function inspectEnglishVocabularyScope(source, policy, { vocabulary
 export async function validateEnglishVocabularyScope(source, policy, options) {
   assert.equal(policy.capQuestionBasis, "appendix-5-table-1");
   assert.equal(new Set(policy.additionalLearningTerms.map((value) => value.toLowerCase())).size, policy.additionalLearningTerms.length);
+  const contextualizedAboveRangeTerms = policy.contextualizedAboveRangeTerms ?? [];
+  assert.equal(new Set(contextualizedAboveRangeTerms.map((value) => value.toLowerCase())).size, contextualizedAboveRangeTerms.length);
   const report = await inspectEnglishVocabularyScope(source, policy, options);
   assert.deepEqual(report.unknown, [], `${source.unitId}: English vocabulary outside governed official tables:\n${report.unknown.join("\n")}`);
   assert.deepEqual(
     report.additional,
     [...policy.additionalLearningTerms].map((value) => value.toLowerCase()).sort(),
     `${source.unitId}: governed Table 2 terms must exactly match actual use`,
+  );
+  assert.deepEqual(
+    report.contextualizedAboveRange,
+    contextualizedAboveRangeTerms.map((value) => value.toLowerCase()).sort(),
+    `${source.unitId}: contextualized above-range terms must exactly match actual use`,
   );
   return report;
 }

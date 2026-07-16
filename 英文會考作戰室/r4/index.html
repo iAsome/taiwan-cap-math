@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#17324d">
+  <meta name="description" content="依臺灣國中教育會考英語科範圍製作的零基礎講義、靜態題庫、閱讀與聽力練習。">
+  <title>會考英文作戰室 R4</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar" aria-label="英文科主要導覽">
+      <a class="brand" href="#home" aria-label="會考英文作戰室首頁"><span aria-hidden="true">英</span><strong>會考英文作戰室<small>CAP R4</small></strong></a>
+      <nav id="nav">
+        <a href="#home" data-view="home">總覽</a>
+        <a href="#courses" data-view="courses">課程</a>
+        <a href="#practice" data-view="practice">單元練習</a>
+        <a href="#reading" data-view="reading">閱讀題組</a>
+        <a href="#listening" data-view="listening">英語聽力</a>
+        <a href="#mock" data-view="mock">會考模擬</a>
+        <a href="#progress" data-view="progress">學習進度</a>
+        <a href="#archive" data-view="archive">歷屆十年</a>
+      </nav>
+      <p class="scope-note"><strong>官方範圍</strong><span>Appendix 5 Table 1 基本 1,200 字為正式題面基準</span></p>
+    </aside>
+    <div class="column">
+      <header class="topbar">
+        <button class="menu" id="menu" type="button" aria-controls="sidebar" aria-expanded="false" aria-label="開啟導覽">☰</button>
+        <div><span id="crumb">會考英文作戰室</span><strong id="pageTitle">總覽</strong></div>
+        <span class="status" id="runtimeStatus" role="status">載入內容中</span>
+      </header>
+      <main id="main" tabindex="-1"></main>
+      <footer><span>內容版本 <b id="contentVersion">-</b></span><a href="https://cap.rcpet.edu.tw/test4-3.html" rel="noopener" target="_blank">官方英語科說明</a></footer>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="fatal">本學習系統需要 JavaScript 才能載入靜態題庫。</p></noscript>
+  <script type="module" src="app.mjs"></script>
+</body>
+</html>

@@ -10,6 +10,7 @@ const REPO_ROOT = path.resolve(HERE, "..", "..");
 const GRAPH_PATH = path.join(HERE, "authority", "frozen-authority-graph.json");
 const ENGLISH_FOLDER = "英文會考作戰室";
 const UNIT_ID_PATTERN = /^ENG_R4_U\d{2}$/;
+const ENGLISH_UNIT_IDS = Array.from({ length: 48 }, (_, index) => `ENG_R4_U${String(index + 1).padStart(2, "0")}`);
 
 function provenance(authorityRefs) {
   return {
@@ -38,7 +39,7 @@ function materializeLecture(value, skill) {
   };
 }
 
-function materializeQuestion(value, skill) {
+export function materializeEnglishQuestion(value, skill, { stimulusId = null, assets = value.assets ?? [] } = {}) {
   assert.equal(value.reasons.length, value.options.length, `${value.id}: every option needs an authored reason`);
   assert.equal(value.reviews.length, 2, `${value.id}: exactly two independent authoring reviews required`);
   return {
@@ -46,7 +47,7 @@ function materializeQuestion(value, skill) {
     subject: "english",
     skillIds: [skill.id],
     authorityRefs: [...skill.authorityRefs],
-    stimulusId: null,
+    stimulusId,
     stem: value.stem,
     options: value.options,
     answerIndex: value.answerIndex,
@@ -66,7 +67,7 @@ function materializeQuestion(value, skill) {
       evidence,
       status: "pass",
     })),
-    assets: [],
+    assets,
   };
 }
 
@@ -97,7 +98,7 @@ export async function materializeEnglishUnit(source, { graphPath = GRAPH_PATH } 
   const questions = source.questions.map((value) => {
     const skill = skillById.get(value.skillId);
     assert(skill, `${value.id}: skill is outside ${source.unitId}`);
-    return materializeQuestion(value, skill);
+    return materializeEnglishQuestion(value, skill);
   });
   assert.equal(new Set(lectures.map((value) => value.id)).size, lectures.length, "duplicate lecture ID");
   assert.equal(new Set(lectures.map((value) => value.skillId)).size, skills.length, "duplicate lecture skill");
@@ -118,6 +119,29 @@ export async function materializeEnglishUnit(source, { graphPath = GRAPH_PATH } 
   return { lectures, questions, skills };
 }
 
+export async function materializeAllEnglishUnits({ repoRoot = REPO_ROOT, graphPath = GRAPH_PATH } = {}) {
+  const units = [];
+  for (const unitId of ENGLISH_UNIT_IDS) {
+    const source = await loadEnglishUnitSource(unitId, { repoRoot });
+    units.push({ unitId, ...(await materializeEnglishUnit(source, { graphPath })) });
+  }
+  const skills = units.flatMap((unit) => unit.skills);
+  const lectures = units.flatMap((unit) => unit.lectures);
+  const questions = units.flatMap((unit) => unit.questions);
+  assert.equal(skills.length, 320, "English frozen skill total mismatch");
+  assert.equal(lectures.length, 320, "English lecture total mismatch");
+  assert.equal(questions.length, 3_840, "English skill-question total mismatch");
+  for (const [label, values] of [["skill", skills], ["lecture", lectures], ["question", questions]]) {
+    assert.equal(new Set(values.map((value) => value.id)).size, values.length, `duplicate English ${label} ID across units`);
+  }
+  const visibleKeys = questions.map((value) => JSON.stringify([
+    value.stem.normalize("NFKC").toLowerCase().replace(/\s+/gu, " ").trim(),
+    value.options.map((option) => option.normalize("NFKC").toLowerCase().replace(/\s+/gu, " ").trim()).sort(),
+  ]));
+  assert.equal(new Set(visibleKeys).size, visibleKeys.length, "duplicate normalized English question across units");
+  return { units, skills, lectures, questions };
+}
+
 export async function buildEnglishUnit(unitId, { repoRoot = REPO_ROOT } = {}) {
   const source = await loadEnglishUnitSource(unitId, { repoRoot });
   const materialized = await materializeEnglishUnit(source);
@@ -134,7 +158,12 @@ export async function buildEnglishUnit(unitId, { repoRoot = REPO_ROOT } = {}) {
 
 async function main() {
   const unitId = process.argv[2];
-  assert(unitId, "usage: node tools/cap8-r4/build-english-unit.mjs ENG_R4_UNN");
+  assert(unitId, "usage: node tools/cap8-r4/build-english-unit.mjs ENG_R4_UNN|--check-all");
+  if (unitId === "--check-all") {
+    const result = await materializeAllEnglishUnits();
+    console.log(`build-english-unit: OK - ${result.units.length} units, ${result.lectures.length} lectures, ${result.questions.length} questions (memory only)`);
+    return;
+  }
   const result = await buildEnglishUnit(unitId);
   console.log(`build-english-unit: OK - ${result.unitId}, ${result.lectures} lectures, ${result.questions} questions`);
 }
