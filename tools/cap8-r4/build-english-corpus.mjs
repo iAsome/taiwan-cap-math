@@ -57,12 +57,12 @@ function skillNumber(skillId) {
   return Number(match[1]);
 }
 
-async function materializeStimulusQuestion(value, stimulusId, skillById, { listening = false, audioId = null } = {}) {
+async function materializeStimulusQuestion(value, stimulusId, skillById, { listening = false, audioId = null, visualAssetId = null } = {}) {
   const skill = skillById.get(value.skillId);
   assert(skill, `${value.id}: unknown English skill ${value.skillId}`);
   const number = skillNumber(skill.id);
   assert(number >= (listening ? 309 : 231) && number <= (listening ? 320 : 308), `${value.id}: skill does not match stimulus kind`);
-  const question = materializeEnglishQuestion(value, skill, { stimulusId, assets: audioId ? [audioId] : [] });
+  const question = materializeEnglishQuestion(value, skill, { stimulusId, assets: [audioId, visualAssetId].filter(Boolean) });
   assert.equal(question.options.length, 4, `${question.id}: stimulus question must have four choices`);
   await validateAuthoringRecord("question", question);
   return question;
@@ -85,7 +85,7 @@ async function materializeReading(values, skillById) {
   return result;
 }
 
-async function materializeListening(values, skillById) {
+async function materializeListening(values, skillById, assetById) {
   assert.equal(values.length, 300, "English listening stimulus total mismatch");
   const result = [];
   for (const value of values) {
@@ -95,9 +95,11 @@ async function materializeListening(values, skillById) {
     assert(value.spokenText?.trim(), `${value.id}: spokenText missing`);
     assert(value.audioDescription?.trim(), `${value.id}: audioDescription missing`);
     assert.equal(value.questions?.length, 3, `${value.id}: three listening questions required`);
+    const visualAsset=value.visualAssetId?assetById.get(value.visualAssetId):null;
+    assert(value.section!=="picture"||visualAsset,`${value.id}: picture listening set requires a governed visual asset`);
     const audioId = value.id.replace("_LISTEN_", "_AUDIO_");
     const questions = [];
-    for (const question of value.questions) questions.push(await materializeStimulusQuestion(question, value.id, skillById, { listening: true, audioId }));
+    for (const question of value.questions) questions.push(await materializeStimulusQuestion(question, value.id, skillById, { listening: true, audioId, visualAssetId:value.visualAssetId??null }));
     result.push({
       id: value.id,
       section: value.section,
@@ -108,6 +110,7 @@ async function materializeListening(values, skillById) {
       voiceProfile: value.voiceProfile ?? { voice: "Microsoft Zira Desktop", rate: -1 },
       audioId,
       audioPath: `runtime/audio/${audioId}.wav`,
+      visualAssets: visualAsset ? [visualAsset.metadata] : [],
       questions,
       provenance: value.provenance,
     });
@@ -205,13 +208,14 @@ function assertGlobalQuestionUniqueness(questions) {
 export async function materializeEnglishCorpus({ repoRoot = REPO_ROOT, synthesizeAudio = true } = {}) {
   const skillCorpus = await materializeAllEnglishUnits({ repoRoot });
   const skillById = new Map(skillCorpus.skills.map((skill) => [skill.id, skill]));
+  const assetById = new Map(skillCorpus.assets.map((asset) => [asset.metadata.id, asset]));
   const [readingSource, listeningSource] = await Promise.all([
     loadStimulusBatches("reading", READING_EXPORT, { repoRoot }),
     loadStimulusBatches("listening", LISTENING_EXPORT, { repoRoot }),
   ]);
   const [reading, listening] = await Promise.all([
     materializeReading(readingSource, skillById),
-    materializeListening(listeningSource, skillById),
+    materializeListening(listeningSource, skillById, assetById),
   ]);
   const stimulusQuestions = [...reading, ...listening].flatMap((value) => value.questions);
   assert.equal(stimulusQuestions.length, 2_900, "English stimulus-question total mismatch");

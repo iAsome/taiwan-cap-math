@@ -211,6 +211,7 @@ async function renderListening(params) {
   const bank = await fetchJson(state.catalog.listening.bundle);
   const seed = params.get("seed") || "115";
   const item = selectStatic(bank, 1, `listening:${seed}`)[0];
+  for (const asset of item.visualAssets ?? []) state.assets.set(asset.id, asset);
   main.innerHTML = `${heading("LISTENING", "英語聽力", "依官方結構播放兩次；作答後才顯示文字稿。", `<div class="toolbar"><label class="field">種子碼<input id="listeningSeed" type="number" min="1" value="${h(seed)}"></label><button class="button" id="newListening">換一組</button></div>`)}<section class="audio-box"><strong>Listening Set</strong><audio id="listeningAudio" preload="metadata" src="${h(item.audioPath)}"></audio><button class="button" id="playListening">播放兩次</button><span id="playState" role="status">尚未播放</span><details id="transcript" hidden><summary>文字稿</summary><p>${h(item.transcript ?? item.script)}</p></details></section>`;
   mountQuiz(item.questions, { kind: "listening", seed, onDone: () => { $("#transcript").hidden = false; } });
   $("#newListening").addEventListener("click", () => navigate("listening", { seed: Number($("#listeningSeed").value || 1) + 1 }));
@@ -259,6 +260,7 @@ async function startMock(mode, seed) {
     const response = selectStatic(listening.filter((item) => item.section === "response"), 2, `${seed}:response`);
     const discourse = selectStatic(listening.filter((item) => item.section === "discourse"), 4, `${seed}:discourse`);
     const sets = [...picture, ...response, ...discourse];
+    for (const asset of sets.flatMap((item) => item.visualAssets ?? [])) state.assets.set(asset.id, asset);
     questions = sets.flatMap((item) => item.questions);
     stimulusHtml = sets.map((item, index) => `<section class="audio-box"><strong>Listening ${index + 1}</strong><audio controls preload="metadata" src="${h(item.audioPath)}"></audio></section>`).join("");
   }

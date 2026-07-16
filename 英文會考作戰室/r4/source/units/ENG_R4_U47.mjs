@@ -16,6 +16,8 @@ const boards = [
   [[2,"sitting","clock","beside","glasses"],[1,"walking","key","on","none"],[1,"pointing","guitar","under","hat"],[1,"standing","camera","behind","scarf"]],
 ];
 
+export const ENGLISH_LISTENING_PICTURE_BOARDS=boards;
+
 function objectSvg(kind, cx, cy) {
   if (kind === "ball") return `<circle cx="${cx}" cy="${cy}" r="15" fill="url(#dots)" stroke="#000" stroke-width="3"/>`;
   if (kind === "box") return `<rect x="${cx-17}" y="${cy-15}" width="34" height="30" fill="#fff" stroke="#000" stroke-width="3"/><path d="M${cx-17} ${cy-15}l34 30m0-30l-34 30" stroke="#000"/>`;
