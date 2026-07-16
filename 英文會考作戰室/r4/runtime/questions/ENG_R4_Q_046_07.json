@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_046_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S046"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Lily told Mia that her coat was wet. What is the safest conclusion?",
+  "options": [
+    "The coat certainly belongs to Lily.",
+    "The coat belongs to both because her is plural.",
+    "The owner of the coat is unclear.",
+    "The coat certainly belongs to Mia."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The coat certainly belongs to Lily.：也缺乏唯一線索。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "The coat belongs to both because her is plural.：her 是單數所有格形式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "The owner of the coat is unclear.：兩位女性都可由 her 指代。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "The coat certainly belongs to Mia.：最近位置不能保證。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-possessive-form-by-referent",
+    "identify-owner-person-number-then-dependent-position"
+  ],
+  "representationType": "possessive-referent-selection",
+  "misconceptionTargets": [
+    "agree-possessive-with-item-number-or-force-nearest-antecedent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「先找擁有者的人稱與數，再看所有格形式是否需依附後方名詞，並用上下文消除多人物指稱歧義。」可推出 The owner of the coat is unclear.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 The owner of the coat is unclear. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_003_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S003"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AA-4-1",
+    "AUTH-ENGLISH-LC-AB-4-2",
+    "AUTH-ENGLISH-LC-AB-4-3",
+    "AUTH-ENGLISH-LP-1-4-10",
+    "AUTH-ENGLISH-LP-3-4-1",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-4",
+    "AUTH-ENGLISH-LP-5-4-5"
+  ],
+  "stimulusId": null,
+  "stem": "What is the first sound in cat?",
+  "options": [
+    "/k/",
+    "/æ/",
+    "/t/",
+    "/siː/"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "/k/：cat 起首為 /k/。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "/æ/：是中間短母音。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "/t/：是結尾。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "/siː/：是 C 名稱音。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify-initial-final-phoneme",
+    "segment-first-or-last-heard-phoneme"
+  ],
+  "representationType": "initial-final-sound",
+  "misconceptionTargets": [
+    "use-first-or-last-letter-name-instead-of-sound"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AA-4-1",
+      "AUTH-ENGLISH-LC-AB-4-2",
+      "AUTH-ENGLISH-LC-AB-4-3",
+      "AUTH-ENGLISH-LP-1-4-10",
+      "AUTH-ENGLISH-LP-3-4-1",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-4",
+      "AUTH-ENGLISH-LP-5-4-5"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「單音節字的第一個與最後一個語音位置提供起首音或結尾音」可推出 /k/；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 /k/ 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

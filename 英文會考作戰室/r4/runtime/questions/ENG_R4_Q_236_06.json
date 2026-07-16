@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_236_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S236"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A sign says the park closes when the river is high. It rained all night, but the morning report said the river was safe. The park ___ .",
+  "options": [
+    "could open as usual",
+    "had to close because of high water",
+    "was moved to another town",
+    "could not be visited in any weather"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "could open as usual：關閉條件是水位高，而報告明說安全，故可照常開放。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "had to close because of high water：整夜下雨不等於水位已高；安全報告否定關閉條件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "was moved to another town：原文沒有搬動公園的資訊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "could not be visited in any weather：標示的是特定條件，不是任何天氣都關閉。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "integrate-cross-sentence-evidence",
+    "apply-condition-to-report"
+  ],
+  "representationType": "rule-and-condition",
+  "misconceptionTargets": [
+    "use-rain-as-sufficient-condition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「至少兩句共同限制出的唯一內容」可推出 could open as usual；再核對句中每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一放回原文，只有 could open as usual 能同時滿足句法與全文意思；另外三項各有列明的衝突，沒有第二個合理答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

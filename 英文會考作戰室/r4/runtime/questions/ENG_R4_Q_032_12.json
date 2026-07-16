@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_032_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S032"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A guide points toward several islands on the horizon. What should the guide say?",
+  "options": [
+    "This islands were here now.",
+    "Those islands are part of the park.",
+    "That islands is part of the park.",
+    "These island are far there."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "This islands were here now.：多項數、時態與距離衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Those islands are part of the park.：遠處複數 islands 使用 those 並搭 are。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "That islands is part of the park.：指示詞與名詞數不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "These island are far there.：近指示詞、單數名詞與 are 不合。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "select-demonstrative-by-distance-and-number",
+    "combine-deictic-distance-and-referent-number"
+  ],
+  "representationType": "demonstrative-distance-number",
+  "misconceptionTargets": [
+    "choose-demonstrative-on-one-axis-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「以單複數與說話者所建立的近／遠視角選 this、that、these、those，並讓後接名詞與 be 一致。」可推出 Those islands are part of the park.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Those islands are part of the park. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

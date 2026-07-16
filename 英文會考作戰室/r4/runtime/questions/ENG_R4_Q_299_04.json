@@ -1,0 +1,95 @@
+{
+  "id": "ENG_R4_Q_299_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S299"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Procedure: Mix flour and water. Then knead the mixture. What must exist before kneading?",
+  "options": [
+    "dry flour in separate rooms",
+    "the flour-water mixture",
+    "a baked loaf",
+    "a final measurement"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "dry flour in separate rooms：與已 mix 不合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "the flour-water mixture：the mixture 回指前一步混合物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "a baked loaf：烘焙尚未發生。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "a final measurement：未提。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "sequence-scientific-procedure",
+    "order-state-dependent-and-controlled-steps"
+  ],
+  "representationType": "science-procedure",
+  "misconceptionTargets": [
+    "sequence-by-sentence-length-or-guess"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「步驟的材料狀態、代名詞回指與時間標記形成不可顛倒的程序」可推出 the flour-water mixture；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 the flour-water mixture 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

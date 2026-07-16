@@ -1,0 +1,134 @@
+{
+  "id": "ENG_R4_L_284",
+  "subject": "english",
+  "unitId": "ENG_R4_U42",
+  "skillId": "ENG_R4_S284",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "prerequisites": [
+    "ENG_R4_S283"
+  ],
+  "objectives": [
+    "整合不同區塊的互補資訊。",
+    "把附註轉為資格、截止或用品限制。",
+    "用最小充分步驟解決生活情境。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U42_ENG_R4_S284_SEC_1",
+      "title": "先把需求拆成條件",
+      "content": "人物可能同時有時間、預算、地點與資格。把每項寫成勾選框，再逐區塊找證據。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S284_SEC_2",
+      "title": "NOTE 是硬條件",
+      "content": "closes、required、may not 等字會排除方案。它不是背景裝飾，必須在最後決策中出現。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S284_SEC_3",
+      "title": "延誤與提前報到要算實際時間",
+      "content": "DELAY 加上分鐘，report early 則從開始時間倒推。運算方向由語意決定。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S284_SEC_4",
+      "title": "答案只處理題目目標",
+      "content": "若問能否參加，回答可否與關鍵原因即可；不要加入未提供的交通、天氣或人物。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U42_ENG_R4_S284_EX_1",
+      "prompt": "Court match 09:20; report 15 minutes early",
+      "steps": [
+        "活動開始 09:20。",
+        "early 表往前算。",
+        "減十五分鐘。"
+      ],
+      "answer": "Report at 09:05.",
+      "why": "表格與附註共同決定。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S284_EX_2",
+      "prompt": "Lab B demo 16:20; goggles required",
+      "steps": [
+        "定位 Lab B。",
+        "核對 DEMO。",
+        "套用 required。"
+      ],
+      "answer": "Arrive for 16:20 with goggles.",
+      "why": "缺任一資訊都不完整。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S284_EX_3",
+      "prompt": "Cooking 14:30; register before noon",
+      "steps": [
+        "課程尚未開始不等於能加入。",
+        "before noon 是截止。",
+        "未登記且下午才到已太晚。"
+      ],
+      "answer": "The unregistered visitor cannot join.",
+      "why": "資格截止壓過尚有時間的直覺。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到熟悉單字就選，不核對列欄。",
+      "whyWrong": "同一單字可能出現在不同區塊。",
+      "correction": "先定位區塊、欄名與同一列。"
+    },
+    {
+      "belief": "圖中最大圖形一定是答案。",
+      "whyWrong": "尺寸可能只是版面，數值與標籤才有意義。",
+      "correction": "讀數字、單位與圖例。"
+    },
+    {
+      "belief": "附註可以忽略。",
+      "whyWrong": "附註常改變資格、時間或可用方式。",
+      "correction": "最後把 NOTE 套回候選答案。"
+    },
+    {
+      "belief": "不同列的資訊可以自由拼接。",
+      "whyWrong": "跨列拼接會製造不存在的組合。",
+      "correction": "用手指沿同一列橫向核對。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "report 15 minutes early 是加還是減？",
+      "answer": "從開始時間減十五分鐘",
+      "reason": "early 表較早。"
+    },
+    {
+      "prompt": "required 可當建議嗎？",
+      "answer": "不可",
+      "reason": "它表示必要條件。"
+    },
+    {
+      "prompt": "主表可行但 NOTE 不合，能選嗎？",
+      "answer": "不能",
+      "reason": "所有條件需同時滿足。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  }
+}

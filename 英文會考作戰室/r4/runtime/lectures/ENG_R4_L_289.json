@@ -1,0 +1,136 @@
+{
+  "id": "ENG_R4_L_289",
+  "subject": "english",
+  "unitId": "ENG_R4_U43",
+  "skillId": "ENG_R4_S289",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S288"
+  ],
+  "objectives": [
+    "把多項條件拆成檢核表。",
+    "逐候選方案排除第一個衝突。",
+    "確認最後方案沒有隱藏的第二項違規。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U43_ENG_R4_S289_SEC_1",
+      "title": "一條件一格",
+      "content": "把 after 4、under $10、OPEN 寫成三格。不要在腦中模糊記住整句。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S289_SEC_2",
+      "title": "先用最強條件排除",
+      "content": "CANCELLED、FULL、must be 18 等硬條件可快速刪除，再比較時間或價格。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S289_SEC_3",
+      "title": "and 表全部都要",
+      "content": "cheap and vegan 需要同時滿足；只符合其中一項的選項仍錯。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S289_SEC_4",
+      "title": "最後反向核對",
+      "content": "對唯一留下的方案逐條回答 yes，確保不是漏看附註或把 under 當 at most。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U43_ENG_R4_S289_EX_1",
+      "prompt": "after 4; under $8; OPEN",
+      "steps": [
+        "列三條件。",
+        "逐方案打勾。",
+        "最後完整核對。"
+      ],
+      "answer": "the option meeting all three",
+      "why": "and 連接的條件缺一不可。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S289_EX_2",
+      "prompt": "adult; Saturday; free",
+      "steps": [
+        "資格 adult。",
+        "日期 Saturday。",
+        "價格 free。"
+      ],
+      "answer": "Only the adult Saturday free event.",
+      "why": "其他近似方案各缺一項。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S289_EX_3",
+      "prompt": "vegan; no nuts",
+      "steps": [
+        "先找 VEGAN。",
+        "再找 NUT-FREE。",
+        "未標示不得自行推定。"
+      ],
+      "answer": "Choose only an item with both labels.",
+      "why": "兩種飲食條件不同。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "符合兩項就足夠。",
+      "whyWrong": "and 表每項都必要。",
+      "correction": "使用勾選表。"
+    },
+    {
+      "belief": "未提限制就當符合。",
+      "whyWrong": "缺證據不等於通過。",
+      "correction": "只用明示資料。"
+    },
+    {
+      "belief": "最便宜一定是答案。",
+      "whyWrong": "可能違反時間或資格。",
+      "correction": "先查硬條件。"
+    },
+    {
+      "belief": "at most 與 under 相同。",
+      "whyWrong": "at most 包含上限，under 不含。",
+      "correction": "寫不等式。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "A and B 需符合幾項？",
+      "answer": "兩項都要",
+      "reason": "and 是交集。"
+    },
+    {
+      "prompt": "under $10 可選 $10 嗎？",
+      "answer": "不可",
+      "reason": "需小於十。"
+    },
+    {
+      "prompt": "資料未說 nut-free 可推定嗎？",
+      "answer": "不可",
+      "reason": "需要明示證據。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "ENG_R4_L_296",
+  "subject": "english",
+  "unitId": "ENG_R4_U44",
+  "skillId": "ENG_R4_S296",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-6",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10",
+    "AUTH-ENGLISH-LP-5-4-8"
+  ],
+  "prerequisites": [
+    "ENG_R4_S295"
+  ],
+  "objectives": [
+    "用 problem/action/result 建立故事骨架。",
+    "保留造成結果的關鍵轉折。",
+    "刪除列舉、顏色與重複動作。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U44_ENG_R4_S296_SEC_1",
+      "title": "三格先行",
+      "content": "摘要先填問題、關鍵行動、結果。每格一小句，再合成一至兩句。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S296_SEC_2",
+      "title": "because/so 保留因果",
+      "content": "摘要不只按順序列事；要讓讀者知道為何行動發生、如何導向結果。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S296_SEC_3",
+      "title": "刪除可移除細節",
+      "content": "若拿掉 shirt color、三次敲門中的前兩次，因果仍完整，就可省略。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S296_SEC_4",
+      "title": "不加入故事外評價",
+      "content": "摘要不說 amazing、foolish，除非文本以證據支持且對因果必要。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U44_ENG_R4_S296_EX_1",
+      "prompt": "Lost key; searched red bag and blue desk; neighbor found it by gate",
+      "steps": [
+        "問題 lost key。",
+        "關鍵結果 neighbor found by gate。",
+        "顏色可刪。"
+      ],
+      "answer": "A lost key was found by the gate.",
+      "why": "保留問題與解決。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S296_EX_2",
+      "prompt": "Wanted plant to grow; moved it to light; new leaves appeared",
+      "steps": [
+        "目標 grow。",
+        "行動 move to light。",
+        "結果 leaves。"
+      ],
+      "answer": "After the plant was moved to light, it grew new leaves.",
+      "why": "因果鏈清楚。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S296_EX_3",
+      "prompt": "Bus late; called office; meeting waited",
+      "steps": [
+        "問題 bus late。",
+        "行動 call。",
+        "結果 meeting waits。"
+      ],
+      "answer": "Because the bus was late, she called, so the meeting waited.",
+      "why": "三格都有。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "摘要要包含所有細節。",
+      "whyWrong": "會淹沒主線。",
+      "correction": "只留因果必要項。"
+    },
+    {
+      "belief": "只列時間順序就夠。",
+      "whyWrong": "需表達原因與結果。",
+      "correction": "使用 because/so。"
+    },
+    {
+      "belief": "可以加入自己對人物的評價。",
+      "whyWrong": "摘要應忠於文本。",
+      "correction": "刪除無證據形容詞。"
+    },
+    {
+      "belief": "只寫結局也算摘要。",
+      "whyWrong": "缺問題與關鍵行動。",
+      "correction": "使用三格骨架。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "摘要三格是什麼？",
+      "answer": "問題、關鍵行動、結果",
+      "reason": "構成最小故事鏈。"
+    },
+    {
+      "prompt": "顏色不影響因果要保留嗎？",
+      "answer": "不用",
+      "reason": "屬可刪細節。"
+    },
+    {
+      "prompt": "摘要可加入個人評價嗎？",
+      "answer": "不可",
+      "reason": "需限於文本。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-6",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10",
+      "AUTH-ENGLISH-LP-5-4-8"
+    ]
+  }
+}

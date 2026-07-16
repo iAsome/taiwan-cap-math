@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_232_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S232"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "We ___ the movie last Saturday.",
+  "options": [
+    "see",
+    "saw",
+    "have seen",
+    "are seeing"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "see：原形 see 缺少過去標記。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "saw：last Saturday 是結束的過去時間，see 用過去式 saw。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "have seen：現在完成式不與這個明確結束的過去時間並用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "are seeing：現在進行式與 last Saturday 衝突。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "select-tense-from-time-evidence",
+    "match-finished-past-time"
+  ],
+  "representationType": "past-event-cloze",
+  "misconceptionTargets": [
+    "use-present-perfect-with-finished-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「時間詞與事件先後」可推出 saw；再核對句中每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一放回原文，只有 saw 能同時滿足句法與全文意思；另外三項各有列明的衝突，沒有第二個合理答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

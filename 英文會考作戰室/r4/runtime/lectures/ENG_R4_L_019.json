@@ -1,0 +1,136 @@
+{
+  "id": "ENG_R4_L_019",
+  "subject": "english",
+  "unitId": "ENG_R4_U03",
+  "skillId": "ENG_R4_S019",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-7"
+  ],
+  "prerequisites": [
+    "ENG_R4_S018"
+  ],
+  "objectives": [
+    "辨識核心家庭與延伸親屬詞。",
+    "用 my、his、her 與 of 關係追蹤人物。",
+    "以文本證據區分親屬、朋友、同學與鄰居。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U03_ENG_R4_S019_SEC_1",
+      "title": "親屬詞帶有方向",
+      "content": "mother 的 brother 是 uncle；uncle 的 child 是 cousin。畫出兩步關係可避免只看最近的名字。"
+    },
+    {
+      "id": "ENG_R4_U03_ENG_R4_S019_SEC_2",
+      "title": "所有格標出視角",
+      "content": "my sister 從說話者出發；her father 從女性人物出發。先找所有格指誰，再連到親屬。"
+    },
+    {
+      "id": "ENG_R4_U03_ENG_R4_S019_SEC_3",
+      "title": "非親屬關係需明示",
+      "content": "classmate、neighbor、teammate、friend 各有不同依據。一起吃飯不能自動證明是家人。"
+    },
+    {
+      "id": "ENG_R4_U03_ENG_R4_S019_SEC_4",
+      "title": "證據不足就保留界線",
+      "content": "文本只說 two friends，就不能推論姐妹；只說同住，也不一定有血緣。答案需停在可證明的層級。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U03_ENG_R4_S019_EX_1",
+      "prompt": "Lia is my mother's sister.",
+      "steps": [
+        "從 my 出發找 mother。",
+        "mother's sister 是阿姨。",
+        "確認人物為 Lia。"
+      ],
+      "answer": "Lia is my aunt.",
+      "why": "兩步親屬鏈完整。"
+    },
+    {
+      "id": "ENG_R4_U03_ENG_R4_S019_EX_2",
+      "prompt": "Dan and I are in the same class.",
+      "steps": [
+        "same class 是關鍵。",
+        "可證明同學關係。",
+        "不能據此推成朋友或親屬。"
+      ],
+      "answer": "Dan is my classmate.",
+      "why": "classmate 是文本直接支持的最精確關係。"
+    },
+    {
+      "id": "ENG_R4_U03_ENG_R4_S019_EX_3",
+      "prompt": "I play on a team with Jo.",
+      "steps": [
+        "共同情境是 team。",
+        "關係詞為 teammate。",
+        "沒有家族證據。"
+      ],
+      "answer": "Jo is my teammate.",
+      "why": "答案不超出已知共同活動。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "同姓一定是兄弟姐妹。",
+      "whyWrong": "同姓不足以證明親屬。",
+      "correction": "尋找明示 family 詞或關係鏈。"
+    },
+    {
+      "belief": "一起回家就一定同住。",
+      "whyWrong": "共同移動不能證明住址或家族。",
+      "correction": "只判斷文本明說的關係。"
+    },
+    {
+      "belief": "my father's sister 是 cousin。",
+      "whyWrong": "父親的姐妹與說話者隔一代。",
+      "correction": "正確關係是 aunt。"
+    },
+    {
+      "belief": "所有同學都是朋友。",
+      "whyWrong": "classmate 與 friend 的證據不同。",
+      "correction": "沒有 friend 線索時只稱同學。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "mother's brother 是誰？",
+      "answer": "uncle。",
+      "reason": "從母親向同代男性親屬連結。"
+    },
+    {
+      "prompt": "same team 可證明哪種關係？",
+      "answer": "teammates。",
+      "reason": "不能自動推成朋友或家人。"
+    },
+    {
+      "prompt": "her sister 中的 her 先指向誰？",
+      "answer": "前文女性人物。",
+      "reason": "先解所有格才能追關係。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-7"
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_251_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S251"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "Text: Sam read the directions twice before starting the test. Which statement adds nothing?",
+  "options": [
+    "He finished earlier than everyone",
+    "Sam reviewed the directions before he began",
+    "Sam found the directions difficult",
+    "The teacher told him to read twice"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "He finished earlier than everyone：結果比較未提。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Sam reviewed the directions before he began：read twice 可概括為 reviewed，時間關係保留。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Sam found the directions difficult：感受未提。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "The teacher told him to read twice：指示來源未提。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "separate-explicit-from-added-information",
+    "verify-every-part-of-choice"
+  ],
+  "representationType": "explicit-versus-added",
+  "misconceptionTargets": [
+    "accept-plausible-addition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「選項每一部分都能由原文字句直接支持」可推出 Sam reviewed the directions before he began；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Sam reviewed the directions before he began 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_305_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S305"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-6-4-3",
+    "AUTH-ENGLISH-LP-6-4-4",
+    "AUTH-ENGLISH-LP-6-4-6",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-7-4-4",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Claim: A checklist helps people remember multi-step tasks. Which example is too weak?",
+  "options": [
+    "A camper used a list and packed all required items.",
+    "A student marked completed steps and submitted every part.",
+    "A checklist was printed on yellow paper.",
+    "A nurse checked every step and missed none."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "A camper used a list and packed all required items.：支持。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "A student marked completed steps and submitted every part.：支持。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "A checklist was printed on yellow paper.：只有物件外觀，無 remember/task outcome。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "A nurse checked every step and missed none.：支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "evaluate-example-relevance",
+    "match-claim-conditions-and-outcome-direction"
+  ],
+  "representationType": "claim-example-fit",
+  "misconceptionTargets": [
+    "accept-topically-related-but-logically-irrelevant-example"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-6-4-3",
+      "AUTH-ENGLISH-LP-6-4-4",
+      "AUTH-ENGLISH-LP-6-4-6",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-7-4-4",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「例子必須具備主張中的關鍵條件，且結果方向能作為該主張的具體個案」可推出 A checklist was printed on yellow paper.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 A checklist was printed on yellow paper. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

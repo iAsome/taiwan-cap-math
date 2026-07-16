@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_230_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S230"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: Would you like another bowl of soup?\nB: It was delicious, but I am full.\nWhat does B mean?",
+  "options": [
+    "The soup tasted bad.",
+    "B wants a larger bowl.",
+    "B did not eat any soup.",
+    "B politely refuses more soup."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "delicious 是正面評價。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "full 表示不需要更多。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "正面評價證明已經吃過。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "先稱讚再說飽了，是婉拒續碗。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-polite-refusal-from-fullness"
+  ],
+  "representationType": "indirect-no-dialogue",
+  "misconceptionTargets": [
+    "read-praise-as-accepting-more"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "but 後的身體狀態決定對提議的回應。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "拒絕範圍是 another bowl，不是否定原本的湯。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

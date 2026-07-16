@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_285_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S285"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Document A: The garden tour begins at 10:00. Document B: Meet your guide at the garden gate by ten. What do both documents show?",
+  "options": [
+    "The garden activity starts at 10:00.",
+    "The tour is free.",
+    "The guide works all day.",
+    "The gate closes at noon."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "The garden activity starts at 10:00.：begins at 10:00 與 by ten 共同鎖定十點活動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "The tour is free.：兩份都未提價格。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The guide works all day.：只提十點集合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "The gate closes at noon.：未提關門時間。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "find-cross-document-overlap",
+    "intersect-explicit-information"
+  ],
+  "representationType": "paired-documents",
+  "misconceptionTargets": [
+    "treat-one-document-detail-as-shared"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「兩份文件各自明示同一人物、地點、時間或規則」可推出 The garden activity starts at 10:00.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 The garden activity starts at 10:00. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

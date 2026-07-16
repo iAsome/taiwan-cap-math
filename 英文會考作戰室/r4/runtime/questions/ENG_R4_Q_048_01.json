@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_048_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S048"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which phrase means the cover that is part of a book?",
+  "options": [
+    "the cover of the book",
+    "the book of the cover",
+    "the cover's book",
+    "the of book cover"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "the cover of the book：cover 是部分，book 是整體。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the book of the cover：方向顛倒。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the cover's book：變成封面所屬或擁有的書，焦點不自然。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the of book cover：語序錯誤。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "use-of-phrase-for-relations",
+    "identify-focus-and-source-as-part-content-measure-or-relation"
+  ],
+  "representationType": "of-phrase-relation",
+  "misconceptionTargets": [
+    "treat-every-of-as-ownership-or-reverse-x-of-y"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「以 of 片語表部分—整體、內容、度量或無生命名詞關係，並在自然度與清晰度需要時和 's 所有格互換。」可推出 the cover of the book；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 the cover of the book 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

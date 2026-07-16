@@ -1,0 +1,141 @@
+{
+  "id": "ENG_R4_L_S273",
+  "subject": "english",
+  "unitId": "ENG_R4_U41",
+  "skillId": "ENG_R4_S273",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S272"
+  ],
+  "objectives": [
+    "能利用時間詞建立敘事事件的先後順序。",
+    "能以事件之間的必要關係檢查排列是否合理。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S273_SEC_01",
+      "title": "先圈出時間路標",
+      "content": "故事中的 first、then、later、after that、finally 是明顯的時間路標。first 通常引出起點，then 與 later 接續發展，finally 常引出最後結果。排列時先把這些詞標出，再把沒有路標的句子放回合理位置。"
+    },
+    {
+      "id": "ENG_R4_L_S273_SEC_02",
+      "title": "動作本身也有先後",
+      "content": "沒有時間詞時，仍可由事件關係排序。Ava opened the box 必須早於 She found a key inside；The rain stopped 必須早於 We went outside。先問哪一件事要先成立，下一件事才可能發生。"
+    },
+    {
+      "id": "ENG_R4_L_S273_SEC_03",
+      "title": "日期與時段要落在同一條線",
+      "content": "yesterday、that morning、at noon、in the evening 會建立較大的時間框架。若段落已說 on Saturday，後面的 that afternoon 仍指星期六下午，不可自行移到星期日。"
+    },
+    {
+      "id": "ENG_R4_L_S273_SEC_04",
+      "title": "排完後讀成完整因果鏈",
+      "content": "正確句序不只時間遞增，也要保持人物、物品與結果一致。排完後從頭讀一次，確認沒有先慶祝再得知好消息、先歸還物品再找到物品等倒置情形。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S273_EX_01",
+      "prompt": "(A) Finally, the soup was ready. (B) First, Nora cut the carrots. (C) Then she put them in the pot.",
+      "steps": [
+        "first 指出起點 B。",
+        "them 回指 carrots，所以 C 接在 B 後。",
+        "finally 引出完成結果 A。"
+      ],
+      "answer": "B → C → A",
+      "why": "切胡蘿蔔後才能把它們放入鍋中，湯煮好則是整個過程的結果。時間詞與動作關係給出同一順序。"
+    },
+    {
+      "id": "ENG_R4_L_S273_EX_02",
+      "prompt": "Mia reached the stop. The bus came two minutes later. She got on and found a seat.",
+      "steps": [
+        "先到站牌才能等車。",
+        "two minutes later 把公車到達放在第二。",
+        "上車找座位必須在公車抵達後。"
+      ],
+      "answer": "Reach the stop → bus comes → get on.",
+      "why": "每一步都需要前一步提供條件；若先找座位再等公車，事件在現實上無法成立。"
+    },
+    {
+      "id": "ENG_R4_L_S273_EX_03",
+      "prompt": "On Sunday morning, Leo planted a seed. That afternoon, he watered it. A week later, a small green leaf appeared.",
+      "steps": [
+        "Sunday morning 是最早時間。",
+        "that afternoon 仍在同一天但較晚。",
+        "a week later 跳到下一週。"
+      ],
+      "answer": "Plant → water → leaf appears.",
+      "why": "三個時間範圍由同日早晚推進到一週後，且植物先被種下並澆水，之後才出現葉子。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到 finally 就把整句放在第一句。",
+      "whyWrong": "finally 表示一連串事件的最後階段。",
+      "correction": "先找起點與中間事件，再把 finally 句放到結果位置。"
+    },
+    {
+      "belief": "只依句子長短排序，短句一定在前。",
+      "whyWrong": "句長不提供時間資訊。",
+      "correction": "使用時間詞、代名詞與事件必要關係判斷。"
+    },
+    {
+      "belief": "that evening 一定表示隔天晚上。",
+      "whyWrong": "that 通常承接前文已建立的同一天。",
+      "correction": "先找最近的日期框架，再定位當天的時段。"
+    },
+    {
+      "belief": "每個 later 都代表過了一整天。",
+      "whyWrong": "later 只表示較晚，間隔可能是幾分鐘或幾年。",
+      "correction": "以全文提供的單位或事件內容判斷間隔。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "First、next、finally 中，哪一個通常引出結局？",
+      "answer": "finally",
+      "reason": "它標示一連串事件的最後一步。"
+    },
+    {
+      "prompt": "She dried the cups 應在 She washed the cups 之前還是之後？",
+      "answer": "之後",
+      "reason": "杯子先洗過，才有需要擦乾。"
+    },
+    {
+      "prompt": "that night 的日期要從哪裡找？",
+      "answer": "前文最近建立的日期",
+      "reason": "that 回指已知的時間框架。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

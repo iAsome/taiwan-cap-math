@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_011_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-2",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-2-4-1",
+    "AUTH-ENGLISH-LP-2-4-3",
+    "AUTH-ENGLISH-LP-6-4-1",
+    "AUTH-ENGLISH-LP-6-4-2",
+    "AUTH-ENGLISH-LP-7-4-5"
+  ],
+  "stimulusId": null,
+  "stem": "The audio is too quiet. What request addresses the problem?",
+  "options": [
+    "Could you play it faster?",
+    "Could you remove the audio?",
+    "What color is the volume?",
+    "Could you turn the volume up?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Could you play it faster?：速度非音量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Could you remove the audio?：相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "What color is the volume?：無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Could you turn the volume up?：音量問題需提高 volume。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "request-repetition-clarification",
+    "match-understanding-gap-to-polite-repair"
+  ],
+  "representationType": "classroom-clarification-request",
+  "misconceptionTargets": [
+    "use-generic-repeat-request-for-every-gap"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-2",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-2-4-1",
+      "AUTH-ENGLISH-LP-2-4-3",
+      "AUTH-ENGLISH-LP-6-4-1",
+      "AUTH-ENGLISH-LP-6-4-2",
+      "AUTH-ENGLISH-LP-7-4-5"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「禮貌問句明確指出沒聽清、不了解詞義或需要例子，回應修復特定理解缺口」可推出 Could you turn the volume up?；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 Could you turn the volume up? 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

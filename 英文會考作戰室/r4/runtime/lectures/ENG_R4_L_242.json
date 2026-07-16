@@ -1,0 +1,134 @@
+{
+  "id": "ENG_R4_L_242",
+  "subject": "english",
+  "unitId": "ENG_R4_U35",
+  "skillId": "ENG_R4_S242",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S241"
+  ],
+  "objectives": [
+    "辨認距離誘餌並列出所有候選。",
+    "用後句動作與因果排除最近但不合理的名詞。",
+    "在證據不足時保留歧義，不過度推論。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U35_ENG_R4_S242_SEC_1",
+      "title": "最近名詞只是候選",
+      "content": "英語常把其他細節插在先行詞與代名詞之間。最近名詞若數量、人物類型或動作不合，必須退回更前面的候選。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S242_SEC_2",
+      "title": "動詞是強力篩選器",
+      "content": "在 The key was beside the books. It opened the door 中，opened the door 使 key 成為唯一合理先行詞；books 雖較近卻為複數且不能用 it。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S242_SEC_3",
+      "title": "因果能跨越距離",
+      "content": "若後句有 so、because 或結果描述，找能造成該結果的前文事件。位置近但無因果作用的名詞要排除。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S242_SEC_4",
+      "title": "證據排序",
+      "content": "先用硬性句法，如單複數與主受格；再用明確事件角色；最後才用距離與常識。這個順序可避免以直覺蓋過可驗證線索。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U35_ENG_R4_S242_EX_1",
+      "prompt": "A key lay under two papers. It opened the back door.",
+      "steps": [
+        "It 是單數。",
+        "papers 是複數，排除。",
+        "key 能開門。"
+      ],
+      "answer": "It = a key.",
+      "why": "較遠的 key 同時通過數量與動作檢查。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S242_EX_2",
+      "prompt": "The rain hit the windows of the old house. They shook loudly.",
+      "steps": [
+        "They 是複數。",
+        "house 是最近單數，排除。",
+        "windows 可被風吹雨打而震動。"
+      ],
+      "answer": "They = the windows.",
+      "why": "數量證據勝過距離。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S242_EX_3",
+      "prompt": "Mia put a note in Nora's bag. She read it later.",
+      "steps": [
+        "Mia 與 Nora 都可配 she。",
+        "兩人都可能閱讀。",
+        "沒有額外證據。"
+      ],
+      "answer": "She is unclear.",
+      "why": "不能因 Nora 較近就宣稱唯一答案。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "距離是第一優先規則。",
+      "whyWrong": "硬性數量與動作證據更可靠。",
+      "correction": "依句法、角色、距離的順序檢查。"
+    },
+    {
+      "belief": "常識覺得可能就足以唯一決定。",
+      "whyWrong": "多個人可能做同一動作。",
+      "correction": "需要文字證據排除其他候選。"
+    },
+    {
+      "belief": "介系詞片語中的名詞總是先行詞。",
+      "whyWrong": "它可能只是插入細節。",
+      "correction": "看後句是否真正承接該名詞。"
+    },
+    {
+      "belief": "較遠候選一定已離開主題。",
+      "whyWrong": "主題可跨越修飾語延續。",
+      "correction": "追蹤事件鏈而非字距。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "最近名詞為複數但代名詞為 it，應保留嗎？",
+      "answer": "不應",
+      "reason": "數量硬性衝突。"
+    },
+    {
+      "prompt": "兩位女性都可能做 she 後的動作時可選最近者嗎？",
+      "answer": "不可",
+      "reason": "沒有唯一文字證據。"
+    },
+    {
+      "prompt": "判斷順序中距離應在句法之前還是之後？",
+      "answer": "之後",
+      "reason": "距離只是弱提示。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

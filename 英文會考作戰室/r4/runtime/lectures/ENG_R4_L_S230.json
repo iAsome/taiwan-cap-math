@@ -1,0 +1,149 @@
+{
+  "id": "ENG_R4_L_S230",
+  "subject": "english",
+  "unitId": "ENG_R4_U33",
+  "skillId": "ENG_R4_S230",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S229"
+  ],
+  "objectives": [
+    "能由簡短回應與後續語句分辨同意、保留、疑問和拒絕。",
+    "能依文字證據控制推論強度，不把委婉語誤判成肯定。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S230_SEC_01",
+      "title": "同意通常帶有採取行動的方向",
+      "content": "Sounds good、Sure、That works for me 往往表示接受。若後面再說 I will bring the food，同意更明確。即使看到 Sounds good 仍要讀後文；Sounds good, but I cannot stay long 是有條件接受，不是完全支持所有安排。"
+    },
+    {
+      "id": "ENG_R4_L_S230_SEC_02",
+      "title": "疑問與保留會要求更多證據",
+      "content": "Are you sure?、I am not sure、Maybe, but... 都沒有直接接受。說話者可能需要確認時間、成本或風險。題目若問態度，應答 not sure 或 needs more information，不能因有 maybe 就當成同意。"
+    },
+    {
+      "id": "ENG_R4_L_S230_SEC_03",
+      "title": "拒絕常以理由或替代方案表達",
+      "content": "I would rather not、I cannot make it、That is kind of you, but... 都可婉拒。拒絕不一定出現 no；提供另一個日期也可能表示拒絕原日期，同時願意繼續協調。要指出被拒絕的是哪個具體提議。"
+    },
+    {
+      "id": "ENG_R4_L_S230_SEC_04",
+      "title": "短回應要和完整語境合讀",
+      "content": "Really? 可能是驚訝、懷疑或單純要求確認，單獨不能定案。若前句說 The store is open at midnight，後句接 Really? I thought it closed at ten，文字支持懷疑。推論應保留 may 或 seems，避免宣稱說話者必然生氣。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S230_EX_01",
+      "prompt": "A: Shall we walk home? B: Sounds good. The rain has stopped.",
+      "steps": [
+        "辨認提議。",
+        "Sounds good 表示接受。",
+        "雨停提供接受的實際條件。"
+      ],
+      "answer": "B agrees to walk home.",
+      "why": "回應明確正向，後句又支持立即採取該行動，因此不是保留或拒絕。"
+    },
+    {
+      "id": "ENG_R4_L_S230_EX_02",
+      "prompt": "A: The test is on Thursday. B: Are you sure? My note says Friday.",
+      "steps": [
+        "Are you sure 要求確認。",
+        "後句提出相反資料。",
+        "判斷 B 對 Thursday 有疑問。"
+      ],
+      "answer": "B doubts the stated day.",
+      "why": "B 沒有接受星期四，而是用自己的筆記提出衝突證據；最精確的態度是懷疑並求證。"
+    },
+    {
+      "id": "ENG_R4_L_S230_EX_03",
+      "prompt": "A: Can you join us tonight? B: I cannot tonight, but Saturday is free.",
+      "steps": [
+        "今晚邀請是原提議。",
+        "cannot 明確拒絕今晚。",
+        "Saturday 提供替代時段。"
+      ],
+      "answer": "B cannot meet tonight but is willing to meet another day.",
+      "why": "拒絕範圍只限 tonight，替代日期顯示並非拒絕所有碰面機會。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "Maybe 等於 yes。",
+      "whyWrong": "它保留可能性，沒有作出承諾。",
+      "correction": "若沒有明確決定，標記為不確定或需更多資訊。"
+    },
+    {
+      "belief": "沒有 no 就不可能是拒絕。",
+      "whyWrong": "英文常以不能參加或另提時間婉拒。",
+      "correction": "找出是否接受原提議的時間與行動。"
+    },
+    {
+      "belief": "Really? 一定表示生氣。",
+      "whyWrong": "它也可能表示驚訝或求證。",
+      "correction": "使用後句證據判斷，線索不足時降低推論強度。"
+    },
+    {
+      "belief": "有條件同意和完全同意相同。",
+      "whyWrong": "but 後的限制會縮小承諾範圍。",
+      "correction": "把接受內容與限制條件一起表述。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "That works for me 最常表示什麼？",
+      "answer": "同意安排",
+      "reason": "說話者表示所提方案符合自己的情況。"
+    },
+    {
+      "prompt": "I cannot Friday, but Sunday is fine 是否拒絕所有碰面？",
+      "answer": "不是",
+      "reason": "只拒絕星期五並提出星期日替代。"
+    },
+    {
+      "prompt": "Are you sure? 後又提出不同資料，態度為何？",
+      "answer": "懷疑並求證",
+      "reason": "相反資料使原說法尚未被接受。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  }
+}

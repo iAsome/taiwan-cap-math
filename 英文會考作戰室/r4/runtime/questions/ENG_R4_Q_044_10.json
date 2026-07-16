@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_044_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S044"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Two shops have one shared parking area. Which phrase is correct?",
+  "options": [
+    "the shop's parking areas",
+    "the shops's parking area",
+    "the parking area's shops",
+    "the shops' parking area"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the shop's parking areas：變為單一商店與多區域。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the shops's parking area：多加 s。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the parking area's shops：方向顛倒。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "the shops' parking area：shops 規則複數所有格，area 單數。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "form-regular-plural-possessive",
+    "form-owner-number-before-placing-apostrophe"
+  ],
+  "representationType": "plural-noun-possessive",
+  "misconceptionTargets": [
+    "append-s-after-every-apostrophe-or-link-owner-number-to-item-number"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「先建立規則複數，再將撇號放在複數 s 後，並以一位或多位擁有者的語意區分 student's 與 students'。」可推出 the shops' parking area；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 the shops' parking area 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

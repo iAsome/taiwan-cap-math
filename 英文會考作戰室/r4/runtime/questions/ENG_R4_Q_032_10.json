@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_032_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S032"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The speaker contrasts a chair here with one by the door. Which sentence is clear?",
+  "options": [
+    "These chair is softer than those one.",
+    "That here chair is this far one.",
+    "Those chair are softer than this ones.",
+    "This chair is softer than that one."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "These chair is softer than those one.：兩組數都不一致。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "That here chair is this far one.：距離指示與語序混亂。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Those chair are softer than this ones.：指示詞、名詞與 be 不一致。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "This chair is softer than that one.：this 指近椅，that 指較遠單一椅。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "select-demonstrative-by-distance-and-number",
+    "combine-deictic-distance-and-referent-number"
+  ],
+  "representationType": "demonstrative-distance-number",
+  "misconceptionTargets": [
+    "choose-demonstrative-on-one-axis-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「以單複數與說話者所建立的近／遠視角選 this、that、these、those，並讓後接名詞與 be 一致。」可推出 This chair is softer than that one.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 This chair is softer than that one. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

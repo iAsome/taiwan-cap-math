@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_225_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S225"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: Why are your shoes wet?\nB: ___.\nA: Put them by the door to dry.",
+  "options": [
+    "I walked here in the rain.",
+    "The door is made of wood.",
+    "These shoes were not cheap.",
+    "I will wear them next week."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "冒雨走來直接說明鞋子濕，也引出晾乾。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "門的材質不能解釋濕鞋。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "價格和目前狀態無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "下週穿鞋沒有回答 why。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "complete-wet-shoes-cause-and-drying-response"
+  ],
+  "representationType": "three-turn-causal-dialogue",
+  "misconceptionTargets": [
+    "match-only-nearby-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "前句的原因問句與後句的晾乾行動都得到承接。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其餘選項雖談鞋或門，沒有形成因果鏈。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

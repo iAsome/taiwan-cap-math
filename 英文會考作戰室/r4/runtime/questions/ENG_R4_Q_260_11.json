@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_260_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S260"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Mia hears the timer ring and sees the bread is brown on top. She puts on oven gloves. What next?",
+  "options": [
+    "mix the dough again inside the oven",
+    "leave it cooking for several days",
+    "remove the bread from the oven",
+    "put bare hands into the oven"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "mix the dough again inside the oven：流程已烤好。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "leave it cooking for several days：完成信号相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "remove the bread from the oven：timer、完成外观与 oven gloves 共同支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "put bare hands into the oven：gloves 表安全处理。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "predict-bounded-next-event",
+    "continue-goal-with-nearest-action"
+  ],
+  "representationType": "bounded-story-prediction",
+  "misconceptionTargets": [
+    "choose-dramatic-distant-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「人物目標、未解決問題與最近事件共同限制的下一步」可推出 remove the bread from the oven；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 remove the bread from the oven 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_011_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-2",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-2-4-1",
+    "AUTH-ENGLISH-LP-2-4-3",
+    "AUTH-ENGLISH-LP-6-4-1",
+    "AUTH-ENGLISH-LP-6-4-2",
+    "AUTH-ENGLISH-LP-7-4-5"
+  ],
+  "stimulusId": null,
+  "stem": "You did not hear the teacher's last sentence. What should you say?",
+  "options": [
+    "Could you say that again, please?",
+    "I will answer a different question.",
+    "The sentence is on Tuesday.",
+    "Please never speak again."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Could you say that again, please?：禮貌且直接請重說。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "I will answer a different question.：未修復。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The sentence is on Tuesday.：無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Please never speak again.：意思相反。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "request-repetition-clarification",
+    "match-understanding-gap-to-polite-repair"
+  ],
+  "representationType": "classroom-clarification-request",
+  "misconceptionTargets": [
+    "use-generic-repeat-request-for-every-gap"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-2",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-2-4-1",
+      "AUTH-ENGLISH-LP-2-4-3",
+      "AUTH-ENGLISH-LP-6-4-1",
+      "AUTH-ENGLISH-LP-6-4-2",
+      "AUTH-ENGLISH-LP-7-4-5"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「禮貌問句明確指出沒聽清、不了解詞義或需要例子，回應修復特定理解缺口」可推出 Could you say that again, please?；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 Could you say that again, please? 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

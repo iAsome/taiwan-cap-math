@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_219_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S219"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "I am sorry, but I cannot join the dinner tonight because I am sick.\nWhat is the writer mainly telling the reader?",
+  "options": [
+    "The dinner is canceled for everyone.",
+    "The writer wants a different meal.",
+    "The writer cannot attend.",
+    "The writer will arrive late."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "只有寫信者不能參加，不代表整場取消。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有餐點選擇。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "cannot join 明確告知無法出席，生病是原因。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "訊息沒有說稍後抵達。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u32-s219-disambiguate-sorry-as-decline",
+    "limit-cancellation-to-writer-attendance"
+  ],
+  "representationType": "message-purpose-decline",
+  "misconceptionTargets": [
+    "generalize-personal-absence-to-event-cancel"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "sorry 在此伴隨不能參加，不是承認損壞物品。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "個人缺席不能擴大成全體活動狀態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

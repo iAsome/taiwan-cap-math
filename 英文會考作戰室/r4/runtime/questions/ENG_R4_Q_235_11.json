@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_235_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S235"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "The team practiced every day. ___, it did not win the game.",
+  "options": [
+    "However",
+    "Therefore",
+    "Also",
+    "For example"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "However：勤練通常增加獲勝可能，卻沒有贏，However 標出跨句轉折。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Therefore：Therefore 會把沒贏說成勤練的結果，方向不合理。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Also：Also 只增加資訊，漏掉預期落差。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "For example：For example 會把沒贏當成勤練例子，關係不成立。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "infer-logical-relation",
+    "select-however-for-contrast"
+  ],
+  "representationType": "cross-sentence-marker",
+  "misconceptionTargets": [
+    "choose-therefore-after-any-sequence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「前後命題的因果、轉折與時間關係」可推出 However；再核對句中每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一放回原文，只有 However 能同時滿足句法與全文意思；另外三項各有列明的衝突，沒有第二個合理答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

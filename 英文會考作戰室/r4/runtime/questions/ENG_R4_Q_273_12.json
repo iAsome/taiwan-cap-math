@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_273_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S273"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A diary has these lines: 'I put the letter in my bag.' 'At the post office, the bag was empty.' 'Back at home, I saw the letter on my desk.' Which conclusion best respects the event order?",
+  "options": [
+    "The post office sent the letter back.",
+    "The writer mailed the letter before leaving home.",
+    "The desk was inside the post office.",
+    "The letter did not stay in the bag when the writer left home."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "信件從未交給郵局，無法被退回。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "郵局時袋中沒有信，不能證明已寄出。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "最後一句明說回到家才在書桌看到。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "原先放入袋中，後來在家中書桌，表示離家時未成功帶走。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u41-s273-q12-draw-bounded-sequence-conclusion",
+    "track-object-state-across-locations"
+  ],
+  "representationType": "diary-object-timeline",
+  "misconceptionTargets": [
+    "invent-unseen-mailing-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "結論保留三個地點與發現順序。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項不杜撰信件如何離開袋子，只說文本能支持的結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_274_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S274"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Mina found a map under a chair. The map showed a path to a small lake. This path crossed two fields. What does 'This path' mean?",
+  "options": [
+    "The chair",
+    "The small lake",
+    "The path on the map",
+    "The map itself"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "椅子是發現地點，不是路線。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "湖是路徑通往的目的地。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "第二句新介紹的 path 正是指示詞承接對象。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "地圖展示路徑，但本身不是穿越田地的道路。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u41-s274-q03-resolve-this-path",
+    "follow-new-to-given-information"
+  ],
+  "representationType": "demonstrative-reference",
+  "misconceptionTargets": [
+    "choose-most-recent-any-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "資訊鏈由 map 推進到 path。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "語意動作 crossed fields 也排除物品地圖。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

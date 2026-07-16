@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_241_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S241"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The first sentence introduces a night market. Later sentences call it 'the busy place' and 'this shopping area.' What does it refer to?",
+  "options": [
+    "the night market",
+    "the first sentence",
+    "a private home",
+    "one product"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "the night market：busy place 與 shopping area 都符合 night market 的地點特徵。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the first sentence：代名詞指內容中的地點，不是句子本身。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "a private home：private home 與 shopping area 不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "one product：area 是整體，不是單一產品。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "track-topic-by-lexical-chain",
+    "connect-descriptive-renaming"
+  ],
+  "representationType": "place-chain",
+  "misconceptionTargets": [
+    "bind-it-to-nearest-abstract-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「重複詞、同義改寫與上位概念形成的詞鏈」可推出 the night market；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 the night market 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

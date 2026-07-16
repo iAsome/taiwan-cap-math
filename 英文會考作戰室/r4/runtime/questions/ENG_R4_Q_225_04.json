@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_225_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S225"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: The blue cup is broken.\nB: ___.\nA: Good idea. The green one is clean.",
+  "options": [
+    "Blue is my favorite color.",
+    "The cup was on the table.",
+    "I drank water this morning.",
+    "Let's use the green cup."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "喜歡藍色無法處理裂杯。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "舊位置不會引出改用綠杯。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "早上的飲水事件與目前選擇無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "改用乾淨綠杯正是可接受的替代方案。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-replacement-suggestion-from-good-idea"
+  ],
+  "representationType": "problem-solution-dialogue-gap",
+  "misconceptionTargets": [
+    "select-description-instead-of-solution"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "Good idea 反向證明缺句需是建議。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "後句確認綠杯狀態，使替代選擇成立。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

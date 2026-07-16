@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_274_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S274"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "(A) These lights use less power. (B) The school changed every old lamp in the hall. (C) The change also made the hall brighter. Which order is clearest?",
+  "options": [
+    "A → C → B",
+    "B → A → C",
+    "C → B → A",
+    "B → C → A"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "These lights 出現時尚未介紹燈。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "先說換燈，再說這些燈省電，最後概括改變的另一效果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The change 在段首沒有已知改變可回指。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "C 緊接 B 尚可，但 A 的 These lights 被隔開且省電與 also 關係顛倒。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u41-s274-q02-order-known-information-chain",
+    "sequence-full-noun-these-and-change"
+  ],
+  "representationType": "three-sentence-reference-order",
+  "misconceptionTargets": [
+    "open-with-demonstrative-reference"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "完整名詞先建立對象，指示詞再承接。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二個排列也讓 also 自然增加第二項效果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,95 @@
+{
+  "id": "ENG_R4_Q_296_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S296"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-6",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10",
+    "AUTH-ENGLISH-LP-5-4-8"
+  ],
+  "stimulusId": null,
+  "stem": "Ben could not carry all the donated books in one trip. He sorted them into smaller boxes and asked two friends to help, so the books reached the library by noon. Which summary is strongest?",
+  "options": [
+    "The library donated books to Ben.",
+    "Friends always solve every problem.",
+    "Ben divided the load and got help, enabling an on-time delivery.",
+    "Ben counted every book cover color."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The library donated books to Ben.：角色方向錯。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Friends always solve every problem.：過度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Ben divided the load and got help, enabling an on-time delivery.：困難、兩個關鍵行動、結果完整。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Ben counted every book cover color.：未提且無關。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "build-causal-story-summary",
+    "compress-problem-action-result-chain"
+  ],
+  "representationType": "causal-summary",
+  "misconceptionTargets": [
+    "list-details-without-causal-spine"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-6",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10",
+      "AUTH-ENGLISH-LP-5-4-8"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「摘要保留初始目標或問題、關鍵因果轉折與結果，刪除不影響因果鏈的細節」可推出 Ben divided the load and got help, enabling an on-time delivery.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 Ben divided the load and got help, enabling an on-time delivery. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_284_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S284"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "An eleven-year-old arrives alone for the Lake Trail at 09:15. May the child use it?",
+  "options": [
+    "Yes, because the East Gate is open.",
+    "Yes, because two rest areas exist.",
+    "No, only because the soup is hot.",
+    "No; the trail is closed, and the child also needs an adult."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Yes, because the East Gate is open.：跨列且忽略年齡。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Yes, because two rest areas exist.：設施數量不改變限制。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "No, only because the soup is hot.：菜單與步道資格無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "No; the trail is closed, and the child also needs an adult.：時刻表 CLOSED 與 under 12 need adult 兩條都不合。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "solve-with-chart-and-note",
+    "apply-table-chart-and-note-constraints"
+  ],
+  "representationType": "integrated-information-sheet",
+  "misconceptionTargets": [
+    "ignore-note-after-finding-table-match"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「主表或圖表提供的數值與 NOTE 限制同時套用後只剩一個可行方案」可推出 No; the trail is closed, and the child also needs an adult.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 No; the trail is closed, and the child also needs an adult. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "ENG_R4_FIG_42_02"
+  ]
+}

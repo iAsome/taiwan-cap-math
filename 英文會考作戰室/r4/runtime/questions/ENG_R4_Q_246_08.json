@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_246_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S246"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10"
+  ],
+  "stimulusId": null,
+  "stem": "The town closed one street to cars on Saturday afternoon. Families enjoyed walking there, while some drivers reported longer trips.\nWhich choice gives the central idea?",
+  "options": [
+    "All drivers enjoyed shorter trips",
+    "The car-free afternoon pleased walkers but inconvenienced some drivers",
+    "Families enjoyed walking",
+    "Cars should be banned from every street forever"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "All drivers enjoyed shorter trips：與 some drivers reported longer trips 相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "The car-free afternoon pleased walkers but inconvenienced some drivers：同時涵蓋兩群人的不同結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Families enjoyed walking：只說一方反應。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Cars should be banned from every street forever：原文只有 one street、Saturday afternoon。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "select-bounded-main-idea",
+    "match-claim-scope-to-evidence"
+  ],
+  "representationType": "bounded-main-idea",
+  "misconceptionTargets": [
+    "choose-overgeneralized-claim"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「涵蓋全文但不加入未被原文支持的人、時間、因果或普遍結論」可推出 The car-free afternoon pleased walkers but inconvenienced some drivers；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 The car-free afternoon pleased walkers but inconvenienced some drivers 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

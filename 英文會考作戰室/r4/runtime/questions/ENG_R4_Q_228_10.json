@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_228_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S228"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: My dog did not eat this morning.\nB: Is he sick?\nA: Maybe. About the food, did you open a new bag?\nWhy does A say 'About the food'?",
+  "options": [
+    "To end the conversation",
+    "To focus on one possible cause",
+    "To invite B to eat",
+    "To change from the dog to school"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "A 繼續追查問題，沒有結束。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "說話者把焦點放到飼料是否更換。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "問題不是邀請 B 吃。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "完全沒有學校話題。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "use-about-phrase-to-narrow-topic"
+  ],
+  "representationType": "topic-narrowing-question",
+  "misconceptionTargets": [
+    "classify-subtopic-focus-as-unrelated-shift"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "About the food 明確框定接下來要查的面向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留它與狗不吃東西的因果關聯。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

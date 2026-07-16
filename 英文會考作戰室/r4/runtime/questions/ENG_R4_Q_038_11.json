@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_038_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S038"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which question fits an uncountable amount?",
+  "options": [
+    "How much bottles is left?",
+    "How many rice grain is left?",
+    "How much milk is left?",
+    "How many milk are left?"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "How much bottles is left?：bottles 可數且複數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "How many rice grain is left?：grain 需複數且結構不完整。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "How much milk is left?：much 搭不可數 milk。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "How many milk are left?：many 與 are 不搭不可數。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "classify-count-and-noncount-uses",
+    "identify-unitized-individual-or-mass-meaning"
+  ],
+  "representationType": "countability-in-context",
+  "misconceptionTargets": [
+    "assign-fixed-countability-or-pluralize-mass-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「依語境中的可分單位、可直接計數性與量詞搭配，判斷名詞是可數、不可數或具雙重用法。」可推出 How much milk is left?；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 How much milk is left? 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

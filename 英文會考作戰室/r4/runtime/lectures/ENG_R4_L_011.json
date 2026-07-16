@@ -1,0 +1,136 @@
+{
+  "id": "ENG_R4_L_011",
+  "subject": "english",
+  "unitId": "ENG_R4_U02",
+  "skillId": "ENG_R4_S011",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-2",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-2-4-1",
+    "AUTH-ENGLISH-LP-2-4-3",
+    "AUTH-ENGLISH-LP-6-4-1",
+    "AUTH-ENGLISH-LP-6-4-2",
+    "AUTH-ENGLISH-LP-7-4-5"
+  ],
+  "prerequisites": [
+    "ENG_R4_S010"
+  ],
+  "objectives": [
+    "用英語請求重說。",
+    "請求放慢或解釋。",
+    "依缺口選最精確句型。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U02_ENG_R4_S011_SEC_1",
+      "title": "沒聽清請重說",
+      "content": "Could you say that again? 針對聲音或遺漏。"
+    },
+    {
+      "id": "ENG_R4_U02_ENG_R4_S011_SEC_2",
+      "title": "太快請放慢",
+      "content": "Could you speak more slowly? 比 repeat 更精確。"
+    },
+    {
+      "id": "ENG_R4_U02_ENG_R4_S011_SEC_3",
+      "title": "不懂詞請解釋",
+      "content": "What does ___ mean? 問詞義；Could you give an example? 問具體例子。"
+    },
+    {
+      "id": "ENG_R4_U02_ENG_R4_S011_SEC_4",
+      "title": "禮貌形式完整",
+      "content": "Excuse me、please、could 降低命令感，但核心缺口仍需說清楚。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U02_ENG_R4_S011_EX_1",
+      "prompt": "Missed the sentence",
+      "steps": [
+        "缺整句。",
+        "選 say again。",
+        "加 please。"
+      ],
+      "answer": "Could you say that again, please?",
+      "why": "精確修復。"
+    },
+    {
+      "id": "ENG_R4_U02_ENG_R4_S011_EX_2",
+      "prompt": "Speech too fast",
+      "steps": [
+        "知道有聲音。",
+        "速度問題。",
+        "請 slowly。"
+      ],
+      "answer": "Could you speak more slowly?",
+      "why": "不是問音量。"
+    },
+    {
+      "id": "ENG_R4_U02_ENG_R4_S011_EX_3",
+      "prompt": "Unknown word",
+      "steps": [
+        "圈單字。",
+        "問 mean。",
+        "等待定義。"
+      ],
+      "answer": "What does the word mean?",
+      "why": "缺口是詞義。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "直接說 What? 永遠最合宜。",
+      "whyWrong": "可能過於突兀。",
+      "correction": "用完整禮貌問句。"
+    },
+    {
+      "belief": "沒聽清卻假裝懂。",
+      "whyWrong": "會造成後續錯誤。",
+      "correction": "立即修復。"
+    },
+    {
+      "belief": "所有缺口都只說 again。",
+      "whyWrong": "有時需要慢速或例子。",
+      "correction": "選精確請求。"
+    },
+    {
+      "belief": "Could you 是質疑能力。",
+      "whyWrong": "課堂多為禮貌請求。",
+      "correction": "依語用理解。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "沒聽清整句怎麼問？",
+      "answer": "Could you say that again?",
+      "reason": "請重說。"
+    },
+    {
+      "prompt": "速度太快？",
+      "answer": "Could you speak more slowly?",
+      "reason": "指定速度。"
+    },
+    {
+      "prompt": "不懂單字？",
+      "answer": "What does ... mean?",
+      "reason": "問詞義。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-2",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-2-4-1",
+      "AUTH-ENGLISH-LP-2-4-3",
+      "AUTH-ENGLISH-LP-6-4-1",
+      "AUTH-ENGLISH-LP-6-4-2",
+      "AUTH-ENGLISH-LP-7-4-5"
+    ]
+  }
+}

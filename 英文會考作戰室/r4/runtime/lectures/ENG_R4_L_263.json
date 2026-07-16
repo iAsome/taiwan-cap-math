@@ -1,0 +1,134 @@
+{
+  "id": "ENG_R4_L_263",
+  "subject": "english",
+  "unitId": "ENG_R4_U39",
+  "skillId": "ENG_R4_S263",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "prerequisites": [
+    "ENG_R4_S262"
+  ],
+  "objectives": [
+    "辨認陌生字所在句是原因還是結果。",
+    "利用可觀察後果限制可能字義。",
+    "排除無法產生該結果的同詞性選項。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U39_ENG_R4_S263_SEC_1",
+      "title": "先畫原因箭頭",
+      "content": "把句子簡化成 A → B。若 floor was slippery → Mia walked slowly，後果 slow walking 可限制 slippery 為容易滑。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S263_SEC_2",
+      "title": "結果要有解釋力",
+      "content": "正確字義應能自然造成後句結果。若候選與結果無關，即使詞性正確也排除。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S263_SEC_3",
+      "title": "也可由結果回推原因",
+      "content": "he was exhausted, so he sat down 由 sat down 回推 exhausted 是很累，而不是開心或迷路。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S263_SEC_4",
+      "title": "避免過度因果",
+      "content": "一個結果可能有多種一般原因，但題目會用其他線索縮到唯一。只推出足以解釋文本的範圍，不加入疾病或意圖。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U39_ENG_R4_S263_EX_1",
+      "prompt": "The road was slippery, so drivers slowed down.",
+      "steps": [
+        "結果是慢行。",
+        "慢行回應打滑風險。",
+        "推出 slippery。"
+      ],
+      "answer": "easy to slide on",
+      "why": "不需推成 road damaged。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S263_EX_2",
+      "prompt": "Nora was exhausted and fell asleep at once.",
+      "steps": [
+        "結果立即睡著。",
+        "最直接原因是極累。",
+        "選 tired meaning。"
+      ],
+      "answer": "extremely tired",
+      "why": "不是 bored，因文本用睡著支持疲累。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S263_EX_3",
+      "prompt": "The box was sealed, so water could not enter.",
+      "steps": [
+        "結果是水進不去。",
+        "原因是開口被封住。",
+        "推出 tightly closed。"
+      ],
+      "answer": "closed tightly",
+      "why": "sealed 不是 empty。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只看陌生字同句，不讀結果。",
+      "whyWrong": "後句常是主要線索。",
+      "correction": "建立完整因果鏈。"
+    },
+    {
+      "belief": "任何可造成結果的原因都可選。",
+      "whyWrong": "還需合詞性與其他文字。",
+      "correction": "用全部線索縮到唯一。"
+    },
+    {
+      "belief": "so 前一定是結果。",
+      "whyWrong": "通常 so 後引出結果。",
+      "correction": "辨認箭頭方向。"
+    },
+    {
+      "belief": "可以推論具體疾病或動機。",
+      "whyWrong": "文本通常只支持一般狀態。",
+      "correction": "採最小充分推論。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "A so B 中通常誰是結果？",
+      "answer": "B",
+      "reason": "so 引出後果。"
+    },
+    {
+      "prompt": "結果線索只能檢查詞性嗎？",
+      "answer": "不是",
+      "reason": "它主要限制語義。"
+    },
+    {
+      "prompt": "推論應選具體病名還是足以解釋的狀態？",
+      "answer": "足以解釋的狀態",
+      "reason": "避免超出證據。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  }
+}

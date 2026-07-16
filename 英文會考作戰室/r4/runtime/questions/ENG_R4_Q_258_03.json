@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_258_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S258"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Text: Ben has not answered the message for thirty minutes. Which conclusion is best?",
+  "options": [
+    "Ben will never answer",
+    "Ben lost his phone in a river",
+    "Ben has not replied yet",
+    "Ben is angry"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Ben will never answer：thirty minutes 不支持 never。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Ben lost his phone in a river：生動但無證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Ben has not replied yet：只重述目前狀態，不擴成原因或永久。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Ben is angry：動機未提。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "separate-inference-from-guess",
+    "minimize-unstated-premises"
+  ],
+  "representationType": "inference-versus-guess",
+  "misconceptionTargets": [
+    "choose-vivid-unsupported-detail"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「合理推論能逐步連回文本，猜測需加入未提供的新前提」可推出 Ben has not replied yet；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 Ben has not replied yet 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

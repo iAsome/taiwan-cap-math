@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_228_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S228"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: Did you fix the bike light?\nB: Yes, it works now. By the way, your blue bag is still at my house.\nWhich topic is introduced after 'By the way'?",
+  "options": [
+    "How to fix a light",
+    "The place of a bag",
+    "The color of the bike",
+    "A ride to the house of B"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "修燈話題已在 Yes 後完成。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "訊號後的新資訊是藍袋仍在 B 家。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "blue 修飾 bag，不是自行車。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有安排騎車前往。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "locate-new-bag-topic-after-marker"
+  ],
+  "representationType": "explicit-topic-shift",
+  "misconceptionTargets": [
+    "carry-old-bike-topic-into-new-clause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "轉換訊號後直接尋找新的中心名詞與狀態。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項只陳述袋子位置，沒有擴張成旅行計畫。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

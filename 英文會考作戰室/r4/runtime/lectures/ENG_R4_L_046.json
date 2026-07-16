@@ -1,0 +1,132 @@
+{
+  "id": "ENG_R4_L_046",
+  "subject": "english",
+  "unitId": "ENG_R4_U07",
+  "skillId": "ENG_R4_S046",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S045"
+  ],
+  "objectives": [
+    "由先行人物選 my/your/his/her/its/our/their。",
+    "由句法位置轉換 mine/yours/his/hers/ours/theirs。",
+    "在多人物文本中以姓名或重寫消除歧義。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U07_ENG_R4_S046_SEC_1",
+      "title": "兩步選擇法",
+      "content": "第一步找誰擁有：speaker→my/mine，female person→her/hers，group→their/theirs。第二步看後方有沒有名詞。"
+    },
+    {
+      "id": "ENG_R4_U07_ENG_R4_S046_SEC_2",
+      "title": "擁有物的數不改所有格形式",
+      "content": "her book/her books、their key/their keys。所有格依擁有者，不依物品數。"
+    },
+    {
+      "id": "ENG_R4_U07_ENG_R4_S046_SEC_3",
+      "title": "共同與分別擁有",
+      "content": "Ana and Bo's project 可表示共同一個計畫；Ana's and Bo's projects 可表示各自計畫。明確語境很重要。"
+    },
+    {
+      "id": "ENG_R4_U07_ENG_R4_S046_SEC_4",
+      "title": "代名詞可能歧義",
+      "content": "Lily told Mia that her bag was open 中 her 可能指兩人。若答案要求唯一，需補姓名或上下文證據。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U07_ENG_R4_S046_EX_1",
+      "prompt": "Tom owns two bikes.",
+      "steps": [
+        "擁有者 Tom 男性單數。",
+        "後接 bikes。",
+        "選 his。"
+      ],
+      "answer": "his bikes",
+      "why": "物品複數不改 his。"
+    },
+    {
+      "id": "ENG_R4_U07_ENG_R4_S046_EX_2",
+      "prompt": "The bikes belong to Tom.",
+      "steps": [
+        "擁有者仍是 Tom。",
+        "空格獨立。",
+        "選 his。"
+      ],
+      "answer": "The bikes are his.",
+      "why": "his 形式相同但功能不同。"
+    },
+    {
+      "id": "ENG_R4_U07_ENG_R4_S046_EX_3",
+      "prompt": "We share one room.",
+      "steps": [
+        "擁有者含說話者的複數群體。",
+        "後接 room。",
+        "選 our。"
+      ],
+      "answer": "our room",
+      "why": "不是 their room。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "物品是複數就用 their。",
+      "whyWrong": "their 取決於擁有者為複數。",
+      "correction": "先找 owner，不看 item 數決定人稱。"
+    },
+    {
+      "belief": "女性擁有者一律 her。",
+      "whyWrong": "獨立位置需 hers。",
+      "correction": "看是否緊接名詞。"
+    },
+    {
+      "belief": "兩個姓名只在最後一個加 's 一定表示各自擁有。",
+      "whyWrong": "通常更像共同擁有。",
+      "correction": "各自擁有需對每個姓名標記並配合複數語意。"
+    },
+    {
+      "belief": "her 有兩個合理先行詞時選最近者。",
+      "whyWrong": "最近並不保證唯一。",
+      "correction": "承認歧義或以姓名重寫。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "擁有者是 we，名詞前用什麼？",
+      "answer": "our。",
+      "reason": "含說話者的複數所有格。"
+    },
+    {
+      "prompt": "擁有者是 she，獨立用什麼？",
+      "answer": "hers。",
+      "reason": "her 後需名詞。"
+    },
+    {
+      "prompt": "物品數會改變 his 嗎？",
+      "answer": "不會。",
+      "reason": "his 依擁有者。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

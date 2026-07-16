@@ -1,0 +1,130 @@
+{
+  "id": "ENG_R4_L_269",
+  "subject": "english",
+  "unitId": "ENG_R4_U40",
+  "skillId": "ENG_R4_S269",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-1-4-9",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S268"
+  ],
+  "objectives": [
+    "圈出 positive、negative 或保留態度的評價詞。",
+    "區分敘述內容與敘述者對內容的看法。",
+    "選擇強度與證據一致的態度描述。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U40_ENG_R4_S269_SEC_1",
+      "title": "態度藏在選字",
+      "content": "fortunately、wasteful、helpful、disappointing 都直接帶評價。即使作者未說 I think，這些字仍顯示立場。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S269_SEC_2",
+      "title": "細節選取也有方向",
+      "content": "同一活動可寫 friendly helpers and clear signs，或寫 long lines and confusing rules。作者反覆選哪些面向，會形成整體態度。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S269_SEC_3",
+      "title": "態度不是主題",
+      "content": "文章談 a new park，態度可能 supportive、critical、mixed 或 neutral。答案需描述作者如何看它。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S269_SEC_4",
+      "title": "控制強度",
+      "content": "concerned 不等於 furious，pleased 不等於 calling it perfect。選最小但充分符合評價詞的描述。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U40_ENG_R4_S269_EX_1",
+      "prompt": "Fortunately, the new signs are clear and easy to follow.",
+      "steps": [
+        "fortunately 正面。",
+        "clear/easy 正面。",
+        "態度 supportive。"
+      ],
+      "answer": "pleased with the signs",
+      "why": "不需推到 excited beyond measure。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S269_EX_2",
+      "prompt": "The costly plan solved only one small problem.",
+      "steps": [
+        "costly 負擔。",
+        "only one small 限縮成效。",
+        "態度 critical。"
+      ],
+      "answer": "doubtful or critical",
+      "why": "不是 neutral。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S269_EX_3",
+      "prompt": "The room is bright and useful, though it can be noisy.",
+      "steps": [
+        "有正面與負面。",
+        "though 加限制。",
+        "態度 mixed。"
+      ],
+      "answer": "mostly positive but qualified",
+      "why": "不能只選 completely negative。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只要報告事實就一定 neutral。",
+      "whyWrong": "評價詞可夾在事實中。",
+      "correction": "圈出帶價值的用字。"
+    },
+    {
+      "belief": "出現一個缺點就 completely negative。",
+      "whyWrong": "全文可能同時肯定。",
+      "correction": "衡量正負證據比例與轉折。"
+    },
+    {
+      "belief": "作者態度等於讀者感受。",
+      "whyWrong": "題目問的是文本呈現的作者立場。",
+      "correction": "回到作者選字。"
+    },
+    {
+      "belief": "強烈選項比較像答案。",
+      "whyWrong": "態度強度需有同等證據。",
+      "correction": "採最小充分描述。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "fortunately 帶正面還是負面態度？",
+      "answer": "正面",
+      "reason": "表示作者認為結果幸運。"
+    },
+    {
+      "prompt": "有優點也有缺點可能是何種態度？",
+      "answer": "mixed 或 qualified",
+      "reason": "不宜絕對化。"
+    },
+    {
+      "prompt": "concerned 能直接改成 furious 嗎？",
+      "answer": "不能",
+      "reason": "強度被誇大。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-1-4-9",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  }
+}

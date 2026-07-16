@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_226_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S226"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: Which jacket should I take, the black one or the light green one?\nB: ___",
+  "options": [
+    "Your jacket is in the hall.",
+    "Take the light green one; today is warm.",
+    "You bought a jacket last year.",
+    "The bus leaves at ten."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "位置資訊沒有在兩件中作選擇。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "明確選淺綠外套並給出天氣理由。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "購買時間無法決定今天穿哪件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "公車時刻和外套選擇無關。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-one-of-two-jackets-directly"
+  ],
+  "representationType": "choice-and-reason-reply",
+  "misconceptionTargets": [
+    "mention-object-location-without-choice"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Which 要求從已列選項中指定一件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項的理由也與較暖天氣相符。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

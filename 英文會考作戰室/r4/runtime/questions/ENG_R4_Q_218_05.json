@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_218_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S218"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "10:15  Ken: I am waiting at the school gate.\n10:16  You: I am coming now.\nWho is at the gate?",
+  "options": [
+    "Ken",
+    "You",
+    "Both people",
+    "No one"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Ken 的訊息直接說他正在校門口等。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "You 說正在前往，尚未表示已到校門。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第二人仍在移動，不能判為兩人都在場。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第一句已提供一位在場者。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s218-track-speaker-label-in-text-thread",
+    "contrast-waiting-location-with-coming-action"
+  ],
+  "representationType": "text-message-speaker",
+  "misconceptionTargets": [
+    "read-you-as-third-person-name"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "說話者標記與動作狀態共同支持答案。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "正在前往不等於已經抵達。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

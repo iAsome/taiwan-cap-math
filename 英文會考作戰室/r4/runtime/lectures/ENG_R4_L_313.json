@@ -1,0 +1,138 @@
+{
+  "id": "ENG_R4_L_313",
+  "subject": "english",
+  "unitId": "ENG_R4_U47",
+  "skillId": "ENG_R4_S313",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AB-4-1",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-9",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-2-4-8",
+    "AUTH-ENGLISH-LP-5-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S312"
+  ],
+  "objectives": [
+    "辨認否定作用範圍。",
+    "處理比較語意與數量方向。",
+    "避免聽到關鍵詞卻選其正向圖。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U47_ENG_R4_S313_SEC_1",
+      "title": "先標否定詞",
+      "content": "not walking 需找非 walking，不是看到 walking 就選。把否定寫在動作上。"
+    },
+    {
+      "id": "ENG_R4_U47_ENG_R4_S313_SEC_2",
+      "title": "without 只否定後項",
+      "content": "without a hat 可有 scarf 或 glasses；不可把整個人物刪掉。"
+    },
+    {
+      "id": "ENG_R4_U47_ENG_R4_S313_SEC_3",
+      "title": "比較先找兩端",
+      "content": "more people than one 表至少兩人；taller/shorter 需有明確比較圖才使用。"
+    },
+    {
+      "id": "ENG_R4_U47_ENG_R4_S313_SEC_4",
+      "title": "反向檢查",
+      "content": "選後問：若拿掉 not，會選哪張？目前答案應不是那張。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U47_ENG_R4_S313_EX_1",
+      "prompt": "The person is not sitting.",
+      "steps": [
+        "not 修飾 sitting。",
+        "排 seated。",
+        "其他姿勢皆可能，再用線索。"
+      ],
+      "answer": "non-sitting picture",
+      "why": "避免關鍵詞陷阱。"
+    },
+    {
+      "id": "ENG_R4_U47_ENG_R4_S313_EX_2",
+      "prompt": "Two people, not one",
+      "steps": [
+        "比較 two vs one。",
+        "選多人。",
+        "不看物件。"
+      ],
+      "answer": "two-person picture",
+      "why": "數量方向明確。"
+    },
+    {
+      "id": "ENG_R4_U47_ENG_R4_S313_EX_3",
+      "prompt": "A walker without glasses",
+      "steps": [
+        "walker 為正向。",
+        "without 否定 glasses。",
+        "交集。"
+      ],
+      "answer": "walking non-glasses picture",
+      "why": "否定範圍有限。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "聽到 walking 就選 walking，忽略 not。",
+      "whyWrong": "會選反。",
+      "correction": "先處理否定。"
+    },
+    {
+      "belief": "without hat 等於沒有任何人。",
+      "whyWrong": "否定範圍錯。",
+      "correction": "只排 hat。"
+    },
+    {
+      "belief": "more than one 當 one。",
+      "whyWrong": "比較方向反。",
+      "correction": "改寫 two or more。"
+    },
+    {
+      "belief": "否定後所有其他圖都正確。",
+      "whyWrong": "仍需其他線索唯一化。",
+      "correction": "取完整交集。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "not sitting 應先排哪圖？",
+      "answer": "坐著的圖",
+      "reason": "否定修飾 sitting。"
+    },
+    {
+      "prompt": "more than one 至少幾人？",
+      "answer": "兩人",
+      "reason": "大於一。"
+    },
+    {
+      "prompt": "without glasses 可戴帽嗎？",
+      "answer": "可以",
+      "reason": "否定只限 glasses。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AB-4-1",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-9",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-2-4-8",
+      "AUTH-ENGLISH-LP-5-4-4"
+    ]
+  }
+}

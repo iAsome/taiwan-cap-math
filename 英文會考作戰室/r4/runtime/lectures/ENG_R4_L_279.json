@@ -1,0 +1,134 @@
+{
+  "id": "ENG_R4_L_279",
+  "subject": "english",
+  "unitId": "ENG_R4_U42",
+  "skillId": "ENG_R4_S279",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "prerequisites": [
+    "ENG_R4_S278"
+  ],
+  "objectives": [
+    "辨認時刻表欄名與列的對齊關係。",
+    "區分表定時間、延誤時間與狀態。",
+    "依問題鎖定一列而不跨列拼接。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U42_ENG_R4_S279_SEC_1",
+      "title": "先找欄再找列",
+      "content": "先看問題要 TIME、PLACE 或 STATUS，再沿同一列讀完。表格線與欄名比單字位置更可靠。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S279_SEC_2",
+      "title": "延誤要做一次運算",
+      "content": "DELAY 10 MIN 表示在表定時間加十分鐘，不是延誤到十點。CANCELLED、FULL 則是狀態，不可當時間。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S279_SEC_3",
+      "title": "同名地點仍要看時間",
+      "content": "一個地點可能有多項活動。用時間與狀態一起縮小，不要只看到 place 就停止。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S279_SEC_4",
+      "title": "用一句話回填",
+      "content": "選完後讀成 At 10:50, the bus reaches the museum。若時間、地點、狀態不能共存，就是跨列。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U42_ENG_R4_S279_EX_1",
+      "prompt": "Museum 10:40 DELAY 10 MIN",
+      "steps": [
+        "定位 Museum 列。",
+        "10:40 加十分鐘。",
+        "保留同列地點。"
+      ],
+      "answer": "10:50",
+      "why": "延誤時間需由表定時間加上分鐘數。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S279_EX_2",
+      "prompt": "Pool 11:00 CANCELLED",
+      "steps": [
+        "找 Pool。",
+        "讀 STATUS。",
+        "不把 11:00 當成仍會舉行。"
+      ],
+      "answer": "The pool event will not take place.",
+      "why": "CANCELLED 直接否定活動。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S279_EX_3",
+      "prompt": "Room 2 / 14:30 / COOKING",
+      "steps": [
+        "由 COOKING 找狀態欄。",
+        "橫讀到 Room 2。",
+        "再核對 14:30。"
+      ],
+      "answer": "Cooking is in Room 2 at 14:30.",
+      "why": "三格來自同一列。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到熟悉單字就選，不核對列欄。",
+      "whyWrong": "同一單字可能出現在不同區塊。",
+      "correction": "先定位區塊、欄名與同一列。"
+    },
+    {
+      "belief": "圖中最大圖形一定是答案。",
+      "whyWrong": "尺寸可能只是版面，數值與標籤才有意義。",
+      "correction": "讀數字、單位與圖例。"
+    },
+    {
+      "belief": "附註可以忽略。",
+      "whyWrong": "附註常改變資格、時間或可用方式。",
+      "correction": "最後把 NOTE 套回候選答案。"
+    },
+    {
+      "belief": "不同列的資訊可以自由拼接。",
+      "whyWrong": "跨列拼接會製造不存在的組合。",
+      "correction": "用手指沿同一列橫向核對。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "DELAY 15 MIN 要如何處理？",
+      "answer": "在表定時間加十五分鐘",
+      "reason": "delay 數字是增加量。"
+    },
+    {
+      "prompt": "FULL 是時間嗎？",
+      "answer": "不是，是狀態",
+      "reason": "它表示名額已滿。"
+    },
+    {
+      "prompt": "何時可以橫跨兩列組合？",
+      "answer": "題目明示比較兩列時",
+      "reason": "查單一活動不可混列。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  }
+}

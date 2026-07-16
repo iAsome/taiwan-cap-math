@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_234_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S234"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Eva gave Mia a note after she finished it. The next sentence says, 'Mia read the note on the bus.' Who most clearly finished the note?",
+  "options": [
+    "Eva",
+    "Mia",
+    "the bus driver",
+    "the note"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Eva：Eva 先完成 note 再把它交給 Mia；下一句才出現 Mia 閱讀。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Mia：Mia 是接收並閱讀的人，沒有完成書寫的證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the bus driver：bus driver 未出現在原句角色中。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the note：note 是被完成的物件，不能作 she 的先行詞。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "track-pronoun-reference",
+    "use-event-order-to-resolve-she"
+  ],
+  "representationType": "ambiguous-reference-repair",
+  "misconceptionTargets": [
+    "bind-she-to-nearest-name"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「代名詞前的名詞與單複數角色」可推出 Eva；再核對句中每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一放回原文，只有 Eva 能同時滿足句法與全文意思；另外三項各有列明的衝突，沒有第二個合理答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

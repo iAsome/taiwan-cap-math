@@ -1,0 +1,130 @@
+{
+  "id": "ENG_R4_L_272",
+  "subject": "english",
+  "unitId": "ENG_R4_U40",
+  "skillId": "ENG_R4_S272",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-1-4-9",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S271"
+  ],
+  "objectives": [
+    "為語氣判斷指出至少兩項文字證據。",
+    "區分 formal、friendly、urgent、critical、cautious 等描述。",
+    "排除只靠主題或單一標點的語氣標籤。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U40_ENG_R4_S272_SEC_1",
+      "title": "語氣是文字呈現方式",
+      "content": "同一 closure 可用 formal notice、friendly reminder 或 urgent warning 表達。語氣取決於稱呼、動詞、評價與句型，不只主題。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S272_SEC_2",
+      "title": "兩證據原則",
+      "content": "選 tone 前至少指出兩項：Please 與 thank you 支持 polite；must、immediately 與 danger 支持 urgent。單一驚嘆號太弱。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S272_SEC_3",
+      "title": "正式度與情緒分開",
+      "content": "formal 描述表達方式，concerned 描述立場，兩者可同時存在。選項若只有一個面向，仍要看題目要哪個。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S272_SEC_4",
+      "title": "強度校準",
+      "content": "cautious 不等於 terrified，firm 不等於 rude。答案要能被原字直接支持，不能為吸引力升級。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U40_ENG_R4_S272_EX_1",
+      "prompt": "Please return the form by Friday. Thank you for your help.",
+      "steps": [
+        "Please。",
+        "Thank you。",
+        "要求清楚但有禮。"
+      ],
+      "answer": "polite and formal",
+      "why": "不是 angry。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S272_EX_2",
+      "prompt": "Leave the bridge now. Water is rising quickly.",
+      "steps": [
+        "命令立即離開。",
+        "危險正在增加。",
+        "語氣 urgent。"
+      ],
+      "answer": "urgent",
+      "why": "不是 casual。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S272_EX_3",
+      "prompt": "The early results are promising, but more tests are needed.",
+      "steps": [
+        "promising 正面。",
+        "but 加限制。",
+        "more tests 顯示保留。"
+      ],
+      "answer": "cautiously hopeful",
+      "why": "不能選 completely certain。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "主題危險就一定語氣恐怖。",
+      "whyWrong": "作者可能冷靜正式警告。",
+      "correction": "看實際用字。"
+    },
+    {
+      "belief": "一個 please 就代表 joyful。",
+      "whyWrong": "please 主要顯示禮貌。",
+      "correction": "用多項證據。"
+    },
+    {
+      "belief": "firm 等於 rude。",
+      "whyWrong": "清楚強制可保持禮貌。",
+      "correction": "不要擴張負面強度。"
+    },
+    {
+      "belief": "but 前正面就表示完全樂觀。",
+      "whyWrong": "but 後可能限制信心。",
+      "correction": "讀完整語氣轉折。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "可靠 tone 判斷至少需要幾項線索？",
+      "answer": "兩項",
+      "reason": "降低單字誤判。"
+    },
+    {
+      "prompt": "must 一定 rude 嗎？",
+      "answer": "不一定",
+      "reason": "可為正式且堅定。"
+    },
+    {
+      "prompt": "promising but more tests needed 是完全確定嗎？",
+      "answer": "不是",
+      "reason": "屬審慎樂觀。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-1-4-9",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  }
+}

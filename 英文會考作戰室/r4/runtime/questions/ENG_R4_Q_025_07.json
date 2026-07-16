@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_025_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S025"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which is the correct question for 'Mia and Ken are partners'?",
+  "options": [
+    "Do Mia and Ken are partners?",
+    "Are partners Mia and Ken do?",
+    "Are Mia and Ken partners?",
+    "Is Mia and Ken partners?"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Do Mia and Ken are partners?：多餘 do。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Are partners Mia and Ken do?：語序錯誤。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Are Mia and Ken partners?：複數主詞前置 are。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Is Mia and Ken partners?：複合主詞不搭 is。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "form-and-answer-be-questions",
+    "invert-be-and-maintain-person-number-time"
+  ],
+  "representationType": "be-question-short-answer",
+  "misconceptionTargets": [
+    "add-do-or-copy-question-person"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「將 be 移到主詞前形成一般問句，並以相同人稱、數、時態提供 Yes/No 短答或必要補充。」可推出 Are Mia and Ken partners?；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 Are Mia and Ken partners? 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

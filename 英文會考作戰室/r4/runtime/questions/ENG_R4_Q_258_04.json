@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_258_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S258"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Text: The shop lights are off at noon, but a sign says 'Back at 1.' What is reasonable?",
+  "options": [
+    "No customer has ever entered",
+    "The shop is temporarily closed",
+    "The shop has ended business forever",
+    "The owner is eating noodles"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "No customer has ever entered：永久歷史無證據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "The shop is temporarily closed：Back at 1 限定短暫離開。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The shop has ended business forever：與 Back at 1 相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "The owner is eating noodles：活動未提。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "separate-inference-from-guess",
+    "minimize-unstated-premises"
+  ],
+  "representationType": "inference-versus-guess",
+  "misconceptionTargets": [
+    "choose-vivid-unsupported-detail"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「合理推論能逐步連回文本，猜測需加入未提供的新前提」可推出 The shop is temporarily closed；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 The shop is temporarily closed 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

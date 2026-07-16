@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_281_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S281"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "How does the number of PAN markers compare with MUSIC markers?",
+  "options": [
+    "There are twice as many MUSIC markers.",
+    "There are twice as many PAN markers.",
+    "They are equal.",
+    "There are three fewer PAN markers."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "There are twice as many MUSIC markers.：倍數方向顛倒。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "There are twice as many PAN markers.：PAN 有二，MUSIC 有一，因此前者是兩倍。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "They are equal.：二不等於一。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "There are three fewer PAN markers.：方向與差值都錯。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "decode-infographic-legend",
+    "map-code-meaning-and-count"
+  ],
+  "representationType": "infographic-legend",
+  "misconceptionTargets": [
+    "guess-symbol-meaning-without-legend"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「圖例代碼、意義與數量三項對照後指向唯一設施或活動」可推出 There are twice as many PAN markers.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 There are twice as many PAN markers. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "ENG_R4_FIG_42_12"
+  ]
+}

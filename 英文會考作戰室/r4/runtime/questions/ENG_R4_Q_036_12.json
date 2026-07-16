@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_036_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S036"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Change 'That box is heavy' to plural.",
+  "options": [
+    "Those boxs are heavy.",
+    "Those boxes are heavy.",
+    "Those box is heavy.",
+    "That boxes are heavy."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Those boxs are heavy.：複數拼字錯誤。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Those boxes are heavy.：that→those、box→boxes、is→are 全部同步。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Those box is heavy.：名詞與 be 未改。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "That boxes are heavy.：指示詞未改。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "form-regular-count-noun-plurals",
+    "apply-ending-rule-and-sentence-number-agreement"
+  ],
+  "representationType": "regular-plural-formation",
+  "misconceptionTargets": [
+    "append-s-without-checking-ending-or-context"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「依可數名詞字尾拼寫與語音規則形成 -s、-es、子音+y→-ies 等規則複數，並使限定詞與動詞一致。」可推出 Those boxes are heavy.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Those boxes are heavy. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

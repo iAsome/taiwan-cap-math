@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_028_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S028"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Some water ___ in the bottle a moment ago.",
+  "options": [
+    "be",
+    "was",
+    "were",
+    "are"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "be：缺少時態形式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "was：water 不可數作單數概念，a moment ago 表過去。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "were：不可數核心不搭 were。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "are：時態與數不合。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-existence-by-number-and-time",
+    "coordinate-postverbal-number-with-local-time"
+  ],
+  "representationType": "existence-number-time",
+  "misconceptionTargets": [
+    "choose-be-from-time-or-nearest-item-alone"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「依存在物核心名詞的數與事件時間，選擇 there is/are 或 there was/were，並在多項清單中保持資訊精確。」可推出 was；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 was 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

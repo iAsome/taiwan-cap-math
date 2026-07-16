@@ -1,0 +1,134 @@
+{
+  "id": "ENG_R4_L_237",
+  "subject": "english",
+  "unitId": "ENG_R4_U35",
+  "skillId": "ENG_R4_S237",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S236"
+  ],
+  "objectives": [
+    "找出 he、she、it、they 等形式可回指的前文對象。",
+    "以後句動作確認先行詞，不採最近名詞捷徑。",
+    "說明被排除對象在哪一項特徵上衝突。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U35_ENG_R4_S237_SEC_1",
+      "title": "先讀代名詞本身",
+      "content": "he、she 通常指單一人物，it 指單一事物，they 指複數。先用人或物、單數或複數縮小候選，再看後面的動作由誰做才合理。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S237_SEC_2",
+      "title": "事件也能被指涉",
+      "content": "it 或 this 有時不只代替一個名詞，而是代替前句整件事。若後文說 this surprised everyone，應問造成驚訝的是哪個事件，而非硬找最近的單數名詞。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S237_SEC_3",
+      "title": "建立候選清單",
+      "content": "把代名詞前可見的人物、物件與事件列出；逐一檢查數量、句法角色與常識。只有三項證據都通過者才保留。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S237_SEC_4",
+      "title": "遇到真正歧義",
+      "content": "如果兩個候選在形式與意思上都合理，負責任的結論是原句不清楚。考題若要求唯一答案，必須另有後文線索解除歧義。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U35_ENG_R4_S237_EX_1",
+      "prompt": "A dog followed two boys. They stopped at the gate.",
+      "steps": [
+        "They 是複數。",
+        "候選有 two boys。",
+        "停在門口是兩位男孩的動作。"
+      ],
+      "answer": "They = the two boys.",
+      "why": "數量與事件角色一致。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S237_EX_2",
+      "prompt": "Mia lost her key. It made her late.",
+      "steps": [
+        "It 可指單數物件或事件。",
+        "鑰匙本身不直接使人遲到。",
+        "遺失鑰匙這件事造成遲到。"
+      ],
+      "answer": "It = losing the key.",
+      "why": "因果關係要求把整個事件當先行內容。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S237_EX_3",
+      "prompt": "Leo put the cup by the plate because it was wet.",
+      "steps": [
+        "cup 與 plate 都是單數物件。",
+        "兩者都可能是 wet。",
+        "沒有後文排除任一個。"
+      ],
+      "answer": "The reference is unclear.",
+      "why": "形式與語意都留下兩個候選，不能自行假定最近者。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "永遠選離代名詞最近的名詞。",
+      "whyWrong": "最近者可能數量不合或做不了後續動作。",
+      "correction": "逐項檢查形式與事件角色。"
+    },
+    {
+      "belief": "it 只能指物品。",
+      "whyWrong": "it 也能概括前句事件。",
+      "correction": "看後文是在描述物件，還是評論整件事。"
+    },
+    {
+      "belief": "they 只能指人。",
+      "whyWrong": "複數事物也能用 they。",
+      "correction": "以數量為主要形式線索。"
+    },
+    {
+      "belief": "題目一定清楚，所以可以硬猜。",
+      "whyWrong": "有些句子本來就歧義。",
+      "correction": "只有出現足以排除其他候選的證據才下結論。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "two boxes 應以哪個主格代名詞承接？",
+      "answer": "they",
+      "reason": "先行詞為複數事物。"
+    },
+    {
+      "prompt": "This made us happy 中 This 可能指什麼？",
+      "answer": "前文事件",
+      "reason": "This 可概括剛敘述的整件事。"
+    },
+    {
+      "prompt": "兩個單數候選都合理時應怎麼辦？",
+      "answer": "判定指涉不清",
+      "reason": "不能用距離製造原文沒有的確定性。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

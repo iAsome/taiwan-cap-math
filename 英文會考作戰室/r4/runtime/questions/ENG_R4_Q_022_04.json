@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_022_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S022"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora called Sam, but he did not hear her. What does 'her' refer to?",
+  "options": [
+    "he",
+    "Nora",
+    "Sam",
+    "the call"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "he：代名詞本身不是女性先行詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Nora：her 是女性受格，回指女性人物 Nora。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Sam：男性人物應用 him。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the call：事件通常不以 her 指代。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "resolve-pronoun-antecedent",
+    "filter-antecedents-by-features-role-and-meaning"
+  ],
+  "representationType": "pronoun-reference",
+  "misconceptionTargets": [
+    "select-nearest-noun-without-compatibility"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「利用人稱、數、性別、語法角色與語意相容性，找出代名詞唯一且最近的合理先行詞。」可推出 Nora；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Nora 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

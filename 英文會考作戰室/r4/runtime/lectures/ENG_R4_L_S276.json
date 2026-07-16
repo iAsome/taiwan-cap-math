@@ -1,0 +1,141 @@
+{
+  "id": "ENG_R4_L_S276",
+  "subject": "english",
+  "unitId": "ENG_R4_U41",
+  "skillId": "ENG_R4_S276",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S275"
+  ],
+  "objectives": [
+    "能區分原因、結果、問題與解決方法在段落中的功能。",
+    "能避免把先後發生誤判為因果，並檢查解法是否對準問題。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S276_SEC_01",
+      "title": "原因回答 why，結果回答 what happened",
+      "content": "because、since 可引出原因，so、as a result 常引出結果。The road was wet because it rained 中，下雨是原因，道路濕是結果。換成 so 時，句序通常改為 It rained, so the road was wet。"
+    },
+    {
+      "id": "ENG_R4_L_S276_SEC_02",
+      "title": "先後不等於因果",
+      "content": "Leo opened his book, and then the bell rang 只表示兩件事依序發生，不能推成 Leo 打開書造成鐘響。要主張因果，需有 because、therefore 或事件機制支持。"
+    },
+    {
+      "id": "ENG_R4_L_S276_SEC_03",
+      "title": "問題先說明阻礙",
+      "content": "問題解決段落先指出目標受到什麼阻礙，例如 Students could not see the board clearly。解法應直接處理視線問題，如 moving the front desks closer，而不是更換午餐。"
+    },
+    {
+      "id": "ENG_R4_L_S276_SEC_04",
+      "title": "檢查解法的結果與代價",
+      "content": "有效解法要改善原問題，且文章可能補充限制。The class moved the desks, so everyone could see, but the walk space became narrow。讀者需同時保留改善與新限制，不能只讀一半。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S276_EX_01",
+      "prompt": "The wind was strong, so the boat stayed near the land.",
+      "steps": [
+        "so 前是強風。",
+        "so 後是船的反應。",
+        "判定強風造成不遠行的結果。"
+      ],
+      "answer": "Cause: strong wind; result: the boat stayed near land.",
+      "why": "連接詞明確把天氣條件與船的行動連起來，方向不能顛倒。"
+    },
+    {
+      "id": "ENG_R4_L_S276_EX_02",
+      "prompt": "The library line was long. A worker opened a second desk. The line moved faster.",
+      "steps": [
+        "長隊伍是待解決問題。",
+        "增開櫃檯是採取的方法。",
+        "隊伍加快是解法後的結果。"
+      ],
+      "answer": "Problem → second desk → faster line.",
+      "why": "第二個服務點增加處理能力，直接回應排隊過久，而第三句提供改善證據。"
+    },
+    {
+      "id": "ENG_R4_L_S276_EX_03",
+      "prompt": "Mia had on a blue coat. Ten minutes later, the rain began.",
+      "steps": [
+        "辨認兩件事的時間順序。",
+        "檢查是否有因果詞。",
+        "檢查穿外套是否能造成下雨。"
+      ],
+      "answer": "The reading shows time order, not cause.",
+      "why": "ten minutes later 只定位時間，沒有證據說藍外套導致天氣改變。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "so 後面的內容一定是原因。",
+      "whyWrong": "so 通常把前面原因帶到後面結果。",
+      "correction": "先問哪一件事解釋另一件事發生。"
+    },
+    {
+      "belief": "較早發生的事都造成較晚發生的事。",
+      "whyWrong": "時間順序本身不證明因果關係。",
+      "correction": "尋找因果詞、合理機制或明確說明。"
+    },
+    {
+      "belief": "任何正面行動都可當成問題的解法。",
+      "whyWrong": "解法必須處理文章指出的具體阻礙。",
+      "correction": "把解法的效果直接對回問題關鍵字。"
+    },
+    {
+      "belief": "問題解決後就可忽略 but 後的新限制。",
+      "whyWrong": "轉折後可能改變解法的整體評估。",
+      "correction": "同時記錄改善結果與剩餘代價。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "because 後通常提供原因還是結果？",
+      "answer": "原因",
+      "reason": "because 引出事情為何發生。"
+    },
+    {
+      "prompt": "兩件事用 then 連接，就一定有因果嗎？",
+      "answer": "不一定",
+      "reason": "then 只明示先後順序。"
+    },
+    {
+      "prompt": "教室太暗，增加照明是否對準問題？",
+      "answer": "是",
+      "reason": "增加光線直接改善看不清楚的阻礙。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

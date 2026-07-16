@@ -1,0 +1,95 @@
+{
+  "id": "ENG_R4_Q_302_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S302"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Plants near a window were taller than plants in a hallway, but the groups received different water amounts. Which claim is safest?",
+  "options": [
+    "Water had no possible effect.",
+    "Hallways stop every plant from growing.",
+    "The study cannot isolate light as the only reason.",
+    "Window light certainly caused all growth."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Water had no possible effect.：無證據排除。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Hallways stop every plant from growing.：過度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "The study cannot isolate light as the only reason.：光與水同時不同，存在混淆。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Window light certainly caused all growth.：未控制水。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "evaluate-evidence-supported-conclusion",
+    "match-claim-strength-and-scope-to-method"
+  ],
+  "representationType": "evidence-conclusion",
+  "misconceptionTargets": [
+    "overgeneralize-small-or-observational-result"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「結論的每個範圍詞與因果強度都不超過文中方法和結果」可推出 The study cannot isolate light as the only reason.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 The study cannot isolate light as the only reason. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,142 @@
+{
+  "id": "ENG_R4_L_305",
+  "subject": "english",
+  "unitId": "ENG_R4_U46",
+  "skillId": "ENG_R4_S305",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-6-4-3",
+    "AUTH-ENGLISH-LP-6-4-4",
+    "AUTH-ENGLISH-LP-6-4-6",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-7-4-4",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S304"
+  ],
+  "objectives": [
+    "把一般主張拆成必要條件。",
+    "檢查例子是否同主題且同關係。",
+    "排除有趣但不相關或反向的例子。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U46_ENG_R4_S305_SEC_1",
+      "title": "主張變成檢核表",
+      "content": "Claim: planning saves time 需要 planning action 與 time saved 兩項。只提 planner 不夠。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S305_SEC_2",
+      "title": "同主題不等於支持",
+      "content": "談 bicycles 的例子若只說顏色，不能支持 cycling improves health。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S305_SEC_3",
+      "title": "反例與弱例",
+      "content": "結果相反是反例；缺一半條件是弱例。只有條件與方向完整才是支持例。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S305_SEC_4",
+      "title": "單例限制範圍",
+      "content": "一個例子可說 illustrates，不可說 proves every case。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U46_ENG_R4_S305_EX_1",
+      "prompt": "Claim: labels prevent mix-ups. Example: labeled boxes reached correct rooms",
+      "steps": [
+        "有 labels。",
+        "有 fewer mix-ups 結果。",
+        "方向相符。"
+      ],
+      "answer": "supporting example",
+      "why": "兩必要條件皆有。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S305_EX_2",
+      "prompt": "Claim: exercise helps sleep. Example: shoes are red",
+      "steps": [
+        "只有運動物品。",
+        "無 sleep。",
+        "判不相關。"
+      ],
+      "answer": "irrelevant",
+      "why": "同主題表面不足。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S305_EX_3",
+      "prompt": "Claim: reminders reduce lateness. Example: reminder group arrived later",
+      "steps": [
+        "有 reminder。",
+        "結果方向相反。",
+        "判反例。"
+      ],
+      "answer": "counterexample",
+      "why": "不能作支持。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "有相同關鍵字就支持。",
+      "whyWrong": "可能缺關係或結果。",
+      "correction": "檢查條件表。"
+    },
+    {
+      "belief": "生動故事比相關性重要。",
+      "whyWrong": "支持取決於邏輯。",
+      "correction": "刪除裝飾後再看。"
+    },
+    {
+      "belief": "反向結果也算支持。",
+      "whyWrong": "它可能削弱主張。",
+      "correction": "核對方向。"
+    },
+    {
+      "belief": "一例可證明 always。",
+      "whyWrong": "樣本太小。",
+      "correction": "用 illustrates。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "支持例至少需什麼？",
+      "answer": "主張條件與同方向結果",
+      "reason": "兩者缺一不可。"
+    },
+    {
+      "prompt": "只同主題但無關係可用嗎？",
+      "answer": "不可",
+      "reason": "屬表面相關。"
+    },
+    {
+      "prompt": "結果相反稱什麼？",
+      "answer": "反例或削弱例",
+      "reason": "不支持原主張。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-6-4-3",
+      "AUTH-ENGLISH-LP-6-4-4",
+      "AUTH-ENGLISH-LP-6-4-6",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-7-4-4",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_260_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S260"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Sam finished the first draft and placed the teacher's checklist beside it. What will he likely do next?",
+  "options": [
+    "write a different subject forever",
+    "review the draft with the checklist",
+    "submit without reading anything",
+    "destroy the checklist"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "write a different subject forever：不连续。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "review the draft with the checklist：draft 完成、checklist 就位，下一流程是检查。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "submit without reading anything：忽略 checklist。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "destroy the checklist：无动机。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "predict-bounded-next-event",
+    "continue-goal-with-nearest-action"
+  ],
+  "representationType": "bounded-story-prediction",
+  "misconceptionTargets": [
+    "choose-dramatic-distant-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「人物目標、未解決問題與最近事件共同限制的下一步」可推出 review the draft with the checklist；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 review the draft with the checklist 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_220_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S220"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "The bus will leave the school gate at 7:40 tomorrow.\nWhen will it leave?",
+  "options": [
+    "At 7:40 tomorrow",
+    "At the school gate",
+    "After school",
+    "On Friday night"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "時刻與日期都由句子直接提供。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是出發地點，不是時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句子沒有 after school。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "也沒有星期五晚上。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u32-s220-extract-complete-departure-time",
+    "separate-time-answer-from-location"
+  ],
+  "representationType": "message-time-detail",
+  "misconceptionTargets": [
+    "answer-when-with-place"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "when 要求提取時間欄位。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "答案同時保留 tomorrow 與 7:40。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

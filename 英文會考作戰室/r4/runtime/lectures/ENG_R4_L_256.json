@@ -1,0 +1,136 @@
+{
+  "id": "ENG_R4_L_256",
+  "subject": "english",
+  "unitId": "ENG_R4_U38",
+  "skillId": "ENG_R4_S256",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S255"
+  ],
+  "objectives": [
+    "從動作與對話推論人物感受。",
+    "將情緒強度限制在文字證據內。",
+    "區分人物感受與讀者對事件的評價。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U38_ENG_R4_S256_SEC_1",
+      "title": "情緒常不直接命名",
+      "content": "人物可能握緊紙張、反覆確認或鬆一口氣。將可觀察行動轉成可能感受，但避免把單一動作固定成唯一情緒。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S256_SEC_2",
+      "title": "對話回應是驗證",
+      "content": "Don't worry、Congratulations、I'm sorry 等回應顯示對方理解到的情緒或事件。和人物自己的話一起讀。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S256_SEC_3",
+      "title": "同一動作需看情境",
+      "content": "cry 可因悲傷或喜悅；silence 可因害羞、憤怒或思考。情境與結果決定。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S256_SEC_4",
+      "title": "強度校準",
+      "content": "nervous 不必推成 terrified，pleased 不必推 ecstatic。選能由兩項證據支持的最小情緒。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U38_ENG_R4_S256_EX_1",
+      "prompt": "Mia read her name on the winner list and covered her mouth with both hands.",
+      "steps": [
+        "winner 是好消息。",
+        "cover mouth 表意外。",
+        "合成 pleasantly surprised。"
+      ],
+      "answer": "surprised and happy",
+      "why": "不是 afraid。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S256_EX_2",
+      "prompt": "Ben checked his ticket again and asked, 'Are you sure this is the right gate?'",
+      "steps": [
+        "反覆 check。",
+        "Are you sure。",
+        "顯示 worried/uncertain。"
+      ],
+      "answer": "uncertain",
+      "why": "不能推 furious。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S256_EX_3",
+      "prompt": "Nora smiled after the doctor said the injury was minor.",
+      "steps": [
+        "先有 injury worry。",
+        "minor 降低風險。",
+        "smile 表 relief。"
+      ],
+      "answer": "relieved",
+      "why": "不是 proud。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "笑一定只是開心。",
+      "whyWrong": "也可表示放心或禮貌。",
+      "correction": "看前後事件。"
+    },
+    {
+      "belief": "沉默一定生氣。",
+      "whyWrong": "可能緊張或思考。",
+      "correction": "找對話與動作。"
+    },
+    {
+      "belief": "情緒越強越好。",
+      "whyWrong": "強度需匹配證據。",
+      "correction": "採最小充分標籤。"
+    },
+    {
+      "belief": "用自己的感受代替人物。",
+      "whyWrong": "題目問文本角色。",
+      "correction": "回到角色言行。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Don't worry 常支持哪類感受？",
+      "answer": "擔心或緊張",
+      "reason": "回應提供驗證。"
+    },
+    {
+      "prompt": "cry 能單獨判定悲傷嗎？",
+      "answer": "不能",
+      "reason": "需看情境。"
+    },
+    {
+      "prompt": "strong emotion 需要什麼？",
+      "answer": "同等強度文字證據",
+      "reason": "不可升級。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

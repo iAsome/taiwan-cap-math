@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_221_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S221"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Which line can close an e-mail to a teacher after the student has answered the question?",
+  "options": [
+    "Hi teacher?",
+    "To: Mr. Lin",
+    "Thank you,\nMina",
+    "Subject: My answer"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這像不自然的開頭問句。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是收件欄。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "感謝語與學生署名可放在正文後。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這是主旨欄，不是結尾。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s221-distinguish-closing-from-header-lines",
+    "locate-valid-post-body-signoff"
+  ],
+  "representationType": "email-closing-format",
+  "misconceptionTargets": [
+    "choose-header-as-ending"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題目已說正文完成，因此只需辨認結尾格式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "正確選項同時具有結尾語與署名。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_240_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S240"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A paragraph says the lake is cleaner now. It then gives lower waste numbers and more fish. Which marker best introduces those details?",
+  "options": [
+    "For example",
+    "On the other hand",
+    "As a result",
+    "Before"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "For example：數據與魚量是湖變乾淨的具體支持例。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "On the other hand：細節支持而非提出另一面。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "As a result：細節是證據，不一定都是變乾淨後才發生的結果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Before：Before 需要時間比較，題幹未設此結構。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "use-discourse-marker",
+    "choose-example-for-supporting-details"
+  ],
+  "representationType": "paragraph-marker-selection",
+  "misconceptionTargets": [
+    "overstate-evidence-as-causation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「標記詞宣告的轉折、因果或例證功能」可推出 For example；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 For example 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

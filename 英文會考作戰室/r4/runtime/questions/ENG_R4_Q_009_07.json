@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_009_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S009"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-2",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-2-4-1",
+    "AUTH-ENGLISH-LP-2-4-3",
+    "AUTH-ENGLISH-LP-6-4-1",
+    "AUTH-ENGLISH-LP-6-4-2",
+    "AUTH-ENGLISH-LP-7-4-5"
+  ],
+  "stimulusId": null,
+  "stem": "Teacher: 'Take a card and read it aloud.' Which action must provide the object for the second step?",
+  "options": [
+    "taking a chair",
+    "speaking before choosing any card",
+    "taking a card",
+    "reading an absent card"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "taking a chair：受詞錯。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "speaking before choosing any card：不合 it 回指。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "taking a card：先取得 card 才能 read it。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "reading an absent card：無對象。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "sequence-two-action-command",
+    "extract-two-actions-and-order"
+  ],
+  "representationType": "two-step-classroom-command",
+  "misconceptionTargets": [
+    "perform-only-last-or-reverse-sequence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-2",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-2-4-1",
+      "AUTH-ENGLISH-LP-2-4-3",
+      "AUTH-ENGLISH-LP-6-4-1",
+      "AUTH-ENGLISH-LP-6-4-2",
+      "AUTH-ENGLISH-LP-7-4-5"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「and、then、before、after 建立兩個課堂動作的先後或並列關係」可推出 taking a card；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 taking a card 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

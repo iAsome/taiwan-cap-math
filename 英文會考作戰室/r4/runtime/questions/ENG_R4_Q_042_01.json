@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_042_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S042"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "There are six chairs for five guests. Which statement is supported?",
+  "options": [
+    "There are enough chairs.",
+    "There are exactly enough chairs with none left.",
+    "There is a little chairs.",
+    "The chairs are enough five."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "There are enough chairs.：六把椅子達到五人需求。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "There are exactly enough chairs with none left.：其實多一把，不能說剛好零剩餘。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "There is a little chairs.：量詞與數不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "The chairs are enough five.：語序錯誤。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "judge-large-or-sufficient-quantity",
+    "match-quantifier-syntax-and-compare-available-amount-with-threshold"
+  ],
+  "representationType": "large-and-sufficient-quantity",
+  "misconceptionTargets": [
+    "equate-large-amount-with-sufficiency-or-misplace-enough"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「使用 a lot of 表大量，enough 表達達到情境門檻，並依名詞可數性、形容詞位置與明示需求判斷是否充足。」可推出 There are enough chairs.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 There are enough chairs. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

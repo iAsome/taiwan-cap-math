@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_274_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S274"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence should come before 'It had one white foot and a long tail'?",
+  "options": [
+    "A black cat came into the yard.",
+    "The yard was quiet after lunch.",
+    "We put water near the tree.",
+    "Our neighbor closed her window."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "這句先介紹單數動物，It 可清楚回指黑貓。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "yard 是地點，沒有腳與尾巴。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "water 無法合理擁有腳和尾巴。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "neighbor 是人，不符合後句的動物特徵。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u41-s274-q01-supply-animal-antecedent",
+    "match-pronoun-number-and-features"
+  ],
+  "representationType": "antecedent-selection",
+  "misconceptionTargets": [
+    "choose-nearest-place-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先行詞需同時符合單數形式與語意特徵。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項讓後句的 It 只有一個合理對象。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_274_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S274"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Sam put the cup beside the phone after it fell. Why is the sentence unclear?",
+  "options": [
+    "A cup cannot be beside a phone.",
+    "Sam cannot move a cup.",
+    "The sentence has no past-time verb.",
+    "Either the cup or the phone may be what fell."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩件物品可以相鄰。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "put 已表明 Sam 能移動杯子。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "put 與 fell 都可表過去事件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "it 在兩個單數物品後沒有足夠線索限定先行詞。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u41-s274-q08-diagnose-object-pronoun-ambiguity",
+    "recognize-two-valid-antecedents"
+  ],
+  "representationType": "ambiguous-object-reference",
+  "misconceptionTargets": [
+    "force-it-to-nearest-phone"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "不清楚之處是代名詞對象，而非事件可行性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項完整列出兩個文法與語意上可行的候選。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

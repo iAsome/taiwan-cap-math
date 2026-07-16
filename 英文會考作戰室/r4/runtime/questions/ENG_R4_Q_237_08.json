@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_237_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S237"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The class won the city contest. It surprised even their teacher. What caused the surprise?",
+  "options": [
+    "the city",
+    "the teacher",
+    "the class's winning",
+    "the contest building"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the city：city 只是比賽範圍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the teacher：teacher 是感到驚訝的人。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "the class's winning：surprised 評論的是全班獲勝這件事。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the contest building：原文沒有比賽建築物。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "resolve-pronoun-antecedent",
+    "map-it-to-proposition"
+  ],
+  "representationType": "event-cause-reference",
+  "misconceptionTargets": [
+    "search-only-for-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「代名詞的數量、類型與後續動作」可推出 the class's winning；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 the class's winning 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_224_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S224"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Message: The game is canceled.\nReply: Great, I will see you at the game.\nWhat is wrong?",
+  "options": [
+    "The reply gives no game score.",
+    "The message names no team.",
+    "The reply plans to attend an event that will not happen.",
+    "The word great is too short."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "原訊息沒有要求比分。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "隊名不是理解取消狀態的必要資訊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "回覆仍打算到場，和 canceled 直接矛盾。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "問題在內容衝突，不在字數。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u32-s224-detect-canceled-event-reply-contradiction",
+    "prioritize-semantic-conflict-over-style"
+  ],
+  "representationType": "message-reply-contradiction",
+  "misconceptionTargets": [
+    "focus-on-missing-unrequested-detail"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先比較事件狀態，再判斷回覆行動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "語氣詞不能掩蓋取消與出席的矛盾。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

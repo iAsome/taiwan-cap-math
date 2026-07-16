@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_036_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S036"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which is the standard plural of 'roof'?",
+  "options": [
+    "roof",
+    "roofs",
+    "rooves",
+    "roofes"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "roof：未形成複數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "roofs：roof 是直接加 -s 的常見 -f 例外。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "rooves：過度套用 f→ves。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "roofes：不需 -es。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "form-regular-count-noun-plurals",
+    "apply-ending-rule-and-sentence-number-agreement"
+  ],
+  "representationType": "regular-plural-formation",
+  "misconceptionTargets": [
+    "append-s-without-checking-ending-or-context"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「依可數名詞字尾拼寫與語音規則形成 -s、-es、子音+y→-ies 等規則複數，並使限定詞與動詞一致。」可推出 roofs；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 roofs 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

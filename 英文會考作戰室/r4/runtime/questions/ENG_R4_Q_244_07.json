@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_244_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S244"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10"
+  ],
+  "stimulusId": null,
+  "stem": "The museum added seats beside long displays, printed larger words, and opened a quiet room. More visitors can now enjoy the visit comfortably.\nWhich answer is supported by the full text?",
+  "options": [
+    "Every museum must use the same rooms",
+    "The displays became shorter",
+    "The museum made visits more comfortable for more people",
+    "The museum printed larger words"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Every museum must use the same rooms：原文沒有普遍規定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "The displays became shorter：文章只說旁邊增設 seats。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "The museum made visits more comfortable for more people：多項改變共同服務末句的可用性與舒適。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "The museum printed larger words：只涵蓋一項改變。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-gist-from-repeated-concepts",
+    "generalize-repeated-concepts"
+  ],
+  "representationType": "gist-reading",
+  "misconceptionTargets": [
+    "copy-one-example"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「多句以重複、同義或因果方式回到的共同概念」可推出 The museum made visits more comfortable for more people；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 The museum made visits more comfortable for more people 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

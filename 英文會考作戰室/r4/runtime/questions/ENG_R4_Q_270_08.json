@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_270_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S270"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-1-4-9",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: Watch out—the floor is wet! B: Thanks for the warning. What is A's tone?",
+  "options": [
+    "thankful",
+    "urgent and cautioning",
+    "playful",
+    "sleepy"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "thankful：B 才是道謝者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "urgent and cautioning：Watch out、wet floor 與 warning 明示警急提醒。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "playful：安全風險不支持玩笑。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "sleepy：沒有疲累。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "infer-speaker-emotion",
+    "combine-utterance-and-response"
+  ],
+  "representationType": "dialogue-emotion",
+  "misconceptionTargets": [
+    "judge-emotion-from-punctuation-alone"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-1-4-9",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「語調標記、內容、標點與對方回應共同顯示的當下情緒」可推出 urgent and cautioning；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 urgent and cautioning 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

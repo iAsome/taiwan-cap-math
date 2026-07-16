@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_275_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S275"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Many small actions can save water at home. Which sentence is a fitting example?",
+  "options": [
+    "Water covers much of the earth.",
+    "Turn off the water while brushing your teeth.",
+    "The kitchen window faces east.",
+    "Some cups are made of glass."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是關於地球水量的一般事實，不是居家節水動作。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "刷牙時關水是個人可做的具體節水行動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "窗戶方向不影響用水。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "杯子材質沒有說明如何少用水。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u41-s275-q02-select-home-water-saving-example",
+    "test-example-against-three-part-category"
+  ],
+  "representationType": "example-selection",
+  "misconceptionTargets": [
+    "match-only-water-topic"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "例子必須同時符合 small action、save water 與 at home。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項把抽象建議轉成可執行行為。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

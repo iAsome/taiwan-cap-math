@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_028_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S028"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence describes past singular existence?",
+  "options": [
+    "There is a bridge here in 1990.",
+    "There are bridges here in 1990.",
+    "There was a bridge here in 1990.",
+    "There were a bridge here in 1990."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "There is a bridge here in 1990.：現在式與過去年份不合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "There are bridges here in 1990.：數與時態都改變。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "There was a bridge here in 1990.：a bridge 單數且 1990 為過去。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "There were a bridge here in 1990.：單數不搭 were。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "select-existence-by-number-and-time",
+    "coordinate-postverbal-number-with-local-time"
+  ],
+  "representationType": "existence-number-time",
+  "misconceptionTargets": [
+    "choose-be-from-time-or-nearest-item-alone"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「依存在物核心名詞的數與事件時間，選擇 there is/are 或 there was/were，並在多項清單中保持資訊精確。」可推出 There was a bridge here in 1990.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 There was a bridge here in 1990. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

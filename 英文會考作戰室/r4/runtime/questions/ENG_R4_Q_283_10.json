@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_283_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S283"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Choose an accurate statement about bus riders.",
+  "options": [
+    "Route B carried 28 riders.",
+    "Route A carried fewer riders than Route B.",
+    "All routes carried 22 riders.",
+    "Route C carried the most riders, with 28."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Route B carried 28 riders.：Route B 是 16。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Route A carried fewer riders than Route B.：22 高於 16。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "All routes carried 22 riders.：只有 Route A 是 22。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Route C carried the most riders, with 28.：Route C 28 為最高。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "verbalize-chart-evidence",
+    "align-subject-comparison-value-and-scope"
+  ],
+  "representationType": "chart-to-sentence",
+  "misconceptionTargets": [
+    "overstate-or-reverse-chart-trend"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「英文句中的主詞、比較方向、數值與範圍全部對應圖表」可推出 Route C carried the most riders, with 28.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 Route C carried the most riders, with 28. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "ENG_R4_FIG_42_10"
+  ]
+}

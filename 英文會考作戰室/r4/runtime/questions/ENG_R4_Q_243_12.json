@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_243_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S243"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10"
+  ],
+  "stimulusId": null,
+  "stem": "The old market has narrow paths, small food stands, and a music stage. Visitors come for dinner but often stay for the evening shows.\nWhat would be the best answer after reading every sentence?",
+  "options": [
+    "a quiet place to study",
+    "the old market experience",
+    "the music stage",
+    "the history of every market"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "a quiet place to study：市場有餐飲與表演，非安靜自習地。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "the old market experience：場地、食物與表演共同描述市場提供的體驗。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the music stage：只涵蓋市場的一個區域。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the history of every market：文章未談歷史或其他市場。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "distinguish-topic-from-detail",
+    "apply-whole-paragraph-coverage"
+  ],
+  "representationType": "topic-detail-reading",
+  "misconceptionTargets": [
+    "choose-salient-detail"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「能涵蓋多句的共同對象，而非只出現一次的細節」可推出 the old market experience；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 the old market experience 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

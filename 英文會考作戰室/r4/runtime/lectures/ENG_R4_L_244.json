@@ -1,0 +1,136 @@
+{
+  "id": "ENG_R4_L_244",
+  "subject": "english",
+  "unitId": "ENG_R4_U36",
+  "skillId": "ENG_R4_S244",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10"
+  ],
+  "prerequisites": [
+    "ENG_R4_S243"
+  ],
+  "objectives": [
+    "合併重複詞與同義改寫，歸納段落大意。",
+    "將多個例子提升為不過度的共同概念。",
+    "避免只抄第一句或最後一句。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U36_ENG_R4_S244_SEC_1",
+      "title": "把詞鏈合併",
+      "content": "同一概念可能以 help、support、give a hand 出現。先圈出反覆回來的詞鏈，再問它們共同說明什麼。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S244_SEC_2",
+      "title": "從例子往上一層",
+      "content": "若段落列出帶自己的杯子、關燈、步行，不能只選其中一項；應歸納成 daily actions that help the environment，但也不能擴到所有全球問題。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S244_SEC_3",
+      "title": "加入作者說了什麼",
+      "content": "大意不只命名主題，還要包含核心訊息。例如主題是 school lunch，大意可能是 students helped improve the lunch，而非只寫 lunch。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S244_SEC_4",
+      "title": "用刪句測試",
+      "content": "若拿掉某一個例子，正確大意仍應成立；若拿掉所有重複概念後候選就失去支持，表示它確實抓到段落共同核心。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U36_ENG_R4_S244_EX_1",
+      "prompt": "Bring a cup. Use both sides of paper. Turn off lights.",
+      "steps": [
+        "三句都是日常行動。",
+        "共同結果是減少資源浪費。",
+        "歸納而不列舉。"
+      ],
+      "answer": "Small daily choices can reduce waste.",
+      "why": "涵蓋三例且沒有擴張到未談政策。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S244_EX_2",
+      "prompt": "Neighbors cooked, carried boxes, and cleaned after the event.",
+      "steps": [
+        "三個動詞主詞相同。",
+        "都是協助活動。",
+        "提升為共同概念。"
+      ],
+      "answer": "Neighbors helped make the event work.",
+      "why": "不只重述其中一項工作。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S244_EX_3",
+      "prompt": "The first and last sentence both mention safer streets; middle sentences explain lights and signs.",
+      "steps": [
+        "重複概念為 safer。",
+        "中間提供方法。",
+        "組成大意。"
+      ],
+      "answer": "Lights and signs made the streets safer.",
+      "why": "方法與核心結果都被保留。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "把例子全部抄進答案才完整。",
+      "whyWrong": "大意應壓縮共同概念。",
+      "correction": "保留上位訊息與必要結果。"
+    },
+    {
+      "belief": "同一字出現最多就直接拿來當大意。",
+      "whyWrong": "需要說明作者對它的中心訊息。",
+      "correction": "將主題與主要動作或評價結合。"
+    },
+    {
+      "belief": "任何環保例子都能推到全球氣候。",
+      "whyWrong": "那會超出段落範圍。",
+      "correction": "只提升到能涵蓋原例的最近上位概念。"
+    },
+    {
+      "belief": "最後一句永遠是大意。",
+      "whyWrong": "最後一句可能只是最後一例。",
+      "correction": "用全段詞鏈核對。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "三個不同節水例子應如何歸納？",
+      "answer": "節水的多種日常方法",
+      "reason": "上位概念涵蓋所有例子。"
+    },
+    {
+      "prompt": "正確大意拿掉一個例子後應仍成立嗎？",
+      "answer": "應",
+      "reason": "它描述共同核心而非單一細節。"
+    },
+    {
+      "prompt": "只寫 school garden 足以成為大意嗎？",
+      "answer": "通常不足",
+      "reason": "還需說明文章對花園的主要訊息。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_030_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence uses the for a unique role in the local situation?",
+  "options": [
+    "A principal of our school, but nobody knows which one, will speak.",
+    "Principal the will our speak.",
+    "An principal speaks.",
+    "The principal will speak at our school assembly."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "A principal of our school, but nobody knows which one, will speak.：描述與局部唯一角色矛盾。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Principal the will our speak.：語序錯誤。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "An principal speaks.：發音與功能不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "The principal will speak at our school assembly.：our school 的校長在此局部情境可辨認。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "use-definite-article-for-identifiable-reference",
+    "establish-listener-identifiability"
+  ],
+  "representationType": "definite-article-reference",
+  "misconceptionTargets": [
+    "equate-speaker-specific-with-shared-reference"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「以先前提及、情境唯一、後置限定或共同知識判斷聽者能否辨認名詞，據此使用 the。」可推出 The principal will speak at our school assembly.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 The principal will speak at our school assembly. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_223_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S223"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Post: I tried the new bus route once, so it is always the fastest way to school.\nWhat is the problem with this claim?",
+  "options": [
+    "A bus cannot go to school.",
+    "The writer did not ride a bus.",
+    "Fast travel is never useful.",
+    "One trip is not enough to prove 'always'."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "公車可以作為上學交通。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "tried the new bus route 表示確實搭過。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這是無關且絕對的否定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "一次經驗不足以支持每次都最快的廣泛結論。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u32-s223-challenge-always-from-single-experience",
+    "compare-claim-scope-with-evidence-size"
+  ],
+  "representationType": "social-post-overgeneralization",
+  "misconceptionTargets": [
+    "reject-true-background-instead-of-weak-inference"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "always 需要比單次經驗更廣的證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "批判重點是證據範圍，而不是否定交通工具。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_019_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S019"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-7"
+  ],
+  "stimulusId": null,
+  "stem": "Two people ride the same bus every day but never speak. Which relationship is proven?",
+  "options": [
+    "They are work partners.",
+    "They are regular passengers on the same bus.",
+    "They are best friends.",
+    "They are family members."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "They are work partners.：沒有工作資訊。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "They are regular passengers on the same bus.：只可確認共同乘車，不能加入更強關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "They are best friends.：沒有互動或 friend 證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "They are family members.：沒有親屬詞。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "identify-family-friend-and-relationship",
+    "trace-possessive-kinship-and-explicit-role"
+  ],
+  "representationType": "relationship-evidence",
+  "misconceptionTargets": [
+    "infer-family-or-friendship-without-evidence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-7"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「根據親屬詞、所有格、共同活動與明示關係，判斷人物關係而不加入未提供的假設。」可推出 They are regular passengers on the same bus.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 They are regular passengers on the same bus. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

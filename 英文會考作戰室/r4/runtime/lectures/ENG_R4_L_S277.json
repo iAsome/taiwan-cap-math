@@ -1,0 +1,141 @@
+{
+  "id": "ENG_R4_L_S277",
+  "subject": "english",
+  "unitId": "ENG_R4_U41",
+  "skillId": "ENG_R4_S277",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S276"
+  ],
+  "objectives": [
+    "能依指示詞、重複概念與邏輯關係判斷插入句位置。",
+    "能同時檢查插入句前後兩側，而非只配對一個關鍵字。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S277_SEC_01",
+      "title": "插入句要有前接點",
+      "content": "以 This change、These animals、For this reason 開頭的句子，需要前文先提供 change、animals 或 reason 的內容。若把它放在相關資訊之前，指示詞就沒有清楚對象。"
+    },
+    {
+      "id": "ENG_R4_L_S277_SEC_02",
+      "title": "也要有後接功能",
+      "content": "插入句不只回顧前文，也常為下一句鋪路。句子說 The new window also saved energy，後句若接 As a result, the school paid less for power，兩句形成特點到結果的關係。"
+    },
+    {
+      "id": "ENG_R4_L_S277_SEC_03",
+      "title": "轉折與例子決定縫隙",
+      "content": "However 應放在可形成對比的兩句之間；For example 應放在一般概念之後、具體說明之前。先標示句子功能，再找前後關係都成立的位置。"
+    },
+    {
+      "id": "ENG_R4_L_S277_SEC_04",
+      "title": "代入每個空格完整朗讀",
+      "content": "同一個名詞可能在多處出現，只有一處能讓代名詞、時態與邏輯同時順暢。逐一代入候選位置，檢查前句是否提供已知資訊、後句是否自然承接。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S277_EX_01",
+      "prompt": "Sentence to add: This small change saved ten minutes each morning. Reading: The family put all keys beside the door. [ ] No one had to look for a key before leaving.",
+      "steps": [
+        "This small change 回指把鑰匙集中。",
+        "saved ten minutes 應先於不用找鑰匙的說明。",
+        "放入唯一空格後形成做法與結果。"
+      ],
+      "answer": "Add it between the two given sentences.",
+      "why": "前句提供 change 的內容，後句解釋節省時間的具體原因，兩側都能銜接。"
+    },
+    {
+      "id": "ENG_R4_L_S277_EX_02",
+      "prompt": "Sentence to add: However, the room became too hot in the afternoon. Reading: The large windows gave the room more light. [ ] The class then added a light cover.",
+      "steps": [
+        "However 要對比 more light 的好處。",
+        "too hot 提出新問題。",
+        "added a cover 是對問題的處理。"
+      ],
+      "answer": "Place it after the first sentence.",
+      "why": "插入句把優點轉成熱度問題，後句的加裝遮蓋才有明確動機。"
+    },
+    {
+      "id": "ENG_R4_L_S277_EX_03",
+      "prompt": "Sentence to add: For example, students can borrow a ball at lunch. Reading: The new desk lends things for free. [ ] It also keeps board games for rainy days.",
+      "steps": [
+        "For example 需要一般服務概念。",
+        "借球是 lends things 的具體例子。",
+        "It also 再增加另一項服務。"
+      ],
+      "answer": "Add the example before the last sentence.",
+      "why": "順序由總說、具例到另一項補充；若把例句放段首，讀者尚不知道它在例證什麼。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只要插入句與某句都有 school，就可放在旁邊。",
+      "whyWrong": "重複名詞不足以建立完整邏輯。",
+      "correction": "同時檢查指示詞、句子功能與後續結果。"
+    },
+    {
+      "belief": "However 可以放在兩個意思相同的句子中間。",
+      "whyWrong": "However 需要前後存在可辨認的對比。",
+      "correction": "找出好處與限制、預期與實際等反向關係。"
+    },
+    {
+      "belief": "For example 句應永遠放在全文第一句。",
+      "whyWrong": "例子通常需要前文先提出上位概念。",
+      "correction": "先總說，再放能具體支持它的例子。"
+    },
+    {
+      "belief": "找到合理前句後，不必看插入句後面。",
+      "whyWrong": "錯誤位置也可能只在後接處露出問題。",
+      "correction": "每次都讀前句、插入句與後句三段。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "This result 之前需要什麼？",
+      "answer": "能產生該結果的事件或資料",
+      "reason": "this 必須回指已知內容。"
+    },
+    {
+      "prompt": "However 應連接相似還是對比資訊？",
+      "answer": "對比資訊",
+      "reason": "它提示讀者方向發生轉折。"
+    },
+    {
+      "prompt": "判斷空格時只讀前一句夠嗎？",
+      "answer": "不夠",
+      "reason": "插入句也必須讓後一句自然接續。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

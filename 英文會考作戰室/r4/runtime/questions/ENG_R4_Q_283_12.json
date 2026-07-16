@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_283_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S283"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Which description matches the class-seat shares?",
+  "options": [
+    "All classes had equal shares.",
+    "Dance had half of all seats, the largest share.",
+    "Cooking had half of all seats.",
+    "English had a larger share than Dance."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "All classes had equal shares.：三比例不同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Dance had half of all seats, the largest share.：Dance 是 50%，也是最高。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Cooking had half of all seats.：Cooking 是 20%。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "English had a larger share than Dance.：30% 低於 50%。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "verbalize-chart-evidence",
+    "align-subject-comparison-value-and-scope"
+  ],
+  "representationType": "chart-to-sentence",
+  "misconceptionTargets": [
+    "overstate-or-reverse-chart-trend"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「英文句中的主詞、比較方向、數值與範圍全部對應圖表」可推出 Dance had half of all seats, the largest share.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Dance had half of all seats, the largest share. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "ENG_R4_FIG_42_12"
+  ]
+}

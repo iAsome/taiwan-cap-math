@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_263_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S263"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The print was faint, so Mia moved the paper closer to the light. What does faint mean?",
+  "options": [
+    "too large for the paper",
+    "full of mistakes",
+    "hard to see",
+    "written in another language"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "too large for the paper：大小不需移近 light。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "full of mistakes：正確性與亮度無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "hard to see：移近 light 是為了看清淡弱文字。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "written in another language：光線不能解決語言。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "infer-word-from-cause-effect",
+    "infer-minimal-cause-from-result"
+  ],
+  "representationType": "cause-effect-vocabulary",
+  "misconceptionTargets": [
+    "ignore-result-clue"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「陌生字所在原因與後句結果形成可驗證的事件鏈」可推出 hard to see；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 hard to see 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

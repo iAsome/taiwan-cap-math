@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_021_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S021"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-7"
+  ],
+  "stimulusId": null,
+  "stem": "You hear, 'I'm in the school band.' Which response shows active listening?",
+  "options": [
+    "My sandwich has no band.",
+    "Never tell me about music.",
+    "What is your house number?",
+    "That's interesting. What instrument do you play?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "My sandwich has no band.：關鍵字誤解且不相關。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Never tell me about music.：拒絕互動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "What is your house number?：轉向不必要的敏感資訊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "That's interesting. What instrument do you play?：先回應，再追問樂團相關資訊。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "manage-natural-first-meeting-turns",
+    "respond-extend-and-close-from-prior-turn"
+  ],
+  "representationType": "first-meeting-turn-sequence",
+  "misconceptionTargets": [
+    "deliver-script-without-answering-previous-speaker"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-7"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「以招呼、介紹、回應、追問與收束的功能鏈安排輪次，並讓每一輪承接前一輪的新資訊。」可推出 That's interesting. What instrument do you play?；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 That's interesting. What instrument do you play? 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

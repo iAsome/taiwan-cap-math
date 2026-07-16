@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_229_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S229"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A. It starts at three, so we should leave by two.\nB. Fine. I will meet you outside the station.\nC. What time does the show begin?\nD. The train ride takes about forty minutes.\nWhich order creates a complete travel plan?",
+  "options": [
+    "D-C-A-B",
+    "C-A-D-B",
+    "A-D-C-B",
+    "C-D-A-B"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "車程資訊先出現但 show 時間問題被延後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩點離開的結論在知道車程前。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "A 的 it 在 show 尚未提出前。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "先問開演、得知車程、推算離開時間，再確認碰面。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "order-show-time-and-travel-calculation"
+  ],
+  "representationType": "multi-fact-planning-order",
+  "misconceptionTargets": [
+    "calculate-departure-before-travel-duration"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "so 的離開結論需要開演時間和車程兩項資料。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "outside the station 是完成計畫後的收束地點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_219_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S219"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Please send me the class picture before Friday.\nWhat does the writer want?",
+  "options": [
+    "The reader to send a picture",
+    "The class to meet on Friday",
+    "A new camera",
+    "The reader to visit"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Please send me 直接要求收件者傳照片。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Friday 是期限，不是會面日期。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "訊息沒有提到購買相機。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "也沒有要求到某個地點。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s219-extract-requested-action-from-please",
+    "separate-deadline-from-event-purpose"
+  ],
+  "representationType": "message-purpose-request",
+  "misconceptionTargets": [
+    "turn-send-request-into-meeting"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "請求中的動詞指出收件者要做的事。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "期限不能被誤認成另一個活動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

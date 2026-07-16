@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_287_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S287"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Notice: Use Route 3 while Route 1 is repaired. Schedule: Route 1 7:20; Route 3 7:35. Which departure follows the notice?",
+  "options": [
+    "Route 1 at 7:20",
+    "either route",
+    "Route 3 at 7:20",
+    "Route 3 at 7:35"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Route 1 at 7:20：正在維修。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "either route：Route 1 被排除。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Route 3 at 7:20：跨列拼接。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Route 3 at 7:35：公告指定 repair 期間用 Route 3。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "combine-announcement-and-schedule",
+    "apply-notice-constraint-to-schedule"
+  ],
+  "representationType": "announcement-plus-timetable",
+  "misconceptionTargets": [
+    "choose-schedule-row-without-announcement-rule"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「公告條件套入時刻表的時間、地點與狀態後判斷方案是否可行」可推出 Route 3 at 7:35；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 Route 3 at 7:35 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

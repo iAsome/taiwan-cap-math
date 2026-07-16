@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_012_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-2",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-2-4-1",
+    "AUTH-ENGLISH-LP-2-4-3",
+    "AUTH-ENGLISH-LP-6-4-1",
+    "AUTH-ENGLISH-LP-6-4-2",
+    "AUTH-ENGLISH-LP-7-4-5"
+  ],
+  "stimulusId": null,
+  "stem": "Teacher: 'Did you finish question three?' Choose the negative short answer.",
+  "options": [
+    "No, you don't.",
+    "No, I haven't tomorrow.",
+    "No, I didn't.",
+    "No, I wasn't."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "No, you don't.：角色時態錯。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "No, I haven't tomorrow.：時間不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "No, I didn't.：Did 問句否定簡答用 didn't。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "No, I wasn't.：be 不合。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "respond-to-rollcall-and-class-question",
+    "match-prompt-type-and-auxiliary"
+  ],
+  "representationType": "rollcall-classroom-response",
+  "misconceptionTargets": [
+    "use-yes-no-for-information-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-2",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-2-4-1",
+      "AUTH-ENGLISH-LP-2-4-3",
+      "AUTH-ENGLISH-LP-6-4-1",
+      "AUTH-ENGLISH-LP-6-4-2",
+      "AUTH-ENGLISH-LP-7-4-5"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「點名、是非問句與簡短資訊問句各要求人物一致且功能充分的口語回應」可推出 No, I didn't.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 No, I didn't. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

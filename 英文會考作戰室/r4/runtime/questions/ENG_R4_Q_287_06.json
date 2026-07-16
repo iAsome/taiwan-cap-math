@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_287_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S287"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Announcement: Choose a bus marked ACCESSIBLE. Timetable: 8:10 Bus 2 STANDARD; 8:25 Bus 4 ACCESSIBLE. Which bus fits?",
+  "options": [
+    "Bus 2 at 8:10",
+    "either bus",
+    "no listed bus",
+    "Bus 4 at 8:25"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Bus 2 at 8:10：狀態是 STANDARD。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "either bus：只有一班符合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "no listed bus：Bus 4 可行。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Bus 4 at 8:25：Bus 4 同列標 ACCESSIBLE。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "combine-announcement-and-schedule",
+    "apply-notice-constraint-to-schedule"
+  ],
+  "representationType": "announcement-plus-timetable",
+  "misconceptionTargets": [
+    "choose-schedule-row-without-announcement-rule"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「公告條件套入時刻表的時間、地點與狀態後判斷方案是否可行」可推出 Bus 4 at 8:25；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 Bus 4 at 8:25 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

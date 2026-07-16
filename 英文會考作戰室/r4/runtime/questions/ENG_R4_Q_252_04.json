@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_252_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S252"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "A coat drive accepts clean coats through November 20. Leo washed his coat on November 18 and brought it on November 19. Is it accepted?",
+  "options": [
+    "Yes, because every kind of clothing is accepted",
+    "Yes, it is clean and arrives before the deadline",
+    "No, it was washed too early",
+    "No, the drive ended November 18"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Yes, because every kind of clothing is accepted：原文只說 coats，理由擴張。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Yes, it is clean and arrives before the deadline：兩句分別證明 clean 與 deadline 前送達。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "No, it was washed too early：沒有最早清洗限制。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "No, the drive ended November 18：期限是 November 20。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "integrate-separated-details",
+    "intersect-multiple-constraints"
+  ],
+  "representationType": "separated-detail-integration",
+  "misconceptionTargets": [
+    "stop-after-one-matching-detail"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「相隔句子分別提供的條件合併後得到唯一答案」可推出 Yes, it is clean and arrives before the deadline；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Yes, it is clean and arrives before the deadline 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

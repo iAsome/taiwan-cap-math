@@ -1,0 +1,130 @@
+{
+  "id": "ENG_R4_L_026",
+  "subject": "english",
+  "unitId": "ENG_R4_U04",
+  "skillId": "ENG_R4_S026",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S025"
+  ],
+  "objectives": [
+    "配對 I/me、he/him、she/her、we/us、they/them。",
+    "以句法位置判斷主格或受格。",
+    "在並列人物中用刪除測試檢查形式。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U04_ENG_R4_S026_SEC_1",
+      "title": "主格放在動詞前執行動作",
+      "content": "I read；She called；They arrived。主格通常是有限動詞的主詞。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S026_SEC_2",
+      "title": "受格接受動作或位於介系詞後",
+      "content": "Mia saw him；The gift is for us。for、to、with 等介系詞後用受格。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S026_SEC_3",
+      "title": "you 與 it 形式相同",
+      "content": "主格與受格拼法相同，仍要理解角色：You called me；I called you。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S026_SEC_4",
+      "title": "並列時做刪除測試",
+      "content": "Ken and I went 可刪 Ken 得 I went；She helped Ken and me 可刪 Ken 得 helped me。不要因 and 就一律用 I。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U04_ENG_R4_S026_EX_1",
+      "prompt": "___ opened the gate. (she/her)",
+      "steps": [
+        "空格在動詞 opened 前。",
+        "執行開門動作。",
+        "選主格 she。"
+      ],
+      "answer": "She",
+      "why": "主詞位置要求主格。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S026_EX_2",
+      "prompt": "The teacher spoke to ___. (we/us)",
+      "steps": [
+        "to 是介系詞。",
+        "代名詞在介系詞後。",
+        "選受格 us。"
+      ],
+      "answer": "us",
+      "why": "介系詞受詞使用受格。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S026_EX_3",
+      "prompt": "Leo and ___ finished. (I/me)",
+      "steps": [
+        "並列整體作主詞。",
+        "刪 Leo 後是 I finished。",
+        "選 I。"
+      ],
+      "answer": "I",
+      "why": "刪除測試確認主格。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "人名前有 and 就一定用 I。",
+      "whyWrong": "並列成分也可能是受詞。",
+      "correction": "用刪除測試判斷 I 或 me。"
+    },
+    {
+      "belief": "介系詞後可用主格。",
+      "whyWrong": "標準形式要求受格。",
+      "correction": "with he 改為 with him。"
+    },
+    {
+      "belief": "her 只能是受格。",
+      "whyWrong": "her 也可能是所有格形容詞。",
+      "correction": "看後方是否直接接名詞。"
+    },
+    {
+      "belief": "代名詞形式只由性別決定。",
+      "whyWrong": "語法角色與數也必須符合。",
+      "correction": "同時檢查指稱與位置。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "動詞前的執行者用哪一格？",
+      "answer": "主格。",
+      "reason": "它充當子句主詞。"
+    },
+    {
+      "prompt": "for they 應如何修正？",
+      "answer": "for them。",
+      "reason": "介系詞後用受格。"
+    },
+    {
+      "prompt": "and 後選 I/me 的簡易檢查是什麼？",
+      "answer": "暫時刪掉另一個並列成分。",
+      "reason": "剩餘句型可顯示所需格位。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

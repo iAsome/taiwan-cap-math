@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_285_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S285"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: Please bring a reusable cup. B: Drinks are served only in cups brought by visitors. Which detail is shared?",
+  "options": [
+    "Every drink is free.",
+    "The cups must be blue.",
+    "Visitors may take shop cups home.",
+    "Visitors need their own cups."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Every drink is free.：未提費用。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "The cups must be blue.：未提顏色。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Visitors may take shop cups home.：與自備杯不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Visitors need their own cups.：bring a cup 與 cups brought by visitors 語意相同。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "find-cross-document-overlap",
+    "intersect-explicit-information"
+  ],
+  "representationType": "paired-documents",
+  "misconceptionTargets": [
+    "treat-one-document-detail-as-shared"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「兩份文件各自明示同一人物、地點、時間或規則」可推出 Visitors need their own cups.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 Visitors need their own cups. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

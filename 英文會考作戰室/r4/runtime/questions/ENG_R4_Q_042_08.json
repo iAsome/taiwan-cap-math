@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_042_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S042"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence places enough correctly with a noun?",
+  "options": [
+    "We have enough of plates.",
+    "We have enough plates for everyone.",
+    "We have plates enough everyone for.",
+    "We have a enough plates."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "We have enough of plates.：此一般結構不需 of。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "We have enough plates for everyone.：enough 置於複數名詞 plates 前。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "We have plates enough everyone for.：語序錯誤。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "We have a enough plates.：限定詞重疊。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "judge-large-or-sufficient-quantity",
+    "match-quantifier-syntax-and-compare-available-amount-with-threshold"
+  ],
+  "representationType": "large-and-sufficient-quantity",
+  "misconceptionTargets": [
+    "equate-large-amount-with-sufficiency-or-misplace-enough"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「使用 a lot of 表大量，enough 表達達到情境門檻，並依名詞可數性、形容詞位置與明示需求判斷是否充足。」可推出 We have enough plates for everyone.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 We have enough plates for everyone. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

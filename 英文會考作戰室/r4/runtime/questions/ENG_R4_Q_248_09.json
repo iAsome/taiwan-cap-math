@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_248_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S248"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10"
+  ],
+  "stimulusId": null,
+  "stem": "The hall has only fifty seats. Even so, it is the best available place because it has a stage and safe exits.\nWhat does the paragraph as a whole show?",
+  "options": [
+    "The hall is the best available choice despite limited seats",
+    "The hall has fifty seats",
+    "The hall is perfect for every event",
+    "The hall lacks a stage"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "The hall is the best available choice despite limited seats：Even so 後給出選用理由並保留座位限制。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "The hall has fifty seats：只抓限制，漏掉選擇結論。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The hall is perfect for every event：best available 不等於普遍 perfect。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "The hall lacks a stage：與 has a stage 相反。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "identify-emphasized-claim-after-contrast",
+    "prioritize-post-contrast-claim"
+  ],
+  "representationType": "contrast-emphasis-reading",
+  "misconceptionTargets": [
+    "stop-before-contrast"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「轉折標記後的修正、限制或作者真正採納的立場」可推出 The hall is the best available choice despite limited seats；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 The hall is the best available choice despite limited seats 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

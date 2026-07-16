@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_225_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S225"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: Do you need this book today?\nB: ___.\nA: All right. I will return it before lunch.",
+  "options": [
+    "Yes, my class uses it this afternoon.",
+    "The cover is yellow and white.",
+    "I read a different story last month.",
+    "Lunch is in the dining room."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "下午要用書說明今天需要，也支持午餐前歸還。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "封面顏色沒有回答需要與否。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "上月讀別篇故事不影響今天用書。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "餐廳位置不是歸還期限的原因。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "connect-afternoon-book-need-to-return-promise"
+  ],
+  "representationType": "need-and-deadline-dialogue",
+  "misconceptionTargets": [
+    "confuse-book-description-with-current-need"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "時間需求從 this afternoon 連到 before lunch。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項讓 A 的歸還承諾具體且必要。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

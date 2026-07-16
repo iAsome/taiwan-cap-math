@@ -1,0 +1,135 @@
+{
+  "id": "ENG_R4_L_S219",
+  "subject": "english",
+  "unitId": "ENG_R4_U32",
+  "skillId": "ENG_R4_S219",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "prerequisites": [
+    "ENG_R4_S218"
+  ],
+  "objectives": [
+    "能從主旨、開頭和關鍵行動判斷訊息的主要目的。",
+    "能區分邀請、提醒、請求、道謝、道歉與告知變更。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S219_SEC_01",
+      "title": "主旨先縮小可能目的",
+      "content": "Subject: Meeting change 多半與變更會議有關，Subject: Thank you 則常用來致謝。主旨可先縮小方向，但仍要閱讀開頭與正文，確認寫信者真正希望讀者知道或完成什麼。"
+    },
+    {
+      "id": "ENG_R4_L_S219_SEC_02",
+      "title": "動作句最能指出目的",
+      "content": "Please bring your card 是請求，Remember to call me 是提醒，Would you like to join us 是邀請。若訊息同時含背景和行動，主要目的通常落在要求收件者回應或採取的動作。"
+    },
+    {
+      "id": "ENG_R4_L_S219_SEC_03",
+      "title": "情緒不等於寫信目的",
+      "content": "I am sorry 可能用來道歉，也可能只是表達遺憾。要看後文是否承認自己的錯誤、說明不能出席，或請求協助；不能只憑一個情緒字決定整封訊息。"
+    },
+    {
+      "id": "ENG_R4_L_S219_SEC_04",
+      "title": "答案不能超過文字證據",
+      "content": "若信中只說 The game starts at four，能確定的是提供時間資訊。除非另有 Please come early，不能擴大成要求提早到場；目的題也必須受正文限制。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S219_EX_01",
+      "prompt": "Subject: Saturday picnic\nWould you like to come with us?",
+      "steps": [
+        "由主旨找出活動。",
+        "辨認問句在詢問意願。",
+        "判斷寫信者正在邀請。"
+      ],
+      "answer": "The writer is inviting someone to a picnic.",
+      "why": "主旨提供星期六野餐，問句則詢問對方是否願意同行。訊息沒有要求付款或更改日期，核心目的就是邀請。"
+    },
+    {
+      "id": "ENG_R4_L_S219_EX_02",
+      "prompt": "I took your book home by mistake. I am sorry. I will return it tomorrow.",
+      "steps": [
+        "找出寫信者的行動。",
+        "理解道歉句。",
+        "用歸還承諾確認目的。"
+      ],
+      "answer": "The writer is saying sorry and promising to return the book.",
+      "why": "寫信者承認誤拿書並直接道歉，還說明明天歸還。這不是借書請求，因為書已被拿走，訊息重點在承認錯誤與補救。"
+    },
+    {
+      "id": "ENG_R4_L_S219_EX_03",
+      "prompt": "The science club now meets in Room 6, not Room 3. Please tell Nina.",
+      "steps": [
+        "比較新舊地點。",
+        "找出收件者要做的事。",
+        "整合告知變更與轉告請求。"
+      ],
+      "answer": "The writer reports a room change and asks for help sharing it.",
+      "why": "第一句把地點由第三教室改成第六教室，第二句請收件者轉告 Nina。只回答地點改變會漏掉必要行動。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只看 Subject 就不讀正文。",
+      "whyWrong": "同一主旨可能包含邀請、取消或詢問等不同目的。",
+      "correction": "用主旨預測，再用動作句確認。"
+    },
+    {
+      "belief": "訊息提到活動就是邀請。",
+      "whyWrong": "活動也可能只是改時間、提醒物品或宣布取消。",
+      "correction": "找收件者被要求做的具體行動。"
+    },
+    {
+      "belief": "看到 sorry 一律判為承認犯錯。",
+      "whyWrong": "sorry 也可表示不能參加或對他人遭遇感到遺憾。",
+      "correction": "檢查原因與後續句子。"
+    },
+    {
+      "belief": "把合理的下一步寫成訊息目的。",
+      "whyWrong": "未在文字中出現的行動仍只是推測。",
+      "correction": "答案只保留主旨與正文共同支持的功能。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Please send me the picture 是告知還是請求？",
+      "answer": "請求",
+      "reason": "寫信者希望收件者傳送照片。"
+    },
+    {
+      "prompt": "Thank you for your help 的主要功能是什麼？",
+      "answer": "道謝",
+      "reason": "句子直接感謝對方提供協助。"
+    },
+    {
+      "prompt": "訊息只寫新時間，能推知一定要提早到嗎？",
+      "answer": "不能",
+      "reason": "是否提早並未由文字說明。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  }
+}

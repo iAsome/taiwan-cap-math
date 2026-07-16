@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_227_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S227"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Amy invited Rosa and Kim to dinner. Rosa could not come, but Kim arrived with her brother. How many invited friends came?",
+  "options": [
+    "None",
+    "Three",
+    "One",
+    "Two"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Kim 確實到場。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "弟弟不是 Amy 原先邀請的兩位朋友之一。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "受邀者中只有 Kim 到場。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Rosa 已明確不能來。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "count-only-invited-friends-who-arrived"
+  ],
+  "representationType": "attendance-role-inference",
+  "misconceptionTargets": [
+    "count-every-arriving-person-as-invited"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題目限定 invited friends，不能把陪同家人加入。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Rosa 和 Kim 的出席狀態分別有文字證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_222_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S222"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "I left your blue bag at the office. Can you get it before five?\nWhich reply is complete?",
+  "options": [
+    "The office is big.",
+    "I own a blue bag.",
+    "Yes, I will get it from the office before five.",
+    "Five is my favorite number."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "辦公室大小與取物無關。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "擁有袋子沒有承諾領取。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "回覆包含決定、地點與期限。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "數字喜好不是時間安排。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u32-s222-compose-pickup-confirmation-with-deadline",
+    "cover-object-place-and-time-in-reply"
+  ],
+  "representationType": "message-reply-multiple-details",
+  "misconceptionTargets": [
+    "confirm-ownership-but-not-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "必要資訊由問句中的物品、地點和期限構成。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "正確回覆沒有漏掉 before five。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

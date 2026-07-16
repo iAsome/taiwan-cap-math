@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_280_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S280"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Nora avoids nuts and wants a meal rather than a drink. Which choice is supported?",
+  "options": [
+    "Pie for $5",
+    "Juice for $3",
+    "Salad for $3",
+    "Salad for $6"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Pie for $5：CONTAINS NUTS 不合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Juice for $3：是飲料，不合 meal。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Salad for $3：價格跨到 Juice。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Salad for $6：Salad 是餐點且標 VEGAN；Pie 明示含堅果。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "integrate-menu-price-and-restriction",
+    "filter-label-then-compute-price"
+  ],
+  "representationType": "menu-table",
+  "misconceptionTargets": [
+    "choose-price-without-dietary-check"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「同一菜單列的品項、價格與標籤同時符合預算或飲食限制」可推出 Salad for $6；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 Salad for $6 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "ENG_R4_FIG_42_06"
+  ]
+}

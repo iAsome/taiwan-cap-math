@@ -1,0 +1,138 @@
+{
+  "id": "ENG_R4_L_006",
+  "subject": "english",
+  "unitId": "ENG_R4_U01",
+  "skillId": "ENG_R4_S006",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AA-4-1",
+    "AUTH-ENGLISH-LC-AB-4-2",
+    "AUTH-ENGLISH-LC-AB-4-3",
+    "AUTH-ENGLISH-LP-1-4-10",
+    "AUTH-ENGLISH-LP-3-4-1",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-4",
+    "AUTH-ENGLISH-LP-5-4-5"
+  ],
+  "prerequisites": [
+    "ENG_R4_S005"
+  ],
+  "objectives": [
+    "辨認常見子音字母組合。",
+    "不把 digraph 強拆成兩個獨立音。",
+    "依例字選正確組合。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U01_ENG_R4_S006_SEC_1",
+      "title": "兩字母可表示一音",
+      "content": "ship 的 sh 是 /ʃ/；chair 的 ch 是 /tʃ/。讀時把組合視為一塊。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S006_SEC_2",
+      "title": "位置也提供線索",
+      "content": "ck 常在短母音後字尾表示 /k/；ng 常見於 ring 結尾。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S006_SEC_3",
+      "title": "同組合可能有不同讀法",
+      "content": "th 在 thin /θ/、this /ð/ 不同；題目依例字。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S006_SEC_4",
+      "title": "先聽再拼",
+      "content": "知道音與位置後選字母組合，不靠字形熟悉度亂猜。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U01_ENG_R4_S006_EX_1",
+      "prompt": "ship",
+      "steps": [
+        "圈 sh。",
+        "合成 /ʃ/。",
+        "接 ip。"
+      ],
+      "answer": "sh → /ʃ/",
+      "why": "一個音塊。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S006_EX_2",
+      "prompt": "chair",
+      "steps": [
+        "圈 ch。",
+        "/tʃ/。",
+        "接 air。"
+      ],
+      "answer": "ch → /tʃ/",
+      "why": "不讀 c+h 名稱。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S006_EX_3",
+      "prompt": "ring",
+      "steps": [
+        "圈 ng。",
+        "字尾 /ŋ/。",
+        "不另加 /g/。"
+      ],
+      "answer": "ng → /ŋ/",
+      "why": "依此例字。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "兩字母一定兩音。",
+      "whyWrong": "digraph 可一音。",
+      "correction": "整塊拼讀。"
+    },
+    {
+      "belief": "th 永遠同一音。",
+      "whyWrong": "有清濁變化。",
+      "correction": "看例字。"
+    },
+    {
+      "belief": "ck 讀 /s/。",
+      "whyWrong": "在 duck 表 /k/。",
+      "correction": "依位置例字。"
+    },
+    {
+      "belief": "ph 逐字讀 /p/+/h/。",
+      "whyWrong": "phone 常表 /f/。",
+      "correction": "整組辨認。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "sh 在 ship 表幾個音塊？",
+      "answer": "一個 /ʃ/",
+      "reason": "兩字母共同。"
+    },
+    {
+      "prompt": "ng 在 ring 尾音？",
+      "answer": "/ŋ/",
+      "reason": "不另讀 g。"
+    },
+    {
+      "prompt": "th 可有不同讀法嗎？",
+      "answer": "可以",
+      "reason": "依詞判。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AA-4-1",
+      "AUTH-ENGLISH-LC-AB-4-2",
+      "AUTH-ENGLISH-LC-AB-4-3",
+      "AUTH-ENGLISH-LP-1-4-10",
+      "AUTH-ENGLISH-LP-3-4-1",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-4",
+      "AUTH-ENGLISH-LP-5-4-5"
+    ]
+  }
+}

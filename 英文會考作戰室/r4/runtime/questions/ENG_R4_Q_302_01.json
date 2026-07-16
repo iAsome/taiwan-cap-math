@@ -1,0 +1,95 @@
+{
+  "id": "ENG_R4_Q_302_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S302"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "In one test, five identical wet cloths dried faster in moving air than five cloths in still air. Which conclusion is supported?",
+  "options": [
+    "Moving air increased drying speed in this test.",
+    "Wind always dries every material instantly.",
+    "Still air prevents all drying.",
+    "Cloth color caused the result."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Moving air increased drying speed in this test.：相同 cloth 且只改 air movement，結論限本試驗。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Wind always dries every material instantly.：範圍與強度過度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Still air prevents all drying.：只說較慢。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Cloth color caused the result.：未提且 controlled identical。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "evaluate-evidence-supported-conclusion",
+    "match-claim-strength-and-scope-to-method"
+  ],
+  "representationType": "evidence-conclusion",
+  "misconceptionTargets": [
+    "overgeneralize-small-or-observational-result"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「結論的每個範圍詞與因果強度都不超過文中方法和結果」可推出 Moving air increased drying speed in this test.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 Moving air increased drying speed in this test. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

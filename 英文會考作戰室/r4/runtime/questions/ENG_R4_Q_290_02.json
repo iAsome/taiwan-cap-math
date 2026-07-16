@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_290_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S290"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Claim: The talk is in Room 8 at 3:00. A: Today's talk has moved to Room 8. B: The talk begins at 3:00. What evidence is needed?",
+  "options": [
+    "Document A only",
+    "Document B only",
+    "Neither",
+    "Both documents together"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Document A only：缺開始時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Document B only：缺地點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Neither：兩份合起來足夠。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Both documents together：A 支持地點，B 支持時間。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "select-supporting-document",
+    "match-required-proposition-to-document-evidence"
+  ],
+  "representationType": "claim-source-matching",
+  "misconceptionTargets": [
+    "treat-related-information-as-direct-support"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「指定結論所需的命題可在某份文件中直接定位，其他文件只談相關但不同資訊」可推出 Both documents together；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 Both documents together 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

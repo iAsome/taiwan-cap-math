@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_259_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S259"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Four students need to discuss a project. Which area shown should they choose?",
+  "options": [
+    "outside the library",
+    "the GROUP AREA",
+    "the QUIET AREA",
+    "either area"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "outside the library：图提供合适区，不需外出。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "the GROUP AREA：图示 GROUP AREA、TABLES FOR 4；安静区禁小组谈话。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the QUIET AREA：NO GROUP TALK。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "either area：安静区硬限制不合。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "infer-from-visual-and-text",
+    "combine-figure-and-written-condition"
+  ],
+  "representationType": "visual-text-inference",
+  "misconceptionTargets": [
+    "answer-from-one-modality"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「圖形提供的非文字關係與題幹條件合併後得到唯一情境」可推出 the GROUP AREA；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 the GROUP AREA 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "ENG_R4_FIG_259_08"
+  ]
+}

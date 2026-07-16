@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_252_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S252"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "Nora needs a room after 5:00 for twenty people. Room A holds 25 but closes at 5:00. Room B holds 20 and stays open until 7:00. Which room works?",
+  "options": [
+    "Room B",
+    "Room A",
+    "both rooms",
+    "neither room"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Room B：Room B 同時合容量二十與五點後開放。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Room A：容量足夠但五點關閉。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "both rooms：Room A 不合時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "neither room：Room B 完全符合。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "integrate-separated-details",
+    "intersect-multiple-constraints"
+  ],
+  "representationType": "separated-detail-integration",
+  "misconceptionTargets": [
+    "stop-after-one-matching-detail"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「相隔句子分別提供的條件合併後得到唯一答案」可推出 Room B；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 Room B 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

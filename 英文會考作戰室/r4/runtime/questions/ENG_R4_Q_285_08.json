@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_285_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S285"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Ticket: Seat B12, Main Stage. Reminder: Main Stage guests should use the south entrance. Which point is shared?",
+  "options": [
+    "Every guest has seat B12.",
+    "The guest's event is at the Main Stage.",
+    "The seat is at the south entrance.",
+    "The event begins at 12:00."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Every guest has seat B12.：只有此票。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "The guest's event is at the Main Stage.：ticket 與 reminder 都涉及 Main Stage。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The seat is at the south entrance.：entrance 不是座位。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "The event begins at 12:00.：B12 是座號。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "find-cross-document-overlap",
+    "intersect-explicit-information"
+  ],
+  "representationType": "paired-documents",
+  "misconceptionTargets": [
+    "treat-one-document-detail-as-shared"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「兩份文件各自明示同一人物、地點、時間或規則」可推出 The guest's event is at the Main Stage.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 The guest's event is at the Main Stage. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

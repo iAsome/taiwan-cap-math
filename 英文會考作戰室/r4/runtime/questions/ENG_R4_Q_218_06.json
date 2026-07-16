@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_218_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S218"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "From: David\nTo: School Office\nSubject: New student card\nWho receives the e-mail?",
+  "options": [
+    "David",
+    "The school office",
+    "A new student",
+    "The card"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "David 位於 From 欄，是寄件者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "To 後的 School Office 是收件單位。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "主旨雖提到新學生證，卻沒有把新生列為收件人。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "物品不能收取電子郵件。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s218-read-organization-in-to-field",
+    "recognize-nonperson-email-recipient"
+  ],
+  "representationType": "email-recipient-organization",
+  "misconceptionTargets": [
+    "choose-subject-noun-as-recipient"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "收件人可以是單位，不一定是人名。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "判斷依據固定在 To 欄。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

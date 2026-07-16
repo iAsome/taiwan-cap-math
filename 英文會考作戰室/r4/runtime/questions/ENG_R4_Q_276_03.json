@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_276_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S276"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Tina opened the window. A minute later, a bird landed on the roof. What can the text show for sure?",
+  "options": [
+    "Opening the window called the bird.",
+    "The bird opened the window.",
+    "The window opened before the bird landed.",
+    "The bird had waited inside the room."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "時間接近不能證明窗戶吸引鳥。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "主詞 Tina 明確執行開窗。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "a minute later 只確定兩事件先後。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "鳥原先位置未提供。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u41-s276-q03-limit-later-to-sequence",
+    "reject-post-event-causal-assumption"
+  ],
+  "representationType": "sequence-versus-cause",
+  "misconceptionTargets": [
+    "turn-temporal-order-into-causation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "文本提供時間證據但沒有因果機制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項是唯一不超過 later 所支持範圍的結論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

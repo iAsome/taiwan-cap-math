@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_221_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S221"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Ms. Wu asked a student to e-mail the homework. Which greeting uses the information given?",
+  "options": [
+    "Dear Ms. Wu,",
+    "Dear Mrs. Wu,",
+    "Hi Mr. Wu,",
+    "Dear Ms. Wang,"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "題目明確提供 Ms. Wu，稱謂與姓氏都一致。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "不能把 Ms. 自行改成 Mrs.。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "稱謂性別與題目不符。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "姓氏被換成 Wang。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s221-preserve-given-title-and-surname",
+    "reject-title-or-name-substitution"
+  ],
+  "representationType": "email-greeting-precision",
+  "misconceptionTargets": [
+    "replace-given-recipient-identity"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "稱呼中的每一項身分資訊都需有文字依據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "相近稱謂不能在沒有證據時互換。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

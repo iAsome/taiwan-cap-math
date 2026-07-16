@@ -1,0 +1,134 @@
+{
+  "id": "ENG_R4_L_261",
+  "subject": "english",
+  "unitId": "ENG_R4_U39",
+  "skillId": "ENG_R4_S261",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "prerequisites": [
+    "ENG_R4_S260"
+  ],
+  "objectives": [
+    "辨認同句中直接解釋陌生字的訊號。",
+    "把定義替換回原字位置，檢查詞性與句意。",
+    "排除只與主題相關但不符合定義的選項。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U39_ENG_R4_S261_SEC_1",
+      "title": "定義常在旁邊",
+      "content": "作者若預期讀者不熟某字，常立刻用 is、means、or、that is 或兩個逗點補充。先讀完整同句，不急著查字典。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S261_SEC_2",
+      "title": "找解釋的邊界",
+      "content": "A habitat, the natural home of an animal, ... 中兩個逗點夾住 habitat 的定義。把夾住部分換回 habitat，確認句法位置相同。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S261_SEC_3",
+      "title": "定義不等於同主題字",
+      "content": "文章談 food 時，edible 定義為 safe to eat；fresh、sweet、cheap 都與食物相關，卻不是定義。答案必須精確對上解釋。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S261_SEC_4",
+      "title": "詞性也要一致",
+      "content": "若目標字在 be 後描述名詞，答案通常是形容性解釋；若位於冠詞後，則需名詞概念。定義與位置兩者都要通過。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U39_ENG_R4_S261_EX_1",
+      "prompt": "The glass is transparent, which means light can pass through it.",
+      "steps": [
+        "means 引出定義。",
+        "定義是光可穿過。",
+        "替回 transparent 位置。"
+      ],
+      "answer": "allowing light through",
+      "why": "不是指 glass 很亮，而是能透光。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S261_EX_2",
+      "prompt": "A habitat, the natural home of a plant or animal, can change.",
+      "steps": [
+        "逗點夾住補充。",
+        "home 是上位概念。",
+        "選名詞義。"
+      ],
+      "answer": "a natural home",
+      "why": "完整對應定義。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S261_EX_3",
+      "prompt": "This fruit is edible, or safe to eat.",
+      "steps": [
+        "or 在此改述。",
+        "safe to eat 是明示。",
+        "排除味道與價格。"
+      ],
+      "answer": "safe to eat",
+      "why": "or 不是列另一種水果，而是解釋 edible。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "陌生字一定要先查字典。",
+      "whyWrong": "同句可能已給完整定義。",
+      "correction": "先找定義訊號。"
+    },
+    {
+      "belief": "同主題選項都可。",
+      "whyWrong": "主題相關不代表語義相同。",
+      "correction": "要求與解釋精確互換。"
+    },
+    {
+      "belief": "or 永遠表示選擇。",
+      "whyWrong": "or 也可引出換句話說。",
+      "correction": "檢查兩側是否指同一事物。"
+    },
+    {
+      "belief": "忽略詞性只看中文。",
+      "whyWrong": "定義還要能放回原位置。",
+      "correction": "核對名詞、動詞或形容詞功能。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "that is 後常出現什麼？",
+      "answer": "前文的改述或定義",
+      "reason": "它提示換句話說。"
+    },
+    {
+      "prompt": "定義選項只需同主題嗎？",
+      "answer": "不夠",
+      "reason": "必須精確等義。"
+    },
+    {
+      "prompt": "替換測試要檢查什麼？",
+      "answer": "句意與詞性",
+      "reason": "兩者都合才成立。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  }
+}

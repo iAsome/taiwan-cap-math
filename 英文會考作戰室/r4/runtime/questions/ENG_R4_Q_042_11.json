@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_042_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S042"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A phone has much storage, but a video needs more than the free space. Which conclusion follows?",
+  "options": [
+    "The video must be physically large.",
+    "Storage is a plural count noun here.",
+    "The phone does not have enough free space for the video.",
+    "A lot always guarantees enough."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The video must be physically large.：檔案大小不等於物理尺寸。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Storage is a plural count noun here.：storage 此義不可數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "The phone does not have enough free space for the video.：即使容量看似多，仍低於這支影片需求。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "A lot always guarantees enough.：忽略門檻。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "judge-large-or-sufficient-quantity",
+    "match-quantifier-syntax-and-compare-available-amount-with-threshold"
+  ],
+  "representationType": "large-and-sufficient-quantity",
+  "misconceptionTargets": [
+    "equate-large-amount-with-sufficiency-or-misplace-enough"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「使用 a lot of 表大量，enough 表達達到情境門檻，並依名詞可數性、形容詞位置與明示需求判斷是否充足。」可推出 The phone does not have enough free space for the video.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 The phone does not have enough free space for the video. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

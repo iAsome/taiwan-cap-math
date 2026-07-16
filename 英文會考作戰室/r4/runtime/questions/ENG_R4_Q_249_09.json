@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_249_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S249"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "The cafe stopped offering plastic spoons and now gives wooden ones when customers ask. What material are the new spoons made from?",
+  "options": [
+    "wood",
+    "plastic",
+    "glass",
+    "paper"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "wood：wooden ones 指由 wood 製成的新湯匙。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "plastic：原文說停止提供 plastic spoons。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "glass：原文沒有 glass。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "paper：原文沒有 paper spoons。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "locate-explicit-paraphrase",
+    "match-question-wording-to-source"
+  ],
+  "representationType": "explicit-paraphrase",
+  "misconceptionTargets": [
+    "require-exact-word-match"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「題目關鍵概念與原文同義改寫指向同一資訊」可推出 wood；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 wood 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

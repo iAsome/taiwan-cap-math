@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_218_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S218"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Hi Lily,\nThe library closes at six today.\nSee you,\nKim\nWhich line is the main message?",
+  "options": [
+    "Hi Lily",
+    "See you",
+    "Kim",
+    "The library closes at six today."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是對收件者的稱呼。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是簡短結尾。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Kim 是寄件者署名。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "中間句提供今天圖書館關門時間，屬於正文。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u32-s218-isolate-body-from-greeting-and-signoff",
+    "identify-information-bearing-message-line"
+  ],
+  "representationType": "email-body-boundary",
+  "misconceptionTargets": [
+    "select-format-line-instead-of-body"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "正文位於稱呼和結尾之間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答案選的是實際資訊而非格式標記。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

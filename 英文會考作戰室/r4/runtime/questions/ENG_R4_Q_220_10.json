@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_220_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S220"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "The walk starts at ten instead of nine. Meet at the same park gate.\nWhat changed?",
+  "options": [
+    "The park gate",
+    "The starting time",
+    "The activity",
+    "The people"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "same 表示地點不變。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "instead of 將九點更新成十點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "活動仍是步行。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "訊息沒有更換參加者。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u32-s220-isolate-start-time-change-with-same-place",
+    "use-same-marker-to-preserve-location"
+  ],
+  "representationType": "message-change-scope",
+  "misconceptionTargets": [
+    "assume-all-event-fields-changed"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "只找有新舊對比的欄位。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "same 明確鎖定未改變的地點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

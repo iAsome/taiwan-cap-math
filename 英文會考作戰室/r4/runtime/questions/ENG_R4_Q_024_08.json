@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_024_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S024"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence contains only one clear negative?",
+  "options": [
+    "Not no bus was available.",
+    "No bus was available.",
+    "No bus wasn't available.",
+    "The bus wasn't never available."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Not no bus was available.：結構混亂。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "No bus was available.：No bus 清楚表示沒有任何公車可用。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "No bus wasn't available.：兩個否定造成意義問題。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "The bus wasn't never available.：雙重否定不合目標用法。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "form-be-affirmative-or-negative",
+    "preserve-subject-time-and-complement-while-changing-polarity"
+  ],
+  "representationType": "be-polarity",
+  "misconceptionTargets": [
+    "insert-do-or-mismatch-contraction"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「依陳述是否肯定某狀態或否定某狀態，在正確 be 後加入 not，並保持縮寫與原意一致。」可推出 No bus was available.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 No bus was available. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

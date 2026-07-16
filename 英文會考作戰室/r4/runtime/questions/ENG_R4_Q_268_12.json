@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_268_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S268"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-1-4-9",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Attention passengers on Train 306: Please move to Platform 4. Who is the announcement for?",
+  "options": [
+    "people arriving by bus",
+    "people taking Train 306",
+    "all train passengers",
+    "platform workers only"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "people arriving by bus：媒介是 train。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "people taking Train 306：Attention passengers on Train 306 精確限定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "all train passengers：只有 306 需 move。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "platform workers only：行動者是 passengers。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "infer-intended-audience",
+    "match-address-and-reader-action"
+  ],
+  "representationType": "intended-audience",
+  "misconceptionTargets": [
+    "confuse-mentioned-person-with-reader"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-1-4-9",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「稱呼、先備資訊、媒介與讀者可採取的行動」可推出 people taking Train 306；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 people taking Train 306 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

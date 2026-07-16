@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_235_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S235"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "You can take the bus ___ walk to the station.",
+  "options": [
+    "because",
+    "or",
+    "until",
+    "although"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "because：because 不能在此引出選項。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "or：bus 與 walk 是兩個可選方式，or 表選擇。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "until：until 表時間終點，無法連接兩種方式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "although：although 表轉折，沒有讓步關係。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-logical-relation",
+    "select-or-between-options"
+  ],
+  "representationType": "choice-cloze",
+  "misconceptionTargets": [
+    "use-and-for-exclusive-choice"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「前後命題的因果、轉折與時間關係」可推出 or；再核對句中每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一放回原文，只有 or 能同時滿足句法與全文意思；另外三項各有列明的衝突，沒有第二個合理答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

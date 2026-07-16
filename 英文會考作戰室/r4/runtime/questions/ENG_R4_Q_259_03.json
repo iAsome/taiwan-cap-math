@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_259_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S259"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A walker needs to reach the park while the bridge is closed. Which route should be used?",
+  "options": [
+    "a route through the river",
+    "return to START and stop",
+    "Green Street",
+    "the bridge"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "a route through the river：图没有此路线。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "return to START and stop：替代箭头继续到 park。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Green Street：桥有叉，弧形箭头 Green Street 到 PARK。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the bridge：图示封闭。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "infer-from-visual-and-text",
+    "combine-figure-and-written-condition"
+  ],
+  "representationType": "visual-text-inference",
+  "misconceptionTargets": [
+    "answer-from-one-modality"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「圖形提供的非文字關係與題幹條件合併後得到唯一情境」可推出 Green Street；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 Green Street 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "ENG_R4_FIG_259_03"
+  ]
+}

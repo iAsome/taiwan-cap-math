@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_237_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S237"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A truck passed two bikes. It turned left at the next light. What can It refer to by grammar alone?",
+  "options": [
+    "only the truck",
+    "only the bikes",
+    "the truck, but meaning must still be checked",
+    "the next light"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "only the truck：只說 only the truck 忽略還需語意核對。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "only the bikes：bikes 是複數，應用 they。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "the truck, but meaning must still be checked：It 是單數，形式上可指 truck；仍須用語意確認。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the next light：light 尚在代名詞之後，不能成為前文先行詞。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "resolve-pronoun-antecedent",
+    "use-number-before-semantics"
+  ],
+  "representationType": "grammar-first-reference",
+  "misconceptionTargets": [
+    "claim-form-alone-proves-meaning"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「代名詞的數量、類型與後續動作」可推出 the truck, but meaning must still be checked；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 the truck, but meaning must still be checked 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

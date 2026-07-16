@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_010_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S010"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-2",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-2-4-1",
+    "AUTH-ENGLISH-LP-2-4-3",
+    "AUTH-ENGLISH-LP-6-4-1",
+    "AUTH-ENGLISH-LP-6-4-2",
+    "AUTH-ENGLISH-LP-7-4-5"
+  ],
+  "stimulusId": null,
+  "stem": "Instruction: 'Put the words in alphabetical order.' Which feature controls the arrangement?",
+  "options": [
+    "sentence length only",
+    "the writer's mood",
+    "letter order from the alphabet",
+    "word price"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "sentence length only：不是字母序。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the writer's mood：無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "letter order from the alphabet：alphabetical 指字母順序。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "word price：未提。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "interpret-written-task-direction",
+    "parse-task-verb-quantity-format"
+  ],
+  "representationType": "written-assignment-direction",
+  "misconceptionTargets": [
+    "answer-topic-but-ignore-output-instruction"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-2",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-2-4-1",
+      "AUTH-ENGLISH-LP-2-4-3",
+      "AUTH-ENGLISH-LP-6-4-1",
+      "AUTH-ENGLISH-LP-6-4-2",
+      "AUTH-ENGLISH-LP-7-4-5"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「課本或作業中的 task verb、數量與輸出格式共同限定應完成的作品」可推出 letter order from the alphabet；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 letter order from the alphabet 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,95 @@
+{
+  "id": "ENG_R4_Q_296_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S296"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-6",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10",
+    "AUTH-ENGLISH-LP-5-4-8"
+  ],
+  "stimulusId": null,
+  "stem": "Sam forgot the code to a storage box. He checked the instruction card, entered the reset code, and opened the box. Which sentence summarizes the event?",
+  "options": [
+    "Sam used the instruction card to reset the code and open the box.",
+    "The box was gray and sat on a shelf.",
+    "Sam broke every storage box.",
+    "Instruction cards are exciting stories."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Sam used the instruction card to reset the code and open the box.：問題、工具、結果完整。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "The box was gray and sat on a shelf.：未提顏色且非主線。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Sam broke every storage box.：與 reset/open 相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Instruction cards are exciting stories.：無關評價。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "build-causal-story-summary",
+    "compress-problem-action-result-chain"
+  ],
+  "representationType": "causal-summary",
+  "misconceptionTargets": [
+    "list-details-without-causal-spine"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-6",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10",
+      "AUTH-ENGLISH-LP-5-4-8"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「摘要保留初始目標或問題、關鍵因果轉折與結果，刪除不影響因果鏈的細節」可推出 Sam used the instruction card to reset the code and open the box.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 Sam used the instruction card to reset the code and open the box. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

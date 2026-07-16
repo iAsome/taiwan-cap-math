@@ -1,0 +1,130 @@
+{
+  "id": "ENG_R4_L_036",
+  "subject": "english",
+  "unitId": "ENG_R4_U06",
+  "skillId": "ENG_R4_S036",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S035"
+  ],
+  "objectives": [
+    "形成常見 -s 與 -es 複數。",
+    "正確處理子音+y 與部分 -f/-fe 字尾。",
+    "把複數形式放回句中檢查數的一致。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U06_ENG_R4_S036_SEC_1",
+      "title": "多數名詞加 -s",
+      "content": "book→books、chair→chairs。拼字簡單，但句中要同步使用 these/those、are 與複數動詞。"
+    },
+    {
+      "id": "ENG_R4_U06_ENG_R4_S036_SEC_2",
+      "title": "咝擦音附近常加 -es",
+      "content": "bus→buses、box→boxes、watch→watches、dish→dishes，使複數音節可發出。"
+    },
+    {
+      "id": "ENG_R4_U06_ENG_R4_S036_SEC_3",
+      "title": "y 前字母決定變化",
+      "content": "city→cities，子音+y 改 y 為 i 加 -es；boy→boys，母音+y 直接加 -s。"
+    },
+    {
+      "id": "ENG_R4_U06_ENG_R4_S036_SEC_4",
+      "title": "-f/-fe 不能全靠一條規則",
+      "content": "knife→knives、leaf→leaves，但 roof→roofs。需把常見例外與實際詞彙一起記，不能機械全改。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U06_ENG_R4_S036_EX_1",
+      "prompt": "three ___ (book)",
+      "steps": [
+        "book 可數。",
+        "數量 three 要求複數。",
+        "一般字尾加 -s。"
+      ],
+      "answer": "books",
+      "why": "規則複數。"
+    },
+    {
+      "id": "ENG_R4_U06_ENG_R4_S036_EX_2",
+      "prompt": "two ___ (box)",
+      "steps": [
+        "box 結尾為 x。",
+        "加 -es。",
+        "檢查發音與拼字。"
+      ],
+      "answer": "boxes",
+      "why": "不是 boxs。"
+    },
+    {
+      "id": "ENG_R4_U06_ENG_R4_S036_EX_3",
+      "prompt": "several ___ (city)",
+      "steps": [
+        "city 為子音+y。",
+        "y 改 i。",
+        "再加 -es。"
+      ],
+      "answer": "cities",
+      "why": "形成 -ies。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "所有名詞都只加 s。",
+      "whyWrong": "部分字尾需 -es 或拼字變化。",
+      "correction": "先辨識名詞最後字母與音。"
+    },
+    {
+      "belief": "只要 y 結尾都改 -ies。",
+      "whyWrong": "母音+y 通常直接加 s。",
+      "correction": "比較 city/cities 與 toy/toys。"
+    },
+    {
+      "belief": "所有 f 結尾都改 ves。",
+      "whyWrong": "roof、chief 等有不同形式。",
+      "correction": "以正式詞形與詞典為準。"
+    },
+    {
+      "belief": "名詞變複數就完成了。",
+      "whyWrong": "限定詞與謂語也可能需改。",
+      "correction": "檢查整個名詞片語與句子。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "watch 的複數是什麼？",
+      "answer": "watches。",
+      "reason": "-ch 後加 -es。"
+    },
+    {
+      "prompt": "key 的複數是什麼？",
+      "answer": "keys。",
+      "reason": "y 前為母音 e。"
+    },
+    {
+      "prompt": "three box 是否正確？",
+      "answer": "不正確，應為 three boxes。",
+      "reason": "數量要求複數。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_286_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S286"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: Try our new lunch set today! B: Kitchen staff: record every lunch order. How do the documents differ?",
+  "options": [
+    "A advertises to customers; B instructs staff.",
+    "Both advertise to customers.",
+    "A trains cooks; B lists prices.",
+    "Both warn drivers."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "A advertises to customers; B instructs staff.：try 面向顧客促銷，staff 明示內部工作。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Both advertise to customers.：B 不是廣告。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "A trains cooks; B lists prices.：兩端皆錯。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Both warn drivers.：對象不合。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "compare-document-purpose-and-audience",
+    "compare-action-verb-and-addressed-reader"
+  ],
+  "representationType": "purpose-audience-comparison",
+  "misconceptionTargets": [
+    "assume-same-topic-means-same-purpose"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「文件的動詞、稱呼與行動要求揭示各自服務的讀者與目的」可推出 A advertises to customers; B instructs staff.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 A advertises to customers; B instructs staff. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

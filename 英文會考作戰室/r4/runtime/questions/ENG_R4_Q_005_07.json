@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_005_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S005"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AA-4-1",
+    "AUTH-ENGLISH-LC-AB-4-2",
+    "AUTH-ENGLISH-LC-AB-4-3",
+    "AUTH-ENGLISH-LP-1-4-10",
+    "AUTH-ENGLISH-LP-3-4-1",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-4",
+    "AUTH-ENGLISH-LP-5-4-5"
+  ],
+  "stimulusId": null,
+  "stem": "Which pair shows short i changing to long i after e is added?",
+  "options": [
+    "run → ran",
+    "sit → sat",
+    "rid → ride",
+    "red → reed"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "run → ran：改母音。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "sit → sat：改母音。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "rid → ride：ride 為 rid 加 e。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "red → reed：加入另一 e，不是 final-e pattern。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "decode-final-e-long-vowel",
+    "compare-cvc-and-cvce"
+  ],
+  "representationType": "final-e-decoding",
+  "misconceptionTargets": [
+    "pronounce-final-e-as-extra-syllable"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AA-4-1",
+      "AUTH-ENGLISH-LC-AB-4-2",
+      "AUTH-ENGLISH-LC-AB-4-3",
+      "AUTH-ENGLISH-LP-1-4-10",
+      "AUTH-ENGLISH-LP-3-4-1",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-4",
+      "AUTH-ENGLISH-LP-5-4-5"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「指定常見 CVCe 字中末尾 e 不獨立發音，前一母音轉為常見長母音」可推出 rid → ride；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 rid → ride 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

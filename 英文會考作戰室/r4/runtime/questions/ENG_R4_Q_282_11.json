@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_282_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S282"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "What is the combined number of Nature and Design visits?",
+  "options": [
+    "48",
+    "120",
+    "88",
+    "8"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "48：只算 Nature。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "120：把 Ancient 也加入。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "88：Nature 四十八加 Design 四十為八十八。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "8：只算差值。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "compare-chart-values",
+    "read-label-unit-and-compute-comparison"
+  ],
+  "representationType": "bar-line-pie-chart",
+  "misconceptionTargets": [
+    "compare-unmatched-labels-or-units"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「圖表標籤、數值與單位支持排序、差值、總和或比例」可推出 88；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 88 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "ENG_R4_FIG_42_11"
+  ]
+}

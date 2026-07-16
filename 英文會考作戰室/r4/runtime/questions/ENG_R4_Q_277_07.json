@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_277_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S277"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Sentence to insert: 'After the paint dried, the students added the street names.' Text: Students drew a large town map. [A] They painted parks green and water blue. [B] The finished map was hung near the office. [C] New students used it to find rooms. [D] Which position preserves the process?",
+  "options": [
+    "A",
+    "C",
+    "D",
+    "B"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "放在第一次上色前會讓 dried 沒有已完成的 paint 可回指。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "掛起後才補街名不符合 finished map。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "B 位置接在 painting 後，乾燥再加名稱，之後才是 finished map。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "使用地圖後才補街名會破壞製作順序。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u41-s277-q07-place-after-paint-dried-step",
+    "align-production-step-before-finished-state"
+  ],
+  "representationType": "procedure-insertion",
+  "misconceptionTargets": [
+    "place-after-clause-before-trigger-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "After 子句需要前一步上色已發生。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三個選項也讓 finished 準確涵蓋所有製作步驟。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_280_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S280"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Ben must avoid nuts. Which solid food can he choose for $4?",
+  "options": [
+    "Rice Ball and Brownie",
+    "Rice Ball",
+    "Brownie",
+    "Lemonade"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Rice Ball and Brownie：包含不安全品項且超過四元。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Rice Ball：Rice Ball 四元且標 VEGAN；Brownie 同價但含堅果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Brownie：CONTAINS NUTS。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Lemonade：是飲料。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "integrate-menu-price-and-restriction",
+    "filter-label-then-compute-price"
+  ],
+  "representationType": "menu-table",
+  "misconceptionTargets": [
+    "choose-price-without-dietary-check"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「同一菜單列的品項、價格與標籤同時符合預算或飲食限制」可推出 Rice Ball；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Rice Ball 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "ENG_R4_FIG_42_08"
+  ]
+}

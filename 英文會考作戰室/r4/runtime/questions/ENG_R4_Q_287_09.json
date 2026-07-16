@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_287_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S287"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Announcement: The clinic accepts walk-ins from 9:00 to 11:00. Timetable: 8:50 OPEN; 10:30 OPEN; 11:20 OPEN. Which time fits?",
+  "options": [
+    "10:30",
+    "8:50",
+    "11:20",
+    "8:50 and 11:20"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "10:30：只有 10:30 落在 9:00–11:00。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "8:50：早於時段。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "11:20：晚於時段。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "8:50 and 11:20：兩者都在範圍外。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "combine-announcement-and-schedule",
+    "apply-notice-constraint-to-schedule"
+  ],
+  "representationType": "announcement-plus-timetable",
+  "misconceptionTargets": [
+    "choose-schedule-row-without-announcement-rule"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「公告條件套入時刻表的時間、地點與狀態後判斷方案是否可行」可推出 10:30；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 10:30 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

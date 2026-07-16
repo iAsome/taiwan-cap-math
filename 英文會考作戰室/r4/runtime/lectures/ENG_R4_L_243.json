@@ -1,0 +1,136 @@
+{
+  "id": "ENG_R4_L_243",
+  "subject": "english",
+  "unitId": "ENG_R4_U36",
+  "skillId": "ENG_R4_S243",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10"
+  ],
+  "prerequisites": [
+    "ENG_R4_S242"
+  ],
+  "objectives": [
+    "區分文章持續談論的主題與支持細節。",
+    "以涵蓋句數檢查候選主題。",
+    "排除醒目但只服務單一句子的名稱、數字與例子。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U36_ENG_R4_S243_SEC_1",
+      "title": "主題回答談什麼",
+      "content": "主題通常可用短名詞片語表示，如 a school garden。細節則回答何時、多少、誰做了什麼。先問每一句是否都能連回候選主題。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S243_SEC_2",
+      "title": "醒目不等於中心",
+      "content": "人名、價格與日期容易吸引注意，但若後文未再發展，它們只是細節。真正主題會被代名詞、同義詞或相關行動反覆承接。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S243_SEC_3",
+      "title": "做涵蓋測試",
+      "content": "把候選寫在段落上方，逐句問『這句是否在說明它？』能涵蓋大多數句且不需硬拉關係者，才有資格成為主題。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S243_SEC_4",
+      "title": "主題與主旨不同",
+      "content": "主題是文章談的對象；主旨還包含作者對該對象說了什麼。先抓對主題，再進一步判斷中心訊息。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U36_ENG_R4_S243_EX_1",
+      "prompt": "A library added long tables, bright lights, and more chairs.",
+      "steps": [
+        "tables、lights、chairs 都是細節。",
+        "三者共同描述 library 的改變。",
+        "用短語概括。"
+      ],
+      "answer": "changes in a library",
+      "why": "只選 chairs 會漏掉另外兩項。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S243_EX_2",
+      "prompt": "The text names May 3 once, then explains a beach clean-up in four sentences.",
+      "steps": [
+        "日期只定位時間。",
+        "清理活動被持續發展。",
+        "比較涵蓋句數。"
+      ],
+      "answer": "the beach clean-up",
+      "why": "May 3 是活動細節，不是跨句主題。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S243_EX_3",
+      "prompt": "A passage says Mia bought a bike for $80 and then describes how she rides it to school each day.",
+      "steps": [
+        "價格只出現一次。",
+        "bike 與 riding 跨句承接。",
+        "選能涵蓋使用情形的主題。"
+      ],
+      "answer": "Mia's bike",
+      "why": "$80 不能解釋每天騎車的後文。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "最具體的數字一定是主題。",
+      "whyWrong": "數字常只是支持細節。",
+      "correction": "檢查後文是否持續發展該數字。"
+    },
+    {
+      "belief": "第一句最後一個名詞就是主題。",
+      "whyWrong": "後文可能轉而發展第一句中的另一概念。",
+      "correction": "用整段涵蓋率決定。"
+    },
+    {
+      "belief": "提到人名，文章主題就一定是那個人的一生。",
+      "whyWrong": "文章可能只談他的一次行動。",
+      "correction": "將範圍限制在本文實際內容。"
+    },
+    {
+      "belief": "主題必須是一個完整句。",
+      "whyWrong": "主題常是名詞片語。",
+      "correction": "主旨才通常以完整命題表達。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "只出現一次的 7:30 最可能是什麼？",
+      "answer": "時間細節",
+      "reason": "除非整段都比較時間。"
+    },
+    {
+      "prompt": "主題候選應能連回多少句？",
+      "answer": "大多數或全部句子",
+      "reason": "跨句涵蓋是核心檢查。"
+    },
+    {
+      "prompt": "a new park 是主題還是完整主旨？",
+      "answer": "較可能是主題",
+      "reason": "它只指出談論對象，尚未說中心訊息。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10"
+    ]
+  }
+}

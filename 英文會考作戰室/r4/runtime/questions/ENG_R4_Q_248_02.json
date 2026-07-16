@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_248_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S248"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10"
+  ],
+  "stimulusId": null,
+  "stem": "The phone app is free. However, it needs internet and uses a great deal of battery power.\nWhat is the text mainly about?",
+  "options": [
+    "The app is free",
+    "All free apps are useless",
+    "The app saves battery power",
+    "The free app has important practical limits"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The app is free：只抓轉折前優點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "All free apps are useless：從一個 app 過度推到全部且原文未說 useless。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The app saves battery power：與 uses a great deal 相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "The free app has important practical limits：However 後兩項限制是作者要補充的核心。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify-emphasized-claim-after-contrast",
+    "prioritize-post-contrast-claim"
+  ],
+  "representationType": "contrast-emphasis-reading",
+  "misconceptionTargets": [
+    "stop-before-contrast"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「轉折標記後的修正、限制或作者真正採納的立場」可推出 The free app has important practical limits；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 The free app has important practical limits 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_240_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S240"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The ticket was cheap. However, the trip took three hours. Why is However suitable?",
+  "options": [
+    "It marks a positive-negative contrast",
+    "It gives the price cause",
+    "It lists another cheap item",
+    "It tells when the trip began"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "It marks a positive-negative contrast：便宜是優點，耗時三小時是缺點，形成評價轉折。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "It gives the price cause：耗時不是票價便宜的原因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "It lists another cheap item：後句不是另一件商品。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "It tells when the trip began：three hours 是時長，未提供開始時間。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "use-discourse-marker",
+    "identify-evaluation-shift"
+  ],
+  "representationType": "contrast-marker",
+  "misconceptionTargets": [
+    "read-duration-as-time-marker-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「標記詞宣告的轉折、因果或例證功能」可推出 It marks a positive-negative contrast；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 It marks a positive-negative contrast 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

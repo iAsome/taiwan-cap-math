@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_274_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S274"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Four lines appear in a guide: (1) This rule keeps the room quiet. (2) Visitors may use the study room. (3) The rule asks everyone to silence phones. (4) It also asks people to speak softly. Which line should open the paragraph?",
+  "options": [
+    "Line 1",
+    "Line 3",
+    "Line 4",
+    "Line 2"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "This rule 尚未被介紹。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "The rule 也假設讀者已知是哪一條規則。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "It 在段首沒有先行詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Line 2 先建立 study room 情境，之後才能介紹其中規則。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u41-s274-q12-select-independent-opening-line",
+    "identify-sentence-without-back-reference"
+  ],
+  "representationType": "paragraph-opening-choice",
+  "misconceptionTargets": [
+    "open-with-this-rule"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "四個候選中只有第四行不依賴前文指涉。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "開頭先給場所與使用者，後續規則才有框架。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

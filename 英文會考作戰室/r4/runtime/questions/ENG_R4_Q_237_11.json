@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_237_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S237"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Mia said, 'I will call you,' to Nora. Later, she did. Who made the call?",
+  "options": [
+    "Mia",
+    "Nora",
+    "both of them",
+    "the sentence gives no clue"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Mia：did 代替 call，且承接引號中由 Mia 作出的 I will call you 承諾。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Nora：Nora 是被告知與接聽的對象。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "both of them：承諾中的主詞 I 只有 Mia。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the sentence gives no clue：引號中的 I 與後文 did 提供足夠線索。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "resolve-pronoun-antecedent",
+    "track-speaker-and-substitution"
+  ],
+  "representationType": "dialogue-reference",
+  "misconceptionTargets": [
+    "bind-she-to-nearest-name"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「代名詞的數量、類型與後續動作」可推出 Mia；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 Mia 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

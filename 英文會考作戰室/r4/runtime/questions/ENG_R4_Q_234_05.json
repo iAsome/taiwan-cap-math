@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_234_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S234"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Amy put the cake beside the cups because ___ needed more table space.",
+  "options": [
+    "the cake",
+    "the cups",
+    "Amy",
+    "the table"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the cake：cake 不會需要桌面空間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the cups：cups 不會主動需要空間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Amy：needed 是人的需求，Amy 為安排物品以取得空間的人。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the table：table 雖與 space 接近，但不是作決定的角色。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "track-pronoun-reference",
+    "use-event-role-not-distance"
+  ],
+  "representationType": "semantic-reference",
+  "misconceptionTargets": [
+    "select-nearest-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「代名詞前的名詞與單複數角色」可推出 Amy；再核對句中每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一放回原文，只有 Amy 能同時滿足句法與全文意思；另外三項各有列明的衝突，沒有第二個合理答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

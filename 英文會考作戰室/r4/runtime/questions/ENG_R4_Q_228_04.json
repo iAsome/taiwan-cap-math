@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_228_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S228"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: Your soup smells good.\nB: Thanks. My father taught me to make it.\nA: Speaking of your father, is he feeling better?\nWhat happens in the third line?",
+  "options": [
+    "The speakers return to how the soup is made.",
+    "The speaker refuses the soup.",
+    "The speaker asks for more food.",
+    "The topic moves from soup to the father of B."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第三句不再問作法。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有拒絕或負面回應。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "也沒有要求更多食物。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "speaking of 以 father 為橋轉向健康近況。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "detect-speaking-of-topic-shift"
+  ],
+  "representationType": "linked-topic-transition",
+  "misconceptionTargets": [
+    "mistake-linked-shift-for-same-subtopic"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "父親先作為教做湯的人出現，再成為新焦點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "轉題有明確語意連結，不是任意跳躍。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

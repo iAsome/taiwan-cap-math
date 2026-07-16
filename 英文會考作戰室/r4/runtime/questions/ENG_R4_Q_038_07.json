@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_038_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S038"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence uses paper as a material?",
+  "options": [
+    "A paper won the contest.",
+    "Three papers are on the desk.",
+    "The box is made of paper.",
+    "I submitted two papers."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "A paper won the contest.：paper 在此為一份作品。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Three papers are on the desk.：複數表示可數文件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "The box is made of paper.：made of 指材料，不可數義。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "I submitted two papers.：papers 在此可指兩份文章。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "classify-count-and-noncount-uses",
+    "identify-unitized-individual-or-mass-meaning"
+  ],
+  "representationType": "countability-in-context",
+  "misconceptionTargets": [
+    "assign-fixed-countability-or-pluralize-mass-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「依語境中的可分單位、可直接計數性與量詞搭配，判斷名詞是可數、不可數或具雙重用法。」可推出 The box is made of paper.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 The box is made of paper. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,138 @@
+{
+  "id": "ENG_R4_L_311",
+  "subject": "english",
+  "unitId": "ENG_R4_U47",
+  "skillId": "ENG_R4_S311",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AB-4-1",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-9",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-2-4-8",
+    "AUTH-ENGLISH-LP-5-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S310"
+  ],
+  "objectives": [
+    "辨認位置介系詞。",
+    "固定參照物再找目標物。",
+    "以遮擋與上下關係排除相似圖。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U47_ENG_R4_S311_SEC_1",
+      "title": "先定目標與參照",
+      "content": "The ball is under the table 中 ball 是目標，table 是參照。不可反讀。"
+    },
+    {
+      "id": "ENG_R4_U47_ENG_R4_S311_SEC_2",
+      "title": "四種關係",
+      "content": "on 有接觸桌面；under 在桌面下；beside 在側邊；behind 由桌子部分遮擋。"
+    },
+    {
+      "id": "ENG_R4_U47_ENG_R4_S311_SEC_3",
+      "title": "不要靠左右猜",
+      "content": "題目未說 left/right 就不使用方向。只核對指定介系詞。"
+    },
+    {
+      "id": "ENG_R4_U47_ENG_R4_S311_SEC_4",
+      "title": "完整句回填",
+      "content": "選完讀成 The key is on the table，確認物件與關係都合。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U47_ENG_R4_S311_EX_1",
+      "prompt": "The book is on the table.",
+      "steps": [
+        "目標 book。",
+        "參照 table。",
+        "on 為桌面接觸。"
+      ],
+      "answer": "book-on-table",
+      "why": "三項對齊。"
+    },
+    {
+      "id": "ENG_R4_U47_ENG_R4_S311_EX_2",
+      "prompt": "A ball is under the table.",
+      "steps": [
+        "抓 ball。",
+        "找桌下。",
+        "排 beside。"
+      ],
+      "answer": "ball-under-table",
+      "why": "相對位置明確。"
+    },
+    {
+      "id": "ENG_R4_U47_ENG_R4_S311_EX_3",
+      "prompt": "The bag is behind the table.",
+      "steps": [
+        "behind 會部分遮擋。",
+        "核對 bag。",
+        "不當 under。"
+      ],
+      "answer": "bag-behind-table",
+      "why": "遮擋提供深度。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "把目標與參照反讀。",
+      "whyWrong": "會成 table under ball。",
+      "correction": "先圈兩名詞。"
+    },
+    {
+      "belief": "beside 當 behind。",
+      "whyWrong": "側邊與遮擋不同。",
+      "correction": "看輪廓是否被桌遮。"
+    },
+    {
+      "belief": "on 只表示上方。",
+      "whyWrong": "通常需接觸表面。",
+      "correction": "核對接觸。"
+    },
+    {
+      "belief": "未聽左右仍用左右作答。",
+      "whyWrong": "加入未說條件。",
+      "correction": "只用聽到關係。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "位置句先找什麼？",
+      "answer": "目標物與參照物",
+      "reason": "固定角色。"
+    },
+    {
+      "prompt": "behind 常有何視覺線索？",
+      "answer": "部分遮擋",
+      "reason": "與 beside 區分。"
+    },
+    {
+      "prompt": "on 與 above 相同嗎？",
+      "answer": "不完全相同",
+      "reason": "on 通常接觸。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AB-4-1",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-9",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-2-4-8",
+      "AUTH-ENGLISH-LP-5-4-4"
+    ]
+  }
+}

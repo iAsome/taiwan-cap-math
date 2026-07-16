@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_288_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S288"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: Submit the form online. B: Printed forms only; online forms are not accepted. What should be noticed?",
+  "options": [
+    "Both require online submission.",
+    "B adds an online link.",
+    "A discusses payment instead.",
+    "The submission methods conflict."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Both require online submission.：B 否定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "B adds an online link.：沒有。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "A discusses payment instead.：A 談 form submission。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "The submission methods conflict.：online 與 printed only/not accepted 直接相反。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "classify-document-relation",
+    "test-same-proposition-for-complement-or-conflict"
+  ],
+  "representationType": "document-relation",
+  "misconceptionTargets": [
+    "label-any-difference-as-conflict"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「比較兩份文件對同一命題的內容，判定補充、重複或直接衝突」可推出 The submission methods conflict.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 The submission methods conflict. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

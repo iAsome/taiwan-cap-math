@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_308_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S308"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-6-4-3",
+    "AUTH-ENGLISH-LP-6-4-4",
+    "AUTH-ENGLISH-LP-6-4-6",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-7-4-4",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Source: 'Volunteers are requested for Saturday morning; experience is not required.' Who is eligible according to the text?",
+  "options": [
+    "No one, because volunteering is forbidden",
+    "A beginner available Saturday morning",
+    "Only a trained professional",
+    "Someone available only Sunday"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "No one, because volunteering is forbidden：相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "A beginner available Saturday morning：時間合且 no experience required。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Only a trained professional：違反 no experience required。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Someone available only Sunday：日期不合。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "evaluate-source-bound-option",
+    "verify-every-option-word-against-source"
+  ],
+  "representationType": "source-bound-evaluation",
+  "misconceptionTargets": [
+    "choose-option-by-personal-agreement-or-added-assumption"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-6-4-3",
+      "AUTH-ENGLISH-LP-6-4-4",
+      "AUTH-ENGLISH-LP-6-4-6",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-7-4-4",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「選項必須逐字受來源內容支持，不能因符合讀者個人立場而增加來源未說的理由」可推出 A beginner available Saturday morning；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 A beginner available Saturday morning 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

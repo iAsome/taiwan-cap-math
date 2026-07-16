@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_279_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S279"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "What happens in Room 2 at 14:30?",
+  "options": [
+    "a study activity count",
+    "a cooking class",
+    "an English class",
+    "a full dance class"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "a study activity count：圖例不是時刻表事件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "a cooking class：第二列表明 14:30、Room 2、COOKING。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "an English class：English 在 13:00 Room 1。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "a full dance class：Room 3 於 16:00 才是 FULL。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "read-timetable-row-and-column",
+    "bind-row-column-and-status"
+  ],
+  "representationType": "timetable",
+  "misconceptionTargets": [
+    "combine-cells-from-different-rows"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「TIME、PLACE、STATUS 三欄同一列與延誤標示共同決定實際資訊」可推出 a cooking class；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 a cooking class 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "ENG_R4_FIG_42_12"
+  ]
+}

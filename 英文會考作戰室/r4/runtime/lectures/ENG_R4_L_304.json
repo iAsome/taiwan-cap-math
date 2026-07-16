@@ -1,0 +1,142 @@
+{
+  "id": "ENG_R4_L_304",
+  "subject": "english",
+  "unitId": "ENG_R4_U46",
+  "skillId": "ENG_R4_S304",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-6-4-3",
+    "AUTH-ENGLISH-LP-6-4-4",
+    "AUTH-ENGLISH-LP-6-4-6",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-7-4-4",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S303"
+  ],
+  "objectives": [
+    "辨認可查證的日期、數量與事件。",
+    "辨認 best、beautiful、should 等價值判斷。",
+    "處理事實與意見混合句。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U46_ENG_R4_S304_SEC_1",
+      "title": "事實不等於真的已查證",
+      "content": "fact 類型表示可查，例如 opens at 8；題目不要求盲信，只判定可用證據核對。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S304_SEC_2",
+      "title": "意見需要評價標準",
+      "content": "best、boring、worthwhile 會因標準或人而異。即使很多人同意仍是評價。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S304_SEC_3",
+      "title": "混合句拆開",
+      "content": "The bridge opened in 2020 and is beautiful 包含可查日期與主觀美感。不可整句只貼一標籤。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S304_SEC_4",
+      "title": "來源不決定類型",
+      "content": "官方網站也能發表建議，社群貼文也能寫可查時間。看句子本身。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U46_ENG_R4_S304_EX_1",
+      "prompt": "The train left at 8:12.",
+      "steps": [
+        "有具體時間。",
+        "可查紀錄。",
+        "無評價。"
+      ],
+      "answer": "fact",
+      "why": "可由時刻或紀錄核對。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S304_EX_2",
+      "prompt": "The train ride was delightful.",
+      "steps": [
+        "delightful 是感受。",
+        "標準依人。",
+        "不可由時間表決定。"
+      ],
+      "answer": "opinion",
+      "why": "需主觀評價。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S304_EX_3",
+      "prompt": "Opened in 1998 and is the finest hall",
+      "steps": [
+        "日期可查。",
+        "finest 評價。",
+        "拆兩部分。"
+      ],
+      "answer": "fact plus opinion",
+      "why": "混合句需分解。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "我同意的就是事實。",
+      "whyWrong": "同意不改可查性。",
+      "correction": "問可否核對。"
+    },
+    {
+      "belief": "有數字一定是事實。",
+      "whyWrong": "數字也可用於未證實預測。",
+      "correction": "看命題是否可查。"
+    },
+    {
+      "belief": "官方來源每句都是事實。",
+      "whyWrong": "也可能含建議與評價。",
+      "correction": "逐句分類。"
+    },
+    {
+      "belief": "整句只能有一種類型。",
+      "whyWrong": "可能混合。",
+      "correction": "以 and 拆命題。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "best 通常是哪類？",
+      "answer": "意見",
+      "reason": "需要評價標準。"
+    },
+    {
+      "prompt": "開門時間可查嗎？",
+      "answer": "可以",
+      "reason": "可由紀錄核對。"
+    },
+    {
+      "prompt": "混合句如何處理？",
+      "answer": "拆成各命題",
+      "reason": "分別判定。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-6-4-3",
+      "AUTH-ENGLISH-LP-6-4-4",
+      "AUTH-ENGLISH-LP-6-4-6",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-7-4-4",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  }
+}

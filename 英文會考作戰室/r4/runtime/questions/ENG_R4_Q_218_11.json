@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_218_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S218"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "9:02  Mia: The shop is still closed.\n9:08  You: I can see the door opening now.\nWhich message was sent later?",
+  "options": [
+    "The shop is still closed.",
+    "Both were sent together.",
+    "I can see the door opening now.",
+    "The times do not show an order."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這句標示為九點零二分，較早。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩句相差六分鐘。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "九點零八分的回覆在時間線上較晚。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "明確時刻足以排列先後。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u32-s218-order-messages-by-timestamp",
+    "connect-later-text-to-updated-state"
+  ],
+  "representationType": "text-message-time-order",
+  "misconceptionTargets": [
+    "read-screen-order-without-times"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "時間戳記決定訊息順序。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "內容變化也與由關閉到開門的次序一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

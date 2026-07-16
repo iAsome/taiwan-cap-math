@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_032_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S032"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which phrase has consistent number?",
+  "options": [
+    "those old houses",
+    "those old house",
+    "this old houses",
+    "these old house"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "those old houses：those 與複數 houses 一致。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "those old house：指示詞與名詞數不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "this old houses：this 與複數不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "these old house：these 與單數不合。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-demonstrative-by-distance-and-number",
+    "combine-deictic-distance-and-referent-number"
+  ],
+  "representationType": "demonstrative-distance-number",
+  "misconceptionTargets": [
+    "choose-demonstrative-on-one-axis-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「以單複數與說話者所建立的近／遠視角選 this、that、these、those，並讓後接名詞與 be 一致。」可推出 those old houses；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 those old houses 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

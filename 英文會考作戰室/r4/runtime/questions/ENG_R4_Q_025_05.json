@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_025_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S025"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The sentence is 'I am early.' Which question asks the speaker about it?",
+  "options": [
+    "Are you early?",
+    "Am I early?",
+    "Do you are early?",
+    "Is you early?"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Are you early?：對聽者提問時 I 轉為 you，am 轉為 are。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Am I early?：這是說話者問自己的形式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Do you are early?：不需要 do。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Is you early?：you 不搭 is。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "form-and-answer-be-questions",
+    "invert-be-and-maintain-person-number-time"
+  ],
+  "representationType": "be-question-short-answer",
+  "misconceptionTargets": [
+    "add-do-or-copy-question-person"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「將 be 移到主詞前形成一般問句，並以相同人稱、數、時態提供 Yes/No 短答或必要補充。」可推出 Are you early?；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 Are you early? 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

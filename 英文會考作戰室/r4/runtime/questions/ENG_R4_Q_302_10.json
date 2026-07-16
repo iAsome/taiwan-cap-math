@@ -1,0 +1,95 @@
+{
+  "id": "ENG_R4_Q_302_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S302"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "After a school added recycling bins, mixed trash fell by 20%. Other programs also began that month. Which claim is careful?",
+  "options": [
+    "Bins alone certainly caused the entire drop.",
+    "Mixed trash rose by 20%.",
+    "Recycling has no relation to waste.",
+    "Mixed trash fell after the changes, but one program cannot be isolated as the cause."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Bins alone certainly caused the entire drop.：混淆其他 programs。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Mixed trash rose by 20%.：方向相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Recycling has no relation to waste.：資料至少顯示同時變化。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Mixed trash fell after the changes, but one program cannot be isolated as the cause.：多方案同時發生，不能單獨歸因 bins。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "evaluate-evidence-supported-conclusion",
+    "match-claim-strength-and-scope-to-method"
+  ],
+  "representationType": "evidence-conclusion",
+  "misconceptionTargets": [
+    "overgeneralize-small-or-observational-result"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「結論的每個範圍詞與因果強度都不超過文中方法和結果」可推出 Mixed trash fell after the changes, but one program cannot be isolated as the cause.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 Mixed trash fell after the changes, but one program cannot be isolated as the cause. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

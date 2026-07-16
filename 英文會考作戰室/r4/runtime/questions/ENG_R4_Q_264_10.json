@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_264_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S264"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The river current became stronger after the rain. What is current here?",
+  "options": [
+    "happening now",
+    "electric power",
+    "a newspaper report",
+    "moving water"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "happening now：形容詞義不能作此名詞中心。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "electric power：river/rain 情境不支持電流。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "a newspaper report：媒體義與 stronger 不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "moving water：the river current 為名詞片語，stronger after rain 支持水流。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "use-part-of-speech-and-collocation",
+    "filter-by-part-of-speech-and-object"
+  ],
+  "representationType": "syntax-collocation-vocabulary",
+  "misconceptionTargets": [
+    "use-most-familiar-sense"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「陌生字的句法位置及與相鄰字形成的自然搭配」可推出 moving water；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 moving water 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

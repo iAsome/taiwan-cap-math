@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_044_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S044"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Why can 'the nurses' station' contain a singular station?",
+  "options": [
+    "The apostrophe makes station plural.",
+    "Station has an invisible plural ending.",
+    "Owner number and possessed-item number are independent.",
+    "Nurses is actually singular."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The apostrophe makes station plural.：撇號標在擁有者，不改 station。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Station has an invisible plural ending.：沒有此規則。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Owner number and possessed-item number are independent.：多位護理師可共用一個站點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Nurses is actually singular.：nurses 是複數。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "form-regular-plural-possessive",
+    "form-owner-number-before-placing-apostrophe"
+  ],
+  "representationType": "plural-noun-possessive",
+  "misconceptionTargets": [
+    "append-s-after-every-apostrophe-or-link-owner-number-to-item-number"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「先建立規則複數，再將撇號放在複數 s 後，並以一位或多位擁有者的語意區分 student's 與 students'。」可推出 Owner number and possessed-item number are independent.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 Owner number and possessed-item number are independent. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

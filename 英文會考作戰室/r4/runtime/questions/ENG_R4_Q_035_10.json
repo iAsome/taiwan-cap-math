@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_035_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S035"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Why is 'the our classroom' incorrect?",
+  "options": [
+    "Classroom must always be plural.",
+    "Our is an adjective that follows classroom.",
+    "The can only appear at sentence end.",
+    "The and our compete for the same determiner position."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Classroom must always be plural.：名詞數不是問題。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Our is an adjective that follows classroom.：our 應放名詞前且屬限定詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The can only appear at sentence end.：the 一般置於名詞片語前。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "The and our compete for the same determiner position.：冠詞與所有格不能如此並列。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "assemble-integrated-noun-phrase",
+    "order-determiner-quantity-modifier-head-and-postmodifier"
+  ],
+  "representationType": "integrated-noun-phrase",
+  "misconceptionTargets": [
+    "stack-determiners-or-update-only-head-number"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「依限定詞互斥、數量、形容詞位置與後置限定順序，組成語意清楚且一致的完整名詞片語。」可推出 The and our compete for the same determiner position.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 The and our compete for the same determiner position. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

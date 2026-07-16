@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_260_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S260"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The class learned that rain would begin at noon. Their outdoor lunch starts at 12:30, and the hall is free. What will they likely do?",
+  "options": [
+    "ask the rain to stop",
+    "hold lunch outside without considering rain",
+    "cancel school forever",
+    "move lunch into the hall"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "ask the rain to stop：不现实。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "hold lunch outside without considering rain：忽略已知风险。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "cancel school forever：强度过度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "move lunch into the hall：天气冲突与 free indoor space 提供直接方案。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "predict-bounded-next-event",
+    "continue-goal-with-nearest-action"
+  ],
+  "representationType": "bounded-story-prediction",
+  "misconceptionTargets": [
+    "choose-dramatic-distant-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「人物目標、未解決問題與最近事件共同限制的下一步」可推出 move lunch into the hall；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 move lunch into the hall 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

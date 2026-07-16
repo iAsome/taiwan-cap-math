@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_258_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S258"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Text: The road is wet and the sky is clear now. Which is a guess?",
+  "options": [
+    "The sky is currently clear",
+    "Water reached the road somehow",
+    "It rained exactly ten minutes ago",
+    "The road is wet"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The sky is currently clear：明示。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Water reached the road somehow：wet 的最小必要概括。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "It rained exactly ten minutes ago：wet road 可能多因，精確時間未给。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "The road is wet：明示。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "separate-inference-from-guess",
+    "minimize-unstated-premises"
+  ],
+  "representationType": "inference-versus-guess",
+  "misconceptionTargets": [
+    "choose-vivid-unsupported-detail"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「合理推論能逐步連回文本，猜測需加入未提供的新前提」可推出 It rained exactly ten minutes ago；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 It rained exactly ten minutes ago 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

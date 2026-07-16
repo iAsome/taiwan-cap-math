@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_223_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S223"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Post: Forty students joined the walk, and the team gave water to everyone.\nWhat can readers know from the post?",
+  "options": [
+    "Every student in town joined.",
+    "The water was cold.",
+    "Forty students took part.",
+    "The walk was easy."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "forty students 不等於全鎮學生。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "水溫沒有描述。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "參與人數由第一句明確提供。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "活動難度也未說明。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s223-preserve-quantifier-scope-in-post",
+    "reject-unstated-quality-and-temperature"
+  ],
+  "representationType": "social-post-detail",
+  "misconceptionTargets": [
+    "expand-limited-group-to-whole-community"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "數量陳述的範圍只到貼文所稱參與者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "答案避免把 everyone 的受水範圍擴大成全鎮參與。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

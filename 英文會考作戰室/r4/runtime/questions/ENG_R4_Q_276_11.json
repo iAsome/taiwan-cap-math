@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_276_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S276"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A cafe changed its cups on Monday. Sales rose on Tuesday. Which new fact would most strongly support the claim that the cup change helped sales?",
+  "options": [
+    "Tuesday was after Monday.",
+    "The cups and the walls were both white.",
+    "Customers said the new cups made drinks easier to carry, and many bought a second drink.",
+    "A nearby shop sold fewer books that week."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單純先後仍不足以建立原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "共同顏色與購買行為沒有機制連結。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "顧客回應與第二次購買提供從杯子到銷售的直接路徑。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "書店銷售屬於不同商品與場所。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u41-s276-q11-add-mechanism-to-causal-claim",
+    "compare-strength-of-causal-evidence"
+  ],
+  "representationType": "causal-evidence-selection",
+  "misconceptionTargets": [
+    "treat-after-as-proof-of-because"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "較強支持需要合理機制加上相關行為證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項仍是支持而非絕對證明，但比時間先後更有力。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_230_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S230"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: The new rule will help every student.\nB: Maybe. Do we know how many students have tried it?\nWhat does B want before agreeing?",
+  "options": [
+    "A longer school day",
+    "A different teacher",
+    "More facts about the rule",
+    "A promise to avoid students"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有延長上課的要求。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "教師也不是爭點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "B 詢問實際試用人數以檢查主張。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "規則本來就是為學生，並非避開他們。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "infer-request-for-evidence-before-agreement"
+  ],
+  "representationType": "claim-evaluation-dialogue",
+  "misconceptionTargets": [
+    "treat-maybe-as-support-for-universal-claim"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "問題直接針對 every student 所需的證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項說明保留態度的資訊需求。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

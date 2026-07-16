@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_284_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S284"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Sam arrives at 13:00 without registering for the 14:30 cooking class. Can Sam join?",
+  "options": [
+    "No, because the Rice Box costs $6.",
+    "No, registration was required before noon.",
+    "Yes, because the class starts later.",
+    "Yes, because Room 1 is open at 13:00."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "No, because the Rice Box costs $6.：價格不是報名條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "No, registration was required before noon.：雖尚未到 14:30，但登記截止已過。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Yes, because the class starts later.：忽略 before noon 截止。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Yes, because Room 1 is open at 13:00.：13:00 是 English 且房間不同。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "solve-with-chart-and-note",
+    "apply-table-chart-and-note-constraints"
+  ],
+  "representationType": "integrated-information-sheet",
+  "misconceptionTargets": [
+    "ignore-note-after-finding-table-match"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「主表或圖表提供的數值與 NOTE 限制同時套用後只剩一個可行方案」可推出 No, registration was required before noon.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 No, registration was required before noon. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "ENG_R4_FIG_42_12"
+  ]
+}

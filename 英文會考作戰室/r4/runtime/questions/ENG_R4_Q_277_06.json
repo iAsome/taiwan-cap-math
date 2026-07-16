@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_277_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S277"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Sentence to insert: 'They placed it beside the front window.' Text: The art club finished a large paper bird. [A] The bright colors could be seen from outside. [B] A small sign gave the artists' names. [C] Visitors stopped to take pictures. [D] Where does the sentence belong?",
+  "options": [
+    "Before the art club finished the bird",
+    "At A",
+    "At C",
+    "At D"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "They 與 it 在作品和社團出現前沒有清楚對象。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "They 回指 club members，it 回指 paper bird，且窗邊位置解釋下一句可從外面看見。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "放到 C 會讓亮色可見先於作品擺到窗邊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "段末才擺放，卻已有訪客拍照，事件顛倒。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u41-s277-q06-insert-dual-pronoun-display-action",
+    "resolve-they-and-it-before-visibility-result"
+  ],
+  "representationType": "object-placement-insertion",
+  "misconceptionTargets": [
+    "check-only-they-antecedent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "兩個代名詞都需向前找到對象。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "A 位置還能為可見效果提供地點原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

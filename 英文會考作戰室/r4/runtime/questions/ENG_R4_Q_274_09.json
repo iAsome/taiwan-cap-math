@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_274_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S274"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "We visited a farm that grows tea. The tea plants covered the lower hill. Their leaves were picked by hand. What information chain holds the paragraph together?",
+  "options": [
+    "farm → tea plants → their leaves",
+    "visit → lower → hand",
+    "we → hill → farm",
+    "tea → visited → covered"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "每一項先被介紹，再成為下一句的已知主題。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "三個詞不是可回指的同一對象鏈。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "we 與 hill 沒有所有關係可接到 farm。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "動作與名詞被任意重排，無法顯示指涉。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u41-s274-q09-trace-nested-information-chain",
+    "map-whole-place-to-plants-to-parts"
+  ],
+  "representationType": "paragraph-reference-chain",
+  "misconceptionTargets": [
+    "list-repeated-words-without-reference"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "段落先縮小到農場中的茶樹，再到葉子。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "所有格 their 清楚把 leaves 接回 plants。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

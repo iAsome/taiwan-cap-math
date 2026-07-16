@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_237_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S237"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Jay told Leo that the door was open. He then went back to close it. Which statement is safest?",
+  "options": [
+    "He must be Jay",
+    "He must be Leo",
+    "He could be Jay or Leo without more context",
+    "He means the door"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "He must be Jay：原文沒有證據排除 Leo。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "He must be Leo：原文沒有證據排除 Jay。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "He could be Jay or Leo without more context：Jay 與 Leo 都是單數男性且都可能回去關門，資訊不足。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "He means the door：door 是事物，應以 it 而非 He 指稱。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "resolve-pronoun-antecedent",
+    "recognize-two-valid-human-candidates"
+  ],
+  "representationType": "ambiguity-judgment",
+  "misconceptionTargets": [
+    "always-select-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「代名詞的數量、類型與後續動作」可推出 He could be Jay or Leo without more context；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 He could be Jay or Leo without more context 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

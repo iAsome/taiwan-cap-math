@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_009_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S009"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-2",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-2-4-1",
+    "AUTH-ENGLISH-LP-2-4-3",
+    "AUTH-ENGLISH-LP-6-4-1",
+    "AUTH-ENGLISH-LP-6-4-2",
+    "AUTH-ENGLISH-LP-7-4-5"
+  ],
+  "stimulusId": null,
+  "stem": "The teacher says, 'Fold the paper and place it in the box.' Which sequence is practical?",
+  "options": [
+    "put it away before folding it",
+    "tear it, then fold it",
+    "leave it on the desk",
+    "fold it, then put it in the box"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "put it away before folding it：顛倒且難執行。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "tear it, then fold it：加入未說動作。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "leave it on the desk：漏兩步。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "fold it, then put it in the box：it 回指已折紙張。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "sequence-two-action-command",
+    "extract-two-actions-and-order"
+  ],
+  "representationType": "two-step-classroom-command",
+  "misconceptionTargets": [
+    "perform-only-last-or-reverse-sequence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-2",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-2-4-1",
+      "AUTH-ENGLISH-LP-2-4-3",
+      "AUTH-ENGLISH-LP-6-4-1",
+      "AUTH-ENGLISH-LP-6-4-2",
+      "AUTH-ENGLISH-LP-7-4-5"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「and、then、before、after 建立兩個課堂動作的先後或並列關係」可推出 fold it, then put it in the box；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 fold it, then put it in the box 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

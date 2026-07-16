@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_006_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S006"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AA-4-1",
+    "AUTH-ENGLISH-LC-AB-4-2",
+    "AUTH-ENGLISH-LC-AB-4-3",
+    "AUTH-ENGLISH-LP-1-4-10",
+    "AUTH-ENGLISH-LP-3-4-1",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-4",
+    "AUTH-ENGLISH-LP-5-4-5"
+  ],
+  "stimulusId": null,
+  "stem": "Which word uses ch rather than sh?",
+  "options": [
+    "wish",
+    "shop",
+    "lunch",
+    "fish"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "wish：sh。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "shop：sh。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "lunch：lunch 結尾 ch。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "fish：sh。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "decode-common-digraph-blend",
+    "map-letter-group-to-sound-in-word"
+  ],
+  "representationType": "digraph-decoding",
+  "misconceptionTargets": [
+    "split-digraph-into-letter-names"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AA-4-1",
+      "AUTH-ENGLISH-LC-AB-4-2",
+      "AUTH-ENGLISH-LC-AB-4-3",
+      "AUTH-ENGLISH-LP-1-4-10",
+      "AUTH-ENGLISH-LP-3-4-1",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-4",
+      "AUTH-ENGLISH-LP-5-4-5"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「常見 sh、ch、th、wh、ng、ck、ph、qu 等字母組合在指定例字中對應整體音」可推出 lunch；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 lunch 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

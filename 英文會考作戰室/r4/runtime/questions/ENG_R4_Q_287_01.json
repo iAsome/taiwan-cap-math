@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_287_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S287"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Announcement: The study room is available only after 3:00. Schedule: 2:40 Room B OPEN; 3:25 Room B OPEN. Which choice works?",
+  "options": [
+    "3:25 in Room B",
+    "2:40 in Room B",
+    "both times",
+    "neither time"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "3:25 in Room B：3:25 晚於三點且 OPEN。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "2:40 in Room B：早於公告時段。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "both times：2:40 不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "neither time：3:25 可行。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "combine-announcement-and-schedule",
+    "apply-notice-constraint-to-schedule"
+  ],
+  "representationType": "announcement-plus-timetable",
+  "misconceptionTargets": [
+    "choose-schedule-row-without-announcement-rule"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「公告條件套入時刻表的時間、地點與狀態後判斷方案是否可行」可推出 3:25 in Room B；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 3:25 in Room B 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

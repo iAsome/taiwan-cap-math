@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_222_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S222"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Can you help at the book sale on Saturday? Please tell me yes or no.\nWhich reply answers the request?",
+  "options": [
+    "Yes, I can help on Saturday.",
+    "The books are on the table.",
+    "Saturday has good weather.",
+    "I like reading."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "回覆明確表示願意並重述協助日期。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是物品位置，沒有回答能否幫忙。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "天氣評論與請求無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "閱讀喜好也不能表示是否出席。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u32-s222-answer-yes-no-volunteer-request",
+    "reject-topic-related-but-nonresponsive-sentences"
+  ],
+  "representationType": "message-reply-decision",
+  "misconceptionTargets": [
+    "reply-with-related-background-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "完整回覆須包含明確決定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "相關主題字不等於回答來訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

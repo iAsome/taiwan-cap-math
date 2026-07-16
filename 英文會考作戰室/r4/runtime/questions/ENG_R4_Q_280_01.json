@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_280_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S280"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Which item is both nut-free and the least expensive?",
+  "options": [
+    "Fruit Cup for $3",
+    "Bean Wrap for $4",
+    "Fish Roll for $6",
+    "Fruit Cup for $6"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Fruit Cup for $3：Fruit Cup 同列明示 NUT-FREE，且價格三元最低。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Bean Wrap for $4：雖 vegan，但未標 nut-free。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Fish Roll for $6：價格較高且標示魚類。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Fruit Cup for $6：品項正確但價格跨列。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "integrate-menu-price-and-restriction",
+    "filter-label-then-compute-price"
+  ],
+  "representationType": "menu-table",
+  "misconceptionTargets": [
+    "choose-price-without-dietary-check"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「同一菜單列的品項、價格與標籤同時符合預算或飲食限制」可推出 Fruit Cup for $3；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 Fruit Cup for $3 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "ENG_R4_FIG_42_01"
+  ]
+}

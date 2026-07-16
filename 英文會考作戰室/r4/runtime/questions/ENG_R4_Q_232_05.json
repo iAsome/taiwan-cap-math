@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_232_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S232"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Tom ___ dinner when the phone rang.",
+  "options": [
+    "cooks",
+    "was cooking",
+    "has cooked",
+    "will cook"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "cooks：一般現在式與 rang 的過去框架不合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "was cooking：電話響起時，做飯是正在進行的過去背景，故用 was cooking。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "has cooked：現在完成式連到現在，沒有呈現被打斷的背景。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "will cook：未來式與過去的 rang 衝突。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-tense-from-time-evidence",
+    "combine-past-progressive-and-past"
+  ],
+  "representationType": "interrupted-action-cloze",
+  "misconceptionTargets": [
+    "make-both-events-simple"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「時間詞與事件先後」可推出 was cooking；再核對句中每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一放回原文，只有 was cooking 能同時滿足句法與全文意思；另外三項各有列明的衝突，沒有第二個合理答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

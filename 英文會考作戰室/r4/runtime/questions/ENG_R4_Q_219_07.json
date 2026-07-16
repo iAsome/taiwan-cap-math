@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_219_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S219"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Tonight's movie is canceled because the hall has no power.\nWhat does the message do?",
+  "options": [
+    "It asks readers to bring lights.",
+    "It changes the movie title.",
+    "It tells readers the event will not happen.",
+    "It invites readers to another hall."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "原因涉及停電，但沒有攜帶燈具要求。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "電影名稱沒有出現或變更。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "canceled 表示今晚活動不會舉行。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "訊息沒有替代地點。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s219-interpret-cancellation-announcement",
+    "avoid-inventing-response-to-event-cause"
+  ],
+  "representationType": "message-purpose-cancellation",
+  "misconceptionTargets": [
+    "convert-reason-into-instruction"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "取消狀態是可由文字直接確定的功能。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "原因不會自動形成新的讀者任務。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

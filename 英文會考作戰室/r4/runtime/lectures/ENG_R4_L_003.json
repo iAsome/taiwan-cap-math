@@ -1,0 +1,138 @@
+{
+  "id": "ENG_R4_L_003",
+  "subject": "english",
+  "unitId": "ENG_R4_U01",
+  "skillId": "ENG_R4_S003",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AA-4-1",
+    "AUTH-ENGLISH-LC-AB-4-2",
+    "AUTH-ENGLISH-LC-AB-4-3",
+    "AUTH-ENGLISH-LP-1-4-10",
+    "AUTH-ENGLISH-LP-3-4-1",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-4",
+    "AUTH-ENGLISH-LP-5-4-5"
+  ],
+  "prerequisites": [
+    "ENG_R4_S002"
+  ],
+  "objectives": [
+    "辨識單音節字起首音。",
+    "辨識單音節字結尾音。",
+    "不把拼字位置與音節數混淆。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U01_ENG_R4_S003_SEC_1",
+      "title": "先完整發音",
+      "content": "說完整字再拉開首尾，例如 cat → /k/ ... /t/。不要逐字母名稱念。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S003_SEC_2",
+      "title": "首音是第一個聽到的音",
+      "content": "ship 首音是 /ʃ/，雖由兩字母 sh 表示，仍是一個起首音。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S003_SEC_3",
+      "title": "尾音看最後語音",
+      "content": "ring 的結尾 /ŋ/ 由 ng 表示，不選單獨 /g/。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S003_SEC_4",
+      "title": "安靜字母不算音",
+      "content": "lamb 結尾聽到 /m/，b 不發音；本技能以實際發音為準。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U01_ENG_R4_S003_EX_1",
+      "prompt": "cat",
+      "steps": [
+        "完整發 cat。",
+        "切首 /k/。",
+        "切尾 /t/。"
+      ],
+      "answer": "initial /k/, final /t/",
+      "why": "音位位置清楚。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S003_EX_2",
+      "prompt": "ship",
+      "steps": [
+        "sh 一起。",
+        "首音 /ʃ/。",
+        "尾音 /p/。"
+      ],
+      "answer": "/ʃ/ ... /p/",
+      "why": "不拆 sh。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S003_EX_3",
+      "prompt": "ring",
+      "steps": [
+        "發完整字。",
+        "尾部 ng。",
+        "選 /ŋ/。"
+      ],
+      "answer": "final /ŋ/",
+      "why": "不是字母名稱 g。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "首音等於第一字母名稱。",
+      "whyWrong": "音與名稱不同。",
+      "correction": "發完整字。"
+    },
+    {
+      "belief": "兩字母必定兩個音。",
+      "whyWrong": "digraph 可一音。",
+      "correction": "把 sh/ng 整體聽。"
+    },
+    {
+      "belief": "最後字母一定發音。",
+      "whyWrong": "可能 silent。",
+      "correction": "以聽到為準。"
+    },
+    {
+      "belief": "中間母音當結尾音。",
+      "whyWrong": "結尾是最後語音。",
+      "correction": "從後往前切。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "ship 首音是幾個音？",
+      "answer": "一個 /ʃ/",
+      "reason": "sh 共同表示。"
+    },
+    {
+      "prompt": "ring 結尾音？",
+      "answer": "/ŋ/",
+      "reason": "ng 組合。"
+    },
+    {
+      "prompt": "silent letter 算音嗎？",
+      "answer": "不算",
+      "reason": "看實際發音。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AA-4-1",
+      "AUTH-ENGLISH-LC-AB-4-2",
+      "AUTH-ENGLISH-LC-AB-4-3",
+      "AUTH-ENGLISH-LP-1-4-10",
+      "AUTH-ENGLISH-LP-3-4-1",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-4",
+      "AUTH-ENGLISH-LP-5-4-5"
+    ]
+  }
+}

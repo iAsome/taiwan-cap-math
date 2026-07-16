@@ -1,0 +1,134 @@
+{
+  "id": "ENG_R4_L_262",
+  "subject": "english",
+  "unitId": "ENG_R4_U39",
+  "skillId": "ENG_R4_S262",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "prerequisites": [
+    "ENG_R4_S261"
+  ],
+  "objectives": [
+    "由列舉實例歸納陌生字共同特徵。",
+    "由 but、unlike、while 等對比推出相反或不同面向。",
+    "避免把單一例子誤當完整字義。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U39_ENG_R4_S262_SEC_1",
+      "title": "例子要找共同點",
+      "content": "for example 或 such as 後可能列出多項。不要只翻第一例，問這些事物共同具有什麼特徵。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S262_SEC_2",
+      "title": "對比提供界線",
+      "content": "Unlike the rigid board, this sheet is flexible 中 rigid 與 flexible 在可彎曲程度形成對比。先找比較面向，再推出目標字。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S262_SEC_3",
+      "title": "but 後不一定是反義字",
+      "content": "The room is plain but comfortable 中 plain 與 comfortable 是不同評價面向，不是直接反義。只能推出本文支持的部分。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S262_SEC_4",
+      "title": "用全部線索限制",
+      "content": "例子、對比與句法應指向同一意思。若候選只合一個例子但不合另一個，就不是共同字義。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U39_ENG_R4_S262_EX_1",
+      "prompt": "The shop sells produce, such as apples, beans, and carrots.",
+      "steps": [
+        "列出三種食物。",
+        "共同點是農作物。",
+        "不是只指 apples。"
+      ],
+      "answer": "farm-grown food",
+      "why": "produce 在此是農產品。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S262_EX_2",
+      "prompt": "Unlike the rigid box, the bag is flexible.",
+      "steps": [
+        "比較同一可彎程度。",
+        "rigid 不易彎。",
+        "flexible 為可彎。"
+      ],
+      "answer": "easy to bend",
+      "why": "對比限定了物理特徵。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S262_EX_3",
+      "prompt": "Most seats were empty, but the front row was packed.",
+      "steps": [
+        "empty 與 packed 對比。",
+        "比較占用程度。",
+        "packed 表很多人。"
+      ],
+      "answer": "very full",
+      "why": "不是說座位被包裝。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "第一個例子就是完整定義。",
+      "whyWrong": "例子只是一個成員。",
+      "correction": "歸納所有例子的共同上位概念。"
+    },
+    {
+      "belief": "but 兩邊每個字都互為反義。",
+      "whyWrong": "轉折可能發生在整句或不同面向。",
+      "correction": "先確定比較維度。"
+    },
+    {
+      "belief": "unlike 後只需看最近字。",
+      "whyWrong": "需比較前後兩個對象的同一特徵。",
+      "correction": "寫出 A 與 B 的差異。"
+    },
+    {
+      "belief": "一個候選合一例就足夠。",
+      "whyWrong": "多例必須全部涵蓋。",
+      "correction": "逐例測試。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "such as 後的項目用來做什麼？",
+      "answer": "提供例子",
+      "reason": "應歸納共同概念。"
+    },
+    {
+      "prompt": "unlike 提示哪種關係？",
+      "answer": "對比",
+      "reason": "比較兩者差異。"
+    },
+    {
+      "prompt": "三例中候選只合兩例可選嗎？",
+      "answer": "不可",
+      "reason": "完整字義需涵蓋全部例子。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  }
+}

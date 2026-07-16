@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_260_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S260"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The team has counted the votes. Nora holds the result card and walks toward the microphone. What next?",
+  "options": [
+    "sing an unrelated song",
+    "announce the result",
+    "start voting before announcing",
+    "hide the card for a year"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "sing an unrelated song：无音乐线索。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "announce the result：counted votes、result card、microphone 串成公布。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "start voting before announcing：投票已完成。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "hide the card for a year：行动方向相反。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "predict-bounded-next-event",
+    "continue-goal-with-nearest-action"
+  ],
+  "representationType": "bounded-story-prediction",
+  "misconceptionTargets": [
+    "choose-dramatic-distant-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「人物目標、未解決問題與最近事件共同限制的下一步」可推出 announce the result；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 announce the result 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

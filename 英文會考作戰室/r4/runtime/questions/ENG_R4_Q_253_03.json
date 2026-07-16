@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_253_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S253"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "Need: class after 4 p.m., beginner level. Art: 4:30 beginner. Music: 5:00 advanced. Dance: 3:30 beginner. Which class fits?",
+  "options": [
+    "Dance",
+    "Music and Dance",
+    "Art",
+    "Music"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Dance：程度合但 3:30 太早。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Music and Dance：各缺一條件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Art：時間 4:30 在四點後且 beginner。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Music：時間合但 advanced。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "verify-list-constraints",
+    "apply-all-list-constraints"
+  ],
+  "representationType": "constraint-list",
+  "misconceptionTargets": [
+    "accept-most-conditions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「清單每一欄與題目限制逐項核對後全部通過」可推出 Art；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 Art 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

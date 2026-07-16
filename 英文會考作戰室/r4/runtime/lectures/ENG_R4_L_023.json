@@ -1,0 +1,130 @@
+{
+  "id": "ENG_R4_L_023",
+  "subject": "english",
+  "unitId": "ENG_R4_U04",
+  "skillId": "ENG_R4_S023",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S022"
+  ],
+  "objectives": [
+    "把現在式 am、is、are 與主詞配對。",
+    "把過去式 was、were 與單複數配對。",
+    "避免只看最近名詞或單一時間字猜形式。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U04_ENG_R4_S023_SEC_1",
+      "title": "現在式先看主詞",
+      "content": "I am；he、she、it 與單數名詞用 is；you、we、they 與複數名詞用 are。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S023_SEC_2",
+      "title": "過去式分成兩組",
+      "content": "I、he、she、it 與單數名詞用 was；you、we、they 與複數名詞用 were。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S023_SEC_3",
+      "title": "介系詞片語不改主詞數",
+      "content": "The box of pens is heavy，核心主詞是 box；of pens 只補充內容。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S023_SEC_4",
+      "title": "時間線索要真的控制事件",
+      "content": "now、today 常支持現在；yesterday、last night 支持過去。引用或背景中的時間字不一定控制主要句。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U04_ENG_R4_S023_EX_1",
+      "prompt": "I ___ ready now.",
+      "steps": [
+        "主詞是 I。",
+        "now 支持現在。",
+        "I 的現在 be 是 am。"
+      ],
+      "answer": "am",
+      "why": "人稱與時間都吻合。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S023_EX_2",
+      "prompt": "The players ___ tired after yesterday's game.",
+      "steps": [
+        "核心主詞 players 為複數。",
+        "yesterday's game 建立過去。",
+        "複數過去 be 用 were。"
+      ],
+      "answer": "were",
+      "why": "數與時態共同決定。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S023_EX_3",
+      "prompt": "A basket of apples ___ on the table.",
+      "steps": [
+        "核心主詞 basket 單數。",
+        "句子描述現在位置。",
+        "單數現在用 is。"
+      ],
+      "answer": "is",
+      "why": "apples 位於 of 片語內，不控制 be。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到複數 pens 就一定用 are。",
+      "whyWrong": "pens 可能只是 of 片語內容。",
+      "correction": "找出完整主詞的核心名詞。"
+    },
+    {
+      "belief": "you 是單數時用 is。",
+      "whyWrong": "you 在現在式仍搭配 are。",
+      "correction": "把 you 視為固定例外配對。"
+    },
+    {
+      "belief": "I 的過去式是 were。",
+      "whyWrong": "標準直述句中 I 搭配 was。",
+      "correction": "區分一般過去與假設語氣的特殊用法。"
+    },
+    {
+      "belief": "句中有 yesterday 就所有 be 都用過去。",
+      "whyWrong": "時間字可能屬於另一事件或名詞片語。",
+      "correction": "確認它修飾哪一個狀態。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "You 的現在 be 是什麼？",
+      "answer": "are。",
+      "reason": "不隨單複數聽者改成 is。"
+    },
+    {
+      "prompt": "單數主詞的過去 be 通常是什麼？",
+      "answer": "was。",
+      "reason": "I、he、she、it 也在此組。"
+    },
+    {
+      "prompt": "The bag of books 的核心主詞是什麼？",
+      "answer": "bag。",
+      "reason": "of books 不控制謂語數。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

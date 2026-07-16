@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_022_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S022"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The teacher spoke to the students, and they listened. What does 'they' mean?",
+  "options": [
+    "the teacher",
+    "the speech",
+    "the classroom wall",
+    "the students"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the teacher：單數不一致。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the speech：不是複數人物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the classroom wall：句中沒有且不能聽。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "the students：複數人物且能執行 listened。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "resolve-pronoun-antecedent",
+    "filter-antecedents-by-features-role-and-meaning"
+  ],
+  "representationType": "pronoun-reference",
+  "misconceptionTargets": [
+    "select-nearest-noun-without-compatibility"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「利用人稱、數、性別、語法角色與語意相容性，找出代名詞唯一且最近的合理先行詞。」可推出 the students；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 the students 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

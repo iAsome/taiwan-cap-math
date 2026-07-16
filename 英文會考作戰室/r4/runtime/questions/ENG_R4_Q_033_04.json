@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_033_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S033"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "May asks whether the caller is Leo. Which phone question fits the target pattern?",
+  "options": [
+    "Am that Leo?",
+    "Is that Leo?",
+    "Are those Leo?",
+    "Is these Leo?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Am that Leo?：that 不搭 am。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Is that Leo?：電話中辨識對方常用 that。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Are those Leo?：單一人物不搭 those/are。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Is these Leo?：數不一致。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "distinguish-this-and-that",
+    "locate-single-referent-in-physical-or-discourse-space"
+  ],
+  "representationType": "singular-demonstrative-viewpoint",
+  "misconceptionTargets": [
+    "treat-this-that-as-fixed-left-right-or-attitude"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「在單一對象中，依說話者的位置、持有狀態、指向與話語距離選 this 或 that，並辨識電話等慣用視角。」可推出 Is that Leo?；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Is that Leo? 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

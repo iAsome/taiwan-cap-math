@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_277_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S277"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Sentence to insert: 'This choice kept the books dry.' Text: The club moved its book sale from the yard to the hall. [A] Rain began before noon. [B] More visitors came after lunch. [C] Where should the sentence go?",
+  "options": [
+    "At A",
+    "At B",
+    "At C",
+    "Before the first sentence"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "This choice 回指移到會堂，接著下雨說明選擇的價值。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "放在雨後仍可回指，但會切斷下雨與訪客增加的時間發展，且效果應先交代。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "段末才解釋 choice，與原因距離過遠。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "choice 在移動決定以前沒有對象。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u41-s277-q01-place-this-choice-after-decision",
+    "link-decision-to-protective-effect"
+  ],
+  "representationType": "labeled-sentence-insertion",
+  "misconceptionTargets": [
+    "place-reference-before-antecedent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "前句提供選擇內容，後句提供需要防雨的情境。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "A 位置讓指涉與效果最緊密。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

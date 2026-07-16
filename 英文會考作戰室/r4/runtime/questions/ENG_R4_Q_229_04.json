@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_229_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S229"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A. Yes, one bowl is enough.\nB. How much soup would you like?\nC. Here you are.\nD. Would you like some soup?\nWhich order completes the talk?",
+  "options": [
+    "B-A-D-C",
+    "D-C-B-A",
+    "A-B-D-C",
+    "D-B-A-C"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "先問份量卻尚未提供湯。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "上菜發生在份量詢問前。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "回答份量成了開場。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "先邀請、問份量、回答，再端上。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "order-soup-offer-and-serving"
+  ],
+  "representationType": "service-dialogue-sequence",
+  "misconceptionTargets": [
+    "serve-before-learning-amount"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "one bowl 回答 how much，而 Here you are 是實際交付。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項讓每個回應都有唯一前句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

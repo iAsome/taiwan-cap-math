@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_022_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S022"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ian dropped the glass, and it broke. What does 'it' mean?",
+  "options": [
+    "the act of dropping",
+    "and",
+    "the glass",
+    "Ian"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the act of dropping：事件不是具體破裂物。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "and：連接詞不是先行詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "the glass：被掉落的玻璃杯最合理地破裂。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Ian：人通常不以 it 指代。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "resolve-pronoun-antecedent",
+    "filter-antecedents-by-features-role-and-meaning"
+  ],
+  "representationType": "pronoun-reference",
+  "misconceptionTargets": [
+    "select-nearest-noun-without-compatibility"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「利用人稱、數、性別、語法角色與語意相容性，找出代名詞唯一且最近的合理先行詞。」可推出 the glass；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 the glass 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

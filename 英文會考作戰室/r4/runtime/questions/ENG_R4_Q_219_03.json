@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_219_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S219"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Remember to bring your school card for the trip tomorrow.\nWhy was this message sent?",
+  "options": [
+    "To sell a school card",
+    "To move the trip",
+    "To remind the reader about an item",
+    "To ask who owns the card"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "訊息沒有價格或交易。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "tomorrow 是既定時間，沒有新舊日期對比。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Remember to 加上物品明確構成提醒。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "school card 的持有人不是問題。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u32-s219-read-reminder-action-marker",
+    "separate-required-item-from-sale-or-ownership"
+  ],
+  "representationType": "message-purpose-reminder",
+  "misconceptionTargets": [
+    "classify-item-message-as-shopping"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "提醒目的由 Remember to 直接標示。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "物品出現不等於訊息在詢問所有權。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

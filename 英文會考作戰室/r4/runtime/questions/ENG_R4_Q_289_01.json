@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_289_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S289"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Mia needs an OPEN class after 4:00 that costs under $10. A: 3:30, OPEN, $6. B: 4:30, FULL, $8. C: 5:00, OPEN, $9. Which works?",
+  "options": [
+    "C",
+    "A",
+    "B",
+    "A and B"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "C：C 同時晚於四點、OPEN、九元低於十元。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "A：時間太早。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "B：狀態 FULL。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "A and B：各有一項不合。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "filter-options-by-multiple-conditions",
+    "intersect-all-explicit-constraints"
+  ],
+  "representationType": "multi-condition-options",
+  "misconceptionTargets": [
+    "accept-option-that-meets-only-some-conditions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「候選方案逐一通過時間、價格、資格與狀態等全部明示條件」可推出 C；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 C 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

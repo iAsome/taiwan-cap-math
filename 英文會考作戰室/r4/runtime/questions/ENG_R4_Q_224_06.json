@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_224_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S224"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Message: Can you bring one cake and arrive before six?\nReply: I will bring one cake at 5:30.\nWhich statement is true?",
+  "options": [
+    "The reply brings too many cakes.",
+    "The reply matches the item and time limits.",
+    "The reply arrives after six.",
+    "The reply changes the food."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "數量仍是一個。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "one cake 符合物品，5:30 也早於六點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "五點半在六點以前。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "cake 在兩段中相同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s224-confirm-equivalent-deadline-response",
+    "evaluate-specific-time-against-before-limit"
+  ],
+  "representationType": "message-reply-condition-match",
+  "misconceptionTargets": [
+    "treat-different-surface-wording-as-error"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "回覆不必逐字相同，只要語意條件一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "時刻要放入 before six 的範圍判斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_018_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S018"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-7"
+  ],
+  "stimulusId": null,
+  "stem": "A friend asks about your free-time activity. Which answer is complete and relevant?",
+  "options": [
+    "The park was a photo tomorrow.",
+    "I often take photos of birds in the park.",
+    "Free time is after a clock.",
+    "Birds often take my name."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The park was a photo tomorrow.：時態與名詞關係錯誤。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "I often take photos of birds in the park.：活動、頻率與地點構成相關回答。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Free time is after a clock.：沒有提供活動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Birds often take my name.：主客體與語意不合理。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "describe-interests-and-daily-activities",
+    "separate-preference-activity-and-frequency"
+  ],
+  "representationType": "interest-routine-description",
+  "misconceptionTargets": [
+    "infer-current-action-from-general-preference"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-7"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「以喜好動詞、活動名稱與頻率線索描述興趣或日常活動，並區分喜好與實際作息。」可推出 I often take photos of birds in the park.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 I often take photos of birds in the park. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

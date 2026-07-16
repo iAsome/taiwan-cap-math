@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_237_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S237"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Ben missed the last bus. This forced him to walk home. What does This mean?",
+  "options": [
+    "Ben",
+    "the last bus",
+    "missing the last bus",
+    "Ben's home"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Ben：Ben 是被迫走路的人，不是原因事件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the last bus：公車本身不是被錯過這個結果的完整表達。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "missing the last bus：被迫走路的原因是錯過末班車整件事。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Ben's home：home 是目的地，不能造成步行。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "resolve-pronoun-antecedent",
+    "resolve-this-as-event"
+  ],
+  "representationType": "event-reference",
+  "misconceptionTargets": [
+    "force-this-to-nearest-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「代名詞的數量、類型與後續動作」可推出 missing the last bus；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 missing the last bus 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

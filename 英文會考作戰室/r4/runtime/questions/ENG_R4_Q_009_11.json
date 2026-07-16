@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_009_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S009"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-2",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-2-4-1",
+    "AUTH-ENGLISH-LP-2-4-3",
+    "AUTH-ENGLISH-LP-6-4-1",
+    "AUTH-ENGLISH-LP-6-4-2",
+    "AUTH-ENGLISH-LP-7-4-5"
+  ],
+  "stimulusId": null,
+  "stem": "Instruction: 'Save the file, then close the program.' Why is this order sensible?",
+  "options": [
+    "The two verbs mean the same thing.",
+    "Saving deletes the program.",
+    "Saving first prevents losing the work.",
+    "Closing first creates a new file."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The two verbs mean the same thing.：不同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Saving deletes the program.：錯。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Saving first prevents losing the work.：先 save 再 close 符資料保全。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Closing first creates a new file.：不合。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "sequence-two-action-command",
+    "extract-two-actions-and-order"
+  ],
+  "representationType": "two-step-classroom-command",
+  "misconceptionTargets": [
+    "perform-only-last-or-reverse-sequence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-2",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-2-4-1",
+      "AUTH-ENGLISH-LP-2-4-3",
+      "AUTH-ENGLISH-LP-6-4-1",
+      "AUTH-ENGLISH-LP-6-4-2",
+      "AUTH-ENGLISH-LP-7-4-5"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「and、then、before、after 建立兩個課堂動作的先後或並列關係」可推出 Saving first prevents losing the work.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 Saving first prevents losing the work. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

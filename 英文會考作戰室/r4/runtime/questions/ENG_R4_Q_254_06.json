@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_254_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S254"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "Jay opened the email, read the new time, and changed his calendar. What did he do just before changing the calendar?",
+  "options": [
+    "He sent the email",
+    "He closed the calendar",
+    "He changed the meeting time himself",
+    "He read the new time"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "He sent the email：原文是 opened，不是 sent。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "He closed the calendar：原文沒有 close。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "He changed the meeting time himself：他只讀到 new time 並更新 calendar。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "He read the new time：列舉順序中 read 緊接在 changed 前。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "answer-event-sequence",
+    "locate-relative-event-order"
+  ],
+  "representationType": "event-sequence",
+  "misconceptionTargets": [
+    "choose-final-event-instead-of-next"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「時間標記、代名詞與必要動作建立的事件先後」可推出 He read the new time；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 He read the new time 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

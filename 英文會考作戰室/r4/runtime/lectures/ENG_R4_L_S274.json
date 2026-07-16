@@ -1,0 +1,141 @@
+{
+  "id": "ENG_R4_L_S274",
+  "subject": "english",
+  "unitId": "ENG_R4_U41",
+  "skillId": "ENG_R4_S274",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S273"
+  ],
+  "objectives": [
+    "能由代名詞回指判斷介紹句與承接句的先後。",
+    "能利用新舊資訊安排句子，使讀者先知道對象再讀細節。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S274_SEC_01",
+      "title": "名詞通常先於代名詞",
+      "content": "A small dog waited by the gate. It looked hungry. 第一個句子介紹 dog，第二句的 It 才有清楚對象。若段落一開始只有 he、she、it、they 或 this idea，讀者往往不知道它們指什麼。"
+    },
+    {
+      "id": "ENG_R4_L_S274_SEC_02",
+      "title": "the 與 this 常表示已知資訊",
+      "content": "a photo 第一次介紹照片，the photo 再談同一張；a plan 先出現後，this plan 才能承接。安排句序時，帶 a 或完整名稱的句子常負責介紹，帶 the、this、these 的句子常負責延伸。"
+    },
+    {
+      "id": "ENG_R4_L_S274_SEC_03",
+      "title": "不是所有代名詞都只看最近名詞",
+      "content": "Leo put the book beside the lamp because it was too dark to read. it 的文法可能有歧義，必須看語意與後文。若兩個名詞都合理，正確做法是承認不清楚，不任意選最近者。"
+    },
+    {
+      "id": "ENG_R4_L_S274_SEC_04",
+      "title": "已知到新知形成資訊鏈",
+      "content": "良好段落常讓前一句末尾的資訊成為下一句主題。例如 We found an old map. The map showed a river. This river went to the lake。map 與 river 依序被介紹再承接，使句子連成一條鏈。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S274_EX_01",
+      "prompt": "(A) It had a red name card. (B) A cat sat outside our door.",
+      "steps": [
+        "A 的 It 尚未有對象。",
+        "B 先介紹 a cat。",
+        "把 A 放後面，It 回指 cat。"
+      ],
+      "answer": "B → A",
+      "why": "讀者先知道門外有一隻貓，之後才能理解紅色名牌屬於牠。"
+    },
+    {
+      "id": "ENG_R4_L_S274_EX_02",
+      "prompt": "We chose a place near the river. This place had a large open area. The area was good for our games.",
+      "steps": [
+        "a place 是首次介紹。",
+        "This place 承接該地點。",
+        "The area 承接第二句新加入的 area。"
+      ],
+      "answer": "The given order is clear.",
+      "why": "每個已知指示詞都能向前找到唯一對象，資訊從地點推進到場地用途。"
+    },
+    {
+      "id": "ENG_R4_L_S274_EX_03",
+      "prompt": "Nora spoke to Amy after she finished the report.",
+      "steps": [
+        "列出 Nora 與 Amy 兩個女性對象。",
+        "she 在形式上可回指任一人。",
+        "檢查是否有其他句子能限定報告作者。"
+      ],
+      "answer": "The writer must add more information.",
+      "why": "單句沒有足夠證據判定誰完成報告；把 she 一律配最近的 Amy 會製造原文沒有的確定性。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "代名詞句可以直接放段首，讀者自然會猜到。",
+      "whyWrong": "沒有先行詞時，代名詞缺少可確認的對象。",
+      "correction": "先放介紹人物或物品的完整名詞句。"
+    },
+    {
+      "belief": "the book 與 a book 都表示第一次出現。",
+      "whyWrong": "a 常引入新對象，the 常指向已知的特定對象。",
+      "correction": "由限定詞判斷資訊是新引入還是承接。"
+    },
+    {
+      "belief": "it 永遠指前面最近的名詞。",
+      "whyWrong": "語意、單複數和全文線索都可能排除最近名詞。",
+      "correction": "同時檢查文法一致與事件合理性。"
+    },
+    {
+      "belief": "this idea 可在完全沒有想法內容前先出現。",
+      "whyWrong": "this idea 需要前文提供可被概括的想法。",
+      "correction": "先放提出觀點的句子，再用 this idea 評論。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "A bird landed on the wall. It began to sing. It 指什麼？",
+      "answer": "a bird",
+      "reason": "單數動物是前文唯一合理的先行詞。"
+    },
+    {
+      "prompt": "第一次介紹一個袋子，較自然用 a bag 還是 the bag？",
+      "answer": "a bag",
+      "reason": "a 用來引入尚未成為已知資訊的單數名詞。"
+    },
+    {
+      "prompt": "兩個人物都可能是 she 的先行詞時，可以硬選最近的人嗎？",
+      "answer": "不可以",
+      "reason": "線索不足時應保留歧義或要求補充資訊。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

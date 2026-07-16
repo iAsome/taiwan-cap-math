@@ -1,0 +1,130 @@
+{
+  "id": "ENG_R4_L_030",
+  "subject": "english",
+  "unitId": "ENG_R4_U05",
+  "skillId": "ENG_R4_S030",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S029"
+  ],
+  "objectives": [
+    "用 the 回指已引入名詞。",
+    "辨識情境中唯一或被限定的對象。",
+    "避免把所有特定於說話者的事物都當成聽者可辨認。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U05_ENG_R4_S030_SEC_1",
+      "title": "第二次提及可用 the",
+      "content": "I saw a dog. The dog was wet。第一次引入非特定狗，第二次回指同一隻。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S030_SEC_2",
+      "title": "情境唯一也可用 the",
+      "content": "Close the door 在房內通常有可辨認的門；the sun 在共同世界知識下具唯一性。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S030_SEC_3",
+      "title": "後方資訊建立限定",
+      "content": "the book on the desk 指桌上的那本書；關係或介系詞片語使聽者能鎖定。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S030_SEC_4",
+      "title": "特定性是雙方共享的",
+      "content": "說話者心中知道不等於聽者知道。若首次提一位聽者無法辨認的醫生，仍可能用 a doctor。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U05_ENG_R4_S030_EX_1",
+      "prompt": "I bought a kite. ___ kite is blue.",
+      "steps": [
+        "第一句引入 kite。",
+        "第二句回指同一物。",
+        "使用 the。"
+      ],
+      "answer": "The kite is blue.",
+      "why": "先行提及建立可辨認性。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S030_EX_2",
+      "prompt": "Please open ___ window beside you.",
+      "steps": [
+        "beside you 限定位置。",
+        "聽者可鎖定。",
+        "使用 the。"
+      ],
+      "answer": "the window",
+      "why": "後置片語提供唯一線索。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S030_EX_3",
+      "prompt": "I spoke to ___ nurse you recommended.",
+      "steps": [
+        "you recommended 限定特定護士。",
+        "雙方共享線索。",
+        "使用 the。"
+      ],
+      "answer": "the nurse",
+      "why": "關係子句建立可辨認對象。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "第二次提及仍必須用 a。",
+      "whyWrong": "a 會像引入另一個非特定對象。",
+      "correction": "回指同一物通常改用 the。"
+    },
+    {
+      "belief": "只要名詞是單數就用 the。",
+      "whyWrong": "單數不等於可辨認。",
+      "correction": "先問聽者能否知道是哪一個。"
+    },
+    {
+      "belief": "the 一定表示世界上只有一個。",
+      "whyWrong": "也可因局部情境或限定而唯一。",
+      "correction": "找出共享範圍。"
+    },
+    {
+      "belief": "說話者認識的人都用 the。",
+      "whyWrong": "聽者未必能辨認。",
+      "correction": "首次無共享線索時用 a/an 並補充資訊。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "第二次提到同一支筆常用什麼？",
+      "answer": "the pen。",
+      "reason": "先前提及建立回指。"
+    },
+    {
+      "prompt": "on the left 如何影響名詞？",
+      "answer": "限定可辨認對象。",
+      "reason": "位置線索縮小候選。"
+    },
+    {
+      "prompt": "說話者知道就一定能用 the 嗎？",
+      "answer": "不一定。",
+      "reason": "需考慮聽者是否共享辨認線索。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

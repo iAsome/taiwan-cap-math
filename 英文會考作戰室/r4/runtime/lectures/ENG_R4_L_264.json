@@ -1,0 +1,134 @@
+{
+  "id": "ENG_R4_L_264",
+  "subject": "english",
+  "unitId": "ENG_R4_U39",
+  "skillId": "ENG_R4_S264",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "prerequisites": [
+    "ENG_R4_S263"
+  ],
+  "objectives": [
+    "由冠詞、助動詞、be 與修飾位置判定詞性。",
+    "利用動詞—受詞與形容詞—介系詞搭配縮小意思。",
+    "在詞性相同時再以全文語意決定。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U39_ENG_R4_S264_SEC_1",
+      "title": "位置先排詞性",
+      "content": "a ___ 後多需名詞，can ___ 需動詞原形，very ___ 常需形容詞或副詞。先排除不能放入的位置，降低字義負擔。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S264_SEC_2",
+      "title": "搭配提供語義角色",
+      "content": "raise a concern 中 concern 是被提出的問題；address a concern 中 address 是處理。不要把熟悉的 address 只解成地址。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S264_SEC_3",
+      "title": "同字可能跨詞性",
+      "content": "record 可作名詞紀錄，也可作動詞錄製。由前面的 a 或 to、句中主詞動詞骨架決定本文功能。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S264_SEC_4",
+      "title": "最後用情境核對",
+      "content": "詞性只能排掉一部分，剩下仍需看情境。例如 light 作形容詞可表示輕或淡，要由 object、color 等搭配決定。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U39_ENG_R4_S264_EX_1",
+      "prompt": "They will address the problem tomorrow.",
+      "steps": [
+        "will 後需動詞。",
+        "受詞是 problem。",
+        "address 此處為處理。"
+      ],
+      "answer": "deal with",
+      "why": "不是郵寄地址名詞。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S264_EX_2",
+      "prompt": "Please keep a record of each visit.",
+      "steps": [
+        "a 後需單數名詞。",
+        "of each visit 說明內容。",
+        "record 為紀錄。"
+      ],
+      "answer": "written account",
+      "why": "不是錄音動作。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S264_EX_3",
+      "prompt": "The bag is light enough to carry.",
+      "steps": [
+        "is 後形容 bag。",
+        "to carry 提供重量情境。",
+        "light 表不重。"
+      ],
+      "answer": "not heavy",
+      "why": "不是亮度。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "熟字只會有一個詞性。",
+      "whyWrong": "許多字可作名詞與動詞。",
+      "correction": "依位置判定本文功能。"
+    },
+    {
+      "belief": "詞性相同就都可。",
+      "whyWrong": "搭配與情境仍會排除。",
+      "correction": "檢查相鄰字與受詞。"
+    },
+    {
+      "belief": "看到 address 一定是地址。",
+      "whyWrong": "作動詞可表示處理或發言。",
+      "correction": "看是否位於助動詞後並帶受詞。"
+    },
+    {
+      "belief": "light 永遠表示光。",
+      "whyWrong": "可描述重量、顏色或亮度。",
+      "correction": "用後續搭配選義。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "can record 中 record 是哪類詞？",
+      "answer": "動詞",
+      "reason": "can 後接原形。"
+    },
+    {
+      "prompt": "a record 中 record 是哪類詞？",
+      "answer": "名詞",
+      "reason": "a 標示單數名詞。"
+    },
+    {
+      "prompt": "詞性判斷後還需做什麼？",
+      "answer": "用搭配與情境核對字義",
+      "reason": "同詞性仍可能多義。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  }
+}

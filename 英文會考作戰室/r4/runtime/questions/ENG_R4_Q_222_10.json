@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_222_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S222"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Please send the picture by Thursday and tell me when it is done.\nWhich reply is useful after the picture has been sent?",
+  "options": [
+    "Pictures can have many colors.",
+    "I sent the picture this morning.",
+    "Thursday is a weekday.",
+    "I may look for a picture next month."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "一般描述不回報任務狀態。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "回覆說明已完成，並提供完成時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "日期分類不是通知。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "下個月才找明顯不符合期限。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u32-s222-report-completed-send-task",
+    "use-completion-status-and-time-in-reply"
+  ],
+  "representationType": "message-reply-completion",
+  "misconceptionTargets": [
+    "repeat-deadline-without-reporting-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "完成後回覆應報告動作與狀態。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "時態 sent 表示任務已完成。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

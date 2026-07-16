@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_227_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S227"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Mia: The art class moved from Room 2 to Room 5.\nLeo: Thanks. I will meet you there at four.\nWhere will Leo meet Mia?",
+  "options": [
+    "Room 2",
+    "Room 5",
+    "The library",
+    "The front gate"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第二教室是變更前地點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "there 指向更新後的第五教室。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "圖書館沒有出現在對話。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "前門也不是碰面地點。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "resolve-there-after-room-change"
+  ],
+  "representationType": "two-speaker-location-update",
+  "misconceptionTargets": [
+    "keep-original-location-after-change"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "moved from...to... 更新了實際教室。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "there 應承接最新且合理的地點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

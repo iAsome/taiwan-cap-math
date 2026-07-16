@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_278_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S278"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Paragraph 2 explains that a new door opens with less force. Paragraph 3 repeats the same explanation with the same example and adds no fact. What is the clearest edit?",
+  "options": [
+    "Delete Paragraph 1 instead.",
+    "Combine or remove Paragraph 3 because it repeats Paragraph 2.",
+    "Move Paragraph 3 before the title.",
+    "Add a different topic to Paragraph 3."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一段功能未提供，不能任意刪除。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "完全重複且無新功能的段落可合併或移除。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "把重複段放標題前不解決問題。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "加入無關主題會破壞全文一致。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u41-s278-q10-edit-redundant-paragraph",
+    "remove-functionless-repetition"
+  ],
+  "representationType": "structural-revision",
+  "misconceptionTargets": [
+    "preserve-repetition-by-moving-it"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "段落是否保留取決於它是否完成獨立任務。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項以最小修改消除沒有功能的新段。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

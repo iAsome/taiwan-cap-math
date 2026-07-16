@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_257_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S257"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Students received clearer directions, and fewer forms were returned incorrectly. What is reasonable?",
+  "options": [
+    "Every future form will be perfect",
+    "Students stopped returning forms",
+    "Clearer directions likely reduced mistakes",
+    "Mistakes made directions unclear"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Every future form will be perfect：過度保證。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Students stopped returning forms：仍有 forms returned。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Clearer directions likely reduced mistakes：directions clarity 提供填寫機制，mistakes 下降。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Mistakes made directions unclear：方向不符文本改變。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-causal-relation",
+    "identify-direction-and-mechanism"
+  ],
+  "representationType": "causal-inference",
+  "misconceptionTargets": [
+    "equate-sequence-with-causation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「事件先後、機制與結果共同支持原因方向」可推出 Clearer directions likely reduced mistakes；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 Clearer directions likely reduced mistakes 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

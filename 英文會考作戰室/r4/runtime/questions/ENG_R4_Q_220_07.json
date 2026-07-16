@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_220_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S220"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Mia: I am outside the front door.\nLeo: I will open it now.\nWhat will Leo do next?",
+  "options": [
+    "Wait at the bus stop",
+    "Call a teacher",
+    "Open the front door",
+    "Leave the building"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有公車站內容。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "訊息沒有要求教師協助。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Leo 直接說現在要開門。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "開門是讓 Mia 進入，不是離開。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s220-infer-immediate-action-from-thread",
+    "connect-outside-status-to-door-response"
+  ],
+  "representationType": "message-next-action",
+  "misconceptionTargets": [
+    "choose-unmentioned-context-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "下一步由回覆中的 will 動作決定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "outside 提供開門行動的情境原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

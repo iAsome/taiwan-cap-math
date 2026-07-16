@@ -1,0 +1,130 @@
+{
+  "id": "ENG_R4_L_268",
+  "subject": "english",
+  "unitId": "ENG_R4_U40",
+  "skillId": "ENG_R4_S268",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-1-4-9",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S267"
+  ],
+  "objectives": [
+    "由稱呼與第二人稱辨認直接讀者。",
+    "利用資訊深淺與可執行動作縮小讀者群。",
+    "區分文中提到的人與文章真正寫給的人。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U40_ENG_R4_S268_SEC_1",
+      "title": "被提到不等於被寫給",
+      "content": "A note to parents may discuss students，學生是內容對象，但 parents 才是收件者。先找 Dear、To、Attention 或媒介位置。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S268_SEC_2",
+      "title": "誰能採取文中行動",
+      "content": "若訊息請 bring your library card，預期讀者是到館借書者；若請 sign your child's form，則是家長。行動能力是強線索。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S268_SEC_3",
+      "title": "先備知識也能定位",
+      "content": "給新生的文字會解釋基本地點；給工作人員的通知可能直接使用 staff room、shift 等內部資訊。看作者假設讀者已知什麼。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S268_SEC_4",
+      "title": "範圍不要過廣",
+      "content": "公告貼在 one class 且稱 Class 8A，就不能答 all people in the city。選最小且完整涵蓋的讀者群。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U40_ENG_R4_S268_EX_1",
+      "prompt": "Dear parents, please sign your child's trip form.",
+      "steps": [
+        "直接稱 parents。",
+        "行動是 sign child's form。",
+        "讀者不是 child。"
+      ],
+      "answer": "parents of the students",
+      "why": "students 被提到但不是執行簽名者。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S268_EX_2",
+      "prompt": "Staff notice: Leave keys at the front desk after your shift.",
+      "steps": [
+        "標題 Staff notice。",
+        "shift 是工作情境。",
+        "員工可交 keys。"
+      ],
+      "answer": "staff members",
+      "why": "不是一般 visitors。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S268_EX_3",
+      "prompt": "Welcome, new students. Your first class is in Room 2.",
+      "steps": [
+        "稱 new students。",
+        "提供基礎位置。",
+        "行動是到第一堂課。"
+      ],
+      "answer": "new students",
+      "why": "不是教師或畢業生。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "文章提到誰就寫給誰。",
+      "whyWrong": "內容對象與讀者可不同。",
+      "correction": "找稱呼與預期行動。"
+    },
+    {
+      "belief": "任何公開公告都寫給 everyone。",
+      "whyWrong": "地點與條件可限定讀者。",
+      "correction": "選最小適切群體。"
+    },
+    {
+      "belief": "只看一個人名。",
+      "whyWrong": "人名可能是作者或例子。",
+      "correction": "結合媒介、稱呼與行動。"
+    },
+    {
+      "belief": "讀者一定已知道文中所有資訊。",
+      "whyWrong": "作者提供的解釋反映其先備假設。",
+      "correction": "看哪些內容被特別說明。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Dear parents 最直接指誰？",
+      "answer": "家長",
+      "reason": "稱呼是強證據。"
+    },
+    {
+      "prompt": "能執行文中要求的人可幫助判斷什麼？",
+      "answer": "預期讀者",
+      "reason": "行動與角色相配。"
+    },
+    {
+      "prompt": "讀者答案應選最廣還是最小適切範圍？",
+      "answer": "最小適切範圍",
+      "reason": "避免過度擴張。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-1-4-9",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  }
+}

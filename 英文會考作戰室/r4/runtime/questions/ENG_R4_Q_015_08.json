@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_015_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-7"
+  ],
+  "stimulusId": null,
+  "stem": "The school nurse finishes helping Ben, and Ben leaves. What should Ben say?",
+  "options": [
+    "Welcome to the nurse's office.",
+    "Thank you. Goodbye.",
+    "Hello. I am still waiting.",
+    "Good morning tomorrow."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Welcome to the nurse's office.：Ben 不是接待者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Thank you. Goodbye.：先致謝再道別，符合離開情境。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Hello. I am still waiting.：這會開始另一段互動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Good morning tomorrow.：時間語法不自然。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "select-greeting-or-farewell-by-situation",
+    "match-stage-time-and-formality"
+  ],
+  "representationType": "greeting-farewell-context",
+  "misconceptionTargets": [
+    "choose-by-single-time-word"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-7"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「依相遇或離開、時段與彼此熟悉度，選擇自然且禮貌的招呼或道別語。」可推出 Thank you. Goodbye.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Thank you. Goodbye. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

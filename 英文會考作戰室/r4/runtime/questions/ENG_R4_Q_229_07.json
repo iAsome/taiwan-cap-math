@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_229_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S229"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A. It is under the window beside the plant.\nB. I left my phone in the classroom.\nC. Which desk did you use?\nD. Thanks, I will look there.\nWhich order is correct?",
+  "options": [
+    "C-A-B-D",
+    "B-A-C-D",
+    "B-C-A-D",
+    "A-D-B-C"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "追問在遺失手機前。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "地點回答先於 which 問句。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "先提出手機、問桌位、描述位置，再去找。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "there 在開頭組合中沒有穩定來源。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "order-phone-location-clarification"
+  ],
+  "representationType": "place-clarification-order",
+  "misconceptionTargets": [
+    "provide-location-before-clarifying-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "under the window 是對 which desk 的辨識。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "look there 承接完整位置資訊作收束。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

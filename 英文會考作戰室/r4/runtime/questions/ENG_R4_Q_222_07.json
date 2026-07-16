@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_222_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S222"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Are you walking or taking the train to the park?\nWhich reply removes doubt?",
+  "options": [
+    "The park is green.",
+    "I will arrive soon.",
+    "I am taking the train.",
+    "Walking and trains are useful."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "場所外觀沒有回答交通方式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "soon 只提供模糊時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "回覆從兩個選項中明確選擇火車。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "並列評論仍未說自己怎麼去。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s222-answer-transport-alternative-directly",
+    "reject-vague-arrival-as-mode-response"
+  ],
+  "representationType": "message-reply-alternative",
+  "misconceptionTargets": [
+    "state-related-opinion-without-choice"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "二選一問題需要指定其中一項。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "到達承諾不能替代交通方式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

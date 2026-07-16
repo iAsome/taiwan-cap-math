@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_260_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S260"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The first bus was full, but the board says another will arrive in eight minutes. What will Ben likely do?",
+  "options": [
+    "buy a bus company",
+    "walk into the full bus",
+    "return next year",
+    "wait for the next bus"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "buy a bus company：远超当前情境。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "walk into the full bus：无法上车。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "return next year：时间跨度无证据。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "wait for the next bus：问题与最近解决线索直接相接。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "predict-bounded-next-event",
+    "continue-goal-with-nearest-action"
+  ],
+  "representationType": "bounded-story-prediction",
+  "misconceptionTargets": [
+    "choose-dramatic-distant-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「人物目標、未解決問題與最近事件共同限制的下一步」可推出 wait for the next bus；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 wait for the next bus 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

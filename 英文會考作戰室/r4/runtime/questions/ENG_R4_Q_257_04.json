@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_257_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S257"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The cafe lowered evening prices. Sales rose, but the report also notes a festival nearby. What is safest?",
+  "options": [
+    "The festival reduced sales to zero",
+    "Lower prices may have helped, but another factor existed",
+    "Lower prices were certainly the only cause",
+    "Sales caused prices to be lower before they rose"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The festival reduced sales to zero：與 sales rose 相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Lower prices may have helped, but another factor existed：價格變化與 nearby festival 都可能影響 sales。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Lower prices were certainly the only cause：忽略 festival。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Sales caused prices to be lower before they rose：方向與順序不合。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-causal-relation",
+    "identify-direction-and-mechanism"
+  ],
+  "representationType": "causal-inference",
+  "misconceptionTargets": [
+    "equate-sequence-with-causation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「事件先後、機制與結果共同支持原因方向」可推出 Lower prices may have helped, but another factor existed；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Lower prices may have helped, but another factor existed 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

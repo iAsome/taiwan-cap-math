@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_036_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S036"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The park has three ___. Choose the plural of 'bench'.",
+  "options": [
+    "benches",
+    "benchs",
+    "benchies",
+    "bench"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "benches：bench 結尾 -ch，加 -es。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "benchs：缺少 e。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "benchies：沒有 y。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "bench：three 要求複數。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "form-regular-count-noun-plurals",
+    "apply-ending-rule-and-sentence-number-agreement"
+  ],
+  "representationType": "regular-plural-formation",
+  "misconceptionTargets": [
+    "append-s-without-checking-ending-or-context"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「依可數名詞字尾拼寫與語音規則形成 -s、-es、子音+y→-ies 等規則複數，並使限定詞與動詞一致。」可推出 benches；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 benches 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

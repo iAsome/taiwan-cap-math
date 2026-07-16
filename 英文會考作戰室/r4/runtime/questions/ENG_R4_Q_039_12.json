@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_039_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S039"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which pair correctly uses many and much?",
+  "options": [
+    "much many questions and patience",
+    "many questions and much patience",
+    "much questions and many patience",
+    "many question and much patiences"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "much many questions and patience：量詞重疊。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "many questions and much patience：questions 複數可數用 many；patience 不可數用 much。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "much questions and many patience：兩邊量詞顛倒。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "many question and much patiences：名詞數與不可數用法錯誤。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "choose-many-or-much",
+    "classify-following-noun-and-questioned-unit"
+  ],
+  "representationType": "many-much-selection",
+  "misconceptionTargets": [
+    "choose-quantifier-from-physical-size-or-amount-concept"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「依後接名詞在當下語境的複數可數或不可數用法，選 many 或 much，並分辨問句、否定與肯定語體。」可推出 many questions and much patience；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 many questions and much patience 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

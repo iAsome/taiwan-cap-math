@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_232_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S232"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Did you ___ the window before you left?",
+  "options": [
+    "closed",
+    "close",
+    "closing",
+    "closes"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "closed：closed 重複加入過去標記。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "close：助動詞 Did 已標示過去，後面接原形 close。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "closing：closing 不能直接接在 Did you 後。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "closes：closes 是單數第三人稱形式，不能接在 did 後。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-tense-from-time-evidence",
+    "restore-base-form-after-did"
+  ],
+  "representationType": "past-question-cloze",
+  "misconceptionTargets": [
+    "double-mark-past"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「時間詞與事件先後」可推出 close；再核對句中每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一放回原文，只有 close 能同時滿足句法與全文意思；另外三項各有列明的衝突，沒有第二個合理答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

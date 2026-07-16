@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_277_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S277"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Sentence to insert: 'Yet the service is not useful after six in the evening.' Text: The town bike desk makes short trips easy. [A] A bike can be borrowed for two hours. [B] The desk closes at six. [C] Morning users often find many bikes. [D] Where does the sentence fit best?",
+  "options": [
+    "A",
+    "C",
+    "Before the first sentence",
+    "D"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "放在借用時間前，after six 的限制尚未有關門資訊支持。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "接在關門事實後能以 Yet 對比第一句的 useful，並解釋夜間限制。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Yet 在開頭沒有可轉折的正面內容。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "晨間供車資訊後才談六點限制，會使限制證據距離過遠。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u41-s277-q10-insert-yet-after-closing-fact",
+    "convert-service-hour-into-contrast-limit"
+  ],
+  "representationType": "constraint-insertion",
+  "misconceptionTargets": [
+    "place-yet-at-paragraph-start"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "轉折句需要前文先建立服務優點與關門事實。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "C 位置把 closing time 立即轉成使用限制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

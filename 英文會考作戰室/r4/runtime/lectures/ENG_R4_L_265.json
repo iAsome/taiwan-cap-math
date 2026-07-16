@@ -1,0 +1,134 @@
+{
+  "id": "ENG_R4_L_265",
+  "subject": "english",
+  "unitId": "ENG_R4_U39",
+  "skillId": "ENG_R4_S265",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "prerequisites": [
+    "ENG_R4_S264"
+  ],
+  "objectives": [
+    "讀懂簡化字典條目中的詞性與多個義項。",
+    "依上下文選擇一項，而非把所有義項混合。",
+    "以替換測試確認選中義項使句子自然。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U39_ENG_R4_S265_SEC_1",
+      "title": "字典列的是可能，不是答案",
+      "content": "同一字會列多義。上下文負責決定哪一義在本句被啟動；不能看到第一義就停止。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S265_SEC_2",
+      "title": "先對詞性再對意思",
+      "content": "bank 作名詞可為銀行或河岸，作動詞可為傾斜。先看句法標記，再用 river、money 等搭配決定。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S265_SEC_3",
+      "title": "用替換測試",
+      "content": "把字典釋義短語換進原句，讀是否通順且符合事件。若需改動其他字或產生怪異因果，該義項不合。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S265_SEC_4",
+      "title": "保留本文範圍",
+      "content": "選到正確義項後，只解釋本文用法，不宣稱這就是該字永遠唯一的意思。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U39_ENG_R4_S265_EX_1",
+      "prompt": "bank: 1 money business; 2 land beside water. We sat on the river bank.",
+      "steps": [
+        "bank 是名詞。",
+        "river 提供水域搭配。",
+        "選 land beside water。"
+      ],
+      "answer": "sense 2",
+      "why": "不是去銀行坐。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S265_EX_2",
+      "prompt": "match: 1 contest; 2 be the same or suitable. The blue shirt matches the hat.",
+      "steps": [
+        "matches 為動詞。",
+        "shirt/hat 比較搭配。",
+        "選 suitable/together。"
+      ],
+      "answer": "sense 2",
+      "why": "不是運動比賽。"
+    },
+    {
+      "id": "ENG_R4_U39_ENG_R4_S265_EX_3",
+      "prompt": "point: 1 sharp end; 2 main idea. What is the writer's point?",
+      "steps": [
+        "writer 與文章情境。",
+        "不是實體尖端。",
+        "選 main idea。"
+      ],
+      "answer": "sense 2",
+      "why": "由搭配決定抽象義。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "字典第一義一定最正確。",
+      "whyWrong": "義項排序不替代上下文。",
+      "correction": "逐項代回。"
+    },
+    {
+      "belief": "熟悉義可套所有句子。",
+      "whyWrong": "多義字會隨搭配改變。",
+      "correction": "檢查名詞與動詞角色。"
+    },
+    {
+      "belief": "可以把兩個義項混成一個答案。",
+      "whyWrong": "本文通常啟動單一主要義。",
+      "correction": "選最符合整句的一項。"
+    },
+    {
+      "belief": "選義後不用重讀原句。",
+      "whyWrong": "替換測試是最後證據。",
+      "correction": "將釋義放回確認自然。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "字典義項排序能直接決定本文意思嗎？",
+      "answer": "不能",
+      "reason": "上下文才決定。"
+    },
+    {
+      "prompt": "選義第一步先核對什麼？",
+      "answer": "詞性",
+      "reason": "排除句法功能不合者。"
+    },
+    {
+      "prompt": "替換測試的目的？",
+      "answer": "確認釋義在原句自然且一致",
+      "reason": "防止只靠熟悉度。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  }
+}

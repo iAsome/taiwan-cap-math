@@ -1,0 +1,95 @@
+{
+  "id": "ENG_R4_Q_292_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S292"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-6",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10",
+    "AUTH-ENGLISH-LP-5-4-8"
+  ],
+  "stimulusId": null,
+  "stem": "Amy searched three shelves for a history book. When the librarian said it was checked out, Amy reserved it for next week. What does she do after the immediate goal is blocked?",
+  "options": [
+    "She buys every shelf.",
+    "She changes the book into a novel.",
+    "She keeps the goal but changes the timing.",
+    "She chooses never to read it."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "She buys every shelf.：未提。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "She changes the book into a novel.：未提。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "She keeps the goal but changes the timing.：reserve next week 仍要取得同一本書。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "She chooses never to read it.：與 reserved 相反。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "track-character-goal",
+    "connect-actions-and-reactions-to-goal"
+  ],
+  "representationType": "character-goal-tracking",
+  "misconceptionTargets": [
+    "treat-strategy-change-as-goal-change"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-6",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10",
+      "AUTH-ENGLISH-LP-5-4-8"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「人物的目標由需求或意圖建立，後續行動與反應顯示是否持續或改變」可推出 She keeps the goal but changes the timing.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 She keeps the goal but changes the timing. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

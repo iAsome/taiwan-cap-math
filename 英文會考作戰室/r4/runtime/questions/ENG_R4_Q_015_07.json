@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_015_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-7"
+  ],
+  "stimulusId": null,
+  "stem": "A new teammate walks into the gym. Which sentence welcomes her?",
+  "options": [
+    "Good night, old friend.",
+    "Please leave the team now.",
+    "Hello, welcome to our team.",
+    "See you after the game."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Good night, old friend.：對象與情境不合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Please leave the team now.：這不是歡迎。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Hello, welcome to our team.：先招呼再歡迎新成員，功能完整。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "See you after the game.：這是預告稍後再見。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-greeting-or-farewell-by-situation",
+    "match-stage-time-and-formality"
+  ],
+  "representationType": "greeting-farewell-context",
+  "misconceptionTargets": [
+    "choose-by-single-time-word"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-7"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「依相遇或離開、時段與彼此熟悉度，選擇自然且禮貌的招呼或道別語。」可推出 Hello, welcome to our team.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 Hello, welcome to our team. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

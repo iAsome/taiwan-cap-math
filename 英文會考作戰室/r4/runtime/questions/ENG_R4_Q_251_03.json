@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_251_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S251"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "Text: A dog waited beside the closed gate until Ben arrived. What is explicit?",
+  "options": [
+    "The gate was closed because it was late",
+    "The dog waited every day",
+    "The dog was by the gate before Ben came",
+    "Ben owned the dog"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The gate was closed because it was late：closed 有寫，但原因未寫。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "The dog waited every day：只描述一次事件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "The dog was by the gate before Ben came：waited ... until Ben arrived 表示抵達前狗在門旁。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Ben owned the dog：所有關係未提。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "separate-explicit-from-added-information",
+    "verify-every-part-of-choice"
+  ],
+  "representationType": "explicit-versus-added",
+  "misconceptionTargets": [
+    "accept-plausible-addition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「選項每一部分都能由原文字句直接支持」可推出 The dog was by the gate before Ben came；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 The dog was by the gate before Ben came 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

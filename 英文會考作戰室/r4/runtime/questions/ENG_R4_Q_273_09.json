@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_273_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S273"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Paragraph 1: A family planned a garden. Paragraph 2: They cleared a sunny corner. Paragraph 3: Vegetables were ready in summer. Which event belongs between clearing the corner and the summer result?",
+  "options": [
+    "They planted seeds in the clean soil.",
+    "They moved away before spring.",
+    "They covered the corner with stone.",
+    "They decided never to grow food."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "播種能連接整理土地與夏季收成。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "搬走會切斷後續照料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "鋪滿石頭不支持蔬菜生長。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "放棄種植與結局衝突。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u41-s273-q09-supply-missing-garden-event",
+    "complete-causal-sequence-across-paragraphs"
+  ],
+  "representationType": "paragraph-sequence-gap",
+  "misconceptionTargets": [
+    "select-thematic-but-blocking-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "中間事件必須使結果可達成。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項補上園藝因果鏈中的必要步驟。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

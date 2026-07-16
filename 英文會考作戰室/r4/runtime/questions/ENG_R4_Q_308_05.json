@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_308_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S308"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-6-4-3",
+    "AUTH-ENGLISH-LP-6-4-4",
+    "AUTH-ENGLISH-LP-6-4-6",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-7-4-4",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A report notes that attendance rose 5%. Which option adds an unsupported cause?",
+  "options": [
+    "Attendance rose because the new chairs were comfortable.",
+    "Attendance increased by 5%.",
+    "The report measures attendance.",
+    "The increase was not described as 50%."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Attendance rose because the new chairs were comfortable.：report 只給增幅，未給 chairs 原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Attendance increased by 5%.：直接重述。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The report measures attendance.：由內容支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "The increase was not described as 50%.：5% 明確排除 50。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "evaluate-source-bound-option",
+    "verify-every-option-word-against-source"
+  ],
+  "representationType": "source-bound-evaluation",
+  "misconceptionTargets": [
+    "choose-option-by-personal-agreement-or-added-assumption"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-6-4-3",
+      "AUTH-ENGLISH-LP-6-4-4",
+      "AUTH-ENGLISH-LP-6-4-6",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-7-4-4",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「選項必須逐字受來源內容支持，不能因符合讀者個人立場而增加來源未說的理由」可推出 Attendance rose because the new chairs were comfortable.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 Attendance rose because the new chairs were comfortable. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

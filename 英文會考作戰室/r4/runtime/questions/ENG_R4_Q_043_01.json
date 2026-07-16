@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_043_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S043"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which phrase means the backpack belonging to Leo?",
+  "options": [
+    "Leo's backpack",
+    "Leos backpack",
+    "Leo backpack's",
+    "Backpack's Leo"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Leo's backpack：Leo 為單數擁有者，加 's 後接物品。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Leos backpack：缺少所有格撇號。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Leo backpack's：所有格方向顛倒。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Backpack's Leo：把物品誤作擁有者。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "form-singular-noun-possessive",
+    "identify-owner-and-distinguish-possessive-from-contraction"
+  ],
+  "representationType": "singular-noun-possessive",
+  "misconceptionTargets": [
+    "place-apostrophe-on-possessed-noun-or-expand-all-s-as-possession"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「以單數擁有者加 's 建立人物、動物、組織或時間關係，並由語意確認真正擁有者與被擁有物。」可推出 Leo's backpack；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 Leo's backpack 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_250_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S250"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "Ticket prices: ages 6–11, $50; ages 12–17, $70; adults, $100. How much does a 14-year-old pay?",
+  "options": [
+    "$14",
+    "$70",
+    "$50",
+    "$100"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "$14：14 是年齡，不是價格。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "$70：14 歲落在 ages 12–17。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "$50：只適用 6–11 歲。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "$100：成人票價。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "scan-proper-nouns-and-numbers",
+    "scan-and-keep-row-alignment"
+  ],
+  "representationType": "scanning-records",
+  "misconceptionTargets": [
+    "take-first-number"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「人名、數字、日期或地點附近的完整欄位資訊」可推出 $70；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 $70 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_220_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S220"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Return the book by Monday. The reading talk is on Thursday.\nWhich day is the book due?",
+  "options": [
+    "Sunday",
+    "Monday",
+    "Thursday",
+    "Any day after Thursday"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "原文沒有星期日。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "by Monday 表示還書期限。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "星期四屬於讀書分享活動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "期限不會延到活動後。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s220-distinguish-book-due-date-from-talk-date",
+    "associate-each-day-with-its-action"
+  ],
+  "representationType": "message-multiple-dates",
+  "misconceptionTargets": [
+    "choose-later-event-date-as-deadline"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "同一訊息中的兩個日期各有對應事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "due 問的是歸還期限。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

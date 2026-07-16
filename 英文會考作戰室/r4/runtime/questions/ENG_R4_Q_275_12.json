@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_275_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S275"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A poster claims, 'Students like the longer lunch break.' Its only support is, 'Three students near the gate said they liked it.' Which response best evaluates the support?",
+  "options": [
+    "It proves every student likes the break.",
+    "It proves students at every school agree.",
+    "It proves the break is longer than one hour.",
+    "It gives a positive example but not enough evidence for all students."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "三位學生不足以代表全校。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "資料只來自一所學校的一小群人。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "支持句沒有提供休息長度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "它能顯示有人喜歡，但無法支撐廣泛主張。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u41-s275-q12-evaluate-small-example-against-broad-claim",
+    "balance-support-value-and-sampling-limit"
+  ],
+  "representationType": "claim-example-evaluation",
+  "misconceptionTargets": [
+    "reject-all-evidence-or-accept-universal-claim"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "評估同時承認例子的有效部分與代表性限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項讓結論範圍與證據人數保持一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

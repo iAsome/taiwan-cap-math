@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_249_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S249"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "The club moved its meeting from Tuesday to Thursday because the hall was busy. Why was the meeting moved?",
+  "options": [
+    "The club needed a larger hall",
+    "Thursday was canceled",
+    "The hall was in use",
+    "Tuesday was a holiday"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The club needed a larger hall：原文只說 busy，沒有大小問題。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Thursday was canceled：Thursday 是新日期，未被取消。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "The hall was in use：hall was busy 表示場地當時有人使用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Tuesday was a holiday：原文沒有 holiday。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "locate-explicit-paraphrase",
+    "match-question-wording-to-source"
+  ],
+  "representationType": "explicit-paraphrase",
+  "misconceptionTargets": [
+    "require-exact-word-match"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「題目關鍵概念與原文同義改寫指向同一資訊」可推出 The hall was in use；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 The hall was in use 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

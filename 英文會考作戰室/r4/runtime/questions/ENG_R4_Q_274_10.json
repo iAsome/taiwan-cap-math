@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_274_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S274"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A notice says, 'New students should meet the guides at Gate 2. They will lead the group to the main room.' Who will lead the group?",
+  "options": [
+    "The new students",
+    "The guides",
+    "The gate workers",
+    "The people already in the main room"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "新生是被帶領的 group，不是明示帶領者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "複數 guides 是前句中能執行 lead 的合理對象。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "公告沒有介紹 gate workers。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "主教室內的人尚未在文本出現。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u41-s274-q10-resolve-they-in-notice",
+    "combine-plural-agreement-with-agent-role"
+  ],
+  "representationType": "notice-pronoun-reference",
+  "misconceptionTargets": [
+    "choose-target-group-as-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "代名詞數量與動作角色共同限定 guides。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "答案不只依最近名詞，也檢查誰能帶隊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_248_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S248"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10"
+  ],
+  "stimulusId": null,
+  "stem": "The route looks short on the map. In fact, a steep hill makes it take nearly an hour.\nWhat is the writer's main point?",
+  "options": [
+    "The route looks short",
+    "All hills take exactly one hour",
+    "The route has no hill",
+    "The route takes longer than its map length suggests"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The route looks short：只保留初步外觀。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "All hills take exactly one hour：原文只談此 route 且 nearly。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The route has no hill：與 steep hill 相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "The route takes longer than its map length suggests：In fact 修正從短距離形成的快速預期。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "identify-emphasized-claim-after-contrast",
+    "prioritize-post-contrast-claim"
+  ],
+  "representationType": "contrast-emphasis-reading",
+  "misconceptionTargets": [
+    "stop-before-contrast"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「轉折標記後的修正、限制或作者真正採納的立場」可推出 The route takes longer than its map length suggests；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 The route takes longer than its map length suggests 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

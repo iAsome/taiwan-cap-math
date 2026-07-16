@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_237_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S237"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The school moved sports day indoors because rain was likely. This kept the games on schedule. What kept the schedule?",
+  "options": [
+    "the rain",
+    "moving the event indoors",
+    "the school building alone",
+    "the weather report alone"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the rain：雨是風險，不能保證照表進行。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "moving the event indoors：移到室內這項決定避免雨勢打亂賽程。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the school building alone：建築物只有在移入活動後才發揮作用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the weather report alone：報告提供資訊，但真正維持賽程的是搬到室內。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "resolve-pronoun-antecedent",
+    "identify-action-that-produces-result"
+  ],
+  "representationType": "policy-event-reference",
+  "misconceptionTargets": [
+    "choose-causal-background"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「代名詞的數量、類型與後續動作」可推出 moving the event indoors；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 moving the event indoors 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

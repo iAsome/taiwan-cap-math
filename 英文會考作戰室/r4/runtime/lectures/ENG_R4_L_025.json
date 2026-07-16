@@ -1,0 +1,130 @@
+{
+  "id": "ENG_R4_L_025",
+  "subject": "english",
+  "unitId": "ENG_R4_U04",
+  "skillId": "ENG_R4_S025",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S024"
+  ],
+  "objectives": [
+    "由 be 陳述句轉換為一般問句。",
+    "形成 Is/Are/Was/Were 的短答。",
+    "區分 yes/no 問句與 wh 問句所需資訊。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U04_ENG_R4_S025_SEC_1",
+      "title": "be 問句使用倒裝",
+      "content": "She is ready → Is she ready?；They were outside → Were they outside? 不需要加入 do。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S025_SEC_2",
+      "title": "短答重複 be，不重複補語",
+      "content": "Are you tired? Yes, I am.；Is Ken here? No, he isn't. 回答人稱要從問句聽者角度調整。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S025_SEC_3",
+      "title": "時態不可漂移",
+      "content": "Was the shop open? 要答 Yes, it was 或 No, it wasn't；不能無故改成 is。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S025_SEC_4",
+      "title": "wh 問句需要內容",
+      "content": "Where is Mia? 不能只答 Yes；應提供地點。Who is ready? 則需人物或名詞。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U04_ENG_R4_S025_EX_1",
+      "prompt": "They are new.",
+      "steps": [
+        "找出 be 是 are。",
+        "移到主詞 they 前。",
+        "句尾加問號。"
+      ],
+      "answer": "Are they new?",
+      "why": "不需要 do 支援。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S025_EX_2",
+      "prompt": "Was Ben absent? (negative)",
+      "steps": [
+        "問句為過去。",
+        "Ben 可改用 he。",
+        "否定短答使用 wasn't。"
+      ],
+      "answer": "No, he wasn't.",
+      "why": "人稱、數、時態與極性一致。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S025_EX_3",
+      "prompt": "Where are the tickets?",
+      "steps": [
+        "Where 要求位置。",
+        "主詞 tickets 為複數。",
+        "回答地點而非 yes/no。"
+      ],
+      "answer": "They are on the desk.",
+      "why": "位置資訊完整回應。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "所有問句都要 do。",
+      "whyWrong": "be 已能倒裝形成問句。",
+      "correction": "直接把 be 放到主詞前。"
+    },
+    {
+      "belief": "Are you ...? 可答 Yes, you are。",
+      "whyWrong": "回答者談自己時要換成 I。",
+      "correction": "答 Yes, I am。"
+    },
+    {
+      "belief": "短答只寫 Yes 或 No 就一定充分。",
+      "whyWrong": "課堂目標常要求代名詞加 be。",
+      "correction": "依題目提供完整短答。"
+    },
+    {
+      "belief": "Where 問句也用 Yes, it is。",
+      "whyWrong": "Where 要求地點內容。",
+      "correction": "以 in/on/at 等位置片語回答。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "She is late 的一般問句為何？",
+      "answer": "Is she late?",
+      "reason": "把 is 移到主詞前。"
+    },
+    {
+      "prompt": "Are you ready? 的肯定短答為何？",
+      "answer": "Yes, I am.",
+      "reason": "回答視角由 you 轉成 I。"
+    },
+    {
+      "prompt": "Where is the bag? 要回答哪類資訊？",
+      "answer": "位置。",
+      "reason": "不是 yes/no。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

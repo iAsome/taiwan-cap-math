@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_047_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S047"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A sign asks owners to collect bags. Which question is clearest?",
+  "options": [
+    "Who bags these are?",
+    "Whose bags are these by the door?",
+    "Who's bags is this by the door?",
+    "Whose is these bag by door?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Who bags these are?：語序與所有關係缺失。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Whose bags are these by the door?：Whose 加複數 bags，are/these 一致並提供位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Who's bags is this by the door?：疑問詞與數皆錯。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Whose is these bag by door?：be、指示詞、名詞數不合。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "ask-and-answer-whose",
+    "form-owner-information-gap-and-answer-with-possessive"
+  ],
+  "representationType": "whose-owner-question",
+  "misconceptionTargets": [
+    "confuse-whose-with-who-is-or-answer-as-polar-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「用 Whose + noun 或 Whose is/are ... 詢問擁有者，並以名詞所有格或所有代名詞回答而不混淆 who's。」可推出 Whose bags are these by the door?；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Whose bags are these by the door? 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

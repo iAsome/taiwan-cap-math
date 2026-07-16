@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_045_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S045"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "This seat is ___. The speaker owns it.",
+  "options": [
+    "my",
+    "me",
+    "I",
+    "mine"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "my：後方缺名詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "me：受格不能作此所有補語。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "I：主格功能不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "mine：空格獨立取代 my seat。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "distinguish-possessive-adjective-and-pronoun",
+    "select-dependent-or-independent-possessive-form"
+  ],
+  "representationType": "possessive-adjective-pronoun",
+  "misconceptionTargets": [
+    "choose-by-emphasis-or-add-noun-after-possessive-pronoun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「依後方是否緊接名詞，在 my/your/his/her/its/our/their 與 mine/yours/his/hers/ours/theirs 間選擇，避免重複名詞。」可推出 mine；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 mine 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

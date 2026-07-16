@@ -1,0 +1,136 @@
+{
+  "id": "ENG_R4_L_001",
+  "subject": "english",
+  "unitId": "ENG_R4_U01",
+  "skillId": "ENG_R4_S001",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AA-4-1",
+    "AUTH-ENGLISH-LC-AB-4-2",
+    "AUTH-ENGLISH-LC-AB-4-3",
+    "AUTH-ENGLISH-LP-1-4-10",
+    "AUTH-ENGLISH-LP-3-4-1",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-4",
+    "AUTH-ENGLISH-LP-5-4-5"
+  ],
+  "prerequisites": [],
+  "objectives": [
+    "辨認連續書寫體大寫字母。",
+    "辨認同字母的小寫形式。",
+    "不把字母身分與字體裝飾混淆。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U01_ENG_R4_S001_SEC_1",
+      "title": "字母身分不因字體改變",
+      "content": "印刷 A 與連續書寫體 A 是同一字母。先看主要筆畫，再忽略圈尾或連筆裝飾。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S001_SEC_2",
+      "title": "大寫與小寫分開學",
+      "content": "同一字母的大小寫可能外形差很大，例如 G/g。不要只用尺寸判斷，需認筆形。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S001_SEC_3",
+      "title": "從固定特徵辨認",
+      "content": "i 的點、f 的長直筆、r 的短肩等可作辨識線索，但仍需配合完整字形。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S001_SEC_4",
+      "title": "無障礙替代同等有效",
+      "content": "若無法辨識手寫字形，可由 CAPITAL/LOWERCASE 與資料表讀出相同字母身分。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U01_ENG_R4_S001_EX_1",
+      "prompt": "Script A beside print A",
+      "steps": [
+        "找主要斜筆與橫線。",
+        "忽略連筆。",
+        "核對字母名稱。"
+      ],
+      "answer": "capital A",
+      "why": "字體不同但身分相同。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S001_EX_2",
+      "prompt": "Script b beside print b",
+      "steps": [
+        "辨長直筆。",
+        "找右側圓腹。",
+        "確認 lowercase。"
+      ],
+      "answer": "lowercase b",
+      "why": "不與 d 反向。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S001_EX_3",
+      "prompt": "Script G/g pair",
+      "steps": [
+        "先分欄位 case。",
+        "各自看開口曲線。",
+        "不靠大小單獨判斷。"
+      ],
+      "answer": "capital G and lowercase g",
+      "why": "位置與筆形共同支持。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "字寫得斜就是不同字母。",
+      "whyWrong": "斜度是字體特徵。",
+      "correction": "看核心筆畫。"
+    },
+    {
+      "belief": "較大的字一定是大寫。",
+      "whyWrong": "圖可縮放。",
+      "correction": "依字形與標記。"
+    },
+    {
+      "belief": "所有大小寫外形都相似。",
+      "whyWrong": "部分差異很大。",
+      "correction": "成對記憶。"
+    },
+    {
+      "belief": "連筆尾巴就是另一字母。",
+      "whyWrong": "可能只是連接筆。",
+      "correction": "先找主體。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "字體改變會改字母身分嗎？",
+      "answer": "不會",
+      "reason": "核心字母不變。"
+    },
+    {
+      "prompt": "可只靠尺寸判大小寫嗎？",
+      "answer": "不可",
+      "reason": "需字形線索。"
+    },
+    {
+      "prompt": "g 與 G 應如何學？",
+      "answer": "成對但分別辨認",
+      "reason": "外形可不同。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AA-4-1",
+      "AUTH-ENGLISH-LC-AB-4-2",
+      "AUTH-ENGLISH-LC-AB-4-3",
+      "AUTH-ENGLISH-LP-1-4-10",
+      "AUTH-ENGLISH-LP-3-4-1",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-4",
+      "AUTH-ENGLISH-LP-5-4-5"
+    ]
+  }
+}

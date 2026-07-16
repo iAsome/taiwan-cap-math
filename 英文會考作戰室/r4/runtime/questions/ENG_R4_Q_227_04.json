@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_227_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S227"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "David gave the key to Kim. She opened the music room and returned it to him. Who had the key at the end?",
+  "options": [
+    "The music teacher",
+    "Kim",
+    "The room",
+    "David"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "音樂老師未出現。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Kim 中途拿到鑰匙，但後來歸還。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "房間被打開，不是持有人。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "him 指 David，所以最後回到 David 手上。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "track-key-return-to-original-owner"
+  ],
+  "representationType": "pronoun-transfer-chain",
+  "misconceptionTargets": [
+    "stop-tracking-after-first-transfer"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩次轉移都要依序更新持有人。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "she 與 him 分別對應 Kim 和 David。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

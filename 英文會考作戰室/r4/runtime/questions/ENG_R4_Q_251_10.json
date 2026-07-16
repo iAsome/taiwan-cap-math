@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_251_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S251"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "Text: Amy chose the paper map when her phone battery reached zero. Which statement is explicit?",
+  "options": [
+    "Paper maps are better in every situation",
+    "Amy forgot to charge the phone on purpose",
+    "The map was free",
+    "Amy used a paper map after her phone lost power"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Paper maps are better in every situation：一次選擇不能支持 every situation。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Amy forgot to charge the phone on purpose：原因與意圖未提。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The map was free：價格未提。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Amy used a paper map after her phone lost power：battery reached zero 改寫為 phone lost power。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "separate-explicit-from-added-information",
+    "verify-every-part-of-choice"
+  ],
+  "representationType": "explicit-versus-added",
+  "misconceptionTargets": [
+    "accept-plausible-addition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「選項每一部分都能由原文字句直接支持」可推出 Amy used a paper map after her phone lost power；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 Amy used a paper map after her phone lost power 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

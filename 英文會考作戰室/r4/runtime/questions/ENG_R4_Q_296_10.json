@@ -1,0 +1,95 @@
+{
+  "id": "ENG_R4_Q_296_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S296"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-6",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10",
+    "AUTH-ENGLISH-LP-5-4-8"
+  ],
+  "stimulusId": null,
+  "stem": "A community garden was drying during a holiday. Mia set a simple timer on the water system, and the plants remained healthy. What is the best summary?",
+  "options": [
+    "Mia took a holiday beside a garden.",
+    "The timer made the plants grow instantly.",
+    "Water systems never need people.",
+    "A timer kept the garden watered while people were away."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Mia took a holiday beside a garden.：未說她度假。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "The timer made the plants grow instantly.：過度且未提。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Water systems never need people.：過度概括。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "A timer kept the garden watered while people were away.：定時器解決假期無人澆水。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "build-causal-story-summary",
+    "compress-problem-action-result-chain"
+  ],
+  "representationType": "causal-summary",
+  "misconceptionTargets": [
+    "list-details-without-causal-spine"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-6",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10",
+      "AUTH-ENGLISH-LP-5-4-8"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「摘要保留初始目標或問題、關鍵因果轉折與結果，刪除不影響因果鏈的細節」可推出 A timer kept the garden watered while people were away.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 A timer kept the garden watered while people were away. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

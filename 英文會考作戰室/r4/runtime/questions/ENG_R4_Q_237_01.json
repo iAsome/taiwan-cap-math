@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_237_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S237"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Nora opened a box and found three letters. They were from her old friends. What does They refer to?",
+  "options": [
+    "the box",
+    "three letters",
+    "Nora",
+    "old friends"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the box：box 是單數，應以 it 承接。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "three letters：They 為複數主詞，且能合理帶有寄件來源，指 three letters。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Nora：Nora 是單一人物，應以 she 承接。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "old friends：friends 是寄件者，不是 from her old friends 的主詞。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "resolve-pronoun-antecedent",
+    "match-plural-object-and-source"
+  ],
+  "representationType": "short-paragraph-reference",
+  "misconceptionTargets": [
+    "choose-nearest-plural"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「代名詞的數量、類型與後續動作」可推出 three letters；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 three letters 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

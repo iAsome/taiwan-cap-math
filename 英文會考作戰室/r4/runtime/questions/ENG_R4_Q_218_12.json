@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_218_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S218"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "From: Sam\nTo: Rita\nSubject: Dinner plan\nCan we meet at the noodle shop at six?\nWhich statement is supported by the format and body?",
+  "options": [
+    "Rita wrote to Sam about lunch.",
+    "Sam has already eaten dinner.",
+    "The noodle shop closes at six.",
+    "Sam asks Rita about a dinner meeting."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "寄件與收件方向相反，而且正文談晚餐。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "問句只提出會面，沒有說 Sam 已吃過。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "六點是建議會面時間，不是關門時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "From、To、Subject 與正文共同支持 Sam 向 Rita 詢問晚餐會面。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u32-s218-integrate-header-and-body-roles",
+    "reject-status-inference-from-meeting-question"
+  ],
+  "representationType": "email-format-integration",
+  "misconceptionTargets": [
+    "reverse-direction-or-overstate-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "完整判斷需同時使用格式與正文。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "正確敘述沒有把提議誤寫成已發生的事。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

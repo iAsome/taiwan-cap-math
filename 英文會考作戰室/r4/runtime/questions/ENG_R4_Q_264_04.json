@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_264_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S264"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Nora gave a brief reply and returned to work. What does brief mean?",
+  "options": [
+    "written tomorrow",
+    "short",
+    "a bag for papers",
+    "angry"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "written tomorrow：時間未提。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "short：brief 置於 reply 前作形容詞，returned to work 支持回答不長。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "a bag for papers：名詞義不能直接描述 reply。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "angry：情緒未由位置或情境支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "use-part-of-speech-and-collocation",
+    "filter-by-part-of-speech-and-object"
+  ],
+  "representationType": "syntax-collocation-vocabulary",
+  "misconceptionTargets": [
+    "use-most-familiar-sense"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「陌生字的句法位置及與相鄰字形成的自然搭配」可推出 short；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 short 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

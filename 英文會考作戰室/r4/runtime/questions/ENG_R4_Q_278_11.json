@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_278_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S278"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Text A explains how a rain tank collects water. Text B lists three safe uses for the stored water. Which combined structure best helps a new reader?",
+  "options": [
+    "List the uses first, then hide how water arrives.",
+    "Mix every sentence from both texts without headings.",
+    "Explain collection first, then organize the safe uses by purpose.",
+    "Keep only the tank color and remove the uses."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "用途前若完全不說來源，讀者缺少系統框架。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "隨機交錯會破壞程序與分類。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "先理解收集過程，再讀用途分類，資訊依賴清楚。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "顏色不是兩文的核心功能。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u41-s278-q11-merge-process-and-use-texts",
+    "order-mechanism-before-applications"
+  ],
+  "representationType": "cross-text-architecture",
+  "misconceptionTargets": [
+    "mix-sentences-to-seem-integrated"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "整合多段內容需保留 how 與 what for 的依序關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項讓第二文本建立在第一文本已知概念上。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

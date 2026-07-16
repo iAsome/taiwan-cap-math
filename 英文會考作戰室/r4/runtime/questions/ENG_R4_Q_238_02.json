@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_238_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S238"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "'Our train leaves at six.' 'That means we must wake up early.' What does That refer to?",
+  "options": [
+    "the train's leaving time",
+    "the alarm clock",
+    "the speaker's bed",
+    "six people"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "the train's leaving time：六點發車的事實推出必須早起。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the alarm clock：alarm 未在對話出現。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the speaker's bed：bed 未在對話出現。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "six people：six 是時間不是人數。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "resolve-demonstrative-proposition",
+    "use-inference-to-resolve-that"
+  ],
+  "representationType": "dialogue-proposition-reference",
+  "misconceptionTargets": [
+    "treat-number-as-count"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「this 或 that 後的評論對哪一整句成立」可推出 the train's leaving time；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 the train's leaving time 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

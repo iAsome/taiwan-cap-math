@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_229_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S229"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A. The number six bus stops there.\nB. Excuse me, how can I get to the hospital?\nC. At the corner across from the bank.\nD. Where can I catch that bus?\nWhich order makes sense?",
+  "options": [
+    "B-A-D-C",
+    "A-D-B-C",
+    "B-D-A-C",
+    "D-C-B-A"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "先問路，得到車次，再追問搭車處並獲位置。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "公車答案沒有先出現醫院問題。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "尚不知道車次就問 that bus。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "that bus 在開頭沒有指向。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "sequence-two-stage-hospital-directions"
+  ],
+  "representationType": "nested-question-order",
+  "misconceptionTargets": [
+    "use-demonstrative-before-source"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "that bus 必須承接 number six bus。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "兩組問答依一般資訊到具體位置展開。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

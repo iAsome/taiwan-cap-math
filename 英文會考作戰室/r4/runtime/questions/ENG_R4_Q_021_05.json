@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_021_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S021"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-7"
+  ],
+  "stimulusId": null,
+  "stem": "Which sequence best fits a first meeting?",
+  "options": [
+    "greeting, names, related question, closing",
+    "closing, silence, greeting, argument",
+    "unrelated question, goodbye, name, greeting",
+    "name, sudden exit, greeting, response"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "greeting, names, related question, closing：由開場到交換資訊再收束，功能完整。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "closing, silence, greeting, argument：順序不自然。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "unrelated question, goodbye, name, greeting：功能倒置。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "name, sudden exit, greeting, response：離開打斷互動。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "manage-natural-first-meeting-turns",
+    "respond-extend-and-close-from-prior-turn"
+  ],
+  "representationType": "first-meeting-turn-sequence",
+  "misconceptionTargets": [
+    "deliver-script-without-answering-previous-speaker"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-7"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「以招呼、介紹、回應、追問與收束的功能鏈安排輪次，並讓每一輪承接前一輪的新資訊。」可推出 greeting, names, related question, closing；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 greeting, names, related question, closing 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

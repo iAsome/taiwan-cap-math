@@ -1,0 +1,144 @@
+{
+  "id": "ENG_R4_L_300",
+  "subject": "english",
+  "unitId": "ENG_R4_U45",
+  "skillId": "ENG_R4_S300",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S299"
+  ],
+  "objectives": [
+    "把文字主張轉為預期數據模式。",
+    "讀取數列中的方向與差值。",
+    "選擇數據支持的最小充分重點。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U45_ENG_R4_S300_SEC_1",
+      "title": "先讀單位與條件",
+      "content": "18、24、30 若沒有 °C、minutes 或 plants 就不能解釋。先確認各數值比較的是同一測量。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S300_SEC_2",
+      "title": "文字主張預測圖樣",
+      "content": "more light increased growth 預期光較多組的 growth 較高；若數據不符合就不能硬說支持。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S300_SEC_3",
+      "title": "用全部數據而非單點",
+      "content": "三組中只挑一對可能製造假趨勢。應檢查整體方向與例外。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S300_SEC_4",
+      "title": "結果不自動證明原因",
+      "content": "觀察性資料支持關聯；若沒有控制實驗，不可把 relation 升級為一定 caused。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U45_ENG_R4_S300_EX_1",
+      "prompt": "Light hours 2/4/6; growth 1/3/5 cm",
+      "steps": [
+        "單位一致。",
+        "兩列同步上升。",
+        "描述正相關。"
+      ],
+      "answer": "More light is associated with more growth.",
+      "why": "不用聲稱唯一原因。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S300_EX_2",
+      "prompt": "Temp 10/20/30; time 8/5/6 min",
+      "steps": [
+        "先降後升。",
+        "不是持續下降。",
+        "找最低值 20。"
+      ],
+      "answer": "The shortest time occurs at 20°C.",
+      "why": "使用全部三點。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S300_EX_3",
+      "prompt": "A 12, B 12, C 12",
+      "steps": [
+        "三值相同。",
+        "沒有組間差。",
+        "不宣稱某組較高。"
+      ],
+      "answer": "The measured result is equal.",
+      "why": "數據限制結論。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "最大數字就是主旨。",
+      "whyWrong": "需知道標籤與單位。",
+      "correction": "讀完整資料。"
+    },
+    {
+      "belief": "一對數據足以代表全部。",
+      "whyWrong": "可能有例外。",
+      "correction": "檢查所有點。"
+    },
+    {
+      "belief": "同時變化必定因果。",
+      "whyWrong": "可能只是關聯。",
+      "correction": "看是否有控制。"
+    },
+    {
+      "belief": "文字說什麼數據就一定支持。",
+      "whyWrong": "需獨立核對。",
+      "correction": "比較預測與實際。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "讀數字前先讀什麼？",
+      "answer": "標籤、單位與條件",
+      "reason": "數值需脈絡。"
+    },
+    {
+      "prompt": "三點趨勢可只看兩點嗎？",
+      "answer": "不可",
+      "reason": "第三點可能是例外。"
+    },
+    {
+      "prompt": "觀察關聯能直接說 caused 嗎？",
+      "answer": "通常不能",
+      "reason": "需控制與機制。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

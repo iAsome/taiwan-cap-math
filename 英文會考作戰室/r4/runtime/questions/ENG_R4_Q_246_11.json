@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_246_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S246"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10"
+  ],
+  "stimulusId": null,
+  "stem": "A class tried standing for short parts of lessons. Some students felt more awake, while others found it hard to write.\nWhich option is neither too narrow nor too broad?",
+  "options": [
+    "All students should stand through every lesson",
+    "Standing made writing easy for everyone",
+    "Standing during lessons had mixed effects for the class",
+    "Some students felt awake"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "All students should stand through every lesson：some/others 的結果不支持普遍規定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Standing made writing easy for everyone：與 found it hard 相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Standing during lessons had mixed effects for the class：mixed effects 同時涵蓋清醒與書寫困難。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Some students felt awake：漏掉 others 的困難。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "select-bounded-main-idea",
+    "match-claim-scope-to-evidence"
+  ],
+  "representationType": "bounded-main-idea",
+  "misconceptionTargets": [
+    "choose-overgeneralized-claim"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「涵蓋全文但不加入未被原文支持的人、時間、因果或普遍結論」可推出 Standing during lessons had mixed effects for the class；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 Standing during lessons had mixed effects for the class 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

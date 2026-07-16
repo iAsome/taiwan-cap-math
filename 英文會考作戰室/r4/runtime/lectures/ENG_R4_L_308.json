@@ -1,0 +1,142 @@
+{
+  "id": "ENG_R4_L_308",
+  "subject": "english",
+  "unitId": "ENG_R4_U46",
+  "skillId": "ENG_R4_S308",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-6-4-3",
+    "AUTH-ENGLISH-LP-6-4-4",
+    "AUTH-ENGLISH-LP-6-4-6",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-7-4-4",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S307"
+  ],
+  "objectives": [
+    "先擱置個人同意與否。",
+    "逐項核對選項是否由來源支持。",
+    "排除扭曲強度、角色或範圍的選項。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U46_ENG_R4_S308_SEC_1",
+      "title": "答案問來源不是你",
+      "content": "先改寫成 According to the source。即使你反對，仍需忠實選來源立場。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S308_SEC_2",
+      "title": "逐詞做證據檢查",
+      "content": "選項中的 every、only、because 都需要原文依據；一個新增詞就可能使整項錯。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S308_SEC_3",
+      "title": "不把沉默當否定",
+      "content": "來源沒談 price，不能說 it says price is unimportant。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S308_SEC_4",
+      "title": "多來源保持歸屬",
+      "content": "A 的理由不能移給 B。標記 who said what，再評選項。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U46_ENG_R4_S308_EX_1",
+      "prompt": "Source: may help. Option: always solves",
+      "steps": [
+        "may 強度弱。",
+        "always 過度。",
+        "排除。"
+      ],
+      "answer": "unsupported",
+      "why": "保留 modality。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S308_EX_2",
+      "prompt": "Source A says cost; B says safety",
+      "steps": [
+        "標 A/B。",
+        "不交換。",
+        "選正確歸屬。"
+      ],
+      "answer": "A-cost, B-safety",
+      "why": "角色綁定。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S308_EX_3",
+      "prompt": "Source silent on color",
+      "steps": [
+        "找不到 color。",
+        "不能推 dislike。",
+        "選 not stated。"
+      ],
+      "answer": "not supported",
+      "why": "沉默非否定。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "我同意的選項就是答案。",
+      "whyWrong": "題目測來源理解。",
+      "correction": "先遮住個人立場。"
+    },
+    {
+      "belief": "大意接近即可忽略 always。",
+      "whyWrong": "強度詞會改命題。",
+      "correction": "逐詞核對。"
+    },
+    {
+      "belief": "未提就是反對。",
+      "whyWrong": "沉默沒有立場。",
+      "correction": "選 not stated。"
+    },
+    {
+      "belief": "可交換兩來源理由。",
+      "whyWrong": "會錯置角色。",
+      "correction": "建立 A/B 欄。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "source says may，答案可說 always 嗎？",
+      "answer": "不可",
+      "reason": "強度過度。"
+    },
+    {
+      "prompt": "來源未談價格可推反對價格嗎？",
+      "answer": "不可",
+      "reason": "沉默不等於否定。"
+    },
+    {
+      "prompt": "個人立場何時使用？",
+      "answer": "若題目明問時",
+      "reason": "一般來源題不用。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-6-4-3",
+      "AUTH-ENGLISH-LP-6-4-4",
+      "AUTH-ENGLISH-LP-6-4-6",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-7-4-4",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  }
+}

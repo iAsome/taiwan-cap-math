@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_251_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S251"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "Text: Nora bought two apples and one loaf of bread. Which statement adds no new information?",
+  "options": [
+    "Nora bought the food for dinner",
+    "The bread was fresh",
+    "The apples cost less than the bread",
+    "Nora bought three items"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Nora bought the food for dinner：用途 dinner 未提。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "The bread was fresh：品質未提。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The apples cost less than the bread：沒有價格。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Nora bought three items：two apples 加 one loaf，共三項物品。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "separate-explicit-from-added-information",
+    "verify-every-part-of-choice"
+  ],
+  "representationType": "explicit-versus-added",
+  "misconceptionTargets": [
+    "accept-plausible-addition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「選項每一部分都能由原文字句直接支持」可推出 Nora bought three items；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 Nora bought three items 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

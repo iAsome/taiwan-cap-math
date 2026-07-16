@@ -1,0 +1,138 @@
+{
+  "id": "ENG_R4_L_252",
+  "subject": "english",
+  "unitId": "ENG_R4_U37",
+  "skillId": "ENG_R4_S252",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "prerequisites": [
+    "ENG_R4_S251"
+  ],
+  "objectives": [
+    "辨認題目需要的兩個以上資訊欄位。",
+    "回到不同句子收集各部分證據。",
+    "合併時保持人物、時間與條件一致。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U37_ENG_R4_S252_SEC_1",
+      "title": "先列答案需要什麼",
+      "content": "問題若問 Which plan can Mia use on Friday?，至少需要 Mia 的需求、各 plan 日期與限制。把需求拆成欄位，避免找到第一個相關句就停止。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S252_SEC_2",
+      "title": "用同一角色串線索",
+      "content": "相隔句子可能用 Mia、she、the student 承接同一人。先確認指涉，再合併她的目標與後續條件。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S252_SEC_3",
+      "title": "交集不是聯集",
+      "content": "答案必須同時符合所有條件。A 選項只合時間、B 只合價格都不夠；找條件集合的交集。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S252_SEC_4",
+      "title": "標記證據位置",
+      "content": "在草稿寫 C1、C2，分別指出哪一句支持。若某條件找不到來源，表示選項可能加入資訊。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U37_ENG_R4_S252_EX_1",
+      "prompt": "Mia is free after four. The art class starts at 4:30; the music class starts at three.",
+      "steps": [
+        "條件一：after four。",
+        "比較兩課開始時間。",
+        "只有 art 符合。"
+      ],
+      "answer": "the art class",
+      "why": "需合併第一句需求與第二句時刻。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S252_EX_2",
+      "prompt": "Ben needs a room for 25. Room A holds 20. Room B holds 30 but is closed Friday.",
+      "steps": [
+        "條件一：25 seats。",
+        "Room A 容量不足。",
+        "若是 Friday，Room B 也不行。"
+      ],
+      "answer": "Neither room on Friday.",
+      "why": "必須同時合容量與日期。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S252_EX_3",
+      "prompt": "The blue route is shorter. Later the text says bikes are not allowed on it. Nora is riding a bike.",
+      "steps": [
+        "短只是優點。",
+        "禁 bike 是硬限制。",
+        "Nora 不能選 blue。"
+      ],
+      "answer": "not the blue route",
+      "why": "較遠句子的限制推翻局部吸引項。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "找到一個符合條件就停止。",
+      "whyWrong": "題目可能要求多條件交集。",
+      "correction": "列出全部限制再選。"
+    },
+    {
+      "belief": "相隔句子一定無關。",
+      "whyWrong": "代名詞與主題可跨句延續。",
+      "correction": "追蹤同一人物或物件。"
+    },
+    {
+      "belief": "好處可以抵消硬限制。",
+      "whyWrong": "closed、must、not allowed 等不能被偏好取代。",
+      "correction": "先處理必要條件。"
+    },
+    {
+      "belief": "可把不同人的條件混在一起。",
+      "whyWrong": "會產生原文沒有的角色。",
+      "correction": "每條證據標註所屬人物。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "多條件題應找聯集還是交集？",
+      "answer": "交集",
+      "reason": "答案需同時滿足所有條件。"
+    },
+    {
+      "prompt": "容量足夠但當天 closed，能選嗎？",
+      "answer": "不能",
+      "reason": "日期限制仍未通過。"
+    },
+    {
+      "prompt": "合併前要先確認什麼？",
+      "answer": "線索屬於同一角色或對象",
+      "reason": "避免跨人物錯配。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  }
+}

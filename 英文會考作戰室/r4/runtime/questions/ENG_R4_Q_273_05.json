@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_273_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S273"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Amy washed the apples before she cut them. She put the pieces in a bowl after that. Which action was second?",
+  "options": [
+    "She cut the apples.",
+    "She put the pieces in a bowl.",
+    "She washed the bowl.",
+    "She ate the apples."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "before 建立先洗後切，所以切是第二步。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "放入碗中是 after that 指出的第三步。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "文本沒有洗碗事件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "文本沒有說她吃了蘋果。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u41-s273-q05-identify-middle-action",
+    "combine-before-and-after-that"
+  ],
+  "representationType": "action-chain-middle-step",
+  "misconceptionTargets": [
+    "choose-final-container-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "兩個連接詞共同建立三步鏈。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "答案保留動作受詞，不加入未寫事件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

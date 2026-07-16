@@ -1,0 +1,138 @@
+{
+  "id": "ENG_R4_L_312",
+  "subject": "english",
+  "unitId": "ENG_R4_U47",
+  "skillId": "ENG_R4_S312",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AB-4-1",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-9",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-2-4-8",
+    "AUTH-ENGLISH-LP-5-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S311"
+  ],
+  "objectives": [
+    "聽清單複數與數量詞。",
+    "辨認帽子眼鏡圍巾等特徵。",
+    "用數量與特徵交集排除。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U47_ENG_R4_S312_SEC_1",
+      "title": "單複數是硬條件",
+      "content": "person/he 表一人，people/they 表多人。圖中兩人不可回答 one person。"
+    },
+    {
+      "id": "ENG_R4_U47_ENG_R4_S312_SEC_2",
+      "title": "特徵不是身份",
+      "content": "hat、glasses、scarf 只描述可見外觀，不推職業或性格。"
+    },
+    {
+      "id": "ENG_R4_U47_ENG_R4_S312_SEC_3",
+      "title": "兩條件都要",
+      "content": "two people with a scarf 需人數二且特徵 scarf。只符合其一仍錯。"
+    },
+    {
+      "id": "ENG_R4_U47_ENG_R4_S312_SEC_4",
+      "title": "沒有特徵不等於否定人物",
+      "content": "without a hat 只排帽子，不代表沒有其他特徵。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U47_ENG_R4_S312_EX_1",
+      "prompt": "Two people wear scarves.",
+      "steps": [
+        "two 複數。",
+        "找 scarf。",
+        "交集。"
+      ],
+      "answer": "two-scarf picture",
+      "why": "缺一不可。"
+    },
+    {
+      "id": "ENG_R4_U47_ENG_R4_S312_EX_2",
+      "prompt": "The person has glasses.",
+      "steps": [
+        "一人。",
+        "glasses 眼部雙圈。",
+        "不猜身份。"
+      ],
+      "answer": "one-glasses picture",
+      "why": "外觀描述。"
+    },
+    {
+      "id": "ENG_R4_U47_ENG_R4_S312_EX_3",
+      "prompt": "A person without a hat",
+      "steps": [
+        "一人。",
+        "排 hat。",
+        "其他特徵可有。"
+      ],
+      "answer": "non-hat picture",
+      "why": "否定範圍有限。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "忽略 -s 與 people。",
+      "whyWrong": "會選錯人數。",
+      "correction": "先記單複數。"
+    },
+    {
+      "belief": "戴帽就推成 worker。",
+      "whyWrong": "圖未給職業。",
+      "correction": "只回答特徵。"
+    },
+    {
+      "belief": "符合人數就停止。",
+      "whyWrong": "可能特徵錯。",
+      "correction": "再核第二條件。"
+    },
+    {
+      "belief": "without hat 等於無任何特徵。",
+      "whyWrong": "否定只修飾 hat。",
+      "correction": "保留 glasses/scarf 可能。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "they 通常對應幾人？",
+      "answer": "兩人以上",
+      "reason": "複數。"
+    },
+    {
+      "prompt": "戴眼鏡可推職業嗎？",
+      "answer": "不可",
+      "reason": "只支持外觀。"
+    },
+    {
+      "prompt": "two with hats 需核幾條？",
+      "answer": "人數與帽子兩條",
+      "reason": "取交集。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AB-4-1",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-9",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-2-4-8",
+      "AUTH-ENGLISH-LP-5-4-4"
+    ]
+  }
+}

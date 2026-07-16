@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_240_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S240"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The weather report warned of heavy rain. ___, the outdoor show was moved inside.",
+  "options": [
+    "As a result",
+    "For example",
+    "In contrast",
+    "At first"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "As a result：警告造成移入室內的決定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "For example：後句不是 heavy rain 的例子。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "In contrast：兩句沒有相反觀點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "At first：At first 只標示起初，不能表示因果。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "use-discourse-marker",
+    "select-result-connector"
+  ],
+  "representationType": "marker-cloze",
+  "misconceptionTargets": [
+    "select-marker-by-position-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「標記詞宣告的轉折、因果或例證功能」可推出 As a result；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 As a result 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,95 @@
+{
+  "id": "ENG_R4_Q_300_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S300"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A text says thicker cloth slows cooling. Data after 10 minutes: thin cloth 42°C; medium 48°C; thick 53°C. Which point is supported?",
+  "options": [
+    "Thicker cloth is associated with higher remaining temperature.",
+    "Thin cloth kept the most heat.",
+    "All cloth gave the same result.",
+    "Cloth thickness had no relation to temperature."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Thicker cloth is associated with higher remaining temperature.：厚度增加時十分鐘後溫度依序較高。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Thin cloth kept the most heat.：42 最低。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "All cloth gave the same result.：三值不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Cloth thickness had no relation to temperature.：數據呈一致方向。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "integrate-explanation-and-data",
+    "test-text-claim-against-all-values"
+  ],
+  "representationType": "explanation-plus-data",
+  "misconceptionTargets": [
+    "infer-trend-from-one-number-or-overstate-causation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「文字提出的關係需由數據方向、差值與單位共同驗證」可推出 Thicker cloth is associated with higher remaining temperature.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 Thicker cloth is associated with higher remaining temperature. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

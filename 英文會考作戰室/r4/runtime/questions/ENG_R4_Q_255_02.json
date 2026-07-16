@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_255_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S255"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Nora arrived with wet hair and placed a dripping umbrella by the door. What can be inferred?",
+  "options": [
+    "Nora went swimming",
+    "A pipe broke indoors",
+    "A storm damaged her house",
+    "It was raining outside"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Nora went swimming：umbrella 滴水更直接指雨。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "A pipe broke indoors：沒有 pipe。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "A storm damaged her house：雨不等於房屋受損。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "It was raining outside：wet hair 與 dripping umbrella 共同支持雨。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "infer-from-two-explicit-clues",
+    "intersect-explicit-clues"
+  ],
+  "representationType": "two-clue-inference",
+  "misconceptionTargets": [
+    "infer-from-one-clue"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「兩項各自不足的明示線索合併後只支持一個結果」可推出 It was raining outside；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 It was raining outside 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

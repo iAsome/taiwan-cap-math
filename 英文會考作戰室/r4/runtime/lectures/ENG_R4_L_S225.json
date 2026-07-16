@@ -1,0 +1,149 @@
+{
+  "id": "ENG_R4_L_S225",
+  "subject": "english",
+  "unitId": "ENG_R4_U33",
+  "skillId": "ENG_R4_S225",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S224"
+  ],
+  "objectives": [
+    "能利用缺句前後的問答關係、代名詞與因果線索補回對話。",
+    "能排除文法正確但無法承接下一句的選項。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S225_SEC_01",
+      "title": "先看缺句兩邊",
+      "content": "對話缺句不是只完成前一句。先讀缺句前的發問或陳述，再讀缺句後的回應。Why are your shoes wet? 後面需要原因；若下一句又說 Then take these dry socks，缺句還要能解釋為何需要乾襪子。兩邊都接得起來才是答案。"
+    },
+    {
+      "id": "ENG_R4_L_S225_SEC_02",
+      "title": "找成對的語意動作",
+      "content": "邀請通常接接受或婉拒，求助接答應或說明困難，道歉接接受道歉或處理方式，建議接評估與決定。Could you feed my fish? 需要回答是否能幫忙，不能只說魚的顏色。先判斷說話者在做什麼，再找相配的回應。"
+    },
+    {
+      "id": "ENG_R4_L_S225_SEC_03",
+      "title": "追蹤代名詞和省略資訊",
+      "content": "缺句中的 it、there、then 必須在上下文找到明確對象。若前文談 Room 12，Follow me. I am going there. 的 there 才能指向該教室。代名詞雖短，若沒有可指向的內容，句子就不連貫。"
+    },
+    {
+      "id": "ENG_R4_L_S225_SEC_04",
+      "title": "用後句反查而不腦補",
+      "content": "Good idea、I see、That will help 等後句會限制缺句功能。看到 Good idea，可反推缺句多半是建議；看到 I see，前句多半提供了解釋。答案不必華麗，只要完整受文本支持，不能加入對話沒提到的新事件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S225_EX_01",
+      "prompt": "A: Why is the window open? B: ___. A: Then I will close it.",
+      "steps": [
+        "Why 要求原因。",
+        "後句決定關窗。",
+        "缺句應說明開窗造成的問題。"
+      ],
+      "answer": "The wind is making the room cold.",
+      "why": "風使房間變冷能直接回答原因，也自然引出關窗。若只回答 I like the window，既沒有說明為何開著，也無法支持後續動作。"
+    },
+    {
+      "id": "ENG_R4_L_S225_EX_02",
+      "prompt": "A: Could you carry this box? B: ___. A: Thanks. The bus is waiting.",
+      "steps": [
+        "辨認請求協助。",
+        "Thanks 顯示對方答應。",
+        "公車正在等，使立即行動合理。"
+      ],
+      "answer": "Sure. Let me take it now.",
+      "why": "Sure 明確接受請求，take it 的 it 指向箱子，now 又承接公車正在等的急迫性，三項線索彼此一致。"
+    },
+    {
+      "id": "ENG_R4_L_S225_EX_03",
+      "prompt": "A: I cannot read the last line. B: ___. A: Yes, that is much clearer.",
+      "steps": [
+        "第一句指出看不清楚。",
+        "Yes 回答一個可檢驗的改善。",
+        "much clearer 表示缺句提供放大或靠近的方法。"
+      ],
+      "answer": "Would you like me to make the words larger?",
+      "why": "把字放大正好處理看不清楚，後句也能確認改善。若建議換主題，即使句子文法正確，clearer 仍沒有對象。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只要選項能回答缺句前的問句就可以。",
+      "whyWrong": "它可能和缺句後的反應衝突。",
+      "correction": "把選項放回去，從缺句前一路讀到缺句後。"
+    },
+    {
+      "belief": "最長、資訊最多的選項通常最完整。",
+      "whyWrong": "多出的事件可能完全沒有文本依據。",
+      "correction": "選擇剛好完成問答關係的內容，不以長度判斷。"
+    },
+    {
+      "belief": "代名詞可以隨意指向對話中任何名詞。",
+      "whyWrong": "指涉還要符合單複數、人物與語意。",
+      "correction": "逐一檢查 it、they、there 在前文的唯一合理對象。"
+    },
+    {
+      "belief": "Good idea 之前一定要有問號。",
+      "whyWrong": "陳述式建議如 We can walk there 也能得到這個回應。",
+      "correction": "依溝通功能判斷，不只看句尾標點。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "缺句後出現 That explains the noise，缺句最可能提供哪一類資訊？",
+      "answer": "噪音的原因",
+      "reason": "explains 表示後句把前述內容視為解釋。"
+    },
+    {
+      "prompt": "Could you open the door? 之後若接 Thank you，缺句應表達什麼？",
+      "answer": "答應並開門",
+      "reason": "感謝語顯示請求已獲得協助。"
+    },
+    {
+      "prompt": "選項能接前句卻和後句矛盾時，是否可選？",
+      "answer": "不可",
+      "reason": "完整對話的前後語意都必須成立。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  }
+}

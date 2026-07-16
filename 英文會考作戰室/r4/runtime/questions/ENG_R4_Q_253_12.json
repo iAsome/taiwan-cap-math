@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_253_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S253"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "Contest rules: form by June 1, work under 500 words. Entry A: May 31, 480 words. Entry B: June 1, 520 words. Entry C: June 2, 450 words. Which entry qualifies?",
+  "options": [
+    "B and C",
+    "Entry A",
+    "Entry B",
+    "Entry C"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "B and C：兩者各違反一條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Entry A：日期在期限內且 480<500。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Entry B：日期合但 520 不 under 500。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Entry C：字數合但日期太晚。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "verify-list-constraints",
+    "apply-all-list-constraints"
+  ],
+  "representationType": "constraint-list",
+  "misconceptionTargets": [
+    "accept-most-conditions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「清單每一欄與題目限制逐項核對後全部通過」可推出 Entry A；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Entry A 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

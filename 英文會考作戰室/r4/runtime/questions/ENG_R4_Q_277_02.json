@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_277_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S277"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Sentence to insert: 'However, the boxes were too heavy for younger students.' Text: The class packed all the food quickly. [A] They planned to carry it to the bus. [B] A teacher found two small carts. [C] The carts made the trip easy. [D] Which position is best?",
+  "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "在計畫搬運前提出重量問題，尚未建立 boxes 要被搬走的需求。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "計畫搬運後出現困難，再接老師找到推車的解法。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "放在找到推車後會割裂解法與效果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "段末才提問題，順序成為先解決再說明阻礙。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u41-s277-q02-insert-obstacle-before-cart-solution",
+    "use-however-to-open-problem-slot"
+  ],
+  "representationType": "problem-bridge-insertion",
+  "misconceptionTargets": [
+    "attach-however-to-unrelated-speed"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "However 形成計畫與實際困難的轉折。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "B 位置也為下一句推車解法提供原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

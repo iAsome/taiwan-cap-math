@@ -1,0 +1,95 @@
+{
+  "id": "ENG_R4_Q_300_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S300"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Compost temperatures were 22°C on day 1, 38°C on day 3, and 30°C on day 6. Which trend is correct?",
+  "options": [
+    "The temperature stayed at 30°C.",
+    "Temperature rose and then declined.",
+    "Temperature fell every day.",
+    "Day 1 was hottest."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The temperature stayed at 30°C.：三值不同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Temperature rose and then declined.：22→38 上升，之後降到 30。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Temperature fell every day.：前段上升。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Day 1 was hottest.：day 3 最高。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "integrate-explanation-and-data",
+    "test-text-claim-against-all-values"
+  ],
+  "representationType": "explanation-plus-data",
+  "misconceptionTargets": [
+    "infer-trend-from-one-number-or-overstate-causation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「文字提出的關係需由數據方向、差值與單位共同驗證」可推出 Temperature rose and then declined.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Temperature rose and then declined. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

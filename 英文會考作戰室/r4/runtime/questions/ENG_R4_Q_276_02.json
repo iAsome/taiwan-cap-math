@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_276_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S276"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The shop put clear labels on every box, so workers found orders faster. What was the result of the labels?",
+  "options": [
+    "The boxes became heavier.",
+    "Workers found orders faster.",
+    "The shop sold every box.",
+    "Workers stopped using labels."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "標籤不會由文本推成重量增加。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "so 後直接寫出找訂單更快的結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "文章沒有銷售箱子的事件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "結果依賴標籤使用，並非停止使用。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u41-s276-q02-extract-label-result",
+    "read-so-clause-as-effect"
+  ],
+  "representationType": "cause-effect-result",
+  "misconceptionTargets": [
+    "repeat-cause-instead-of-effect"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目要求結果，需讀取 so 後分句。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留 faster 的比較意義。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

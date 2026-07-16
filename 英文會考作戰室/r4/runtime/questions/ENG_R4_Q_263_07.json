@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_263_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S263"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Leo spoke discreetly because the news was not public yet; nobody nearby heard him. What does discreetly mean?",
+  "options": [
+    "without knowing the news",
+    "in a language nobody knew",
+    "carefully and privately",
+    "as loudly as possible"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "without knowing the news：Leo 正在說 news。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "in a language nobody knew：原文未提語言。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "carefully and privately：not public 與 nobody heard 支持謹慎低調。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "as loudly as possible：與 nobody heard 相反。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-word-from-cause-effect",
+    "infer-minimal-cause-from-result"
+  ],
+  "representationType": "cause-effect-vocabulary",
+  "misconceptionTargets": [
+    "ignore-result-clue"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「陌生字所在原因與後句結果形成可驗證的事件鏈」可推出 carefully and privately；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 carefully and privately 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
