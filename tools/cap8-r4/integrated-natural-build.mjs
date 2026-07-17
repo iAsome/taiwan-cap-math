@@ -106,28 +106,11 @@ async function dependencyRecord(repoRoot, file) {
 }
 
 const SVG_PRESENTATION_REPAIRS = Object.freeze({
-  EARTH_R4_ASSET_CARBON: [
-    ["M105 340 86 280 295 105", "M105 340 35 300 35 155 295 95"],
-    ["<text x=\"210\" y=\"145\">光合作用</text>", "<rect x=\"202\" y=\"128\" width=\"78\" height=\"21\" fill=\"#fff\"/><text x=\"210\" y=\"145\">光合作用</text>"],
-    ["<text x=\"237\" y=\"185\">呼吸、分解</text>", "<rect x=\"229\" y=\"168\" width=\"90\" height=\"21\" fill=\"#fff\"/><text x=\"237\" y=\"185\">呼吸、分解</text>"],
-    ["<text x=\"505\" y=\"145\">海氣交換</text>", "<rect x=\"497\" y=\"128\" width=\"82\" height=\"21\" fill=\"#fff\"/><text x=\"505\" y=\"145\">海氣交換</text>"],
-    ["<text x=\"625\" y=\"306\">沉降</text>", "<rect x=\"617\" y=\"289\" width=\"48\" height=\"21\" fill=\"#fff\"/><text x=\"625\" y=\"306\">沉降</text>"],
-    ["<text x=\"355\" y=\"367\">地質作用</text>", "<rect x=\"347\" y=\"350\" width=\"82\" height=\"21\" fill=\"#fff\"/><text x=\"355\" y=\"367\">地質作用</text>"],
-    ["<text x=\"180\" y=\"250\">火山與風化</text>", "<rect x=\"174\" y=\"272\" width=\"108\" height=\"21\" fill=\"#fff\"/><text x=\"180\" y=\"288\">火山與風化</text>"],
-    ["<text x=\"70\" y=\"300\" font-weight=\"700\">化石燃料燃燒（人為新增）</text>", "<rect x=\"30\" y=\"124\" width=\"224\" height=\"23\" fill=\"#fff\"/><text x=\"38\" y=\"141\" font-weight=\"700\">化石燃料燃燒（人為新增）</text>"],
-    ["<rect x=\"25\" y=\"420\" width=\"710\" height=\"23\" fill=\"#f3f3f3\"/><text x=\"38\" y=\"437\" font-size=\"13\">圖例：方框＝碳庫；細箭頭＝自然交換；粗字標示＝人為快速移入大氣。系統邊界為全球長期碳循環。</text>", "<rect x=\"25\" y=\"414\" width=\"710\" height=\"40\" fill=\"#f3f3f3\"/><g font-size=\"13\"><text x=\"38\" y=\"432\">圖例：方框＝碳庫；細箭頭＝自然交換；粗字標示＝人為快速移入大氣。</text><text x=\"38\" y=\"449\">系統邊界為全球長期碳循環。</text></g>"],
-  ],
   EARTH_R4_ASSET_CLIMATE_GRAPH: [
     ["<rect x=\"85\" y=\"408\" width=\"590\" height=\"28\" fill=\"#f3f3f3\" stroke=\"#111\"/><text x=\"98\" y=\"428\" font-size=\"13\">圖例：斜線柱＝月降水量（左軸，mm）｜黑色折線＝月均溫（右軸，°C）｜所有數值為原創教學合成。</text>", "<rect x=\"85\" y=\"402\" width=\"590\" height=\"46\" fill=\"#f3f3f3\" stroke=\"#111\"/><g font-size=\"13\"><text x=\"98\" y=\"421\">圖例：斜線柱＝月降水量（左軸，mm）｜黑色折線＝月均溫（右軸，°C）</text><text x=\"98\" y=\"439\">所有數值為原創教學合成。</text></g>"],
   ],
   EARTH_R4_ASSET_PLATE: [
     ["<rect x=\"24\" y=\"382\" width=\"732\" height=\"38\" fill=\"#f3f3f3\" stroke=\"#111\"/><text x=\"37\" y=\"406\" font-size=\"14\">圖例：粗灰帶＝板塊｜箭頭＝相對運動｜●＝震源｜三角錐＝火山；剖面方向依各面板箭頭，不代表固定地理方位。</text>", "<rect x=\"24\" y=\"378\" width=\"732\" height=\"52\" fill=\"#f3f3f3\" stroke=\"#111\"/><g font-size=\"14\"><text x=\"37\" y=\"399\">圖例：粗灰帶＝板塊｜箭頭＝相對運動｜●＝震源｜三角錐＝火山</text><text x=\"37\" y=\"419\">剖面方向依各面板箭頭，不代表固定地理方位。</text></g>"],
-  ],
-  EARTH_R4_ASSET_SEISMIC: [
-    ["<rect x=\"70\" y=\"405\" width=\"640\" height=\"22\" fill=\"#f3f3f3\"/><text x=\"84\" y=\"421\" font-size=\"13\">座標：時間（s）×相對振幅；P–S到時差＝12 s。波形為示意，不能直接當規模或震度。</text>", "<rect x=\"70\" y=\"399\" width=\"640\" height=\"37\" fill=\"#f3f3f3\"/><g font-size=\"13\"><text x=\"84\" y=\"416\">座標：時間（s）×相對振幅；P–S到時差＝12 s。</text><text x=\"84\" y=\"432\">波形為示意，不能直接當規模或震度。</text></g>"],
-  ],
-  EARTH_R4_ASSET_TIDE: [
-    ["<rect x=\"76\" y=\"395\" width=\"590\" height=\"25\" fill=\"#f3f3f3\"/><text x=\"88\" y=\"413\" font-size=\"13\">座標：時間（時）× 潮位（m）；量測間隔1小時，曲線僅連接觀測點；來源：Codex原創教學合成資料。</text>", "<rect x=\"76\" y=\"391\" width=\"590\" height=\"42\" fill=\"#f3f3f3\"/><g font-size=\"13\"><text x=\"88\" y=\"408\">座標：時間（時）× 潮位（m）；量測間隔1小時，曲線僅連接觀測點。</text><text x=\"88\" y=\"426\">來源：Codex 原創教學合成資料。</text></g>"],
   ],
   EARTH_R4_ASSET_WEATHER_MAP: [
     ["<rect x=\"24\" y=\"374\" width=\"672\" height=\"46\" fill=\"#f3f3f3\" stroke=\"#111\"/>", "<rect x=\"24\" y=\"366\" width=\"672\" height=\"69\" fill=\"#f3f3f3\" stroke=\"#111\"/>"],

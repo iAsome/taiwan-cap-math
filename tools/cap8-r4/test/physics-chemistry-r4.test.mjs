@@ -242,6 +242,7 @@ test("runtime does not generate questions and preserves migration, accessibility
     readFile(path.join(SUBJECT_ROOT, "styles.css"), "utf8"),
     readFile(path.join(SUBJECT_ROOT, "service-worker.js"), "utf8"),
   ]);
+  const normalizedApp = app.replaceAll("\r\n", "\n");
   assert.match(app, /orders reviewed IDs only/);
   assert.doesNotMatch(app, /generate(?:Question|Stem|Option)|sentence\s*splic/i);
   assert.match(app, /migrationBackup/);
@@ -267,7 +268,7 @@ test("runtime does not generate questions and preserves migration, accessibility
   assert.match(worker, /CACHE_ALL/);
   assert.match(worker, /artifact\.type === "asset"/);
   assert.match(worker, /scopedUrl\(\(await response\.json\(\)\)\.path\)/);
-  const validationSource = app.slice(app.indexOf("function validProgress"), app.indexOf("\n\nfunction freshProgress"));
+  const validationSource = normalizedApp.slice(normalizedApp.indexOf("function validProgress"), normalizedApp.indexOf("\n\nfunction freshProgress"));
   const validProgress = Function("SUBJECT", `${validationSource}\nreturn validProgress;`)("physics_chemistry");
   const validAttempt = { practice: { best: 10, last: 9, total: 12, seed: 20260716 } };
   assert(validProgress({ schemaVersion: 4, subject: "physics_chemistry", completedSkillIds: ["PHYCHM_R4_S001"], attempts: { PHYCHM_R4_S001: validAttempt } }));
@@ -284,7 +285,7 @@ test("runtime does not generate questions and preserves migration, accessibility
     getItem(key) { return store.get(key) ?? null; },
     setItem(key, value) { store.set(key, String(value)); },
   };
-  const migrationSource = app.slice(app.indexOf("function safeParse"), app.indexOf("\n\nfunction saveProgress"));
+  const migrationSource = normalizedApp.slice(normalizedApp.indexOf("function safeParse"), normalizedApp.indexOf("\n\nfunction saveProgress"));
   const loadOrMigrateProgress = Function(
     "SUBJECT", "STORAGE_KEY", "BACKUP_KEY", "LEGACY_PREFIXES", "localStorage",
     `${migrationSource}\nreturn loadOrMigrateProgress;`,
