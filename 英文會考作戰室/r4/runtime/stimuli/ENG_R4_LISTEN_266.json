@@ -1,8 +1,8 @@
 {
   "id": "ENG_R4_LISTEN_266",
   "section": "discourse",
-  "transcript": "A striped umbrella was found near the school office after Student Art Morning on Saturday. It contains no name, but one inside pocket has a bus map. The owner should describe one more item inside when claiming it. Please visit the school office before one forty; do not post personal details online.",
-  "spokenText": "A striped umbrella was found near the school office after Student Art Morning on Saturday. It contains no name, but one inside pocket has a bus map. The owner should describe one more item inside when claiming it. Please visit the school office before one forty; do not post personal details online.",
+  "transcript": "A community speaker gives this announcement. A striped umbrella was found near the school office after Student Art Morning on Saturday. It contains no name, but one inside pocket has a bus map. The owner should describe one more item inside when claiming it. Please visit the school office before one forty; do not post personal details online.",
+  "spokenText": "A community speaker gives this announcement. A striped umbrella was found near the school office after Student Art Morning on Saturday. It contains no name, but one inside pocket has a bus map. The owner should describe one more item inside when claiming it. Please visit the school office before one forty; do not post personal details online.",
   "audioDescription": "An original public message or short explanation whose purpose is to help return a found striped umbrella safely.",
   "pauseMs": 3500,
   "voiceProfile": {
@@ -12,6 +12,14 @@
   "audioId": "ENG_R4_AUDIO_266",
   "audioPath": "runtime/audio/ENG_R4_AUDIO_266.wav",
   "glossary": [
+    {
+      "word": "community",
+      "translation": "社區；共同體"
+    },
+    {
+      "word": "announcement",
+      "translation": "宣告, 發表, 一項公告, 一項私人告示"
+    },
     {
       "word": "striped",
       "translation": "條紋的"
@@ -41,16 +49,12 @@
       "translation": "網路"
     },
     {
-      "word": "purpose",
-      "translation": "目的"
-    },
-    {
       "word": "message",
       "translation": "消息;音信"
     },
     {
-      "word": "event",
-      "translation": "事件"
+      "word": "announce",
+      "translation": "宣佈, 通告"
     },
     {
       "word": "return",
@@ -65,20 +69,12 @@
       "translation": "陳述;狀態;州"
     },
     {
-      "word": "recording",
-      "translation": "記錄;錄音;記錄;唱片"
+      "word": "required",
+      "translation": "必填"
     },
     {
-      "word": "passport",
-      "translation": "護照"
-    },
-    {
-      "word": "according",
-      "translation": "一致、符合"
-    },
-    {
-      "word": "private",
-      "translation": "私人的"
+      "word": "claim",
+      "translation": "說法；主張"
     }
   ],
   "visualAssets": [],
@@ -127,11 +123,11 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_266",
-      "stem": "In Listening Set 266, what is the main purpose of this spoken message?",
+      "stem": "A community speaker gives this announcement. What is the message mainly meant to do?",
       "options": [
-        "sell the striped umbrella online",
-        "plan another event with the striped umbrella",
-        "teach map drawing from the striped umbrella",
+        "describe every item inside the striped umbrella",
+        "ask who came to Student Art Morning",
+        "announce where the striped umbrella was bought",
         "help return a found striped umbrella safely"
       ],
       "answerIndex": 3,
@@ -139,22 +135,22 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "sell the striped umbrella online：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "describe every item inside the striped umbrella：此項把「help return a found striped umbrella safely」改成「describe every item inside the striped umbrella」。整段資訊的目的為「help return a found striped umbrella safely」。因此，鎖定證據支持「help return a found striped umbrella safely」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "plan another event with the striped umbrella：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "ask who came to Student Art Morning：此項把「help return a found striped umbrella safely」改成「ask who came to Student Art Morning」。整段資訊的目的為「help return a found striped umbrella safely」。因此，鎖定證據支持「help return a found striped umbrella safely」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "teach map drawing from the striped umbrella：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "announce where the striped umbrella was bought：此項把「help return a found striped umbrella safely」改成「announce where the striped umbrella was bought」。整段資訊的目的為「help return a found striped umbrella safely」。因此，鎖定證據支持「help return a found striped umbrella safely」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "help return a found striped umbrella safely：整段資訊都用來 help return a found striped umbrella safely。"
+          "reason": "help return a found striped umbrella safely：完整逐字稿明確支持此項。整段資訊的目的為「help return a found striped umbrella safely」。"
         }
       ],
       "difficulty": "standard",
@@ -164,7 +160,7 @@
       ],
       "representationType": "listening-identify-spoken-message-purpose",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -212,13 +208,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「help return a found striped umbrella safely」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「help return a found striped umbrella safely」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「help return a found striped umbrella safely」成立。",
           "status": "pass"
         }
       ],
@@ -270,34 +266,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_266",
-      "stem": "In Listening Set 266, which detail is stated in the recording?",
+      "stem": "A community speaker gives this announcement. Which detail is stated in the message?",
       "options": [
-        "the striped umbrella contains a large camera",
-        "the striped umbrella contains a house key",
-        "the striped umbrella contains a bus map",
-        "the striped umbrella contains a passport"
+        "a bus map was found inside the white notebook",
+        "a bus ticket was found inside the striped umbrella",
+        "a bus map was found inside the striped umbrella",
+        "a school map was found inside the striped umbrella"
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "the striped umbrella contains a large camera：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "a bus map was found inside the white notebook：此項把「striped umbrella」改成「white notebook」。音稿明確陳述「a bus map was found inside the striped umbrella」。因此，鎖定證據支持「a bus map was found inside the striped umbrella」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "the striped umbrella contains a house key：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "a bus ticket was found inside the striped umbrella：此項把「map」改成「ticket」。音稿明確陳述「a bus map was found inside the striped umbrella」。因此，鎖定證據支持「a bus map was found inside the striped umbrella」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "the striped umbrella contains a bus map：音稿明確說出 the striped umbrella contains a bus map。"
+          "reason": "a bus map was found inside the striped umbrella：完整逐字稿明確支持此項。音稿明確陳述「a bus map was found inside the striped umbrella」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "the striped umbrella contains a passport：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "a school map was found inside the striped umbrella：此項把「bus」改成「school」。音稿明確陳述「a bus map was found inside the striped umbrella」。因此，鎖定證據支持「a bus map was found inside the striped umbrella」。"
         }
       ],
       "difficulty": "advanced",
@@ -307,7 +303,7 @@
       ],
       "representationType": "listening-retrieve-spoken-detail",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -355,13 +351,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「the striped umbrella contains a bus map」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「a bus map was found inside the striped umbrella」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「a bus map was found inside the striped umbrella」成立。",
           "status": "pass"
         }
       ],
@@ -413,34 +409,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_266",
-      "stem": "In Listening Set 266, what should the listener do according to the recording?",
+      "stem": "A community speaker gives this announcement. Which action is planned or required in the full message?",
       "options": [
-        "wait with the striped umbrella at a private home",
+        "send a photo of every item in the striped umbrella",
         "describe another item in the striped umbrella at the school office",
-        "post every striped umbrella detail online",
-        "take the striped umbrella without a question"
+        "describe the bus map only when claiming the striped umbrella",
+        "claim the striped umbrella at the school office"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "wait with the striped umbrella at a private home：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "send a photo of every item in the striped umbrella：此項把「describe another item in the striped umbrella at the school office」改成「send a photo of every item in the striped umbrella」。完整訊息指出計畫或要求的行動為「describe another item in the striped umbrella at the school office」。因此，鎖定證據支持「describe another item in the striped umbrella at the school office」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "describe another item in the striped umbrella at the school office：指示或結論要求聽者 describe another item in the striped umbrella at the school office。"
+          "reason": "describe another item in the striped umbrella at the school office：完整逐字稿明確支持此項。完整訊息指出計畫或要求的行動為「describe another item in the striped umbrella at the school office」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "post every striped umbrella detail online：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "describe the bus map only when claiming the striped umbrella：此項把「another item in the striped umbrella at the school office」改成「the bus map only when claiming the striped umbrella」。完整訊息指出計畫或要求的行動為「describe another item in the striped umbrella at the school office」。因此，鎖定證據支持「describe another item in the striped umbrella at the school office」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "take the striped umbrella without a question：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "claim the striped umbrella at the school office：此項把「describe another item in」改成「claim」。完整訊息指出計畫或要求的行動為「describe another item in the striped umbrella at the school office」。因此，鎖定證據支持「describe another item in the striped umbrella at the school office」。"
         }
       ],
       "difficulty": "transfer",
@@ -450,7 +446,7 @@
       ],
       "representationType": "listening-apply-announced-action-or-restriction",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -498,13 +494,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「describe another item in the striped umbrella at the school office」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「describe another item in the striped umbrella at the school office」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「describe another item in the striped umbrella at the school office」成立。",
           "status": "pass"
         }
       ],

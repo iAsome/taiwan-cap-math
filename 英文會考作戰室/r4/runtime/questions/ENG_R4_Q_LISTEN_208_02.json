@@ -42,34 +42,34 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_208",
-  "stem": "In Listening Set 208, which detail is stated in the recording?",
+  "stem": "This public message contains a rule and a reason. Which detail is stated in the message?",
   "options": [
-    "three thirty",
-    "eight thirty",
-    "eleven twenty",
-    "midnight"
+    "Music Practice Day begins at three thirty on next Monday",
+    "Music Practice Day begins at eight thirty on next Monday",
+    "Music Practice Day begins at three thirty on next Friday",
+    "Music Practice Day begins at three thirty in the gym"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "three thirty：音稿明確說出 three thirty。"
+      "reason": "Music Practice Day begins at three thirty on next Monday：完整逐字稿明確支持此項。音稿明確陳述「Music Practice Day begins at three thirty on next Monday」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "eight thirty：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "Music Practice Day begins at eight thirty on next Monday：此項把「three」改成「eight」。音稿明確陳述「Music Practice Day begins at three thirty on next Monday」。因此，鎖定證據支持「Music Practice Day begins at three thirty on next Monday」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "eleven twenty：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "Music Practice Day begins at three thirty on next Friday：此項把「Monday」改成「Friday」。音稿明確陳述「Music Practice Day begins at three thirty on next Monday」。因此，鎖定證據支持「Music Practice Day begins at three thirty on next Monday」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "midnight：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "Music Practice Day begins at three thirty in the gym：此項把「on next Monday」改成「in the gym」。音稿明確陳述「Music Practice Day begins at three thirty on next Monday」。因此，鎖定證據支持「Music Practice Day begins at three thirty on next Monday」。"
     }
   ],
   "difficulty": "foundation",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-retrieve-spoken-detail",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「three thirty」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「Music Practice Day begins at three thirty on next Monday」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 0,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「Music Practice Day begins at three thirty on next Monday」成立。",
       "status": "pass"
     }
   ],

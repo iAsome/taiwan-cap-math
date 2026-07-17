@@ -6331,7 +6331,7 @@
       "options": [
         "Good morning, Principal Wu. May I ask a question?",
         "Hey Wu, answer me now.",
-        "Principal, principal, principal question.",
+        "Good morning, Principal Wu. Please answer before I ask my question.",
         "Hi buddy, give answer."
       ],
       "answerIndex": 0,
@@ -6349,7 +6349,7 @@
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "Principal, principal, principal question.：重複稱謂且句子不完整。"
+          "reason": "開頭雖有稱謂，卻要求校長在問題提出前作答，溝通順序不成立。"
         },
         {
           "optionIndex": 3,
@@ -7895,22 +7895,22 @@
       "stimulusId": null,
       "stem": "You need to leave after meeting someone. Which ending is least abrupt?",
       "options": [
-        "I disappear now.",
-        "No more person.",
+        "I will disappear now because you need to catch my bus.",
+        "It was nice meeting you, but you must leave for my bus.",
         "I have to catch my bus. It was nice meeting you.",
-        "Bus!"
+        "I have to catch my bus, so our meeting was not useful."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "I disappear now.：語氣突兀。"
+          "reason": "語氣突兀。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "No more person.：不自然且不尊重。"
+          "reason": "說話者應說自己要離開，不能命令對方為自己的公車離開。"
         },
         {
           "optionIndex": 2,
@@ -7920,7 +7920,7 @@
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "Bus!：缺少完整意思與道別。"
+          "reason": "有離開理由，卻用負面評價否定整次會面，不是自然友善的收束。"
         }
       ],
       "difficulty": "standard",
@@ -7982,9 +7982,9 @@
       "stimulusId": null,
       "stem": "A: 'Do you enjoy cooking?' B: 'Yes, I do.' What is a useful next turn for B?",
       "options": [
-        "Your age is not soup.",
+        "I often make soup, but your age tells me what you like to cook.",
         "I often make soup. What do you like to cook?",
-        "Cooking is a school bus.",
+        "I often cook on the school bus. What time does it leave?",
         "Goodbye before my answer."
       ],
       "answerIndex": 1,
@@ -7992,7 +7992,7 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "Your age is not soup.：把無關資訊混在一起。"
+          "reason": "把無關資訊混在一起。"
         },
         {
           "optionIndex": 1,
@@ -8002,7 +8002,7 @@
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "Cooking is a school bus.：分類不合理。"
+          "reason": "分類不合理。"
         },
         {
           "optionIndex": 3,
@@ -8070,9 +8070,9 @@
       "stem": "A new classmate says, 'I don't know anyone here.' Which response is supportive?",
       "options": [
         "You can sit with us. What is your name?",
-        "Then stay alone forever.",
+        "You can sit alone until someone chooses to speak with you.",
         "I know a blue notebook.",
-        "Everyone is yesterday."
+        "Everyone already has a group, so you should look somewhere else."
       ],
       "answerIndex": 0,
       "optionRationales": [
@@ -8084,7 +8084,7 @@
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "Then stay alone forever.：缺乏支持且語氣傷人。"
+          "reason": "缺乏支持且語氣傷人。"
         },
         {
           "optionIndex": 2,
@@ -8094,7 +8094,7 @@
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "Everyone is yesterday.：句意不成立。"
+          "reason": "這句把新同學推開，沒有提供陪伴、介紹或加入群體的支持。"
         }
       ],
       "difficulty": "advanced",
@@ -8243,7 +8243,7 @@
       "stimulusId": null,
       "stem": "A: 'My name is Ian, and I draw comics.' Which reply uses both details?",
       "options": [
-        "Draw my name and leave.",
+        "Nice to meet you, Ian. What kind of songs do you sing?",
         "Good night, unknown singer.",
         "Nice to meet you, Ian. What kind of comics do you draw?",
         "Who is Ian if names are comics?"
@@ -8253,7 +8253,7 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "Draw my name and leave.：命令且未自然回應。"
+          "reason": "雖承接姓名，卻把 Ian 提到的 comics 改成唱歌，沒有使用第二項已知資訊。"
         },
         {
           "optionIndex": 1,

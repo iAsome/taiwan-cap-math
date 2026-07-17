@@ -202,9 +202,10 @@ async function prepareAudio(listening, { concurrency = 4 } = {}) {
   return prepared;
 }
 
-function assertGlobalQuestionUniqueness(questions) {
+function assertGlobalQuestionUniqueness(questions, stimulusEvidence) {
   assertUnique(questions.map((value) => value.id), "English question ID");
   assertUnique(questions.map((value) => JSON.stringify([
+    value.stimulusId ? stimulusEvidence.get(value.stimulusId) : null,
     normalized(value.stem),
     value.options.map(normalized).sort(),
   ])), "normalized English visible question");
@@ -224,7 +225,14 @@ export async function materializeEnglishCorpus({ repoRoot = REPO_ROOT, synthesiz
   ]);
   const stimulusQuestions = [...reading, ...listening].flatMap((value) => value.questions);
   assert.equal(stimulusQuestions.length, 2_900, "English stimulus-question total mismatch");
-  assertGlobalQuestionUniqueness([...skillCorpus.questions, ...stimulusQuestions]);
+  const stimulusEvidence = new Map([
+    ...reading.map((value) => [value.id, normalized(value.passage)]),
+    ...listening.map((value) => [value.id, JSON.stringify([
+      normalized(value.transcript),
+      value.visualAssets.map((asset) => normalized(asset.longDescription)),
+    ])]),
+  ]);
+  assertGlobalQuestionUniqueness([...skillCorpus.questions, ...stimulusQuestions], stimulusEvidence);
   const audio = synthesizeAudio ? await prepareAudio(listening) : [];
   if (synthesizeAudio) assert.equal(audio.length, 300, "English audio total mismatch");
   return { ...skillCorpus, reading, listening, stimulusQuestions, audio };
@@ -256,6 +264,7 @@ async function outputFiles(corpus, repoRoot) {
       title: info.title,
       skills: unit.skills.map(({ id, title }) => ({ id, title })),
       questionCount: unit.questions.length,
+      formalQuestionIds: unit.formalQuestionIds,
       bundle: `runtime/bundles/${unit.unitId}.json`,
       languageComponent: Number(unit.unitId.slice(-2)) <= 33,
     };

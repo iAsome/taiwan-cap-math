@@ -42,34 +42,34 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_218",
-  "stem": "In Listening Set 218, which detail is stated in the recording?",
+  "stem": "This public message contains a rule and a reason. Which detail is stated in the message?",
   "options": [
-    "heavy rain next month",
-    "heavy rain at sunrise only",
-    "heavy rain after three thirty",
-    "heavy rain before five twenty"
+    "heavy rain is expected after three thirty near the gym",
+    "light rain is expected after three thirty near the train station",
+    "heavy rain is expected after three thirty near the train station",
+    "heavy rain is expected before eight thirty near the train station"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "heavy rain next month：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "heavy rain is expected after three thirty near the gym：此項把「train station」改成「gym」。音稿明確陳述「heavy rain is expected after three thirty near the train station」。因此，鎖定證據支持「heavy rain is expected after three thirty near the train station」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "heavy rain at sunrise only：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "light rain is expected after three thirty near the train station：此項把「heavy」改成「light」。音稿明確陳述「heavy rain is expected after three thirty near the train station」。因此，鎖定證據支持「heavy rain is expected after three thirty near the train station」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "heavy rain after three thirty：音稿明確說出 heavy rain after three thirty。"
+      "reason": "heavy rain is expected after three thirty near the train station：完整逐字稿明確支持此項。音稿明確陳述「heavy rain is expected after three thirty near the train station」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "heavy rain before five twenty：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "heavy rain is expected before eight thirty near the train station：此項把「after three」改成「before eight」。音稿明確陳述「heavy rain is expected after three thirty near the train station」。因此，鎖定證據支持「heavy rain is expected after three thirty near the train station」。"
     }
   ],
   "difficulty": "advanced",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-retrieve-spoken-detail",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「heavy rain after three thirty」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「heavy rain is expected after three thirty near the train station」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「heavy rain is expected after three thirty near the train station」成立。",
       "status": "pass"
     }
   ],

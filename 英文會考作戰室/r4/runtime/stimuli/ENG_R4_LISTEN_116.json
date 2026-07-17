@@ -1,9 +1,9 @@
 {
   "id": "ENG_R4_LISTEN_116",
   "section": "response",
-  "transcript": "Finn: I'm sorry I missed the practice on Saturday. My bus stopped for twenty minutes. Iris: Thanks for telling me. I'll send you the notes tonight. Finn: That will help me prepare for tomorrow.",
-  "spokenText": "Finn: I'm sorry I missed the practice on Saturday. My bus stopped for twenty minutes. Iris: Thanks for telling me. I'll send you the notes tonight. Finn: That will help me prepare for tomorrow.",
-  "audioDescription": "A three-turn original dialogue about Finn's apology for missing Saturday practice.",
+  "transcript": "The speakers meet beside the information desk. Finn: I'm sorry I missed the practice on Saturday. My bus stopped for twenty minutes. Iris: Thanks for telling me. I'll send you the notes tonight. Finn: That will help me prepare for tomorrow.",
+  "spokenText": "The speakers meet beside the information desk. Finn: I'm sorry I missed the practice on Saturday. My bus stopped for twenty minutes. Iris: Thanks for telling me. I'll send you the notes tonight. Finn: That will help me prepare for tomorrow.",
+  "audioDescription": "An original dialogue whose speakers must resolve Finn's apology for missing Saturday practice.",
   "pauseMs": 3000,
   "voiceProfile": {
     "voice": "Microsoft Zira Desktop",
@@ -13,12 +13,20 @@
   "audioPath": "runtime/audio/ENG_R4_AUDIO_116.wav",
   "glossary": [
     {
+      "word": "information",
+      "translation": "資訊"
+    },
+    {
       "word": "i'll",
       "translation": "我會"
     },
     {
-      "word": "function",
-      "translation": "功能；作用"
+      "word": "purpose",
+      "translation": "目的"
+    },
+    {
+      "word": "conversation",
+      "translation": "會話"
     },
     {
       "word": "apology",
@@ -29,36 +37,16 @@
       "translation": "請求, 要求；請求, 要求, 邀請"
     },
     {
-      "word": "argument",
-      "translation": "論證"
+      "word": "cancel",
+      "translation": "取消"
     },
     {
       "word": "detail",
       "translation": "細節, 詳情；詳述, 細說"
     },
     {
-      "word": "explicitly",
-      "translation": "明確地"
-    },
-    {
-      "word": "confirmed",
-      "translation": "已確認"
-    },
-    {
-      "word": "conversation",
-      "translation": "會話"
-    },
-    {
-      "word": "locked",
-      "translation": "鎖住;鎖"
-    },
-    {
       "word": "decision",
       "translation": "決定"
-    },
-    {
-      "word": "delete",
-      "translation": "刪除"
     }
   ],
   "visualAssets": [],
@@ -107,34 +95,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_116",
-      "stem": "In Listening Set 116, what is the main function of the first speaker's opening turn?",
+      "stem": "The speakers meet beside the information desk. What is the main purpose of this conversation?",
       "options": [
-        "Finn's plan to stop practicing",
+        "Iris's offer to change the Saturday practice time",
         "Finn's apology for missing Saturday practice",
-        "Finn's request to buy a bus",
-        "Iris's argument about Saturday"
+        "Finn's apology for arriving late to Saturday practice",
+        "Finn's request to cancel the Saturday practice"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "Finn's plan to stop practicing：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "Iris's offer to change the Saturday practice time：此項把「Finn's apology for missing Saturday practice」改成「Iris's offer to change the Saturday practice time」。整段對話的主要功能為「Finn's apology for missing Saturday practice」。因此，鎖定證據支持「Finn's apology for missing Saturday practice」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "Finn's apology for missing Saturday practice：開場直接建立 Finn's apology for missing Saturday practice。"
+          "reason": "Finn's apology for missing Saturday practice：完整逐字稿明確支持此項。整段對話的主要功能為「Finn's apology for missing Saturday practice」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "Finn's request to buy a bus：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "Finn's apology for arriving late to Saturday practice：此項把「missing」改成「arriving late to」。整段對話的主要功能為「Finn's apology for missing Saturday practice」。因此，鎖定證據支持「Finn's apology for missing Saturday practice」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "Iris's argument about Saturday：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "Finn's request to cancel the Saturday practice：此項把「apology for missing」改成「request to cancel the」。整段對話的主要功能為「Finn's apology for missing Saturday practice」。因此，鎖定證據支持「Finn's apology for missing Saturday practice」。"
         }
       ],
       "difficulty": "transfer",
@@ -144,7 +132,7 @@
       ],
       "representationType": "listening-identify-dialogue-opening-function",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -192,13 +180,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「Finn's apology for missing Saturday practice」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「Finn's apology for missing Saturday practice」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「Finn's apology for missing Saturday practice」成立。",
           "status": "pass"
         }
       ],
@@ -250,34 +238,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_116",
-      "stem": "In Listening Set 116, which detail is explicitly confirmed in the conversation?",
+      "stem": "The speakers meet beside the information desk. Which detail is given in the conversation?",
       "options": [
         "the bus stopped for twenty minutes on Saturday",
-        "the room was locked on Saturday",
-        "the notes were lost on Saturday",
-        "the practice ended early on Saturday"
+        "the bus stopped for ten minutes on Saturday",
+        "the train stopped for twenty minutes on Saturday",
+        "the bus stopped for twenty minutes on next Monday"
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "the bus stopped for twenty minutes on Saturday：對話明確說出 the bus stopped for twenty minutes on Saturday。"
+          "reason": "the bus stopped for twenty minutes on Saturday：完整逐字稿明確支持此項。對話明確陳述「the bus stopped for twenty minutes on Saturday」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "the room was locked on Saturday：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "the bus stopped for ten minutes on Saturday：此項把「twenty」改成「ten」。對話明確陳述「the bus stopped for twenty minutes on Saturday」。因此，鎖定證據支持「the bus stopped for twenty minutes on Saturday」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "the notes were lost on Saturday：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "the train stopped for twenty minutes on Saturday：此項把「bus」改成「train」。對話明確陳述「the bus stopped for twenty minutes on Saturday」。因此，鎖定證據支持「the bus stopped for twenty minutes on Saturday」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "the practice ended early on Saturday：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "the bus stopped for twenty minutes on next Monday：此項把「Saturday」改成「next Monday」。對話明確陳述「the bus stopped for twenty minutes on Saturday」。因此，鎖定證據支持「the bus stopped for twenty minutes on Saturday」。"
         }
       ],
       "difficulty": "foundation",
@@ -287,7 +275,7 @@
       ],
       "representationType": "listening-retrieve-confirmed-dialogue-detail",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -335,13 +323,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「the bus stopped for twenty minutes on Saturday」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「the bus stopped for twenty minutes on Saturday」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「the bus stopped for twenty minutes on Saturday」成立。",
           "status": "pass"
         }
       ],
@@ -393,11 +381,11 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_116",
-      "stem": "In Listening Set 116, what decision or next action do the speakers reach?",
+      "stem": "The speakers meet beside the information desk. What action or decision is reached by the end?",
       "options": [
-        "Finn will miss tomorrow as well",
-        "Iris will delete every note",
-        "Finn will buy a new uniform",
+        "Iris will send Finn the notes tomorrow morning",
+        "Finn will ask another student for the notes",
+        "Iris will send only the practice time",
         "Iris will send Finn the notes tonight"
       ],
       "answerIndex": 3,
@@ -405,22 +393,22 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "Finn will miss tomorrow as well：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "Iris will send Finn the notes tomorrow morning：此項把「tonight」改成「tomorrow morning」。對話結尾確認「Iris will send Finn the notes tonight」。因此，鎖定證據支持「Iris will send Finn the notes tonight」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "Iris will delete every note：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "Finn will ask another student for the notes：此項把「Iris will send Finn the notes tonight」改成「Finn will ask another student for the notes」。對話結尾確認「Iris will send Finn the notes tonight」。因此，鎖定證據支持「Iris will send Finn the notes tonight」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "Finn will buy a new uniform：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "Iris will send only the practice time：此項把「Finn the notes tonight」改成「only the practice time」。對話結尾確認「Iris will send Finn the notes tonight」。因此，鎖定證據支持「Iris will send Finn the notes tonight」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "Iris will send Finn the notes tonight：最後兩輪共同確認 Iris will send Finn the notes tonight。"
+          "reason": "Iris will send Finn the notes tonight：完整逐字稿明確支持此項。對話結尾確認「Iris will send Finn the notes tonight」。"
         }
       ],
       "difficulty": "standard",
@@ -430,7 +418,7 @@
       ],
       "representationType": "listening-integrate-dialogue-problem-and-decision",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -478,13 +466,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「Iris will send Finn the notes tonight」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「Iris will send Finn the notes tonight」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「Iris will send Finn the notes tonight」成立。",
           "status": "pass"
         }
       ],

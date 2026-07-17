@@ -955,7 +955,7 @@
       "stem": "The cafe sign says OPEN, but the door is locked and no lights are on. What is most reasonable?",
       "options": [
         "The cafe is not serving customers right now",
-        "The cafe has closed forever",
+        "The cafe will open again at a different time today",
         "Every worker is asleep",
         "The sign was made today"
       ],
@@ -969,7 +969,7 @@
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "The cafe has closed forever：只能推出 right now，不能永久。"
+          "reason": "鎖門且無燈只支持現在未營業，沒有證據保證今天稍後會重開。"
         },
         {
           "optionIndex": 2,
@@ -1129,7 +1129,7 @@
       "stem": "Ben's lunch box was empty, and he asked whether any rice was left. What is likely?",
       "options": [
         "He had not brought a lunch box",
-        "The kitchen had closed forever",
+        "The kitchen had stopped serving rice for the day",
         "Ben wanted more food",
         "Ben dislikes rice"
       ],
@@ -1143,7 +1143,7 @@
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "The kitchen had closed forever：詢問剩飯不能推出永久。"
+          "reason": "午餐盒空且詢問剩飯支持 Ben 想再吃，沒有說廚房當天停止供應。"
         },
         {
           "optionIndex": 2,
@@ -3912,7 +3912,7 @@
       "stimulusId": null,
       "stem": "A store added seats and visitors stayed longer. No survey asked why. What can be said?",
       "options": [
-        "Long visits removed the seats",
+        "The seats made every visitor stay longer, so the cause is fully proven",
         "The store had no visitors",
         "The seats and longer visits are related, but cause is not proven",
         "Seats certainly caused every visitor to stay"
@@ -3922,7 +3922,7 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "Long visits removed the seats：方向且事实不合。"
+          "reason": "資料只顯示座位與較長停留同時出現，沒有 seats were removed 的資料，也不能把每位訪客的因果關係說成已完全證明。"
         },
         {
           "optionIndex": 1,

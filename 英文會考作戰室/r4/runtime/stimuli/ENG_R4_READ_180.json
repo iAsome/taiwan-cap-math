@@ -47,72 +47,64 @@
       "translation": "僅僅, 剛剛, 幾乎不能"
     },
     {
-      "word": "captures",
-      "translation": "捕獲, 戰利品；俘獲, 捕獲, 奪取"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "passage's",
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
+    },
+    {
+      "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "central",
-      "translation": "中央的"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "thread",
-      "translation": "線, 細絲, 線索, 思路, 螺紋"
+      "word": "supported",
+      "translation": "支持;支持"
+    },
+    {
+      "word": "contest",
+      "translation": "競賽"
     },
     {
       "word": "instead",
       "translation": "代替, 改為, 抵作, 更換"
     },
     {
-      "word": "mental",
-      "translation": "精神的, 智力的"
+      "word": "app",
+      "translation": "應用程式"
     },
     {
-      "word": "fake",
-      "translation": "假的；偽造的"
+      "word": "playlists",
+      "translation": "播放清單"
     },
     {
-      "word": "review",
-      "translation": "溫習;回顧;復習"
+      "word": "based",
+      "translation": "基;底;基部"
     },
     {
-      "word": "algorithm",
-      "translation": "演算法"
+      "word": "users",
+      "translation": "使用者"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "calmly",
+      "translation": "寧靜的;變安靜"
     },
     {
-      "word": "cited",
-      "translation": "引用"
+      "word": "noticeable",
+      "translation": "引人注目的"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "result",
+      "translation": "結果"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
-    },
-    {
-      "word": "sequence",
-      "translation": "序列"
-    },
-    {
-      "word": "excerpt",
-      "translation": "摘錄"
-    },
-    {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
-    },
-    {
-      "word": "passage",
-      "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
+      "word": "final",
+      "translation": "最終的"
     }
   ],
   "questions": [
@@ -133,44 +125,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_180",
-      "stem": "In Reading Set 180, which heading captures the passage's central thread instead of a side point?",
+      "stem": "Which title is best for the complete passage that includes “The school began playing soft music during lunch.”?",
       "options": [
-        "The School Mental Health Day",
+        "The Classroom Fan",
         "The Lunch Time Music",
-        "The Fake Restaurant Review",
-        "The Broken Algorithm"
+        "The Quiet Bell",
+        "The School Map"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The School Mental Health Day」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Classroom Fan」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Lunch Time Music: The school began playing soft music during lunch.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Fake Restaurant Review」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Quiet Bell」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Broken Algorithm」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The School Map」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-10",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -191,13 +183,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Lunch Time Music」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Lunch Time Music: The school began playing soft music during lunch.」，答案為「The Lunch Time Music」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Lunch Time Music」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -207,7 +199,7 @@
       "id": "ENG_R4_Q_READ_180_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -221,44 +213,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_180",
-      "stem": "In Reading Set 180, which paragraph should be cited for the line “After a week, teachers found that students shouted less.”?",
+      "stem": "Which answer is supported by the passage that includes “The school began playing soft music during lunch.”?",
       "options": [
-        "Paragraph 4",
-        "Paragraph 1",
-        "Paragraph 2",
-        "Paragraph 3"
+        "Finally, the music club chose quieter songs and played them at a lower volume.",
+        "The music club held a contest, and the winning song was played between classes.",
+        "It played a short piece of music instead of a sharp ringing sound.",
+        "A music app made playlists based on what users had played before."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 4 段開頭。"
+          "reason": "本文可直接核對「Finally, the music club chose quieter songs and played them at a lower volume.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「The music club held a contest, and the winning song was played between classes.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "第 2 段沒有這一行。"
+          "reason": "本文沒有陳述「It played a short piece of music instead of a sharp ringing sound.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「A music app made playlists based on what users had played before.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-5",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -280,13 +272,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：引文與第 4 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Finally, the music club chose quieter songs and played them at a lower volume.」，答案為「Finally, the music club chose quieter songs and played them at a lower volume.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Finally, the music club chose quieter songs and played them at a lower volume.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -312,11 +304,11 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_180",
-      "stem": "In Reading Set 180, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “The goal was not to make students listen, but to make the room feel less noisy.”?",
       "options": [
-        "The school began playing soft music during lunch. The principal hoped it would make the cafeteria calmer.",
-        "On the first day, students talked over the music and did not notice it. On the second day,",
-        "Finally, the music club chose quieter songs and played them at a lower volume. The goal was not",
+        "But after a week, many students found that starting was the hardest part.",
+        "However, teachers found that students walked more calmly between classes.",
+        "After a week, the sound became less noticeable.",
         "After a week, teachers found that students shouted less."
       ],
       "answerIndex": 3,
@@ -324,32 +316,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「But after a week, many students found that starting was the hardest part.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「However, teachers found that students walked more calmly between classes.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「After a week, the sound became less noticeable.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「The goal was not to make students listen, but to make the room feel less noisy. After a week, teachers found that…」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-5",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -373,13 +365,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The goal was not to make students listen, but to make the room feel less noisy. After a week, teachers found that students shouted…」，答案為「After a week, teachers found that students shouted less.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「After a week, teachers found that students shouted less.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -402,44 +394,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_180",
-      "stem": "In Reading Set 180, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “A good background does not need to be the center of attention.”?",
       "options": [
-        "and did not notice it. On the second day, the volume was raised, but then it became annoying.",
-        "lower volume. The goal was not to make students listen, but to make the room feel less noisy.",
-        "does not need to be the center of attention. Sometimes it works best when people barely notice it.",
-        "The school began playing soft music during lunch. The principal hoped it would make the cafeteria calmer."
+        "Sometimes they only wait quietly for someone to notice.",
+        "Sometimes opening a door is enough to invite people in.",
+        "Sometimes it works best when people barely notice it.",
+        "Sometimes it takes visitors to make people notice what they already have."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Sometimes they only wait quietly for someone to notice.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Sometimes opening a door is enough to invite people in.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「A good background does not need to be the center of attention. Sometimes it works best when people barely notice it.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Sometimes it takes visitors to make people notice what they already have.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -460,13 +452,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「A good background does not need to be the center of attention. Sometimes it works best when people barely notice it.」，答案為「Sometimes it works best when people barely notice it.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Sometimes it works best when people barely notice it.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -476,7 +468,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

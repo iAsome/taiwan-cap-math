@@ -18,44 +18,44 @@
     "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_140",
-  "stem": "In Reading Set 140, which selected line appears latest in the paragraph sequence?",
+  "stem": "What happens next in this passage after “Her friend laughed when she read it.”?",
   "options": [
-    "Sophie forgot her friend's birthday. She remembered two days later and felt terrible.",
-    "She thought about pretending she had sent a message, but the phone had failed. Instead, she bought a",
-    "Her friend laughed when she read it. \"This is the most honest birthday card I have ever received,\"",
-    "Sophie was relieved."
+    "Some students said it was the quietest lunch start ever.",
+    "Everyone said they were too full, so Mia put it in the refrigerator.",
+    "\"That was the first movie your mother and I watched together,\" he said.",
+    "\"This is the most honest birthday card I have ever received,\" she said."
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Some students said it was the quietest lunch start ever.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Everyone said they were too full, so Mia put it in the refrigerator.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「'That was the first movie your mother and I watched together,' he said.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "這一行來自四個候選中的最晚段落。"
+      "reason": "本文可直接核對「Her friend laughed when she read it. 'This is the most honest birthday card I have ever received,' she said.」，所以這個選項符合完整語境。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "identify-latest-selected-paragraph"
+    "track-event-or-idea-sequence-from-content-anchor"
   ],
-  "representationType": "reading-sequence-latest-5",
+  "representationType": "reading-content-sequence",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
@@ -79,13 +79,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「Her friend laughed when she read it. 'This is the most honest birthday card I have ever received,' she said.」，答案為「'This is the most honest birthday card I have ever received,' she said.」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「'This is the most honest birthday card I have ever received,' she said.」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

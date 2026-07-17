@@ -2,86 +2,90 @@
   "id": "ENG_R4_Q_READ_323_03",
   "subject": "english",
   "skillIds": [
-    "ENG_R4_S254"
+    "ENG_R4_S273"
   ],
   "authorityRefs": [
-    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
     "AUTH-ENGLISH-LC-D-4-2",
-    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
     "AUTH-ENGLISH-LP-3-4-14",
-    "AUTH-ENGLISH-LP-3-4-8",
     "AUTH-ENGLISH-LP-3-4-9",
-    "AUTH-ENGLISH-LP-5-4-7",
-    "AUTH-ENGLISH-LP-5-4-8",
-    "AUTH-ENGLISH-LP-5-4-9"
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_323",
-  "stem": "In Reading Set 323, which selected line belongs closest to the beginning of the passage?",
+  "stem": "What happens next in this passage after “They discovered that family recipes often had unclear measures: 'a little,' 'until soft,' or 'when it smells right.'”?",
   "options": [
-    "A developer created an app to record family recipes. Users could upload photos, ingredients, cooking steps, and voice",
-    "Many young people used the app before holidays. They discovered that family recipes often had unclear measures: \"a",
     "The app allowed notes and videos, not just numbers.",
-    "A student used it to record her grandfather making soup. Later, when she cooked alone, his voice guided"
+    "A health app gave users badges for walking certain numbers of steps.",
+    "One day, the app stopped working after an update.",
+    "The town allowed a short test with strict rules."
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "這一行來自四個候選中的最早段落。"
+      "reason": "本文可直接核對「They discovered that family recipes often had unclear measures: 'a little,' 'until soft,' or 'when it smells right.' The app allowed notes…」，所以這個選項符合完整語境。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之後。"
+      "reason": "本文沒有陳述「A health app gave users badges for walking certain numbers of steps.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之後。"
+      "reason": "本文沒有陳述「One day, the app stopped working after an update.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之後。"
+      "reason": "本文沒有陳述「The town allowed a short test with strict rules.」；這個選項混入另一個情境的資訊。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "identify-earliest-selected-paragraph"
+    "track-event-or-idea-sequence-from-content-anchor"
   ],
-  "representationType": "reading-sequence-earliest-3",
+  "representationType": "reading-content-sequence",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 English content author",
     "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
     "sourceRefs": [
-      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
       "AUTH-ENGLISH-LC-D-4-2",
-      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
       "AUTH-ENGLISH-LP-3-4-14",
-      "AUTH-ENGLISH-LP-3-4-8",
       "AUTH-ENGLISH-LP-3-4-9",
-      "AUTH-ENGLISH-LP-5-4-7",
-      "AUTH-ENGLISH-LP-5-4-8",
-      "AUTH-ENGLISH-LP-5-4-9"
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
     ]
   },
   "independentReviews": [
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 1 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「They discovered that family recipes often had unclear measures: 'a little,' 'until soft,' or 'when it smells right.' The app allowed notes and videos,…」，答案為「The app allowed notes and videos, not just numbers.」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 0,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「The app allowed notes and videos, not just numbers.」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

@@ -1,8 +1,8 @@
 {
   "id": "ENG_R4_LISTEN_239",
   "section": "discourse",
-  "transcript": "Route Seven passengers, please note a temporary change on next Tuesday. Buses will not stop at the community hall because of road work. Use the stop beside the art room instead. The first changed service leaves at four o'clock, and regular stops will return the following morning.",
-  "spokenText": "Route Seven passengers, please note a temporary change on next Tuesday. Buses will not stop at the community hall because of road work. Use the stop beside the art room instead. The first changed service leaves at four o'clock, and regular stops will return the following morning.",
+  "transcript": "The following notice gives details for a planned activity. Route Seven passengers, please note a temporary change on next Tuesday. Buses will not stop at the community hall because of road work. Use the stop beside the art room instead. The first changed service leaves at four o'clock, and regular stops will return the following morning.",
+  "spokenText": "The following notice gives details for a planned activity. Route Seven passengers, please note a temporary change on next Tuesday. Buses will not stop at the community hall because of road work. Use the stop beside the art room instead. The first changed service leaves at four o'clock, and regular stops will return the following morning.",
   "audioDescription": "An original public message or short explanation whose purpose is to announce a temporary Route Seven change at the community hall.",
   "pauseMs": 3500,
   "voiceProfile": {
@@ -12,6 +12,14 @@
   "audioId": "ENG_R4_AUDIO_239",
   "audioPath": "runtime/audio/ENG_R4_AUDIO_239.wav",
   "glossary": [
+    {
+      "word": "details",
+      "translation": "細節, 詳情；詳述, 細說"
+    },
+    {
+      "word": "activity",
+      "translation": "活躍, 活動性, 行動, 行為, 放射性"
+    },
     {
       "word": "route",
       "translation": "路線"
@@ -45,20 +53,24 @@
       "translation": "回;還"
     },
     {
-      "word": "purpose",
-      "translation": "目的"
-    },
-    {
       "word": "message",
       "translation": "消息;音信"
     },
     {
-      "word": "repair",
-      "translation": "修理, 修補；修理, 修補, 補救, 糾正"
+      "word": "schedule",
+      "translation": "時程"
+    },
+    {
+      "word": "compare",
+      "translation": "比較"
     },
     {
       "word": "announce",
       "translation": "宣佈, 通告"
+    },
+    {
+      "word": "permanent",
+      "translation": "永久的"
     },
     {
       "word": "detail",
@@ -69,12 +81,8 @@
       "translation": "陳述;狀態;州"
     },
     {
-      "word": "recording",
-      "translation": "記錄;錄音;記錄;唱片"
-    },
-    {
-      "word": "according",
-      "translation": "一致、符合"
+      "word": "required",
+      "translation": "必填"
     }
   ],
   "visualAssets": [],
@@ -123,34 +131,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_239",
-      "stem": "In Listening Set 239, what is the main purpose of this spoken message?",
+      "stem": "The following notice gives details for a planned activity. What is the message mainly meant to do?",
       "options": [
-        "invite community hall passengers to repair roads",
-        "change the community hall route for a year",
+        "explain the road work schedule near the community hall",
+        "compare two Route Seven ticket prices",
         "announce a temporary Route Seven change at the community hall",
-        "open a bus museum at the community hall"
+        "announce a permanent Route Seven change"
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "invite community hall passengers to repair roads：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "explain the road work schedule near the community hall：此項把「announce a temporary Route Seven change at」改成「explain the road work schedule near」。整段資訊的目的為「announce a temporary Route Seven change at the community hall」。因此，鎖定證據支持「announce a temporary Route Seven change at the community hall」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "change the community hall route for a year：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "compare two Route Seven ticket prices：此項把「announce a temporary Route Seven change at the community hall」改成「compare two Route Seven ticket prices」。整段資訊的目的為「announce a temporary Route Seven change at the community hall」。因此，鎖定證據支持「announce a temporary Route Seven change at the community hall」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "announce a temporary Route Seven change at the community hall：整段資訊都用來 announce a temporary Route Seven change at the community hall。"
+          "reason": "announce a temporary Route Seven change at the community hall：完整逐字稿明確支持此項。整段資訊的目的為「announce a temporary Route Seven change at the community hall」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "open a bus museum at the community hall：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "announce a permanent Route Seven change：此項把「temporary Route Seven change at the community hall」改成「permanent Route Seven change」。整段資訊的目的為「announce a temporary Route Seven change at the community hall」。因此，鎖定證據支持「announce a temporary Route Seven change at the community hall」。"
         }
       ],
       "difficulty": "advanced",
@@ -160,7 +168,7 @@
       ],
       "representationType": "listening-identify-spoken-message-purpose",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -208,13 +216,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「announce a temporary Route Seven change at the community hall」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「announce a temporary Route Seven change at the community hall」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「announce a temporary Route Seven change at the community hall」成立。",
           "status": "pass"
         }
       ],
@@ -266,34 +274,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_239",
-      "stem": "In Listening Set 239, which detail is stated in the recording?",
+      "stem": "The following notice gives details for a planned activity. Which detail is stated in the message?",
       "options": [
-        "the airport",
-        "art room",
-        "community hall",
-        "the river bridge"
+        "use the stop beside the station on next Tuesday",
+        "use the stop beside the art room on next Tuesday",
+        "use the stop beside the community hall on next Tuesday",
+        "use the stop beside the art room on Monday"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "the airport：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "use the stop beside the station on next Tuesday：此項把「art room」改成「station」。音稿明確陳述「use the stop beside the art room on next Tuesday」。因此，鎖定證據支持「use the stop beside the art room on next Tuesday」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "art room：音稿明確說出 art room。"
+          "reason": "use the stop beside the art room on next Tuesday：完整逐字稿明確支持此項。音稿明確陳述「use the stop beside the art room on next Tuesday」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "community hall：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "use the stop beside the community hall on next Tuesday：此項把「art room」改成「community hall」。音稿明確陳述「use the stop beside the art room on next Tuesday」。因此，鎖定證據支持「use the stop beside the art room on next Tuesday」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "the river bridge：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "use the stop beside the art room on Monday：此項把「next Tuesday」改成「Monday」。音稿明確陳述「use the stop beside the art room on next Tuesday」。因此，鎖定證據支持「use the stop beside the art room on next Tuesday」。"
         }
       ],
       "difficulty": "transfer",
@@ -303,7 +311,7 @@
       ],
       "representationType": "listening-retrieve-spoken-detail",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -351,13 +359,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「art room」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「use the stop beside the art room on next Tuesday」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「use the stop beside the art room on next Tuesday」成立。",
           "status": "pass"
         }
       ],
@@ -409,34 +417,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_239",
-      "stem": "In Listening Set 239, what should the listener do according to the recording?",
+      "stem": "The following notice gives details for a planned activity. Which action is planned or required in the full message?",
       "options": [
         "use the stop beside the art room",
-        "wait at the closed community hall stop",
-        "walk from community hall into the road work area",
-        "return to community hall the following year"
+        "wait at the community hall stop during the road work",
+        "use the art room stop the following morning",
+        "leave on Route Seven before four o'clock"
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "use the stop beside the art room：指示或結論要求聽者 use the stop beside the art room。"
+          "reason": "use the stop beside the art room：完整逐字稿明確支持此項。完整訊息指出計畫或要求的行動為「use the stop beside the art room」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "wait at the closed community hall stop：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "wait at the community hall stop during the road work：此項把「use the stop beside the art room」改成「wait at the community hall stop during the road work」。完整訊息指出計畫或要求的行動為「use the stop beside the art room」。因此，鎖定證據支持「use the stop beside the art room」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "walk from community hall into the road work area：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "use the art room stop the following morning：此項把「stop beside the art room」改成「art room stop the following morning」。完整訊息指出計畫或要求的行動為「use the stop beside the art room」。因此，鎖定證據支持「use the stop beside the art room」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "return to community hall the following year：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "leave on Route Seven before four o'clock：此項把「use the stop beside the art room」改成「leave on Route Seven before four o'clock」。完整訊息指出計畫或要求的行動為「use the stop beside the art room」。因此，鎖定證據支持「use the stop beside the art room」。"
         }
       ],
       "difficulty": "foundation",
@@ -446,7 +454,7 @@
       ],
       "representationType": "listening-apply-announced-action-or-restriction",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -494,13 +502,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「use the stop beside the art room」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「use the stop beside the art room」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「use the stop beside the art room」成立。",
           "status": "pass"
         }
       ],

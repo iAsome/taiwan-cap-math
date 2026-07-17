@@ -87,12 +87,8 @@
       "translation": "存在"
     },
     {
-      "word": "misleading",
-      "translation": "誤導性的"
-    },
-    {
-      "word": "label",
-      "translation": "標籤, 簽條, 商標, 標誌；貼標籤于, 指...為, 分類, 標注； 加上或修改磁盤的標籤"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
       "word": "complete",
@@ -103,48 +99,76 @@
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "historic",
-      "translation": "有歷史意義的"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "flood",
-      "translation": "洪水"
+      "word": "border",
+      "translation": "邊界；國界"
     },
     {
-      "word": "charging",
-      "translation": "索價;充電;費用;充電"
+      "word": "ancient",
+      "translation": "古代的"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "lighthouse",
+      "translation": "燈塔"
     },
     {
-      "word": "provides",
-      "translation": "供應"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "quoted",
-      "translation": "引用, 引證, 提供, 提出, 報(價)"
+      "word": "returned",
+      "translation": "回;還"
     },
     {
-      "word": "evidence",
-      "translation": "證據"
+      "word": "barcode",
+      "translation": "條碼"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "system",
+      "translation": "系統, 體系, 制度, 體制, 秩序, 規律, 方法"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "instead",
+      "translation": "代替, 改為, 抵作, 更換"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "activity",
+      "translation": "活躍, 活動性, 行動, 行為, 放射性"
     },
     {
-      "word": "concluding",
-      "translation": "結束, 終止, 決定, 作出結論；推斷, 斷定, 締結, 議定"
+      "word": "abandoned",
+      "translation": "被遺棄的"
+    },
+    {
+      "word": "scanner",
+      "translation": "掃描器"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "audiences",
+      "translation": "聽眾, 觀眾, 接見, 拜見"
+    },
+    {
+      "word": "human",
+      "translation": "人類的;人"
+    },
+    {
+      "word": "intention",
+      "translation": "意圖"
+    },
+    {
+      "word": "design",
+      "translation": "設計;圖案;設計"
     }
   ],
   "questions": [
@@ -165,11 +189,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_358",
-      "stem": "In Reading Set 358, which heading would be the least misleading label for this complete passage?",
+      "stem": "Which title is best for the complete passage that includes “A museum had an old printing press that visitors could try.”?",
       "options": [
-        "The Historic Flood Photo",
-        "The School Charging Rule",
-        "The Mistake in the Cake",
+        "The Old Border Station",
+        "The Ancient Classroom",
+        "The Old Lighthouse",
         "The Old Printing Press"
       ],
       "answerIndex": 3,
@@ -177,32 +201,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Historic Flood Photo」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Border Station」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The School Charging Rule」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Ancient Classroom」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Mistake in the Cake」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Lighthouse」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Old Printing Press: A museum had an old printing press that visitors could try.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-8",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -223,13 +247,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Old Printing Press」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Old Printing Press: A museum had an old printing press that visitors could try.」，答案為「The Old Printing Press」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Old Printing Press」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -239,7 +263,7 @@
       "id": "ENG_R4_Q_READ_358_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -253,44 +277,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_358",
-      "stem": "In Reading Set 358, which paragraph provides the quoted evidence “It took several minutes to print one page. Students thought about how quickly modern printers work.”?",
+      "stem": "Which answer is supported by the passage that includes “A museum had an old printing press that visitors could try.”?",
       "options": [
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 2",
-        "Paragraph 1"
+        "Students sat inside and tried writing with old pens.",
+        "But after two weeks, some students lost interest.",
+        "After using the press, students respected old books more.",
+        "After listening to students, the library returned to using cards and added a faster barcode system instead."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「Students sat inside and tried writing with old pens.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「But after two weeks, some students lost interest.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 2 段開頭。"
+          "reason": "本文可直接核對「After using the press, students respected old books more.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「After listening to students, the library returned to using cards and added a faster barcode system instead.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-3",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -312,13 +336,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：引文與第 2 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「After using the press, students respected old books more.」，答案為「After using the press, students respected old books more.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「After using the press, students respected old books more.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -344,44 +368,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_358",
-      "stem": "In Reading Set 358, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “The guide explained that printing technology once changed the spread of knowledge.”?",
       "options": [
-        "The guide explained that printing technology once changed the spread of knowledge. Books became easier to produce, and",
-        "After using the press, students respected old books more. Each page had required labor.",
-        "A museum had an old printing press that visitors could try. Students placed metal letters in a frame,",
-        "It took several minutes to print one page. Students thought about how quickly modern printers work."
+        "What began as a simple game became a science activity.",
+        "Books became easier to produce, and ideas could travel faster.",
+        "An abandoned border station became a museum after two neighboring countries opened easier travel between them.",
+        "The school library tested a face scanner to make borrowing books faster."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「What began as a simple game became a science activity.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「The guide explained that printing technology once changed the spread of knowledge. Books became easier to produce, and ideas could travel faster.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「An abandoned border station became a museum after two neighboring countries opened easier travel between them.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The school library tested a face scanner to make borrowing books faster.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-3",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -405,13 +429,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The guide explained that printing technology once changed the spread of knowledge. Books became easier to produce, and ideas could travel faster.」，答案為「Books became easier to produce, and ideas could travel faster.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Books became easier to produce, and ideas could travel faster.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -421,7 +445,7 @@
       "id": "ENG_R4_Q_READ_358_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -434,44 +458,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_358",
-      "stem": "In Reading Set 358, which line marks the beginning of the concluding paragraph?",
+      "stem": "Which ending result or final point follows “The printing press showed that information revolutions existed before the internet.”?",
       "options": [
-        "The printing press showed that information revolutions existed before the internet. Every age has tools that change who",
-        "A museum had an old printing press that visitors could try. Students placed metal letters in a frame,",
-        "It took several minutes to print one page. Students thought about how quickly modern printers work.",
-        "The guide explained that printing technology once changed the spread of knowledge. Books became easier to produce, and"
+        "Every age has tools that change who can read, learn, and speak.",
+        "Every Mother's Day after that, someone asked, \"Did you check the sugar\"",
+        "Art may use new tools, but audiences still listen for human intention.",
+        "The best design listens to the people who use it every day."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「The printing press showed that information revolutions existed before the internet. Every age has tools that change who can read, learn, and…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Every Mother's Day after that, someone asked, 'Did you check the sugar'」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Art may use new tools, but audiences still listen for human intention.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「The best design listens to the people who use it every day.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-3",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -492,13 +516,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The printing press showed that information revolutions existed before the internet. Every age has tools that change who can read, learn, and speak.」，答案為「Every age has tools that change who can read, learn, and speak.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Every age has tools that change who can read, learn, and speak.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -508,7 +532,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

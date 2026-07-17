@@ -87,12 +87,8 @@
       "translation": "社會的;交際的"
     },
     {
-      "word": "misleading",
-      "translation": "誤導性的"
-    },
-    {
-      "word": "label",
-      "translation": "標籤, 簽條, 商標, 標誌；貼標籤于, 指...為, 分類, 標注； 加上或修改磁盤的標籤"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
       "word": "complete",
@@ -103,48 +99,72 @@
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "failure",
-      "translation": "失敗"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "data",
-      "translation": "數據"
+      "word": "historic",
+      "translation": "有歷史意義的"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "flood",
+      "translation": "洪水"
     },
     {
-      "word": "provides",
-      "translation": "供應"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "quoted",
-      "translation": "引用, 引證, 提供, 提出, 報(價)"
+      "word": "residents",
+      "translation": "居民"
     },
     {
-      "word": "evidence",
-      "translation": "證據"
+      "word": "democracy",
+      "translation": "民主政治, 民主主義"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "voting",
+      "translation": "投票"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "plain",
+      "translation": "簡樸的;清楚的;平原"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "lantern",
+      "translation": "燈籠"
     },
     {
-      "word": "excerpt",
-      "translation": "摘錄"
+      "word": "university",
+      "translation": "大學"
     },
     {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
+      "word": "digital",
+      "translation": "數位化"
+    },
+    {
+      "word": "model",
+      "translation": "模型;模特兒"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "tiny",
+      "translation": "微小的"
+    },
+    {
+      "word": "centuries",
+      "translation": "一世紀"
+    },
+    {
+      "word": "instructions",
+      "translation": "指示, 用法說明(書), 教育, 指導, 指令"
     }
   ],
   "questions": [
@@ -165,44 +185,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_448",
-      "stem": "In Reading Set 448, which heading would be the least misleading label for this complete passage?",
+      "stem": "Which title is best for the complete passage that includes “A city planning class studied an old map of factory districts.”?",
       "options": [
-        "The Museum of Failure",
+        "The Historic Flood Photo",
         "The Old Factory Map",
-        "The School Bike Data",
-        "The Homework Box"
+        "The Noise Map",
+        "The Old City Tree Map"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Museum of Failure」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Historic Flood Photo」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Old Factory Map: A city planning class studied an old map of factory districts.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The School Bike Data」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Noise Map」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Homework Box」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old City Tree Map」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-8",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -223,13 +243,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Old Factory Map」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Old Factory Map: A city planning class studied an old map of factory districts.」，答案為「The Old Factory Map」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Old Factory Map」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -239,7 +259,7 @@
       "id": "ENG_R4_Q_READ_448_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -253,44 +273,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_448",
-      "stem": "In Reading Set 448, which paragraph provides the quoted evidence “The class visited one former factory site being cleaned before housing was built.”?",
+      "stem": "Which answer is supported by the passage that includes “A city planning class studied an old map of factory districts.”?",
       "options": [
-        "Paragraph 4",
-        "Paragraph 1",
-        "Paragraph 2",
-        "Paragraph 3"
+        "It requires understanding what happened there before.",
+        "They asked residents what had happened.",
+        "Democracy requires more than voting.",
+        "After understanding the story, they sang with more feeling."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 4 段開頭。"
+          "reason": "本文可直接核對「It requires understanding what happened there before.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「They asked residents what had happened.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "第 2 段沒有這一行。"
+          "reason": "本文沒有陳述「Democracy requires more than voting.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「After understanding the story, they sang with more feeling.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-3",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -312,13 +332,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：引文與第 4 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「It requires understanding what happened there before.」，答案為「It requires understanding what happened there before.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「It requires understanding what happened there before.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -344,11 +364,11 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_448",
-      "stem": "In Reading Set 448, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “Even when buildings disappear, past activities can shape health, traffic, and development.”?",
       "options": [
-        "A city planning class studied an old map of factory districts. Many factories were gone, replaced by apartments",
-        "But pollution remained in some soil, and street layouts still followed old industrial needs.",
-        "Students learned that land remembers use. Even when buildings disappear, past activities can shape health, traffic, and development.",
+        "Before the class trip, Mr. Lee gave each student a small paper map.",
+        "Class 809 made a plain white lantern with many small windows cut into it.",
+        "A university built a digital model of a city to test traffic plans.",
         "The class visited one former factory site being cleaned before housing was built."
       ],
       "answerIndex": 3,
@@ -356,32 +376,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Before the class trip, Mr. Lee gave each student a small paper map.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Class 809 made a plain white lantern with many small windows cut into it.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「A university built a digital model of a city to test traffic plans.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「Even when buildings disappear, past activities can shape health, traffic, and development. The class visited one former factory site being cleaned before…」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-3",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -405,13 +425,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Even when buildings disappear, past activities can shape health, traffic, and development. The class visited one former factory site being cleaned before housing was…」，答案為「The class visited one former factory site being cleaned before housing was built.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The class visited one former factory site being cleaned before housing was built.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -434,44 +454,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_448",
-      "stem": "In Reading Set 448, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “Changing a place is not only drawing new plans.”?",
       "options": [
-        "But pollution remained in some soil, and street layouts still followed old industrial needs.",
-        "Students learned that land remembers use. Even when buildings disappear, past activities can shape health, traffic, and development.",
+        "The tiny museum made the past feel close enough to touch.",
+        "Centuries later, it bought the town a new understanding of its past.",
         "The past can remain underfoot, chemically and socially.",
-        "planning class studied an old map of factory districts. Many factories were gone, replaced by apartments and cafés."
+        "The past may leave instructions, but not always a voice."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「The tiny museum made the past feel close enough to touch.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Centuries later, it bought the town a new understanding of its past.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「Changing a place is not only drawing new plans. The past can remain underfoot, chemically and socially.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「The past may leave instructions, but not always a voice.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -492,13 +512,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Changing a place is not only drawing new plans. The past can remain underfoot, chemically and socially.」，答案為「The past can remain underfoot, chemically and socially.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The past can remain underfoot, chemically and socially.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -508,7 +528,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

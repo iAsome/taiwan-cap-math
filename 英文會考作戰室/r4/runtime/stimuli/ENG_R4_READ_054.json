@@ -35,52 +35,48 @@
       "translation": "凌亂的"
     },
     {
-      "word": "predict",
-      "translation": "預測"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "central",
-      "translation": "中央的"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
-      "word": "content",
-      "translation": "內容"
+      "word": "passage",
+      "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "accurately",
-      "translation": "正確的, 精確的"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "recipe",
-      "translation": "食譜"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "silent",
-      "translation": "寂靜的"
+      "word": "thread",
+      "translation": "線, 細絲, 線索, 思路, 螺紋"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "tangled",
+      "translation": "糾結的"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "salty",
+      "translation": "鹹的"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "adventure",
+      "translation": "冒險, 冒險的經歷；冒險"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "result",
+      "translation": "結果"
     },
     {
-      "word": "quotation",
-      "translation": "報價"
-    },
-    {
-      "word": "positioned",
-      "translation": "位置"
+      "word": "final",
+      "translation": "最終的"
     }
   ],
   "questions": [
@@ -101,11 +97,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_054",
-      "stem": "In Reading Set 054, which heading would help a reader predict the central content most accurately?",
+      "stem": "Which title is best for the complete passage that includes “Room 801 had a class calendar on the wall.”?",
       "options": [
-        "The Special Pencil",
-        "The Class Recipe Book",
-        "The Silent Train Car",
+        "The Class Plant",
+        "The School Radio",
+        "Smile Class",
         "The Class Calendar"
       ],
       "answerIndex": 3,
@@ -113,32 +109,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Special Pencil」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Class Plant」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Class Recipe Book」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The School Radio」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Silent Train Car」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「Smile Class」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Class Calendar: Room 801 had a class calendar on the wall.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-4",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -159,13 +155,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Class Calendar」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Class Calendar: Room 801 had a class calendar on the wall.」，答案為「The Class Calendar」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Class Calendar」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -175,7 +171,7 @@
       "id": "ENG_R4_Q_READ_054_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -189,44 +185,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_054",
-      "stem": "In Reading Set 054, a reader marked “At first, only the teacher wrote on it. Then she gave students permission to add important dates. Soon,” Which paragraph was marked?",
+      "stem": "Which answer is supported by the passage that includes “Room 801 had a class calendar on the wall.”?",
       "options": [
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 2",
-        "Paragraph 1"
+        "The thread became tangled twice.",
+        "The soup became too salty.",
+        "Soon, the calendar became colorful.",
+        "Soon, students listened more closely."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「The thread became tangled twice.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「The soup became too salty.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 2 段開頭。"
+          "reason": "本文可直接核對「Soon, the calendar became colorful.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「Soon, students listened more closely.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-4",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -248,13 +244,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：引文與第 2 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Soon, the calendar became colorful.」，答案為「Soon, the calendar became colorful.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Soon, the calendar became colorful.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -280,44 +276,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_054",
-      "stem": "In Reading Set 054, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “Students added basketball games, music practice, library days, and reminders to water the class plant.”?",
       "options": [
-        "One student wrote, \"Be kind to yourself day\" on a Wednesday. No one knew who wrote it, but",
-        "The calendar helped the class remember more than homework. It helped them see that everyone had different things",
-        "Room 801 had a class calendar on the wall. It showed tests, club days, birthdays, and school events.",
-        "At first, only the teacher wrote on it. Then she gave students permission to add important dates. Soon,"
+        "One day, a student opened it by chance and found an exciting adventure story.",
+        "One student wrote, \"Be kind to yourself day\" on a Wednesday.",
+        "One day, a new student named Jason came into the classroom.",
+        "The next day, she wrote her name inside her shoes."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「One day, a student opened it by chance and found an exciting adventure story.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「Students added basketball games, music practice, library days, and reminders to water the class plant. One student wrote, 'Be kind to yourself…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「One day, a new student named Jason came into the classroom.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The next day, she wrote her name inside her shoes.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-4",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -341,13 +337,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Students added basketball games, music practice, library days, and reminders to water the class plant. One student wrote, 'Be kind to yourself day' on…」，答案為「One student wrote, 'Be kind to yourself day' on a Wednesday.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「One student wrote, 'Be kind to yourself day' on a Wednesday.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -357,7 +353,7 @@
       "id": "ENG_R4_Q_READ_054_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -370,44 +366,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_054",
-      "stem": "In Reading Set 054, which quotation is positioned at the opening of the last paragraph?",
+      "stem": "Which ending result or final point follows “By the end of the year, the calendar was full.”?",
       "options": [
-        "By the end of the year, the calendar was full. It looked messy, but it showed the life",
-        "Room 801 had a class calendar on the wall. It showed tests, club days, birthdays, and school events.",
-        "At first, only the teacher wrote on it. Then she gave students permission to add important dates. Soon,",
-        "One student wrote, \"Be kind to yourself day\" on a Wednesday. No one knew who wrote it, but"
+        "It looked messy, but it showed the life of the class.",
+        "The noise map showed that what people hear also needs planning.",
+        "The town showed that sometimes less allows people to see more.",
+        "A used page, even a messy one, can show that learning happened."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「By the end of the year, the calendar was full. It looked messy, but it showed the life of the class.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「The noise map showed that what people hear also needs planning.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「The town showed that sometimes less allows people to see more.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「A used page, even a messy one, can show that learning happened.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-4",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -428,13 +424,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「By the end of the year, the calendar was full. It looked messy, but it showed the life of the class.」，答案為「It looked messy, but it showed the life of the class.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「It looked messy, but it showed the life of the class.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -444,7 +440,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

@@ -42,7 +42,7 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_036",
-  "stem": "In Listening Set 036, across the change from one-person pointing, under-the-table, hat-feature to one-person standing, behind-the-table, scarf-feature, which object sequence is heard?",
+  "stem": "The first scene shows one person pointing and wearing a hat, and the second shows one person standing and wearing a scarf. Which object order is heard?",
   "options": [
     "camera, then guitar",
     "guitar, then clock",
@@ -54,22 +54,22 @@
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "camera, then guitar：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "camera, then guitar：此項把「guitar, then camera」改成「camera, then guitar」。音稿先說 guitar，再說 camera。因此，鎖定證據支持「guitar, then camera」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "guitar, then clock：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "guitar, then clock：此項把「camera」改成「clock」。音稿先說 guitar，再說 camera。因此，鎖定證據支持「guitar, then camera」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "key, then camera：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "key, then camera：此項把「guitar,」改成「key,」。音稿先說 guitar，再說 camera。因此，鎖定證據支持「guitar, then camera」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "guitar, then camera：音稿先說 guitar，再說 camera。"
+      "reason": "guitar, then camera：完整逐字稿明確支持此項。音稿先說 guitar，再說 camera。"
     }
   ],
   "difficulty": "standard",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-integrate-two-scene-object-order",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「guitar, then camera」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「guitar, then camera」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「guitar, then camera」成立。",
       "status": "pass"
     }
   ],

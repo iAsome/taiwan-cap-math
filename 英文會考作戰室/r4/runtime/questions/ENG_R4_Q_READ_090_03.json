@@ -18,44 +18,44 @@
     "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_090",
-  "stem": "In Reading Set 090, which selected line appears latest in the paragraph sequence?",
+  "stem": "What happens next in this passage after “Children had crossed it to school.”?",
   "options": [
-    "The city repaired the bridge and added lights. Now people walk there in the evening, watching the river",
-    "The old bridge no longer does its first job, but it still connects people. Sometimes usefulness changes with",
-    "The old bridge over Silver River was too narrow for cars, so the city built a new one",
-    "But local residents asked the city to keep it for walkers and bikes. They said the bridge was"
+    "Cars passed around it, and people took photos beneath it.",
+    "Couples had taken wedding photos there.",
+    "Daniel could not see the photos right after taking them.",
+    "Students made a display with old maps and current photos."
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Cars passed around it, and people took photos beneath it.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "這一行來自四個候選中的最晚段落。"
+      "reason": "本文可直接核對「Children had crossed it to school. Couples had taken wedding photos there.」，所以這個選項符合完整語境。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Daniel could not see the photos right after taking them.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Students made a display with old maps and current photos.」；這個選項混入另一個情境的資訊。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "identify-latest-selected-paragraph"
+    "track-event-or-idea-sequence-from-content-anchor"
   ],
-  "representationType": "reading-sequence-latest-5",
+  "representationType": "reading-content-sequence",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
@@ -79,13 +79,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「Children had crossed it to school. Couples had taken wedding photos there.」，答案為「Couples had taken wedding photos there.」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「Couples had taken wedding photos there.」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

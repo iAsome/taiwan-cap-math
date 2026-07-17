@@ -1,9 +1,9 @@
 {
   "id": "ENG_R4_LISTEN_143",
   "section": "response",
-  "transcript": "Cora: Is this blue notebook available in a larger size? Finn: Yes. The larger one costs 140 dollars and includes a pocket. Cora: Great. I'll take the larger one.",
-  "spokenText": "Cora: Is this blue notebook available in a larger size? Finn: Yes. The larger one costs 140 dollars and includes a pocket. Cora: Great. I'll take the larger one.",
-  "audioDescription": "A three-turn original dialogue about Cora's purchase of a larger blue notebook.",
+  "transcript": "This exchange happens near the school entrance. Cora: Is this blue notebook available in a larger size? Finn: Yes. The larger one costs 140 dollars and includes a pocket. Cora: Great. I'll take the larger one.",
+  "spokenText": "This exchange happens near the school entrance. Cora: Is this blue notebook available in a larger size? Finn: Yes. The larger one costs 140 dollars and includes a pocket. Cora: Great. I'll take the larger one.",
+  "audioDescription": "An original dialogue whose speakers must resolve Cora's purchase of a larger blue notebook.",
   "pauseMs": 3000,
   "voiceProfile": {
     "voice": "Microsoft Zira Desktop",
@@ -12,6 +12,14 @@
   "audioId": "ENG_R4_AUDIO_143",
   "audioPath": "runtime/audio/ENG_R4_AUDIO_143.wav",
   "glossary": [
+    {
+      "word": "exchange",
+      "translation": "交換, 調換, 兌換, 交流, 交易"
+    },
+    {
+      "word": "entrance",
+      "translation": "入口"
+    },
     {
       "word": "available",
       "translation": "可用到的, 可利用的, 有用的, 有空的, 接受探訪的"
@@ -25,36 +33,28 @@
       "translation": "我會"
     },
     {
-      "word": "function",
-      "translation": "功能；作用"
+      "word": "purpose",
+      "translation": "目的"
     },
     {
-      "word": "request",
-      "translation": "請求, 要求；請求, 要求, 邀請"
-    },
-    {
-      "word": "purchase",
-      "translation": "購買"
+      "word": "conversation",
+      "translation": "會話"
     },
     {
       "word": "return",
       "translation": "回;還"
     },
     {
+      "word": "differences",
+      "translation": "差別"
+    },
+    {
+      "word": "purchase",
+      "translation": "購買"
+    },
+    {
       "word": "detail",
       "translation": "細節, 詳情；詳述, 細說"
-    },
-    {
-      "word": "explicitly",
-      "translation": "明確地"
-    },
-    {
-      "word": "confirmed",
-      "translation": "已確認"
-    },
-    {
-      "word": "conversation",
-      "translation": "會話"
     },
     {
       "word": "decision",
@@ -107,34 +107,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_143",
-      "stem": "In Listening Set 143, what is the main function of the first speaker's opening turn?",
+      "stem": "This exchange happens near the school entrance. What is the main purpose of this conversation?",
       "options": [
-        "Cora's request for a free map",
-        "Cora's order for a hot lunch",
+        "Cora's return of a large blue notebook",
+        "Cora's question about differences between notebook pockets",
         "Cora's purchase of a larger blue notebook",
-        "Cora's return of a broken phone"
+        "Cora's question about the smaller blue notebook"
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "Cora's request for a free map：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "Cora's return of a large blue notebook：此項把「purchase of a larger」改成「return of a large」。整段對話的主要功能為「Cora's purchase of a larger blue notebook」。因此，鎖定證據支持「Cora's purchase of a larger blue notebook」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "Cora's order for a hot lunch：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "Cora's question about differences between notebook pockets：此項把「purchase of a larger blue notebook」改成「question about differences between notebook pockets」。整段對話的主要功能為「Cora's purchase of a larger blue notebook」。因此，鎖定證據支持「Cora's purchase of a larger blue notebook」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "Cora's purchase of a larger blue notebook：開場直接建立 Cora's purchase of a larger blue notebook。"
+          "reason": "Cora's purchase of a larger blue notebook：完整逐字稿明確支持此項。整段對話的主要功能為「Cora's purchase of a larger blue notebook」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "Cora's return of a broken phone：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "Cora's question about the smaller blue notebook：此項把「purchase of a larger」改成「question about the smaller」。整段對話的主要功能為「Cora's purchase of a larger blue notebook」。因此，鎖定證據支持「Cora's purchase of a larger blue notebook」。"
         }
       ],
       "difficulty": "advanced",
@@ -144,7 +144,7 @@
       ],
       "representationType": "listening-identify-dialogue-opening-function",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -192,13 +192,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「Cora's purchase of a larger blue notebook」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「Cora's purchase of a larger blue notebook」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「Cora's purchase of a larger blue notebook」成立。",
           "status": "pass"
         }
       ],
@@ -250,34 +250,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_143",
-      "stem": "In Listening Set 143, which detail is explicitly confirmed in the conversation?",
+      "stem": "This exchange happens near the school entrance. Which detail is given in the conversation?",
       "options": [
-        "190 dollars",
-        "140 dollars",
-        "130 dollars",
-        "160 dollars"
+        "the larger notebook costs 160 dollars",
+        "the larger notebook costs 140 dollars",
+        "the larger notebook costs 130 dollars",
+        "the smaller notebook costs 140 dollars"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "190 dollars：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "the larger notebook costs 160 dollars：此項把「140」改成「160」。對話明確陳述「the larger notebook costs 140 dollars」。因此，鎖定證據支持「the larger notebook costs 140 dollars」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "140 dollars：對話明確說出 140 dollars。"
+          "reason": "the larger notebook costs 140 dollars：完整逐字稿明確支持此項。對話明確陳述「the larger notebook costs 140 dollars」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "130 dollars：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "the larger notebook costs 130 dollars：此項把「140」改成「130」。對話明確陳述「the larger notebook costs 140 dollars」。因此，鎖定證據支持「the larger notebook costs 140 dollars」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "160 dollars：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "the smaller notebook costs 140 dollars：此項把「larger」改成「smaller」。對話明確陳述「the larger notebook costs 140 dollars」。因此，鎖定證據支持「the larger notebook costs 140 dollars」。"
         }
       ],
       "difficulty": "transfer",
@@ -287,7 +287,7 @@
       ],
       "representationType": "listening-retrieve-confirmed-dialogue-detail",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -335,13 +335,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「140 dollars」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「the larger notebook costs 140 dollars」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「the larger notebook costs 140 dollars」成立。",
           "status": "pass"
         }
       ],
@@ -393,34 +393,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_143",
-      "stem": "In Listening Set 143, what decision or next action do the speakers reach?",
+      "stem": "This exchange happens near the school entrance. What action or decision is reached by the end?",
       "options": [
         "Cora chooses the larger notebook",
-        "Cora chooses the smaller notebook",
-        "Cora leaves without a notebook",
-        "Cora buys a pocket only"
+        "Cora chooses the smaller blue notebook",
+        "Cora waits before choosing a notebook",
+        "Cora buys a pocket without a notebook"
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "Cora chooses the larger notebook：最後兩輪共同確認 Cora chooses the larger notebook。"
+          "reason": "Cora chooses the larger notebook：完整逐字稿明確支持此項。對話結尾確認「Cora chooses the larger notebook」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "Cora chooses the smaller notebook：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "Cora chooses the smaller blue notebook：此項把「larger」改成「smaller blue」。對話結尾確認「Cora chooses the larger notebook」。因此，鎖定證據支持「Cora chooses the larger notebook」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "Cora leaves without a notebook：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "Cora waits before choosing a notebook：此項把「chooses the larger」改成「waits before choosing a」。對話結尾確認「Cora chooses the larger notebook」。因此，鎖定證據支持「Cora chooses the larger notebook」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "Cora buys a pocket only：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "Cora buys a pocket without a notebook：此項把「chooses the larger」改成「buys a pocket without a」。對話結尾確認「Cora chooses the larger notebook」。因此，鎖定證據支持「Cora chooses the larger notebook」。"
         }
       ],
       "difficulty": "foundation",
@@ -430,7 +430,7 @@
       ],
       "representationType": "listening-integrate-dialogue-problem-and-decision",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -478,13 +478,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「Cora chooses the larger notebook」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「Cora chooses the larger notebook」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「Cora chooses the larger notebook」成立。",
           "status": "pass"
         }
       ],

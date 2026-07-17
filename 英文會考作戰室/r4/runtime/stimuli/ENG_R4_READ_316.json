@@ -71,64 +71,68 @@
       "translation": "人類的;人"
     },
     {
-      "word": "broad",
-      "translation": "寬廣的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "paragraphs",
-      "translation": "段落"
-    },
-    {
-      "word": "broader",
-      "translation": "寬廣的"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "vertical",
-      "translation": "垂直的"
-    },
-    {
-      "word": "digital",
-      "translation": "數位化"
-    },
-    {
-      "word": "border",
-      "translation": "邊界；國界"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "contains",
+      "word": "includes",
       "translation": "包含"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "scale",
+      "translation": "刻度,衡量,比例,數值範圍,比例尺,天平,等級；依比例決定,攀登,測量；剝落,生水垢,重,攀登,衡量"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "ancient",
+      "translation": "古代的"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "instrument",
+      "translation": "儀器；樂器"
     },
     {
-      "word": "excerpt",
-      "translation": "摘錄"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
+      "word": "ceiling",
+      "translation": "天花板"
+    },
+    {
+      "word": "familiar",
+      "translation": "熟悉的"
+    },
+    {
+      "word": "images",
+      "translation": "圖像；形象"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "objects",
+      "translation": "反對;物件"
+    },
+    {
+      "word": "fear",
+      "translation": "畏懼;懼怕"
+    },
+    {
+      "word": "empty",
+      "translation": "空的, 空洞的, 空虛的；使成為空的, 倒空；倒空；空的,空閑的；騰空, 騰出來"
     }
   ],
   "questions": [
@@ -149,44 +153,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_316",
-      "stem": "In Reading Set 316, which heading is broad enough for all paragraphs but not broader than the text?",
+      "stem": "Which title is best for the complete passage that includes “A museum displayed a star chart made long before modern telescopes.”?",
       "options": [
-        "The School Map",
+        "The Old Market Scale",
         "The Old Star Chart",
-        "The Vertical Farm",
-        "The Digital Border"
+        "The Ancient Music Instrument",
+        "The Ancient Toy"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The School Map」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Market Scale」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Old Star Chart: A museum displayed a star chart made long before modern telescopes.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Vertical Farm」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Ancient Music Instrument」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Digital Border」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Ancient Toy」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-6",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -207,13 +211,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Old Star Chart」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Old Star Chart: A museum displayed a star chart made long before modern telescopes.」，答案為「The Old Star Chart」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Old Star Chart」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -223,7 +227,7 @@
       "id": "ENG_R4_Q_READ_316_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -237,44 +241,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_316",
-      "stem": "In Reading Set 316, while checking the passage, which paragraph contains the exact line “Students looked at the chart and imagined people standing outside centuries ago, trying to make order out of”?",
+      "stem": "Which answer is supported by the passage that includes “A museum displayed a star chart made long before modern telescopes.”?",
       "options": [
-        "Paragraph 4",
-        "Paragraph 1",
-        "Paragraph 2",
-        "Paragraph 3"
+        "The stars were drawn by hand, with animals and heroes connecting them.",
+        "An old hand-drawn map showed large trees that once lined a city street.",
+        "Before sleeping, they watch a short movie about stars on the museum ceiling.",
+        "Students visiting the town saw more stars than they had ever seen before."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 4 段開頭。"
+          "reason": "本文可直接核對「The stars were drawn by hand, with animals and heroes connecting them.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「An old hand-drawn map showed large trees that once lined a city street.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "第 2 段沒有這一行。"
+          "reason": "本文沒有陳述「Before sleeping, they watch a short movie about stars on the museum ceiling.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「Students visiting the town saw more stars than they had ever seen before.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-1",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -296,13 +300,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：引文與第 4 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The stars were drawn by hand, with animals and heroes connecting them.」，答案為「The stars were drawn by hand, with animals and heroes connecting them.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The stars were drawn by hand, with animals and heroes connecting them.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -328,44 +332,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_316",
-      "stem": "In Reading Set 316, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “The old chart was less exact, but more artistic.”?",
       "options": [
-        "A museum displayed a star chart made long before modern telescopes. The stars were drawn by hand, with",
-        "Students compared it with a modern sky map. The old chart was less exact, but more artistic. It",
-        "The guide said astronomy began not only with instruments, but with patient watching.",
-        "Students looked at the chart and imagined people standing outside centuries ago, trying to make order out of"
+        "At night, even familiar things can make people ask new questions.",
+        "People have always used images and sound to shape public feeling.",
+        "The town showed that sometimes less allows people to see more.",
+        "It showed how people used stories to remember the night sky."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「At night, even familiar things can make people ask new questions.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「People have always used images and sound to shape public feeling.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The town showed that sometimes less allows people to see more.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「The old chart was less exact, but more artistic. It showed how people used stories to remember the night sky.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-1",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -389,13 +393,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The old chart was less exact, but more artistic. It showed how people used stories to remember the night sky.」，答案為「It showed how people used stories to remember the night sky.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「It showed how people used stories to remember the night sky.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -418,44 +422,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_316",
-      "stem": "In Reading Set 316, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “The stars had not changed much, but human understanding had.”?",
       "options": [
-        "chart was less exact, but more artistic. It showed how people used stories to remember the night sky.",
-        "The guide said astronomy began not only with instruments, but with patient watching.",
-        "understanding had. A chart can show both the sky and the mind of the people who mapped it.",
-        "chart made long before modern telescopes. The stars were drawn by hand, with animals and heroes connecting them."
+        "It is testing whether people can be honest when no one gives them an exact number.",
+        "Some small objects help people rest because they hold a quiet world that does not hurry.",
+        "A chart can show both the sky and the mind of the people who mapped it.",
+        "People need to know what a chart means before fear fills the empty spaces."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「It is testing whether people can be honest when no one gives them an exact number.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Some small objects help people rest because they hold a quiet world that does not hurry.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「The stars had not changed much, but human understanding had. A chart can show both the sky and the mind of the…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「People need to know what a chart means before fear fills the empty spaces.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -476,13 +480,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The stars had not changed much, but human understanding had. A chart can show both the sky and the mind of the people who…」，答案為「A chart can show both the sky and the mind of the people who mapped it.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「A chart can show both the sky and the mind of the people who mapped it.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -492,7 +496,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

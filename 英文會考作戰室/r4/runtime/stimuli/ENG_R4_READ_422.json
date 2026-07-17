@@ -111,60 +111,96 @@
       "translation": "技能"
     },
     {
-      "word": "accurate",
-      "translation": "正確的, 精確的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "overview",
-      "translation": "概述"
-    },
-    {
-      "word": "entire",
-      "translation": "整個"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "ai",
-      "translation": "人工智慧"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "summary",
-      "translation": "摘要, 概要"
+      "word": "photograph",
+      "translation": "照片"
     },
     {
-      "word": "customer",
-      "translation": "顧客"
+      "word": "debate",
+      "translation": "辯論；討論"
     },
     {
-      "word": "empty",
-      "translation": "空的, 空洞的, 空虛的；使成為空的, 倒空；倒空；空的,空閑的；騰空, 騰出來"
+      "word": "protest",
+      "translation": "抗議"
     },
     {
-      "word": "field",
-      "translation": "領域"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "versions",
+      "translation": "版本"
     },
     {
-      "word": "receives",
-      "translation": "收到"
+      "word": "waist",
+      "translation": "腰"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "discuss",
+      "translation": "討論"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "create",
+      "translation": "創造"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "textbooks",
+      "translation": "教科書"
+    },
+    {
+      "word": "online",
+      "translation": "網路"
+    },
+    {
+      "word": "trust",
+      "translation": "信任"
+    },
+    {
+      "word": "returns",
+      "translation": "回;還"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "human",
+      "translation": "人類的;人"
+    },
+    {
+      "word": "visible",
+      "translation": "可見的"
+    },
+    {
+      "word": "danger",
+      "translation": "危險"
+    },
+    {
+      "word": "surfaces",
+      "translation": "表面"
+    },
+    {
+      "word": "suffered",
+      "translation": "遭受, 經歷, 忍受；受痛苦, 受損害"
     }
   ],
   "questions": [
@@ -185,11 +221,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_422",
-      "stem": "In Reading Set 422, which heading gives the most accurate overview of the entire passage?",
+      "stem": "Which title is best for the complete passage that includes “A history class watched an old newsreel from wartime.”?",
       "options": [
-        "The AI News Summary",
-        "The First Customer",
-        "The Empty Field",
+        "The Old Photograph Debate",
+        "The Old Protest Song",
+        "The Quiet Bell",
         "The Old Newsreel"
       ],
       "answerIndex": 3,
@@ -197,32 +233,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The AI News Summary」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Photograph Debate」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The First Customer」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Protest Song」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Empty Field」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Quiet Bell」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Old Newsreel: A history class watched an old newsreel from wartime.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-2",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -243,13 +279,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Old Newsreel」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Old Newsreel: A history class watched an old newsreel from wartime.」，答案為「The Old Newsreel」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Old Newsreel」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -259,90 +295,86 @@
       "id": "ENG_R4_Q_READ_422_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-6",
-        "AUTH-ENGLISH-LC-AE-4-8",
+        "AUTH-ENGLISH-LC-AE-4-5",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LC-D-4-3",
-        "AUTH-ENGLISH-LP-3-4-10",
-        "AUTH-ENGLISH-LP-3-4-12",
-        "AUTH-ENGLISH-LP-3-4-13",
+        "AUTH-ENGLISH-LP-1-4-7",
         "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-9-4-2",
-        "AUTH-ENGLISH-LP-9-4-3"
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_422",
-      "stem": "In Reading Set 422, if each paragraph receives one note card, how many cards are needed for the passage beginning “A history class watched an old newsreel from wartime. The music was dramatic, and the narrator spoke with”?",
+      "stem": "Which answer is supported by the passage that includes “A history class watched an old newsreel from wartime.”?",
       "options": [
-        "6",
-        "7",
-        "5",
-        "4"
+        "Both versions told the truth in different ways.",
+        "A black-and-white photo showed people standing in waist-deep water on a city street.",
+        "The newsreel showed what people were told, not necessarily the whole truth.",
+        "It showed how people used stories to remember the night sky."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "6 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Both versions told the truth in different ways.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「A black-and-white photo showed people standing in waist-deep water on a city street.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "文章以換行鎖定為 5 個段落。"
+          "reason": "本文可直接核對「The newsreel showed what people were told, not necessarily the whole truth.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「It showed how people used stories to remember the night sky.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-structure-count-2",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-6",
-          "AUTH-ENGLISH-LC-AE-4-8",
+          "AUTH-ENGLISH-LC-AE-4-5",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LC-D-4-3",
-          "AUTH-ENGLISH-LP-3-4-10",
-          "AUTH-ENGLISH-LP-3-4-12",
-          "AUTH-ENGLISH-LP-3-4-13",
+          "AUTH-ENGLISH-LP-1-4-7",
           "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-9-4-2",
-          "AUTH-ENGLISH-LP-9-4-3"
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The newsreel showed what people were told, not necessarily the whole truth.」，答案為「The newsreel showed what people were told, not necessarily the whole truth.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The newsreel showed what people were told, not necessarily the whole truth.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -368,44 +400,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_422",
-      "stem": "In Reading Set 422, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “They noticed selective images, emotional language, and missing viewpoints.”?",
       "options": [
+        "The teacher used the moment to discuss what counts as historical evidence.",
         "The class learned that historical media can be both evidence and propaganda.",
-        "The newsreel showed what people were told, not necessarily the whole truth.",
-        "A history class watched an old newsreel from wartime. The music was dramatic, and the narrator spoke with",
-        "At first, students accepted it as information. Then the teacher asked them to identify persuasion techniques. They noticed"
+        "The class learned that historical games can create interest, but they are not textbooks.",
+        "The class learned that online words move quickly, but trust returns slowly."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The teacher used the moment to discuss what counts as historical evidence.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「They noticed selective images, emotional language, and missing viewpoints. The class learned that historical media can be both evidence and propaganda.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The class learned that historical games can create interest, but they are not textbooks.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The class learned that online words move quickly, but trust returns slowly.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-2",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -429,13 +461,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「They noticed selective images, emotional language, and missing viewpoints. The class learned that historical media can be both evidence and propaganda.」，答案為「The class learned that historical media can be both evidence and propaganda.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The class learned that historical media can be both evidence and propaganda.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -445,7 +477,7 @@
       "id": "ENG_R4_Q_READ_422_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -458,44 +490,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_422",
-      "stem": "In Reading Set 422, at the start of the last paragraph, which selected line does the reader see?",
+      "stem": "Which ending result or final point follows “People have always used images and sound to shape public feeling.”?",
       "options": [
-        "Students realized media literacy is not only for modern social media. People have always used images and sound",
-        "A history class watched an old newsreel from wartime. The music was dramatic, and the narrator spoke with",
-        "At first, students accepted it as information. Then the teacher asked them to identify persuasion techniques. They noticed",
-        "The class learned that historical media can be both evidence and propaganda."
+        "Critical viewing is a historical skill as much as a modern one.",
+        "In a modern store, human service may become less visible but more important.",
+        "A few seconds may not sound like much, but in danger, they can matter.",
+        "The sun was the same, but the surfaces below it changed how much students suffered."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「People have always used images and sound to shape public feeling. Critical viewing is a historical skill as much as a modern…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「In a modern store, human service may become less visible but more important.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「A few seconds may not sound like much, but in danger, they can matter.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「The sun was the same, but the surfaces below it changed how much students suffered.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-2",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -516,13 +548,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「People have always used images and sound to shape public feeling. Critical viewing is a historical skill as much as a modern one.」，答案為「Critical viewing is a historical skill as much as a modern one.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Critical viewing is a historical skill as much as a modern one.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -532,7 +564,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

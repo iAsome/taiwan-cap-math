@@ -35,40 +35,56 @@
       "translation": "活躍, 活動性, 行動, 行為, 放射性"
     },
     {
-      "word": "accurate",
-      "translation": "正確的, 精確的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "overview",
-      "translation": "概述"
-    },
-    {
-      "word": "entire",
-      "translation": "整個"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "receives",
-      "translation": "收到"
+      "word": "message",
+      "translation": "消息;音信"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "searched",
+      "translation": "搜尋;搜查"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "scrolled",
+      "translation": "滾動的"
+    },
+    {
+      "word": "depends",
+      "translation": "依賴"
+    },
+    {
+      "word": "gravity",
+      "translation": "重力"
+    },
+    {
+      "word": "granted",
+      "translation": "授予"
     }
   ],
   "questions": [
@@ -89,11 +105,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_002",
-      "stem": "In Reading Set 002, which heading gives the most accurate overview of the entire passage?",
+      "stem": "Which title is best for the complete passage that includes “this subject is coming this Saturday at River Park.”?",
       "options": [
-        "The Little Map",
-        "The Morning Market",
-        "The Space Garden",
+        "River Bus Pass",
+        "A Message from the Library",
+        "The Seed Library",
         "Green Market Day"
       ],
       "answerIndex": 3,
@@ -101,32 +117,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Little Map」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「River Bus Pass」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Morning Market」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「A Message from the Library」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Space Garden」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Seed Library」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「Green Market Day: Green Market Day is coming this Saturday at River Park.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-2",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -147,13 +163,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「Green Market Day」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Green Market Day: Green Market Day is coming this Saturday at River Park.」，答案為「Green Market Day」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Green Market Day」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -163,90 +179,86 @@
       "id": "ENG_R4_Q_READ_002_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-6",
-        "AUTH-ENGLISH-LC-AE-4-8",
+        "AUTH-ENGLISH-LC-AE-4-5",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LC-D-4-3",
-        "AUTH-ENGLISH-LP-3-4-10",
-        "AUTH-ENGLISH-LP-3-4-12",
-        "AUTH-ENGLISH-LP-3-4-13",
+        "AUTH-ENGLISH-LP-1-4-7",
         "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-9-4-2",
-        "AUTH-ENGLISH-LP-9-4-3"
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_002",
-      "stem": "In Reading Set 002, if each paragraph receives one note card, how many cards are needed for the passage beginning “Green Market Day is coming this Saturday at River Park. Farmers from nearby towns will bring fresh fruit,”?",
+      "stem": "Which answer is supported by the passage that includes “this subject is coming this Saturday at River Park.”?",
       "options": [
-        "6",
-        "7",
-        "4",
-        "5"
+        "Jenny visited the market with her father for a school report.",
+        "That is why Mr. Fan's shop still opens every morning.",
+        "The market opens at 8:00 a.m. and closes at 2:00 p.m.",
+        "She learned to listen carefully even when the market was noisy."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "6 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Jenny visited the market with her father for a school report.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「That is why Mr. Fan's shop still opens every morning.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "文章以換行鎖定為 4 個段落。"
+          "reason": "本文可直接核對「The market opens at 8:00 a.m. and closes at 2:00 p.m.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "5 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「She learned to listen carefully even when the market was noisy.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-structure-count-2",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-6",
-          "AUTH-ENGLISH-LC-AE-4-8",
+          "AUTH-ENGLISH-LC-AE-4-5",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LC-D-4-3",
-          "AUTH-ENGLISH-LP-3-4-10",
-          "AUTH-ENGLISH-LP-3-4-12",
-          "AUTH-ENGLISH-LP-3-4-13",
+          "AUTH-ENGLISH-LP-1-4-7",
           "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-9-4-2",
-          "AUTH-ENGLISH-LP-9-4-3"
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The market opens at 8:00 a.m. and closes at 2:00 p.m.」，答案為「The market opens at 8:00 a.m. and closes at 2:00 p.m.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The market opens at 8:00 a.m. and closes at 2:00 p.m.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -272,44 +284,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_002",
-      "stem": "In Reading Set 002, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “Stores at the market will not give out plastic bags.”?",
       "options": [
-        "There will also be a small cooking show at 10:30 a.m. Chef Molly will teach visitors how to",
-        "Bikes are welcome. Cars are not allowed inside River Park, but drivers can park at East Gate School",
-        "Green Market Day is coming this Saturday at River Park. Farmers from nearby towns will bring fresh fruit,",
-        "Visitors are asked to bring their own bags. Stores at the market will not give out plastic bags."
+        "Ms. Lin gave him an old umbrella and told him to bring it back when he could.",
+        "If you forget to bring one, you can borrow a cloth bag at the information desk.",
+        "Students must bring a sleeping bag, a water bottle, and a jacket.",
+        "He searched his pockets, bag, desk, and classroom floor."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Ms. Lin gave him an old umbrella and told him to bring it back when he could.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「Stores at the market will not give out plastic bags. If you forget to bring one, you can borrow a cloth bag…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Students must bring a sleeping bag, a water bottle, and a jacket.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「He searched his pockets, bag, desk, and classroom floor.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-2",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -333,13 +345,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Stores at the market will not give out plastic bags. If you forget to bring one, you can borrow a cloth bag at the…」，答案為「If you forget to bring one, you can borrow a cloth bag at the information desk.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「If you forget to bring one, you can borrow a cloth bag at the information desk.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -349,7 +361,7 @@
       "id": "ENG_R4_Q_READ_002_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -362,44 +374,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_002",
-      "stem": "In Reading Set 002, at the start of the last paragraph, which selected line does the reader see?",
+      "stem": "Which ending result or final point follows “Children under twelve can join the seed-planting activity for free.”?",
       "options": [
-        "Bikes are welcome. Cars are not allowed inside River Park, but drivers can park at East Gate School",
-        "Green Market Day is coming this Saturday at River Park. Farmers from nearby towns will bring fresh fruit,",
-        "Visitors are asked to bring their own bags. Stores at the market will not give out plastic bags.",
-        "There will also be a small cooking show at 10:30 a.m. Chef Molly will teach visitors how to"
+        "Cars are not allowed inside River Park, but drivers can park at East Gate School and take the free market bus.",
+        "The rule did not make everyone happy, but it helped students remember that free time can be shared, not only scrolled.",
+        "Rules were still important, but the school learned that rules should leave room for understanding people's real lives.",
+        "It depends on gravity, light, water, air, and care-things people on Earth often take for granted."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 4 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「Children under twelve can join the seed-planting activity for free. Cars are not allowed inside River Park, but drivers can park at…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「The rule did not make everyone happy, but it helped students remember that free time can be shared,…」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Rules were still important, but the school learned that rules should leave room for understanding people's real lives.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「It depends on gravity, light, water, air, and care-things people on Earth often take for granted.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-2",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -420,13 +432,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 4 段，正確引文與第 4 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Children under twelve can join the seed-planting activity for free. Cars are not allowed inside River Park, but drivers can park at East Gate…」，答案為「Cars are not allowed inside River Park, but drivers can park at East Gate School and take the…」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Cars are not allowed inside River Park, but drivers can park at East Gate School and take the…」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -436,7 +448,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

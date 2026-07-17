@@ -71,12 +71,8 @@
       "translation": "普通的"
     },
     {
-      "word": "misleading",
-      "translation": "誤導性的"
-    },
-    {
-      "word": "label",
-      "translation": "標籤, 簽條, 商標, 標誌；貼標籤于, 指...為, 分類, 標注； 加上或修改磁盤的標籤"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
       "word": "complete",
@@ -87,44 +83,60 @@
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "kindness",
-      "translation": "仁慈"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "jar",
-      "translation": "罐子"
+      "word": "roadside",
+      "translation": "路邊"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "inn",
+      "translation": "(尤指鄉村或公路邊的) 旅館, 客棧；住旅館"
     },
     {
-      "word": "provides",
-      "translation": "供應"
+      "word": "instrument",
+      "translation": "儀器；樂器"
     },
     {
-      "word": "quoted",
-      "translation": "引用, 引證, 提供, 提出, 報(價)"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "evidence",
-      "translation": "證據"
+      "word": "compared",
+      "translation": "比較"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "dense",
+      "translation": "密集的；濃厚的"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "reducing",
+      "translation": "減少"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "waste",
+      "translation": "浪費;浪費"
     },
     {
-      "word": "concluding",
-      "translation": "結束, 終止, 決定, 作出結論；推斷, 斷定, 締結, 議定"
+      "word": "tours",
+      "translation": "旅遊"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "scrolled",
+      "translation": "滾動的"
+    },
+    {
+      "word": "impression",
+      "translation": "印象"
     }
   ],
   "questions": [
@@ -145,11 +157,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_298",
-      "stem": "In Reading Set 298, which heading would be the least misleading label for this complete passage?",
+      "stem": "Which title is best for the complete passage that includes “Archaeologists studied old cooking tools and plant remains to understand what people ate long ago.”?",
       "options": [
-        "The Rain Garden",
-        "The Earthquake Museum",
-        "The Kindness Jar",
+        "The Ancient Bread",
+        "The Ancient Roadside Inn",
+        "The Ancient Music Instrument",
         "The Ancient Recipe"
       ],
       "answerIndex": 3,
@@ -157,32 +169,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Rain Garden」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Ancient Bread」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Earthquake Museum」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Ancient Roadside Inn」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Kindness Jar」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Ancient Music Instrument」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Ancient Recipe: Archaeologists studied old cooking tools and plant remains to understand what people ate long ago.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-8",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -203,13 +215,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Ancient Recipe」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Ancient Recipe: Archaeologists studied old cooking tools and plant remains to understand what people ate long ago.」，答案為「The Ancient Recipe」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Ancient Recipe」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -219,7 +231,7 @@
       "id": "ENG_R4_Q_READ_298_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -233,44 +245,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_298",
-      "stem": "In Reading Set 298, which paragraph provides the quoted evidence “The food was simple, made with grains, beans, and herbs. Some visitors liked it. Others found it plain.”?",
+      "stem": "Which answer is supported by the passage that includes “Archaeologists studied old cooking tools and plant remains to understand what people ate long ago.”?",
       "options": [
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 2",
-        "Paragraph 1"
+        "A student compared prices and found some items cheaper, others more expensive.",
+        "Others took many hours.",
+        "Others found it plain.",
+        "Others found it too dense."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「A student compared prices and found some items cheaper, others more expensive.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「Others took many hours.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 2 段開頭。"
+          "reason": "本文可直接核對「Others found it plain.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「Others found it too dense.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-3",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -292,13 +304,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：引文與第 2 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Others found it plain.」，答案為「Others found it plain.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Others found it plain.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -324,44 +336,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_298",
-      "stem": "In Reading Set 298, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “The food was simple, made with grains, beans, and herbs.”?",
       "options": [
-        "The guide explained that food history shows trade, farming, class, and daily life. What people ate depended on",
-        "A student realized that history can be tasted, not only read.",
-        "Archaeologists studied old cooking tools and plant remains to understand what people ate long ago. A museum invited",
-        "The food was simple, made with grains, beans, and herbs. Some visitors liked it. Others found it plain."
+        "But many liked reducing waste.",
+        "Some visitors liked it.",
+        "Several students liked it.",
+        "Visitors enjoyed the tours more."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「But many liked reducing waste.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「The food was simple, made with grains, beans, and herbs. Some visitors liked it.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Several students liked it.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Visitors enjoyed the tours more.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-3",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -385,13 +397,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The food was simple, made with grains, beans, and herbs. Some visitors liked it.」，答案為「Some visitors liked it.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Some visitors liked it.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -401,7 +413,7 @@
       "id": "ENG_R4_Q_READ_298_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -414,44 +426,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_298",
-      "stem": "In Reading Set 298, which line marks the beginning of the concluding paragraph?",
+      "stem": "Which ending result or final point follows “A student realized that history can be tasted, not only read.”?",
       "options": [
-        "The ancient recipe did not make the past fully return, but it helped visitors imagine ordinary people sitting",
-        "Archaeologists studied old cooking tools and plant remains to understand what people ate long ago. A museum invited",
-        "The food was simple, made with grains, beans, and herbs. Some visitors liked it. Others found it plain.",
-        "The guide explained that food history shows trade, farming, class, and daily life. What people ate depended on"
+        "The ancient recipe did not make the past fully return, but it helped visitors imagine ordinary people sitting down to a meal thousands of years before them.",
+        "Sometimes it takes visitors to make people notice what they already have.",
+        "The rule did not make everyone happy, but it helped students remember that free time can be shared, not only scrolled.",
+        "But it became popular because people learned that a shop does not need many choices to make a good impression."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「A student realized that history can be tasted, not only read. The ancient recipe did not make the past fully return, but…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Sometimes it takes visitors to make people notice what they already have.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「The rule did not make everyone happy, but it helped students remember that free time can be shared,…」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「But it became popular because people learned that a shop does not need many choices to make a…」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-3",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -472,13 +484,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「A student realized that history can be tasted, not only read. The ancient recipe did not make the past fully return, but it helped…」，答案為「The ancient recipe did not make the past fully return, but it helped visitors imagine ordinary people sitting…」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The ancient recipe did not make the past fully return, but it helped visitors imagine ordinary people sitting…」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -488,7 +500,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

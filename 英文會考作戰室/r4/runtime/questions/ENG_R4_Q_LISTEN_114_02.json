@@ -42,34 +42,34 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_114",
-  "stem": "In Listening Set 114, which detail is explicitly confirmed in the conversation?",
+  "stem": "The speakers have just checked the class notice. Which detail is given in the conversation?",
   "options": [
-    "the notes were lost on Thursday",
-    "the practice ended early on Thursday",
+    "the train stopped for twenty minutes on Thursday",
+    "the bus stopped for twenty minutes on Saturday",
     "the bus stopped for twenty minutes on Thursday",
-    "the room was locked on Thursday"
+    "the bus stopped for ten minutes on Thursday"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "the notes were lost on Thursday：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the train stopped for twenty minutes on Thursday：此項把「bus」改成「train」。對話明確陳述「the bus stopped for twenty minutes on Thursday」。因此，鎖定證據支持「the bus stopped for twenty minutes on Thursday」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "the practice ended early on Thursday：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the bus stopped for twenty minutes on Saturday：此項把「Thursday」改成「Saturday」。對話明確陳述「the bus stopped for twenty minutes on Thursday」。因此，鎖定證據支持「the bus stopped for twenty minutes on Thursday」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "the bus stopped for twenty minutes on Thursday：對話明確說出 the bus stopped for twenty minutes on Thursday。"
+      "reason": "the bus stopped for twenty minutes on Thursday：完整逐字稿明確支持此項。對話明確陳述「the bus stopped for twenty minutes on Thursday」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "the room was locked on Thursday：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the bus stopped for ten minutes on Thursday：此項把「twenty」改成「ten」。對話明確陳述「the bus stopped for twenty minutes on Thursday」。因此，鎖定證據支持「the bus stopped for twenty minutes on Thursday」。"
     }
   ],
   "difficulty": "advanced",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-retrieve-confirmed-dialogue-detail",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「the bus stopped for twenty minutes on Thursday」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「the bus stopped for twenty minutes on Thursday」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「the bus stopped for twenty minutes on Thursday」成立。",
       "status": "pass"
     }
   ],

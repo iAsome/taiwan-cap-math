@@ -42,34 +42,34 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_124",
-  "stem": "In Listening Set 124, which detail is explicitly confirmed in the conversation?",
+  "stem": "The speakers have just checked the class notice. Which detail is given in the conversation?",
   "options": [
     "the science room show is on Thursday",
     "the science room show is on Saturday",
-    "the science room show is on next Tuesday",
-    "the science room show is on Monday"
+    "the train station show is on Thursday",
+    "the science room show begins at eleven twenty"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "the science room show is on Thursday：對話明確說出 the science room show is on Thursday。"
+      "reason": "the science room show is on Thursday：完整逐字稿明確支持此項。對話明確陳述「the science room show is on Thursday」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "the science room show is on Saturday：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the science room show is on Saturday：此項把「Thursday」改成「Saturday」。對話明確陳述「the science room show is on Thursday」。因此，鎖定證據支持「the science room show is on Thursday」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "the science room show is on next Tuesday：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the train station show is on Thursday：此項把「science room」改成「train station」。對話明確陳述「the science room show is on Thursday」。因此，鎖定證據支持「the science room show is on Thursday」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "the science room show is on Monday：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the science room show begins at eleven twenty：此項把「is on Thursday」改成「begins at eleven twenty」。對話明確陳述「the science room show is on Thursday」。因此，鎖定證據支持「the science room show is on Thursday」。"
     }
   ],
   "difficulty": "foundation",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-retrieve-confirmed-dialogue-detail",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「the science room show is on Thursday」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「the science room show is on Thursday」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 0,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「the science room show is on Thursday」成立。",
       "status": "pass"
     }
   ],

@@ -18,11 +18,11 @@
     "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_400",
-  "stem": "In Reading Set 400, which selected line appears latest in the paragraph sequence?",
+  "stem": "What happens next in this passage after “The data helped scientists understand changes in migration.”?",
   "options": [
-    "A birdwatching group invited students to observe migrating birds near a wetland. The birds stopped there to rest",
-    "Students learned that one wetland can matter to birds traveling across countries. If resting places disappear, the whole",
-    "They also saw volunteers recording bird numbers every year. The data helped scientists understand changes in migration.",
+    "One student said the market recording made him feel hungry.",
+    "One student said online shopping made mistakes easier.",
+    "One student said the game made him want to learn what was real.",
     "A student said the birds made the world feel connected."
   ],
   "answerIndex": 3,
@@ -30,32 +30,32 @@
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「One student said the market recording made him feel hungry.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「One student said online shopping made mistakes easier.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「One student said the game made him want to learn what was real.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "這一行來自四個候選中的最晚段落。"
+      "reason": "本文可直接核對「The data helped scientists understand changes in migration. A student said the birds made the world feel connected.」，所以這個選項符合完整語境。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "identify-latest-selected-paragraph"
+    "track-event-or-idea-sequence-from-content-anchor"
   ],
-  "representationType": "reading-sequence-latest-5",
+  "representationType": "reading-content-sequence",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
@@ -79,13 +79,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「The data helped scientists understand changes in migration. A student said the birds made the world feel connected.」，答案為「A student said the birds made the world feel connected.」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「A student said the birds made the world feel connected.」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

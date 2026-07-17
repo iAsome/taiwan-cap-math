@@ -183,7 +183,7 @@ function practiceSetup(params) {
   const chosenUnit = params.get("unit") || state.catalog.units[0].id;
   const unit = state.catalog.units.find((value) => value.id === chosenUnit);
   const chosenSkill = params.get("skill") || unit.skills[0].id;
-  main.innerHTML = `${heading("STATIC SKILL PRACTICE", "單元練習", "每個技能固定十二題；種子只改變已審核題目的順序。")}
+  main.innerHTML = `${heading("STATIC SKILL PRACTICE", "單元練習", "每個技能固定十二題；技能學習可使用講義已治理的加廣字彙，正式模擬單題另限基本 1,200 字。種子只改變已審核題目的順序。")}
     <div class="toolbar"><label class="field">單元<select id="unitSelect">${state.catalog.units.map((value) => `<option value="${h(value.id)}"${value.id === chosenUnit ? " selected" : ""}>${h(value.title)}</option>`).join("")}</select></label><label class="field">技能<select id="practiceSkill">${unit.skills.map((value) => `<option value="${h(value.id)}"${value.id === chosenSkill ? " selected" : ""}>${h(value.title)}</option>`).join("")}</select></label><label class="field">種子碼<input id="practiceSeed" type="number" min="1" value="${h(params.get("seed") || 115)}"></label><button class="button" id="startPractice">開始</button></div><div id="practiceArea" class="empty">選擇技能後開始。</div>`;
   $("#unitSelect").addEventListener("change", (event) => navigate("practice", { unit: event.target.value }));
   $("#startPractice").addEventListener("click", async () => {
@@ -252,7 +252,7 @@ async function startMock(mode, seed) {
     minutes = 60;
     const units = selectStatic(state.catalog.units.filter((unit) => unit.languageComponent), 15, `mock-units:${seed}`);
     const bundles = await Promise.all(units.map((unit) => loadUnit(unit.id)));
-    const singles = bundles.map((bundle, index) => selectStatic(bundle.questions, 1, `${seed}:single:${index}`)[0]);
+    const singles = bundles.map((bundle, index) => selectStatic(bundle.questions.filter((question) => units[index].formalQuestionIds.includes(question.id)), 1, `${seed}:single:${index}`)[0]);
     const reading = await fetchJson(state.catalog.reading.bundle);
     const passages = selectStatic(reading, 7, `mock-reading:${seed}`);
     questions = [...singles, ...passages.flatMap((item) => item.questions)];

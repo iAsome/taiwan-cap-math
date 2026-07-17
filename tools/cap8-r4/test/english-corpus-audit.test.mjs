@@ -23,32 +23,20 @@ function assertUnique(values, label) {
 }
 
 function describeScene([count, action, object, position, feature]) {
-  const people = count === 1 ? "One person" : `${count} people`;
-  const wearing = feature === "none" ? "with no marked accessory" : feature === "hat" ? "wearing hats" : feature === "glasses" ? "wearing glasses" : "wearing scarves";
+  const people = count === 1 ? "One person" : `${["Zero", "One", "Two", "Three", "Four"][count]} people`;
+  const wearing = feature === "none" ? " with no marked accessory" : feature === "hat" ? ` and wearing ${count === 1 ? "a hat" : "hats"}` : feature === "glasses" ? " and wearing glasses" : ` and wearing ${count === 1 ? "a scarf" : "scarves"}`;
   const verb = count === 1 ? { standing: "is standing", walking: "is walking", sitting: "is sitting", pointing: "is pointing" }[action] : { standing: "are standing", walking: "are walking", sitting: "are sitting", pointing: "are pointing" }[action];
-  return `${people} ${wearing} ${verb}; a ${object} is ${position} the table.`;
+  return `${people} ${verb}${wearing}; a ${object} is ${position} the table.`;
 }
 
 function solveReadingQuestion(item, question, title) {
   const operation = question.cognitiveProcess[1];
   const passage = normalized(item.passage);
-  const paragraphs = item.passage.split(/\n+/u).map(normalized).filter(Boolean);
   const options = question.options.map(normalized);
-  if (operation === "select-evidence-bounded-whole-text-title") return question.options.indexOf(title);
-  if (operation === "count-locked-paragraph-blocks") return options.indexOf(String(paragraphs.length));
-  if (operation === "scan-exact-line-and-locate-paragraph") {
-    const quote = normalized(question.stem.match(/“([^”]+)”/u)[1]);
-    return options.indexOf(normalized(`Paragraph ${paragraphs.findIndex((value) => value.startsWith(quote)) + 1}`));
-  }
-  if (operation === "identify-earliest-selected-paragraph" || operation === "identify-latest-selected-paragraph") {
-    const offsets = options.map((value) => passage.indexOf(value));
-    assert(offsets.every((value) => value >= 0), `${question.id}: selected line missing from passage`);
-    const target = operation.includes("earliest") ? Math.min(...offsets) : Math.max(...offsets);
-    return offsets.indexOf(target);
-  }
-  if (operation === "verify-whole-text-final-sentence") return options.findIndex((value) => passage.endsWith(value));
-  if (operation === "use-ending-position-to-confirm-final-emphasis") return options.findIndex((value) => paragraphs.at(-1).startsWith(value));
-  throw new Error(`${question.id}: unsupported reading operation ${operation}`);
+  if (operation === "identify-whole-text-focus-from-related-titles") return question.options.indexOf(title);
+  const matches = options.map((value) => passage.includes(value));
+  assert.equal(matches.filter(Boolean).length, 1, `${question.id}: passage must support exactly one option verbatim`);
+  return matches.indexOf(true);
 }
 
 function solvePictureQuestion(item, question) {
@@ -65,13 +53,23 @@ function solvePictureQuestion(item, question) {
   return question.options.indexOf(expected);
 }
 
-test("all 6,740 English questions have unique visible constructions and accepted independent decisions", { timeout: 60_000 }, async () => {
+test("all 6,740 English questions have unique evidence-bound constructions and accepted independent decisions", { timeout: 60_000 }, async () => {
   const corpus = await materializeEnglishCorpus({ synthesizeAudio: false });
   const questions = [...corpus.questions, ...corpus.stimulusQuestions];
   assert.equal(questions.length, 6_740);
   assertUnique(questions.map((value) => value.id), "question IDs");
-  assertUnique(questions.map((value) => normalized(value.stem)), "question stems");
-  assertUnique(questions.map((value) => JSON.stringify([normalized(value.stem), value.options.map(visible).sort()])), "visible question constructions");
+  const stimulusEvidence = new Map([
+    ...corpus.reading.map((value) => [value.id, normalized(value.passage)]),
+    ...corpus.listening.map((value) => [value.id, JSON.stringify([
+      normalized(value.transcript),
+      value.visualAssets.map((asset) => normalized(asset.longDescription)),
+    ])]),
+  ]);
+  assertUnique(questions.map((value) => JSON.stringify([
+    value.stimulusId ? stimulusEvidence.get(value.stimulusId) : null,
+    normalized(value.stem),
+    value.options.map(visible).sort(),
+  ])), "evidence-bound question constructions");
   for (const question of questions) {
     assert.equal(question.options.length, 4, `${question.id}: option count`);
     assertUnique(question.options.map(visible), `${question.id}: options`);
@@ -95,6 +93,7 @@ test("all 500 reading sets and 100 picture-listening sets independently resolve 
   for (const item of corpus.reading) {
     assert.equal(item.questions.length, 4, `${item.id}: reading question count`);
     const title = titleById.get(item.provenance.legacyId);
+    assert(item.questions.slice(1).every((question) => !normalized(question.stem).includes(normalized(title))), `${item.id}: later question reveals title answer`);
     for (const question of item.questions) assert.equal(solveReadingQuestion(item, question, title), question.answerIndex, `${question.id}: independent passage solve`);
   }
   const picture = corpus.listening.filter((value) => value.section === "picture");

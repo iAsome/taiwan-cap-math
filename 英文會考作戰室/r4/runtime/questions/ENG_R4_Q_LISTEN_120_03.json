@@ -42,11 +42,11 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_120",
-  "stem": "In Listening Set 120, what decision or next action do the speakers reach?",
+  "stem": "This talk happens while both speakers have time to make a change. What action or decision is reached by the end?",
   "options": [
-    "Jack will miss tomorrow as well",
-    "Cora will delete every note",
-    "Jack will buy a new uniform",
+    "Cora will send Jack the notes tomorrow morning",
+    "Jack will ask another student for the notes",
+    "Cora will send only the practice time",
     "Cora will send Jack the notes tonight"
   ],
   "answerIndex": 3,
@@ -54,22 +54,22 @@
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "Jack will miss tomorrow as well：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "Cora will send Jack the notes tomorrow morning：此項把「tonight」改成「tomorrow morning」。對話結尾確認「Cora will send Jack the notes tonight」。因此，鎖定證據支持「Cora will send Jack the notes tonight」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "Cora will delete every note：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "Jack will ask another student for the notes：此項把「Cora will send Jack the notes tonight」改成「Jack will ask another student for the notes」。對話結尾確認「Cora will send Jack the notes tonight」。因此，鎖定證據支持「Cora will send Jack the notes tonight」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "Jack will buy a new uniform：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "Cora will send only the practice time：此項把「Jack the notes tonight」改成「only the practice time」。對話結尾確認「Cora will send Jack the notes tonight」。因此，鎖定證據支持「Cora will send Jack the notes tonight」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "Cora will send Jack the notes tonight：最後兩輪共同確認 Cora will send Jack the notes tonight。"
+      "reason": "Cora will send Jack the notes tonight：完整逐字稿明確支持此項。對話結尾確認「Cora will send Jack the notes tonight」。"
     }
   ],
   "difficulty": "standard",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-integrate-dialogue-problem-and-decision",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「Cora will send Jack the notes tonight」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「Cora will send Jack the notes tonight」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「Cora will send Jack the notes tonight」成立。",
       "status": "pass"
     }
   ],

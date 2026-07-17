@@ -18,44 +18,44 @@
     "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_084",
-  "stem": "In Reading Set 084, which selected line appears latest in the paragraph sequence?",
+  "stem": "What happens next in this passage after “Some pictures looked like flowers.”?",
   "options": [
-    "On a rainy day, art teacher Ms. Lin asked her students to paint without brushes. She gave them",
-    "Students put drops of color on the paper and placed the paper outside for ten seconds. Rain hit",
-    "Some pictures looked like flowers. Others looked like rivers or fireworks. No two paintings were the same.",
-    "A student said, \"But we did not control everything.\""
+    "Others said it looked like twisted metal and wasted money.",
+    "Others gave very short answers, like \"food\" or \"sleep.\"",
+    "Others felt the darker painting had looked more mysterious.",
+    "Others looked like rivers or fireworks."
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Others said it looked like twisted metal and wasted money.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Others gave very short answers, like 'food' or 'sleep.'」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Others felt the darker painting had looked more mysterious.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "這一行來自四個候選中的最晚段落。"
+      "reason": "本文可直接核對「Some pictures looked like flowers. Others looked like rivers or fireworks.」，所以這個選項符合完整語境。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "identify-latest-selected-paragraph"
+    "track-event-or-idea-sequence-from-content-anchor"
   ],
-  "representationType": "reading-sequence-latest-4",
+  "representationType": "reading-content-sequence",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
@@ -79,13 +79,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「Some pictures looked like flowers. Others looked like rivers or fireworks.」，答案為「Others looked like rivers or fireworks.」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「Others looked like rivers or fireworks.」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

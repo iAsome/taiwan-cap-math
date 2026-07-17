@@ -35,60 +35,64 @@
       "translation": "記憶"
     },
     {
-      "word": "predict",
-      "translation": "預測"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "central",
-      "translation": "中央的"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
-      "word": "content",
-      "translation": "內容"
+      "word": "passage",
+      "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "accurately",
-      "translation": "正確的, 精確的"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "border",
-      "translation": "邊界；國界"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "restored",
-      "translation": "修復"
+      "word": "repair",
+      "translation": "修理, 修補；修理, 修補, 補救, 糾正"
     },
     {
-      "word": "digital",
-      "translation": "數位化"
+      "word": "researched",
+      "translation": "研究過的"
     },
     {
-      "word": "separate",
-      "translation": "分開"
+      "word": "harbor",
+      "translation": "港口"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "risky",
+      "translation": "有風險的"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "remained",
+      "translation": "保持, 逗留, 剩餘, 殘存"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "result",
+      "translation": "結果"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "final",
+      "translation": "最終的"
     },
     {
-      "word": "quotation",
-      "translation": "報價"
+      "word": "beauty",
+      "translation": "美貌;美人"
     },
     {
-      "word": "positioned",
-      "translation": "位置"
+      "word": "protect",
+      "translation": "保護"
+    },
+    {
+      "word": "forcing",
+      "translation": "強迫"
     }
   ],
   "questions": [
@@ -109,11 +113,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_194",
-      "stem": "In Reading Set 194, which heading would help a reader predict the central content most accurately?",
+      "stem": "Which title is best for the complete passage that includes “Lena's watch stopped at 3:17.”?",
       "options": [
-        "The Old Border",
-        "The Restored Song",
-        "The Digital Library Fine",
+        "The Old Ticket",
+        "The School Shoes",
+        "The Old Map Shop",
         "The Broken Watch"
       ],
       "answerIndex": 3,
@@ -121,32 +125,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Old Border」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Ticket」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Restored Song」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The School Shoes」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Digital Library Fine」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Map Shop」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Broken Watch: Lena's watch stopped at 3:17.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-4",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -167,13 +171,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Broken Watch」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Broken Watch: Lena's watch stopped at 3:17.」，答案為「The Broken Watch」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Broken Watch」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -183,90 +187,86 @@
       "id": "ENG_R4_Q_READ_194_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-6",
-        "AUTH-ENGLISH-LC-AE-4-8",
+        "AUTH-ENGLISH-LC-AE-4-5",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LC-D-4-3",
-        "AUTH-ENGLISH-LP-3-4-10",
-        "AUTH-ENGLISH-LP-3-4-12",
-        "AUTH-ENGLISH-LP-3-4-13",
+        "AUTH-ENGLISH-LP-1-4-7",
         "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-9-4-2",
-        "AUTH-ENGLISH-LP-9-4-3"
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_194",
-      "stem": "In Reading Set 194, how many separate paragraph blocks follow from the opening “Lena's watch stopped at 3:17. She planned to throw it away, but her brother said it looked nice”?",
+      "stem": "Which answer is supported by the passage that includes “Lena's watch stopped at 3:17.”?",
       "options": [
-        "5",
-        "7",
-        "6",
-        "4"
+        "A boy once asked him, \"Why repair old clocks Phones can tell time.\"",
+        "Students researched why their street was named Harbor Road, even though the sea was now far away.",
+        "He wore it even though it did not tell time.",
+        "Some risky areas remained the same, even though buildings had changed."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "5 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「A boy once asked him, 'Why repair old clocks Phones can tell time.'」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Students researched why their street was named Harbor Road, even though the sea was now far away.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "文章以換行鎖定為 6 個段落。"
+          "reason": "本文可直接核對「He wore it even though it did not tell time.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Some risky areas remained the same, even though buildings had changed.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-structure-count-4",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-6",
-          "AUTH-ENGLISH-LC-AE-4-8",
+          "AUTH-ENGLISH-LC-AE-4-5",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LC-D-4-3",
-          "AUTH-ENGLISH-LP-3-4-10",
-          "AUTH-ENGLISH-LP-3-4-12",
-          "AUTH-ENGLISH-LP-3-4-13",
+          "AUTH-ENGLISH-LP-1-4-7",
           "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-9-4-2",
-          "AUTH-ENGLISH-LP-9-4-3"
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 6 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「He wore it even though it did not tell time.」，答案為「He wore it even though it did not tell time.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「He wore it even though it did not tell time.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -292,44 +292,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_194",
-      "stem": "In Reading Set 194, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “He said, 'It reminds me that time is not only numbers.'”?",
       "options": [
-        "He said, \"It reminds me that time is not only numbers.\"",
-        "Lena thought this was silly until she learned that 3:17 was the time their family had arrived at",
-        "Lena's watch stopped at 3:17. She planned to throw it away, but her brother said it looked nice",
-        "He wore it even though it did not tell time. His friends asked why."
+        "On the first night, I wanted to go home because the room was dark and everyone was new.",
+        "Lena thought this was silly until she learned that 3:17 was the time their family had arrived at their new home years ago.",
+        "While the young man fixed the guitar, the old man told a short story about his band many years ago.",
+        "Grandpa thought for a long time and said, \"The number of the bus I took to meet your grandmother.\""
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「On the first night, I wanted to go home because the room was dark and everyone was new.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「He said, 'It reminds me that time is not only numbers.' Lena thought this was silly until she learned that 3:17 was…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「While the young man fixed the guitar, the old man told a short story about his band many…」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Grandpa thought for a long time and said, 'The number of the bus I took to meet your…」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-4",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -353,13 +353,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「He said, 'It reminds me that time is not only numbers.' Lena thought this was silly until she learned that 3:17 was the time…」，答案為「Lena thought this was silly until she learned that 3:17 was the time their family had arrived at…」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Lena thought this was silly until she learned that 3:17 was the time their family had arrived at…」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -369,7 +369,7 @@
       "id": "ENG_R4_Q_READ_194_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -382,44 +382,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_194",
-      "stem": "In Reading Set 194, which quotation is positioned at the opening of the last paragraph?",
+      "stem": "Which ending result or final point follows “It no longer measured passing time, but it marked one important moment.”?",
       "options": [
-        "It no longer measured passing time, but it marked one important moment. Sometimes an object stops working as",
-        "Lena's watch stopped at 3:17. She planned to throw it away, but her brother said it looked nice",
-        "He wore it even though it did not tell time. His friends asked why.",
-        "He said, \"It reminds me that time is not only numbers.\""
+        "Sometimes an object stops working as a tool and starts working as a memory.",
+        "Sometimes it is about working with what happens and finding beauty in the result.",
+        "Working with nature can sometimes protect people better than forcing nature into straight lines.",
+        "Sometimes an object becomes important because of the feelings people leave there."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 6 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「It no longer measured passing time, but it marked one important moment. Sometimes an object stops working as a tool and starts…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Sometimes it is about working with what happens and finding beauty in the result.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Working with nature can sometimes protect people better than forcing nature into straight lines.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Sometimes an object becomes important because of the feelings people leave there.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-4",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -440,13 +440,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 6 段，正確引文與第 6 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「It no longer measured passing time, but it marked one important moment. Sometimes an object stops working as a tool and starts working as…」，答案為「Sometimes an object stops working as a tool and starts working as a memory.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Sometimes an object stops working as a tool and starts working as a memory.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -456,7 +456,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

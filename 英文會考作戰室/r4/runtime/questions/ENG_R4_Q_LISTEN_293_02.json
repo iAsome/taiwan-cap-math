@@ -42,34 +42,34 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_293",
-  "stem": "In Listening Set 293, which detail is stated in the recording?",
+  "stem": "Please listen to this short update. Which detail is stated in the message?",
   "options": [
-    "the green scarf has three independent studies",
-    "the green scarf has a complete test table",
-    "the green scarf names two researchers",
-    "the green scarf claim has no test method or source"
+    "the green bottle claim names one test method but no source",
+    "the striped bottle claim has no test method or source",
+    "the green bottle claim has a source but no test conditions",
+    "the green bottle claim has no test method or source"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "the green scarf has three independent studies：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the green bottle claim names one test method but no source：此項把「has no test method or」改成「names one test method but no」。音稿明確陳述「the green bottle claim has no test method or source」。因此，鎖定證據支持「the green bottle claim has no test method or source」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "the green scarf has a complete test table：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the striped bottle claim has no test method or source：此項把「green」改成「striped」。音稿明確陳述「the green bottle claim has no test method or source」。因此，鎖定證據支持「the green bottle claim has no test method or source」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "the green scarf names two researchers：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the green bottle claim has a source but no test conditions：此項把「no test method or source」改成「a source but no test conditions」。音稿明確陳述「the green bottle claim has no test method or source」。因此，鎖定證據支持「the green bottle claim has no test method or source」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "the green scarf claim has no test method or source：音稿明確說出 the green scarf claim has no test method or source。"
+      "reason": "the green bottle claim has no test method or source：完整逐字稿明確支持此項。音稿明確陳述「the green bottle claim has no test method or source」。"
     }
   ],
   "difficulty": "standard",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-retrieve-spoken-detail",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「the green scarf claim has no test method or source」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「the green bottle claim has no test method or source」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「the green bottle claim has no test method or source」成立。",
       "status": "pass"
     }
   ],

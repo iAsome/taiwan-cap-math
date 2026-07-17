@@ -18,44 +18,44 @@
     "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_012",
-  "stem": "In Reading Set 012, which selected line appears latest in the paragraph sequence?",
+  "stem": "What happens next in this passage after “Everyone laughed, and Nancy wanted to quit.”?",
   "options": [
-    "Nancy was chosen to play a queen in the school play. She was excited until she saw the",
-    "\"You can still wear them,\" said her friend May. \"Queens walk slowly anyway.\"",
-    "During practice, Nancy tried to walk like a queen, but the shoes kept slipping off. Everyone laughed, and",
-    "That evening, her grandmother gave her a pair of plain black shoes. \"A queen is not great because"
+    "The school required black shoes, but Leo's family could not buy a new pair right away.",
+    "Grandpa always kept an old pair of running shoes by the door.",
+    "Each pair of shoes had a note: \"A student should be able to walk here safely.\"",
+    "That evening, her grandmother gave her a pair of plain black shoes."
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「The school required black shoes, but Leo's family could not buy a new pair right away.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Grandpa always kept an old pair of running shoes by the door.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Each pair of shoes had a note: 'A student should be able to walk here safely.'」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "這一行來自四個候選中的最晚段落。"
+      "reason": "本文可直接核對「Everyone laughed, and Nancy wanted to quit. That evening, her grandmother gave her a pair of plain black shoes.」，所以這個選項符合完整語境。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "identify-latest-selected-paragraph"
+    "track-event-or-idea-sequence-from-content-anchor"
   ],
-  "representationType": "reading-sequence-latest-2",
+  "representationType": "reading-content-sequence",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
@@ -79,13 +79,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「Everyone laughed, and Nancy wanted to quit. That evening, her grandmother gave her a pair of plain black shoes.」，答案為「That evening, her grandmother gave her a pair of plain black shoes.」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「That evening, her grandmother gave her a pair of plain black shoes.」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

@@ -43,52 +43,44 @@
       "translation": "信任"
     },
     {
-      "word": "predict",
-      "translation": "預測"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "central",
-      "translation": "中央的"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
-      "word": "content",
-      "translation": "內容"
+      "word": "passage",
+      "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "accurately",
-      "translation": "正確的, 精確的"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "tiny",
-      "translation": "微小的"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "separate",
-      "translation": "分開"
+      "word": "ceiling",
+      "translation": "天花板"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "result",
+      "translation": "結果"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "final",
+      "translation": "最終的"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "retired",
+      "translation": "退休了"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
-    },
-    {
-      "word": "quotation",
-      "translation": "報價"
-    },
-    {
-      "word": "positioned",
-      "translation": "位置"
+      "word": "kindness",
+      "translation": "仁慈"
     }
   ],
   "questions": [
@@ -109,11 +101,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_014",
-      "stem": "In Reading Set 014, which heading would help a reader predict the central content most accurately?",
+      "stem": "Which title is best for the complete passage that includes “Mandy's cat, Cookie, became famous online by accident.”?",
       "options": [
-        "The Postcard Wall",
-        "The Tiny Museum",
-        "The Old Train Line",
+        "Smile Class",
+        "The Last Piece of Cake",
+        "The Old Camera",
         "The Online Star"
       ],
       "answerIndex": 3,
@@ -121,32 +113,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Postcard Wall」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「Smile Class」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Tiny Museum」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Last Piece of Cake」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Old Train Line」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Camera」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Online Star: Mandy's cat, Cookie, became famous online by accident.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-4",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -167,13 +159,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Online Star」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Online Star: Mandy's cat, Cookie, became famous online by accident.」，答案為「The Online Star」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Online Star」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -183,90 +175,86 @@
       "id": "ENG_R4_Q_READ_014_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-6",
-        "AUTH-ENGLISH-LC-AE-4-8",
+        "AUTH-ENGLISH-LC-AE-4-5",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LC-D-4-3",
-        "AUTH-ENGLISH-LP-3-4-10",
-        "AUTH-ENGLISH-LP-3-4-12",
-        "AUTH-ENGLISH-LP-3-4-13",
+        "AUTH-ENGLISH-LP-1-4-7",
         "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-9-4-2",
-        "AUTH-ENGLISH-LP-9-4-3"
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_014",
-      "stem": "In Reading Set 014, how many separate paragraph blocks follow from the opening “Mandy's cat, Cookie, became famous online by accident. Mandy posted a short video of Cookie opening a drawer”?",
+      "stem": "Which answer is supported by the passage that includes “Mandy's cat, Cookie, became famous online by accident.”?",
       "options": [
-        "6",
-        "7",
-        "5",
-        "4"
+        "Their dog, Lucky, was sleeping under the table with chocolate on his nose.",
+        "The classroom became quiet again, but the students missed the bird a little.",
+        "Cookie eating, Cookie sleeping, Cookie sitting in a box-everything became a video.",
+        "Before sleeping, they watch a short movie about stars on the museum ceiling."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "6 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Their dog, Lucky, was sleeping under the table with chocolate on his nose.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「The classroom became quiet again, but the students missed the bird a little.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "文章以換行鎖定為 5 個段落。"
+          "reason": "本文可直接核對「Cookie eating, Cookie sleeping, Cookie sitting in a box-everything became a video.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Before sleeping, they watch a short movie about stars on the museum ceiling.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-structure-count-4",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-6",
-          "AUTH-ENGLISH-LC-AE-4-8",
+          "AUTH-ENGLISH-LC-AE-4-5",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LC-D-4-3",
-          "AUTH-ENGLISH-LP-3-4-10",
-          "AUTH-ENGLISH-LP-3-4-12",
-          "AUTH-ENGLISH-LP-3-4-13",
+          "AUTH-ENGLISH-LP-1-4-7",
           "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-9-4-2",
-          "AUTH-ENGLISH-LP-9-4-3"
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Cookie eating, Cookie sleeping, Cookie sitting in a box-everything became a video.」，答案為「Cookie eating, Cookie sleeping, Cookie sitting in a box-everything became a video.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Cookie eating, Cookie sleeping, Cookie sitting in a box-everything became a video.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -292,44 +280,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_014",
-      "stem": "In Reading Set 014, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “At first, Mandy was happy.”?",
       "options": [
-        "After a few weeks, Cookie started hiding whenever Mandy picked up her phone. Mandy's brother said, \"Maybe Cookie",
-        "Mandy felt bad. She deleted some videos and stopped filming Cookie all the time. Now she only takes",
-        "Mandy's cat, Cookie, became famous online by accident. Mandy posted a short video of Cookie opening a drawer",
-        "At first, Mandy was happy. She filmed Cookie every day. Cookie eating, Cookie sleeping, Cookie sitting in a"
+        "But he no longer needed it every day.",
+        "She filmed Cookie every day.",
+        "\"Do it for one minute every day.\"",
+        "After that, it came back every day, waiting."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「But he no longer needed it every day.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「At first, Mandy was happy. She filmed Cookie every day.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「'Do it for one minute every day.'」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「After that, it came back every day, waiting.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-4",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -353,13 +341,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「At first, Mandy was happy. She filmed Cookie every day.」，答案為「She filmed Cookie every day.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「She filmed Cookie every day.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -369,7 +357,7 @@
       "id": "ENG_R4_Q_READ_014_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -382,44 +370,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_014",
-      "stem": "In Reading Set 014, which quotation is positioned at the opening of the last paragraph?",
+      "stem": "Which ending result or final point follows “Now she only takes pictures when Cookie is relaxed, and she never wakes him up for a video.”?",
       "options": [
-        "Mandy learned that likes from strangers are exciting, but they are not more important than the comfort of",
-        "Mandy's cat, Cookie, became famous online by accident. Mandy posted a short video of Cookie opening a drawer",
-        "At first, Mandy was happy. She filmed Cookie every day. Cookie eating, Cookie sleeping, Cookie sitting in a",
-        "After a few weeks, Cookie started hiding whenever Mandy picked up her phone. Mandy's brother said, \"Maybe Cookie"
+        "Mandy learned that likes from strangers are exciting, but they are not more important than the comfort of someone who trusts you-even if that someone is a cat.",
+        "The retired teacher says the red door is important because it tells children one thing before they even enter: stories are waiting for you.",
+        "Still, people remembered the small one because it had shown a quiet kind of kindness: making room for others even when it costs comfort.",
+        "Rules were still important, but the school learned that rules should leave room for understanding people's real lives."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「Now she only takes pictures when Cookie is relaxed, and she never wakes him up for a video. Mandy learned that likes…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「The retired teacher says the red door is important because it tells children one thing before they even…」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Still, people remembered the small one because it had shown a quiet kind of kindness: making room for…」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Rules were still important, but the school learned that rules should leave room for understanding people's real lives.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-4",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -440,13 +428,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Now she only takes pictures when Cookie is relaxed, and she never wakes him up for a video. Mandy learned that likes from strangers…」，答案為「Mandy learned that likes from strangers are exciting, but they are not more important than the comfort of…」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Mandy learned that likes from strangers are exciting, but they are not more important than the comfort of…」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -456,7 +444,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

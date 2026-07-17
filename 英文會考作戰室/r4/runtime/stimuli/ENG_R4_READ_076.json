@@ -19,64 +19,56 @@
       "translation": "事實;真相"
     },
     {
-      "word": "broad",
-      "translation": "寬廣的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "paragraphs",
-      "translation": "段落"
-    },
-    {
-      "word": "broader",
-      "translation": "寬廣的"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "reused",
-      "translation": "重複使用"
-    },
-    {
-      "word": "stadium",
-      "translation": "露天大型運動場"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "contains",
+      "word": "includes",
       "translation": "包含"
     },
     {
-      "word": "exact",
-      "translation": "準確的"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "blame",
+      "translation": "歸咎於"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "extra",
+      "translation": "額外的;附加的人物或錢;號外"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "result",
+      "translation": "結果"
     },
     {
-      "word": "excerpt",
-      "translation": "摘錄"
+      "word": "final",
+      "translation": "最終的"
     },
     {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
+      "word": "society",
+      "translation": "社會"
+    },
+    {
+      "word": "rare",
+      "translation": "稀有的"
+    },
+    {
+      "word": "effort",
+      "translation": "努力"
+    },
+    {
+      "word": "difficulty",
+      "translation": "困難"
     }
   ],
   "questions": [
@@ -97,44 +89,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_076",
-      "stem": "In Reading Set 076, which heading is broad enough for all paragraphs but not broader than the text?",
+      "stem": "Which title is best for the complete passage that includes “A fruit stand near the bus stop sells bananas, apples, and oranges.”?",
       "options": [
-        "The Reused Stadium",
+        "The Store Without Prices",
         "The Fruit Stand",
-        "The Moon Festival Box",
-        "The School Gate Flowers"
+        "The Door That Stayed Open",
+        "The Quiet Bell"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Reused Stadium」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Store Without Prices」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Fruit Stand: A fruit stand near the bus stop sells bananas, apples, and oranges.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Moon Festival Box」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Door That Stayed Open」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The School Gate Flowers」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Quiet Bell」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-6",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -155,13 +147,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Fruit Stand」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Fruit Stand: A fruit stand near the bus stop sells bananas, apples, and oranges.」，答案為「The Fruit Stand」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Fruit Stand」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -171,7 +163,7 @@
       "id": "ENG_R4_Q_READ_076_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -185,44 +177,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_076",
-      "stem": "In Reading Set 076, while checking the passage, which paragraph contains the exact line “Mrs. Lin says people and fruit are sometimes judged too quickly by appearance. A mark on the outside”?",
+      "stem": "Which answer is supported by the passage that includes “A fruit stand near the bus stop sells bananas, apples, and oranges.”?",
       "options": [
-        "Paragraph 4",
-        "Paragraph 1",
-        "Paragraph 2",
-        "Paragraph 3"
+        "At first, people did not buy it.",
+        "First, do not blame people too quickly.",
+        "At first, people did not notice it.",
+        "Sometimes a small change helps more people than we first think."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 4 段開頭。"
+          "reason": "本文可直接核對「At first, people did not buy it.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「First, do not blame people too quickly.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "第 2 段沒有這一行。"
+          "reason": "本文沒有陳述「At first, people did not notice it.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「Sometimes a small change helps more people than we first think.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-1",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -244,13 +236,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：引文與第 4 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「At first, people did not buy it.」，答案為「At first, people did not buy it.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「At first, people did not buy it.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -276,44 +268,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_076",
-      "stem": "In Reading Set 076, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “They thought ugly fruit must taste bad.”?",
       "options": [
-        "A fruit stand near the bus stop sells bananas, apples, and oranges. The owner, Mrs. Lin, always places",
-        "The fruit in the basket may have strange shapes or small marks, but it is still good to",
-        "One day, Mrs. Lin cut an ugly apple into pieces and let customers try it. It was sweet",
-        "Mrs. Lin says people and fruit are sometimes judged too quickly by appearance. A mark on the outside"
+        "The next day, Ravi brought a small extra piece for anyone who wanted to try.",
+        "On the first day, Tom helped clean tables and bring water to customers.",
+        "Every day, Mr. Lin took the train to work.",
+        "One day, Mrs. Lin cut an ugly apple into pieces and let customers try it."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The next day, Ravi brought a small extra piece for anyone who wanted to try.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「On the first day, Tom helped clean tables and bring water to customers.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Every day, Mr. Lin took the train to work.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「They thought ugly fruit must taste bad. One day, Mrs. Lin cut an ugly apple into pieces and let customers try it.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-1",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -337,13 +329,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「They thought ugly fruit must taste bad. One day, Mrs. Lin cut an ugly apple into pieces and let customers try it.」，答案為「One day, Mrs. Lin cut an ugly apple into pieces and let customers try it.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「One day, Mrs. Lin cut an ugly apple into pieces and let customers try it.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -366,44 +358,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_076",
-      "stem": "In Reading Set 076, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “Mrs. Lin says people and fruit are sometimes judged too quickly by appearance.”?",
       "options": [
-        "still good to eat. At first, people did not buy it. They thought ugly fruit must taste bad.",
-        "into pieces and let customers try it. It was sweet and fresh. After that, the basket became popular.",
-        "quickly by appearance. A mark on the outside does not always tell the truth about what is inside.",
-        "owner, Mrs. Lin, always places a small basket on the side. The sign says, \"Ugly fruit, half price.\""
+        "Sometimes it is a sign that people care about different parts of the same story.",
+        "It was about how society decides what is rare in a world of easy copies.",
+        "A mark on the outside does not always tell the truth about what is inside.",
+        "It was also about understanding effort, difficulty, and the people who made the week easier."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Sometimes it is a sign that people care about different parts of the same story.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「It was about how society decides what is rare in a world of easy copies.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「Mrs. Lin says people and fruit are sometimes judged too quickly by appearance. A mark on the outside does not always tell…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「It was also about understanding effort, difficulty, and the people who made the week easier.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -424,13 +416,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Mrs. Lin says people and fruit are sometimes judged too quickly by appearance. A mark on the outside does not always tell the truth…」，答案為「A mark on the outside does not always tell the truth about what is inside.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「A mark on the outside does not always tell the truth about what is inside.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -440,7 +432,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

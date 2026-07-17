@@ -42,34 +42,34 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_240",
-  "stem": "In Listening Set 240, which detail is stated in the recording?",
+  "stem": "Listen to this report before making a decision. Which detail is stated in the message?",
   "options": [
-    "science room",
-    "bookstore",
-    "the river bridge",
-    "the airport"
+    "use the stop beside the science room on next Friday",
+    "use the stop beside the bookstore on next Friday",
+    "use the stop beside the science room on Tuesday",
+    "use the stop beside the station on next Friday"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "science room：音稿明確說出 science room。"
+      "reason": "use the stop beside the science room on next Friday：完整逐字稿明確支持此項。音稿明確陳述「use the stop beside the science room on next Friday」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "bookstore：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "use the stop beside the bookstore on next Friday：此項把「science room」改成「bookstore」。音稿明確陳述「use the stop beside the science room on next Friday」。因此，鎖定證據支持「use the stop beside the science room on next Friday」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "the river bridge：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "use the stop beside the science room on Tuesday：此項把「next Friday」改成「Tuesday」。音稿明確陳述「use the stop beside the science room on next Friday」。因此，鎖定證據支持「use the stop beside the science room on next Friday」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "the airport：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "use the stop beside the station on next Friday：此項把「science room」改成「station」。音稿明確陳述「use the stop beside the science room on next Friday」。因此，鎖定證據支持「use the stop beside the science room on next Friday」。"
     }
   ],
   "difficulty": "foundation",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-retrieve-spoken-detail",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「science room」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「use the stop beside the science room on next Friday」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 0,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「use the stop beside the science room on next Friday」成立。",
       "status": "pass"
     }
   ],

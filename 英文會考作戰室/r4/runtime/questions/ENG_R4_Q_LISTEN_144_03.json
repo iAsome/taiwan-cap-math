@@ -42,11 +42,11 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_144",
-  "stem": "In Listening Set 144, what decision or next action do the speakers reach?",
+  "stem": "The speakers have just checked the class notice. What action or decision is reached by the end?",
   "options": [
-    "Dylan chooses the smaller notebook",
-    "Dylan leaves without a notebook",
-    "Dylan buys a pocket only",
+    "Dylan chooses the smaller blue notebook",
+    "Dylan waits before choosing a notebook",
+    "Dylan buys a pocket without a notebook",
     "Dylan chooses the larger notebook"
   ],
   "answerIndex": 3,
@@ -54,22 +54,22 @@
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "Dylan chooses the smaller notebook：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "Dylan chooses the smaller blue notebook：此項把「larger」改成「smaller blue」。對話結尾確認「Dylan chooses the larger notebook」。因此，鎖定證據支持「Dylan chooses the larger notebook」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "Dylan leaves without a notebook：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "Dylan waits before choosing a notebook：此項把「chooses the larger」改成「waits before choosing a」。對話結尾確認「Dylan chooses the larger notebook」。因此，鎖定證據支持「Dylan chooses the larger notebook」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "Dylan buys a pocket only：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "Dylan buys a pocket without a notebook：此項把「chooses the larger」改成「buys a pocket without a」。對話結尾確認「Dylan chooses the larger notebook」。因此，鎖定證據支持「Dylan chooses the larger notebook」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "Dylan chooses the larger notebook：最後兩輪共同確認 Dylan chooses the larger notebook。"
+      "reason": "Dylan chooses the larger notebook：完整逐字稿明確支持此項。對話結尾確認「Dylan chooses the larger notebook」。"
     }
   ],
   "difficulty": "standard",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-integrate-dialogue-problem-and-decision",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「Dylan chooses the larger notebook」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「Dylan chooses the larger notebook」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「Dylan chooses the larger notebook」成立。",
       "status": "pass"
     }
   ],

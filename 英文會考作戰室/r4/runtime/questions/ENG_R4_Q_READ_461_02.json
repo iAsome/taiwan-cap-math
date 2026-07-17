@@ -2,90 +2,86 @@
   "id": "ENG_R4_Q_READ_461_02",
   "subject": "english",
   "skillIds": [
-    "ENG_R4_S278"
+    "ENG_R4_S250"
   ],
   "authorityRefs": [
-    "AUTH-ENGLISH-LC-AE-4-6",
-    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-AE-4-5",
     "AUTH-ENGLISH-LC-D-4-2",
-    "AUTH-ENGLISH-LC-D-4-3",
-    "AUTH-ENGLISH-LP-3-4-10",
-    "AUTH-ENGLISH-LP-3-4-12",
-    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-1-4-7",
     "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
     "AUTH-ENGLISH-LP-3-4-9",
-    "AUTH-ENGLISH-LP-9-4-2",
-    "AUTH-ENGLISH-LP-9-4-3"
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
   ],
   "stimulusId": "ENG_R4_READ_461",
-  "stem": "In Reading Set 461, how many paragraphs organize the passage that begins “A baker worked with historians to recreate bread from an old recipe. The grain was rough, and the”?",
+  "stem": "Which answer is supported by the passage that includes “A baker worked with historians to recreate bread from an old recipe.”?",
   "options": [
-    "4",
-    "5",
-    "7",
-    "6"
+    "Students visited during a civics lesson.",
+    "For history class, students created a small museum in their classroom.",
+    "Students visited the museum and saw the coin under bright light.",
+    "Students tasted it during a museum visit."
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "4 與鎖定文本的實際段落數不符。"
+      "reason": "本文沒有陳述「Students visited during a civics lesson.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "5 與鎖定文本的實際段落數不符。"
+      "reason": "本文沒有陳述「For history class, students created a small museum in their classroom.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "7 與鎖定文本的實際段落數不符。"
+      "reason": "本文沒有陳述「Students visited the museum and saw the coin under bright light.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "文章以換行鎖定為 6 個段落。"
+      "reason": "本文可直接核對「Students tasted it during a museum visit.」，所以這個選項符合完整語境。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "count-locked-paragraph-blocks"
+    "distinguish-supported-detail-from-related-near-misses"
   ],
-  "representationType": "reading-structure-count-1",
+  "representationType": "reading-supported-detail",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 English content author",
     "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
     "sourceRefs": [
-      "AUTH-ENGLISH-LC-AE-4-6",
-      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-AE-4-5",
       "AUTH-ENGLISH-LC-D-4-2",
-      "AUTH-ENGLISH-LC-D-4-3",
-      "AUTH-ENGLISH-LP-3-4-10",
-      "AUTH-ENGLISH-LP-3-4-12",
-      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-1-4-7",
       "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
       "AUTH-ENGLISH-LP-3-4-9",
-      "AUTH-ENGLISH-LP-9-4-2",
-      "AUTH-ENGLISH-LP-9-4-3"
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
     ]
   },
   "independentReviews": [
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立解答核對：以換行分段重新計數得到 6 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「Students tasted it during a museum visit.」，答案為「Students tasted it during a museum visit.」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「Students tasted it during a museum visit.」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

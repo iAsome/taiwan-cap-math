@@ -51,68 +51,88 @@
       "translation": "連接, 關係, 接線, 線路, 親戚"
     },
     {
-      "word": "broad",
-      "translation": "寬廣的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "paragraphs",
-      "translation": "段落"
-    },
-    {
-      "word": "broader",
-      "translation": "寬廣的"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "diary",
-      "translation": "日記"
-    },
-    {
-      "word": "password",
-      "translation": "密碼, 口令"
-    },
-    {
-      "word": "path",
-      "translation": "小徑;路線"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "contains",
+      "word": "includes",
       "translation": "包含"
     },
     {
-      "word": "exact",
-      "translation": "準確的"
+      "word": "lighthouse",
+      "translation": "燈塔"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "technology",
+      "translation": "科技"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "maritime",
+      "translation": "海事的"
     },
     {
-      "word": "quoted",
-      "translation": "引用, 引證, 提供, 提出, 報(價)"
+      "word": "data",
+      "translation": "數據"
+    },
+    {
+      "word": "scientists",
+      "translation": "科學家"
+    },
+    {
+      "word": "migration",
+      "translation": "遷徙；移民"
+    },
+    {
+      "word": "justice",
+      "translation": "正義；司法"
+    },
+    {
+      "word": "improves",
+      "translation": "改善"
+    },
+    {
+      "word": "tank",
+      "translation": "槽;坦克"
+    },
+    {
+      "word": "loss",
+      "translation": "損失"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
     },
     {
       "word": "final",
       "translation": "最終的"
+    },
+    {
+      "word": "memory",
+      "translation": "記憶"
+    },
+    {
+      "word": "reflects",
+      "translation": "反射；反映"
+    },
+    {
+      "word": "responsibility",
+      "translation": "責任"
+    },
+    {
+      "word": "connects",
+      "translation": "連接, 聯合, 關連"
     }
   ],
   "questions": [
@@ -133,11 +153,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_406",
-      "stem": "In Reading Set 406, which heading is broad enough for all paragraphs but not broader than the text?",
+      "stem": "Which title is best for the complete passage that includes “An abandoned border station became a museum after two neighboring countries opened easier travel between them.”?",
       "options": [
-        "The Old Weather Diary",
-        "Grandpa's Password",
-        "The New Park Path",
+        "The Old Train Line",
+        "The Old Lighthouse",
+        "The Old Map Shop",
         "The Old Border Station"
       ],
       "answerIndex": 3,
@@ -145,32 +165,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Old Weather Diary」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Train Line」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「Grandpa's Password」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Lighthouse」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The New Park Path」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Map Shop」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Old Border Station: An abandoned border station became a museum after two neighboring countries opened easier travel between them.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-6",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -191,13 +211,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Old Border Station」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Old Border Station: An abandoned border station became a museum after two neighboring countries opened easier travel between them.」，答案為「The Old Border Station」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Old Border Station」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -207,7 +227,7 @@
       "id": "ENG_R4_Q_READ_406_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -221,44 +241,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_406",
-      "stem": "In Reading Set 406, while checking the passage, which paragraph contains the exact line “Inside were old desks, stamps, signs, and waiting-room benches. Visitors could see how people once had to line”?",
+      "stem": "Which answer is supported by the passage that includes “An abandoned border station became a museum after two neighboring countries opened easier travel between them.”?",
       "options": [
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 2",
-        "Paragraph 1"
+        "The guide explained that technology had changed, but the lighthouse still helped people understand maritime history.",
+        "The nurse helped him make a simple plan.",
+        "It helped them understand movement, control, and change.",
+        "The data helped scientists understand changes in migration."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「The guide explained that technology had changed, but the lighthouse still helped people understand maritime history.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「The nurse helped him make a simple plan.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 2 段開頭。"
+          "reason": "本文可直接核對「It helped them understand movement, control, and change.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「The data helped scientists understand changes in migration.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-1",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -280,13 +300,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：引文與第 2 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「It helped them understand movement, control, and change.」，答案為「It helped them understand movement, control, and change.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「It helped them understand movement, control, and change.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -312,44 +332,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_406",
-      "stem": "In Reading Set 406, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “A student asked why the museum kept a place connected to separation.”?",
       "options": [
-        "A student asked why the museum kept a place connected to separation.",
-        "The guide said borders shape lives. When they become easier to cross, people should remember what crossing once",
-        "An abandoned border station became a museum after two neighboring countries opened easier travel between them.",
-        "Inside were old desks, stamps, signs, and waiting-room benches. Visitors could see how people once had to line"
+        "The guide said, \"Because justice improves only when people remember where it failed.\"",
+        "The guide said borders shape lives.",
+        "The guide pointed to the tank and said many lives are connected in ways people do not see.",
+        "The guide said every migration story includes both hope and loss."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The guide said, 'Because justice improves only when people remember where it failed.'」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「A student asked why the museum kept a place connected to separation. The guide said borders shape lives.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The guide pointed to the tank and said many lives are connected in ways people do not see.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The guide said every migration story includes both hope and loss.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-1",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -373,13 +393,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「A student asked why the museum kept a place connected to separation. The guide said borders shape lives.」，答案為「The guide said borders shape lives.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The guide said borders shape lives.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -389,7 +409,7 @@
       "id": "ENG_R4_Q_READ_406_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -402,44 +422,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_406",
-      "stem": "In Reading Set 406, which quoted line opens the final paragraph?",
+      "stem": "Which ending result or final point follows “The station no longer stopped travelers.”?",
       "options": [
         "A building that once divided people can later teach them about connection.",
-        "An abandoned border station became a museum after two neighboring countries opened easier travel between them.",
-        "Inside were old desks, stamps, signs, and waiting-room benches. Visitors could see how people once had to line",
-        "A student asked why the museum kept a place connected to separation."
+        "It can hold the memory of what a place once believed about itself.",
+        "How people say goodbye reflects what they believe about life, nature, and responsibility.",
+        "People enter more easily when the door connects to something they already care about."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 6 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「The station no longer stopped travelers. A building that once divided people can later teach them about connection.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「It can hold the memory of what a place once believed about itself.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「How people say goodbye reflects what they believe about life, nature, and responsibility.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「People enter more easily when the door connects to something they already care about.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-1",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -460,13 +480,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 6 段，正確引文與第 6 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The station no longer stopped travelers. A building that once divided people can later teach them about connection.」，答案為「A building that once divided people can later teach them about connection.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「A building that once divided people can later teach them about connection.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -476,7 +496,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

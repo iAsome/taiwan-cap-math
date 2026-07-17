@@ -2,86 +2,90 @@
   "id": "ENG_R4_Q_READ_321_03",
   "subject": "english",
   "skillIds": [
-    "ENG_R4_S254"
+    "ENG_R4_S273"
   ],
   "authorityRefs": [
-    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
     "AUTH-ENGLISH-LC-D-4-2",
-    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
     "AUTH-ENGLISH-LP-3-4-14",
-    "AUTH-ENGLISH-LP-3-4-8",
     "AUTH-ENGLISH-LP-3-4-9",
-    "AUTH-ENGLISH-LP-5-4-7",
-    "AUTH-ENGLISH-LP-5-4-8",
-    "AUTH-ENGLISH-LP-5-4-9"
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_321",
-  "stem": "In Reading Set 321, which quoted line appears earliest in the passage?",
+  "stem": "What happens next in this passage after “Students studied why wild animals enter cities.”?",
   "options": [
-    "Students studied why wild animals enter cities. They found reasons such as habitat loss, food waste, and quiet",
-    "The fox became more than a cute video. It became a sign that human spaces and animal spaces",
-    "A fox was seen walking through a city neighborhood at night. Videos spread online, and many people were",
-    "Wildlife experts warned residents not to feed it. Feeding could make the fox depend on humans or lose"
+    "Students visited the compost center and saw food waste becoming dark soil.",
+    "They liked the food, but they also liked knowing that nothing was wasted.",
+    "They found reasons such as habitat loss, food waste, and quiet night streets.",
+    "They found food waste, plastic wrappers, paper, and many unfinished drinks."
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之後。"
+      "reason": "本文沒有陳述「Students visited the compost center and saw food waste becoming dark soil.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之後。"
+      "reason": "本文沒有陳述「They liked the food, but they also liked knowing that nothing was wasted.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "這一行來自四個候選中的最早段落。"
+      "reason": "本文可直接核對「Students studied why wild animals enter cities. They found reasons such as habitat loss, food waste, and quiet night streets.」，所以這個選項符合完整語境。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之後。"
+      "reason": "本文沒有陳述「They found food waste, plastic wrappers, paper, and many unfinished drinks.」；這個選項混入另一個情境的資訊。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "identify-earliest-selected-paragraph"
+    "track-event-or-idea-sequence-from-content-anchor"
   ],
-  "representationType": "reading-sequence-earliest-1",
+  "representationType": "reading-content-sequence",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 English content author",
     "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
     "sourceRefs": [
-      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
       "AUTH-ENGLISH-LC-D-4-2",
-      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
       "AUTH-ENGLISH-LP-3-4-14",
-      "AUTH-ENGLISH-LP-3-4-8",
       "AUTH-ENGLISH-LP-3-4-9",
-      "AUTH-ENGLISH-LP-5-4-7",
-      "AUTH-ENGLISH-LP-5-4-8",
-      "AUTH-ENGLISH-LP-5-4-9"
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
     ]
   },
   "independentReviews": [
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 1 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「Students studied why wild animals enter cities. They found reasons such as habitat loss, food waste, and quiet night streets.」，答案為「They found reasons such as habitat loss, food waste, and quiet night streets.」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「They found reasons such as habitat loss, food waste, and quiet night streets.」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

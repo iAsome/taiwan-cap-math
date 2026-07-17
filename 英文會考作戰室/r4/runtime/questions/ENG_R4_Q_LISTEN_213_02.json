@@ -42,34 +42,34 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_213",
-  "stem": "In Listening Set 213, which detail is stated in the recording?",
+  "stem": "Please listen to this short update. Which detail is stated in the message?",
   "options": [
-    "heavy rain before noon",
-    "heavy rain next month",
-    "heavy rain at sunrise only",
-    "heavy rain after ten o'clock"
+    "heavy rain is expected before one forty near the art room",
+    "heavy rain is expected after ten o'clock near the health center",
+    "light rain is expected after ten o'clock near the art room",
+    "heavy rain is expected after ten o'clock near the art room"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "heavy rain before noon：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "heavy rain is expected before one forty near the art room：此項把「after ten o'clock」改成「before one forty」。音稿明確陳述「heavy rain is expected after ten o'clock near the art room」。因此，鎖定證據支持「heavy rain is expected after ten o'clock near the art room」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "heavy rain next month：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "heavy rain is expected after ten o'clock near the health center：此項把「art room」改成「health center」。音稿明確陳述「heavy rain is expected after ten o'clock near the art room」。因此，鎖定證據支持「heavy rain is expected after ten o'clock near the art room」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "heavy rain at sunrise only：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "light rain is expected after ten o'clock near the art room：此項把「heavy」改成「light」。音稿明確陳述「heavy rain is expected after ten o'clock near the art room」。因此，鎖定證據支持「heavy rain is expected after ten o'clock near the art room」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "heavy rain after ten o'clock：音稿明確說出 heavy rain after ten o'clock。"
+      "reason": "heavy rain is expected after ten o'clock near the art room：完整逐字稿明確支持此項。音稿明確陳述「heavy rain is expected after ten o'clock near the art room」。"
     }
   ],
   "difficulty": "standard",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-retrieve-spoken-detail",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「heavy rain after ten o'clock」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「heavy rain is expected after ten o'clock near the art room」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「heavy rain is expected after ten o'clock near the art room」成立。",
       "status": "pass"
     }
   ],

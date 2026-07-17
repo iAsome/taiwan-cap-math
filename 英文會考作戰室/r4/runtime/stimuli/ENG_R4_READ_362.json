@@ -91,56 +91,104 @@
       "translation": "判斷"
     },
     {
-      "word": "accurate",
-      "translation": "正確的, 精確的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "overview",
-      "translation": "概述"
-    },
-    {
-      "word": "entire",
-      "translation": "整個"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "online",
-      "translation": "網路"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "exam",
-      "translation": "考試"
+      "word": "harbor",
+      "translation": "港口"
     },
     {
-      "word": "proctor",
-      "translation": "監考員"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "ancient",
-      "translation": "古代的"
+      "word": "justice",
+      "translation": "正義；司法"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "improves",
+      "translation": "改善"
     },
     {
-      "word": "receives",
-      "translation": "收到"
+      "word": "system",
+      "translation": "系統, 體系, 制度, 體制, 秩序, 規律, 方法"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "pretending",
+      "translation": "假裝, 裝扮, (作為藉口或理由)偽稱"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "communication",
+      "translation": "溝通；通訊"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "improved",
+      "translation": "改善"
+    },
+    {
+      "word": "simply",
+      "translation": "簡單地"
+    },
+    {
+      "word": "discovered",
+      "translation": "發現"
+    },
+    {
+      "word": "transparent",
+      "translation": "透明的"
+    },
+    {
+      "word": "gathered",
+      "translation": "集合"
+    },
+    {
+      "word": "emergency",
+      "translation": "緊急情況"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "comfort",
+      "translation": "舒適；安慰"
+    },
+    {
+      "word": "disappear",
+      "translation": "消失"
+    },
+    {
+      "word": "visible",
+      "translation": "可見的"
+    },
+    {
+      "word": "crops",
+      "translation": "農作物"
+    },
+    {
+      "word": "traits",
+      "translation": "特質"
+    },
+    {
+      "word": "conditions",
+      "translation": "條件, 情形, 環境, 社會地位"
     }
   ],
   "questions": [
@@ -161,11 +209,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_362",
-      "stem": "In Reading Set 362, which heading gives the most accurate overview of the entire passage?",
+      "stem": "Which title is best for the complete passage that includes “A town created an app for a walking tour of historic streets.”?",
       "options": [
-        "The Online Exam Proctor",
-        "The Ancient Library Fire",
-        "The Class Song",
+        "The Old Train Line",
+        "The Museum Guide",
+        "The Old Harbor",
         "The Old Town App"
       ],
       "answerIndex": 3,
@@ -173,32 +221,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Online Exam Proctor」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Train Line」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Ancient Library Fire」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Museum Guide」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Class Song」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Harbor」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Old Town App: A town created an app for a walking tour of historic streets.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-2",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -219,13 +267,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Old Town App」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Old Town App: A town created an app for a walking tour of historic streets.」，答案為「The Old Town App」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Old Town App」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -235,90 +283,86 @@
       "id": "ENG_R4_Q_READ_362_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-6",
-        "AUTH-ENGLISH-LC-AE-4-8",
+        "AUTH-ENGLISH-LC-AE-4-5",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LC-D-4-3",
-        "AUTH-ENGLISH-LP-3-4-10",
-        "AUTH-ENGLISH-LP-3-4-12",
-        "AUTH-ENGLISH-LP-3-4-13",
+        "AUTH-ENGLISH-LP-1-4-7",
         "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-9-4-2",
-        "AUTH-ENGLISH-LP-9-4-3"
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_362",
-      "stem": "In Reading Set 362, if each paragraph receives one note card, how many cards are needed for the passage beginning “A town created an app for a walking tour of historic streets. Visitors could hear stories when they”?",
+      "stem": "Which answer is supported by the passage that includes “A town created an app for a walking tour of historic streets.”?",
       "options": [
-        "5",
-        "7",
-        "6",
-        "4"
+        "They wanted people to stop throwing away things that could still be fixed.",
+        "The guide said, \"Because justice improves only when people remember where it failed.\"",
+        "The app was popular, but one guide worried people would stop joining human tours.",
+        "The best system knows when to stop pretending it understands and call a human."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "5 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「They wanted people to stop throwing away things that could still be fixed.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「The guide said, 'Because justice improves only when people remember where it failed.'」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "文章以換行鎖定為 6 個段落。"
+          "reason": "本文可直接核對「The app was popular, but one guide worried people would stop joining human tours.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「The best system knows when to stop pretending it understands and call a human.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-structure-count-2",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-6",
-          "AUTH-ENGLISH-LC-AE-4-8",
+          "AUTH-ENGLISH-LC-AE-4-5",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LC-D-4-3",
-          "AUTH-ENGLISH-LP-3-4-10",
-          "AUTH-ENGLISH-LP-3-4-12",
-          "AUTH-ENGLISH-LP-3-4-13",
+          "AUTH-ENGLISH-LP-1-4-7",
           "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-9-4-2",
-          "AUTH-ENGLISH-LP-9-4-3"
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 6 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The app was popular, but one guide worried people would stop joining human tours.」，答案為「The app was popular, but one guide worried people would stop joining human tours.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The app was popular, but one guide worried people would stop joining human tours.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -344,44 +388,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_362",
-      "stem": "In Reading Set 362, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “Many visitors used the app first, then joined a guide to ask deeper questions.”?",
       "options": [
-        "Instead, something different happened. Many visitors used the app first, then joined a guide to ask deeper questions.",
+        "The app taught the school that communication is not improved by simply sending more information.",
         "The guide realized the app gave basic information, while human guides gave conversation, humor, and local memory.",
-        "A town created an app for a walking tour of historic streets. Visitors could hear stories when they",
-        "The app was popular, but one guide worried people would stop joining human tours."
+        "Students discovered that some programs were transparent, while others gave little information.",
+        "Then the guide explained that families once gathered around radios for news, music, and emergency information."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The app taught the school that communication is not improved by simply sending more information.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「Many visitors used the app first, then joined a guide to ask deeper questions. The guide realized the app gave basic information,…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Students discovered that some programs were transparent, while others gave little information.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Then the guide explained that families once gathered around radios for news, music, and emergency information.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-2",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -405,13 +449,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Many visitors used the app first, then joined a guide to ask deeper questions. The guide realized the app gave basic information, while human…」，答案為「The guide realized the app gave basic information, while human guides gave conversation, humor, and local memory.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The guide realized the app gave basic information, while human guides gave conversation, humor, and local memory.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -421,7 +465,7 @@
       "id": "ENG_R4_Q_READ_362_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -434,44 +478,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_362",
-      "stem": "In Reading Set 362, at the start of the last paragraph, which selected line does the reader see?",
+      "stem": "Which ending result or final point follows “It changed what visitors expected from it.”?",
       "options": [
-        "Technology did not end the human tour. It changed what visitors expected from it. When basic facts are",
-        "A town created an app for a walking tour of historic streets. Visitors could hear stories when they",
-        "The app was popular, but one guide worried people would stop joining human tours.",
-        "Instead, something different happened. Many visitors used the app first, then joined a guide to ask deeper questions."
+        "When basic facts are easy to get, human guides become valuable for what machines cannot provide: connection and judgment.",
+        "Human comfort matters, but so do the needs of small lives that disappear when nights become too bright.",
+        "In a modern store, human service may become less visible but more important.",
+        "Old crops can carry traits that become valuable again under new conditions."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 6 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「It changed what visitors expected from it. When basic facts are easy to get, human guides become valuable for what machines cannot…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Human comfort matters, but so do the needs of small lives that disappear when nights become too bright.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「In a modern store, human service may become less visible but more important.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Old crops can carry traits that become valuable again under new conditions.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-2",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -492,13 +536,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 6 段，正確引文與第 6 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「It changed what visitors expected from it. When basic facts are easy to get, human guides become valuable for what machines cannot provide: connection…」，答案為「When basic facts are easy to get, human guides become valuable for what machines cannot provide: connection and…」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「When basic facts are easy to get, human guides become valuable for what machines cannot provide: connection and…」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -508,7 +552,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

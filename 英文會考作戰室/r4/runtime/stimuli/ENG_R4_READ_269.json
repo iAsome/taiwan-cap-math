@@ -87,48 +87,88 @@
       "translation": "標題;頭銜"
     },
     {
-      "word": "matches",
-      "translation": "相配"
-    },
-    {
-      "word": "situation",
-      "translation": "情形, 境遇, (建築物等的)位置"
-    },
-    {
-      "word": "emphasis",
-      "translation": "強調"
-    },
-    {
-      "word": "filter",
-      "translation": "過濾器；過濾"
-    },
-    {
-      "word": "climate",
-      "translation": "氣候"
-    },
-    {
-      "word": "migration",
-      "translation": "遷徙；移民"
-    },
-    {
-      "word": "separate",
-      "translation": "分開"
-    },
-    {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "quotation",
-      "translation": "報價"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "positioned",
-      "translation": "位置"
+      "word": "includes",
+      "translation": "包含"
+    },
+    {
+      "word": "rail",
+      "translation": "鐵路"
+    },
+    {
+      "word": "ancient",
+      "translation": "古代的"
+    },
+    {
+      "word": "roadside",
+      "translation": "路邊"
+    },
+    {
+      "word": "inn",
+      "translation": "(尤指鄉村或公路邊的) 旅館, 客棧；住旅館"
+    },
+    {
+      "word": "situation",
+      "translation": "情形, 境遇, (建築物等的)位置"
+    },
+    {
+      "word": "support",
+      "translation": "支持;支持"
+    },
+    {
+      "word": "comfortably",
+      "translation": "舒適地"
+    },
+    {
+      "word": "carelessness",
+      "translation": "粗心"
+    },
+    {
+      "word": "trust",
+      "translation": "信任"
+    },
+    {
+      "word": "honesty",
+      "translation": "誠實, 正直"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "effort",
+      "translation": "努力"
+    },
+    {
+      "word": "difficulty",
+      "translation": "困難"
+    },
+    {
+      "word": "evidence",
+      "translation": "證據"
+    },
+    {
+      "word": "repair",
+      "translation": "修理, 修補；修理, 修補, 補救, 糾正"
+    },
+    {
+      "word": "reconnect",
+      "translation": "重新連接"
+    },
+    {
+      "word": "objects",
+      "translation": "反對;物件"
     }
   ],
   "questions": [
@@ -149,44 +189,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_269",
-      "stem": "In Reading Set 269, which title matches both the opening situation and the ending emphasis?",
+      "stem": "Which title is best for the complete passage that includes “A new tunnel shortened the road between two towns.”?",
       "options": [
         "The Mountain Tunnel",
-        "The School Air Filter",
-        "The Climate Migration Story",
-        "The Warm Wall"
+        "The Old Train Line",
+        "The Light Rail Line",
+        "The Ancient Roadside Inn"
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Mountain Tunnel: A new tunnel shortened the road between two towns.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The School Air Filter」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Train Line」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Climate Migration Story」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Light Rail Line」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Warm Wall」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Ancient Roadside Inn」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-9",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -207,13 +247,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Mountain Tunnel」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Mountain Tunnel: A new tunnel shortened the road between two towns.」，答案為「The Mountain Tunnel」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Mountain Tunnel」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -223,7 +263,94 @@
       "id": "ENG_R4_Q_READ_269_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S257"
+      ],
+      "authorityRefs": [
+        "AUTH-ENGLISH-LC-D-4-1",
+        "AUTH-ENGLISH-LC-D-4-3",
+        "AUTH-ENGLISH-LP-1-4-7",
+        "AUTH-ENGLISH-LP-3-4-11",
+        "AUTH-ENGLISH-LP-3-4-12",
+        "AUTH-ENGLISH-LP-7-4-2",
+        "AUTH-ENGLISH-LP-9-4-1",
+        "AUTH-ENGLISH-LP-9-4-3"
+      ],
+      "stimulusId": "ENG_R4_READ_269",
+      "stem": "Which reason does the passage give for this situation: “Drivers were happy”?",
+      "options": [
+        "Their farms became too dry to support them",
+        "Chocolate can be dangerous for dogs",
+        "They are waiting to be fixed",
+        "The trip became twenty minutes faster"
+      ],
+      "answerIndex": 3,
+      "optionRationales": [
+        {
+          "optionIndex": 0,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「Their farms became too dry to support them」；這個選項混入另一個情境的資訊。"
+        },
+        {
+          "optionIndex": 1,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「Chocolate can be dangerous for dogs」；這個選項混入另一個情境的資訊。"
+        },
+        {
+          "optionIndex": 2,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「They are waiting to be fixed」；這個選項混入另一個情境的資訊。"
+        },
+        {
+          "optionIndex": 3,
+          "isCorrect": true,
+          "reason": "本文可直接核對「the trip became twenty minutes faster」，所以這個選項符合完整語境。"
+        }
+      ],
+      "difficulty": "standard",
+      "cognitiveProcess": [
+        "read-locked-passage-evidence",
+        "connect-stated-reason-to-situation"
+      ],
+      "representationType": "reading-stated-reason",
+      "misconceptionTargets": [
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
+      ],
+      "provenance": {
+        "status": "original",
+        "authorRole": "Codex R4 English content author",
+        "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+        "sourceRefs": [
+          "AUTH-ENGLISH-LC-D-4-1",
+          "AUTH-ENGLISH-LC-D-4-3",
+          "AUTH-ENGLISH-LP-1-4-7",
+          "AUTH-ENGLISH-LP-3-4-11",
+          "AUTH-ENGLISH-LP-3-4-12",
+          "AUTH-ENGLISH-LP-7-4-2",
+          "AUTH-ENGLISH-LP-9-4-1",
+          "AUTH-ENGLISH-LP-9-4-3"
+        ]
+      },
+      "independentReviews": [
+        {
+          "reviewerRole": "english-grammar-solution-review",
+          "derivedAnswerIndex": 3,
+          "evidence": "獨立覆核 A：在鎖定文章中定位「the trip became twenty minutes faster」，答案為「The trip became twenty minutes faster」。",
+          "status": "pass"
+        },
+        {
+          "reviewerRole": "english-alternative-answer-review",
+          "derivedAnswerIndex": 3,
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The trip became twenty minutes faster」有同篇證據，三個干擾項均來自不同情境。",
+          "status": "pass"
+        }
+      ],
+      "assets": []
+    },
+    {
+      "id": "ENG_R4_Q_READ_269_03",
+      "subject": "english",
+      "skillIds": [
+        "ENG_R4_S273"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-6",
@@ -239,44 +366,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_269",
-      "stem": "In Reading Set 269, how many separate paragraph blocks follow from the opening “A new tunnel shortened the road between two towns. Drivers were happy because the trip became twenty minutes”?",
+      "stem": "What happens next in this passage after “Some closed within months.”?",
       "options": [
-        "4",
-        "6",
-        "7",
-        "5"
+        "It was old, and only three people could stand under it comfortably.",
+        "But it also created old problems: carelessness, trust, and honesty.",
+        "Hikers also complained that fewer people cared for the old path.",
+        "The noise map showed that what people hear also needs planning."
       ],
-      "answerIndex": 3,
+      "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「It was old, and only three people could stand under it comfortably.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "6 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「But it also created old problems: carelessness, trust, and honesty.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
-          "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "isCorrect": true,
+          "reason": "本文可直接核對「Some closed within months. Hikers also complained that fewer people cared for the old path.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
-          "isCorrect": true,
-          "reason": "文章以換行鎖定為 5 個段落。"
+          "isCorrect": false,
+          "reason": "本文沒有陳述「The noise map showed that what people hear also needs planning.」；這個選項混入另一個情境的資訊。"
         }
       ],
-      "difficulty": "standard",
+      "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-structure-count-4",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -299,103 +426,14 @@
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
-          "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
-          "status": "pass"
-        },
-        {
-          "reviewerRole": "english-alternative-answer-review",
-          "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
-          "status": "pass"
-        }
-      ],
-      "assets": []
-    },
-    {
-      "id": "ENG_R4_Q_READ_269_03",
-      "subject": "english",
-      "skillIds": [
-        "ENG_R4_S254"
-      ],
-      "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-5",
-        "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LP-1-4-7",
-        "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-8",
-        "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-5-4-7",
-        "AUTH-ENGLISH-LP-5-4-8",
-        "AUTH-ENGLISH-LP-5-4-9"
-      ],
-      "stimulusId": "ENG_R4_READ_269",
-      "stem": "In Reading Set 269, which quotation comes before the other three in the passage?",
-      "options": [
-        "The local government promoted the old road as a slow travel route, with signs for viewpoints, history stops,",
-        "The tunnel solved one problem but created others.",
-        "A new tunnel shortened the road between two towns. Drivers were happy because the trip became twenty minutes",
-        "However, shops along the old mountain road lost customers. Some closed within months. Hikers also complained that fewer"
-      ],
-      "answerIndex": 2,
-      "optionRationales": [
-        {
-          "optionIndex": 0,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        },
-        {
-          "optionIndex": 1,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        },
-        {
-          "optionIndex": 2,
-          "isCorrect": true,
-          "reason": "這一行來自四個候選中的最早段落。"
-        },
-        {
-          "optionIndex": 3,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        }
-      ],
-      "difficulty": "advanced",
-      "cognitiveProcess": [
-        "read-locked-passage-evidence",
-        "identify-earliest-selected-paragraph"
-      ],
-      "representationType": "reading-sequence-earliest-4",
-      "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
-      ],
-      "provenance": {
-        "status": "original",
-        "authorRole": "Codex R4 English content author",
-        "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
-        "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-5",
-          "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LP-1-4-7",
-          "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-8",
-          "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-5-4-7",
-          "AUTH-ENGLISH-LP-5-4-8",
-          "AUTH-ENGLISH-LP-5-4-9"
-        ]
-      },
-      "independentReviews": [
-        {
-          "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 1 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Some closed within months. Hikers also complained that fewer people cared for the old path.」，答案為「Hikers also complained that fewer people cared for the old path.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Hikers also complained that fewer people cared for the old path.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -418,44 +456,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_269",
-      "stem": "In Reading Set 269, which quotation is positioned at the opening of the last paragraph?",
+      "stem": "Which ending result or final point follows “Infrastructure changes how people move, and movement changes business, memory, and landscape.”?",
       "options": [
-        "The local government promoted the old road as a slow travel route, with signs for viewpoints, history stops,",
-        "Infrastructure changes how people move, and movement changes business, memory, and landscape. Faster roads can connect places, but",
-        "A new tunnel shortened the road between two towns. Drivers were happy because the trip became twenty minutes",
-        "However, shops along the old mountain road lost customers. Some closed within months. Hikers also complained that fewer"
+        "It was also about understanding effort, difficulty, and the people who made the week easier.",
+        "Faster roads can connect places, but they can also cause people to pass by what they once noticed.",
+        "It was evidence that water remembers low places, even when people build new roads over them.",
+        "Repair can reconnect people not only with objects, but with the hands that once used them."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「It was also about understanding effort, difficulty, and the people who made the week easier.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「Infrastructure changes how people move, and movement changes business, memory, and landscape. Faster roads can connect places, but they can also cause…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「It was evidence that water remembers low places, even when people build new roads over them.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Repair can reconnect people not only with objects, but with the hands that once used them.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-4",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -476,13 +514,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Infrastructure changes how people move, and movement changes business, memory, and landscape. Faster roads can connect places, but they can also cause people to…」，答案為「Faster roads can connect places, but they can also cause people to pass by what they once noticed.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Faster roads can connect places, but they can also cause people to pass by what they once noticed.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -492,7 +530,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

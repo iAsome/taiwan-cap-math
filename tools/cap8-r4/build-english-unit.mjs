@@ -4,7 +4,8 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { validateAuthoringRecord } from "./authoring-validator.mjs";
-import { validateEnglishVocabularyScope } from "./english-vocabulary-scope.mjs";
+import { applyEnglishSemanticRevision } from "./english-semantic-revisions.mjs";
+import { englishFormalQuestionIds, validateEnglishVocabularyScope } from "./english-vocabulary-scope.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(HERE, "..", "..");
@@ -108,7 +109,8 @@ export function materializeEnglishQuestion(value, skill, { stimulusId = null, as
 export async function loadEnglishUnitSource(unitId, { repoRoot = REPO_ROOT } = {}) {
   assert(UNIT_ID_PATTERN.test(unitId), `invalid English unit ID: ${unitId}`);
   const sourcePath = path.join(repoRoot, ENGLISH_FOLDER, "r4", "source", "units", `${unitId}.mjs`);
-  const source = (await import(pathToFileURL(sourcePath).href)).ENGLISH_UNIT_SOURCE;
+  const raw = (await import(pathToFileURL(sourcePath).href)).ENGLISH_UNIT_SOURCE;
+  const source = raw && { ...raw, questions: raw.questions.map(applyEnglishSemanticRevision) };
   assert(source, `${unitId}: ENGLISH_UNIT_SOURCE export missing`);
   assert.equal(source.unitId, unitId, `${unitId}: source unit mismatch`);
   return source;
@@ -157,7 +159,9 @@ export async function materializeEnglishUnit(source, { graphPath = GRAPH_PATH } 
   }
   for (const value of lectures) await validateAuthoringRecord("lecture", value);
   for (const value of questions) await validateAuthoringRecord("question", value);
-  return { lectures, questions, skills, assets };
+  const formalQuestionIds = await englishFormalQuestionIds(source.questions, source.vocabularyPolicy);
+  if (Number(source.unitId.slice(-2)) <= 33) assert(formalQuestionIds.length > 0, `${source.unitId}: official-form pool has no Table 1 question`);
+  return { lectures, questions, skills, assets, formalQuestionIds };
 }
 
 export async function materializeAllEnglishUnits({ repoRoot = REPO_ROOT, graphPath = GRAPH_PATH } = {}) {

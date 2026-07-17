@@ -18,44 +18,44 @@
     "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_156",
-  "stem": "In Reading Set 156, which selected line appears latest in the paragraph sequence?",
+  "stem": "What happens next in this passage after “Then his daughter made a sign: 'Please ring once.”?",
   "options": [
-    "A small doorbell was placed on the counter of a family restaurant. Customers could ring it if no",
-    "At first, children rang it for fun. The sound became annoying. The owner wanted to remove it.",
-    "Then his daughter made a sign: \"Please ring once. We are cooking for you.\"",
-    "After the sign appeared, most people stopped playing with the bell. They understood that workers were busy, not"
+    "Then he borrowed one about insects, then one about cooking.",
+    "There were cooking areas, sleeping spaces, animal bones, and broken cups.",
+    "The club later explained that the vegetables would be used in a cooking class.",
+    "We are cooking for you.\""
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Then he borrowed one about insects, then one about cooking.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「There were cooking areas, sleeping spaces, animal bones, and broken cups.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「The club later explained that the vegetables would be used in a cooking class.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "這一行來自四個候選中的最晚段落。"
+      "reason": "本文可直接核對「Then his daughter made a sign: 'Please ring once. We are cooking for you.'」，所以這個選項符合完整語境。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "identify-latest-selected-paragraph"
+    "track-event-or-idea-sequence-from-content-anchor"
   ],
-  "representationType": "reading-sequence-latest-1",
+  "representationType": "reading-content-sequence",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
@@ -79,13 +79,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「Then his daughter made a sign: 'Please ring once. We are cooking for you.'」，答案為「We are cooking for you.'」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「We are cooking for you.'」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],
