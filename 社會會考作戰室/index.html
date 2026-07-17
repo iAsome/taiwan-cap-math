@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#145a4a">
+  <title>社會科整合模考｜會考作戰室</title>
+  <link rel="icon" href="../icon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#mainContent">跳到主要內容</a>
+  <header class="topbar">
+    <div class="brand">
+      <img src="../icon.svg" alt="" width="36" height="36">
+      <div>
+        <h1>社會科整合模考</h1>
+        <p>地理、歷史、公民｜70 分鐘</p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <span id="networkStatus" class="status" role="status">連線中</span>
+      <button id="printButton" class="icon-button" type="button" title="列印考卷" aria-label="列印考卷">⎙</button>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <section id="setupView" class="setup-band" aria-labelledby="setupTitle">
+      <div class="setup-inner">
+        <div>
+          <p class="practice-notice">原創練習，非官方試題</p>
+          <h2 id="setupTitle">建立整合模考</h2>
+          <p id="calibrationText">依 115 年官方題本校準：54 題，地理 17、歷史 19、公民 18，含 4 組共用題組。</p>
+        </div>
+        <form id="setupForm" class="setup-form">
+          <label for="questionCount">題數</label>
+          <select id="questionCount" name="questionCount">
+            <option value="50">50 題</option>
+            <option value="51">51 題</option>
+            <option value="52">52 題</option>
+            <option value="53">53 題</option>
+            <option value="54" selected>54 題（官方最新預設）</option>
+            <option value="55">55 題</option>
+            <option value="56">56 題</option>
+            <option value="57">57 題</option>
+            <option value="58">58 題</option>
+            <option value="59">59 題</option>
+            <option value="60">60 題</option>
+          </select>
+          <label for="seedInput">種子碼</label>
+          <input id="seedInput" name="seed" type="text" inputmode="numeric" autocomplete="off" value="115" maxlength="32">
+          <button id="startButton" class="primary-button" type="submit">開始作答</button>
+        </form>
+      </div>
+      <div id="recentAttempts" class="attempts" aria-live="polite"></div>
+    </section>
+
+    <section id="examView" class="exam-view" aria-labelledby="examTitle" hidden>
+      <div class="exam-toolbar">
+        <div>
+          <p class="practice-notice">原創練習，非官方試題</p>
+          <h2 id="examTitle">社會科整合模考</h2>
+          <p id="examMeta"></p>
+        </div>
+        <div class="exam-status">
+          <span id="timer" class="timer" role="timer" aria-live="off">70:00</span>
+          <span id="answerProgress">已答 0 題</span>
+          <button id="submitButton" class="primary-button" type="button">交卷</button>
+        </div>
+      </div>
+      <form id="paper" class="paper" aria-describedby="examMeta"></form>
+    </section>
+
+    <section id="resultView" class="result-view" aria-labelledby="resultTitle" hidden>
+      <header class="result-header">
+        <p class="practice-notice">作答結果</p>
+        <h2 id="resultTitle" tabindex="-1">成績與補強方向</h2>
+        <p id="scoreText"></p>
+        <button id="newExamButton" class="primary-button" type="button">建立新考卷</button>
+      </header>
+      <div id="subjectStats" class="stats-grid"></div>
+      <section aria-labelledby="remediationTitle">
+        <h3 id="remediationTitle">技能補強</h3>
+        <div id="remediationList"></div>
+      </section>
+      <section aria-labelledby="reviewTitle">
+        <h3 id="reviewTitle">逐題解析</h3>
+        <div id="answerReview" class="answer-review"></div>
+      </section>
+    </section>
+  </main>
+
+  <div id="liveRegion" class="sr-only" aria-live="polite"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
