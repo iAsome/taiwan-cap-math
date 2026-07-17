@@ -10,14 +10,16 @@ const SITE_ROOT = realpathSync(join(ROOT, "公民會考作戰室", "r4"));
 const PROFILE_ROOT = realpathSync(join(ROOT, "公民會考作戰室"));
 const PROFILE = join(PROFILE_ROOT, `.civics-browser-profile-${process.pid}`);
 const CHROME_CANDIDATES = [
+  process.env.CHROME_PATH,
   "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
   "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
   "C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe",
-];
+].filter(Boolean);
+const AXE_SOURCE = readFileSync(join(ROOT, "node_modules", "axe-core", "axe.min.js"), "utf8");
 const MIME = new Map([
   [".css", "text/css; charset=utf-8"], [".html", "text/html; charset=utf-8"],
   [".js", "text/javascript; charset=utf-8"], [".json", "application/json; charset=utf-8"],
-  [".webmanifest", "application/manifest+json; charset=utf-8"],
+  [".svg", "image/svg+xml; charset=utf-8"], [".webmanifest", "application/manifest+json; charset=utf-8"],
 ]);
 
 function assert(condition, message) {
@@ -149,8 +151,8 @@ async function reload(cdp) {
   return waitForPage(cdp);
 }
 
-async function answerPanel(cdp, panelId, correct) {
-  return evaluate(cdp, `(async () => {
+async function answerPanel(cdp, panelId, correct, keyboardSubmit = false) {
+  const result = await evaluate(cdp, `(async () => {
     const panel = document.querySelector(${JSON.stringify(panelId)});
     const fieldsets = [...panel.querySelectorAll("fieldset[data-question-id]")];
     for (const fieldset of fieldsets) {
@@ -158,9 +160,19 @@ async function answerPanel(cdp, panelId, correct) {
       const value = ${correct} ? question.answerIndex : (question.answerIndex + 1) % question.options.length;
       fieldset.querySelector('input[value="' + value + '"]').click();
     }
-    panel.querySelector(".submit").click();
-    return { count: fieldsets.length, score: panel.querySelector(".score")?.textContent || "" };
+    if (${keyboardSubmit}) panel.querySelector(".submit").focus();
+    else panel.querySelector(".submit").click();
+    return { count: fieldsets.length, focused: document.activeElement === panel.querySelector(".submit") };
   })()`);
+  if (keyboardSubmit) {
+    assert(result.focused, `${panelId}: submit button could not receive keyboard focus`);
+    await cdp.send("Input.dispatchKeyEvent", { type: "keyDown", key: "Enter", code: "Enter", text: "\r", unmodifiedText: "\r", windowsVirtualKeyCode: 13 });
+    await cdp.send("Input.dispatchKeyEvent", { type: "keyUp", key: "Enter", code: "Enter", windowsVirtualKeyCode: 13 });
+  }
+  const score = keyboardSubmit
+    ? await until(`${panelId} score`, () => evaluate(cdp, `document.querySelector(${JSON.stringify(panelId)} + " .score")?.textContent || ""`))
+    : await evaluate(cdp, `document.querySelector(${JSON.stringify(panelId)} + " .score")?.textContent || ""`);
+  return { ...result, score };
 }
 
 async function main() {
@@ -233,7 +245,7 @@ async function main() {
 
     const migration = await evaluate(cdp, `(() => {
       localStorage.clear();
-      localStorage.setItem("capCivics.completed", JSON.stringify(["legacy-skill"]));
+      localStorage.setItem("capCivics.completed", JSON.stringify([1]));
       localStorage.setItem("capCivics.lastSeed", "31415");
       localStorage.setItem("capCivics.dark", "true");
       return true;
@@ -242,15 +254,18 @@ async function main() {
     await reload(cdp);
     const migrated = await evaluate(cdp, `(() => {
       const backup = JSON.parse(localStorage.getItem("cap8.r4.civics.legacyBackup"));
+      const progress = JSON.parse(localStorage.getItem("cap8.r4.civics.progress"));
       return {
         marker: localStorage.getItem("cap8.r4.civics.migration.v1"),
+        progressMarker: localStorage.getItem("cap8.r4.civics.migration.v1.progress"),
+        completed: progress.completedSkillIds.length,
         sourceSeed: localStorage.getItem("capCivics.lastSeed"),
         copiedSeed: localStorage.getItem("cap8.r4.civics.lastSeed"),
         backupSeed: backup["capCivics.lastSeed"],
         sourceCount: [...Array(localStorage.length).keys()].map((index) => localStorage.key(index)).filter((key) => key.startsWith("capCivics.")).length,
       };
     })()`);
-    assert(migrated.marker === "complete" && migrated.sourceSeed === "31415" && migrated.copiedSeed === "31415" && migrated.backupSeed === "31415" && migrated.sourceCount === 3, "browser migration did not preserve and copy legacy data");
+    assert(migrated.marker === "complete" && migrated.progressMarker === "complete" && migrated.completed > 0 && migrated.sourceSeed === "31415" && migrated.copiedSeed === "31415" && migrated.backupSeed === "31415" && migrated.sourceCount === 3, "browser migration did not preserve and map legacy data");
 
     const filters = await evaluate(cdp, `(() => {
       const search = document.querySelector("#skillSearch");
@@ -270,8 +285,13 @@ async function main() {
     await evaluate(cdp, `document.querySelector("#tabLecture").focus()`);
     await cdp.send("Input.dispatchKeyEvent", { type: "keyDown", key: "ArrowRight", code: "ArrowRight", windowsVirtualKeyCode: 39 });
     await cdp.send("Input.dispatchKeyEvent", { type: "keyUp", key: "ArrowRight", code: "ArrowRight", windowsVirtualKeyCode: 39 });
-    const keyboard = await evaluate(cdp, `({ selected: document.querySelector('[role="tab"][aria-selected="true"]').id, focused: document.activeElement.id, panelHidden: document.querySelector("#diagnosticPanel").hidden })`);
-    assert(keyboard.selected === "tabDiagnostic" && keyboard.focused === "tabDiagnostic" && keyboard.panelHidden === false, "arrow-key tab navigation failed");
+    const keyboard = await evaluate(cdp, `({ selected: document.querySelector('[role="tab"][aria-selected="true"]').id, focused: document.activeElement.id, panelHidden: document.querySelector("#diagnosticPanel").hidden, focusRing: getComputedStyle(document.querySelector("#tabDiagnostic")).boxShadow })`);
+    assert(keyboard.selected === "tabDiagnostic" && keyboard.focused === "tabDiagnostic" && keyboard.panelHidden === false && keyboard.focusRing !== "none", "arrow-key tab navigation/focus indicator failed");
+    await evaluate(cdp, `document.querySelector("#diagnosticPanel input[type=radio]").focus()`);
+    await cdp.send("Input.dispatchKeyEvent", { type: "keyDown", key: " ", code: "Space", windowsVirtualKeyCode: 32 });
+    await cdp.send("Input.dispatchKeyEvent", { type: "keyUp", key: " ", code: "Space", windowsVirtualKeyCode: 32 });
+    const keyboardChoice = await evaluate(cdp, `({ checked: document.activeElement.checked })`);
+    assert(keyboardChoice.checked, `keyboard radio selection failed: ${JSON.stringify(keyboardChoice)}`);
 
     const seedOrders = await evaluate(cdp, `(() => {
       const panel = document.querySelector("#diagnosticPanel");
@@ -303,13 +323,13 @@ async function main() {
     assert(afterRemediation.mistakes === 0 && afterRemediation.intervals.length === 3 && afterRemediation.intervals.every((days) => days === 2), "spaced remediation did not clear mistakes and double intervals");
 
     await evaluate(cdp, `document.querySelector("#tabPractice").click()`);
-    const practice = await answerPanel(cdp, "#practicePanel", true);
-    assert(practice.count === 9 && practice.score.includes("9 / 9"), "practice mastery flow failed");
+    const practice = await answerPanel(cdp, "#practicePanel", true, true);
+    assert(practice.count === 9 && practice.score.includes("9 / 9"), `practice mastery flow failed: ${JSON.stringify(practice)}`);
     await evaluate(cdp, `document.querySelector("#tabStimulus").click()`);
     const stimulus = await answerPanel(cdp, "#stimulusPanel", true);
     assert(stimulus.count === 3 && stimulus.score.includes("3 / 3"), "stimulus transfer flow failed");
     const progress = await evaluate(cdp, `(() => { const value = JSON.parse(localStorage.getItem("cap8.r4.civics.progress")); return { completed: value.completedSkillIds.length, attempts: Object.keys(value.attempts[${JSON.stringify(initial.skillId)}] || {}).sort(), summary: document.querySelector("#progressSummary").textContent }; })()`);
-    assert(progress.completed === 1 && progress.attempts.join(",") === "diagnostic,practice,remediation,transfer" && progress.summary.includes("1 / 240"), `progress summary or mastery persistence failed: ${JSON.stringify(progress)}`);
+    assert(progress.completed === migrated.completed && progress.attempts.join(",") === "diagnostic,practice,remediation,transfer" && progress.summary.includes(`${migrated.completed} / 240`), `progress summary or mastery persistence failed: ${JSON.stringify(progress)}`);
 
     const routing = await evaluate(cdp, `(async () => {
       document.querySelector("#skillSearch").value = "";
@@ -386,9 +406,26 @@ async function main() {
     })()`);
     assert(assets.length === 12 && assets.every((asset) => Object.entries(asset).filter(([key]) => key !== "id").every(([, value]) => value === true)), `asset browser audit failed: ${JSON.stringify(assets.filter((asset) => Object.values(asset).includes(false)))}`);
 
+    const assetSkillId = await evaluate(cdp, `(async () => {
+      const index = await (await fetch("runtime/content-index.json")).json();
+      const id = index.assets[0].skillIds[0];
+      document.querySelector('#skillList button[data-skill-id="' + id + '"]').click();
+      return id;
+    })()`);
+    await until("asset skill rendering", () => evaluate(cdp, `document.querySelector('#skillList button.active')?.dataset.skillId === ${JSON.stringify(assetSkillId)} && document.querySelector("iframe")?.contentDocument?.querySelector("table")`));
+    await cdp.send("Runtime.evaluate", { expression: AXE_SOURCE });
+    const axe = await evaluate(cdp, `(async () => {
+      const result = await axe.run(document, { runOnly: { type: "tag", values: ["wcag2a", "wcag2aa", "wcag22aa"] } });
+      return { violations: result.violations.map((violation) => violation.id), passes: result.passes.length, incomplete: result.incomplete.map((item) => item.id) };
+    })()`);
+    assert(axe.violations.length === 0, `axe WCAG 2.2 AA violations: ${JSON.stringify(axe)}`);
+
     await cdp.send("Emulation.setDeviceMetricsOverride", { width: 390, height: 844, deviceScaleFactor: 1, mobile: true });
     const mobile = await evaluate(cdp, `({ viewport: innerWidth, bodyWidth: document.body.scrollWidth, workspace: getComputedStyle(document.querySelector(".workspace")).display, columns: getComputedStyle(document.querySelector(".mistake-list")).gridTemplateColumns, tabsScrollable: document.querySelector(".tabs").scrollWidth >= document.querySelector(".tabs").clientWidth })`);
     assert(mobile.viewport === 390 && mobile.bodyWidth <= 390 && mobile.workspace === "block" && !mobile.columns.includes(" "), `mobile layout failed: ${JSON.stringify(mobile)}`);
+    await cdp.send("Emulation.setDeviceMetricsOverride", { width: 320, height: 800, deviceScaleFactor: 1, mobile: true });
+    const reflow = await evaluate(cdp, `({ viewport: innerWidth, bodyWidth: document.body.scrollWidth, mainWidth: document.querySelector("main").scrollWidth })`);
+    assert(reflow.viewport === 320 && reflow.bodyWidth <= 320 && reflow.mainWidth <= 320, `WCAG 400% reflow failed: ${JSON.stringify(reflow)}`);
     await cdp.send("Emulation.clearDeviceMetricsOverride");
 
     await cdp.send("Emulation.setEmulatedMedia", { media: "print" });
@@ -402,10 +439,22 @@ async function main() {
       await navigator.serviceWorker.ready;
       const manifest = await (await fetch("content-manifest-v4.json")).json();
       const keys = await caches.keys();
-      const release = keys.find((key) => key === "cap8-r4-civics-v4.0.0-r2");
-      const count = release ? (await (await caches.open(release)).keys()).length : 0;
-      return release && navigator.serviceWorker.controller && count >= manifest.artifacts.length ? { release, count, manifest: manifest.artifacts.length } : null;
+      const release = "cap8-r4-civics-" + manifest.buildSha256;
+      if (!keys.includes(release) || !navigator.serviceWorker.controller) return null;
+      const actual = new Set((await (await caches.open(release)).keys()).map((request) => request.url));
+      const shell = ["./", "./index.html", "./app.js", "./styles.css", "./manifest.webmanifest", "./content-manifest-v4.json", "./runtime/content-index.json", "../icon.svg"];
+      const marker = "公民會考作戰室/r4/";
+      const expected = new Set([
+        ...shell.map((value) => new URL(value, location.href).href),
+        ...manifest.artifacts.map((artifact) => new URL("./" + artifact.path.slice(artifact.path.indexOf(marker) + marker.length), location.href).href),
+      ]);
+      const missing = [...expected].filter((url) => !actual.has(url));
+      const unexpected = [...actual].filter((url) => !expected.has(url));
+      return missing.length || unexpected.length ? null : { release, count: actual.size, expected: expected.size, missing, unexpected };
     })()`), 180_000, 500);
+    const installability = await cdp.send("Page.getInstallabilityErrors");
+    const installErrors = installability.installabilityErrors.filter((error) => error.errorId !== "in-incognito");
+    assert(installErrors.length === 0, `PWA installability failed: ${JSON.stringify(installErrors)}`);
     assert(pageErrors.length === 0, `page exceptions before offline gate: ${pageErrors.join(" | ")}`);
     assert(consoleErrors.length === 0, `console errors before offline gate: ${consoleErrors.join(" | ")}`);
     assert(failedResponses.length === 0, `HTTP failures before offline gate: ${failedResponses.join(" | ")}`);
@@ -432,8 +481,8 @@ async function main() {
 
     process.stdout.write(`${JSON.stringify({
       status: "pass", browser: chrome, skills: initial.skillCount, questionsExercised: 18,
-      migration: migrated, keyboard, progress, accessibilityNodes: axTree.nodes.length,
-      contrasts, assets: assets.length, mobile, printPdfBytes: Math.floor(pdf.data.length * 3 / 4),
+      migration: migrated, keyboard, keyboardChoice, progress, accessibilityNodes: axTree.nodes.length,
+      contrasts, axe, assets: assets.length, mobile, reflow, installabilityErrors: installErrors.length, printPdfBytes: Math.floor(pdf.data.length * 3 / 4),
       offlineCache, offline, pageErrors: 0, consoleErrors: 0, failedResponses: 0,
     }, null, 2)}\n`);
   } finally {

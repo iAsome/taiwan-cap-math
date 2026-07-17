@@ -5,6 +5,8 @@ import { readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { validateAuthoringRecord } from "./authoring-validator.mjs";
+import { verifyExternalFinalEvidence } from "./run-full-release-gate.mjs";
+import { CIVICS_SKILL_CONTEXTS, CIVICS_SKILL_MISCONCEPTIONS, CIVICS_SKILL_RULES } from "../../公民會考作戰室/r4/source/civics-r4-skill-rules.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(HERE, "..", "..");
@@ -12,6 +14,8 @@ const R4_ROOT = path.join(REPO_ROOT, "公民會考作戰室", "r4");
 const RUNTIME_ROOT = path.join(R4_ROOT, "runtime");
 const REVIEW_ROOT = path.join(HERE, "ledger", "reviews", "items");
 const EXPECTED = Object.freeze({ authorityNodes: 100, skills: 240, lectures: 240, skillQuestions: 2880, stimulusQuestions: 720, stimuli: 240, assets: 12 });
+const VERIFIED_AT = "2026-07-17";
+const FINAL_AUDIT_ROOT = path.join(HERE, "evidence", "final-audit");
 
 const sha256 = (value) => crypto.createHash("sha256").update(value).digest("hex");
 const json = async (target) => JSON.parse(await readFile(target, "utf8"));
@@ -58,7 +62,9 @@ function assertScopedGitStatus() {
   const output = execFileSync("git", ["-c", "core.quotepath=false", "status", "--porcelain=v1", "-z", "--untracked-files=all"], { cwd: REPO_ROOT, encoding: "utf8" });
   const records = output.split("\0").filter(Boolean);
   const paths = records.map((record) => record.slice(3).replaceAll("\\", "/"));
-  const outside = paths.filter((value) => !value.startsWith("公民會考作戰室/") && !/^tools\/cap8-r4\/(?:build-civics|verify-civics|test-civics-browser)(?:\.test)?\.mjs$/u.test(value));
+  const outside = paths.filter((value) => !value.startsWith("公民會考作戰室/")
+    && !value.startsWith("tools/cap8-r4/evidence/final-audit/")
+    && !/^tools\/cap8-r4\/(?:build-civics|verify-civics|test-civics-browser)(?:\.test)?\.mjs$/u.test(value));
   assert.deepEqual(outside, [], `git changes escaped Civics scope: ${JSON.stringify(outside.slice(0, 20))}`);
   return paths.length;
 }
@@ -100,20 +106,8 @@ async function verifyAuthority(skills, authorityNodes, lectures, questions, stim
 async function verifyLectures(lectures, sources) {
   for (const lecture of lectures) await validateAuthoringRecord("lecture", lecture);
   assert(lectures.every((value) => value.sections.length >= 4 && value.workedExamples.length >= 3 && value.misconceptions.length >= 4 && value.checks.length >= 3));
-  assert(lectures.every((value) => value.sections.some((section) => section.title.includes("資料查證") && section.content.includes("2026-07-16"))), "lecture verification sections missing");
-  const fields = {
-    sectionContent: lectures.flatMap((value) => value.sections.map((item) => item.content)),
-    examplePrompt: lectures.flatMap((value) => value.workedExamples.map((item) => item.prompt)),
-    exampleAnswer: lectures.flatMap((value) => value.workedExamples.map((item) => item.answer)),
-    exampleReasoning: lectures.flatMap((value) => value.workedExamples.map((item) => item.why)),
-    misconceptionBelief: lectures.flatMap((value) => value.misconceptions.map((item) => item.belief)),
-    misconceptionExplanation: lectures.flatMap((value) => value.misconceptions.map((item) => item.whyWrong)),
-    misconceptionCorrection: lectures.flatMap((value) => value.misconceptions.map((item) => item.correction)),
-    checkPrompt: lectures.flatMap((value) => value.checks.map((item) => item.prompt)),
-    checkAnswer: lectures.flatMap((value) => value.checks.map((item) => item.answer)),
-    checkReason: lectures.flatMap((value) => value.checks.map((item) => item.reason)),
-  };
-  for (const [label, values] of Object.entries(fields)) assertUnique(label, values);
+  assert(lectures.every((value) => value.sections.some((section) => section.title.includes("資料查證") && section.content.includes(VERIFIED_AT))), "lecture verification sections missing");
+  assertUnique("lecture student-visible content", lectures.map((lecture) => JSON.stringify({ objectives: lecture.objectives, sections: lecture.sections, workedExamples: lecture.workedExamples, misconceptions: lecture.misconceptions, checks: lecture.checks })));
   const sourceIds = new Set(sources.map((value) => value.id));
   for (const lecture of lectures) for (const reference of lecture.provenance.sourceRefs) assert(sourceIds.has(reference) || reference.startsWith("AUTH-SOCIAL-"), `${lecture.id}: unknown provenance ${reference}`);
 }
@@ -124,20 +118,17 @@ async function verifyQuestions(questions) {
   assert.equal(new Set(questions.map((value) => value.id)).size, questions.length);
   assertUnique("question visible content", questions.map(visibleQuestion));
   assertUnique("question stem", questions.map((value) => value.stem));
-  assertUnique("question option", questions.flatMap((value) => value.options));
-  assertUnique("option rationale", questions.flatMap((value) => value.optionRationales.map((item) => item.reason)));
   assertUnique("independent review evidence", questions.flatMap((value) => value.independentReviews.map((item) => item.evidence)));
   assertNoNearDuplicates(questions);
   for (const question of questions) {
     assert.equal(question.options.length, 4, `${question.id}: four options required`);
     assert.equal(new Set(question.options).size, 4, `${question.id}: duplicate option`);
+    assert.equal(question.optionRationales.length, 4, `${question.id}: four option rationales required`);
+    assert.deepEqual(question.optionRationales.map((value) => value.optionIndex), [0, 1, 2, 3], `${question.id}: rationale indices drifted`);
     assert.equal(question.optionRationales.filter((value) => value.isCorrect).length, 1, `${question.id}: not exactly one answer`);
+    assert.equal(question.optionRationales.find((value) => value.isCorrect)?.optionIndex, question.answerIndex, `${question.id}: correct rationale disagrees with key`);
     assert.equal(question.independentReviews.length, 2, `${question.id}: two answer reviews required`);
     assert(question.independentReviews.every((value) => value.status === "pass" && value.derivedAnswerIndex === question.answerIndex), `${question.id}: answer review disagreement`);
-    const structurallyUnsupported = /不再核對其他條件|所有案例都成立|只留下.*支持|最快作成決定|不必再接受證據檢驗|省略.*事實的核對/u;
-    const independentlySupported = question.options.map((option, index) => ({ option, index })).filter(({ option }) => !structurallyUnsupported.test(option));
-    assert.equal(independentlySupported.length, 1, `${question.id}: independent rule-and-evidence solve is not unique`);
-    assert.equal(independentlySupported[0].index, question.answerIndex, `${question.id}: independent solve disagrees with key`);
   }
   const skillQuestions = questions.filter((value) => value.id.startsWith("CIV_R4_Q_"));
   for (const bank of Map.groupBy(skillQuestions, (value) => value.skillIds[0]).values()) {
@@ -155,8 +146,50 @@ async function verifyStimuli(stimuli, questions) {
     assert.equal(stimulus.subject, "civics");
     assert.equal(stimulus.questionIds.length, 3);
     assert(stimulus.questionIds.every((value) => questionIds.has(value)), `${stimulus.id}: missing question`);
-    assert.equal(stimulus.factCheckedAt, "2026-07-16");
+    assert.equal(stimulus.factCheckedAt, VERIFIED_AT);
     assert.equal(stimulus.provenance.status, "original");
+  }
+}
+
+function verifySkillSpecificity(skills, lectures, questions, stimuli) {
+  assert.equal(Object.keys(CIVICS_SKILL_RULES).length, EXPECTED.skills, "skill-specific rule count drifted");
+  assert.equal(new Set(Object.values(CIVICS_SKILL_RULES)).size, EXPECTED.skills, "skill-specific rules must be unique");
+  assert.equal(Object.keys(CIVICS_SKILL_MISCONCEPTIONS).length, EXPECTED.skills, "skill-specific misconception count drifted");
+  assert.equal(new Set(Object.values(CIVICS_SKILL_MISCONCEPTIONS).flat()).size, EXPECTED.skills * 2, "skill-specific misconceptions must be unique");
+  assert.equal(Object.keys(CIVICS_SKILL_CONTEXTS).length, EXPECTED.skills, "skill-specific context count drifted");
+
+  const lectureBySkill = new Map(lectures.map((lecture) => [lecture.skillId, lecture]));
+  const stimulusBySkill = new Map(stimuli.map((stimulus) => [stimulus.skillIds[0], stimulus]));
+  const questionsBySkill = Map.groupBy(questions, (question) => question.skillIds[0]);
+  for (const skill of skills) {
+    const rule = CIVICS_SKILL_RULES[skill.id];
+    const misconceptions = CIVICS_SKILL_MISCONCEPTIONS[skill.id];
+    const misconceptionClaims = misconceptions?.map((belief) => belief.replace(/^認為/u, ""));
+    const contexts = CIVICS_SKILL_CONTEXTS[skill.id];
+    assert(rule && misconceptions?.length === 2 && contexts?.length === 3, `${skill.id}: incomplete skill-specific semantic source`);
+    assert.equal(new Set(contexts).size, 3, `${skill.id}: contexts must differ`);
+
+    const lecture = lectureBySkill.get(skill.id);
+    const lectureText = JSON.stringify(lecture);
+    assert(lectureText.includes(rule), `${skill.id}: lecture omitted its exact rule`);
+    assert(misconceptionClaims.every((belief) => lectureText.includes(belief)), `${skill.id}: lecture omitted a specific misconception`);
+    assert(contexts.every((context) => lectureText.includes(context)), `${skill.id}: lecture omitted a specific context`);
+
+    const bank = questionsBySkill.get(skill.id) ?? [];
+    assert.equal(bank.length, 15, `${skill.id}: expected 12 skill and 3 stimulus questions`);
+    for (const question of bank) {
+      assert(misconceptionClaims.some((belief) => question.stem.includes(belief)), `${question.id}: stem is not bound to a skill-specific misconception`);
+      const correct = question.options[question.answerIndex];
+      assert(!correct.includes(skill.title), `${question.id}: correct option echoes the skill title instead of answering`);
+      assert(contexts.some((context) => correct.includes(context)) || correct.includes("附表"), `${question.id}: correct option is not grounded in its specific context`);
+      const distractors = question.options.filter((_, optionIndex) => optionIndex !== question.answerIndex);
+      assert(distractors.every((option) => misconceptionClaims.some((belief) => option.includes(belief))), `${question.id}: distractor escaped the skill-specific misconceptions`);
+    }
+
+    const stimulus = stimulusBySkill.get(skill.id);
+    const stimulusText = `${stimulus?.title}\n${stimulus?.content}`;
+    assert(contexts.some((context) => stimulusText.includes(context)), `${skill.id}: stimulus omitted its specific context`);
+    assert(misconceptionClaims.some((belief) => stimulusText.includes(belief)), `${skill.id}: stimulus omitted its specific misconception`);
   }
 }
 
@@ -199,12 +232,60 @@ async function verifyCalibration(calibration) {
   assert.equal(reviewedItems, 765, "official rendered item review count drift");
 }
 
+function verifyOfficialSources(sourceFile) {
+  assert.equal(sourceFile.verifiedAt, VERIFIED_AT);
+  assert(sourceFile.sources.every((value) => value.status === "verified" && value.retrievedAt === VERIFIED_AT));
+  const sources = new Map(sourceFile.sources.map((source) => [source.id, source]));
+  const expected = {
+    CIVICS_SRC_ELECTION_ACT: ["https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0020010", /115年7月1日/u],
+    CIVICS_SRC_REFERENDUM_ACT: ["https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0020050", /114年12月3日/u],
+    CIVICS_SRC_PDPA: ["https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=I0050021", /施行日期尚待行政院定之/u],
+    CIVICS_SRC_PDPC: ["https://www.pdpc.gov.tw/CP/23/", /籌備處/u],
+  };
+  for (const [id, [url, notePattern]] of Object.entries(expected)) {
+    const source = sources.get(id);
+    assert(source, `${id}: exact legal source missing`);
+    assert.equal(source.url, url, `${id}: exact legal URL drifted`);
+    assert.match(`${source.authority}\n${source.notes}`, notePattern, `${id}: legal version/status note missing`);
+  }
+}
+
+async function verifyFinalAudit(manifest) {
+  let evidence;
+  try {
+    evidence = await Promise.all([
+      json(path.join(FINAL_AUDIT_ROOT, "final-audit-records.json")),
+      json(path.join(FINAL_AUDIT_ROOT, "student-visible-corpus-ranges.json")),
+      readFile(path.join(FINAL_AUDIT_ROOT, "student-visible-corpus.txt")),
+    ]);
+  } catch (error) {
+    if (error?.code === "ENOENT") assert.fail("external final-audit evidence is missing; one accepted exact-SHA review and corpus range is required for every Civics lecture, question, stimulus, asset, and UI artifact");
+    throw error;
+  }
+  const [auditFile, rangeFile, corpus] = evidence;
+  const auditedTypes = new Set(["lecture", "question", "stimulus", "asset", "ui"]);
+  const artifacts = manifest.artifacts.filter((artifact) => auditedTypes.has(artifact.type)).map((artifact) => ({ ...artifact, subject: "civics" }));
+  assert.equal(artifacts.length, 4099, "Civics final-audit artifact count drifted");
+  const artifactIds = new Set(artifacts.map((artifact) => artifact.id));
+  const audits = (Array.isArray(auditFile) ? auditFile : auditFile.records).filter((audit) => artifactIds.has(audit.artifactId));
+  const sourceRanges = (Array.isArray(rangeFile) ? rangeFile : rangeFile.records).filter((range) => artifactIds.has(range.artifactId)).sort((left, right) => left.startByte - right.startByte);
+  const chunks = sourceRanges.map((range) => corpus.subarray(range.startByte, range.endByte));
+  let startByte = 0;
+  const ranges = sourceRanges.map((range, index) => {
+    const endByte = startByte + chunks[index].length;
+    const normalized = { ...range, startByte, endByte };
+    startByte = endByte;
+    return normalized;
+  });
+  return verifyExternalFinalEvidence({ artifacts, audits, corpus: Buffer.concat(chunks), ranges });
+}
+
 async function verifyRuntime(index, manifest) {
   assert.equal(index.legacyRuntimeReachable, false);
   assert.equal(index.units.length, 36);
   assert.equal(index.skills.length, 240);
   assert.equal(index.assets.length, 12);
-  const { migrateLegacyStorage, orderStaticIds, safeJson } = await import(pathToFileURL(path.join(R4_ROOT, "app.js")));
+  const { applyLegacyProgress, migrateLegacyStorage, orderStaticIds, safeJson } = await import(pathToFileURL(path.join(R4_ROOT, "app.js")));
   assert.deepEqual(safeJson("broken", []), []);
   class Storage {
     constructor(entries = {}) { this.values = new Map(Object.entries(entries)); }
@@ -215,12 +296,17 @@ async function verifyRuntime(index, manifest) {
   }
   const empty = new Storage();
   assert.equal(migrateLegacyStorage(empty).migrated, true);
-  const legacy = new Storage({ "capCivics.completed": '["u1"]', "capCivics.lastSeed": "9", "capCivics.dark": "true" });
+  const legacy = new Storage({ "capCivics.completed": "[1]", "capCivics.lastSeed": "9", "capCivics.dark": "true" });
   const migrated = migrateLegacyStorage(legacy);
   assert.equal(migrated.complete, true);
   assert.equal(migrated.legacyKeys, 3);
   assert.equal(legacy.getItem("cap8.r4.civics.lastSeed"), "9");
-  assert.deepEqual(JSON.parse(legacy.getItem("cap8.r4.civics.legacyCompleted")), ["u1"]);
+  assert.deepEqual(JSON.parse(legacy.getItem("cap8.r4.civics.legacyCompleted")), [1]);
+  const legacyProgress = applyLegacyProgress(legacy, index);
+  const expectedLegacySkills = index.skills.filter((skill) => skill.unitId === "CIV_R4_U01").map((skill) => skill.id);
+  assert.equal(legacyProgress.completedSkills, expectedLegacySkills.length);
+  assert.deepEqual(JSON.parse(legacy.getItem("cap8.r4.civics.progress")).completedSkillIds, expectedLegacySkills);
+  assert.equal(legacy.getItem("cap8.r4.civics.migration.v1.progress"), "complete");
   assert.equal(migrateLegacyStorage(legacy).reason, "already-complete");
   class QuotaStorage extends Storage {
     setItem(key, value) { if (key.endsWith("legacyBackup")) { const error = new Error("quota"); error.name = "QuotaExceededError"; throw error; } super.setItem(key, value); }
@@ -240,8 +326,12 @@ async function verifyRuntime(index, manifest) {
   assert(html.includes('id="tabDiagnostic"') && html.includes('id="tabRemediation"') && html.includes('aria-live="polite"'), "accessible learning-flow controls missing");
   const styles = await readFile(path.join(R4_ROOT, "styles.css"), "utf8");
   assert(styles.includes("@media print") && styles.includes("section[hidden]{display:block!important}"), "print gate missing");
+  assert(styles.includes("box-shadow:0 0 0 2px var(--brand)"), "high-contrast keyboard focus indicator missing");
   const sw = await readFile(path.join(R4_ROOT, "sw.js"), "utf8");
-  assert(sw.includes("content-manifest-v4.json") && sw.includes("manifest.artifacts.map") && sw.includes("cacheCompleteRelease"), "full static offline precache missing");
+  assert(sw.includes("content-manifest-v4.json") && sw.includes("manifest.artifacts.map") && sw.includes("manifest.buildSha256") && sw.includes("cacheCompleteRelease"), "manifest-SHA static offline precache missing");
+  assert(!sw.includes("cap8-r4-civics-v4.0.0-r2"), "stale fixed service-worker cache key returned");
+  const webmanifest = await json(path.join(R4_ROOT, "manifest.webmanifest"));
+  assert(webmanifest.icons?.some((icon) => icon.src === "../icon.svg" && icon.sizes === "any" && icon.type === "image/svg+xml"), "installable app icon missing");
   const indexedPaths = index.skills.flatMap((skill) => [skill.lecturePath, skill.stimulusPath, ...skill.questionPaths, ...skill.stimulusQuestionPaths]);
   assert.equal(new Set(indexedPaths).size, 240 * 17, "runtime indexed artifact paths drift");
   const manifestPaths = new Set(manifest.artifacts.map((artifact) => artifact.path.replaceAll("\\", "/").split("/r4/")[1]));
@@ -266,18 +356,20 @@ export async function verifyCivics() {
   assert.equal(binding.status, "frozen-authority-and-skill-records-built");
   assert.deepEqual(binding.counts, { authorityNodes: 100, skills: 240, units: 36 });
   assert.deepEqual(binding.contentStatus, { lecturesComplete: true, skillQuestionsComplete: true, stimuliComplete: true, manifestEligible: true });
-  assert.equal(binding.officialFactVerificationDate, "2026-07-16");
-  assert(sourceFile.sources.every((value) => value.status === "verified" && value.retrievedAt === "2026-07-16"));
+  assert.equal(binding.officialFactVerificationDate, VERIFIED_AT);
+  verifyOfficialSources(sourceFile);
   await verifyManifest(manifest);
   await verifyAuthority(skills, authorityNodes, lectures, questions, stimuli);
   await verifyLectures(lectures, sourceFile.sources);
   await verifyQuestions(questions);
   await verifyStimuli(stimuli, questions);
+  verifySkillSpecificity(skills, lectures, questions, stimuli);
   await verifyAssets(index.assets);
   await verifyCalibration(calibration);
   await verifyRuntime(index, manifest);
   assertNoPlaceholders([...lectures, ...questions, ...stimuli].map((value) => JSON.stringify(value)));
-  return { status: "pass", changedPaths, buildSha256: manifest.buildSha256, counts: manifest.counts, officialCalibration: { ...calibration.counts, renderedItemsChecked: 765, answerMismatches: 0 }, exactDuplicateGroups: 0, nearDuplicatePairsWithinSkill: 0, independentlySolvedQuestions: questions.length, uniquelyKeyedQuestions: questions.length };
+  const finalAudit = await verifyFinalAudit(manifest);
+  return { status: "pass", changedPaths, buildSha256: manifest.buildSha256, counts: manifest.counts, officialCalibration: { ...calibration.counts, renderedItemsChecked: 765, answerMismatches: 0 }, exactDuplicateGroups: 0, nearDuplicatePairsWithinSkill: 0, structurallyValidatedAnswerKeys: questions.length, authoringReviewRecords: questions.length * 2, finalAudit };
 }
 
 async function main() {

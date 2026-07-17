@@ -44,6 +44,25 @@ export function migrateLegacyStorage(storage) {
   return { migrated: true, complete, legacyKeys: Object.keys(backup).length, backupMode: copied ? "copied" : "source-keys-preserved", failures };
 }
 
+export function applyLegacyProgress(storage, index) {
+  const marker = `${V4_PREFIX}migration.v1.progress`;
+  if (storage.getItem(marker) === "complete") return { migrated: false, reason: "already-complete" };
+  const legacyUnits = new Set(safeJson(storage.getItem(`${V4_PREFIX}legacyCompleted`), []).map(Number).filter(Number.isInteger));
+  const mappedSkillIds = index.skills.filter((skill) => legacyUnits.has(Number(skill.unitId.slice(-2)))).map((skill) => skill.id);
+  const progress = safeJson(storage.getItem(`${V4_PREFIX}progress`), {});
+  progress.completedSkillIds = [...new Set([...(Array.isArray(progress.completedSkillIds) ? progress.completedSkillIds : []), ...mappedSkillIds])];
+  progress.attempts = progress.attempts && typeof progress.attempts === "object" ? progress.attempts : {};
+  progress.mistakes = progress.mistakes && typeof progress.mistakes === "object" ? progress.mistakes : {};
+  progress.reviewSchedule = progress.reviewSchedule && typeof progress.reviewSchedule === "object" ? progress.reviewSchedule : {};
+  try {
+    storage.setItem(`${V4_PREFIX}progress`, JSON.stringify(progress));
+    storage.setItem(marker, "complete");
+    return { migrated: true, completedSkills: mappedSkillIds.length };
+  } catch (error) {
+    return { migrated: false, reason: error.name || "write-failed" };
+  }
+}
+
 function hash(text) {
   let value = 2166136261;
   for (const char of text) value = Math.imul(value ^ char.codePointAt(0), 16777619);
@@ -309,7 +328,7 @@ async function registerServiceWorker() {
   if (!("serviceWorker" in navigator)) return;
   try {
     state.offlinePreparing = true; updateNetworkStatus();
-    const registration = await navigator.serviceWorker.register("sw.js");
+    const registration = await navigator.serviceWorker.register("sw.js", { updateViaCache: "none" });
     const worker = registration.installing;
     if (worker) worker.addEventListener("statechange", () => { if (worker.state === "installed") { state.offlineReady = true; state.offlinePreparing = false; updateNetworkStatus(); } });
     navigator.serviceWorker.ready.then(() => { state.offlineReady = true; state.offlinePreparing = false; updateNetworkStatus(); });
@@ -332,6 +351,7 @@ async function copyCurrentLink() {
 async function start() {
   migrateLegacyStorage(localStorage);
   state.index = await loadJson(INDEX_URL);
+  applyLegacyProgress(localStorage, state.index);
   $("#unitSelect").replaceChildren(new Option("全部主題", ""), ...state.index.units.map((unit) => new Option(unit.title, unit.unitId)));
   $("#unitSelect").addEventListener("change", renderSkillList);
   $("#skillSearch").addEventListener("input", renderSkillList);
