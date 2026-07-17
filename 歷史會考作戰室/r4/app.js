@@ -10,6 +10,7 @@ import {
 
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
+const SOURCE_RECONSTRUCTION_NOTICE = "史料型短文均為本站依查證史實原創重構；未附出處時，不是歷史文獻原文。";
 let index;
 let currentQuestions = [];
 let currentStimuli = new Map();
@@ -91,7 +92,7 @@ async function renderLecture(skillId) {
       return `<li>${escapeHtml(prerequisite?.title ?? id)}：${progress.completedSkills.includes(id) ? "已完成" : "尚未完成"}</li>`;
     }).join("");
     host.innerHTML = `
-      <header><p>第 ${Number(unit.id.slice(-2))} 單元</p><h2>${escapeHtml(skill.title)}</h2></header>
+      <header><p>第 ${Number(unit.id.slice(-2))} 單元</p><h2>${escapeHtml(skill.title)}</h2><p class="source-notice">${SOURCE_RECONSTRUCTION_NOTICE}</p></header>
       ${prerequisites ? `<section><h3>先備技能</h3><ul>${prerequisites}</ul></section>` : ""}
       <section><h3>學習目標</h3><ul>${lecture.objectives.map((value) => `<li>${escapeHtml(value)}</li>`).join("")}</ul></section>
       ${lecture.assets?.map((id) => assetHtml(lectureAssets.get(id))).join("") ?? ""}
@@ -153,7 +154,7 @@ function renderPaper(seed) {
     return `${passage}${questionAssets}<fieldset data-question="${question.id}"><legend><span>${indexValue + 1}.</span> ${escapeHtml(question.stem)}</legend>${question.options.map((option, optionIndex) => `<label><input type="radio" name="q${indexValue}" value="${optionIndex}"><span>${String.fromCharCode(65 + optionIndex)}. ${escapeHtml(option)}</span></label>`).join("")}<div class="explanation" hidden></div></fieldset>`;
   }).join("");
   const scope = $("#practiceUnit").selectedOptions[0]?.textContent ?? "全部單元";
-  $("#paper").innerHTML = `<header class="paper-header"><h2>歷史練習</h2><p>範圍：${escapeHtml(scope)}　種子碼：${escapeHtml(seed)}　共 ${currentQuestions.length} 題</p></header>${questionsHtml}`;
+  $("#paper").innerHTML = `<header class="paper-header"><h2>歷史練習</h2><p>範圍：${escapeHtml(scope)}　種子碼：${escapeHtml(seed)}　共 ${currentQuestions.length} 題</p><p class="source-notice">${SOURCE_RECONSTRUCTION_NOTICE}</p></header>${questionsHtml}`;
   $("#paper").dataset.seed = seed;
   $("#paper").dataset.submitted = "false";
   $("#paper").hidden = false;
