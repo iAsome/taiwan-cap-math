@@ -197,9 +197,22 @@ test("History near-duplicate audit rejects repeated normalized questions and ext
   const result = await auditHistorySimilarity();
   assert.equal(result.questions, 3600);
   assert.deepEqual(result.normalizedQuestionDuplicateGroups, []);
+  assert.deepEqual(result.structuralQuestionDuplicateGroups, []);
   assert.deepEqual(result.normalizedRationaleDuplicateGroups, []);
   assert.deepEqual(result.normalizedReviewEvidenceDuplicateGroups, []);
+  assert.deepEqual(result.optionLengthFindings, []);
+  assert.deepEqual(result.unmarkedSourceClaims, []);
+  assert.deepEqual(result.vagueRationaleFindings, []);
+  assert.deepEqual(result.titleLeakFindings, []);
   assert.deepEqual(result.blockingCandidates, []);
+});
+
+test("History UI identifies reconstructed source-style prose without weakening stimulus provenance", async () => {
+  const app = await readFile(path.join(SUBJECT_ROOT, "app.js"), "utf8");
+  const notice = "史料型短文均為本站依查證史實原創重構；未附出處時，不是歷史文獻原文。";
+  assert.equal(app.split(notice).length - 1, 1);
+  assert.match(app, /SOURCE_RECONSTRUCTION_NOTICE/u);
+  assert.match(app, /class="source-notice"/u);
 });
 
 test("Official 106-115 social reviews provide complete History calibration evidence", async () => {

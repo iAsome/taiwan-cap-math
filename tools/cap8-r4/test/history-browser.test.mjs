@@ -74,7 +74,8 @@ for (const [name, browserType] of Object.entries({ chromium, firefox, webkit }))
     await page.waitForSelector("#lectureContent header");
     await page.locator("#lectureSelect").selectOption("HIS_R4_S044");
     await page.waitForSelector("#lectureContent .asset img");
-    assert.match(await page.locator("#lectureContent header p").innerText(), /^第 7 單元$/u);
+    assert.match(await page.locator("#lectureContent .source-notice").innerText(), /原創重構.*不是歷史文獻原文/u);
+    assert.match(await page.locator("#lectureContent header p").first().innerText(), /^第 7 單元$/u);
     assert(!(await page.locator("#lectureContent").innerText()).includes("HIS_R4_S044"));
     assert((await page.locator("#lectureContent .asset img").evaluate((image) => image.naturalWidth)) > 0);
     assert.match(await page.locator("#lectureContent .asset img").getAttribute("alt"), /滬尾略在北部東側的雞籠以北/u);
@@ -98,6 +99,7 @@ for (const [name, browserType] of Object.entries({ chromium, firefox, webkit }))
     await page.locator("#seedInput").fill("11507");
     await page.locator("#practiceForm").evaluate((form) => form.requestSubmit());
     await page.waitForSelector("#paper:not([hidden]) fieldset");
+    assert.match(await page.locator("#paper .source-notice").innerText(), /原創重構.*不是歷史文獻原文/u);
     assert.equal(await page.locator("#paper fieldset").count(), 8);
     assert.equal(await page.locator("#paper .stimulus").count(), 1);
     for (const fieldset of await page.locator("#paper fieldset").all()) await fieldset.locator("input").first().check();
