@@ -14,43 +14,43 @@
     "AUTH-SOCIAL-LP-SOC-3D-4-1"
   ],
   "stimulusId": null,
-  "stem": "讓使用者知道 GIS 結論限制，應提供什麼？",
+  "stem": "避難所容量欄有三成空白。分析程式把空白全部當成零人，最主要的問題是什麼？",
   "options": [
-    "只提供總分",
-    "只放彩色圖",
-    "只寫相信模型",
-    "資料來源、範圍、日期、解析度、缺值、定義與適用問題"
+    "空白一定表示避難所已關閉",
+    "把空白改成平均值就必然正確",
+    "零人與未知容量意義相同",
+    "會把未知誤判為無容量，應先查缺值定義或補資料"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "總分隱藏來源品質。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "關閉狀態需獨立欄位或現況資料，不能由空白推定。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "圖色不含全部中繼資料。"
+      "reason": "平均填補也需要合理假設，且會掩蓋容量不確定性。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "信任不能取代證據。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "零是已知數值，空白可能代表未調查、遺漏或不適用。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "完整限制可判斷能與不能回答什麼。"
+      "reason": "先辨認缺值語意可避免錯誤排除仍可能可用的避難所。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制溝通"
+    "缺值判讀"
   ],
-  "representationType": "metadata-report",
+  "representationType": "missing-capacity",
   "misconceptionTargets": [
-    "模型輸出不需中繼資料"
+    "把缺值直接當成零"
   ],
   "provenance": {
     "status": "original",
@@ -70,13 +70,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "限制說明應靠近結果並有結構表，不藏在不可存取附件。 正確選項「資料來源、範圍、日期、解析度、缺值、定義與適用問題」可由題幹推出，因為完整限制可判斷能與不能回答什麼。",
+      "evidence": "資料缺口不是單純格式問題；不同缺值語意會改變候選結果。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "若結果會影響安全，還應列權威核對與人工覆核流程。 逐項排除其他選項：「只提供總分」總分隱藏來源品質。 這項內容無法支持題幹所要求的地理判斷。；「只放彩色圖」圖色不含全部中繼資料。；「只寫相信模型」信任不能取代證據。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案二保留未知狀態並要求查證，比直接填零或平均更負責。",
       "status": "pass"
     }
   ],

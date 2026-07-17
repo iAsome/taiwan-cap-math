@@ -16,43 +16,43 @@
     "AUTH-SOCIAL-LP-SOC-2B-4-1"
   ],
   "stimulusId": null,
-  "stem": "出生死亡圖表的可及替代至少需要什麼？",
+  "stem": "某地人口五十萬，出生率千分之十、死亡率千分之七，淨遷移負二千五百人。當年人口淨變化約多少？",
   "options": [
-    "只說出生線是綠色",
-    "只列最高年",
-    "省略率的千分符號",
-    "各年出生死亡人數與率、人口基數、單位及資料期間"
+    "減少四千人",
+    "增加四千人",
+    "增加一千五百人",
+    "減少一千人"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "四千把自然增加與淨遷出絕對值相加且方向錯誤。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "無法看趨勢。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "自然增加只有一千五百，還要扣除淨遷出二千五百。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "會造成十倍錯誤。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "一千五百只是出生減死亡的人數，未納入遷移。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "可重算並區分人數與率。"
+      "reason": "五十萬乘千分之三得一千五百，再加負二千五百為負一千。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "人口率可及性"
+    "人口平衡"
   ],
-  "representationType": "accessible-rates",
+  "representationType": "population-balance",
   "misconceptionTargets": [
-    "線條顏色可取代人口基數"
+    "只用自然增加率判總人口增減"
   ],
   "provenance": {
     "status": "original",
@@ -74,13 +74,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "正確選項「各年出生死亡人數與率、人口基數、單位及資料期間」可由題幹推出，因為可重算並區分人數與率。",
+      "evidence": "先把率換成人數求自然增加，再把有正負號的淨遷移納入人口平衡。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "逐項排除其他選項：「只說出生線是綠色」顏色不足。 這項內容無法支持題幹所要求的地理判斷。；「只列最高年」無法看趨勢。 這項內容無法支持題幹所要求的地理判斷。；「省略率的千分符號」會造成十倍錯誤。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案三區分自然增加與總人口變化，兩個概念不能互相取代。",
       "status": "pass"
     }
   ],

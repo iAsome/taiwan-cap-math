@@ -12,43 +12,43 @@
     "AUTH-SOCIAL-LP-SOC-3B-4-3"
   ],
   "stimulusId": null,
-  "stem": "天氣與氣候圖表的非視覺替代應如何標示？",
+  "stem": "某地三十年冬季均溫呈上升趨勢，但今年某天出現破紀錄低溫。兩項資料如何理解？",
   "options": [
-    "只用晴雨顏色",
-    "只寫很熱",
-    "刪除日期",
-    "逐筆列時間尺度、要素、單位、統計方式與期間"
+    "均溫上升表示此後不可能再冷",
+    "破紀錄低溫就是當地氣候的完整描述",
+    "單日低溫足以推翻三十年趨勢",
+    "長期平均趨勢與短期極端事件可以同時存在"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "平均值上升不會消除每日與年際變異。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "籠統且無單位。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "一天的最低溫不能代表完整季節與長期統計。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "日期是核心。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "單一日事件的時間尺度不足以否定多年統計趨勢。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "時間與統計資訊能直接區分兩類。"
+      "reason": "氣候描述長期分布，天氣仍可能在其中出現冷極端。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "時間資料可及性"
+    "時間尺度"
   ],
-  "representationType": "accessible-weather-climate",
+  "representationType": "weather-climate-case",
   "misconceptionTargets": [
-    "顏色可取代時間尺度"
+    "用單一冷事件否定長期趨勢"
   ],
   "provenance": {
     "status": "original",
@@ -66,13 +66,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "氣候表需說平均或極端，天氣表需說觀測或預報時刻。 正確選項「逐筆列時間尺度、要素、單位、統計方式與期間」可由題幹推出，因為時間與統計資訊能直接區分兩類。",
+      "evidence": "先把單日天氣和三十年氣候放回各自時間尺度，再判斷是否矛盾。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "這也避免螢幕閱讀器讀者把多年平均當今日數值。 逐項排除其他選項：「只用晴雨顏色」顏色不足。 這項內容無法支持題幹所要求的地理判斷。；「只寫很熱」籠統且無單位。 這項內容無法支持題幹所要求的地理判斷。；「刪除日期」日期是核心。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案二容納平均趨勢與極端變異，沒有用單一事件取代長期資料。",
       "status": "pass"
     }
   ],

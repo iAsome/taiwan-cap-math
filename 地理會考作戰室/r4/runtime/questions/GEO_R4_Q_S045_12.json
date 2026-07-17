@@ -18,43 +18,43 @@
     "AUTH-SOCIAL-LP-GEO-1B-4-1"
   ],
   "stimulusId": null,
-  "stem": "河流地形圖的非視覺替代要能判凹凸岸，應提供什麼？",
+  "stem": "同一河流由上游陡坡進入平原，河床沉積物由巨礫逐漸變成砂與粉砂。主要原因是什麼？",
   "options": [
-    "只列河水藍色",
-    "只說河很彎",
-    "只給行政人口",
-    "水流方向、各彎道內外側、流速或侵蝕堆積紀錄"
+    "下游重力方向改向上游",
+    "細砂一定全部來自海浪",
+    "河流越往下游侵蝕力必定無限增加",
+    "往下游坡降與流速降低，河流可搬運粒徑變小"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不說內外岸。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "重力並未在下游反轉，河水仍往低處流。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "彎曲摘要不足以定位。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "題目描述同一河流沿程變化，沒有海浪來源證據。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "人口不能判流力。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "流速受坡降、流量與河道影響，不會無限增加。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "關係資料可重建岸側作用。"
+      "reason": "能量沿程降低會使較粗顆粒先沉積，較細物質搬得更遠。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "河流圖可及性"
+    "搬運分選"
   ],
-  "representationType": "accessible-meander",
+  "representationType": "downstream-profile",
   "misconceptionTargets": [
-    "顏色可取代河彎拓撲"
+    "認為河流沿程搬運能力只增不減"
   ],
   "provenance": {
     "status": "original",
@@ -78,13 +78,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "可用河段表列左岸右岸前先說明朝下游方向的觀察基準。 正確選項「水流方向、各彎道內外側、流速或侵蝕堆積紀錄」可由題幹推出，因為關係資料可重建岸側作用。",
+      "evidence": "以河流搬運能力和粒徑分選連結上、下游，而不是只背地形名稱。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "若有沉積面積與年份，也能支援時序比較。 逐項排除其他選項：「只列河水藍色」顏色不說內外岸。 這項內容無法支持題幹所要求的地理判斷。；「只說河很彎」彎曲摘要不足以定位。 這項內容無法支持題幹所要求的地理判斷。；「只給行政人口」人口不能判流力。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案一可同時解釋坡降變小與沉積物變細兩項觀察。",
       "status": "pass"
     }
   ],

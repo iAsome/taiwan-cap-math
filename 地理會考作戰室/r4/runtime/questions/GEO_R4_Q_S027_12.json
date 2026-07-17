@@ -12,43 +12,43 @@
     "AUTH-SOCIAL-LP-GEO-1B-4-1"
   ],
   "stimulusId": null,
-  "stem": "規劃圖要讓鍵盤與螢幕閱讀器使用者比較候選地，應提供什麼？",
+  "stem": "甲道路長六公里但穿越密集等高線與歷史崩塌區；乙道路長九公里，沿緩坡繞經鞍部。初步選線最合理的作法為何？",
   "options": [
-    "只靠紅綠色地圖",
-    "只提供滑鼠懸停",
-    "把候選地都標成最好",
-    "按一致欄位列坡度、高程、洪水、交通、地質與待查事項的資料表"
+    "把兩案長度相加後選平均路線",
+    "直接選甲，因距離最短",
+    "直接選乙，因所有長路都較安全",
+    "先比較坡度、地質、排水與施工風險，再權衡路程"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "只靠顏色不具普遍可讀性。"
+      "reason": "相加長度不能產生實際存在的第三條路線。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "滑鼠限定會阻礙鍵盤與觸控。"
+      "reason": "短路可能有陡坡與崩塌成本，不能只用長度決定。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "無差別稱最好會隱藏取捨。"
+      "reason": "乙的圖面條件較緩，但仍需查地質與現地風險。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "結構化表格可逐項比較並揭露缺失資料。"
+      "reason": "同時核對地形與工程條件，才能比較安全、成本和可行性。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "決策可及性"
+    "選址權衡"
   ],
-  "representationType": "accessible-planning",
+  "representationType": "route-comparison",
   "misconceptionTargets": [
-    "彩色地圖可取代比較資料"
+    "把最短路線直接視為最佳路線"
   ],
   "provenance": {
     "status": "original",
@@ -66,13 +66,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "等值替代要保留決策條件而非只列地名。 正確選項「按一致欄位列坡度、高程、洪水、交通、地質與待查事項的資料表」可由題幹推出，因為結構化表格可逐項比較並揭露缺失資料。",
+      "evidence": "密集等高線與崩塌紀錄都是甲案的硬限制訊號，乙案也不是免查證。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "表頭、候選編號與文字風險標籤也有助黑白列印與討論。 逐項排除其他選項：「只靠紅綠色地圖」只靠顏色不具普遍可讀性。；「只提供滑鼠懸停」滑鼠限定會阻礙鍵盤與觸控。；「把候選地都標成最好」無差別稱最好會隱藏取捨。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案三保留多條件評估，沒有把最短或繞行直接等同最佳。",
       "status": "pass"
     }
   ],

@@ -19,43 +19,43 @@
     "AUTH-SOCIAL-LP-GEO-1A-4-2"
   ],
   "stimulusId": null,
-  "stem": "供應鏈中斷圖的無障礙替代應包含什麼？",
+  "stem": "企業列出三家備援供應商，卻從未試產或驗證交期；這份名單為何還不能證明供應鏈有韌性？",
   "options": [
-    "只把中斷點塗紅",
-    "只列品牌",
-    "省略共同上游",
-    "節點層級、來源占比、方向、庫存、前置與中斷恢復時間"
+    "供應商數量超過一家就必然無風險",
+    "名單存在會讓庫存自動增加",
+    "備援供應商不需要任何規格資料",
+    "中斷時能否達到品質、產能與交期尚未被測試"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "色彩不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "多家來源仍可能同地、同原料或同時失效。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "無供應結構。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "名單本身不會增加實體庫存。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "會漏風險。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "沒有規格與品質認證便難以替代生產。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "可重建傳遞與依賴。 這項證據可直接支持題幹所要求的地理判斷。"
+      "reason": "未驗證的來源可能在實際切換時無法供貨。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "中斷圖可及性"
+    "備援驗證"
   ],
-  "representationType": "accessible-disruption",
+  "representationType": "supplier-drill",
   "misconceptionTargets": [
-    "紅色節點可取代中斷時間與占比"
+    "供應商名單等於可用備援"
   ],
   "provenance": {
     "status": "original",
@@ -80,13 +80,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "時間軸與網絡表可分開但交叉引用同一ID。 正確選項「節點層級、來源占比、方向、庫存、前置與中斷恢復時間」可由題幹推出，因為可重建傳遞與依賴。 這項證據可直接支持題幹所要求的地理判斷。",
+      "evidence": "備援能力需靠認證、試產、容量保留與切換演練證明。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "備援節點需標示是否已認證。 逐項排除其他選項：「只把中斷點塗紅」色彩不足。 這項內容無法支持題幹所要求的地理判斷。；「只列品牌」無供應結構。 這項內容無法支持題幹所要求的地理判斷。；「省略共同上游」會漏風險。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "地理與上游同源風險也要檢查，避免表面多元。",
       "status": "pass"
     }
   ],

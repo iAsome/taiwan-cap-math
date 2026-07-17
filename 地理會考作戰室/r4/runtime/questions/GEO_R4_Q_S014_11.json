@@ -14,22 +14,22 @@
   "stimulusId": null,
   "stem": "某地規劃生鮮出口：產品保存期短、貨量中等，海運需五日、空運需五小時。還缺哪項資料才能做較完整選擇？",
   "options": [
-    "港口招牌顏色",
-    "飛機座椅花紋",
+    "只比較兩種運費",
+    "只比較兩種可載量",
     "兩種運費、可載量與產品可接受時效",
-    "地名筆畫數"
+    "只知道保存期短，不訂可接受抵達時限"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "招牌顏色不影響跨海時效與容量。"
+      "reason": "只看運費會忽略載量與產品能否在時限內抵達。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "座椅花紋不是貨運條件。"
+      "reason": "只看載量會忽略成本與生鮮保存時限。"
     },
     {
       "optionIndex": 2,
@@ -39,7 +39,7 @@
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "筆畫數與物流決策無關。"
+      "reason": "沒有明確可接受時限，就無法判斷五日海運是否可行。"
     }
   ],
   "difficulty": "transfer",
@@ -66,13 +66,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "既有資料只比較時間，仍須把成本、載量和可腐壞程度放入同一決策。 正確選項「兩種運費、可載量與產品可接受時效」可由題幹推出，因為成本、容量與保存期限能判斷快運效益是否值得。",
+      "evidence": "既有資料只比較時間，仍須把成本、載量和可腐壞程度放入同一決策。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "選項一補的是會改變選擇的實質證據，其他三項都是無關資訊。 逐項排除其他選項：「港口招牌顏色」招牌顏色不影響跨海時效與容量。；「飛機座椅花紋」座椅花紋不是貨運條件。；「地名筆畫數」筆畫數與物流決策無關。；因此沒有同樣成立的替代答案。",
+      "evidence": "選項一補的是會改變選擇的實質證據，其他三項都是無關資訊。",
       "status": "pass"
     }
   ],

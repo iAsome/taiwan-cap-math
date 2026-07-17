@@ -16,22 +16,22 @@
   "stimulusId": null,
   "stem": "臺灣學生比較三類島嶼，最需要統一哪些資料？",
   "options": [
-    "只有島名字數",
+    "只比較海岸線長度",
     "只看一張海灘照片",
     "面積、最高海拔、地質、雨量、淡水來源與人口分布",
-    "只有國旗"
+    "只比較國家總人口"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "不相關。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "海岸線長度無法代表海拔、地質、淡水與人口分布。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "代表性不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "代表性不足。"
     },
     {
       "optionIndex": 2,
@@ -41,7 +41,7 @@
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "無環境意義。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "國家總人口可能跨多島，不能描述單一島嶼暴露。"
     }
   ],
   "difficulty": "transfer",
@@ -70,13 +70,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "正確選項「面積、最高海拔、地質、雨量、淡水來源與人口分布」可由題幹推出，因為涵蓋自然與暴露且可比較。",
+      "evidence": "島國可包含多類島。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "逐項排除其他選項：「只有島名字數」不相關。 這項內容無法支持題幹所要求的地理判斷。；「只看一張海灘照片」代表性不足。 這項內容無法支持題幹所要求的地理判斷。；「只有國旗」無環境意義。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "資料年份和尺度需一致。",
       "status": "pass"
     }
   ],

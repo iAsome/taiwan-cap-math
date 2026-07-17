@@ -17,43 +17,43 @@
     "AUTH-SOCIAL-LP-SOC-2A-4-1"
   ],
   "stimulusId": null,
-  "stem": "食物供應鏈圖的無障礙替代應包含什麼？",
+  "stem": "同批鮮食在零售端變質，供應鏈只記錄出車與到貨溫度，最關鍵的資料缺口是什麼？",
   "options": [
-    "只說箭頭是綠色",
-    "只列零售端",
-    "省略流向",
-    "節點順序、投入產出、批號、溫度、運輸、損耗與責任者"
+    "產品包裝使用幾種顏色",
+    "零售店招牌的字體大小",
+    "駕駛員住處到倉庫的直線距離",
+    "運輸途中連續的時間溫度紀錄與異常發生位置"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "包裝顏色不能定位冷鏈何時中斷。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "缺完整鏈。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "招牌字體與食品保存狀態無關。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "無法追蹤。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "住處距離不是該批產品的運輸溫度資料。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "可重建產品與資訊流。 這項證據可直接支持題幹所要求的地理判斷。"
+      "reason": "起終點合格仍可能掩蓋途中長時間超溫。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "供應鏈可及性"
+    "冷鏈缺口"
   ],
-  "representationType": "accessible-food-chain",
+  "representationType": "temperature-log",
   "misconceptionTargets": [
-    "箭頭顏色可取代批號與流向"
+    "起點終點溫度可代表全程"
   ],
   "provenance": {
     "status": "original",
@@ -76,13 +76,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "分支供應商可用節點連線表。 正確選項「節點順序、投入產出、批號、溫度、運輸、損耗與責任者」可由題幹推出，因為可重建產品與資訊流。 這項證據可直接支持題幹所要求的地理判斷。",
+      "evidence": "要定位變質原因，必須知道途中何時、何地及多久超溫。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "箭頭若同時代表貨物流與資訊流要分別標示。 逐項排除其他選項：「只說箭頭是綠色」顏色不足。 這項內容無法支持題幹所要求的地理判斷。；「只列零售端」缺完整鏈。 這項內容無法支持題幹所要求的地理判斷。；「省略流向」無法追蹤。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "批號再配合連續溫度與節點交接紀錄，才能縮小責任和召回範圍。",
       "status": "pass"
     }
   ],

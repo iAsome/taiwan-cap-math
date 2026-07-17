@@ -19,43 +19,43 @@
     "AUTH-SOCIAL-LP-GEO-1A-4-2"
   ],
   "stimulusId": null,
-  "stem": "工業區位圖的無障礙替代應包含什麼？",
+  "stem": "冷凍水果加工會大量去皮去核，工廠選址時為何要分開估算原料與成品運輸？",
   "options": [
-    "只用不同顏色",
-    "只列工廠名稱",
-    "省略比例尺",
-    "廠址、原料市場、運量、時間、成本、電水、勞力與風險"
+    "原料與成品重量必定完全相同",
+    "去皮去核會讓市場距離變成零",
+    "只要地價低便不需計算運費",
+    "原料重量與體積可能在加工後下降，兩段運量和冷鏈需求不同"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "色彩不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "去除不可食部分通常會改變重量，不能假定完全相同。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "無因子。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "加工不會改變工廠與市場的實際距離。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "距離判斷需要。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "低地價不能抵銷未知的原料與成品物流成本。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "可重建區位比較。 這項證據可直接支持題幹所要求的地理判斷。"
+      "reason": "加工前後重量與保存條件不同，會改變兩段運輸成本。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "區位圖可及性"
+    "加工減重"
   ],
-  "representationType": "accessible-industry-map",
+  "representationType": "material-balance-location",
   "misconceptionTargets": [
-    "工廠點色可取代成本與流向"
+    "原料運費與成品運費可用同一重量估算"
   ],
   "provenance": {
     "status": "original",
@@ -80,13 +80,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "正確選項「廠址、原料市場、運量、時間、成本、電水、勞力與風險」可由題幹推出，因為可重建區位比較。 這項證據可直接支持題幹所要求的地理判斷。",
+      "evidence": "先做物料平衡，再分別估算進廠與出廠物流，才能比較原料與市場區位。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "逐項排除其他選項：「只用不同顏色」色彩不足。 這項內容無法支持題幹所要求的地理判斷。；「只列工廠名稱」無因子。 這項內容無法支持題幹所要求的地理判斷。；「省略比例尺」距離判斷需要。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "冷鏈可靠度和損耗也可能比單純公里數更重要。",
       "status": "pass"
     }
   ],

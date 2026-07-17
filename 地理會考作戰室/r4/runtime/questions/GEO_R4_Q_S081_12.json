@@ -15,43 +15,43 @@
     "AUTH-SOCIAL-LP-GEO-1B-4-2"
   ],
   "stimulusId": null,
-  "stem": "交通網絡圖的可及替代應包含什麼？",
+  "stem": "甲乙兩站距住宅都約七百公尺，但甲每小時八班、乙每小時兩班。其他條件相同時，何者可達性通常較高？",
   "options": [
-    "只說捷運是藍線",
-    "只列終點",
-    "省略站間順序",
-    "節點、路線、方向、班次、旅行時間、轉乘與中斷資訊"
+    "乙站，因班次少代表車廂一定較空",
+    "兩站完全相同，距離相近就足夠",
+    "無法比較，班次永遠不影響可達性",
+    "甲站，因較密班次可降低平均等候與錯過班次成本"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "題目未提供載客率，且車廂空不等同整體可達性高。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "無中間可達。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "相同步行距離不能抹去班次帶來的等候差異。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "路序核心。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "班次是交通服務頻率，會直接影響可用性。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "可重建出行網路。 這項證據可直接支持題幹所要求的地理判斷。"
+      "reason": "可達性包含步行、等候與可靠性；較密班次通常降低時間成本。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "交通圖可及性"
+    "可達性比較"
   ],
-  "representationType": "accessible-network",
+  "representationType": "station-frequency",
   "misconceptionTargets": [
-    "路線顏色可取代站序與班次"
+    "只用距站距離判定交通可達性"
   ],
   "provenance": {
     "status": "original",
@@ -72,13 +72,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "正確選項「節點、路線、方向、班次、旅行時間、轉乘與中斷資訊」可由題幹推出，因為可重建出行網路。 這項證據可直接支持題幹所要求的地理判斷。",
+      "evidence": "交通可達性不是直線距離的同義詞，還要把班次與轉乘時間納入。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "施工或無障礙限制也需標示日期。 逐項排除其他選項：「只說捷運是藍線」顏色不足。 這項內容無法支持題幹所要求的地理判斷。；「只列終點」無中間可達。 這項內容無法支持題幹所要求的地理判斷。；「省略站間順序」路序核心。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案一使用題目唯一不同的服務條件，推論方向明確而不絕對化。",
       "status": "pass"
     }
   ],

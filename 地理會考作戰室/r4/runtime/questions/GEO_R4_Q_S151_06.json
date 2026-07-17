@@ -21,43 +21,43 @@
     "AUTH-SOCIAL-LP-SOC-3D-4-3"
   ],
   "stimulusId": null,
-  "stem": "折現率提高常會如何影響遠期環境成本在計算中的比重？",
+  "stem": "只計當年收益，卻未列未來修復成本，最可能造成什麼判讀偏差？",
   "options": [
-    "把未來變成現在",
-    "降低遠期成本的現值比重",
-    "使所有未來成本變大",
-    "完全不影響比較"
+    "使未來修復成本在現實中消失",
+    "高估方案淨效益，並把部分成本轉給後代",
+    "低估當年取得的收益",
+    "證明受損環境一定能完全恢復"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "時間並未物理改變。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "成本只是未列入比較，並不會因此消失。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "較高折現會更強烈壓低遠期金額。"
+      "reason": "漏列未來負擔會使方案看起來比實際更有利。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "方向相反。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "題幹已計入當年收益，問題在漏列未來成本。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "折現率正是跨期計算假設。"
+      "reason": "能否恢復需要生態證據，不能由帳目省略推出。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "interpretation"
+    "世代成本"
   ],
-  "representationType": "discounting",
+  "representationType": "intergenerational-cost",
   "misconceptionTargets": [
-    "折現純客觀無影響"
+    "未列出的未來成本等於不存在"
   ],
   "provenance": {
     "status": "original",
@@ -84,13 +84,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "正確選項「降低遠期成本的現值比重」可由題幹推出，因為較高折現會更強烈壓低遠期金額。",
+      "evidence": "跨期比較應列出未來修復與不可逆風險，才能檢查世代公平。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "不可逆損失不宜只靠單一折現率。 逐項排除其他選項：「把未來變成現在」時間並未物理改變。 這項內容無法支持題幹所要求的地理判斷。；「使所有未來成本變大」方向相反。 這項內容無法支持題幹所要求的地理判斷。；「完全不影響比較」折現率正是跨期計算假設。；因此沒有同樣成立的替代答案。",
+      "evidence": "不需要先學財務公式，也能判斷省略成本會扭曲決策。",
       "status": "pass"
     }
   ],

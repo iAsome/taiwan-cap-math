@@ -12,43 +12,43 @@
     "AUTH-SOCIAL-LP-SOC-3B-4-3"
   ],
   "stimulusId": null,
-  "stem": "氣候圖的無障礙替代至少需要什麼？",
+  "stem": "氣候圖左軸是攝氏溫度、右軸是毫米雨量；七月折線讀到二十八、柱頂讀到二百一十。正確敘述為何？",
   "options": [
-    "只寫線是紅色柱是藍色",
-    "只說夏天熱",
-    "刪除月份",
-    "十二月溫度與雨量表、單位、統計期間及缺值標記"
+    "七月兩個數值都用攝氏度",
+    "只看圖形高度即可省略座標軸",
+    "七月氣溫二十八毫米、雨量二百一十度",
+    "七月均溫二十八度、降水量二百一十毫米"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "柱狀表示降水，不能使用攝氏度。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "摘要不能支援計算。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "雙軸尺度不同，省略座標軸會造成錯誤讀值。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "月份是序列核心。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "溫度與雨量的單位被交換，物理量不成立。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "完整月表能重做極值與季節分析。"
+      "reason": "折線對左溫度軸、柱狀對右雨量軸，數值與單位配對正確。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "氣候圖可及性"
+    "雙軸讀圖"
   ],
-  "representationType": "accessible-climate-graph",
+  "representationType": "dual-axis-reading",
   "misconceptionTargets": [
-    "顏色圖例可取代十二月數值"
+    "用同一縱軸讀取氣溫與雨量"
   ],
   "provenance": {
     "status": "original",
@@ -66,13 +66,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "資料表列順序應固定一月至十二月並有表頭。 正確選項「十二月溫度與雨量表、單位、統計期間及缺值標記」可由題幹推出，因為完整月表能重做極值與季節分析。",
+      "evidence": "先依圖例辨認折線和柱狀，再分別對到正確縱軸與單位。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "長說明可補充趨勢，但不能取代數值表。 逐項排除其他選項：「只寫線是紅色柱是藍色」顏色不足。 這項內容無法支持題幹所要求的地理判斷。；「只說夏天熱」摘要不能支援計算。 這項內容無法支持題幹所要求的地理判斷。；「刪除月份」月份是序列核心。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案二完整保留月份、數值與物理量，是唯一可查核讀值。",
       "status": "pass"
     }
   ],

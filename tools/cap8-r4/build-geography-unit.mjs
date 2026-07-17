@@ -11,23 +11,6 @@ const GRAPH_PATH = path.join(HERE, "authority", "frozen-authority-graph.json");
 const SUBJECT_FOLDER = "地理會考作戰室";
 const UNIT_ID_PATTERN = /^GEO_R4_U\d{2}$/;
 const DIFFICULTY_FLOOR = Object.freeze({ foundation: 3, standard: 4, advanced: 3, transfer: 2 });
-const DEPTH_SUFFIX = Object.freeze({
-  section: "判讀時要先確認資料的時間、空間範圍、比較基準與指標定義，再把每一項證據連回題目所問的地理關係，最後檢查結論是否能排除其他解釋，不能只憑單一印象或熟悉地名作答。",
-  example: "這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。",
-  misconception: "這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
-  correction: "應依題幹條件與資料證據逐項核對後再判斷。",
-  correctReason: "這項證據可直接支持題幹所要求的地理判斷。",
-  incorrectReason: "這項內容無法支持題幹所要求的地理判斷。",
-});
-
-function chineseLength(value) {
-  return (String(value).match(/[\u3400-\u9fff]/gu) ?? []).length;
-}
-
-function ensureChineseDepth(value, minimum, suffix) {
-  assert.equal(typeof value, "string", "authored explanation must be a string");
-  return chineseLength(value) >= minimum ? value : `${value}${value.trim() ? " " : ""}${suffix}`;
-}
 
 function provenance(authorityRefs) {
   return {
@@ -47,13 +30,9 @@ function materializeLecture(value, skill) {
     authorityRefs: [...skill.authorityRefs],
     prerequisites: [...skill.prerequisites],
     objectives: value.objectives,
-    sections: value.sections.map((section) => ({ ...section, content: ensureChineseDepth(section.content, 55, DEPTH_SUFFIX.section) })),
-    workedExamples: value.workedExamples.map((example) => ({ ...example, why: ensureChineseDepth(example.why, 24, DEPTH_SUFFIX.example) })),
-    misconceptions: value.misconceptions.map((item) => ({
-      ...item,
-      whyWrong: ensureChineseDepth(item.whyWrong, 12, DEPTH_SUFFIX.misconception),
-      correction: ensureChineseDepth(item.correction, 8, DEPTH_SUFFIX.correction),
-    })),
+    sections: value.sections,
+    workedExamples: value.workedExamples,
+    misconceptions: value.misconceptions,
     checks: value.checks,
     assets: value.assets ?? [],
     provenance: provenance(skill.authorityRefs),
@@ -63,14 +42,12 @@ function materializeLecture(value, skill) {
 function materializeQuestion(value, skill) {
   assert.equal(value.reasons.length, value.options.length, `${value.id}: every option needs an authored reason`);
   assert.equal(value.reviews.length, 2, `${value.id}: exactly two independent authoring reviews required`);
+  assert.notEqual(value.reviews[0], value.reviews[1], `${value.id}: independent authoring reviews must differ`);
   const optionRationales = value.reasons.map((reason, optionIndex) => ({
     optionIndex,
     isCorrect: optionIndex === value.answerIndex,
-    reason: ensureChineseDepth(reason, 10, optionIndex === value.answerIndex ? DEPTH_SUFFIX.correctReason : DEPTH_SUFFIX.incorrectReason),
+    reason,
   }));
-  const correctRationale = optionRationales[value.answerIndex];
-  const solutionEvidence = `正確選項「${value.options[value.answerIndex]}」可由題幹推出，因為${correctRationale.reason}`;
-  const alternativeEvidence = `逐項排除其他選項：${optionRationales.filter((item) => !item.isCorrect).map((item) => `「${value.options[item.optionIndex]}」${item.reason}`).join("；")}；因此沒有同樣成立的替代答案。`;
   return {
     id: value.id,
     subject: "geography",
@@ -86,10 +63,10 @@ function materializeQuestion(value, skill) {
     representationType: value.representationType,
     misconceptionTargets: value.misconceptionTargets ?? [],
     provenance: provenance(skill.authorityRefs),
-    independentReviews: value.reviews.map((evidence, index) => ({
+    independentReviews: value.reviews.map((_, index) => ({
       reviewerRole: index === 0 ? "geography-solution-review" : "geography-alternative-answer-review",
       derivedAnswerIndex: value.answerIndex,
-      evidence: `${chineseLength(evidence) >= 12 ? `${evidence} ` : ""}${index === 0 ? solutionEvidence : alternativeEvidence}`,
+      evidence: value.reviews[index],
       status: "pass",
     })),
     assets: value.assets ?? [],
@@ -128,8 +105,10 @@ function validateStimulus(value) {
   assert(value.content && typeof value.content === "object" && !Array.isArray(value.content), `${value.id}: content must be structured`);
   assert(typeof value.content.title === "string" && value.content.title.trim(), `${value.id}: title required`);
   assert(typeof value.content.prompt === "string" && value.content.prompt.trim(), `${value.id}: prompt required`);
+  assert.match(value.content.sourceNote ?? "", /原創.*虛構|虛構.*原創|官方.*(?:19|20)\d{2}|(?:19|20)\d{2}.*官方/u, `${value.id}: original-fictional or dated official source note required`);
   assert(typeof value.accessibility?.summary === "string" && value.accessibility.summary.trim(), `${value.id}: accessibility summary required`);
   assert(typeof value.accessibility?.longDescription === "string" && value.accessibility.longDescription.length >= 20, `${value.id}: long description required`);
+  assert(value.assets?.length > 0 || value.content.body || value.content.table || (value.content.columns && value.content.rows) || value.content.map?.points || value.content.points, `${value.id}: stimulus has no renderable evidence`);
   assert(Array.isArray(value.questionIds) && value.questionIds.length === 3, `${value.id}: exactly three questions required`);
 }
 

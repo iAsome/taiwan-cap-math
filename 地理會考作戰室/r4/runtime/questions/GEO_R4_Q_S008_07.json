@@ -14,22 +14,22 @@
   "stimulusId": null,
   "stem": "北箭頭磨損，只看得出一條緯線與一條經線。要判斷兩點方位，哪項資訊最有幫助？",
   "options": [
-    "兩點旁的字體大小",
-    "圖紙價格",
+    "依道路線條的主要延伸方向推定北方",
+    "固定把紙面上方當作北方",
     "緯度數值向哪一側增加、經度數值向哪一側增加",
-    "地圖出版者姓名長短"
+    "只依地名在紙面的排列判定方位"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "字體大小通常表示標示層級，不是方位。"
+      "reason": "道路方向受地形與路網影響，不能作為北方基準。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "價格與方位系統沒有關聯。"
+      "reason": "北箭頭已不可讀時，紙面上方未必就是北方。"
     },
     {
       "optionIndex": 2,
@@ -39,7 +39,7 @@
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "出版者姓名不能指示北方。"
+      "reason": "地名排版可能避讓圖徵，不能取代經緯度增減方向。"
     }
   ],
   "difficulty": "standard",
@@ -66,13 +66,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "緯度向北或向南增加、經度向東或向西增加，可替代缺損北箭頭判讀方向。 正確選項「緯度數值向哪一側增加、經度數值向哪一側增加」可由題幹推出，因為數值增減可辨認南北與東西，重建地圖方向。",
+      "evidence": "緯度向北或向南增加、經度向東或向西增加，可替代缺損北箭頭判讀方向。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其他三項都不提供空間方向證據，因此無法成為合理替代答案。 逐項排除其他選項：「兩點旁的字體大小」字體大小通常表示標示層級，不是方位。；「圖紙價格」價格與方位系統沒有關聯。；「地圖出版者姓名長短」出版者姓名不能指示北方。；因此沒有同樣成立的替代答案。",
+      "evidence": "其他三項都不提供空間方向證據，因此無法成為合理替代答案。",
       "status": "pass"
     }
   ],

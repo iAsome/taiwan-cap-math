@@ -15,43 +15,43 @@
     "AUTH-SOCIAL-LP-SOC-2B-4-3"
   ],
   "stimulusId": null,
-  "stem": "比較供水方案的表格至少應列什麼？",
+  "stem": "甲方案一年完成、成本高；乙方案三年完成、成本低且可靠水量較多。題目未給政策時限與預算權重，能否直接判定唯一最佳？",
   "options": [
-    "只列方案名稱",
-    "只列支持者人數",
-    "只列最大工程尺寸",
-    "可靠水量、成本、時程、能源、生態、風險與受影響群體"
+    "不能，因供水方案完全不能量化",
+    "能，永遠選完成最快者",
+    "能，永遠選可靠水量最多者",
+    "不能，須先設定時限、預算與風險門檻再比較"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "無法比較。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "供水量、成本與時程皆可量化，只是目前決策條件不足。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "偏好不等於成效。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "若沒有急迫時限，高成本最快方案未必效益最高。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "尺寸不是完整效益。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "水量只是指標之一，時程、成本與限制仍會改變選擇。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "提供共同尺度與分配影響。"
+      "reason": "先公開限制與權重，才能在相同規則下判斷方案。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "方案比較表"
+    "多準則決策"
   ],
-  "representationType": "decision-matrix",
+  "representationType": "scheme-tradeoff",
   "misconceptionTargets": [
-    "最大工程就是最佳方案"
+    "用單一指標宣布方案絕對最佳"
   ],
   "provenance": {
     "status": "original",
@@ -72,13 +72,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "數值範圍與假設要一併呈現。 正確選項「可靠水量、成本、時程、能源、生態、風險與受影響群體」可由題幹推出，因為提供共同尺度與分配影響。",
+      "evidence": "資料有數值不等於排序規則已完成；『最佳』必須對應明確目標與限制。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "非量化生態與文化影響也需明確記錄。 逐項排除其他選項：「只列方案名稱」無法比較。 這項內容無法支持題幹所要求的地理判斷。；「只列支持者人數」偏好不等於成效。 這項內容無法支持題幹所要求的地理判斷。；「只列最大工程尺寸」尺寸不是完整效益。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案三指出缺少的決策條件，而不是武斷選一個單指標冠軍。",
       "status": "pass"
     }
   ],

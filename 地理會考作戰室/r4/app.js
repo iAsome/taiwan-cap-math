@@ -1,4 +1,4 @@
-import { STORAGE_KEY, THEME_KEY, loadProgress, migrateLegacy } from "./progress-migration.mjs?v=4.0.0-final-5";
+import { STORAGE_KEY, THEME_KEY, loadProgress, migrateLegacy } from "./progress-migration.mjs?v=4.0.0-final-7";
 
 const SUBJECT_PREFIX = "地理會考作戰室/r4/";
 const SKILL_PREFIX = "GEO_R4_";
@@ -196,13 +196,21 @@ async function renderPractice(seed = "1") {
 
 function renderStructuredContent(content, root) {
   root.append(element("h3", null, content.title), element("p", "stimulus-note", content.prompt));
+  if (content.sourceNote) root.append(element("p", "scope-notice", content.sourceNote));
   if (content.body) root.append(element("p", null, content.body));
-  if (content.table) { const wrap = element("div", "data-table-wrap"); const table = element("table", "data-table"); table.append(element("caption", null, content.table.caption)); const head = element("thead"); const headerRow = element("tr"); content.table.columns.forEach((value) => headerRow.append(element("th", null, value))); head.append(headerRow); const body = element("tbody"); content.table.rows.forEach((row) => { const tr = element("tr"); row.forEach((value) => tr.append(element("td", null, String(value)))); body.append(tr); }); table.append(head, body); wrap.append(table); root.append(wrap); }
+  if (content.map?.north) root.append(element("p", "stimulus-note", `方位基準：北方為${content.map.north}`));
+  if (content.target) root.append(element("p", "stimulus-note", `目標座標：${content.target}`));
+  const data = content.table
+    ?? (content.columns && content.rows ? { caption: content.caption ?? content.title, columns: content.columns, rows: content.rows } : null)
+    ?? (content.map?.points ? { caption: `${content.title}座標資料表`, columns: ["地點", "東西座標（格）", "南北座標（格）"], rows: content.map.points } : null)
+    ?? (content.points ? { caption: `${content.title}資料表`, columns: ["候選點", "緯度", "經度"], rows: content.points } : null);
+  if (data) { const wrap = element("div", "data-table-wrap"); const table = element("table", "data-table"); table.append(element("caption", null, data.caption?.trim() || content.title)); const head = element("thead"); const headerRow = element("tr"); data.columns.forEach((value) => headerRow.append(element("th", null, value))); head.append(headerRow); const body = element("tbody"); data.rows.forEach((row) => { const tr = element("tr"); row.forEach((value) => tr.append(element("td", null, String(value)))); body.append(tr); }); table.append(head, body); wrap.append(table); root.append(wrap); }
 }
 
 async function appendAssets(record, root) {
   for (const assetId of record.assets) {
     const asset = await loadById("asset", assetId, state.assetCache); const figure = element("figure", "asset-figure"); const image = document.createElement("img"); image.src = localArtifactPath({ path: asset.path }); image.alt = asset.altText; image.loading = "lazy"; figure.append(image, element("figcaption", null, asset.caption)); const details = element("details"); details.append(element("summary", null, "圖形文字說明"), element("p", null, asset.longDescription)); figure.append(details); root.append(figure);
+    if (asset.dataFallback) renderStructuredContent({ title: "圖形資料表", prompt: asset.dataFallback.summary, table: { caption: `${asset.caption}（文字資料）`, columns: asset.dataFallback.columns, rows: asset.dataFallback.rows } }, figure);
   }
 }
 
@@ -232,7 +240,7 @@ async function renderCurrent() {
   } catch (error) { const panel = element("div", "status-panel", `內容載入失敗：${error.message}`); panel.setAttribute("role", "alert"); setContent(panel); }
 }
 
-const mobileSidebarQuery = matchMedia("(max-width: 900px)");
+const mobileSidebarQuery = matchMedia("(max-width: 820px)");
 function syncSidebar() {
   const sidebar = $("#sidebar");
   const button = $("#menuButton");
@@ -256,6 +264,7 @@ async function init() {
   $("#skillSearch").addEventListener("input", (event) => renderNav(event.target.value));
   document.querySelectorAll(".view-tabs button").forEach((button) => button.addEventListener("click", async () => { state.view = button.dataset.view; document.querySelectorAll(".view-tabs button").forEach((item) => item.setAttribute("aria-current", item === button ? "page" : "false")); await renderCurrent(); }));
   $("#menuButton").addEventListener("click", () => { $("#sidebar").classList.toggle("open"); syncSidebar(); });
+  document.addEventListener("keydown", (event) => { if (event.key === "Escape" && $("#sidebar").classList.contains("open")) { closeSidebar(); $("#menuButton").focus(); } });
   mobileSidebarQuery.addEventListener("change", syncSidebar);
   syncSidebar();
   $("#themeButton").addEventListener("click", () => { const dark = document.documentElement.dataset.theme !== "dark"; document.documentElement.dataset.theme = dark ? "dark" : "light"; try { localStorage.setItem(THEME_KEY, dark ? "dark" : "light"); } catch {} });

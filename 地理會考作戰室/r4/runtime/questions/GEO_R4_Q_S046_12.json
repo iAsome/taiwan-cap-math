@@ -18,43 +18,43 @@
     "AUTH-SOCIAL-LP-GEO-1B-4-1"
   ],
   "stimulusId": null,
-  "stem": "海岸地形圖的黑白替代資料應包含什麼？",
+  "stem": "沿岸漂砂長期由北向南。港口興建突堤後，北側沙灘變寬、南側變窄，最合理的解釋為何？",
   "options": [
-    "只列藍黃顏色",
-    "只說有海",
-    "只給景點名稱",
-    "岸段材質、波能、侵蝕堆積形態、漂砂方向與岸線時序"
+    "突堤讓南側海底地殼立即下沉",
+    "南側變窄證明沿岸漂砂改由南向北",
+    "兩側變化只可能由潮汐每日漲退造成",
+    "突堤攔住北側來砂，使下游南側供砂減少"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色在黑白中失效。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "題目沒有地殼運動證據，工程後差異可由泥砂收支解釋。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "過度籠統。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "若漂砂反向，累積位置應與觀察不符。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "名稱不能判泥砂。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "日潮可改變瞬時水位，不能單獨解釋多年岸線一增一減。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "結構資訊可重建過程與比較。"
+      "reason": "北側為上游來砂方向，累積與南側侵蝕符合漂砂受阻。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "海岸可及性"
+    "漂砂收支"
   ],
-  "representationType": "accessible-coast",
+  "representationType": "breakwater-impact",
   "misconceptionTargets": [
-    "顏色足以替代漂砂方向"
+    "只看單側岸線而忽略沿岸泥砂轉移"
   ],
   "provenance": {
     "status": "original",
@@ -78,13 +78,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "用箭頭文字寫由北向南等方向，不能只靠彩色符號。 正確選項「岸段材質、波能、侵蝕堆積形態、漂砂方向與岸線時序」可由題幹推出，因為結構資訊可重建過程與比較。",
+      "evidence": "先用漂砂方向判上、下游岸段，再比較工程前後泥砂收支。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "岸線位置還需日期、潮位與誤差，才可做變化題。 逐項排除其他選項：「只列藍黃顏色」顏色在黑白中失效。 這項內容無法支持題幹所要求的地理判斷。；「只說有海」過度籠統。 這項內容無法支持題幹所要求的地理判斷。；「只給景點名稱」名稱不能判泥砂。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案一能同時解釋北側堆積與南側侵蝕，不需額外假設。",
       "status": "pass"
     }
   ],

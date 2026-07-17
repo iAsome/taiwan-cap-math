@@ -14,43 +14,43 @@
     "AUTH-SOCIAL-LP-SOC-3D-4-1"
   ],
   "stimulusId": null,
-  "stem": "要讓螢幕閱讀器使用者理解點線面圖層，何種替代最完整？",
+  "stem": "同一座校園在全縣避難圖上畫成一個點，在校園疏散圖上畫成一個面。如何判斷這兩種表示？",
   "options": [
-    "只說地圖很漂亮",
-    "只列符號顏色",
-    "只提供無標題畫布",
-    "列每層幾何類型、物件識別、連接或包含關係及關鍵屬性"
+    "校園只能永遠表示為面",
+    "點資料一定比面資料精確",
+    "兩圖必有一張畫錯",
+    "都可合理，幾何表示會隨比例尺與分析目的改變"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "美感摘要不能支援分析。"
+      "reason": "在小比例尺全縣圖上，校園範圍可能小到適合簡化為點。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "顏色不提供拓撲且不具普遍可讀性。"
+      "reason": "精確度取決於資料尺度與用途，不由點或面單獨決定。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "無標題畫布缺語意。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "同一地物可依任務簡化，不能只因幾何不同判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "結構資料保留空間角色與可查屬性。"
+      "reason": "縣圖重視位置節點，校園圖需呈現範圍與出口，兩者用途不同。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "GIS可及性"
+    "尺度表示"
   ],
-  "representationType": "accessible-gis",
+  "representationType": "multi-scale-geometry",
   "misconceptionTargets": [
-    "顏色圖例足以替代拓撲"
+    "認為同一地物只能有一種幾何"
   ],
   "provenance": {
     "status": "original",
@@ -70,13 +70,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "點可列所在區，線可列起訖節點，面可列包含物件，形成等值關係。 正確選項「列每層幾何類型、物件識別、連接或包含關係及關鍵屬性」可由題幹推出，因為結構資料保留空間角色與可查屬性。",
+      "evidence": "先比較圖幅尺度與作答任務，再判斷幾何簡化是否合理。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "資料表還應有欄名、單位與日期，讓讀者判斷可用範圍。 逐項排除其他選項：「只說地圖很漂亮」美感摘要不能支援分析。；「只列符號顏色」顏色不提供拓撲且不具普遍可讀性。；「只提供無標題畫布」無標題畫布缺語意。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案二說明同一地物為何可有不同幾何，沒有把表示方式排成固定高低。",
       "status": "pass"
     }
   ],

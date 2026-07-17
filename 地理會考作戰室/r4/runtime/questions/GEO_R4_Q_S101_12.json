@@ -19,43 +19,43 @@
     "AUTH-SOCIAL-LP-GEO-1A-4-2"
   ],
   "stimulusId": null,
-  "stem": "產業群聚圖的無障礙替代應包含什麼？",
+  "stem": "產業園區共用供應商很有效率，卻有九成用電來自同一座變電站；最合理的韌性作法是什麼？",
   "options": [
-    "只用同色圓點",
-    "只列最大企業",
-    "省略連線方向",
-    "企業節點、上下游連線、運量、共用設施、人才與風險路徑"
+    "拆除所有共用設施以避免任何合作",
+    "假設企業數越多就不會停電",
+    "只增加園區廣告而不檢查電力",
+    "保留群聚合作並建立獨立備援電源與分區復電演練"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "色彩不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "全面拆除會失去合理的共享效率，且不必然解決供電。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "缺網絡。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "企業數量不能消除單一變電站中斷。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "供應方向重要。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "廣告與電源備援、復電能力沒有關係。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "可重建效益與依賴。 這項證據可直接支持題幹所要求的地理判斷。"
+      "reason": "措施保留群聚效益，同時處理共同失效點。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "群聚圖可及性"
+    "共同失效"
   ],
-  "representationType": "accessible-cluster",
+  "representationType": "cluster-resilience",
   "misconceptionTargets": [
-    "企業點數可取代供應鏈關係"
+    "群聚只會增加效率不會集中風險"
   ],
   "provenance": {
     "status": "original",
@@ -80,13 +80,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "企業名稱可匿名但保留產業角色。 正確選項「企業節點、上下游連線、運量、共用設施、人才與風險路徑」可由題幹推出，因為可重建效益與依賴。 這項證據可直接支持題幹所要求的地理判斷。",
+      "evidence": "群聚的優勢與共同風險可同時存在，對症措施應處理單點失效。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "共用電港水路需明示單點風險。 逐項排除其他選項：「只用同色圓點」色彩不足。 這項內容無法支持題幹所要求的地理判斷。；「只列最大企業」缺網絡。 這項內容無法支持題幹所要求的地理判斷。；「省略連線方向」供應方向重要。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "備援還需定期負載測試，紙面容量不等於中斷時可用。",
       "status": "pass"
     }
   ],

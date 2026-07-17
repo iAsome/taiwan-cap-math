@@ -15,43 +15,43 @@
     "AUTH-SOCIAL-LP-GEO-1B-4-2"
   ],
   "stimulusId": null,
-  "stem": "聚落選址圖的無障礙替代應包含什麼？",
+  "stem": "甲地距水源最近但洪水風險高；乙地坡度低、洪水風險低且近道路；丙地坡陡又遠離道路。若安全與基本可達同為必要條件，何者較適合？",
   "options": [
-    "只說安全區是綠色",
-    "只列地名",
-    "省略圖例門檻",
-    "候選點的水源、坡度、高程、風險、道路與距離數值"
+    "丙地，因離道路最遠",
+    "三地相同，因都有地名",
+    "甲地，因只要離水源最近",
+    "乙地，因同時符合低風險、緩坡與可達條件"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "丙的陡坡與偏遠會增加建設和聯外限制。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "缺選址證據。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "三地的風險、坡度與距離資料明顯不同。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "不知分類依據。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "甲的水源優勢不能抵銷題目明列的高洪水風險。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "能重做多準則比較。 這項證據可直接支持題幹所要求的地理判斷。"
+      "reason": "乙在安全、坡度與道路距離三項必要條件上均較合適。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "選址圖可及性"
+    "多條件選址"
   ],
-  "representationType": "accessible-site-map",
+  "representationType": "settlement-site",
   "misconceptionTargets": [
-    "安全色塊可取代風險數值"
+    "只用距水源最近決定聚落位置"
   ],
   "provenance": {
     "status": "original",
@@ -72,13 +72,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "可用資料表分列每項指標與限制。 正確選項「候選點的水源、坡度、高程、風險、道路與距離數值」可由題幹推出，因為能重做多準則比較。 這項證據可直接支持題幹所要求的地理判斷。",
+      "evidence": "選址應先套用安全與可達的共同門檻，再比較單項便利。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "逐項排除其他選項：「只說安全區是綠色」顏色不足。 這項內容無法支持題幹所要求的地理判斷。；「只列地名」缺選址證據。 這項內容無法支持題幹所要求的地理判斷。；「省略圖例門檻」不知分類依據。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案二使用多欄證據，不以距水源最近這一項直接決勝。",
       "status": "pass"
     }
   ],

@@ -48,12 +48,12 @@ const questionsS001 = [
   Q({ id: "GEO_R4_Q_S001_12", skillId: "GEO_R4_S001", stem: "學校要了解高溫日哪些通學路線風險較高。下列研究問題何者最周延？", options: ["哪條路看起來最熱", "同一高溫時段，各通學路段的遮蔭、路面溫度與步行暴露時間如何不同", "學生是否喜歡夏天", "全市哪裡永遠不會熱"], answerIndex: 1, reasons: ["『看起來』缺少量測與比較條件。", "同時界定時段、路段及三項與熱暴露直接相關的指標。", "季節偏好不能辨識路線風險。", "『永遠不會』是不切實際的絕對條件且範圍過大。"], reviews: ["風險需結合強度與暴露時間，第二項提供溫度、遮蔭及步行時間。", "其餘選項無法產生路段排序，或提出無法驗證的絕對命題，答案明確。"], difficulty: "transfer", cognitiveProcess: ["風險問題建構"], representationType: "text", misconceptionTargets: ["單一感受可代表風險"], assets: [] }),
   Q({ id: "GEO_R4_Q_S001_ST01", skillId: "GEO_R4_S001", stimulusId: "GEO_R4_ST001", stem: "依調查目的，哪個研究問題最恰當？", options: ["哪個校門比較漂亮", "三個校門在相同上學時段的進校人數與等候時間有何差異", "學生最喜歡哪位導護老師", "所有校門是否永遠都會擁擠"], answerIndex: 1, reasons: ["外觀偏好與通行效率無關。", "地點、時段、人數與等候時間均與目的相符。", "人物喜好不能回答校門通行狀況。", "『永遠』無法由三天資料支持。"], reviews: ["材料記錄三個校門的人數與等候，第二項正好對應可用欄位。", "把每個選項與調查表比對，只有第二項能由表中數據直接回答。"], difficulty: "standard", cognitiveProcess: ["問題與資料對應"], representationType: "table", misconceptionTargets: ["研究問題超出資料"], assets: [] }),
   Q({ id: "GEO_R4_Q_S001_ST02", skillId: "GEO_R4_S001", stimulusId: "GEO_R4_ST001", stem: "這份調查設計最重要的優點是什麼？", options: ["三個校門在相同日期與時段觀察", "只記錄使用人數最多的校門", "先假定東門一定最擁擠", "用不同單位記錄各校門等候時間"], answerIndex: 0, reasons: ["同時觀察可減少日期與時段差異造成的干擾。", "材料完整保留三門資料，且只記一門無法比較。", "調查表沒有預設結果，預設會造成偏誤。", "表中都以分鐘記錄，統一單位才可比較。"], reviews: ["三門比較的公平性來自同日同時段，第一項指出真正控制條件。", "後三項分別是刪除比較、預設答案與混用單位，皆不是設計優點。"], difficulty: "advanced", cognitiveProcess: ["評估研究設計"], representationType: "table", misconceptionTargets: ["有數字就可直接比較"], assets: [] }),
-  Q({ id: "GEO_R4_Q_S001_ST03", skillId: "GEO_R4_S001", stimulusId: "GEO_R4_ST001", stem: "若要探究等候時間差異的可能原因，最值得補充哪項資料？", options: ["校門名稱的筆畫數", "各門通道寬度與鄰近道路到校人流", "導護背心的顏色", "學生對早餐的喜好"], answerIndex: 1, reasons: ["名稱筆畫不影響通行容量。", "通道寬度影響容量，鄰近人流影響需求，兩者可解釋等候。", "背心顏色與隊伍形成沒有直接空間機制。", "早餐偏好不能說明特定校門的排隊。"], reviews: ["等候由進入需求與通道容量共同影響，第二項涵蓋兩端。", "逐項建立因果途徑後，只有通道寬度及人流能合理連到等候時間。"], difficulty: "transfer", cognitiveProcess: ["提出解釋", "選擇補充證據"], representationType: "table", misconceptionTargets: ["無關資料也能解釋差異"], assets: [] }),
+  Q({ id: "GEO_R4_Q_S001_ST03", skillId: "GEO_R4_S001", stimulusId: "GEO_R4_ST001", stem: "若要探究等候時間差異的可能原因，最值得補充哪項資料？", options: ["只量各門通道寬度，不記錄到校人流", "各門通道寬度與鄰近道路到校人流", "只記各門鄰近道路人流，不量通道寬度", "另一天只重測平均等候時間"], answerIndex: 1, reasons: ["通道寬度只呈現供給，未記到校人流就無法比較需求。", "通道寬度影響容量，鄰近人流影響需求，兩者可解釋等候。", "道路人流只呈現需求，未量通道寬度就無法比較容量。", "重測可確認結果是否穩定，卻不能指出排隊形成的原因。"], reviews: ["等候由進入需求與通道容量共同影響，第二項涵蓋兩端。", "逐項建立因果途徑後，只有通道寬度及人流能合理連到等候時間。"], difficulty: "transfer", cognitiveProcess: ["提出解釋", "選擇補充證據"], representationType: "table", misconceptionTargets: ["無關資料也能解釋差異"], assets: [] }),
 ];
 
 const stimulusS001 = ST({
   id: "GEO_R4_ST001", skillId: "GEO_R4_S001", type: "table",
-  content: { title: "三個校門通行調查", prompt: "學生連續三個上學日，在七時三十分至七時五十分同時記錄各校門平均進校人數與平均等候時間。", columns: ["校門", "平均進校人數（人）", "平均等候時間（分鐘）"], rows: [["東門", 286, 4.2], ["南門", 174, 1.8], ["西門", 231, 3.1]], sourceNote: "教學用原創模擬資料；數值只用於練習研究問題建構。" },
+  content: { title: "三個校門通行調查", prompt: "學生連續三個上學日，在七時三十分至七時五十分同時記錄各校門平均進校人數與平均等候時間。", columns: ["校門", "平均進校人數（人）", "平均等候時間（分鐘）"], rows: [["東門", 286, 4.2], ["南門", 174, 1.8], ["西門", 231, 3.1]], sourceNote: "原創虛構教學資料；數值只用於練習研究問題建構。" },
   accessibility: { summary: "三個校門同時段的人數與等候時間表。", longDescription: "東門平均二百八十六人、等候四點二分鐘；南門一百七十四人、一點八分鐘；西門二百三十一人、三點一分鐘。三組資料來自相同三天與相同二十分鐘時段。" }, assets: [],
 });
 
@@ -105,7 +105,7 @@ const questionsS002 = [
 
 const stimulusS002 = ST({
   id: "GEO_R4_ST002", skillId: "GEO_R4_S002", type: "table",
-  content: { title: "三區共享單車概況", prompt: "某市以相同分區定義整理同一年資料。", columns: ["分區", "人口（萬人）", "共享單車站點（站）", "平均每日租借（次）"], rows: [["甲區", 6, 18, 920], ["乙區", 11, 31, 1680], ["丙區", 17, 44, 2460]], sourceNote: "教學用原創模擬資料，不代表真實城市。" },
+  content: { title: "三區共享單車概況", prompt: "某市以相同分區定義整理同一年資料。", columns: ["分區", "人口（萬人）", "共享單車站點（站）", "平均每日租借（次）"], rows: [["甲區", 6, 18, 920], ["乙區", 11, 31, 1680], ["丙區", 17, 44, 2460]], sourceNote: "原創虛構教學資料；「三區共享單車概況」不代表任何真實城市。" },
   accessibility: { summary: "三區人口、站點及租借量比較表。", longDescription: "甲區六萬人、十八站、每日九百二十次；乙區十一萬人、三十一站、一千六百八十次；丙區十七萬人、四十四站、二千四百六十次。三項數值由甲至丙皆增加。" }, assets: [],
 });
 
@@ -157,7 +157,7 @@ const questionsS003 = [
 
 const stimulusS003 = ST({
   id: "GEO_R4_ST003", skillId: "GEO_R4_S003", type: "table",
-  content: { title: "同一行政區的里級公園條件", prompt: "某區以同一年資料比較三個里。", columns: ["里別", "每人公園面積（平方公尺）", "到最近公園平均步行時間（分鐘）"], rows: [["甲里", 9.2, 6], ["乙里", 2.1, 18], ["丙里", 5.4, 11]], sourceNote: "教學用原創模擬資料。" },
+  content: { title: "同一行政區的里級公園條件", prompt: "某區以同一年資料比較三個里。", columns: ["里別", "每人公園面積（平方公尺）", "到最近公園平均步行時間（分鐘）"], rows: [["甲里", 9.2, 6], ["乙里", 2.1, 18], ["丙里", 5.4, 11]], sourceNote: "原創虛構教學資料；「同一行政區的里級公園條件」的條件與數值皆為本題設定。" },
   accessibility: { summary: "三里的人均公園面積與步行時間比較。", longDescription: "甲里每人九點二平方公尺、步行六分鐘；乙里二點一平方公尺、十八分鐘；丙里五點四平方公尺、十一分鐘。乙里公園最少且步行最久。" }, assets: [],
 });
 
@@ -203,13 +203,13 @@ const questionsS004 = [
   Q({ id: "GEO_R4_Q_S004_11", skillId: "GEO_R4_S004", stem: "社區想評估增設無障礙坡道的位置，哪種證據組合最能支援決策？", options: ["階梯與高差測量、通行路線觀察、行動不便者訪查", "建築外牆顏色與社區名稱", "全國平均降雨與一張海報", "只問從未到過現場的人"], answerIndex: 0, reasons: ["客觀障礙、實際動線與使用者經驗彼此補充。", "外觀資訊不能判斷通行。", "全國雨量與坡道位置關係薄弱。", "沒有現場經驗者不足以提供需求證據。"], reviews: ["坡道選址需同時知道物理限制和使用者路徑，第一項完整。", "後三項均缺少高差、動線或目標使用者，無法形成可執行判斷。"], difficulty: "transfer", cognitiveProcess: ["多源證據整合"], representationType: "text", misconceptionTargets: ["只量高差即可決策"], assets: [] }),
   Q({ id: "GEO_R4_Q_S004_12", skillId: "GEO_R4_S004", stem: "要判斷海岸遊憩人潮是否造成垃圾增加，哪個設計最周延？", options: ["只在連假後拍一張垃圾照片", "同地點分平日與假日記錄人數、垃圾量，並核對清運時段", "只問遊客是否愛護環境", "比較兩個不同縣市、不同季節的照片"], answerIndex: 1, reasons: ["單張照片沒有基準且受清運時間影響。", "控制地點並比較人潮與垃圾，還排除清運時點干擾。", "態度回答不能取代實際垃圾量。", "地點與季節同時不同，難以歸因。"], reviews: ["第二項讓人潮、垃圾與清運三項資料在同地可比，最能檢驗關係。", "其他方案缺前後基準、只測態度，或混入多個差異條件。"], difficulty: "transfer", cognitiveProcess: ["研究設計", "控制變項"], representationType: "text", misconceptionTargets: ["單次照片足以證明因果"], assets: [] }),
   Q({ id: "GEO_R4_Q_S004_ST01", skillId: "GEO_R4_S004", stimulusId: "GEO_R4_ST004", stem: "若要找出最需要改善公車服務的地區，表中哪兩欄最直接？", options: ["人口與平均候車時間", "區名與表格順序", "資料年份與欄位數", "區名與人口"], answerIndex: 0, reasons: ["人口代表需求規模，候車時間反映服務不足。", "名稱和順序不是服務指標。", "年份重要但不能單獨排序需求。", "人口 alone 缺服務狀況。"], reviews: ["目的同時包含需求與服務，第一項恰好各提供一個指標。", "其他組合都少了候車表現或只有表格形式資訊。"], difficulty: "standard", cognitiveProcess: ["選取欄位"], representationType: "table", misconceptionTargets: ["單一總量足以判需求"], assets: [] }),
-  Q({ id: "GEO_R4_Q_S004_ST02", skillId: "GEO_R4_S004", stimulusId: "GEO_R4_ST004", stem: "若丁區人口不多但候車最久，還應補充哪項資料以判斷原因？", options: ["班次、路線與尖峰乘車人數", "區名筆畫", "居民最愛的音樂", "公車顏色"], answerIndex: 0, reasons: ["供給班次、路線及實際需求能解釋候車。", "區名字形不影響班距。", "音樂偏好與公車服務無關。", "車身顏色不決定到站時間。"], reviews: ["候車時間可能來自供給少或尖峰需求高，第一項能區分。", "後三項沒有與公車到站機制相連的變項。"], difficulty: "advanced", cognitiveProcess: ["提出補充證據"], representationType: "table", misconceptionTargets: ["人口少就不會候車久"], assets: [] }),
+  Q({ id: "GEO_R4_Q_S004_ST02", skillId: "GEO_R4_S004", stimulusId: "GEO_R4_ST004", stem: "若丁區人口不多但候車最久，還應補充哪項資料以判斷原因？", options: ["班次、路線與尖峰乘車人數", "丁區每日總搭乘人次", "四區公車站點密度", "少數非尖峰乘客的單次訪談"], answerIndex: 0, reasons: ["供給班次、路線及實際需求能解釋候車。", "每日總人次未區分尖峰時段與轉乘路線，不能解釋長候車。", "站點密度未提供班次、轉乘與尖峰需求，仍無法判斷候車原因。", "少數非尖峰訪談缺乏代表性，也未核對實際班次。"], reviews: ["候車時間可能來自供給少或尖峰需求高，第一項能區分。", "後三項沒有與公車到站機制相連的變項。"], difficulty: "advanced", cognitiveProcess: ["提出補充證據"], representationType: "table", misconceptionTargets: ["人口少就不會候車久"], assets: [] }),
   Q({ id: "GEO_R4_Q_S004_ST03", skillId: "GEO_R4_S004", stimulusId: "GEO_R4_ST004", stem: "訪查顯示丁區居民常因轉乘錯過班車。下列結論何者最合宜？", options: ["只要人口少就不必改善", "長候車可能與轉乘銜接及班次共同有關，應再比對時刻表", "訪查可以取代表中所有數據", "居民說法證明每班車都誤點"], answerIndex: 1, reasons: ["人口不是唯一服務判準。", "訪查提出機制，時刻表可進一步檢驗。", "主觀經驗與客觀數據功能不同。", "『常錯過』不等於每班誤點。"], reviews: ["第二項把訪查當線索並要求客觀時刻驗證，推論強度恰當。", "其他選項忽略需求、取消多源檢證或把部分經驗誇大為全稱。"], difficulty: "transfer", cognitiveProcess: ["整合統計與訪查"], representationType: "table", misconceptionTargets: ["訪查可直接證明全部班次"], assets: [] }),
 ];
 
 const stimulusS004 = ST({
   id: "GEO_R4_ST004", skillId: "GEO_R4_S004", type: "table",
-  content: { title: "四區公車服務初步資料", prompt: "同一月份平日尖峰調查如下；候車時間以分鐘計。", columns: ["分區", "人口（萬人）", "平均候車時間（分鐘）"], rows: [["甲區", 14, 8], ["乙區", 9, 12], ["丙區", 18, 10], ["丁區", 6, 19]], sourceNote: "教學用原創模擬資料。" },
+  content: { title: "四區公車服務初步資料", prompt: "同一月份平日尖峰調查如下；候車時間以分鐘計。", columns: ["分區", "人口（萬人）", "平均候車時間（分鐘）"], rows: [["甲區", 14, 8], ["乙區", 9, 12], ["丙區", 18, 10], ["丁區", 6, 19]], sourceNote: "原創虛構教學資料；「四區公車服務初步資料」的條件與數值皆為本題設定。" },
   accessibility: { summary: "四區人口與平均候車時間表。", longDescription: "甲區十四萬人、候車八分鐘；乙區九萬人、十二分鐘；丙區十八萬人、十分鐘；丁區六萬人、十九分鐘。丁區人口最少但候車最久。" }, assets: [],
 });
 
@@ -243,12 +243,12 @@ const lectureS005 = L({
 
 const questionsS005 = [
   Q({ id: "GEO_R4_Q_S005_01", skillId: "GEO_R4_S005", stem: "研究今年新開通捷運線周邊店家分布，哪份底圖最適合？", options: ["今年更新並含新站出口的街道圖", "二十年前的行政區圖", "沒有日期的世界地圖", "去年全國雨量圖"], answerIndex: 0, reasons: ["時點、範圍與街道細節皆符合。", "年代過舊且細節不足。", "範圍過大且無法確認時點。", "主題與店家位置不符。"], reviews: ["研究今年新站，第一項是唯一含最新站口及周邊街道的資料。", "其他選項在年份、尺度或主題至少一項不符合，不能替代。"], difficulty: "foundation", cognitiveProcess: ["適切性判斷"], representationType: "text", misconceptionTargets: ["任何地圖都可用"], assets: [] }),
-  Q({ id: "GEO_R4_Q_S005_02", skillId: "GEO_R4_S005", stem: "比較兩年各里人口前，最應先確認哪件事？", options: ["里界與人口定義是否一致", "圖表標題字體是否相同", "檔案名稱是否一樣長", "顏色是否完全相同"], answerIndex: 0, reasons: ["分區與定義直接影響人口歸屬與可比性。", "字體不改變數值。", "檔名字數與資料無關。", "配色可不同，只要圖例清楚。"], reviews: ["人口比較需同一空間單元和統計口徑，第一項是必要檢查。", "其餘都是版面或檔名特徵，不會解決人口被重新分組的問題。"], difficulty: "foundation", cognitiveProcess: ["辨識檢查項目"], representationType: "text", misconceptionTargets: ["外觀相同等於資料相容"], assets: [] }),
+  Q({ id: "GEO_R4_Q_S005_02", skillId: "GEO_R4_S005", stem: "比較兩年各里人口前，最應先確認哪件事？", options: ["里界與人口定義是否一致", "兩年全市總人口是否相近", "先把兩年資料各自換算成里人口密度", "直接以各年的里數作分母比較"], answerIndex: 0, reasons: ["分區與定義直接影響人口歸屬與可比性。", "全市總量相近不代表里界與人口口徑可直接比較。", "若里界或人口定義不同，換算密度仍建立在不可比單元上。", "里數不是人口分布的共同分母，且不能修正邊界變動。"], reviews: ["人口比較需同一空間單元和統計口徑，第一項是必要檢查。", "其餘都是版面或檔名特徵，不會解決人口被重新分組的問題。"], difficulty: "foundation", cognitiveProcess: ["辨識檢查項目"], representationType: "text", misconceptionTargets: ["外觀相同等於資料相容"], assets: [] }),
   Q({ id: "GEO_R4_Q_S005_03", skillId: "GEO_R4_S005", stem: "要解釋某次午後暴雨造成積水，哪項時間資料最合適？", options: ["該日下午逐時雨量", "全國十年平均年雨量", "明年的月平均雨量", "沒有日期的氣候介紹"], answerIndex: 0, reasons: ["逐時資料對應積水事件的短時強度。", "多年年平均會掩蓋當次雨勢。", "未來資料不能解釋已發生事件。", "缺日期與數值，無法對準事件。"], reviews: ["積水是短時事件，第一項的時間解析度與發生時段一致。", "其他三項或過度平均、時序錯誤，或沒有可核對時間。"], difficulty: "foundation", cognitiveProcess: ["時間尺度配對"], representationType: "text", misconceptionTargets: ["平均代表事件"], assets: [] }),
   Q({ id: "GEO_R4_Q_S005_04", skillId: "GEO_R4_S005", stem: "甲資料統計一月至十二月，乙資料只統計七、八月。可以直接比較總降雨量嗎？", options: ["可以，因為都用毫米", "不可以，統計期間不同", "可以，只要資料來自同一網站", "不可以，因為降雨不能量化"], answerIndex: 1, reasons: ["單位相同不能消除期間長短差異。", "全年與兩個月總量的時間範圍不一致。", "來源相同也可能有不同統計期間。", "降雨量可以用毫米量化。"], reviews: ["總量比較要求相同累積期間，第二項指出決定性問題。", "第一、三項忽略時間分母，第四項否定基本測量事實。"], difficulty: "standard", cognitiveProcess: ["資料可比性"], representationType: "text", misconceptionTargets: ["單位相同即可比"], assets: [] }),
   Q({ id: "GEO_R4_Q_S005_05", skillId: "GEO_R4_S005", stem: "同一縣市2015年有20里，2025年改為24里。比較里級人口色塊時應如何處理？", options: ["直接數深色里數", "先轉成共同邊界或使用可比單元", "把新增四里當作人口增加", "刪除年份"], answerIndex: 1, reasons: ["里數不同，深色塊數量不能直接比較。", "共同邊界可避免行政調整造成假變化。", "新增行政區不等於新增人口。", "年份是理解變遷的必要資訊。"], reviews: ["題幹的差異來自分區變動，第二項是唯一修正空間單元的方法。", "其餘作法把邊界變化誤當人口變化或隱藏關鍵資料。"], difficulty: "standard", cognitiveProcess: ["邊界調整"], representationType: "text", misconceptionTargets: ["行政區增加等於人口增加"], assets: [] }),
   Q({ id: "GEO_R4_Q_S005_06", skillId: "GEO_R4_S005", stem: "研究校園午間熱環境，使用清晨六時衛星地表溫度的主要問題是什麼？", options: ["空間範圍一定太大", "觀測時段與午間問題不相符", "衛星資料不能表示溫度", "清晨沒有任何地表"], answerIndex: 1, reasons: ["衛星資料可裁切校園範圍，空間不一定是主要問題。", "清晨與午間日照條件不同，不能代表午間熱環境。", "衛星可估測地表溫度。", "清晨仍有地表，只是熱狀況不同。"], reviews: ["研究時段是午間，而資料時點是清晨，第二項最直接。", "其餘說法誇大或錯誤否定衛星量測功能，無替代答案。"], difficulty: "standard", cognitiveProcess: ["時間匹配"], representationType: "text", misconceptionTargets: ["同日任何時段都可代表"], assets: [] }),
-  Q({ id: "GEO_R4_Q_S005_07", skillId: "GEO_R4_S005", stem: "比較兩國『都市人口比例』時，除年份外還要核對什麼？", options: ["兩國如何定義都市人口", "國旗顏色", "國名音節", "首都照片尺寸"], answerIndex: 0, reasons: ["都市範圍或人口門檻不同會影響比例。", "國旗與人口分類無關。", "國名字音不改變統計。", "照片尺寸沒有統計意義。"], reviews: ["同名指標跨國可能口徑不同，第一項是可比性關鍵。", "另外三項均不參與分子或分母定義。"], difficulty: "standard", cognitiveProcess: ["定義核對"], representationType: "text", misconceptionTargets: ["同名指標同口徑"], assets: [] }),
+  Q({ id: "GEO_R4_Q_S005_07", skillId: "GEO_R4_S005", stem: "比較兩國『都市人口比例』時，除年份外還要核對什麼？", options: ["兩國如何定義都市人口", "兩國總人口是否相等", "只把比例換算成都市人口數", "兩國首都的人口密度"], answerIndex: 0, reasons: ["都市範圍或人口門檻不同會影響比例。", "總人口不必相等；關鍵是都市人口的分類口徑是否可比。", "若都市定義不同，換算成人數仍無法公平比較。", "首都人口密度不能代表全國都市人口的分類方式。"], reviews: ["同名指標跨國可能口徑不同，第一項是可比性關鍵。", "另外三項均不參與分子或分母定義。"], difficulty: "standard", cognitiveProcess: ["定義核對"], representationType: "text", misconceptionTargets: ["同名指標同口徑"], assets: [] }),
   Q({ id: "GEO_R4_Q_S005_08", skillId: "GEO_R4_S005", stem: "一張2024年土地利用圖使用2020年航空照片更新，應如何描述？", options: ["可視為2024年完整現況", "資料標示年份與實際影像年份不同，需查更新範圍", "航空照片沒有時間", "年份差四年一定毫無用途"], answerIndex: 1, reasons: ["若未全面更新，不能宣稱全為2024現況。", "應辨明製圖年、影像年及哪些區域另行更新。", "航空照片有拍攝日期。", "舊資料可作基準，但用途要受限，不是全無價值。"], reviews: ["第二項區分標示年與原始觀測年，處理最嚴謹。", "第一項過度信任標題，第三項錯誤，第四項又過度否定歷史資料。"], difficulty: "advanced", cognitiveProcess: ["中介資料判讀"], representationType: "text", misconceptionTargets: ["出版年等於觀測年"], assets: [] }),
   Q({ id: "GEO_R4_Q_S005_09", skillId: "GEO_R4_S005", stem: "甲測站在河川上游，乙測站在河口。用兩站水質比較時間變化時，哪個風險最大？", options: ["把空間位置差異誤當成時間變化", "水質不能有數字", "河川沒有上下游", "測站名稱不同就不能記錄"], answerIndex: 0, reasons: ["若不同年份採不同站點，水質差可能來自位置而非時間。", "水質可用多項指標量測。", "河川具有上下游。", "名稱不同不是不能記錄，而是位置須控制。"], reviews: ["題目以不同位置代表不同時點，第一項指出混淆變項。", "其餘選項違反基本地理與測量常識，答案唯一。"], difficulty: "advanced", cognitiveProcess: ["辨識時空混淆"], representationType: "text", misconceptionTargets: ["不同測站可當時間序列"], assets: [] }),
   Q({ id: "GEO_R4_Q_S005_10", skillId: "GEO_R4_S005", stem: "兩城市房價資料一份以每坪、一份以每平方公尺表示。最合宜的做法是什麼？", options: ["直接比較數字大小", "統一面積單位後再比較", "只保留較大的數字", "因單位不同而永久不能比較"], answerIndex: 1, reasons: ["數值受面積單位影響。", "換算成同一面積基準後才公平。", "挑大值沒有分析依據。", "單位可換算，不必放棄資料。"], reviews: ["這是可處理的單位不一致，第二項能建立共同尺度。", "第一與第三項會誤讀數值，第四項忽略合法換算。"], difficulty: "advanced", cognitiveProcess: ["資料標準化"], representationType: "text", misconceptionTargets: ["數字可脫離單位比較"], assets: [] }),
@@ -261,7 +261,7 @@ const questionsS005 = [
 
 const stimulusS005 = ST({
   id: "GEO_R4_ST005", skillId: "GEO_R4_S005", type: "table",
-  content: { title: "兩期人口資料說明", prompt: "研究者準備比較某市高齡人口。", columns: ["資料", "統計日期", "空間單元", "年齡定義"], rows: [["甲", "2018-12-31", "2018年里界（20里）", "65歲以上"], ["乙", "2024-12-31", "2024年里界（24里）", "65歲以上"]], sourceNote: "教學用原創資料情境。" },
+  content: { title: "兩期人口資料說明", prompt: "研究者準備比較某市高齡人口。", columns: ["資料", "統計日期", "空間單元", "年齡定義"], rows: [["甲", "2018-12-31", "2018年里界（20里）", "65歲以上"], ["乙", "2024-12-31", "2024年里界（24里）", "65歲以上"]], sourceNote: "原創虛構教學資料；「兩期人口資料說明」的行政邊界與人口口徑僅供比較練習。" },
   accessibility: { summary: "同市兩期高齡人口資料的日期、里界和定義表。", longDescription: "兩份資料都以六十五歲以上為高齡人口；甲為二零一八年、二十里舊界，乙為二零二四年、二十四里新界。年齡定義一致，但空間單元不同。" }, assets: [],
 });
 
@@ -307,13 +307,13 @@ const questionsS006 = [
   Q({ id: "GEO_R4_Q_S006_11", skillId: "GEO_R4_S006", stem: "城市高溫區多為建物密集區，但一處密集區溫度較低。下列哪項最值得檢查？", options: ["該區綠地、水體、建材與通風條件", "該區名稱是否較短", "居民是否都喜歡冬天", "把低溫值直接刪除"], answerIndex: 0, reasons: ["這些條件可形成降溫反例機制。", "名稱長短不影響熱環境。", "偏好不改變量測溫度。", "反例可能揭示重要條件，不應任意刪除。"], reviews: ["例外地點能用綠地、水體與通風解釋，第一項最有證據價值。", "其餘選項無關或刻意排除反例，不能修正原假設。"], difficulty: "transfer", cognitiveProcess: ["反例利用"], representationType: "text", misconceptionTargets: ["反例應刪除"], assets: [] }),
   Q({ id: "GEO_R4_Q_S006_12", skillId: "GEO_R4_S006", stem: "某島缺乏淡水卻有大量觀光旅館。這個案例最能提醒我們什麼？", options: ["自然限制可被供水技術與管理部分改變", "缺水地區必然沒有任何人類活動", "觀光與水資源完全無關", "所有島嶼條件都相同"], answerIndex: 0, reasons: ["海水淡化、運水與節水可改變限制，但也有成本。", "案例本身就是反例。", "旅館用水使兩者有明顯關係。", "島嶼的氣候、面積與技術不同。"], reviews: ["第一項同時承認自然限制與人文調適，符合案例。", "其他選項皆為被案例否定的絕對化敘述。"], difficulty: "transfer", cognitiveProcess: ["概念遷移"], representationType: "text", misconceptionTargets: ["自然環境完全決定"], assets: [] }),
   Q({ id: "GEO_R4_Q_S006_ST01", skillId: "GEO_R4_S006", stimulusId: "GEO_R4_ST006", stem: "表中最直接支持哪項觀察？", options: ["坡度較高地區道路密度一定較高", "三地坡度增加時，道路密度呈下降趨勢", "人口是唯一影響道路的因素", "三地道路密度完全相同"], answerIndex: 1, reasons: ["資料呈相反方向。", "甲乙丙的坡度遞增，道路密度遞減。", "表中沒有列人口，不能判唯一原因。", "三個數值不同。"], reviews: ["逐列比較可見十八、三十六、五十四度對應十二、七、三公里，第二項忠實描述。", "其餘選項或違反方向、超出欄位，或否定明顯差異。"], difficulty: "standard", cognitiveProcess: ["讀表", "描述關聯"], representationType: "table", misconceptionTargets: ["趨勢方向判反"], assets: [] }),
-  Q({ id: "GEO_R4_Q_S006_ST02", skillId: "GEO_R4_S006", stimulusId: "GEO_R4_ST006", stem: "要把關聯發展成較完整解釋，還需要哪項證據？", options: ["施工與維護成本、人口需求及地質資料", "地名筆畫與旗幟顏色", "居民星座", "表格邊框粗細"], answerIndex: 0, reasons: ["可檢查坡度影響道路的機制及其他條件。", "名稱和顏色無工程意義。", "星座不能解釋道路密度。", "版面不改變現象。"], reviews: ["第一項同時提供機制與替代因素，能避免單因推論。", "其餘資料沒有可驗證的道路建設作用途徑。"], difficulty: "advanced", cognitiveProcess: ["補充因果證據"], representationType: "table", misconceptionTargets: ["關聯表即完整因果"], assets: [] }),
+  Q({ id: "GEO_R4_Q_S006_ST02", skillId: "GEO_R4_S006", stimulusId: "GEO_R4_ST006", stem: "要把關聯發展成較完整解釋，還需要哪項證據？", options: ["施工與維護成本、人口需求及地質資料", "只增加三地道路密度的年份序列", "只訪談坡度最低地區的居民", "改比較道路總長，但不控制地區面積"], answerIndex: 0, reasons: ["可檢查坡度影響道路的機制及其他條件。", "年份序列可確認趨勢，仍缺施工成本、需求與地質等作用機制。", "單一低坡地訪談缺少不同坡度地區的對照，無法分辨坡度作用。", "道路總長未控制面積，不能與原本的道路密度公平比較。"], reviews: ["第一項同時提供機制與替代因素，能避免單因推論。", "其餘資料沒有可驗證的道路建設作用途徑。"], difficulty: "advanced", cognitiveProcess: ["補充因果證據"], representationType: "table", misconceptionTargets: ["關聯表即完整因果"], assets: [] }),
   Q({ id: "GEO_R4_Q_S006_ST03", skillId: "GEO_R4_S006", stimulusId: "GEO_R4_ST006", stem: "若丁地坡度50度但道路密度達每平方公里11公里，最合理的研究反應是什麼？", options: ["刪除丁地以保留原趨勢", "調查丁地是否有人口集中、特殊工程或交通樞紐", "宣稱坡度從不影響道路", "把11改成3"], answerIndex: 1, reasons: ["反例可能揭示條件，不應任意刪除。", "高需求或技術可抵銷部分坡度限制。", "一個反例不必然推翻所有趨勢。", "竄改資料不符合探究倫理。"], reviews: ["丁地是有價值的反例，第二項用人文條件檢驗其形成機制。", "其他選項隱藏、誇大或改造證據，均不是負責任分析。"], difficulty: "transfer", cognitiveProcess: ["反例探究"], representationType: "table", misconceptionTargets: ["例外值應刪除"], assets: [] }),
 ];
 
 const stimulusS006 = ST({
   id: "GEO_R4_ST006", skillId: "GEO_R4_S006", type: "table",
-  content: { title: "三個山區的坡度與道路密度", prompt: "三地採相同年份、相同面積計算方式。", columns: ["地區", "平均坡度（度）", "道路密度（公里／平方公里）"], rows: [["甲地", 18, 12], ["乙地", 36, 7], ["丙地", 54, 3]], sourceNote: "教學用原創模擬資料；僅用於練習關聯與因果界線。" },
+  content: { title: "三個山區的坡度與道路密度", prompt: "三地採相同年份、相同面積計算方式。", columns: ["地區", "平均坡度（度）", "道路密度（公里／平方公里）"], rows: [["甲地", 18, 12], ["乙地", 36, 7], ["丙地", 54, 3]], sourceNote: "原創虛構教學資料；僅用於練習關聯與因果界線。" },
   accessibility: { summary: "三地平均坡度與道路密度比較。", longDescription: "甲地平均坡度十八度、道路密度十二；乙地三十六度、道路密度七；丙地五十四度、道路密度三。坡度增加時道路密度下降。" }, assets: [],
 });
 
@@ -365,7 +365,7 @@ const questionsS007 = [
 
 const stimulusS007 = ST({
   id: "GEO_R4_ST007", skillId: "GEO_R4_S007", type: "table",
-  content: { title: "三個防災服務站方案", prompt: "規劃者以相同方法估算成本、服務人口與淹水風險。", columns: ["方案", "成本（萬元）", "服務人口（人）", "淹水風險"], rows: [["甲案", 4200, 15000, "高"], ["乙案", 6000, 12000, "低"], ["丙案", 4800, 8000, "中"]], sourceNote: "教學用原創模擬資料；風險等級僅供本題比較。" },
+  content: { title: "三個防災服務站方案", prompt: "規劃者以相同方法估算成本、服務人口與淹水風險。", columns: ["方案", "成本（萬元）", "服務人口（人）", "淹水風險"], rows: [["甲案", 4200, 15000, "高"], ["乙案", 6000, 12000, "低"], ["丙案", 4800, 8000, "中"]], sourceNote: "原創虛構教學資料；風險等級僅供本題比較。" },
   accessibility: { summary: "三個防災服務站方案的成本、人口與風險表。", longDescription: "甲案四千二百萬元、服務一萬五千人、淹水風險高；乙案六千萬元、一萬二千人、風險低；丙案四千八百萬元、八千人、風險中。" }, assets: [],
 });
 

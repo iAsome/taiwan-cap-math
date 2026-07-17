@@ -1,7 +1,7 @@
-const CACHE = "cap8-r4-geography-4.0.0-final-5";
+const CACHE = "cap8-r4-geography-4.0.0-final-7";
 const SUBJECT_PREFIX = "地理會考作戰室/r4/";
 const MANIFEST = "./content-manifest-v4.json";
-const SHELL = ["./", "./index.html", "./styles.css?v=4.0.0-final-5", "./app.js?v=4.0.0-final-5", "./progress-migration.mjs?v=4.0.0-final-5", "./sw.js", MANIFEST, "./runtime/catalog.json"];
+const SHELL = ["./", "./index.html", "./styles.css?v=4.0.0-final-7", "./app.js?v=4.0.0-final-7", "./progress-migration.mjs?v=4.0.0-final-7", "./sw.js", MANIFEST, "./runtime/catalog.json"];
 
 function localArtifactPath(value) {
   const index = value.indexOf(SUBJECT_PREFIX);

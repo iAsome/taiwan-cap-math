@@ -15,43 +15,43 @@
     "AUTH-SOCIAL-LP-SOC-2B-4-3"
   ],
   "stimulusId": null,
-  "stem": "水庫容量圖的可及替代應包含什麼？",
+  "stem": "水庫期初蓄水七十二、全年入庫一百六十、供水放流一百四十五、蒸發滲漏七，單位皆相同。期末蓄水為多少？",
   "options": [
-    "只標水面藍色",
-    "只寫水庫很大",
-    "刪除高程",
-    "各高程面積與容量、有效死庫容、目前水位及單位"
+    "三百八十四",
+    "六十六",
+    "二十二",
+    "八十"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色無數值。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "此值把收入與支出全部相加，違反水量平衡。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "描述不精確。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "六十六漏算部分入庫或支出，與完整式不符。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "容量曲線依高程。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "二十二把期初或支出方向錯置，不能守恆。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "可重建容量與水位關係。"
+      "reason": "七十二加一百六十再減一百四十五與七，結果為八十。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "容量圖可及性"
+    "水量平衡"
   ],
-  "representationType": "accessible-capacity",
+  "representationType": "reservoir-balance",
   "misconceptionTargets": [
-    "顏色面積能取代容量數值"
+    "把出庫量當成收入相加"
   ],
   "provenance": {
     "status": "original",
@@ -72,13 +72,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "淤積前後容量可用同表並列與線型區分。 正確選項「各高程面積與容量、有效死庫容、目前水位及單位」可由題幹推出，因為可重建容量與水位關係。",
+      "evidence": "先寫期末等於期初加流入減流出，再統一代入同單位數值。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "caption 應說明資料日期，避免把舊容量當現況。 逐項排除其他選項：「只標水面藍色」顏色無數值。 這項內容無法支持題幹所要求的地理判斷。；「只寫水庫很大」描述不精確。 這項內容無法支持題幹所要求的地理判斷。；「刪除高程」容量曲線依高程。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案八十也未超過題目所列最新有效容量一百，物理上合理。",
       "status": "pass"
     }
   ],

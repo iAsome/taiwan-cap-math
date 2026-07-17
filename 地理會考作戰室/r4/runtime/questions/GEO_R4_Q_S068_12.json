@@ -15,43 +15,43 @@
     "AUTH-SOCIAL-LP-SOC-2B-4-3"
   ],
   "stimulusId": null,
-  "stem": "用水結構圓餅圖的無障礙替代最好是什麼？",
+  "stem": "枯水月總需求每日八十萬立方公尺，原水配置八十五萬，但輸配損失十一萬。若沒有其他水源，供需結果為何？",
   "options": [
-    "只說農業是綠色",
-    "只列最大扇形",
-    "刪除小部門",
-    "列各部門數值、占比、總量、期間與單位的資料表"
+    "可送達六十九萬，短缺十一萬",
+    "可送達九十六萬，餘十六萬",
+    "可送達八十五萬，餘五萬",
+    "可送達七十四萬，短缺六萬"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "六十九把需求或損失重複扣除，算式不符。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "無法理解完整結構。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "損失應自配置扣除，不能加到原水上。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "會使總量不完整。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "八十五是進入系統的配置量，尚未扣除輸配損失。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "可核對所有比例與基準。"
+      "reason": "八十五減十一為七十四，再與需求八十比較，短缺六。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "結構圖可及性"
+    "供需計算"
   ],
-  "representationType": "accessible-pie",
+  "representationType": "delivered-water",
   "misconceptionTargets": [
-    "顏色圖例可取代比例表"
+    "忽略輸配損失就判供水充足"
   ],
   "provenance": {
     "status": "original",
@@ -72,13 +72,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "表格可依占比排序，但需保留原部門名稱。 正確選項「列各部門數值、占比、總量、期間與單位的資料表」可由題幹推出，因為可核對所有比例與基準。",
+      "evidence": "先求可送達量，再與需求比較；原水配置大於需求不代表末端無缺水。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "caption 要說清楚是取水量或實際消耗量。 逐項排除其他選項：「只說農業是綠色」顏色不足。 這項內容無法支持題幹所要求的地理判斷。；「只列最大扇形」無法理解完整結構。 這項內容無法支持題幹所要求的地理判斷。；「刪除小部門」會使總量不完整。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案三同時正確處理損失與短缺方向。",
       "status": "pass"
     }
   ],

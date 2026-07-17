@@ -15,8 +15,8 @@
   "stimulusId": null,
   "stem": "同緯度西岸城市較溫和、內陸城市冬冷夏熱，若要驗證海陸效應，應控制什麼？",
   "options": [
-    "城市名稱長度",
-    "國旗顏色",
+    "只比較年平均氣溫",
+    "只比較城市緯度",
     "只選單一極端日",
     "海拔並比較多年逐月氣溫"
   ],
@@ -25,17 +25,17 @@
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "無氣候意義。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "年平均會掩蓋冬夏溫差，不能驗證海洋調節。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "不是氣候變數。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "題幹已控制同緯度，仍需控制海拔並比較逐月氣溫。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "不能代表年溫差。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "不能代表年溫差。"
     },
     {
       "optionIndex": 3,
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "同緯度已控制太陽輻射大尺度差異。 正確選項「海拔並比較多年逐月氣溫」可由題幹推出，因為控制高度並用多年資料較可靠。",
+      "evidence": "同緯度已控制太陽輻射大尺度差異。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "逐項排除其他選項：「城市名稱長度」無氣候意義。 這項內容無法支持題幹所要求的地理判斷。；「國旗顏色」不是氣候變數。 這項內容無法支持題幹所要求的地理判斷。；「只選單一極端日」不能代表年溫差。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "山脈位置仍要納入。",
       "status": "pass"
     }
   ],

@@ -14,43 +14,43 @@
     "AUTH-SOCIAL-LP-SOC-3D-4-1"
   ],
   "stimulusId": null,
-  "stem": "影像分類圖要提供等值非視覺資訊，哪項最完整？",
+  "stem": "衛星影像出現規則矩形、均一綠色且鄰近灌溉渠的區塊。若要區分公園與農地，下一步最有效的是什麼？",
   "options": [
-    "只列顯示顏色",
-    "只說有衛星圖",
-    "刪除低信心區",
-    "各區類別、判讀特徵、面積、日期、解析度與不確定度表"
+    "把影像放大後直接宣稱用途",
+    "只因綠色就判為公園",
+    "只因矩形就判為工廠",
+    "比對季節影像、地籍或現地資料"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不提供完整語意。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "放大不會新增用途屬性或原影像沒有的細節。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "籠統描述不能重現判讀。"
+      "reason": "綠色只支持植被覆蓋，不能單獨決定土地利用。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "低信心應揭露而非隱藏。"
+      "reason": "矩形可見於農田與建成設施，且題目未提供工廠特徵。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "結構資料保留分類、尺度與品質。"
+      "reason": "作物季節變化、地籍與現查可區分覆蓋相似但用途不同的地物。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "遙測可及性"
+    "影像驗證"
   ],
-  "representationType": "accessible-imagery",
+  "representationType": "land-cover-case",
   "misconceptionTargets": [
-    "顏色圖例足以替代分類資料"
+    "把植被覆蓋直接等同特定土地利用"
   ],
   "provenance": {
     "status": "original",
@@ -70,13 +70,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "若題目需比較區域，資料表還應有穩定區域識別與同單位面積。 正確選項「各區類別、判讀特徵、面積、日期、解析度與不確定度表」可由題幹推出，因為結構資料保留分類、尺度與品質。",
+      "evidence": "土地覆蓋回答地表看見什麼，土地利用還需人類活動與時序證據。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "長說明可描述空間鄰接，但不應取代可計算數值表。 逐項排除其他選項：「只列顯示顏色」顏色不提供完整語意。 這項內容無法支持題幹所要求的地理判斷。；「只說有衛星圖」籠統描述不能重現判讀。；「刪除低信心區」低信心應揭露而非隱藏。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案三使用不同來源交叉驗證，避免由單期外觀直接命名用途。",
       "status": "pass"
     }
   ],

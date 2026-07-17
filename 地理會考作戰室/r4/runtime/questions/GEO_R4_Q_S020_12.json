@@ -11,44 +11,44 @@
     "AUTH-SOCIAL-LP-SOC-3B-4-3"
   ],
   "stimulusId": null,
-  "stem": "為讓視障者查核河道量距，線上教材除了曲線圖還應提供什麼？",
+  "stem": "一比二萬五千地圖上，登山步道曲線長四公分，起終點高差六百公尺。對『步行距離一公里』的說法，何者最準確？",
   "options": [
-    "只用藍色深淺",
-    "只有無標籤圖片",
-    "把答案藏在滑鼠懸停",
-    "起訖點、分段圖距或可讀資料表、比例尺與計算說明"
+    "高差會使實走距離小於一公里",
+    "有高差就不能換算任何地圖距離",
+    "完全正確，比例尺已包含坡面起伏",
+    "一公里是圖面水平投影換算，坡面實走通常更長"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "只靠顏色無法提供完整幾何與數值。"
+      "reason": "垂直起伏會增加而非縮短坡面路徑。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "無標籤圖缺乏語意。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "比例尺仍可換算水平距離，只是不能冒充實走距離。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "滑鼠懸停不利鍵盤與觸控使用。"
+      "reason": "地圖比例尺換算平面投影，未自動加入垂直起伏。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "文字化分段資料與方法可由輔助科技讀取並重算。"
+      "reason": "四公分換算水平約一公里；六百公尺高差表示實走路徑還含坡面長度。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "資料表替代",
-    "無障礙"
+    "尺度換算",
+    "誤差判讀"
   ],
-  "representationType": "accessible-river",
+  "representationType": "slope-distance-scenario",
   "misconceptionTargets": [
-    "圖像摘要可取代量距資料"
+    "把地圖水平距離等同坡面實走距離"
   ],
   "provenance": {
     "status": "original",
@@ -65,13 +65,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "曲線量距的替代內容不能只說有一條河，而要保留可解題的數值與路徑順序。 正確選項「起訖點、分段圖距或可讀資料表、比例尺與計算說明」可由題幹推出，因為文字化分段資料與方法可由輔助科技讀取並重算。",
+      "evidence": "先把曲線圖距換成水平投影，再辨認題目另給的高差限制。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "答案一同時支援獨立換算與證據核對，符合資訊等值原則。 逐項排除其他選項：「只用藍色深淺」只靠顏色無法提供完整幾何與數值。；「只有無標籤圖片」無標籤圖缺乏語意。 這項內容無法支持題幹所要求的地理判斷。；「把答案藏在滑鼠懸停」滑鼠懸停不利鍵盤與觸控使用。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案二區分可由地圖得到的量與尚需地形剖面或軌跡補充的量。",
       "status": "pass"
     }
   ],
