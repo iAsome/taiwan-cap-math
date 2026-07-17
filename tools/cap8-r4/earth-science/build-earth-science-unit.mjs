@@ -125,14 +125,23 @@ export async function materializeEarthScienceUnit(source, { graphPath = GRAPH_PA
   const stimulusIds = new Set(stimuli.map((value) => value.id));
   for (const question of questions) {
     if (question.stimulusId !== null) assert(stimulusIds.has(question.stimulusId), `${question.id}: missing stimulus`);
-    await validateAuthoringRecord("question", question);
+    try {
+      await validateAuthoringRecord("question", question);
+    } catch (error) {
+      error.message = `${question.id}: ${error.message}`;
+      throw error;
+    }
   }
   for (const lecture of lectures) await validateAuthoringRecord("lecture", lecture);
   for (const [label, values] of [["lecture", lectures], ["question", questions], ["stimulus", stimuli]]) {
     assert.equal(new Set(values.map((value) => value.id)).size, values.length, `${source.unitId}: duplicate ${label} ID`);
   }
-  const visible = questions.map((value) => JSON.stringify([value.stem.trim(), [...value.options].sort()]));
-  assert.equal(new Set(visible).size, visible.length, `${source.unitId}: duplicate visible question`);
+  const visible = new Map();
+  for (const question of questions) {
+    const key = JSON.stringify([question.stem.trim(), [...question.options].sort()]);
+    assert(!visible.has(key), `${question.id}: duplicate visible question of ${visible.get(key)}`);
+    visible.set(key, question.id);
+  }
   for (const skill of skills) {
     const bank = questions.filter((value) => value.skillIds.includes(skill.id));
     assert.equal(bank.length, 15, `${skill.id}: total question floor mismatch`);
