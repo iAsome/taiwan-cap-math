@@ -1,4 +1,9 @@
 {
   "private": true,
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "build": "node ../../tools/cap8-r4/build-civics.mjs",
+    "verify": "node ../../tools/cap8-r4/verify-civics.mjs",
+    "test:browser": "node ../../tools/cap8-r4/test-civics-browser.mjs"
+  }
 }

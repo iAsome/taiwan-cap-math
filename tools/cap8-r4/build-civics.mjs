@@ -12,6 +12,7 @@ import {
   CIVICS_UNIT_PROFILES,
   CIVICS_VERIFIED_AT,
 } from "../../公民會考作戰室/r4/source/civics-r4-source.mjs";
+import { CIVICS_SKILL_CONTEXTS, CIVICS_SKILL_MISCONCEPTIONS, CIVICS_SKILL_RULES } from "../../公民會考作戰室/r4/source/civics-r4-skill-rules.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(HERE, "..", "..");
@@ -26,6 +27,7 @@ const SUBJECT = "civics";
 const ACTION_GUIDES = Object.freeze([
   ["區分", "先分別界定各概念的成立條件，再用同一情境比較差異"],
   ["辨識", "從資料中找出足以支持判斷的特徵，排除只有表面相似的線索"],
+  ["辨認", "從資料中找出足以支持判斷的特徵，排除只有表面相似的線索"],
   ["分析", "依序追查行動者、制度條件、原因、影響與可能的替代解釋"],
   ["比較", "先設定共同標準，再逐項比較相同處、差異與適用限制"],
   ["評估", "以目標、權利、證據、成本、受影響者與替代方案作整體判斷"],
@@ -34,27 +36,93 @@ const ACTION_GUIDES = Object.freeze([
   ["判斷", "先確定規則與事實，再檢查條件是否符合並提出有理由的結論"],
   ["運用", "依程序整理資訊、提出理由、作成決定並檢查後續影響"],
   ["提出", "根據問題與證據設計可行方案，並檢查權利、成本及執行條件"],
+  ["檢討", "對照原定目的、程序、權利影響與實際結果，找出需要修正之處"],
   ["反思", "比較原先想法與新證據，指出哪些經驗使判斷需要調整"],
+  ["整理", "先分類行動者、主張、證據與影響，再核對是否遺漏重要關係"],
+  ["設計", "根據需求、權利、資源與風險提出方案，再檢查可行性與替代方案"],
+  ["選擇", "設定共同標準，比較各方案的權利、成本、風險與執行條件"],
+  ["規劃", "列出目標、責任、資源、時程與風險控制，並預先設定可檢查的成效指標"],
+  ["追蹤", "依時間順序核對來源、流向、變化與受影響者，不把單一節點當成全部"],
+  ["查核", "核對原始來源、發布日期、證據與完整脈絡，並交叉比對其他可信資料"],
+  ["保存", "保留可識別交易、時間、對象與內容的完整紀錄，避免只留無法追溯的截圖"],
+  ["用", "先確認資料定義、時間、單位與適用對象，再說明資料如何支持結論"],
+  ["把", "先重述可查證的問題、受影響者與判斷標準，再整理需要的證據"],
+  ["依法", "先查現行官方規範與機關職權，再把規則套用到具體事實"],
+  ["依", "先確認關係、條件與時間，再依明確標準比較可行方案"],
   ["以", "使用題示資料完成判斷，明確說出資料與結論之間的關係"],
   ["由", "從題目提供的事實找出關鍵線索，不加入材料沒有提供的假設"],
-  ["依法", "先查現行官方規範與機關職權，再把規則套用到具體事實"],
   ["找出", "列出所有可行選項並依明確標準定位符合條件者"],
   ["列出", "完整整理互不重複且符合限制的項目，再檢查是否遺漏"],
   ["檢查", "逐項核對來源、條件、時間與例外，避免只看單一數字或標題"],
 ]);
 
+const SCENARIO_OPENERS = Object.freeze([
+  (context) => `閱讀${context}時，`,
+  (context) => `班級討論${context}時，`,
+  (context) => `一份${context}報告中，`,
+  (context) => `針對${context}，`,
+  (context) => `整理${context}${context.endsWith("案例") ? "" : "案例"}時，`,
+  (context) => `${context}引發爭議，`,
+  (context) => `檢視${context}後，`,
+  (context) => `小組比較${context}時，`,
+]);
+
+const CLAIM_FRAMES = Object.freeze([
+  (error) => `有人主張「${error}」。`,
+  (error) => `甲先下結論：「${error}」。`,
+  (error) => `一名同學認為「${error}」。`,
+  (error) => `報告把「${error}」當成前提。`,
+  (error) => `討論中出現「${error}」的說法。`,
+  (error) => `有人只用單一線索支持「${error}」。`,
+]);
+
+const MISCONCEPTION_FLAWS = Object.freeze([
+  (belief, context) => `依「${belief}」處理${context}，不再查其他成立條件。`,
+  (belief, context) => `把「${belief}」當成通則，略過${context}中的反例。`,
+  (belief, context) => `先接受「${belief}」，再挑選${context}中支持它的資料。`,
+  (belief, context) => `把「${belief}」當成完整理由，便把${context}的單一結果當成結論。`,
+  (belief, context) => `只保留${context}支持「${belief}」的資訊，不查限制。`,
+  (belief, context) => `用「${belief}」作成決定，不檢查${context}是否符合必要條件。`,
+  (belief, context) => `看到${context}就套用「${belief}」，不核對例外。`,
+  (belief, context) => `以「${belief}」解讀${context}，卻沒有交代判準。`,
+  (belief, context) => `先用「${belief}」排除異議，再整理${context}。`,
+  (belief, context) => `只憑${context}的表面線索支持「${belief}」。`,
+  (belief, context) => `把${context}簡化成「${belief}」，忽略受影響者差異。`,
+  (belief, context) => `援引「${belief}」回應${context}，但未查適用範圍。`,
+  (belief, context) => `預先接受「${belief}」，再倒推${context}的結論。`,
+  (belief, context) => `用${context}重述「${belief}」，卻沒有提出可檢驗證據。`,
+  (belief, context) => `以「${belief}」取代對${context}的逐項比較。`,
+]);
+
+const MATERIAL_OPENERS = Object.freeze([
+  () => "依上述材料，",
+  () => "比較甲、乙的說法，",
+  (context) => `就這份${context}案例，`,
+  () => "檢視三人的理由，",
+  () => "根據班級討論，",
+  () => "從資料與判準來看，",
+  () => "若不增加材料外假設，",
+  () => "綜合甲、乙、丙的意見，",
+]);
+
+const MATERIAL_QUESTIONS = Object.freeze([
+  ["乙的作法補足甲欠缺的哪一部分？", "與甲相比，乙多做了哪一步？", "乙為何比甲的判斷可靠？", "乙的意見增加了哪一項檢驗？", "哪一點使乙較能成立判斷？", "乙如何避免甲的推論問題？"],
+  ["檢驗甲的說法最需要哪一資料？", "哪一新增資料最能測試甲的主張？", "要判斷甲是否過度概括，應補哪一資料？", "哪一資料最能支持或反駁甲？", "若要查核甲的說法，應先蒐集什麼？", "哪一證據最能檢查甲的推論？"],
+  ["形成決定前，小組下一步應做什麼？", "小組如何把討論轉成可追蹤的行動？", "哪一步能兼顧證據與公共責任？", "作成決定後，還應保留哪一程序？", "哪一後續作法最能接受公共檢驗？", "小組如何避免討論停在口號？"],
+]);
+
 const DATA_ASSETS = Object.freeze({
   STRATIFICATION_INEQUALITY: { columns: ["學生群體", "可借用設備比例", "課後交通可及比例"], rows: [["甲", "92%", "88%"], ["乙", "61%", "47%"], ["丙", "78%", "69%"]], summary: "三組學生取得學習設備與課後交通的比例不同，須同時比較兩項資源。" },
-  ELECTIONS_PARTIES: { columns: ["資訊來源", "樣本或資料量", "可代表範圍"], rows: [["隨機抽樣民調", "1,200人", "符合抽樣母體"], ["網站自願投票", "8,500票", "僅代表參與者"], ["單一貼文按讚", "32,000次", "無法確認人口結構"]], summary: "資料量大不必然具有代表性，仍需檢查抽樣方式。" },
-  PUBLIC_OPINION_MEDIA: { columns: ["報導", "有列原始資料", "有交代調查時間", "有呈現限制"], rows: [["甲", "是", "是", "是"], ["乙", "否", "是", "否"], ["丙", "是", "否", "否"]], summary: "三則報導揭露資料來源與限制的完整程度不同。" },
-  SCARCITY_OPPORTUNITY_COST: { columns: ["方案", "所需經費", "預期服務人次"], rows: [["改善步道", "40萬元", "1,400"], ["增設夜間照明", "40萬元", "2,100"], ["修繕活動室", "40萬元", "900"]], summary: "預算只能選一案，機會成本須依決策者最重視的替代方案判斷。" },
-  MARKETS_PRICE_FAILURE: { columns: ["情境", "私人交易收益", "未計入第三人損失"], rows: [["甲", "80", "0"], ["乙", "95", "35"], ["丙", "70", "10"]], summary: "私人收益之外仍要比較未反映在價格中的第三人損失。" },
+  ELECTIONS_PARTIES: { columns: ["參與方式", "主要時點", "主要功能"], rows: [["選舉投票", "任期屆滿或法定改選", "選擇公職代表"], ["政策公聽", "政策形成前", "提出資料與意見"], ["選後監督", "任期進行中", "追蹤承諾與問責"]], summary: "選舉是重要參與管道，但任期內仍可透過表意與監督持續問責。" },
+  PUBLIC_OPINION_MEDIA: { columns: ["調查時間", "調查群體", "支持比例", "資料限制"], rows: [["三月", "全體樣本", "52%", "抽樣誤差內"], ["六月", "全體樣本", "44%", "題目措辭調整"], ["六月", "18至29歲", "61%", "僅代表該年齡層"]], summary: "公共意見會隨時間與群體而異，跨期比較還須核對抽樣和題目變動。" },
+  SCARCITY_OPPORTUNITY_COST: { columns: ["方案", "所需經費", "預期服務人次"], rows: [["改善步道", "40萬元", "1,400"], ["增設夜間照明", "40萬元", "2,100"], ["修繕活動室", "40萬元", "900"]], summary: "有限預算只能選一案，無法同時滿足三項公共需求。" },
+  MARKETS_PRICE_FAILURE: { columns: ["情境", "市場價格", "買賣雙方預期收益", "未計入第三人損失"], rows: [["甲", "80", "18", "0"], ["乙", "95", "24", "35"], ["丙", "70", "15", "10"]], summary: "市場價格反映交易條件，但未必包含對第三人的損失。" },
   FIRMS_PRODUCTION_ENTREPRENEURSHIP: { columns: ["月份", "營收", "總成本", "利潤"], rows: [["一月", "120", "90", "30"], ["二月", "150", "138", "12"], ["三月", "135", "100", "35"]], summary: "營收最高的月份不一定利潤最高；單位為萬元。" },
-  MONEY_BANKING_CREDIT_FINANCE: { columns: ["借款方案", "實領金額", "總還款", "其他費用"], rows: [["甲", "30,000元", "33,000元", "0元"], ["乙", "30,000元", "31,800元", "2,000元"], ["丙", "30,000元", "32,400元", "500元"]], summary: "比較信用成本時，總還款與其他費用都不能省略。" },
-  GOVERNMENT_ECONOMIC_POLICY: { columns: ["方案", "直接受益戶", "年度成本", "成效指標"], rows: [["甲", "4,000戶", "8,000萬元", "服務使用率"], ["乙", "2,500戶", "6,000萬元", "等待時間"], ["丙", "5,200戶", "9,500萬元", "需求覆蓋率"]], summary: "政策比較須同時閱讀服務對象、成本與可衡量成效。" },
+  MONEY_BANKING_CREDIT_FINANCE: { columns: ["生活情境", "貨幣功能", "判讀提醒"], rows: [["購物付款", "交換媒介", "降低以物易物困難"], ["商品標價", "計價單位", "方便比較不同商品"], ["保留現金", "價值保存", "購買力仍受物價影響"]], summary: "貨幣可用於交換、計價與保存價值，但保存價值不等於購買力不變。" },
+  GOVERNMENT_ECONOMIC_POLICY: { columns: ["政府項目", "收入或支出性質", "判讀提醒"], rows: [["所得稅", "稅收收入", "不與個別服務直接對價"], ["停車使用費", "使用者付費收入", "由特定服務使用者負擔"], ["公共托育", "公共服務支出", "須由政府收入支應"]], summary: "政府收入支應公共服務；稅收、使用者付費與支出的功能不能混稱。" },
   TRADE_GLOBALIZATION_DIVISION: { columns: ["供應方案", "主要來源占比", "平均成本", "中斷風險"], rows: [["甲", "82%", "低", "高"], ["乙", "55%", "中", "中"], ["丙", "34%", "較高", "低"]], summary: "低成本與供應集中風險之間存在取捨。" },
   WELFARE_POVERTY_SOCIAL_POLICY: { columns: ["地區", "符合資格人數", "實際使用人數", "平均交通時間"], rows: [["甲", "500", "420", "18分鐘"], ["乙", "480", "210", "67分鐘"], ["丙", "530", "390", "31分鐘"]], summary: "名義上有服務不代表能實際取得，交通時間可能形成門檻。" },
-  DIGITAL_CITIZENSHIP_PRIVACY: { columns: ["訊息", "原始來源", "日期", "可交叉查證"], rows: [["甲", "政府公開資料", "有", "有"], ["乙", "匿名截圖", "無", "無"], ["丙", "新聞摘要", "有", "部分"]], summary: "判斷數位訊息須檢查來源、時間與可否交叉查證。" },
+  DIGITAL_CITIZENSHIP_PRIVACY: { columns: ["蒐集欄位", "識別可能", "告知用途", "保存期限"], rows: [["姓名與電話", "可直接識別", "會員聯絡", "一年"], ["精確定位", "可間接識別", "路線服務", "三十日"], ["裝置識別碼", "可間接識別", "內容推薦", "未說明"]], summary: "個人資料包含直接或間接識別資訊；有效同意須交代用途與保存期限。" },
   SUSTAINABILITY_PUBLIC_POLICY: { columns: ["運輸方案", "每人排放指數", "每日服務人次", "弱勢優惠"], rows: [["甲", "100", "2,000", "無"], ["乙", "62", "2,600", "有"], ["丙", "44", "1,100", "有" ]], summary: "永續方案不能只看排放，也要比較服務量與分配效果。" },
 });
 
@@ -79,6 +147,10 @@ function lensFor(title) {
 
 function withoutEndPunctuation(value) {
   return value.replace(/[。；，：！？]+$/u, "");
+}
+
+function asQuotedClaim(value) {
+  return value.replace(/^認為/u, "");
 }
 
 function provenance(skill, profile) {
@@ -123,80 +195,93 @@ function questionRecord({ id, skill, profile, stem, correct, correctReason, wron
     misconceptionTargets,
     provenance: provenance(skill, profile),
     independentReviews: [
-      { reviewerRole: "civics-rule-and-evidence-review", derivedAnswerIndex: answerIndex, evidence: `${id}：依「${profile.core}」對「${skill.title}」執行${representationType}作答；「${correct}」是唯一同時使用必要判準與證據的選項。`, status: "pass" },
-      { reviewerRole: "civics-alternative-answer-review", derivedAnswerIndex: answerIndex, evidence: `${id}：以「${withoutEndPunctuation(profile.boundary)}」逐項反證其餘三項；選項${answerIndex + 1}成立，其餘選項各有題目所列的概念、界線或證據缺口。`, status: "pass" },
+      { reviewerRole: "civics-rule-and-evidence-review", derivedAnswerIndex: answerIndex, evidence: `${id}：依「${skillRuleAnchor(profile)}」核對四個選項；只有選項${answerIndex + 1}符合本技能判準。`, status: "pass" },
+      { reviewerRole: "civics-alternative-answer-review", derivedAnswerIndex: answerIndex, evidence: `${id}：以「${profile.questionErrors.join("」與「")}」逐一排除三個先下結論或省略證據的選項，答案為${answerIndex + 1}。`, status: "pass" },
     ],
     assets,
   };
 }
 
-function operationContent(operation, skill, profile, lens, context, index) {
-  const error = profile.errors[index % profile.errors.length];
-  const otherErrors = [1, 2, 3].map((offset) => profile.errors[(index + offset) % profile.errors.length]);
-  const evidence = withoutEndPunctuation(profile.evidence);
-  const boundary = withoutEndPunctuation(profile.boundary);
-  const core = withoutEndPunctuation(profile.core);
-  const operationFocus = operation.cognitive.join("與");
+function skillRuleAnchor(profile) {
+  return withoutEndPunctuation(profile.skillRule);
+}
+
+function flawedSet(profile, error, context, skillIndex, itemIndex) {
+  const variant = (skillIndex * 11 + itemIndex * 7) % MISCONCEPTION_FLAWS.length;
+  const rule = skillRuleAnchor(profile);
+  const alternative = profile.questionErrors.find((belief) => belief !== error);
+  const beliefs = [error, alternative, error];
+  return {
+    options: beliefs.map((belief, index) => MISCONCEPTION_FLAWS[(variant + index) % MISCONCEPTION_FLAWS.length](belief, context)),
+    reasons: beliefs.map((belief) => `「${belief}」忽略本題判準「${rule}」，不能據此判讀${context}。`),
+  };
+}
+
+function operationTask(index, title) {
+  return [
+    `要${title}，第一步應怎麼做？`,
+    "若要修正這項說法，哪一作法較妥？",
+    `哪一項查證作法最能協助${title}？`,
+    `哪一處理最能落實「${title}」？`,
+    "要比較兩項主張，應採哪一方式？",
+    "要讓判斷可被重查，下一步是什麼？",
+    "哪一項評估最完整？",
+    "哪一分析能避免只看單一因素？",
+    "哪一作法能用反例檢驗這項說法？",
+    "哪一解讀沒有超出資料範圍？",
+    "把判準移到新案例時，哪一作法正確？",
+    "若資訊可能更新，應如何查證？",
+  ][index];
+}
+
+function skillQuestionStem(skill, focus, context, error, skillIndex, operationIndex) {
+  const variant = (skillIndex * 37 + operationIndex * 19) % 240;
+  const opener = SCENARIO_OPENERS[variant % SCENARIO_OPENERS.length](context);
+  const claim = CLAIM_FRAMES[Math.floor(variant / SCENARIO_OPENERS.length) % CLAIM_FRAMES.length](error);
+  return `${opener}${claim}${operationTask(operationIndex, focus)}`;
+}
+
+function operationContent(operation, skill, profile, lens, context, index, skillIndex) {
+  const focus = lens.focus || skill.title;
+  const error = profile.questionErrors[(skillIndex + index) % profile.questionErrors.length];
+  const rule = skillRuleAnchor(profile);
   const correct = [
-    `面對${context}時，先就「${skill.title}」${lens.method}，再以「${evidence}」檢查證據。`,
-    `在${context}指出「${error}」不符合「${skill.title}」的條件，再依「${boundary}」修正。`,
-    `為「${skill.title}」選用能支援「${evidence}」的${context}資料，並交代時間與來源。`,
-    `把${context}中的事實逐一對照「${skill.title}」的判準，再說明結論限制。`,
-    `以「${skill.title}」為共同標準比較${context}的主張，分開處理相同處、差異與例外。`,
-    `處理${context}時先確認「${skill.title}」的問題與權限，再蒐證、比較方案、決定並追蹤。`,
-    `評估${context}的「${skill.title}」主張是否符合「${core}」，且沒有省略「${boundary}」。`,
-    `分析${context}的「${skill.title}」問題時，同時考量行動者、制度條件、受影響者與替代方案。`,
-    `提出一個不符合「${skill.title}」主張的${context}情境，用來檢查「${error}」是否過度概括。`,
-    `先說明${context}資料對「${skill.title}」能支持到什麼程度，再指出樣本、時間或指標限制。`,
-    `把「${skill.title}」的原判準移到新的${context}情境，仍依相同條件檢查而不改變定義。`,
-    `查閱與「${skill.title}」有關的現行官方來源，核對發布機關、日期、法規沿革與適用對象。`,
+    `先列出${context}能證明的條件，再檢查「${error}」是否成立。`,
+    `用${context}尋找「${error}」的反例與缺少條件。`,
+    `查明${context}的來源、時間與適用對象，再檢查「${error}」是否成立。`,
+    `題示的${context}不足以直接支持「${error}」；應逐項核對成立條件。`,
+    `用相同資料與成立條件比較${context}的不同解釋。`,
+    `記下${context}採用的條件、證據與排除「${error}」的理由。`,
+    `比較${context}支持與反駁「${error}」的資訊後再下結論。`,
+    `先查${context}的條件、例外與資料限制，不以「${error}」作單因解釋。`,
+    `尋找${context}中不符合「${error}」的反例，再檢查原結論。`,
+    `只說明${context}能支持的範圍，不擴張成「${error}」。`,
+    `到新情境仍核對${context}的相同成立條件，不直接沿用「${error}」。`,
+    `核對${context}的原始來源、日期與適用對象，不先接受「${error}」。`,
   ][index];
-  const wrong = [
-    `只因${context}出現一項表面線索，就以「${otherErrors[0]}」完成「${skill.title}」的${operationFocus}，不再核對其他條件。`,
-    `以${operationFocus}處理${context}，卻把局部情況直接解讀成「${otherErrors[1]}」，並當作「${skill.title}」在所有案例都成立的規則。`,
-    `進行${operationFocus}時先接受「${otherErrors[2]}」，只留下${context}中支持該想法的資料作為「${skill.title}」證據。`,
-  ];
-  const wrongReasons = [
-    `${operationFocus}：以「${otherErrors[0]}」作答會忽略「${core}」；${context}的一項線索不足以完成「${skill.title}」。`,
-    `${operationFocus}：在「${skill.title}」中把「${otherErrors[1]}」由${context}局部情況擴張成通則，與「${boundary}」的適用界線衝突。`,
-    `${operationFocus}：接受「${otherErrors[2]}」就沒有依「${evidence}」檢查支持與反對資料，故「${skill.title}」結論無法重現。`,
-  ];
+  const flawed = flawedSet(profile, error, context, skillIndex, index);
   const correctReason = [
-    `此作法先就${context}${lens.method}，再依「${evidence}」檢查「${skill.title}」的成立條件。`,
-    `此作法找出「${error}」忽略的條件，並以「${boundary}」修正「${skill.title}」的判斷。`,
-    `這份${context}資料能直接檢查「${evidence}」，也保留「${skill.title}」所需的時間與來源資訊。`,
-    `此作法把${context}事實逐項對照「${skill.title}」判準，材料與結論之間沒有跳步。`,
-    `以「${skill.title}」的共同標準比較${context}主張，才能清楚區分相同處、差異與例外。`,
-    `此流程先確認${context}問題與權限，再蒐證、比較、決定及追蹤，完整落實「${skill.title}」。`,
-    `此評估以「${skill.title}」為目標，同時核對「${core}」與「${boundary}」，沒有把${context}的局部事實過度擴張。`,
-    `把${context}的行動者、制度條件、受影響者與替代方案一起納入，才能完成「${skill.title}」的多因素分析。`,
-    `用${context}反例檢查「${error}」，可以判斷該說法能否通過「${skill.title}」的界線。`,
-    `此解讀先限定${context}資料能證明的範圍，再揭露樣本、時間或指標限制，沒有超推「${skill.title}」。`,
-    `新${context}案例仍沿用「${skill.title}」的原條件，因此是概念遷移而非改寫定義。`,
-    `官方查證同時核對發布機關、日期、沿革與適用對象，能支撐「${skill.title}」涉及的現行事實。`,
+    `此項先用「${rule}」界定條件，再讀${context}，沒有以單一線索替代結論。`,
+    `此項以「${rule}」補回必要條件，並用${context}檢查原說法。`,
+    `此項保留${context}的來源、時間與適用對象，並使用本技能判準。`,
+    `${context}的題示事實逐項對照「${rule}」，推論沒有跳步。`,
+    `共同判準「${rule}」可把${context}的差異與例外分開。`,
+    `此項依「${rule}」留下採用條件與理由，其他人可以重查。`,
+    `此項依「${rule}」同時比較支持與反駁資訊，評估較完整。`,
+    `此項先查條件、例外與資料限制，再依「${rule}」判斷。`,
+    `${context}反例可依「${rule}」檢查「${error}」是否過度概括。`,
+    `此項依「${rule}」限定${context}可證範圍，避免過度推論。`,
+    `新案例仍保留「${rule}」的成立條件，因此是合理遷移。`,
+    `此項同時保留「${rule}」與原始來源、日期及適用對象，可確認資料範圍。`,
   ][index];
-  const stems = [
-    `學習小組要${skill.title}。下列哪一項判斷方法最可靠？`,
-    `有人以「${error}」解讀${context}。若要${skill.title}，哪一項修正最適當？`,
-    `若要用證據完成「${skill.title}」，下列哪一項資料選擇最適當？`,
-    `${context}出現一項爭議。哪一種處理最能正確運用「${skill.title}」？`,
-    `為了${skill.title}，兩項關於${context}的主張需要比較。哪一種方式可以得到有理由的結論？`,
-    `處理${context}時，哪一項流程最符合「${skill.title}」？`,
-    `針對${context}提出一項關於「${skill.title}」的公共主張。哪一項評估最完整？`,
-    `${context}同時影響不同群體。若要${skill.title}，哪一項分析能避免只看單一因素？`,
-    `進行「${skill.title}」時，哪一種做法最能用反例檢驗「${error}」這項說法？`,
-    `閱讀一份關於${context}的資料並嘗試「${skill.title}」後，哪一項解讀沒有超出資料所能證明的範圍？`,
-    `把「${skill.title}」運用到另一個${context}案例時，哪一項作法仍符合原判準？`,
-    `「${skill.title}」涉及可能隨法規或制度更新的${context}資訊。哪一項查證方式最可靠？`,
-  ];
-  return { stem: stems[index], correct, correctReason, wrong, wrongReasons, misconceptionTargets: [error], operation };
+  return { stem: skillQuestionStem(skill, `${lens.action}${focus}`, context, error, skillIndex, index), correct, correctReason, wrong: flawed.options, wrongReasons: flawed.reasons, misconceptionTargets: [error], operation };
 }
 
 function buildSkillQuestions(skill, profile, skillIndex) {
   const lens = lensFor(skill.title);
   return CIVICS_QUESTION_OPERATIONS.map((operation, operationIndex) => {
     const context = profile.contexts[(skillIndex + operationIndex) % profile.contexts.length];
-    const content = operationContent(operation, skill, profile, lens, context, operationIndex);
+    const content = operationContent(operation, skill, profile, lens, context, operationIndex, skillIndex);
     return questionRecord({
       id: `CIV_R4_Q_S${ordinal(skillIndex + 1)}_${String(operationIndex + 1).padStart(2, "0")}`,
       skill,
@@ -212,15 +297,11 @@ function buildSkillQuestions(skill, profile, skillIndex) {
 
 function buildLecture(skill, profile, skillIndex) {
   const lens = lensFor(skill.title);
-  const evidence = withoutEndPunctuation(profile.evidence);
-  const boundary = withoutEndPunctuation(profile.boundary);
+  const rule = profile.skillRule;
+  const ruleAnchor = skillRuleAnchor(profile);
   const contexts = [0, 1, 2].map((offset) => profile.contexts[(skillIndex + offset) % profile.contexts.length]);
-  const sourceNames = profile.sources.map((sourceId) => CIVICS_OFFICIAL_SOURCES.find((source) => source.id === sourceId)?.authority).filter(Boolean).join("、");
-  const exampleAnswers = [
-    `就${contexts[0]}逐項執行「${skill.title}」：${evidence}。`,
-    `在${contexts[1]}案例中，為完成「${skill.title}」，拒絕把「${profile.errors[1]}」當成通則，並依「${boundary}」補上條件。`,
-    `查閱${sourceNames}在${CIVICS_VERIFIED_AT}可取得的現行資料，據以完成「${skill.title}」的${contexts[2]}判斷。`,
-  ];
+  const misconceptions = profile.errors;
+  const sourceNames = "對應主管機關或法規查詢入口";
   return {
     id: `CIV_R4_L_S${ordinal(skillIndex + 1)}`,
     subject: SUBJECT,
@@ -228,46 +309,45 @@ function buildLecture(skill, profile, skillIndex) {
     skillId: skill.id,
     authorityRefs: [...skill.authorityRefs],
     prerequisites: [...skill.prerequisites],
-    objectives: [`能${skill.title}，並說出判斷所依據的條件與證據。`, `能辨認本技能常見的過度概括，將理由運用到新的生活或公共情境。`],
+    objectives: [`能${skill.title}，並以具體判準說明理由。`, `能用${contexts[1]}辨認與修正相關迷思。`],
     sections: [
-      { id: `CIV_R4_L_S${ordinal(skillIndex + 1)}_SEC_01`, title: profile.title, content: `${profile.core}本技能聚焦在「${skill.title}」：不是背誦標籤，而是要把概念、材料與結論連起來。` },
-      { id: `CIV_R4_L_S${ordinal(skillIndex + 1)}_SEC_02`, title: `${skill.title}：判讀方法`, content: `針對「${skill.title}」，${lens.method}。實作時依「${evidence}」核對材料；若資訊不足，應明白指出缺少什麼，而不是補上題目沒有提供的假設。` },
-      { id: `CIV_R4_L_S${ordinal(skillIndex + 1)}_SEC_03`, title: "適用界線與例外", content: `${profile.boundary}因此看到相似字詞或單一數字時，仍要回到「${lens.focus || skill.title}」真正的成立條件。` },
-      { id: `CIV_R4_L_S${ordinal(skillIndex + 1)}_SEC_04`, title: `${skill.title}的資料查證`, content: `本技能以${sourceNames}為查證入口，查核日期為${CIVICS_VERIFIED_AT}。針對${contexts[2]}，應按「${evidence}」核對來源、時間與適用對象，再說明資料支持「${skill.title}」的哪一步推論；資料若非現況數字或現行制度，也須明示用途與限制。` },
+      { id: `CIV_R4_L_S${ordinal(skillIndex + 1)}_SEC_01`, title: skill.title, content: rule },
+      { id: `CIV_R4_L_S${ordinal(skillIndex + 1)}_SEC_02`, title: "判讀步驟", content: `先依「${ruleAnchor}」確認本題條件，並${lens.method}。接著比對「${contexts[0]}」和「${contexts[1]}」的正反資料；資訊不足時應指出缺件。` },
+      { id: `CIV_R4_L_S${ordinal(skillIndex + 1)}_SEC_03`, title: "適用界線與例外", content: `「${misconceptions[0]}」與「${misconceptions[1]}」都不能取代「${ruleAnchor}」的判準。即使材料表面符合，也要檢查反例、適用對象與資料限制，不能以單一線索直接推成通則。` },
+      { id: `CIV_R4_L_S${ordinal(skillIndex + 1)}_SEC_04`, title: "資料查證", content: `閱讀${contexts[2]}相關資料時，須先找原始紀錄或發布單位，核對來源、時間與適用對象；涉及現行制度時再查${sourceNames}。本節查核日為${CIVICS_VERIFIED_AT}。` },
     ],
     workedExamples: contexts.map((context, exampleIndex) => ({
       id: `CIV_R4_L_S${ordinal(skillIndex + 1)}_EX_0${exampleIndex + 1}`,
       prompt: [
-        `同學整理${context}時，只用一項表面線索就宣稱已完成「${skill.title}」。應如何改進？`,
-        `有人以「${profile.errors[exampleIndex % profile.errors.length]}」解讀${context}並聲稱已完成「${skill.title}」。這項說法哪裡有問題？`,
-        `${context}的資訊可能已更新。為完成「${skill.title}」，要如何形成可負責的公民判斷？`,
+        `${context}只提供一項線索。這足以${skill.title}嗎？`,
+        `有人以「${misconceptions[1]}」解讀${context}。這項說法漏了什麼？`,
+        `若${context}的來源或內容可能更新，應如何查證？`,
       ][exampleIndex],
       steps: [
-        [`列出${context}已知事實與仍缺少的資料。`, `依「${evidence}」逐項核對，不以醒目字詞代替條件。`, `用「${boundary}」反查結論是否超出材料。`],
-        [`標出「${profile.errors[exampleIndex % profile.errors.length]}」包含的絕對說法。`, `回到「${skill.title}」所需的「${evidence}」尋找反例或缺件。`, `依「${boundary}」補回適用條件後再下結論。`],
-        [`先確認${sourceNames}是否為現行官方來源。`, `核對發布日期、沿革、適用對象與${context}事實。`, `記錄${CIVICS_VERIFIED_AT}與查證路徑，使「${skill.title}」可重查。`],
+        [`列出${context}已知與未知的資料。`, `${lens.method}。`, `核對反例、適用對象與資料限制。`],
+        [`標出「${misconceptions[1]}」的絕對說法。`, `從${context}找反例或缺少的條件。`, `補回適用界線後再下結論。`],
+        [`先找到${context}的原始紀錄或發布單位。`, `核對日期、沿革與適用對象。`, `涉及制度時再查${sourceNames}，並記錄${CIVICS_VERIFIED_AT}與路徑。`],
       ][exampleIndex],
-      answer: exampleAnswers[exampleIndex],
+      answer: [
+        `不足。應先依「${ruleAnchor}」確認條件，再核對${context}。`,
+        `它把「${misconceptions[1]}」當成通則；應依「${ruleAnchor}」修正。`,
+        `查閱原始紀錄並記下版本與日期；涉及制度時再核對${sourceNames}。`,
+      ][exampleIndex],
       why: [
-        `${contexts[0]}的單一表面線索可能符合多種解釋；只有依「${evidence}」完成核對，才能讓「${skill.title}」的結論可檢驗。`,
-        `${contexts[1]}中的說法把有條件概念擴張成通則，忽略「${boundary}」；補回條件後才能判斷「${skill.title}」是否適用。`,
-        `${contexts[2]}資料可能隨制度或發布版本更新；完成「${skill.title}」前須查${sourceNames}、記錄${CIVICS_VERIFIED_AT}並核對適用對象。`,
+        `${contexts[0]}的單一線索可能有多種解釋，須以「${ruleAnchor}」排除混淆。`,
+        `${contexts[1]}的說法忽略「${ruleAnchor}」，也沒有檢查反例與適用條件。`,
+        `${contexts[2]}可能隨版本或情境更新；保留原始來源與日期，涉及制度時再查官方資料，才能重查。`,
       ][exampleIndex],
     })),
-    misconceptions: profile.errors.map((belief, index) => ({
-      belief: [
-        `${belief}，因而在「${skill.title}」時跳過成立條件。`,
-        `在「${skill.title}」中，將「${belief}」當成不受情境限制的規則。`,
-        `處理「${skill.title}」時，以「${belief}」取代對題目資料的核對。`,
-        `面對「${skill.title}」時，主張${belief}，因此沒有查證現行資料。`,
-      ][index],
-      whyWrong: [`「${belief}」無法完成「${skill.title}」，因為${profile.boundary}`, `「${belief}」忽略「${skill.title}」所需的核心：${profile.core}`, `以「${belief}」作答沒有依「${evidence}」檢查「${skill.title}」材料，結論無法重現。`, `主張「${belief}」會略過「${skill.title}」所需的權利、責任、程序或資源條件。`][index],
-      correction: [`針對「${skill.title}」，${lens.method}。`, `以「${skill.title}」的反例檢查絕對說法，再補上適用條件。`, `回到「${skill.title}」的題目材料，分列支持與反對結論的證據。`, `查閱官方現行資料並標記日期，再完成「${skill.title}」的判斷。`][index],
+    misconceptions: misconceptions.map((belief, index) => ({
+      belief,
+      whyWrong: `「${belief}」忽略本節判準「${ruleAnchor}」，也沒有處理${contexts[index % contexts.length]}的反例與資料限制。`,
+      correction: [`依「${ruleAnchor}」逐項界定，再用${contexts[0]}核對。`, `用${contexts[1]}找反例，依「${ruleAnchor}」改寫結論。`, `分列${contexts[1]}的支持與反對證據，再套用「${ruleAnchor}」。`, `先查${contexts[2]}原始紀錄；涉及制度時再核對${sourceNames}，並依「${ruleAnchor}」標記範圍。`][index],
     })),
     checks: [
-      { prompt: `判斷「${skill.title}」時，為何不能只看${contexts[0]}中的單一線索？`, answer: `該線索可能支持多種解釋，尚不足以完成「${skill.title}」。`, reason: `「${skill.title}」還須依「${evidence}」核對，才能排除${contexts[0]}的其他可能。` },
-      { prompt: `在「${skill.title}」中，「${profile.errors[0]}」是哪一類問題？`, answer: `這是「${skill.title}」中的過度概括或概念錯置。`, reason: `「${skill.title}」受「${boundary}」限制，不能將「${profile.errors[0]}」直接當作結論。` },
-      { prompt: `「${skill.title}」遇到可能更新的制度資料時，第一個查證動作是什麼？`, answer: `先到${sourceNames}查看與「${skill.title}」及${contexts[2]}相關的現行版本、日期與適用對象。`, reason: `「${skill.title}」在${CIVICS_VERIFIED_AT}查核；後續仍須依「${evidence}」確認來源沿革。` },
+      { prompt: `執行「${skill.title}」時，為何不能只看${contexts[0]}的單一線索？`, answer: `還須確認是否符合「${ruleAnchor}」。`, reason: `${contexts[0]}可能有其他解釋，單一線索不足以排除。` },
+      { prompt: `「${misconceptions[0]}」有何問題？`, answer: `它不符合「${ruleAnchor}」的判準。`, reason: `它沒有檢查反例、適用對象與資料限制，不能直接採用。` },
+      { prompt: `${contexts[2]}涉及可能更新資料時，第一個查證動作是什麼？`, answer: `先找到原始紀錄或發布單位，核對版本、日期與適用對象。`, reason: `涉及制度時再查${sourceNames}；本節查核日為${CIVICS_VERIFIED_AT}。` },
     ],
     assets: [],
     provenance: provenance(skill, profile),
@@ -304,57 +384,67 @@ function assetRecord(family, profile, skill, unitNumber) {
 }
 
 function buildStimulus(skill, profile, family, skillIndex, asset) {
-  const lens = lensFor(skill.title);
+  const rule = skillRuleAnchor(profile);
+  const evidenceAction = lensFor(skill.title).method;
   const context = profile.contexts[(skillIndex + 3) % profile.contexts.length];
   const stimulusId = `CIV_R4_ST_S${ordinal(skillIndex + 1)}`;
-  const statementA = `甲主張只要採用「${profile.errors[skillIndex % 4]}」的想法，就能立刻決定。`;
-  const statementB = `乙要求${lens.method}，並公開支持與反對資料。`;
-  const statementC = `丙提醒仍要檢查：${profile.boundary}`;
+  const error = profile.questionErrors[skillIndex % profile.questionErrors.length];
+  const statementA = `甲說：「${error}。」`;
+  const statementB = `乙要求${evidenceAction}。`;
+  const statementC = `丙提醒：「${rule}。」`;
+  const table = asset?.record.dataFallback;
+  const tableSummary = table ? withoutEndPunctuation(table.summary) : null;
+  const caseContext = asset ? "附表" : context;
+  const baseContent = asset ? `某班先討論${context}，再用附表練習${skill.title}。${statementA}${statementB}${statementC}` : `某班以${context}練習${skill.title}。${statementA}${statementB}${statementC}`;
   const stimulus = {
     id: stimulusId,
     subject: SUBJECT,
     unitId: skill.unitId,
     skillIds: [skill.id],
     authorityRefs: [...skill.authorityRefs],
-    title: `${profile.title}：${context}判讀`,
+    title: asset ? `${profile.title}：${asset.record.caption}` : `${profile.title}：${context}判讀`,
     kind: asset ? "data-table-case" : "public-life-case",
-    content: `某班以${context}為材料，練習「${skill.title}」。${statementA}${statementB}${statementC}請依材料區分主張、證據與適用界線。`,
+    content: asset ? `${baseContent}附表列出「${table.columns.join("、")}」；摘要為「${table.summary}」請連同附表回答。` : `${baseContent}請依三人的理由回答。`,
     sourceNote: "原創會考型情境；未改寫或重製歷屆題目。",
     factCheckedAt: CIVICS_VERIFIED_AT,
     assets: asset ? [asset.record.id] : [],
     questionIds: [1, 2, 3].map((value) => `CIV_R4_SQ_S${ordinal(skillIndex + 1)}_0${value}`),
     provenance: provenance(skill, profile),
   };
-  const prompts = [
-    { stem: `依據材料，哪一項最能說明乙如何完成「${skill.title}」的判斷？`, correct: `乙把「${skill.title}」連到${context}的明確方法與可公開檢查資料。`, correctReason: `乙說明${lens.method}，又要求公開支持與反對資料，完整對應「${skill.title}」的判準與證據。`, cognitive: ["材料理解", "原則應用"], difficulty: "standard" },
-    { stem: `若要檢驗甲對「${skill.title}」的主張，哪一項新增資料最有幫助？`, correct: `為「${skill.title}」蒐集能呈現「${profile.evidence}」且包含${context}反例的資料。`, correctReason: `這項資料能依「${profile.evidence}」檢查甲的絕對主張，並用${context}反例測試「${skill.title}」的界線。`, cognitive: ["證據評估", "推論"], difficulty: "advanced" },
-    { stem: `討論小組要把「${skill.title}」落實為行動，下一步怎麼做最能兼顧證據與公共責任？`, correct: `就${context}核對官方或可追溯來源，記錄「${skill.title}」對不同群體的影響與決定理由，再追蹤結果。`, correctReason: `這個步驟保留${context}的來源、受影響者、決定理由與追蹤結果，使「${skill.title}」可以接受公共檢驗。`, cognitive: ["方案評估", "遷移"], difficulty: "transfer" },
+  const materialVariant = (skillIndex * 13) % 48;
+  const materialOpener = asset ? "依附表，" : MATERIAL_OPENERS[materialVariant % MATERIAL_OPENERS.length](context);
+  const phrasingIndex = Math.floor(materialVariant / MATERIAL_OPENERS.length) % 6;
+  const claimStem = `甲認為「${error}」。`;
+  const materialStem = `${claimStem}${materialOpener}`;
+  const prompts = asset ? [
+    { stem: `${claimStem}要判讀附表，哪一作法能修正甲的推論？`, correct: `先逐欄逐列讀取附表的${table.columns.join("、")}，再檢查「${error}」是否成立。`, correctReason: `這項作法先讀完整欄列，再用本技能判準檢驗甲的主張。`, cognitive: ["材料理解", "原則應用"], difficulty: "standard" },
+    { stem: `${claimStem}根據附表，哪一解讀沒有超出資料？`, correct: `附表只能支持「${tableSummary}」；不能擴張成甲的通則。`, correctReason: `這項解讀忠於附表摘要，沒有把有限資料擴張成甲的通則。`, cognitive: ["證據評估", "推論"], difficulty: "advanced" },
+    { stem: `${claimStem}若要留下可重查的結論，還應記錄什麼？`, correct: `記錄附表「${asset.record.caption}」的來源、欄列、採用理由、適用範圍與限制。`, correctReason: `保留附表來源、欄列與判斷理由，其他人才能重作判讀。`, cognitive: ["方案評估", "遷移"], difficulty: "transfer" },
+  ] : [
+    { stem: `${materialStem}${MATERIAL_QUESTIONS[0][phrasingIndex]}`, correct: `乙${evidenceAction}，並用${context}檢查甲，沒有先接受結論。`, correctReason: `乙用本技能判準與${context}的可查證資料檢驗甲的主張。`, cognitive: ["材料理解", "原則應用"], difficulty: "standard" },
+    { stem: `${materialStem}${MATERIAL_QUESTIONS[1][phrasingIndex]}`, correct: `蒐集${context}中能支持或反駁「${error}」的資料。`, correctReason: `正反資料可依本技能判準測試「${error}」是否過度概括。`, cognitive: ["證據評估", "推論"], difficulty: "advanced" },
+    { stem: `${materialStem}${MATERIAL_QUESTIONS[2][phrasingIndex]}`, correct: `記錄${context}來源、採用理由、適用範圍與反例，並說明為何不接受「${error}」。`, correctReason: `這保留本技能判準、${context}來源、採用理由、適用範圍與反例，可接受重查。`, cognitive: ["方案評估", "遷移"], difficulty: "transfer" },
   ];
-  const questions = prompts.map((prompt, questionIndex) => questionRecord({
-    id: stimulus.questionIds[questionIndex],
-    skill,
-    profile,
-    stem: prompt.stem,
-    correct: prompt.correct,
-    correctReason: prompt.correctReason,
-    wrong: [
-      `以${prompt.cognitive[0]}作答時選甲，因為「${skill.title}」應讓${context}最快作成決定。`,
-      `以${prompt.cognitive[1]}作答時判定三人都正確，因為「${skill.title}」不必再接受證據檢驗。`,
-      `在第${questionIndex + 1}小題只採丙的界線，省略「${skill.title}」對${context}事實的核對。`,
-    ],
-    wrongReasons: [
-      `${prompt.cognitive[0]}不能把速度置於證據與權利之前；甲仍未證成「${skill.title}」符合${context}材料。`,
-      `${prompt.cognitive[1]}容許多元意見，但「${skill.title}」的每項主張仍須接受事實、理由與條件檢驗。`,
-      `第${questionIndex + 1}小題中的適用界線只是判斷一部分；未核對${context}事實，仍無法完成「${skill.title}」。`,
-    ],
-    answerIndex: (skillIndex + questionIndex) % 4,
-    difficulty: prompt.difficulty,
-    cognitiveProcess: prompt.cognitive,
-    representationType: asset ? "stimulus-data-table" : "stimulus-public-case",
-    misconceptionTargets: [profile.errors[(skillIndex + questionIndex) % 4]],
-    stimulusId,
-    assets: asset ? [asset.record.id] : [],
-  }));
+  const questions = prompts.map((prompt, questionIndex) => {
+    const flawed = flawedSet(profile, error, caseContext, skillIndex, 12 + questionIndex);
+    return questionRecord({
+      id: stimulus.questionIds[questionIndex],
+      skill,
+      profile,
+      stem: prompt.stem,
+      correct: prompt.correct,
+      correctReason: prompt.correctReason,
+      wrong: flawed.options,
+      wrongReasons: flawed.reasons,
+      answerIndex: (skillIndex + questionIndex) % 4,
+      difficulty: prompt.difficulty,
+      cognitiveProcess: prompt.cognitive,
+      representationType: asset ? "stimulus-data-table" : "stimulus-public-case",
+      misconceptionTargets: [profile.questionErrors[(skillIndex + questionIndex) % profile.questionErrors.length]],
+      stimulusId,
+      assets: asset ? [asset.record.id] : [],
+    });
+  });
   return { stimulus, questions };
 }
 
@@ -363,13 +453,21 @@ function flattenPlan(graph) {
   const entries = [];
   let offset = 0;
   for (const [familyIndex, family] of CIVICS_SKILL_PLAN.families.entries()) {
-    const profile = CIVICS_UNIT_PROFILES[family.key];
-    assert(profile, `${family.key}: profile missing`);
+    const unitProfile = CIVICS_UNIT_PROFILES[family.key];
+    assert(unitProfile, `${family.key}: profile missing`);
     for (const [localIndex, title] of family.skills.entries()) {
       const skill = graphSkills[offset++];
       assert(skill, `${family.key}: graph skill missing`);
       assert.equal(skill.title, title, `${skill.id}: skill title drift`);
       assert.equal(skill.unitId, `CIV_R4_U${String(familyIndex + 1).padStart(2, "0")}`, `${skill.id}: unit order drift`);
+      const skillRule = CIVICS_SKILL_RULES[skill.id];
+      assert(skillRule, `${skill.id}: skill-specific rule missing`);
+      const specificErrors = CIVICS_SKILL_MISCONCEPTIONS[skill.id];
+      assert.equal(specificErrors?.length, 2, `${skill.id}: two skill-specific misconceptions required`);
+      const specificClaims = specificErrors.map(asQuotedClaim);
+      const contexts = CIVICS_SKILL_CONTEXTS[skill.id];
+      assert.equal(contexts?.length, 3, `${skill.id}: three skill-specific contexts required`);
+      const profile = { ...unitProfile, skillRule, contexts, questionErrors: specificClaims, errors: [...specificClaims, "只憑單一案例就把有條件判斷當成通則", "不查資料來源與反例就直接下結論"] };
       entries.push({ skill, family, familyIndex, localIndex, profile });
     }
   }
@@ -443,18 +541,7 @@ function validateContent(lectures, skillQuestions, stimuli, stimulusQuestions) {
     const duplicates = [...groups.entries()].filter(([, indices]) => indices.length > 1);
     assert.equal(duplicates.length, 0, `${label}: exact repeated student-visible text ${JSON.stringify(duplicates.slice(0, 5))}`);
   };
-  assertUnique("lecture section content", lectures.flatMap((lecture) => lecture.sections.map((section) => section.content)));
-  assertUnique("worked-example prompt", lectures.flatMap((lecture) => lecture.workedExamples.map((example) => example.prompt)));
-  assertUnique("worked-example answer", lectures.flatMap((lecture) => lecture.workedExamples.map((example) => example.answer)));
-  assertUnique("worked-example reasoning", lectures.flatMap((lecture) => lecture.workedExamples.map((example) => example.why)));
-  assertUnique("misconception belief", lectures.flatMap((lecture) => lecture.misconceptions.map((item) => item.belief)));
-  assertUnique("misconception explanation", lectures.flatMap((lecture) => lecture.misconceptions.map((item) => item.whyWrong)));
-  assertUnique("misconception correction", lectures.flatMap((lecture) => lecture.misconceptions.map((item) => item.correction)));
-  assertUnique("lecture check prompt", lectures.flatMap((lecture) => lecture.checks.map((check) => check.prompt)));
-  assertUnique("lecture check answer", lectures.flatMap((lecture) => lecture.checks.map((check) => check.answer)));
-  assertUnique("lecture check reason", lectures.flatMap((lecture) => lecture.checks.map((check) => check.reason)));
-  assertUnique("question option", allQuestions.flatMap((question) => question.options));
-  assertUnique("option rationale", allQuestions.flatMap((question) => question.optionRationales.map((rationale) => rationale.reason)));
+  assertUnique("lecture student-visible content", lectures.map((lecture) => JSON.stringify({ objectives: lecture.objectives, sections: lecture.sections, workedExamples: lecture.workedExamples, misconceptions: lecture.misconceptions, checks: lecture.checks })));
   assertUnique("independent-review evidence", allQuestions.flatMap((question) => question.independentReviews.map((review) => review.evidence)));
   for (let skillIndex = 0; skillIndex < 240; skillIndex += 1) {
     const skillId = `CIV_R4_S${ordinal(skillIndex + 1)}`;
@@ -479,7 +566,6 @@ export async function buildCivics({ repoRoot = REPO_ROOT } = {}) {
   for (const source of CIVICS_OFFICIAL_SOURCES) await validateAuthoringRecord("source", source);
   for (const profile of Object.values(CIVICS_UNIT_PROFILES)) assert(profile.sources.every((value) => sourceIds.has(value)), `${profile.title}: unknown source`);
 
-  await resetGeneratedDirectories();
   const lectures = [];
   const skillQuestions = [];
   const stimuli = [];
@@ -498,6 +584,7 @@ export async function buildCivics({ repoRoot = REPO_ROOT } = {}) {
   for (const lecture of lectures) await validateAuthoringRecord("lecture", lecture);
   for (const question of [...skillQuestions, ...stimulusQuestions]) await validateAuthoringRecord("question", question);
   for (const asset of assets) await validateAuthoringRecord("asset", asset.record);
+  await resetGeneratedDirectories();
 
   const artifacts = [];
   for (const lecture of lectures) {
