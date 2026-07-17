@@ -19,6 +19,8 @@ const PROHIBITED_TEXT = [
 ];
 const SIMPLIFIED_TOKENS = ["细胞", "组织", "器官系统", "发育", "遗传", "变异", "环境", "选择", "实验", "数据", "图表", "关系", "显微镜", "浓度", "动物", "细菌", "营养", "体内", "调节", "分钟", "个", "显"];
 const GENERIC_OPTION_TOKENS = ["以上皆是", "以上皆非", "全部正確", "都不正確", "無法判斷"];
+const DECORATIVE_DISTRACTOR_LANGUAGE = /(?:商標|品牌|桌布|按讚|留言|可愛|漂亮|好看|海報|衣服顏色|研究者(?:的)?(?:座位|喜好|喜歡)|檔名|字數|新聞標題長度|作者照片|表情符號|廣告口號|圖案是否|名稱長短|名稱字數)/u;
+const GENERATED_REVIEW_SCAFFOLD = /^(?:時間|機制|功能|結構|條件|流程|數值|證據|位置|範圍)核對[：，]?/u;
 const HIDDEN_VISUAL_MARKERS = /(?:下圖|上圖|左圖|右圖|附圖|依圖|如圖|圖中|圖一|圖二)/u;
 const PROHIBITED_TEXT_PATTERNS = [/(?:答案|正確)位置/u];
 const GENERIC_QUESTION_ANSWER_LANGUAGE = /(?:正確答案|唯一答案|答案唯一|答案明確|第[一二三四](?:項|個選項)|答案[為是][零一二三四](?=$|[\s，。；、：:！？!?）)])|其餘[三四]項|另外三項|前三項|其他[三四]項|其餘選項)/u;
@@ -161,6 +163,23 @@ function difficultyCounts(questions) {
   return Object.fromEntries(Object.keys(BIOLOGY_DIFFICULTY_DISTRIBUTION).map((level) => [level, questions.filter((question) => question.difficulty === level).length]));
 }
 
+export function assertDistractorQuality(question) {
+  const incorrectOptions = question.options.filter((option, index) => index !== question.answerIndex);
+  for (const option of incorrectOptions) {
+    assert(!DECORATIVE_DISTRACTOR_LANGUAGE.test(option), `${question.id}: decorative distractor cannot test biology (${option})`);
+  }
+  const length = (value) => [...value.normalize("NFKC").replace(/[\s\p{P}\p{S}]/gu, "")].length;
+  const correctLength = length(question.options[question.answerIndex]);
+  const incorrectLengths = incorrectOptions.map(length);
+  const longestIncorrect = Math.max(...incorrectLengths);
+  const averageIncorrect = incorrectLengths.reduce((sum, value) => sum + value, 0) / incorrectLengths.length;
+  const answerIsLengthOutlier = correctLength >= longestIncorrect * 2.5
+    && correctLength - longestIncorrect >= 14
+    && longestIncorrect <= 10
+    && averageIncorrect <= 7;
+  assert(!answerIsLengthOutlier, `${question.id}: answer length is an extreme outlier (${incorrectLengths.join(",")} -> ${correctLength})`);
+}
+
 export function assertQuestionQuality(question) {
   assert([...question.stem].length >= 12, `${question.id}: stem is too thin`);
   assert(question.options.every((option) => [...option].length >= 2), `${question.id}: option is too thin`);
@@ -172,6 +191,8 @@ export function assertQuestionQuality(question) {
   assert.equal(question.optionRationales.filter((item) => item.isCorrect).length, 1, `${question.id}: exactly one rationale must be correct`);
   assert.equal(question.optionRationales.find((item) => item.isCorrect).optionIndex, question.answerIndex, `${question.id}: rationale answer mismatch`);
   assert(!HIDDEN_VISUAL_MARKERS.test(question.stem) || question.assets.length > 0, `${question.id}: image-dependent wording has no declared asset`);
+  assert(!question.independentReviews.some((review) => GENERATED_REVIEW_SCAFFOLD.test(review.evidence)), `${question.id}: generated review scaffold is forbidden`);
+  assertDistractorQuality(question);
   assertQuestionLanguage(question);
 }
 
@@ -304,6 +325,13 @@ function assertStimulusQuality(stimuli, stimulusQuestions) {
     assert(stimulus.accessibility.dataFallback?.columns?.length >= 2, `${stimulus.id}: nonvisual data fallback required`);
     assert(stimulus.accessibility.dataFallback?.rows?.length >= 2, `${stimulus.id}: at least two fallback rows required`);
     assert(stimulus.accessibility.dataFallback.rows.every((row) => row.length === stimulus.accessibility.dataFallback.columns.length), `${stimulus.id}: data fallback width mismatch`);
+    const visibleTable = stimulus.content.table
+      ?? (stimulus.content.columns && stimulus.content.rows ? stimulus.content : null)
+      ?? stimulus.content.dataFallback;
+    if (visibleTable?.columns && visibleTable?.rows) {
+      assert.deepEqual(stimulus.accessibility.dataFallback.columns, visibleTable.columns, `${stimulus.id}: fallback columns differ from visible data`);
+      assert.deepEqual(stimulus.accessibility.dataFallback.rows, visibleTable.rows, `${stimulus.id}: fallback rows differ from visible data`);
+    }
     assert(Array.isArray(stimulus.calibrationRefs), `${stimulus.id}: calibration references must be an array`);
     assert([...studentText(stimulus.content)].length >= 50, `${stimulus.id}: stimulus context is too thin`);
     assertTextQuality(stimulus.id, stimulus);

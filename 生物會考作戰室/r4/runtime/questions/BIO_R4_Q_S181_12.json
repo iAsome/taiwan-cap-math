@@ -16,9 +16,9 @@
   "stimulusId": null,
   "stem": "觸覺版樣區結果應如何呈現才可正確外推？",
   "options": [
-    "只用深淺顏色",
-    "只標最高數字",
-    "省略樣區面積",
+    "以深淺顏色區分各樣區的個體數",
+    "只用凸點標出個體數最高的樣區",
+    "列出各樣區個體數但省略取樣面積",
     "以凸格標每區位置，文字列面積、個體數、平均與估計公式"
   ],
   "answerIndex": 3,
@@ -26,17 +26,17 @@
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "只靠色深不利辨色，且沒有實際數值。"
+      "reason": "只靠色深不利辨色，也沒有列出可供重算的實際個體數。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "最高值不代表平均，會放大密集區。"
+      "reason": "只標最高樣區會遺失其他原始數據，無法計算平均與外推。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "沒有面積就不能換算密度與倍率。"
+      "reason": "沒有樣區面積就不能換算密度，也無法由樣區外推到全區。"
     },
     {
       "optionIndex": 3,
@@ -73,13 +73,13 @@
     {
       "reviewerRole": "biology-independent-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "資訊核對外推至少需要單區面積、平均密度與總面積。",
+      "evidence": "外推至少需要單區面積、平均密度與總面積。",
       "status": "pass"
     },
     {
       "reviewerRole": "biology-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "可及性核對凸格保留空間配置，文字數值可供觸讀或朗讀。",
+      "evidence": "凸格保留空間配置，文字數值可供觸讀或朗讀。",
       "status": "pass"
     }
   ],

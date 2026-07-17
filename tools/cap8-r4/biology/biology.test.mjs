@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 import { buildBiology } from "./build-biology.mjs";
 import { buildOfficialMapping } from "./build-official-mapping.mjs";
 import { BIOLOGY_ASSET_SOURCES } from "./biology-assets.mjs";
-import { assertNoLongCopiedText, assertNoRepeatedEdgeScaffold, assertQuestionLanguage, assertQuestionQuality, assertTextQuality, essenceQuestionKey, validateBiology } from "./validate-biology.mjs";
+import { assertDistractorQuality, assertNoLongCopiedText, assertNoRepeatedEdgeScaffold, assertQuestionLanguage, assertQuestionQuality, assertTextQuality, essenceQuestionKey, validateBiology } from "./validate-biology.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(HERE, "..", "..", "..");
@@ -97,6 +97,27 @@ test("question gate rejects hidden diagrams and duplicated independent evidence"
   assert.doesNotThrow(() => assertQuestionQuality(fixture));
   fixture.independentReviews[1].evidence = fixture.independentReviews[0].evidence;
   assert.throws(() => assertQuestionQuality(fixture), /distinct evidence/u);
+  fixture.independentReviews[1].evidence = "從細胞功能逐項比較，甲構造能產生題幹所描述的完整結果。";
+  fixture.independentReviews[0].evidence = "機制核對：甲構造符合題幹所列的全部功能條件。";
+  assert.throws(() => assertQuestionQuality(fixture), /generated review scaffold/u);
+});
+
+test("distractor gate rejects decoration and extreme answer-length cues", () => {
+  assert.throws(() => assertDistractorQuality({
+    id: "fixture-decoration",
+    options: ["儀器品牌名稱", "相同溫度下的反應速率", "處理前的起始濃度", "每組的獨立樣本數"],
+    answerIndex: 1,
+  }), /decorative distractor/u);
+  assert.throws(() => assertDistractorQuality({
+    id: "fixture-length-cue",
+    options: ["沒有影響", "資料相同", "結果錯誤", "控制溫度與起始濃度並設對照組重複量測反應速率"],
+    answerIndex: 3,
+  }), /answer length is an extreme outlier/u);
+  assert.doesNotThrow(() => assertDistractorQuality({
+    id: "fixture-balanced",
+    options: ["只控制溫度但改變起始濃度", "只設對照組但每組僅有單一樣本", "同時改變溫度與處理時間", "控制溫度與起始濃度並設對照組重複量測反應速率"],
+    answerIndex: 3,
+  }));
 });
 
 test("student explanations cannot reuse a long opening or ending scaffold", () => {

@@ -13,17 +13,17 @@
   "stimulusId": null,
   "stem": "判斷一份餐點是否均衡，哪種資料最有用？",
   "options": [
-    "餐盤顏色是否漂亮",
+    "各類食物在餐盤中所占面積",
     "食物種類、份量與食用者需求",
     "餐具價格是否昂貴",
-    "食物名稱字數是否相同"
+    "整份餐點的總重量是否足夠"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色可提示種類但不能單獨判定養分。"
+      "reason": "餐盤面積只能粗略表示份量，沒有養分組成與食用者需求。"
     },
     {
       "optionIndex": 1,
@@ -38,7 +38,7 @@
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "名稱字數也與養分內容無關。"
+      "reason": "總重量無法分辨各類養分比例，也未考慮個人的能量與修補需求。"
     }
   ],
   "difficulty": "advanced",
