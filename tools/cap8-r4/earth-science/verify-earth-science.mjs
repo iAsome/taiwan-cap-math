@@ -11,7 +11,7 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(HERE, "..", "..", "..");
 const SOURCE_ROOT = path.join(REPO_ROOT, "地科會考作戰室", "r4", "source", "units");
 const UNIT_IDS = Object.freeze(Array.from({ length: 30 }, (_, index) => `EARTH_R4_U${String(index + 1).padStart(2, "0")}`));
-const MACHINE_RESIDUE = /(?:TODO|FIXME|placeholder|lorem ipsum|待補|暫定|示意文字|答案略)/iu;
+const MACHINE_RESIDUE = /(?:TODO|FIXME|placeholder|lorem ipsum|待補|暫定|示意文字|答案略|undefined|NaN|\[object Object\])/iu;
 const SIMPLIFIED = /[这为与个们来时会从后发边应当过还较对让实气压层变条号门间见闻读写体处东万]/u;
 
 function normalize(value) {
@@ -57,7 +57,20 @@ export async function verifyEarthScience({ repoRoot = REPO_ROOT } = {}) {
       assert(!SIMPLIFIED.test(value), `${unitId}: possible Simplified Chinese in student-facing text: ${value.slice(0, 80)}`);
       assert(!value.includes("�"), `${unitId}: replacement character in student-facing text`);
     }
+    const stimuliById = new Map(source.stimuli.map((stimulus) => [stimulus.id, stimulus]));
+    for (const question of source.stimulusQuestions) {
+      const scenario = stimuliById.get(question.stimulusId)?.content.scenario;
+      assert(scenario && question.stem.includes(`「${scenario}」`), `${question.id}: stimulus scenario mismatch`);
+    }
     const result = await materializeEarthScienceUnit(source);
+    for (const lecture of source.lectures) {
+      const focus = lecture.objectives[0].match(/^能以自己的話說明「(.+)」，並指出/u)?.[1];
+      assert(focus, `${lecture.id}: explicit skill focus`);
+      assert(lecture.workedExamples.every((example) => example.answer.includes(focus)), `${lecture.id}: worked examples must apply the skill focus`);
+      const focusQuestions = source.questions.filter((question) => question.skillId === lecture.skillId && /_(?:01|03|04|09)$/u.test(question.id));
+      assert.equal(focusQuestions.length, 4, `${lecture.skillId}: four focus questions`);
+      assert(focusQuestions.every((question) => question.options[question.answerIndex].includes(focus)), `${lecture.skillId}: focus question answer mismatch`);
+    }
     all.lectures.push(...result.lectures);
     all.questions.push(...result.questions);
     all.stimuli.push(...result.stimuli);
@@ -75,7 +88,7 @@ export async function verifyEarthScience({ repoRoot = REPO_ROOT } = {}) {
       optionSets.set(optionSetKey, question.id);
     }
     for (const stimulus of result.stimuli) {
-      const purposeKey = JSON.stringify([stimulus.content.scenario, stimulus.content.table, stimulus.content.skillSpecificCriterion]);
+      const purposeKey = JSON.stringify([stimulus.content.title, stimulus.content.scenario, stimulus.content.table, stimulus.content.skillSpecificCriterion]);
       assert(!stimulusPurposes.has(purposeKey), `${stimulus.id}: duplicate stimulus purpose of ${stimulusPurposes.get(purposeKey)}`);
       stimulusPurposes.set(purposeKey, stimulus.id);
     }

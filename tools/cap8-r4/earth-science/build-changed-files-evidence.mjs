@@ -8,12 +8,16 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(HERE, "..", "..", "..");
 const EVIDENCE_PATH = "tools/cap8-r4/earth-science/evidence/changed-files.txt";
 const roots = ["tools/cap8-r4/earth-science", "地科會考作戰室/r4"];
-const output = execFileSync(
+const commands = [
+  ["diff", "--name-only"],
+  ["diff", "--cached", "--name-only"],
+  ["ls-files", "--others", "--exclude-standard"],
+];
+const files = new Set(commands.flatMap((args) => execFileSync(
   "git",
-  ["-c", "core.quotepath=false", "ls-files", "--others", "--exclude-standard", "--", ...roots],
+  ["-c", "core.quotepath=false", ...args, "--", ...roots],
   { cwd: REPO_ROOT, encoding: "utf8" },
-);
-const files = new Set(output.split(/\r?\n/u).filter(Boolean));
+).split(/\r?\n/u).filter(Boolean)));
 files.add(EVIDENCE_PATH);
 const sorted = [...files].sort((a, b) => a.localeCompare(b, "en"));
 assert(sorted.every((file) => roots.some((root) => file === root || file.startsWith(`${root}/`))), "changed-file evidence escaped Earth-only roots");
