@@ -1,0 +1,488 @@
+{
+  "schemaVersion": 1,
+  "id": "CAP8_R4_INTEGRATED_NATURAL_BUILD",
+  "sourceCommit": "6d385e76d72652677cb4c6337f6042ae0db4a77a",
+  "deterministic": true,
+  "questionCount": 55,
+  "stimulusCount": 5,
+  "skillCount": 45,
+  "assetCount": 8,
+  "dependencies": [
+    {
+      "path": "地科會考作戰室/r4/assets/carbon-cycle.svg",
+      "sha256": "8b0c830627034f8bc8559e276f3b59855f48ea86b9a284578ad71f5fc35a7430"
+    },
+    {
+      "path": "地科會考作戰室/r4/assets/climate-graph.svg",
+      "sha256": "d3a8afc7779004135478d17455d4dd516daca07d1d43ee14d1c2ad6cb2167cde"
+    },
+    {
+      "path": "地科會考作戰室/r4/assets/moon-phases.svg",
+      "sha256": "a1f0778e3aac1789efef69b387bca1ffe09c78ddddf752fea92dc65fca4c84da"
+    },
+    {
+      "path": "地科會考作戰室/r4/assets/plate-boundaries.svg",
+      "sha256": "4fd77f8d4e0820a2e64f2c2184c7078f8ce2f6dcc742a60c022241bdf7143cb3"
+    },
+    {
+      "path": "地科會考作戰室/r4/assets/seismic.svg",
+      "sha256": "cd9862ca35ca7d90a73a3aac6fb85b8431dbeeb74fe2dc17f6c68a593c4cd72d"
+    },
+    {
+      "path": "地科會考作戰室/r4/assets/tide-graph.svg",
+      "sha256": "2c507a9825185c42eb682cac9e3774ed8d65f7368446494afae9194f23d609af"
+    },
+    {
+      "path": "地科會考作戰室/r4/assets/weather-map.svg",
+      "sha256": "a8e2172b9233ef850fb8863b264ae3575a66a5d09fd2345cd4ed350e9ff19f1d"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/assets.json",
+      "sha256": "1f48476c0f1dc2669a2a7a7154d5a3c521a553401aaa46d32ad6c5bf181e8d03"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/questions/EARTH_R4_Q_036_08.json",
+      "sha256": "e9c2068d92f240507ccc408b9029b70023aede1c35ddd30b444e8fdc293de737"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/questions/EARTH_R4_Q_044_09.json",
+      "sha256": "2b762cd4bcccc77be3837b236ae7dee63e40ad4316efdd89302182ce44c5071a"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/questions/EARTH_R4_Q_088_10.json",
+      "sha256": "b700343f3a93067b08742abad7e17528123bf4a491fd780fb27e90bc91801742"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/questions/EARTH_R4_Q_119_09.json",
+      "sha256": "a16a96f430fedff9bcc0978a9bb28d85e4224cd50587005b4068f689660e76c2"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/questions/EARTH_R4_Q_133_09.json",
+      "sha256": "5a5abf634e6d4506eb970c4b7b0d57988579625301b08dc49c49284bd56269b4"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/questions/EARTH_R4_Q_160_08.json",
+      "sha256": "9fed65b6ac26205c23da596c1caa0815a7e5ee61d071b204342a4fb62fc6932a"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/questions/EARTH_R4_SQ_003_01.json",
+      "sha256": "f3a5971456c3e6be45ba9388c96821ad83dba86138ca3f834fe08ff6b1495298"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/questions/EARTH_R4_SQ_003_02.json",
+      "sha256": "66e06e5d25e5721a35d76829aa5891ae5e45bafc17799d4ca392dc9042622af0"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/questions/EARTH_R4_SQ_003_03.json",
+      "sha256": "7f176dfc3f9864f03bea9f64544514f01d2662e5673d5f50ef5f560611f81d40"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/questions/EARTH_R4_SQ_201_01.json",
+      "sha256": "58280ad1d69b3589172b151769131088ebd331b3d65f16409ab815567087a2ff"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/questions/EARTH_R4_SQ_201_02.json",
+      "sha256": "ed052f064d460b8579205e70e085cdccc9658f7885154c02434eb7dd3ed8bd19"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/questions/EARTH_R4_SQ_201_03.json",
+      "sha256": "3f27f862dfd341a97c07f9d80af2d17a4fce8de7b4a4d7763614ff471a0e9039"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/skills/EARTH_R4_S003.json",
+      "sha256": "60f69e6e97aacf70dc218e3f49c17df21d215e2343547dace462ddc86c8e8ce2"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/skills/EARTH_R4_S036.json",
+      "sha256": "90f009eeb8ca07728edbbb2ef65583082f8588097f545e7a8f8fc52d636d3283"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/skills/EARTH_R4_S044.json",
+      "sha256": "9c675f23ffad5989fa934e99e9430faf32e6d551a60da37df30dc2b66d443ea2"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/skills/EARTH_R4_S088.json",
+      "sha256": "5e161d965d0022051daede1f7c249db771b855784697fcc6eecc83378d4d9587"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/skills/EARTH_R4_S119.json",
+      "sha256": "df5c13f6b7050e786fd38fabeeb0866ba6d2ca23ba104fd74070be72b4db4477"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/skills/EARTH_R4_S133.json",
+      "sha256": "fcfafcfb363a0f56f2c3d73aba25071a001e69523d0e052837d6d0625723ec53"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/skills/EARTH_R4_S160.json",
+      "sha256": "87cec25ad940e7744c0cf883d834fa876db9ee337ef36dc211bd9fe58fad9b9f"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/skills/EARTH_R4_S201.json",
+      "sha256": "0b78f4ef107aa7a11c94cef64312e9a6eeb7abb149ab66ffb179e1c4329e522f"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/stimuli/EARTH_R4_ST_003.json",
+      "sha256": "a29487eaf00d4346af91d3b8bf65e75f16c28083afa22ca8b6dffaf1d07eea94"
+    },
+    {
+      "path": "地科會考作戰室/r4/runtime/stimuli/EARTH_R4_ST_201.json",
+      "sha256": "79e6f7a5e5ec8c8bb44140af03ba1ade7de33e46fc8321102ee4c655a01c233c"
+    },
+    {
+      "path": "理化會考作戰室/r4/assets/physics-chemistry/laboratory-setup.svg",
+      "sha256": "f893eb86e5dd9b97edf99332eb8d9256c02b8313895685487d07e6b177e0747a"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/assets/PHYCHM_R4_ASSET_001.json",
+      "sha256": "bb3a2d58b068557c0b43fa59e7ee0e9029ec024e2766e33b621cb391dfb68415"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_009_08.json",
+      "sha256": "82701fa51ee5e9c8114dfd997acee6f457b8791ae3ed4ab620b286ffd0d9be45"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_022_10.json",
+      "sha256": "356938ac26cf8cf5c966c41ee58d6ff8a83ba69722e250518c444d3f55cdddd7"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_034_09.json",
+      "sha256": "1e15dea42836891950058260c4216a8357b55cac67bcf0fad0ff47a313d1adb0"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_046_12.json",
+      "sha256": "2b01bfd5fa281dce4733536ea75f39decc639711814a0897def93a635817516f"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_064_08.json",
+      "sha256": "b8ff65b8ae47ee9d0844f8ffae23f96c4ddeefbee6164177eb9c05eec3e366b4"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_075_10.json",
+      "sha256": "f7e8dac9433b8f323eecb930d48a206b1ffd04249c9ef0107f6152858010fa4c"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_081_08.json",
+      "sha256": "1187199a6f900727885afd407a6b1152253c9a27265ad84a060944dcd9cebda8"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_091_10.json",
+      "sha256": "a7ba2b941978edfaf9afa28a772a17e12728fd05b9674f070db614994ec7cd41"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_102_11.json",
+      "sha256": "65e809a7837ec11fd3a8b04a81d895a949992f6c4c89ac6f070ad5c256c9950b"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_106_08.json",
+      "sha256": "1d27d55e422be0422eda0858d06331bca81098db5a2e64b2995644c840ce7976"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_115_09.json",
+      "sha256": "1d8c5e15f502fa96a0ffdaba301bf49364dd198b58ceaa026ac439a9efeea81c"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_125_09.json",
+      "sha256": "4957548a79121bbaaa6d8ea4dbfe80ce4e7dc6feadfea045ea94dbd5f01d1aa4"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_136_12.json",
+      "sha256": "79192c6faf45abc33ef3a037f0ffce61c22df10be1383bfe18f0adf0fb689ed9"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_145_08.json",
+      "sha256": "e262b02b4c85cd1e231ad332e884a1635cb5a0fabc87cab51d6e6ca68d751b4e"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_166_10.json",
+      "sha256": "a78a78ad6e65424becd1c7633bd10d87f12bacf83e8d39db922024bd709fd225"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_175_09.json",
+      "sha256": "b47388954fee27a9fb2f90424503d6748ace74227ab275211c5b93d4d9bbfa12"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_187_08.json",
+      "sha256": "21762cf1dcdad5917fbfa2a102038a4079e116d6851ff2e7f7a4c62c104b6b1e"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_219_10.json",
+      "sha256": "793028244f41f18d32bee7e019e5db3caadc977ceff6dbae7714026438f20b4c"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_232_08.json",
+      "sha256": "ad84ca0c799bef3968f53a963afb649fcdf62e52f3fc363cb414cc672460d78e"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_244_11.json",
+      "sha256": "7079922e6481c7c394150d37df7f5e0d319a49c18c0e12d8fefbe62a09671ec9"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_250_08.json",
+      "sha256": "9aa6d3f8bbe5fc257d7760673b067110e28233f331c4598ffc2a5c6a23ebfe08"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_272_10.json",
+      "sha256": "9870c997a979f48db35f257be4999623316d7f05f319e7a4200054e8ed1f2edc"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_Q_291_11.json",
+      "sha256": "6090f15f3a457e49f2dd362141eff24d4cd7cf735967ad51a8c33f6b25130607"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_STIMQ_137_01.json",
+      "sha256": "71c071816001264d3887f2f4054ee0cc6c2d5124be7cf9ccc0ab044099aa6cd1"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_STIMQ_137_02.json",
+      "sha256": "d4bc85402e0ed81c9b14cebbc0fa76af44a85966db4677c7d48e4fd48f98678a"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_STIMQ_137_03.json",
+      "sha256": "f5f218b5f2cb4f344ad182ab5416164bdc6d04cc473ef9b394dd7ceeabc2870c"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_STIMQ_297_01.json",
+      "sha256": "5e087c669124d22102d62d0f98b39bff4365aa71da739f7068d4b79a2b3a934e"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_STIMQ_297_02.json",
+      "sha256": "2fed46f8d3099ebb392dd678af3cda3cf33e1c5310cf1ff3945230bdbe78c6ea"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/questions/PHYCHM_R4_STIMQ_297_03.json",
+      "sha256": "f8eddf8d49ad16a5f3d49c4b4079491065ce4e40075bef9a4ca48114747a3b38"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S009.json",
+      "sha256": "efc30e6817debd403dd10aaf6836941c714e326b3513cef8a9f650720112bbd4"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S022.json",
+      "sha256": "0ac8a865f73c36de7672ffe011abd5b267c01a8d0f62bf5081faa64c36bb5e52"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S034.json",
+      "sha256": "5a9a323753ba79e10fe14ea096c54147b1a6d8de7391906cec51d5ab1182eb82"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S046.json",
+      "sha256": "7994f4b450485f5d69a801c30bf5ea1a180253778b2fd451ba44278b9671f513"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S064.json",
+      "sha256": "7fc56fd5ef25655ef5835121ffca391900d1580fb9b8a74cba9b6074625949bf"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S075.json",
+      "sha256": "e6418bebbedea5f75c733cab19808e2f19550723c85c15460da4e5117745774a"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S081.json",
+      "sha256": "4d022f147257de92a2951b99e92c033a1f41fd3969ede2c92621991e9f72df41"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S091.json",
+      "sha256": "111cfd2d8e5d569d15b8f5394d8713ea63d4db6dcc0c00373abf19267b8aee18"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S102.json",
+      "sha256": "45fa3964bc08e275e1b9f9d59f40e236c56843baece64fad0fe5127453db8940"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S106.json",
+      "sha256": "bdf81188a794fa41c8feb351a66173c54ee862e44e04ac644c2373d00192a9ca"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S115.json",
+      "sha256": "81b94a85d7f2953e1b74acfd91039157de2f814e3e453ba53fc4fd3d539c119d"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S125.json",
+      "sha256": "e190bbc317944f556eb5c8d9a5a4b4a57ff051871b922b1431ca2f623c9d3c01"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S136.json",
+      "sha256": "944431fd70b0ce1fe8df0b2f8defaa991f496e259948b89bfd4e219764e9699c"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S137.json",
+      "sha256": "d2a40f6bd74ead43bd7b2bdbd9bfbace26d84b6f236f676f8348a14c2b19ee4a"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S145.json",
+      "sha256": "f0800443b20c54b929f6bef0018b40d2cbcf0e0bca26142c7cdbcf84c26a035d"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S166.json",
+      "sha256": "6de77990752c34fff6833babd463026212363e9f2dc49f40d68c63958b72dfb3"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S175.json",
+      "sha256": "d1fc6860e5e5042b5564b4a530981c8944ff1b66ea0354118a9798c802b225e6"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S187.json",
+      "sha256": "a0b681e16cc07620e005d51d09275cffbca283a3ac6ee161925718660e4fff7b"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S219.json",
+      "sha256": "7525ff4e73e7cf170cf1421a37e91c28bda4e016a8968a71032ed640f61ac200"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S232.json",
+      "sha256": "a29c26c1402987ca0ebc41f9ad0cbd125bd3071e529f7be9381b9969a1f5f62a"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S244.json",
+      "sha256": "441083eacc69e5b3db51c33dce28a072ed33923a200d2ab9ae8f47ebdc8307c2"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S250.json",
+      "sha256": "61bbb8ba7425d4bf8edf4860c479965f7a0f0b68c422f1eff7d3c6fe6f2850da"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S272.json",
+      "sha256": "0043868401e2b0880e216bf57c14dc39d73709c8b4bfdb6ed073143c654b86fc"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S291.json",
+      "sha256": "f0bbe87219ec120a7a37457d9d7f9aa31adeaa8f303ce8ff433e720066be471e"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/skills/PHYCHM_R4_S297.json",
+      "sha256": "f9b4b6fd15fa19ac33340488b001b10bf29b593228e9de47450a043e0febec8d"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/stimuli/PHYCHM_R4_STIM_137.json",
+      "sha256": "f7eeba49ca907449489ba1d9fc311855d4395a532658dea6f966759d47a783e7"
+    },
+    {
+      "path": "理化會考作戰室/r4/runtime/stimuli/PHYCHM_R4_STIM_297.json",
+      "sha256": "fc823634839a55614e3a6daa3d2b4f9f75ff543c102279db5e26ddd482f8dfbc"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/questions/BIO_R4_Q_045_09.json",
+      "sha256": "64ad190e0646d9905d902968c8b201caa3085ad454ca750b830823eb52333ba1"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/questions/BIO_R4_Q_059_09.json",
+      "sha256": "ed04765f04a0e92c6693a7016bf852048fee90d5f04c4033a558b4e470868379"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/questions/BIO_R4_Q_064_10.json",
+      "sha256": "c915eda1081df6d79617f3d18480dc15e9979b9f3aca8afda460948d9f7d9c2d"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/questions/BIO_R4_Q_128_10.json",
+      "sha256": "d58a2dbfd8e6390f372bac3f8abcf118d8f38e8b1aa31d180f1b3f9c4a7120e9"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/questions/BIO_R4_Q_141_08.json",
+      "sha256": "2bceebdc7b86e5bd0808a7c620e28133c2e6f3085681fc2d97d174e479622002"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/questions/BIO_R4_Q_143_08.json",
+      "sha256": "16ac1364024ab496e2076eca52cdfdf9bc31052c1b5812ba6580c43230483fe7"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/questions/BIO_R4_Q_189_09.json",
+      "sha256": "5c130530bcf85e4a51fac817ced521dd76fe33934f409a1cb807501140577b14"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/questions/BIO_R4_Q_207_08.json",
+      "sha256": "84ec05d28fcbd0f5c3068ecdb04121b4d0e61537a352ac63570f9fecf70be99f"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/questions/BIO_R4_Q_211_10.json",
+      "sha256": "9410b05c139443d2482ad0843a12acd17b1f279950a36761c2bd4a50c1699400"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/questions/BIO_R4_Q_S172_10.json",
+      "sha256": "1a4943fdf0666c12b1bdc560e9e1dd317980813ef0cb66f842a866a1da5bd33c"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/questions/BIO_R4_Q0020.json",
+      "sha256": "2fe1f0b5473fed304dd4350a1663e7731e0f08f29d86656d784cc85607f8f72f"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/questions/BIO_R4_SQ_194_01.json",
+      "sha256": "61e9309395802f1ad894370bc0f3925894742665f6e283056b691e6f656fed1a"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/questions/BIO_R4_SQ_194_02.json",
+      "sha256": "a97e84d838cf58faf8e8f6816dab65befbd08ddecbb85c65b00c54cb5a98e105"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/questions/BIO_R4_SQ_194_03.json",
+      "sha256": "117f6e6c8346edd3c06a5e4c0bdfd12fd3c4ad741e0cccb25da3dc019dcf7325"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/skills/BIO_R4_S002.json",
+      "sha256": "0b5152e32a234f811b477ea6db9a8b58723042d66845f126706f22b64362bf43"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/skills/BIO_R4_S045.json",
+      "sha256": "99266d6aa4f2a7e793171544ba30b3dcac5644326988de8e60d796c4c877f06c"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/skills/BIO_R4_S059.json",
+      "sha256": "e76d70cbfe979af5ad2555defd7580feaa3e7116dc82a061641c925c8e2e873b"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/skills/BIO_R4_S064.json",
+      "sha256": "6260b0110d1d704ba728cb28b9caae78e16297d4d0aac581e250f28d79a19b88"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/skills/BIO_R4_S128.json",
+      "sha256": "4390eb6562b49b524af483a8e410fe48fd4e05a8a8b940e8bacb11f5c62ce79c"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/skills/BIO_R4_S141.json",
+      "sha256": "4ac01c61abc5411be02f96b2d19c1cfb1ca2350133d4e6fa90c50c99a15ce1df"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/skills/BIO_R4_S143.json",
+      "sha256": "38918529e2c7a433e2e004f0a495c6671b63d18d653b34285d029e217370c2bf"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/skills/BIO_R4_S172.json",
+      "sha256": "57f2566a6d580b43a4ca896385824415441ccf56b50401d7264ff176c7e44c11"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/skills/BIO_R4_S189.json",
+      "sha256": "0fa22703e9ccde58074b65bc0f192e0bc377e771397f8a1e0d9fb468e28bad36"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/skills/BIO_R4_S194.json",
+      "sha256": "d382152e78ffdc89e007801aa50d1eb07dbf7ea27d65092549f9c50201955585"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/skills/BIO_R4_S207.json",
+      "sha256": "3dc5e83b9c196cf8a7ad37074414ce4211cf435c6bf8dd3faedea2aa9124a7d7"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/skills/BIO_R4_S211.json",
+      "sha256": "bbaeb6f64ea5801e99ae0dcd1505f1b5603f912df19c3d4e50428e6d41811371"
+    },
+    {
+      "path": "生物會考作戰室/r4/runtime/stimuli/BIO_R4_ST_S194.json",
+      "sha256": "bd21d16ee781ee073257fd5f0a760f0da02d35d2c53003cc48fff308c85274f1"
+    },
+    {
+      "path": "自然會考作戰室/source-blueprint.json",
+      "sha256": "d95a3e0099fead2e2e6f4cb9b1f14ec4473b3432da53828b390b15f8b9ea84c8"
+    }
+  ],
+  "artifacts": {
+    "自然會考作戰室/assets/EARTH_R4_ASSET_CARBON.svg": "ee87157fefdf8fa9ce73b5a10801c0685e8ff18d018c13e5806ff3e5342249ad",
+    "自然會考作戰室/assets/EARTH_R4_ASSET_CLIMATE_GRAPH.svg": "88eac24c704679aae06535060eac523a9cde03ef04d6cbbfe49f8e89293b5747",
+    "自然會考作戰室/assets/EARTH_R4_ASSET_MOON_PHASES.svg": "a1f0778e3aac1789efef69b387bca1ffe09c78ddddf752fea92dc65fca4c84da",
+    "自然會考作戰室/assets/EARTH_R4_ASSET_PLATE.svg": "2ebea07ffb226f6f194e45f2400fcb6f3c7c15f6f9eb2c255a145a5cca67657e",
+    "自然會考作戰室/assets/EARTH_R4_ASSET_SEISMIC.svg": "5308480b34479c1a378f6c3c5d4a4b8c830674dff1c733dc369037aa0d17eb39",
+    "自然會考作戰室/assets/EARTH_R4_ASSET_TIDE.svg": "4f2c93daf13c9a59633f2d1c5d5470351d90a6dda0572faf2f15aa30d6dbf632",
+    "自然會考作戰室/assets/EARTH_R4_ASSET_WEATHER_MAP.svg": "3d20e41cdf0b3b86738f632d17e30a44e037caf3ea1ff3956f3f696bfbd3a9df",
+    "自然會考作戰室/assets/PHYCHM_R4_ASSET_001.svg": "f893eb86e5dd9b97edf99332eb8d9256c02b8313895685487d07e6b177e0747a",
+    "自然會考作戰室/runtime/catalog.json": "51e4c6dac16d41af464c8019b0d871168e1b19d871e0e2b76696c0f00702e046",
+    "自然會考作戰室/runtime/precache.json": "c901a904613e970a1097944b45962f2ca28bf23f8025f7ef524b885bfd3afdc9"
+  }
+}
