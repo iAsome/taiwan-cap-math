@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#155e75">
+  <meta name="description" content="臺灣國中會考自然科原創整合模擬考">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <title>自然科整合模擬考</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">CAP R4 原創練習</p>
+      <h1>自然科整合模擬考</h1>
+      <p>生物、理化、地球科學，70 分鐘四選一</p>
+    </div>
+    <nav aria-label="分科複習">
+      <a href="../生物會考作戰室/r4/index.html">生物</a>
+      <a href="../理化會考作戰室/r4/index.html">理化</a>
+      <a href="../地科會考作戰室/r4/index.html">地球科學</a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="setup-band" aria-labelledby="setupTitle">
+      <div>
+        <h2 id="setupTitle">建立模擬卷</h2>
+        <p>預設 50 題依 115 年正式題數；可在官方近年範圍內調整為 45 至 55 題。同一種子碼會得到相同題目與順序。</p>
+      </div>
+      <form id="setupForm" class="setup-form">
+        <label for="seedInput">種子碼
+          <input id="seedInput" name="seed" value="1" maxlength="64" autocomplete="off">
+        </label>
+        <label for="countInput">題數
+          <input id="countInput" name="count" type="number" min="45" max="55" step="1" value="50">
+        </label>
+        <button class="primary" type="submit">開始作答</button>
+        <button id="resumeButton" type="button" hidden>繼續上次作答</button>
+      </form>
+      <p id="setupStatus" class="status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="examShell" hidden>
+      <div class="exam-toolbar" aria-label="考試狀態">
+        <div><strong id="progressText">第 1 題，共 50 題</strong><span id="subjectCounts"></span></div>
+        <time id="timer" datetime="PT70M">70:00</time>
+        <label for="jumpSelect">跳至題目
+          <select id="jumpSelect"></select>
+        </label>
+        <button id="submitExam" class="primary" type="button">交卷</button>
+      </div>
+      <form id="examPaper" aria-label="自然科整合模擬卷"></form>
+    </section>
+
+    <section id="resultShell" class="result-band" hidden aria-labelledby="resultTitle">
+      <h2 id="resultTitle">作答結果</h2>
+      <div id="resultSummary"></div>
+      <div id="resultReview"></div>
+      <button id="newExam" type="button">建立另一份模擬卷</button>
+    </section>
+  </main>
+
+  <footer><p>題目均為原創練習，依第四學習階段課綱與 106–115 年會考題型校準，不是官方試題。</p></footer>
+  <script type="module" src="app.mjs"></script>
+</body>
+</html>
