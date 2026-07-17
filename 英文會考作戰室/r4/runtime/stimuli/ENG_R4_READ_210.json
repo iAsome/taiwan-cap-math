@@ -67,84 +67,76 @@
       "translation": "海洋"
     },
     {
-      "word": "captures",
-      "translation": "捕獲, 戰利品；俘獲, 捕獲, 奪取"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "passage's",
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
+    },
+    {
+      "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "central",
-      "translation": "中央的"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "thread",
-      "translation": "線, 細絲, 線索, 思路, 螺紋"
+      "word": "coral",
+      "translation": "珊瑚"
     },
     {
-      "word": "instead",
-      "translation": "代替, 改為, 抵作, 更換"
+      "word": "tank",
+      "translation": "槽;坦克"
     },
     {
-      "word": "cancelled",
-      "translation": "取消"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "flight",
-      "translation": "飛行"
+      "word": "evidence",
+      "translation": "證據"
     },
     {
-      "word": "recipe",
-      "translation": "食譜"
+      "word": "tiny",
+      "translation": "微小的"
     },
     {
-      "word": "app",
-      "translation": "應用程式"
+      "word": "branches",
+      "translation": "樹枝;支部"
     },
     {
-      "word": "online",
-      "translation": "網路"
-    },
-    {
-      "word": "privacy",
-      "translation": "隱私"
-    },
-    {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "cited",
-      "translation": "引用"
-    },
-    {
-      "word": "selected",
-      "translation": "挑選"
-    },
-    {
-      "word": "latest",
-      "translation": "最新的"
-    },
-    {
-      "word": "sequence",
-      "translation": "序列"
-    },
-    {
-      "word": "verify",
-      "translation": "驗證"
-    },
-    {
-      "word": "structure",
-      "translation": "結構"
-    },
-    {
-      "word": "locate",
-      "translation": "定位"
+      "word": "result",
+      "translation": "結果"
     },
     {
       "word": "final",
       "translation": "最終的"
+    },
+    {
+      "word": "memories",
+      "translation": "記憶"
+    },
+    {
+      "word": "energy",
+      "translation": "精力;能量"
+    },
+    {
+      "word": "abstract",
+      "translation": "抽象的"
+    },
+    {
+      "word": "alive",
+      "translation": "活著的;活躍的"
+    },
+    {
+      "word": "ordinary",
+      "translation": "普通的"
+    },
+    {
+      "word": "add",
+      "translation": "添加"
     }
   ],
   "questions": [
@@ -165,11 +157,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_210",
-      "stem": "In Reading Set 210, which heading captures the passage's central thread instead of a side point?",
+      "stem": "Which title is best for the complete passage that includes “A science museum showed photos taken by a deep-sea camera.”?",
       "options": [
-        "The Cancelled Flight",
-        "The Old Recipe App",
-        "The Online Privacy Game",
+        "The Coral Tank",
+        "The Borrowed Planet",
+        "The Museum Guide",
         "The Deep-Sea Picture"
       ],
       "answerIndex": 3,
@@ -177,32 +169,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Cancelled Flight」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Coral Tank」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Old Recipe App」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Borrowed Planet」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Online Privacy Game」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Museum Guide」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Deep-Sea Picture: A science museum showed photos taken by a deep-sea camera.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-10",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -223,13 +215,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Deep-Sea Picture」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Deep-Sea Picture: A science museum showed photos taken by a deep-sea camera.」，答案為「The Deep-Sea Picture」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Deep-Sea Picture」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -239,7 +231,7 @@
       "id": "ENG_R4_Q_READ_210_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -253,44 +245,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_210",
-      "stem": "In Reading Set 210, which paragraph should be cited for the line “A child asked why people spent money studying places humans could not live in. The guide said the”?",
+      "stem": "Which answer is supported by the passage that includes “A science museum showed photos taken by a deep-sea camera.”?",
       "options": [
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 2",
-        "Paragraph 1"
+        "One day, a child asked, \"Did people in the past have pets\"",
+        "It was evidence that water remembers low places, even when people build new roads over them.",
+        "A child asked why people spent money studying places humans could not live in.",
+        "A child asked why people should care about something far under the sea."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「One day, a child asked, 'Did people in the past have pets'」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「It was evidence that water remembers low places, even when people build new roads over them.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 2 段開頭。"
+          "reason": "本文可直接核對「A child asked why people spent money studying places humans could not live in.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「A child asked why people should care about something far under the sea.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-5",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -312,13 +304,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：引文與第 2 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「A child asked why people spent money studying places humans could not live in.」，答案為「A child asked why people spent money studying places humans could not live in.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「A child asked why people spent money studying places humans could not live in.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -344,44 +336,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_210",
-      "stem": "In Reading Set 210, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “It also reminds us that much of the planet is unknown.”?",
       "options": [
-        "The child looked again at a glowing fish. It seemed like a creature from another world, yet it",
-        "The exhibit changed the child's idea of discovery. Exploration is not only about space. Some mysteries are hidden",
-        "A science museum showed photos taken by a deep-sea camera. The animals looked strange: some were transparent, some",
-        "A child asked why people spent money studying places humans could not live in. The guide said the"
+        "\"You try, fail, change something, and try again.\"",
+        "The child looked again at a glowing fish.",
+        "Leo looked at the bike again.",
+        "The child watched a tiny fish hide between coral branches."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「'You try, fail, change something, and try again.'」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「It also reminds us that much of the planet is unknown. The child looked again at a glowing fish.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Leo looked at the bike again.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The child watched a tiny fish hide between coral branches.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-5",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -405,13 +397,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「It also reminds us that much of the planet is unknown. The child looked again at a glowing fish.」，答案為「The child looked again at a glowing fish.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The child looked again at a glowing fish.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -421,7 +413,7 @@
       "id": "ENG_R4_Q_READ_210_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -434,44 +426,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_210",
-      "stem": "In Reading Set 210, to verify the ending structure, which line should a reader locate first in the final paragraph?",
+      "stem": "Which ending result or final point follows “Exploration is not only about space.”?",
       "options": [
-        "The exhibit changed the child's idea of discovery. Exploration is not only about space. Some mysteries are hidden",
-        "A science museum showed photos taken by a deep-sea camera. The animals looked strange: some were transparent, some",
-        "A child asked why people spent money studying places humans could not live in. The guide said the",
-        "The child looked again at a glowing fish. It seemed like a creature from another world, yet it"
+        "Some mysteries are hidden under our own oceans.",
+        "Maggie's old uniform had become different because it carried her own memories.",
+        "Clean energy became less abstract when students could watch it being made above their own classrooms.",
+        "A public space becomes more alive when ordinary people are invited to add something of their own."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 4 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「Exploration is not only about space. Some mysteries are hidden under our own oceans.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Maggie's old uniform had become different because it carried her own memories.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Clean energy became less abstract when students could watch it being made above their own classrooms.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「A public space becomes more alive when ordinary people are invited to add something of their own.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-5",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -492,13 +484,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 4 段，正確引文與第 4 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Exploration is not only about space. Some mysteries are hidden under our own oceans.」，答案為「Some mysteries are hidden under our own oceans.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Some mysteries are hidden under our own oceans.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -508,7 +500,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

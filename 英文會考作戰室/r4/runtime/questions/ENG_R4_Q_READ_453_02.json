@@ -2,86 +2,84 @@
   "id": "ENG_R4_Q_READ_453_02",
   "subject": "english",
   "skillIds": [
-    "ENG_R4_S250"
+    "ENG_R4_S257"
   ],
   "authorityRefs": [
-    "AUTH-ENGLISH-LC-AE-4-5",
-    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
     "AUTH-ENGLISH-LP-1-4-7",
-    "AUTH-ENGLISH-LP-3-4-14",
-    "AUTH-ENGLISH-LP-3-4-8",
-    "AUTH-ENGLISH-LP-3-4-9",
-    "AUTH-ENGLISH-LP-5-4-7",
-    "AUTH-ENGLISH-LP-5-4-8",
-    "AUTH-ENGLISH-LP-5-4-9"
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_453",
-  "stem": "In Reading Set 453, which paragraph provides the quoted evidence “Residents near a river joined a community science project. They tested water, counted insects, and reported changes through”?",
+  "stem": "Which reason does the passage give for this situation: “Participants felt more connected to the river”?",
   "options": [
-    "Paragraph 2",
-    "Paragraph 3",
-    "Paragraph 4",
-    "Paragraph 1"
+    "Life often moves too fast",
+    "Of her shoes,\" she said",
+    "They were not close friends",
+    "They were not only complaining"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "第 2 段沒有這一行。"
+      "reason": "本文沒有陳述「Life often moves too fast」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "第 3 段沒有這一行。"
+      "reason": "本文沒有陳述「Of her shoes,' she said」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "第 4 段沒有這一行。"
+      "reason": "本文沒有陳述「They were not close friends」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "引文逐字出現在第 1 段開頭。"
+      "reason": "本文可直接核對「they were not only complaining」，所以這個選項符合完整語境。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "scan-exact-line-and-locate-paragraph"
+    "connect-stated-reason-to-situation"
   ],
-  "representationType": "reading-paragraph-locator-3",
+  "representationType": "reading-stated-reason",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 English content author",
     "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
     "sourceRefs": [
-      "AUTH-ENGLISH-LC-AE-4-5",
-      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
       "AUTH-ENGLISH-LP-1-4-7",
-      "AUTH-ENGLISH-LP-3-4-14",
-      "AUTH-ENGLISH-LP-3-4-8",
-      "AUTH-ENGLISH-LP-3-4-9",
-      "AUTH-ENGLISH-LP-5-4-7",
-      "AUTH-ENGLISH-LP-5-4-8",
-      "AUTH-ENGLISH-LP-5-4-9"
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
     ]
   },
   "independentReviews": [
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立解答核對：引文與第 1 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「they were not only complaining」，答案為「They were not only complaining」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「They were not only complaining」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

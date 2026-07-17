@@ -27,76 +27,48 @@
       "translation": "細節, 詳情；詳述, 細說"
     },
     {
-      "word": "captures",
-      "translation": "捕獲, 戰利品；俘獲, 捕獲, 奪取"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "passage's",
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
+    },
+    {
+      "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "central",
-      "translation": "中央的"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "thread",
-      "translation": "線, 細絲, 線索, 思路, 螺紋"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "instead",
-      "translation": "代替, 改為, 抵作, 更換"
+      "word": "ordinary",
+      "translation": "普通的"
     },
     {
-      "word": "ocean",
-      "translation": "海洋"
+      "word": "village",
+      "translation": "村落"
     },
     {
-      "word": "microphone",
-      "translation": "擴音器, 麥克風"
-    },
-    {
-      "word": "restored",
-      "translation": "修復"
-    },
-    {
-      "word": "grassland",
-      "translation": "草原"
-    },
-    {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "cited",
-      "translation": "引用"
-    },
-    {
-      "word": "selected",
-      "translation": "挑選"
-    },
-    {
-      "word": "latest",
-      "translation": "最新的"
-    },
-    {
-      "word": "sequence",
-      "translation": "序列"
-    },
-    {
-      "word": "verify",
-      "translation": "驗證"
-    },
-    {
-      "word": "structure",
-      "translation": "結構"
-    },
-    {
-      "word": "locate",
-      "translation": "定位"
+      "word": "result",
+      "translation": "結果"
     },
     {
       "word": "final",
       "translation": "最終的"
+    },
+    {
+      "word": "respecting",
+      "translation": "尊敬;尊敬"
+    },
+    {
+      "word": "objects",
+      "translation": "反對;物件"
     }
   ],
   "questions": [
@@ -117,11 +89,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_150",
-      "stem": "In Reading Set 150, which heading captures the passage's central thread instead of a side point?",
+      "stem": "Which title is best for the complete passage that includes “The town library gave children a stamp card for summer reading.”?",
       "options": [
-        "The Noisy Shoes",
-        "The Ocean Microphone",
-        "The Restored Grassland",
+        "The Night Library",
+        "The Orange Notebook",
+        "The Red Door",
         "The Library Stamp"
       ],
       "answerIndex": 3,
@@ -129,32 +101,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Noisy Shoes」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Night Library」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Ocean Microphone」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Orange Notebook」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Restored Grassland」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Red Door」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Library Stamp: The town library gave children a stamp card for summer reading.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-10",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -175,13 +147,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Library Stamp」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Library Stamp: The town library gave children a stamp card for summer reading.」，答案為「The Library Stamp」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Library Stamp」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -191,7 +163,7 @@
       "id": "ENG_R4_Q_READ_150_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -205,44 +177,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_150",
-      "stem": "In Reading Set 150, which paragraph should be cited for the line “Some children chose only short books to get stamps quickly. Others chose longer books they truly liked.”?",
+      "stem": "Which answer is supported by the passage that includes “The town library gave children a stamp card for summer reading.”?",
       "options": [
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 2",
-        "Paragraph 1"
+        "Ordinary things could become history when someone asked their stories.",
+        "An old well stood in the center of a village.",
+        "Some with many stamps could not remember their stories well.",
+        "Helen did not remember every word, but she remembered many stories behind them."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「Ordinary things could become history when someone asked their stories.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「An old well stood in the center of a village.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 2 段開頭。"
+          "reason": "本文可直接核對「Some with many stamps could not remember their stories well.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「Helen did not remember every word, but she remembered many stories behind them.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-5",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -264,13 +236,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：引文與第 2 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Some with many stamps could not remember their stories well.」，答案為「Some with many stamps could not remember their stories well.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Some with many stamps could not remember their stories well.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -296,44 +268,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_150",
-      "stem": "In Reading Set 150, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “Others chose longer books they truly liked.”?",
       "options": [
-        "At the end of summer, the librarian asked children to share their favorite book. Some with many stamps",
-        "The librarian smiled. \"Stamps are fun,\" she said, \"but the real prize is what stays in your mind.\"",
-        "The town library gave children a stamp card for summer reading. For every book they finished, they received",
-        "Some children chose only short books to get stamps quickly. Others chose longer books they truly liked."
+        "At the end of the week, the teacher asked what they had learned.",
+        "At the end of summer, the librarian asked children to share their favorite book.",
+        "Children can enter after school, read quietly, and borrow one book at a time.",
+        "The librarian says a seed library and a book library are not so different."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「At the end of the week, the teacher asked what they had learned.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「Others chose longer books they truly liked. At the end of summer, the librarian asked children to share their favorite book.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Children can enter after school, read quietly, and borrow one book at a time.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The librarian says a seed library and a book library are not so different.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-5",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -357,13 +329,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Others chose longer books they truly liked. At the end of summer, the librarian asked children to share their favorite book.」，答案為「At the end of summer, the librarian asked children to share their favorite book.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「At the end of summer, the librarian asked children to share their favorite book.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -373,7 +345,7 @@
       "id": "ENG_R4_Q_READ_150_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -386,44 +358,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_150",
-      "stem": "In Reading Set 150, to verify the ending structure, which line should a reader locate first in the final paragraph?",
+      "stem": "Which ending result or final point follows “The stamp card brought children to books.”?",
       "options": [
-        "The stamp card brought children to books. The books had to do the rest.",
-        "The town library gave children a stamp card for summer reading. For every book they finished, they received",
-        "Some children chose only short books to get stamps quickly. Others chose longer books they truly liked.",
-        "At the end of summer, the librarian asked children to share their favorite book. Some with many stamps"
+        "The books had to do the rest.",
+        "Respecting rules in shared spaces is a way of letting strangers rest.",
+        "Some small objects help people rest because they hold a quiet world that does not hurry.",
+        "Sometimes it only needs to be honest."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「The stamp card brought children to books. The books had to do the rest.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Respecting rules in shared spaces is a way of letting strangers rest.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Some small objects help people rest because they hold a quiet world that does not hurry.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Sometimes it only needs to be honest.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-5",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -444,13 +416,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The stamp card brought children to books. The books had to do the rest.」，答案為「The books had to do the rest.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The books had to do the rest.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -460,7 +432,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

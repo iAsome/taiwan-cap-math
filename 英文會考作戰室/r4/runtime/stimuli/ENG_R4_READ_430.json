@@ -67,76 +67,52 @@
       "translation": "意味深長的"
     },
     {
-      "word": "captures",
-      "translation": "捕獲, 戰利品；俘獲, 捕獲, 奪取"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "passage's",
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
+    },
+    {
+      "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "central",
-      "translation": "中央的"
-    },
-    {
-      "word": "thread",
-      "translation": "線, 細絲, 線索, 思路, 螺紋"
-    },
-    {
-      "word": "instead",
-      "translation": "代替, 改為, 抵作, 更換"
-    },
-    {
-      "word": "score",
-      "translation": "得分;得分;二十;刻痕;樂譜"
-    },
-    {
-      "word": "ai",
-      "translation": "人工智慧"
-    },
-    {
-      "word": "contest",
-      "translation": "競賽"
+      "word": "includes",
+      "translation": "包含"
     },
     {
       "word": "repaired",
       "translation": "修理, 修補；修理, 修補, 補救, 糾正"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "cited",
-      "translation": "引用"
+      "word": "coin",
+      "translation": "硬幣"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "ordinary",
+      "translation": "普通的"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "step",
+      "translation": "步;臺階"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
-    },
-    {
-      "word": "verify",
-      "translation": "驗證"
-    },
-    {
-      "word": "structure",
-      "translation": "結構"
-    },
-    {
-      "word": "locate",
-      "translation": "定位"
+      "word": "result",
+      "translation": "結果"
     },
     {
       "word": "final",
       "translation": "最終的"
+    },
+    {
+      "word": "simply",
+      "translation": "簡單地"
     }
   ],
   "questions": [
@@ -157,11 +133,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_430",
-      "stem": "In Reading Set 430, which heading captures the passage's central thread instead of a side point?",
+      "stem": "Which title is best for the complete passage that includes “A violin damaged in a flood was brought to a repair shop.”?",
       "options": [
-        "The Repair Score",
-        "The Borrowed Jacket",
-        "The AI Drawing Contest",
+        "The Quiet Bell",
+        "The School Tree",
+        "The Clock Shop",
         "The Repaired Violin"
       ],
       "answerIndex": 3,
@@ -169,32 +145,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Repair Score」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Quiet Bell」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Borrowed Jacket」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The School Tree」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The AI Drawing Contest」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Clock Shop」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Repaired Violin: A violin damaged in a flood was brought to a repair shop.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-10",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -215,13 +191,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Repaired Violin」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Repaired Violin: A violin damaged in a flood was brought to a repair shop.」，答案為「The Repaired Violin」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Repaired Violin」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -231,7 +207,7 @@
       "id": "ENG_R4_Q_READ_430_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -245,44 +221,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_430",
-      "stem": "In Reading Set 430, which paragraph should be cited for the line “The owner thought it could never sound good again. The repairer worked slowly, drying, cleaning, and adjusting it.”?",
+      "stem": "Which answer is supported by the passage that includes “A violin damaged in a flood was brought to a repair shop.”?",
       "options": [
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 2",
-        "Paragraph 1"
+        "\"You try, fail, change something, and try again.\"",
+        "But then he found something interesting.",
+        "The instrument had survived something with him.",
+        "The coin had once bought something ordinary."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「'You try, fail, change something, and try again.'」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「But then he found something interesting.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 2 段開頭。"
+          "reason": "本文可直接核對「The instrument had survived something with him.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「The coin had once bought something ordinary.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-5",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -304,13 +280,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：引文與第 2 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The instrument had survived something with him.」，答案為「The instrument had survived something with him.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The instrument had survived something with him.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -336,44 +312,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_430",
-      "stem": "In Reading Set 430, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “Months later, the violin played again.”?",
       "options": [
-        "Months later, the violin played again. Its sound was different from before, but still warm.",
-        "The musician decided not to sell it. The instrument had survived something with him.",
-        "A violin damaged in a flood was brought to a repair shop. The wood had changed shape, and",
-        "The owner thought it could never sound good again. The repairer worked slowly, drying, cleaning, and adjusting it."
+        "That is why Mr. Fan's shop still opens every morning.",
+        "Its sound was different from before, but still warm.",
+        "It belongs, in different ways, to people who lived and people who still remember them.",
+        "A slow step can still be a brave step."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「That is why Mr. Fan's shop still opens every morning.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「Months later, the violin played again. Its sound was different from before, but still warm.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「It belongs, in different ways, to people who lived and people who still remember them.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「A slow step can still be a brave step.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-5",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -397,13 +373,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Months later, the violin played again. Its sound was different from before, but still warm.」，答案為「Its sound was different from before, but still warm.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Its sound was different from before, but still warm.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -413,7 +389,7 @@
       "id": "ENG_R4_Q_READ_430_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -426,44 +402,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_430",
-      "stem": "In Reading Set 430, to verify the ending structure, which line should a reader locate first in the final paragraph?",
+      "stem": "Which ending result or final point follows “Sometimes survival changes the sound.”?",
       "options": [
-        "Sometimes survival changes the sound. That does not make the music less meaningful.",
-        "A violin damaged in a flood was brought to a repair shop. The wood had changed shape, and",
-        "The owner thought it could never sound good again. The repairer worked slowly, drying, cleaning, and adjusting it.",
-        "Months later, the violin played again. Its sound was different from before, but still warm."
+        "That does not make the music less meaningful.",
+        "It can also make the mind feel tired.",
+        "In a park, music can simply belong to everyone.",
+        "A simple picture can make people stop and think."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 6 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「Sometimes survival changes the sound. That does not make the music less meaningful.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「It can also make the mind feel tired.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「In a park, music can simply belong to everyone.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「A simple picture can make people stop and think.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-5",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -484,13 +460,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 6 段，正確引文與第 6 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Sometimes survival changes the sound. That does not make the music less meaningful.」，答案為「That does not make the music less meaningful.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「That does not make the music less meaningful.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -500,7 +476,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

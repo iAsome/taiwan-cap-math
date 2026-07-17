@@ -59,72 +59,60 @@
       "translation": "畏懼;懼怕"
     },
     {
-      "word": "accurate",
-      "translation": "正確的, 精確的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "overview",
-      "translation": "概述"
-    },
-    {
-      "word": "entire",
-      "translation": "整個"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "booth",
-      "translation": "攤位"
+      "word": "includes",
+      "translation": "包含"
     },
     {
       "word": "announcement",
       "translation": "宣告, 發表, 一項公告, 一項私人告示"
     },
     {
-      "word": "memory",
-      "translation": "記憶"
+      "word": "data",
+      "translation": "數據"
     },
     {
-      "word": "app",
-      "translation": "應用程式"
+      "word": "mailbox",
+      "translation": "信箱"
     },
     {
-      "word": "ancient",
-      "translation": "古代的"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "coin",
-      "translation": "硬幣"
+      "word": "emergency",
+      "translation": "緊急情況"
     },
     {
-      "word": "locate",
-      "translation": "定位"
+      "word": "removed",
+      "translation": "移動, 開除, 移交；遷移, 搬家；移動, 距離, 班級, 升級"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "ordinary",
+      "translation": "普通的"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "result",
+      "translation": "結果"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "final",
+      "translation": "最終的"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
-    },
-    {
-      "word": "excerpt",
-      "translation": "摘錄"
-    },
-    {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
+      "word": "comfort",
+      "translation": "舒適；安慰"
     }
   ],
   "questions": [
@@ -145,44 +133,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_192",
-      "stem": "In Reading Set 192, which heading gives the most accurate overview of the entire passage?",
+      "stem": "Which title is best for the complete passage that includes “At the train station, announcements were usually fast and hard to hear.”?",
       "options": [
-        "The Old Telephone Booth",
+        "The Class Library",
         "The Train Announcement",
-        "The Memory App",
-        "The Ancient Coin"
+        "The Open Data Project",
+        "The Slow Mailbox"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Old Telephone Booth」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Class Library」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Train Announcement: At the train station, announcements were usually fast and hard to hear.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Memory App」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Open Data Project」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Ancient Coin」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Slow Mailbox」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-2",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -203,13 +191,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Train Announcement」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Train Announcement: At the train station, announcements were usually fast and hard to hear.」，答案為「The Train Announcement」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Train Announcement」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -219,7 +207,7 @@
       "id": "ENG_R4_Q_READ_192_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -233,44 +221,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_192",
-      "stem": "In Reading Set 192, where can a reader locate the sentence “A month later, the announcements became slower. Signs were also improved.” in the passage?",
+      "stem": "Which answer is supported by the passage that includes “At the train station, announcements were usually fast and hard to hear.”?",
       "options": [
-        "Paragraph 4",
-        "Paragraph 1",
-        "Paragraph 2",
-        "Paragraph 3"
+        "To their surprise, the office invited them to discuss it.",
+        "However, the post office will not send them right away.",
+        "At school, Jay's teacher asked students to discuss emergency plans.",
+        "Students were invited to see them before they were removed."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 4 段開頭。"
+          "reason": "本文可直接核對「To their surprise, the office invited them to discuss it.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「However, the post office will not send them right away.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "第 2 段沒有這一行。"
+          "reason": "本文沒有陳述「At school, Jay's teacher asked students to discuss emergency plans.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「Students were invited to see them before they were removed.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-2",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -292,13 +280,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：引文與第 4 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「To their surprise, the office invited them to discuss it.」，答案為「To their surprise, the office invited them to discuss it.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「To their surprise, the office invited them to discuss it.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -324,44 +312,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_192",
-      "stem": "In Reading Set 192, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “A month later, the announcements became slower.”?",
       "options": [
-        "At the train station, announcements were usually fast and hard to hear. Many passengers looked confused.",
-        "A student group recorded the announcements for a school project. They found that some were too quick and",
-        "They wrote a report and sent it to the station office. To their surprise, the office invited them",
-        "A month later, the announcements became slower. Signs were also improved."
+        "She also wrote example sentences.",
+        "It was also ordinary lives before hers.",
+        "They also took pictures of the traffic.",
+        "Signs were also improved."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「She also wrote example sentences.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「It was also ordinary lives before hers.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「They also took pictures of the traffic.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「A month later, the announcements became slower. Signs were also improved.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-2",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -385,13 +373,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「A month later, the announcements became slower. Signs were also improved.」，答案為「Signs were also improved.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Signs were also improved.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -414,44 +402,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_192",
-      "stem": "In Reading Set 192, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “Clear information is a form of kindness.”?",
       "options": [
-        "the announcements for a school project. They found that some were too quick and some words were unclear.",
-        "report and sent it to the station office. To their surprise, the office invited them to discuss it.",
-        "Clear information is a form of kindness. It helps people move through public places with less fear.",
-        "At the train station, announcements were usually fast and hard to hear. Many passengers looked confused."
+        "The town showed that sometimes less allows people to see more.",
+        "Sometimes losing one small comfort helps people find other ways to use time.",
+        "It helps people move through public places with less fear.",
+        "Sometimes a small change helps more people than we first think."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「The town showed that sometimes less allows people to see more.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Sometimes losing one small comfort helps people find other ways to use time.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「Clear information is a form of kindness. It helps people move through public places with less fear.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Sometimes a small change helps more people than we first think.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -472,13 +460,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Clear information is a form of kindness. It helps people move through public places with less fear.」，答案為「It helps people move through public places with less fear.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「It helps people move through public places with less fear.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -488,7 +476,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

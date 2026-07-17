@@ -2,86 +2,84 @@
   "id": "ENG_R4_Q_READ_132_02",
   "subject": "english",
   "skillIds": [
-    "ENG_R4_S249"
+    "ENG_R4_S257"
   ],
   "authorityRefs": [
-    "AUTH-ENGLISH-LC-AE-4-5",
-    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
     "AUTH-ENGLISH-LP-1-4-7",
-    "AUTH-ENGLISH-LP-3-4-14",
-    "AUTH-ENGLISH-LP-3-4-8",
-    "AUTH-ENGLISH-LP-3-4-9",
-    "AUTH-ENGLISH-LP-5-4-7",
-    "AUTH-ENGLISH-LP-5-4-8",
-    "AUTH-ENGLISH-LP-5-4-9"
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_132",
-  "stem": "In Reading Set 132, where can a reader locate the sentence “On the first day, a teacher stood near the road and watched students cross safely. It seemed like” in the passage?",
+  "stem": "Which reason does the passage give for this situation: “Students often crossed quickly between cars”?",
   "options": [
-    "Paragraph 4",
-    "Paragraph 1",
-    "Paragraph 2",
-    "Paragraph 3"
+    "The nearest traffic light was far away",
+    "They help people remember what time has taken away",
+    "It is light and cheap",
+    "He still had to walk to school"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "引文逐字出現在第 4 段開頭。"
+      "reason": "本文可直接核對「the nearest traffic light was far away」，所以這個選項符合完整語境。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "第 1 段沒有這一行。"
+      "reason": "本文沒有陳述「They help people remember what time has taken away」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "第 2 段沒有這一行。"
+      "reason": "本文沒有陳述「It is light and cheap」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "第 3 段沒有這一行。"
+      "reason": "本文沒有陳述「He still had to walk to school」；這個選項混入另一個情境的資訊。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "scan-exact-line-and-locate-paragraph"
+    "connect-stated-reason-to-situation"
   ],
-  "representationType": "reading-paragraph-locator-2",
+  "representationType": "reading-stated-reason",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 English content author",
     "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
     "sourceRefs": [
-      "AUTH-ENGLISH-LC-AE-4-5",
-      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
       "AUTH-ENGLISH-LP-1-4-7",
-      "AUTH-ENGLISH-LP-3-4-14",
-      "AUTH-ENGLISH-LP-3-4-8",
-      "AUTH-ENGLISH-LP-3-4-9",
-      "AUTH-ENGLISH-LP-5-4-7",
-      "AUTH-ENGLISH-LP-5-4-8",
-      "AUTH-ENGLISH-LP-5-4-9"
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
     ]
   },
   "independentReviews": [
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "獨立解答核對：引文與第 4 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「the nearest traffic light was far away」，答案為「The nearest traffic light was far away」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 0,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「The nearest traffic light was far away」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

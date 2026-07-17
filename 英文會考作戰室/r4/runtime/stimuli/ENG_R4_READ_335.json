@@ -83,60 +83,92 @@
       "translation": "標題;頭銜"
     },
     {
-      "word": "within",
-      "translation": "之內"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
-      "word": "evidence",
-      "translation": "證據"
+      "word": "passage",
+      "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
       "word": "includes",
       "translation": "包含"
     },
     {
-      "word": "passage's",
-      "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "focus",
-      "translation": "集中;焦點"
+      "word": "ordinary",
+      "translation": "普通的"
     },
     {
-      "word": "online",
-      "translation": "網路"
+      "word": "local",
+      "translation": "本地的;當地居民"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "shaded",
+      "translation": "蔭, 陰暗, 蔭涼處, 圖案陰影, 黑暗, 顏色深淺, 遮光物, 帘；漸變；遮蔽, 使陰暗, 使漸變, 微減"
+    },
+    {
+      "word": "restored",
+      "translation": "修復"
+    },
+    {
+      "word": "section",
+      "translation": "部分"
+    },
+    {
+      "word": "gentle",
+      "translation": "溫柔的"
+    },
+    {
+      "word": "slopes",
+      "translation": "斜坡, 斜面, 傾斜；(使)順斜"
+    },
+    {
+      "word": "stream",
+      "translation": "流;蜂擁而進;溪流"
+    },
+    {
+      "word": "whale",
+      "translation": "鯨魚"
+    },
+    {
+      "word": "spilled",
+      "translation": "溢出, 濺出, 摔下, 木片, 小塞子, 暴跌；使溢出, 使散落, 灑, 使流出, 使摔下；溢出, 涌流, 充滿"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
     },
     {
       "word": "final",
       "translation": "最終的"
     },
     {
-      "word": "earliest",
-      "translation": "最早的"
+      "word": "based",
+      "translation": "基;底;基部"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "messy",
+      "translation": "凌亂的"
     },
     {
-      "word": "paragraphs",
-      "translation": "段落"
+      "word": "forces",
+      "translation": "力量"
     },
     {
-      "word": "verify",
-      "translation": "驗證"
-    },
-    {
-      "word": "structure",
+      "word": "structures",
       "translation": "結構"
     },
     {
-      "word": "locate",
-      "translation": "定位"
+      "word": "resist",
+      "translation": "抵抗, 反抗, 抗, 忍得住"
+    },
+    {
+      "word": "conditions",
+      "translation": "條件, 情形, 環境, 社會地位"
     }
   ],
   "questions": [
@@ -157,44 +189,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_335",
-      "stem": "In Reading Set 335, which title stays within the evidence and includes the passage's main focus?",
+      "stem": "Which title is best for the complete passage that includes “A school built a rain garden near the parking lot.”?",
       "options": [
-        "The Old Factory Map",
-        "The Small Library Card",
+        "The Heat Map",
+        "The School Garden Sign",
         "The Rain Garden",
-        "The Online Group Rule"
+        "The Paper Boat Race"
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Old Factory Map」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Heat Map」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Small Library Card」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The School Garden Sign」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Rain Garden: A school built a rain garden near the parking lot.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Online Group Rule」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Paper Boat Race」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-5",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -215,13 +247,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Rain Garden」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Rain Garden: A school built a rain garden near the parking lot.」，答案為「The Rain Garden」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Rain Garden」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -231,7 +263,96 @@
       "id": "ENG_R4_Q_READ_335_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
+      ],
+      "authorityRefs": [
+        "AUTH-ENGLISH-LC-AE-4-5",
+        "AUTH-ENGLISH-LC-D-4-2",
+        "AUTH-ENGLISH-LP-1-4-7",
+        "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
+        "AUTH-ENGLISH-LP-3-4-9",
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
+      ],
+      "stimulusId": "ENG_R4_READ_335",
+      "stem": "Which answer is supported by the passage that includes “A school built a rain garden near the parking lot.”?",
+      "options": [
+        "A student said the plants looked ordinary.",
+        "Plants, soil, and stones were working together.",
+        "Later, new gardens appeared with stones, local plants, and shaded soil.",
+        "The city restored one section with plants, stones, and gentle slopes."
+      ],
+      "answerIndex": 1,
+      "optionRationales": [
+        {
+          "optionIndex": 0,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「A student said the plants looked ordinary.」；這個選項混入另一個情境的資訊。"
+        },
+        {
+          "optionIndex": 1,
+          "isCorrect": true,
+          "reason": "本文可直接核對「Plants, soil, and stones were working together.」，所以這個選項符合完整語境。"
+        },
+        {
+          "optionIndex": 2,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「Later, new gardens appeared with stones, local plants, and shaded soil.」；這個選項混入另一個情境的資訊。"
+        },
+        {
+          "optionIndex": 3,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「The city restored one section with plants, stones, and gentle slopes.」；這個選項混入另一個情境的資訊。"
+        }
+      ],
+      "difficulty": "transfer",
+      "cognitiveProcess": [
+        "read-locked-passage-evidence",
+        "distinguish-supported-detail-from-related-near-misses"
+      ],
+      "representationType": "reading-supported-detail",
+      "misconceptionTargets": [
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
+      ],
+      "provenance": {
+        "status": "original",
+        "authorRole": "Codex R4 English content author",
+        "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+        "sourceRefs": [
+          "AUTH-ENGLISH-LC-AE-4-5",
+          "AUTH-ENGLISH-LC-D-4-2",
+          "AUTH-ENGLISH-LP-1-4-7",
+          "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
+          "AUTH-ENGLISH-LP-3-4-9",
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
+        ]
+      },
+      "independentReviews": [
+        {
+          "reviewerRole": "english-grammar-solution-review",
+          "derivedAnswerIndex": 1,
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Plants, soil, and stones were working together.」，答案為「Plants, soil, and stones were working together.」。",
+          "status": "pass"
+        },
+        {
+          "reviewerRole": "english-alternative-answer-review",
+          "derivedAnswerIndex": 1,
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Plants, soil, and stones were working together.」有同篇證據，三個干擾項均來自不同情境。",
+          "status": "pass"
+        }
+      ],
+      "assets": []
+    },
+    {
+      "id": "ENG_R4_Q_READ_335_03",
+      "subject": "english",
+      "skillIds": [
+        "ENG_R4_S273"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-6",
@@ -247,44 +368,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_335",
-      "stem": "In Reading Set 335, a reader numbers every paragraph after “A school built a rain garden near the parking lot. It was designed to collect rainwater and let.” What is the final paragraph number?",
+      "stem": "What happens next in this passage after “The science teacher explained that it helped reduce flooding and filter dirty water from the pavement.”?",
       "options": [
-        "7",
-        "5",
-        "4",
-        "6"
+        "During the next heavy rain, students watched water flow into the garden instead of across the sidewalk.",
+        "After a heavy rain, the small stream near school was full of water.",
+        "Ben watched him draw a blue whale swimming across the gray sidewalk.",
+        "They heard about a boy who helped clean spilled soup, a teacher who stayed late for a student, and a class that shared umbrellas during heavy rain."
       ],
-      "answerIndex": 1,
+      "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
-          "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "isCorrect": true,
+          "reason": "本文可直接核對「The science teacher explained that it helped reduce flooding and filter dirty water from the pavement. During the next heavy rain, students…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
-          "isCorrect": true,
-          "reason": "文章以換行鎖定為 5 個段落。"
+          "isCorrect": false,
+          "reason": "本文沒有陳述「After a heavy rain, the small stream near school was full of water.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Ben watched him draw a blue whale swimming across the gray sidewalk.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "6 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「They heard about a boy who helped clean spilled soup, a teacher who stayed late for a student,…」；這個選項混入另一個情境的資訊。"
         }
       ],
-      "difficulty": "transfer",
+      "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-structure-count-5",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -307,103 +428,14 @@
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
-          "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
-          "status": "pass"
-        },
-        {
-          "reviewerRole": "english-alternative-answer-review",
-          "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
-          "status": "pass"
-        }
-      ],
-      "assets": []
-    },
-    {
-      "id": "ENG_R4_Q_READ_335_03",
-      "subject": "english",
-      "skillIds": [
-        "ENG_R4_S254"
-      ],
-      "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-5",
-        "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LP-1-4-7",
-        "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-8",
-        "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-5-4-7",
-        "AUTH-ENGLISH-LP-5-4-8",
-        "AUTH-ENGLISH-LP-5-4-9"
-      ],
-      "stimulusId": "ENG_R4_READ_335",
-      "stem": "In Reading Set 335, which line starts the earliest of the four selected paragraphs?",
-      "options": [
-        "A school built a rain garden near the parking lot. It was designed to collect rainwater and let",
-        "At first, students thought it was just a flower bed. The science teacher explained that it helped reduce",
-        "During the next heavy rain, students watched water flow into the garden instead of across the sidewalk.",
-        "The rain garden made an invisible process visible. Plants, soil, and stones were working together."
-      ],
-      "answerIndex": 0,
-      "optionRationales": [
-        {
-          "optionIndex": 0,
-          "isCorrect": true,
-          "reason": "這一行來自四個候選中的最早段落。"
-        },
-        {
-          "optionIndex": 1,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        },
-        {
-          "optionIndex": 2,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        },
-        {
-          "optionIndex": 3,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        }
-      ],
-      "difficulty": "foundation",
-      "cognitiveProcess": [
-        "read-locked-passage-evidence",
-        "identify-earliest-selected-paragraph"
-      ],
-      "representationType": "reading-sequence-earliest-5",
-      "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
-      ],
-      "provenance": {
-        "status": "original",
-        "authorRole": "Codex R4 English content author",
-        "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
-        "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-5",
-          "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LP-1-4-7",
-          "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-8",
-          "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-5-4-7",
-          "AUTH-ENGLISH-LP-5-4-8",
-          "AUTH-ENGLISH-LP-5-4-9"
-        ]
-      },
-      "independentReviews": [
-        {
-          "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 1 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The science teacher explained that it helped reduce flooding and filter dirty water from the pavement. During the next heavy rain, students watched water…」，答案為「During the next heavy rain, students watched water flow into the garden instead of across the sidewalk.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「During the next heavy rain, students watched water flow into the garden instead of across the sidewalk.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -426,44 +458,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_335",
-      "stem": "In Reading Set 335, to verify the ending structure, which line should a reader locate first in the final paragraph?",
+      "stem": "Which ending result or final point follows “The project showed that environmental design can be quiet and beautiful at the same time.”?",
       "options": [
-        "A school built a rain garden near the parking lot. It was designed to collect rainwater and let",
-        "At first, students thought it was just a flower bed. The science teacher explained that it helped reduce",
-        "During the next heavy rain, students watched water flow into the garden instead of across the sidewalk.",
-        "The project showed that environmental design can be quiet and beautiful at the same time. A garden can"
+        "Nature-based protection may look messy, but it can work with forces that hard structures only resist.",
+        "A notebook can help a word stay longer.",
+        "Sometimes it is only waiting for better conditions.",
+        "A garden can be both decoration and protection."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Nature-based protection may look messy, but it can work with forces that hard structures only resist.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「A notebook can help a word stay longer.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Sometimes it is only waiting for better conditions.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「The project showed that environmental design can be quiet and beautiful at the same time. A garden can be both decoration and…」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-5",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -484,13 +516,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The project showed that environmental design can be quiet and beautiful at the same time. A garden can be both decoration and protection.」，答案為「A garden can be both decoration and protection.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「A garden can be both decoration and protection.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -500,7 +532,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

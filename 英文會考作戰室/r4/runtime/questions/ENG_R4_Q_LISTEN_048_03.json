@@ -42,7 +42,7 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_048",
-  "stem": "In Listening Set 048, across the change from one-person standing, behind-the-table, scarf-feature to 2-person sitting, beside-the-table, glasses-feature, which object sequence is heard?",
+  "stem": "The first scene shows one person standing and wearing a scarf, and the second shows two people sitting and wearing glasses. Which object order is heard?",
   "options": [
     "clock, then camera",
     "camera, then key",
@@ -54,22 +54,22 @@
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "clock, then camera：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "clock, then camera：此項把「camera, then clock」改成「clock, then camera」。音稿先說 camera，再說 clock。因此，鎖定證據支持「camera, then clock」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "camera, then key：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "camera, then key：此項把「clock」改成「key」。音稿先說 camera，再說 clock。因此，鎖定證據支持「camera, then clock」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "guitar, then clock：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "guitar, then clock：此項把「camera,」改成「guitar,」。音稿先說 camera，再說 clock。因此，鎖定證據支持「camera, then clock」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "camera, then clock：音稿先說 camera，再說 clock。"
+      "reason": "camera, then clock：完整逐字稿明確支持此項。音稿先說 camera，再說 clock。"
     }
   ],
   "difficulty": "standard",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-integrate-two-scene-object-order",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「camera, then clock」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「camera, then clock」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「camera, then clock」成立。",
       "status": "pass"
     }
   ],

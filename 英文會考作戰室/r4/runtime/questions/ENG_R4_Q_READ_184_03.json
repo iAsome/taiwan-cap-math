@@ -18,11 +18,11 @@
     "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_184",
-  "stem": "In Reading Set 184, which selected line appears latest in the paragraph sequence?",
+  "stem": "What happens next in this passage after “Mia asked why they did not just throw it away.”?",
   "options": [
-    "There was an old bowl in Mia's kitchen. It had a crack on one side, so no one",
-    "Mia's mother filled it with soil and planted green onions inside. The bowl sat by the window, and",
-    "Mia asked why they did not just throw it away.",
+    "Some old things do not sound perfect, but they carry voices that new things cannot.\"",
+    "The old bridge no longer does its first job, but it still connects people.",
+    "Daniel still used his phone often, but the old camera taught him a different way to look.",
     "Her mother said, \"It cannot do its old job, but it can still do a new one.\""
   ],
   "answerIndex": 3,
@@ -30,32 +30,32 @@
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Some old things do not sound perfect, but they carry voices that new things cannot.'」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「The old bridge no longer does its first job, but it still connects people.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Daniel still used his phone often, but the old camera taught him a different way to look.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "這一行來自四個候選中的最晚段落。"
+      "reason": "本文可直接核對「Mia asked why they did not just throw it away. Her mother said, 'It cannot do its old job, but it can…」，所以這個選項符合完整語境。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "identify-latest-selected-paragraph"
+    "track-event-or-idea-sequence-from-content-anchor"
   ],
-  "representationType": "reading-sequence-latest-4",
+  "representationType": "reading-content-sequence",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
@@ -79,13 +79,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「Mia asked why they did not just throw it away. Her mother said, 'It cannot do its old job, but it can still do…」，答案為「Her mother said, 'It cannot do its old job, but it can still do a new one.'」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「Her mother said, 'It cannot do its old job, but it can still do a new one.'」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

@@ -31,56 +31,76 @@
       "translation": "記錄;錄音;記錄;唱片"
     },
     {
-      "word": "accurate",
-      "translation": "正確的, 精確的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "overview",
-      "translation": "概述"
-    },
-    {
-      "word": "entire",
-      "translation": "整個"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "delivery",
-      "translation": "遞送；外送"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "capsule",
-      "translation": "膠囊"
+      "word": "situation",
+      "translation": "情形, 境遇, (建築物等的)位置"
     },
     {
-      "word": "locate",
-      "translation": "定位"
+      "word": "widened",
+      "translation": "加寬"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "added",
+      "translation": "添加"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "fountain",
+      "translation": "泉水, 噴泉, 源泉"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "review",
+      "translation": "溫習;回顧;復習"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "flood",
+      "translation": "洪水"
     },
     {
-      "word": "excerpt",
-      "translation": "摘錄"
+      "word": "project",
+      "translation": "計畫"
     },
     {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "carved",
+      "translation": "雕刻的"
+    },
+    {
+      "word": "stone",
+      "translation": "石頭"
+    },
+    {
+      "word": "message",
+      "translation": "消息;音信"
+    },
+    {
+      "word": "requires",
+      "translation": "需要"
+    },
+    {
+      "word": "trust",
+      "translation": "信任"
     }
   ],
   "questions": [
@@ -101,44 +121,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_132",
-      "stem": "In Reading Set 132, which heading gives the most accurate overview of the entire passage?",
+      "stem": "Which title is best for the complete passage that includes “A busy road near the school was dangerous.”?",
       "options": [
-        "The Delivery Box",
+        "The School Gate Flowers",
         "The New Crossing",
-        "The Missing Book Cover",
-        "The Time Capsule Video"
+        "The Smart Traffic Light",
+        "The Paper Boat Race"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Delivery Box」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The School Gate Flowers」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The New Crossing: A busy road near the school was dangerous.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Missing Book Cover」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Smart Traffic Light」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Time Capsule Video」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Paper Boat Race」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-2",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -159,13 +179,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The New Crossing」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The New Crossing: A busy road near the school was dangerous.」，答案為「The New Crossing」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The New Crossing」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -175,86 +195,84 @@
       "id": "ENG_R4_Q_READ_132_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S257"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-5",
-        "AUTH-ENGLISH-LC-D-4-2",
+        "AUTH-ENGLISH-LC-D-4-1",
+        "AUTH-ENGLISH-LC-D-4-3",
         "AUTH-ENGLISH-LP-1-4-7",
-        "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-8",
-        "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-5-4-7",
-        "AUTH-ENGLISH-LP-5-4-8",
-        "AUTH-ENGLISH-LP-5-4-9"
+        "AUTH-ENGLISH-LP-3-4-11",
+        "AUTH-ENGLISH-LP-3-4-12",
+        "AUTH-ENGLISH-LP-7-4-2",
+        "AUTH-ENGLISH-LP-9-4-1",
+        "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_132",
-      "stem": "In Reading Set 132, where can a reader locate the sentence “On the first day, a teacher stood near the road and watched students cross safely. It seemed like” in the passage?",
+      "stem": "Which reason does the passage give for this situation: “Students often crossed quickly between cars”?",
       "options": [
-        "Paragraph 4",
-        "Paragraph 1",
-        "Paragraph 2",
-        "Paragraph 3"
+        "The nearest traffic light was far away",
+        "They help people remember what time has taken away",
+        "It is light and cheap",
+        "He still had to walk to school"
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 4 段開頭。"
+          "reason": "本文可直接核對「the nearest traffic light was far away」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「They help people remember what time has taken away」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "第 2 段沒有這一行。"
+          "reason": "本文沒有陳述「It is light and cheap」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「He still had to walk to school」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "connect-stated-reason-to-situation"
       ],
-      "representationType": "reading-paragraph-locator-2",
+      "representationType": "reading-stated-reason",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-5",
-          "AUTH-ENGLISH-LC-D-4-2",
+          "AUTH-ENGLISH-LC-D-4-1",
+          "AUTH-ENGLISH-LC-D-4-3",
           "AUTH-ENGLISH-LP-1-4-7",
-          "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-8",
-          "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-5-4-7",
-          "AUTH-ENGLISH-LP-5-4-8",
-          "AUTH-ENGLISH-LP-5-4-9"
+          "AUTH-ENGLISH-LP-3-4-11",
+          "AUTH-ENGLISH-LP-3-4-12",
+          "AUTH-ENGLISH-LP-7-4-2",
+          "AUTH-ENGLISH-LP-9-4-1",
+          "AUTH-ENGLISH-LP-9-4-3"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：引文與第 4 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「the nearest traffic light was far away」，答案為「The nearest traffic light was far away」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The nearest traffic light was far away」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -280,44 +298,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_132",
-      "stem": "In Reading Set 132, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “They also took pictures of the traffic.”?",
       "options": [
-        "A busy road near the school was dangerous. Students often crossed quickly between cars because the nearest traffic",
-        "The school collected reports from students, parents, and teachers. They counted how many students crossed the road each",
-        "The city office finally agreed to paint a new crossing and add a warning light.",
-        "On the first day, a teacher stood near the road and watched students cross safely. It seemed like"
+        "The city widened the sidewalk and added more crossing time at the light.",
+        "The school agreed to add one fountain first and review the need for another.",
+        "After a new flood warning project began, teachers brought students to see the marker.",
+        "The city office finally agreed to paint a new crossing and add a warning light."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The city widened the sidewalk and added more crossing time at the light.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The school agreed to add one fountain first and review the need for another.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「After a new flood warning project began, teachers brought students to see the marker.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「They also took pictures of the traffic. The city office finally agreed to paint a new crossing and add a warning light.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-2",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -341,13 +359,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「They also took pictures of the traffic. The city office finally agreed to paint a new crossing and add a warning light.」，答案為「The city office finally agreed to paint a new crossing and add a warning light.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The city office finally agreed to paint a new crossing and add a warning light.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -370,44 +388,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_132",
-      "stem": "In Reading Set 132, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “this subject showed that complaints are stronger when they come with clear information.”?",
       "options": [
-        "teachers. They counted how many students crossed the road each morning. They also took pictures of the traffic.",
-        "The city office finally agreed to paint a new crossing and add a warning light.",
-        "stronger when they come with clear information. A safer street began with people carefully recording what they saw.",
-        "the school was dangerous. Students often crossed quickly between cars because the nearest traffic light was far away."
+        "History carved in stone can become a warning for people who never saw the water rise.",
+        "They saw it as a message: what people throw away does not always stay where they leave it.",
+        "A safer street began with people carefully recording what they saw.",
+        "It requires reading carefully when people are trying to win your trust."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「History carved in stone can become a warning for people who never saw the water rise.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「They saw it as a message: what people throw away does not always stay where they leave it.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「The new crossing showed that complaints are stronger when they come with clear information. A safer street began with people carefully recording…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「It requires reading carefully when people are trying to win your trust.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -428,13 +446,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The new crossing showed that complaints are stronger when they come with clear information. A safer street began with people carefully recording what they…」，答案為「A safer street began with people carefully recording what they saw.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「A safer street began with people carefully recording what they saw.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -444,7 +462,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

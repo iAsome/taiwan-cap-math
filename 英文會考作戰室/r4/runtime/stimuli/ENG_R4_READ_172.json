@@ -47,56 +47,64 @@
       "translation": "普通的"
     },
     {
-      "word": "accurate",
-      "translation": "正確的, 精確的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "overview",
-      "translation": "概述"
-    },
-    {
-      "word": "entire",
-      "translation": "整個"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "diary",
-      "translation": "日記"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "electric",
-      "translation": "電的, 導電的, 電動的, 電氣"
+      "word": "global",
+      "translation": "全球的"
     },
     {
-      "word": "locate",
-      "translation": "定位"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "biology",
+      "translation": "生物學"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "comment",
+      "translation": "評論;評論"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "ashamed",
+      "translation": "羞愧"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "protect",
+      "translation": "保護"
     },
     {
-      "word": "excerpt",
-      "translation": "摘錄"
+      "word": "wood",
+      "translation": "木材"
     },
     {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "evidence",
+      "translation": "證據"
+    },
+    {
+      "word": "memories",
+      "translation": "記憶"
     }
   ],
   "questions": [
@@ -117,44 +125,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_172",
-      "stem": "In Reading Set 172, which heading gives the most accurate overview of the entire passage?",
+      "stem": "Which title is best for the complete passage that includes “The oldest lunch table in the cafeteria had many scratches.”?",
       "options": [
-        "The Old Weather Diary",
+        "The Little Map",
         "The Old Lunch Table",
-        "The Electric Bus",
-        "The Old Train Line"
+        "The Old Playground",
+        "The Global Lunch Table"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Old Weather Diary」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Little Map」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Old Lunch Table: The oldest lunch table in the cafeteria had many scratches.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Electric Bus」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Playground」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Old Train Line」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Global Lunch Table」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-2",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -175,13 +183,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Old Lunch Table」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Old Lunch Table: The oldest lunch table in the cafeteria had many scratches.」，答案為「The Old Lunch Table」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Old Lunch Table」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -191,7 +199,7 @@
       "id": "ENG_R4_Q_READ_172_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -205,44 +213,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_172",
-      "stem": "In Reading Set 172, where can a reader locate the sentence “The new tables were cleaner and safer, but the old piece reminded everyone of students who had eaten,” in the passage?",
+      "stem": "Which answer is supported by the passage that includes “The oldest lunch table in the cafeteria had many scratches.”?",
       "options": [
-        "Paragraph 4",
-        "Paragraph 1",
-        "Paragraph 2",
-        "Paragraph 3"
+        "A teacher even found her own name from when she had been a student.",
+        "The biology teacher said, \"When people know the name of something, they often notice it more.\"",
+        "One student found an angry comment he had written two years earlier.",
+        "That night, the student felt less ashamed about her own difficult subjects."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 4 段開頭。"
+          "reason": "本文可直接核對「A teacher even found her own name from when she had been a student.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「The biology teacher said, 'When people know the name of something, they often notice it more.'」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "第 2 段沒有這一行。"
+          "reason": "本文沒有陳述「One student found an angry comment he had written two years earlier.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「That night, the student felt less ashamed about her own difficult subjects.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-2",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -264,13 +272,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：引文與第 4 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「A teacher even found her own name from when she had been a student.」，答案為「A teacher even found her own name from when she had been a student.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「A teacher even found her own name from when she had been a student.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -296,44 +304,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_172",
-      "stem": "In Reading Set 172, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “Before it was removed, students noticed names and small drawings on its surface.”?",
       "options": [
-        "The oldest lunch table in the cafeteria had many scratches. The school planned to replace it.",
-        "Before it was removed, students noticed names and small drawings on its surface. Some were from years ago.",
-        "The school decided to cut a small piece from the table and display it near the cafeteria entrance.",
-        "The new tables were cleaner and safer, but the old piece reminded everyone of students who had eaten,"
+        "The date on it was twenty years ago.",
+        "They were used many years ago to protect the wood.",
+        "She found a photo of her street from fifty years ago.",
+        "Some were from years ago."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The date on it was twenty years ago.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「They were used many years ago to protect the wood.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「She found a photo of her street from fifty years ago.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「Before it was removed, students noticed names and small drawings on its surface. Some were from years ago.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-2",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -357,13 +365,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Before it was removed, students noticed names and small drawings on its surface. Some were from years ago.」，答案為「Some were from years ago.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Some were from years ago.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -386,44 +394,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_172",
-      "stem": "In Reading Set 172, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “A table is usually just furniture.”?",
       "options": [
-        "were from years ago. A teacher even found her own name from when she had been a student.",
-        "The school decided to cut a small piece from the table and display it near the cafeteria entrance.",
-        "A table is usually just furniture. But after many years, it can become a record of ordinary days.",
-        "The oldest lunch table in the cafeteria had many scratches. The school planned to replace it."
+        "Years later, it can become evidence that people change.",
+        "Maggie's old uniform had become different because it carried her own memories.",
+        "But after many years, it can become a record of ordinary days.",
+        "Ordinary things could become history when someone asked their stories."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Years later, it can become evidence that people change.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Maggie's old uniform had become different because it carried her own memories.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「A table is usually just furniture. But after many years, it can become a record of ordinary days.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Ordinary things could become history when someone asked their stories.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -444,13 +452,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「A table is usually just furniture. But after many years, it can become a record of ordinary days.」，答案為「But after many years, it can become a record of ordinary days.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「But after many years, it can become a record of ordinary days.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -460,7 +468,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

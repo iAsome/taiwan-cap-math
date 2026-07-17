@@ -18,44 +18,44 @@
     "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_112",
-  "stem": "In Reading Set 112, which selected line appears latest in the paragraph sequence?",
+  "stem": "What happens next in this passage after “It was due the next morning.”?",
   "options": [
-    "Bus driver Mr. Shen knew many students who took his bus. He remembered where they usually got off",
-    "One rainy afternoon, a student named Alice left her science project on the bus. It was due the",
-    "Mr. Shen found it after his last route. The school was already closed, so he drove back early",
-    "Alice got the project before class. She thanked Mr. Shen with a card."
+    "After asking around, they found a third blue box in Lily's bag.",
+    "After a few weeks, their answers became longer.",
+    "After a few weeks, his grades improved quickly.",
+    "Mr. Shen found it after his last route."
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「After asking around, they found a third blue box in Lily's bag.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「After a few weeks, their answers became longer.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「After a few weeks, his grades improved quickly.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "這一行來自四個候選中的最晚段落。"
+      "reason": "本文可直接核對「It was due the next morning. Mr. Shen found it after his last route.」，所以這個選項符合完整語境。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "identify-latest-selected-paragraph"
+    "track-event-or-idea-sequence-from-content-anchor"
   ],
-  "representationType": "reading-sequence-latest-2",
+  "representationType": "reading-content-sequence",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
@@ -79,13 +79,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「It was due the next morning. Mr. Shen found it after his last route.」，答案為「Mr. Shen found it after his last route.」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「Mr. Shen found it after his last route.」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

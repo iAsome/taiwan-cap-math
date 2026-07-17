@@ -42,7 +42,7 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_085",
-  "stem": "In Listening Set 085, across the change from one-person pointing, behind-the-table, none-feature to 2-person walking, beside-the-table, scarf-feature, which object sequence is heard?",
+  "stem": "The first scene shows one person pointing with no marked accessory, and the second shows two people walking and wearing scarves. Which object order is heard?",
   "options": [
     "umbrella, then ball",
     "book, then box",
@@ -54,22 +54,22 @@
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "umbrella, then ball：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "umbrella, then ball：此項把「box」改成「ball」。音稿先說 umbrella，再說 box。因此，鎖定證據支持「umbrella, then box」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "book, then box：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "book, then box：此項把「umbrella,」改成「book,」。音稿先說 umbrella，再說 box。因此，鎖定證據支持「umbrella, then box」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "umbrella, then box：音稿先說 umbrella，再說 box。"
+      "reason": "umbrella, then box：完整逐字稿明確支持此項。音稿先說 umbrella，再說 box。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "box, then umbrella：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "box, then umbrella：此項把「umbrella, then box」改成「box, then umbrella」。音稿先說 umbrella，再說 box。因此，鎖定證據支持「umbrella, then box」。"
     }
   ],
   "difficulty": "advanced",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-integrate-two-scene-object-order",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「umbrella, then box」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「umbrella, then box」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「umbrella, then box」成立。",
       "status": "pass"
     }
   ],

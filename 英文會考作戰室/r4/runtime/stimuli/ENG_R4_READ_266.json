@@ -75,56 +75,68 @@
       "translation": "限制"
     },
     {
-      "word": "broad",
-      "translation": "寬廣的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "paragraphs",
-      "translation": "段落"
-    },
-    {
-      "word": "broader",
-      "translation": "寬廣的"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "passport",
-      "translation": "護照"
-    },
-    {
-      "word": "organize",
-      "translation": "組織"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "ai",
+      "translation": "人工智慧"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "model",
+      "translation": "模型;模特兒"
     },
     {
-      "word": "quoted",
-      "translation": "引用, 引證, 提供, 提出, 報(價)"
+      "word": "predicted",
+      "translation": "預測"
+    },
+    {
+      "word": "region",
+      "translation": "地區"
+    },
+    {
+      "word": "skills",
+      "translation": "技能"
+    },
+    {
+      "word": "guide",
+      "translation": "引導;嚮導"
+    },
+    {
+      "word": "forms",
+      "translation": "形成;形態;表格"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
     },
     {
       "word": "final",
       "translation": "最終的"
+    },
+    {
+      "word": "tiny",
+      "translation": "微小的"
+    },
+    {
+      "word": "messy",
+      "translation": "凌亂的"
     }
   ],
   "questions": [
@@ -145,11 +157,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_266",
-      "stem": "In Reading Set 266, which heading is broad enough for all paragraphs but not broader than the text?",
+      "stem": "Which title is best for the complete passage that includes “A company showed earbuds that could translate speech quickly.”?",
       "options": [
-        "The Old Passport",
-        "The City Sound Library",
-        "The Orange Notebook",
+        "The School Garden Sign",
+        "The Smart Speaker Story",
+        "The AI Translation Error",
         "The Translation Earbuds"
       ],
       "answerIndex": 3,
@@ -157,32 +169,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Old Passport」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The School Garden Sign」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The City Sound Library」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Smart Speaker Story」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Orange Notebook」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The AI Translation Error」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Translation Earbuds: A company showed earbuds that could translate speech quickly.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-6",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -203,13 +215,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Translation Earbuds」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Translation Earbuds: A company showed earbuds that could translate speech quickly.」，答案為「The Translation Earbuds」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Translation Earbuds」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -219,90 +231,86 @@
       "id": "ENG_R4_Q_READ_266_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-6",
-        "AUTH-ENGLISH-LC-AE-4-8",
+        "AUTH-ENGLISH-LC-AE-4-5",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LC-D-4-3",
-        "AUTH-ENGLISH-LP-3-4-10",
-        "AUTH-ENGLISH-LP-3-4-12",
-        "AUTH-ENGLISH-LP-3-4-13",
+        "AUTH-ENGLISH-LP-1-4-7",
         "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-9-4-2",
-        "AUTH-ENGLISH-LP-9-4-3"
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_266",
-      "stem": "In Reading Set 266, how many paragraphs organize the passage that begins “A company showed earbuds that could translate speech quickly. Students imagined traveling anywhere without learning languages.”?",
+      "stem": "Which answer is supported by the passage that includes “A company showed earbuds that could translate speech quickly.”?",
       "options": [
-        "6",
-        "7",
-        "5",
-        "4"
+        "The model predicted less traffic in one area but more in another.",
+        "Another map from a different country placed another region in the center.",
+        "A phrase may sound polite in one culture but cold in another.",
+        "His friend said, \"The sound is loud, but it is not you.\""
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "6 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「The model predicted less traffic in one area but more in another.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Another map from a different country placed another region in the center.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "文章以換行鎖定為 5 個段落。"
+          "reason": "本文可直接核對「A phrase may sound polite in one culture but cold in another.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「His friend said, 'The sound is loud, but it is not you.'」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-structure-count-1",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-6",
-          "AUTH-ENGLISH-LC-AE-4-8",
+          "AUTH-ENGLISH-LC-AE-4-5",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LC-D-4-3",
-          "AUTH-ENGLISH-LP-3-4-10",
-          "AUTH-ENGLISH-LP-3-4-12",
-          "AUTH-ENGLISH-LP-3-4-13",
+          "AUTH-ENGLISH-LP-1-4-7",
           "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-9-4-2",
-          "AUTH-ENGLISH-LP-9-4-3"
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「A phrase may sound polite in one culture but cold in another.」，答案為「A phrase may sound polite in one culture but cold in another.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「A phrase may sound polite in one culture but cold in another.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -328,44 +336,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_266",
-      "stem": "In Reading Set 266, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “She said translation tools are useful, especially in emergencies, but language is more than word exchange.”?",
       "options": [
-        "She gave an example. A phrase may sound polite in one culture but cold in another. A joke",
-        "The students still liked the earbuds, but they saw their limits.",
-        "A company showed earbuds that could translate speech quickly. Students imagined traveling anywhere without learning languages.",
-        "Their language teacher was less excited. She said translation tools are useful, especially in emergencies, but language is"
+        "After the test, she gave a short lesson on dictionary skills: guide words, word forms, and example sentences.",
+        "She gave an example.",
+        "She also wrote example sentences.",
+        "The first sign gave an order."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「After the test, she gave a short lesson on dictionary skills: guide words, word forms, and example sentences.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「She said translation tools are useful, especially in emergencies, but language is more than word exchange. She gave an example.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「She also wrote example sentences.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The first sign gave an order.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-1",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -389,13 +397,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「She said translation tools are useful, especially in emergencies, but language is more than word exchange. She gave an example.」，答案為「She gave an example.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「She gave an example.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -405,7 +413,7 @@
       "id": "ENG_R4_Q_READ_266_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -418,44 +426,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_266",
-      "stem": "In Reading Set 266, which quoted line opens the final paragraph?",
+      "stem": "Which ending result or final point follows “A translation tool can help people cross a bridge.”?",
       "options": [
-        "A translation tool can help people cross a bridge. Learning a language teaches them what the bridge is",
-        "A company showed earbuds that could translate speech quickly. Students imagined traveling anywhere without learning languages.",
-        "Their language teacher was less excited. She said translation tools are useful, especially in emergencies, but language is",
-        "She gave an example. A phrase may sound polite in one culture but cold in another. A joke"
+        "Learning a language teaches them what the bridge is made of.",
+        "The tiny museum made the past feel close enough to touch.",
+        "Food history teaches through the mouth as well as the mind.",
+        "A used page, even a messy one, can show that learning happened."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「A translation tool can help people cross a bridge. Learning a language teaches them what the bridge is made of.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「The tiny museum made the past feel close enough to touch.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Food history teaches through the mouth as well as the mind.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「A used page, even a messy one, can show that learning happened.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-1",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -476,13 +484,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「A translation tool can help people cross a bridge. Learning a language teaches them what the bridge is made of.」，答案為「Learning a language teaches them what the bridge is made of.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Learning a language teaches them what the bridge is made of.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -492,7 +500,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

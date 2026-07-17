@@ -1,8 +1,8 @@
 {
   "id": "ENG_R4_LISTEN_210",
   "section": "discourse",
-  "transcript": "Attention, students. History Photo Hour will begin at five twenty on next Friday in the bookstore. Bring your student card and arrive ten minutes early. The side entrance is closed, so everyone must use the main door beside the office. Ask your homeroom teacher before noon if you need help.",
-  "spokenText": "Attention, students. History Photo Hour will begin at five twenty on next Friday in the bookstore. Bring your student card and arrive ten minutes early. The side entrance is closed, so everyone must use the main door beside the office. Ask your homeroom teacher before noon if you need help.",
+  "transcript": "Listen to this report before making a decision. Attention, students. History Photo Hour will begin at five twenty on next Friday in the bookstore. Bring your student card and arrive ten minutes early. The side entrance is closed, so everyone must use the main door beside the office. Ask your homeroom teacher before noon if you need help.",
+  "spokenText": "Listen to this report before making a decision. Attention, students. History Photo Hour will begin at five twenty on next Friday in the bookstore. Bring your student card and arrive ten minutes early. The side entrance is closed, so everyone must use the main door beside the office. Ask your homeroom teacher before noon if you need help.",
   "audioDescription": "An original public message or short explanation whose purpose is to announce arrangements for History Photo Hour.",
   "pauseMs": 3500,
   "voiceProfile": {
@@ -12,6 +12,10 @@
   "audioId": "ENG_R4_AUDIO_210",
   "audioPath": "runtime/audio/ENG_R4_AUDIO_210.wav",
   "glossary": [
+    {
+      "word": "decision",
+      "translation": "決定"
+    },
     {
       "word": "attention",
       "translation": "注意力"
@@ -25,20 +29,12 @@
       "translation": "班導師室"
     },
     {
-      "word": "purpose",
-      "translation": "目的"
-    },
-    {
       "word": "message",
       "translation": "消息;音信"
     },
     {
-      "word": "cancel",
-      "translation": "取消"
-    },
-    {
-      "word": "describe",
-      "translation": "描述"
+      "word": "remind",
+      "translation": "提醒, 使想起"
     },
     {
       "word": "announce",
@@ -57,16 +53,8 @@
       "translation": "陳述;狀態;州"
     },
     {
-      "word": "recording",
-      "translation": "記錄;錄音;記錄;唱片"
-    },
-    {
-      "word": "midnight",
-      "translation": "午夜"
-    },
-    {
-      "word": "according",
-      "translation": "一致、符合"
+      "word": "required",
+      "translation": "必填"
     }
   ],
   "visualAssets": [],
@@ -115,11 +103,11 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_210",
-      "stem": "In Listening Set 210, what is the main purpose of this spoken message?",
+      "stem": "Listen to this report before making a decision. What is the message mainly meant to do?",
       "options": [
-        "sell cards for History Photo Hour",
-        "cancel History Photo Hour",
-        "describe last year's History Photo Hour",
+        "explain where History Photo Hour begins",
+        "remind students what to bring to History Photo Hour",
+        "tell students where to ask for help with History Photo Hour",
         "announce arrangements for History Photo Hour"
       ],
       "answerIndex": 3,
@@ -127,22 +115,22 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "sell cards for History Photo Hour：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "explain where History Photo Hour begins：此項把「announce arrangements for History Photo Hour」改成「explain where History Photo Hour begins」。整段資訊的目的為「announce arrangements for History Photo Hour」。因此，鎖定證據支持「announce arrangements for History Photo Hour」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "cancel History Photo Hour：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "remind students what to bring to History Photo Hour：此項把「announce arrangements for」改成「remind students what to bring to」。整段資訊的目的為「announce arrangements for History Photo Hour」。因此，鎖定證據支持「announce arrangements for History Photo Hour」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "describe last year's History Photo Hour：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "tell students where to ask for help with History Photo Hour：此項把「announce arrangements for」改成「tell students where to ask for help with」。整段資訊的目的為「announce arrangements for History Photo Hour」。因此，鎖定證據支持「announce arrangements for History Photo Hour」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "announce arrangements for History Photo Hour：整段資訊都用來 announce arrangements for History Photo Hour。"
+          "reason": "announce arrangements for History Photo Hour：完整逐字稿明確支持此項。整段資訊的目的為「announce arrangements for History Photo Hour」。"
         }
       ],
       "difficulty": "standard",
@@ -152,7 +140,7 @@
       ],
       "representationType": "listening-identify-spoken-message-purpose",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -200,13 +188,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「announce arrangements for History Photo Hour」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「announce arrangements for History Photo Hour」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「announce arrangements for History Photo Hour」成立。",
           "status": "pass"
         }
       ],
@@ -258,34 +246,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_210",
-      "stem": "In Listening Set 210, which detail is stated in the recording?",
+      "stem": "Listen to this report before making a decision. Which detail is stated in the message?",
       "options": [
-        "one forty",
-        "midnight",
-        "five twenty",
-        "ten o'clock"
+        "History Photo Hour begins at five twenty on Tuesday",
+        "History Photo Hour begins at five twenty in the science room",
+        "History Photo Hour begins at five twenty on next Friday",
+        "History Photo Hour begins at ten o'clock on next Friday"
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "one forty：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "History Photo Hour begins at five twenty on Tuesday：此項把「next Friday」改成「Tuesday」。音稿明確陳述「History Photo Hour begins at five twenty on next Friday」。因此，鎖定證據支持「History Photo Hour begins at five twenty on next Friday」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "midnight：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "History Photo Hour begins at five twenty in the science room：此項把「on next Friday」改成「in the science room」。音稿明確陳述「History Photo Hour begins at five twenty on next Friday」。因此，鎖定證據支持「History Photo Hour begins at five twenty on next Friday」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "five twenty：音稿明確說出 five twenty。"
+          "reason": "History Photo Hour begins at five twenty on next Friday：完整逐字稿明確支持此項。音稿明確陳述「History Photo Hour begins at five twenty on next Friday」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "ten o'clock：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "History Photo Hour begins at ten o'clock on next Friday：此項把「five twenty」改成「ten o'clock」。音稿明確陳述「History Photo Hour begins at five twenty on next Friday」。因此，鎖定證據支持「History Photo Hour begins at five twenty on next Friday」。"
         }
       ],
       "difficulty": "advanced",
@@ -295,7 +283,7 @@
       ],
       "representationType": "listening-retrieve-spoken-detail",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -343,13 +331,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「five twenty」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「History Photo Hour begins at five twenty on next Friday」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「History Photo Hour begins at five twenty on next Friday」成立。",
           "status": "pass"
         }
       ],
@@ -401,34 +389,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_210",
-      "stem": "In Listening Set 210, what should the listener do according to the recording?",
+      "stem": "Listen to this report before making a decision. Which action is planned or required in the full message?",
       "options": [
-        "enter History Photo Hour without a student card",
+        "arrive at History Photo Hour without a student card",
         "use the main door for History Photo Hour",
-        "use the closed side entrance for History Photo Hour",
-        "wait outside until night for History Photo Hour"
+        "use the side entrance for History Photo Hour",
+        "use the office door for History Photo Hour"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "enter History Photo Hour without a student card：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "arrive at History Photo Hour without a student card：此項把「use the main door for History Photo Hour」改成「arrive at History Photo Hour without a student card」。完整訊息指出計畫或要求的行動為「use the main door for History Photo Hour」。因此，鎖定證據支持「use the main door for History Photo Hour」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "use the main door for History Photo Hour：指示或結論要求聽者 use the main door for History Photo Hour。"
+          "reason": "use the main door for History Photo Hour：完整逐字稿明確支持此項。完整訊息指出計畫或要求的行動為「use the main door for History Photo Hour」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "use the closed side entrance for History Photo Hour：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "use the side entrance for History Photo Hour：此項把「main door」改成「side entrance」。完整訊息指出計畫或要求的行動為「use the main door for History Photo Hour」。因此，鎖定證據支持「use the main door for History Photo Hour」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "wait outside until night for History Photo Hour：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "use the office door for History Photo Hour：此項把「main」改成「office」。完整訊息指出計畫或要求的行動為「use the main door for History Photo Hour」。因此，鎖定證據支持「use the main door for History Photo Hour」。"
         }
       ],
       "difficulty": "transfer",
@@ -438,7 +426,7 @@
       ],
       "representationType": "listening-apply-announced-action-or-restriction",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -486,13 +474,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「use the main door for History Photo Hour」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「use the main door for History Photo Hour」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「use the main door for History Photo Hour」成立。",
           "status": "pass"
         }
       ],

@@ -42,11 +42,11 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_270",
-  "stem": "In Listening Set 270, what is the main purpose of this spoken message?",
+  "stem": "Listen to this report before making a decision. What is the message mainly meant to do?",
   "options": [
-    "sell the yellow key case online",
-    "plan another event with the yellow key case",
-    "teach map drawing from the yellow key case",
+    "describe every item inside the yellow key case",
+    "ask who came to History Photo Hour",
+    "announce where the yellow key case was bought",
     "help return a found yellow key case safely"
   ],
   "answerIndex": 3,
@@ -54,22 +54,22 @@
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "sell the yellow key case online：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "describe every item inside the yellow key case：此項把「help return a found yellow key case safely」改成「describe every item inside the yellow key case」。整段資訊的目的為「help return a found yellow key case safely」。因此，鎖定證據支持「help return a found yellow key case safely」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "plan another event with the yellow key case：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "ask who came to History Photo Hour：此項把「help return a found yellow key case safely」改成「ask who came to History Photo Hour」。整段資訊的目的為「help return a found yellow key case safely」。因此，鎖定證據支持「help return a found yellow key case safely」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "teach map drawing from the yellow key case：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "announce where the yellow key case was bought：此項把「help return a found yellow key case safely」改成「announce where the yellow key case was bought」。整段資訊的目的為「help return a found yellow key case safely」。因此，鎖定證據支持「help return a found yellow key case safely」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "help return a found yellow key case safely：整段資訊都用來 help return a found yellow key case safely。"
+      "reason": "help return a found yellow key case safely：完整逐字稿明確支持此項。整段資訊的目的為「help return a found yellow key case safely」。"
     }
   ],
   "difficulty": "standard",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-identify-spoken-message-purpose",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「help return a found yellow key case safely」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「help return a found yellow key case safely」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「help return a found yellow key case safely」成立。",
       "status": "pass"
     }
   ],

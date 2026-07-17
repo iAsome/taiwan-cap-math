@@ -83,60 +83,64 @@
       "translation": "標題;頭銜"
     },
     {
-      "word": "represents",
-      "translation": "代表"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "whole",
-      "translation": "完整的"
-    },
-    {
-      "word": "rather",
-      "translation": "寧可;頗為"
-    },
-    {
-      "word": "detail",
-      "translation": "細節, 詳情；詳述, 細說"
-    },
-    {
-      "word": "alert",
-      "translation": "警報"
-    },
-    {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "provides",
-      "translation": "供應"
-    },
-    {
-      "word": "quoted",
-      "translation": "引用, 引證, 提供, 提出, 報(價)"
-    },
-    {
-      "word": "evidence",
-      "translation": "證據"
-    },
-    {
-      "word": "selected",
-      "translation": "挑選"
-    },
-    {
-      "word": "closest",
-      "translation": "最接近的"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "concluding",
-      "translation": "結束, 終止, 決定, 作出結論；推斷, 斷定, 締結, 議定"
+      "word": "includes",
+      "translation": "包含"
+    },
+    {
+      "word": "alert",
+      "translation": "警報"
+    },
+    {
+      "word": "ancient",
+      "translation": "古代的"
+    },
+    {
+      "word": "dna",
+      "translation": "脫氧核糖核酸"
+    },
+    {
+      "word": "algorithm",
+      "translation": "演算法"
+    },
+    {
+      "word": "situation",
+      "translation": "情形, 境遇, (建築物等的)位置"
+    },
+    {
+      "word": "anonymity",
+      "translation": "匿名性"
+    },
+    {
+      "word": "courage",
+      "translation": "勇氣"
+    },
+    {
+      "word": "reduce",
+      "translation": "減少"
+    },
+    {
+      "word": "accountability",
+      "translation": "責任；問責"
+    },
+    {
+      "word": "prediction",
+      "translation": "預測"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "human",
+      "translation": "人類的;人"
     }
   ],
   "questions": [
@@ -157,44 +161,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_333",
-      "stem": "In Reading Set 333, which title represents the text as a whole rather than one small detail?",
+      "stem": "Which title is best for the complete passage that includes “A man's smart watch warned him that his heartbeat was unusual.”?",
       "options": [
         "The Smart Watch Alert",
-        "The Smart Classroom",
-        "The Smart Speaker Story",
-        "The First Snow"
+        "The Ancient DNA Lesson",
+        "The Little Map",
+        "The Broken Algorithm"
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Smart Watch Alert: A man's smart watch warned him that his heartbeat was unusual.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Smart Classroom」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Ancient DNA Lesson」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Smart Speaker Story」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Little Map」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The First Snow」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Broken Algorithm」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-3",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -215,13 +219,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Smart Watch Alert」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Smart Watch Alert: A man's smart watch warned him that his heartbeat was unusual.」，答案為「The Smart Watch Alert」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Smart Watch Alert」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -231,86 +235,84 @@
       "id": "ENG_R4_Q_READ_333_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S250"
+        "ENG_R4_S257"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-5",
-        "AUTH-ENGLISH-LC-D-4-2",
+        "AUTH-ENGLISH-LC-D-4-1",
+        "AUTH-ENGLISH-LC-D-4-3",
         "AUTH-ENGLISH-LP-1-4-7",
-        "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-8",
-        "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-5-4-7",
-        "AUTH-ENGLISH-LP-5-4-8",
-        "AUTH-ENGLISH-LP-5-4-9"
+        "AUTH-ENGLISH-LP-3-4-11",
+        "AUTH-ENGLISH-LP-3-4-12",
+        "AUTH-ENGLISH-LP-7-4-2",
+        "AUTH-ENGLISH-LP-9-4-1",
+        "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_333",
-      "stem": "In Reading Set 333, which paragraph provides the quoted evidence “A man's smart watch warned him that his heartbeat was unusual. He felt fine, but the warning repeated.”?",
+      "stem": "Which reason does the passage give for this situation: “The smart watch was useful”?",
       "options": [
-        "Paragraph 2",
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 1"
+        "Her grandmother made it",
+        "It had more choices",
+        "They remembered places well",
+        "The man responded wisely"
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 2 段沒有這一行。"
+          "reason": "本文沒有陳述「Her grandmother made it」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「It had more choices」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「They remembered places well」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 1 段開頭。"
+          "reason": "本文可直接核對「the man responded wisely」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "connect-stated-reason-to-situation"
       ],
-      "representationType": "reading-paragraph-locator-3",
+      "representationType": "reading-stated-reason",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-5",
-          "AUTH-ENGLISH-LC-D-4-2",
+          "AUTH-ENGLISH-LC-D-4-1",
+          "AUTH-ENGLISH-LC-D-4-3",
           "AUTH-ENGLISH-LP-1-4-7",
-          "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-8",
-          "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-5-4-7",
-          "AUTH-ENGLISH-LP-5-4-8",
-          "AUTH-ENGLISH-LP-5-4-9"
+          "AUTH-ENGLISH-LP-3-4-11",
+          "AUTH-ENGLISH-LP-3-4-12",
+          "AUTH-ENGLISH-LP-7-4-2",
+          "AUTH-ENGLISH-LP-9-4-1",
+          "AUTH-ENGLISH-LP-9-4-3"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：引文與第 1 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「the man responded wisely」，答案為「The man responded wisely」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The man responded wisely」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -320,86 +322,90 @@
       "id": "ENG_R4_Q_READ_333_03",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S254"
+        "ENG_R4_S273"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-5",
+        "AUTH-ENGLISH-LC-AE-4-6",
+        "AUTH-ENGLISH-LC-AE-4-8",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LP-1-4-7",
+        "AUTH-ENGLISH-LC-D-4-3",
+        "AUTH-ENGLISH-LP-3-4-10",
+        "AUTH-ENGLISH-LP-3-4-12",
+        "AUTH-ENGLISH-LP-3-4-13",
         "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-5-4-7",
-        "AUTH-ENGLISH-LP-5-4-8",
-        "AUTH-ENGLISH-LP-5-4-9"
+        "AUTH-ENGLISH-LP-9-4-2",
+        "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_333",
-      "stem": "In Reading Set 333, which selected line belongs closest to the beginning of the passage?",
+      "stem": "What happens next in this passage after “In health class, students discussed wearable devices.”?",
       "options": [
-        "In health class, students discussed wearable devices. They can help people notice health changes, but they can also",
-        "The teacher said devices provide information, not final answers. Doctors, symptoms, and tests still matter.",
-        "A man's smart watch warned him that his heartbeat was unusual. He felt fine, but the warning repeated.",
-        "He visited a doctor and learned that the watch had found a problem early. His family was grateful."
+        "Anonymity can give people courage, but it can also reduce accountability.",
+        "Prediction can help people notice problems early.",
+        "They can help people notice health changes, but they can also cause worry or give false alarms.",
+        "A map can help people understand the world, but it can also quietly teach them where they think the center is."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
+          "reason": "本文沒有陳述「Anonymity can give people courage, but it can also reduce accountability.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
+          "reason": "本文沒有陳述「Prediction can help people notice problems early.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最早段落。"
+          "reason": "本文可直接核對「In health class, students discussed wearable devices. They can help people notice health changes, but they can also cause worry or give…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
+          "reason": "本文沒有陳述「A map can help people understand the world, but it can also quietly teach them where they think…」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-earliest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-earliest-3",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-5",
+          "AUTH-ENGLISH-LC-AE-4-6",
+          "AUTH-ENGLISH-LC-AE-4-8",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LP-1-4-7",
+          "AUTH-ENGLISH-LC-D-4-3",
+          "AUTH-ENGLISH-LP-3-4-10",
+          "AUTH-ENGLISH-LP-3-4-12",
+          "AUTH-ENGLISH-LP-3-4-13",
           "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-5-4-7",
-          "AUTH-ENGLISH-LP-5-4-8",
-          "AUTH-ENGLISH-LP-5-4-9"
+          "AUTH-ENGLISH-LP-9-4-2",
+          "AUTH-ENGLISH-LP-9-4-3"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 1 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「In health class, students discussed wearable devices. They can help people notice health changes, but they can also cause worry or give false alarms.」，答案為「They can help people notice health changes, but they can also cause worry or give false alarms.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「They can help people notice health changes, but they can also cause worry or give false alarms.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -422,44 +428,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_333",
-      "stem": "In Reading Set 333, which line marks the beginning of the concluding paragraph?",
+      "stem": "Which ending result or final point follows “Doctors, symptoms, and tests still matter.”?",
       "options": [
-        "In health class, students discussed wearable devices. They can help people notice health changes, but they can also",
-        "The smart watch was useful because the man responded wisely. Technology can notice signals, but humans must decide",
-        "A man's smart watch warned him that his heartbeat was unusual. He felt fine, but the warning repeated.",
-        "He visited a doctor and learned that the watch had found a problem early. His family was grateful."
+        "But when dealing with humans, a prediction must leave space for story.",
+        "Technology can notice signals, but humans must decide what action to take.",
+        "The hospital learned that technology works best when it gives humans more time to be human.",
+        "Sometimes it takes visitors to make people notice what they already have."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「But when dealing with humans, a prediction must leave space for story.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「Doctors, symptoms, and tests still matter. Technology can notice signals, but humans must decide what action to take.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「The hospital learned that technology works best when it gives humans more time to be human.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Sometimes it takes visitors to make people notice what they already have.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-3",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -480,13 +486,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Doctors, symptoms, and tests still matter. Technology can notice signals, but humans must decide what action to take.」，答案為「Technology can notice signals, but humans must decide what action to take.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Technology can notice signals, but humans must decide what action to take.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -496,7 +502,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

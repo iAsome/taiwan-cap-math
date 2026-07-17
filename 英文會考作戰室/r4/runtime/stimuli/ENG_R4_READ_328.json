@@ -79,12 +79,8 @@
       "translation": "使用權；取得；接觸"
     },
     {
-      "word": "misleading",
-      "translation": "誤導性的"
-    },
-    {
-      "word": "label",
-      "translation": "標籤, 簽條, 商標, 標誌；貼標籤于, 指...為, 分類, 標注； 加上或修改磁盤的標籤"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
       "word": "complete",
@@ -95,52 +91,68 @@
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "tech",
-      "translation": "科技"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "ancient",
-      "translation": "古代的"
+      "word": "charging",
+      "translation": "索價;充電;費用;充電"
     },
     {
-      "word": "ink",
-      "translation": "墨水"
+      "word": "debate",
+      "translation": "辯論；討論"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "shadow",
+      "translation": "陰影, 影子, 影像, 預兆, 庇護, 隱蔽處, 陰暗, 少許；遮蔽, 使朦朧, 預示, 尾隨；漸變, 變陰暗"
     },
     {
-      "word": "provides",
-      "translation": "供應"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "quoted",
-      "translation": "引用, 引證, 提供, 提出, 報(價)"
+      "word": "design",
+      "translation": "設計;圖案;設計"
     },
     {
-      "word": "evidence",
-      "translation": "證據"
+      "word": "behavior",
+      "translation": "行為"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "balancing",
+      "translation": "平衡"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "affected",
+      "translation": "影響"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "limits",
+      "translation": "限制"
     },
     {
-      "word": "excerpt",
-      "translation": "摘錄"
+      "word": "manager",
+      "translation": "經理, 管理人員, 管理器"
     },
     {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
+      "word": "returns",
+      "translation": "回;還"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "trust",
+      "translation": "信任"
+    },
+    {
+      "word": "relationships",
+      "translation": "關係"
     }
   ],
   "questions": [
@@ -161,44 +173,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_328",
-      "stem": "In Reading Set 328, which heading would be the least misleading label for this complete passage?",
+      "stem": "Which title is best for the complete passage that includes “A new light rail line opened in the city.”?",
       "options": [
-        "The Old Playground",
+        "The Public Charging Debate",
         "The Light Rail Line",
-        "The Low-Tech Hospital",
-        "The Ancient Ink"
+        "The Smart Traffic Light",
+        "The Shadow Side of the Street"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Old Playground」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Public Charging Debate」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Light Rail Line: A new light rail line opened in the city.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Low-Tech Hospital」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Smart Traffic Light」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Ancient Ink」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Shadow Side of the Street」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-8",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -219,13 +231,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Light Rail Line」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Light Rail Line: A new light rail line opened in the city.」，答案為「The Light Rail Line」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Light Rail Line」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -235,7 +247,7 @@
       "id": "ENG_R4_Q_READ_328_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -249,44 +261,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_328",
-      "stem": "In Reading Set 328, which paragraph provides the quoted evidence “The student's report did not call the project simply good or bad.”?",
+      "stem": "Which answer is supported by the passage that includes “A new light rail line opened in the city.”?",
       "options": [
-        "Paragraph 4",
-        "Paragraph 1",
-        "Paragraph 2",
-        "Paragraph 3"
+        "The student's report did not call the project simply good or bad.",
+        "The project showed that good design listens to behavior.",
+        "But it taught students that city planning is often about balancing needs, not choosing between good and bad.",
+        "A good cover cannot make a bad book good, but a missing cover can hide a good book from busy eyes."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 4 段開頭。"
+          "reason": "本文可直接核對「The student's report did not call the project simply good or bad.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「The project showed that good design listens to behavior.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "第 2 段沒有這一行。"
+          "reason": "本文沒有陳述「But it taught students that city planning is often about balancing needs, not choosing between good and bad.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「A good cover cannot make a bad book good, but a missing cover can hide a good book…」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-3",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -308,13 +320,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：引文與第 4 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The student's report did not call the project simply good or bad.」，答案為「The student's report did not call the project simply good or bad.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The student's report did not call the project simply good or bad.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -340,44 +352,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_328",
-      "stem": "In Reading Set 328, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “Older residents liked easier travel to hospitals.”?",
       "options": [
-        "A new light rail line opened in the city. It connected neighborhoods that had long depended on buses",
-        "Some people praised it for reducing traffic. Others complained about construction delays and noise during building.",
-        "A student interviewed residents for a report. Older residents liked easier travel to hospitals. Shop owners near stations",
-        "The student's report did not call the project simply good or bad."
+        "The students also asked shop owners about business.",
+        "She also interviewed shop owners and families affected by water limits.",
+        "The shop manager explained that returns are not as simple as customers think.",
+        "Shop owners near stations saw more customers."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The students also asked shop owners about business.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「She also interviewed shop owners and families affected by water limits.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The shop manager explained that returns are not as simple as customers think.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「Older residents liked easier travel to hospitals. Shop owners near stations saw more customers.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-3",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -401,13 +413,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Older residents liked easier travel to hospitals. Shop owners near stations saw more customers.」，答案為「Shop owners near stations saw more customers.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Shop owners near stations saw more customers.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -430,44 +442,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_328",
-      "stem": "In Reading Set 328, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “A rail line is not only tracks and trains.”?",
       "options": [
-        "Some people praised it for reducing traffic. Others complained about construction delays and noise during building.",
-        "liked easier travel to hospitals. Shop owners near stations saw more customers. Drivers worried about losing road space.",
-        "is not only tracks and trains. It is time, business, access, and the shape of a city's future.",
-        "light rail line opened in the city. It connected neighborhoods that had long depended on buses and scooters."
+        "He said a business starts with money, but it grows with trust.",
+        "It was a place where time, work, and relationships met before breakfast.",
+        "It is time, business, access, and the shape of a city's future.",
+        "The broken lights were fixed before lunch, but the teacher decided to use less screen time in future classes."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「He said a business starts with money, but it grows with trust.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「It was a place where time, work, and relationships met before breakfast.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「A rail line is not only tracks and trains. It is time, business, access, and the shape of a city's future.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「The broken lights were fixed before lunch, but the teacher decided to use less screen time in future…」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -488,13 +500,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「A rail line is not only tracks and trains. It is time, business, access, and the shape of a city's future.」，答案為「It is time, business, access, and the shape of a city's future.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「It is time, business, access, and the shape of a city's future.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -504,7 +516,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

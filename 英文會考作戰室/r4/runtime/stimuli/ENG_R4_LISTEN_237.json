@@ -1,8 +1,8 @@
 {
   "id": "ENG_R4_LISTEN_237",
   "section": "discourse",
-  "transcript": "Route Seven passengers, please note a temporary change on Sunday. Buses will not stop at the health center because of road work. Use the stop beside the library instead. The first changed service leaves at two fifteen, and regular stops will return the following morning.",
-  "spokenText": "Route Seven passengers, please note a temporary change on Sunday. Buses will not stop at the health center because of road work. Use the stop beside the library instead. The first changed service leaves at two fifteen, and regular stops will return the following morning.",
+  "transcript": "The next recording explains one change. Route Seven passengers, please note a temporary change on Sunday. Buses will not stop at the health center because of road work. Use the stop beside the library instead. The first changed service leaves at two fifteen, and regular stops will return the following morning.",
+  "spokenText": "The next recording explains one change. Route Seven passengers, please note a temporary change on Sunday. Buses will not stop at the health center because of road work. Use the stop beside the library instead. The first changed service leaves at two fifteen, and regular stops will return the following morning.",
   "audioDescription": "An original public message or short explanation whose purpose is to announce a temporary Route Seven change at the health center.",
   "pauseMs": 3500,
   "voiceProfile": {
@@ -12,6 +12,10 @@
   "audioId": "ENG_R4_AUDIO_237",
   "audioPath": "runtime/audio/ENG_R4_AUDIO_237.wav",
   "glossary": [
+    {
+      "word": "recording",
+      "translation": "記錄;錄音;記錄;唱片"
+    },
     {
       "word": "route",
       "translation": "路線"
@@ -37,10 +41,6 @@
       "translation": "回;還"
     },
     {
-      "word": "purpose",
-      "translation": "目的"
-    },
-    {
       "word": "message",
       "translation": "消息;音信"
     },
@@ -49,8 +49,16 @@
       "translation": "宣佈, 通告"
     },
     {
-      "word": "repair",
-      "translation": "修理, 修補；修理, 修補, 補救, 糾正"
+      "word": "permanent",
+      "translation": "永久的"
+    },
+    {
+      "word": "schedule",
+      "translation": "時程"
+    },
+    {
+      "word": "compare",
+      "translation": "比較"
     },
     {
       "word": "detail",
@@ -61,12 +69,8 @@
       "translation": "陳述;狀態;州"
     },
     {
-      "word": "recording",
-      "translation": "記錄;錄音;記錄;唱片"
-    },
-    {
-      "word": "according",
-      "translation": "一致、符合"
+      "word": "required",
+      "translation": "必填"
     }
   ],
   "visualAssets": [],
@@ -115,34 +119,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_237",
-      "stem": "In Listening Set 237, what is the main purpose of this spoken message?",
+      "stem": "The next recording explains one change. What is the message mainly meant to do?",
       "options": [
         "announce a temporary Route Seven change at the health center",
-        "open a bus museum at the health center",
-        "invite health center passengers to repair roads",
-        "change the health center route for a year"
+        "announce a permanent Route Seven change",
+        "explain the road work schedule near the health center",
+        "compare two Route Seven ticket prices"
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "announce a temporary Route Seven change at the health center：整段資訊都用來 announce a temporary Route Seven change at the health center。"
+          "reason": "announce a temporary Route Seven change at the health center：完整逐字稿明確支持此項。整段資訊的目的為「announce a temporary Route Seven change at the health center」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "open a bus museum at the health center：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "announce a permanent Route Seven change：此項把「temporary Route Seven change at the health center」改成「permanent Route Seven change」。整段資訊的目的為「announce a temporary Route Seven change at the health center」。因此，鎖定證據支持「announce a temporary Route Seven change at the health center」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "invite health center passengers to repair roads：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "explain the road work schedule near the health center：此項把「announce a temporary Route Seven change at」改成「explain the road work schedule near」。整段資訊的目的為「announce a temporary Route Seven change at the health center」。因此，鎖定證據支持「announce a temporary Route Seven change at the health center」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "change the health center route for a year：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "compare two Route Seven ticket prices：此項把「announce a temporary Route Seven change at the health center」改成「compare two Route Seven ticket prices」。整段資訊的目的為「announce a temporary Route Seven change at the health center」。因此，鎖定證據支持「announce a temporary Route Seven change at the health center」。"
         }
       ],
       "difficulty": "foundation",
@@ -152,7 +156,7 @@
       ],
       "representationType": "listening-identify-spoken-message-purpose",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -200,13 +204,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「announce a temporary Route Seven change at the health center」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「announce a temporary Route Seven change at the health center」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「announce a temporary Route Seven change at the health center」成立。",
           "status": "pass"
         }
       ],
@@ -258,34 +262,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_237",
-      "stem": "In Listening Set 237, which detail is stated in the recording?",
+      "stem": "The next recording explains one change. Which detail is stated in the message?",
       "options": [
-        "health center",
-        "the river bridge",
-        "the airport",
-        "library"
+        "use the stop beside the health center on Sunday",
+        "use the stop beside the library on next Tuesday",
+        "use the stop beside the station on Sunday",
+        "use the stop beside the library on Sunday"
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "health center：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "use the stop beside the health center on Sunday：此項把「library」改成「health center」。音稿明確陳述「use the stop beside the library on Sunday」。因此，鎖定證據支持「use the stop beside the library on Sunday」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "the river bridge：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "use the stop beside the library on next Tuesday：此項把「Sunday」改成「next Tuesday」。音稿明確陳述「use the stop beside the library on Sunday」。因此，鎖定證據支持「use the stop beside the library on Sunday」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "the airport：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "use the stop beside the station on Sunday：此項把「library」改成「station」。音稿明確陳述「use the stop beside the library on Sunday」。因此，鎖定證據支持「use the stop beside the library on Sunday」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "library：音稿明確說出 library。"
+          "reason": "use the stop beside the library on Sunday：完整逐字稿明確支持此項。音稿明確陳述「use the stop beside the library on Sunday」。"
         }
       ],
       "difficulty": "standard",
@@ -295,7 +299,7 @@
       ],
       "representationType": "listening-retrieve-spoken-detail",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -343,13 +347,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「library」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「use the stop beside the library on Sunday」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「use the stop beside the library on Sunday」成立。",
           "status": "pass"
         }
       ],
@@ -401,34 +405,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_237",
-      "stem": "In Listening Set 237, what should the listener do according to the recording?",
+      "stem": "The next recording explains one change. Which action is planned or required in the full message?",
       "options": [
-        "walk from health center into the road work area",
-        "return to health center the following year",
+        "use the library stop the following morning",
+        "leave on Route Seven before two fifteen",
         "use the stop beside the library",
-        "wait at the closed health center stop"
+        "wait at the health center stop during the road work"
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "walk from health center into the road work area：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "use the library stop the following morning：此項把「stop beside the library」改成「library stop the following morning」。完整訊息指出計畫或要求的行動為「use the stop beside the library」。因此，鎖定證據支持「use the stop beside the library」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "return to health center the following year：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "leave on Route Seven before two fifteen：此項把「use the stop beside the library」改成「leave on Route Seven before two fifteen」。完整訊息指出計畫或要求的行動為「use the stop beside the library」。因此，鎖定證據支持「use the stop beside the library」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "use the stop beside the library：指示或結論要求聽者 use the stop beside the library。"
+          "reason": "use the stop beside the library：完整逐字稿明確支持此項。完整訊息指出計畫或要求的行動為「use the stop beside the library」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "wait at the closed health center stop：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "wait at the health center stop during the road work：此項把「use the stop beside the library」改成「wait at the health center stop during the road work」。完整訊息指出計畫或要求的行動為「use the stop beside the library」。因此，鎖定證據支持「use the stop beside the library」。"
         }
       ],
       "difficulty": "advanced",
@@ -438,7 +442,7 @@
       ],
       "representationType": "listening-apply-announced-action-or-restriction",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -486,13 +490,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「use the stop beside the library」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「use the stop beside the library」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「use the stop beside the library」成立。",
           "status": "pass"
         }
       ],

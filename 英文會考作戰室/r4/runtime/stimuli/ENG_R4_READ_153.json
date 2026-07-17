@@ -23,72 +23,60 @@
       "translation": "標題;頭銜"
     },
     {
-      "word": "represents",
-      "translation": "代表"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "whole",
-      "translation": "完整的"
-    },
-    {
-      "word": "rather",
-      "translation": "寧可;頗為"
-    },
-    {
-      "word": "detail",
-      "translation": "細節, 詳情；詳述, 細說"
-    },
-    {
-      "word": "translation",
-      "translation": "翻譯"
-    },
-    {
-      "word": "earbuds",
-      "translation": "耳塞"
-    },
-    {
-      "word": "source",
-      "translation": "來源；根源"
-    },
-    {
-      "word": "wheelchair",
-      "translation": "輪椅"
-    },
-    {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "provides",
-      "translation": "供應"
-    },
-    {
-      "word": "quoted",
-      "translation": "引用, 引證, 提供, 提出, 報(價)"
-    },
-    {
-      "word": "evidence",
-      "translation": "證據"
-    },
-    {
-      "word": "selected",
-      "translation": "挑選"
-    },
-    {
-      "word": "closest",
-      "translation": "最接近的"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "concluding",
-      "translation": "結束, 終止, 決定, 作出結論；推斷, 斷定, 締結, 議定"
+      "word": "includes",
+      "translation": "包含"
+    },
+    {
+      "word": "password",
+      "translation": "密碼, 口令"
+    },
+    {
+      "word": "empty",
+      "translation": "空的, 空洞的, 空虛的；使成為空的, 倒空；倒空；空的,空閑的；騰空, 騰出來"
+    },
+    {
+      "word": "situation",
+      "translation": "情形, 境遇, (建築物等的)位置"
+    },
+    {
+      "word": "instead",
+      "translation": "代替, 改為, 抵作, 更換"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "familiar",
+      "translation": "熟悉的"
+    },
+    {
+      "word": "information",
+      "translation": "資訊"
+    },
+    {
+      "word": "responsibly",
+      "translation": "負責任地"
+    },
+    {
+      "word": "communities",
+      "translation": "社區；共同體"
+    },
+    {
+      "word": "demand",
+      "translation": "需求"
     }
   ],
   "questions": [
@@ -109,44 +97,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_153",
-      "stem": "In Reading Set 153, which title represents the text as a whole rather than one small detail?",
+      "stem": "Which title is best for the complete passage that includes “For his sister's birthday, Paul bought a puzzle.”?",
       "options": [
         "The Wrong Gift",
-        "The Old Desk",
-        "The Translation Earbuds",
-        "The Open-Source Wheelchair"
+        "Pocket Money Week",
+        "Grandpa's Password",
+        "The Empty Seat"
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Wrong Gift: For his sister's birthday, Paul bought a puzzle.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Old Desk」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「Pocket Money Week」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Translation Earbuds」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「Grandpa's Password」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Open-Source Wheelchair」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Empty Seat」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-3",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -167,13 +155,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Wrong Gift」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Wrong Gift: For his sister's birthday, Paul bought a puzzle.」，答案為「The Wrong Gift」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Wrong Gift」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -183,86 +171,84 @@
       "id": "ENG_R4_Q_READ_153_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S250"
+        "ENG_R4_S257"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-5",
-        "AUTH-ENGLISH-LC-D-4-2",
+        "AUTH-ENGLISH-LC-D-4-1",
+        "AUTH-ENGLISH-LC-D-4-3",
         "AUTH-ENGLISH-LP-1-4-7",
-        "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-8",
-        "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-5-4-7",
-        "AUTH-ENGLISH-LP-5-4-8",
-        "AUTH-ENGLISH-LP-5-4-9"
+        "AUTH-ENGLISH-LP-3-4-11",
+        "AUTH-ENGLISH-LP-3-4-12",
+        "AUTH-ENGLISH-LP-7-4-2",
+        "AUTH-ENGLISH-LP-9-4-1",
+        "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_153",
-      "stem": "In Reading Set 153, which paragraph provides the quoted evidence “For his sister's birthday, Paul bought a puzzle. He thought she liked puzzles because she had many in”?",
+      "stem": "Which reason does the passage give for this situation: “He thought she liked puzzles”?",
       "options": [
-        "Paragraph 2",
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 1"
+        "She saw many walkers every morning",
+        "The room was dark and everyone was new",
+        "There were too many",
+        "She had many in her room"
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 2 段沒有這一行。"
+          "reason": "本文沒有陳述「She saw many walkers every morning」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「The room was dark and everyone was new」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「There were too many」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 1 段開頭。"
+          "reason": "本文可直接核對「she had many in her room」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "connect-stated-reason-to-situation"
       ],
-      "representationType": "reading-paragraph-locator-3",
+      "representationType": "reading-stated-reason",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-5",
-          "AUTH-ENGLISH-LC-D-4-2",
+          "AUTH-ENGLISH-LC-D-4-1",
+          "AUTH-ENGLISH-LC-D-4-3",
           "AUTH-ENGLISH-LP-1-4-7",
-          "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-8",
-          "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-5-4-7",
-          "AUTH-ENGLISH-LP-5-4-8",
-          "AUTH-ENGLISH-LP-5-4-9"
+          "AUTH-ENGLISH-LP-3-4-11",
+          "AUTH-ENGLISH-LP-3-4-12",
+          "AUTH-ENGLISH-LP-7-4-2",
+          "AUTH-ENGLISH-LP-9-4-1",
+          "AUTH-ENGLISH-LP-9-4-3"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：引文與第 1 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「she had many in her room」，答案為「She had many in her room」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「She had many in her room」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -272,86 +258,90 @@
       "id": "ENG_R4_Q_READ_153_03",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S254"
+        "ENG_R4_S273"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-5",
+        "AUTH-ENGLISH-LC-AE-4-6",
+        "AUTH-ENGLISH-LC-AE-4-8",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LP-1-4-7",
+        "AUTH-ENGLISH-LC-D-4-3",
+        "AUTH-ENGLISH-LP-3-4-10",
+        "AUTH-ENGLISH-LP-3-4-12",
+        "AUTH-ENGLISH-LP-3-4-13",
         "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-5-4-7",
-        "AUTH-ENGLISH-LP-5-4-8",
-        "AUTH-ENGLISH-LP-5-4-9"
+        "AUTH-ENGLISH-LP-9-4-2",
+        "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_153",
-      "stem": "In Reading Set 153, which selected line belongs closest to the beginning of the passage?",
+      "stem": "What happens next in this passage after “His sister had only been keeping them for a week.”?",
       "options": [
-        "Paul felt bad. His sister said, \"It is okay. You tried.\"",
-        "The next day, Paul asked her what she really liked. She said she wanted colored pens. Paul saved",
-        "For his sister's birthday, Paul bought a puzzle. He thought she liked puzzles because she had many in",
-        "When she opened the gift, she smiled politely but did not look excited. Later, Paul learned that the"
+        "\"My grandmother sings this,\" she said.",
+        "It said Friday instead of Thursday.",
+        "His sister said, \"It is okay.",
+        "One student said his little sister learned to tie her shoes."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
+          "reason": "本文沒有陳述「'My grandmother sings this,' she said.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
+          "reason": "本文沒有陳述「It said Friday instead of Thursday.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最早段落。"
+          "reason": "本文可直接核對「His sister had only been keeping them for a week. His sister said, 'It is okay.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
+          "reason": "本文沒有陳述「One student said his little sister learned to tie her shoes.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-earliest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-earliest-3",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-5",
+          "AUTH-ENGLISH-LC-AE-4-6",
+          "AUTH-ENGLISH-LC-AE-4-8",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LP-1-4-7",
+          "AUTH-ENGLISH-LC-D-4-3",
+          "AUTH-ENGLISH-LP-3-4-10",
+          "AUTH-ENGLISH-LP-3-4-12",
+          "AUTH-ENGLISH-LP-3-4-13",
           "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-5-4-7",
-          "AUTH-ENGLISH-LP-5-4-8",
-          "AUTH-ENGLISH-LP-5-4-9"
+          "AUTH-ENGLISH-LP-9-4-2",
+          "AUTH-ENGLISH-LP-9-4-3"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 1 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「His sister had only been keeping them for a week. His sister said, 'It is okay.」，答案為「His sister said, 'It is okay.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「His sister said, 'It is okay.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -374,44 +364,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_153",
-      "stem": "In Reading Set 153, which line marks the beginning of the concluding paragraph?",
+      "stem": "Which ending result or final point follows “He learned that choosing a gift is not just guessing from what you see.”?",
       "options": [
-        "Paul felt bad. His sister said, \"It is okay. You tried.\"",
-        "He learned that choosing a gift is not just guessing from what you see. It is paying attention,",
-        "For his sister's birthday, Paul bought a puzzle. He thought she liked puzzles because she had many in",
-        "When she opened the gift, she smiled politely but did not look excited. Later, Paul learned that the"
+        "At night, even familiar things can make people ask new questions.",
+        "It is paying attention, asking questions, and knowing the person better.",
+        "Information shared responsibly can help communities ask better questions and demand better answers.",
+        "A quiet room becomes better when everyone takes care of it."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「At night, even familiar things can make people ask new questions.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「He learned that choosing a gift is not just guessing from what you see. It is paying attention, asking questions, and knowing…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Information shared responsibly can help communities ask better questions and demand better answers.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「A quiet room becomes better when everyone takes care of it.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-3",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -432,13 +422,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「He learned that choosing a gift is not just guessing from what you see. It is paying attention, asking questions, and knowing the person…」，答案為「It is paying attention, asking questions, and knowing the person better.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「It is paying attention, asking questions, and knowing the person better.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -448,7 +438,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

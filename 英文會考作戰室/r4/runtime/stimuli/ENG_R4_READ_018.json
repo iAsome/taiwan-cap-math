@@ -35,12 +35,8 @@
       "translation": "條件, 情形, 環境, 社會地位"
     },
     {
-      "word": "misleading",
-      "translation": "誤導性的"
-    },
-    {
-      "word": "label",
-      "translation": "標籤, 簽條, 商標, 標誌；貼標籤于, 指...為, 分類, 標注； 加上或修改磁盤的標籤"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
       "word": "complete",
@@ -51,44 +47,76 @@
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "watermark",
-      "translation": "水印"
+      "word": "includes",
+      "translation": "包含"
+    },
+    {
+      "word": "roof",
+      "translation": "屋頂"
     },
     {
       "word": "shadow",
       "translation": "陰影, 影子, 影像, 預兆, 庇護, 隱蔽處, 陰暗, 少許；遮蔽, 使朦朧, 預示, 尾隨；漸變, 變陰暗"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "rail",
+      "translation": "鐵路"
     },
     {
-      "word": "provides",
-      "translation": "供應"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "quoted",
-      "translation": "引用, 引證, 提供, 提出, 報(價)"
+      "word": "paths",
+      "translation": "小徑;路線"
     },
     {
-      "word": "evidence",
-      "translation": "證據"
+      "word": "section",
+      "translation": "部分"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "permission",
+      "translation": "許可"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "result",
+      "translation": "結果"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "final",
+      "translation": "最終的"
     },
     {
-      "word": "concluding",
-      "translation": "結束, 終止, 決定, 作出結論；推斷, 斷定, 締結, 議定"
+      "word": "objects",
+      "translation": "反對;物件"
+    },
+    {
+      "word": "invisible",
+      "translation": "看不見的"
+    },
+    {
+      "word": "protect",
+      "translation": "保護"
+    },
+    {
+      "word": "regular",
+      "translation": "通常的"
+    },
+    {
+      "word": "visible",
+      "translation": "可見的"
+    },
+    {
+      "word": "responsible",
+      "translation": "負責任的"
+    },
+    {
+      "word": "perfect",
+      "translation": "完美的"
+    },
+    {
+      "word": "truly",
+      "translation": "確實"
     }
   ],
   "questions": [
@@ -109,11 +137,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_018",
-      "stem": "In Reading Set 018, which heading would be the least misleading label for this complete passage?",
+      "stem": "Which title is best for the complete passage that includes “On hot summer days, people in Maple City usually walk on the east side of Green Road.”?",
       "options": [
-        "The Music Box",
-        "The Three Questions",
-        "The Watermark",
+        "The Green Roof",
+        "The School Shadow",
+        "The Light Rail Line",
         "The Shadow Side of the Street"
       ],
       "answerIndex": 3,
@@ -121,32 +149,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Music Box」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Green Roof」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Three Questions」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The School Shadow」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Watermark」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Light Rail Line」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Shadow Side of the Street: On hot summer days, people in Maple City usually walk on the east side of Green…」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-8",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -167,13 +195,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Shadow Side of the Street」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Shadow Side of the Street: On hot summer days, people in Maple City usually walk on the east side of Green Road.」，答案為「The Shadow Side of the Street」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Shadow Side of the Street」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -183,7 +211,7 @@
       "id": "ENG_R4_Q_READ_018_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -197,44 +225,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_018",
-      "stem": "In Reading Set 018, which paragraph provides the quoted evidence “A student group studied the street for a science project. They measured the temperature on both sides at”?",
+      "stem": "Which answer is supported by the passage that includes “On hot summer days, people in Maple City usually walk on the east side of Green Road.”?",
       "options": [
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 2",
-        "Paragraph 1"
+        "After the poster was placed near the office, students began turning off lights more often.",
+        "Visitors can go there after reading, but they must stay on the paths.",
+        "After reading the report, the city office decided to plant more trees on the west side of the road.",
+        "The class planted small trees along a section of the river with permission from the city."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「After the poster was placed near the office, students began turning off lights more often.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「Visitors can go there after reading, but they must stay on the paths.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 2 段開頭。"
+          "reason": "本文可直接核對「After reading the report, the city office decided to plant more trees on the west side of the road.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「The class planted small trees along a section of the river with permission from the city.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-3",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -256,13 +284,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：引文與第 2 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「After reading the report, the city office decided to plant more trees on the west side of the road.」，答案為「After reading the report, the city office decided to plant more trees on the west side of the…」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「After reading the report, the city office decided to plant more trees on the west side of the…」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -288,44 +316,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_018",
-      "stem": "In Reading Set 018, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “The students also asked shop owners about business.”?",
       "options": [
-        "The students also asked shop owners about business. A drink shop on the tree side had more customers",
-        "After reading the report, the city office decided to plant more trees on the west side of the",
-        "On hot summer days, people in Maple City usually walk on the east side of Green Road. The",
-        "A student group studied the street for a science project. They measured the temperature on both sides at"
+        "One rainy afternoon, a student named Alice left her science project on the bus.",
+        "A drink shop on the tree side had more customers in the afternoon.",
+        "Shop owners near stations saw more customers.",
+        "A new bench was placed under the old tree in the park."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「One rainy afternoon, a student named Alice left her science project on the bus.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「The students also asked shop owners about business. A drink shop on the tree side had more customers in the afternoon.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Shop owners near stations saw more customers.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「A new bench was placed under the old tree in the park.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-3",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -349,13 +377,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The students also asked shop owners about business. A drink shop on the tree side had more customers in the afternoon.」，答案為「A drink shop on the tree side had more customers in the afternoon.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「A drink shop on the tree side had more customers in the afternoon.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -365,7 +393,7 @@
       "id": "ENG_R4_Q_READ_018_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -378,44 +406,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_018",
-      "stem": "In Reading Set 018, which line marks the beginning of the concluding paragraph?",
+      "stem": "Which ending result or final point follows “They learned that trees are not just beautiful.”?",
       "options": [
-        "They learned that trees are not just beautiful. In a city, a tree can be an umbrella, an",
-        "On hot summer days, people in Maple City usually walk on the east side of Green Road. The",
-        "A student group studied the street for a science project. They measured the temperature on both sides at",
-        "The students also asked shop owners about business. A drink shop on the tree side had more customers"
+        "In a city, a tree can be an umbrella, an air conditioner, and a quiet helper.",
+        "Some small objects help people rest because they hold a quiet world that does not hurry.",
+        "Clean air may be invisible, but the work to protect it must be regular and visible.",
+        "A responsible city must sometimes look less perfect in order to protect what people truly need."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「They learned that trees are not just beautiful. In a city, a tree can be an umbrella, an air conditioner, and a…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Some small objects help people rest because they hold a quiet world that does not hurry.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Clean air may be invisible, but the work to protect it must be regular and visible.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「A responsible city must sometimes look less perfect in order to protect what people truly need.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-3",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -436,13 +464,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「They learned that trees are not just beautiful. In a city, a tree can be an umbrella, an air conditioner, and a quiet helper.」，答案為「In a city, a tree can be an umbrella, an air conditioner, and a quiet helper.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「In a city, a tree can be an umbrella, an air conditioner, and a quiet helper.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -452,7 +480,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

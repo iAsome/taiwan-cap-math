@@ -75,64 +75,92 @@
       "translation": "旅行, 旅程；旅行"
     },
     {
-      "word": "predict",
-      "translation": "預測"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "central",
-      "translation": "中央的"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
-      "word": "content",
-      "translation": "內容"
+      "word": "passage",
+      "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "accurately",
-      "translation": "正確的, 精確的"
+      "word": "includes",
+      "translation": "包含"
     },
     {
       "word": "ancient",
       "translation": "古代的"
     },
     {
-      "word": "wetland",
-      "translation": "濕地"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "instrument",
-      "translation": "儀器；樂器"
+      "word": "ink",
+      "translation": "墨水"
     },
     {
-      "word": "separate",
-      "translation": "分開"
+      "word": "smooth",
+      "translation": "平滑的, 平坦的, 平穩的, 無毛的；使光滑, 燙平, 使優雅；變平滑, 變平靜；一塊平地, 平滑部份"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "alone",
+      "translation": "單獨的;孤單的"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "guide",
+      "translation": "引導;嚮導"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "restorers",
+      "translation": "修復"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "crack",
+      "translation": "裂紋"
     },
     {
-      "word": "excerpt",
-      "translation": "摘錄"
+      "word": "imagine",
+      "translation": "想像"
     },
     {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
+      "word": "solve",
+      "translation": "解決"
     },
     {
-      "word": "passage",
-      "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
+      "word": "immediately",
+      "translation": "直接的, 緊接的, 緊靠的, 立即的, 知覺的"
+    },
+    {
+      "word": "tank",
+      "translation": "槽;坦克"
+    },
+    {
+      "word": "connected",
+      "translation": "連接, 聯合, 關連"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "discipline",
+      "translation": "紀律；自律"
+    },
+    {
+      "word": "memory",
+      "translation": "記憶"
+    },
+    {
+      "word": "conditions",
+      "translation": "條件, 情形, 環境, 社會地位"
     }
   ],
   "questions": [
@@ -153,44 +181,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_224",
-      "stem": "In Reading Set 224, which heading would help a reader predict the central content most accurately?",
+      "stem": "Which title is best for the complete passage that includes “A family found a damaged photo of their great-grandparents.”?",
       "options": [
-        "The Ancient Wall Writing",
+        "The Restored Song",
         "The Restored Photo",
-        "The Restored Wetland",
-        "The Ancient Music Instrument"
+        "The Ancient Pot Repair",
+        "The Clock Shop"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Ancient Wall Writing」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Restored Song」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Restored Photo: A family found a damaged photo of their great-grandparents.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Restored Wetland」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Ancient Pot Repair」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Ancient Music Instrument」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Clock Shop」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-4",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -211,13 +239,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Restored Photo」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Restored Photo: A family found a damaged photo of their great-grandparents.」，答案為「The Restored Photo」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Restored Photo」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -227,90 +255,86 @@
       "id": "ENG_R4_Q_READ_224_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-6",
-        "AUTH-ENGLISH-LC-AE-4-8",
+        "AUTH-ENGLISH-LC-AE-4-5",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LC-D-4-3",
-        "AUTH-ENGLISH-LP-3-4-10",
-        "AUTH-ENGLISH-LP-3-4-12",
-        "AUTH-ENGLISH-LP-3-4-13",
+        "AUTH-ENGLISH-LP-1-4-7",
         "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-9-4-2",
-        "AUTH-ENGLISH-LP-9-4-3"
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_224",
-      "stem": "In Reading Set 224, how many separate paragraph blocks follow from the opening “A family found a damaged photo of their great-grandparents. The faces were scratched, and one corner was missing.”?",
+      "stem": "Which answer is supported by the passage that includes “A family found a damaged photo of their great-grandparents.”?",
       "options": [
-        "5",
-        "4",
-        "6",
-        "7"
+        "Digital repair can bring the past closer, but marks and scratches also carry history.",
+        "It had scratches, ink marks, and a corner that was not smooth.",
+        "The smells made the past feel closer than pictures alone.",
+        "The guide said restorers did not hide every crack because the repair itself was part of the object's history."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "文章以換行鎖定為 5 個段落。"
+          "reason": "本文可直接核對「Digital repair can bring the past closer, but marks and scratches also carry history.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「It had scratches, ink marks, and a corner that was not smooth.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "6 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「The smells made the past feel closer than pictures alone.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「The guide said restorers did not hide every crack because the repair itself was part of the object's…」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-structure-count-4",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-6",
-          "AUTH-ENGLISH-LC-AE-4-8",
+          "AUTH-ENGLISH-LC-AE-4-5",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LC-D-4-3",
-          "AUTH-ENGLISH-LP-3-4-10",
-          "AUTH-ENGLISH-LP-3-4-12",
-          "AUTH-ENGLISH-LP-3-4-13",
+          "AUTH-ENGLISH-LP-1-4-7",
           "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-9-4-2",
-          "AUTH-ENGLISH-LP-9-4-3"
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Digital repair can bring the past closer, but marks and scratches also carry history.」，答案為「Digital repair can bring the past closer, but marks and scratches also carry history.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Digital repair can bring the past closer, but marks and scratches also carry history.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -336,44 +360,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_224",
-      "stem": "In Reading Set 224, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “The youngest child asked why they needed both.”?",
       "options": [
-        "A family found a damaged photo of their great-grandparents. The faces were scratched, and one corner was missing.",
-        "A photo shop used digital tools to restore it. The new version looked clear, but the family kept",
-        "The youngest child asked why they needed both. Her mother said the restored photo helped them see the",
-        "Both versions told the truth in different ways."
+        "A student said the machine oil helped him imagine factory workers better than the photo did.",
+        "Their report did not solve the heat problem immediately, but it helped people see it clearly.",
+        "The guide pointed to the tank and said many lives are connected in ways people do not see.",
+        "Her mother said the restored photo helped them see the people better."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「A student said the machine oil helped him imagine factory workers better than the photo did.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Their report did not solve the heat problem immediately, but it helped people see it clearly.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The guide pointed to the tank and said many lives are connected in ways people do not see.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「The youngest child asked why they needed both. Her mother said the restored photo helped them see the people better.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-4",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -397,13 +421,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The youngest child asked why they needed both. Her mother said the restored photo helped them see the people better.」，答案為「Her mother said the restored photo helped them see the people better.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Her mother said the restored photo helped them see the people better.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -426,44 +450,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_224",
-      "stem": "In Reading Set 224, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “Not every imperfection should be erased completely.”?",
       "options": [
-        "digital tools to restore it. The new version looked clear, but the family kept the damaged original too.",
-        "Her mother said the restored photo helped them see the people better. The damaged photo showed time itself.",
-        "also carry history. Not every imperfection should be erased completely. Sometimes damage is part of the object's journey.",
-        "A family found a damaged photo of their great-grandparents. The faces were scratched, and one corner was missing."
+        "Sometimes discipline becomes a lesson for people watching.",
+        "Sometimes the nose opens memory faster than words.",
+        "Sometimes damage is part of the object's journey.",
+        "Sometimes it is only waiting for better conditions."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Sometimes discipline becomes a lesson for people watching.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Sometimes the nose opens memory faster than words.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「Not every imperfection should be erased completely. Sometimes damage is part of the object's journey.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Sometimes it is only waiting for better conditions.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -484,13 +508,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Not every imperfection should be erased completely. Sometimes damage is part of the object's journey.」，答案為「Sometimes damage is part of the object's journey.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Sometimes damage is part of the object's journey.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -500,7 +524,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

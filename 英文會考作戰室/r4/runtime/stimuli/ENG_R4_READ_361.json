@@ -71,56 +71,68 @@
       "translation": "標題;頭銜"
     },
     {
-      "word": "whole",
-      "translation": "完整的"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "adding",
-      "translation": "添加"
-    },
-    {
-      "word": "unsupported",
-      "translation": "不支持的"
-    },
-    {
-      "word": "lighthouse",
-      "translation": "燈塔"
-    },
-    {
-      "word": "recycled",
-      "translation": "回收"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "contains",
+      "word": "includes",
       "translation": "包含"
     },
     {
-      "word": "exact",
-      "translation": "準確的"
+      "word": "quality",
+      "translation": "品質"
     },
     {
-      "word": "quoted",
-      "translation": "引用, 引證, 提供, 提出, 報(價)"
+      "word": "flag",
+      "translation": "旗子"
     },
     {
-      "word": "earliest",
-      "translation": "最早的"
+      "word": "situation",
+      "translation": "情形, 境遇, (建築物等的)位置"
+    },
+    {
+      "word": "systems",
+      "translation": "系統, 體系, 制度, 體制, 秩序, 規律, 方法"
+    },
+    {
+      "word": "vehicles",
+      "translation": "車輛"
+    },
+    {
+      "word": "sank",
+      "translation": "沉沒"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
     },
     {
       "word": "final",
       "translation": "最終的"
+    },
+    {
+      "word": "protect",
+      "translation": "保護"
+    },
+    {
+      "word": "forcing",
+      "translation": "強迫"
+    },
+    {
+      "word": "freedom",
+      "translation": "自由"
+    },
+    {
+      "word": "considers",
+      "translation": "考慮"
+    },
+    {
+      "word": "valuable",
+      "translation": "貴重的, 有價值的, 頗有價值的"
     }
   ],
   "questions": [
@@ -141,11 +153,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_361",
-      "stem": "In Reading Set 361, which title best covers the whole text without adding an unsupported idea?",
+      "stem": "Which title is best for the complete passage that includes “A school placed battery recycling boxes near the office.”?",
       "options": [
         "The Battery Recycling Box",
-        "The Old Lighthouse",
-        "The Recycled Road",
+        "The Air Quality Flag",
+        "The Space Garden",
         "The New Crossing"
       ],
       "answerIndex": 0,
@@ -153,32 +165,32 @@
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Battery Recycling Box: A school placed battery recycling boxes near the office.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Old Lighthouse」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Air Quality Flag」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Recycled Road」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Space Garden」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The New Crossing」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The New Crossing」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-1",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -199,13 +211,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Battery Recycling Box」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Battery Recycling Box: A school placed battery recycling boxes near the office.」，答案為「The Battery Recycling Box」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Battery Recycling Box」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -215,86 +227,84 @@
       "id": "ENG_R4_Q_READ_361_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S250"
+        "ENG_R4_S257"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-5",
-        "AUTH-ENGLISH-LC-D-4-2",
+        "AUTH-ENGLISH-LC-D-4-1",
+        "AUTH-ENGLISH-LC-D-4-3",
         "AUTH-ENGLISH-LP-1-4-7",
-        "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-8",
-        "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-5-4-7",
-        "AUTH-ENGLISH-LP-5-4-8",
-        "AUTH-ENGLISH-LP-5-4-9"
+        "AUTH-ENGLISH-LP-3-4-11",
+        "AUTH-ENGLISH-LP-3-4-12",
+        "AUTH-ENGLISH-LP-7-4-2",
+        "AUTH-ENGLISH-LP-9-4-1",
+        "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_361",
-      "stem": "In Reading Set 361, while checking the passage, which paragraph contains the exact line “A school placed battery recycling boxes near the office. The science teacher explained that batteries should not be”?",
+      "stem": "Which reason does the passage give for this situation: “The science teacher explained that batteries should not be thrown into normal trash”?",
       "options": [
-        "Paragraph 2",
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 1"
+        "It was too close to the teacher's desk",
+        "The room was dark and everyone was new",
+        "He waited for the ruler to come back",
+        "They can contain materials harmful to the environment"
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 2 段沒有這一行。"
+          "reason": "本文沒有陳述「It was too close to the teacher's desk」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「The room was dark and everyone was new」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「He waited for the ruler to come back」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 1 段開頭。"
+          "reason": "本文可直接核對「they can contain materials harmful to the environment」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "connect-stated-reason-to-situation"
       ],
-      "representationType": "reading-paragraph-locator-1",
+      "representationType": "reading-stated-reason",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-5",
-          "AUTH-ENGLISH-LC-D-4-2",
+          "AUTH-ENGLISH-LC-D-4-1",
+          "AUTH-ENGLISH-LC-D-4-3",
           "AUTH-ENGLISH-LP-1-4-7",
-          "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-8",
-          "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-5-4-7",
-          "AUTH-ENGLISH-LP-5-4-8",
-          "AUTH-ENGLISH-LP-5-4-9"
+          "AUTH-ENGLISH-LP-3-4-11",
+          "AUTH-ENGLISH-LP-3-4-12",
+          "AUTH-ENGLISH-LP-7-4-2",
+          "AUTH-ENGLISH-LP-9-4-1",
+          "AUTH-ENGLISH-LP-9-4-3"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：引文與第 1 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「they can contain materials harmful to the environment」，答案為「They can contain materials harmful to the environment」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「They can contain materials harmful to the environment」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -304,86 +314,90 @@
       "id": "ENG_R4_Q_READ_361_03",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S254"
+        "ENG_R4_S273"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-5",
+        "AUTH-ENGLISH-LC-AE-4-6",
+        "AUTH-ENGLISH-LC-AE-4-8",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LP-1-4-7",
+        "AUTH-ENGLISH-LC-D-4-3",
+        "AUTH-ENGLISH-LP-3-4-10",
+        "AUTH-ENGLISH-LP-3-4-12",
+        "AUTH-ENGLISH-LP-3-4-13",
         "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-5-4-7",
-        "AUTH-ENGLISH-LP-5-4-8",
-        "AUTH-ENGLISH-LP-5-4-9"
+        "AUTH-ENGLISH-LP-9-4-2",
+        "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_361",
-      "stem": "In Reading Set 361, which quoted line appears earliest in the passage?",
+      "stem": "What happens next in this passage after “Then the eco-club made a display showing how many batteries had been collected each week.”?",
       "options": [
+        "On sunny days, the number was high.",
+        "Smart systems should not only move vehicles quickly.",
         "The number grew quickly.",
-        "Students brought batteries from remote controls, toys, and clocks at home. Some parents thanked the school because they",
-        "A school placed battery recycling boxes near the office. The science teacher explained that batteries should not be",
-        "At first, students forgot. Then the eco-club made a display showing how many batteries had been collected each"
+        "Most boats sank quickly."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
+          "reason": "本文沒有陳述「On sunny days, the number was high.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
+          "reason": "本文沒有陳述「Smart systems should not only move vehicles quickly.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最早段落。"
+          "reason": "本文可直接核對「Then the eco-club made a display showing how many batteries had been collected each week. The number grew quickly.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
+          "reason": "本文沒有陳述「Most boats sank quickly.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-earliest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-earliest-1",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-5",
+          "AUTH-ENGLISH-LC-AE-4-6",
+          "AUTH-ENGLISH-LC-AE-4-8",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LP-1-4-7",
+          "AUTH-ENGLISH-LC-D-4-3",
+          "AUTH-ENGLISH-LP-3-4-10",
+          "AUTH-ENGLISH-LP-3-4-12",
+          "AUTH-ENGLISH-LP-3-4-13",
           "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-5-4-7",
-          "AUTH-ENGLISH-LP-5-4-8",
-          "AUTH-ENGLISH-LP-5-4-9"
+          "AUTH-ENGLISH-LP-9-4-2",
+          "AUTH-ENGLISH-LP-9-4-3"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 1 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Then the eco-club made a display showing how many batteries had been collected each week. The number grew quickly.」，答案為「The number grew quickly.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The number grew quickly.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -406,44 +420,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_361",
-      "stem": "In Reading Set 361, which quoted line opens the final paragraph?",
+      "stem": "Which ending result or final point follows “The box was small, but it connected home habits with environmental care.”?",
       "options": [
-        "The number grew quickly.",
+        "Working with nature can sometimes protect people better than forcing nature into straight lines.",
         "Recycling works better when people know exactly where to put things and why it matters.",
-        "A school placed battery recycling boxes near the office. The science teacher explained that batteries should not be",
-        "At first, students forgot. Then the eco-club made a display showing how many batteries had been collected each"
+        "Freedom works better when it considers the people who must share the room.",
+        "Things often feel more valuable when people understand what it costs to fix them."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Working with nature can sometimes protect people better than forcing nature into straight lines.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行是第 6 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「The box was small, but it connected home habits with environmental care. Recycling works better when people know exactly where to put…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Freedom works better when it considers the people who must share the room.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Things often feel more valuable when people understand what it costs to fix them.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-1",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -464,13 +478,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：文章共有 6 段，正確引文與第 6 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The box was small, but it connected home habits with environmental care. Recycling works better when people know exactly where to put things and…」，答案為「Recycling works better when people know exactly where to put things and why it matters.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Recycling works better when people know exactly where to put things and why it matters.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -480,7 +494,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

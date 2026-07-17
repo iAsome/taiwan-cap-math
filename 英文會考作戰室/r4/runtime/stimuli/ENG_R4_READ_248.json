@@ -55,12 +55,8 @@
       "translation": "娛樂"
     },
     {
-      "word": "misleading",
-      "translation": "誤導性的"
-    },
-    {
-      "word": "label",
-      "translation": "標籤, 簽條, 商標, 標誌；貼標籤于, 指...為, 分類, 標注； 加上或修改磁盤的標籤"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
       "word": "complete",
@@ -71,44 +67,92 @@
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
+      "word": "includes",
+      "translation": "包含"
+    },
+    {
       "word": "password",
       "translation": "密碼, 口令"
     },
     {
-      "word": "battery",
-      "translation": "電池"
+      "word": "manager",
+      "translation": "經理, 管理人員, 管理器"
     },
     {
-      "word": "recycling",
-      "translation": "回收"
+      "word": "capsule",
+      "translation": "膠囊"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
+      "word": "instead",
+      "translation": "代替, 改為, 抵作, 更換"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "portions",
+      "translation": "一部份, 一分"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "unopened",
+      "translation": "未開封的"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "disturbed",
+      "translation": "不安的"
     },
     {
-      "word": "excerpt",
-      "translation": "摘錄"
+      "word": "vaccines",
+      "translation": "疫苗"
     },
     {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
+      "word": "recognize",
+      "translation": "認可, 承認, 公認, 賞識；具結"
+    },
+    {
+      "word": "certain",
+      "translation": "肯定的"
+    },
+    {
+      "word": "diseases",
+      "translation": "疾病, 弊病"
+    },
+    {
+      "word": "added",
+      "translation": "添加"
+    },
+    {
+      "word": "reminders",
+      "translation": "提醒, 使想起"
+    },
+    {
+      "word": "difference",
+      "translation": "差別"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "simply",
+      "translation": "簡單地"
+    },
+    {
+      "word": "repairing",
+      "translation": "修理, 修補；修理, 修補, 補救, 糾正"
+    },
+    {
+      "word": "reduce",
+      "translation": "減少"
+    },
+    {
+      "word": "waste",
+      "translation": "浪費;浪費"
     }
   ],
   "questions": [
@@ -129,44 +173,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_248",
-      "stem": "In Reading Set 248, which heading would be the least misleading label for this complete passage?",
+      "stem": "Which title is best for the complete passage that includes “A video game set in an ancient city became popular at school.”?",
       "options": [
-        "Grandpa's Password",
+        "The Password Manager",
         "The Historical Game",
-        "The Old Train Line",
-        "The Battery Recycling Box"
+        "The Rainy Game",
+        "The Time Capsule Video"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「Grandpa's Password」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Password Manager」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Historical Game: A video game set in an ancient city became popular at school.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Old Train Line」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Rainy Game」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Battery Recycling Box」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Time Capsule Video」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-8",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -187,13 +231,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Historical Game」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Historical Game: A video game set in an ancient city became popular at school.」，答案為「The Historical Game」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Historical Game」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -203,90 +247,86 @@
       "id": "ENG_R4_Q_READ_248_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-6",
-        "AUTH-ENGLISH-LC-AE-4-8",
+        "AUTH-ENGLISH-LC-AE-4-5",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LC-D-4-3",
-        "AUTH-ENGLISH-LP-3-4-10",
-        "AUTH-ENGLISH-LP-3-4-12",
-        "AUTH-ENGLISH-LP-3-4-13",
+        "AUTH-ENGLISH-LP-1-4-7",
         "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-9-4-2",
-        "AUTH-ENGLISH-LP-9-4-3"
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_248",
-      "stem": "In Reading Set 248, what is the paragraph count of the text whose opening is “A video game set in an ancient city became popular at school. Students liked exploring streets, markets, temples,”?",
+      "stem": "Which answer is supported by the passage that includes “A video game set in an ancient city became popular at school.”?",
       "options": [
-        "5",
-        "4",
-        "6",
-        "7"
+        "She asked students to compare the game with real historical sources.",
+        "Instead, she asked teachers and students to list what went wrong.",
+        "Students asked for smaller portions or shared unopened fruit with others.",
+        "Students were disturbed because the mouth and voice looked real."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "文章以換行鎖定為 5 個段落。"
+          "reason": "本文可直接核對「She asked students to compare the game with real historical sources.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Instead, she asked teachers and students to list what went wrong.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "6 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Students asked for smaller portions or shared unopened fruit with others.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Students were disturbed because the mouth and voice looked real.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-structure-count-3",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-6",
-          "AUTH-ENGLISH-LC-AE-4-8",
+          "AUTH-ENGLISH-LC-AE-4-5",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LC-D-4-3",
-          "AUTH-ENGLISH-LP-3-4-10",
-          "AUTH-ENGLISH-LP-3-4-12",
-          "AUTH-ENGLISH-LP-3-4-13",
+          "AUTH-ENGLISH-LP-1-4-7",
           "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-9-4-2",
-          "AUTH-ENGLISH-LP-9-4-3"
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「She asked students to compare the game with real historical sources.」，答案為「She asked students to compare the game with real historical sources.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「She asked students to compare the game with real historical sources.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -312,44 +352,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_248",
-      "stem": "In Reading Set 248, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “They found many accurate details, but also some changes made for fun or easier play.”?",
       "options": [
-        "A video game set in an ancient city became popular at school. Students liked exploring streets, markets, temples,",
-        "Their history teacher saw an opportunity. She asked students to compare the game with real historical sources. They",
-        "The class learned that historical games can create interest, but they are not textbooks.",
-        "One student said the game made him want to learn what was real."
+        "In health class, students learned how vaccines train the body to recognize certain diseases.",
+        "Students added basketball games, music practice, library days, and reminders to water the class plant.",
+        "The class learned that difference can make people feel lonely or welcomed.",
+        "The class learned that historical games can create interest, but they are not textbooks."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「In health class, students learned how vaccines train the body to recognize certain diseases.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Students added basketball games, music practice, library days, and reminders to water the class plant.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The class learned that difference can make people feel lonely or welcomed.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「They found many accurate details, but also some changes made for fun or easier play. The class learned that historical games can…」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-3",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -373,13 +413,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「They found many accurate details, but also some changes made for fun or easier play. The class learned that historical games can create interest,…」，答案為「The class learned that historical games can create interest, but they are not textbooks.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The class learned that historical games can create interest, but they are not textbooks.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -402,44 +442,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_248",
-      "stem": "In Reading Set 248, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “The teacher accepted that as success.”?",
       "options": [
-        "real historical sources. They found many accurate details, but also some changes made for fun or easier play.",
-        "The class learned that historical games can create interest, but they are not textbooks.",
-        "accepted that as success. Entertainment can open the door to history, but careful reading must walk through it.",
-        "game set in an ancient city became popular at school. Students liked exploring streets, markets, temples, and homes."
+        "They simply open the door and take what they need.",
+        "Repairing something can save money and reduce waste, but it can also open a small door into how things work.",
+        "Entertainment can open the door to history, but careful reading must walk through it.",
+        "A minute cannot finish everything, but it can open the door."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「They simply open the door and take what they need.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Repairing something can save money and reduce waste, but it can also open a small door into how…」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「The teacher accepted that as success. Entertainment can open the door to history, but careful reading must walk through it.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「A minute cannot finish everything, but it can open the door.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -460,13 +500,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The teacher accepted that as success. Entertainment can open the door to history, but careful reading must walk through it.」，答案為「Entertainment can open the door to history, but careful reading must walk through it.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Entertainment can open the door to history, but careful reading must walk through it.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -476,7 +516,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

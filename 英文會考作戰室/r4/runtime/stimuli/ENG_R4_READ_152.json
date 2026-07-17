@@ -55,56 +55,64 @@
       "translation": "明白了"
     },
     {
-      "word": "accurate",
-      "translation": "正確的, 精確的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "overview",
-      "translation": "概述"
-    },
-    {
-      "word": "entire",
-      "translation": "整個"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "drone",
-      "translation": "無人機"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "disappearing",
-      "translation": "消失"
+      "word": "solar",
+      "translation": "太陽能的"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "situation",
+      "translation": "情形, 境遇, (建築物等的)位置"
     },
     {
-      "word": "receives",
-      "translation": "收到"
+      "word": "speed",
+      "translation": "速度"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "simply",
+      "translation": "簡單地"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "surfaces",
+      "translation": "表面"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "suffered",
+      "translation": "遭受, 經歷, 忍受；受痛苦, 受損害"
     },
     {
-      "word": "excerpt",
-      "translation": "摘錄"
+      "word": "result",
+      "translation": "結果"
     },
     {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "memory",
+      "translation": "記憶"
+    },
+    {
+      "word": "reminded",
+      "translation": "提醒, 使想起"
+    },
+    {
+      "word": "improving",
+      "translation": "改善"
     }
   ],
   "questions": [
@@ -125,44 +133,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_152",
-      "stem": "In Reading Set 152, which heading gives the most accurate overview of the entire passage?",
+      "stem": "Which title is best for the complete passage that includes “The science club built a small weather station on the school roof.”?",
       "options": [
-        "The Farm Drone",
+        "The School Radio",
         "The School Weather Station",
-        "The School Gate Flowers",
-        "The Disappearing Beach"
+        "The Old Weather Station",
+        "The Solar School Roof"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Farm Drone」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The School Radio」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The School Weather Station: The science club built a small weather station on the school roof.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The School Gate Flowers」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Weather Station」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Disappearing Beach」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Solar School Roof」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-2",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -183,13 +191,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The School Weather Station」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The School Weather Station: The science club built a small weather station on the school roof.」，答案為「The School Weather Station」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The School Weather Station」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -199,76 +207,70 @@
       "id": "ENG_R4_Q_READ_152_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S257"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-6",
-        "AUTH-ENGLISH-LC-AE-4-8",
-        "AUTH-ENGLISH-LC-D-4-2",
+        "AUTH-ENGLISH-LC-D-4-1",
         "AUTH-ENGLISH-LC-D-4-3",
-        "AUTH-ENGLISH-LP-3-4-10",
+        "AUTH-ENGLISH-LP-1-4-7",
+        "AUTH-ENGLISH-LP-3-4-11",
         "AUTH-ENGLISH-LP-3-4-12",
-        "AUTH-ENGLISH-LP-3-4-13",
-        "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-9-4-2",
+        "AUTH-ENGLISH-LP-7-4-2",
+        "AUTH-ENGLISH-LP-9-4-1",
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_152",
-      "stem": "In Reading Set 152, if each paragraph receives one note card, how many cards are needed for the passage beginning “The science club built a small weather station on the school roof. It measured temperature, rainfall, and wind”?",
+      "stem": "Which reason does the passage give for this situation: “Sometimes they were different”?",
       "options": [
-        "5",
-        "4",
-        "6",
-        "7"
+        "The school had its own local conditions",
+        "He still had to walk to school",
+        "They could move at their own speed",
+        "She once went to school hungry as a child"
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "文章以換行鎖定為 5 個段落。"
+          "reason": "本文可直接核對「the school had its own local conditions」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「He still had to walk to school」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "6 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「They could move at their own speed」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「She once went to school hungry as a child」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "connect-stated-reason-to-situation"
       ],
-      "representationType": "reading-structure-count-2",
+      "representationType": "reading-stated-reason",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-6",
-          "AUTH-ENGLISH-LC-AE-4-8",
-          "AUTH-ENGLISH-LC-D-4-2",
+          "AUTH-ENGLISH-LC-D-4-1",
           "AUTH-ENGLISH-LC-D-4-3",
-          "AUTH-ENGLISH-LP-3-4-10",
+          "AUTH-ENGLISH-LP-1-4-7",
+          "AUTH-ENGLISH-LP-3-4-11",
           "AUTH-ENGLISH-LP-3-4-12",
-          "AUTH-ENGLISH-LP-3-4-13",
-          "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-9-4-2",
+          "AUTH-ENGLISH-LP-7-4-2",
+          "AUTH-ENGLISH-LP-9-4-1",
           "AUTH-ENGLISH-LP-9-4-3"
         ]
       },
@@ -276,13 +278,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「the school had its own local conditions」，答案為「The school had its own local conditions」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The school had its own local conditions」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -308,44 +310,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_152",
-      "stem": "In Reading Set 152, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “Then one week, heavy rain was expected.”?",
       "options": [
-        "The science club built a small weather station on the school roof. It measured temperature, rainfall, and wind",
-        "Every morning, club members recorded the numbers and posted them near the office. At first, few students cared.",
-        "Then one week, heavy rain was expected. Students began checking the station to see how much rain had",
-        "The club also compared their records with weather reports online. Sometimes they were different because the school had"
+        "Students began checking the screen like a game.",
+        "Soon, students began staying to draw, paint, or simply sit quietly.",
+        "The sun was the same, but the surfaces below it changed how much students suffered.",
+        "Students began checking the station to see how much rain had fallen."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Students began checking the screen like a game.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Soon, students began staying to draw, paint, or simply sit quietly.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The sun was the same, but the surfaces below it changed how much students suffered.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「Then one week, heavy rain was expected. Students began checking the station to see how much rain had fallen.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-2",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -369,13 +371,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Then one week, heavy rain was expected. Students began checking the station to see how much rain had fallen.」，答案為「Students began checking the station to see how much rain had fallen.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Students began checking the station to see how much rain had fallen.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -398,44 +400,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_152",
-      "stem": "In Reading Set 152, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “Students learned that weather is not only something on a phone screen.”?",
       "options": [
-        "Every morning, club members recorded the numbers and posted them near the office. At first, few students cared.",
-        "see how much rain had fallen. The numbers helped the PE teacher decide whether the field was safe.",
-        "something on a phone screen. It can be measured, watched, and understood from the place where you stand.",
-        "science club built a small weather station on the school roof. It measured temperature, rainfall, and wind direction."
+        "It can hold the memory of what a place once believed about itself.",
+        "The old swing reminded everyone that a place can change without losing its story.",
+        "It can be measured, watched, and understood from the place where you stand.",
+        "Sometimes improving the place where work happens helps the person doing the work."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「It can hold the memory of what a place once believed about itself.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「The old swing reminded everyone that a place can change without losing its story.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「Students learned that weather is not only something on a phone screen. It can be measured, watched, and understood from the place…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Sometimes improving the place where work happens helps the person doing the work.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -456,13 +458,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Students learned that weather is not only something on a phone screen. It can be measured, watched, and understood from the place where you…」，答案為「It can be measured, watched, and understood from the place where you stand.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「It can be measured, watched, and understood from the place where you stand.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -472,7 +474,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

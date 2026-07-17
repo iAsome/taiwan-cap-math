@@ -67,72 +67,92 @@
       "translation": "公平的;美好的"
     },
     {
-      "word": "broad",
-      "translation": "寬廣的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "paragraphs",
-      "translation": "段落"
-    },
-    {
-      "word": "broader",
-      "translation": "寬廣的"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "ancient",
-      "translation": "古代的"
-    },
-    {
-      "word": "model",
-      "translation": "模型;模特兒"
-    },
-    {
-      "word": "volunteer",
-      "translation": "志工"
-    },
-    {
-      "word": "platform",
-      "translation": "月台;平台"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "contains",
+      "word": "includes",
       "translation": "包含"
     },
     {
-      "word": "exact",
-      "translation": "準確的"
+      "word": "receipt",
+      "translation": "收條, 收據, 收到；收到"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "footprint",
+      "translation": "足跡；影響痕跡"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "permissions",
+      "translation": "許可"
     },
     {
-      "word": "excerpt",
-      "translation": "摘錄"
+      "word": "app",
+      "translation": "應用程式"
     },
     {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
+      "word": "truly",
+      "translation": "確實"
+    },
+    {
+      "word": "certain",
+      "translation": "肯定的"
+    },
+    {
+      "word": "information",
+      "translation": "資訊"
+    },
+    {
+      "word": "field",
+      "translation": "領域"
+    },
+    {
+      "word": "embarrassed",
+      "translation": "使困窘"
+    },
+    {
+      "word": "media",
+      "translation": "媒體"
+    },
+    {
+      "word": "event",
+      "translation": "事件"
+    },
+    {
+      "word": "wearable",
+      "translation": "穿戴式的"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "design",
+      "translation": "設計;圖案;設計"
+    },
+    {
+      "word": "useless",
+      "translation": "無用的"
+    },
+    {
+      "word": "material",
+      "translation": "材料"
     }
   ],
   "questions": [
@@ -153,44 +173,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_336",
-      "stem": "In Reading Set 336, which heading is broad enough for all paragraphs but not broader than the text?",
+      "stem": "Which title is best for the complete passage that includes “A teacher assigned an online project, but one student did not submit it.”?",
       "options": [
-        "The School Clock",
+        "The Digital Receipt",
         "The Digital Divide",
-        "The Ancient Bridge Model",
-        "The Digital Volunteer Platform"
+        "The Little Map",
+        "The Digital Footprint Lesson"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The School Clock」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Digital Receipt」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Digital Divide: A teacher assigned an online project, but one student did not submit it.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Ancient Bridge Model」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Little Map」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Digital Volunteer Platform」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Digital Footprint Lesson」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-6",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -211,13 +231,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Digital Divide」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Digital Divide: A teacher assigned an online project, but one student did not submit it.」，答案為「The Digital Divide」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Digital Divide」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -227,7 +247,7 @@
       "id": "ENG_R4_Q_READ_336_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -241,44 +261,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_336",
-      "stem": "In Reading Set 336, while checking the passage, which paragraph contains the exact line “Technology can make learning easier for some and harder for others if schools do not notice unequal conditions.”?",
+      "stem": "Which answer is supported by the passage that includes “A teacher assigned an online project, but one student did not submit it.”?",
       "options": [
-        "Paragraph 4",
-        "Paragraph 1",
-        "Paragraph 2",
-        "Paragraph 3"
+        "A fair classroom does not only ask whether a tool is modern.",
+        "Students learned to check permissions and ask whether an app truly needed certain information.",
+        "The numbers helped the PE teacher decide whether the field was safe.",
+        "It is giving useful information before the person feels embarrassed to ask."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 4 段開頭。"
+          "reason": "本文可直接核對「A fair classroom does not only ask whether a tool is modern.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「Students learned to check permissions and ask whether an app truly needed certain information.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "第 2 段沒有這一行。"
+          "reason": "本文沒有陳述「The numbers helped the PE teacher decide whether the field was safe.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「It is giving useful information before the person feels embarrassed to ask.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-1",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -300,13 +320,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：引文與第 4 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「A fair classroom does not only ask whether a tool is modern.」，答案為「A fair classroom does not only ask whether a tool is modern.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「A fair classroom does not only ask whether a tool is modern.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -332,44 +352,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_336",
-      "stem": "In Reading Set 336, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “She also asked the school to lend devices to students who needed them.”?",
       "options": [
-        "A teacher assigned an online project, but one student did not submit it. She later learned that his",
-        "The teacher changed the project schedule and opened the computer room after school. She also asked the school",
-        "The class discussed the digital divide. Having online lessons or digital homework assumes access that not everyone has.",
-        "Technology can make learning easier for some and harder for others if schools do not notice unequal conditions."
+        "Later, the class discussed phone rules.",
+        "In media class, students discussed the event.",
+        "In health class, students discussed wearable devices.",
+        "The class discussed the digital divide."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Later, the class discussed phone rules.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「In media class, students discussed the event.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「In health class, students discussed wearable devices.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「She also asked the school to lend devices to students who needed them. The class discussed the digital divide.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-1",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -393,13 +413,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「She also asked the school to lend devices to students who needed them. The class discussed the digital divide.」，答案為「The class discussed the digital divide.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The class discussed the digital divide.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -422,44 +442,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_336",
-      "stem": "In Reading Set 336, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “Technology can make learning easier for some and harder for others if schools do not notice unequal conditions.”?",
       "options": [
-        "the computer room after school. She also asked the school to lend devices to students who needed them.",
-        "The class discussed the digital divide. Having online lessons or digital homework assumes access that not everyone has.",
-        "does not only ask whether a tool is modern. It asks whether every student can actually use it.",
-        "submit it. She later learned that his family had one old phone and no stable internet at home."
+        "The best design listens to the people who use it every day.",
+        "A tool is not useless just because you do not use it every day.\"",
+        "It asks whether every student can actually use it.",
+        "Every material carries a future after use."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「The best design listens to the people who use it every day.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「A tool is not useless just because you do not use it every day.'」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「Technology can make learning easier for some and harder for others if schools do not notice unequal conditions. It asks whether every…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Every material carries a future after use.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -480,13 +500,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Technology can make learning easier for some and harder for others if schools do not notice unequal conditions. It asks whether every student can…」，答案為「It asks whether every student can actually use it.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「It asks whether every student can actually use it.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -496,7 +516,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

@@ -35,12 +35,8 @@
       "translation": "忠告, 建議, 通知"
     },
     {
-      "word": "misleading",
-      "translation": "誤導性的"
-    },
-    {
-      "word": "label",
-      "translation": "標籤, 簽條, 商標, 標誌；貼標籤于, 指...為, 分類, 標注； 加上或修改磁盤的標籤"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
       "word": "complete",
@@ -51,32 +47,76 @@
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "podcast",
-      "translation": "播客；網路音訊節目"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "sharpener",
+      "translation": "磨刀器"
     },
     {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "model",
+      "translation": "模型;模特兒"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "data",
+      "translation": "數據"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "pressure",
+      "translation": "壓, 壓力, 電壓, 壓迫, 強制, 緊迫"
     },
     {
-      "word": "concluding",
-      "translation": "結束, 終止, 決定, 作出結論；推斷, 斷定, 締結, 議定"
+      "word": "temperature",
+      "translation": "溫度"
+    },
+    {
+      "word": "recycling",
+      "translation": "回收"
+    },
+    {
+      "word": "sort",
+      "translation": "排序"
+    },
+    {
+      "word": "ocean",
+      "translation": "海洋"
+    },
+    {
+      "word": "distance",
+      "translation": "距離"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "technology",
+      "translation": "科技"
+    },
+    {
+      "word": "humans",
+      "translation": "人類的;人"
+    },
+    {
+      "word": "human",
+      "translation": "人類的;人"
+    },
+    {
+      "word": "messes",
+      "translation": "混亂, 臟亂；弄亂"
+    },
+    {
+      "word": "barely",
+      "translation": "僅僅, 剛剛, 幾乎不能"
     }
   ],
   "questions": [
@@ -97,11 +137,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_098",
-      "stem": "In Reading Set 098, which heading would be the least misleading label for this complete passage?",
+      "stem": "Which title is best for the complete passage that includes “During a strong wind, May's umbrella turned inside out.”?",
       "options": [
-        "The Water Song",
-        "The History Podcast",
-        "The Clouded Lake",
+        "The Wrong Bus",
+        "The Broken Pencil Sharpener",
+        "The Bottle Map",
         "The Windy Umbrella"
       ],
       "answerIndex": 3,
@@ -109,32 +149,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Water Song」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Wrong Bus」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The History Podcast」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Broken Pencil Sharpener」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Clouded Lake」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Bottle Map」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Windy Umbrella: During a strong wind, May's umbrella turned inside out.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-8",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -155,13 +195,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Windy Umbrella」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Windy Umbrella: During a strong wind, May's umbrella turned inside out.」，答案為「The Windy Umbrella」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Windy Umbrella」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -171,90 +211,86 @@
       "id": "ENG_R4_Q_READ_098_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-6",
-        "AUTH-ENGLISH-LC-AE-4-8",
+        "AUTH-ENGLISH-LC-AE-4-5",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LC-D-4-3",
-        "AUTH-ENGLISH-LP-3-4-10",
-        "AUTH-ENGLISH-LP-3-4-12",
-        "AUTH-ENGLISH-LP-3-4-13",
+        "AUTH-ENGLISH-LP-1-4-7",
         "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-9-4-2",
-        "AUTH-ENGLISH-LP-9-4-3"
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_098",
-      "stem": "In Reading Set 098, what is the paragraph count of the text whose opening is “During a strong wind, May's umbrella turned inside out. She tried to fix it, but the wind pulled”?",
+      "stem": "Which answer is supported by the passage that includes “During a strong wind, May's umbrella turned inside out.”?",
       "options": [
-        "5",
-        "7",
-        "6",
-        "4"
+        "\"Can I throw it away\" Leo asked.",
+        "Some said they could not remember anything.",
+        "She and her partner had been arguing.",
+        "\"This is from my house,\" he said."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "5 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「'Can I throw it away' Leo asked.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Some said they could not remember anything.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "文章以換行鎖定為 6 個段落。"
+          "reason": "本文可直接核對「She and her partner had been arguing.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「'This is from my house,' he said.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-structure-count-3",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-6",
-          "AUTH-ENGLISH-LC-AE-4-8",
+          "AUTH-ENGLISH-LC-AE-4-5",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LC-D-4-3",
-          "AUTH-ENGLISH-LP-3-4-10",
-          "AUTH-ENGLISH-LP-3-4-12",
-          "AUTH-ENGLISH-LP-3-4-13",
+          "AUTH-ENGLISH-LP-1-4-7",
           "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-9-4-2",
-          "AUTH-ENGLISH-LP-9-4-3"
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 6 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「She and her partner had been arguing.」，答案為「She and her partner had been arguing.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「She and her partner had been arguing.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -280,44 +316,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_098",
-      "stem": "In Reading Set 098, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “It still shook, but it did not break.”?",
       "options": [
-        "May did as he said. The umbrella became easier to control. It still shook, but it did not",
+        "A model uses data from air pressure, temperature, wind, and many other things.",
         "The man explained that fighting the wind from the wrong direction only made things worse.",
-        "During a strong wind, May's umbrella turned inside out. She tried to fix it, but the wind pulled",
-        "A man at the bus stop said, \"Point it into the wind first.\""
+        "The worker explained that recycling is harder when people do not clean or sort things correctly.",
+        "Their teacher explained that ocean water can carry things for a long distance."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「A model uses data from air pressure, temperature, wind, and many other things.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「It still shook, but it did not break. The man explained that fighting the wind from the wrong direction only made things…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The worker explained that recycling is harder when people do not clean or sort things correctly.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Their teacher explained that ocean water can carry things for a long distance.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-3",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -341,13 +377,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「It still shook, but it did not break. The man explained that fighting the wind from the wrong direction only made things worse.」，答案為「The man explained that fighting the wind from the wrong direction only made things worse.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The man explained that fighting the wind from the wrong direction only made things worse.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -357,7 +393,7 @@
       "id": "ENG_R4_Q_READ_098_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -370,44 +406,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_098",
-      "stem": "In Reading Set 098, which line marks the beginning of the concluding paragraph?",
+      "stem": "Which ending result or final point follows “The project became easier.”?",
       "options": [
-        "The project became easier. May learned that some advice works for more than umbrellas.",
-        "During a strong wind, May's umbrella turned inside out. She tried to fix it, but the wind pulled",
-        "A man at the bus stop said, \"Point it into the wind first.\"",
-        "May did as he said. The umbrella became easier to control. It still shook, but it did not"
+        "May learned that some advice works for more than umbrellas.",
+        "The hospital learned that technology works best when it gives humans more time to be human.",
+        "He learned that small messes do not always stay small.",
+        "Sometimes it works best when people barely notice it."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 6 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「The project became easier. May learned that some advice works for more than umbrellas.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「The hospital learned that technology works best when it gives humans more time to be human.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「He learned that small messes do not always stay small.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Sometimes it works best when people barely notice it.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-3",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -428,13 +464,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 6 段，正確引文與第 6 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The project became easier. May learned that some advice works for more than umbrellas.」，答案為「May learned that some advice works for more than umbrellas.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「May learned that some advice works for more than umbrellas.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -444,7 +480,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

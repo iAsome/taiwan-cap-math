@@ -67,56 +67,88 @@
       "translation": "標題;頭銜"
     },
     {
-      "word": "represents",
-      "translation": "代表"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "whole",
-      "translation": "完整的"
-    },
-    {
-      "word": "rather",
-      "translation": "寧可;頗為"
-    },
-    {
-      "word": "detail",
-      "translation": "細節, 詳情；詳述, 細說"
-    },
-    {
-      "word": "algorithm",
-      "translation": "演算法"
-    },
-    {
-      "word": "ai",
-      "translation": "人工智慧"
-    },
-    {
-      "word": "border",
-      "translation": "邊界；國界"
-    },
-    {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "selected",
-      "translation": "挑選"
-    },
-    {
-      "word": "closest",
-      "translation": "最接近的"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "concluding",
-      "translation": "結束, 終止, 決定, 作出結論；推斷, 斷定, 締結, 議定"
+      "word": "includes",
+      "translation": "包含"
+    },
+    {
+      "word": "algorithm",
+      "translation": "演算法"
+    },
+    {
+      "word": "sharpener",
+      "translation": "磨刀器"
+    },
+    {
+      "word": "alert",
+      "translation": "警報"
+    },
+    {
+      "word": "supported",
+      "translation": "支持;支持"
+    },
+    {
+      "word": "summaries",
+      "translation": "摘要, 概要"
+    },
+    {
+      "word": "entrances",
+      "translation": "入口"
+    },
+    {
+      "word": "exits",
+      "translation": "出口, 太平門, 退場, 去世"
+    },
+    {
+      "word": "uncomfortable",
+      "translation": "不舒服"
+    },
+    {
+      "word": "convenience",
+      "translation": "便利"
+    },
+    {
+      "word": "hidden",
+      "translation": "隱藏的"
+    },
+    {
+      "word": "wearable",
+      "translation": "穿戴式的"
+    },
+    {
+      "word": "devices",
+      "translation": "裝置；設備"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "officials",
+      "translation": "官員"
+    },
+    {
+      "word": "beyond",
+      "translation": "在更遠處;越出;晚於;在...那一邊"
+    },
+    {
+      "word": "easiest",
+      "translation": "最簡單的"
+    },
+    {
+      "word": "decision",
+      "translation": "決定"
     }
   ],
   "questions": [
@@ -137,44 +169,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_293",
-      "stem": "In Reading Set 293, which title represents the text as a whole rather than one small detail?",
+      "stem": "Which title is best for the complete passage that includes “A shopping app kept recommending baby products to a man who had only bought a gift for his…”?",
       "options": [
         "The Broken Algorithm",
-        "The AI Voice",
-        "The Old Border Station",
-        "The Lost Button"
+        "The Little Map",
+        "The Broken Pencil Sharpener",
+        "The Smart Watch Alert"
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Broken Algorithm: A shopping app kept recommending baby products to a man who had only bought a gift for his cousin's…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The AI Voice」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Little Map」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Old Border Station」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Broken Pencil Sharpener」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Lost Button」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Smart Watch Alert」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-3",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -195,13 +227,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Broken Algorithm」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Broken Algorithm: A shopping app kept recommending baby products to a man who had only bought a gift for his cousin's child once.」，答案為「The Broken Algorithm」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Broken Algorithm」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -211,7 +243,96 @@
       "id": "ENG_R4_Q_READ_293_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
+      ],
+      "authorityRefs": [
+        "AUTH-ENGLISH-LC-AE-4-5",
+        "AUTH-ENGLISH-LC-D-4-2",
+        "AUTH-ENGLISH-LP-1-4-7",
+        "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
+        "AUTH-ENGLISH-LP-3-4-9",
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
+      ],
+      "stimulusId": "ENG_R4_READ_293",
+      "stem": "Which answer is supported by the passage that includes “A shopping app kept recommending baby products to a man who had only bought a gift for his…”?",
+      "options": [
+        "Students learned to use summaries as entrances, not exits.",
+        "At the end of the week, the teacher asked what they had learned.",
+        "But every time he heard the wrong name, he felt a little uncomfortable.",
+        "They learned that algorithms use patterns, but patterns can be wrong or incomplete."
+      ],
+      "answerIndex": 3,
+      "optionRationales": [
+        {
+          "optionIndex": 0,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「Students learned to use summaries as entrances, not exits.」；這個選項混入另一個情境的資訊。"
+        },
+        {
+          "optionIndex": 1,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「At the end of the week, the teacher asked what they had learned.」；這個選項混入另一個情境的資訊。"
+        },
+        {
+          "optionIndex": 2,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「But every time he heard the wrong name, he felt a little uncomfortable.」；這個選項混入另一個情境的資訊。"
+        },
+        {
+          "optionIndex": 3,
+          "isCorrect": true,
+          "reason": "本文可直接核對「They learned that algorithms use patterns, but patterns can be wrong or incomplete.」，所以這個選項符合完整語境。"
+        }
+      ],
+      "difficulty": "standard",
+      "cognitiveProcess": [
+        "read-locked-passage-evidence",
+        "distinguish-supported-detail-from-related-near-misses"
+      ],
+      "representationType": "reading-supported-detail",
+      "misconceptionTargets": [
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
+      ],
+      "provenance": {
+        "status": "original",
+        "authorRole": "Codex R4 English content author",
+        "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+        "sourceRefs": [
+          "AUTH-ENGLISH-LC-AE-4-5",
+          "AUTH-ENGLISH-LC-D-4-2",
+          "AUTH-ENGLISH-LP-1-4-7",
+          "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
+          "AUTH-ENGLISH-LP-3-4-9",
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
+        ]
+      },
+      "independentReviews": [
+        {
+          "reviewerRole": "english-grammar-solution-review",
+          "derivedAnswerIndex": 3,
+          "evidence": "獨立覆核 A：在鎖定文章中定位「They learned that algorithms use patterns, but patterns can be wrong or incomplete.」，答案為「They learned that algorithms use patterns, but patterns can be wrong or incomplete.」。",
+          "status": "pass"
+        },
+        {
+          "reviewerRole": "english-alternative-answer-review",
+          "derivedAnswerIndex": 3,
+          "evidence": "獨立覆核 B：逐項回查文章，只有「They learned that algorithms use patterns, but patterns can be wrong or incomplete.」有同篇證據，三個干擾項均來自不同情境。",
+          "status": "pass"
+        }
+      ],
+      "assets": []
+    },
+    {
+      "id": "ENG_R4_Q_READ_293_03",
+      "subject": "english",
+      "skillIds": [
+        "ENG_R4_S273"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-6",
@@ -227,44 +348,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_293",
-      "stem": "In Reading Set 293, what is the paragraph count of the text whose opening is “A shopping app kept recommending baby products to a man who had only bought a gift for his”?",
+      "stem": "What happens next in this passage after “The app had guessed too much from too little information.”?",
       "options": [
-        "4",
-        "5",
-        "7",
-        "6"
+        "In business class, students discussed convenience and hidden costs.",
+        "She wanted students to think about systems.",
+        "In technology class, students discussed recommendation systems.",
+        "In health class, students discussed wearable devices."
       ],
-      "answerIndex": 3,
+      "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「In business class, students discussed convenience and hidden costs.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "5 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「She wanted students to think about systems.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
-          "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "isCorrect": true,
+          "reason": "本文可直接核對「The app had guessed too much from too little information. In technology class, students discussed recommendation systems.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
-          "isCorrect": true,
-          "reason": "文章以換行鎖定為 6 個段落。"
+          "isCorrect": false,
+          "reason": "本文沒有陳述「In health class, students discussed wearable devices.」；這個選項混入另一個情境的資訊。"
         }
       ],
-      "difficulty": "standard",
+      "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-structure-count-3",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -287,103 +408,14 @@
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
-          "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 6 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
-          "status": "pass"
-        },
-        {
-          "reviewerRole": "english-alternative-answer-review",
-          "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
-          "status": "pass"
-        }
-      ],
-      "assets": []
-    },
-    {
-      "id": "ENG_R4_Q_READ_293_03",
-      "subject": "english",
-      "skillIds": [
-        "ENG_R4_S254"
-      ],
-      "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-5",
-        "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LP-1-4-7",
-        "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-8",
-        "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-5-4-7",
-        "AUTH-ENGLISH-LP-5-4-8",
-        "AUTH-ENGLISH-LP-5-4-9"
-      ],
-      "stimulusId": "ENG_R4_READ_293",
-      "stem": "In Reading Set 293, which selected line belongs closest to the beginning of the passage?",
-      "options": [
-        "In technology class, students discussed recommendation systems. They learned that algorithms use patterns, but patterns can be wrong",
-        "One student said, \"The app thinks it knows him, but it only knows his clicks.\"",
-        "A shopping app kept recommending baby products to a man who had only bought a gift for his",
-        "At first, he laughed. Then he became annoyed. The app had guessed too much from too little information."
-      ],
-      "answerIndex": 2,
-      "optionRationales": [
-        {
-          "optionIndex": 0,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        },
-        {
-          "optionIndex": 1,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        },
-        {
-          "optionIndex": 2,
-          "isCorrect": true,
-          "reason": "這一行來自四個候選中的最早段落。"
-        },
-        {
-          "optionIndex": 3,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        }
-      ],
-      "difficulty": "advanced",
-      "cognitiveProcess": [
-        "read-locked-passage-evidence",
-        "identify-earliest-selected-paragraph"
-      ],
-      "representationType": "reading-sequence-earliest-3",
-      "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
-      ],
-      "provenance": {
-        "status": "original",
-        "authorRole": "Codex R4 English content author",
-        "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
-        "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-5",
-          "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LP-1-4-7",
-          "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-8",
-          "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-5-4-7",
-          "AUTH-ENGLISH-LP-5-4-8",
-          "AUTH-ENGLISH-LP-5-4-9"
-        ]
-      },
-      "independentReviews": [
-        {
-          "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 1 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The app had guessed too much from too little information. In technology class, students discussed recommendation systems.」，答案為「In technology class, students discussed recommendation systems.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「In technology class, students discussed recommendation systems.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -406,44 +438,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_293",
-      "stem": "In Reading Set 293, which line marks the beginning of the concluding paragraph?",
+      "stem": "Which ending result or final point follows “Digital systems can be useful, but they do not understand people the way people understand people.”?",
       "options": [
-        "In technology class, students discussed recommendation systems. They learned that algorithms use patterns, but patterns can be wrong",
-        "Digital systems can be useful, but they do not understand people the way people understand people. A person",
-        "A shopping app kept recommending baby products to a man who had only bought a gift for his",
-        "At first, he laughed. Then he became annoyed. The app had guessed too much from too little information."
+        "Borrowing something means bringing it back for the next person.",
+        "A person is more than data points.",
+        "To understand a city, officials must listen beyond the easiest data points.",
+        "The last decision still needed a person."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Borrowing something means bringing it back for the next person.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行是第 6 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「Digital systems can be useful, but they do not understand people the way people understand people. A person is more than data…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「To understand a city, officials must listen beyond the easiest data points.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「The last decision still needed a person.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-3",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -464,13 +496,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：文章共有 6 段，正確引文與第 6 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Digital systems can be useful, but they do not understand people the way people understand people. A person is more than data points.」，答案為「A person is more than data points.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「A person is more than data points.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -480,7 +512,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

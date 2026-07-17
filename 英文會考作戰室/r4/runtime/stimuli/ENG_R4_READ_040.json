@@ -23,64 +23,64 @@
       "translation": "美貌;美人"
     },
     {
-      "word": "captures",
-      "translation": "捕獲, 戰利品；俘獲, 捕獲, 奪取"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "passage's",
-      "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
-    },
-    {
-      "word": "central",
-      "translation": "中央的"
-    },
-    {
-      "word": "thread",
-      "translation": "線, 細絲, 線索, 思路, 螺紋"
-    },
-    {
-      "word": "instead",
-      "translation": "代替, 改為, 抵作, 更換"
-    },
-    {
-      "word": "assistant",
-      "translation": "助手"
-    },
-    {
-      "word": "globe",
-      "translation": "地球儀；球體"
-    },
-    {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "cited",
-      "translation": "引用"
-    },
-    {
-      "word": "selected",
-      "translation": "挑選"
-    },
-    {
-      "word": "latest",
-      "translation": "最新的"
-    },
-    {
-      "word": "sequence",
-      "translation": "序列"
-    },
-    {
-      "word": "excerpt",
-      "translation": "摘錄"
-    },
-    {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
+    },
+    {
+      "word": "includes",
+      "translation": "包含"
+    },
+    {
+      "word": "shelter",
+      "translation": "庇護所"
+    },
+    {
+      "word": "board",
+      "translation": "上車;上船;木板;;車上;船上"
+    },
+    {
+      "word": "supported",
+      "translation": "支持;支持"
+    },
+    {
+      "word": "added",
+      "translation": "添加"
+    },
+    {
+      "word": "graduation",
+      "translation": "畢業"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "kindness",
+      "translation": "仁慈"
+    },
+    {
+      "word": "comfort",
+      "translation": "舒適；安慰"
+    },
+    {
+      "word": "humans",
+      "translation": "人類的;人"
+    },
+    {
+      "word": "connects",
+      "translation": "連接, 聯合, 關連"
     }
   ],
   "questions": [
@@ -101,44 +101,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_040",
-      "stem": "In Reading Set 040, which heading captures the passage's central thread instead of a side point?",
+      "stem": "Which title is best for the complete passage that includes “There is a wall near the school gate where students can put small notes.”?",
       "options": [
-        "The Voice Assistant",
+        "The Blue Envelope",
         "The Warm Wall",
-        "The Snow Globe",
-        "The Wrong Gift"
+        "The Rain Shelter",
+        "The Thank-You Board"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Voice Assistant」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Blue Envelope」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Warm Wall: There is a wall near the school gate where students can put small notes.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Snow Globe」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Rain Shelter」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Wrong Gift」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Thank-You Board」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-10",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -159,13 +159,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Warm Wall」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Warm Wall: There is a wall near the school gate where students can put small notes.」，答案為「The Warm Wall」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Warm Wall」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -175,7 +175,7 @@
       "id": "ENG_R4_Q_READ_040_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -189,44 +189,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_040",
-      "stem": "In Reading Set 040, which paragraph should be cited for the line “No one knows who writes each note, and that is part of the beauty. The Warm Wall shows”?",
+      "stem": "Which answer is supported by the passage that includes “There is a wall near the school gate where students can put small notes.”?",
       "options": [
-        "Paragraph 4",
-        "Paragraph 1",
-        "Paragraph 2",
-        "Paragraph 3"
+        "No one knows who writes each note, and that is part of the beauty.",
+        "Then the radio team added a new part called \"One Good Thing.\"",
+        "Mr. Brown writes some of the answers on colored paper and puts them on the classroom wall.",
+        "Then Mina put a small note beside it: \"I am thirsty.\""
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 4 段開頭。"
+          "reason": "本文可直接核對「No one knows who writes each note, and that is part of the beauty.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「Then the radio team added a new part called 'One Good Thing.'」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "第 2 段沒有這一行。"
+          "reason": "本文沒有陳述「Mr. Brown writes some of the answers on colored paper and puts them on the classroom wall.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「Then Mina put a small note beside it: 'I am thirsty.'」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-5",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -248,13 +248,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：引文與第 4 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「No one knows who writes each note, and that is part of the beauty.」，答案為「No one knows who writes each note, and that is part of the beauty.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「No one knows who writes each note, and that is part of the beauty.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -280,44 +280,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_040",
-      "stem": "In Reading Set 040, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “Then more notes appeared.”?",
       "options": [
-        "There is a wall near the school gate where students can put small notes. It is called the",
-        "The idea began after a student wrote, \"I failed my math test. I feel terrible.\" The next day,",
-        "Now students write many kinds of messages. Some thank a friend. Some say sorry. Some leave jokes. Teachers",
-        "No one knows who writes each note, and that is part of the beauty. The Warm Wall shows"
+        "Before graduation, students were allowed to write messages on each other's uniforms.",
+        "Many students thought it would be easy.",
+        "Soon, many desks had small messages inside.",
+        "Now students write many kinds of messages."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Before graduation, students were allowed to write messages on each other's uniforms.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Many students thought it would be easy.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Soon, many desks had small messages inside.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「Then more notes appeared. Now students write many kinds of messages.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-5",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -341,13 +341,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Then more notes appeared. Now students write many kinds of messages.」，答案為「Now students write many kinds of messages.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Now students write many kinds of messages.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -370,44 +370,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_040",
-      "stem": "In Reading Set 040, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “Teachers check the wall every day to remove hurtful words, but most notes are kind.”?",
       "options": [
-        "day, someone placed a note below it: \"One test is not your whole life.\" Then more notes appeared.",
-        "Some leave jokes. Teachers check the wall every day to remove hurtful words, but most notes are kind.",
-        "part of the beauty. The Warm Wall shows that even quiet people may have something helpful to say.",
-        "a wall near the school gate where students can put small notes. It is called the Warm Wall."
+        "Still, people remembered the small one because it had shown a quiet kind of kindness: making room for others even when it costs comfort.",
+        "It became something with a voice, even if humans had to speak for it.",
+        "The Warm Wall shows that even quiet people may have something helpful to say.",
+        "People enter more easily when the door connects to something they already care about."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Still, people remembered the small one because it had shown a quiet kind of kindness: making room for…」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「It became something with a voice, even if humans had to speak for it.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「Teachers check the wall every day to remove hurtful words, but most notes are kind. The Warm Wall shows that even quiet…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「People enter more easily when the door connects to something they already care about.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -428,13 +428,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Teachers check the wall every day to remove hurtful words, but most notes are kind. The Warm Wall shows that even quiet people may…」，答案為「The Warm Wall shows that even quiet people may have something helpful to say.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Warm Wall shows that even quiet people may have something helpful to say.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -444,7 +444,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

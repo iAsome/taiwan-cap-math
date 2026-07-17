@@ -2,90 +2,86 @@
   "id": "ENG_R4_Q_READ_281_02",
   "subject": "english",
   "skillIds": [
-    "ENG_R4_S278"
+    "ENG_R4_S250"
   ],
   "authorityRefs": [
-    "AUTH-ENGLISH-LC-AE-4-6",
-    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-AE-4-5",
     "AUTH-ENGLISH-LC-D-4-2",
-    "AUTH-ENGLISH-LC-D-4-3",
-    "AUTH-ENGLISH-LP-3-4-10",
-    "AUTH-ENGLISH-LP-3-4-12",
-    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-1-4-7",
     "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
     "AUTH-ENGLISH-LP-3-4-9",
-    "AUTH-ENGLISH-LP-9-4-2",
-    "AUTH-ENGLISH-LP-9-4-3"
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
   ],
   "stimulusId": "ENG_R4_READ_281",
-  "stem": "In Reading Set 281, how many paragraphs organize the passage that begins “A weather scientist visited school and explained that forecasts are made with models. A model uses data from”?",
+  "stem": "Which answer is supported by the passage that includes “A weather scientist visited school and explained that forecasts are made with models.”?",
   "options": [
-    "4",
-    "6",
-    "7",
-    "5"
+    "The man explained that fighting the wind from the wrong direction only made things worse.",
+    "Sometimes it is quiet work that makes other good things possible.",
+    "An old weather station on a mountain had recorded temperature and rainfall for many decades.",
+    "A model uses data from air pressure, temperature, wind, and many other things."
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "4 與鎖定文本的實際段落數不符。"
+      "reason": "本文沒有陳述「The man explained that fighting the wind from the wrong direction only made things worse.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "6 與鎖定文本的實際段落數不符。"
+      "reason": "本文沒有陳述「Sometimes it is quiet work that makes other good things possible.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "7 與鎖定文本的實際段落數不符。"
+      "reason": "本文沒有陳述「An old weather station on a mountain had recorded temperature and rainfall for many decades.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "文章以換行鎖定為 5 個段落。"
+      "reason": "本文可直接核對「A model uses data from air pressure, temperature, wind, and many other things.」，所以這個選項符合完整語境。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "count-locked-paragraph-blocks"
+    "distinguish-supported-detail-from-related-near-misses"
   ],
-  "representationType": "reading-structure-count-1",
+  "representationType": "reading-supported-detail",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 English content author",
     "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
     "sourceRefs": [
-      "AUTH-ENGLISH-LC-AE-4-6",
-      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-AE-4-5",
       "AUTH-ENGLISH-LC-D-4-2",
-      "AUTH-ENGLISH-LC-D-4-3",
-      "AUTH-ENGLISH-LP-3-4-10",
-      "AUTH-ENGLISH-LP-3-4-12",
-      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-1-4-7",
       "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
       "AUTH-ENGLISH-LP-3-4-9",
-      "AUTH-ENGLISH-LP-9-4-2",
-      "AUTH-ENGLISH-LP-9-4-3"
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
     ]
   },
   "independentReviews": [
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「A model uses data from air pressure, temperature, wind, and many other things.」，答案為「A model uses data from air pressure, temperature, wind, and many other things.」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「A model uses data from air pressure, temperature, wind, and many other things.」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

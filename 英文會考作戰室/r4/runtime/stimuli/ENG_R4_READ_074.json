@@ -19,64 +19,64 @@
       "translation": "紀律；自律"
     },
     {
-      "word": "predict",
-      "translation": "預測"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "central",
-      "translation": "中央的"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
-      "word": "content",
-      "translation": "內容"
+      "word": "passage",
+      "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "accurately",
-      "translation": "正確的, 精確的"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "recipe",
-      "translation": "食譜"
-    },
-    {
-      "word": "online",
-      "translation": "網路"
-    },
-    {
-      "word": "theft",
-      "translation": "竊盜"
+      "word": "competition",
+      "translation": "競爭"
     },
     {
       "word": "runner",
       "translation": "跑者"
     },
     {
-      "word": "separate",
-      "translation": "分開"
+      "word": "situation",
+      "translation": "情形, 境遇, (建築物等的)位置"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "tap",
+      "translation": "點選"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "powerful",
+      "translation": "強大的"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "familiar",
+      "translation": "熟悉的"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "responsibility",
+      "translation": "責任"
     },
     {
-      "word": "quotation",
-      "translation": "報價"
+      "word": "result",
+      "translation": "結果"
     },
     {
-      "word": "positioned",
-      "translation": "位置"
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "object",
+      "translation": "反對;物件"
+    },
+    {
+      "word": "barely",
+      "translation": "僅僅, 剛剛, 幾乎不能"
     }
   ],
   "questions": [
@@ -97,11 +97,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_074",
-      "stem": "In Reading Set 074, which heading would help a reader predict the central content most accurately?",
+      "stem": "Which title is best for the complete passage that includes “Every morning, Mr. Kuo ran past the school gate at 6:40.”?",
       "options": [
-        "The Lost Recipe",
-        "The Noisy Shoes",
-        "The Online Museum Theft",
+        "The Quiet Competition",
+        "The Lost Button",
+        "The Quiet Bell",
         "The Morning Runner"
       ],
       "answerIndex": 3,
@@ -109,32 +109,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Lost Recipe」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Quiet Competition」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Noisy Shoes」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Lost Button」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Online Museum Theft」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Quiet Bell」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Morning Runner: Every morning, Mr. Kuo ran past the school gate at 6:40.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-4",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -155,13 +155,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Morning Runner」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Morning Runner: Every morning, Mr. Kuo ran past the school gate at 6:40.」，答案為「The Morning Runner」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Morning Runner」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -171,76 +171,70 @@
       "id": "ENG_R4_Q_READ_074_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S257"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-6",
-        "AUTH-ENGLISH-LC-AE-4-8",
-        "AUTH-ENGLISH-LC-D-4-2",
+        "AUTH-ENGLISH-LC-D-4-1",
         "AUTH-ENGLISH-LC-D-4-3",
-        "AUTH-ENGLISH-LP-3-4-10",
+        "AUTH-ENGLISH-LP-1-4-7",
+        "AUTH-ENGLISH-LP-3-4-11",
         "AUTH-ENGLISH-LP-3-4-12",
-        "AUTH-ENGLISH-LP-3-4-13",
-        "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-9-4-2",
+        "AUTH-ENGLISH-LP-7-4-2",
+        "AUTH-ENGLISH-LP-9-4-1",
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_074",
-      "stem": "In Reading Set 074, how many separate paragraph blocks follow from the opening “Every morning, Mr. Kuo ran past the school gate at 6:40. Students on early duty often saw him.”?",
+      "stem": "Which reason does the passage give for this situation: “Mr. Kuo said, 'I do not run”?",
       "options": [
-        "5",
-        "7",
-        "6",
-        "4"
+        "Every home had tap water",
+        "You do not use it every day",
+        "Every morning is comfortable",
+        "She saw many walkers every morning"
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "5 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Every home had tap water」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「You do not use it every day」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "文章以換行鎖定為 6 個段落。"
+          "reason": "本文可直接核對「every morning is comfortable」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「She saw many walkers every morning」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "connect-stated-reason-to-situation"
       ],
-      "representationType": "reading-structure-count-4",
+      "representationType": "reading-stated-reason",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-6",
-          "AUTH-ENGLISH-LC-AE-4-8",
-          "AUTH-ENGLISH-LC-D-4-2",
+          "AUTH-ENGLISH-LC-D-4-1",
           "AUTH-ENGLISH-LC-D-4-3",
-          "AUTH-ENGLISH-LP-3-4-10",
+          "AUTH-ENGLISH-LP-1-4-7",
+          "AUTH-ENGLISH-LP-3-4-11",
           "AUTH-ENGLISH-LP-3-4-12",
-          "AUTH-ENGLISH-LP-3-4-13",
-          "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-9-4-2",
+          "AUTH-ENGLISH-LP-7-4-2",
+          "AUTH-ENGLISH-LP-9-4-1",
           "AUTH-ENGLISH-LP-9-4-3"
         ]
       },
@@ -248,13 +242,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 6 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「every morning is comfortable」，答案為「Every morning is comfortable」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Every morning is comfortable」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -280,44 +274,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_074",
-      "stem": "In Reading Set 074, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “The student thought about this during exam week.”?",
       "options": [
-        "Mr. Kuo said, \"I do not run because every morning is comfortable. I run because I promised myself.\"",
-        "The student thought about this during exam week. He did not feel like studying, but he remembered Mr.",
-        "Every morning, Mr. Kuo ran past the school gate at 6:40. Students on early duty often saw him.",
-        "One cold morning, a student asked him why he ran even when the weather was bad."
+        "Students liked the clock because it made them feel less late.",
+        "He did not feel like studying, but he remembered Mr. Kuo.",
+        "A powerful idea can make a familiar place feel like a responsibility.",
+        "Teachers forgot to check the clock, and many classes kept studying."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Students liked the clock because it made them feel less late.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「The student thought about this during exam week. He did not feel like studying, but he remembered Mr. Kuo.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「A powerful idea can make a familiar place feel like a responsibility.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Teachers forgot to check the clock, and many classes kept studying.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-4",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -341,13 +335,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The student thought about this during exam week. He did not feel like studying, but he remembered Mr. Kuo.」，答案為「He did not feel like studying, but he remembered Mr. Kuo.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「He did not feel like studying, but he remembered Mr. Kuo.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -357,7 +351,7 @@
       "id": "ENG_R4_Q_READ_074_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -370,44 +364,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_074",
-      "stem": "In Reading Set 074, which quotation is positioned at the opening of the last paragraph?",
+      "stem": "Which ending result or final point follows “He was only running.”?",
       "options": [
         "Sometimes discipline becomes a lesson for people watching.",
-        "Every morning, Mr. Kuo ran past the school gate at 6:40. Students on early duty often saw him.",
-        "One cold morning, a student asked him why he ran even when the weather was bad.",
-        "Mr. Kuo said, \"I do not run because every morning is comfortable. I run because I promised myself.\""
+        "Sometimes an object becomes important because of the feelings people leave there.",
+        "Sometimes a place changes not because it becomes larger or newer, but because it gives people time to stop.",
+        "Sometimes it works best when people barely notice it."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 6 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「He was only running. Sometimes discipline becomes a lesson for people watching.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Sometimes an object becomes important because of the feelings people leave there.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Sometimes a place changes not because it becomes larger or newer, but because it gives people time to…」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Sometimes it works best when people barely notice it.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-4",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -428,13 +422,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 6 段，正確引文與第 6 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「He was only running. Sometimes discipline becomes a lesson for people watching.」，答案為「Sometimes discipline becomes a lesson for people watching.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Sometimes discipline becomes a lesson for people watching.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -444,7 +438,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

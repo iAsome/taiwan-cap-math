@@ -42,34 +42,34 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_107",
-  "stem": "In Listening Set 107, which detail is explicitly confirmed in the conversation?",
+  "stem": "This exchange begins after one speaker asks for help. Which detail is given in the conversation?",
   "options": [
-    "a private home",
-    "health center",
-    "library",
-    "the river park"
+    "the first-aid bags must reach the health center before five twenty",
+    "the first-aid bags must reach the health center before two fifteen",
+    "the first-aid bags must reach the library before two fifteen",
+    "the book cartons must reach the health center before two fifteen"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "a private home：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the first-aid bags must reach the health center before five twenty：此項把「two fifteen」改成「five twenty」。對話明確陳述「the first-aid bags must reach the health center before two fifteen」。因此，鎖定證據支持「the first-aid bags must reach the health center before two fifteen」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "health center：對話明確說出 health center。"
+      "reason": "the first-aid bags must reach the health center before two fifteen：完整逐字稿明確支持此項。對話明確陳述「the first-aid bags must reach the health center before two fifteen」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "library：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the first-aid bags must reach the library before two fifteen：此項把「health center」改成「library」。對話明確陳述「the first-aid bags must reach the health center before two fifteen」。因此，鎖定證據支持「the first-aid bags must reach the health center before two fifteen」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "the river park：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the book cartons must reach the health center before two fifteen：此項把「first-aid bags」改成「book cartons」。對話明確陳述「the first-aid bags must reach the health center before two fifteen」。因此，鎖定證據支持「the first-aid bags must reach the health center before two fifteen」。"
     }
   ],
   "difficulty": "transfer",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-retrieve-confirmed-dialogue-detail",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「health center」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「the first-aid bags must reach the health center before two fifteen」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「the first-aid bags must reach the health center before two fifteen」成立。",
       "status": "pass"
     }
   ],

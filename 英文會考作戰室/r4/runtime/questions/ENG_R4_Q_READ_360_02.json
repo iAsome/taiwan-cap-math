@@ -2,7 +2,7 @@
   "id": "ENG_R4_Q_READ_360_02",
   "subject": "english",
   "skillIds": [
-    "ENG_R4_S249"
+    "ENG_R4_S250"
   ],
   "authorityRefs": [
     "AUTH-ENGLISH-LC-AE-4-5",
@@ -16,44 +16,44 @@
     "AUTH-ENGLISH-LP-5-4-9"
   ],
   "stimulusId": "ENG_R4_READ_360",
-  "stem": "In Reading Set 360, which paragraph should be cited for the line “Students learned that language is not only spoken at home or taught in school. It appears on walls,”?",
+  "stem": "Which answer is supported by the passage that includes “A school project asked students to make a language map of their neighborhood.”?",
   "options": [
-    "Paragraph 4",
-    "Paragraph 1",
-    "Paragraph 2",
-    "Paragraph 3"
+    "Some were used for business, some for religion, and some for communities that had moved there from other places.",
+    "A student from an apartment with little kitchen space asked if solar cooking was used in real places.",
+    "His teacher moved him closer to the front until he got used to the glasses.",
+    "The science club used small thermometers to measure different places on campus."
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "引文逐字出現在第 4 段開頭。"
+      "reason": "本文可直接核對「Some were used for business, some for religion, and some for communities that had moved there from other places.」，所以這個選項符合完整語境。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "第 1 段沒有這一行。"
+      "reason": "本文沒有陳述「A student from an apartment with little kitchen space asked if solar cooking was used in real places.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "第 2 段沒有這一行。"
+      "reason": "本文沒有陳述「His teacher moved him closer to the front until he got used to the glasses.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "第 3 段沒有這一行。"
+      "reason": "本文沒有陳述「The science club used small thermometers to measure different places on campus.」；這個選項混入另一個情境的資訊。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "scan-exact-line-and-locate-paragraph"
+    "distinguish-supported-detail-from-related-near-misses"
   ],
-  "representationType": "reading-paragraph-locator-5",
+  "representationType": "reading-supported-detail",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
@@ -75,13 +75,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "獨立解答核對：引文與第 4 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「Some were used for business, some for religion, and some for communities that had moved there from other places.」，答案為「Some were used for business, some for religion, and some for communities that had moved there from other…」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 0,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「Some were used for business, some for religion, and some for communities that had moved there from other…」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

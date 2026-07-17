@@ -1,9 +1,9 @@
 {
   "id": "ENG_R4_LISTEN_216",
   "section": "discourse",
-  "transcript": "This is a weather update for school office. Heavy rain is expected after one forty. Outdoor practice will end early, and the river path will close for the evening. Students walking home should use the station road, not the lower bridge. Families will receive another message if the warning changes.",
-  "spokenText": "This is a weather update for school office. Heavy rain is expected after one forty. Outdoor practice will end early, and the river path will close for the evening. Students walking home should use the station road, not the lower bridge. Families will receive another message if the warning changes.",
-  "audioDescription": "An original public message or short explanation whose purpose is to give a weather warning and safer route for school office.",
+  "transcript": "A community speaker gives this announcement. This is a weather update for the area around the school office. Heavy rain is expected after one forty. Outdoor practice will end early, and the river path will close for the evening. Students walking home should use the station road, not the lower bridge. Families will receive another message if the warning changes.",
+  "spokenText": "A community speaker gives this announcement. This is a weather update for the area around the school office. Heavy rain is expected after one forty. Outdoor practice will end early, and the river path will close for the evening. Students walking home should use the station road, not the lower bridge. Families will receive another message if the warning changes.",
+  "audioDescription": "An original public message or short explanation whose purpose is to give a weather warning and safer route near the school office.",
   "pauseMs": 3500,
   "voiceProfile": {
     "voice": "Microsoft Zira Desktop",
@@ -12,6 +12,14 @@
   "audioId": "ENG_R4_AUDIO_216",
   "audioPath": "runtime/audio/ENG_R4_AUDIO_216.wav",
   "glossary": [
+    {
+      "word": "community",
+      "translation": "社區；共同體"
+    },
+    {
+      "word": "announcement",
+      "translation": "宣告, 發表, 一項公告, 一項私人告示"
+    },
     {
       "word": "update",
       "translation": "更新"
@@ -37,20 +45,20 @@
       "translation": "警告"
     },
     {
-      "word": "purpose",
-      "translation": "目的"
+      "word": "announce",
+      "translation": "宣佈, 通告"
     },
     {
-      "word": "advertise",
-      "translation": "打廣告"
+      "word": "regular",
+      "translation": "通常的"
     },
     {
       "word": "route",
       "translation": "路線"
     },
     {
-      "word": "score",
-      "translation": "得分;得分;二十;刻痕;樂譜"
+      "word": "storm",
+      "translation": "猛攻;暴風雨"
     },
     {
       "word": "detail",
@@ -61,20 +69,8 @@
       "translation": "陳述;狀態;州"
     },
     {
-      "word": "recording",
-      "translation": "記錄;錄音;記錄;唱片"
-    },
-    {
-      "word": "sunrise",
-      "translation": "日出"
-    },
-    {
-      "word": "according",
-      "translation": "一致、符合"
-    },
-    {
-      "word": "continue",
-      "translation": "繼續"
+      "word": "required",
+      "translation": "必填"
     }
   ],
   "visualAssets": [],
@@ -123,34 +119,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_216",
-      "stem": "In Listening Set 216, what is the main purpose of this spoken message?",
+      "stem": "A community speaker gives this announcement. What is the message mainly meant to do?",
       "options": [
-        "advertise a new bridge near school office",
-        "give a weather warning and safer route for school office",
-        "invite school office families to a river race",
-        "report school office's sports score"
+        "announce regular practice times at the school office",
+        "give a weather warning and safer route near the school office",
+        "report a past storm near the school office",
+        "explain why the river path was built"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "advertise a new bridge near school office：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "announce regular practice times at the school office：此項把「give a weather warning and safer route near」改成「announce regular practice times at」。整段資訊的目的為「give a weather warning and safer route near the school office」。因此，鎖定證據支持「give a weather warning and safer route near the school office」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "give a weather warning and safer route for school office：整段資訊都用來 give a weather warning and safer route for school office。"
+          "reason": "give a weather warning and safer route near the school office：完整逐字稿明確支持此項。整段資訊的目的為「give a weather warning and safer route near the school office」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "invite school office families to a river race：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "report a past storm near the school office：此項把「give a weather warning and safer route」改成「report a past storm」。整段資訊的目的為「give a weather warning and safer route near the school office」。因此，鎖定證據支持「give a weather warning and safer route near the school office」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "report school office's sports score：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "explain why the river path was built：此項把「give a weather warning and safer route near the school office」改成「explain why the river path was built」。整段資訊的目的為「give a weather warning and safer route near the school office」。因此，鎖定證據支持「give a weather warning and safer route near the school office」。"
         }
       ],
       "difficulty": "transfer",
@@ -160,7 +156,7 @@
       ],
       "representationType": "listening-identify-spoken-message-purpose",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -208,13 +204,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「give a weather warning and safer route for school office」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「give a weather warning and safer route near the school office」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「give a weather warning and safer route near the school office」成立。",
           "status": "pass"
         }
       ],
@@ -266,34 +262,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_216",
-      "stem": "In Listening Set 216, which detail is stated in the recording?",
+      "stem": "A community speaker gives this announcement. Which detail is stated in the message?",
       "options": [
-        "heavy rain after one forty",
-        "heavy rain before three thirty",
-        "heavy rain next month",
-        "heavy rain at sunrise only"
+        "heavy rain is expected after one forty near the school office",
+        "heavy rain is expected before four o'clock near the school office",
+        "heavy rain is expected after one forty near the bookstore",
+        "light rain is expected after one forty near the school office"
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "heavy rain after one forty：音稿明確說出 heavy rain after one forty。"
+          "reason": "heavy rain is expected after one forty near the school office：完整逐字稿明確支持此項。音稿明確陳述「heavy rain is expected after one forty near the school office」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "heavy rain before three thirty：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "heavy rain is expected before four o'clock near the school office：此項把「after one forty」改成「before four o'clock」。音稿明確陳述「heavy rain is expected after one forty near the school office」。因此，鎖定證據支持「heavy rain is expected after one forty near the school office」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "heavy rain next month：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "heavy rain is expected after one forty near the bookstore：此項把「school office」改成「bookstore」。音稿明確陳述「heavy rain is expected after one forty near the school office」。因此，鎖定證據支持「heavy rain is expected after one forty near the school office」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "heavy rain at sunrise only：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "light rain is expected after one forty near the school office：此項把「heavy」改成「light」。音稿明確陳述「heavy rain is expected after one forty near the school office」。因此，鎖定證據支持「heavy rain is expected after one forty near the school office」。"
         }
       ],
       "difficulty": "foundation",
@@ -303,7 +299,7 @@
       ],
       "representationType": "listening-retrieve-spoken-detail",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -351,13 +347,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「heavy rain after one forty」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「heavy rain is expected after one forty near the school office」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「heavy rain is expected after one forty near the school office」成立。",
           "status": "pass"
         }
       ],
@@ -409,34 +405,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_216",
-      "stem": "In Listening Set 216, what should the listener do according to the recording?",
+      "stem": "A community speaker gives this announcement. Which action is planned or required in the full message?",
       "options": [
-        "use the lower bridge from school office",
-        "continue school office practice all night",
-        "wait beside the school office river",
-        "use the station road when leaving school office"
+        "use the lower bridge when leaving the school office",
+        "wait beside the river path after practice",
+        "use the station road only after the warning ends",
+        "use the station road when leaving the school office"
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "use the lower bridge from school office：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "use the lower bridge when leaving the school office：此項把「station road」改成「lower bridge」。完整訊息指出計畫或要求的行動為「use the station road when leaving the school office」。因此，鎖定證據支持「use the station road when leaving the school office」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "continue school office practice all night：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "wait beside the river path after practice：此項把「use the station road when leaving the school office」改成「wait beside the river path after practice」。完整訊息指出計畫或要求的行動為「use the station road when leaving the school office」。因此，鎖定證據支持「use the station road when leaving the school office」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "wait beside the school office river：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "use the station road only after the warning ends：此項把「when leaving the school office」改成「only after the warning ends」。完整訊息指出計畫或要求的行動為「use the station road when leaving the school office」。因此，鎖定證據支持「use the station road when leaving the school office」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "use the station road when leaving school office：指示或結論要求聽者 use the station road when leaving school office。"
+          "reason": "use the station road when leaving the school office：完整逐字稿明確支持此項。完整訊息指出計畫或要求的行動為「use the station road when leaving the school office」。"
         }
       ],
       "difficulty": "standard",
@@ -446,7 +442,7 @@
       ],
       "representationType": "listening-apply-announced-action-or-restriction",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -494,13 +490,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「use the station road when leaving school office」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「use the station road when leaving the school office」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「use the station road when leaving the school office」成立。",
           "status": "pass"
         }
       ],

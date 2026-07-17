@@ -2,90 +2,86 @@
   "id": "ENG_R4_Q_READ_386_02",
   "subject": "english",
   "skillIds": [
-    "ENG_R4_S278"
+    "ENG_R4_S250"
   ],
   "authorityRefs": [
-    "AUTH-ENGLISH-LC-AE-4-6",
-    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-AE-4-5",
     "AUTH-ENGLISH-LC-D-4-2",
-    "AUTH-ENGLISH-LC-D-4-3",
-    "AUTH-ENGLISH-LP-3-4-10",
-    "AUTH-ENGLISH-LP-3-4-12",
-    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-1-4-7",
     "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
     "AUTH-ENGLISH-LP-3-4-9",
-    "AUTH-ENGLISH-LP-9-4-2",
-    "AUTH-ENGLISH-LP-9-4-3"
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
   ],
   "stimulusId": "ENG_R4_READ_386",
-  "stem": "In Reading Set 386, how many paragraphs organize the passage that begins “A city discovered part of an ancient wall during subway construction. The wall delayed the project, and many”?",
+  "stem": "Which answer is supported by the passage that includes “A city discovered part of an ancient wall during subway construction.”?",
   "options": [
-    "6",
-    "7",
-    "5",
-    "4"
+    "Archaeologists studied old cooking tools and plant remains to understand what people ate long ago.",
+    "A farmer found an old coin in a field and gave it to a museum.",
+    "Historians studied it and found that it showed how the old city had protected itself.",
+    "A teacher showed students an old version of a popular website from many years ago."
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "6 與鎖定文本的實際段落數不符。"
+      "reason": "本文沒有陳述「Archaeologists studied old cooking tools and plant remains to understand what people ate long ago.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "7 與鎖定文本的實際段落數不符。"
+      "reason": "本文沒有陳述「A farmer found an old coin in a field and gave it to a museum.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "文章以換行鎖定為 5 個段落。"
+      "reason": "本文可直接核對「Historians studied it and found that it showed how the old city had protected itself.」，所以這個選項符合完整語境。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "4 與鎖定文本的實際段落數不符。"
+      "reason": "本文沒有陳述「A teacher showed students an old version of a popular website from many years ago.」；這個選項混入另一個情境的資訊。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "count-locked-paragraph-blocks"
+    "distinguish-supported-detail-from-related-near-misses"
   ],
-  "representationType": "reading-structure-count-1",
+  "representationType": "reading-supported-detail",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 English content author",
     "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
     "sourceRefs": [
-      "AUTH-ENGLISH-LC-AE-4-6",
-      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-AE-4-5",
       "AUTH-ENGLISH-LC-D-4-2",
-      "AUTH-ENGLISH-LC-D-4-3",
-      "AUTH-ENGLISH-LP-3-4-10",
-      "AUTH-ENGLISH-LP-3-4-12",
-      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-1-4-7",
       "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
       "AUTH-ENGLISH-LP-3-4-9",
-      "AUTH-ENGLISH-LP-9-4-2",
-      "AUTH-ENGLISH-LP-9-4-3"
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
     ]
   },
   "independentReviews": [
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「Historians studied it and found that it showed how the old city had protected itself.」，答案為「Historians studied it and found that it showed how the old city had protected itself.」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「Historians studied it and found that it showed how the old city had protected itself.」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

@@ -51,76 +51,92 @@
       "translation": "世代"
     },
     {
-      "word": "broad",
-      "translation": "寬廣的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "paragraphs",
-      "translation": "段落"
-    },
-    {
-      "word": "broader",
-      "translation": "寬廣的"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "climate",
-      "translation": "氣候"
-    },
-    {
-      "word": "diary",
-      "translation": "日記"
-    },
-    {
-      "word": "concert",
-      "translation": "音樂會, 一致"
-    },
-    {
-      "word": "restored",
-      "translation": "修復"
-    },
-    {
-      "word": "mangroves",
-      "translation": "紅樹林"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "contains",
+      "word": "includes",
       "translation": "包含"
     },
     {
-      "word": "exact",
-      "translation": "準確的"
+      "word": "restored",
+      "translation": "修復"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "ancient",
+      "translation": "古代的"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "cabinet",
+      "translation": "櫃子"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "situation",
+      "translation": "情形, 境遇, (建築物等的)位置"
     },
     {
-      "word": "quoted",
-      "translation": "引用, 引證, 提供, 提出, 報(價)"
+      "word": "fold",
+      "translation": "折, 羊欄, 折痕, 信徒；折疊, 包, 合攏, 抱住, 籠罩, 調入, 交迭；折疊起來, 徹底失敗"
+    },
+    {
+      "word": "cranes",
+      "translation": "起重機"
+    },
+    {
+      "word": "printing",
+      "translation": "印刷;用印刷體寫"
+    },
+    {
+      "word": "information",
+      "translation": "資訊"
+    },
+    {
+      "word": "revolutions",
+      "translation": "革命"
+    },
+    {
+      "word": "existed",
+      "translation": "存在"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
     },
     {
       "word": "final",
       "translation": "最終的"
+    },
+    {
+      "word": "anger",
+      "translation": "生氣"
+    },
+    {
+      "word": "collective",
+      "translation": "集體的"
+    },
+    {
+      "word": "strength",
+      "translation": "力, 力量, 力氣, 實力, 兵力, 濃度"
+    },
+    {
+      "word": "perfect",
+      "translation": "完美的"
+    },
+    {
+      "word": "effort",
+      "translation": "努力"
+    },
+    {
+      "word": "difficulty",
+      "translation": "困難"
     }
   ],
   "questions": [
@@ -141,11 +157,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_186",
-      "stem": "In Reading Set 186, which heading is broad enough for all paragraphs but not broader than the text?",
+      "stem": "Which title is best for the complete passage that includes “Grandma had a wooden mold for making moon cakes.”?",
       "options": [
-        "The Climate Diary",
-        "The Phone-Free Concert",
-        "The Restored Mangroves",
+        "The Old Radio",
+        "The Restored Photo",
+        "The Ancient Medicine Cabinet",
         "The Moon Cake Mold"
       ],
       "answerIndex": 3,
@@ -153,32 +169,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Climate Diary」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Radio」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Phone-Free Concert」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Restored Photo」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Restored Mangroves」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Ancient Medicine Cabinet」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Moon Cake Mold: Grandma had a wooden mold for making moon cakes.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-6",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -199,13 +215,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Moon Cake Mold」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Moon Cake Mold: Grandma had a wooden mold for making moon cakes.」，答案為「The Moon Cake Mold」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Moon Cake Mold」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -215,86 +231,84 @@
       "id": "ENG_R4_Q_READ_186_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S257"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-5",
-        "AUTH-ENGLISH-LC-D-4-2",
+        "AUTH-ENGLISH-LC-D-4-1",
+        "AUTH-ENGLISH-LC-D-4-3",
         "AUTH-ENGLISH-LP-1-4-7",
-        "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-8",
-        "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-5-4-7",
-        "AUTH-ENGLISH-LP-5-4-8",
-        "AUTH-ENGLISH-LP-5-4-9"
+        "AUTH-ENGLISH-LP-3-4-11",
+        "AUTH-ENGLISH-LP-3-4-12",
+        "AUTH-ENGLISH-LP-7-4-2",
+        "AUTH-ENGLISH-LP-9-4-1",
+        "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_186",
-      "stem": "In Reading Set 186, while checking the passage, which paragraph contains the exact line “Her grandson wanted to use a plastic mold because it was easier to clean. Grandma agreed to try”?",
+      "stem": "Which reason does the passage give for this situation: “Her grandson wanted to use a plastic mold”?",
       "options": [
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 2",
-        "Paragraph 1"
+        "Life often moves too fast",
+        "Of her shoes,\" she said",
+        "It was easier to clean",
+        "It sounded easier"
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「Life often moves too fast」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「Of her shoes,' she said」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 2 段開頭。"
+          "reason": "本文可直接核對「it was easier to clean」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「It sounded easier」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "connect-stated-reason-to-situation"
       ],
-      "representationType": "reading-paragraph-locator-1",
+      "representationType": "reading-stated-reason",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-5",
-          "AUTH-ENGLISH-LC-D-4-2",
+          "AUTH-ENGLISH-LC-D-4-1",
+          "AUTH-ENGLISH-LC-D-4-3",
           "AUTH-ENGLISH-LP-1-4-7",
-          "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-8",
-          "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-5-4-7",
-          "AUTH-ENGLISH-LP-5-4-8",
-          "AUTH-ENGLISH-LP-5-4-9"
+          "AUTH-ENGLISH-LP-3-4-11",
+          "AUTH-ENGLISH-LP-3-4-12",
+          "AUTH-ENGLISH-LP-7-4-2",
+          "AUTH-ENGLISH-LP-9-4-1",
+          "AUTH-ENGLISH-LP-9-4-3"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：引文與第 2 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「it was easier to clean」，答案為「It was easier to clean」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「It was easier to clean」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -320,44 +334,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_186",
-      "stem": "In Reading Set 186, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “The designs were clear, yet something felt missing.”?",
       "options": [
-        "Then Grandma showed him how to press the dough into the wooden mold. It took more care, but",
-        "She explained that her mother had used the same mold.",
-        "Grandma had a wooden mold for making moon cakes. It was old and dark from years of use.",
-        "Her grandson wanted to use a plastic mold because it was easier to clean. Grandma agreed to try"
+        "During art class, the teacher showed students how to fold paper cranes.",
+        "Then Grandma showed him how to press the dough into the wooden mold.",
+        "The printing press showed that information revolutions existed before the internet.",
+        "Lamps, toys, clocks, chairs, and bags are placed on a long wooden table."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「During art class, the teacher showed students how to fold paper cranes.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「The designs were clear, yet something felt missing. Then Grandma showed him how to press the dough into the wooden mold.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The printing press showed that information revolutions existed before the internet.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Lamps, toys, clocks, chairs, and bags are placed on a long wooden table.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-1",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -381,13 +395,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The designs were clear, yet something felt missing. Then Grandma showed him how to press the dough into the wooden mold.」，答案為「Then Grandma showed him how to press the dough into the wooden mold.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Then Grandma showed him how to press the dough into the wooden mold.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -397,7 +411,7 @@
       "id": "ENG_R4_Q_READ_186_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -410,44 +424,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_186",
-      "stem": "In Reading Set 186, which quoted line opens the final paragraph?",
+      "stem": "Which ending result or final point follows “The grandson understood that tools can carry memory.”?",
       "options": [
-        "The grandson understood that tools can carry memory. A newer tool may be easier, but an old one",
-        "Grandma had a wooden mold for making moon cakes. It was old and dark from years of use.",
-        "Her grandson wanted to use a plastic mold because it was easier to clean. Grandma agreed to try",
-        "Then Grandma showed him how to press the dough into the wooden mold. It took more care, but"
+        "A newer tool may be easier, but an old one can connect hands across generations.",
+        "It can carry memory, anger, hope, and collective strength across generations.",
+        "Some old things do not sound perfect, but they carry voices that new things cannot.\"",
+        "It was also about understanding effort, difficulty, and the people who made the week easier."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「The grandson understood that tools can carry memory. A newer tool may be easier, but an old one can connect hands across…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「It can carry memory, anger, hope, and collective strength across generations.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Some old things do not sound perfect, but they carry voices that new things cannot.'」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「It was also about understanding effort, difficulty, and the people who made the week easier.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-1",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -468,13 +482,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The grandson understood that tools can carry memory. A newer tool may be easier, but an old one can connect hands across generations.」，答案為「A newer tool may be easier, but an old one can connect hands across generations.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「A newer tool may be easier, but an old one can connect hands across generations.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -484,7 +498,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

@@ -23,48 +23,48 @@
       "translation": "標題;頭銜"
     },
     {
-      "word": "whole",
-      "translation": "完整的"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "adding",
-      "translation": "添加"
-    },
-    {
-      "word": "unsupported",
-      "translation": "不支持的"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "contains",
+      "word": "includes",
       "translation": "包含"
     },
     {
-      "word": "exact",
-      "translation": "準確的"
+      "word": "situation",
+      "translation": "情形, 境遇, (建築物等的)位置"
     },
     {
-      "word": "quoted",
-      "translation": "引用, 引證, 提供, 提出, 報(價)"
+      "word": "support",
+      "translation": "支持;支持"
     },
     {
-      "word": "earliest",
-      "translation": "最早的"
+      "word": "original",
+      "translation": "原本的；原創的"
+    },
+    {
+      "word": "fragile",
+      "translation": "脆弱的"
+    },
+    {
+      "word": "travel",
+      "translation": "旅行;旅行"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
     },
     {
       "word": "final",
       "translation": "最終的"
+    },
+    {
+      "word": "directions",
+      "translation": "方向"
     }
   ],
   "questions": [
@@ -85,44 +85,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_021",
-      "stem": "In Reading Set 021, which title best covers the whole text without adding an unsupported idea?",
+      "stem": "Which title is best for the complete passage that includes “There was always one empty seat in the front row of Room 305.”?",
       "options": [
         "The Empty Seat",
-        "The Red Door",
-        "The Empty Notebook",
-        "The Forest Camera"
+        "The Door That Stayed Open",
+        "The Quiet Bell",
+        "The New Glasses"
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Empty Seat: There was always one empty seat in the front row of Room 305.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Red Door」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Door That Stayed Open」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Empty Notebook」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Quiet Bell」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Forest Camera」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The New Glasses」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-1",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -143,13 +143,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Empty Seat」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Empty Seat: There was always one empty seat in the front row of Room 305.」，答案為「The Empty Seat」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Empty Seat」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -159,86 +159,84 @@
       "id": "ENG_R4_Q_READ_021_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S250"
+        "ENG_R4_S257"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-5",
-        "AUTH-ENGLISH-LC-D-4-2",
+        "AUTH-ENGLISH-LC-D-4-1",
+        "AUTH-ENGLISH-LC-D-4-3",
         "AUTH-ENGLISH-LP-1-4-7",
-        "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-8",
-        "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-5-4-7",
-        "AUTH-ENGLISH-LP-5-4-8",
-        "AUTH-ENGLISH-LP-5-4-9"
+        "AUTH-ENGLISH-LP-3-4-11",
+        "AUTH-ENGLISH-LP-3-4-12",
+        "AUTH-ENGLISH-LP-7-4-2",
+        "AUTH-ENGLISH-LP-9-4-1",
+        "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_021",
-      "stem": "In Reading Set 021, while checking the passage, which paragraph contains the exact line “There was always one empty seat in the front row of Room 305. No one sat there because”?",
+      "stem": "Which reason does the passage give for this situation: “No one sat there”?",
       "options": [
-        "Paragraph 2",
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 1"
+        "Their farms became too dry to support them",
+        "The original was too fragile to travel",
+        "Life often moves too fast",
+        "It was too close to the teacher's desk"
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 2 段沒有這一行。"
+          "reason": "本文沒有陳述「Their farms became too dry to support them」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「The original was too fragile to travel」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「Life often moves too fast」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 1 段開頭。"
+          "reason": "本文可直接核對「it was too close to the teacher's desk」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "connect-stated-reason-to-situation"
       ],
-      "representationType": "reading-paragraph-locator-1",
+      "representationType": "reading-stated-reason",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-5",
-          "AUTH-ENGLISH-LC-D-4-2",
+          "AUTH-ENGLISH-LC-D-4-1",
+          "AUTH-ENGLISH-LC-D-4-3",
           "AUTH-ENGLISH-LP-1-4-7",
-          "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-8",
-          "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-5-4-7",
-          "AUTH-ENGLISH-LP-5-4-8",
-          "AUTH-ENGLISH-LP-5-4-9"
+          "AUTH-ENGLISH-LP-3-4-11",
+          "AUTH-ENGLISH-LP-3-4-12",
+          "AUTH-ENGLISH-LP-7-4-2",
+          "AUTH-ENGLISH-LP-9-4-1",
+          "AUTH-ENGLISH-LP-9-4-3"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：引文與第 1 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「it was too close to the teacher's desk」，答案為「It was too close to the teacher's desk」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「It was too close to the teacher's desk」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -248,86 +246,90 @@
       "id": "ENG_R4_Q_READ_021_03",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S254"
+        "ENG_R4_S273"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-5",
+        "AUTH-ENGLISH-LC-AE-4-6",
+        "AUTH-ENGLISH-LC-AE-4-8",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LP-1-4-7",
+        "AUTH-ENGLISH-LC-D-4-3",
+        "AUTH-ENGLISH-LP-3-4-10",
+        "AUTH-ENGLISH-LP-3-4-12",
+        "AUTH-ENGLISH-LP-3-4-13",
         "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-5-4-7",
-        "AUTH-ENGLISH-LP-5-4-8",
-        "AUTH-ENGLISH-LP-5-4-9"
+        "AUTH-ENGLISH-LP-9-4-2",
+        "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_021",
-      "stem": "In Reading Set 021, which quoted line appears earliest in the passage?",
+      "stem": "What happens next in this passage after “Some students smiled because they thought he did not know why the seat was empty.”?",
       "options": [
-        "But Jason liked it there. He could hear the teacher clearly, see the board well, and ask questions",
-        "Soon, other students began to think differently about the front row. The empty seat was no longer a",
-        "There was always one empty seat in the front row of Room 305. No one sat there because",
-        "One day, a new student named Jason came into the classroom. He looked around and sat in the"
+        "Several students liked it.",
+        "She liked watching mountains, rivers, and houses pass by.",
+        "But Jason liked it there.",
+        "The class liked the idea."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
+          "reason": "本文沒有陳述「Several students liked it.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
+          "reason": "本文沒有陳述「She liked watching mountains, rivers, and houses pass by.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最早段落。"
+          "reason": "本文可直接核對「Some students smiled because they thought he did not know why the seat was empty. But Jason liked it there.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
+          "reason": "本文沒有陳述「The class liked the idea.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-earliest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-earliest-1",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-5",
+          "AUTH-ENGLISH-LC-AE-4-6",
+          "AUTH-ENGLISH-LC-AE-4-8",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LP-1-4-7",
+          "AUTH-ENGLISH-LC-D-4-3",
+          "AUTH-ENGLISH-LP-3-4-10",
+          "AUTH-ENGLISH-LP-3-4-12",
+          "AUTH-ENGLISH-LP-3-4-13",
           "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-5-4-7",
-          "AUTH-ENGLISH-LP-5-4-8",
-          "AUTH-ENGLISH-LP-5-4-9"
+          "AUTH-ENGLISH-LP-9-4-2",
+          "AUTH-ENGLISH-LP-9-4-3"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 1 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Some students smiled because they thought he did not know why the seat was empty. But Jason liked it there.」，答案為「But Jason liked it there.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「But Jason liked it there.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -350,44 +352,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_021",
-      "stem": "In Reading Set 021, which quoted line opens the final paragraph?",
+      "stem": "Which ending result or final point follows “this subject was no longer a bad place.”?",
       "options": [
-        "But Jason liked it there. He could hear the teacher clearly, see the board well, and ask questions",
-        "Soon, other students began to think differently about the front row. The empty seat was no longer a",
-        "There was always one empty seat in the front row of Room 305. No one sat there because",
-        "One day, a new student named Jason came into the classroom. He looked around and sat in the"
+        "Changing the time can change the feeling of a place.",
+        "It was just a place no one had tried.",
+        "The library became a place where knowledge moved in two directions, not just from older to younger.",
+        "Ms. Hill saw it as music waiting for a place."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Changing the time can change the feeling of a place.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行是第 4 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「The empty seat was no longer a bad place. It was just a place no one had tried.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「The library became a place where knowledge moved in two directions, not just from older to younger.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Ms. Hill saw it as music waiting for a place.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-1",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -408,13 +410,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：文章共有 4 段，正確引文與第 4 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The empty seat was no longer a bad place. It was just a place no one had tried.」，答案為「It was just a place no one had tried.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「It was just a place no one had tried.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -424,7 +426,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

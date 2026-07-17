@@ -2,86 +2,90 @@
   "id": "ENG_R4_Q_READ_041_03",
   "subject": "english",
   "skillIds": [
-    "ENG_R4_S254"
+    "ENG_R4_S273"
   ],
   "authorityRefs": [
-    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
     "AUTH-ENGLISH-LC-D-4-2",
-    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
     "AUTH-ENGLISH-LP-3-4-14",
-    "AUTH-ENGLISH-LP-3-4-8",
     "AUTH-ENGLISH-LP-3-4-9",
-    "AUTH-ENGLISH-LP-5-4-7",
-    "AUTH-ENGLISH-LP-5-4-8",
-    "AUTH-ENGLISH-LP-5-4-9"
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_041",
-  "stem": "In Reading Set 041, which quoted line appears earliest in the passage?",
+  "stem": "What happens next in this passage after “The words were almost gone.”?",
   "options": [
-    "The ticket was small and yellow. The words were almost gone. Ruby asked why he kept it for",
-    "Her father said, \"Because a small piece of paper can hold a large memory.\"",
-    "When Ruby cleaned her father's desk, she found an old movie ticket. The date on it was twenty",
-    "Her father smiled when he saw it. \"That was the first movie your mother and I watched together,\""
+    "After class, several students asked Jenny about the song.",
+    "His sister asked why he wanted an old toy.",
+    "Ruby asked why he kept it for so long.",
+    "A student asked why the museum kept a place connected to separation."
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之後。"
+      "reason": "本文沒有陳述「After class, several students asked Jenny about the song.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之後。"
+      "reason": "本文沒有陳述「His sister asked why he wanted an old toy.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "這一行來自四個候選中的最早段落。"
+      "reason": "本文可直接核對「The words were almost gone. Ruby asked why he kept it for so long.」，所以這個選項符合完整語境。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之後。"
+      "reason": "本文沒有陳述「A student asked why the museum kept a place connected to separation.」；這個選項混入另一個情境的資訊。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "identify-earliest-selected-paragraph"
+    "track-event-or-idea-sequence-from-content-anchor"
   ],
-  "representationType": "reading-sequence-earliest-1",
+  "representationType": "reading-content-sequence",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 English content author",
     "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
     "sourceRefs": [
-      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
       "AUTH-ENGLISH-LC-D-4-2",
-      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
       "AUTH-ENGLISH-LP-3-4-14",
-      "AUTH-ENGLISH-LP-3-4-8",
       "AUTH-ENGLISH-LP-3-4-9",
-      "AUTH-ENGLISH-LP-5-4-7",
-      "AUTH-ENGLISH-LP-5-4-8",
-      "AUTH-ENGLISH-LP-5-4-9"
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
     ]
   },
   "independentReviews": [
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 1 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「The words were almost gone. Ruby asked why he kept it for so long.」，答案為「Ruby asked why he kept it for so long.」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「Ruby asked why he kept it for so long.」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

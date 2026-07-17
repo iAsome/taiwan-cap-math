@@ -42,34 +42,34 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_230",
-  "stem": "In Listening Set 230, which detail is stated in the recording?",
+  "stem": "Listen to this report before making a decision. Which detail is stated in the message?",
   "options": [
-    "the History Photo Hour photo hall",
-    "History Photo Hour at the science room",
-    "the History Photo Hour workshop",
-    "the History Photo Hour model room"
+    "photos are not allowed in the History Photo Hour photo hall",
+    "photos are not allowed anywhere during History Photo Hour",
+    "photos are not allowed in the History Photo Hour workshop",
+    "photos are not allowed in the History Photo Hour model room"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "the History Photo Hour photo hall：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "photos are not allowed in the History Photo Hour photo hall：此項把「workshop」改成「photo hall」。音稿明確陳述「photos are not allowed in the History Photo Hour workshop」。因此，鎖定證據支持「photos are not allowed in the History Photo Hour workshop」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "History Photo Hour at the science room：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "photos are not allowed anywhere during History Photo Hour：此項把「in the History Photo Hour workshop」改成「anywhere during History Photo Hour」。音稿明確陳述「photos are not allowed in the History Photo Hour workshop」。因此，鎖定證據支持「photos are not allowed in the History Photo Hour workshop」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "the History Photo Hour workshop：音稿明確說出 the History Photo Hour workshop。"
+      "reason": "photos are not allowed in the History Photo Hour workshop：完整逐字稿明確支持此項。音稿明確陳述「photos are not allowed in the History Photo Hour workshop」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "the History Photo Hour model room：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "photos are not allowed in the History Photo Hour model room：此項把「workshop」改成「model room」。音稿明確陳述「photos are not allowed in the History Photo Hour workshop」。因此，鎖定證據支持「photos are not allowed in the History Photo Hour workshop」。"
     }
   ],
   "difficulty": "advanced",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-retrieve-spoken-detail",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「the History Photo Hour workshop」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「photos are not allowed in the History Photo Hour workshop」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「photos are not allowed in the History Photo Hour workshop」成立。",
       "status": "pass"
     }
   ],

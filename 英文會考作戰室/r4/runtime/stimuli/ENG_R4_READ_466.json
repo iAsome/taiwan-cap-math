@@ -103,68 +103,100 @@
       "translation": "價值"
     },
     {
-      "word": "broad",
-      "translation": "寬廣的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "paragraphs",
-      "translation": "段落"
-    },
-    {
-      "word": "broader",
-      "translation": "寬廣的"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "board",
-      "translation": "上車;上船;木板;;車上;船上"
-    },
-    {
-      "word": "sand",
-      "translation": "沙"
-    },
-    {
-      "word": "battery",
-      "translation": "電池"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "contains",
+      "word": "includes",
       "translation": "包含"
     },
     {
-      "word": "exact",
-      "translation": "準確的"
+      "word": "instrument",
+      "translation": "儀器；樂器"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "nutty",
+      "translation": "瘋狂的"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "imperfect",
+      "translation": "不完美的"
     },
     {
-      "word": "quoted",
-      "translation": "引用, 引證, 提供, 提出, 報(價)"
+      "word": "justice",
+      "translation": "正義；司法"
+    },
+    {
+      "word": "improves",
+      "translation": "改善"
+    },
+    {
+      "word": "astronomy",
+      "translation": "天文學"
+    },
+    {
+      "word": "instruments",
+      "translation": "儀器；樂器"
+    },
+    {
+      "word": "patient",
+      "translation": "病人"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
     },
     {
       "word": "final",
       "translation": "最終的"
+    },
+    {
+      "word": "reuse",
+      "translation": "重複使用"
+    },
+    {
+      "word": "empty",
+      "translation": "空的, 空洞的, 空虛的；使成為空的, 倒空；倒空；空的,空閑的；騰空, 騰出來"
+    },
+    {
+      "word": "shells",
+      "translation": "貝殼"
+    },
+    {
+      "word": "purpose",
+      "translation": "目的"
+    },
+    {
+      "word": "human",
+      "translation": "人類的;人"
+    },
+    {
+      "word": "managed",
+      "translation": "處理, 應付過去；管理, 控制, 操縱, 維持, 運用, 搞成, 設法, 達成"
+    },
+    {
+      "word": "healed",
+      "translation": "治癒, 醫治, 結束"
+    },
+    {
+      "word": "term",
+      "translation": "術語;學期"
+    },
+    {
+      "word": "responsibility",
+      "translation": "責任"
     }
   ],
   "questions": [
@@ -185,11 +217,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_466",
-      "stem": "In Reading Set 466, which heading is broad enough for all paragraphs but not broader than the text?",
+      "stem": "Which title is best for the complete passage that includes “A museum displayed an ancient bronze mirror.”?",
       "options": [
-        "The Quiet Bell",
-        "The Thank-You Board",
-        "The Sand Battery",
+        "The Museum Guide",
+        "The Ancient Music Instrument",
+        "The Ancient Bread",
         "The Ancient Mirror"
       ],
       "answerIndex": 3,
@@ -197,32 +229,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Quiet Bell」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Museum Guide」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Thank-You Board」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Ancient Music Instrument」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Sand Battery」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Ancient Bread」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Ancient Mirror: A museum displayed an ancient bronze mirror.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-6",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -243,13 +275,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Ancient Mirror」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Ancient Mirror: A museum displayed an ancient bronze mirror.」，答案為「The Ancient Mirror」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Ancient Mirror」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -259,7 +291,7 @@
       "id": "ENG_R4_Q_READ_466_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -273,44 +305,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_466",
-      "stem": "In Reading Set 466, while checking the passage, which paragraph contains the exact line “Students asked why a mirror needed decoration on the back.”?",
+      "stem": "Which answer is supported by the passage that includes “A museum displayed an ancient bronze mirror.”?",
       "options": [
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 2",
-        "Paragraph 1"
+        "A bakery used it to make bread with a nutty taste.",
+        "He used many dates and names, and the children forgot them quickly.",
+        "The owner may have used it for appearance, ceremony, or status.",
+        "It showed how people used stories to remember the night sky."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「A bakery used it to make bread with a nutty taste.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「He used many dates and names, and the children forgot them quickly.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 2 段開頭。"
+          "reason": "本文可直接核對「The owner may have used it for appearance, ceremony, or status.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「It showed how people used stories to remember the night sky.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-1",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -332,13 +364,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：引文與第 2 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The owner may have used it for appearance, ceremony, or status.」，答案為「The owner may have used it for appearance, ceremony, or status.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The owner may have used it for appearance, ceremony, or status.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -364,44 +396,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_466",
-      "stem": "In Reading Set 466, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “Students asked why a mirror needed decoration on the back.”?",
       "options": [
-        "The guide said objects can be practical and symbolic at the same time. The owner may have used",
-        "The mirror showed that daily objects can carry beliefs.",
-        "A museum displayed an ancient bronze mirror. Its surface no longer reflected clearly, but the back was decorated",
-        "Students asked why a mirror needed decoration on the back."
+        "The guide said ancient children played, learned, and made imperfect things too.",
+        "The guide said objects can be practical and symbolic at the same time.",
+        "The guide said, \"Because justice improves only when people remember where it failed.\"",
+        "The guide said astronomy began not only with instruments, but with patient watching."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The guide said ancient children played, learned, and made imperfect things too.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「Students asked why a mirror needed decoration on the back. The guide said objects can be practical and symbolic at the same…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The guide said, 'Because justice improves only when people remember where it failed.'」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The guide said astronomy began not only with instruments, but with patient watching.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-1",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -425,13 +457,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Students asked why a mirror needed decoration on the back. The guide said objects can be practical and symbolic at the same time.」，答案為「The guide said objects can be practical and symbolic at the same time.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The guide said objects can be practical and symbolic at the same time.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -441,7 +473,7 @@
       "id": "ENG_R4_Q_READ_466_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -454,44 +486,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_466",
-      "stem": "In Reading Set 466, which quoted line opens the final paragraph?",
+      "stem": "Which ending result or final point follows “This one suggested that looking at oneself had once been connected to art and meaning.”?",
       "options": [
         "The mirror no longer showed faces well, but it reflected a culture's ideas about beauty and value.",
-        "A museum displayed an ancient bronze mirror. Its surface no longer reflected clearly, but the back was decorated",
-        "Students asked why a mirror needed decoration on the back.",
-        "The guide said objects can be practical and symbolic at the same time. The owner may have used"
+        "Sometimes it is about working with what happens and finding beauty in the result.",
+        "Reuse showed that large buildings do not have to become empty shells when their first purpose ends.",
+        "It showed that human mistakes can sometimes be managed and healed, but only through long-term responsibility."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 6 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「This one suggested that looking at oneself had once been connected to art and meaning. The mirror no longer showed faces well,…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Sometimes it is about working with what happens and finding beauty in the result.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Reuse showed that large buildings do not have to become empty shells when their first purpose ends.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「It showed that human mistakes can sometimes be managed and healed, but only through long-term responsibility.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-1",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -512,13 +544,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 6 段，正確引文與第 6 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「This one suggested that looking at oneself had once been connected to art and meaning. The mirror no longer showed faces well, but it…」，答案為「The mirror no longer showed faces well, but it reflected a culture's ideas about beauty and value.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The mirror no longer showed faces well, but it reflected a culture's ideas about beauty and value.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -528,7 +560,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

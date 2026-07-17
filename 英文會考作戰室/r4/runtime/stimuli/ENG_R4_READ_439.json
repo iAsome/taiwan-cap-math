@@ -79,36 +79,68 @@
       "translation": "標題;頭銜"
     },
     {
-      "word": "matches",
-      "translation": "相配"
-    },
-    {
-      "word": "situation",
-      "translation": "情形, 境遇, (建築物等的)位置"
-    },
-    {
-      "word": "emphasis",
-      "translation": "強調"
-    },
-    {
-      "word": "label",
-      "translation": "標籤, 簽條, 商標, 標誌；貼標籤于, 指...為, 分類, 標注； 加上或修改磁盤的標籤"
-    },
-    {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "quotation",
-      "translation": "報價"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "positioned",
-      "translation": "位置"
+      "word": "includes",
+      "translation": "包含"
+    },
+    {
+      "word": "digital",
+      "translation": "數位化"
+    },
+    {
+      "word": "supported",
+      "translation": "支持;支持"
+    },
+    {
+      "word": "obey",
+      "translation": "服從"
+    },
+    {
+      "word": "preservation",
+      "translation": "保護"
+    },
+    {
+      "word": "benefits",
+      "translation": "利益, 好處；有益于, 有助于；受益"
+    },
+    {
+      "word": "limits",
+      "translation": "限制"
+    },
+    {
+      "word": "sensor",
+      "translation": "感測器"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "practical",
+      "translation": "實際的, 實踐的, 實用的, 應用的, 有實際經驗的"
+    },
+    {
+      "word": "equipment",
+      "translation": "裝置"
+    },
+    {
+      "word": "depends",
+      "translation": "依賴"
+    },
+    {
+      "word": "purpose",
+      "translation": "目的"
+    },
+    {
+      "word": "compromise",
+      "translation": "妥協"
     }
   ],
   "questions": [
@@ -129,44 +161,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_439",
-      "stem": "In Reading Set 439, which title matches both the opening situation and the ending emphasis?",
+      "stem": "Which title is best for the complete passage that includes “A student found an online article saying a local festival began in 1920.”?",
       "options": [
-        "The School Bag",
-        "The Deep-Sea Picture",
+        "The Door That Stayed Open",
+        "The Class Plant",
         "The Online Archive Mistake",
-        "The Food Label"
+        "The Digital Classroom Archive"
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The School Bag」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Door That Stayed Open」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Deep-Sea Picture」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Class Plant」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Online Archive Mistake: A student found an online article saying a local festival began in 1920.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Food Label」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Digital Classroom Archive」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-9",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -187,13 +219,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Online Archive Mistake」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Online Archive Mistake: A student found an online article saying a local festival began in 1920.」，答案為「The Online Archive Mistake」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Online Archive Mistake」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -217,44 +249,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_439",
-      "stem": "In Reading Set 439, a reader marked “Both dates were partly right.” Which paragraph was marked?",
+      "stem": "Which answer is supported by the passage that includes “A student found an online article saying a local festival began in 1920.”?",
       "options": [
-        "Paragraph 4",
-        "Paragraph 3",
-        "Paragraph 1",
-        "Paragraph 2"
+        "The class learned that art is not always about making the world obey your plan.",
+        "The project taught her that research is not always about finding one source and copying it.",
+        "The project taught students that saving the future is not only about what to store.",
+        "The museum taught that preservation is not always about making old things look new."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「The class learned that art is not always about making the world obey your plan.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 3 段開頭。"
+          "reason": "本文可直接核對「The project taught her that research is not always about finding one source and copying it.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「The project taught students that saving the future is not only about what to store.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 2 段沒有這一行。"
+          "reason": "本文沒有陳述「The museum taught that preservation is not always about making old things look new.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-4",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -276,13 +308,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：引文與第 3 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The project taught her that research is not always about finding one source and copying it.」，答案為「The project taught her that research is not always about finding one source and copying it.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The project taught her that research is not always about finding one source and copying it.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -292,86 +324,90 @@
       "id": "ENG_R4_Q_READ_439_03",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S254"
+        "ENG_R4_S273"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-5",
+        "AUTH-ENGLISH-LC-AE-4-6",
+        "AUTH-ENGLISH-LC-AE-4-8",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LP-1-4-7",
+        "AUTH-ENGLISH-LC-D-4-3",
+        "AUTH-ENGLISH-LP-3-4-10",
+        "AUTH-ENGLISH-LP-3-4-12",
+        "AUTH-ENGLISH-LP-3-4-13",
         "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-5-4-7",
-        "AUTH-ENGLISH-LP-5-4-8",
-        "AUTH-ENGLISH-LP-5-4-9"
+        "AUTH-ENGLISH-LP-9-4-2",
+        "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_439",
-      "stem": "In Reading Set 439, which quotation comes before the other three in the passage?",
+      "stem": "What happens next in this passage after “Both dates were partly right.”?",
       "options": [
-        "A student found an online article saying a local festival began in 1920. Another source said 1932.",
-        "Instead of choosing the first result, she visited the library archive. Old newspaper records showed that a small",
-        "Both dates were partly right.",
-        "Her report explained the difference."
+        "Her report explained the difference.",
+        "Her report explained both benefits and limits.",
+        "A student named Nina visited for a report.",
+        "A sensor can report that something is full."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最早段落。"
+          "reason": "本文可直接核對「Both dates were partly right. Her report explained the difference.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
+          "reason": "本文沒有陳述「Her report explained both benefits and limits.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
+          "reason": "本文沒有陳述「A student named Nina visited for a report.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
+          "reason": "本文沒有陳述「A sensor can report that something is full.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-earliest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-earliest-4",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-5",
+          "AUTH-ENGLISH-LC-AE-4-6",
+          "AUTH-ENGLISH-LC-AE-4-8",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LP-1-4-7",
+          "AUTH-ENGLISH-LC-D-4-3",
+          "AUTH-ENGLISH-LP-3-4-10",
+          "AUTH-ENGLISH-LP-3-4-12",
+          "AUTH-ENGLISH-LP-3-4-13",
           "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-5-4-7",
-          "AUTH-ENGLISH-LP-5-4-8",
-          "AUTH-ENGLISH-LP-5-4-9"
+          "AUTH-ENGLISH-LP-9-4-2",
+          "AUTH-ENGLISH-LP-9-4-3"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 1 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Both dates were partly right. Her report explained the difference.」，答案為「Her report explained the difference.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Her report explained the difference.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -394,44 +430,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_439",
-      "stem": "In Reading Set 439, which quotation is positioned at the opening of the last paragraph?",
+      "stem": "Which ending result or final point follows “Good research asks why sources disagree.”?",
       "options": [
-        "A student found an online article saying a local festival began in 1920. Another source said 1932.",
-        "Instead of choosing the first result, she visited the library archive. Old newspaper records showed that a small",
-        "Both dates were partly right.",
-        "Good research asks why sources disagree. The answer may reveal a richer story than either source alone."
+        "Sometimes it means practical, careful, and ready for another student's story.",
+        "Science does not always need expensive equipment to reveal big ideas.",
+        "Sometimes the best answer depends on time, purpose, and compromise.",
+        "The answer may reveal a richer story than either source alone."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Sometimes it means practical, careful, and ready for another student's story.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Science does not always need expensive equipment to reveal big ideas.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Sometimes the best answer depends on time, purpose, and compromise.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行是第 6 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「Good research asks why sources disagree. The answer may reveal a richer story than either source alone.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-4",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -452,13 +488,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：文章共有 6 段，正確引文與第 6 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Good research asks why sources disagree. The answer may reveal a richer story than either source alone.」，答案為「The answer may reveal a richer story than either source alone.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The answer may reveal a richer story than either source alone.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -468,7 +504,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

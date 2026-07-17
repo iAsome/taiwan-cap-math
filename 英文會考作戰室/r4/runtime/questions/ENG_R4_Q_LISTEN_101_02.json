@@ -42,34 +42,34 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_101",
-  "stem": "In Listening Set 101, which detail is explicitly confirmed in the conversation?",
+  "stem": "This conversation takes place before the first class. Which detail is given in the conversation?",
   "options": [
-    "music room",
-    "the river park",
-    "a private home",
-    "library"
+    "the science posters must reach the music room before eight thirty",
+    "the plant trays must reach the library before eight thirty",
+    "the science posters must reach the library before eleven twenty",
+    "the science posters must reach the library before eight thirty"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "music room：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the science posters must reach the music room before eight thirty：此項把「library」改成「music room」。對話明確陳述「the science posters must reach the library before eight thirty」。因此，鎖定證據支持「the science posters must reach the library before eight thirty」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "the river park：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the plant trays must reach the library before eight thirty：此項把「science posters」改成「plant trays」。對話明確陳述「the science posters must reach the library before eight thirty」。因此，鎖定證據支持「the science posters must reach the library before eight thirty」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "a private home：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the science posters must reach the library before eleven twenty：此項把「eight thirty」改成「eleven twenty」。對話明確陳述「the science posters must reach the library before eight thirty」。因此，鎖定證據支持「the science posters must reach the library before eight thirty」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "library：對話明確說出 library。"
+      "reason": "the science posters must reach the library before eight thirty：完整逐字稿明確支持此項。對話明確陳述「the science posters must reach the library before eight thirty」。"
     }
   ],
   "difficulty": "standard",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-retrieve-confirmed-dialogue-detail",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「library」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「the science posters must reach the library before eight thirty」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「the science posters must reach the library before eight thirty」成立。",
       "status": "pass"
     }
   ],

@@ -51,60 +51,60 @@
       "translation": "標題;頭銜"
     },
     {
-      "word": "whole",
-      "translation": "完整的"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "adding",
-      "translation": "添加"
-    },
-    {
-      "word": "unsupported",
-      "translation": "不支持的"
-    },
-    {
-      "word": "courtroom",
-      "translation": "法庭"
-    },
-    {
-      "word": "cinema",
-      "translation": "電影院"
-    },
-    {
-      "word": "app",
-      "translation": "應用程式"
-    },
-    {
-      "word": "paragraphs",
-      "translation": "段落"
-    },
-    {
-      "word": "organize",
-      "translation": "組織"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "quoted",
-      "translation": "引用, 引證, 提供, 提出, 報(價)"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "earliest",
-      "translation": "最早的"
+      "word": "harbor",
+      "translation": "港口"
+    },
+    {
+      "word": "supported",
+      "translation": "支持;支持"
+    },
+    {
+      "word": "inventions",
+      "translation": "發明"
+    },
+    {
+      "word": "technology",
+      "translation": "科技"
+    },
+    {
+      "word": "added",
+      "translation": "添加"
+    },
+    {
+      "word": "exhibit",
+      "translation": "展覽"
+    },
+    {
+      "word": "understood",
+      "translation": "明白了"
+    },
+    {
+      "word": "wooden",
+      "translation": "木製的"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
     },
     {
       "word": "final",
       "translation": "最終的"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "objects",
+      "translation": "反對;物件"
     }
   ],
   "questions": [
@@ -125,44 +125,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_221",
-      "stem": "In Reading Set 221, which title best covers the whole text without adding an unsupported idea?",
+      "stem": "Which title is best for the complete passage that includes “During a home repair, Sam found old newspapers under the floor.”?",
       "options": [
         "The Old Newspaper",
-        "The Old Courtroom",
-        "The Old Cinema Seats",
-        "The School App Problem"
+        "The Old Ticket",
+        "The Old Harbor",
+        "The Old Well"
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Old Newspaper: During a home repair, Sam found old newspapers under the floor.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Old Courtroom」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Ticket」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Old Cinema Seats」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Harbor」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The School App Problem」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Well」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-1",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -183,13 +183,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Old Newspaper」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Old Newspaper: During a home repair, Sam found old newspapers under the floor.」，答案為「The Old Newspaper」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Old Newspaper」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -199,7 +199,96 @@
       "id": "ENG_R4_Q_READ_221_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
+      ],
+      "authorityRefs": [
+        "AUTH-ENGLISH-LC-AE-4-5",
+        "AUTH-ENGLISH-LC-D-4-2",
+        "AUTH-ENGLISH-LP-1-4-7",
+        "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
+        "AUTH-ENGLISH-LP-3-4-9",
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
+      ],
+      "stimulusId": "ENG_R4_READ_221",
+      "stem": "Which answer is supported by the passage that includes “During a home repair, Sam found old newspapers under the floor.”?",
+      "options": [
+        "A city opened a small museum about failed inventions.",
+        "Others became interested in how technology changes art markets.",
+        "A history museum added smell boxes to an exhibit about old city life.",
+        "Others were about changes that still affected the city."
+      ],
+      "answerIndex": 3,
+      "optionRationales": [
+        {
+          "optionIndex": 0,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「A city opened a small museum about failed inventions.」；這個選項混入另一個情境的資訊。"
+        },
+        {
+          "optionIndex": 1,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「Others became interested in how technology changes art markets.」；這個選項混入另一個情境的資訊。"
+        },
+        {
+          "optionIndex": 2,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「A history museum added smell boxes to an exhibit about old city life.」；這個選項混入另一個情境的資訊。"
+        },
+        {
+          "optionIndex": 3,
+          "isCorrect": true,
+          "reason": "本文可直接核對「Others were about changes that still affected the city.」，所以這個選項符合完整語境。"
+        }
+      ],
+      "difficulty": "standard",
+      "cognitiveProcess": [
+        "read-locked-passage-evidence",
+        "distinguish-supported-detail-from-related-near-misses"
+      ],
+      "representationType": "reading-supported-detail",
+      "misconceptionTargets": [
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
+      ],
+      "provenance": {
+        "status": "original",
+        "authorRole": "Codex R4 English content author",
+        "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+        "sourceRefs": [
+          "AUTH-ENGLISH-LC-AE-4-5",
+          "AUTH-ENGLISH-LC-D-4-2",
+          "AUTH-ENGLISH-LP-1-4-7",
+          "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
+          "AUTH-ENGLISH-LP-3-4-9",
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
+        ]
+      },
+      "independentReviews": [
+        {
+          "reviewerRole": "english-grammar-solution-review",
+          "derivedAnswerIndex": 3,
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Others were about changes that still affected the city.」，答案為「Others were about changes that still affected the city.」。",
+          "status": "pass"
+        },
+        {
+          "reviewerRole": "english-alternative-answer-review",
+          "derivedAnswerIndex": 3,
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Others were about changes that still affected the city.」有同篇證據，三個干擾項均來自不同情境。",
+          "status": "pass"
+        }
+      ],
+      "assets": []
+    },
+    {
+      "id": "ENG_R4_Q_READ_221_03",
+      "subject": "english",
+      "skillIds": [
+        "ENG_R4_S273"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-6",
@@ -215,44 +304,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_221",
-      "stem": "In Reading Set 221, how many paragraphs organize the passage that begins “During a home repair, Sam found old newspapers under the floor. They were used many years ago to”?",
+      "stem": "What happens next in this passage after “Sam and his father read the headlines carefully.”?",
       "options": [
-        "4",
-        "6",
-        "7",
-        "5"
+        "Students used it again, but now they understood why it mattered.",
+        "Now people walk there in the evening, watching the river below.",
+        "Some stories seemed serious at the time but were now forgotten.",
+        "The wooden pipes seemed strange, but they had worked for their time."
       ],
-      "answerIndex": 3,
+      "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Students used it again, but now they understood why it mattered.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "6 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Now people walk there in the evening, watching the river below.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
-          "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "isCorrect": true,
+          "reason": "本文可直接核對「Sam and his father read the headlines carefully. Some stories seemed serious at the time but were now forgotten.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
-          "isCorrect": true,
-          "reason": "文章以換行鎖定為 5 個段落。"
+          "isCorrect": false,
+          "reason": "本文沒有陳述「The wooden pipes seemed strange, but they had worked for their time.」；這個選項混入另一個情境的資訊。"
         }
       ],
-      "difficulty": "standard",
+      "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-structure-count-1",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -275,103 +364,14 @@
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
-          "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
-          "status": "pass"
-        },
-        {
-          "reviewerRole": "english-alternative-answer-review",
-          "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
-          "status": "pass"
-        }
-      ],
-      "assets": []
-    },
-    {
-      "id": "ENG_R4_Q_READ_221_03",
-      "subject": "english",
-      "skillIds": [
-        "ENG_R4_S254"
-      ],
-      "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-5",
-        "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LP-1-4-7",
-        "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-8",
-        "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-5-4-7",
-        "AUTH-ENGLISH-LP-5-4-8",
-        "AUTH-ENGLISH-LP-5-4-9"
-      ],
-      "stimulusId": "ENG_R4_READ_221",
-      "stem": "In Reading Set 221, which quoted line appears earliest in the passage?",
-      "options": [
-        "Sam noticed old advertisements for products that no longer existed. He laughed at the prices.",
-        "His father said, \"A newspaper is written for one day, but later it becomes history.\"",
-        "During a home repair, Sam found old newspapers under the floor. They were used many years ago to",
-        "The paper was yellow and easy to tear. Sam and his father read the headlines carefully. Some stories"
-      ],
-      "answerIndex": 2,
-      "optionRationales": [
-        {
-          "optionIndex": 0,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        },
-        {
-          "optionIndex": 1,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        },
-        {
-          "optionIndex": 2,
-          "isCorrect": true,
-          "reason": "這一行來自四個候選中的最早段落。"
-        },
-        {
-          "optionIndex": 3,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        }
-      ],
-      "difficulty": "advanced",
-      "cognitiveProcess": [
-        "read-locked-passage-evidence",
-        "identify-earliest-selected-paragraph"
-      ],
-      "representationType": "reading-sequence-earliest-1",
-      "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
-      ],
-      "provenance": {
-        "status": "original",
-        "authorRole": "Codex R4 English content author",
-        "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
-        "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-5",
-          "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LP-1-4-7",
-          "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-8",
-          "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-5-4-7",
-          "AUTH-ENGLISH-LP-5-4-8",
-          "AUTH-ENGLISH-LP-5-4-9"
-        ]
-      },
-      "independentReviews": [
-        {
-          "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 1 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Sam and his father read the headlines carefully. Some stories seemed serious at the time but were now forgotten.」，答案為「Some stories seemed serious at the time but were now forgotten.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Some stories seemed serious at the time but were now forgotten.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -394,44 +394,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_221",
-      "stem": "In Reading Set 221, which quoted line opens the final paragraph?",
+      "stem": "Which ending result or final point follows “Sam put the best pages in a folder.”?",
       "options": [
-        "Sam noticed old advertisements for products that no longer existed. He laughed at the prices.",
-        "Sam put the best pages in a folder. Yesterday's news had become a window into a world that",
-        "During a home repair, Sam found old newspapers under the floor. They were used many years ago to",
-        "The paper was yellow and easy to tear. Sam and his father read the headlines carefully. Some stories"
+        "Sometimes a mistake can become an idea if people are willing to look at it differently.",
+        "Yesterday's news had become a window into a world that had not expected to be studied.",
+        "It showed that Grandpa was willing to enter a new world, one number at a time.",
+        "Some small objects help people rest because they hold a quiet world that does not hurry."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Sometimes a mistake can become an idea if people are willing to look at it differently.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「Sam put the best pages in a folder. Yesterday's news had become a window into a world that had not expected to…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「It showed that Grandpa was willing to enter a new world, one number at a time.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Some small objects help people rest because they hold a quiet world that does not hurry.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-1",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -452,13 +452,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Sam put the best pages in a folder. Yesterday's news had become a window into a world that had not expected to be studied.」，答案為「Yesterday's news had become a window into a world that had not expected to be studied.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Yesterday's news had become a window into a world that had not expected to be studied.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -468,7 +468,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

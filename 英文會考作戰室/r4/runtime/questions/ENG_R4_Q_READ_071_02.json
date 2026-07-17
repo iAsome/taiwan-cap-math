@@ -2,76 +2,70 @@
   "id": "ENG_R4_Q_READ_071_02",
   "subject": "english",
   "skillIds": [
-    "ENG_R4_S278"
+    "ENG_R4_S257"
   ],
   "authorityRefs": [
-    "AUTH-ENGLISH-LC-AE-4-6",
-    "AUTH-ENGLISH-LC-AE-4-8",
-    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
     "AUTH-ENGLISH-LC-D-4-3",
-    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
     "AUTH-ENGLISH-LP-3-4-12",
-    "AUTH-ENGLISH-LP-3-4-13",
-    "AUTH-ENGLISH-LP-3-4-14",
-    "AUTH-ENGLISH-LP-3-4-9",
-    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
     "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_071",
-  "stem": "In Reading Set 071, how many paragraphs organize the passage that begins “Ella's ruler broke during a math test. She raised her hand, but the teacher had no extra ruler.”?",
+  "stem": "Which reason does the passage give for this situation: “Later, Paul found that he had not finished one question”?",
   "options": [
-    "7",
-    "6",
-    "4",
-    "5"
+    "The room was dark and everyone was new",
+    "He waited for the ruler to come back",
+    "She had waited",
+    "It was too close to the teacher's desk"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "7 與鎖定文本的實際段落數不符。"
+      "reason": "本文沒有陳述「The room was dark and everyone was new」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "文章以換行鎖定為 6 個段落。"
+      "reason": "本文可直接核對「he waited for the ruler to come back」，所以這個選項符合完整語境。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "4 與鎖定文本的實際段落數不符。"
+      "reason": "本文沒有陳述「She had waited」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "5 與鎖定文本的實際段落數不符。"
+      "reason": "本文沒有陳述「It was too close to the teacher's desk」；這個選項混入另一個情境的資訊。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "count-locked-paragraph-blocks"
+    "connect-stated-reason-to-situation"
   ],
-  "representationType": "reading-structure-count-1",
+  "representationType": "reading-stated-reason",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 English content author",
     "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
     "sourceRefs": [
-      "AUTH-ENGLISH-LC-AE-4-6",
-      "AUTH-ENGLISH-LC-AE-4-8",
-      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
       "AUTH-ENGLISH-LC-D-4-3",
-      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
       "AUTH-ENGLISH-LP-3-4-12",
-      "AUTH-ENGLISH-LP-3-4-13",
-      "AUTH-ENGLISH-LP-3-4-14",
-      "AUTH-ENGLISH-LP-3-4-9",
-      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
       "AUTH-ENGLISH-LP-9-4-3"
     ]
   },
@@ -79,13 +73,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "獨立解答核對：以換行分段重新計數得到 6 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「he waited for the ruler to come back」，答案為「He waited for the ruler to come back」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「He waited for the ruler to come back」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

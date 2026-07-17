@@ -42,11 +42,11 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_125",
-  "stem": "In Listening Set 125, which detail is explicitly confirmed in the conversation?",
+  "stem": "This talk happens while they prepare for the afternoon. Which detail is given in the conversation?",
   "options": [
     "the music room show is on Sunday",
-    "the music room show is on next Friday",
-    "the music room show is on Tuesday",
+    "the community hall show is on Friday",
+    "the music room show begins at noon",
     "the music room show is on Friday"
   ],
   "answerIndex": 3,
@@ -54,22 +54,22 @@
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "the music room show is on Sunday：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the music room show is on Sunday：此項把「Friday」改成「Sunday」。對話明確陳述「the music room show is on Friday」。因此，鎖定證據支持「the music room show is on Friday」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "the music room show is on next Friday：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the community hall show is on Friday：此項把「music room」改成「community hall」。對話明確陳述「the music room show is on Friday」。因此，鎖定證據支持「the music room show is on Friday」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "the music room show is on Tuesday：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the music room show begins at noon：此項把「is on Friday」改成「begins at noon」。對話明確陳述「the music room show is on Friday」。因此，鎖定證據支持「the music room show is on Friday」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "the music room show is on Friday：對話明確說出 the music room show is on Friday。"
+      "reason": "the music room show is on Friday：完整逐字稿明確支持此項。對話明確陳述「the music room show is on Friday」。"
     }
   ],
   "difficulty": "standard",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-retrieve-confirmed-dialogue-detail",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「the music room show is on Friday」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「the music room show is on Friday」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「the music room show is on Friday」成立。",
       "status": "pass"
     }
   ],

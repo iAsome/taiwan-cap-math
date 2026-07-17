@@ -16,44 +16,44 @@
     "AUTH-ENGLISH-LP-5-4-9"
   ],
   "stimulusId": "ENG_R4_READ_315",
-  "stem": "In Reading Set 315, which paragraph should be cited for the line “The owner later said the sign changed the mood of the shop. Without it, slow service looked like”?",
+  "stem": "Which answer is supported by the passage that includes “A small shop placed a handwritten sign in its window: 'We are short of staff today.”?",
   "options": [
-    "Paragraph 4",
-    "Paragraph 3",
-    "Paragraph 1",
-    "Paragraph 2"
+    "Once measured, it becomes harder to ignore and easier to reduce.",
+    "Clear communication can reduce anger.",
+    "Another said clear size charts and customer reviews could reduce returns.",
+    "The city introduced shared bikes to reduce traffic."
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "第 4 段沒有這一行。"
+      "reason": "本文沒有陳述「Once measured, it becomes harder to ignore and easier to reduce.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "引文逐字出現在第 3 段開頭。"
+      "reason": "本文可直接核對「Clear communication can reduce anger.」，所以這個選項符合完整語境。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "第 1 段沒有這一行。"
+      "reason": "本文沒有陳述「Another said clear size charts and customer reviews could reduce returns.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "第 2 段沒有這一行。"
+      "reason": "本文沒有陳述「The city introduced shared bikes to reduce traffic.」；這個選項混入另一個情境的資訊。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "scan-exact-line-and-locate-paragraph"
+    "distinguish-supported-detail-from-related-near-misses"
   ],
-  "representationType": "reading-paragraph-locator-5",
+  "representationType": "reading-supported-detail",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
@@ -75,13 +75,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "獨立解答核對：引文與第 3 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「Clear communication can reduce anger.」，答案為「Clear communication can reduce anger.」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「Clear communication can reduce anger.」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

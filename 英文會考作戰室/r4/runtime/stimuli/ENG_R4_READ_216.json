@@ -35,76 +35,72 @@
       "translation": "記憶"
     },
     {
-      "word": "broad",
-      "translation": "寬廣的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "paragraphs",
-      "translation": "段落"
-    },
-    {
-      "word": "broader",
-      "translation": "寬廣的"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "landfill",
-      "translation": "垃圾掩埋場"
-    },
-    {
-      "word": "online",
-      "translation": "網路"
-    },
-    {
-      "word": "petition",
-      "translation": "請願書"
-    },
-    {
-      "word": "ancient",
-      "translation": "古代的"
-    },
-    {
-      "word": "pit",
-      "translation": "坑"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "contains",
+      "word": "includes",
       "translation": "包含"
     },
     {
-      "word": "exact",
-      "translation": "準確的"
+      "word": "coal",
+      "translation": "煤"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "whistle",
+      "translation": "口哨, 汽笛, 口哨聲, 汽笛聲；吹口哨, 鳴汽笛"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "repair",
+      "translation": "修理, 修補；修理, 修補, 補救, 糾正"
     },
     {
-      "word": "excerpt",
-      "translation": "摘錄"
+      "word": "reconnect",
+      "translation": "重新連接"
     },
     {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
+      "word": "objects",
+      "translation": "反對;物件"
+    },
+    {
+      "word": "nervously",
+      "translation": "神經緊張的, 不安的, 強健有力的"
+    },
+    {
+      "word": "perfect",
+      "translation": "完美的"
+    },
+    {
+      "word": "rougher",
+      "translation": "粗糙的, 粗略的, 大致的, 粗野的, 粗暴的, 粗略敘述的；大體描述；粗糙地"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "information",
+      "translation": "資訊"
+    },
+    {
+      "word": "embarrassed",
+      "translation": "使困窘"
     }
   ],
   "questions": [
@@ -125,44 +121,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_216",
-      "stem": "In Reading Set 216, which heading is broad enough for all paragraphs but not broader than the text?",
+      "stem": "Which title is best for the complete passage that includes “An old factory in the town used to sound a siren at noon.”?",
       "options": [
-        "The Old Landfill Park",
+        "The Closed Coal Mine",
         "The Factory Siren",
-        "The Online Petition",
-        "The Ancient Trash Pit"
+        "The Old Factory Whistle",
+        "The Door That Stayed Open"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Old Landfill Park」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Closed Coal Mine」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Factory Siren: An old factory in the town used to sound a siren at noon.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Online Petition」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Factory Whistle」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Ancient Trash Pit」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Door That Stayed Open」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-6",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -183,13 +179,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Factory Siren」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Factory Siren: An old factory in the town used to sound a siren at noon.」，答案為「The Factory Siren」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Factory Siren」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -199,7 +195,7 @@
       "id": "ENG_R4_Q_READ_216_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -213,44 +209,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_216",
-      "stem": "In Reading Set 216, while checking the passage, which paragraph contains the exact line “The cultural center kept the siren, but used it only once a year.”?",
+      "stem": "Which answer is supported by the passage that includes “An old factory in the town used to sound a siren at noon.”?",
       "options": [
-        "Paragraph 4",
-        "Paragraph 1",
-        "Paragraph 2",
-        "Paragraph 3"
+        "The cultural center kept the siren, but used it only once a year.",
+        "This year, a new art teacher, Ms. Park, kept the door open after school.",
+        "The letters will be kept for one year and then sent back to the writers.",
+        "Repair can reconnect people not only with objects, but with the hands that once used them."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 4 段開頭。"
+          "reason": "本文可直接核對「The cultural center kept the siren, but used it only once a year.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「This year, a new art teacher, Ms. Park, kept the door open after school.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "第 2 段沒有這一行。"
+          "reason": "本文沒有陳述「The letters will be kept for one year and then sent back to the writers.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「Repair can reconnect people not only with objects, but with the hands that once used them.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-1",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -272,13 +268,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：引文與第 4 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The cultural center kept the siren, but used it only once a year.」，答案為「The cultural center kept the siren, but used it only once a year.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The cultural center kept the siren, but used it only once a year.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -304,44 +300,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_216",
-      "stem": "In Reading Set 216, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “During the opening ceremony, former workers asked to hear the siren once more.”?",
       "options": [
-        "An old factory in the town used to sound a siren at noon. Workers heard it and went",
-        "Years later, the town turned the factory into a cultural center. During the opening ceremony, former workers asked",
-        "When the sound filled the air, some people covered their ears. Others had tears in their eyes. For",
-        "The cultural center kept the siren, but used it only once a year."
+        "Younger people covered their ears and laughed nervously.",
+        "The piano was not perfect, but it filled the room with sound.",
+        "Its sound was rougher than the modern bell, but people listened closely.",
+        "When the sound filled the air, some people covered their ears."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Younger people covered their ears and laughed nervously.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The piano was not perfect, but it filled the room with sound.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Its sound was rougher than the modern bell, but people listened closely.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「During the opening ceremony, former workers asked to hear the siren once more. When the sound filled the air, some people covered…」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-1",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -365,13 +361,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「During the opening ceremony, former workers asked to hear the siren once more. When the sound filled the air, some people covered their ears.」，答案為「When the sound filled the air, some people covered their ears.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「When the sound filled the air, some people covered their ears.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -394,44 +390,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_216",
-      "stem": "In Reading Set 216, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “For them, it was the sound of youth, hard work, and daily life.”?",
       "options": [
-        "factory into a cultural center. During the opening ceremony, former workers asked to hear the siren once more.",
-        "had tears in their eyes. For them, it was the sound of youth, hard work, and daily life.",
+        "A public thank-you may reach the right person in the end.",
+        "It is giving useful information before the person feels embarrassed to ask.",
         "A sound can be noise to one person and memory to another.",
-        "a siren at noon. Workers heard it and went to lunch. After the factory closed, the siren stopped."
+        "It also shows that someone has thought about the person using it."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「A public thank-you may reach the right person in the end.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「It is giving useful information before the person feels embarrassed to ask.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「For them, it was the sound of youth, hard work, and daily life. A sound can be noise to one person and…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「It also shows that someone has thought about the person using it.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -452,13 +448,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「For them, it was the sound of youth, hard work, and daily life. A sound can be noise to one person and memory to…」，答案為「A sound can be noise to one person and memory to another.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「A sound can be noise to one person and memory to another.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -468,7 +464,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

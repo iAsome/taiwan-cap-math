@@ -2,76 +2,70 @@
   "id": "ENG_R4_Q_READ_284_02",
   "subject": "english",
   "skillIds": [
-    "ENG_R4_S278"
+    "ENG_R4_S257"
   ],
   "authorityRefs": [
-    "AUTH-ENGLISH-LC-AE-4-6",
-    "AUTH-ENGLISH-LC-AE-4-8",
-    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
     "AUTH-ENGLISH-LC-D-4-3",
-    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
     "AUTH-ENGLISH-LP-3-4-12",
-    "AUTH-ENGLISH-LP-3-4-13",
-    "AUTH-ENGLISH-LP-3-4-14",
-    "AUTH-ENGLISH-LP-3-4-9",
-    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
     "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_284",
-  "stem": "In Reading Set 284, how many separate paragraph blocks follow from the opening “In media class, students watched a video of a famous person saying something shocking. Then the teacher revealed”?",
+  "stem": "Which reason does the passage give for this situation: “The class learned to check sources, look for trusted reports, and avoid sharing videos only”?",
   "options": [
-    "6",
-    "4",
-    "5",
-    "7"
+    "They cause strong emotions",
+    "Her grandmother made it",
+    "It had more choices",
+    "They remembered places well"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "文章以換行鎖定為 6 個段落。"
+      "reason": "本文可直接核對「they cause strong emotions」，所以這個選項符合完整語境。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "4 與鎖定文本的實際段落數不符。"
+      "reason": "本文沒有陳述「Her grandmother made it」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "5 與鎖定文本的實際段落數不符。"
+      "reason": "本文沒有陳述「It had more choices」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "7 與鎖定文本的實際段落數不符。"
+      "reason": "本文沒有陳述「They remembered places well」；這個選項混入另一個情境的資訊。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "count-locked-paragraph-blocks"
+    "connect-stated-reason-to-situation"
   ],
-  "representationType": "reading-structure-count-4",
+  "representationType": "reading-stated-reason",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 English content author",
     "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
     "sourceRefs": [
-      "AUTH-ENGLISH-LC-AE-4-6",
-      "AUTH-ENGLISH-LC-AE-4-8",
-      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
       "AUTH-ENGLISH-LC-D-4-3",
-      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
       "AUTH-ENGLISH-LP-3-4-12",
-      "AUTH-ENGLISH-LP-3-4-13",
-      "AUTH-ENGLISH-LP-3-4-14",
-      "AUTH-ENGLISH-LP-3-4-9",
-      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
       "AUTH-ENGLISH-LP-9-4-3"
     ]
   },
@@ -79,13 +73,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "獨立解答核對：以換行分段重新計數得到 6 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「they cause strong emotions」，答案為「They cause strong emotions」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 0,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「They cause strong emotions」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

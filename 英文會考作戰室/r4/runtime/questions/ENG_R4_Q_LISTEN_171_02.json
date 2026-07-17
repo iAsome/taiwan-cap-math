@@ -42,34 +42,34 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_171",
-  "stem": "In Listening Set 171, which detail is explicitly confirmed in the conversation?",
+  "stem": "This conversation takes place before the first class. Which detail is given in the conversation?",
   "options": [
-    "Ava should stay awake all night",
+    "Ava should rest without checking the temperature",
     "Ava should drink warm water and rest",
-    "Ava should run for an hour",
-    "Ava should skip all water"
+    "Ava should drink cold water and rest",
+    "Ava should drink warm water and exercise"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "Ava should stay awake all night：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "Ava should rest without checking the temperature：此項把「drink warm water and rest」改成「rest without checking the temperature」。對話明確陳述「Ava should drink warm water and rest」。因此，鎖定證據支持「Ava should drink warm water and rest」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "Ava should drink warm water and rest：對話明確說出 Ava should drink warm water and rest。"
+      "reason": "Ava should drink warm water and rest：完整逐字稿明確支持此項。對話明確陳述「Ava should drink warm water and rest」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "Ava should run for an hour：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "Ava should drink cold water and rest：此項把「warm」改成「cold」。對話明確陳述「Ava should drink warm water and rest」。因此，鎖定證據支持「Ava should drink warm water and rest」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "Ava should skip all water：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "Ava should drink warm water and exercise：此項把「rest」改成「exercise」。對話明確陳述「Ava should drink warm water and rest」。因此，鎖定證據支持「Ava should drink warm water and rest」。"
     }
   ],
   "difficulty": "transfer",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-retrieve-confirmed-dialogue-detail",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「Ava should drink warm water and rest」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「Ava should drink warm water and rest」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「Ava should drink warm water and rest」成立。",
       "status": "pass"
     }
   ],

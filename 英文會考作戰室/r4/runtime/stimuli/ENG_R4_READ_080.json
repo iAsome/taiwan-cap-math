@@ -27,72 +27,80 @@
       "translation": "印刷;用印刷體寫"
     },
     {
-      "word": "captures",
-      "translation": "捕獲, 戰利品；俘獲, 捕獲, 奪取"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "passage's",
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
+    },
+    {
+      "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "central",
-      "translation": "中央的"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "thread",
-      "translation": "線, 細絲, 線索, 思路, 螺紋"
+      "word": "silent",
+      "translation": "寂靜的"
     },
     {
-      "word": "instead",
-      "translation": "代替, 改為, 抵作, 更換"
+      "word": "online",
+      "translation": "網路"
     },
     {
-      "word": "replica",
-      "translation": "複製品"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "vote",
-      "translation": "投票"
+      "word": "infrastructure",
+      "translation": "基礎建設"
     },
     {
-      "word": "empty",
-      "translation": "空的, 空洞的, 空虛的；使成為空的, 倒空；倒空；空的,空閑的；騰空, 騰出來"
+      "word": "purpose",
+      "translation": "目的"
     },
     {
-      "word": "field",
-      "translation": "領域"
+      "word": "guide",
+      "translation": "引導;嚮導"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "alike",
+      "translation": "相似的"
+    },
+    {
+      "word": "apart",
+      "translation": "分離, 分成零件, 分別地, 分離著；分開的"
+    },
+    {
+      "word": "trails",
+      "translation": "蹤跡, 痕跡, 形跡；跟蹤, 追蹤, 拉, 拖, 拖拉, (指植物)蔓生, 蔓延, (指人)沒精打采地走"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
     },
     {
       "word": "final",
       "translation": "最終的"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "ocean",
+      "translation": "海洋"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "affect",
+      "translation": "影響"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "repair",
+      "translation": "修理, 修補；修理, 修補, 補救, 糾正"
     },
     {
-      "word": "excerpt",
-      "translation": "摘錄"
-    },
-    {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
-    },
-    {
-      "word": "passage",
-      "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
+      "word": "patience",
+      "translation": "耐性, 忍耐"
     }
   ],
   "questions": [
@@ -113,44 +121,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_080",
-      "stem": "In Reading Set 080, which heading captures the passage's central thread instead of a side point?",
+      "stem": "Which title is best for the complete passage that includes “Daniel's grandfather gave him an old camera.”?",
       "options": [
-        "The Museum Replica",
+        "The Silent Movie Night",
         "The Old Camera",
-        "The Class Pet Vote",
-        "The Empty Field"
+        "The Online Star",
+        "The Little Map"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Museum Replica」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Silent Movie Night」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Old Camera: Daniel's grandfather gave him an old camera.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Class Pet Vote」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Online Star」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Empty Field」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Little Map」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-10",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -171,13 +179,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Old Camera」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Old Camera: Daniel's grandfather gave him an old camera.」，答案為「The Old Camera」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Old Camera」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -187,90 +195,86 @@
       "id": "ENG_R4_Q_READ_080_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-6",
-        "AUTH-ENGLISH-LC-AE-4-8",
+        "AUTH-ENGLISH-LC-AE-4-5",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LC-D-4-3",
-        "AUTH-ENGLISH-LP-3-4-10",
-        "AUTH-ENGLISH-LP-3-4-12",
-        "AUTH-ENGLISH-LP-3-4-13",
+        "AUTH-ENGLISH-LP-1-4-7",
         "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-9-4-2",
-        "AUTH-ENGLISH-LP-9-4-3"
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_080",
-      "stem": "In Reading Set 080, a reader numbers every paragraph after “Daniel's grandfather gave him an old camera. It used film, not memory cards. Daniel could not see the.” What is the final paragraph number?",
+      "stem": "Which answer is supported by the passage that includes “Daniel's grandfather gave him an old camera.”?",
       "options": [
-        "5",
-        "4",
-        "6",
-        "7"
+        "Daniel still used his phone often, but the old camera taught him a different way to look.",
+        "When old infrastructure loses its first purpose, it may still guide people through history in a new way.",
+        "Things that look alike still need a way to be told apart.",
+        "Her mother said, \"It cannot do its old job, but it can still do a new one.\""
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "文章以換行鎖定為 5 個段落。"
+          "reason": "本文可直接核對「Daniel still used his phone often, but the old camera taught him a different way to look.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「When old infrastructure loses its first purpose, it may still guide people through history in a new way.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "6 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Things that look alike still need a way to be told apart.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Her mother said, 'It cannot do its old job, but it can still do a new one.'」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-structure-count-5",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-6",
-          "AUTH-ENGLISH-LC-AE-4-8",
+          "AUTH-ENGLISH-LC-AE-4-5",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LC-D-4-3",
-          "AUTH-ENGLISH-LP-3-4-10",
-          "AUTH-ENGLISH-LP-3-4-12",
-          "AUTH-ENGLISH-LP-3-4-13",
+          "AUTH-ENGLISH-LP-1-4-7",
           "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-9-4-2",
-          "AUTH-ENGLISH-LP-9-4-3"
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Daniel still used his phone often, but the old camera taught him a different way to look.」，答案為「Daniel still used his phone often, but the old camera taught him a different way to look.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Daniel still used his phone often, but the old camera taught him a different way to look.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -296,44 +300,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_080",
-      "stem": "In Reading Set 080, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “With this subject, every photo cost money.”?",
       "options": [
-        "Daniel's grandfather gave him an old camera. It used film, not memory cards. Daniel could not see the",
-        "At first, he found this annoying. With his phone, he could take many pictures and delete the bad",
-        "Because of this, Daniel became more careful. He looked at light, waited for people to stop moving, and",
-        "When the photos were finally printed, not all of them were good. But the good ones felt special."
+        "He became more careful after that.",
+        "The students became more careful on forest trails.",
+        "After careful cleaning and covering, it became a park.",
+        "Because of this, Daniel became more careful."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「He became more careful after that.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The students became more careful on forest trails.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「After careful cleaning and covering, it became a park.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「With the old camera, every photo cost money. Because of this, Daniel became more careful.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-5",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -357,13 +361,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「With the old camera, every photo cost money. Because of this, Daniel became more careful.」，答案為「Because of this, Daniel became more careful.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Because of this, Daniel became more careful.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -386,44 +390,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_080",
-      "stem": "In Reading Set 080, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “But the good ones felt special.”?",
       "options": [
-        "he could take many pictures and delete the bad ones. With the old camera, every photo cost money.",
-        "more careful. He looked at light, waited for people to stop moving, and thought before pressing the button.",
-        "old camera taught him a different way to look. Not everything needs to be quick to be useful.",
-        "old camera. It used film, not memory cards. Daniel could not see the photos right after taking them."
+        "A shared ocean needs shared rules, or everyone loses.",
+        "but \"How does it affect everything around it?\"",
+        "Not everything needs to be quick to be useful.",
+        "A cleaner future still needs planning, repair, and patience."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「A shared ocean needs shared rules, or everyone loses.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「but 'How does it affect everything around it?'」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「But the good ones felt special. Not everything needs to be quick to be useful.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「A cleaner future still needs planning, repair, and patience.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -444,13 +448,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「But the good ones felt special. Not everything needs to be quick to be useful.」，答案為「Not everything needs to be quick to be useful.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Not everything needs to be quick to be useful.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -460,7 +464,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

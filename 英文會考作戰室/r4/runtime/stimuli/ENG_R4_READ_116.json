@@ -51,68 +51,56 @@
       "translation": "查看"
     },
     {
-      "word": "broad",
-      "translation": "寬廣的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "paragraphs",
-      "translation": "段落"
-    },
-    {
-      "word": "broader",
-      "translation": "寬廣的"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "ocean",
-      "translation": "海洋"
-    },
-    {
-      "word": "treaty",
-      "translation": "條約"
-    },
-    {
-      "word": "memory",
-      "translation": "記憶"
-    },
-    {
-      "word": "app",
-      "translation": "應用程式"
-    },
-    {
-      "word": "organize",
-      "translation": "組織"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "empty",
+      "translation": "空的, 空洞的, 空虛的；使成為空的, 倒空；倒空；空的,空閑的；騰空, 騰出來"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "situation",
+      "translation": "情形, 境遇, (建築物等的)位置"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "impression",
+      "translation": "印象"
     },
     {
-      "word": "excerpt",
-      "translation": "摘錄"
+      "word": "result",
+      "translation": "結果"
     },
     {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "information",
+      "translation": "資訊"
+    },
+    {
+      "word": "behavior",
+      "translation": "行為"
+    },
+    {
+      "word": "personal",
+      "translation": "個人的"
+    },
+    {
+      "word": "connected",
+      "translation": "連接, 聯合, 關連"
     }
   ],
   "questions": [
@@ -133,44 +121,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_116",
-      "stem": "In Reading Set 116, which heading is broad enough for all paragraphs but not broader than the text?",
+      "stem": "Which title is best for the complete passage that includes “After getting new glasses, Oliver realized the classroom board was not supposed to be blurry.”?",
       "options": [
-        "The Ocean Treaty Lesson",
+        "The Quiet Bell",
         "The New Glasses",
-        "The Wrong Gift",
-        "The Memory App"
+        "The Empty Seat",
+        "The Window Seat"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Ocean Treaty Lesson」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Quiet Bell」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The New Glasses: After getting new glasses, Oliver realized the classroom board was not supposed to be blurry.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Wrong Gift」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Empty Seat」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Memory App」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Window Seat」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-6",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -191,13 +179,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The New Glasses」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The New Glasses: After getting new glasses, Oliver realized the classroom board was not supposed to be blurry.」，答案為「The New Glasses」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The New Glasses」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -207,76 +195,70 @@
       "id": "ENG_R4_Q_READ_116_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S257"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-6",
-        "AUTH-ENGLISH-LC-AE-4-8",
-        "AUTH-ENGLISH-LC-D-4-2",
+        "AUTH-ENGLISH-LC-D-4-1",
         "AUTH-ENGLISH-LC-D-4-3",
-        "AUTH-ENGLISH-LP-3-4-10",
+        "AUTH-ENGLISH-LP-1-4-7",
+        "AUTH-ENGLISH-LP-3-4-11",
         "AUTH-ENGLISH-LP-3-4-12",
-        "AUTH-ENGLISH-LP-3-4-13",
-        "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-9-4-2",
+        "AUTH-ENGLISH-LP-7-4-2",
+        "AUTH-ENGLISH-LP-9-4-1",
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_116",
-      "stem": "In Reading Set 116, how many paragraphs organize the passage that begins “After getting new glasses, Oliver realized the classroom board was not supposed to be blurry. Leaves on trees”?",
+      "stem": "Which reason does the passage give for this situation: “He learned that sometimes people struggle not”?",
       "options": [
-        "5",
-        "4",
-        "6",
-        "7"
+        "They are lazy or careless, but because a problem has not been found yet",
+        "It tells children one thing before they even enter: stories are waiting for you",
+        "It becomes larger or newer, but because it gives people time to stop",
+        "People learned that a shop does not need many choices to make a good impression"
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "文章以換行鎖定為 5 個段落。"
+          "reason": "本文可直接核對「they are lazy or careless, but because a problem has not been found yet」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「It tells children one thing before they even enter: stories are waiting for you」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "6 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「It becomes larger or newer, but because it gives people time to stop」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「People learned that a shop does not need many choices to make a good impression」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "connect-stated-reason-to-situation"
       ],
-      "representationType": "reading-structure-count-1",
+      "representationType": "reading-stated-reason",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-6",
-          "AUTH-ENGLISH-LC-AE-4-8",
-          "AUTH-ENGLISH-LC-D-4-2",
+          "AUTH-ENGLISH-LC-D-4-1",
           "AUTH-ENGLISH-LC-D-4-3",
-          "AUTH-ENGLISH-LP-3-4-10",
+          "AUTH-ENGLISH-LP-1-4-7",
+          "AUTH-ENGLISH-LP-3-4-11",
           "AUTH-ENGLISH-LP-3-4-12",
-          "AUTH-ENGLISH-LP-3-4-13",
-          "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-9-4-2",
+          "AUTH-ENGLISH-LP-7-4-2",
+          "AUTH-ENGLISH-LP-9-4-1",
           "AUTH-ENGLISH-LP-9-4-3"
         ]
       },
@@ -284,13 +266,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「they are lazy or careless, but because a problem has not been found yet」，答案為「They are lazy or careless, but because a problem has not been found yet」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「They are lazy or careless, but because a problem has not been found yet」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -316,44 +298,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_116",
-      "stem": "In Reading Set 116, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “He had thought he was bad at copying notes because he was slow.”?",
       "options": [
-        "After getting new glasses, Oliver realized the classroom board was not supposed to be blurry. Leaves on trees",
-        "He felt happy, but also embarrassed. He had thought he was bad at copying notes because he was",
-        "His teacher moved him closer to the front until he got used to the glasses.",
-        "Oliver's grades improved, but more importantly, he stopped blaming himself."
+        "He could hear the teacher clearly, see the board well, and ask questions easily.",
+        "People cannot change a habit they cannot see.",
+        "It simply appeared by the window one Monday morning.",
+        "In fact, he simply could not see well."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「He could hear the teacher clearly, see the board well, and ask questions easily.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「People cannot change a habit they cannot see.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「It simply appeared by the window one Monday morning.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「He had thought he was bad at copying notes because he was slow. In fact, he simply could not see well.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-1",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -377,13 +359,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「He had thought he was bad at copying notes because he was slow. In fact, he simply could not see well.」，答案為「In fact, he simply could not see well.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「In fact, he simply could not see well.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -406,44 +388,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_116",
-      "stem": "In Reading Set 116, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “Oliver's grades improved, but more importantly, he stopped blaming himself.”?",
       "options": [
-        "he was bad at copying notes because he was slow. In fact, he simply could not see well.",
-        "His teacher moved him closer to the front until he got used to the glasses.",
-        "a problem has not been found yet. A clear view can change more than what the eyes see.",
-        "not supposed to be blurry. Leaves on trees had clear edges, and street signs were easier to read."
+        "People cannot change a habit they cannot see.",
+        "Information can change behavior when it is clear, personal, and connected to choices people can actually make.",
+        "A clear view can change more than what the eyes see.",
+        "She learned that giving up one view can sometimes help you see another."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「People cannot change a habit they cannot see.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Information can change behavior when it is clear, personal, and connected to choices people can actually make.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「Oliver's grades improved, but more importantly, he stopped blaming himself. A clear view can change more than what the eyes see.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「She learned that giving up one view can sometimes help you see another.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -464,13 +446,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Oliver's grades improved, but more importantly, he stopped blaming himself. A clear view can change more than what the eyes see.」，答案為「A clear view can change more than what the eyes see.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「A clear view can change more than what the eyes see.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -480,7 +462,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

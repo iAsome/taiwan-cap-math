@@ -91,52 +91,84 @@
       "translation": "標題;頭銜"
     },
     {
-      "word": "represents",
-      "translation": "代表"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "whole",
-      "translation": "完整的"
-    },
-    {
-      "word": "rather",
-      "translation": "寧可;頗為"
-    },
-    {
-      "word": "detail",
-      "translation": "細節, 詳情；詳述, 細說"
-    },
-    {
-      "word": "law",
-      "translation": "法律"
-    },
-    {
-      "word": "microphone",
-      "translation": "擴音器, 麥克風"
-    },
-    {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "selected",
-      "translation": "挑選"
-    },
-    {
-      "word": "closest",
-      "translation": "最接近的"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "concluding",
-      "translation": "結束, 終止, 決定, 作出結論；推斷, 斷定, 締結, 議定"
+      "word": "includes",
+      "translation": "包含"
+    },
+    {
+      "word": "coral",
+      "translation": "珊瑚"
+    },
+    {
+      "word": "tank",
+      "translation": "槽;坦克"
+    },
+    {
+      "word": "microphone",
+      "translation": "擴音器, 麥克風"
+    },
+    {
+      "word": "supported",
+      "translation": "支持;支持"
+    },
+    {
+      "word": "safety",
+      "translation": "安全"
+    },
+    {
+      "word": "board",
+      "translation": "上車;上船;木板;;車上;船上"
+    },
+    {
+      "word": "lanterns",
+      "translation": "燈籠"
+    },
+    {
+      "word": "clay",
+      "translation": "黏土"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "technology",
+      "translation": "科技"
+    },
+    {
+      "word": "objects",
+      "translation": "反對;物件"
+    },
+    {
+      "word": "behavior",
+      "translation": "行為"
+    },
+    {
+      "word": "remains",
+      "translation": "保持, 逗留, 剩餘, 殘存"
+    },
+    {
+      "word": "system",
+      "translation": "系統, 體系, 制度, 體制, 秩序, 規律, 方法"
+    },
+    {
+      "word": "audiences",
+      "translation": "聽眾, 觀眾, 接見, 拜見"
+    },
+    {
+      "word": "intention",
+      "translation": "意圖"
     }
   ],
   "questions": [
@@ -157,44 +189,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_263",
-      "stem": "In Reading Set 263, which title represents the text as a whole rather than one small detail?",
+      "stem": "Which title is best for the complete passage that includes “Scientists placed microphones under the ocean to record whale songs and ship noise.”?",
       "options": [
-        "The New Water Law",
-        "A Notice at the Zoo",
+        "The Coral Tank",
+        "The Forest Camera",
         "The Ocean Microphone",
-        "The Map of Trees"
+        "The Deep-Sea Picture"
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The New Water Law」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Coral Tank」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「A Notice at the Zoo」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Forest Camera」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Ocean Microphone: Scientists placed microphones under the ocean to record whale songs and ship noise.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Map of Trees」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Deep-Sea Picture」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-3",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -215,13 +247,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Ocean Microphone」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Ocean Microphone: Scientists placed microphones under the ocean to record whale songs and ship noise.」，答案為「The Ocean Microphone」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Ocean Microphone」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -231,7 +263,96 @@
       "id": "ENG_R4_Q_READ_263_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
+      ],
+      "authorityRefs": [
+        "AUTH-ENGLISH-LC-AE-4-5",
+        "AUTH-ENGLISH-LC-D-4-2",
+        "AUTH-ENGLISH-LP-1-4-7",
+        "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
+        "AUTH-ENGLISH-LP-3-4-9",
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
+      ],
+      "stimulusId": "ENG_R4_READ_263",
+      "stem": "Which answer is supported by the passage that includes “Scientists placed microphones under the ocean to record whale songs and ship noise.”?",
+      "options": [
+        "Sometimes it takes visitors to make people notice what they already have.",
+        "Visitors heard deep calls, clicks, and long sounds that seemed almost musical.",
+        "For the safety of our animals and visitors, please follow these rules.",
+        "Many visitors came to buy plants, but they left with knowledge too."
+      ],
+      "answerIndex": 1,
+      "optionRationales": [
+        {
+          "optionIndex": 0,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「Sometimes it takes visitors to make people notice what they already have.」；這個選項混入另一個情境的資訊。"
+        },
+        {
+          "optionIndex": 1,
+          "isCorrect": true,
+          "reason": "本文可直接核對「Visitors heard deep calls, clicks, and long sounds that seemed almost musical.」，所以這個選項符合完整語境。"
+        },
+        {
+          "optionIndex": 2,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「For the safety of our animals and visitors, please follow these rules.」；這個選項混入另一個情境的資訊。"
+        },
+        {
+          "optionIndex": 3,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「Many visitors came to buy plants, but they left with knowledge too.」；這個選項混入另一個情境的資訊。"
+        }
+      ],
+      "difficulty": "transfer",
+      "cognitiveProcess": [
+        "read-locked-passage-evidence",
+        "distinguish-supported-detail-from-related-near-misses"
+      ],
+      "representationType": "reading-supported-detail",
+      "misconceptionTargets": [
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
+      ],
+      "provenance": {
+        "status": "original",
+        "authorRole": "Codex R4 English content author",
+        "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+        "sourceRefs": [
+          "AUTH-ENGLISH-LC-AE-4-5",
+          "AUTH-ENGLISH-LC-D-4-2",
+          "AUTH-ENGLISH-LP-1-4-7",
+          "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
+          "AUTH-ENGLISH-LP-3-4-9",
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
+        ]
+      },
+      "independentReviews": [
+        {
+          "reviewerRole": "english-grammar-solution-review",
+          "derivedAnswerIndex": 1,
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Visitors heard deep calls, clicks, and long sounds that seemed almost musical.」，答案為「Visitors heard deep calls, clicks, and long sounds that seemed almost musical.」。",
+          "status": "pass"
+        },
+        {
+          "reviewerRole": "english-alternative-answer-review",
+          "derivedAnswerIndex": 1,
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Visitors heard deep calls, clicks, and long sounds that seemed almost musical.」有同篇證據，三個干擾項均來自不同情境。",
+          "status": "pass"
+        }
+      ],
+      "assets": []
+    },
+    {
+      "id": "ENG_R4_Q_READ_263_03",
+      "subject": "english",
+      "skillIds": [
+        "ENG_R4_S273"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-6",
@@ -247,44 +368,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_263",
-      "stem": "In Reading Set 263, what is the paragraph count of the text whose opening is “Scientists placed microphones under the ocean to record whale songs and ship noise. The recordings were played in”?",
+      "stem": "What happens next in this passage after “A guide explained that sound travels far underwater.”?",
       "options": [
-        "7",
-        "5",
-        "4",
-        "6"
+        "For some animals, noise can make communication harder.",
+        "The board did not make them work harder.",
+        "Most lanterns were shaped like animals or flowers.",
+        "They were also children making animals from clay."
       ],
-      "answerIndex": 1,
+      "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
-          "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "isCorrect": true,
+          "reason": "本文可直接核對「A guide explained that sound travels far underwater. For some animals, noise can make communication harder.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
-          "isCorrect": true,
-          "reason": "文章以換行鎖定為 5 個段落。"
+          "isCorrect": false,
+          "reason": "本文沒有陳述「The board did not make them work harder.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Most lanterns were shaped like animals or flowers.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "6 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「They were also children making animals from clay.」；這個選項混入另一個情境的資訊。"
         }
       ],
-      "difficulty": "transfer",
+      "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-structure-count-3",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -307,103 +428,14 @@
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
-          "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
-          "status": "pass"
-        },
-        {
-          "reviewerRole": "english-alternative-answer-review",
-          "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
-          "status": "pass"
-        }
-      ],
-      "assets": []
-    },
-    {
-      "id": "ENG_R4_Q_READ_263_03",
-      "subject": "english",
-      "skillIds": [
-        "ENG_R4_S254"
-      ],
-      "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-5",
-        "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LP-1-4-7",
-        "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-8",
-        "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-5-4-7",
-        "AUTH-ENGLISH-LP-5-4-8",
-        "AUTH-ENGLISH-LP-5-4-9"
-      ],
-      "stimulusId": "ENG_R4_READ_263",
-      "stem": "In Reading Set 263, which selected line belongs closest to the beginning of the passage?",
-      "options": [
-        "Scientists placed microphones under the ocean to record whale songs and ship noise. The recordings were played in",
-        "Visitors heard deep calls, clicks, and long sounds that seemed almost musical. Then they heard the noise of",
-        "A guide explained that sound travels far underwater. For some animals, noise can make communication harder.",
-        "A student left the exhibit thinking about pollution differently. Pollution was not only trash or dirty water. It"
-      ],
-      "answerIndex": 0,
-      "optionRationales": [
-        {
-          "optionIndex": 0,
-          "isCorrect": true,
-          "reason": "這一行來自四個候選中的最早段落。"
-        },
-        {
-          "optionIndex": 1,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        },
-        {
-          "optionIndex": 2,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        },
-        {
-          "optionIndex": 3,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        }
-      ],
-      "difficulty": "foundation",
-      "cognitiveProcess": [
-        "read-locked-passage-evidence",
-        "identify-earliest-selected-paragraph"
-      ],
-      "representationType": "reading-sequence-earliest-3",
-      "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
-      ],
-      "provenance": {
-        "status": "original",
-        "authorRole": "Codex R4 English content author",
-        "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
-        "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-5",
-          "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LP-1-4-7",
-          "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-8",
-          "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-5-4-7",
-          "AUTH-ENGLISH-LP-5-4-8",
-          "AUTH-ENGLISH-LP-5-4-9"
-        ]
-      },
-      "independentReviews": [
-        {
-          "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 1 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「A guide explained that sound travels far underwater. For some animals, noise can make communication harder.」，答案為「For some animals, noise can make communication harder.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「For some animals, noise can make communication harder.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -426,44 +458,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_263",
-      "stem": "In Reading Set 263, which line marks the beginning of the concluding paragraph?",
+      "stem": "Which ending result or final point follows “The ocean may look empty from above, but it is full of signals.”?",
       "options": [
-        "Scientists placed microphones under the ocean to record whale songs and ship noise. The recordings were played in",
-        "Visitors heard deep calls, clicks, and long sounds that seemed almost musical. Then they heard the noise of",
-        "A guide explained that sound travels far underwater. For some animals, noise can make communication harder.",
-        "The ocean may look empty from above, but it is full of signals. Human activity can interrupt conversations"
+        "I still miss home, but I am beginning to understand why people like camp.",
+        "Technology changes objects, but human behavior remains part of every system.",
+        "Art may use new tools, but audiences still listen for human intention.",
+        "Human activity can interrupt conversations we are only beginning to understand."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「I still miss home, but I am beginning to understand why people like camp.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Technology changes objects, but human behavior remains part of every system.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Art may use new tools, but audiences still listen for human intention.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「The ocean may look empty from above, but it is full of signals. Human activity can interrupt conversations we are only beginning…」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-3",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -484,13 +516,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The ocean may look empty from above, but it is full of signals. Human activity can interrupt conversations we are only beginning to understand.」，答案為「Human activity can interrupt conversations we are only beginning to understand.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Human activity can interrupt conversations we are only beginning to understand.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -500,7 +532,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

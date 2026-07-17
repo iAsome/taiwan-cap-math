@@ -2,7 +2,7 @@
   "id": "ENG_R4_Q_READ_166_02",
   "subject": "english",
   "skillIds": [
-    "ENG_R4_S249"
+    "ENG_R4_S250"
   ],
   "authorityRefs": [
     "AUTH-ENGLISH-LC-AE-4-5",
@@ -16,44 +16,44 @@
     "AUTH-ENGLISH-LP-5-4-9"
   ],
   "stimulusId": "ENG_R4_READ_166",
-  "stem": "In Reading Set 166, while checking the passage, which paragraph contains the exact line “The first Night Library was planned for students preparing for exams. But many younger children came with parents,”?",
+  "stem": "Which answer is supported by the passage that includes “Once a month, the town library stays open until ten at night.”?",
   "options": [
-    "Paragraph 3",
-    "Paragraph 4",
-    "Paragraph 2",
-    "Paragraph 1"
+    "The class library was small, but it felt personal.",
+    "The librarian says a seed library and a book library are not so different.",
+    "The library felt different at night.",
+    "The library felt calmer."
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "第 3 段沒有這一行。"
+      "reason": "本文沒有陳述「The class library was small, but it felt personal.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "第 4 段沒有這一行。"
+      "reason": "本文沒有陳述「The librarian says a seed library and a book library are not so different.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "引文逐字出現在第 2 段開頭。"
+      "reason": "本文可直接核對「The library felt different at night.」，所以這個選項符合完整語境。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "第 1 段沒有這一行。"
+      "reason": "本文沒有陳述「The library felt calmer.」；這個選項混入另一個情境的資訊。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "scan-exact-line-and-locate-paragraph"
+    "distinguish-supported-detail-from-related-near-misses"
   ],
-  "representationType": "reading-paragraph-locator-1",
+  "representationType": "reading-supported-detail",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
@@ -75,13 +75,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "獨立解答核對：引文與第 2 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「The library felt different at night.」，答案為「The library felt different at night.」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「The library felt different at night.」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

@@ -95,56 +95,92 @@
       "translation": "材料"
     },
     {
-      "word": "predict",
-      "translation": "預測"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "central",
-      "translation": "中央的"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
-      "word": "content",
-      "translation": "內容"
+      "word": "passage",
+      "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "accurately",
-      "translation": "正確的, 精確的"
+      "word": "includes",
+      "translation": "包含"
+    },
+    {
+      "word": "junk",
+      "translation": "垃圾, 舢板"
     },
     {
       "word": "ancient",
       "translation": "古代的"
     },
     {
-      "word": "mirror",
-      "translation": "鏡子"
+      "word": "courtroom",
+      "translation": "法庭"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "debate",
+      "translation": "辯論；討論"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "cores",
+      "translation": "核心"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "such",
+      "translation": "如此的"
     },
     {
-      "word": "excerpt",
-      "translation": "摘錄"
+      "word": "ordinary",
+      "translation": "普通的"
     },
     {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
+      "word": "object",
+      "translation": "反對;物件"
     },
     {
-      "word": "passage",
-      "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
+      "word": "removing",
+      "translation": "移動, 開除, 移交；遷移, 搬家；移動, 距離, 班級, 升級"
+    },
+    {
+      "word": "destroys",
+      "translation": "破壞, 毀壞, 消滅；消滅, 摧毀"
+    },
+    {
+      "word": "information",
+      "translation": "資訊"
+    },
+    {
+      "word": "scientists",
+      "translation": "科學家"
+    },
+    {
+      "word": "drill",
+      "translation": "鑽孔"
+    },
+    {
+      "word": "bubbles",
+      "translation": "泡沫, 幻想的計劃；起泡, 潺潺的流"
+    },
+    {
+      "word": "trapped",
+      "translation": "設陷阱;陷阱;圈套"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
     }
   ],
   "questions": [
@@ -165,44 +201,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_364",
-      "stem": "In Reading Set 364, which heading would help a reader predict the central content most accurately?",
+      "stem": "Which title is best for the complete passage that includes “In science class, students learned that DNA from old bones can help researchers study migration, disease, and family…”?",
       "options": [
-        "The Water Song",
+        "The Space Junk Problem",
         "The Ancient DNA Lesson",
-        "The Smart Mirror",
-        "The Old City Tree Map"
+        "The Old Courtroom",
+        "The Public Bench Debate"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Water Song」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Space Junk Problem」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Ancient DNA Lesson: In science class, students learned that DNA from old bones can help researchers study migration, disease, and family…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Smart Mirror」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Courtroom」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Old City Tree Map」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Public Bench Debate」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-4",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -223,13 +259,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Ancient DNA Lesson」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Ancient DNA Lesson: In science class, students learned that DNA from old bones can help researchers study migration, disease, and family connections in…」，答案為「The Ancient DNA Lesson」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Ancient DNA Lesson」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -239,7 +275,7 @@
       "id": "ENG_R4_Q_READ_364_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -253,44 +289,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_364",
-      "stem": "In Reading Set 364, a reader marked “The teacher said good research needs evidence and respect. Being able to study something does not automatically mean” Which paragraph was marked?",
+      "stem": "Which answer is supported by the passage that includes “In science class, students learned that DNA from old bones can help researchers study migration, disease, and family…”?",
       "options": [
-        "Paragraph 4",
-        "Paragraph 1",
-        "Paragraph 2",
-        "Paragraph 3"
+        "Students were surprised that science could raise moral questions.",
+        "Some students were afraid to ask questions in class.",
+        "In science class, students watched a video about ice cores.",
+        "Students were surprised that such an ordinary object was in a museum."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 4 段開頭。"
+          "reason": "本文可直接核對「Students were surprised that science could raise moral questions.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「Some students were afraid to ask questions in class.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "第 2 段沒有這一行。"
+          "reason": "本文沒有陳述「In science class, students watched a video about ice cores.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「Students were surprised that such an ordinary object was in a museum.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-4",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -312,13 +348,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：引文與第 4 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Students were surprised that science could raise moral questions.」，答案為「Students were surprised that science could raise moral questions.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Students were surprised that science could raise moral questions.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -344,44 +380,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_364",
-      "stem": "In Reading Set 364, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “The teacher said good research needs evidence and respect.”?",
       "options": [
-        "In science class, students learned that DNA from old bones can help researchers study migration, disease, and family",
-        "The teacher also discussed ethics. Human remains are not just objects. They may be connected to living communities",
-        "Students were surprised that science could raise moral questions.",
-        "The teacher said good research needs evidence and respect. Being able to study something does not automatically mean"
+        "Removing objects without study destroys information.",
+        "No group got everything it wanted, but most people got something they needed.",
+        "Scientists drill deep into old ice and study air bubbles trapped inside it.",
+        "Being able to study something does not automatically mean doing so without permission."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Removing objects without study destroys information.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「No group got everything it wanted, but most people got something they needed.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Scientists drill deep into old ice and study air bubbles trapped inside it.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「The teacher said good research needs evidence and respect. Being able to study something does not automatically mean doing so without permission.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-4",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -405,13 +441,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The teacher said good research needs evidence and respect. Being able to study something does not automatically mean doing so without permission.」，答案為「Being able to study something does not automatically mean doing so without permission.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Being able to study something does not automatically mean doing so without permission.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -434,44 +470,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_364",
-      "stem": "In Reading Set 364, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “The past is not empty material for the present.”?",
       "options": [
-        "ethics. Human remains are not just objects. They may be connected to living communities with beliefs and rights.",
-        "Students were surprised that science could raise moral questions.",
-        "for the present. It belongs, in different ways, to people who lived and people who still remember them.",
-        "learned that DNA from old bones can help researchers study migration, disease, and family connections in the past."
+        "I still miss home, but I am beginning to understand why people like camp.",
+        "People still need to ask why it keeps becoming full and what should change.",
+        "It belongs, in different ways, to people who lived and people who still remember them.",
+        "Sometimes it is a sign that people care about different parts of the same story."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「I still miss home, but I am beginning to understand why people like camp.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「People still need to ask why it keeps becoming full and what should change.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「The past is not empty material for the present. It belongs, in different ways, to people who lived and people who still…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Sometimes it is a sign that people care about different parts of the same story.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -492,13 +528,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The past is not empty material for the present. It belongs, in different ways, to people who lived and people who still remember them.」，答案為「It belongs, in different ways, to people who lived and people who still remember them.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「It belongs, in different ways, to people who lived and people who still remember them.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -508,7 +544,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

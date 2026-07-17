@@ -15,44 +15,44 @@
     "AUTH-ENGLISH-LP-5-4-10"
   ],
   "stimulusId": "ENG_R4_READ_315",
-  "stem": "In Reading Set 315, which title stays within the evidence and includes the passage's main focus?",
+  "stem": "Which title is best for the complete passage that includes “A small shop placed a handwritten sign in its window: 'We are short of staff today.”?",
   "options": [
-    "The City Compost Program",
-    "The Broken Elevator",
+    "The Three Questions",
+    "The Food Waste Scale",
     "The Handwritten Sign",
-    "The Emergency Radio"
+    "The Free Breakfast"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「The City Compost Program」屬於另一篇不同文章，不能概括本篇全部段落。"
+      "reason": "本文沒有陳述「The Three Questions」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「The Broken Elevator」屬於另一篇不同文章，不能概括本篇全部段落。"
+      "reason": "本文沒有陳述「The Food Waste Scale」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+      "reason": "本文可直接核對「The Handwritten Sign: A small shop placed a handwritten sign in its window: 'We are short of staff today.」，所以這個選項符合完整語境。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「The Emergency Radio」屬於另一篇不同文章，不能概括本篇全部段落。"
+      "reason": "本文沒有陳述「The Free Breakfast」；這個選項混入另一個情境的資訊。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "select-evidence-bounded-whole-text-title"
+    "identify-whole-text-focus-from-related-titles"
   ],
-  "representationType": "reading-title-variant-5",
+  "representationType": "reading-whole-text-title",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
@@ -73,13 +73,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Handwritten Sign」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「The Handwritten Sign: A small shop placed a handwritten sign in its window: 'We are short of staff today.」，答案為「The Handwritten Sign」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「The Handwritten Sign」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

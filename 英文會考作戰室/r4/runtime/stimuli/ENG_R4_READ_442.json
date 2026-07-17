@@ -47,60 +47,84 @@
       "translation": "自動的"
     },
     {
-      "word": "accurate",
-      "translation": "正確的, 精確的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "overview",
-      "translation": "概述"
-    },
-    {
-      "word": "entire",
-      "translation": "整個"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "shade",
-      "translation": "蔭, 陰暗, 蔭涼處, 圖案陰影, 黑暗, 顏色深淺, 遮光物, 帘；漸變；遮蔽, 使陰暗, 使漸變, 微減"
-    },
-    {
-      "word": "project",
-      "translation": "計畫"
-    },
-    {
-      "word": "vault",
-      "translation": "拱頂"
+      "word": "includes",
+      "translation": "包含"
     },
     {
       "word": "digital",
       "translation": "數位化"
     },
     {
+      "word": "id",
+      "translation": "編號"
+    },
+    {
+      "word": "concert",
+      "translation": "音樂會, 一致"
+    },
+    {
       "word": "detox",
       "translation": "排毒"
     },
     {
-      "word": "locate",
-      "translation": "定位"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "seem",
+      "translation": "似乎是"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "replaced",
+      "translation": "取代"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "plastic",
+      "translation": "塑膠, 可塑體, 塑料製品, 整形；塑膠的, 塑造的, 有可塑性的, 造形的, (外科)整形的"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "ids",
+      "translation": "身分識別碼"
+    },
+    {
+      "word": "barely",
+      "translation": "僅僅, 剛剛, 幾乎不能"
+    },
+    {
+      "word": "objects",
+      "translation": "反對;物件"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "simply",
+      "translation": "簡單地"
+    },
+    {
+      "word": "article",
+      "translation": "文章"
+    },
+    {
+      "word": "invisible",
+      "translation": "看不見的"
     }
   ],
   "questions": [
@@ -121,11 +145,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_442",
-      "stem": "In Reading Set 442, which heading gives the most accurate overview of the entire passage?",
+      "stem": "Which title is best for the complete passage that includes “A weekend camp asked students to give up phones for two days.”?",
       "options": [
-        "The Public Shade Project",
-        "The Music Box",
-        "The Seed Vault Story",
+        "The Digital School ID",
+        "The New Rule",
+        "The Phone-Free Concert",
         "The Digital Detox Camp"
       ],
       "answerIndex": 3,
@@ -133,32 +157,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Public Shade Project」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Digital School ID」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Music Box」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The New Rule」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Seed Vault Story」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Phone-Free Concert」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Digital Detox Camp: A weekend camp asked students to give up phones for two days.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-2",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -179,13 +203,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Digital Detox Camp」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Digital Detox Camp: A weekend camp asked students to give up phones for two days.」，答案為「The Digital Detox Camp」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Digital Detox Camp」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -195,7 +219,7 @@
       "id": "ENG_R4_Q_READ_442_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -209,44 +233,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_442",
-      "stem": "In Reading Set 442, where can a reader locate the sentence “Without phones, they played cards, hiked, cooked together, and talked before sleeping. Some missed music and messages. Others” in the passage?",
+      "stem": "Which answer is supported by the passage that includes “A weekend camp asked students to give up phones for two days.”?",
       "options": [
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 2",
-        "Paragraph 1"
+        "Ruby thought about all the things she threw away without thinking: birthday cards, bus tickets, notes from friends.",
+        "One does not seem heavy, but many together can fill a bottle.",
+        "Without phones, they played cards, hiked, cooked together, and talked before sleeping.",
+        "The school replaced plastic student cards with digital IDs on phones."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「Ruby thought about all the things she threw away without thinking: birthday cards, bus tickets, notes from friends.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「One does not seem heavy, but many together can fill a bottle.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 2 段開頭。"
+          "reason": "本文可直接核對「Without phones, they played cards, hiked, cooked together, and talked before sleeping.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「The school replaced plastic student cards with digital IDs on phones.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-2",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -268,13 +292,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：引文與第 2 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Without phones, they played cards, hiked, cooked together, and talked before sleeping.」，答案為「Without phones, they played cards, hiked, cooked together, and talked before sleeping.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Without phones, they played cards, hiked, cooked together, and talked before sleeping.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -300,44 +324,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_442",
-      "stem": "In Reading Set 442, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “On the last day, students discussed what they had learned.”?",
       "options": [
-        "On the last day, students discussed what they had learned. Most did not want to abandon phones completely,",
-        "One student said, \"My phone is useful, but I do not want it to be my only way",
-        "A weekend camp asked students to give up phones for two days. Many felt nervous at first.",
-        "Without phones, they played cards, hiked, cooked together, and talked before sleeping. Some missed music and messages. Others"
+        "Some people looked only at their phones and barely looked at the objects.",
+        "Most did not want to abandon phones completely, but they wanted more control.",
+        "Not everyone loved the rule, and some still wanted their phones back.",
+        "The class was surprised because most people had thought it was completely broken."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Some people looked only at their phones and barely looked at the objects.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「On the last day, students discussed what they had learned. Most did not want to abandon phones completely, but they wanted more…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Not everyone loved the rule, and some still wanted their phones back.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The class was surprised because most people had thought it was completely broken.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-2",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -361,13 +385,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「On the last day, students discussed what they had learned. Most did not want to abandon phones completely, but they wanted more control.」，答案為「Most did not want to abandon phones completely, but they wanted more control.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Most did not want to abandon phones completely, but they wanted more control.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -377,7 +401,7 @@
       "id": "ENG_R4_Q_READ_442_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -390,44 +414,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_442",
-      "stem": "In Reading Set 442, at the start of the last paragraph, which selected line does the reader see?",
+      "stem": "Which ending result or final point follows “It was a mirror.”?",
       "options": [
-        "The camp was not against technology. It was a mirror. It helped students see habits that had become",
-        "A weekend camp asked students to give up phones for two days. Many felt nervous at first.",
-        "Without phones, they played cards, hiked, cooked together, and talked before sleeping. Some missed music and messages. Others",
-        "On the last day, students discussed what they had learned. Most did not want to abandon phones completely,"
+        "It helped students see habits that had become automatic.",
+        "It simply took one article for students to see work that was usually invisible.",
+        "A living classroom changes every time students enter it.",
+        "and began asking, \"What do students need to understand?\""
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「It was a mirror. It helped students see habits that had become automatic.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「It simply took one article for students to see work that was usually invisible.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「A living classroom changes every time students enter it.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「and began asking, 'What do students need to understand?'」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-2",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -448,13 +472,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「It was a mirror. It helped students see habits that had become automatic.」，答案為「It helped students see habits that had become automatic.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「It helped students see habits that had become automatic.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -464,7 +488,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

@@ -18,44 +18,44 @@
     "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_210",
-  "stem": "In Reading Set 210, which selected line appears latest in the paragraph sequence?",
+  "stem": "What happens next in this passage after “It also reminds us that much of the planet is unknown.”?",
   "options": [
-    "The child looked again at a glowing fish. It seemed like a creature from another world, yet it",
-    "The exhibit changed the child's idea of discovery. Exploration is not only about space. Some mysteries are hidden",
-    "A science museum showed photos taken by a deep-sea camera. The animals looked strange: some were transparent, some",
-    "A child asked why people spent money studying places humans could not live in. The guide said the"
+    "\"You try, fail, change something, and try again.\"",
+    "The child looked again at a glowing fish.",
+    "Leo looked at the bike again.",
+    "The child watched a tiny fish hide between coral branches."
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「'You try, fail, change something, and try again.'」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "這一行來自四個候選中的最晚段落。"
+      "reason": "本文可直接核對「It also reminds us that much of the planet is unknown. The child looked again at a glowing fish.」，所以這個選項符合完整語境。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Leo looked at the bike again.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「The child watched a tiny fish hide between coral branches.」；這個選項混入另一個情境的資訊。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "identify-latest-selected-paragraph"
+    "track-event-or-idea-sequence-from-content-anchor"
   ],
-  "representationType": "reading-sequence-latest-5",
+  "representationType": "reading-content-sequence",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
@@ -79,13 +79,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「It also reminds us that much of the planet is unknown. The child looked again at a glowing fish.」，答案為「The child looked again at a glowing fish.」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「The child looked again at a glowing fish.」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

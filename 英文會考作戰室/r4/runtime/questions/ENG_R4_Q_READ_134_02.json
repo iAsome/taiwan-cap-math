@@ -2,76 +2,70 @@
   "id": "ENG_R4_Q_READ_134_02",
   "subject": "english",
   "skillIds": [
-    "ENG_R4_S278"
+    "ENG_R4_S257"
   ],
   "authorityRefs": [
-    "AUTH-ENGLISH-LC-AE-4-6",
-    "AUTH-ENGLISH-LC-AE-4-8",
-    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
     "AUTH-ENGLISH-LC-D-4-3",
-    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
     "AUTH-ENGLISH-LP-3-4-12",
-    "AUTH-ENGLISH-LP-3-4-13",
-    "AUTH-ENGLISH-LP-3-4-14",
-    "AUTH-ENGLISH-LP-3-4-9",
-    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
     "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_134",
-  "stem": "In Reading Set 134, how many separate paragraph blocks follow from the opening “At the beginning of the year, each student received a new notebook for writing practice. Most students filled”?",
+  "stem": "Which reason does the passage give for this situation: “He stared at the empty page for a long time”?",
   "options": [
-    "5",
-    "7",
-    "6",
-    "4"
+    "They are waiting to be fixed",
+    "Grace almost never spoke in class",
+    "He was afraid of making mistakes",
+    "Chocolate can be dangerous for dogs"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "5 與鎖定文本的實際段落數不符。"
+      "reason": "本文沒有陳述「They are waiting to be fixed」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "7 與鎖定文本的實際段落數不符。"
+      "reason": "本文沒有陳述「Grace almost never spoke in class」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "文章以換行鎖定為 6 個段落。"
+      "reason": "本文可直接核對「he was afraid of making mistakes」，所以這個選項符合完整語境。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "4 與鎖定文本的實際段落數不符。"
+      "reason": "本文沒有陳述「Chocolate can be dangerous for dogs」；這個選項混入另一個情境的資訊。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "count-locked-paragraph-blocks"
+    "connect-stated-reason-to-situation"
   ],
-  "representationType": "reading-structure-count-4",
+  "representationType": "reading-stated-reason",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 English content author",
     "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
     "sourceRefs": [
-      "AUTH-ENGLISH-LC-AE-4-6",
-      "AUTH-ENGLISH-LC-AE-4-8",
-      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
       "AUTH-ENGLISH-LC-D-4-3",
-      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
       "AUTH-ENGLISH-LP-3-4-12",
-      "AUTH-ENGLISH-LP-3-4-13",
-      "AUTH-ENGLISH-LP-3-4-14",
-      "AUTH-ENGLISH-LP-3-4-9",
-      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
       "AUTH-ENGLISH-LP-9-4-3"
     ]
   },
@@ -79,13 +73,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "獨立解答核對：以換行分段重新計數得到 6 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「he was afraid of making mistakes」，答案為「He was afraid of making mistakes」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「He was afraid of making mistakes」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

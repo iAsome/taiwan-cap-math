@@ -15,64 +15,72 @@
       "translation": "標題;頭銜"
     },
     {
-      "word": "within",
-      "translation": "之內"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
-      "word": "evidence",
-      "translation": "證據"
+      "word": "passage",
+      "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
       "word": "includes",
       "translation": "包含"
     },
     {
-      "word": "passage's",
-      "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
-    },
-    {
-      "word": "focus",
-      "translation": "集中;焦點"
-    },
-    {
-      "word": "filter",
-      "translation": "過濾器；過濾"
-    },
-    {
       "word": "customer",
       "translation": "顧客"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "supported",
+      "translation": "支持;支持"
+    },
+    {
+      "word": "everywhere",
+      "translation": "處處"
+    },
+    {
+      "word": "memory",
+      "translation": "記憶"
+    },
+    {
+      "word": "display",
+      "translation": "展示；顯示"
+    },
+    {
+      "word": "cafeteria",
+      "translation": "自助餐館"
+    },
+    {
+      "word": "entrance",
+      "translation": "入口"
+    },
+    {
+      "word": "properly",
+      "translation": "適當的, 正確的, 固有的, 特有的, 有禮貌的, 正當的, 嚴格意義上的, 徹底的"
+    },
+    {
+      "word": "alone",
+      "translation": "單獨的;孤單的"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
     },
     {
       "word": "final",
       "translation": "最終的"
     },
     {
-      "word": "earliest",
-      "translation": "最早的"
+      "word": "scary",
+      "translation": "引起驚慌的"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "requires",
+      "translation": "需要"
     },
     {
-      "word": "paragraphs",
-      "translation": "段落"
-    },
-    {
-      "word": "verify",
-      "translation": "驗證"
-    },
-    {
-      "word": "structure",
-      "translation": "結構"
-    },
-    {
-      "word": "locate",
-      "translation": "定位"
+      "word": "access",
+      "translation": "使用權；取得；接觸"
     }
   ],
   "questions": [
@@ -93,44 +101,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_035",
-      "stem": "In Reading Set 035, which title stays within the evidence and includes the passage's main focus?",
+      "stem": "Which title is best for the complete passage that includes “Tom's uncle opened a small noodle shop.”?",
       "options": [
-        "The Tea Lesson",
-        "The School Air Filter",
+        "The Sandwich Rule",
+        "The Paper Boat Race",
         "The First Customer",
-        "The Library Cat"
+        "The Old Radio"
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Tea Lesson」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Sandwich Rule」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The School Air Filter」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Paper Boat Race」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The First Customer: Tom's uncle opened a small noodle shop.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Library Cat」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Radio」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-5",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -151,13 +159,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The First Customer」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The First Customer: Tom's uncle opened a small noodle shop.」，答案為「The First Customer」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The First Customer」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -167,7 +175,96 @@
       "id": "ENG_R4_Q_READ_035_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
+      ],
+      "authorityRefs": [
+        "AUTH-ENGLISH-LC-AE-4-5",
+        "AUTH-ENGLISH-LC-D-4-2",
+        "AUTH-ENGLISH-LP-1-4-7",
+        "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
+        "AUTH-ENGLISH-LP-3-4-9",
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
+      ],
+      "stimulusId": "ENG_R4_READ_035",
+      "stem": "Which answer is supported by the passage that includes “Tom's uncle opened a small noodle shop.”?",
+      "options": [
+        "She carried it everywhere and wrote down words she did not know.",
+        "Tom's uncle wrote those words on a piece of paper and taped it near the kitchen.",
+        "Her father said, \"Because a small piece of paper can hold a large memory.\"",
+        "The school decided to cut a small piece from the table and display it near the cafeteria entrance."
+      ],
+      "answerIndex": 1,
+      "optionRationales": [
+        {
+          "optionIndex": 0,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「She carried it everywhere and wrote down words she did not know.」；這個選項混入另一個情境的資訊。"
+        },
+        {
+          "optionIndex": 1,
+          "isCorrect": true,
+          "reason": "本文可直接核對「Tom's uncle wrote those words on a piece of paper and taped it near the kitchen.」，所以這個選項符合完整語境。"
+        },
+        {
+          "optionIndex": 2,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「Her father said, 'Because a small piece of paper can hold a large memory.'」；這個選項混入另一個情境的資訊。"
+        },
+        {
+          "optionIndex": 3,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「The school decided to cut a small piece from the table and display it near the cafeteria entrance.」；這個選項混入另一個情境的資訊。"
+        }
+      ],
+      "difficulty": "transfer",
+      "cognitiveProcess": [
+        "read-locked-passage-evidence",
+        "distinguish-supported-detail-from-related-near-misses"
+      ],
+      "representationType": "reading-supported-detail",
+      "misconceptionTargets": [
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
+      ],
+      "provenance": {
+        "status": "original",
+        "authorRole": "Codex R4 English content author",
+        "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+        "sourceRefs": [
+          "AUTH-ENGLISH-LC-AE-4-5",
+          "AUTH-ENGLISH-LC-D-4-2",
+          "AUTH-ENGLISH-LP-1-4-7",
+          "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
+          "AUTH-ENGLISH-LP-3-4-9",
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
+        ]
+      },
+      "independentReviews": [
+        {
+          "reviewerRole": "english-grammar-solution-review",
+          "derivedAnswerIndex": 1,
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Tom's uncle wrote those words on a piece of paper and taped it near the kitchen.」，答案為「Tom's uncle wrote those words on a piece of paper and taped it near the kitchen.」。",
+          "status": "pass"
+        },
+        {
+          "reviewerRole": "english-alternative-answer-review",
+          "derivedAnswerIndex": 1,
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Tom's uncle wrote those words on a piece of paper and taped it near the kitchen.」有同篇證據，三個干擾項均來自不同情境。",
+          "status": "pass"
+        }
+      ],
+      "assets": []
+    },
+    {
+      "id": "ENG_R4_Q_READ_035_03",
+      "subject": "english",
+      "skillIds": [
+        "ENG_R4_S273"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-6",
@@ -183,44 +280,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_035",
-      "stem": "In Reading Set 035, a reader numbers every paragraph after “Tom's uncle opened a small noodle shop. On the first day, Tom helped clean tables and bring water.” What is the final paragraph number?",
+      "stem": "What happens next in this passage after “He checked the soup, cut vegetables, and smiled.”?",
       "options": [
-        "7",
-        "5",
-        "4",
-        "6"
+        "At noon, an old woman entered.",
+        "The old woman taught the class the song properly.",
+        "Two days later, an old woman came to the school.",
+        "But one afternoon, an old woman came alone and could not open her ticket."
       ],
-      "answerIndex": 1,
+      "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
-          "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "isCorrect": true,
+          "reason": "本文可直接核對「He checked the soup, cut vegetables, and smiled. At noon, an old woman entered.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
-          "isCorrect": true,
-          "reason": "文章以換行鎖定為 5 個段落。"
+          "isCorrect": false,
+          "reason": "本文沒有陳述「The old woman taught the class the song properly.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Two days later, an old woman came to the school.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "6 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「But one afternoon, an old woman came alone and could not open her ticket.」；這個選項混入另一個情境的資訊。"
         }
       ],
-      "difficulty": "transfer",
+      "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-structure-count-5",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -243,103 +340,14 @@
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
-          "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
-          "status": "pass"
-        },
-        {
-          "reviewerRole": "english-alternative-answer-review",
-          "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
-          "status": "pass"
-        }
-      ],
-      "assets": []
-    },
-    {
-      "id": "ENG_R4_Q_READ_035_03",
-      "subject": "english",
-      "skillIds": [
-        "ENG_R4_S254"
-      ],
-      "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-5",
-        "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LP-1-4-7",
-        "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-8",
-        "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-5-4-7",
-        "AUTH-ENGLISH-LP-5-4-8",
-        "AUTH-ENGLISH-LP-5-4-9"
-      ],
-      "stimulusId": "ENG_R4_READ_035",
-      "stem": "In Reading Set 035, which line starts the earliest of the four selected paragraphs?",
-      "options": [
-        "Tom's uncle opened a small noodle shop. On the first day, Tom helped clean tables and bring water",
-        "His uncle did not look worried. He checked the soup, cut vegetables, and smiled.",
-        "At noon, an old woman entered. She ordered one bowl of noodles and ate slowly. Before leaving, she",
-        "Tom's uncle wrote those words on a piece of paper and taped it near the kitchen."
-      ],
-      "answerIndex": 0,
-      "optionRationales": [
-        {
-          "optionIndex": 0,
-          "isCorrect": true,
-          "reason": "這一行來自四個候選中的最早段落。"
-        },
-        {
-          "optionIndex": 1,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        },
-        {
-          "optionIndex": 2,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        },
-        {
-          "optionIndex": 3,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        }
-      ],
-      "difficulty": "foundation",
-      "cognitiveProcess": [
-        "read-locked-passage-evidence",
-        "identify-earliest-selected-paragraph"
-      ],
-      "representationType": "reading-sequence-earliest-5",
-      "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
-      ],
-      "provenance": {
-        "status": "original",
-        "authorRole": "Codex R4 English content author",
-        "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
-        "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-5",
-          "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LP-1-4-7",
-          "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-8",
-          "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-5-4-7",
-          "AUTH-ENGLISH-LP-5-4-8",
-          "AUTH-ENGLISH-LP-5-4-9"
-        ]
-      },
-      "independentReviews": [
-        {
-          "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 1 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「He checked the soup, cut vegetables, and smiled. At noon, an old woman entered.」，答案為「At noon, an old woman entered.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「At noon, an old woman entered.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -362,44 +370,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_035",
-      "stem": "In Reading Set 035, to verify the ending structure, which line should a reader locate first in the final paragraph?",
+      "stem": "Which ending result or final point follows “Many customers came in later that week, but Tom's uncle always remembered the first one.”?",
       "options": [
-        "Tom's uncle opened a small noodle shop. On the first day, Tom helped clean tables and bring water",
-        "His uncle did not look worried. He checked the soup, cut vegetables, and smiled.",
-        "At noon, an old woman entered. She ordered one bowl of noodles and ate slowly. Before leaving, she",
-        "Many customers came in later that week, but Tom's uncle always remembered the first one. He said a"
+        "Nina said, \"Being lost is scary, but staying quiet makes it worse.\"",
+        "It requires reading carefully when people are trying to win your trust.",
+        "It is time, business, access, and the shape of a city's future.",
+        "He said a business starts with money, but it grows with trust."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Nina said, 'Being lost is scary, but staying quiet makes it worse.'」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「It requires reading carefully when people are trying to win your trust.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「It is time, business, access, and the shape of a city's future.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「Many customers came in later that week, but Tom's uncle always remembered the first one. He said a business starts with money,…」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-5",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -420,13 +428,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Many customers came in later that week, but Tom's uncle always remembered the first one. He said a business starts with money, but it…」，答案為「He said a business starts with money, but it grows with trust.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「He said a business starts with money, but it grows with trust.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -436,7 +444,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

@@ -39,60 +39,56 @@
       "translation": "科學家"
     },
     {
-      "word": "broad",
-      "translation": "寬廣的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "paragraphs",
-      "translation": "段落"
-    },
-    {
-      "word": "broader",
-      "translation": "寬廣的"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "debate",
-      "translation": "辯論；討論"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "contains",
+      "word": "includes",
       "translation": "包含"
     },
     {
-      "word": "exact",
-      "translation": "準確的"
+      "word": "crane",
+      "translation": "起重機"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "wings",
+      "translation": "翅膀"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "magazines",
+      "translation": "雜誌"
     },
     {
-      "word": "quoted",
-      "translation": "引用, 引證, 提供, 提出, 報(價)"
+      "word": "result",
+      "translation": "結果"
     },
     {
       "word": "final",
       "translation": "最終的"
+    },
+    {
+      "word": "proof",
+      "translation": "證據, 試驗, 考驗, 校樣；不能透入的, 證明用的, 防...的, 有耐力的；檢驗, 校對, 使不被穿透"
+    },
+    {
+      "word": "failure",
+      "translation": "失敗"
+    },
+    {
+      "word": "background",
+      "translation": "背景, 後台, 不重要或不引人注目的地方或位置"
     }
   ],
   "questions": [
@@ -113,11 +109,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_046",
-      "stem": "In Reading Set 046, which heading is broad enough for all paragraphs but not broader than the text?",
+      "stem": "Which title is best for the complete passage that includes “After a heavy rain, the small stream near school was full of water.”?",
       "options": [
-        "The Wrong Name",
-        "The Train Window",
-        "The Public Bench Debate",
+        "Smile Class",
+        "The Rainy Game",
+        "The Paper Crane",
         "The Paper Boat Race"
       ],
       "answerIndex": 3,
@@ -125,32 +121,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Wrong Name」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「Smile Class」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Train Window」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Rainy Game」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Public Bench Debate」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Paper Crane」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Paper Boat Race: After a heavy rain, the small stream near school was full of water.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-6",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -171,13 +167,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Paper Boat Race」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Paper Boat Race: After a heavy rain, the small stream near school was full of water.」，答案為「The Paper Boat Race」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Paper Boat Race」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -187,7 +183,7 @@
       "id": "ENG_R4_Q_READ_046_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -201,44 +197,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_046",
-      "stem": "In Reading Set 046, while checking the passage, which paragraph contains the exact line “Most boats sank quickly. One boat, made by Linda, floated far down the stream. Everyone asked how she”?",
+      "stem": "Which answer is supported by the passage that includes “After a heavy rain, the small stream near school was full of water.”?",
       "options": [
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 2",
-        "Paragraph 1"
+        "Eric spent all his tickets quickly and won only two stamps.",
+        "Most students finished quickly, but Alan could not make the wings right.",
+        "Most boats sank quickly.",
+        "What matters is how clearly and quickly you correct them.\""
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「Eric spent all his tickets quickly and won only two stamps.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「Most students finished quickly, but Alan could not make the wings right.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 2 段開頭。"
+          "reason": "本文可直接核對「Most boats sank quickly.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「What matters is how clearly and quickly you correct them.'」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-1",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -260,13 +256,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：引文與第 2 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Most boats sank quickly.」，答案為「Most boats sank quickly.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Most boats sank quickly.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -292,44 +288,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_046",
-      "stem": "In Reading Set 046, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “Linda said she had folded the paper many times before finding a good shape.”?",
       "options": [
-        "Linda said she had folded the paper many times before finding a good shape. She also used thicker",
-        "The next day, more students brought different kinds of paper. They tested shapes, sizes, and folding methods. What",
-        "After a heavy rain, the small stream near school was full of water. Some students made paper boats",
-        "Most boats sank quickly. One boat, made by Linda, floated far down the stream. Everyone asked how she"
+        "During music class, the teacher played an old song.",
+        "She also used thicker paper from an old calendar.",
+        "She put paper, pencils, and old magazines on the tables and let students choose what to do.",
+        "The calendar helped the class remember more than homework."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「During music class, the teacher played an old song.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「Linda said she had folded the paper many times before finding a good shape. She also used thicker paper from an old…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「She put paper, pencils, and old magazines on the tables and let students choose what to do.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The calendar helped the class remember more than homework.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-1",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -353,13 +349,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Linda said she had folded the paper many times before finding a good shape. She also used thicker paper from an old calendar.」，答案為「She also used thicker paper from an old calendar.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「She also used thicker paper from an old calendar.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -369,7 +365,7 @@
       "id": "ENG_R4_Q_READ_046_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -382,44 +378,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_046",
-      "stem": "In Reading Set 046, which quoted line opens the final paragraph?",
+      "stem": "Which ending result or final point follows “'You are learning like scientists,' she said.”?",
       "options": [
-        "Their teacher watched and smiled. \"You are learning like scientists,\" she said. \"You try, fail, change something, and",
-        "After a heavy rain, the small stream near school was full of water. Some students made paper boats",
-        "Most boats sank quickly. One boat, made by Linda, floated far down the stream. Everyone asked how she",
-        "Linda said she had folded the paper many times before finding a good shape. She also used thicker"
+        "\"You try, fail, change something, and try again.\"",
+        "To Alan, it was proof that trying again can change the shape of failure.",
+        "A name can turn background into something seen.",
+        "They are pictures of time, knowledge, and change."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「'You are learning like scientists,' she said. 'You try, fail, change something, and try again.'」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「To Alan, it was proof that trying again can change the shape of failure.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「A name can turn background into something seen.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「They are pictures of time, knowledge, and change.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-1",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -440,13 +436,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「'You are learning like scientists,' she said. 'You try, fail, change something, and try again.'」，答案為「'You try, fail, change something, and try again.'」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「'You try, fail, change something, and try again.'」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -456,7 +452,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

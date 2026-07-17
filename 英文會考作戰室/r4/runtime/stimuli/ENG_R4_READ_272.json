@@ -71,56 +71,84 @@
       "translation": "紀律；自律"
     },
     {
-      "word": "accurate",
-      "translation": "正確的, 精確的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "overview",
-      "translation": "概述"
-    },
-    {
-      "word": "entire",
-      "translation": "整個"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "privacy",
-      "translation": "隱私"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "sticker",
-      "translation": "貼紙"
+      "word": "shade",
+      "translation": "蔭, 陰暗, 蔭涼處, 圖案陰影, 黑暗, 顏色深淺, 遮光物, 帘；漸變；遮蔽, 使陰暗, 使漸變, 微減"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "project",
+      "translation": "計畫"
     },
     {
-      "word": "receives",
-      "translation": "收到"
+      "word": "chatbot",
+      "translation": "聊天機器人"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "hall",
+      "translation": "大廳;講堂"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "fully",
+      "translation": "完全"
     },
     {
-      "word": "excerpt",
-      "translation": "摘錄"
+      "word": "values",
+      "translation": "價值"
     },
     {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
+      "word": "unclear",
+      "translation": "不清楚"
+    },
+    {
+      "word": "code",
+      "translation": "程式碼"
+    },
+    {
+      "word": "perfectly",
+      "translation": "完美的"
+    },
+    {
+      "word": "travelers",
+      "translation": "旅行者,旅遊者"
+    },
+    {
+      "word": "residents",
+      "translation": "居民"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "slogans",
+      "translation": "口號"
+    },
+    {
+      "word": "online",
+      "translation": "網路"
     }
   ],
   "questions": [
@@ -141,44 +169,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_272",
-      "stem": "In Reading Set 272, which heading gives the most accurate overview of the entire passage?",
+      "stem": "Which title is best for the complete passage that includes “The city introduced shared bikes to reduce traffic.”?",
       "options": [
-        "The Borrowed Jacket",
+        "The Public Shade Project",
         "The City Bike Problem",
-        "The Screen Time Report",
-        "The Privacy Sticker"
+        "The Chatbot at City Hall",
+        "The New Rule"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Borrowed Jacket」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Public Shade Project」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The City Bike Problem: The city introduced shared bikes to reduce traffic.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Screen Time Report」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Chatbot at City Hall」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Privacy Sticker」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The New Rule」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-2",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -199,13 +227,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The City Bike Problem」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The City Bike Problem: The city introduced shared bikes to reduce traffic.」，答案為「The City Bike Problem」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The City Bike Problem」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -215,90 +243,86 @@
       "id": "ENG_R4_Q_READ_272_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-6",
-        "AUTH-ENGLISH-LC-AE-4-8",
+        "AUTH-ENGLISH-LC-AE-4-5",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LC-D-4-3",
-        "AUTH-ENGLISH-LP-3-4-10",
-        "AUTH-ENGLISH-LP-3-4-12",
-        "AUTH-ENGLISH-LP-3-4-13",
+        "AUTH-ENGLISH-LP-1-4-7",
         "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-9-4-2",
-        "AUTH-ENGLISH-LP-9-4-3"
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_272",
-      "stem": "In Reading Set 272, if each paragraph receives one note card, how many cards are needed for the passage beginning “The city introduced shared bikes to reduce traffic. At first, people loved them. But soon bikes were left”?",
+      "stem": "Which answer is supported by the passage that includes “The city introduced shared bikes to reduce traffic.”?",
       "options": [
-        "5",
-        "4",
-        "6",
-        "7"
+        "But soon bikes were left in front of doors, on sidewalks, and even in parks where they blocked paths.",
+        "Leo did not fully understand the sentence, but he knew the bike would not be left behind the tree again.",
+        "If the values are unclear, the machine's action may be wrong even when the code works perfectly.",
+        "Students learned that public art belongs to everyone in feeling, even if not everyone likes it."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "文章以換行鎖定為 5 個段落。"
+          "reason": "本文可直接核對「But soon bikes were left in front of doors, on sidewalks, and even in parks where they blocked paths.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Leo did not fully understand the sentence, but he knew the bike would not be left behind the…」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "6 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「If the values are unclear, the machine's action may be wrong even when the code works perfectly.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Students learned that public art belongs to everyone in feeling, even if not everyone likes it.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-structure-count-2",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-6",
-          "AUTH-ENGLISH-LC-AE-4-8",
+          "AUTH-ENGLISH-LC-AE-4-5",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LC-D-4-3",
-          "AUTH-ENGLISH-LP-3-4-10",
-          "AUTH-ENGLISH-LP-3-4-12",
-          "AUTH-ENGLISH-LP-3-4-13",
+          "AUTH-ENGLISH-LP-1-4-7",
           "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-9-4-2",
-          "AUTH-ENGLISH-LP-9-4-3"
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「But soon bikes were left in front of doors, on sidewalks, and even in parks where they blocked paths.」，答案為「But soon bikes were left in front of doors, on sidewalks, and even in parks where they blocked…」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「But soon bikes were left in front of doors, on sidewalks, and even in parks where they blocked…」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -324,44 +348,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_272",
-      "stem": "In Reading Set 272, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “It also asked users to take a photo after parking.”?",
       "options": [
-        "The city introduced shared bikes to reduce traffic. At first, people loved them. But soon bikes were left",
-        "The city added parking zones and small fines. It also asked users to take a photo after parking.",
-        "Some complained that the rules made bike sharing less convenient. Others said convenience should not create trouble for",
-        "After a few months, the system improved."
+        "Some students complained because it was less convenient.",
+        "Travelers said the rules made the space comfortable for everyone.",
+        "Some residents complained that the square looked less beautiful.",
+        "Some complained that the rules made bike sharing less convenient."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Some students complained because it was less convenient.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Travelers said the rules made the space comfortable for everyone.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Some residents complained that the square looked less beautiful.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「It also asked users to take a photo after parking. Some complained that the rules made bike sharing less convenient.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-2",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -385,13 +409,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「It also asked users to take a photo after parking. Some complained that the rules made bike sharing less convenient.」，答案為「Some complained that the rules made bike sharing less convenient.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Some complained that the rules made bike sharing less convenient.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -414,44 +438,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_272",
-      "stem": "In Reading Set 272, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “A bike left badly may save one rider ten seconds but cost many people time and safety.”?",
       "options": [
-        "The city added parking zones and small fines. It also asked users to take a photo after parking.",
-        "complained that the rules made bike sharing less convenient. Others said convenience should not create trouble for pedestrians.",
-        "may save one rider ten seconds but cost many people time and safety. Public convenience requires public discipline.",
-        "soon bikes were left in front of doors, on sidewalks, and even in parks where they blocked paths."
+        "Helping it requires knowledge, not slogans.",
+        "Sometimes discipline becomes a lesson for people watching.",
+        "Public convenience requires public discipline.",
+        "Walking online requires care."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Helping it requires knowledge, not slogans.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Sometimes discipline becomes a lesson for people watching.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「A bike left badly may save one rider ten seconds but cost many people time and safety. Public convenience requires public discipline.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Walking online requires care.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -472,13 +496,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「A bike left badly may save one rider ten seconds but cost many people time and safety. Public convenience requires public discipline.」，答案為「Public convenience requires public discipline.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Public convenience requires public discipline.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -488,7 +512,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

@@ -118,6 +118,16 @@ test("static practice, reading, listening visuals, audio, answers, and print wor
   assert.equal(await page.locator("article.stimulus h1, article.stimulus h2, article.stimulus h3").count(), 0);
   await assertAxeClean(page, "reading");
 
+  await page.goto(`${pageUrl}#view=mock&mode=reading&seed=115`);
+  await page.locator("#startMock").waitFor();
+  await page.locator("#startMock").click();
+  await page.locator("fieldset.question").first().waitFor();
+  assert.equal(await page.locator("fieldset.question").count(), 43);
+  const formalIds = new Set(JSON.parse(await readFile(path.join(ROOT, "英文會考作戰室", "r4", "runtime", "catalog.json"), "utf8")).units.flatMap((unit) => unit.formalQuestionIds));
+  const selectedLanguageIds = await page.locator("fieldset.question").evaluateAll((items) => items.slice(0, 15).map((item) => item.dataset.question));
+  assert(selectedLanguageIds.every((id) => formalIds.has(id)), "reading mock selected a question outside the Table 1-only pool");
+  await assertAxeClean(page, "reading mock");
+
   await page.goto(`${pageUrl}#view=mock&mode=listening&seed=115`);
   await page.locator("#startMock").waitFor();
   await page.locator("#startMock").click();

@@ -179,6 +179,23 @@ export function candidateEnglishLemmas(rawToken) {
   return [...values];
 }
 
+export async function englishFormalQuestionIds(questions, policy, { vocabularyPath = VOCABULARY_PATH } = {}) {
+  const index = JSON.parse(await readFile(vocabularyPath, "utf8"));
+  const basic = englishVocabularyTokenSet(index.tables.basic1200.entries);
+  const names = new Set(policy.properNames.map((value) => value.toLowerCase()));
+  const notation = new Set(policy.grammarNotation.flatMap((value) => value.toLowerCase().match(ENGLISH_TOKEN_PATTERN) ?? []));
+  const malformed = new Set(policy.malformedDistractors.map((value) => value.toLowerCase()));
+  const inFormalScope = (rawToken) => {
+    const token = rawToken.toLowerCase().replaceAll("’", "'");
+    const possessiveName = token.endsWith("'s") ? token.slice(0, -2) : token;
+    return names.has(token) || names.has(possessiveName) || notation.has(token) || malformed.has(token)
+      || candidateEnglishLemmas(token).some((candidate) => basic.has(candidate));
+  };
+  return questions.filter((question) => [question.stem, ...question.options].every((value) => (
+    value.match(ENGLISH_TOKEN_PATTERN) ?? []
+  ).every(inFormalScope))).map((question) => question.id);
+}
+
 function studentVisibleStrings(source) {
   return [
     ...source.questions.flatMap((item) => [item.stem, ...item.options, ...item.reasons]),

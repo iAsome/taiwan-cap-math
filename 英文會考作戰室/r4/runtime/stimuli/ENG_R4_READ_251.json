@@ -103,60 +103,100 @@
       "translation": "標題;頭銜"
     },
     {
-      "word": "whole",
-      "translation": "完整的"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "adding",
-      "translation": "添加"
-    },
-    {
-      "word": "unsupported",
-      "translation": "不支持的"
-    },
-    {
-      "word": "ancient",
-      "translation": "古代的"
-    },
-    {
-      "word": "dna",
-      "translation": "脫氧核糖核酸"
-    },
-    {
-      "word": "online",
-      "translation": "網路"
-    },
-    {
-      "word": "paragraphs",
-      "translation": "段落"
-    },
-    {
-      "word": "organize",
-      "translation": "組織"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "quoted",
-      "translation": "引用, 引證, 提供, 提出, 報(價)"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "earliest",
-      "translation": "最早的"
+      "word": "debate",
+      "translation": "辯論；討論"
+    },
+    {
+      "word": "toilet",
+      "translation": "馬桶"
+    },
+    {
+      "word": "supported",
+      "translation": "支持;支持"
+    },
+    {
+      "word": "complaints",
+      "translation": "訴苦, 抱怨, 牢騷, 委屈, 疾病"
+    },
+    {
+      "word": "daily",
+      "translation": "每日的;每日"
+    },
+    {
+      "word": "unnecessary",
+      "translation": "不必要的"
+    },
+    {
+      "word": "customers",
+      "translation": "顧客"
+    },
+    {
+      "word": "code",
+      "translation": "程式碼"
+    },
+    {
+      "word": "produce",
+      "translation": "製造;出產;農產品"
+    },
+    {
+      "word": "emergency",
+      "translation": "緊急情況"
+    },
+    {
+      "word": "information",
+      "translation": "資訊"
+    },
+    {
+      "word": "segments",
+      "translation": "片段；節目段落"
+    },
+    {
+      "word": "efficiently",
+      "translation": "有效率的"
+    },
+    {
+      "word": "complex",
+      "translation": "複雜的"
+    },
+    {
+      "word": "chatbot",
+      "translation": "聊天機器人"
+    },
+    {
+      "word": "confusing",
+      "translation": "搞亂, 使糊塗"
+    },
+    {
+      "word": "replies",
+      "translation": "回覆"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
     },
     {
       "word": "final",
       "translation": "最終的"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "pretending",
+      "translation": "假裝, 裝扮, (作為藉口或理由)偽稱"
+    },
+    {
+      "word": "humans",
+      "translation": "人類的;人"
     }
   ],
   "questions": [
@@ -177,44 +217,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_251",
-      "stem": "In Reading Set 251, which title best covers the whole text without adding an unsupported idea?",
+      "stem": "Which title is best for the complete passage that includes “The city installed phone charging stations in subway stations.”?",
       "options": [
-        "The Ancient DNA Lesson",
-        "The Last Piece of Cake",
+        "The Public Charging Debate",
+        "The School Charging Rule",
         "The Charging Station",
-        "The Online Library"
+        "The Forgotten Public Toilet"
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Ancient DNA Lesson」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Public Charging Debate」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Last Piece of Cake」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The School Charging Rule」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Charging Station: The city installed phone charging stations in subway stations.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Online Library」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Forgotten Public Toilet」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-1",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -235,13 +275,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Charging Station」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Charging Station: The city installed phone charging stations in subway stations.」，答案為「The Charging Station」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Charging Station」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -251,7 +291,96 @@
       "id": "ENG_R4_Q_READ_251_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
+      ],
+      "authorityRefs": [
+        "AUTH-ENGLISH-LC-AE-4-5",
+        "AUTH-ENGLISH-LC-D-4-2",
+        "AUTH-ENGLISH-LP-1-4-7",
+        "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
+        "AUTH-ENGLISH-LP-3-4-9",
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
+      ],
+      "stimulusId": "ENG_R4_READ_251",
+      "stem": "Which answer is supported by the passage that includes “The city installed phone charging stations in subway stations.”?",
+      "options": [
+        "They had complaints, hopes, and daily worries like people today.",
+        "Some people had already forgotten phones or had them taken.",
+        "Some people said clocks were unnecessary because everyone had phones.",
+        "Customers only had to show a code on their phones."
+      ],
+      "answerIndex": 1,
+      "optionRationales": [
+        {
+          "optionIndex": 0,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「They had complaints, hopes, and daily worries like people today.」；這個選項混入另一個情境的資訊。"
+        },
+        {
+          "optionIndex": 1,
+          "isCorrect": true,
+          "reason": "本文可直接核對「Some people had already forgotten phones or had them taken.」，所以這個選項符合完整語境。"
+        },
+        {
+          "optionIndex": 2,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「Some people said clocks were unnecessary because everyone had phones.」；這個選項混入另一個情境的資訊。"
+        },
+        {
+          "optionIndex": 3,
+          "isCorrect": false,
+          "reason": "本文沒有陳述「Customers only had to show a code on their phones.」；這個選項混入另一個情境的資訊。"
+        }
+      ],
+      "difficulty": "transfer",
+      "cognitiveProcess": [
+        "read-locked-passage-evidence",
+        "distinguish-supported-detail-from-related-near-misses"
+      ],
+      "representationType": "reading-supported-detail",
+      "misconceptionTargets": [
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
+      ],
+      "provenance": {
+        "status": "original",
+        "authorRole": "Codex R4 English content author",
+        "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+        "sourceRefs": [
+          "AUTH-ENGLISH-LC-AE-4-5",
+          "AUTH-ENGLISH-LC-D-4-2",
+          "AUTH-ENGLISH-LP-1-4-7",
+          "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
+          "AUTH-ENGLISH-LP-3-4-9",
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
+        ]
+      },
+      "independentReviews": [
+        {
+          "reviewerRole": "english-grammar-solution-review",
+          "derivedAnswerIndex": 1,
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Some people had already forgotten phones or had them taken.」，答案為「Some people had already forgotten phones or had them taken.」。",
+          "status": "pass"
+        },
+        {
+          "reviewerRole": "english-alternative-answer-review",
+          "derivedAnswerIndex": 1,
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Some people had already forgotten phones or had them taken.」有同篇證據，三個干擾項均來自不同情境。",
+          "status": "pass"
+        }
+      ],
+      "assets": []
+    },
+    {
+      "id": "ENG_R4_Q_READ_251_03",
+      "subject": "english",
+      "skillIds": [
+        "ENG_R4_S273"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-6",
@@ -267,44 +396,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_251",
-      "stem": "In Reading Set 251, how many paragraphs organize the passage that begins “The city installed phone charging stations in subway stations. Travelers could charge their phones for free while waiting.”?",
+      "stem": "What happens next in this passage after “A teenager saw a phone left at a station.”?",
       "options": [
-        "7",
-        "6",
-        "4",
-        "5"
+        "He gave it to station staff instead of ignoring it.",
+        "The station later invited students to produce emergency information segments.",
+        "Workers could collect trash more efficiently instead of checking every can.",
+        "But when questions were complex, the chatbot sometimes gave confusing replies."
       ],
-      "answerIndex": 1,
+      "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
-          "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "isCorrect": true,
+          "reason": "本文可直接核對「A teenager saw a phone left at a station. He gave it to station staff instead of ignoring it.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
-          "isCorrect": true,
-          "reason": "文章以換行鎖定為 6 個段落。"
+          "isCorrect": false,
+          "reason": "本文沒有陳述「The station later invited students to produce emergency information segments.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Workers could collect trash more efficiently instead of checking every can.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "5 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「But when questions were complex, the chatbot sometimes gave confusing replies.」；這個選項混入另一個情境的資訊。"
         }
       ],
-      "difficulty": "transfer",
+      "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-structure-count-1",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -327,103 +456,14 @@
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
-          "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 6 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
-          "status": "pass"
-        },
-        {
-          "reviewerRole": "english-alternative-answer-review",
-          "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
-          "status": "pass"
-        }
-      ],
-      "assets": []
-    },
-    {
-      "id": "ENG_R4_Q_READ_251_03",
-      "subject": "english",
-      "skillIds": [
-        "ENG_R4_S254"
-      ],
-      "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-5",
-        "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LP-1-4-7",
-        "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-8",
-        "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-5-4-7",
-        "AUTH-ENGLISH-LP-5-4-8",
-        "AUTH-ENGLISH-LP-5-4-9"
-      ],
-      "stimulusId": "ENG_R4_READ_251",
-      "stem": "In Reading Set 251, which quoted line appears earliest in the passage?",
-      "options": [
-        "The city installed phone charging stations in subway stations. Travelers could charge their phones for free while waiting.",
-        "The stations were useful, but a warning sign was added: \"Do not leave your phone alone.\" Some people",
-        "A teenager saw a phone left at a station. He gave it to station staff instead of ignoring",
-        "The staff said public tools work only when people use them responsibly."
-      ],
-      "answerIndex": 0,
-      "optionRationales": [
-        {
-          "optionIndex": 0,
-          "isCorrect": true,
-          "reason": "這一行來自四個候選中的最早段落。"
-        },
-        {
-          "optionIndex": 1,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        },
-        {
-          "optionIndex": 2,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        },
-        {
-          "optionIndex": 3,
-          "isCorrect": false,
-          "reason": "這一行位於正確選項之後。"
-        }
-      ],
-      "difficulty": "foundation",
-      "cognitiveProcess": [
-        "read-locked-passage-evidence",
-        "identify-earliest-selected-paragraph"
-      ],
-      "representationType": "reading-sequence-earliest-1",
-      "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
-      ],
-      "provenance": {
-        "status": "original",
-        "authorRole": "Codex R4 English content author",
-        "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
-        "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-5",
-          "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LP-1-4-7",
-          "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-8",
-          "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-5-4-7",
-          "AUTH-ENGLISH-LP-5-4-8",
-          "AUTH-ENGLISH-LP-5-4-9"
-        ]
-      },
-      "independentReviews": [
-        {
-          "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 1 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「A teenager saw a phone left at a station. He gave it to station staff instead of ignoring it.」，答案為「He gave it to station staff instead of ignoring it.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「He gave it to station staff instead of ignoring it.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -446,11 +486,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_251",
-      "stem": "In Reading Set 251, which quoted line opens the final paragraph?",
+      "stem": "Which ending result or final point follows “But it also created old problems: carelessness, trust, and honesty.”?",
       "options": [
-        "The city installed phone charging stations in subway stations. Travelers could charge their phones for free while waiting.",
-        "The stations were useful, but a warning sign was added: \"Do not leave your phone alone.\" Some people",
-        "A teenager saw a phone left at a station. He gave it to station staff instead of ignoring",
+        "A living classroom changes every time students enter it.",
+        "The best system knows when to stop pretending it understands and call a human.",
+        "The hospital learned that technology works best when it gives humans more time to be human.",
         "Technology changes objects, but human behavior remains part of every system."
       ],
       "answerIndex": 3,
@@ -458,32 +498,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「A living classroom changes every time students enter it.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「The best system knows when to stop pretending it understands and call a human.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「The hospital learned that technology works best when it gives humans more time to be human.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行是第 6 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「But it also created old problems: carelessness, trust, and honesty. Technology changes objects, but human behavior remains part of every system.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-1",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -504,13 +544,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：文章共有 6 段，正確引文與第 6 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「But it also created old problems: carelessness, trust, and honesty. Technology changes objects, but human behavior remains part of every system.」，答案為「Technology changes objects, but human behavior remains part of every system.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Technology changes objects, but human behavior remains part of every system.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -520,7 +560,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

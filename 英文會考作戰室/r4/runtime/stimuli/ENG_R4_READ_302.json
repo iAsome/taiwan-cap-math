@@ -91,48 +91,100 @@
       "translation": "消息;音信"
     },
     {
-      "word": "accurate",
-      "translation": "正確的, 精確的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "overview",
-      "translation": "概述"
-    },
-    {
-      "word": "entire",
-      "translation": "整個"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "firefly",
-      "translation": "螢火蟲"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "path",
-      "translation": "小徑;路線"
+      "word": "atm",
+      "translation": "自動櫃員機"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "recipe",
+      "translation": "食譜"
+    },
+    {
+      "word": "supported",
+      "translation": "支持;支持"
+    },
+    {
+      "word": "official",
+      "translation": "官方"
+    },
+    {
+      "word": "identify",
+      "translation": "識別"
+    },
+    {
+      "word": "pollution",
+      "translation": "污染"
+    },
+    {
+      "word": "inspections",
+      "translation": "檢查"
+    },
+    {
+      "word": "adjust",
+      "translation": "調整"
+    },
+    {
+      "word": "mobile",
+      "translation": "可移動的, 易變的, 機動的；運動物體"
+    },
+    {
+      "word": "neighborhoods",
+      "translation": "附近, 鄰近"
+    },
+    {
+      "word": "online",
+      "translation": "網路"
+    },
+    {
+      "word": "possibly",
+      "translation": "可能"
+    },
+    {
+      "word": "website",
+      "translation": "網站"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
     },
     {
       "word": "receives",
       "translation": "收到"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "solve",
+      "translation": "解決"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "loneliness",
+      "translation": "孤獨"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "humans",
+      "translation": "人類的;人"
+    },
+    {
+      "word": "human",
+      "translation": "人類的;人"
     }
   ],
   "questions": [
@@ -153,11 +205,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_302",
-      "stem": "In Reading Set 302, which heading gives the most accurate overview of the entire passage?",
+      "stem": "Which title is best for the complete passage that includes “A riverside town created an app that sent flood warnings to residents.”?",
       "options": [
-        "The Firefly Path",
-        "The Public Water Test",
-        "The Blue Ticket",
+        "The Old Town App",
+        "The Water ATM",
+        "The Old Recipe App",
         "The Flood Warning App"
       ],
       "answerIndex": 3,
@@ -165,32 +217,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Firefly Path」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Town App」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Public Water Test」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Water ATM」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Blue Ticket」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Recipe App」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Flood Warning App: A riverside town created an app that sent flood warnings to residents.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-2",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -211,13 +263,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Flood Warning App」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Flood Warning App: A riverside town created an app that sent flood warnings to residents.」，答案為「The Flood Warning App」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Flood Warning App」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -227,90 +279,86 @@
       "id": "ENG_R4_Q_READ_302_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-6",
-        "AUTH-ENGLISH-LC-AE-4-8",
+        "AUTH-ENGLISH-LC-AE-4-5",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LC-D-4-3",
-        "AUTH-ENGLISH-LP-3-4-10",
-        "AUTH-ENGLISH-LP-3-4-12",
-        "AUTH-ENGLISH-LP-3-4-13",
+        "AUTH-ENGLISH-LP-1-4-7",
         "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-9-4-2",
-        "AUTH-ENGLISH-LP-9-4-3"
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_302",
-      "stem": "In Reading Set 302, if each paragraph receives one note card, how many cards are needed for the passage beginning “A riverside town created an app that sent flood warnings to residents. It used rain data, river levels,”?",
+      "stem": "Which answer is supported by the passage that includes “A riverside town created an app that sent flood warnings to residents.”?",
       "options": [
-        "6",
-        "7",
-        "5",
-        "4"
+        "A river in the city had an official modern name, but older residents used a different name from a local language.",
+        "The data helped identify a pollution problem after heavy rain.",
+        "It used rain data, river levels, and reports from local officials.",
+        "City officials used the data to plan inspections and adjust rules."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "6 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「A river in the city had an official modern name, but older residents used a different name from…」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「The data helped identify a pollution problem after heavy rain.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "文章以換行鎖定為 5 個段落。"
+          "reason": "本文可直接核對「It used rain data, river levels, and reports from local officials.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「City officials used the data to plan inspections and adjust rules.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-structure-count-2",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-6",
-          "AUTH-ENGLISH-LC-AE-4-8",
+          "AUTH-ENGLISH-LC-AE-4-5",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LC-D-4-3",
-          "AUTH-ENGLISH-LP-3-4-10",
-          "AUTH-ENGLISH-LP-3-4-12",
-          "AUTH-ENGLISH-LP-3-4-13",
+          "AUTH-ENGLISH-LP-1-4-7",
           "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-9-4-2",
-          "AUTH-ENGLISH-LP-9-4-3"
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「It used rain data, river levels, and reports from local officials.」，答案為「It used rain data, river levels, and reports from local officials.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「It used rain data, river levels, and reports from local officials.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -336,44 +384,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_302",
-      "stem": "In Reading Set 302, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “Many did so before the water rose.”?",
       "options": [
-        "However, some older residents did not use smartphones. Volunteers called them directly and knocked on doors.",
-        "The town learned that technology can send information quickly, but it cannot reach everyone by itself.",
-        "A riverside town created an app that sent flood warnings to residents. It used rain data, river levels,",
-        "During a storm, the app warned people in low areas to move cars and prepare emergency bags. Many"
+        "Older residents remembered meeting there before mobile phones.",
+        "However, some older residents did not use smartphones.",
+        "A local group helped older residents learn how to use the cards.",
+        "However, students noticed that quieter neighborhoods with older residents had fewer online reports, possibly because people there did not use the website."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Older residents remembered meeting there before mobile phones.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「Many did so before the water rose. However, some older residents did not use smartphones.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「A local group helped older residents learn how to use the cards.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「However, students noticed that quieter neighborhoods with older residents had fewer online reports, possibly because people there did…」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-2",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -397,13 +445,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Many did so before the water rose. However, some older residents did not use smartphones.」，答案為「However, some older residents did not use smartphones.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「However, some older residents did not use smartphones.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -413,7 +461,7 @@
       "id": "ENG_R4_Q_READ_302_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -426,44 +474,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_302",
-      "stem": "In Reading Set 302, at the start of the last paragraph, which selected line does the reader see?",
+      "stem": "Which ending result or final point follows “A good warning system uses many paths.”?",
       "options": [
-        "A good warning system uses many paths. In danger, the best message is the one that actually reaches",
-        "A riverside town created an app that sent flood warnings to residents. It used rain data, river levels,",
-        "During a storm, the app warned people in low areas to move cars and prepare emergency bags. Many",
-        "However, some older residents did not use smartphones. Volunteers called them directly and knocked on doors."
+        "In danger, the best message is the one that actually reaches the person who needs it.",
+        "It had also carried a simple message from one person to another: help does not have to stop with the person who receives it.",
+        "The boxes could not solve loneliness, but they could carry a message: someone remembered you today.",
+        "The hospital learned that technology works best when it gives humans more time to be human."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「A good warning system uses many paths. In danger, the best message is the one that actually reaches the person who needs…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「It had also carried a simple message from one person to another: help does not have to stop…」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「The boxes could not solve loneliness, but they could carry a message: someone remembered you today.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「The hospital learned that technology works best when it gives humans more time to be human.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-2",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -484,13 +532,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「A good warning system uses many paths. In danger, the best message is the one that actually reaches the person who needs it.」，答案為「In danger, the best message is the one that actually reaches the person who needs it.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「In danger, the best message is the one that actually reaches the person who needs it.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -500,7 +548,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

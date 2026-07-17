@@ -1,8 +1,8 @@
 {
   "id": "ENG_R4_LISTEN_225",
   "section": "discourse",
-  "transcript": "Welcome to the Bike Safety Fair tour at the music room. We will first visit the model room, then the photo hall, and finally the workshop. Photography is allowed in the first two rooms but not in the workshop. Keep your ticket because the guide will check it at the last door.",
-  "spokenText": "Welcome to the Bike Safety Fair tour at the music room. We will first visit the model room, then the photo hall, and finally the workshop. Photography is allowed in the first two rooms but not in the workshop. Keep your ticket because the guide will check it at the last door.",
+  "transcript": "The school office has sent the following message. Welcome to the Bike Safety Fair tour at the music room. We will first visit the model room, then the photo hall, and finally the workshop. Photography is allowed in the first two rooms but not in the workshop. Keep your ticket because the guide will check it at the last door.",
+  "spokenText": "The school office has sent the following message. Welcome to the Bike Safety Fair tour at the music room. We will first visit the model room, then the photo hall, and finally the workshop. Photography is allowed in the first two rooms but not in the workshop. Keep your ticket because the guide will check it at the last door.",
   "audioDescription": "An original public message or short explanation whose purpose is to explain the route and rules for the Bike Safety Fair tour.",
   "pauseMs": 3500,
   "voiceProfile": {
@@ -12,6 +12,10 @@
   "audioId": "ENG_R4_AUDIO_225",
   "audioPath": "runtime/audio/ENG_R4_AUDIO_225.wav",
   "glossary": [
+    {
+      "word": "message",
+      "translation": "消息;音信"
+    },
     {
       "word": "safety",
       "translation": "安全"
@@ -45,16 +49,12 @@
       "translation": "引導;嚮導"
     },
     {
-      "word": "purpose",
-      "translation": "目的"
-    },
-    {
-      "word": "message",
-      "translation": "消息;音信"
-    },
-    {
       "word": "route",
       "translation": "路線"
+    },
+    {
+      "word": "describe",
+      "translation": "描述"
     },
     {
       "word": "announce",
@@ -69,24 +69,12 @@
       "translation": "陳述;狀態;州"
     },
     {
-      "word": "recording",
-      "translation": "記錄;錄音;記錄;唱片"
+      "word": "anywhere",
+      "translation": "任何地方"
     },
     {
-      "word": "community",
-      "translation": "社區；共同體"
-    },
-    {
-      "word": "according",
-      "translation": "一致、符合"
-    },
-    {
-      "word": "skip",
-      "translation": "跳, 蹦, 急速改變, 跳讀, 遺漏, 跳躍；跳躍"
-    },
-    {
-      "word": "directly",
-      "translation": "直接的;指引"
+      "word": "required",
+      "translation": "必填"
     }
   ],
   "visualAssets": [],
@@ -135,34 +123,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_225",
-      "stem": "In Listening Set 225, what is the main purpose of this spoken message?",
+      "stem": "The school office has sent the following message. What is the message mainly meant to do?",
       "options": [
         "explain the route and rules for the Bike Safety Fair tour",
-        "teach Bike Safety Fair visitors to build a train",
-        "announce a menu for Bike Safety Fair",
-        "sell cameras at the Bike Safety Fair door"
+        "describe only the workshop rule for Bike Safety Fair",
+        "announce ticket prices for Bike Safety Fair",
+        "invite visitors to change the Bike Safety Fair route"
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "explain the route and rules for the Bike Safety Fair tour：整段資訊都用來 explain the route and rules for the Bike Safety Fair tour。"
+          "reason": "explain the route and rules for the Bike Safety Fair tour：完整逐字稿明確支持此項。整段資訊的目的為「explain the route and rules for the Bike Safety Fair tour」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "teach Bike Safety Fair visitors to build a train：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "describe only the workshop rule for Bike Safety Fair：此項把「explain the route and rules for the Bike Safety Fair tour」改成「describe only the workshop rule for Bike Safety Fair」。整段資訊的目的為「explain the route and rules for the Bike Safety Fair tour」。因此，鎖定證據支持「explain the route and rules for the Bike Safety Fair tour」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "announce a menu for Bike Safety Fair：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "announce ticket prices for Bike Safety Fair：此項把「explain the route and rules for the Bike Safety Fair tour」改成「announce ticket prices for Bike Safety Fair」。整段資訊的目的為「explain the route and rules for the Bike Safety Fair tour」。因此，鎖定證據支持「explain the route and rules for the Bike Safety Fair tour」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "sell cameras at the Bike Safety Fair door：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "invite visitors to change the Bike Safety Fair route：此項把「explain the route and rules for the Bike Safety Fair tour」改成「invite visitors to change the Bike Safety Fair route」。整段資訊的目的為「explain the route and rules for the Bike Safety Fair tour」。因此，鎖定證據支持「explain the route and rules for the Bike Safety Fair tour」。"
         }
       ],
       "difficulty": "foundation",
@@ -172,7 +160,7 @@
       ],
       "representationType": "listening-identify-spoken-message-purpose",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -220,13 +208,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「explain the route and rules for the Bike Safety Fair tour」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「explain the route and rules for the Bike Safety Fair tour」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「explain the route and rules for the Bike Safety Fair tour」成立。",
           "status": "pass"
         }
       ],
@@ -278,34 +266,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_225",
-      "stem": "In Listening Set 225, which detail is stated in the recording?",
+      "stem": "The school office has sent the following message. Which detail is stated in the message?",
       "options": [
-        "the Bike Safety Fair model room",
-        "the Bike Safety Fair photo hall",
-        "Bike Safety Fair at the community hall",
-        "the Bike Safety Fair workshop"
+        "photos are not allowed in the Bike Safety Fair model room",
+        "photos are not allowed in the Bike Safety Fair photo hall",
+        "photos are not allowed anywhere during Bike Safety Fair",
+        "photos are not allowed in the Bike Safety Fair workshop"
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "the Bike Safety Fair model room：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "photos are not allowed in the Bike Safety Fair model room：此項把「workshop」改成「model room」。音稿明確陳述「photos are not allowed in the Bike Safety Fair workshop」。因此，鎖定證據支持「photos are not allowed in the Bike Safety Fair workshop」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "the Bike Safety Fair photo hall：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "photos are not allowed in the Bike Safety Fair photo hall：此項把「workshop」改成「photo hall」。音稿明確陳述「photos are not allowed in the Bike Safety Fair workshop」。因此，鎖定證據支持「photos are not allowed in the Bike Safety Fair workshop」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "Bike Safety Fair at the community hall：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "photos are not allowed anywhere during Bike Safety Fair：此項把「in the Bike Safety Fair workshop」改成「anywhere during Bike Safety Fair」。音稿明確陳述「photos are not allowed in the Bike Safety Fair workshop」。因此，鎖定證據支持「photos are not allowed in the Bike Safety Fair workshop」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "the Bike Safety Fair workshop：音稿明確說出 the Bike Safety Fair workshop。"
+          "reason": "photos are not allowed in the Bike Safety Fair workshop：完整逐字稿明確支持此項。音稿明確陳述「photos are not allowed in the Bike Safety Fair workshop」。"
         }
       ],
       "difficulty": "standard",
@@ -315,7 +303,7 @@
       ],
       "representationType": "listening-retrieve-spoken-detail",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -363,13 +351,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「the Bike Safety Fair workshop」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「photos are not allowed in the Bike Safety Fair workshop」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「photos are not allowed in the Bike Safety Fair workshop」成立。",
           "status": "pass"
         }
       ],
@@ -421,34 +409,34 @@
         "AUTH-ENGLISH-LP-8-4-6"
       ],
       "stimulusId": "ENG_R4_LISTEN_225",
-      "stem": "In Listening Set 225, what should the listener do according to the recording?",
+      "stem": "The school office has sent the following message. Which action is planned or required in the full message?",
       "options": [
-        "take photos in every Bike Safety Fair room",
-        "skip directly outside Bike Safety Fair",
+        "show the Bike Safety Fair ticket at the first door",
+        "take photos in the Bike Safety Fair workshop",
         "keep the Bike Safety Fair ticket for the last door",
-        "throw away the Bike Safety Fair ticket"
+        "leave the Bike Safety Fair ticket in the first room"
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "take photos in every Bike Safety Fair room：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "show the Bike Safety Fair ticket at the first door：此項把「keep the Bike Safety Fair ticket for the last」改成「show the Bike Safety Fair ticket at the first」。完整訊息指出計畫或要求的行動為「keep the Bike Safety Fair ticket for the last door」。因此，鎖定證據支持「keep the Bike Safety Fair ticket for the last door」。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "skip directly outside Bike Safety Fair：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "take photos in the Bike Safety Fair workshop：此項把「keep the Bike Safety Fair ticket for the last door」改成「take photos in the Bike Safety Fair workshop」。完整訊息指出計畫或要求的行動為「keep the Bike Safety Fair ticket for the last door」。因此，鎖定證據支持「keep the Bike Safety Fair ticket for the last door」。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "keep the Bike Safety Fair ticket for the last door：指示或結論要求聽者 keep the Bike Safety Fair ticket for the last door。"
+          "reason": "keep the Bike Safety Fair ticket for the last door：完整逐字稿明確支持此項。完整訊息指出計畫或要求的行動為「keep the Bike Safety Fair ticket for the last door」。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "throw away the Bike Safety Fair ticket：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+          "reason": "leave the Bike Safety Fair ticket in the first room：此項把「keep the Bike Safety Fair ticket for the last door」改成「leave the Bike Safety Fair ticket in the first room」。完整訊息指出計畫或要求的行動為「keep the Bike Safety Fair ticket for the last door」。因此，鎖定證據支持「keep the Bike Safety Fair ticket for the last door」。"
         }
       ],
       "difficulty": "advanced",
@@ -458,7 +446,7 @@
       ],
       "representationType": "listening-apply-announced-action-or-restriction",
       "misconceptionTargets": [
-        "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+        "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
       ],
       "provenance": {
         "status": "original",
@@ -506,13 +494,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「keep the Bike Safety Fair ticket for the last door」，且題幹指定的輪次與資訊欄位一致。",
+          "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「keep the Bike Safety Fair ticket for the last door」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+          "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「keep the Bike Safety Fair ticket for the last door」成立。",
           "status": "pass"
         }
       ],

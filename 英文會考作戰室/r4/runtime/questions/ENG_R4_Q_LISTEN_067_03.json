@@ -42,7 +42,7 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_067",
-  "stem": "In Listening Set 067, across the change from one-person pointing, on-the-table, scarf-feature to 2-person walking, beside-the-table, none-feature, which object sequence is heard?",
+  "stem": "The first scene shows one person pointing and wearing a scarf, and the second shows two people walking with no marked accessory. Which object order is heard?",
   "options": [
     "umbrella, then ball",
     "ball, then umbrella",
@@ -54,22 +54,22 @@
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "umbrella, then ball：音稿先說 umbrella，再說 ball。"
+      "reason": "umbrella, then ball：完整逐字稿明確支持此項。音稿先說 umbrella，再說 ball。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "ball, then umbrella：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "ball, then umbrella：此項把「umbrella, then ball」改成「ball, then umbrella」。音稿先說 umbrella，再說 ball。因此，鎖定證據支持「umbrella, then ball」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "umbrella, then book：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "umbrella, then book：此項把「ball」改成「book」。音稿先說 umbrella，再說 ball。因此，鎖定證據支持「umbrella, then ball」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "box, then ball：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "box, then ball：此項把「umbrella,」改成「box,」。音稿先說 umbrella，再說 ball。因此，鎖定證據支持「umbrella, then ball」。"
     }
   ],
   "difficulty": "foundation",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-integrate-two-scene-object-order",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「umbrella, then ball」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「umbrella, then ball」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 0,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「umbrella, then ball」成立。",
       "status": "pass"
     }
   ],

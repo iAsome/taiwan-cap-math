@@ -27,56 +27,72 @@
       "translation": "提醒, 使想起"
     },
     {
-      "word": "predict",
-      "translation": "預測"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "central",
-      "translation": "中央的"
-    },
-    {
-      "word": "content",
-      "translation": "內容"
-    },
-    {
-      "word": "accurately",
-      "translation": "正確的, 精確的"
-    },
-    {
-      "word": "handwritten",
-      "translation": "手寫的"
-    },
-    {
-      "word": "separate",
-      "translation": "分開"
-    },
-    {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "selected",
-      "translation": "挑選"
-    },
-    {
-      "word": "latest",
-      "translation": "最新的"
-    },
-    {
-      "word": "sequence",
-      "translation": "序列"
-    },
-    {
-      "word": "excerpt",
-      "translation": "摘錄"
-    },
-    {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
+    },
+    {
+      "word": "includes",
+      "translation": "包含"
+    },
+    {
+      "word": "situation",
+      "translation": "情形, 境遇, (建築物等的)位置"
+    },
+    {
+      "word": "privately",
+      "translation": "私人的"
+    },
+    {
+      "word": "stadium's",
+      "translation": "露天大型運動場"
+    },
+    {
+      "word": "competition",
+      "translation": "競爭"
+    },
+    {
+      "word": "community",
+      "translation": "社區；共同體"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "depends",
+      "translation": "依賴"
+    },
+    {
+      "word": "effort",
+      "translation": "努力"
+    },
+    {
+      "word": "curiosity",
+      "translation": "好奇心"
+    },
+    {
+      "word": "guidance",
+      "translation": "指導, 領導"
+    },
+    {
+      "word": "success",
+      "translation": "成功"
+    },
+    {
+      "word": "clipboard",
+      "translation": "剪貼簿"
     }
   ],
   "questions": [
@@ -97,44 +113,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_044",
-      "stem": "In Reading Set 044, which heading would help a reader predict the central content most accurately?",
+      "stem": "Which title is best for the complete passage that includes “Mr. Fan repairs clocks.”?",
       "options": [
-        "The Handwritten Sign",
+        "The Old Map Shop",
         "The Clock Shop",
-        "The Seed Library",
-        "The Old Shoes by the Door"
+        "The Repair Table",
+        "The Public Clock"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Handwritten Sign」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Map Shop」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Clock Shop: Mr. Fan repairs clocks.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Seed Library」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Repair Table」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Old Shoes by the Door」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Public Clock」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-4",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -155,13 +171,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Clock Shop」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Clock Shop: Mr. Fan repairs clocks.」，答案為「The Clock Shop」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Clock Shop」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -171,76 +187,70 @@
       "id": "ENG_R4_Q_READ_044_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S257"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-6",
-        "AUTH-ENGLISH-LC-AE-4-8",
-        "AUTH-ENGLISH-LC-D-4-2",
+        "AUTH-ENGLISH-LC-D-4-1",
         "AUTH-ENGLISH-LC-D-4-3",
-        "AUTH-ENGLISH-LP-3-4-10",
+        "AUTH-ENGLISH-LP-1-4-7",
+        "AUTH-ENGLISH-LP-3-4-11",
         "AUTH-ENGLISH-LP-3-4-12",
-        "AUTH-ENGLISH-LP-3-4-13",
-        "AUTH-ENGLISH-LP-3-4-14",
-        "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-9-4-2",
+        "AUTH-ENGLISH-LP-7-4-2",
+        "AUTH-ENGLISH-LP-9-4-1",
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_044",
-      "stem": "In Reading Set 044, how many separate paragraph blocks follow from the opening “Mr. Fan repairs clocks. His shop is small and quiet, filled with ticking sounds. Many clocks on the”?",
+      "stem": "Which reason does the passage give for this situation: “Many clocks on the wall show different times”?",
       "options": [
-        "5",
-        "4",
-        "6",
-        "7"
+        "They are waiting to be fixed",
+        "It tells children one thing before they even enter: stories are waiting for you",
+        "Chocolate can be dangerous for dogs",
+        "Grace almost never spoke in class"
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "文章以換行鎖定為 5 個段落。"
+          "reason": "本文可直接核對「they are waiting to be fixed」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「It tells children one thing before they even enter: stories are waiting for you」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "6 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Chocolate can be dangerous for dogs」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「Grace almost never spoke in class」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "connect-stated-reason-to-situation"
       ],
-      "representationType": "reading-structure-count-4",
+      "representationType": "reading-stated-reason",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-6",
-          "AUTH-ENGLISH-LC-AE-4-8",
-          "AUTH-ENGLISH-LC-D-4-2",
+          "AUTH-ENGLISH-LC-D-4-1",
           "AUTH-ENGLISH-LC-D-4-3",
-          "AUTH-ENGLISH-LP-3-4-10",
+          "AUTH-ENGLISH-LP-1-4-7",
+          "AUTH-ENGLISH-LP-3-4-11",
           "AUTH-ENGLISH-LP-3-4-12",
-          "AUTH-ENGLISH-LP-3-4-13",
-          "AUTH-ENGLISH-LP-3-4-14",
-          "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-9-4-2",
+          "AUTH-ENGLISH-LP-7-4-2",
+          "AUTH-ENGLISH-LP-9-4-1",
           "AUTH-ENGLISH-LP-9-4-3"
         ]
       },
@@ -248,13 +258,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「they are waiting to be fixed」，答案為「They are waiting to be fixed」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「They are waiting to be fixed」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -280,44 +290,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_044",
-      "stem": "In Reading Set 044, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “It does not only tell time.”?",
       "options": [
-        "Mr. Fan repairs clocks. His shop is small and quiet, filled with ticking sounds. Many clocks on the",
-        "A boy once asked him, \"Why repair old clocks Phones can tell time.\"",
-        "Mr. Fan picked up a wooden clock and said, \"This clock belonged to someone's grandmother. It does not",
-        "The boy looked around the shop again. He noticed names written on small paper tags. Each clock had"
+        "A phone tells time privately.",
+        "The family talked about it over toast.",
+        "The stadium's story changed from competition to community.",
+        "It tells a family story.\""
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「A phone tells time privately.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The family talked about it over toast.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The stadium's story changed from competition to community.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「It does not only tell time. It tells a family story.'」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-4",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -341,13 +351,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「It does not only tell time. It tells a family story.'」，答案為「It tells a family story.'」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「It tells a family story.'」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -370,44 +380,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_044",
-      "stem": "In Reading Set 044, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “Phones may tell the correct time, but they do not always remind people of the past.”?",
       "options": [
-        "A boy once asked him, \"Why repair old clocks Phones can tell time.\"",
-        "said, \"This clock belonged to someone's grandmother. It does not only tell time. It tells a family story.\"",
-        "do not always remind people of the past. That is why Mr. Fan's shop still opens every morning.",
-        "with ticking sounds. Many clocks on the wall show different times because they are waiting to be fixed."
+        "What students do after the window opens still depends on effort, curiosity, and guidance.",
+        "Every success stands on many ideas that did not work.",
+        "That is why Mr. Fan's shop still opens every morning.",
+        "Sometimes it is standing at the gate with a clipboard every morning."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「What students do after the window opens still depends on effort, curiosity, and guidance.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Every success stands on many ideas that did not work.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「Phones may tell the correct time, but they do not always remind people of the past. That is why Mr. Fan's shop…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Sometimes it is standing at the gate with a clipboard every morning.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -428,13 +438,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Phones may tell the correct time, but they do not always remind people of the past. That is why Mr. Fan's shop still opens…」，答案為「That is why Mr. Fan's shop still opens every morning.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「That is why Mr. Fan's shop still opens every morning.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -444,7 +454,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

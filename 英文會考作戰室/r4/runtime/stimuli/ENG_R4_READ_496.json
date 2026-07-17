@@ -95,60 +95,92 @@
       "translation": "渴望"
     },
     {
-      "word": "broad",
-      "translation": "寬廣的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "paragraphs",
-      "translation": "段落"
-    },
-    {
-      "word": "broader",
-      "translation": "寬廣的"
-    },
-    {
-      "word": "text",
-      "translation": "正文, 原文, 課文, 課本"
-    },
-    {
-      "word": "empty",
-      "translation": "空的, 空洞的, 空虛的；使成為空的, 倒空；倒空；空的,空閑的；騰空, 騰出來"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
-    },
-    {
-      "word": "contains",
+      "word": "includes",
       "translation": "包含"
     },
     {
-      "word": "exact",
-      "translation": "準確的"
+      "word": "battery",
+      "translation": "電池"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "recycling",
+      "translation": "回收"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "raincoat",
+      "translation": "雨衣"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "excerpt",
-      "translation": "摘錄"
+      "word": "village",
+      "translation": "村落"
     },
     {
-      "word": "actual",
-      "translation": "實際的, 真實的, 現行的, 目前的"
+      "word": "manager",
+      "translation": "經理, 管理人員, 管理器"
+    },
+    {
+      "word": "returns",
+      "translation": "回;還"
+    },
+    {
+      "word": "plastic",
+      "translation": "塑膠, 可塑體, 塑料製品, 整形；塑膠的, 塑造的, 有可塑性的, 造形的, (外科)整形的"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "purpose",
+      "translation": "目的"
+    },
+    {
+      "word": "compromise",
+      "translation": "妥協"
+    },
+    {
+      "word": "affected",
+      "translation": "影響"
+    },
+    {
+      "word": "stress",
+      "translation": "壓力"
+    },
+    {
+      "word": "social",
+      "translation": "社會的;交際的"
+    },
+    {
+      "word": "pressure",
+      "translation": "壓, 壓力, 電壓, 壓迫, 強制, 緊迫"
+    },
+    {
+      "word": "whole",
+      "translation": "完整的"
+    },
+    {
+      "word": "balance",
+      "translation": "平衡"
     }
   ],
   "questions": [
@@ -169,44 +201,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_496",
-      "stem": "In Reading Set 496, which heading is broad enough for all paragraphs but not broader than the text?",
+      "stem": "Which title is best for the complete passage that includes “A café street started a reusable cup system.”?",
       "options": [
-        "The Old Well",
+        "The Battery Recycling Box",
         "The Reusable Cup System",
-        "The Missing Shoes",
-        "The Empty Bottle"
+        "The Paper Cup Problem",
+        "The School Raincoat"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Old Well」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Battery Recycling Box」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Reusable Cup System: A café street started a reusable cup system.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Missing Shoes」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Paper Cup Problem」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "「The Empty Bottle」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The School Raincoat」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-6",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -227,13 +259,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Reusable Cup System」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Reusable Cup System: A café street started a reusable cup system.」，答案為「The Reusable Cup System」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Reusable Cup System」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -243,7 +275,7 @@
       "id": "ENG_R4_Q_READ_496_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -257,44 +289,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_496",
-      "stem": "In Reading Set 496, while checking the passage, which paragraph contains the exact line “Students studying the project learned that environmental habits need convenience. People may support an idea but fail if”?",
+      "stem": "Which answer is supported by the passage that includes “A café street started a reusable cup system.”?",
       "options": [
-        "Paragraph 4",
-        "Paragraph 1",
-        "Paragraph 2",
-        "Paragraph 3"
+        "Customers paid a small deposit, used a cup, and returned it to any participating shop.",
+        "A drink shop on the tree side had more customers in the afternoon.",
+        "A small store in Hill Village sells used books, cups, bags, and toys.",
+        "The shop manager explained that returns are not as simple as customers think."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 4 段開頭。"
+          "reason": "本文可直接核對「Customers paid a small deposit, used a cup, and returned it to any participating shop.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「A drink shop on the tree side had more customers in the afternoon.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "第 2 段沒有這一行。"
+          "reason": "本文沒有陳述「A small store in Hill Village sells used books, cups, bags, and toys.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「The shop manager explained that returns are not as simple as customers think.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-1",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -316,13 +348,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：引文與第 4 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Customers paid a small deposit, used a cup, and returned it to any participating shop.」，答案為「Customers paid a small deposit, used a cup, and returned it to any participating shop.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Customers paid a small deposit, used a cup, and returned it to any participating shop.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -348,44 +380,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_496",
-      "stem": "In Reading Set 496, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “After clear signs and return boxes were added, the program worked better.”?",
       "options": [
-        "A café street started a reusable cup system. Customers paid a small deposit, used a cup, and returned",
-        "At first, people forgot to return cups. Shops had to explain the system many times.",
-        "After clear signs and return boxes were added, the program worked better. Trash from disposable cups decreased.",
-        "Students studying the project learned that environmental habits need convenience. People may support an idea but fail if"
+        "The trash still came from homes, shops, and streets.",
+        "By Wednesday, many bags had cups hanging from the side.",
+        "They bought cold drinks in plastic cups almost every afternoon.",
+        "Trash from disposable cups decreased."
       ],
       "answerIndex": 3,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The trash still came from homes, shops, and streets.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「By Wednesday, many bags had cups hanging from the side.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「They bought cold drinks in plastic cups almost every afternoon.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「After clear signs and return boxes were added, the program worked better. Trash from disposable cups decreased.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-1",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -409,13 +441,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「After clear signs and return boxes were added, the program worked better. Trash from disposable cups decreased.」，答案為「Trash from disposable cups decreased.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Trash from disposable cups decreased.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -438,44 +470,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_496",
-      "stem": "In Reading Set 496, which selected excerpt comes from the actual end of the passage?",
+      "stem": "Which ending result or final point follows “It was a network of shops, rules, washing, and trust.”?",
       "options": [
-        "At first, people forgot to return cups. Shops had to explain the system many times.",
-        "After clear signs and return boxes were added, the program worked better. Trash from disposable cups decreased.",
+        "Sometimes the best answer depends on time, purpose, and compromise.",
+        "It is affected by design, habits, stress, and social pressure.",
         "Sustainability depends on design as much as desire.",
-        "reusable cup system. Customers paid a small deposit, used a cup, and returned it to any participating shop."
+        "When too much enters it, the whole balance changes."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「Sometimes the best answer depends on time, purpose, and compromise.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「It is affected by design, habits, stress, and social pressure.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "這段引文逐字位於全文末尾。"
+          "reason": "本文可直接核對「It was a network of shops, rules, washing, and trust. Sustainability depends on design as much as desire.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這段引文位於較前段落，並非全文末尾。"
+          "reason": "本文沒有陳述「When too much enters it, the whole balance changes.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "verify-whole-text-final-sentence"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-final-sentence",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -496,13 +528,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：逐字比對鎖定文章最後一段的最後一句；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「It was a network of shops, rules, washing, and trust. Sustainability depends on design as much as desire.」，答案為「Sustainability depends on design as much as desire.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Sustainability depends on design as much as desire.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -512,7 +544,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

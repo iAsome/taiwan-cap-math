@@ -27,56 +27,52 @@
       "translation": "成年人"
     },
     {
-      "word": "predict",
-      "translation": "預測"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "central",
-      "translation": "中央的"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
-      "word": "content",
-      "translation": "內容"
+      "word": "passage",
+      "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "accurately",
-      "translation": "正確的, 精確的"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "backpack",
-      "translation": "背包"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "ancient",
-      "translation": "古代的"
+      "word": "entrance",
+      "translation": "入口"
     },
     {
-      "word": "coin",
-      "translation": "硬幣"
+      "word": "passenger",
+      "translation": "乘客"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "result",
+      "translation": "結果"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "final",
+      "translation": "最終的"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "support",
+      "translation": "支持;支持"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "deserve",
+      "translation": "應得的"
     },
     {
-      "word": "quotation",
-      "translation": "報價"
-    },
-    {
-      "word": "positioned",
-      "translation": "位置"
+      "word": "applause",
+      "translation": "掌聲"
     }
   ],
   "questions": [
@@ -97,11 +93,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_034",
-      "stem": "In Reading Set 034, which heading would help a reader predict the central content most accurately?",
+      "stem": "Which title is best for the complete passage that includes “Welcome to Sunny Zoo.”?",
       "options": [
-        "The Broken Ruler",
-        "The Broken Backpack",
-        "The Ancient Coin",
+        "River Bus Pass",
+        "The Plant Market",
+        "Smile Class",
         "A Notice at the Zoo"
       ],
       "answerIndex": 3,
@@ -109,32 +105,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Broken Ruler」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「River Bus Pass」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Broken Backpack」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Plant Market」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Ancient Coin」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「Smile Class」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「A Notice at the Zoo: Welcome to Sunny Zoo.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-4",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -155,13 +151,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「A Notice at the Zoo」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「A Notice at the Zoo: Welcome to Sunny Zoo.」，答案為「A Notice at the Zoo」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「A Notice at the Zoo」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -171,7 +167,7 @@
       "id": "ENG_R4_Q_READ_034_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -185,44 +181,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_034",
-      "stem": "In Reading Set 034, a reader marked “For the safety of our animals and visitors, please follow these rules. Do not feed the animals. Some” Which paragraph was marked?",
+      "stem": "Which answer is supported by the passage that includes “Welcome to Sunny Zoo.”?",
       "options": [
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 2",
-        "Paragraph 1"
+        "But it kept one old swing seat and placed it near the entrance with a small sign.",
+        "It sits near the door and plays songs from many years ago.",
+        "Do not tap on glass windows, especially near snakes and small monkeys.",
+        "A small bakery opened near Mark's school."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「But it kept one old swing seat and placed it near the entrance with a small sign.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「It sits near the door and plays songs from many years ago.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 2 段開頭。"
+          "reason": "本文可直接核對「Do not tap on glass windows, especially near snakes and small monkeys.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「A small bakery opened near Mark's school.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-4",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -244,13 +240,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：引文與第 2 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Do not tap on glass windows, especially near snakes and small monkeys.」，答案為「Do not tap on glass windows, especially near snakes and small monkeys.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Do not tap on glass windows, especially near snakes and small monkeys.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -276,44 +272,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_034",
-      "stem": "In Reading Set 034, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “Loud sounds may frighten them.”?",
       "options": [
-        "The bird house will be closed from 1:00 p.m. to 2:30 p.m. today for cleaning. Visitors who bought",
-        "The zoo train runs every twenty minutes. Children under six must ride with an adult.",
-        "Welcome to Sunny Zoo.",
-        "For the safety of our animals and visitors, please follow these rules. Do not feed the animals. Some"
+        "Another passenger heard this and shared a story about a bird that flew home from far away.",
+        "The bird house will be closed from 1:00 p.m. to 2:30 p.m. today for cleaning.",
+        "Just before the photo, a bird flew over and dropped something white on Jack's shoulder.",
+        "The classroom became quiet again, but the students missed the bird a little."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Another passenger heard this and shared a story about a bird that flew home from far away.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「Loud sounds may frighten them. The bird house will be closed from 1:00 p.m. to 2:30 p.m. today for cleaning.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Just before the photo, a bird flew over and dropped something white on Jack's shoulder.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The classroom became quiet again, but the students missed the bird a little.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-4",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -337,13 +333,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Loud sounds may frighten them. The bird house will be closed from 1:00 p.m. to 2:30 p.m. today for cleaning.」，答案為「The bird house will be closed from 1:00 p.m. to 2:30 p.m. today for cleaning.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The bird house will be closed from 1:00 p.m. to 2:30 p.m. today for cleaning.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -353,7 +349,7 @@
       "id": "ENG_R4_Q_READ_034_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -366,44 +362,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_034",
-      "stem": "In Reading Set 034, which quotation is positioned at the opening of the last paragraph?",
+      "stem": "Which ending result or final point follows “Please remember: a zoo is not only a place to see animals.”?",
       "options": [
-        "Please remember: a zoo is not only a place to see animals. It is also their home.",
-        "Welcome to Sunny Zoo.",
-        "For the safety of our animals and visitors, please follow these rules. Do not feed the animals. Some",
-        "The bird house will be closed from 1:00 p.m. to 2:30 p.m. today for cleaning. Visitors who bought"
+        "It is also their home.",
+        "Quiet support can also deserve applause.",
+        "It is also what was saved.",
+        "It is also about where people stopped."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「Please remember: a zoo is not only a place to see animals. It is also their home.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Quiet support can also deserve applause.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「It is also what was saved.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「It is also about where people stopped.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-4",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -424,13 +420,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Please remember: a zoo is not only a place to see animals. It is also their home.」，答案為「It is also their home.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「It is also their home.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -440,7 +436,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

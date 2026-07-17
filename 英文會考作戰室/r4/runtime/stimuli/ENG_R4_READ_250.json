@@ -59,68 +59,84 @@
       "translation": "裝飾品"
     },
     {
-      "word": "captures",
-      "translation": "捕獲, 戰利品；俘獲, 捕獲, 奪取"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "passage's",
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
+    },
+    {
+      "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "central",
-      "translation": "中央的"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "thread",
-      "translation": "線, 細絲, 線索, 思路, 螺紋"
+      "word": "broadcast",
+      "translation": "廣播"
     },
     {
-      "word": "instead",
-      "translation": "代替, 改為, 抵作, 更換"
+      "word": "courtroom",
+      "translation": "法庭"
     },
     {
-      "word": "fountain",
-      "translation": "泉水, 噴泉, 源泉"
+      "word": "border",
+      "translation": "邊界；國界"
     },
     {
-      "word": "empty",
-      "translation": "空的, 空洞的, 空虛的；使成為空的, 倒空；倒空；空的,空閑的；騰空, 騰出來"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "guided",
+      "translation": "引導;嚮導"
     },
     {
-      "word": "cited",
-      "translation": "引用"
+      "word": "memory",
+      "translation": "記憶"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "customer",
+      "translation": "顧客"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "gathered",
+      "translation": "集合"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "fossil",
+      "translation": "化石"
     },
     {
-      "word": "verify",
-      "translation": "驗證"
+      "word": "stone",
+      "translation": "石頭"
     },
     {
-      "word": "structure",
-      "translation": "結構"
+      "word": "journey",
+      "translation": "旅行, 旅程；旅行"
     },
     {
-      "word": "locate",
-      "translation": "定位"
+      "word": "result",
+      "translation": "結果"
     },
     {
       "word": "final",
       "translation": "最終的"
+    },
+    {
+      "word": "divided",
+      "translation": "分隔"
+    },
+    {
+      "word": "connection",
+      "translation": "連接, 關係, 接線, 線路, 親戚"
+    },
+    {
+      "word": "powerful",
+      "translation": "強大的"
     }
   ],
   "questions": [
@@ -141,11 +157,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_250",
-      "stem": "In Reading Set 250, which heading captures the passage's central thread instead of a side point?",
+      "stem": "Which title is best for the complete passage that includes “A coastal museum displayed a bell from an old ship.”?",
       "options": [
-        "The Museum Smell Box",
-        "The Dry Fountain",
-        "The Empty Seat",
+        "The Old Radio Broadcast",
+        "The Old Courtroom",
+        "The Old Border Station",
         "The Old Ship Bell"
       ],
       "answerIndex": 3,
@@ -153,32 +169,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Museum Smell Box」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Radio Broadcast」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The Dry Fountain」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Courtroom」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Empty Seat」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Old Border Station」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Old Ship Bell: A coastal museum displayed a bell from an old ship.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-10",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -199,13 +215,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Old Ship Bell」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Old Ship Bell: A coastal museum displayed a bell from an old ship.」，答案為「The Old Ship Bell」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Old Ship Bell」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -215,7 +231,7 @@
       "id": "ENG_R4_Q_READ_250_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -229,44 +245,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_250",
-      "stem": "In Reading Set 250, which paragraph should be cited for the line “The guide explained that the bell had helped sailors mark time and signal danger. During fog, sound could”?",
+      "stem": "Which answer is supported by the passage that includes “A coastal museum displayed a bell from an old ship.”?",
       "options": [
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 2",
-        "Paragraph 1"
+        "The bell no longer guided boats, but it guided memory.",
+        "One week later, the school tried a new bell.",
+        "The bell was silent now, but its purpose was clear.",
+        "After they left, the young customer said, \"Now I understand."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「The bell no longer guided boats, but it guided memory.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「One week later, the school tried a new bell.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 2 段開頭。"
+          "reason": "本文可直接核對「The bell was silent now, but its purpose was clear.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「After they left, the young customer said, 'Now I understand.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-5",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -288,13 +304,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：引文與第 2 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The bell was silent now, but its purpose was clear.」，答案為「The bell was silent now, but its purpose was clear.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The bell was silent now, but its purpose was clear.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -320,44 +336,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_250",
-      "stem": "In Reading Set 250, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “During fog, sound could matter more than sight.”?",
       "options": [
+        "Visitors gathered around the glass case to read it.",
         "A student touched the glass case and imagined the bell ringing over dark water.",
-        "The bell was silent now, but its purpose was clear. It had once helped people survive when they",
-        "A coastal museum displayed a bell from an old ship. Visitors could not ring it, but they could",
-        "The guide explained that the bell had helped sailors mark time and signal danger. During fog, sound could"
+        "One student placed his shoe near the fossil and imagined time as a deep river.",
+        "A student looked at the gray stone and imagined the long journey from Earth to the Moon and back."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Visitors gathered around the glass case to read it.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「During fog, sound could matter more than sight. A student touched the glass case and imagined the bell ringing over dark water.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「One student placed his shoe near the fossil and imagined time as a deep river.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「A student looked at the gray stone and imagined the long journey from Earth to the Moon and…」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-5",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -381,13 +397,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「During fog, sound could matter more than sight. A student touched the glass case and imagined the bell ringing over dark water.」，答案為「A student touched the glass case and imagined the bell ringing over dark water.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「A student touched the glass case and imagined the bell ringing over dark water.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -397,7 +413,7 @@
       "id": "ENG_R4_Q_READ_250_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -410,44 +426,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_250",
-      "stem": "In Reading Set 250, to verify the ending structure, which line should a reader locate first in the final paragraph?",
+      "stem": "Which ending result or final point follows “The museum visit taught the student that old objects are not just decorations.”?",
       "options": [
-        "The museum visit taught the student that old objects are not just decorations. They are answers to problems",
-        "A coastal museum displayed a bell from an old ship. Visitors could not ring it, but they could",
-        "The guide explained that the bell had helped sailors mark time and signal danger. During fog, sound could",
-        "A student touched the glass case and imagined the bell ringing over dark water."
+        "They are answers to problems people once faced.",
+        "Problems are easier to fix when people look closely.",
+        "A building that once divided people can later teach them about connection.",
+        "What feels old now was once powerful enough to change how people imagined the world."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「The museum visit taught the student that old objects are not just decorations. They are answers to problems people once faced.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Problems are easier to fix when people look closely.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「A building that once divided people can later teach them about connection.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「What feels old now was once powerful enough to change how people imagined the world.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-5",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -468,13 +484,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The museum visit taught the student that old objects are not just decorations. They are answers to problems people once faced.」，答案為「They are answers to problems people once faced.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「They are answers to problems people once faced.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -484,7 +500,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

@@ -39,48 +39,68 @@
       "translation": "回答, 響應, 作出反應；有反應"
     },
     {
-      "word": "accurate",
-      "translation": "正確的, 精確的"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "overview",
-      "translation": "概述"
-    },
-    {
-      "word": "entire",
-      "translation": "整個"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
       "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "solar",
-      "translation": "太陽能的"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "oven",
-      "translation": "烤箱"
+      "word": "global",
+      "translation": "全球的"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "receives",
-      "translation": "收到"
+      "word": "research",
+      "translation": "研究"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "evidence",
+      "translation": "證據"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "journeys",
+      "translation": "旅行, 旅程；旅行"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "memory",
+      "translation": "記憶"
+    },
+    {
+      "word": "shocked",
+      "translation": "震驚"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "simply",
+      "translation": "簡單地"
+    },
+    {
+      "word": "technology",
+      "translation": "科技"
+    },
+    {
+      "word": "silence",
+      "translation": "寂靜"
     }
   ],
   "questions": [
@@ -101,11 +121,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_122",
-      "stem": "In Reading Set 122, which heading gives the most accurate overview of the entire passage?",
+      "stem": "Which title is best for the complete passage that includes “A new classmate, Ravi, brought lunch that smelled different from what other students usually ate.”?",
       "options": [
-        "The Train Window",
-        "The City Without Stars",
-        "The School Solar Oven",
+        "The Lunch Box Club",
+        "The Forgotten Lunch Money",
+        "The Global Lunch Table",
         "The New Classmate's Lunch"
       ],
       "answerIndex": 3,
@@ -113,32 +133,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Train Window」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Lunch Box Club」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The City Without Stars」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Forgotten Lunch Money」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The School Solar Oven」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Global Lunch Table」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The New Classmate's Lunch: A new classmate, Ravi, brought lunch that smelled different from what other students usually ate.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-2",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -159,13 +179,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The New Classmate's Lunch」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The New Classmate's Lunch: A new classmate, Ravi, brought lunch that smelled different from what other students usually ate.」，答案為「The New Classmate's Lunch」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The New Classmate's Lunch」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -175,90 +195,86 @@
       "id": "ENG_R4_Q_READ_122_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-6",
-        "AUTH-ENGLISH-LC-AE-4-8",
+        "AUTH-ENGLISH-LC-AE-4-5",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LC-D-4-3",
-        "AUTH-ENGLISH-LP-3-4-10",
-        "AUTH-ENGLISH-LP-3-4-12",
-        "AUTH-ENGLISH-LP-3-4-13",
+        "AUTH-ENGLISH-LP-1-4-7",
         "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-9-4-2",
-        "AUTH-ENGLISH-LP-9-4-3"
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_122",
-      "stem": "In Reading Set 122, if each paragraph receives one note card, how many cards are needed for the passage beginning “A new classmate, Ravi, brought lunch that smelled different from what other students usually ate. Some students looked”?",
+      "stem": "Which answer is supported by the passage that includes “A new classmate, Ravi, brought lunch that smelled different from what other students usually ate.”?",
       "options": [
-        "5",
-        "7",
-        "6",
-        "4"
+        "The teacher said good research needs evidence and respect.",
+        "The teacher explained that future long space journeys may need fresh food.",
+        "Then their teacher said, \"Food can be a good way to ask about culture, but we need to ask with respect.\"",
+        "The topic felt serious, but the teacher said every culture has ways of dealing with death, memory, and respect."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "5 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「The teacher said good research needs evidence and respect.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「The teacher explained that future long space journeys may need fresh food.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "文章以換行鎖定為 6 個段落。"
+          "reason": "本文可直接核對「Then their teacher said, 'Food can be a good way to ask about culture, but we need to ask with respect.'」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「The topic felt serious, but the teacher said every culture has ways of dealing with death, memory, and…」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-structure-count-2",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-6",
-          "AUTH-ENGLISH-LC-AE-4-8",
+          "AUTH-ENGLISH-LC-AE-4-5",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LC-D-4-3",
-          "AUTH-ENGLISH-LP-3-4-10",
-          "AUTH-ENGLISH-LP-3-4-12",
-          "AUTH-ENGLISH-LP-3-4-13",
+          "AUTH-ENGLISH-LP-1-4-7",
           "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-9-4-2",
-          "AUTH-ENGLISH-LP-9-4-3"
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 6 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Then their teacher said, 'Food can be a good way to ask about culture, but we need to ask with respect.'」，答案為「Then their teacher said, 'Food can be a good way to ask about culture, but we need to…」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Then their teacher said, 'Food can be a good way to ask about culture, but we need to…」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -284,44 +300,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_122",
-      "stem": "In Reading Set 122, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “The next day, Ravi brought a small extra piece for anyone who wanted to try.”?",
       "options": [
-        "Ravi looked uncomfortable. Then their teacher said, \"Food can be a good way to ask about culture, but",
-        "The next day, Ravi brought a small extra piece for anyone who wanted to try. Several students liked",
-        "A new classmate, Ravi, brought lunch that smelled different from what other students usually ate. Some students looked",
-        "During lunch, one student asked, \"What is that\" His voice sounded rude, though he did not mean to"
+        "Many students were unhappy.",
+        "Several students liked it.",
+        "After class, several students asked Jenny about the song.",
+        "Some students were shocked."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Many students were unhappy.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「The next day, Ravi brought a small extra piece for anyone who wanted to try. Several students liked it.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「After class, several students asked Jenny about the song.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Some students were shocked.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-2",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -345,13 +361,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The next day, Ravi brought a small extra piece for anyone who wanted to try. Several students liked it.」，答案為「Several students liked it.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Several students liked it.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -361,7 +377,7 @@
       "id": "ENG_R4_Q_READ_122_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -374,44 +390,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_122",
-      "stem": "In Reading Set 122, at the start of the last paragraph, which selected line does the reader see?",
+      "stem": "Which ending result or final point follows “The class learned that difference can make people feel lonely or welcomed.”?",
       "options": [
-        "The class learned that difference can make people feel lonely or welcomed. The question is how others respond",
-        "A new classmate, Ravi, brought lunch that smelled different from what other students usually ate. Some students looked",
-        "During lunch, one student asked, \"What is that\" His voice sounded rude, though he did not mean to",
-        "Ravi looked uncomfortable. Then their teacher said, \"Food can be a good way to ask about culture, but"
+        "The question is how others respond to it.",
+        "It simply gave others a way to notice them.",
+        "Others are rules, money, language, or technology.",
+        "Others feel better after silence."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 6 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「The class learned that difference can make people feel lonely or welcomed. The question is how others respond to it.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「It simply gave others a way to notice them.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Others are rules, money, language, or technology.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Others feel better after silence.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-2",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -432,13 +448,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 6 段，正確引文與第 6 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The class learned that difference can make people feel lonely or welcomed. The question is how others respond to it.」，答案為「The question is how others respond to it.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The question is how others respond to it.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -448,7 +464,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

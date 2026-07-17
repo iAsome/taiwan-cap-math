@@ -55,76 +55,56 @@
       "translation": "解決"
     },
     {
-      "word": "captures",
-      "translation": "捕獲, 戰利品；俘獲, 捕獲, 奪取"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "passage's",
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
+    },
+    {
+      "word": "passage",
       "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "central",
-      "translation": "中央的"
-    },
-    {
-      "word": "thread",
-      "translation": "線, 細絲, 線索, 思路, 螺紋"
-    },
-    {
-      "word": "instead",
-      "translation": "代替, 改為, 抵作, 更換"
-    },
-    {
-      "word": "recipe",
-      "translation": "食譜"
-    },
-    {
-      "word": "debate",
-      "translation": "辯論；討論"
-    },
-    {
-      "word": "mirror",
-      "translation": "鏡子"
+      "word": "includes",
+      "translation": "包含"
     },
     {
       "word": "shadow",
       "translation": "陰影, 影子, 影像, 預兆, 庇護, 隱蔽處, 陰暗, 少許；遮蔽, 使朦朧, 預示, 尾隨；漸變, 變陰暗"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "cited",
-      "translation": "引用"
+      "word": "praised",
+      "translation": "讚美"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "within",
+      "translation": "之內"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "electricity",
+      "translation": "電流, 電, 電學"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
-    },
-    {
-      "word": "verify",
-      "translation": "驗證"
-    },
-    {
-      "word": "structure",
-      "translation": "結構"
-    },
-    {
-      "word": "locate",
-      "translation": "定位"
+      "word": "result",
+      "translation": "結果"
     },
     {
       "word": "final",
       "translation": "最終的"
+    },
+    {
+      "word": "laziness",
+      "translation": "懶惰"
+    },
+    {
+      "word": "emotions",
+      "translation": "情緒"
     }
   ],
   "questions": [
@@ -145,11 +125,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_130",
-      "stem": "In Reading Set 130, which heading captures the passage's central thread instead of a side point?",
+      "stem": "Which title is best for the complete passage that includes “At noon, the playground had almost no shade.”?",
       "options": [
-        "The Class Recipe Book",
-        "The River Rights Debate",
-        "The Smart Mirror",
+        "The Heat Map",
+        "The Shadow Side of the Street",
+        "The School Map",
         "The School Shadow"
       ],
       "answerIndex": 3,
@@ -157,32 +137,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Class Recipe Book」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Heat Map」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The River Rights Debate」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Shadow Side of the Street」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Smart Mirror」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The School Map」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The School Shadow: At noon, the playground had almost no shade.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-10",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -203,13 +183,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The School Shadow」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The School Shadow: At noon, the playground had almost no shade.」，答案為「The School Shadow」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The School Shadow」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -219,7 +199,7 @@
       "id": "ENG_R4_Q_READ_130_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S249"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-5",
@@ -233,44 +213,44 @@
         "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_130",
-      "stem": "In Reading Set 130, which paragraph should be cited for the line “A geography teacher asked her class to study the problem. They watched how shadows moved during the day”?",
+      "stem": "Which answer is supported by the passage that includes “At noon, the playground had almost no shade.”?",
       "options": [
-        "Paragraph 3",
-        "Paragraph 4",
-        "Paragraph 2",
-        "Paragraph 1"
+        "After class, several students asked Jenny about the song.",
+        "Everyone was happy, but the teacher praised the class for trying.",
+        "A geography teacher asked her class to study the problem.",
+        "During English class, a student asked to open the window."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "第 3 段沒有這一行。"
+          "reason": "本文沒有陳述「After class, several students asked Jenny about the song.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "第 4 段沒有這一行。"
+          "reason": "本文沒有陳述「Everyone was happy, but the teacher praised the class for trying.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "引文逐字出現在第 2 段開頭。"
+          "reason": "本文可直接核對「A geography teacher asked her class to study the problem.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "第 1 段沒有這一行。"
+          "reason": "本文沒有陳述「During English class, a student asked to open the window.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "scan-exact-line-and-locate-paragraph"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-paragraph-locator-5",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -292,13 +272,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：引文與第 2 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「A geography teacher asked her class to study the problem.」，答案為「A geography teacher asked her class to study the problem.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「A geography teacher asked her class to study the problem.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -324,44 +304,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_130",
-      "stem": "In Reading Set 130, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “The class suggested adding shade sails near the basketball court and planting trees along the fence.”?",
       "options": [
-        "The class suggested adding shade sails near the basketball court and planting trees along the fence. The principal",
-        "The shade sails were added before summer. The trees would take longer to grow, but students watered them",
-        "At noon, the playground had almost no shade. Students waited under a small roof, crowded together.",
-        "A geography teacher asked her class to study the problem. They watched how shadows moved during the day"
+        "Students sat under it, took pictures near it, and used it as a meeting place.",
+        "The principal used their report in a school meeting.",
+        "Our school bell used to be very loud.",
+        "Within two months, the school used less electricity."
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Students sat under it, took pictures near it, and used it as a meeting place.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「The class suggested adding shade sails near the basketball court and planting trees along the fence. The principal used their report in…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Our school bell used to be very loud.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「Within two months, the school used less electricity.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-5",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -385,13 +365,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The class suggested adding shade sails near the basketball court and planting trees along the fence. The principal used their report in a school…」，答案為「The principal used their report in a school meeting.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The principal used their report in a school meeting.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -401,7 +381,7 @@
       "id": "ENG_R4_Q_READ_130_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -414,44 +394,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_130",
-      "stem": "In Reading Set 130, to verify the ending structure, which line should a reader locate first in the final paragraph?",
+      "stem": "Which ending result or final point follows “The project showed students that geography was not only about maps in books.”?",
       "options": [
-        "The project showed students that geography was not only about maps in books. It could help solve a",
-        "At noon, the playground had almost no shade. Students waited under a small roof, crowded together.",
-        "A geography teacher asked her class to study the problem. They watched how shadows moved during the day",
-        "The class suggested adding shade sails near the basketball court and planting trees along the fence. The principal"
+        "It could help solve a real problem under the hot sun.",
+        "A dark screen may hide laziness, but it may also hide a real problem.",
+        "and start asking, \"What problem does this solve?\"",
+        "But the real city still has weather, habits, emotions, and surprises."
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「The project showed students that geography was not only about maps in books. It could help solve a real problem under the…」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「A dark screen may hide laziness, but it may also hide a real problem.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「and start asking, 'What problem does this solve?'」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「But the real city still has weather, habits, emotions, and surprises.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-5",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -472,13 +452,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The project showed students that geography was not only about maps in books. It could help solve a real problem under the hot sun.」，答案為「It could help solve a real problem under the hot sun.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「It could help solve a real problem under the hot sun.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -488,7 +468,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

@@ -15,11 +15,11 @@
     "AUTH-ENGLISH-LP-5-4-10"
   ],
   "stimulusId": "ENG_R4_READ_038",
-  "stem": "In Reading Set 038, which heading would be the least misleading label for this complete passage?",
+  "stem": "Which title is best for the complete passage that includes “A small store in Hill Village sells used books, cups, bags, and toys.”?",
   "options": [
-    "The Empty Stage",
-    "The Lost Voice",
-    "The Screen Time Report",
+    "The Repair Table",
+    "The Quiet Bell",
+    "The Fruit Stand",
     "The Store Without Prices"
   ],
   "answerIndex": 3,
@@ -27,32 +27,32 @@
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「The Empty Stage」屬於另一篇不同文章，不能概括本篇全部段落。"
+      "reason": "本文沒有陳述「The Repair Table」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「The Lost Voice」屬於另一篇不同文章，不能概括本篇全部段落。"
+      "reason": "本文沒有陳述「The Quiet Bell」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「The Screen Time Report」屬於另一篇不同文章，不能概括本篇全部段落。"
+      "reason": "本文沒有陳述「The Fruit Stand」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+      "reason": "本文可直接核對「The Store Without Prices: A small store in Hill Village sells used books, cups, bags, and toys.」，所以這個選項符合完整語境。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "select-evidence-bounded-whole-text-title"
+    "identify-whole-text-focus-from-related-titles"
   ],
-  "representationType": "reading-title-variant-8",
+  "representationType": "reading-whole-text-title",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
@@ -73,13 +73,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Store Without Prices」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「The Store Without Prices: A small store in Hill Village sells used books, cups, bags, and toys.」，答案為「The Store Without Prices」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「The Store Without Prices」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

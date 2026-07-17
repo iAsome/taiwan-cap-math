@@ -18,44 +18,44 @@
     "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_094",
-  "stem": "In Reading Set 094, which selected line appears latest in the paragraph sequence?",
+  "stem": "What happens next in this passage after “Jack wanted to stand in the back.”?",
   "options": [
-    "The teacher quickly helped him clean it, but a small mark remained. Jack wanted to stand in the",
+    "Years later, she found the uniform in a box.",
     "The photographer said, \"Years later, this may be the part you remember most.\"",
-    "On class photo day, everyone tried to look neat. Hair was combed, uniforms were straight, and shoes were",
-    "Just before the photo, a bird flew over and dropped something white on Jack's shoulder. Everyone laughed, and"
+    "The village leader said the song helped because it was easy to remember.",
+    "Years later, students could look back at their early work."
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Years later, she found the uniform in a box.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "這一行來自四個候選中的最晚段落。"
+      "reason": "本文可直接核對「Jack wanted to stand in the back. The photographer said, 'Years later, this may be the part you remember most.'」，所以這個選項符合完整語境。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「The village leader said the song helped because it was easy to remember.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Years later, students could look back at their early work.」；這個選項混入另一個情境的資訊。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "identify-latest-selected-paragraph"
+    "track-event-or-idea-sequence-from-content-anchor"
   ],
-  "representationType": "reading-sequence-latest-4",
+  "representationType": "reading-content-sequence",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
@@ -79,13 +79,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「Jack wanted to stand in the back. The photographer said, 'Years later, this may be the part you remember most.'」，答案為「The photographer said, 'Years later, this may be the part you remember most.'」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「The photographer said, 'Years later, this may be the part you remember most.'」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

@@ -18,11 +18,11 @@
     "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_404",
-  "stem": "In Reading Set 404, which selected line appears latest in the paragraph sequence?",
+  "stem": "What happens next in this passage after “Center, size, and shape can change how people imagine importance.”?",
   "options": [
-    "A map in a geography book placed one country in the center. Another map from a different country",
-    "Students asked which map was correct.",
-    "The teacher explained that a round Earth must be shown on flat paper, so maps always involve choices.",
+    "The class compared several maps from different years.",
+    "After class, several students asked Jenny about the song.",
+    "Old maps show how people once understood the world.\"",
     "The class looked at several world maps and discussed perspective."
   ],
   "answerIndex": 3,
@@ -30,32 +30,32 @@
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「The class compared several maps from different years.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「After class, several students asked Jenny about the song.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Old maps show how people once understood the world.'」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "這一行來自四個候選中的最晚段落。"
+      "reason": "本文可直接核對「Center, size, and shape can change how people imagine importance. The class looked at several world maps and discussed perspective.」，所以這個選項符合完整語境。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "identify-latest-selected-paragraph"
+    "track-event-or-idea-sequence-from-content-anchor"
   ],
-  "representationType": "reading-sequence-latest-4",
+  "representationType": "reading-content-sequence",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
@@ -79,13 +79,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「Center, size, and shape can change how people imagine importance. The class looked at several world maps and discussed perspective.」，答案為「The class looked at several world maps and discussed perspective.」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「The class looked at several world maps and discussed perspective.」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

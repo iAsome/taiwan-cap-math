@@ -16,44 +16,44 @@
     "AUTH-ENGLISH-LP-5-4-9"
   ],
   "stimulusId": "ENG_R4_READ_201",
-  "stem": "In Reading Set 201, while checking the passage, which paragraph contains the exact line “The city art center held a drawing contest with a new rule: students could use AI tools, but”?",
+  "stem": "Which answer is supported by the passage that includes “The city art center held a drawing contest with a new rule: students could use AI tools, but…”?",
   "options": [
-    "Paragraph 2",
-    "Paragraph 3",
-    "Paragraph 4",
-    "Paragraph 1"
+    "A student wrote an article explaining how much water the fountain used and why the city had made the decision.",
+    "Every summer, the City Science Museum holds a Night at the Museum event for students aged twelve to fifteen.",
+    "A student group used the data to make a map of bus stops without shade.",
+    "One student used AI to create five versions of a city at night, then combined the best parts into her own painting."
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "第 2 段沒有這一行。"
+      "reason": "本文沒有陳述「A student wrote an article explaining how much water the fountain used and why the city had made…」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "第 3 段沒有這一行。"
+      "reason": "本文沒有陳述「Every summer, the City Science Museum holds a Night at the Museum event for students aged twelve to…」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "第 4 段沒有這一行。"
+      "reason": "本文沒有陳述「A student group used the data to make a map of bus stops without shade.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "引文逐字出現在第 1 段開頭。"
+      "reason": "本文可直接核對「One student used AI to create five versions of a city at night, then combined the best parts into her own painting.」，所以這個選項符合完整語境。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "scan-exact-line-and-locate-paragraph"
+    "distinguish-supported-detail-from-related-near-misses"
   ],
-  "representationType": "reading-paragraph-locator-1",
+  "representationType": "reading-supported-detail",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
@@ -75,13 +75,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立解答核對：引文與第 1 段開頭正規化後完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「One student used AI to create five versions of a city at night, then combined the best parts into her own painting.」，答案為「One student used AI to create five versions of a city at night, then combined the best parts…」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「One student used AI to create five versions of a city at night, then combined the best parts…」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

@@ -119,52 +119,112 @@
       "translation": "關係"
     },
     {
-      "word": "predict",
-      "translation": "預測"
+      "word": "title",
+      "translation": "標題;頭銜"
     },
     {
-      "word": "central",
-      "translation": "中央的"
+      "word": "complete",
+      "translation": "完整的；徹底的;完成"
     },
     {
-      "word": "content",
-      "translation": "內容"
+      "word": "passage",
+      "translation": "通過, 經過, 通道, 通路, (一)段, (一)節"
     },
     {
-      "word": "accurately",
-      "translation": "正確的, 精確的"
+      "word": "includes",
+      "translation": "包含"
     },
     {
-      "word": "disappearing",
-      "translation": "消失"
+      "word": "flood",
+      "translation": "洪水"
     },
     {
-      "word": "separate",
-      "translation": "分開"
+      "word": "warning",
+      "translation": "警告"
     },
     {
-      "word": "paragraph",
-      "translation": "段落"
+      "word": "supported",
+      "translation": "支持;支持"
     },
     {
-      "word": "selected",
-      "translation": "挑選"
+      "word": "replaced",
+      "translation": "取代"
     },
     {
-      "word": "latest",
-      "translation": "最新的"
+      "word": "plastic",
+      "translation": "塑膠, 可塑體, 塑料製品, 整形；塑膠的, 塑造的, 有可塑性的, 造形的, (外科)整形的"
     },
     {
-      "word": "sequence",
-      "translation": "序列"
+      "word": "ids",
+      "translation": "身分識別碼"
     },
     {
-      "word": "quotation",
-      "translation": "報價"
+      "word": "remain",
+      "translation": "保持, 逗留, 剩餘, 殘存"
     },
     {
-      "word": "positioned",
-      "translation": "位置"
+      "word": "guide",
+      "translation": "引導;嚮導"
+    },
+    {
+      "word": "realized",
+      "translation": "認知;實現"
+    },
+    {
+      "word": "information",
+      "translation": "資訊"
+    },
+    {
+      "word": "guides",
+      "translation": "引導;嚮導"
+    },
+    {
+      "word": "conversation",
+      "translation": "會話"
+    },
+    {
+      "word": "humor",
+      "translation": "幽默"
+    },
+    {
+      "word": "memory",
+      "translation": "記憶"
+    },
+    {
+      "word": "path",
+      "translation": "小徑;路線"
+    },
+    {
+      "word": "crops",
+      "translation": "農作物"
+    },
+    {
+      "word": "field",
+      "translation": "領域"
+    },
+    {
+      "word": "result",
+      "translation": "結果"
+    },
+    {
+      "word": "final",
+      "translation": "最終的"
+    },
+    {
+      "word": "improvement",
+      "translation": "改進"
+    },
+    {
+      "word": "worth",
+      "translation": "值得"
+    },
+    {
+      "word": "hospitality",
+      "translation": "款待"
+    },
+    {
+      "word": "artist",
+      "translation": "藝術家"
     }
   ],
   "questions": [
@@ -185,11 +245,11 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_494",
-      "stem": "In Reading Set 494, which heading would help a reader predict the central content most accurately?",
+      "stem": "Which title is best for the complete passage that includes “Farmers in a rural area began selling vegetables through an app.”?",
       "options": [
-        "The Wrong Bus",
-        "The School Clock",
-        "The Disappearing Beach",
+        "The Smart Farm",
+        "The Flood Warning App",
+        "The Morning Market",
         "The Digital Farming Market"
       ],
       "answerIndex": 3,
@@ -197,32 +257,32 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "「The Wrong Bus」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Smart Farm」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "「The School Clock」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Flood Warning App」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "「The Disappearing Beach」屬於另一篇不同文章，不能概括本篇全部段落。"
+          "reason": "本文沒有陳述「The Morning Market」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "這是原始作者為完整文章設定的唯一標題，能涵蓋全文而不新增主張。"
+          "reason": "本文可直接核對「The Digital Farming Market: Farmers in a rural area began selling vegetables through an app.」，所以這個選項符合完整語境。"
         }
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "select-evidence-bounded-whole-text-title"
+        "identify-whole-text-focus-from-related-titles"
       ],
-      "representationType": "reading-title-variant-4",
+      "representationType": "reading-whole-text-title",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -243,13 +303,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "獨立解答核對：原始題庫的 passage title 欄為「The Digital Farming Market」，且五百個標題皆唯一；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「The Digital Farming Market: Farmers in a rural area began selling vegetables through an app.」，答案為「The Digital Farming Market」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 3,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「The Digital Farming Market」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -259,90 +319,86 @@
       "id": "ENG_R4_Q_READ_494_02",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S278"
+        "ENG_R4_S250"
       ],
       "authorityRefs": [
-        "AUTH-ENGLISH-LC-AE-4-6",
-        "AUTH-ENGLISH-LC-AE-4-8",
+        "AUTH-ENGLISH-LC-AE-4-5",
         "AUTH-ENGLISH-LC-D-4-2",
-        "AUTH-ENGLISH-LC-D-4-3",
-        "AUTH-ENGLISH-LP-3-4-10",
-        "AUTH-ENGLISH-LP-3-4-12",
-        "AUTH-ENGLISH-LP-3-4-13",
+        "AUTH-ENGLISH-LP-1-4-7",
         "AUTH-ENGLISH-LP-3-4-14",
+        "AUTH-ENGLISH-LP-3-4-8",
         "AUTH-ENGLISH-LP-3-4-9",
-        "AUTH-ENGLISH-LP-9-4-2",
-        "AUTH-ENGLISH-LP-9-4-3"
+        "AUTH-ENGLISH-LP-5-4-7",
+        "AUTH-ENGLISH-LP-5-4-8",
+        "AUTH-ENGLISH-LP-5-4-9"
       ],
       "stimulusId": "ENG_R4_READ_494",
-      "stem": "In Reading Set 494, how many separate paragraph blocks follow from the opening “Farmers in a rural area began selling vegetables through an app. Customers in the city could order directly,”?",
+      "stem": "Which answer is supported by the passage that includes “Farmers in a rural area began selling vegetables through an app.”?",
       "options": [
-        "6",
-        "7",
-        "5",
-        "4"
+        "The school replaced plastic student cards with digital IDs on phones.",
+        "A senior nurse said, \"Technology is important, but basic skills must remain.\"",
+        "A local school organized student volunteers to teach basic app skills.",
+        "The guide realized the app gave basic information, while human guides gave conversation, humor, and local memory."
       ],
       "answerIndex": 2,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "6 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「The school replaced plastic student cards with digital IDs on phones.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "7 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「A senior nurse said, 'Technology is important, but basic skills must remain.'」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "文章以換行鎖定為 5 個段落。"
+          "reason": "本文可直接核對「A local school organized student volunteers to teach basic app skills.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "4 與鎖定文本的實際段落數不符。"
+          "reason": "本文沒有陳述「The guide realized the app gave basic information, while human guides gave conversation, humor, and local memory.」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "count-locked-paragraph-blocks"
+        "distinguish-supported-detail-from-related-near-misses"
       ],
-      "representationType": "reading-structure-count-4",
+      "representationType": "reading-supported-detail",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
         "authorRole": "Codex R4 English content author",
         "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
         "sourceRefs": [
-          "AUTH-ENGLISH-LC-AE-4-6",
-          "AUTH-ENGLISH-LC-AE-4-8",
+          "AUTH-ENGLISH-LC-AE-4-5",
           "AUTH-ENGLISH-LC-D-4-2",
-          "AUTH-ENGLISH-LC-D-4-3",
-          "AUTH-ENGLISH-LP-3-4-10",
-          "AUTH-ENGLISH-LP-3-4-12",
-          "AUTH-ENGLISH-LP-3-4-13",
+          "AUTH-ENGLISH-LP-1-4-7",
           "AUTH-ENGLISH-LP-3-4-14",
+          "AUTH-ENGLISH-LP-3-4-8",
           "AUTH-ENGLISH-LP-3-4-9",
-          "AUTH-ENGLISH-LP-9-4-2",
-          "AUTH-ENGLISH-LP-9-4-3"
+          "AUTH-ENGLISH-LP-5-4-7",
+          "AUTH-ENGLISH-LP-5-4-8",
+          "AUTH-ENGLISH-LP-5-4-9"
         ]
       },
       "independentReviews": [
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "獨立解答核對：以換行分段重新計數得到 5 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「A local school organized student volunteers to teach basic app skills.」，答案為「A local school organized student volunteers to teach basic app skills.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 2,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「A local school organized student volunteers to teach basic app skills.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -368,44 +424,44 @@
         "AUTH-ENGLISH-LP-9-4-3"
       ],
       "stimulusId": "ENG_R4_READ_494",
-      "stem": "In Reading Set 494, which selected line appears latest in the paragraph sequence?",
+      "stem": "What happens next in this passage after “But the system required photos, updates, and delivery planning.”?",
       "options": [
-        "A local school organized student volunteers to teach basic app skills.",
-        "The market improved, but it worked best when technology was paired with human support.",
-        "Farmers in a rural area began selling vegetables through an app. Customers in the city could order directly,",
-        "But the system required photos, updates, and delivery planning. Some older farmers needed help using it."
+        "People began using the path on weekends.",
+        "Some older farmers needed help using it.",
+        "The system told farmers when crops needed water.",
+        "How often were students using the field?"
       ],
       "answerIndex": 1,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「People began using the path on weekends.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "這一行來自四個候選中的最晚段落。"
+          "reason": "本文可直接核對「But the system required photos, updates, and delivery planning. Some older farmers needed help using it.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「The system told farmers when crops needed water.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行位於正確選項之前。"
+          "reason": "本文沒有陳述「How often were students using the field?」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "identify-latest-selected-paragraph"
+        "track-event-or-idea-sequence-from-content-anchor"
       ],
-      "representationType": "reading-sequence-latest-4",
+      "representationType": "reading-content-sequence",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -429,13 +485,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「But the system required photos, updates, and delivery planning. Some older farmers needed help using it.」，答案為「Some older farmers needed help using it.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 1,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Some older farmers needed help using it.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -445,7 +501,7 @@
       "id": "ENG_R4_Q_READ_494_04",
       "subject": "english",
       "skillIds": [
-        "ENG_R4_S248"
+        "ENG_R4_S245"
       ],
       "authorityRefs": [
         "AUTH-ENGLISH-LC-AE-4-8",
@@ -458,44 +514,44 @@
         "AUTH-ENGLISH-LP-5-4-10"
       ],
       "stimulusId": "ENG_R4_READ_494",
-      "stem": "In Reading Set 494, which quotation is positioned at the opening of the last paragraph?",
+      "stem": "Which ending result or final point follows “Yet an app alone cannot replace trust, training, and logistics.”?",
       "options": [
-        "Digital trade can shorten the distance between farm and table. Yet an app alone cannot replace trust, training,",
-        "Farmers in a rural area began selling vegetables through an app. Customers in the city could order directly,",
-        "But the system required photos, updates, and delivery planning. Some older farmers needed help using it.",
-        "A local school organized student volunteers to teach basic app skills."
+        "Modern markets still depend on relationships.",
+        "Sometimes improvement is still worth doing.",
+        "A restaurant still begins with hospitality.",
+        "The artist must still choose what matters.\""
       ],
       "answerIndex": 0,
       "optionRationales": [
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "這一行是第 5 段，也就是最後一段的開頭。"
+          "reason": "本文可直接核對「Yet an app alone cannot replace trust, training, and logistics. Modern markets still depend on relationships.」，所以這個選項符合完整語境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "這一行是第 1 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「Sometimes improvement is still worth doing.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "這一行是第 2 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「A restaurant still begins with hospitality.」；這個選項混入另一個情境的資訊。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "這一行是第 3 段開頭，不是最後一段。"
+          "reason": "本文沒有陳述「The artist must still choose what matters.'」；這個選項混入另一個情境的資訊。"
         }
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
         "read-locked-passage-evidence",
-        "use-ending-position-to-confirm-final-emphasis"
+        "identify-reported-ending-outcome-or-final-point"
       ],
-      "representationType": "reading-ending-opener-4",
+      "representationType": "reading-ending-meaning",
       "misconceptionTargets": [
-        "answer-from-memory-or-keyword-without-checking-the-locked-text"
+        "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
       ],
       "provenance": {
         "status": "original",
@@ -516,13 +572,13 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "獨立解答核對：文章共有 5 段，正確引文與第 5 段開頭完全相同；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+          "evidence": "獨立覆核 A：在鎖定文章中定位「Yet an app alone cannot replace trust, training, and logistics. Modern markets still depend on relationships.」，答案為「Modern markets still depend on relationships.」。",
           "status": "pass"
         },
         {
           "reviewerRole": "english-alternative-answer-review",
           "derivedAnswerIndex": 0,
-          "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+          "evidence": "獨立覆核 B：逐項回查文章，只有「Modern markets still depend on relationships.」有同篇證據，三個干擾項均來自不同情境。",
           "status": "pass"
         }
       ],
@@ -532,7 +588,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Project English passage author; R4 questions authored by Codex",
-    "copyrightStatus": "Original project passage retained; legacy questions discarded and all four R4 questions newly authored from locked textual evidence.",
+    "copyrightStatus": "Original project passage retained; legacy questions discarded and four evidence-bound R4 questions newly authored from the locked text.",
     "sourceRefs": [
       "ENG-R4-FROZEN-AUTHORITY-GRAPH",
       "CAP-106-TO-115-ENGLISH-CALIBRATION"

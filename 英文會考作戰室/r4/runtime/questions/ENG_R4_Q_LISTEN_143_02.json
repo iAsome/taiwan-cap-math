@@ -42,34 +42,34 @@
     "AUTH-ENGLISH-LP-8-4-6"
   ],
   "stimulusId": "ENG_R4_LISTEN_143",
-  "stem": "In Listening Set 143, which detail is explicitly confirmed in the conversation?",
+  "stem": "This exchange happens near the school entrance. Which detail is given in the conversation?",
   "options": [
-    "190 dollars",
-    "140 dollars",
-    "130 dollars",
-    "160 dollars"
+    "the larger notebook costs 160 dollars",
+    "the larger notebook costs 140 dollars",
+    "the larger notebook costs 130 dollars",
+    "the smaller notebook costs 140 dollars"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "190 dollars：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the larger notebook costs 160 dollars：此項把「140」改成「160」。對話明確陳述「the larger notebook costs 140 dollars」。因此，鎖定證據支持「the larger notebook costs 140 dollars」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "140 dollars：對話明確說出 140 dollars。"
+      "reason": "the larger notebook costs 140 dollars：完整逐字稿明確支持此項。對話明確陳述「the larger notebook costs 140 dollars」。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "130 dollars：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the larger notebook costs 130 dollars：此項把「140」改成「130」。對話明確陳述「the larger notebook costs 140 dollars」。因此，鎖定證據支持「the larger notebook costs 140 dollars」。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "160 dollars：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。"
+      "reason": "the smaller notebook costs 140 dollars：此項把「larger」改成「smaller」。對話明確陳述「the larger notebook costs 140 dollars」。因此，鎖定證據支持「the larger notebook costs 140 dollars」。"
     }
   ],
   "difficulty": "transfer",
@@ -79,7 +79,7 @@
   ],
   "representationType": "listening-retrieve-confirmed-dialogue-detail",
   "misconceptionTargets": [
-    "answer-from-isolated-keyword-without-integrating-the-complete-audio"
+    "choose-a-familiar-word-without-checking-speaker-purpose-detail-and-result-together"
   ],
   "provenance": {
     "status": "original",
@@ -127,13 +127,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "獨立聽解核對：回查鎖定 transcript 可逐字或以唯一改寫支持「140 dollars」，且題幹指定的輪次與資訊欄位一致。",
+      "evidence": "獨立覆核 A：逐句比對鎖定逐字稿，答案為「the larger notebook costs 140 dollars」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "替代答案核對：其餘三項逐一與音稿對照後，至少違反一項明示條件，因此不存在第二個可接受答案。",
+      "evidence": "獨立覆核 B：重新依時間順序核對說話者、細節與行動，只有「the larger notebook costs 140 dollars」成立。",
       "status": "pass"
     }
   ],

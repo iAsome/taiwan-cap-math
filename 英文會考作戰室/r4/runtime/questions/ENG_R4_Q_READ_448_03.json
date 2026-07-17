@@ -18,11 +18,11 @@
     "AUTH-ENGLISH-LP-9-4-3"
   ],
   "stimulusId": "ENG_R4_READ_448",
-  "stem": "In Reading Set 448, which selected line appears latest in the paragraph sequence?",
+  "stem": "What happens next in this passage after “Even when buildings disappear, past activities can shape health, traffic, and development.”?",
   "options": [
-    "A city planning class studied an old map of factory districts. Many factories were gone, replaced by apartments",
-    "But pollution remained in some soil, and street layouts still followed old industrial needs.",
-    "Students learned that land remembers use. Even when buildings disappear, past activities can shape health, traffic, and development.",
+    "Before the class trip, Mr. Lee gave each student a small paper map.",
+    "Class 809 made a plain white lantern with many small windows cut into it.",
+    "A university built a digital model of a city to test traffic plans.",
     "The class visited one former factory site being cleaned before housing was built."
   ],
   "answerIndex": 3,
@@ -30,32 +30,32 @@
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Before the class trip, Mr. Lee gave each student a small paper map.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「Class 809 made a plain white lantern with many small windows cut into it.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "這一行位於正確選項之前。"
+      "reason": "本文沒有陳述「A university built a digital model of a city to test traffic plans.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "這一行來自四個候選中的最晚段落。"
+      "reason": "本文可直接核對「Even when buildings disappear, past activities can shape health, traffic, and development. The class visited one former factory site being cleaned before…」，所以這個選項符合完整語境。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "identify-latest-selected-paragraph"
+    "track-event-or-idea-sequence-from-content-anchor"
   ],
-  "representationType": "reading-sequence-latest-3",
+  "representationType": "reading-content-sequence",
   "misconceptionTargets": [
-    "answer-from-memory-or-keyword-without-checking-the-locked-text"
+    "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
   "provenance": {
     "status": "original",
@@ -79,13 +79,13 @@
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "獨立解答核對：四個候選依序取自第 1 至第 4 段，目標位置為第 4 段；正確選項與鎖定文章的段落、順序或標題資料完全一致。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「Even when buildings disappear, past activities can shape health, traffic, and development. The class visited one former factory site being cleaned before housing was…」，答案為「The class visited one former factory site being cleaned before housing was built.」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "替代答案排除：逐一回查其餘三項在本文中的位置或來源，均不符合題幹指定條件，因此沒有第二個可成立答案。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「The class visited one former factory site being cleaned before housing was built.」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],
