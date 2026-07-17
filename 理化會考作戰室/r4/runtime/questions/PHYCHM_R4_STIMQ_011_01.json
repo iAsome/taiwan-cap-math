@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_011",
-  "stem": "依據題組中的不規則石塊排水紀錄，哪一項最能支持「由密度與體積求質量」的判斷？",
+  "stem": "根據金屬塊鑑別表中紀錄，哪項結論最合理？",
   "options": [
-    "現有證據能支持的結論是「密度 7.8 g/cm³、體積 10 cm³ 的鐵塊質量為 78 g，使用 m＝ρV。」，不再擴張為題組未測的因果。",
-    "採用這個看似直覺的規則：質量是 7.8÷10＝0.78 g，因為密度和體積應相除。",
-    "在不規則石塊排水中直接把「同材質切小後密度變小」當成「由密度與體積求質量」的足夠證據。",
-    "忽略「用密度鑑別物質時必須考慮純度、溫度與量測不確定性，密度相近不能單獨證明物質相同。」與「固體常用 g/cm³，液體常用 g/mL；換算時 1 cm³＝1 mL。」，只根據題幹出現的最大數字宣稱已完成「由密度與體積求質量」。"
+    "密度 7.8 g/cm³、體積 10 cm³ 的鐵塊質量為 78 g，使用 m＝ρV",
+    "質量是 7.8÷10＝0.78 g，因為密度和體積應相除",
+    "密度是體積除以質量，所以答案為 20÷54 g/cm³",
+    "1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖改變，數值不必變"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "此選項符合已審核的技能命題「密度 7.8 g/cm³、體積 10 cm³ 的鐵塊質量為 78 g，使用 m＝ρV。」，並保留本題條件；現有證據能支持的結論是「密度 7.8 g/cm³、體積 10 cm³ 的鐵塊質量為 78 g，使用 m＝ρV。」，不再擴張為題組未測的因果。"
+      "reason": "判讀依據是「密度 7.8 g/cm³、體積 10 cm³ 的鐵塊質量為 78 g，使用 m＝ρV」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "這是本技能專屬陷阡：「質量是 7.8÷10＝0.78 g，因為密度和體積應相除。」，與可驗證命題「密度 7.8 g/cm³、體積 10 cm³ 的鐵塊質量為 78 g，使用 m＝ρV。」相衝突。"
+      "reason": "「質量是 7.8÷10＝0.78 g，因為密度和體積應相除」不成立；密度 7.8 g/cm³、體積 10 cm³ 的鐵塊質量為 78 g，使用 m＝ρV。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "這項說法把不規則石塊排水的單一表面線索擴大成結論，並採用「同材質切小後密度變小」的迷思。"
+      "reason": "「密度是體積除以質量，所以答案為 20÷54 g/cm³」不成立；質量 54 g、體積 20 cm³ 的物體密度為 2.7 g/cm³，計算式是 ρ＝m/V。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "這項結論同時忽略「固體常用 g/cm³，液體常用 g/mL；換算時 1 cm³＝1 mL。」和「用密度鑑別物質時必須考慮純度、溫度與量測不確定性，密度相近不能單獨證明物質相同。」，題給證據無法支持。"
+      "reason": "「1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖…」不成立；1.20 g/cm³＝1200 kg/m³；質量和體積的換算倍率需一起納入。"
     }
   ],
   "difficulty": "standard",
@@ -49,7 +49,9 @@
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "同材質切小後密度變小"
+    "質量是 7.8÷10＝0.78 g，因為密度和體積應相除",
+    "密度是體積除以質量，所以答案為 20÷54 g/cm³",
+    "1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖改變，數值不必變"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +70,13 @@
     {
       "reviewerRole": "physics-chemistry-independent-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "逐項依「由密度與體積求質量」的定義與關係式核對，只有選項 1 同時符合條件。",
+      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
       "status": "pass"
     },
     {
       "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
       "derivedAnswerIndex": 0,
-      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 0。",
+      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
       "status": "pass"
     }
   ],

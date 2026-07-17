@@ -29,12 +29,12 @@ const COGNITIVE_PROCESSES = [
   ["辨認", "概念理解"],
   ["關係判讀", "概念理解"],
   ["單位檢核", "資料判讀"],
-  ["程序選擇", "應用"],
+  ["資料判讀", "應用"],
   ["條件判斷", "分析"],
   ["錯誤分析", "分析"],
   ["證據判讀", "推論"],
   ["關係應用", "多步驟推理"],
-  ["變因控制", "實驗設計"],
+  ["證據判讀", "分析"],
   ["主張評估", "證據評估"],
   ["情境遷移", "應用"],
   ["限制評估", "高層推論"],
@@ -49,21 +49,81 @@ function unitNumber(skill) {
 }
 
 function concise(text) {
-  return text.split(/[。；]/u).map((value) => value.trim()).find(Boolean) || text;
+  return claims(text)[0] || cleanClaim(text);
 }
 
-function methodFor(title, profile) {
-  if (/計算|求|換算/u.test(title)) return `列出已知量與待求量，先統一單位，再使用「${profile.relation}」並檢查結果量級。`;
-  if (/比較/u.test(title)) return `先固定其餘條件，只比較和「${title}」直接相關的差異，再以同一標準解讀資料。`;
-  if (/區分|辨認|辨識/u.test(title)) return `先寫出兩類的判準，再逐項核對「${title}」所需的證據，不能只看單一外觀。`;
-  if (/設計|規劃/u.test(title)) return `把問題改寫成可檢驗的變項關係，設定對照與控制變因，並事先決定記錄方式。`;
-  if (/說明|解釋|理解/u.test(title)) return `由可觀察現象連到「${title}」的模型或因果關係，並說清楚模型適用的條件。`;
-  if (/判斷|分析|評估|檢查|排除|避免/u.test(title)) return `先確認資料足以支持哪一層結論，再依「${title}」逐項排除超出證據的說法。`;
-  return `先辨認「${title}」的核心量或證據，再依本單元關係式與限制完成判讀。`;
+function cleanClaim(text) {
+  return text.trim().replace(/[。；]+$/u, "");
 }
 
-function focusFor(skill, profile, card) {
-  return `${card.truth}${methodFor(skill.title, profile)}同時檢查限制：${profile.boundary}`;
+function claims(text) {
+  return [...new Set(text.split(/[。；]/u).map(cleanClaim).filter(Boolean))];
+}
+
+function topicFor(skill, profile) {
+  const topic = skill.title.replace(/^(?:正確)?(?:進行|定性判斷|定性連結|區分|辨識|辨認|說明|解釋|理解|比較|判斷|分析|評估|檢查|排除|避免|連結|建立|規劃|處理|計算|讀取|使用|選擇|由|以|用|依|在)/u, "");
+  return topic && topic !== skill.title ? topic : `${profile.title}中的現象`;
+}
+
+function methodFor(title) {
+  if (/計算|求|換算/u.test(title)) return "列出已知量，統一單位後代入關係式，再檢查量級";
+  if (/比較/u.test(title)) return "固定其他條件，只比較一個變因，再用同一標準判讀";
+  if (/區分|辨認|辨識/u.test(title)) return "先寫出分類判準，再逐項核對，不憑單一外觀下結論";
+  if (/設計|規劃/u.test(title)) return "明確設定自變項、應變項、控制變因與記錄方式";
+  if (/說明|解釋|理解/u.test(title)) return "先描述觀察，再用模型連結原因，並交代適用條件";
+  return "先確認資料與條件，再依定義或關係式判讀，最後檢查限制";
+}
+
+function claimGroups(skill, profile, card) {
+  const atomicFacts = cleanClaim(card.truth)
+    .split(/[，；]/u)
+    .map((text) => cleanClaim(text).replace(/^(?:並|且|但|卻|再|而)/u, ""))
+    .filter((text) => text.length >= 8);
+  return {
+    facts: [...new Set([cleanClaim(card.truth), ...atomicFacts])],
+    principles: claims(profile.principle),
+    relations: claims(profile.relation),
+    boundaries: claims(profile.boundary),
+    units: claims(profile.unit),
+    methods: [methodFor(skill.title)],
+  };
+}
+
+const QUESTION_FOCUS = [
+  "facts", "facts", "facts", "facts", "facts", "facts",
+  "facts", "facts", "facts", "facts", "facts", "facts",
+];
+
+function correctChoiceFor(slot, skill, profile, card) {
+  const groups = claimGroups(skill, profile, card);
+  const group = groups[QUESTION_FOCUS[slot]];
+  const text = slot === 0 ? group[0] : group[(skillNumber(skill) + slot) % group.length];
+  assert(text && text.length <= 64, `${skill.id}: unreadable correct option`);
+  return {
+    text,
+    correction: text,
+    explanation: `判讀依據是「${shortReason(card.truth, 62)}」。`,
+  };
+}
+
+function negativeChoicesFor(skill, profile, unitSkills) {
+  const current = PHYSICS_CHEMISTRY_SKILL_KNOWLEDGE[skill.id];
+  const unitClaims = unitSkills.map((candidate) => ({
+    text: cleanClaim(PHYSICS_CHEMISTRY_SKILL_KNOWLEDGE[candidate.id].trap),
+    correction: cleanClaim(PHYSICS_CHEMISTRY_SKILL_KNOWLEDGE[candidate.id].truth),
+  }));
+  const ordered = [
+    ...unitClaims.filter((choice) => choice.text === cleanClaim(current.trap)),
+    ...unitClaims.filter((choice) => choice.text !== cleanClaim(current.trap)),
+  ];
+  return [...new Map(ordered.map((choice) => [choice.text, choice])).values()];
+}
+
+function distractorChoicesFor(slot, skill, profile, card, unitSkills) {
+  const pool = negativeChoicesFor(skill, profile, unitSkills).filter((choice) => choice.text !== cleanClaim(card.truth));
+  assert(pool.length >= 7, `${skill.id}: distractor pool is too small`);
+  const start = slot === 0 ? 0 : (skillNumber(skill) * 5 + slot * 3) % pool.length;
+  return [0, 1, 2].map((offset) => pool[(start + offset) % pool.length]);
 }
 
 function provenance(authorityRefs) {
@@ -79,86 +139,62 @@ function arrangeOptions(correct, distractors, answerIndex) {
   assert.equal(distractors.length, 3);
   const options = [...distractors];
   options.splice(answerIndex, 0, correct);
-  assert.equal(new Set(options).size, 4, "question options must be unique");
+  assert.equal(new Set(options.map((choice) => choice.text)).size, 4, "question options must be unique");
   return options;
 }
 
-function correctFor(slot, skill, profile, card) {
-  const context = profile.contexts[slot % profile.contexts.length];
-  const method = methodFor(skill.title, profile);
-  return [
-    card.truth,
-    `就「${skill.title}」而言，可使用的具體判準是：${card.truth}`,
-    `核對「${skill.title}」的紀錄時，先依「${card.truth}」判讀，並遵守單位規則：${profile.unit}`,
-    `${method}本題的正確執行依據是：${card.truth}`,
-    `保留「${profile.boundary}」這項界線，並以下列命題作結論：${card.truth}`,
-    `不能採用「${card.trap}」；修正後應為：${card.truth}`,
-    `在${context}中同時記錄條件、觀察量與單位，再以這個專屬判準比對：${card.truth}`,
-    `先以「${card.truth}」處理題給資料，再用「${profile.boundary}」做邊界檢查。`,
-    `只改一個主要變因並保持其他條件一致，量測結果時依「${card.truth}」判讀。`,
-    `現有證據能支持的結論是「${card.truth}」，不再擴張為題組未測的因果。`,
-    `新的${context}情境仍使用這項不改變的物理或化學依據：${card.truth}`,
-    `評估報告時先確認「${card.truth}」，再標明限制「${profile.boundary}」與所需額外資料。`,
-  ][slot];
-}
-
-function distractorsFor(slot, skill, profile, card) {
-  const context = profile.contexts[slot % profile.contexts.length];
-  const mistakes = [0, 1, 2].map((offset) => profile.misconception[(slot + offset) % profile.misconception.length]);
-  return [
-    `採用這個看似直覺的規則：${card.trap}`,
-    `在${context}中直接把「${mistakes[slot % 3]}」當成「${skill.title}」的足夠證據。`,
-    `忽略「${profile.boundary}」與「${profile.unit}」，只根據題幹出現的最大數字宣稱已完成「${skill.title}」。`,
-  ];
-}
-
 function stemFor(slot, skill, profile) {
-  const context = profile.contexts[slot % profile.contexts.length];
+  const n = skillNumber(skill);
+  const context = profile.contexts[(n + slot) % profile.contexts.length];
+  const topic = topicFor(skill, profile);
+  const actor = ["小組", "學生", "實驗紀錄", "報告"][(n + slot) % 4];
   return [
-    `要判斷「${skill.title}」，下列哪一項依據最可靠？`,
-    `同學整理「${skill.title}」時寫下四項關係，哪一項可在題目條件成立時使用？`,
-    `關於「${skill.title}」的單位或記錄方式，下列何者正確？`,
-    `以${context}處理「${skill.title}」時，哪一個步驟安排最合理？`,
-    `下列哪一項正確說明「${skill.title}」的適用界線？`,
-    `有人在判斷「${skill.title}」時犯了常見錯誤，哪一項修正最完整？`,
-    `要用${context}的觀察支持「${skill.title}」，哪一份紀錄最有判讀價值？`,
-    `一組資料要用來處理「${skill.title}」，下列哪一種推理順序合理？`,
-    `班上要比較${context}中的「${skill.title}」，哪一個實驗設計可形成公平比較？`,
-    `針對${context}所得資料，下列哪一個關於「${skill.title}」的結論沒有超出證據？`,
-    `把「${skill.title}」應用到新的${context}問題時，哪一個做法仍成立？`,
-    `某報告用單一觀察就宣稱已證明「${skill.title}」。哪一項評估最適當？`,
+    `${actor}討論${topic}，哪項敘述正確？`,
+    `根據${context}紀錄，哪項判讀合理？`,
+    `整理${context}資料後，哪項說明正確？`,
+    `小組檢查${context}紀錄，哪項判讀正確？`,
+    `關於${topic}，哪項結論符合題給條件？`,
+    `有人誤解${topic}，哪項修正合理？`,
+    `${context}出現四種說法，哪項有理化概念支持？`,
+    `報告整理${context}資料，哪項敘述合理？`,
+    `重新核對${context}結果，哪項說法正確？`,
+    `${actor}根據${context}下結論，哪項符合資料？`,
+    `換成另一組${context}資料，哪項判讀仍合理？`,
+    `評估${context}報告時，哪項說明正確？`,
   ][slot];
 }
 
-function questionRecord(skill, profile, card, slot, { stimulusId = null, stimulus = false, assetIds = [] } = {}) {
+function shortReason(text, limit) {
+  const value = cleanClaim(text);
+  return value.length <= limit ? value : `${value.slice(0, limit - 1)}…`;
+}
+
+function questionRecord(skill, profile, card, slot, unitSkills, { stimulusId = null, stimulus = false, assetIds = [] } = {}) {
   const n = skillNumber(skill);
   const localSlot = stimulus ? slot + 9 : slot;
+  const choiceSlot = stimulus ? [0, 2, 1][slot] : slot;
   const answerIndex = (n + localSlot) % 4;
-  const correct = correctFor(localSlot % 12, skill, profile, card);
-  const distractors = distractorsFor(localSlot % 12, skill, profile, card);
+  const correct = correctChoiceFor(choiceSlot, skill, profile, card);
+  const distractors = distractorChoicesFor(choiceSlot, skill, profile, card, unitSkills);
   const options = arrangeOptions(correct, distractors, answerIndex);
   const id = stimulus
     ? `PHYCHM_R4_STIMQ_${String(n).padStart(3, "0")}_${String(slot + 1).padStart(2, "0")}`
     : `PHYCHM_R4_Q_${String(n).padStart(3, "0")}_${String(slot + 1).padStart(2, "0")}`;
-  const context = profile.contexts[localSlot % profile.contexts.length];
+  const context = profile.contexts[(n + localSlot) % profile.contexts.length];
+  const topic = topicFor(skill, profile);
   const stem = stimulus
     ? [
-        `依據題組中的${context}紀錄，哪一項最能支持「${skill.title}」的判斷？`,
-        `若要提高這份${context}資料對「${skill.title}」的可信度，下一步最適合怎麼做？`,
-        `同學根據題組資料提出結論。哪一項最符合「${skill.title}」的條件與限制？`,
+        `根據${context}表中紀錄，哪項結論最合理？`,
+        `檢查表中關於${topic}的說法，哪項判讀正確？`,
+        `${context}題組中，哪項說明符合紀錄？`,
       ][slot]
     : stemFor(slot, skill, profile);
-  const correctReason = `此選項符合已審核的技能命題「${card.truth}」，並保留本題條件；${correct}`;
-  const wrongReasons = [
-    `這是本技能專屬陷阡：「${card.trap}」，與可驗證命題「${card.truth}」相衝突。`,
-    `這項說法把${context}的單一表面線索擴大成結論，並採用「${profile.misconception[localSlot % 4]}」的迷思。`,
-    `這項結論同時忽略「${profile.unit}」和「${profile.boundary}」，題給證據無法支持。`,
-  ];
-  let wrongIndex = 0;
-  const optionRationales = options.map((option, optionIndex) => ({
+  const optionRationales = options.map((choice, optionIndex) => ({
     optionIndex,
     isCorrect: optionIndex === answerIndex,
-    reason: optionIndex === answerIndex ? correctReason : wrongReasons[wrongIndex++],
+    reason: optionIndex === answerIndex
+      ? correct.explanation
+      : `「${shortReason(choice.text, 30)}」不成立；${shortReason(choice.correction, 48)}。`,
   }));
   return {
     id,
@@ -167,35 +203,36 @@ function questionRecord(skill, profile, card, slot, { stimulusId = null, stimulu
     authorityRefs: [...skill.authorityRefs],
     stimulusId,
     stem,
-    options,
+    options: options.map((choice) => choice.text),
     answerIndex,
     optionRationales,
     difficulty: stimulus ? ["standard", "advanced", "transfer"][slot] : DIFFICULTIES[slot],
-    cognitiveProcess: stimulus ? [["資料判讀"], ["實驗改進"], ["證據評估"]][slot] : COGNITIVE_PROCESSES[slot],
-    representationType: stimulus ? (assetIds.length ? "stimulus-figure-and-data" : "stimulus-data") : ["concept", "relation", "unit", "procedure", "boundary", "error-analysis", "evidence", "multi-step", "experiment", "claim", "transfer", "evaluation"][slot],
-    misconceptionTargets: [localSlot % 2 === 0 ? card.trap : profile.misconception[localSlot % profile.misconception.length]],
+    cognitiveProcess: stimulus ? [["資料判讀"], ["資料判讀"], ["證據評估"]][slot] : COGNITIVE_PROCESSES[slot],
+    representationType: stimulus ? (assetIds.length ? "stimulus-figure-and-data" : "stimulus-data") : ["concept", "relation", "unit", "data-interpretation", "boundary", "error-analysis", "evidence", "multi-step", "evidence-check", "claim", "transfer", "evaluation"][slot],
+    misconceptionTargets: distractors.map((choice) => choice.text),
     provenance: provenance(skill.authorityRefs),
     independentReviews: PHYSICS_CHEMISTRY_REVIEW_ROLES.map((reviewerRole, index) => ({
       reviewerRole,
       derivedAnswerIndex: answerIndex,
       evidence: index === 0
-        ? `逐項依「${skill.title}」的定義與關係式核對，只有選項 ${answerIndex + 1} 同時符合條件。`
-        : `反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 ${answerIndex}。`,
+        ? `逐項核對定義、關係、單位與條件，只有選項 ${String.fromCharCode(65 + answerIndex)} 符合。`
+        : `其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 ${String.fromCharCode(65 + answerIndex)}。`,
       status: "pass",
     })),
     assets: [...assetIds],
   };
 }
 
-function lectureRecord(skill, profile, card, assetIds) {
+function lectureRecord(skill, profile, card, unitSkills, assetIds) {
   const n = skillNumber(skill);
-  const method = methodFor(skill.title, profile);
-  const focus = focusFor(skill, profile, card);
+  const method = methodFor(skill.title);
+  const topic = topicFor(skill, profile);
   const contexts = profile.contexts;
-  const misconceptions = [
-    card.trap,
-    ...[0, 1, 2].map((offset) => profile.misconception[(n + offset) % profile.misconception.length]),
-  ];
+  const misconceptions = [skill, ...unitSkills.filter((candidate) => candidate.id !== skill.id).slice(0, 3)]
+    .map((candidate) => ({
+      belief: cleanClaim(PHYSICS_CHEMISTRY_SKILL_KNOWLEDGE[candidate.id].trap),
+      correction: cleanClaim(PHYSICS_CHEMISTRY_SKILL_KNOWLEDGE[candidate.id].truth),
+    }));
   return {
     id: `PHYCHM_R4_L_${String(n).padStart(3, "0")}`,
     subject: "physics_chemistry",
@@ -204,57 +241,59 @@ function lectureRecord(skill, profile, card, assetIds) {
     authorityRefs: [...skill.authorityRefs],
     prerequisites: [...skill.prerequisites],
     objectives: [
-      `能用自己的話說明「${skill.title}」所依據的理化概念與適用條件。`,
-      `能在資料、實驗或生活情境中完成「${skill.title}」，並指出常見錯誤。`,
+      `能掌握${topic}的判準與適用條件。`,
+      `能由實驗或生活資料判讀${topic}，並修正常見錯誤。`,
     ],
     sections: [
       {
         id: `PHYCHM_R4_L_${String(n).padStart(3, "0")}_SEC_01`,
-        title: "從零開始：先辨認問題",
-        content: `本技能要學會「${skill.title}」。從零開始先記一項可直接核對的命題：${card.truth}再圈出題目給的物理量、觀察現象或比較對象，確認它們是否符合這項命題。`,
+        title: "核心概念",
+        content: `${card.truth}先找出題目的觀察量與條件，再用這項判準核對。`,
       },
       {
         id: `PHYCHM_R4_L_${String(n).padStart(3, "0")}_SEC_02`,
-        title: "關係、單位與計算",
-        content: `本技能的具體例子與判準已寫在命題中：${card.truth}${profile.relation}${profile.unit}若需計算，先統一單位；若是定性判讀，也要指明使用的證據。`,
+        title: "關係與單位",
+        content: `${profile.relation}${profile.unit}`,
       },
       {
         id: `PHYCHM_R4_L_${String(n).padStart(3, "0")}_SEC_03`,
-        title: "可操作的解題流程",
-        content: `${method}完成後把答案和「${card.truth}」逐項對照，再檢查方向、單位、數量級或證據強度。`,
+        title: "解題流程",
+        content: `${method}。作答前再檢查方向、單位、數量級與證據強度。`,
       },
       {
         id: `PHYCHM_R4_L_${String(n).padStart(3, "0")}_SEC_04`,
-        title: "限制與容易誤解之處",
-        content: `最需防的專屬錯誤是「${card.trap}」。${profile.boundary}遇到這類說法，要用定義、對照或可重現資料反證，不只是背結論。`,
+        title: "限制與迷思",
+        content: `常見錯誤是「${cleanClaim(card.trap)}」。${profile.boundary}`,
       },
     ],
     workedExamples: contexts.slice(0, 3).map((context, index) => ({
       id: `PHYCHM_R4_L_${String(n).padStart(3, "0")}_EX_${String(index + 1).padStart(2, "0")}`,
-      prompt: `在${context}情境中，學生需要「${skill.title}」。他應採用哪一項核心依據？`,
+      prompt: [
+        `${context}紀錄中有人主張「${cleanClaim(card.trap)}」。如何修正？`,
+        `整理${context}資料時，計算或單位應如何檢查？`,
+        `${context}只提供部分資料時，結論要保留什麼限制？`,
+      ][index],
       steps: [
-        `辨認${context}提供的可觀察量、條件與單位。`,
+        `找出${context}提供的觀察量與條件。`,
         method,
-        `用「${profile.boundary}」檢查結論沒有超出證據。`,
+        `比對資料是否支持結論。`,
       ],
-      answer: index === 0 ? card.truth : index === 1 ? `${card.truth}同時使用本單元關係：${profile.relation}` : `${focus}`,
-      why: index === 0
-        ? `這個情境的目標是「${skill.title}」，必須先依${concise(profile.principle)}判斷。只看外觀或單一數字會落入「${profile.misconception[0]}」的錯誤。`
-        : index === 1
-          ? `${context}中的資料要先依「${profile.relation}」處理，並遵守${profile.unit}若跳過單位檢核，數值即使算對也可能代表錯誤的物理量。`
-          : `答案需保留「${profile.boundary}」這項限制，因為「${skill.title}」只在資料與條件足夠時成立，不能把局部觀察擴大成普遍結論。`,
+      answer: [cleanClaim(card.truth), `${cleanClaim(profile.relation)}；${cleanClaim(profile.unit)}`, cleanClaim(profile.boundary)][index],
+      why: [
+        `原主張與「${shortReason(card.truth, 62)}」相衝突。`,
+        `數值、物理量與單位必須同時一致，不能只檢查算式。`,
+        `資料不足時保留限制，才能避免把局部結果當成普遍規律。`,
+      ][index],
     })),
-    misconceptions: misconceptions.map((belief, index) => ({
+    misconceptions: misconceptions.map(({ belief, correction }) => ({
       belief,
-      whyWrong: index === 0
-        ? `這是「${skill.title}」最直接的錯誤規則，其結論與可核對的命題「${card.truth}」相衝突。`
-        : `這個常見想法只擷取${contexts[index - 1]}的表面特徵，沒有以「${card.truth}」檢查條件與證據。`,
-      correction: index === 0 ? card.truth : [concise(profile.principle), profile.relation, profile.boundary][index - 1],
+      whyWrong: `這項說法忽略定義、條件或可核對的資料。`,
+      correction,
     })),
     checks: contexts.slice(0, 3).map((context, index) => ({
-      prompt: `在${context}中判斷「${skill.title}」前，最先要確認什麼？`,
-      answer: [card.truth, `先核對單位與量測條件：${profile.unit}`, `只在這項限制內下結論：${profile.boundary}`][index],
-      reason: [card.truth, profile.unit, profile.boundary][index],
+      prompt: [`${context}中哪項判準可直接核對？`, `${context}的數值如何避免單位錯誤？`, `${context}的結論可推到多大範圍？`][index],
+      answer: [cleanClaim(card.truth), cleanClaim(profile.unit), cleanClaim(profile.boundary)][index],
+      reason: [cleanClaim(card.truth), cleanClaim(profile.unit), cleanClaim(profile.boundary)][index],
     })),
     assets: [...assetIds],
     provenance: provenance(skill.authorityRefs),
@@ -264,23 +303,45 @@ function lectureRecord(skill, profile, card, assetIds) {
 function stimulusRecord(skill, profile, card, assetIds) {
   const n = skillNumber(skill);
   const context = profile.contexts[n % profile.contexts.length];
-  const focus = focusFor(skill, profile, card);
+  const topic = topicFor(skill, profile);
+  const variants = [
+    {
+      columns: ["紀錄", "內容", "檢核重點"],
+      labels: ["觀察或計算", "同學推論", "適用條件", "表示方式"],
+      caption: `${context}實驗紀錄`,
+    },
+    {
+      columns: ["報告段落", "小組寫法", "審查項目"],
+      labels: ["資料整理", "初步解釋", "結論範圍", "數值記法"],
+      caption: `${context}報告摘錄`,
+    },
+    {
+      columns: ["項目", "小組紀錄", "用途"],
+      labels: ["結果", "待查說法", "限制", "單位"],
+      caption: `${context}資料表`,
+    },
+    {
+      columns: ["檢查次序", "紀錄內容", "判讀目的"],
+      labels: ["一、整理證據", "二、檢查主張", "三、確認條件", "四、核對記法"],
+      caption: `${context}檢核表`,
+    },
+  ][n % 4];
   return {
     id: `PHYCHM_R4_STIM_${String(n).padStart(3, "0")}`,
     subject: "physics_chemistry",
     unitId: skill.unitId,
     skillIds: [skill.id],
     authorityRefs: [...skill.authorityRefs],
-    title: `${profile.title}：${context}紀錄`,
-    body: `某小組以${context}探討「${skill.title}」。${assetIds.length ? "題組附有黑白示意圖，所有線型、箭頭、標籤與單位均可配合下表判讀。" : ""}小組將可驗證命題、同學主張、適用界線與紀錄規則分開列出，不先刪除不符預期的資訊。`,
+    title: `${context}：${topic}`,
+    body: `小組整理${context}資料，準備核對${topic}。${assetIds.length ? "附圖以線型、箭頭和文字標示，並可配合下表判讀。" : ""}表內保留原始結果、待查說法與作答條件。`,
     dataTable: {
-      caption: `${context}的四類證據紀錄`,
-      columns: ["類別", "紀錄內容", "審查用途"],
+      caption: variants.caption,
+      columns: variants.columns,
       rows: [
-        ["可驗證命題", card.truth, "與觀察或計算結果比對"],
-        ["同學甲的主張", card.trap, "找出迷思與反例"],
-        ["適用界線", profile.boundary, "防止結論超出證據"],
-        ["紀錄規則", profile.unit, "檢查量與單位是否對應"],
+        [variants.labels[0], cleanClaim(card.truth), "對照觀察或計算"],
+        [variants.labels[1], cleanClaim(card.trap), "找出與資料矛盾處"],
+        [variants.labels[2], cleanClaim(profile.boundary), "界定結論範圍"],
+        [variants.labels[3], cleanClaim(profile.unit), "核對物理量與單位"],
       ],
     },
     assetIds: [...assetIds],
@@ -290,6 +351,8 @@ function stimulusRecord(skill, profile, card, assetIds) {
 
 function assetRecord(source, unitSkills) {
   const authorityRefs = [...new Set(unitSkills.flatMap((skill) => skill.authorityRefs))];
+  const longDescription = source.svg.match(/<desc>([^<]+)<\/desc>/u)?.[1];
+  assert(longDescription, `${source.id}: missing SVG description`);
   return {
     id: source.id,
     subject: "physics_chemistry",
@@ -305,7 +368,7 @@ function assetRecord(source, unitSkills) {
     calibrationRefs: authorityRefs,
     caption: source.caption,
     altText: source.altText,
-    longDescription: source.longDescription,
+    longDescription,
     dataFallback: source.dataFallback,
     accessibility: { colorIndependent: true, printSafe: true },
     technical: source.technical,
@@ -325,6 +388,7 @@ export async function materializePhysicsChemistry() {
   const assetSourcesByUnit = new Map(PHYSICS_CHEMISTRY_ASSET_SOURCES.map((source) => [source.unitId, source]));
   const assets = PHYSICS_CHEMISTRY_ASSET_SOURCES.map((source) => assetRecord(source, skills.filter((skill) => skill.unitId === source.unitId)));
   const assetsByUnit = new Map(assets.map((asset) => [PHYSICS_CHEMISTRY_ASSET_SOURCES.find((source) => source.id === asset.id).unitId, [asset.id]]));
+  const skillsByUnit = new Map(Object.keys(PHYSICS_CHEMISTRY_UNIT_PROFILES).map((unitId) => [unitId, skills.filter((skill) => skill.unitId === unitId)]));
   const lectures = [];
   const questions = [];
   const stimuli = [];
@@ -333,13 +397,15 @@ export async function materializePhysicsChemistry() {
     assert(profile, `${skill.unitId}: missing Physics/Chemistry knowledge profile`);
     const card = PHYSICS_CHEMISTRY_SKILL_KNOWLEDGE[skill.id];
     assert(card, `${skill.id}: missing Physics/Chemistry skill knowledge card`);
+    const unitSkills = skillsByUnit.get(skill.unitId);
+    assert(unitSkills?.length >= 7, `${skill.unitId}: too few skills for misconception pool`);
     const assetIds = assetsByUnit.get(skill.unitId) || [];
-    const lecture = lectureRecord(skill, profile, card, assetIds);
+    const lecture = lectureRecord(skill, profile, card, unitSkills, assetIds);
     const stimulus = stimulusRecord(skill, profile, card, assetIds);
     lectures.push(lecture);
     stimuli.push(stimulus);
-    for (let slot = 0; slot < 12; slot += 1) questions.push(questionRecord(skill, profile, card, slot));
-    for (let slot = 0; slot < 3; slot += 1) questions.push(questionRecord(skill, profile, card, slot, { stimulusId: stimulus.id, stimulus: true, assetIds }));
+    for (let slot = 0; slot < 12; slot += 1) questions.push(questionRecord(skill, profile, card, slot, unitSkills));
+    for (let slot = 0; slot < 3; slot += 1) questions.push(questionRecord(skill, profile, card, slot, unitSkills, { stimulusId: stimulus.id, stimulus: true, assetIds }));
   }
   assert.equal(lectures.length, 300);
   assert.equal(stimuli.length, 300);
@@ -360,7 +426,19 @@ export async function materializePhysicsChemistry() {
 }
 
 async function writeJson(root, value) {
-  await writeFile(path.join(root, `${value.id}.json`), `${JSON.stringify(value, null, 2)}\n`, "utf8");
+  await writeText(path.join(root, `${value.id}.json`), `${JSON.stringify(value, null, 2)}\n`);
+}
+
+async function writeText(file, content) {
+  for (let attempt = 0; ; attempt += 1) {
+    try {
+      await writeFile(file, content, "utf8");
+      return;
+    } catch (error) {
+      if (!["EBUSY", "EPERM"].includes(error.code) || attempt === 20) throw error;
+      await new Promise((resolve) => setTimeout(resolve, 50 * (attempt + 1)));
+    }
+  }
 }
 
 async function artifactDescriptors(runtimeRoot, directory, type) {
@@ -399,9 +477,10 @@ async function uiDescriptors(runtimeRoot) {
 
 export async function buildPhysicsChemistryR4({ runtimeRoot = RUNTIME_ROOT } = {}) {
   const materialized = await materializePhysicsChemistry();
+  const productionBuild = path.resolve(runtimeRoot) === path.resolve(RUNTIME_ROOT);
   const directories = Object.fromEntries(["authority", "skills", "lectures", "questions", "stimuli", "assets"].map((name) => [name, path.join(runtimeRoot, name)]));
   await Promise.all(Object.values(directories).map(async (directory) => {
-    await rm(directory, { recursive: true, force: true });
+    await rm(directory, { recursive: true, force: true, maxRetries: 8, retryDelay: 100 });
     await mkdir(directory, { recursive: true });
   }));
   await Promise.all([
@@ -412,13 +491,12 @@ export async function buildPhysicsChemistryR4({ runtimeRoot = RUNTIME_ROOT } = {
     ...materialized.stimuli.map((value) => writeJson(directories.stimuli, value)),
     ...materialized.assets.map((value) => writeJson(directories.assets, value)),
   ]);
-  const productionBuild = path.resolve(runtimeRoot) === path.resolve(RUNTIME_ROOT);
   const vectorRoot = productionBuild
     ? path.join(SUBJECT_ROOT, "assets", "physics-chemistry")
     : path.join(runtimeRoot, "vector-assets");
-  await rm(vectorRoot, { recursive: true, force: true });
+  await rm(vectorRoot, { recursive: true, force: true, maxRetries: 8, retryDelay: 100 });
   await mkdir(vectorRoot, { recursive: true });
-  await Promise.all(PHYSICS_CHEMISTRY_ASSET_SOURCES.map((source) => writeFile(path.join(vectorRoot, source.fileName), source.svg, "utf8")));
+  await Promise.all(PHYSICS_CHEMISTRY_ASSET_SOURCES.map((source) => writeText(path.join(vectorRoot, source.fileName), source.svg)));
   const catalog = {
     schemaVersion: "cap8-r4-static-runtime-catalog-v1",
     subject: "physics_chemistry",
@@ -443,7 +521,7 @@ export async function buildPhysicsChemistryR4({ runtimeRoot = RUNTIME_ROOT } = {
       };
     }),
   };
-  await writeFile(path.join(runtimeRoot, "content-catalog.json"), `${JSON.stringify(catalog, null, 2)}\n`, "utf8");
+  await writeText(path.join(runtimeRoot, "content-catalog.json"), `${JSON.stringify(catalog, null, 2)}\n`);
   const manifest = {
     schemaVersion: "cap8-r4-physics-chemistry-runtime-v1",
     subject: "physics_chemistry",
@@ -469,7 +547,7 @@ export async function buildPhysicsChemistryR4({ runtimeRoot = RUNTIME_ROOT } = {
       assets: materialized.assets.map((value) => value.id),
     },
   };
-  await writeFile(path.join(runtimeRoot, "content-manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+  await writeText(path.join(runtimeRoot, "content-manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`);
 
   const artifactGroups = [
     ["authority", "authority"],
@@ -502,7 +580,7 @@ export async function buildPhysicsChemistryR4({ runtimeRoot = RUNTIME_ROOT } = {
     counts,
     buildSha256: sha256(canonicalJson({ authorityGraphSha256, artifacts, counts })),
   };
-  await writeFile(path.join(runtimeRoot, "content-manifest-v4.json"), `${JSON.stringify(manifestV4, null, 2)}\n`, "utf8");
+  await writeText(path.join(runtimeRoot, "content-manifest-v4.json"), `${JSON.stringify(manifestV4, null, 2)}\n`);
 
   if (productionBuild) {
     const binding = JSON.parse(await readFile(BINDING_PATH, "utf8"));
@@ -512,7 +590,7 @@ export async function buildPhysicsChemistryR4({ runtimeRoot = RUNTIME_ROOT } = {
       stimuliComplete: true,
       manifestEligible: true,
     };
-    await writeFile(BINDING_PATH, `${JSON.stringify(binding, null, 2)}\n`, "utf8");
+    await writeText(BINDING_PATH, `${JSON.stringify(binding, null, 2)}\n`);
   }
   return manifest;
 }

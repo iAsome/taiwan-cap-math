@@ -72,8 +72,8 @@ const SVG = {
   ),
   "circuit-diagram": wrap(
     "安培計與伏特計的正確接法",
-    "電池、開關、安培計與電阻串成主回路；伏特計跨接在電阻兩端。所有導線交接點以實心圓標示。",
-    `<text x="32" y="38">量測電阻電流與電壓的電路</text><path class="line" d="M105 110 L105 315 L610 315 L610 110 L105 110"/><line class="line" x1="165" y1="90" x2="165" y2="130"/><line class="line" x1="185" y1="75" x2="185" y2="145"/><text x="135" y="65">電池</text><circle class="box" cx="305" cy="110" r="36"/><text x="294" y="117">A</text><rect class="box" x="425" y="90" width="95" height="40"/><text x="450" y="118">電阻</text><path class="line" d="M425 110 L425 220 L520 220 L520 110"/><circle class="box" cx="472" cy="220" r="36"/><text x="461" y="227">V</text><circle cx="425" cy="110" r="6" fill="#111"/><circle cx="520" cy="110" r="6" fill="#111"/><text x="270" y="170" class="small">安培計串聯</text><text x="515" y="240" class="small">伏特計並聯</text>`,
+    "電池、安培計與電阻串成主回路；伏特計跨接在電阻兩端。所有導線交接點以實心圓標示。",
+    `<text x="32" y="38">量測電阻電流與電壓的電路</text><path class="line" d="M105 110 L165 110 M185 110 L269 110 M341 110 L425 110 M520 110 L610 110 L610 315 L105 315 L105 110"/><line class="line" x1="165" y1="90" x2="165" y2="130"/><line class="line" x1="185" y1="75" x2="185" y2="145"/><text x="135" y="65">電池</text><circle class="box" cx="305" cy="110" r="36"/><text x="294" y="117">A</text><rect class="box" x="425" y="90" width="95" height="40"/><text x="450" y="118">電阻</text><path class="line" d="M425 110 L425 220 L436 220 M508 220 L520 220 L520 110"/><circle class="box" cx="472" cy="220" r="36"/><text x="461" y="227">V</text><circle cx="425" cy="110" r="6" fill="#111"/><circle cx="520" cy="110" r="6" fill="#111"/><text x="270" y="170" class="small">安培計串聯</text><text x="515" y="240" class="small">伏特計並聯</text>`,
   ),
   "magnetic-field-diagram": wrap(
     "條形磁鐵外部磁場方向",
