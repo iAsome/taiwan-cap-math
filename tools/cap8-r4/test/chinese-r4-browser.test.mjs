@@ -11,9 +11,18 @@ const errors = [];
 page.on("console", message => { if (message.type() === "error") errors.push(message.text()); });
 page.on("pageerror", error => errors.push(error.message));
 
+async function changeAndWaitForR4Render(action) {
+  const previousLesson = await page.locator("#r4Lesson > article").elementHandle();
+  const previousWriting = await page.locator(".writing-card").elementHandle();
+  await action();
+  await page.waitForFunction((element) => !element.isConnected, previousLesson);
+  await page.waitForFunction((element) => !element.isConnected, previousWriting);
+}
+
 try {
   await page.goto(`${base}?view=r4`, { waitUntil: "networkidle" });
   await page.locator("#r4Lesson h2").waitFor();
+  await page.locator(".writing-card").waitFor();
   assert.equal(await page.locator("#r4UnitSelect option").count(), 48);
   assert.equal(await page.locator("#r4SkillList button").count(), 7);
   assert.equal(await page.locator(".r4-example-list article").count(), 3);
@@ -21,13 +30,22 @@ try {
   assert.equal(await page.locator(".r4-checks details").count(), 3);
   assert.equal(await page.locator(".writing-card").count(), 1);
 
-  await page.locator("#r4UnitSelect").selectOption("CHI_R4_U32");
-  await page.locator("#r4Lesson h2").waitFor();
+  await changeAndWaitForR4Render(() => page.locator("#r4UnitSelect").selectOption("CHI_R4_U32"));
 
-  await page.locator("#r4SkillSearch").fill("圖表");
+  await changeAndWaitForR4Render(() => page.locator("#r4SkillSearch").fill("圖表"));
+  await page.waitForFunction(() => {
+    const buttons = [...document.querySelectorAll("#r4SkillList button")];
+    return buttons.length > 0 && buttons.every((button) => button.textContent.includes("圖表"));
+  });
   assert.ok(await page.locator("#r4SkillList button").count() >= 1);
-  await page.locator("#r4SkillSearch").fill("");
+  await changeAndWaitForR4Render(() => page.locator("#r4SkillSearch").fill(""));
+  await page.waitForFunction(() => {
+    const unit = window.CHINESE_R4.catalog.units.find(({ id }) => id === "CHI_R4_U32");
+    return document.querySelectorAll("#r4SkillList button").length === unit.skillIds.length;
+  });
+  const previousWriting = await page.locator(".writing-card").elementHandle();
   await page.locator("#r4WritingNext").click();
+  await page.waitForFunction((element) => !element.isConnected, previousWriting);
   assert.equal(await page.locator(".writing-card small").textContent(), "CHI_R4_WRITE_002");
 
   const deterministic = await page.evaluate(async () => {

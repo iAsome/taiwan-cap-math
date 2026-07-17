@@ -1,0 +1,79 @@
+{
+  "id": "CHI_R4_Q_018_04",
+  "subject": "chinese",
+  "skillIds": [
+    "CHI_R4_S018"
+  ],
+  "authorityRefs": [
+    "AUTH-CHINESE-LC-AB-4-1",
+    "AUTH-CHINESE-LC-AB-4-4",
+    "AUTH-CHINESE-LP-4-4-2",
+    "AUTH-CHINESE-LP-4-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "不確定某字是ㄣ或ㄥ韻，電子字典支援萬用條件。哪個策略合理？",
+  "options": [
+    "只輸入聲調符號",
+    "把所有ㄣ、ㄥ字視為同字",
+    "任選較熟悉的韻母",
+    "分別試查兩種完整音節，保留能與原句義相合的字詞"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "此選項沒有按照題目給定的部首、音義、詞性或工具書欄位完成核對；針對「不確定某字是ㄣ或ㄥ韻，電子字典支援萬用條件。哪個策略合理？」，「只輸入聲調符號」沒有符合題目要求的完整條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此選項把部件、索引入口或另一義項誤當成題中應用的資料；針對「不確定某字是ㄣ或ㄥ韻，電子字典支援萬用條件。哪個策略合理？」，「把所有ㄣ、ㄥ字視為同字」沒有符合題目要求的完整條件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "此判斷略過完整條目與原句語境，不能排除同部、同音或多義候選；針對「不確定某字是ㄣ或ㄥ韻，電子字典支援萬用條件。哪個策略合理？」，「任選較熟悉的韻母」沒有符合題目要求的完整條件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "把疑點拆成兩次可比較查詢，能用結果反證原先聽辨；在「不確定某字是ㄣ或ㄥ韻，電子字典支援萬用條件。哪個策略合理？」中，「分別試查兩種完整音節，保留能與原句義相合的字詞」能同時符合文本、關係與限制。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "apply",
+    "analyze"
+  ],
+  "representationType": "dictionary-entry",
+  "misconceptionTargets": [
+    "只輸入聲調符號"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Chinese content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-CHINESE-LC-AB-4-1",
+      "AUTH-CHINESE-LC-AB-4-4",
+      "AUTH-CHINESE-LP-4-4-2",
+      "AUTH-CHINESE-LP-4-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "chinese-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把疑點拆成兩次可比較查詢，能用結果反證原先聽辨。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "chinese-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "三個干擾選項各自誤用索引入口、欄位或語境義；依題中資料只能得到所標正解。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
