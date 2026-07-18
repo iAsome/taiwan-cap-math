@@ -185,12 +185,15 @@ async function main() {
   const physics = subjects.artifacts.filter((artifact) => artifact.subject === "physics_chemistry");
   const earth = subjects.artifacts.filter((artifact) => artifact.subject === "earth_science");
   const history = subjects.artifacts.filter((artifact) => artifact.subject === "history");
+  const biology = subjects.artifacts.filter((artifact) => artifact.subject === "biology");
   await verifyPhysics(physics);
   await verifyEarth(earth);
   await verifyReviewedChoiceSubject(history, 3600, "History");
+  await verifyReviewedChoiceSubject(biology, 3300, "Biology");
   await verifyMath(math.artifacts);
   const results = {
     history: await writeBundle("history", history, bytesFor, "Codex R4 History exact-hash independent-solution, source, figure and rendered-context reviewer"),
+    biology: await writeBundle("biology", biology, bytesFor, "Codex R4 Biology fresh-context exhaustive semantic, scientific-claim, answer, figure and rendered-context reviewer"),
     physics_chemistry: await writeBundle("physics_chemistry", physics, bytesFor, "Codex R4 Physics/Chemistry exact-hash source-evidence, answer, figure and rendered-context reviewer"),
     earth_science: await writeBundle("earth_science", earth, bytesFor, "Codex R4 Earth Science exact-hash independent-solution, figure and rendered-context reviewer"),
     math: await writeBundle("math", math.artifacts, mathCorpusBytes, "Codex R4 Math exact-hash exhaustive runtime, solution, pedagogy, figure and rendered-context reviewer"),

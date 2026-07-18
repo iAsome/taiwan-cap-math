@@ -1,8 +1,9 @@
-const CACHE_NAME = "cap8-r4-integrated-social-v4.0.0";
+const CACHE_NAME = "cap8-r4-integrated-social-v4.0.0-shell-20260718a";
 const CORE = [
   "./",
   "./index.html",
   "./styles.css",
+  "../shared/subject-shell.css?v=20260718a",
   "./app.js",
   "./runtime.js",
   "./runtime/catalog.json",

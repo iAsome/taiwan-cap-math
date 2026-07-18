@@ -1,4 +1,4 @@
-const CACHE = "cap8-r4-integrated-natural-v2";
+const CACHE = "cap8-r4-integrated-natural-v3";
 
 self.addEventListener("install", (event) => {
   event.waitUntil((async () => {

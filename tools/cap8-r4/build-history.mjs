@@ -175,7 +175,7 @@ export async function buildHistory({ repoRoot = REPO_ROOT } = {}) {
     })),
   };
   index.offlineUrls = [
-    "./", "./index.html", "./styles.css", "./app.js", "./runtime.js", "./service-worker.js", "./runtime/index.json",
+    "./", "./index.html", "./styles.css", "../../shared/subject-shell.css?v=20260718a", "./app.js", "./runtime.js", "./service-worker.js", "./runtime/index.json",
     ...index.skills.map((value) => value.path),
     ...index.lectures.map((value) => value.path),
     ...index.questions.map((value) => value.path),
@@ -198,6 +198,7 @@ export async function buildHistory({ repoRoot = REPO_ROOT } = {}) {
     ["HIS_R4_UI_INDEX", "index.html"], ["HIS_R4_UI_APP", "app.js"], ["HIS_R4_UI_STYLE", "styles.css"],
     ["HIS_R4_UI_RUNTIME", "runtime.js"], ["HIS_R4_UI_SERVICE_WORKER", "service-worker.js"], ["HIS_R4_UI_RUNTIME_INDEX", "runtime/index.json"],
   ]) artifacts.push(await descriptor(repoRoot, id, "ui", path.join(subjectRoot, relative)));
+  artifacts.push(await descriptor(repoRoot, "HIS_R4_UI_SHARED_SHELL", "ui", path.join(repoRoot, "shared", "subject-shell.css")));
   artifacts.push(await descriptor(repoRoot, "HIS_R4_UI_ENTRY", "ui", path.join(subjectRoot, "..", "index.html")));
   for (const { value } of assets) artifacts.push(await descriptor(repoRoot, `${value.id}_FILE`, "ui", path.join(repoRoot, value.path)));
   artifacts.sort((left, right) => left.id.localeCompare(right.id, "en"));

@@ -1,8 +1,8 @@
 const CONTENT_VERSION = "4.0.0";
 const CACHE_TAG = CONTENT_VERSION.replaceAll(".", "-");
-const CACHE = `cap8-r4-biology-shell-${CACHE_TAG}`;
+const CACHE = `cap8-r4-biology-shell-${CACHE_TAG}-20260718a`;
 const CONTENT_CACHE = `cap8-r4-biology-content-${CACHE_TAG}`;
-const SHELL = ["./", "index.html", "icon.svg", "content-manifest-v4.json", "r4/ui/app.js", "r4/ui/styles.css", "r4/runtime/catalog.json"];
+const SHELL = ["./", "index.html", "icon.svg", "content-manifest-v4.json", "r4/ui/app.js", "r4/ui/styles.css", "../shared/subject-shell.css?v=20260718a", "r4/runtime/catalog.json"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(SHELL)).then(() => self.skipWaiting()));

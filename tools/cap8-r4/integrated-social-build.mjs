@@ -29,6 +29,7 @@ const manifestFiles = [
   ["ui", "社會會考作戰室/sw.js"],
   ["ui", "社會會考作戰室/manifest.webmanifest"],
   ["ui", "社會會考作戰室/package.json"],
+  ["ui", "shared/subject-shell.css"],
 ];
 
 function sha256(value) {

@@ -7,26 +7,34 @@
   <meta name="description" content="臺灣國中會考自然科原創整合模擬考">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../shared/subject-shell.css?v=20260718a">
   <title>自然科整合模擬考</title>
 </head>
-<body>
+<body class="subject-shell subject-integrated subject-natural">
   <a class="skip-link" href="#main">跳到主要內容</a>
-  <header class="site-header">
-    <div>
-      <p class="eyebrow">CAP R4 原創練習</p>
-      <h1>自然科整合模擬考</h1>
-      <p>生物、理化、地球科學，70 分鐘四選一</p>
-    </div>
-    <nav aria-label="分科複習">
-      <a href="../生物會考作戰室/r4/index.html">生物</a>
-      <a href="../理化會考作戰室/r4/index.html">理化</a>
-      <a href="../地科會考作戰室/r4/index.html">地球科學</a>
-    </nav>
-  </header>
-
-  <main id="main" tabindex="-1">
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="主要導覽">
+      <a class="brand" href="#setupTitle">
+        <span class="brand-mark">自</span>
+        <span class="brand-copy"><strong>會考自然</strong><small>整合作戰室</small></span>
+      </a>
+      <nav class="shell-nav" aria-label="主要功能">
+        <a href="#setupTitle"><span>⌂</span>整合模考</a>
+        <a href="../生物會考作戰室/index.html"><span>生</span>生物複習</a>
+        <a href="../理化會考作戰室/index.html"><span>化</span>理化複習</a>
+        <a href="../地科會考作戰室/index.html"><span>地</span>地球科學</a>
+      </nav>
+      <div class="sidebar-note"><span class="status-dot"></span><div><strong>115 年規格</strong><small>50 題｜70 分鐘</small></div></div>
+    </aside>
+    <div class="main-column">
+      <header class="topbar">
+        <div class="breadcrumb"><span>會考自然作戰室</span><strong>整合模擬考</strong></div>
+        <div class="top-actions"><button class="shell-primary" type="submit" form="setupForm">開始 70 分鐘模考</button></div>
+      </header>
+      <main id="main" tabindex="-1">
     <section class="setup-band" aria-labelledby="setupTitle">
       <div>
+        <p class="practice-notice">CAP R4 原創練習</p>
         <h2 id="setupTitle">建立模擬卷</h2>
         <p>預設 50 題依 115 年正式題數；可在官方近年範圍內調整為 45 至 55 題。同一種子碼會得到相同題目與順序。</p>
       </div>
@@ -61,7 +69,9 @@
       <div id="resultReview"></div>
       <button id="newExam" type="button">建立另一份模擬卷</button>
     </section>
-  </main>
+      </main>
+    </div>
+  </div>
 
   <footer><p>題目均為原創練習，依第四學習階段課綱與 106–115 年會考題型校準，不是官方試題。</p></footer>
   <script type="module" src="app.mjs"></script>

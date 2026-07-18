@@ -1,7 +1,7 @@
 const VERSION = "4.0.0";
-const CACHE = `cap8-r4-history-shell-${VERSION}`;
+const CACHE = `cap8-r4-history-shell-${VERSION}-20260718a`;
 const CONTENT_CACHE = `cap8-r4-history-${VERSION}`;
-const SHELL = ["./", "./index.html", "./styles.css", "./app.js", "./runtime.js", "./runtime/index.json"];
+const SHELL = ["./", "./index.html", "./styles.css", "../../shared/subject-shell.css?v=20260718a", "./app.js", "./runtime.js", "./runtime/index.json"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(SHELL)).then(() => self.skipWaiting()));

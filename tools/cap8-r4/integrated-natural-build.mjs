@@ -241,6 +241,7 @@ export async function buildIntegratedNatural({ repoRoot, outputRoot = repoRoot }
     "./",
     "./index.html",
     "./styles.css",
+    "../shared/subject-shell.css?v=20260718a",
     "./app.mjs",
     "./exam-engine.mjs",
     "./migration.mjs",

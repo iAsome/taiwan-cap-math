@@ -11,7 +11,7 @@ const hrefs = [...html.matchAll(/<a class="subject-card" href="([^"]+)"/g)].map(
 assert.ok(hrefs.length > 0, "expected at least one clickable subject card on the hub");
 
 for (const href of hrefs) {
-  const target = path.join(root, decodeURIComponent(href));
+  const target = path.join(root, decodeURIComponent(new URL(href, "https://local.invalid/").pathname.slice(1)));
   assert.ok(fs.existsSync(target), `hub link points to missing file: ${href}`);
 }
 

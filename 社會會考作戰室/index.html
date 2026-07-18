@@ -8,24 +8,34 @@
   <link rel="icon" href="../icon.svg">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../shared/subject-shell.css?v=20260718a">
 </head>
-<body>
+<body class="subject-shell subject-integrated subject-social">
   <a class="skip-link" href="#mainContent">跳到主要內容</a>
-  <header class="topbar">
-    <div class="brand">
-      <img src="../icon.svg" alt="" width="36" height="36">
-      <div>
-        <h1>社會科整合模考</h1>
-        <p>地理、歷史、公民｜70 分鐘</p>
-      </div>
-    </div>
-    <div class="top-actions">
-      <span id="networkStatus" class="status" role="status">連線中</span>
-      <button id="printButton" class="icon-button" type="button" title="列印考卷" aria-label="列印考卷">⎙</button>
-    </div>
-  </header>
-
-  <main id="mainContent">
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="主要導覽">
+      <a class="brand" href="#setupView">
+        <span class="brand-mark">社</span>
+        <span class="brand-copy"><strong>會考社會</strong><small>整合作戰室</small></span>
+      </a>
+      <nav class="shell-nav" aria-label="主要功能">
+        <a href="#setupView"><span>⌂</span>整合模考</a>
+        <a href="../地理會考作戰室/index.html"><span>理</span>地理複習</a>
+        <a href="../歷史會考作戰室/index.html"><span>史</span>歷史複習</a>
+        <a href="../公民會考作戰室/index.html"><span>公</span>公民複習</a>
+      </nav>
+      <div class="sidebar-note"><span class="status-dot"></span><div><strong>115 年規格</strong><small>54 題｜70 分鐘</small></div></div>
+    </aside>
+    <div class="main-column">
+      <header class="topbar">
+        <div class="breadcrumb"><span>會考社會作戰室</span><strong>整合模擬考</strong></div>
+        <div class="top-actions">
+          <span id="networkStatus" class="status" role="status">連線中</span>
+          <button id="printButton" class="icon-button" type="button" title="列印考卷" aria-label="列印考卷">⎙</button>
+          <button class="shell-primary" type="submit" form="setupForm">開始 70 分鐘模考</button>
+        </div>
+      </header>
+      <main id="mainContent">
     <section id="setupView" class="setup-band" aria-labelledby="setupTitle">
       <div class="setup-inner">
         <div>
@@ -89,7 +99,9 @@
         <div id="answerReview" class="answer-review"></div>
       </section>
     </section>
-  </main>
+      </main>
+    </div>
+  </div>
 
   <div id="liveRegion" class="sr-only" aria-live="polite"></div>
   <script type="module" src="app.js"></script>

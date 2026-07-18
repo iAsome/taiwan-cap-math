@@ -82,6 +82,7 @@ export async function buildGlobalFinalAuditEvidence(repoRoot = REPO_ROOT) {
   await mkdir(outputRoot, { recursive: true });
   await Promise.all([
     writeFile(path.join(outputRoot, "final-audit-records.json"), `${JSON.stringify({ records: merged.audits }, null, 2)}\n`),
+    writeFile(path.join(outputRoot, "student-visible-corpus.txt"), merged.corpus),
     writeFile(path.join(outputRoot, "student-visible-corpus-ranges.json"), `${JSON.stringify({ records: merged.ranges }, null, 2)}\n`),
   ]);
   return { subjects: subjectResults, global: globalResult };

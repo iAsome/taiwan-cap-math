@@ -8,21 +8,21 @@
   <title>生物會考作戰室</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="r4/ui/styles.css?v=biology-r4-1">
+  <link rel="stylesheet" href="../shared/subject-shell.css?v=20260718a">
 </head>
-<body>
+<body class="subject-shell subject-biology">
   <a class="skip-link" href="#mainContent">跳到主要內容</a>
-  <header class="topbar">
-    <a class="brand" href="?" aria-label="回到生物會考作戰室首頁">
-      <strong>生物會考作戰室</strong>
-      <span>第四學習階段</span>
-    </a>
-    <nav class="top-actions" aria-label="主要功能">
-      <button id="offlineButton" type="button">離線下載</button>
-      <button id="themeButton" type="button" aria-pressed="false">深色模式</button>
-    </nav>
-  </header>
   <div class="app-shell">
     <aside class="sidebar" aria-label="單元導覽">
+      <a class="brand" href="?" aria-label="回到生物會考作戰室首頁">
+        <span class="brand-mark">生</span>
+        <span class="brand-copy"><strong>會考生物</strong><small>作戰室</small></span>
+      </a>
+      <nav class="shell-nav" aria-label="主要功能">
+        <a href="?"><span>⌂</span>總覽</a>
+        <a href="?view=exam"><span>✎</span>全範圍練習</a>
+        <a href="?view=official"><span>◷</span>歷屆十年</a>
+      </nav>
       <div class="sidebar-heading">
         <p id="progressSummary">載入學習進度中</p>
         <progress id="progressBar" max="220" value="0">0 / 220</progress>
@@ -30,10 +30,19 @@
       <nav id="unitNavigation" aria-label="三十個生物單元"></nav>
       <a class="official-link" href="?view=official">歷屆自然科官方題本</a>
     </aside>
-    <main id="mainContent" tabindex="-1">
-      <div id="status" class="status" role="status" aria-live="polite">正在載入生物學習內容</div>
-      <div id="view"></div>
-    </main>
+    <div class="main-column">
+      <header class="topbar">
+        <div class="breadcrumb"><span>會考生物作戰室</span><strong>第四學習階段</strong></div>
+        <nav class="top-actions" aria-label="內容工具">
+          <button id="themeButton" type="button" aria-pressed="false">深色模式</button>
+          <button id="offlineButton" class="shell-primary" type="button">離線下載</button>
+        </nav>
+      </header>
+      <main id="mainContent" tabindex="-1">
+        <div id="status" class="status" role="status" aria-live="polite">正在載入生物學習內容</div>
+        <div id="view"></div>
+      </main>
+    </div>
   </div>
   <noscript>本作戰室需要 JavaScript 才能讀取靜態講義與題庫。歷屆官方 PDF 仍可由 official-data 資料夾取得。</noscript>
   <script type="module" src="r4/ui/app.js?v=biology-r4-1"></script>
