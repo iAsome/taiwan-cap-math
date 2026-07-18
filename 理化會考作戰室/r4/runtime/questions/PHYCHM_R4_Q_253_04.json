@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查翹翹板紀錄，哪項判讀正確？",
+  "stem": "僅比較左右兩邊的力大小，未計入力臂便判定轉動平衡，結果會錯判轉動效果。用使用合力矩為零判斷轉動平衡檢查這個做法，轉動效果應如何重判？",
   "options": [
+    "主張合力為零必然等於合力矩為零，忽略力的作用線位置",
+    "僅比較左右兩邊的力大小，未計入力臂便判定轉動平衡",
     "轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零",
-    "轉動平衡只需左右作用力大小相同，施力位置和力臂不重要",
-    "力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離",
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關"
+    "把順時針與逆時針力矩全部相加，並漏掉依轉動方向相抵"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零」。"
+      "isCorrect": false,
+      "reason": "誤以為合力為零必然等於合力矩為零，忽略力的作用線位置。轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零；方向未列入使用合力矩為零判斷轉動平衡時，轉動效果的力矩大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「轉動平衡只需左右作用力大小相同，施力位置和力臂不重要」不成立；轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零。"
+      "reason": "僅比較左右兩邊的力大小，未計入力臂便判定轉動平衡，結果會錯判轉動效果。轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零；照原做法會把轉動效果算錯或判反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離」不成立；力矩大小為力乘以作用線到轉軸的垂直距離；10 N 作用於 0.30 m 力臂產生 3.0 N·m。"
+      "isCorrect": true,
+      "reason": "轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零。合計列的方向為—，力矩為逆 6、順 6 N·m；甲列的方向為向下，力矩為6 N·m。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關」不成立；槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果。"
+      "reason": "把順時針與逆時針力矩全部相加，卻未依轉動方向相抵，結果會錯判轉動效果。轉動平衡比較的是帶方向的力矩總和，不要求左右各力大小逐一相等；轉動效果差異若未通過使用合力矩為零判斷轉動平衡對方向的控制，就不能只歸給力矩。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀",
+    "條件判斷",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "轉動平衡只需左右作用力大小相同，施力位置和力臂不重要",
-    "力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離",
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關"
+    "主張合力為零必然等於合力矩為零，忽略力的作用線位置",
+    "僅比較左右兩邊的力大小，未計入力臂便判定轉動平衡",
+    "把順時針與逆時針力矩全部相加，並漏掉依轉動方向相抵"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

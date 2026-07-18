@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組根據金屬塊鑑別下結論，哪項符合資料？",
+  "stem": "有人以為密度乘體積後仍應寫 g/cm³。如何反駁？",
   "options": [
-    "密度 7.8 g/cm³、體積 10 cm³ 的鐵塊質量為 78 g，使用 m＝ρV",
-    "1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖改變，數值不必變",
-    "體積是 135×2.7＝364.5 cm³，因為密度越大體積一定越大",
-    "石塊體積就是沒入後讀值 47.5 cm³，無須減去原有水量"
+    "乘法一定沒有單位",
+    "g/cm³ 就是質量單位",
+    "密度沒有單位",
+    "體積 cm³ 會與密度分母約掉，只剩 g"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「密度 7.8 g/cm³、體積 10 cm³ 的鐵塊質量為 78 g，使用 m＝ρV」。"
+      "isCorrect": false,
+      "reason": "物理乘法保留單位運算。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖…」不成立；1.20 g/cm³＝1200 kg/m³；質量和體積的換算倍率需一起納入。"
+      "reason": "g/cm³ 是密度單位。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「體積是 135×2.7＝364.5 cm³，因為密度越大體…」不成立；質量 135 g、密度 2.7 g/cm³ 的樣品體積為 50 cm³，使用 V＝m/ρ。"
+      "reason": "密度有組合單位。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「石塊體積就是沒入後讀值 47.5 cm³，無須減去原有水量」不成立；量筒水面由 35.0 mL 升到 47.5 mL，完全沒入的石塊體積是 12.5 cm³，且不…。"
+      "isCorrect": true,
+      "reason": "正確追蹤單位。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "主張評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖改變，數值不必變",
-    "體積是 135×2.7＝364.5 cm³，因為密度越大體積一定越大",
-    "石塊體積就是沒入後讀值 47.5 cm³，無須減去原有水量"
+    "乘法一定沒有單位",
+    "g/cm³ 就是質量單位",
+    "密度沒有單位"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-3",
       "AUTH-NATURAL-LC-CA-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

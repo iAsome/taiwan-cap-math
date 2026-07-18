@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "換成另一組吸放熱量測資料，哪項判讀仍合理？",
+  "stem": "比較『溶解吸熱』與『化學反應吸熱』時，何種資料最能區分兩者？",
   "options": [
-    "看到無色氣泡就能直接寫成二氧化碳，不需再作任何檢驗",
-    "反應前用一種方法、反應後用另一種方法測量，仍可直接比較性質",
-    "溶解或單純混合可造成溫度、顏色或外觀變化；只有產物證據才能排除這些假線索",
-    "兩物質一接觸就必然發生化學反應，不可能只是混合或溶解"
+    "只看固體是否全部消失",
+    "只確認兩組攪拌時間相同",
+    "只比較哪一組降溫幅度較大",
+    "是否出現可鑑定的新物質，而非只看溫度"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「看到無色氣泡就能直接寫成二氧化碳，不需再作任何檢驗」不成立；驗證氣體或沉澱要選用特定試驗並設對照，例如二氧化碳可以石灰水變濁作一項證據。"
+      "reason": "溶解也會讓固體肉眼消失，未證明身分改變。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「反應前用一種方法、反應後用另一種方法測量，仍可直接比較性質」不成立；比較反應前後性質時，應在同條件量測導電、pH、沉澱或氣體等指標，並設未反應對照。"
+      "reason": "攪拌時間是控制條件，不能直接辨認產物。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「溶解或單純混合可造成溫度、顏色或外觀變化；只有產物證據才能排除這些假線索」。"
+      "isCorrect": false,
+      "reason": "兩種過程都可能有大幅降溫，幅度不能分類。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「兩物質一接觸就必然發生化學反應，不可能只是混合或溶解」不成立；溶解或單純混合可造成溫度、顏色或外觀變化；只有產物證據才能排除這些假線索。"
+      "isCorrect": true,
+      "reason": "新物質證據能區分過程性質。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "證據鑑別"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "看到無色氣泡就能直接寫成二氧化碳，不需再作任何檢驗",
-    "反應前用一種方法、反應後用另一種方法測量，仍可直接比較性質",
-    "兩物質一接觸就必然發生化學反應，不可能只是混合或溶解"
+    "只看固體是否全部消失",
+    "只確認兩組攪拌時間相同",
+    "只比較哪一組降溫幅度較大"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-2",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

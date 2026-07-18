@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "限量反應物出現四種說法，哪項有理化概念支持？",
+  "stem": "某列A初始6 g、B初始12 g，反應後B剩3 g。消耗比為何？",
   "options": [
-    "只要數字大小相合，質量比可直接與體積比或粒子數比互換",
-    "係數 2：1 在任何情況都直接等於質量 2 g：1 g，與物質組成無關",
-    "可以該恆定比來推算同反應資料",
-    "只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比"
+    "3：2",
+    "1：2",
+    "6：12",
+    "2：3"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要數字大小相合，質量比可直接與體積比或粒子數比互換」不成立；使用比例前要確認兩邊都是質量、體積或粒子數，並先統一 g、kg、mL 等單位。"
+      "reason": "順序反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「係數 2：1 在任何情況都直接等於質量 2 g：1 g，與…」不成立；反應係數表示粒子數比；要轉成質量比，必須再乘以各物質的相對分子量。"
+      "reason": "使用初始B。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「一系列實驗中若 A、B 剛好完全反應的消耗質量一直維持 2：3，可以該恆定比來推算同反應資料」。"
+      "isCorrect": false,
+      "reason": "未扣剩餘且非最簡。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比」不成立；一系列實驗中若 A、B 剛好完全反應的消耗質量一直維持 2：3，可以該恆定比來推算同反應資料。"
+      "isCorrect": true,
+      "reason": "A消耗6，B消耗9，約2：3。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "資料轉換"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要數字大小相合，質量比可直接與體積比或粒子數比互換",
-    "係數 2：1 在任何情況都直接等於質量 2 g：1 g，與物質組成無關",
-    "只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比"
+    "3：2",
+    "1：2",
+    "6：12"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-2",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

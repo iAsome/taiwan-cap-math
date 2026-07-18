@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於可聽聲超聲波與人耳限制，哪項結論符合題給條件？",
+  "stem": "500 Hz 與 16 kHz 訊號都被受試者聽見。哪項敘述合理？",
   "options": [
-    "真空中的聲音傳得最快，因為沒有空氣阻力",
-    "人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射",
-    "音調較高的聲音一定在空氣中傳得較快，因為頻率較大",
-    "頻率、振幅與波形都只決定音量大小，與音調和音色無關"
+    "16 kHz 必為超聲波",
+    "500 Hz 屬次聲波",
+    "兩者聲速必因頻率不同而不同",
+    "兩者都落在該受試者可聽範圍內"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「真空中的聲音傳得最快，因為沒有空氣阻力」不成立；聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質。"
+      "reason": "受試者已聽見 16 kHz，且它低於常用 20 kHz 上限。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射」。"
+      "isCorrect": false,
+      "reason": "500 Hz 遠高於低頻下限。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「音調較高的聲音一定在空氣中傳得較快，因為頻率較大」不成立；聲速由介質與溫度等條件決定；在同一介質同條件下，高低音的聲速近似相同。"
+      "reason": "同介質聲速近似相同。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「頻率、振幅與波形都只決定音量大小，與音調和音色無關」不成立；頻率主要影響音調，振幅與響度有關，波形特徵與音色有關，三者不可互換。"
+      "isCorrect": true,
+      "reason": "聽覺回報與頻率數值共同支持兩者可聽。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "條件判斷",
     "分析"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "真空中的聲音傳得最快，因為沒有空氣阻力",
-    "音調較高的聲音一定在空氣中傳得較快，因為頻率較大",
-    "頻率、振幅與波形都只決定音量大小，與音調和音色無關"
+    "16 kHz 必為超聲波",
+    "500 Hz 屬次聲波",
+    "兩者聲速必因頻率不同而不同"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

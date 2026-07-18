@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組反應式配平資料，哪項判讀仍合理？",
+  "stem": "密閉袋反應前 100.24 g；反應後第一次 100.18 g，發現袋外沾有液滴，擦乾後重測 100.24 g。哪項判斷最好？",
   "options": [
-    "只要反應式兩側的分子個數相同，就不必再檢查各元素原子數",
-    "H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標",
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2",
-    "因為原子只重新排列"
+    "應採第一次數據，因數字較小",
+    "第一次差值來自量測外部污染，不是系統反應",
+    "擦乾會違反質量守恆",
+    "液滴證明袋內產生新質量"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要反應式兩側的分子個數相同，就不必再檢查各元素原子數」不成立；檢查反應式時要逐種元素計算左右原子總數，每一種都相等才是已配平。"
+      "reason": "不能只因數值小就採用。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標」不成立；2H₂＋O₂→2H₂O 以係數 2、1、2 使氫、氧原子在兩側分別都是 4、2 個。"
+      "isCorrect": true,
+      "reason": "外部沾液改變天平上量測物，重測排除了干擾。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「配平係數 2：1：2 直接表示三種物質的質量比也是 2：1…」不成立；2H₂＋O₂→2H₂O 表示氫分子、氧分子與水分子的粒子數比為 2：1：2。"
+      "reason": "清除非系統污染是合理修正。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「密閉袋內的反應前後，所有反應物與生成物的總質量相等，因為原子只重新排列」。"
+      "isCorrect": false,
+      "reason": "外壁液滴不是袋內生成的新質量。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "異常資料分析"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要反應式兩側的分子個數相同，就不必再檢查各元素原子數",
-    "H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標",
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2"
+    "應採第一次數據，因數字較小",
+    "擦乾會違反質量守恆",
+    "液滴證明袋內產生新質量"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告討論系統性偏差與隨機變動，哪項敘述正確？",
+  "stem": "天平未放物體時固定顯示 1.5 g，這最可能造成？",
   "options": [
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失",
-    "只要答案含有數字，就可把它當成直接測量的基本物理量",
-    "儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺",
-    "天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動"
+    "每次讀值同方向偏高",
+    "質量單位消失",
+    "每次讀值會在真值上下完全隨機分散",
+    "樣品質量自動減半"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要重複次數足夠多，未歸零造成的固定偏差就會自動消失」不成立；天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動。"
+      "isCorrect": true,
+      "reason": "固定正零點加入每筆。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要答案含有數字，就可把它當成直接測量的基本物理量」不成立；長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得。"
+      "reason": "顯示仍可帶 g。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺」不成立；量約 12 cm 的鉛筆適合用毫米刻度直尺；儀器量程要大於待測量，最小刻度要能分辨所需差異。"
+      "reason": "型態不是無方向波動。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動」。"
+      "isCorrect": false,
+      "reason": "零點不會使質量減半。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "辨認",
-    "概念理解"
+    "辨認"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失",
-    "只要答案含有數字，就可把它當成直接測量的基本物理量",
-    "儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺"
+    "質量單位消失",
+    "每次讀值會在真值上下完全隨機分散",
+    "樣品質量自動減半"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

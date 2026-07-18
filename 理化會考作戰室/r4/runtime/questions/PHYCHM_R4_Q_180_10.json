@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": null,
-  "stem": "學生根據平面鏡成像下結論，哪項符合資料？",
+  "stem": "兩面平行鏡使光依序反射後，哪種敘述必須以作圖確認而不能只靠反射次數？",
   "options": [
-    "入射角與反射角都要從鏡面量起，因此兩者和法線無關",
-    "萬花筒、潛望鏡等裝置利用光在多個鏡面依反射定律逐次改變方向",
-    "平面鏡像是實際光線在鏡後交會的實像，可把紙屏放在鏡後接到",
-    "物體遠離平面鏡時像會縮小，而像距永遠是物距的一半"
+    "最後出射方向與位置",
+    "光仍會在介質中傳播",
+    "每次局部滿足反射定律",
+    "鏡面能反射部分光"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「入射角與反射角都要從鏡面量起，因此兩者和法線無關」不成立；反射定律規定入射角等於反射角，兩角均由光線與法線之間量得。"
+      "isCorrect": true,
+      "reason": "出射方向與偏移量由入射角和兩鏡幾何共同決定。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「萬花筒、潛望鏡等裝置利用光在多個鏡面依反射定律逐次改變方向」。"
+      "isCorrect": false,
+      "reason": "光未被完全吸收時仍可傳。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「平面鏡像是實際光線在鏡後交會的實像，可把紙屏放在鏡後接到」不成立；平面鏡成像位置可將兩條反射光線反向延長至鏡後交點，得到無法投屏的虛像。"
+      "reason": "局部定律是作圖規則本身。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「物體遠離平面鏡時像會縮小，而像距永遠是物距的一半」不成立；平面鏡的像與物等大，像距等於物距，像與物對鏡面對稱。"
+      "reason": "鏡面反射是裝置前提。"
     }
   ],
   "difficulty": "advanced",
@@ -47,16 +47,16 @@
     "主張評估",
     "證據評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "入射角與反射角都要從鏡面量起，因此兩者和法線無關",
-    "平面鏡像是實際光線在鏡後交會的實像，可把紙屏放在鏡後接到",
-    "物體遠離平面鏡時像會縮小，而像距永遠是物距的一半"
+    "光仍會在介質中傳播",
+    "每次局部滿足反射定律",
+    "鏡面能反射部分光"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-6",
       "AUTH-NATURAL-LC-KA-4-7",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

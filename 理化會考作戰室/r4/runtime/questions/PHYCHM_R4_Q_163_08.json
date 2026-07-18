@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "報告整理波形比較資料，哪項敘述合理？",
+  "stem": "波進入另一介質後速度變為原來一半，波源頻率不變。波長如何改變？",
   "options": [
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "計算前要統一單位",
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端"
+    "變為原來兩倍",
+    "此時物體保持不變",
+    "變為原來一半",
+    "變為原來四分之一"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關」不成立；橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行。"
+      "reason": "頻率固定時波長與波速同方向改變。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「任何一張瞬間位置波形圖都可只看波峰數直接得到頻率」不成立；比較波形圖前要讀軸；位置圖可直接量波長與振幅，頻率則還需時間資訊。"
+      "reason": "跨介質後波速已改變，λ＝v/f 也會改變。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「頻率 5.0 Hz、波長 0.80 m 的波速為 v＝fλ＝4.0 m/s；計算前要統一單位」。"
+      "reason": "λ′/λ＝(v′/f)/(v/f)＝v′/v＝1/2。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「繩波向右傳時，繩上每一個粒子都從左端一路移到右端」不成立；波將擾動與能量向前傳，介質粒子多在平衡位置附近振動，不隨波整體移到遠處。"
+      "reason": "波速只減半，沒有平方關係。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "關係應用",
     "多步驟推理"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端"
+    "變為原來兩倍",
+    "此時物體保持不變",
+    "變為原來四分之一"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

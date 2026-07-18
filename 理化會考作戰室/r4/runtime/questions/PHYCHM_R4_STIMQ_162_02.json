@@ -11,50 +11,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "PHYCHM_R4_STIM_162",
-  "stem": "檢查表中關於週期與頻率判斷振動快慢的說法，哪項判讀正確？",
+  "stem": "乙振子的週期為多少？",
   "options": [
-    "週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T",
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端",
-    "若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動"
+    "0.125 s",
+    "0.50 s",
+    "8.0 s",
+    "1.0 s"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T」。"
+      "isCorrect": false,
+      "reason": "0.125 是 1/8，卻忽略 8 次共用 8 s。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「任何一張瞬間位置波形圖都可只看波峰數直接得到頻率」不成立；比較波形圖前要讀軸；位置圖可直接量波長與振幅，頻率則還需時間資訊。"
+      "reason": "乙每次不是半秒，而是 8/8＝1 s。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「繩波向右傳時，繩上每一個粒子都從左端一路移到右端」不成立；波將擾動與能量向前傳，介質粒子多在平衡位置附近振動，不隨波整體移到遠處。"
+      "reason": "8.0 s 是八次振動的總時間。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動」不成立；在介質波模型中，標記粒子應在平衡位置兩側往復運動；波形則表示擾動依序傳開。"
+      "isCorrect": true,
+      "reason": "T乙＝8.0 s/8＝1.0 s。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "資料判讀"
+    "資料分析"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端",
-    "若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動"
+    "0.125 s",
+    "0.50 s",
+    "8.0 s"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -62,20 +62,6 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_002"
   ]

@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理木塊漂浮資料，哪項敘述合理？",
+  "stem": "把甲的 80 g 除以 100 cm³ 算成 1.25 g/cm³，因而誤判下沉。按由平均密度判斷浮沉狀態檢查質量與外形體積時，哪一步先做？",
   "options": [
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水",
-    "物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要",
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關"
+    "判斷船等中空物須用含空腔的整體平均密度，不能只用材料本身密度",
+    "主張物體密度等於液體密度時一定浮在水面，不能在水中懸浮",
+    "僅憑造船材料密度大於水，就斷定中空船體一定下沉",
+    "把計算平均密度時只用材料實心體積，漏掉中空物外形所排開的體積"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水」不成立；船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉。"
+      "isCorrect": true,
+      "reason": "判斷船等中空物須用含空腔的整體平均密度，不能只用材料本身密度。丁（中空）列的質量為600 g，外形體積為800 cm³；甲列的質量為80 g，外形體積為100 cm³。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉」。"
+      "isCorrect": false,
+      "reason": "誤以為物體密度等於液體密度時一定浮在水面，不能在水中懸浮。物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉；質量未列入由平均密度判斷浮沉狀態時，放入 1.00 g/cm³ 水中的外形體積大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「浮沉只由物體總質量大小決定，體積與平均密度完全不重要」不成立；物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉。"
+      "reason": "僅憑造船材料密度大於水，就斷定中空船體一定下沉。物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉；照原做法會把放入 1.00 g/cm³ 水中算錯或判反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關」不成立；沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力。"
+      "reason": "解題時誤把計算平均密度時只用材料實心體積，漏掉中空物外形所排開的體積。判斷船等中空物須用含空腔的整體平均密度，不能只用材料本身密度；放入 1.00 g/cm³ 水中差異若未通過由平均密度判斷浮沉狀態對質量的控制，就不能只歸給外形體積。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要",
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關"
+    "主張物體密度等於液體密度時一定浮在水面，不能在水中懸浮",
+    "僅憑造船材料密度大於水，就斷定中空船體一定下沉",
+    "把計算平均密度時只用材料實心體積，漏掉中空物外形所排開的體積"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": "PHYCHM_R4_STIM_174",
-  "stem": "根據噪音暴露表中紀錄，哪項結論最合理？",
+  "stem": "表中哪項活動的聲音強度級最高？",
   "options": [
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定",
-    "真空中的聲音傳得最快，因為沒有空氣阻力",
-    "噪音風險同時與聲音強度級和暴露時間有關；較大聲音的安全暴露時間應更短"
+    "圖書整理 55 dB",
+    "管樂排練 88 dB",
+    "汽球爆裂 110 dB",
+    "割草機旁 96 dB"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險」不成立；噪音風險同時與聲音強度級和暴露時間有關；較大聲音的安全暴露時間應更短。"
+      "reason": "55 dB 是最低值。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定」不成立；音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止。"
+      "reason": "88 dB 低於 110 dB。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「真空中的聲音傳得最快，因為沒有空氣阻力」不成立；聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質。"
+      "isCorrect": true,
+      "reason": "四列最大聲級數值為 110 dB。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「噪音風險同時與聲音強度級和暴露時間有關；較大聲音的安全暴露時間應更短」。"
+      "isCorrect": false,
+      "reason": "96 dB 仍低於 110 dB。"
     }
   ],
   "difficulty": "standard",
@@ -48,14 +48,14 @@
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定",
-    "真空中的聲音傳得最快，因為沒有空氣阻力"
+    "圖書整理 55 dB",
+    "管樂排練 88 dB",
+    "割草機旁 96 dB"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -64,20 +64,6 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_003"
   ]

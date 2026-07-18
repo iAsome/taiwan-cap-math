@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解常見化合物名稱配對化學式，哪項修正合理？",
+  "stem": "一氧化碳與二氧化碳的式分別為何？",
   "options": [
-    "二氧化碳可寫成 Co₂，因為碳 C 與鈷 Co 的符號可互換",
-    "元素符號的大小寫只是排版選擇，Co、CO 與 co 意義完全相同",
-    "水是 H₂O、二氧化碳是 CO₂、氯化鈉是 NaCl；配對時要同時核對元素種類與比例",
-    "H₂SO₄ 含 2＋1＋4＝7 種元素，因為每個原子都算一種"
+    "CO、CO₂",
+    "CO₂、CO",
+    "C₂O、CO₂",
+    "Co、CO"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「二氧化碳可寫成 Co₂，因為碳 C 與鈷 Co 的符號可互換」不成立；水是 H₂O、二氧化碳是 CO₂、氯化鈉是 NaCl；配對時要同時核對元素種類與比例。"
+      "isCorrect": true,
+      "reason": "氧下標 1 與 2。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「元素符號的大小寫只是排版選擇，Co、CO 與 co 意義完…」不成立；元素符號第一個字母大寫、第二個字母小寫，例如 Co 是鈷而 CO 是由碳與氧組成的化學式。"
+      "reason": "順序顛倒。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「水是 H₂O、二氧化碳是 CO₂、氯化鈉是 NaCl；配對時要同時核對元素種類與比例」。"
+      "isCorrect": false,
+      "reason": "一氧化碳不是 C₂O。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「H₂SO₄ 含 2＋1＋4＝7 種元素，因為每個原子都算一種」不成立；H₂SO₄ 含氫、硫、氧三種元素；元素種類由不同元素符號判定，不由下標大小判定。"
+      "reason": "Co 是鈷。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "相近名稱比較"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "二氧化碳可寫成 Co₂，因為碳 C 與鈷 Co 的符號可互換",
-    "元素符號的大小寫只是排版選擇，Co、CO 與 co 意義完全相同",
-    "H₂SO₄ 含 2＋1＋4＝7 種元素，因為每個原子都算一種"
+    "CO₂、CO",
+    "C₂O、CO₂",
+    "Co、CO"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AA-4-5",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

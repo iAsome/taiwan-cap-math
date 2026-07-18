@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據反應式配平紀錄，哪項判讀合理？",
+  "stem": "開口容器反應前 75.2 g、反應後 73.0 g，且只有氣體逸出。逸出多少克氣體？",
   "options": [
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2",
-    "密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變",
-    "反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查",
-    "把逸出氣體也納入系統才符合守恆"
+    "148.2 g",
+    "73.0 g",
+    "2.2 g",
+    "75.2 g"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「配平係數 2：1：2 直接表示三種物質的質量比也是 2：1…」不成立；2H₂＋O₂→2H₂O 表示氫分子、氧分子與水分子的粒子數比為 2：1：2。"
+      "reason": "相加不表示逸出量。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變」不成立；質量守恆不要求反應前後總體積相等；氣體生成、溫度與壓力都可使體積改變。"
+      "reason": "73.0 g 是殘留系統。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查」不成立；粒子模型驗證配平時，要對每種顏色或符號的原子逐個計數，不是只數分子團數。"
+      "isCorrect": true,
+      "reason": "75.2−73.0＝2.2 g。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「開放容器產生氣體並逸出時，秤得質量可減少；把逸出氣體也納入系統才符合守恆」。"
+      "isCorrect": false,
+      "reason": "75.2 g 是反應前總讀值。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
-    "概念理解"
+    "差值計算"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2",
-    "密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變",
-    "反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查"
+    "148.2 g",
+    "73.0 g",
+    "75.2 g"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

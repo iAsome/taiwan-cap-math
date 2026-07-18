@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於聲音強度與暴露時間評估噪音風險，哪項結論符合題給條件？",
+  "stem": "同一割草機旁，工作者把距離增加並縮短停留時間。這兩項措施的共同目的為何？",
   "options": [
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定",
-    "噪音風險同時與聲音強度級和暴露時間有關",
-    "真空中的聲音傳得最快，因為沒有空氣阻力"
+    "降低耳朵接收的聲音與累計暴露",
+    "提高聲源頻率",
+    "使空氣聲速變為零",
+    "讓分貝刻度改成線性"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險」不成立；噪音風險同時與聲音強度級和暴露時間有關；較大聲音的安全暴露時間應更短。"
+      "isCorrect": true,
+      "reason": "遠離聲源通常降低接收聲級，縮短時間則降低累計暴露。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定」不成立；音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止。"
+      "reason": "距離與時間不必改變機器頻率。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「噪音風險同時與聲音強度級和暴露時間有關；較大聲音的安全暴露時間應更短」。"
+      "isCorrect": false,
+      "reason": "空氣仍可傳聲。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「真空中的聲音傳得最快，因為沒有空氣阻力」不成立；聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質。"
+      "reason": "措施不改變刻度定義。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "條件判斷",
     "分析"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定",
-    "真空中的聲音傳得最快，因為沒有空氣阻力"
+    "提高聲源頻率",
+    "使空氣聲速變為零",
+    "讓分貝刻度改成線性"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

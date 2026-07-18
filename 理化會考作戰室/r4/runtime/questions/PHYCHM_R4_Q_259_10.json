@@ -10,70 +10,56 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組根據摩擦起電下結論，哪項符合資料？",
+  "stem": "誤以為摩擦後兩物體的總電量不再守恆，因為其中一物帶正電，結果會錯判摩擦後。用外界列的摩擦前隔絕檢驗，應改採哪個判準？",
   "options": [
+    "系統與外界有電荷交換時仍主張兩物體一定帶等量異號電",
     "兩個原本中性且與外界絕緣的不同材料摩擦時，電子可由一物轉移至另一物，使兩者帶等量異號電荷",
-    "接地線的功能是在物體上累積更多靜電，以增加火花能量",
-    "摩擦生電是摩擦動作創造大量正負電荷，原先物體中沒有帶電粒子",
-    "帶正電表示物體新增許多質子且失去所有電子，電中性則是完全沒有電荷"
+    "把玻璃棒失去 3 單位電子後被判成 −3，顛倒電子得失與電性",
+    "主張摩擦後兩物體的總電量不再守恆，因為其中一物帶正電"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「兩個原本中性且與外界絕緣的不同材料摩擦時，電子可由一物轉移至另一物，使兩者帶等量異號電荷」。"
+      "isCorrect": false,
+      "reason": "系統與外界有電荷交換時仍主張兩物體一定帶等量異號電。結果限於與外界絕緣的系統；摩擦後差異若未通過說明摩擦可使物體帶靜電對摩擦前的控制，就不能只歸給電子轉移。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「接地線的功能是在物體上累積更多靜電，以增加火花能量」不成立；接地提供電荷與大地間移動的路徑，可減少靜電累積；在易燃環境更需防止靜電火花。"
+      "isCorrect": true,
+      "reason": "兩個原本中性且與外界絕緣的不同材料摩擦時，電子可由一物轉移至另一物，使兩者帶等量異號電荷。外界列的摩擦前為隔絕，電子轉移為沒有交換；絲布列的摩擦前為中性，電子轉移為得到 3 單位電子。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「摩擦生電是摩擦動作創造大量正負電荷，原先物體中沒有帶電粒子」不成立；兩個原本中性且與外界絕緣的不同材料摩擦時，電子可由一物轉移至另一物，使兩者帶等量異號電荷。"
+      "reason": "解題時誤把玻璃棒失去 3 單位電子後被判成 −3，顛倒電子得失與電性。電子由玻璃棒移到絲布，兩者帶等量異號電，系統總電荷仍為零；電子轉移的數值若未依摩擦前核對，會使摩擦後無法通過說明摩擦可使物體帶靜電檢查。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「帶正電表示物體新增許多質子且失去所有電子，電中性則是完全沒…」不成立；物體失去部分電子帶正電，得到額外電子帶負電，正負電量相等時呈電中性。"
+      "reason": "誤以為摩擦後兩物體的總電量不再守恆，因為其中一物帶正電，結果會錯判摩擦後。兩個原本中性且與外界絕緣的不同材料摩擦時，電子可由一物轉移至另一物，使兩者帶等量異號電荷；摩擦前未列入說明摩擦可使物體帶靜電時，摩擦後的電子轉移大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "接地線的功能是在物體上累積更多靜電，以增加火花能量",
-    "摩擦生電是摩擦動作創造大量正負電荷，原先物體中沒有帶電粒子",
-    "帶正電表示物體新增許多質子且失去所有電子，電中性則是完全沒有電荷"
+    "系統與外界有電荷交換時仍主張兩物體一定帶等量異號電",
+    "把玻璃棒失去 3 單位電子後被判成 −3，顛倒電子得失與電性",
+    "主張摩擦後兩物體的總電量不再守恆，因為其中一物帶正電"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KC-4-1",
       "AUTH-NATURAL-LC-KC-4-2",
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "整理手搖發電資料後，哪項說明正確？",
+  "stem": "甲：輸送功率100 kW、電壓1 kV、相同線阻下 I²R 比10000。輸送功率與電壓須依哪項定律才能說明相同線阻下 I²R 比？",
   "options": [
-    "電動機是靠轉動線圈自動產生電能，它的主要功能和發電機完全相同",
-    "只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流",
-    "改變電壓以利輸電",
-    "發電機和電動機都只將電能轉成熱能，與機械能無關"
+    "變壓器以交流造成變動磁場，改變電壓以利輸電",
+    "把100 kW 以 100 kV 輸送被算成 100 A，而不是 1 A",
+    "主張變壓器升高電壓也會無限增加輸出功率",
+    "主張提高輸電電壓會在同功率下提高電流，因此線損更大"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「電動機是靠轉動線圈自動產生電能，它的主要功能和發電機完全相同」不成立；電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能。"
+      "isCorrect": true,
+      "reason": "變壓器以交流造成變動磁場，改變電壓以利輸電。丙列的輸送功率為100 kW，電壓為100 kV；變壓器輸入列的輸送功率為交流，電壓為依匝數調整。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流」不成立；穿過線圈的磁通量發生變化時可產生感應電動勢；電路閉合時才會有感應電流。"
+      "reason": "解題時誤把100 kW 以 100 kV 輸送被算成 100 A，而不是 1 A。同功率提高電壓可降低電流，使 I²R 線損大幅減少；電壓的數值若未依輸送功率核對，會使相同線阻下 I²R 比無法通過說明變壓與電力輸送的基本目的檢查。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「變壓器以交流造成變動磁場，改變電壓以利輸電；遠距離高電壓可在同功率下降低電流與線路損耗」。"
+      "isCorrect": false,
+      "reason": "誤以為變壓器升高電壓也會無限增加輸出功率。變壓器以交流造成變動磁場，改變電壓以利輸電；輸送功率未列入說明變壓與電力輸送的基本目的時，相同線阻下 I²R 比的電壓大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「發電機和電動機都只將電能轉成熱能，與機械能無關」不成立；發電機主要將機械能轉電能，電動機主要將電能轉機械能，兩者能量流向相反。"
+      "reason": "誤以為提高輸電電壓會在同功率下提高電流，因此線損更大。變壓器以交流造成變動磁場，改變電壓以利輸電；照原做法會把相同線阻下 I²R 比算錯或判反。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "辨認",
+    "概念理解"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電動機是靠轉動線圈自動產生電能，它的主要功能和發電機完全相同",
-    "只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流",
-    "發電機和電動機都只將電能轉成熱能，與機械能無關"
+    "把100 kW 以 100 kV 輸送被算成 100 A，而不是 1 A",
+    "主張變壓器升高電壓也會無限增加輸出功率",
+    "主張提高輸電電壓會在同功率下提高電流，因此線損更大"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-KC-4-4",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

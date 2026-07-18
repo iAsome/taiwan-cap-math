@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解位置時間圖斜率比較速度，哪項修正合理？",
+  "stem": "某圖線斜率由陡變緩且保持正值，物體運動如何？",
   "options": [
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸",
-    "斜率絕對值較大表示速度大小較大",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快",
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑"
+    "仍向正方向，但速率變小",
+    "方向反轉且速率變大",
+    "此時物體保持相同速度",
+    "立刻停在原點"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸」不成立；位置—時間圖的線形描述位置如何隨時間變化，不是物體在空間中的軌跡外觀。"
+      "isCorrect": true,
+      "reason": "正斜率表示正向，斜率絕對值減小表示變慢。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「位置—時間圖的斜率為位置變化除以時間變化；斜率絕對值較大表示速度大小較大」。"
+      "isCorrect": false,
+      "reason": "方向反轉且速率變大不成立。正斜率表示正向，斜率絕對值減小表示變慢。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快」不成立；位置—時間圖的斜率為位置變化除以時間變化；斜率絕對值較大表示速度大小較大。"
+      "reason": "此時物體保持相同速度不成立。正斜率表示正向，斜率絕對值減小表示變慢。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑」不成立；位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置。"
+      "reason": "立刻停在原點不成立。正斜率表示正向，斜率絕對值減小表示變慢。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快",
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑"
+    "方向反轉且速率變大",
+    "此時物體保持相同速度",
+    "立刻停在原點"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

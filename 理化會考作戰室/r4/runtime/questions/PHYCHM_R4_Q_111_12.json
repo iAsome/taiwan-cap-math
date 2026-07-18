@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估酸與金屬報告時，哪項說明正確？",
+  "stem": "使用酸性除垢劑後再用其他產品前，較安全做法是？",
   "options": [
-    "一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識溶液名稱",
-    "pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗",
-    "氫氧化鈉可用於特定清潔",
-    "任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性"
+    "立刻混入含氯漂白劑可把殘留酸完全消除",
+    "密閉空間混合",
+    "不讀任何警示",
+    "依標示充分沖洗並保持通風"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識…」不成立；廣用指示劑的顏色應對照色階判讀 pH 範圍，只能估計區間，不能單憑顏色確定化學身分。"
+      "reason": "可能產毒氣。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗」不成立；pH 計使用前要依規範校正，電極清洗後輕吸水分，不把測過的溶液倒回原瓶。"
+      "reason": "通風不足更危險。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「醋可用於某些水垢處理，氫氧化鈉可用於特定清潔；但酸鹼均可腐蝕，要依標示防護」。"
+      "isCorrect": false,
+      "reason": "應讀標示。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性」不成立；酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體。"
+      "isCorrect": true,
+      "reason": "減少殘留與暴露。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "操作規劃"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識溶液名稱",
-    "pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗",
-    "任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性"
+    "立刻混入含氯漂白劑可把殘留酸完全消除",
+    "密閉空間混合",
+    "不讀任何警示"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

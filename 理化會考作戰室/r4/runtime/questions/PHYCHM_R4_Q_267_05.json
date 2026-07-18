@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於電流電壓與電阻概念，哪項結論符合題給條件？",
+  "stem": "並列電阻與錯誤紀錄，兩者物理意義是電壓與電流比值、把電壓寫成電流，數值是12、6.0。套用區分電流電壓與電阻概念到這兩列，哪項物理意義條件必須保留？",
   "options": [
-    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓",
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少",
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "電阻描述元件對電流的關係與阻礙"
+    "解題時將電流、電壓與電阻視為同一物理量，只因它們都和電路有關",
+    "數值同為 6.0 就互換 A 與 V，並漏掉核對量測意義和儀器接法",
+    "解題時將 6.0 V 記成 6.0 A，卻仍稱為元件兩端的電壓",
+    "數值相同也不能互換名稱與單位"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「電阻為 I/V＝0.083 Ω，因為電流應除以電壓」不成立；某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω。"
+      "reason": "解題時錯將電流、電壓與電阻視為同一物理量，只因它們都和電路有關。電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙；照原做法會把單位算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少」不成立；串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和。"
+      "reason": "數值同為 6.0 就互換 A 與 V，卻未核對量測意義和儀器接法，結果會錯判單位。數值相同也不能互換名稱與單位；單位差異若未通過區分電流電壓與電阻概念對物理意義的控制，就不能只歸給數值。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆」不成立；並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。"
+      "reason": "解題時錯將 6.0 V 記成 6.0 A，卻仍稱為元件兩端的電壓，結果會錯判單位。前三列物理意義與單位相符；數值的數值若未依物理意義核對，會使單位無法通過區分電流電壓與電阻概念檢查。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙」。"
+      "reason": "數值相同也不能互換名稱與單位。電流列的物理意義為每秒通過截面的電荷量，數值為0.50；電壓列的物理意義為每單位電荷能量差，數值為6.0。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "條件判斷",
-    "分析"
+    "應用"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓",
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少",
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆"
+    "解題時將電流、電壓與電阻視為同一物理量，只因它們都和電路有關",
+    "數值同為 6.0 就互換 A 與 V，並漏掉核對量測意義和儀器接法",
+    "解題時將 6.0 V 記成 6.0 A，卻仍稱為元件兩端的電壓"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

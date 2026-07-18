@@ -49,51 +49,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於能源系統、效率與證據決策中的現象，哪項結論符合題給條件？",
+  "stem": "從儲存改成終端設備時，進入能量由399 kWh變為359 kWh，離開至下一段由359 kWh變為287 kWh 有用輸出。這兩列若依追蹤能源由來源轉換輸送到使用的過程比較，還要注意哪個離開至下一段邊界？",
   "options": [
-    "只要有一張圖表趨勢符合預期，就可忽略實驗方法、模型限制與其他來源",
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性",
-    "能源系統應從一次能源開始",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統"
+    "僅從插座端開始算能源效率",
+    "把各階段使用不同期間或系統邊界，仍直接把能量數值串接",
+    "各段數據須採相同系統邊界與期間",
+    "解題時將 1000 kWh 發電輸入到 287 kWh 有用輸出判成完全無損失"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要有一張圖表趨勢符合預期，就可忽略實驗方法、模型限制與其…」不成立；形成科學解釋時要互相印證實驗結果、圖表趨勢、模型機制與可追溯資料，並區分相關、因果與不確定。"
+      "reason": "僅從插座端開始算能源效率，完全漏掉發電、輸電與儲存損失。能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式；照原做法會把本段損失算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標…」不成立；可檢驗的節能決策應寫明基準用能、具體措施、量測期間、成功指標與氣溫、使用人數等不確定因素。"
+      "reason": "解題時誤把各階段使用不同期間或系統邊界，仍直接把能量數值串接。各段數據須採相同系統邊界與期間；本段損失差異若未通過追蹤能源由來源轉換輸送到使用的過程對進入能量的控制，就不能只歸給離開至下一段。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式」。"
+      "reason": "各段數據須採相同系統邊界與期間。發電轉換列的進入能量為1000 kWh，離開至下一段為420 kWh；輸電列的進入能量為420 kWh，離開至下一段為399 kWh。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源…」不成立；能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式。"
+      "reason": "解題時錯將 1000 kWh 發電輸入到 287 kWh 有用輸出判成完全無損失。從一次能源到終端有用輸出需追蹤每段，總有用比例為 287÷1000＝28.7%；離開至下一段的數值若未依進入能量核對，會使本段損失無法通過追蹤能源由來源轉換輸送到使用的過程檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "條件判斷",
-    "分析"
+    "應用"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要有一張圖表趨勢符合預期，就可忽略實驗方法、模型限制與其他來源",
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統"
+    "僅從插座端開始算能源效率",
+    "把各階段使用不同期間或系統邊界，仍直接把能量數值串接",
+    "解題時將 1000 kWh 發電輸入到 287 kWh 有用輸出判成完全無損失"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-INA-4-1",
       "AUTH-NATURAL-LC-INA-4-2",
@@ -139,19 +139,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

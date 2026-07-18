@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查轉彎運動紀錄，哪項判讀正確？",
+  "stem": "合力固定時，增加物體質量會如何影響加速度？",
   "options": [
-    "加速度只要是負值就一定減速，只要是正值就一定加速",
-    "物體質量越大，在相同合力下速度改變必然越快",
-    "質量較大者速度改變較慢",
-    "加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度"
+    "物體的加速度增大",
+    "物體的加速度不變",
+    "加速度減小",
+    "物體的加速度方向反轉"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「加速度只要是負值就一定減速，只要是正值就一定加速」不成立；加速度與速度同向時快慢增加，反向時快慢減少；加速度為負不代表一定減速。"
+      "reason": "物體的加速度增大不成立。a=F/m，分母增加使加速度變小。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「物體質量越大，在相同合力下速度改變必然越快」不成立；質量相同時，合力較大者速度改變較快；合力相同時，質量較大者速度改變較慢。"
+      "reason": "物體的加速度不變不成立。a=F/m，分母增加使加速度變小。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「質量相同時，合力較大者速度改變較快；合力相同時，質量較大者速度改變較慢」。"
+      "reason": "a=F/m，分母增加使加速度變小。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度」不成立；加速度表示速度隨時間的變化；速度大小、方向或兩者改變都可產生加速度。"
+      "reason": "物體的加速度方向反轉不成立。a=F/m，分母增加使加速度變小。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "加速度只要是負值就一定減速，只要是正值就一定加速",
-    "物體質量越大，在相同合力下速度改變必然越快",
-    "加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度"
+    "物體的加速度增大",
+    "物體的加速度不變",
+    "物體的加速度方向反轉"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-11",
       "AUTH-NATURAL-LC-EB-4-8",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

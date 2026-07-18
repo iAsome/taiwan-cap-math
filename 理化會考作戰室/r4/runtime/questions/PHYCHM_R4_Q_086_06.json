@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解質量守恆與反應式配平中的現象，哪項修正合理？",
+  "stem": "反應式 4Fe＋3O₂→2Fe₂O₃ 表示哪一項？",
   "options": [
-    "H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標",
-    "密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變",
-    "反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查",
-    "2H₂＋O₂→2H₂O 表示氫分子、氧分子與水分子的粒子數比為 2：1：2"
+    "每4個Fe原子配3個O₂分子，形成2個Fe₂O₃單位",
+    "所有物質質量比必為4：3：2",
+    "4 g Fe 與3 g O₂反應",
+    "Fe₂O₃含2個分子"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標」不成立；2H₂＋O₂→2H₂O 以係數 2、1、2 使氫、氧原子在兩側分別都是 4、2 個。"
+      "isCorrect": true,
+      "reason": "這是係數的粒子解讀。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變」不成立；質量守恆不要求反應前後總體積相等；氣體生成、溫度與壓力都可使體積改變。"
+      "reason": "質量比需相對質量。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查」不成立；粒子模型驗證配平時，要對每種顏色或符號的原子逐個計數，不是只數分子團數。"
+      "reason": "係數不是直接克數。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「2H₂＋O₂→2H₂O 表示氫分子、氧分子與水分子的粒子數比為 2：1：2」。"
+      "isCorrect": false,
+      "reason": "下標與係數概念混淆。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "語意轉譯"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標",
-    "密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變",
-    "反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查"
+    "所有物質質量比必為4：3：2",
+    "4 g Fe 與3 g O₂反應",
+    "Fe₂O₃含2個分子"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

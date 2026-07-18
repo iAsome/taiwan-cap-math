@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理電表接法資料後，哪項說明正確？",
+  "stem": "主線：電流0.90 A、電壓12 V、電阻—。哪個模型能把電流、電壓連到電阻？",
   "options": [
-    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過",
+    "解題時將 0.60 A 與 0.30 A 相減，誤算主線電流為 0.30 A",
     "並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和",
-    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓",
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少"
+    "主張電阻較大的並聯支路電流一定較大",
+    "主張並聯支路會分掉電壓，所以每一支路電壓小於電源電壓"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過」不成立；安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性。"
+      "reason": "解題時錯將 0.60 A 與 0.30 A 相減，誤算主線電流為 0.30 A，結果會錯判電阻。並聯支路電壓皆 12 V，主線電流 0.90 A 等於 0.60＋0.30 A；電壓的數值若未依電流核對，會使電阻無法通過分析並聯電路的電流與電壓檢查。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和」。"
+      "reason": "並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。主線列的電流為0.90 A，電壓為12 V；支路 R2列的電流為0.30 A，電壓為12 V。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「電阻為 I/V＝0.083 Ω，因為電流應除以電壓」不成立；某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω。"
+      "reason": "誤以為電阻較大的並聯支路電流一定較大。並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和；電流未列入分析並聯電路的電流與電壓時，電阻的電壓大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少」不成立；串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和。"
+      "reason": "誤以為並聯支路會分掉電壓，所以每一支路電壓小於電源電壓。並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和；照原做法會把電阻算錯或判反。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "辨認",
+    "概念理解"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過",
-    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓",
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少"
+    "解題時將 0.60 A 與 0.30 A 相減，誤算主線電流為 0.30 A",
+    "主張電阻較大的並聯支路電流一定較大",
+    "主張並聯支路會分掉電壓，所以每一支路電壓小於電源電壓"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估簡易馬達報告時，哪項說明正確？",
+  "stem": "電風扇列給出第一段插座電能，另記第二段馬達→機械能及終端輸出空氣動能與聲能。要讓他人重現終端輸出，表格還須交代什麼？",
   "options": [
-    "裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出",
-    "只要裝置含線圈就能跳過輸入、輸出的分析，直接說能量在線圈中消失",
-    "通電線圈與永久磁鐵完全相同，斷電後磁場必永久保持且不可調整",
-    "載流導線受力方向只由導線顏色決定，電流與磁場方向改變都沒有影響"
+    "主張任何電磁裝置都只有電能和機械能，並漏掉內能與聲能損耗",
+    "解題時將線圈或磁鐵本身列為能量來源，而不是轉換裝置",
+    "把能量圖只寫開始與結束，漏掉發電機、馬達或感應的轉換階段",
+    "實際系統還有內能損耗"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出，例如手搖發電機為機械能→電能→光與熱」。"
+      "isCorrect": false,
+      "reason": "誤以為任何電磁裝置都只有電能和機械能，沒有內能與聲能損耗。裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出，例如手搖發電機為機械能→電能→光與熱；第一段未列入由裝置圖追蹤電磁能量轉換時，終端輸出的第二段大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要裝置含線圈就能跳過輸入、輸出的分析，直接說能量在線圈中…」不成立；裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出，例如手搖發電機為機械能→電能→光與熱。"
+      "reason": "解題時錯將線圈或磁鐵本身列為能量來源，而不是轉換裝置，結果會錯判終端輸出。裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出，例如手搖發電機為機械能→電能→光與熱；照原做法會把終端輸出算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「通電線圈與永久磁鐵完全相同，斷電後磁場必永久保持且不可調整」不成立；通電線圈會形成類似棒形磁鐵的磁場，可藉改變電流、線圈圈數與鐵心調整電磁鐵強弱。"
+      "reason": "解題時誤把能量圖只寫開始與結束，漏掉發電機、馬達或感應的轉換階段。線圈或磁鐵只是轉換元件，不能當成能量來源；終端輸出差異若未通過由裝置圖追蹤電磁能量轉換對第一段的控制，就不能只歸給第二段。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「載流導線受力方向只由導線顏色決定，電流與磁場方向改變都沒有…」不成立；在受力不為零的配置中，載流導線放在外磁場中會受力；只改變電流或磁場方向之一，受力方向會反轉。"
+      "isCorrect": true,
+      "reason": "實際系統還有內能損耗。無線充電示意列的第一段為電能，第二段為變動磁場→感應；手搖燈列的第一段為手的化學能→機械能，第二段為發電機→電能。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要裝置含線圈就能跳過輸入、輸出的分析，直接說能量在線圈中消失",
-    "通電線圈與永久磁鐵完全相同，斷電後磁場必永久保持且不可調整",
-    "載流導線受力方向只由導線顏色決定，電流與磁場方向改變都沒有影響"
+    "主張任何電磁裝置都只有電能和機械能，並漏掉內能與聲能損耗",
+    "解題時將線圈或磁鐵本身列為能量來源，而不是轉換裝置",
+    "把能量圖只寫開始與結束，漏掉發電機、馬達或感應的轉換階段"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-KC-4-4",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "係數與下標出現四種說法，哪項有理化概念支持？",
+  "stem": "2CO＋O₂→2CO₂ 中 O 原子左右各多少？",
   "options": [
-    "H₂SO₄ 含 2＋1＋4＝7 種元素，因為每個原子都算一種",
-    "H₂SO₄ 中未寫下標的 S 表示沒有硫原子",
-    "配平反應式只能調整化學式前係數",
-    "3H₂O 表示每個水分子含 3 個氫，係數只乘第一個元素"
+    "3 與 4",
+    "2 與 4",
+    "4 與 2",
+    "4 與 4"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「H₂SO₄ 含 2＋1＋4＝7 種元素，因為每個原子都算一種」不成立；H₂SO₄ 含氫、硫、氧三種元素；元素種類由不同元素符號判定，不由下標大小判定。"
+      "reason": "左算術錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「H₂SO₄ 中未寫下標的 S 表示沒有硫原子」不成立；一個 H₂SO₄ 粒子含 2 個氫、1 個硫、4 個氧原子，共 7 個原子。"
+      "reason": "漏 O₂。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「配平反應式只能調整化學式前係數；改動 H₂O 的下標會把水變成不同組成的物質」。"
+      "isCorrect": false,
+      "reason": "右漏係數。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「3H₂O 表示每個水分子含 3 個氫，係數只乘第一個元素」不成立；3H₂O 表示 3 個水分子，共含 6 個 H 原子與 3 個 O 原子；係數乘入整個化學式。"
+      "isCorrect": true,
+      "reason": "左 2CO 有 2O，再加 O₂ 的 2，共 4；右 4。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "多來源計數"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "H₂SO₄ 含 2＋1＋4＝7 種元素，因為每個原子都算一種",
-    "H₂SO₄ 中未寫下標的 S 表示沒有硫原子",
-    "3H₂O 表示每個水分子含 3 個氫，係數只乘第一個元素"
+    "3 與 4",
+    "2 與 4",
+    "4 與 2"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AA-4-5",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

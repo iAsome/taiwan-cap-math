@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄討論槓桿支點施力點與抗力點，哪項敘述正確？",
+  "stem": "從甲改成乙時，支點位置由兩力之間變為抗力在中間，施力臂由0.60 m變為0.60 m。兩列交由分析槓桿支點施力點與抗力點判讀，施力臂呈現哪個量化或方向結果？",
   "options": [
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關",
-    "力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離",
-    "槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果",
-    "轉動平衡只需左右作用力大小相同，施力位置和力臂不重要"
+    "主張任何槓桿配置都一定省力，並漏掉比較施力臂與抗力臂",
+    "力並漏掉垂直槓桿時仍把桿長當成完整力臂",
+    "甲需 30 N、乙需 45 N、丙需 270 N",
+    "把甲配置抗力 90 N、施力臂三倍長，卻算施力也要 90 N"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關」不成立；槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果。"
+      "reason": "誤以為任何槓桿配置都一定省力，卻未比較施力臂與抗力臂。槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果；照原做法會把抗力臂算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離」不成立；力矩大小為力乘以作用線到轉軸的垂直距離；10 N 作用於 0.30 m 力臂產生 3.0 N·m。"
+      "reason": "力沒有垂直槓桿時仍把桿長當成完整力臂，結果會錯判抗力臂。結果以理想剛性槓桿、力垂直作用為前提；抗力臂差異若未通過分析槓桿支點施力點與抗力點對支點位置的控制，就不能只歸給施力臂。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果」。"
+      "reason": "甲需 30 N、乙需 45 N、丙需 270 N。甲列的支點位置為兩力之間、施力臂為0.60 m；乙列的支點位置為抗力在中間、施力臂為0.60 m。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「轉動平衡只需左右作用力大小相同，施力位置和力臂不重要」不成立；轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零。"
+      "reason": "解題時誤把甲配置抗力 90 N、施力臂三倍長，卻算施力也要 90 N，結果會錯判抗力臂。甲需 30 N、乙需 45 N、丙需 270 N；施力臂的數值若未依支點位置核對，會使抗力臂無法通過分析槓桿支點施力點與抗力點檢查。"
     }
   ],
   "difficulty": "foundation",
@@ -47,16 +47,16 @@
     "辨認",
     "概念理解"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關",
-    "力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離",
-    "轉動平衡只需左右作用力大小相同，施力位置和力臂不重要"
+    "主張任何槓桿配置都一定省力，並漏掉比較施力臂與抗力臂",
+    "力並漏掉垂直槓桿時仍把桿長當成完整力臂",
+    "把甲配置抗力 90 N、施力臂三倍長，卻算施力也要 90 N"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

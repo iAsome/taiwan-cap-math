@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估反射定律實驗報告時，哪項說明正確？",
+  "stem": "一學生把 55° 寫成入射角，但該角其實是入射線與鏡面的夾角。正確入射角為何？",
   "options": [
-    "平面鏡像是實際光線在鏡後交會的實像，可把紙屏放在鏡後接到",
-    "物體遠離平面鏡時像會縮小，而像距永遠是物距的一半",
-    "光經過第一次反射後就不再遵守反射定律，後續方向可任意",
-    "反射線由入射點離開"
+    "55°",
+    "35°",
+    "110°",
+    "145°"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「平面鏡像是實際光線在鏡後交會的實像，可把紙屏放在鏡後接到」不成立；平面鏡成像位置可將兩條反射光線反向延長至鏡後交點，得到無法投屏的虛像。"
+      "reason": "55° 的基準錯誤。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「物體遠離平面鏡時像會縮小，而像距永遠是物距的一半」不成立；平面鏡的像與物等大，像距等於物距，像與物對鏡面對稱。"
+      "isCorrect": true,
+      "reason": "i＝90°−55°＝35°。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「光經過第一次反射後就不再遵守反射定律，後續方向可任意」不成立；萬花筒、潛望鏡等裝置利用光在多個鏡面依反射定律逐次改變方向。"
+      "reason": "不需把鏡面夾角加倍。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「入射線射向反射面，法線垂直於入射點的表面，反射線由入射點離開」。"
+      "isCorrect": false,
+      "reason": "外側鈍角不是入射角。"
     }
   ],
   "difficulty": "transfer",
@@ -47,16 +47,16 @@
     "限制評估",
     "高層推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "平面鏡像是實際光線在鏡後交會的實像，可把紙屏放在鏡後接到",
-    "物體遠離平面鏡時像會縮小，而像距永遠是物距的一半",
-    "光經過第一次反射後就不再遵守反射定律，後續方向可任意"
+    "55°",
+    "110°",
+    "145°"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-6",
       "AUTH-NATURAL-LC-KA-4-7",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

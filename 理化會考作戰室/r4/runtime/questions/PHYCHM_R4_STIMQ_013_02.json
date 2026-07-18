@@ -13,50 +13,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_013",
-  "stem": "檢查表中關於排水法量測不規則固體體積的說法，哪項判讀正確？",
+  "stem": "哪顆石塊的體積資料最需要重測？",
   "options": [
-    "只要有量測誤差，質量和體積必會相互抵銷，密度不受影響",
-    "石塊體積就是沒入後讀值 47.5 cm³，無須減去原有水量",
-    "密度是體積除以質量，所以答案為 20÷54 g/cm³",
-    "量筒水面由 35.0 mL 升到 47.5 mL，完全沒入的石塊體積是 12.5 cm³，且不可有氣泡"
+    "丙",
+    "乙",
+    "三者都因使用水而無效",
+    "甲"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要有量測誤差，質量和體積必會相互抵銷，密度不受影響」不成立；若質量讀值偏大而體積正確，由 ρ＝m/V 可知密度結果偏大；要依誤差方向分析。"
+      "reason": "丙完全浸沒。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「石塊體積就是沒入後讀值 47.5 cm³，無須減去原有水量」不成立；量筒水面由 35.0 mL 升到 47.5 mL，完全沒入的石塊體積是 12.5 cm³，且不…。"
+      "isCorrect": true,
+      "reason": "乙有附著氣泡。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「密度是體積除以質量，所以答案為 20÷54 g/cm³」不成立；質量 54 g、體積 20 cm³ 的物體密度為 2.7 g/cm³，計算式是 ρ＝m/V。"
+      "reason": "相容固體可用排水法。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「量筒水面由 35.0 mL 升到 47.5 mL，完全沒入的石塊體積是 12.5 cm³，且不可有氣泡」。"
+      "isCorrect": false,
+      "reason": "甲觀察正常。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "資料判讀"
+    "資料判讀",
+    "證據選擇"
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "只要有量測誤差，質量和體積必會相互抵銷，密度不受影響",
-    "石塊體積就是沒入後讀值 47.5 cm³，無須減去原有水量",
-    "密度是體積除以質量，所以答案為 20÷54 g/cm³"
+    "丙",
+    "三者都因使用水而無效",
+    "甲"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-3",
       "AUTH-NATURAL-LC-CA-4-2",
@@ -66,19 +67,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

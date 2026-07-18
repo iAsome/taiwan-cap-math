@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估溶液導電比較報告時，哪項說明正確？",
+  "stem": "一份溶液標示 18%，哪個成分組合符合？",
   "options": [
-    "5 ppm 和 5% 完全相同，都表示每一百份中有 5 份",
-    "加水稀釋會同時減少原有溶質的質量，所以濃度才下降",
-    "任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電",
-    "20 g 食鹽加 80 g 水形成 100 g 溶液，重量百分濃度為 20%"
+    "18 g 溶質與 82 g 溶劑",
+    "18 g 溶質與 100 g 溶劑",
+    "82 g 溶質與 18 g 溶劑",
+    "18 g 溶劑與 100 g 溶液"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「5 ppm 和 5% 完全相同，都表示每一百份中有 5 份」不成立；5 ppm 表示在題目指定的比例基準下，每一百萬份中有 5 份目標成分。"
+      "isCorrect": true,
+      "reason": "總質量 100 g，溶質占 18%。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「加水稀釋會同時減少原有溶質的質量，所以濃度才下降」不成立；對溶液只加水而沒有溶質進出時，溶質質量不變、溶液質量增加，因此濃度降低。"
+      "reason": "總質量 118 g，濃度約 15.3%。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣…」不成立；在相同電路與濃度條件下，水溶液能否導電可用來判斷是否有可移動離子，並輔助區分電解質。"
+      "reason": "溶質占 82%。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「20 g 食鹽加 80 g 水形成 100 g 溶液，重量百分濃度為 20%」。"
+      "isCorrect": false,
+      "reason": "未給溶質為 18 g。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "條件驗證"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "5 ppm 和 5% 完全相同，都表示每一百份中有 5 份",
-    "加水稀釋會同時減少原有溶質的質量，所以濃度才下降",
-    "任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電"
+    "18 g 溶質與 100 g 溶劑",
+    "82 g 溶質與 18 g 溶劑",
+    "18 g 溶劑與 100 g 溶液"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AB-4-4",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

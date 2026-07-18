@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估未知質量表報告時，哪項說明正確？",
+  "stem": "一份報告寫：『開口反應前 50 g，反應後殘留 44 g，因此氣體一定是 6 g。』還需要哪個前提？",
   "options": [
-    "未知生成物為 35＋12＝47 g，因為生成物應加在反應物上",
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小",
-    "已知一生成物 12 g",
-    "開放容器變輕證明質量守恆定律在產氣反應中不適用"
+    "除氣體逸出外沒有飛濺、蒸發或外物進入",
+    "反應必須在白天進行",
+    "氣體顏色固定",
+    "殘留物只能是固體"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「未知生成物為 35＋12＝47 g，因為生成物應加在反應物上」不成立；反應物總質量 35 g，已知一生成物 12 g，且系統密閉，另一生成物為 23 g。"
+      "isCorrect": true,
+      "reason": "差值法需要排除其他物質進出。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小」不成立；密閉袋內的反應前後，所有反應物與生成物的總質量相等，因為原子只重新排列。"
+      "reason": "時間無關。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「反應物總質量 35 g，已知一生成物 12 g，且系統密閉，另一生成物為 23 g」。"
+      "isCorrect": false,
+      "reason": "顏色不決定質量差來源。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「開放容器變輕證明質量守恆定律在產氣反應中不適用」不成立；開放容器產生氣體並逸出時，秤得質量可減少；把逸出氣體也納入系統才符合守恆。"
+      "reason": "液體殘留也可計量。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "假設辨識"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "未知生成物為 35＋12＝47 g，因為生成物應加在反應物上",
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小",
-    "開放容器變輕證明質量守恆定律在產氣反應中不適用"
+    "反應必須在白天進行",
+    "氣體顏色固定",
+    "殘留物只能是固體"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

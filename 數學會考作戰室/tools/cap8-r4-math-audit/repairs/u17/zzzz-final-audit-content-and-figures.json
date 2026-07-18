@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u17",
+  "batch": "018-u17-complete",
+  "skills": ["s001", "s004", "s008", "s009", "s011", "s018"],
+  "mc": [
+    {
+      "questionId": "u17-s011-v004",
+      "replaceText": {
+        "採至少一組對邊平行的定義時，梯形敘述也不能寫成一定兩組。": "依國中課程定義，梯形只有一組對邊平行，當然不能說每個梯形都有兩組對邊平行。"
+      }
+    },
+    {
+      "questionId": "u17-s011-v012",
+      "set": {
+        "text": "一個四邊形只有一組對邊平行，另一組對邊不平行。依國中課程定義，它是哪一類？",
+        "target": "依梯形定義判斷類別。",
+        "choices": ["矩形", "菱形", "平行四邊形", "梯形"],
+        "independentSolution": "由一組對邊平行且另一組對邊不平行，可直接依國中課程定義判定為梯形。",
+        "explanation": "梯形是只有一組對邊平行、另一組對邊不平行的四邊形。題目完整給出這兩項條件，因此可直接判為梯形；矩形、菱形與平行四邊形都有兩組對邊分別平行，不符合題設。",
+        "steps": [
+          "確認題目給出一組對邊平行。",
+          "確認另一組對邊不平行。",
+          "兩項條件符合國中課程的梯形定義，判定為梯形。"
+        ],
+        "optionAnalysis": [
+          {"choice": "矩形", "truth": false, "reason": "矩形的兩組對邊都分別平行，與題目明示另一組對邊不平行互相矛盾。"},
+          {"choice": "菱形", "truth": false, "reason": "菱形本身是平行四邊形，兩組對邊都分別平行，不符合題目給定的排除條件。"},
+          {"choice": "平行四邊形", "truth": false, "reason": "平行四邊形要求兩組對邊分別平行，題目卻明示另一組對邊不平行，因此不能選。"},
+          {"choice": "梯形", "truth": true, "reason": "只有一組對邊平行且另一組對邊不平行，兩項條件完整符合國中課程的梯形定義。"}
+        ],
+        "misconceptionTarget": "只看到平行邊便誤選平行四邊形，忽略平行四邊形必須有兩組對邊分別平行。",
+        "ambiguityAudit": "題目同時明示一組對邊平行與另一組不平行；四個選項中只有梯形符合國中課程定義。",
+        "difficultyReason": "需完整核對梯形定義的兩項條件。",
+        "literacyContextNecessity": "題幹要求依國中課程定義核對分類條件；移除『另一組對邊不平行』便無法唯一排除平行四邊形類別。"
+      },
+      "reviewSet": {
+        "independentSolution": "不採信儲存答案，依定義重判：一組對邊平行且另一組不平行的四邊形為梯形。",
+        "derivedAnswer": "梯形",
+        "storedAnswer": "梯形",
+        "answerMatch": true,
+        "optionTruth": [false, false, false, true],
+        "uniqueCorrectAnswer": true,
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "矩形、菱形與平行四邊形都有兩組對邊分別平行，均與另一組不平行矛盾，只有梯形成立。",
+          "undefinedSymbol": "題幹只使用對邊、平行與四邊形等已定義術語，沒有未說明的符號或代號。",
+          "unitConflict": "本題只判斷四邊形類別，沒有長度、角度或面積數值，因此不存在單位衝突。",
+          "roundingConflict": "本題不含測量值、近似值或取整要求，分類結論不受精度規則影響。",
+          "domainBoundary": "判斷只使用臺灣國中課程的梯形與平行四邊形定義，沒有引入廣義分類或高中內容。",
+          "alternateReading": "題幹明寫『只有一組』且補充另一組不平行，已排除兩組對邊均平行的三個干擾類別。"
+        },
+        "difficultyReason": "需完整核對梯形定義的兩項條件。",
+        "literacyContextNecessity": "題幹要求依國中課程定義核對分類條件；移除『另一組對邊不平行』便無法唯一排除平行四邊形類別。",
+        "languageCheck": "使用臺灣繁體中文與國中課程慣用的梯形定義。",
+        "reviewerDecision": "pass",
+        "reviewerNote": "不採信原答案，逐項依國中課程定義重判：矩形、菱形與平行四邊形都有兩組對邊分別平行，均與題目明示的另一組對邊不平行矛盾；只有第四個選項『梯形』同時滿足一組平行與另一組不平行，答案唯一。"
+      }
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u17-s009-cr002",
+      "set": {
+        "prompt": "四邊形的對角線交於O，量得AO=OC=12、BO=OD=7。請證明此四邊形為平行四邊形，並判斷它是否為矩形。",
+        "requiredWork": ["引用對角線互相平分判定", "得到平行四邊形", "比較兩條完整對角線並判斷矩形"],
+        "standardSolution": [
+          "AO＝OC表示O是AC中點，BO＝OD表示O是BD中點，因此兩條對角線互相平分。",
+          "依『兩對角線互相平分的四邊形是平行四邊形』，可判定此四邊形為平行四邊形。",
+          "AC＝AO＋OC＝24，BD＝BO＋OD＝14，兩條對角線不等長。矩形的兩條對角線必等長，因此此四邊形不是矩形。"
+        ],
+        "alternativeMethods": [["先由互相平分判為平行四邊形，再以AC≠BD排除矩形。"]],
+        "reasoningSteps": [
+          "AO=OC且BO=OD，故兩對角線互相平分。",
+          "依判定，此四邊形為平行四邊形。",
+          "AC=24、BD=14且不等長，因此不是矩形。"
+        ],
+        "rubric": [
+          {"score": 3, "criteria": "完整引用兩對角線互相平分的判定證成平行四邊形，並算得AC=24、BD=14，由不等長正確判定不是矩形。"},
+          {"score": 2, "criteria": "平行四邊形判定與矩形判斷方法正確，僅有一處算術或理由缺漏。"},
+          {"score": 1, "criteria": "能指出兩對角線互相平分或矩形對角線等長其中一項核心性質，但證明未完成。"},
+          {"score": 0, "criteria": "未使用有效的四邊形判定，或把不等長的對角線誤判為矩形。"}
+        ],
+        "partialCreditRules": [
+          "正確由兩對角線互相平分判為平行四邊形但未判斷矩形，可給2分。",
+          "正確算出AC與BD但未引用矩形對角線等長，只能依完成程度給1至2分。"
+        ],
+        "independentReview": {
+          "derivedResult": "可證為平行四邊形，且可證不是矩形",
+          "recalculation": "AO=OC且BO=OD，故兩對角線互相平分；AC=24、BD=14不等長，所以不是矩形。",
+          "ambiguity": "四個半對角線長同時確定完整對角線；矩形的必要性質可直接排除矩形，沒有第二種結論。",
+          "decision": "pass"
+        },
+        "commonErrors": [
+          "只重述四個半段數值，沒有引用對角線互相平分的判定。",
+          "把互相平分誤當互相垂直或兩條對角線等長。",
+          "沒有算出AC＝24與BD＝14，因而漏掉可直接排除矩形的資訊。"
+        ]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u17-s011-lecture-r1",
+      "set": {
+        "prerequisiteBridge": "承接平行四邊形的邊、角與對角線性質；本節把這些條件整理成梯形、平行四邊形、矩形、菱形與正方形的分類判準。",
+        "glossary": [
+          {"term": "梯形", "definition": "只有一組對邊平行，另一組對邊不平行的四邊形"},
+          {"term": "矩形", "definition": "有四個直角的平行四邊形"},
+          {"term": "菱形", "definition": "四邊等長的平行四邊形"},
+          {"term": "正方形", "definition": "同時是矩形與菱形"}
+        ],
+        "conceptNarrative": [
+          "矩形是四角皆為直角的平行四邊形，菱形是四邊等長的平行四邊形，正方形同時滿足矩形與菱形的條件。因此正方形同時屬於矩形、菱形與平行四邊形。",
+          "判定時先保留已知的大類，再逐一加入條件。一個平行四邊形有直角即可推出四角皆直角而成為矩形；有一組相鄰邊等長可配合對邊等長推出四邊等長而成為菱形。",
+          "臺灣國中課程把梯形定義為只有一組對邊平行、另一組不平行的四邊形，所以梯形與平行四邊形在本課分類中分開；矩形、菱形、正方形則保留彼此的包含關係。"
+        ],
+        "formalDefinitions": [
+          {"name": "梯形", "statement": "只有一組對邊平行，另一組對邊不平行的四邊形"},
+          {"name": "矩形", "statement": "有四個直角的平行四邊形"}
+        ],
+        "workedExamples": [
+          {"exampleId": "L1", "prompt": "四個直角且相鄰邊不等，最精確分類為何？", "solutionSteps": ["由四個直角判定為矩形。", "由相鄰邊不等排除四邊等長。", "結論為矩形但不是正方形。"], "answer": "矩形但不是正方形。", "why": "四直角足以成立矩形；正方形還要求四邊等長，因此相鄰邊不等能明確排除正方形。分類要同時檢查邊與角。"},
+          {"exampleId": "L2", "prompt": "四邊等長但沒有直角，最精確分類為何？", "solutionSteps": ["由四邊等長判定為菱形。", "檢查沒有四個直角條件。", "保留菱形並排除正方形。"], "answer": "菱形但不是正方形。", "why": "四邊等長是菱形核心條件；沒有直角時不能成為矩形，也就不能進入矩形與菱形的交集正方形。此限制不可省略。"},
+          {"exampleId": "L3", "prompt": "四邊等長且一角90°，最精確分類為何？", "solutionSteps": ["四邊等長使圖形為菱形。", "菱形也是平行四邊形，一角90°推出四角90°，又為矩形。", "同時為菱形與矩形，判定為正方形。"], "answer": "正方形。", "why": "兩組條件分別提供四邊等長與四個直角，恰好滿足正方形定義；不能只停在較廣的菱形或矩形，兩類條件必須同時保留。"},
+          {"exampleId": "L4", "prompt": "一組對邊平行、另一組對邊不平行，可判定什麼？", "solutionSteps": ["確認一組對邊平行。", "確認另一組對邊不平行。", "依完整定義判為梯形。"], "answer": "此四邊形是梯形，不是平行四邊形。", "why": "兩組條件完整符合梯形定義；另一組對邊不平行也直接排除需要兩組對邊分別平行的平行四邊形。"}
+        ],
+        "summary": [
+          "梯形只有一組對邊平行，另一組對邊不平行；平行四邊形則有兩組對邊分別平行。",
+          "正方形同時是矩形、菱形與平行四邊形。",
+          "矩形未必四邊等長，菱形未必有直角；分類時不可把包含方向反過來。",
+          "先核對定義的全部條件，再給資料能支持的最精確類別。"
+        ],
+        "lectureReview": {
+          "mathematicalCorrectness": "pass",
+          "zeroFoundationReadability": "pass",
+          "scopeCheck": "Taiwan junior-high CAP scope",
+          "examplesNotCopiedFromBank": true,
+          "symbolDefinitionsComplete": true,
+          "figureChecked": true,
+          "reviewNote": "依國家教育研究院國中教材採用只有一組對邊平行、另一組不平行的梯形定義；矩形、菱形與正方形的包含關係另行清楚保留。"
+        }
+      }
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u17-s001-fig001",
+      "replaceText": {
+        "兩條水平平行線被斜截線穿過，標示一個68度角、其對頂角、內錯角與同側內角。": "兩條有平行記號的水平線被斜截線穿過；上交點標示68度角及其對頂角，下交點標示對應的內錯角與同側內角。"
+      },
+      "set": {
+        "svgAssertions": ["68°", "對頂角", "內錯角", "同側內角", "a", "b", "role=\"img\"", "<title", "<desc"],
+        "figureReview": {"decision": "pass", "manualRenderedInspection": true, "reviewNote": "重繪後逐一核對平行記號、68度角、對頂角、內錯角與同側內角的位置；標籤未遮住交點或角弧。"}
+      }
+    },
+    {"figureId": "u17-s004-fig001", "set": {"figureReview": {"decision": "pass", "manualRenderedInspection": true, "reviewNote": "重繪為兩組對邊確實平行的平行四邊形；頂點、兩組平行記號與文字均清楚可辨。"}}},
+    {"figureId": "u17-s008-fig001", "set": {"figureReview": {"decision": "pass", "manualRenderedInspection": true, "reviewNote": "重繪為平行四邊形，並核對兩組對邊刻痕確實落在各自邊上且配對無誤。"}}},
+    {"figureId": "u17-s009-fig001", "set": {"figureReview": {"decision": "pass", "manualRenderedInspection": true, "reviewNote": "重繪為平行四邊形，兩條對角線在共同中點O相交，AO=OC與BO=OD文字和圖形一致。"}}},
+    {"figureId": "u17-s018-fig001", "set": {"svgAssertions": ["A", "B", "C", "D", "O", "AO=OC", "BO=OD", "role=\"img\"", "<title", "<desc"], "figureReview": {"decision": "pass", "manualRenderedInspection": true, "reviewNote": "重繪為對角線互相垂直且在O互相平分的四邊形；A、B、C、D、O與兩組等式均完整可辨。"}}}
+  ],
+  "textFiles": [
+    {
+      "path": "figures/u17/u17-s001-fig001.svg",
+      "replacements": [
+        {"from": "兩條水平平行線被斜截線穿過，標示一個68度角、其對頂角、內錯角與同側內角。", "to": "兩條有平行記號的水平線被斜截線穿過；上交點標示68度角及其對頂角，下交點標示對應的內錯角與同側內角。"},
+        {"from": "<line x1='30' y1='75' x2='330' y2='75'/><line x1='30' y1='205' x2='330' y2='205'/>", "to": "<line x1='30' y1='75' x2='350' y2='75'/><line x1='30' y1='205' x2='350' y2='205'/><path d='M55 67 l10 8 l-10 8 M68 67 l10 8 l-10 8 M55 197 l10 8 l-10 8 M68 197 l10 8 l-10 8'/>"},
+        {"from": "<line x1='105' y1='245' x2='255' y2='30'/><path d='M150 75 A35 35 0 0 1 171 47'/><text x='169' y='66'>68°</text>", "to": "<line x1='105' y1='250' x2='260' y2='25'/><path d='M195 75 A34 34 0 0 0 210 103'/><text x='173' y='111'>68°</text><path d='M263 75 A34 34 0 0 0 247 47'/><text x='265' y='52'>對頂角</text>"},
+        {"from": "<path d='M206 205 A34 34 0 0 1 228 177'/><text x='229' y='197'>內錯角</text><text x='42' y='62'>a</text><text x='42' y='192'>b</text>", "to": "<path d='M172 205 A34 34 0 0 0 158 177'/><text x='169' y='184'>內錯角</text><path d='M104 205 A34 34 0 0 1 121 176'/><text x='61' y='173'>同側內角</text><text x='92' y='62'>a</text><text x='92' y='192'>b</text>"}
+      ]
+    },
+    {"path": "figures/u17/u17-s004-fig001.svg", "replacements": [{"from": "<polygon points='85,55 290,55 335,205 40,205'/>", "to": "<polygon points='100,55 315,55 285,205 70,205'/>"}, {"from": "<text x='70' y='45'>A</text><text x='295' y='45'>B</text><text x='340' y='220'>C</text><text x='22' y='220'>D</text>", "to": "<text x='85' y='45'>A</text><text x='320' y='45'>B</text><text x='292' y='220'>C</text><text x='52' y='220'>D</text>"}, {"from": "<path d='M60 120 l8 8 l-12 2 M310 120 l8 8 l-12 2'/>", "to": "<path d='M82 118 l8 8 l-12 2 M300 118 l8 8 l-12 2'/>"}]},
+    {
+      "path": "figures/u17/u17-s008-fig001.svg",
+      "replacements": [
+        {"from": "<polygon points='90,45 300,45 335,210 45,210'/>", "to": "<polygon points='100,45 315,45 285,210 70,210'/>"},
+        {"from": "<path d='M65 120 l13 3 M315 120 l13 3'/>", "to": "<path d='M76 125 l18 4 M291 126 l18 4'/>"},
+        {"from": "<text x='74' y='38'>A</text><text x='304' y='38'>B</text><text x='340' y='225'>C</text><text x='27' y='225'>D</text>", "to": "<text x='85' y='38'>A</text><text x='320' y='38'>B</text><text x='292' y='225'>C</text><text x='52' y='225'>D</text>"}
+      ]
+    },
+    {"path": "figures/u17/u17-s009-fig001.svg", "replacements": [{"from": "<polygon points='85,45 300,45 340,215 45,215'/><line x1='85' y1='45' x2='340' y2='215'/><line x1='300' y1='45' x2='45' y2='215'/>", "to": "<polygon points='100,45 315,45 285,215 70,215'/><line x1='100' y1='45' x2='285' y2='215'/><line x1='315' y1='45' x2='70' y2='215'/>"}, {"from": "<text x='70' y='38'>A</text><text x='305' y='38'>B</text><text x='345' y='230'>C</text><text x='28' y='230'>D</text>", "to": "<text x='85' y='38'>A</text><text x='320' y='38'>B</text><text x='292' y='230'>C</text><text x='52' y='230'>D</text>"}]},
+    {
+      "path": "figures/u17/u17-s018-fig001.svg",
+      "replacements": [
+        {"from": "<polygon points='70,45 310,60 335,220 45,205'/><line x1='70' y1='45' x2='335' y2='220'/><line x1='310' y1='60' x2='45' y2='205'/><circle cx='190' cy='133' r='3'/><text x='196' y='128'>O</text><path d='M190 133 h15 v15'/><text x='108' y='112'>AO=OC</text><text x='220' y='170'>BO=OD</text>", "to": "<polygon points='190,35 340,140 190,245 40,140'/><line x1='190' y1='35' x2='190' y2='245'/><line x1='340' y1='140' x2='40' y2='140'/><circle cx='190' cy='140' r='3'/><text x='196' y='134'>O</text><path d='M190 140 h15 v15 h-15'/><text x='205' y='92'>AO=OC</text><text x='230' y='168'>BO=OD</text><text x='184' y='27'>A</text><text x='347' y='145'>B</text><text x='184' y='264'>C</text><text x='25' y='145'>D</text>"}
+      ]
+    }
+  ]
+}

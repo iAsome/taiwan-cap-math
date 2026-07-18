@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於粒子模型驗證配平結果，哪項結論符合題給條件？",
+  "stem": "哪個文字模型符合 A₂＋B₂→2AB？",
   "options": [
-    "粒子模型驗證配平時，要對每種顏色或符號的原子逐個計數，不是只數分子團數",
-    "只要反應式兩側的分子個數相同，就不必再檢查各元素原子數",
-    "H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標",
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2"
+    "前：A-A、B；後：A-B",
+    "前：A、B；後：A-B、A-B",
+    "前：A-A、B-B；後：A-B、A-B",
+    "前：A-A、B-B；後：A-A-B-B"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「粒子模型驗證配平時，要對每種顏色或符號的原子逐個計數，不是只數分子團數」。"
+      "isCorrect": false,
+      "reason": "B原子少一個。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要反應式兩側的分子個數相同，就不必再檢查各元素原子數」不成立；檢查反應式時要逐種元素計算左右原子總數，每一種都相等才是已配平。"
+      "reason": "反應前只有A1、B1。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標」不成立；2H₂＋O₂→2H₂O 以係數 2、1、2 使氫、氧原子在兩側分別都是 4、2 個。"
+      "isCorrect": true,
+      "reason": "前後A2、B2且產物兩團AB。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「配平係數 2：1：2 直接表示三種物質的質量比也是 2：1…」不成立；2H₂＋O₂→2H₂O 表示氫分子、氧分子與水分子的粒子數比為 2：1：2。"
+      "reason": "後方是一團A₂B₂，不是2AB。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "表徵配對"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要反應式兩側的分子個數相同，就不必再檢查各元素原子數",
-    "H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標",
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2"
+    "前：A-A、B；後：A-B",
+    "前：A、B；後：A-B、A-B",
+    "前：A-A、B-B；後：A-A-B-B"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

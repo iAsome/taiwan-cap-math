@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理潛水艇調整資料後，哪項說明正確？",
+  "stem": "排出壓載水列給出總質量900 t，另記外形排水體積1000 m³及平均密度900 kg/m³。總質量和外形排水體積如何連結才能重算平均密度？",
   "options": [
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關",
-    "浮力大小永遠等於物體自身重量，不論它沉沒、漂浮或被外力拉住",
-    "船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉",
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量"
+    "看到壓載水增加到總質量 1080 t，仍判定平均密度只有 900 kg/m³",
+    "主張潛水艇只要下潛到更深處",
+    "船以中空結構降低整體平均密度",
+    "解題時將鋼船漂浮歸因於鋼的密度小於水，忽略中空船體的整體平均密度"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關」不成立；沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力。"
+      "reason": "一看到壓載水增加到總質量 1080 t，仍判定平均密度只有 900 kg/m³。在水密度約 1000 kg/m³ 時，三種壓載狀態分別有上浮、懸浮、下沉趨勢；外形排水體積的數值若未依總質量核對，會使平均密度無法通過連結船潛水艇與密度調整應用檢查。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「浮力大小永遠等於物體自身重量，不論它沉沒、漂浮或被外力拉住」不成立；阿基米德原理：物體所受向上浮力的大小，等於它所排開流體的重量。"
+      "reason": "誤以為潛水艇只要下潛到更深處，平均密度就會在未進水時自動增加。船以中空結構降低整體平均密度；總質量未列入連結船潛水艇與密度調整應用時，平均密度的外形排水體積大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉」。"
+      "reason": "船以中空結構降低整體平均密度。再進水列的總質量為1080 t，外形排水體積為1000 m³；改變深度但不進排水列的總質量為1000 t，外形排水體積為1000 m³。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「浮力為 12＋7＝19 N，因為水中讀值要加回原重量」不成立；物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N。"
+      "reason": "解題時錯將鋼船漂浮歸因於鋼的密度小於水，忽略中空船體的整體平均密度。船以中空結構降低整體平均密度；照原做法會把平均密度算錯或判反。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "辨認",
+    "概念理解"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關",
-    "浮力大小永遠等於物體自身重量，不論它沉沒、漂浮或被外力拉住",
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量"
+    "看到壓載水增加到總質量 1080 t，仍判定平均密度只有 900 kg/m³",
+    "主張潛水艇只要下潛到更深處",
+    "解題時將鋼船漂浮歸因於鋼的密度小於水，忽略中空船體的整體平均密度"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

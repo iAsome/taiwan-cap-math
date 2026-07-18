@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查顯微鏡與望遠鏡紀錄，哪項判讀正確？",
+  "stem": "黃顏料與青顏料充分混合，常見結果較接近何色？",
   "options": [
-    "物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察",
-    "水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光",
-    "近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正",
-    "與色光加法原理不同"
+    "白光",
+    "綠色",
+    "洋紅光",
+    "黑光"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察」不成立；紅色物體在只含藍光的照明下可看來很暗，因為沒有足夠可反射的紅光。"
+      "reason": "顏料混合不是三色光加法。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光」不成立；眼球的角膜與水晶體等會聚光線，使外物在視網膜上形成倒立實像，再由神經系統處理。"
+      "isCorrect": true,
+      "reason": "兩顏料共同保留較多綠色反射成分。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正」不成立；近視的遠物焦點在視網膜前，用凹透鏡矯正；遠視或老花相關情形可用凸透鏡輔助會聚。"
+      "reason": "洋紅不是黃與青的共同反射。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「紅、綠、藍色光是加法混色的基本光；顏料混合主要透過選擇性吸收，與色光加法原理不同」。"
+      "isCorrect": false,
+      "reason": "黑光不是此概念。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察",
-    "水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光",
-    "近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正"
+    "白光",
+    "洋紅光",
+    "黑光"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-10",
       "AUTH-NATURAL-LC-KA-4-11",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

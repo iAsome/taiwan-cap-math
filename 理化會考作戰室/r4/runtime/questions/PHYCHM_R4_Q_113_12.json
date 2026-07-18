@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估滴定式追蹤報告時，哪項說明正確？",
+  "stem": "中和反應遵守質量守恆，表示？",
   "options": [
-    "酸與鹼在適當條件下反應生成鹽和水",
-    "既然中和能減少酸鹼性，加入越多相反物就越安全，沒有過量問題",
-    "每次可同時更換酸、鹼、指示劑與容器，只要最後顏色一樣就是公平實驗",
-    "酸與鹼混合後只會產生水，其他離子全部消失且不會形成鹽"
+    "生成水的質量等於酸液與鹼液的全部質量",
+    "酸和鹼質量必相等",
+    "封閉系統中反應前後總質量相同",
+    "鹽沒有質量"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「酸與鹼在適當條件下反應生成鹽和水；產物鹽的種類取決於原酸與鹼」。"
+      "isCorrect": false,
+      "reason": "還有鹽。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「既然中和能減少酸鹼性，加入越多相反物就越安全，沒有過量問題」不成立；制酸劑、土壤改良等中和應用要依實際酸鹼量控制加入，並考慮產物與過量危害。"
+      "reason": "反應比例未必等質量。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「每次可同時更換酸、鹼、指示劑與容器，只要最後顏色一樣就是公…」不成立；以指示劑追蹤中和時，應固定起始溶液與指示劑量，逐次加入另一溶液並記錄體積與顏色。"
+      "isCorrect": true,
+      "reason": "完整系統原子重組。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「酸與鹼混合後只會產生水，其他離子全部消失且不會形成鹽」不成立；酸與鹼在適當條件下反應生成鹽和水；產物鹽的種類取決於原酸與鹼。"
+      "reason": "鹽具有質量。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "守恆連結"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "既然中和能減少酸鹼性，加入越多相反物就越安全，沒有過量問題",
-    "每次可同時更換酸、鹼、指示劑與容器，只要最後顏色一樣就是公平實驗",
-    "酸與鹼混合後只會產生水，其他離子全部消失且不會形成鹽"
+    "生成水的質量等於酸液與鹼液的全部質量",
+    "酸和鹼質量必相等",
+    "鹽沒有質量"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科中和、資料判讀與生活應用層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

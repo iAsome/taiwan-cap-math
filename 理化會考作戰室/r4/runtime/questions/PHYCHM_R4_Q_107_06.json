@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解pH值與酸鹼強度方向，哪項修正合理？",
+  "stem": "pH由11降到9且仍大於7，表示？",
   "options": [
-    "在同種、相近條件下，pH 2 的溶液比 pH 5 酸性強；pH 12 比 pH 9 鹼性強",
-    "家用物質就一定無害，酸性或鹼性清潔劑可任意混合以加強效果",
-    "高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性",
-    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸"
+    "已變強酸",
+    "鹼性減弱並接近中性",
+    "鹼性增強",
+    "pH 11與9無法比較，所以鹼性變化不明"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「在同種、相近條件下，pH 2 的溶液比 pH 5 酸性強；pH 12 比 pH 9 鹼性強」。"
+      "isCorrect": false,
+      "reason": "仍大於7。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「家用物質就一定無害，酸性或鹼性清潔劑可任意混合以加強效果」不成立；醋可用於某些水垢處理，氫氧化鈉可用於特定清潔；但酸鹼均可腐蝕，要依標示防護。"
+      "isCorrect": true,
+      "reason": "鹼端數值下降朝7移動。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性」不成立；濃度是溶質所佔比例，酸鹼強弱涉及物質在水中的離子行為；兩者不可完全畫上等號。"
+      "reason": "方向相反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「pH 數字越大一定代表酸性越強，所以 pH 5 比 pH …」不成立；在同種、相近條件下，pH 2 的溶液比 pH 5 酸性強；pH 12 比 pH 9 鹼性強。"
+      "reason": "同尺度可比較方向。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "變化解讀"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "家用物質就一定無害，酸性或鹼性清潔劑可任意混合以加強效果",
-    "高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性",
-    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸"
+    "已變強酸",
+    "鹼性增強",
+    "pH 11與9無法比較，所以鹼性變化不明"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

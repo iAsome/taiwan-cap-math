@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理速率單位換算資料，哪項敘述合理？",
+  "stem": "哪一項同時完整描述一維速度？",
   "options": [
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理",
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向"
+    "此時物體每秒走 7 m",
+    "物體的位置在南方 7 m",
+    "大小為 7 m/s，方向向南",
+    "經過時間 7 s"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「運動資料只要代入公式就不必作量級檢查，步行 500 m/s…」不成立；步行速率通常約數 m/s；若算得 500 m/s，應檢查距離、時間單位或小數點。"
+      "reason": "此時物體每秒走 7 m不符合題目資料。速度需要單位時間的位置改變大小以及方向，向南 7 m/s 才完整。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「速度只是一個正數快慢，向東與向西 10 m/s 在任何分析…」不成立；速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向。"
+      "reason": "物體的位置在南方 7 m不符合題目資料。速度需要單位時間的位置改變大小以及方向，向南 7 m/s 才完整。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「只給一個數字「200 m」就能唯一決定物體位置，不需參考點…」不成立；物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整。"
+      "isCorrect": true,
+      "reason": "速度需要單位時間的位置改變大小以及方向，向南 7 m/s 才完整。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向」。"
+      "isCorrect": false,
+      "reason": "經過時間 7 s不符合題目資料。速度需要單位時間的位置改變大小以及方向，向南 7 m/s 才完整。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "關係應用",
     "多步驟推理"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理",
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向"
+    "此時物體每秒走 7 m",
+    "物體的位置在南方 7 m",
+    "經過時間 7 s"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

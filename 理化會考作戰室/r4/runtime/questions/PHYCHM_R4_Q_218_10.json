@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告根據作用反作用配對下結論，哪項符合資料？",
+  "stem": "兩反向力合力向左，表示什麼？",
   "options": [
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關",
-    "質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少",
-    "作用力與反作用力同時作用在同一物體，因此永遠互相抵銷",
-    "相反方向力要取差並保留方向"
+    "此時物體向右的總力較大",
+    "兩側總力相等",
+    "向左的總力大於向右的總力",
+    "物體一定向左移動"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「加速度方向永遠和物體當下運動方向相同，與合力方向無關」不成立；物體的加速度方向與合力相同；質量相同時合力較大，或合力相同時質量較小，加速度較大。"
+      "reason": "此時物體向右的總力較大與受力條件不符。合力方向指向力向量總和較大的一側；運動方向仍需另看速度。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少」不成立；質量是物體慣性的量度，重量是物體所受重力，在不同星體可改變；單位分別常用 kg 與 N。"
+      "reason": "兩側總力相等與受力條件不符。合力方向指向力向量總和較大的一側；運動方向仍需另看速度。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「作用力與反作用力同時作用在同一物體，因此永遠互相抵銷」不成立；人推牆的力與牆推人的力是作用力反作用力，大小相等、方向相反，但作用在不同物體。"
+      "isCorrect": true,
+      "reason": "合力方向指向力向量總和較大的一側；運動方向仍需另看速度。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「同直線上向右 8 N 與向左 3 N 的合力為向右 5 N；相反方向力要取差並保留方向」。"
+      "isCorrect": false,
+      "reason": "物體一定向左移動與受力條件不符。合力方向指向力向量總和較大的一側；運動方向仍需另看速度。"
     }
   ],
   "difficulty": "advanced",
@@ -50,16 +50,16 @@
     "主張評估",
     "證據評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關",
-    "質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少",
-    "作用力與反作用力同時作用在同一物體，因此永遠互相抵銷"
+    "此時物體向右的總力較大",
+    "兩側總力相等",
+    "物體一定向左移動"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

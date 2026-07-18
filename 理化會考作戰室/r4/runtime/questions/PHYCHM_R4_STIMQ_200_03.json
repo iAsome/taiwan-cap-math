@@ -11,50 +11,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_200",
-  "stem": "速率單位換算題組中，哪項說明符合紀錄？",
+  "stem": "依表格，A 為 +4 m/s、B 為 -4 m/s。為何不能說兩者速度相同？",
   "options": [
-    "路程與位移永遠大小相等，往返原點的路程也是零",
-    "平均速率是路程乘時間，所以為 4500 m/s",
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘",
-    "速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向"
+    "兩者速率不同",
+    "兩者方向相反",
+    "兩者單位不同",
+    "兩者都沒有移動"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「路程與位移永遠大小相等，往返原點的路程也是零」不成立；路程是實際路徑總長，位移是起點到終點的有向改變；往返原點時路程大於零但位移為零。"
+      "reason": "兩者速率不同不符合題目資料。速度包含方向，+4 與 -4 的方向相反，即使大小相同也不是同一速度。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「平均速率是路程乘時間，所以為 4500 m/s」不成立；移動 150 m 耗時 30 s 的平均速率為路程除以總時間，即 5 m/s。"
+      "isCorrect": true,
+      "reason": "速度包含方向，+4 與 -4 的方向相反，即使大小相同也不是同一速度。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「72 km/h＝72×1000×3600 m/s，分子分母…」不成立；72 km/h＝20 m/s，因為 1 km＝1000 m、1 h＝3600 s；長度與時間都…。"
+      "reason": "兩者單位不同不符合題目資料。速度包含方向，+4 與 -4 的方向相反，即使大小相同也不是同一速度。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向」。"
+      "isCorrect": false,
+      "reason": "兩者都沒有移動不符合題目資料。速度包含方向，+4 與 -4 的方向相反，即使大小相同也不是同一速度。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "證據評估"
+    "合理性評估"
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "路程與位移永遠大小相等，往返原點的路程也是零",
-    "平均速率是路程乘時間，所以為 4500 m/s",
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘"
+    "兩者速率不同",
+    "兩者單位不同",
+    "兩者都沒有移動"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -62,19 +62,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

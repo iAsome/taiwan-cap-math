@@ -16,51 +16,50 @@
     "AUTH-NATURAL-LP-PO-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於對照組並預測可能結果，哪項結論符合題給條件？",
+  "stem": "安慰劑對照在藥效研究中的概念作用為何？",
   "options": [
-    "只要數據不符合預期就應直接刪除，否則會使結論不漂亮",
-    "對照組接受除自變項外的相同處理",
-    "小型灑漏或燙傷應先自行隱瞞，用手快速擦乾，以免實驗被中斷",
-    "只要一次實驗符合預測，就可宣稱所有情況都成立，不需說明限制"
+    "改變測量單位",
+    "取消重複",
+    "區分處理成分與接受處理行為本身的影響",
+    "讓所有人一定康復"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要數據不符合預期就應直接刪除，否則會使結論不漂亮」不成立；異常數據應原樣記錄，檢查器材、操作與條件，只在有可說明理由時重測或標記排除。"
+      "reason": "與單位無關。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「對照組接受除自變項外的相同處理，可用來比較若沒有關鍵處理時的結果」。"
+      "isCorrect": false,
+      "reason": "仍需足夠樣本。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「小型灑漏或燙傷應先自行隱瞞，用手快速擦乾，以免實驗被中斷」不成立；器材破損、藥品灑漏或燙傷應立即停止操作、警告周遭並通知教師，依規程處理，不徒手清理。"
+      "isCorrect": true,
+      "reason": "提供相似程序但無有效成分基準。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要一次實驗符合預測，就可宣稱所有情況都成立，不需說明限制」不成立；實驗結論應限於已測條件，說明樣本數、量測精度、潛在干擾並提出只改一項的具體改善。"
+      "reason": "不保證康復。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "概念遷移"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要數據不符合預期就應直接刪除，否則會使結論不漂亮",
-    "小型灑漏或燙傷應先自行隱瞞，用手快速擦乾，以免實驗被中斷",
-    "只要一次實驗符合預測，就可宣稱所有情況都成立，不需說明限制"
+    "改變測量單位",
+    "取消重複",
+    "讓所有人一定康復"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段探究與實作學習表現; 臺灣國中教育會考自然科實驗設計、安全與資料判讀題型",
     "sourceRefs": [
       "AUTH-NATURAL-LP-AI-4-1",
       "AUTH-NATURAL-LP-AI-4-2",
@@ -73,19 +72,5 @@
       "AUTH-NATURAL-LP-PO-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

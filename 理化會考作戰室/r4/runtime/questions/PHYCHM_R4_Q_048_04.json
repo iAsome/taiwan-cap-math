@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查相對質量加總紀錄，哪項判讀正確？",
+  "stem": "靜態粒子圖沒有畫速度箭頭，可以推出粒子靜止嗎？",
   "options": [
-    "原子和分子模型是肉眼直接看到的實物照片，不含任何推論",
-    "元素、化合物、原子和分子是同一分類層次，任何名稱可相互代換",
-    "模型一旦改變就表示先前所有實驗都是作假，舊證據不再存在",
-    "球棒模型適合呈現種類、數目與連接，但不宜由球的顯示大小推斷實際原子尺寸"
+    "不能，因粒子沒有位置",
+    "不能，圖可能省略動態資訊",
+    "可以，沒箭頭就是零速",
+    "可以，分子本來不動"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「原子和分子模型是肉眼直接看到的實物照片，不含任何推論」不成立；原子和分子是用來解釋物質組成與性質的粒子模型；分子由特定種類與數目的原子結合。"
+      "reason": "圖仍呈現相對位置。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「元素、化合物、原子和分子是同一分類層次，任何名稱可相互代換」不成立；銅元素由同類銅原子組成；水是氫、氧元素以固定比例組成的化合物，一個水分子是其粒子表示。"
+      "isCorrect": true,
+      "reason": "靜態表示未提供速度。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「模型一旦改變就表示先前所有實驗都是作假，舊證據不再存在」不成立；原子模型會在新實驗證據出現後修正；新模型應解釋既有證據，並對新現象有更好預測。"
+      "reason": "缺少符號不等於零。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「球棒模型適合呈現種類、數目與連接，但不宜由球的顯示大小推斷實際原子尺寸」。"
+      "isCorrect": false,
+      "reason": "粒子會運動。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀",
-    "應用"
+    "缺失資訊判讀"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "原子和分子模型是肉眼直接看到的實物照片，不含任何推論",
-    "元素、化合物、原子和分子是同一分類層次，任何名稱可相互代換",
-    "模型一旦改變就表示先前所有實驗都是作假，舊證據不再存在"
+    "不能，因粒子沒有位置",
+    "可以，沒箭頭就是零速",
+    "可以，分子本來不動"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-1",
       "AUTH-NATURAL-LC-AA-4-2",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

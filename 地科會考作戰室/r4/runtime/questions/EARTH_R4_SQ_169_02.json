@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "EARTH_R4_ST_169",
-  "stem": "閱讀「由繞行對象分類衛星與行星」的資料後，為了釐清科學記號或比例尺比較天體尺度，哪一項限制最需要寫入報告？",
+  "stem": "由表中數值估算，太陽直徑約為地球直徑的多少倍？",
   "options": [
-    "分析科學記號或比例尺比較天體尺度時，有3列資料就沒有不確定性",
-    "電腦繪製的「由繞行對象分類衛星與行星」表格可保證來源正確",
-    "分析科學記號或比例尺比較天體尺度時，報告需註明：光年是距離單位不是時間",
-    "科學記號或比例尺比較天體尺度結果符合預期便不必檢查反例"
+    "約11倍",
+    "約1,100倍",
+    "約110倍",
+    "約11,000倍"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "資料列數不會消除量測與取樣不確定性。"
+      "reason": "表中相應列與欄不支持「約11倍」；依原始數值或分類條件核對後，此敘述不能成立。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "製圖工具不會自動保證「由繞行對象分類衛星與行星」的來源可靠。"
+      "reason": "表中相應列與欄不支持「約1,100倍」；依原始數值或分類條件核對後，此敘述不能成立。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "這項限制界定「由繞行對象分類衛星與行星」的資料可支持到哪裡。"
+      "reason": "用1.39×10^6除以1.27×10^4，指數先給出10^2，係數比約1.09，結果約110倍。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "符合「先確認比較變因與單位，再用比值或科學記號」仍須檢查替代解釋與反例。"
+      "reason": "表中相應列與欄不支持「約11,000倍」；依原始數值或分類條件核對後，此敘述不能成立。"
     }
   ],
   "difficulty": "advanced",
@@ -48,7 +48,7 @@
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "圖上最大天體一定離太陽最遠"
+    "約11倍"
   ],
   "provenance": {
     "status": "original",
@@ -66,13 +66,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "逐項核對「由繞行對象分類衛星與行星」的條件後，「分析科學記號或比例尺比較天體尺度時，報告需註明：光年是距離單位不是時間」符合題目資料；查核依據為：天體直徑、質量、距離、週期與組成表格要先核對單位。",
+      "evidence": "獨立重算或逐欄核對後，用1.39×10^6除以1.27×10^4，指數先給出10^2，係數比約1.09，結果約110倍。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「光年是距離單位不是時間」。",
+      "evidence": "改用「約11倍」驗算：表中相應列與欄不支持「約11倍」；依原始數值或分類條件核對後，此敘述不能成立。科學記號換算保留了指數、係數與共同單位。",
       "status": "pass"
     }
   ],

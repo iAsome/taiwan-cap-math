@@ -17,51 +17,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄根據鋅銅電池下結論，哪項符合資料？",
+  "stem": "甲被還原、乙被氧化，依狹義氧轉移，氧最可能如何移動？",
   "options": [
-    "鏽蝕、燃燒與漂白只要外觀相像，反應物、條件和安全性就完全一樣",
-    "電池先在內部儲存固定的電流，接上導線後把電流倒出而無化學反應",
-    "氧化銅失氧而被還原",
-    "放電、充電與電解的能量流向都是化學能自動轉成電能"
+    "甲乙都不涉及氧",
+    "由甲移向乙",
+    "氧只在容器外移動",
+    "由乙移向甲"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「鏽蝕、燃燒與漂白只要外觀相像，反應物、條件和安全性就完全一樣」不成立；鐵的鏽蝕需氧與水，燃燒是快速氧化，漂白則須依實際物質與反應證據分析。"
+      "reason": "題意已指定狹義變化。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「電池先在內部儲存固定的電流，接上導線後把電流倒出而無化學反應」不成立；鋅銅電池放電時，自發化學反應驅動外電路電流，將化學能轉為電能。"
+      "isCorrect": true,
+      "reason": "甲失氧、乙得氧。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「在氧化銅與碳的反應中，氧化銅失氧而被還原，碳得氧而被氧化」。"
+      "isCorrect": false,
+      "reason": "氧在反應物間轉移。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「放電、充電與電解的能量流向都是化學能自動轉成電能」不成立；電池放電是化學能轉電能；充電和電解都需外加電能驅動非自發化學改變。"
+      "reason": "方向相反。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "方向推論"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "鏽蝕、燃燒與漂白只要外觀相像，反應物、條件和安全性就完全一樣",
-    "電池先在內部儲存固定的電流，接上導線後把電流倒出而無化學反應",
-    "放電、充電與電解的能量流向都是化學能自動轉成電能"
+    "甲乙都不涉及氧",
+    "氧只在容器外移動",
+    "由乙移向甲"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科公開題型之證據判讀與生活情境層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -75,19 +74,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

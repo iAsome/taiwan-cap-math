@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查潛望鏡多次反射紀錄，哪項判讀正確？",
+  "stem": "不透明小球放在點光源與屏幕之間，屏幕出現清楚暗區。暗區形成的主要原因是什麼？",
   "options": [
-    "入射角與反射角都要從鏡面量起，因此兩者和法線無關",
-    "平面鏡像是實際光線在鏡後交會的實像，可把紙屏放在鏡後接到",
-    "均勻介質中光沿直線傳播",
-    "物體遠離平面鏡時像會縮小，而像距永遠是物距的一半"
+    "小球把黑色物質投到屏幕",
+    "小球阻擋沿直線前進的光",
+    "光遇到小球後全部變成聲音",
+    "屏幕本身停止反射任何光"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「入射角與反射角都要從鏡面量起，因此兩者和法線無關」不成立；反射定律規定入射角等於反射角，兩角均由光線與法線之間量得。"
+      "reason": "影子不是物質。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「平面鏡像是實際光線在鏡後交會的實像，可把紙屏放在鏡後接到」不成立；平面鏡成像位置可將兩條反射光線反向延長至鏡後交點，得到無法投屏的虛像。"
+      "isCorrect": true,
+      "reason": "光源到屏幕的部分直線路徑被小球截斷。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「均勻介質中光沿直線傳播，因而形成清楚影子並使針孔可將景物倒立成像」。"
+      "isCorrect": false,
+      "reason": "遮擋不會把全部光轉成聲音。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「物體遠離平面鏡時像會縮小，而像距永遠是物距的一半」不成立；平面鏡的像與物等大，像距等於物距，像與物對鏡面對稱。"
+      "reason": "屏幕其他區仍可受光並反射。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "入射角與反射角都要從鏡面量起，因此兩者和法線無關",
-    "平面鏡像是實際光線在鏡後交會的實像，可把紙屏放在鏡後接到",
-    "物體遠離平面鏡時像會縮小，而像距永遠是物距的一半"
+    "小球把黑色物質投到屏幕",
+    "光遇到小球後全部變成聲音",
+    "屏幕本身停止反射任何光"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-6",
       "AUTH-NATURAL-LC-KA-4-7",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

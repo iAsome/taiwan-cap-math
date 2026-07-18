@@ -19,6 +19,31 @@ const findings = [];
 const add = (severity, rule, id, field, evidence) => findings.push({ severity, rule, id, field, evidence: String(evidence).slice(0, 180) });
 const prohibited = new Map([["公釐", "毫米"], ["公厘", "毫米"], ["厘米", "公分"], ["千米", "公里"], ["平方厘米", "平方公分"], ["立方厘米", "立方公分"], ["平米", "平方公尺"], ["千克", "公斤"], ["公裡", "公里"]]);
 const simplified = "边线点圆体长应题证为与进这还图标关开门问误选项决侧却轮虑盖镜画头";
+const scanExactPadding = (id, field, value, path = field) => {
+  if (typeof value === "string") {
+    const sentences = value.split(/(?<=[。！？])/u).map(item => item.trim()).filter(item => item.length >= 8);
+    const seen = new Set();
+    for (const sentence of sentences) {
+      if (seen.has(sentence)) add("HIGH", "exact-repeated-sentence", id, path, sentence);
+      seen.add(sentence);
+    }
+    return;
+  }
+  if (Array.isArray(value)) {
+    const strings = value.filter(item => typeof item === "string" && item.trim().length >= 8);
+    const seen = new Set();
+    for (const item of strings) {
+      const normalized = item.trim();
+      if (seen.has(normalized)) add("HIGH", "exact-repeated-array-item", id, path, normalized);
+      seen.add(normalized);
+    }
+    value.forEach((item, index) => scanExactPadding(id, field, item, `${path}[${index}]`));
+    return;
+  }
+  if (value && typeof value === "object") {
+    for (const [key, item] of Object.entries(value)) scanExactPadding(id, field, item, `${path}.${key}`);
+  }
+};
 const scan = (id, field, value) => {
   const rendered = JSON.stringify(value ?? "");
   for (const [token, replacement] of prohibited) if (rendered.includes(token)) add("HIGH", "prohibited-taiwan-unit", id, field, `${token} -> ${replacement}`);
@@ -26,6 +51,7 @@ const scan = (id, field, value) => {
   if (/\^/.test(rendered)) add("HIGH", "prohibited-visible-caret", id, field, rendered.match(/.{0,35}\^.{0,35}/)?.[0] || rendered);
   if (/。。|，，|？？|！！/.test(rendered)) add("HIGH", "duplicate-punctuation", id, field, rendered.match(/.{0,35}(?:。。|，，|？？|！！).{0,35}/)?.[0] || rendered);
   for (const token of simplified) if (rendered.includes(token)) add("HIGH", "simplified-chinese", id, field, token);
+  scanExactPadding(id, field, value);
 };
 
 const seenSkills = new Set();

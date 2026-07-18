@@ -15,110 +15,109 @@
     "PHYCHM_R4_S009"
   ],
   "objectives": [
-    "能掌握密度常用單位間換算的判準與適用條件。",
-    "能由實驗或生活資料判讀密度常用單位間換算，並修正常見錯誤。"
+    "能在 g/cm³、g/mL 與 kg/m³ 間保持同一密度換算。"
   ],
   "sections": [
     {
       "id": "PHYCHM_R4_L_010_SEC_01",
-      "title": "核心概念",
-      "content": "1.20 g/cm³＝1200 kg/m³；質量和體積的換算倍率需一起納入。先找出題目的觀察量與條件，再用這項判準核對。"
+      "title": "在密度常用單位間換算",
+      "content": "能在 g/cm³、g/mL 與 kg/m³ 間保持同一密度換算。"
     },
     {
       "id": "PHYCHM_R4_L_010_SEC_02",
-      "title": "關係與單位",
-      "content": "密度 ρ＝質量 m÷體積 V；m＝ρV；V＝m÷ρ。1 g/cm³＝1000 kg/m³。固體常用 g/cm³，液體常用 g/mL；換算時 1 cm³＝1 mL。"
+      "title": "體積等量關係",
+      "content": "1 cm³＝1 mL，因此同一液體的 0.92 g/cm³ 與 0.92 g/mL 數值相同。這個等量只連結體積單位，不能把 cm³ 與 L 的倍率忽略。"
     },
     {
       "id": "PHYCHM_R4_L_010_SEC_03",
-      "title": "解題流程",
-      "content": "列出已知量，統一單位後代入關係式，再檢查量級。作答前再檢查方向、單位、數量級與證據強度。"
+      "title": "跨到 SI 單位",
+      "content": "1 g＝0.001 kg，而 1 cm³＝10⁻⁶ m³，所以 1 g/cm³＝1000 kg/m³。分子與分母要一起換，不能只把 g 改 kg。"
     },
     {
       "id": "PHYCHM_R4_L_010_SEC_04",
-      "title": "限制與迷思",
-      "content": "常見錯誤是「1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖改變，數值不必變」。用密度鑑別物質時必須考慮純度、溫度與量測不確定性，密度相近不能單獨證明物質相同。"
+      "title": "方向與量級",
+      "content": "水約 1 g/cm³，也約 1000 kg/m³。若換算後得到 0.001 kg/m³，就與熟悉尺度差一百萬倍，應回查體積的立方倍率。"
     }
   ],
   "workedExamples": [
     {
       "id": "PHYCHM_R4_L_010_EX_01",
-      "prompt": "金屬塊鑑別紀錄中有人主張「1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖改變，數值不必變」。如何修正？",
+      "prompt": "2.7 g/cm³ 換成 kg/m³。",
       "steps": [
-        "找出金屬塊鑑別提供的觀察量與條件。",
-        "列出已知量，統一單位後代入關係式，再檢查量級",
-        "比對資料是否支持結論。"
+        "使用 1 g/cm³＝1000 kg/m³。",
+        "2.7×1000。",
+        "保留 kg/m³。"
       ],
-      "answer": "1.20 g/cm³＝1200 kg/m³；質量和體積的換算倍率需一起納入",
-      "why": "原主張與「1.20 g/cm³＝1200 kg/m³；質量和體積的換算倍率需一起納入」相衝突。"
+      "answer": "2700 kg/m³。",
+      "why": "質量與體積同時換算後，數值放大一千倍。"
     },
     {
       "id": "PHYCHM_R4_L_010_EX_02",
-      "prompt": "整理不規則石塊排水資料時，計算或單位應如何檢查？",
+      "prompt": "將密度 850 kg/m³ 改用 g/cm³ 表示。",
       "steps": [
-        "找出不規則石塊排水提供的觀察量與條件。",
-        "列出已知量，統一單位後代入關係式，再檢查量級",
-        "比對資料是否支持結論。"
+        "由大數值單位換回。",
+        "850÷1000。",
+        "寫 g/cm³。"
       ],
-      "answer": "密度 ρ＝質量 m÷體積 V；m＝ρV；V＝m÷ρ。1 g/cm³＝1000 kg/m³；固體常用 g/cm³，液體常用 g/mL；換算時 1 cm³＝1 mL",
-      "why": "數值、物理量與單位必須同時一致，不能只檢查算式。"
+      "answer": "0.85 g/cm³。",
+      "why": "kg/m³ 轉 g/cm³ 要除以 1000。"
     },
     {
       "id": "PHYCHM_R4_L_010_EX_03",
-      "prompt": "同材質樣品比較只提供部分資料時，結論要保留什麼限制？",
+      "prompt": "1.05 g/mL 能否直接寫成 1.05 g/cm³？",
       "steps": [
-        "找出同材質樣品比較提供的觀察量與條件。",
-        "列出已知量，統一單位後代入關係式，再檢查量級",
-        "比對資料是否支持結論。"
+        "確認 1 mL＝1 cm³。",
+        "分子同為 g。",
+        "數值不變。"
       ],
-      "answer": "用密度鑑別物質時必須考慮純度、溫度與量測不確定性，密度相近不能單獨證明物質相同",
-      "why": "資料不足時保留限制，才能避免把局部結果當成普遍規律。"
+      "answer": "可以，兩者等值。",
+      "why": "每毫升與每立方公分指相同體積。"
     }
   ],
   "misconceptions": [
     {
-      "belief": "1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖改變，數值不必變",
-      "whyWrong": "這項說法忽略定義、條件或可核對的資料。",
-      "correction": "1.20 g/cm³＝1200 kg/m³；質量和體積的換算倍率需一起納入"
+      "belief": "1 g/cm³＝1 kg/m³。",
+      "whyWrong": "分子與立方體積的倍率不會抵消成 1。",
+      "correction": "1 g/cm³＝1000 kg/m³。"
     },
     {
-      "belief": "密度是體積除以質量，所以答案為 20÷54 g/cm³",
-      "whyWrong": "這項說法忽略定義、條件或可核對的資料。",
-      "correction": "質量 54 g、體積 20 cm³ 的物體密度為 2.7 g/cm³，計算式是 ρ＝m/V"
+      "belief": "換密度單位只需換質量。",
+      "whyWrong": "分母體積也改變且含立方倍率。",
+      "correction": "分子、分母各自換算。"
     },
     {
-      "belief": "質量是 7.8÷10＝0.78 g，因為密度和體積應相除",
-      "whyWrong": "這項說法忽略定義、條件或可核對的資料。",
-      "correction": "密度 7.8 g/cm³、體積 10 cm³ 的鐵塊質量為 78 g，使用 m＝ρV"
+      "belief": "g/mL 與 g/cm³ 的數值相差 1000 倍。",
+      "whyWrong": "1 mL 恰等於 1 cm³。",
+      "correction": "在相同質量單位下數值相同。"
     },
     {
-      "belief": "體積是 135×2.7＝364.5 cm³，因為密度越大體積一定越大",
-      "whyWrong": "這項說法忽略定義、條件或可核對的資料。",
-      "correction": "質量 135 g、密度 2.7 g/cm³ 的樣品體積為 50 cm³，使用 V＝m/ρ"
+      "belief": "密度單位換算會改變物質密度。",
+      "whyWrong": "只是表示方式改變。",
+      "correction": "換算前後必須表示同一物理量。"
     }
   ],
   "checks": [
     {
-      "prompt": "金屬塊鑑別中哪項判準可直接核對？",
-      "answer": "1.20 g/cm³＝1200 kg/m³；質量和體積的換算倍率需一起納入",
-      "reason": "1.20 g/cm³＝1200 kg/m³；質量和體積的換算倍率需一起納入"
+      "prompt": "2.7 g/cm³ 換成 kg/m³。",
+      "answer": "2700 kg/m³。",
+      "reason": "質量與體積同時換算後，數值放大一千倍。"
     },
     {
-      "prompt": "不規則石塊排水的數值如何避免單位錯誤？",
-      "answer": "固體常用 g/cm³，液體常用 g/mL；換算時 1 cm³＝1 mL",
-      "reason": "固體常用 g/cm³，液體常用 g/mL；換算時 1 cm³＝1 mL"
+      "prompt": "將密度 850 kg/m³ 改用 g/cm³ 表示。",
+      "answer": "0.85 g/cm³。",
+      "reason": "kg/m³ 轉 g/cm³ 要除以 1000。"
     },
     {
-      "prompt": "同材質樣品比較的結論可推到多大範圍？",
-      "answer": "用密度鑑別物質時必須考慮純度、溫度與量測不確定性，密度相近不能單獨證明物質相同",
-      "reason": "用密度鑑別物質時必須考慮純度、溫度與量測不確定性，密度相近不能單獨證明物質相同"
+      "prompt": "1.05 g/mL 能否直接寫成 1.05 g/cm³？",
+      "answer": "可以，兩者等值。",
+      "reason": "每毫升與每立方公分指相同體積。"
     }
   ],
   "assets": [],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-3",
       "AUTH-NATURAL-LC-CA-4-2",

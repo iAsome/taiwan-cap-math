@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "EARTH_R4_ST_153",
-  "stem": "閱讀「比較夏至冬至正午影長」的資料後，為了釐清不同季節的晝夜長短，哪一項讀值正確？",
+  "stem": "臺北哪一個日期的白晝最長？",
   "options": [
-    "在「比較夏至冬至正午影長」的不同季節的晝夜長短資料中，當日期位置為乙時，臺灣日落為18:45。",
-    "在「比較夏至冬至正午影長」的不同季節的晝夜長短資料中，當日期位置為乙時，臺灣日落為17:20。",
-    "在「比較夏至冬至正午影長」的不同季節的晝夜長短資料中，當日期位置為乙時，臺灣日落為18:05。",
-    "在「比較夏至冬至正午影長」的不同季節的晝夜長短資料中，附表找不到日期位置為乙的紀錄。"
+    "3月20日，12小時06分",
+    "6月21日，13小時42分",
+    "12月21日，10小時35分",
+    "三日都接近十二小時，所以無法比較"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「18:45」來自其他資料列；本列記錄的是「17:20」。"
+      "reason": "12小時06分長於十二月紀錄，但仍比六月的13小時42分短。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "逐欄讀值可直接得到「臺灣日落為17:20」。"
+      "reason": "13小時42分是三筆晝長的最大值，對應北半球接近夏至的日期。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「18:05」來自其他資料列；本列記錄的是「17:20」。"
+      "reason": "10小時35分是表中最短白晝，符合北半球接近冬至的情形。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "表中第2列已列出「乙」，不能說沒有記錄。"
+      "reason": "三筆資料差距超過三小時，不能因其中一筆接近十二小時便視為相同。"
     }
   ],
   "difficulty": "standard",
@@ -49,7 +49,7 @@
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "夏季是因地球明顯更靠近太陽"
+    "三日都接近十二小時，所以無法比較"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "逐項核對「比較夏至冬至正午影長」的條件後，「在「比較夏至冬至正午影長」的不同季節的晝夜長短資料中，當日期位置為乙時，臺灣日落為17:20。」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "直接比較晝長欄，13小時42分大於12小時06分與10小時35分，因此六月最長。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "若只看日出早晚而不配對日落，會漏掉完整受光時段；本表已提供可驗算的兩端時刻。",
       "status": "pass"
     }
   ],

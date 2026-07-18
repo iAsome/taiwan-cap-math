@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u16",
+  "batch": "017-u16-complete",
+  "skills": ["s006"],
+  "mc": [],
+  "constructedResponse": [],
+  "lectures": [
+    {
+      "lectureId": "u16-s006-lecture-r1",
+      "expectedContentSha256": "2a8ab5d817d9a5e66c1d9a8ce9f8f169524f654115d08d2fa5cc48148d3e1ec2",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "△PQR中PQ=PR，頂角∠P=34°。求兩個底角。",
+            "solutionSteps": [
+              "PQ=PR，所以∠Q=∠R。",
+              "兩底角和為180°-34°=146°。",
+              "將146°平均分成兩角，各為73°。"
+            ],
+            "answer": "∠Q=∠R=73°。",
+            "why": "兩腰相等使兩個底角相等；扣除頂角後的146°必平均分配，回算34°+73°+73°=180°可同時驗證等腰性質與內角和。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "等腰三角形一個底角為61°。求另一底角與頂角。",
+            "solutionSteps": [
+              "另一底角也為61°。",
+              "兩底角和為122°。",
+              "頂角為180°-122°=58°。"
+            ],
+            "answer": "另一底角61°，頂角58°。",
+            "why": "已知角是底角，因此必先複製成另一個相等底角，再由180°扣除兩者；若只扣一次61°，就會遺漏等腰三角形的第二個底角。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "△PQR中PQ=PR，S是QR中點。證明PS與底邊垂直，且平分∠QPR。",
+            "solutionSteps": [
+              "PQ=PR、QS=SR，且PS=PS。",
+              "依SSS得△PQS≅△PRS。",
+              "全等得∠QSP=∠PSR，兩角又互補，所以各90°；也得∠QPS=∠SPR。"
+            ],
+            "answer": "PS⊥QR，且PS平分∠QPR。",
+            "why": "頂點到底邊中點形成兩個SSS全等三角形；全等後兩個相鄰角相等且和為180°，因此垂直，同時頂角兩半也為對應角而相等。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "△XYZ中∠Y=∠Z，且XY=12公分。求XZ並說明理由。",
+            "solutionSteps": [
+              "∠Y所對邊是XZ。",
+              "∠Z所對邊是XY。",
+              "同一三角形內等角對等邊，所以XZ=XY。"
+            ],
+            "answer": "XZ=12公分。",
+            "why": "相等的是角Y與角Z，因此必配對它們各自不接觸的對邊XZ與XY；正確找出對邊後，已知長度12可直接傳到XZ。"
+          },
+          {
+            "exampleId": "L5",
+            "prompt": "等腰三角形的頂角與一個底角之比為1:2。求三個內角。",
+            "solutionSteps": [
+              "設頂角x，則兩個底角各為2x。",
+              "列x+2x+2x=180°，得x=36°。",
+              "兩底角各為72°，並核對比例1:2。"
+            ],
+            "answer": "頂角36°，兩底角各72°。",
+            "why": "比例只比較頂角與一個底角，但內角和中有兩個相等底角，所以方程必含兩個2x；解得的36°、72°、72°同時符合比例與180°。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

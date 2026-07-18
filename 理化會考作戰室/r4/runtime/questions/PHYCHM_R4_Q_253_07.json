@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "斜面搬運出現四種說法，哪項有理化概念支持？",
+  "stem": "把順時針與逆時針力矩全部相加，卻未依轉動方向相抵，結果會錯判轉動效果。依使用合力矩為零判斷轉動平衡修正時，方向與力矩應採哪個原理連結？",
   "options": [
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關",
-    "定滑輪一定把所需力減半，動滑輪則只改變方向而不省力",
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功",
-    "轉動平衡時順時針總力矩大小等於逆時針總力矩"
+    "轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零",
+    "僅根據逆 6、順 4 與順 2 N·m 誤算成合力矩 12 N·m",
+    "主張合力為零必然等於合力矩為零，忽略力的作用線位置",
+    "僅比較左右兩邊的力大小，未計入力臂便判定轉動平衡"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關」不成立；槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果。"
+      "isCorrect": true,
+      "reason": "轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零。丙列的方向為向下，力矩為2 N·m；合計列的方向為—，力矩為逆 6、順 6 N·m。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「定滑輪一定把所需力減半，動滑輪則只改變方向而不省力」不成立；理想定滑輪主要改變施力方向；動滑輪或滑輪組可由支撐繩段數分擔負載而省力。"
+      "reason": "僅根據逆 6、順 4 與順 2 N·m 誤算成合力矩 12 N·m。順時針力矩 4＋2＝6 N·m，恰與逆時針 6 N·m 抵消，合力矩為零；力矩的數值若未依方向核對，會使轉動效果無法通過使用合力矩為零判斷轉動平衡檢查。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功」不成立；輪軸利用不同力臂，齒輪利用齒數比改變轉速與力矩，斜面以增加距離換取較小力。"
+      "reason": "誤以為合力為零必然等於合力矩為零，忽略力的作用線位置。轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零；方向未列入使用合力矩為零判斷轉動平衡時，轉動效果的力矩大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零」。"
+      "isCorrect": false,
+      "reason": "僅比較左右兩邊的力大小，未計入力臂便判定轉動平衡，結果會錯判轉動效果。轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零；照原做法會把轉動效果算錯或判反。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關",
-    "定滑輪一定把所需力減半，動滑輪則只改變方向而不省力",
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功"
+    "僅根據逆 6、順 4 與順 2 N·m 誤算成合力矩 12 N·m",
+    "主張合力為零必然等於合力矩為零，忽略力的作用線位置",
+    "僅比較左右兩邊的力大小，未計入力臂便判定轉動平衡"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

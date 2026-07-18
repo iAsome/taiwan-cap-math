@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查波形比較紀錄，哪項判讀正確？",
+  "stem": "某波速為 12 m/s，波長為 3.0 m。頻率是多少？",
   "options": [
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端",
-    "若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動",
-    "頻率 5.0 Hz、波長 0.80 m 的波速為 v＝fλ＝4.0 m/s",
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長"
+    "36 Hz",
+    "4.0 Hz",
+    "0.25 Hz",
+    "9.0 Hz"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「繩波向右傳時，繩上每一個粒子都從左端一路移到右端」不成立；波將擾動與能量向前傳，介質粒子多在平衡位置附近振動，不隨波整體移到遠處。"
+      "reason": "36 是把波速和波長相乘。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動」不成立；在介質波模型中，標記粒子應在平衡位置兩側往復運動；波形則表示擾動依序傳開。"
+      "isCorrect": true,
+      "reason": "f＝v/λ＝12/3.0＝4.0 Hz。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「頻率 5.0 Hz、波長 0.80 m 的波速為 v＝fλ＝4.0 m/s；計算前要統一單位」。"
+      "isCorrect": false,
+      "reason": "0.25 是 3/12 的週期數值。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「波速為 f/λ＝6.25 m/s，因為頻率應除以波長」不成立；頻率 5.0 Hz、波長 0.80 m 的波速為 v＝fλ＝4.0 m/s；計算前要統一單位。"
+      "reason": "相減兩個物理量不能求頻率。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端",
-    "若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動",
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長"
+    "36 Hz",
+    "0.25 Hz",
+    "9.0 Hz"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

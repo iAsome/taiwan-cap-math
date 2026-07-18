@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於作圖判斷平面鏡成像位置，哪項結論符合題給條件？",
+  "stem": "以反射光作圖定位平面鏡像，至少要畫幾條來自同一物點的不同光路？",
   "options": [
-    "每次可同時移動鏡面、改入射點並從鏡面量角，只要畫出光線就能驗證",
-    "平面鏡像是實際光線在鏡後交會的實像，可把紙屏放在鏡後接到",
-    "得到無法投屏的虛像",
-    "影子與針孔成像表示光會自動繞過遮蔽物後沿曲線前進"
+    "兩條",
+    "一條",
+    "零條",
+    "四條且缺一不可"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「每次可同時移動鏡面、改入射點並從鏡面量角，只要畫出光線就能…」不成立；驗證反射定律應固定鏡面與入射點，準確畫法線，改變入射角並成對記錄入射、反射角。"
+      "isCorrect": true,
+      "reason": "兩條反射線反向延長的交點可唯一定位物點的像。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「平面鏡像是實際光線在鏡後交會的實像，可把紙屏放在鏡後接到」不成立；平面鏡成像位置可將兩條反射光線反向延長至鏡後交點，得到無法投屏的虛像。"
+      "reason": "一條延長線無法唯一決定交點。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「平面鏡成像位置可將兩條反射光線反向延長至鏡後交點，得到無法投屏的虛像」。"
+      "isCorrect": false,
+      "reason": "沒有光路不能以幾何定位。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「影子與針孔成像表示光會自動繞過遮蔽物後沿曲線前進」不成立；均勻介質中光沿直線傳播，因而形成清楚影子並使針孔可將景物倒立成像。"
+      "reason": "兩條已足以決定交點，四條不是必要。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "條件判斷",
     "分析"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "每次可同時移動鏡面、改入射點並從鏡面量角，只要畫出光線就能驗證",
-    "平面鏡像是實際光線在鏡後交會的實像，可把紙屏放在鏡後接到",
-    "影子與針孔成像表示光會自動繞過遮蔽物後沿曲線前進"
+    "一條",
+    "零條",
+    "四條且缺一不可"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-6",
       "AUTH-NATURAL-LC-KA-4-7",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

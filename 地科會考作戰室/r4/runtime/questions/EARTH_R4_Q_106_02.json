@@ -13,43 +13,43 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "若要查核逐時觀測整理成表格與折線圖，下列哪一組資料最有用？",
+  "stem": "在「逐時氣壓整理草稿」之外另作概念檢查，哪個判斷有科學依據？",
   "options": [
-    "只留下支持「一日最高溫可代表當地氣候」的紀錄並刪除反例",
-    "研究逐時觀測整理成表格與折線圖時用未標日期與位置的截圖，再以印象補足缺值",
-    "用一次「比較雷達回波與雨量器讀值」概括所有時地且不記量測方法",
-    "具日期、位置與單位的時間、氣溫°C、氣壓hPa、相對濕度%、風向紀錄"
+    "把不同天氣要素共用同一條未標單位的縱軸，仍能清楚比較。",
+    "打亂時間後再連線，仍可精確表示各筆觀測的實際先後與變化趨勢。",
+    "缺測時直接補成0 hPa。",
+    "折線須按時間順序連接。"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "只挑符合預期的紀錄會造成確認偏誤，不能查核逐時觀測整理成表格與折線圖。"
+      "reason": "「把不同天氣要素共用同一條未標單位的縱軸，仍能清楚比較。」混淆本題的量測對象、單位、時間或適用範圍；對照「折線須按時間順序連接。」可知它不能支持題幹結論。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "缺少日期、位置與原始讀值，無法確認資料是否適用於比較雷達回波與雨量器讀值。"
+      "reason": "「打亂時間後再連線，仍可精確表示各筆觀測的實際先後與變化趨勢。」混淆本題的量測對象、單位、時間或適用範圍；對照「折線須按時間順序連接。」可知它不能支持題幹結論。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "單一情境不能取代不同時間、位置的比較資料。"
+      "reason": "「缺測時直接補成0 hPa。」混淆本題的量測對象、單位、時間或適用範圍；對照「折線須按時間順序連接。」可知它不能支持題幹結論。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "這組資料能直接查核逐時觀測整理成表格與折線圖，且保留量測脈絡。"
+      "reason": "「折線須按時間順序連接。」直接回應題幹，並保留本題所需的量測對象、單位、時空尺度與適用條件。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "distinguish-concept-boundary"
+    "interpret-observation"
   ],
-  "representationType": "comparison",
+  "representationType": "observation",
   "misconceptionTargets": [
-    "風向東風表示風往東吹"
+    "把不同天氣要素共用同一條未標單位的縱軸，仍能清楚比較。"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "逐項核對「比較雷達回波與雨量器讀值」的條件後，「具日期、位置與單位的時間、氣溫°C、氣壓hPa、相對濕度%、風向紀錄」符合題目資料；查核依據為：逐時表格、折線圖、雷達與衛星資料各有不同時空尺度。",
+      "evidence": "針對「在「逐時氣壓整理草稿」之外另作概念檢查，哪個判斷有科學依據？」，可由「折線須按時間順序連接。」直接判定；這項證據明確保留題目指定的物理量、時空尺度與觀測條件。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單次讀值只代表當時當地」。",
+      "evidence": "交叉檢查「把不同天氣要素共用同一條未標單位的縱軸，仍能清楚比較。」：該說法在量測對象、單位、時間或適用範圍上與「折線須按時間順序連接。」衝突，不能支持題幹結論。",
       "status": "pass"
     }
   ],

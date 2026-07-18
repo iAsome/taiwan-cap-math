@@ -506,7 +506,7 @@ export default {
         "a-b=c-d"
       ],
       "answerIndex": 2,
-      "independentSolution": "令a=2,b=3,c=4,d=6驗證正確式；其餘不必成立。",
+      "independentSolution": "由a/b=c/d且四項非零，兩邊同取倒數得b/a=d/c，因此b:a=d:c必成立。",
       "mainExplanation": "由a/b=c/d取倒數得b/a=d/c。",
       "explanation": "a:b=c:d 等同 a/b=c/d。四項皆非零時，兩邊可同時取倒數，得到 b/a=d/c，也就是 b:a=d:c。其餘選項不是比例式的一般合法變形，可用反例排除，四選只有倒比式必然成立。",
       "steps": [
@@ -557,7 +557,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "27e926d87f5f94629ee3e391e035e2f7e2d4ffba2d3b800a5dcd73683f99f74f"
+      "contentSha256": "a085de3c2c095e378acb493f63d2435ffa082b7f3776668b45e56a9961bad933"
     },
     {
       "questionId": "u06-s004-v005",
@@ -1411,11 +1411,11 @@ export default {
       "questionId": "u06-s004-v004",
       "unitId": "u06",
       "skillId": "proportion-property",
-      "contentSha256": "27e926d87f5f94629ee3e391e035e2f7e2d4ffba2d3b800a5dcd73683f99f74f",
+      "contentSha256": "a085de3c2c095e378acb493f63d2435ffa082b7f3776668b45e56a9961bad933",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "independentSolution": "令a=2,b=3,c=4,d=6驗證正確式；其餘不必成立。",
+      "independentSolution": "由a/b=c/d且四項非零，兩邊同取倒數得b/a=d/c，因此b:a=d:c必成立。",
       "derivedAnswer": "b:a=d:c",
       "storedAnswer": "b:a=d:c",
       "answerMatch": true,
@@ -1440,7 +1440,7 @@ export default {
       },
       "difficultyReason": "需要理解條件而非只算數字。",
       "literacyNecessity": null,
-      "reviewerNote": "獨立重算：令a=2,b=3,c=4,d=6驗證正確式；其餘不必成立。 原比例給 ad=bc，修正後第一選項 a:c=d:b 則要求 ab=cd，代入反例得到六不等於二十四，故非必然。第二、第四選項的和與差也不受相同比值保證。四項非零時可對 a/b=c/d 同取倒數，唯一必然成立的是 b:a=d:c；四選真值為 [false,false,true,false]，不存在第二答案。",
+      "reviewerNote": "獨立證明：由a/b=c/d且四項非零，兩邊同取倒數得b/a=d/c，因此b:a=d:c必成立。其餘三式都不是原比例的一般等價變形；以2:3=4:6可分別排除和、差與錯誤重排，故倒比式是唯一必然成立的選項。",
       "reviewerDecision": "pass"
     },
     {

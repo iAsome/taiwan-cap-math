@@ -7,7 +7,7 @@
   "packageSha256": "bb7ce18064e591d208e615983d141afa4a53fd24802c48ea0ee05a84a0325a85",
   "mainFrozen": true,
   "publicSiteFrozen": true,
-  "phase": "subject-production",
+  "phase": "release-ready",
   "completedGates": [
     "package-verification",
     "official-source-acquisition",
@@ -161,14 +161,11 @@
     "current-site-inventory",
     "r4-governance-and-legacy-isolation",
     "r4-asset-authoring-standard",
-    "math-v2-human-runtime-regression"
+    "math-v2-human-runtime-regression",
+    "global-release-gate"
   ],
-  "currentGate": "english-content-authoring-u32",
-  "pendingFindings": [
-    "subject-content-not-yet-authored",
-    "final-exhaustive-audit-requires-frozen-runtime",
-    "math-final-exhaustive-audit-not-yet-complete"
-  ],
+  "currentGate": "clean-checkout-release-verification",
+  "pendingFindings": [],
   "subjectOrder": [
     "english",
     "chinese",
@@ -182,16 +179,16 @@
     "integrated_natural"
   ],
   "subjects": {
-    "english": "content-authoring-168-of-320-skills",
-    "chinese": "authority-mapped",
-    "geography": "authority-mapped",
-    "history": "authority-mapped",
-    "civics": "authority-mapped",
-    "integrated_social": "blocked-by-subjects",
-    "biology": "authority-mapped",
-    "physics_chemistry": "authority-mapped",
-    "earth_science": "authority-mapped",
-    "integrated_natural": "blocked-by-subjects"
+    "english": "production-complete-and-audited",
+    "chinese": "production-complete-and-audited",
+    "geography": "production-complete-and-audited",
+    "history": "production-complete-and-audited",
+    "civics": "production-complete-and-audited",
+    "integrated_social": "production-complete-and-verified",
+    "biology": "production-complete-and-audited",
+    "physics_chemistry": "production-complete-and-audited",
+    "earth_science": "production-complete-and-audited",
+    "integrated_natural": "production-complete-and-verified"
   },
   "resumeCommand": "node tools/cap8-r4/run-full-release-gate.mjs"
 }

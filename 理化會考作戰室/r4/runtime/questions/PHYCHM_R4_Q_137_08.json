@@ -16,51 +16,50 @@
     "AUTH-NATURAL-LP-PO-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理量測器材選擇資料，哪項敘述合理？",
+  "stem": "同量水分別用100 mL與1000 mL量筒量取，何者通常較精細？",
   "options": [
-    "量取 25 mL 溶液適合用量筒而非燒杯；加熱需選可受熱器材並依藥品性質選熱源",
-    "未知氣體應把鼻子靠近容器深吸，稀釋時將水一次倒入濃酸可最快散熱",
-    "自變項是實驗者要量到的結果，應變項則是所有必須保持不變的條件",
-    "對照組應什麼都不做，包括不用相同容器、時間或量測方法"
+    "較重者",
+    "量筒顏色越深，刻度讀值就越精細",
+    "最小刻度較小者",
+    "容量較大者"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「量取 25 mL 溶液適合用量筒而非燒杯；加熱需選可受熱器材並依藥品性質選熱源」。"
+      "isCorrect": false,
+      "reason": "器材重量無關。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「未知氣體應把鼻子靠近容器深吸，稀釋時將水一次倒入濃酸可最快…」不成立；聞氣體要用手輕扇少量氣體；加熱試管口不對人；稀釋濃酸應將酸緩慢加入水。"
+      "reason": "顏色無關。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「自變項是實驗者要量到的結果，應變項則是所有必須保持不變的條件」不成立；比較溫度對溶解速度的實驗，溫度是自變項、溶解時間是應變項，質量、顆粒大小與攪拌要控制。"
+      "isCorrect": true,
+      "reason": "刻度較細可提供較精細讀值。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「對照組應什麼都不做，包括不用相同容器、時間或量測方法」不成立；對照組接受除自變項外的相同處理，可用來比較若沒有關鍵處理時的結果。"
+      "reason": "大容量不保證細刻度。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "精度比較"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "未知氣體應把鼻子靠近容器深吸，稀釋時將水一次倒入濃酸可最快散熱",
-    "自變項是實驗者要量到的結果，應變項則是所有必須保持不變的條件",
-    "對照組應什麼都不做，包括不用相同容器、時間或量測方法"
+    "較重者",
+    "量筒顏色越深，刻度讀值就越精細",
+    "容量較大者"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段探究與實作學習表現; 臺灣國中教育會考自然科實驗設計、安全與資料判讀題型",
     "sourceRefs": [
       "AUTH-NATURAL-LP-AI-4-1",
       "AUTH-NATURAL-LP-AI-4-2",
@@ -73,19 +72,5 @@
       "AUTH-NATURAL-LP-PO-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "直尺讀值出現四種說法，哪項有理化概念支持？",
+  "stem": "選擇量測儀器時，應先排除哪一類器材？",
   "options": [
-    "量約 12 cm 的鉛筆適合用毫米刻度直尺；儀器量程要大於待測量，最小刻度要能分辨所需差異",
-    "數位寫得越多就越精確，因此可記為 12.347826 cm",
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可",
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失"
+    "沒有電子螢幕但刻度清楚者",
+    "量程足夠且解析度符合需求者",
+    "需要依說明正確歸零者",
+    "量程小於待測量者"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「量約 12 cm 的鉛筆適合用毫米刻度直尺；儀器量程要大於待測量，最小刻度要能分辨所需差異」。"
+      "isCorrect": false,
+      "reason": "指針或刻度儀器仍可提供合格讀值。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「數位寫得越多就越精確，因此可記為 12.347826 cm」不成立；最小刻度 0.1 cm 的直尺，測量值可合理記至 0.01 cm；多寫更多位不會增加儀器資訊。"
+      "reason": "這兩項規格正好滿足量測需求。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「三次不相同表示實驗失敗，只保留最接近預期的 10.0 s …」不成立；量得 9.8、10.1、10.0 s 的平均約為 10.0 s，差異可用範圍或離散情形描述，不…。"
+      "reason": "可正確歸零是正常操作，不構成淘汰理由。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「只要重複次數足夠多，未歸零造成的固定偏差就會自動消失」不成立；天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動。"
+      "isCorrect": true,
+      "reason": "量程不足就無法完成讀值。"
     }
   ],
   "difficulty": "standard",
@@ -48,16 +48,16 @@
     "證據判讀",
     "推論"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "數位寫得越多就越精確，因此可記為 12.347826 cm",
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可",
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失"
+    "沒有電子螢幕但刻度清楚者",
+    "量程足夠且解析度符合需求者",
+    "需要依說明正確歸零者"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

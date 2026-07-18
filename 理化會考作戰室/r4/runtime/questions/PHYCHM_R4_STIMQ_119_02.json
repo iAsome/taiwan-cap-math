@@ -14,50 +14,50 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": "PHYCHM_R4_STIM_119",
-  "stem": "檢查表中關於生活中中和應用與安全限制的說法，哪項判讀正確？",
+  "stem": "加入6份後的主要問題是？",
   "options": [
-    "酸與鹼混合後只會產生水，其他離子全部消失且不會形成鹽",
-    "制酸劑、土壤改良等中和應用要依實際酸鹼量控制加入",
-    "中和時氫離子和氫氧根離子都變成電子，不會形成水",
-    "中和是否放熱應用手直接觸摸容器，不需溫度計或對照資料"
+    "沒有任何反應",
+    "酸仍嚴重過量",
+    "溫度低於起始",
+    "中和劑過量使pH升到11"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「酸與鹼混合後只會產生水，其他離子全部消失且不會形成鹽」不成立；酸與鹼在適當條件下反應生成鹽和水；產物鹽的種類取決於原酸與鹼。"
+      "reason": "前段有升溫與pH變化。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「制酸劑、土壤改良等中和應用要依實際酸鹼量控制加入，並考慮產物與過量危害」。"
+      "isCorrect": false,
+      "reason": "pH高表示鹼餘。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「中和時氫離子和氫氧根離子都變成電子，不會形成水」不成立；中和的核心粒子過程可表為氫離子與氫氧根離子結合成水。"
+      "reason": "29高於24。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「中和是否放熱應用手直接觸摸容器，不需溫度計或對照資料」不成立；相同裝置中酸鹼混合後溫度上升，若排除外加熱，可支持中和放熱。"
+      "isCorrect": true,
+      "reason": "已超過目標上限。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀"
+    "過量判斷"
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "酸與鹼混合後只會產生水，其他離子全部消失且不會形成鹽",
-    "中和時氫離子和氫氧根離子都變成電子，不會形成水",
-    "中和是否放熱應用手直接觸摸容器，不需溫度計或對照資料"
+    "沒有任何反應",
+    "酸仍嚴重過量",
+    "溫度低於起始"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科中和、資料判讀與生活應用層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -68,19 +68,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

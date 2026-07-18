@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估搬運重物報告時，哪項說明正確？",
+  "stem": "紀錄提住書包時，作用力是80 N 向上，位移是0，該力作功為0 J。為使該力作功可重現，紀錄中缺少什麼？",
   "options": [
-    "力對物體作功要有物體沿力的分量方向發生位移",
-    "能量轉換時可無故多出或少掉能量，因此不必界定系統就能使用守恆",
-    "功率是功乘時間，所以 1200 J 在 30 s 內的功率為 36000 W",
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關"
+    "主張提住靜止書包時持續施力，所以書包位移為零也有正功",
+    "僅要人感到疲累就判定對物體作了功，並漏掉檢查力方向上的位移",
+    "計算某一力的功時把物體所受全部力都混在一起，並漏掉指定是哪個力",
+    "此處只計題目指定力對物體的功，不以人的疲累程度取代力與位移的幾何關係"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「力對物體作功要有物體沿力的分量方向發生位移；用力提住靜止物體時對物體作功為零」。"
+      "isCorrect": false,
+      "reason": "誤以為提住靜止書包時持續施力，所以書包位移為零也有正功。力對物體作功要有物體沿力的分量方向發生位移；作用力未列入判斷施力是否使物體沿力的方向移動時，該力作功的位移大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「能量轉換時可無故多出或少掉能量，因此不必界定系統就能使用守恆」不成立；選定系統若不與外界交換能量，總能量守恆；若動能增加 30 J，其他能量形式總量應減少 30 J。"
+      "reason": "僅要人感到疲累就判定對物體作了功，卻未檢查力方向上的位移，結果會錯判該力作功。力對物體作功要有物體沿力的分量方向發生位移；照原做法會把該力作功算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「功率是功乘時間，所以 1200 J 在 30 s 內的功率…」不成立；完成 1200 J 的功耗時 30 s，平均功率 P＝W/t＝40 W；功率比較做功快慢。"
+      "reason": "計算某一力的功時把物體所受全部力都混在一起，卻未指定是哪個力，結果會錯判該力作功。此處只計題目指定力對物體的功，不以人的疲累程度取代力與位移的幾何關係；該力作功差異若未通過判斷施力是否使物體沿力的方向移動對作用力的控制，就不能只歸給位移。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關」不成立；力對物體作功要有物體沿力的分量方向發生位移；用力提住靜止物體時對物體作功為零。"
+      "isCorrect": true,
+      "reason": "此處只計題目指定力對物體的功，不以人的疲累程度取代力與位移的幾何關係。向上提箱列的作用力為120 N 向上，位移為1.5 m 向上；水平推箱列的作用力為50 N 向東，位移為3 m 向東。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "能量轉換時可無故多出或少掉能量，因此不必界定系統就能使用守恆",
-    "功率是功乘時間，所以 1200 J 在 30 s 內的功率為 36000 W",
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關"
+    "主張提住靜止書包時持續施力，所以書包位移為零也有正功",
+    "僅要人感到疲累就判定對物體作了功，並漏掉檢查力方向上的位移",
+    "計算某一力的功時把物體所受全部力都混在一起，並漏掉指定是哪個力"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理文字與圖形轉換資料，哪項敘述合理？",
+  "stem": "甲在 2 s 內位置增加 8 m，乙在 4 s 內位置增加 12 m。何者速度較大？",
   "options": [
-    "把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間與位置",
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快",
-    "位置—時間圖的斜率為位置變化除以時間變化"
+    "乙的速度較大",
+    "兩者速度相同",
+    "甲的速度較大",
+    "只看時間即可判定乙較大"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間…」不成立；「向東等速、停留、向西返回」的位置—時間圖應依序是正斜率、水平、負斜率。"
+      "reason": "乙的速度較大不成立。甲為 8÷2=4 m/s，乙為 12÷4=3 m/s。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸」不成立；位置—時間圖的線形描述位置如何隨時間變化，不是物體在空間中的軌跡外觀。"
+      "reason": "兩者速度相同不成立。甲為 8÷2=4 m/s，乙為 12÷4=3 m/s。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快」不成立；位置—時間圖的斜率為位置變化除以時間變化；斜率絕對值較大表示速度大小較大。"
+      "isCorrect": true,
+      "reason": "甲為 8÷2=4 m/s，乙為 12÷4=3 m/s。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「位置—時間圖的斜率為位置變化除以時間變化；斜率絕對值較大表示速度大小較大」。"
+      "isCorrect": false,
+      "reason": "只看時間即可判定乙較大不成立。甲為 8÷2=4 m/s，乙為 12÷4=3 m/s。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "關係應用",
     "多步驟推理"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間與位置",
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快"
+    "乙的速度較大",
+    "兩者速度相同",
+    "只看時間即可判定乙較大"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

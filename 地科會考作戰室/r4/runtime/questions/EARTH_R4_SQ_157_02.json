@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "EARTH_R4_ST_157",
-  "stem": "閱讀「由日出日落算晝長」的資料後，為了釐清地球公轉週期與曆年調整概念，哪一項限制最需要寫入報告？",
+  "stem": "表中四年累積0.96日，最合理的曆法處理為何？",
   "options": [
-    "分析地球公轉週期與曆年調整概念時，有3列資料就沒有不確定性",
-    "電腦繪製的「由日出日落算晝長」表格可保證來源正確",
-    "分析地球公轉週期與曆年調整概念時，報告需註明：地球軌道遠近不是四季主因",
-    "地球公轉週期與曆年調整概念結果符合預期便不必檢查反例"
+    "每年增加24日，因為0.24的數字代表24個完整日",
+    "每四年刪除一天，使曆年變得更短",
+    "約四年增加一個閏日，再用世紀年規則修正長期近似誤差",
+    "改變地球公轉速度，使每一圈精確縮短為365日"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "資料列數不會消除量測與取樣不確定性。"
+      "reason": "0.24日約5.76小時，不是24日；這種解讀會把差值放大一百倍。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "製圖工具不會自動保證「由日出日落算晝長」的來源可靠。"
+      "reason": "曆年本來比公轉週期短，刪日會讓日期與季節的落後累積得更快。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "這項限制界定「由日出日落算晝長」的資料可支持到哪裡。"
+      "reason": "0.96日接近一日，插入閏日可補償；公曆另有世紀年例外避免長期過度補償。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "符合「曆年調整與公轉週期不等於整數日有關」仍須檢查替代解釋與反例。"
+      "reason": "日曆是人為計時制度，不能靠改寫日期改變受引力控制的地球公轉。"
     }
   ],
   "difficulty": "advanced",
@@ -49,7 +49,7 @@
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "全球同一天的晝長完全相等"
+    "每四年刪除一天，使曆年變得更短"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "逐項核對「由日出日落算晝長」的條件後，「分析地球公轉週期與曆年調整概念時，報告需註明：地球軌道遠近不是四季主因」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "四年近似少列一日，因此增加閏日的方向與量都符合表中累積差。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "刪除一天會把四年的短少從約一日擴大到約兩日，修正方向明顯相反。",
       "status": "pass"
     }
   ],

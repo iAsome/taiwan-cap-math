@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估同材質樣品比較報告時，哪項說明正確？",
+  "stem": "若密度資料只適用於實心材料，能否拿來算充氣球的總質量？",
   "options": [
-    "質量是 7.8÷10＝0.78 g，因為密度和體積應相除",
-    "密度是體積除以質量，所以答案為 20÷54 g/cm³",
-    "密度 7.8 g/cm³、體積 10 cm³ 的鐵塊質量為 78 g，使用 m＝ρV",
-    "1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖改變，數值不必變"
+    "能，直接乘球外部體積",
+    "不能，需知道外皮與氣體各自的質量或平均密度",
+    "不能，因氣體沒有密度",
+    "能，忽略所有空氣"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「質量是 7.8÷10＝0.78 g，因為密度和體積應相除」不成立；密度 7.8 g/cm³、體積 10 cm³ 的鐵塊質量為 78 g，使用 m＝ρV。"
+      "reason": "外部體積包含不同成分。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「密度是體積除以質量，所以答案為 20÷54 g/cm³」不成立；質量 54 g、體積 20 cm³ 的物體密度為 2.7 g/cm³，計算式是 ρ＝m/V。"
+      "isCorrect": true,
+      "reason": "多成分系統需相符資料。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「密度 7.8 g/cm³、體積 10 cm³ 的鐵塊質量為 78 g，使用 m＝ρV」。"
+      "isCorrect": false,
+      "reason": "氣體也有密度。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖…」不成立；1.20 g/cm³＝1200 kg/m³；質量和體積的換算倍率需一起納入。"
+      "reason": "忽略氣體與外皮條件不當。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "限制評估"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "質量是 7.8÷10＝0.78 g，因為密度和體積應相除",
-    "密度是體積除以質量，所以答案為 20÷54 g/cm³",
-    "1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖改變，數值不必變"
+    "能，直接乘球外部體積",
+    "不能，因氣體沒有密度",
+    "能，忽略所有空氣"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-3",
       "AUTH-NATURAL-LC-CA-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

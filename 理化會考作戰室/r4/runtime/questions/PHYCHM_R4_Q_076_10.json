@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "學生根據沉澱形成下結論，哪項符合資料？",
+  "stem": "文字式能否直接顯示原子數已配平？",
   "options": [
-    "兩物質一接觸就必然發生化學反應，不可能只是混合或溶解",
-    "「碳與氧氣反應生成二氧化碳」應保留反應物、生成物和方向",
-    "文字反應只需寫「發光發熱」，無需指出哪些物質消耗或形成",
-    "箭頭右側是實驗前放入的反應物，左側是實驗後才形成的物質"
+    "不能，因文字式不包含任何物質",
+    "通常不能，需化學式與係數才能驗算",
+    "一定能，物質名稱已顯示每種原子數",
+    "能，只要箭頭左右物質項目數相同"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「兩物質一接觸就必然發生化學反應，不可能只是混合或溶解」不成立；溶解或單純混合可造成溫度、顏色或外觀變化；只有產物證據才能排除這些假線索。"
+      "reason": "文字式確實列出反應物與生成物名稱。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「「碳與氧氣反應生成二氧化碳」應保留反應物、生成物和方向，不把觀察現象當成物質名稱」。"
+      "reason": "文字名稱通常不呈現各元素原子數與係數。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「文字反應只需寫「發光發熱」，無需指出哪些物質消耗或形成」不成立；「碳與氧氣反應生成二氧化碳」應保留反應物、生成物和方向，不把觀察現象當成物質名稱。"
+      "reason": "例如『水』這個名稱沒有直接寫出 H₂O 的下標。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「箭頭右側是實驗前放入的反應物，左側是實驗後才形成的物質」不成立；文字反應式中箭頭左側是反應物，右側是生成物；例如碳＋氧氣→二氧化碳。"
+      "reason": "物質項目數相等不代表逐元素原子數相等。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "表示限制"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "兩物質一接觸就必然發生化學反應，不可能只是混合或溶解",
-    "文字反應只需寫「發光發熱」，無需指出哪些物質消耗或形成",
-    "箭頭右側是實驗前放入的反應物，左側是實驗後才形成的物質"
+    "不能，因文字式不包含任何物質",
+    "一定能，物質名稱已顯示每種原子數",
+    "能，只要箭頭左右物質項目數相同"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-2",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

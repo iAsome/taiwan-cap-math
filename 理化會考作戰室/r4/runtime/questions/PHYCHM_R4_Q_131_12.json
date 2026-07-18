@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LC-NA-4-4"
   ],
   "stimulusId": null,
-  "stem": "評估肥皂清潔報告時，哪項說明正確？",
+  "stem": "學生說『能揮發的液體都適合做消毒劑』，最佳評語為何？",
   "options": [
-    "只要有芳香氣味的物質都是同一種酯，可直接品嘗以鑑定",
-    "所有含碳物質都必然是有機物，所有不含碳物質都不可能與有機化學有關",
-    "酯類常有特定香味",
-    "烷類、醇類、有機酸和酯類只是不同商品名，化學性質完全一樣"
+    "正確，所有液體都無毒",
+    "不充分，揮發性沒有證明抑菌效果與安全濃度",
+    "正確，揮發就是消毒",
+    "不充分，因為液體都不能揮發"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要有芳香氣味的物質都是同一種酯，可直接品嘗以鑑定」不成立；乙醇易揮發且可燃，醋酸具酸性，酯類常有特定香味；用途要與具體性質連結。"
+      "reason": "液體可能有毒。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「所有含碳物質都必然是有機物，所有不含碳物質都不可能與有機化…」不成立；許多有機化合物含碳，但 CO₂、碳酸鹽等常列為無機物；分類要依課程定義與組成性質。"
+      "isCorrect": true,
+      "reason": "用途還需效果、濃度及安全證據。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「乙醇易揮發且可燃，醋酸具酸性，酯類常有特定香味；用途要與具體性質連結」。"
+      "isCorrect": false,
+      "reason": "揮發性與消毒效果不是同一概念。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「烷類、醇類、有機酸和酯類只是不同商品名，化學性質完全一樣」不成立；甲烷屬烷類，乙醇屬醇類，醋酸屬有機酸，乙酸乙酯屬酯類；應根據名稱與性質辨識。"
+      "reason": "許多液體會揮發。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "論證評估"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要有芳香氣味的物質都是同一種酯，可直接品嘗以鑑定",
-    "所有含碳物質都必然是有機物，所有不含碳物質都不可能與有機化學有關",
-    "烷類、醇類、有機酸和酯類只是不同商品名，化學性質完全一樣"
+    "正確，所有液體都無毒",
+    "正確，揮發就是消毒",
+    "不充分，因為液體都不能揮發"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科有機物、材料性質與永續判讀層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JF-4-1",
       "AUTH-NATURAL-LC-JF-4-2",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LC-NA-4-4"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

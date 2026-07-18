@@ -31,7 +31,7 @@ export default {
     "glossary": [
       {
         "term": "比較基準",
-        "definition": "為公平比較而統一的單位，例如每 100 克價格。"
+        "definition": "為公平比較而統一的單位，例如每 100 公克價格。"
       },
       {
         "term": "單位率",
@@ -65,7 +65,7 @@ export default {
       }
     ],
     "conceptNarrative": [
-      "總價較低不代表更便宜，包裝大小不同時應比較每克、每毫升或每件價格。",
+      "總價較低不代表更便宜，包裝大小不同時應比較每公克、每毫升或每件價格。",
       "總人數較多的地區案件數可能較多，但每萬人率反而較低；結論取決於問題問總量還是風險率。",
       "圖表中的基準可能不是 0，視覺差距會被放大；比例判斷應讀數值與單位。",
       "現實題常有整包購買、容量上限、起跳費等限制，純比例計算後還要套用規則。",
@@ -141,12 +141,12 @@ export default {
     "workedExamples": [
       {
         "exampleId": "L1",
-        "prompt": "A 包 450 克 81 元，B 包 700 克 119 元，哪包每 100 克較便宜？",
+        "prompt": "A 包 450 公克 81 元，B 包 700 公克 119 元，哪包每 100 公克較便宜？",
         "solutionSteps": [
-          "A 每 100 克為 81÷450×100=18 元。",
-          "B 每 100 克為 119÷700×100=17 元。"
+          "A 每 100 公克為 81÷450×100=18 元。",
+          "B 每 100 公克為 119÷700×100=17 元。"
         ],
-        "answer": "B 包較便宜，每 100 克少 1 元。",
+        "answer": "B 包較便宜，每 100 公克少 1 元。",
         "why": "包裝總價與重量都不同，直接看八十一元與一百一十九元並不公平。換成每一百公克後，A 為十八元、B 為十七元，才可確認 B 的單位價格確實較低。"
       },
       {
@@ -184,7 +184,7 @@ export default {
       {
         "mistake": "只看包裝總價。",
         "why": "數量不同，基準不公平。",
-        "correction": "換算每克或每 100 克。"
+        "correction": "換算每公克或每 100 公克。"
       },
       {
         "mistake": "只看事件總數比較風險。",
@@ -260,11 +260,11 @@ export default {
       "examplesNotCopiedFromBank": true,
       "contentAuthorityConfirmed": true,
       "symbolDefinitionsComplete": true,
-      "reviewNote": "四個例題分別重算每百克價格、每萬人率、向上取整與截斷軸比值；確認結論用語只支持資料範圍，並把不同期間、容量缺失與整包限制明列為必要審查。",
+      "reviewNote": "四個例題分別重算每百公克價格、每萬人率、向上取整與截斷軸比值；確認結論用語只支持資料範圍，並把不同期間、容量缺失與整包限制明列為必要審查。",
       "reviewVersion": "human-lecture-review-u06-r1.0",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "71d7f7560a554ecf101dc76c3f3c6fe157598e37f16355e45ccbe17c949cc70f"
+    "contentSha256": "dcfc42a7c20a828e314b23ff0ec30b7ed4d07e70d6cbda4c9b1b2a097d99439b"
   },
   "mcQuestions": [
     {
@@ -287,7 +287,7 @@ export default {
         "B包，17元"
       ],
       "answerIndex": 3,
-      "independentSolution": "B每100克少1元。",
+      "independentSolution": "B每100公克少1元。",
       "mainExplanation": "兩包重量不同，必須換成相同的一百公克基準。A 包四百五十公克有四點五個一百公克，每百公克十八元；B 包七百公克有七個一百公克，每百公克十七元，所以 B 包較便宜。",
       "explanation": "兩包重量不同，必須換成相同的一百公克基準。A 包四百五十公克有四點五個一百公克，每百公克十八元；B 包七百公克有七個一百公克，每百公克十七元，所以 B 包較便宜。",
       "steps": [
@@ -314,7 +314,7 @@ export default {
         {
           "choice": "B包，17元",
           "truth": true,
-          "reason": "A每100克18元，B每100克17元。"
+          "reason": "A每100公克18元，B每100公克17元。"
         }
       ],
       "misconceptionTarget": "只看八十一元低於一百一十九元，沒有考慮兩包的重量基準不同。",
@@ -338,7 +338,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "6dc282a61c2692e07f358c9e104cdf651f06e08fd556926d1f867d3e63bb2cdd"
+      "contentSha256": "581458b09312815a686d0797b43d8e612cf1ed5ddeaa7b5cee176fdff87f800e"
     },
     {
       "questionId": "u06-s012-v002",
@@ -652,7 +652,7 @@ export default {
         "兩者相同"
       ],
       "answerIndex": 1,
-      "independentSolution": "甲方案平均每GB約11.67元，仍低於乙25元。",
+      "independentSolution": "甲方案費用為200+10×15=350元，乙方案為30×25=750元，所以甲便宜400元。",
       "mainExplanation": "甲方案的二十 GB 已含在月費中，使用三十 GB 時只有超出的十 GB 另計，費用為二百加十乘十五，等於三百五十元。乙方案費用是三十乘二十五，等於七百五十元，所以甲便宜四百元。",
       "explanation": "甲方案的二十 GB 已含在月費中，使用三十 GB 時只有超出的十 GB 另計，費用為二百加十乘十五，等於三百五十元。乙方案費用是三十乘二十五，等於七百五十元，所以甲便宜四百元。",
       "steps": [
@@ -703,7 +703,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "02886fb64487eae84c3b13b9a268c6935baa7da4778cc0a0605b8855a0e68781"
+      "contentSha256": "edbd9236a917514b0c8c5c7c2654336e86dbe50daf5a1f206c3c0c3d3da7583a"
     },
     {
       "questionId": "u06-s012-v007",
@@ -1178,7 +1178,7 @@ export default {
       "rubric": [
         {
           "score": 3,
-          "criteria": "甲17、乙16元/100克，結論乙較便宜並解釋總價分母不一致。"
+          "criteria": "甲17、乙16元/100公克，結論乙較便宜並解釋總價分母不一致。"
         },
         {
           "score": 2,
@@ -1217,7 +1217,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "97a344989426415db87962601bed68cf45f152e051ee7ab775b633e0f6dec6de"
+      "contentSha256": "d6671f23214cd65a9556f69d61d8c33d817c8a41b374141013d1b3899ff72b57"
     },
     {
       "questionId": "u06-s012-cr002",
@@ -1300,11 +1300,11 @@ export default {
       "questionId": "u06-s012-v001",
       "unitId": "u06",
       "skillId": "ratio-literacy",
-      "contentSha256": "6dc282a61c2692e07f358c9e104cdf651f06e08fd556926d1f867d3e63bb2cdd",
+      "contentSha256": "581458b09312815a686d0797b43d8e612cf1ed5ddeaa7b5cee176fdff87f800e",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "independentSolution": "B每100克少1元。",
+      "independentSolution": "B每100公克少1元。",
       "derivedAnswer": "B包，17元",
       "storedAnswer": "B包，17元",
       "answerMatch": true,
@@ -1319,7 +1319,7 @@ export default {
         "A計算正確但不是較便宜。",
         "A不是17元。",
         "B不是18元。",
-        "A每100克18元，B每100克17元。"
+        "A每100公克18元，B每100公克17元。"
       ],
       "ambiguityChecks": {
         "wording": "題幹中的所求量為「公平比較單位價格」，已明示必要條件：品質與其他條件相同。，不存在需猜測的隱藏量。",
@@ -1329,7 +1329,7 @@ export default {
       },
       "difficultyReason": "基礎比例素養。",
       "literacyNecessity": null,
-      "reviewerNote": "獨立重算：B每100克少1元。 正確選項為「B包，17元」。逐項檢查後，唯一為真的理由是「A每100克18元，B每100克17元。」；其餘三項分別因「A計算正確但不是較便宜。」、「A不是17元。」、「B不是18元。」而排除。邊界與語意再檢查：包裝重量不同。",
+      "reviewerNote": "獨立重算：B每100公克少1元。 正確選項為「B包，17元」。逐項檢查後，唯一為真的理由是「A每100公克18元，B每100公克17元。」；其餘三項分別因「A計算正確但不是較便宜。」、「A不是17元。」、「B不是18元。」而排除。邊界與語意再檢查：包裝重量不同。",
       "reviewerDecision": "pass"
     },
     {
@@ -1485,11 +1485,11 @@ export default {
       "questionId": "u06-s012-v006",
       "unitId": "u06",
       "skillId": "ratio-literacy",
-      "contentSha256": "02886fb64487eae84c3b13b9a268c6935baa7da4778cc0a0605b8855a0e68781",
+      "contentSha256": "edbd9236a917514b0c8c5c7c2654336e86dbe50daf5a1f206c3c0c3d3da7583a",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "independentSolution": "甲方案平均每GB約11.67元，仍低於乙25元。",
+      "independentSolution": "甲方案費用為200+10×15=350元，乙方案為30×25=750元，所以甲便宜400元。",
       "derivedAnswer": "甲便宜400元",
       "storedAnswer": "甲便宜400元",
       "answerMatch": true,
@@ -1514,7 +1514,7 @@ export default {
       },
       "difficultyReason": "標準方案素養。",
       "literacyNecessity": null,
-      "reviewerNote": "獨立重算：甲方案平均每GB約11.67元，仍低於乙25元。 正確選項為「甲便宜400元」。逐項檢查後，唯一為真的理由是「甲費用200+10×15=350元；乙30×25=750元，甲便宜400元。」；其餘三項分別因「方向相反。」、「差額750-500並非正確甲費用。」、「兩費用相差400。」而排除。邊界與語意再檢查：固定費與含量使方案甲不是純正比。",
+      "reviewerNote": "獨立重算：甲方案費用為200+10×15=350元，乙方案為30×25=750元，所以甲便宜400元。甲的20GB已包含在月費中，只有超出的10GB另計；逐項比較後，方向、金額與價差都只符合甲便宜400元。",
       "reviewerDecision": "pass"
     },
     {

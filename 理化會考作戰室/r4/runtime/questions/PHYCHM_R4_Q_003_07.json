@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "量筒液面出現四種說法，哪項有理化概念支持？",
+  "stem": "哪項操作最能降低量筒讀值的視差？",
   "options": [
-    "只要答案含有數字，就可把它當成直接測量的基本物理量",
-    "視線應與刻度面垂直",
-    "儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺",
-    "2.35 m＝0.0235 cm，因為換成較小單位時數字也應變小"
+    "眼睛與液面同高",
+    "由正上方俯視",
+    "晃動液體後立即讀",
+    "把量筒傾斜"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要答案含有數字，就可把它當成直接測量的基本物理量」不成立；長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得。"
+      "isCorrect": true,
+      "reason": "同高平視可避免斜看。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「視線應與刻度面垂直，先讀到最小刻度，再估讀一位，並連同單位記錄」。"
+      "isCorrect": false,
+      "reason": "俯視會產生視差。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺」不成立；量約 12 cm 的鉛筆適合用毫米刻度直尺；儀器量程要大於待測量，最小刻度要能分辨所需差異。"
+      "reason": "液面未穩定不能可靠讀值。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「2.35 m＝0.0235 cm，因為換成較小單位時數字也…」不成立；2.35 m＝235 cm；公制換算要保持同一物理量，並讓數值和單位的改變相互補償。"
+      "reason": "傾斜改變刻度對應。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "證據判讀"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要答案含有數字，就可把它當成直接測量的基本物理量",
-    "儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺",
-    "2.35 m＝0.0235 cm，因為換成較小單位時數字也應變小"
+    "由正上方俯視",
+    "晃動液體後立即讀",
+    "把量筒傾斜"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

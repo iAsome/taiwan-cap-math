@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據延長線過載紀錄，哪項判讀合理？",
+  "stem": "並列正常與接多台電熱器，兩者總電流是5 A、12 A，導線電阻是固定、固定。從說明過載短路與電阻發熱風險的定義看，總電流與導線電阻結果如何連結？",
   "options": [
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間",
-    "額定電壓只是建議值，110 V 電器直接接 220 V 也一定保持 550 W 且無風險",
-    "短路是低電阻路徑造成大電流",
-    "電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道"
+    "僅憑導線電阻很小就忽略 I²R，認為大電流不會帶來高溫",
+    "短路造成極大電流",
+    "把插頭鬆動時接點電阻較大、溫升 25°C，卻判成比正常更安全",
+    "解題時將短路解釋成電阻變大而電流變小"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「1000 W 電器使用 2 h 消耗 500 kWh，因為…」不成立；1000 W 電器使用 2 h 消耗 2 kWh；電能等於功率乘以使用時間。"
+      "reason": "僅憑導線電阻很小就忽略 I²R，認為大電流不會帶來高溫。實際溫升受線徑、散熱與時間影響；10 分鐘後溫升差異若未通過說明過載短路與電阻發熱風險對總電流的控制，就不能只歸給導線電阻。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「額定電壓只是建議值，110 V 電器直接接 220 V 也…」不成立；額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W，不可任意接…。"
+      "isCorrect": true,
+      "reason": "短路造成極大電流。正常列的總電流為5 A、導線電阻為固定；接多台電熱器列的總電流為12 A、導線電阻為固定。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「過載是同一路線總電流過大，短路是低電阻路徑造成大電流；兩者均可因電阻發熱引起火災」。"
+      "isCorrect": false,
+      "reason": "解題時誤把插頭鬆動時接點電阻較大、溫升 25°C，卻判成比正常更安全。過載提高線路電流，鬆動接點提高局部電阻，兩者都可能增加發熱；導線電阻的數值若未依總電流核對，會使10 分鐘後溫升無法通過說明過載短路與電阻發熱風險檢查。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道」不成立；基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算。"
+      "reason": "解題時錯將短路解釋成電阻變大而電流變小，結果會錯判10 分鐘後溫升。過載是同一路線總電流過大，短路是低電阻路徑造成大電流；總電流未列入說明過載短路與電阻發熱風險時，10 分鐘後溫升的導線電阻大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
+    "辨認",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間",
-    "額定電壓只是建議值，110 V 電器直接接 220 V 也一定保持 550 W 且無風險",
-    "電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道"
+    "僅憑導線電阻很小就忽略 I²R，認為大電流不會帶來高溫",
+    "把插頭鬆動時接點電阻較大、溫升 25°C，卻判成比正常更安全",
+    "解題時將短路解釋成電阻變大而電流變小"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

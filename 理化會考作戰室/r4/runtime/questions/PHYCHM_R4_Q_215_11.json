@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組速度時間圖資料，哪項判讀仍合理？",
+  "stem": "哪一個比值可直接比較不同小車的加速度？",
   "options": [
-    "加速度只要是負值就一定減速，只要是正值就一定加速",
-    "質量相同時，合力較大者速度改變較快；合力相同時，質量較大者速度改變較慢",
-    "物體質量越大，在相同合力下速度改變必然越快",
-    "加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度"
+    "物體的合力乘以質量",
+    "物體的質量除以合力",
+    "合力除以質量",
+    "物體的合力加上質量"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「加速度只要是負值就一定減速，只要是正值就一定加速」不成立；加速度與速度同向時快慢增加，反向時快慢減少；加速度為負不代表一定減速。"
+      "reason": "物體的合力乘以質量不成立。由牛頓第二定律，加速度等於 F/m。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「質量相同時，合力較大者速度改變較快；合力相同時，質量較大者速度改變較慢」。"
+      "isCorrect": false,
+      "reason": "物體的質量除以合力不成立。由牛頓第二定律，加速度等於 F/m。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「物體質量越大，在相同合力下速度改變必然越快」不成立；質量相同時，合力較大者速度改變較快；合力相同時，質量較大者速度改變較慢。"
+      "isCorrect": true,
+      "reason": "由牛頓第二定律，加速度等於 F/m。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度」不成立；加速度表示速度隨時間的變化；速度大小、方向或兩者改變都可產生加速度。"
+      "reason": "物體的合力加上質量不成立。由牛頓第二定律，加速度等於 F/m。"
     }
   ],
   "difficulty": "transfer",
@@ -46,16 +46,16 @@
     "情境遷移",
     "應用"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "加速度只要是負值就一定減速，只要是正值就一定加速",
-    "物體質量越大，在相同合力下速度改變必然越快",
-    "加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度"
+    "物體的合力乘以質量",
+    "物體的質量除以合力",
+    "物體的合力加上質量"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-11",
       "AUTH-NATURAL-LC-EB-4-8",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理秒表重複計時資料後，哪項說明正確？",
+  "stem": "某車儀表板直接顯示 60 km/h。對這一次觀察而言，60 km/h 應如何描述？",
   "options": [
-    "2.35 m＝0.0235 cm，因為換成較小單位時數字也應變小",
-    "數位寫得越多就越精確，因此可記為 12.347826 cm",
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可",
-    "長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得"
+    "只要是速率就不可能由儀器直接顯示",
+    "沒有使用直尺，所以不是測量結果",
+    "是儀表直接顯示的讀值，但速率概念仍連結距離與時間",
+    "因單位含除號，所以必定是學生計算值"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「2.35 m＝0.0235 cm，因為換成較小單位時數字也…」不成立；2.35 m＝235 cm；公制換算要保持同一物理量，並讓數值和單位的改變相互補償。"
+      "reason": "速率計能直接顯示當下讀值。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「數位寫得越多就越精確，因此可記為 12.347826 cm」不成立；最小刻度 0.1 cm 的直尺，測量值可合理記至 0.01 cm；多寫更多位不會增加儀器資訊。"
+      "reason": "車速可由車上感測與儀表取得。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「三次不相同表示實驗失敗，只保留最接近預期的 10.0 s …」不成立；量得 9.8、10.1、10.0 s 的平均約為 10.0 s，差異可用範圍或離散情形描述，不…。"
+      "isCorrect": true,
+      "reason": "題目明示儀表直接顯示，同時不否認速率的定義。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得」。"
+      "isCorrect": false,
+      "reason": "複合單位不能單獨判定取得方式。"
     }
   ],
-  "difficulty": "foundation",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "條件判斷",
+    "分析"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "2.35 m＝0.0235 cm，因為換成較小單位時數字也應變小",
-    "數位寫得越多就越精確，因此可記為 12.347826 cm",
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可"
+    "只要是速率就不可能由儀器直接顯示",
+    "沒有使用直尺，所以不是測量結果",
+    "因單位含除號，所以必定是學生計算值"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "整理彩色照明資料後，哪項說明正確？",
+  "stem": "白紙在藍色單色光下通常呈何種外觀？",
   "options": [
-    "物體顏色是物體自行持續發出的固定色光，與入射光譜無關",
-    "紅色物體在只含藍光的照明下可看來很暗",
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色",
-    "水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光"
+    "此時物體仍是含紅綠藍的白色",
+    "紅色",
+    "完全無光且必為黑色",
+    "藍色，因它反射入射的藍光"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「物體顏色是物體自行持續發出的固定色光，與入射光譜無關」不成立；不透明紅物體在白光下主要反射紅光、吸收其他多數色光，因而看來呈紅色。"
+      "reason": "照明沒有紅綠成分。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「紅色物體在只含藍光的照明下可看來很暗，因為沒有足夠可反射的紅光」。"
+      "isCorrect": false,
+      "reason": "沒有紅光可反射。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色」不成立；紅、綠、藍色光是加法混色的基本光；顏料混合主要透過選擇性吸收，與色光加法原理不同。"
+      "reason": "白紙可有效反射藍光，不必全黑。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光」不成立；眼球的角膜與水晶體等會聚光線，使外物在視網膜上形成倒立實像，再由神經系統處理。"
+      "isCorrect": true,
+      "reason": "白紙廣泛反射，但輸出成分受藍色照明限制。"
     }
   ],
   "difficulty": "foundation",
@@ -47,16 +47,16 @@
     "單位檢核",
     "資料判讀"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體顏色是物體自行持續發出的固定色光，與入射光譜無關",
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色",
-    "水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光"
+    "此時物體仍是含紅綠藍的白色",
+    "紅色",
+    "完全無光且必為黑色"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-10",
       "AUTH-NATURAL-LC-KA-4-11",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

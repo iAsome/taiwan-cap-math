@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估原子模型證據報告時，哪項說明正確？",
+  "stem": "反應前有 A₂ 與 B₂，反應後形成 AB。哪項粒子變化描述守恆？",
   "options": [
-    "原子核佔滿幾乎整個原子體積，電子全部固定貼在核表面",
-    "H₂O 的相對分子量為 1＋16＝17，因為下標 2 不需乘入",
-    "同一元素可因原子排列不同形成性質不同的物質",
-    "只要原子種類相同，不論排列和連結如何，巨觀性質都必然完全相同"
+    "A₂＋B₂→AB，因分子數必須前後相同",
+    "A₂→AB₂",
+    "B₂→2A",
+    "A₂＋B₂→2AB"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「原子核佔滿幾乎整個原子體積，電子全部固定貼在核表面」不成立；原子的正電與大部分質量集中在微小原子核，電子分布在核外；原子內大部分是空間。"
+      "reason": "生成物只有 1A、1B。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「H₂O 的相對分子量為 1＋16＝17，因為下標 2 不需…」不成立；水 H₂O 的相對分子量為 2×1＋16＝18；這是相對比較值，未直接表示一個分子質量為 18…。"
+      "reason": "憑空出現 B 且少 A。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「同一元素可因原子排列不同形成性質不同的物質；不同元素若以固定比例化學結合，則形成化合物」。"
+      "isCorrect": false,
+      "reason": "B 變成 A 違反元素種類守恆。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「只要原子種類相同，不論排列和連結如何，巨觀性質都必然完全相同」不成立；石墨和金剛石都由碳原子組成，但原子排列與連結不同，因而性質明顯不同。"
+      "isCorrect": true,
+      "reason": "前後各有 2A、2B。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "粒子守恆"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "原子核佔滿幾乎整個原子體積，電子全部固定貼在核表面",
-    "H₂O 的相對分子量為 1＋16＝17，因為下標 2 不需乘入",
-    "只要原子種類相同，不論排列和連結如何，巨觀性質都必然完全相同"
+    "A₂＋B₂→AB，因分子數必須前後相同",
+    "A₂→AB₂",
+    "B₂→2A"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-1",
       "AUTH-NATURAL-LC-AA-4-2",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

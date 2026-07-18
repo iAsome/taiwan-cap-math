@@ -17,51 +17,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估金屬燃燒報告時，哪項說明正確？",
+  "stem": "若一個反應沒有氧元素，使用本節狹義方法時應如何處理？",
   "options": [
-    "在氧化銅與碳的反應中",
-    "只有看得到火焰的反應才能稱為氧化，生鏽不屬氧化",
-    "不同金屬可用完全不同的大小與加熱時間比較，反應較大即表示本性較活潑",
-    "鏽蝕、燃燒與漂白只要外觀相像，反應物、條件和安全性就完全一樣"
+    "係數大者就是氧化劑",
+    "有金屬者一定被還原",
+    "不能只靠得氧失氧完成判定",
+    "沒有氧元素參與時一律判定沒有發生化學反應"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「在氧化銅與碳的反應中，氧化銅失氧而被還原，碳得氧而被氧化」。"
+      "isCorrect": false,
+      "reason": "係數不是角色判準。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只有看得到火焰的反應才能稱為氧化，生鏽不屬氧化」不成立；燃燒是快速氧化，常發光發熱；緩慢的鏽蝕也是氧化，不需出現火焰。"
+      "reason": "金屬身分也不充分。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「不同金屬可用完全不同的大小與加熱時間比較，反應較大即表示本…」不成立；比較金屬氧化活性時要使樣品質量、表面積、氧供應和加熱條件相同。"
+      "isCorrect": true,
+      "reason": "狹義方法缺少追蹤對象。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「鏽蝕、燃燒與漂白只要外觀相像，反應物、條件和安全性就完全一樣」不成立；鐵的鏽蝕需氧與水，燃燒是快速氧化，漂白則須依實際物質與反應證據分析。"
+      "reason": "仍可能有其他化學反應。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "方法限制"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只有看得到火焰的反應才能稱為氧化，生鏽不屬氧化",
-    "不同金屬可用完全不同的大小與加熱時間比較，反應較大即表示本性較活潑",
-    "鏽蝕、燃燒與漂白只要外觀相像，反應物、條件和安全性就完全一樣"
+    "係數大者就是氧化劑",
+    "有金屬者一定被還原",
+    "沒有氧元素參與時一律判定沒有發生化學反應"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科公開題型之證據判讀與生活情境層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -75,19 +74,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_201",
-  "stem": "根據車程平均速率表中紀錄，哪項結論最合理？",
+  "stem": "依表格，哪一段行程的平均速率最高？",
   "options": [
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "儀表在某一刻顯示的是瞬時資訊；一段旅程的平均速率必須以全路程除以全時間",
-    "路程與位移永遠大小相等，往返原點的路程也是零"
+    "城市 A 段最高",
+    "停等段最高",
+    "高速公路段的平均速率最高",
+    "城市 B 段最高"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均…」不成立；儀表在某一刻顯示的是瞬時資訊；一段旅程的平均速率必須以全路程除以全時間。"
+      "reason": "城市 A 段最高不符合題目資料。表中平均速率依序為 30、0、24、80 km/h，最大是高速公路的 80。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只給一個數字「200 m」就能唯一決定物體位置，不需參考點…」不成立；物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整。"
+      "reason": "停等段最高不符合題目資料。表中平均速率依序為 30、0、24、80 km/h，最大是高速公路的 80。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「儀表在某一刻顯示的是瞬時資訊；一段旅程的平均速率必須以全路程除以全時間」。"
+      "reason": "表中平均速率依序為 30、0、24、80 km/h，最大是高速公路的 80。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「路程與位移永遠大小相等，往返原點的路程也是零」不成立；路程是實際路徑總長，位移是起點到終點的有向改變；往返原點時路程大於零但位移為零。"
+      "reason": "城市 B 段最高不符合題目資料。表中平均速率依序為 30、0、24、80 km/h，最大是高速公路的 80。"
     }
   ],
   "difficulty": "standard",
@@ -47,14 +47,14 @@
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "路程與位移永遠大小相等，往返原點的路程也是零"
+    "城市 A 段最高",
+    "停等段最高",
+    "城市 B 段最高"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -62,19 +62,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

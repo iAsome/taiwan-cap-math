@@ -147,13 +147,13 @@ export default {
       },
       {
         "exampleId": "L2",
-        "prompt": "食譜 6 人需麵粉 450 克；改做 14 人份後，每袋 700 克可做幾次完整份量？",
+        "prompt": "食譜 6 人需麵粉 450 公克；改做 14 人份後，每袋 700 公克可做幾次完整份量？",
         "solutionSteps": [
-          "14 人份需 450×14/6=1050 克。",
-          "每袋 700 克不足一次 14 人份，因此 0 次完整份量；若問需幾袋則要 2 袋。"
+          "14 人份需 450×14/6=1050 公克。",
+          "每袋 700 公克不足一次 14 人份，因此 0 次完整份量；若問需幾袋則要 2 袋。"
         ],
         "answer": "0 次完整份量。",
-        "why": "先按人數比例求出一次十四人份需一千零五十克，再比較一袋七百克的容量。題目問可完成幾次，材料不足一次時是零次；這與問至少購買幾袋的向上取整不同。"
+        "why": "先按人數比例求出一次十四人份需一千零五十公克，再比較一袋七百公克的容量。題目問可完成幾次，材料不足一次時是零次；這與問至少購買幾袋的向上取整不同。"
       },
       {
         "exampleId": "L3",
@@ -183,9 +183,9 @@ export default {
         "correction": "先檢查單位得到小時。"
       },
       {
-        "mistake": "食譜題看到 700 克就四捨五入成一次。",
+        "mistake": "食譜題看到 700 公克就四捨五入成一次。",
         "why": "完整份量不能用近似補足。",
-        "correction": "比較所需 1050 克與現有量。"
+        "correction": "比較所需 1050 公克與現有量。"
       },
       {
         "mistake": "連續折扣直接相加為 30%。",
@@ -260,7 +260,7 @@ export default {
       "reviewVersion": "human-lecture-review-u06-r1.0",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "9ce67d21a9d7c96174672b1922254a19b204c1e2e5a0b42b96ffeaa7caa7deb9"
+    "contentSha256": "39831d3684b873da1d5ce941b50f2712d6756594c77e40d81b5b9eb229f0726b"
   },
   "mcQuestions": [
     {
@@ -648,7 +648,7 @@ export default {
         "120平方公尺"
       ],
       "answerIndex": 0,
-      "independentSolution": "若模型為5×15公分，實物2×6公尺，面積12平方公尺。",
+      "independentSolution": "實物面積為75×40²=120000平方公分，換算為12平方公尺。",
       "mainExplanation": "比例尺一比四十表示每個長度方向都放大四十倍，所以面積要放大四十的平方，即一千六百倍。七十五平方公分乘一千六百得十二萬平方公分，再除以一萬換成十二平方公尺。",
       "explanation": "比例尺一比四十表示每個長度方向都放大四十倍，所以面積要放大四十的平方，即一千六百倍。七十五平方公分乘一千六百得十二萬平方公分，再除以一萬換成十二平方公尺。",
       "steps": [
@@ -699,7 +699,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "581108a98f36bda9bab10017a81363006691b30ef4736d1e5172167e57443fa2"
+      "contentSha256": "c1028764c31141711da9f8540c8d432937d29144a858174ede51d4c76396560b"
     },
     {
       "questionId": "u06-s011-v007",
@@ -1481,11 +1481,11 @@ export default {
       "questionId": "u06-s011-v006",
       "unitId": "u06",
       "skillId": "ratio-composite-problem",
-      "contentSha256": "581108a98f36bda9bab10017a81363006691b30ef4736d1e5172167e57443fa2",
+      "contentSha256": "c1028764c31141711da9f8540c8d432937d29144a858174ede51d4c76396560b",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "independentSolution": "若模型為5×15公分，實物2×6公尺，面積12平方公尺。",
+      "independentSolution": "實物面積為75×40²=120000平方公分，換算為12平方公尺。",
       "derivedAnswer": "12平方公尺",
       "storedAnswer": "12平方公尺",
       "answerMatch": true,
@@ -1510,7 +1510,7 @@ export default {
       },
       "difficultyReason": "標準面積倍率。",
       "literacyNecessity": null,
-      "reviewerNote": "獨立重算：若模型為5×15公分，實物2×6公尺，面積12平方公尺。 正確選項為「12平方公尺」。逐項檢查後，唯一為真的理由是「面積倍率40²=1600；75×1600=120000平方公分=12平方公尺。」；其餘三項分別因「只乘長度倍率後又錯換單位。」、「只乘40得到3000平方公分=0.3平方公尺，且選項也不符。」、「平方公分轉平方公尺少除10。」而排除。邊界與語意再檢查：1平方公尺=10000平方公分。",
+      "reviewerNote": "獨立重算：實物面積為75×40²=120000平方公分，換算為12平方公尺。比例尺的40是線性倍率，面積必須乘40²；平方公分再除以10000換成平方公尺，四個選項中只有12平方公尺同時符合平方倍率與單位換算。",
       "reviewerDecision": "pass"
     },
     {

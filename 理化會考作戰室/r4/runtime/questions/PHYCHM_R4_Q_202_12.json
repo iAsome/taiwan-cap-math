@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估直線座標報告時，哪項說明正確？",
+  "stem": "驗算速率時，把答案乘回總時間的主要目的為何？",
   "options": [
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理",
-    "步行速率通常約數 m/s",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "路程與位移永遠大小相等，往返原點的路程也是零"
+    "確認能否得到原來的總路程",
+    "把速率改成加速度",
+    "決定運動方向",
+    "刪除時間單位"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「運動資料只要代入公式就不必作量級檢查，步行 500 m/s…」不成立；步行速率通常約數 m/s；若算得 500 m/s，應檢查距離、時間單位或小數點。"
+      "isCorrect": true,
+      "reason": "速率×時間應回到路程，回代可檢查數值與單位是否一致。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「步行速率通常約數 m/s；若算得 500 m/s，應檢查距離、時間單位或小數點」。"
+      "isCorrect": false,
+      "reason": "把速率改成加速度不符合題目資料。速率×時間應回到路程，回代可檢查數值與單位是否一致。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只給一個數字「200 m」就能唯一決定物體位置，不需參考點…」不成立；物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整。"
+      "reason": "決定運動方向不符合題目資料。速率×時間應回到路程，回代可檢查數值與單位是否一致。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「路程與位移永遠大小相等，往返原點的路程也是零」不成立；路程是實際路徑總長，位移是起點到終點的有向改變；往返原點時路程大於零但位移為零。"
+      "reason": "刪除時間單位不符合題目資料。速率×時間應回到路程，回代可檢查數值與單位是否一致。"
     }
   ],
   "difficulty": "transfer",
@@ -46,16 +46,16 @@
     "限制評估",
     "高層推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "路程與位移永遠大小相等，往返原點的路程也是零"
+    "把速率改成加速度",
+    "決定運動方向",
+    "刪除時間單位"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

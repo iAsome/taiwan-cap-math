@@ -11,50 +11,50 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_206",
-  "stem": "根據文字與圖形轉換表中紀錄，哪項結論最合理？",
+  "stem": "依表格，t=0 s 時速度為何？",
   "options": [
-    "速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度",
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快",
-    "速度—時間圖的縱座標直接給各時刻速度；水平線表示速度恆定"
+    "速度為 -2 m/s",
+    "物體的速度為 0 m/s",
+    "物體的速度為 +2 m/s",
+    "物體的速度為 +4 m/s"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度」不成立；速度—時間圖的縱座標直接給各時刻速度；水平線表示速度恆定。"
+      "isCorrect": true,
+      "reason": "資料首列 t=0 s 對應 v=-2 m/s。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑」不成立；位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置。"
+      "reason": "物體的速度為 0 m/s不成立。資料首列 t=0 s 對應 v=-2 m/s。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快」不成立；位置—時間圖的斜率為位置變化除以時間變化；斜率絕對值較大表示速度大小較大。"
+      "reason": "物體的速度為 +2 m/s不成立。資料首列 t=0 s 對應 v=-2 m/s。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「速度—時間圖的縱座標直接給各時刻速度；水平線表示速度恆定」。"
+      "isCorrect": false,
+      "reason": "物體的速度為 +4 m/s不成立。資料首列 t=0 s 對應 v=-2 m/s。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀"
+    "圖表讀值"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度",
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快"
+    "物體的速度為 0 m/s",
+    "物體的速度為 +2 m/s",
+    "物體的速度為 +4 m/s"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -62,20 +62,6 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_007"
   ]

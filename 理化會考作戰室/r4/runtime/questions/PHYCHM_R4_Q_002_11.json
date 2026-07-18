@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組直尺讀值資料，哪項判讀仍合理？",
+  "stem": "戶外要量 30 m 跑道，只有 5 m 捲尺與 50 m 測量帶。若兩者刻度同為 1 cm，何者較佳？",
   "options": [
-    "量約 12 cm 的鉛筆適合用毫米刻度直尺；儀器量程要大於待測量，最小刻度要能分辨所需差異",
-    "儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺",
-    "只要答案含有數字，就可把它當成直接測量的基本物理量",
-    "刻度儀器只能記到最小刻度，任何估讀都是作假"
+    "不能使用任何有刻度器材",
+    "兩者必定完全相同",
+    "50 m 測量帶，可減少接續定位誤差",
+    "5 m 捲尺，因接六次更有資料"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「量約 12 cm 的鉛筆適合用毫米刻度直尺；儀器量程要大於待測量，最小刻度要能分辨所需差異」。"
+      "isCorrect": false,
+      "reason": "測量帶正是適用器材。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺」不成立；量約 12 cm 的鉛筆適合用毫米刻度直尺；儀器量程要大於待測量，最小刻度要能分辨所需差異。"
+      "reason": "操作次數不同會影響誤差。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「只要答案含有數字，就可把它當成直接測量的基本物理量」不成立；長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得。"
+      "isCorrect": true,
+      "reason": "一次涵蓋可降低接縫問題。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「刻度儀器只能記到最小刻度，任何估讀都是作假」不成立；視線應與刻度面垂直，先讀到最小刻度，再估讀一位，並連同單位記錄。"
+      "reason": "多次接續會累積定位誤差。"
     }
   ],
   "difficulty": "transfer",
@@ -48,16 +48,16 @@
     "情境遷移",
     "應用"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺",
-    "只要答案含有數字，就可把它當成直接測量的基本物理量",
-    "刻度儀器只能記到最小刻度，任何估讀都是作假"
+    "不能使用任何有刻度器材",
+    "兩者必定完全相同",
+    "5 m 捲尺，因接六次更有資料"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

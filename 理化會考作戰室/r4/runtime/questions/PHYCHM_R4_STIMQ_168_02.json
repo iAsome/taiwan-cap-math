@@ -12,50 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": "PHYCHM_R4_STIM_168",
-  "stem": "檢查表中關於聲音由物體振動產生的說法，哪項判讀正確？",
+  "stem": "音叉振動 1.0 s 時的叉腳位移與訊號振幅為何？",
   "options": [
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定",
-    "持續產生的聲波也會停止",
-    "真空中的聲音傳得最快，因為沒有空氣阻力"
+    "1.8 mm、0.90 V",
+    "1.2 mm、0.61 V",
+    "0.3 mm、0.16 V",
+    "0.7 mm、0.36 V"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險」不成立；噪音風險同時與聲音強度級和暴露時間有關；較大聲音的安全暴露時間應更短。"
+      "reason": "這是 0.0 s 的讀值。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定」不成立；音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止。"
+      "reason": "這是 0.5 s 的讀值。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止」。"
+      "isCorrect": false,
+      "reason": "這是 1.5 s 的讀值。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「真空中的聲音傳得最快，因為沒有空氣阻力」不成立；聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質。"
+      "isCorrect": true,
+      "reason": "直接讀取 1.0 s 那一列，兩值為 0.7 mm 與 0.36 V。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "資料判讀"
+    "資料分析"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定",
-    "真空中的聲音傳得最快，因為沒有空氣阻力"
+    "1.8 mm、0.90 V",
+    "1.2 mm、0.61 V",
+    "0.3 mm、0.16 V"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -64,20 +64,6 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_003"
   ]

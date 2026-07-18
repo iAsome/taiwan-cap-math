@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理作用反作用配對資料，哪項敘述合理？",
+  "stem": "車向右轉時，乘客身體傾向沿哪一方向延續？",
   "options": [
-    "力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的意義",
-    "合力只需把大小相加，所以向右 8 N 與向左 3 N 的合力是 11 N",
-    "合力為零時物體速度必立即變為零，不可能繼續等速運動",
-    "車突然剎車時乘客上半身傾向前就是慣性現象"
+    "此時物體立即指向轉彎圓心",
+    "此時物體立即沿半徑向外加速",
+    "轉彎前速度的切線方向",
+    "垂直向上"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的…」不成立；力的箭頭長度表示大小、箭頭指向表示方向、起點標在作用點，三項都是力的表示資訊。"
+      "reason": "此時物體立即指向轉彎圓心與受力條件不符。慣性使人體傾向維持轉彎前的直線速度。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「合力只需把大小相加，所以向右 8 N 與向左 3 N 的合…」不成立；同直線上向右 8 N 與向左 3 N 的合力為向右 5 N；相反方向力要取差並保留方向。"
+      "reason": "此時物體立即沿半徑向外加速與受力條件不符。慣性使人體傾向維持轉彎前的直線速度。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「合力為零時物體速度必立即變為零，不可能繼續等速運動」不成立；物體所受合力為零時加速度為零，可保持靜止或等速直線運動，不限於靜止。"
+      "isCorrect": true,
+      "reason": "慣性使人體傾向維持轉彎前的直線速度。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「慣性是物體維持原運動狀態的性質；車突然剎車時乘客上半身傾向前就是慣性現象」。"
+      "isCorrect": false,
+      "reason": "垂直向上與受力條件不符。慣性使人體傾向維持轉彎前的直線速度。"
     }
   ],
   "difficulty": "advanced",
@@ -50,16 +50,16 @@
     "關係應用",
     "多步驟推理"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的意義",
-    "合力只需把大小相加，所以向右 8 N 與向左 3 N 的合力是 11 N",
-    "合力為零時物體速度必立即變為零，不可能繼續等速運動"
+    "此時物體立即指向轉彎圓心",
+    "此時物體立即沿半徑向外加速",
+    "垂直向上"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

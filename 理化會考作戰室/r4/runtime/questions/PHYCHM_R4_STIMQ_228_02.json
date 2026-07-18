@@ -14,50 +14,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": "PHYCHM_R4_STIM_228",
-  "stem": "檢查表中關於質量與距離定性比較萬有引力的說法，哪項判讀正確？",
+  "stem": "依表格，C 的距離變 2r、質量不變，引力相對值為何？",
   "options": [
-    "物體到月球後原子自動減少，因此質量和重量都以相同比例減少",
-    "受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右",
-    "隨中心距離增加而減小",
-    "兩物體距離越遠引力越大，質量變化對引力沒有影響"
+    "引力相對值為 1/2",
+    "相對值為 1/4",
+    "引力相對值為 2",
+    "引力相對值為 4"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「物體到月球後原子自動減少，因此質量和重量都以相同比例減少」不成立；同一物體到月球後組成與質量不變，但因當地重力場較弱，重量變小。"
+      "reason": "引力相對值為 1/2不成立。距離平方變 4 倍，因此引力為四分之一。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右」不成立；受力圖只畫作用在目標物上的力，箭頭方向是力方向；物體向右運動不代表必有向右力。"
+      "isCorrect": true,
+      "reason": "距離平方變 4 倍，因此引力為四分之一。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「萬有引力隨兩物體質量增大而增大，隨中心距離增加而減小；比較時要分開變項」。"
+      "isCorrect": false,
+      "reason": "引力相對值為 2不成立。距離平方變 4 倍，因此引力為四分之一。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「兩物體距離越遠引力越大，質量變化對引力沒有影響」不成立；萬有引力隨兩物體質量增大而增大，隨中心距離增加而減小；比較時要分開變項。"
+      "reason": "引力相對值為 4不成立。距離平方變 4 倍，因此引力為四分之一。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "資料判讀"
+    "力學計算"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "物體到月球後原子自動減少，因此質量和重量都以相同比例減少",
-    "受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右",
-    "兩物體距離越遠引力越大，質量變化對引力沒有影響"
+    "引力相對值為 1/2",
+    "引力相對值為 2",
+    "引力相對值為 4"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-10",
       "AUTH-NATURAL-LC-EB-4-11",
@@ -68,20 +68,6 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_010"
   ]

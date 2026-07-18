@@ -35,7 +35,7 @@ export default {
       },
       {
         "term": "正比常數",
-        "definition": "y=kx 中固定不變的 k，也就是 y/x。"
+        "definition": "y=kx 中固定不變且不等於 0 的 k，也就是 y/x。"
       },
       {
         "term": "成對資料",
@@ -53,7 +53,7 @@ export default {
       },
       {
         "symbol": "y=kx",
-        "meaning": "k 為固定的正比常數。"
+        "meaning": "k 為固定且非零的正比常數。"
       },
       {
         "symbol": "k=y/x",
@@ -65,12 +65,12 @@ export default {
       "若單價固定，總價=單價×數量，因此總價與數量成正比。",
       "x 變成 3 倍時，y 也變成 3 倍；x 減半時，y 也減半。",
       "y=kx 的圖形是通過原點的直線，但只看到兩點連成直線還不夠，必須確認原點或比值。",
-      "k 可以是正數、負數或 0 的代數情形；生活量通常再受非負限制。"
+      "k 是非零常數，可以是正數或負數；生活量通常再受非負限制。"
     ],
     "formalDefinitions": [
       {
         "name": "正比關係",
-        "statement": "存在固定常數 k，使每一組資料都滿足 y=kx。"
+        "statement": "存在固定非零常數 k，使每一組資料都滿足 y=kx。"
       },
       {
         "name": "正比常數",
@@ -81,7 +81,7 @@ export default {
       {
         "formula": "y=kx",
         "conditions": [
-          "k 固定"
+          "k 為固定非零常數"
         ],
         "meaning": "正比標準式。"
       },
@@ -137,7 +137,7 @@ export default {
           "檢查(5/2)×4=10。"
         ],
         "answer": "k=5/2。",
-        "why": "正比常數的方向是y除以x，且必須使用x不為零的資料。代回y=kx得到原來的十，證明約分後的五分之二沒有顛倒，也沒有把差值誤當常數。"
+        "why": "正比常數的方向是y除以x，且必須使用x不為零的資料。代回y=kx得到原來的十，證明約分後的二分之五沒有顛倒，也沒有把差值誤當常數。"
       },
       {
         "exampleId": "L2",
@@ -148,7 +148,7 @@ export default {
           "驗算35÷14=5/2。"
         ],
         "answer": "35。",
-        "why": "同一個正比關係中的k不可改變，因此直接把新x代入既有關係式。反算三十五除以十四仍為五分之二，確認新數對與原數對屬於同一正比。"
+        "why": "同一個正比關係中的k不可改變，因此直接把新x代入既有關係式。反算三十五除以十四仍為二分之五，確認新數對與原數對屬於同一正比。"
       },
       {
         "exampleId": "L3",
@@ -257,7 +257,7 @@ export default {
       "reviewVersion": "human-lecture-review-u06-r1.0",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "d5ee6be3423955872879f35a48c3c5189d1c9a89421e74bdbf4d286321ba26ed"
+    "contentSha256": "1a2e8e64384157200d6df7fb17bdca23d6b8ce49ee284b4711f69ad3bdd2301a"
   },
   "mcQuestions": [
     {
@@ -426,7 +426,7 @@ export default {
         "(3,9)、(6,18)、(9,28)"
       ],
       "answerIndex": 1,
-      "independentSolution": "把各組 y 除以 x：6÷2=3、9÷3=3、15÷5=3，所以比值固定為3，可寫成 y=3x。",
+      "independentSolution": "第二組依序有6÷2=3、15÷5=3、24÷8=3，所以比值固定為3，可寫成y=3x。",
       "mainExplanation": "逐組計算y/x，只有第一組全部相同。",
       "explanation": "判斷正比要逐一檢查每個數對的y÷x。第二個選項依序得到6÷2=3、15÷5=3、24÷8=3，比值全都相同，因此可寫成y=3x。其餘選項至少有一組比值不同，不能只因數值大致同增或差值規律就判為正比。",
       "steps": [
@@ -477,7 +477,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4814419fb6d37f45decc159d7fdaba5b9d45ac5535a085c1b8de56aa2cf915a0"
+      "contentSha256": "3083c252f8cda9a0ddd56d38ec2a43b4699b29b8f7286d16838c6a862a4d6c90"
     },
     {
       "questionId": "u06-s005-v004",
@@ -1369,11 +1369,11 @@ export default {
       "questionId": "u06-s005-v003",
       "unitId": "u06",
       "skillId": "direct-variation",
-      "contentSha256": "4814419fb6d37f45decc159d7fdaba5b9d45ac5535a085c1b8de56aa2cf915a0",
+      "contentSha256": "3083c252f8cda9a0ddd56d38ec2a43b4699b29b8f7286d16838c6a862a4d6c90",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "independentSolution": "把各組 y 除以 x：6÷2=3、9÷3=3、15÷5=3，所以比值固定為3，可寫成 y=3x。",
+      "independentSolution": "第二組依序有6÷2=3、15÷5=3、24÷8=3，所以比值固定為3，可寫成y=3x。",
       "derivedAnswer": "(2,6)、(5,15)、(8,24)",
       "storedAnswer": "(2,6)、(5,15)、(8,24)",
       "answerMatch": true,
@@ -1398,7 +1398,7 @@ export default {
       },
       "difficultyReason": "多組比值檢查。",
       "literacyNecessity": null,
-      "reviewerNote": "獨立重算：把各組 y 除以 x：6÷2=3、9÷3=3、15÷5=3，所以比值固定為3，可寫成 y=3x。 正確選項為「(2,6)、(5,15)、(8,24)」。逐項核對四個選項後，只有該選項符合題幹全部條件；其餘選項的排除理由依序為：第二組14/5≠3。；差值固定3但比值不固定。；第三組28/9≠3。。",
+      "reviewerNote": "獨立重算：第二組依序有6÷2=3、15÷5=3、24÷8=3，所以比值固定為3，可寫成y=3x。第一組的14÷5、第三組的各組比值、第四組的28÷9均破壞固定比值，因此第二組資料是唯一符合正比定義的選項。",
       "reviewerDecision": "pass"
     },
     {

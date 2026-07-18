@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "整理彈簧縱波資料後，哪項說明正確？",
+  "stem": "一張繩波照片呈正弦形，紅點接下來會沿曲線斜向前進嗎？",
   "options": [
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "標記粒子應在平衡位置兩側往復運動",
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比",
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長"
+    "不會；紅點在自己的平衡位置附近振動",
+    "會；曲線就是紅點未來路徑",
+    "會；紅點速度必等於波速",
+    "不會；因紅點完全不會移動"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「振幅是波峰到波谷的全高，波長是相鄰波峰的高度差」不成立；波峰是橫波最高點、波谷是最低點；振幅由平衡位置量到波峰，波長是沿傳播方向相鄰同相位點的距離。"
+      "isCorrect": true,
+      "reason": "空間波形不是單一標記粒子的時間軌跡。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「在介質波模型中，標記粒子應在平衡位置兩側往復運動；波形則表示擾動依序傳開」。"
+      "isCorrect": false,
+      "reason": "照片連接不同粒子的當下位置，不是未來軌跡。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「週期越長表示每秒振動次數越多，所以頻率和週期成正比」不成立；週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T。"
+      "reason": "粒子速度與波形傳播速度不同。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「波速為 f/λ＝6.25 m/s，因為頻率應除以波長」不成立；頻率 5.0 Hz、波長 0.80 m 的波速為 v＝fλ＝4.0 m/s；計算前要統一單位。"
+      "reason": "紅點仍會做局部振動。"
     }
   ],
   "difficulty": "foundation",
@@ -46,16 +46,16 @@
     "單位檢核",
     "資料判讀"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比",
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長"
+    "會；曲線就是紅點未來路徑",
+    "會；紅點速度必等於波速",
+    "不會；因紅點完全不會移動"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

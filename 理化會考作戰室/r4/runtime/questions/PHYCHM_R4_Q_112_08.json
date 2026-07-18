@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理生活酸鹼安全資料，哪項敘述合理？",
+  "stem": "下列哪一詞組沒有混淆概念？",
   "options": [
-    "pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗",
-    "任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性",
-    "家用物質就一定無害，酸性或鹼性清潔劑可任意混合以加強效果",
-    "兩者不可完全畫上等號"
+    "稀的強酸溶液",
+    "稀酸必為弱酸",
+    "濃酸必為強酸",
+    "pH低所以濃度必最高"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗」不成立；pH 計使用前要依規範校正，電極清洗後輕吸水分，不把測過的溶液倒回原瓶。"
+      "isCorrect": true,
+      "reason": "同時正確描述本性與濃度。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性」不成立；酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體。"
+      "reason": "把兩概念等同。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「家用物質就一定無害，酸性或鹼性清潔劑可任意混合以加強效果」不成立；醋可用於某些水垢處理，氫氧化鈉可用於特定清潔；但酸鹼均可腐蝕，要依標示防護。"
+      "reason": "仍混淆。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「濃度是溶質所佔比例，酸鹼強弱涉及物質在水中的離子行為；兩者不可完全畫上等號」。"
+      "isCorrect": false,
+      "reason": "不同酸時不能直接推濃度。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "語意辨析"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗",
-    "任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性",
-    "家用物質就一定無害，酸性或鹼性清潔劑可任意混合以加強效果"
+    "稀酸必為弱酸",
+    "濃酸必為強酸",
+    "pH低所以濃度必最高"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

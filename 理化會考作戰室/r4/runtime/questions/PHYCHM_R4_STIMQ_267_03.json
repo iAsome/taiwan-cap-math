@@ -13,50 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_267",
-  "stem": "串聯電路題組中，哪項說明符合紀錄？",
+  "stem": "表中錯誤紀錄的單位為A，對應物理意義把電壓寫成電流與數值6.0。由全表歸納，單位受哪些條件支配？",
   "options": [
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過",
     "電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙",
-    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓"
+    "解題時將 6.0 V 記成 6.0 A，卻仍稱為元件兩端的電壓",
+    "主張電阻是電荷每秒流過多少，混淆電阻與電流的定義",
+    "解題時將電流、電壓與電阻視為同一物理量，只因它們都和電路有關"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路」不成立；電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整。"
+      "isCorrect": true,
+      "reason": "電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。電流列的物理意義為每秒通過截面的電荷量，數值為0.50；電壓列的物理意義為每單位電荷能量差，數值為6.0。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過」不成立；安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性。"
+      "reason": "電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。電流列的物理意義為每秒通過截面的電荷量，數值為0.50；電壓列的物理意義為每單位電荷能量差，數值為6.0。解題時錯將 6.0 V 記成 6.0 A，卻仍稱為元件兩端的電壓，結果會錯判單位。前三列物理意義與單位相符；數值的數值若未依物理意義核對，會使單位無法通過區分電流電壓與電阻概念檢查。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙」。"
+      "isCorrect": false,
+      "reason": "電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。電流列的物理意義為每秒通過截面的電荷量，數值為0.50；電壓列的物理意義為每單位電荷能量差，數值為6.0。誤以為電阻是電荷每秒流過多少，混淆電阻與電流的定義。電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙；物理意義未列入區分電流電壓與電阻概念時，單位的數值大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「電阻為 I/V＝0.083 Ω，因為電流應除以電壓」不成立；某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω。"
+      "reason": "電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。電流列的物理意義為每秒通過截面的電荷量，數值為0.50；電壓列的物理意義為每單位電荷能量差，數值為6.0。解題時錯將電流、電壓與電阻視為同一物理量，只因它們都和電路有關。電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙；照原做法會把單位算錯或判反。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "證據評估"
+    "限制評估",
+    "遷移"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過",
-    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓"
+    "解題時將 6.0 V 記成 6.0 A，卻仍稱為元件兩端的電壓",
+    "主張電阻是電荷每秒流過多少，混淆電阻與電流的定義",
+    "解題時將電流、電壓與電阻視為同一物理量，只因它們都和電路有關"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -66,20 +67,6 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_014"
   ]

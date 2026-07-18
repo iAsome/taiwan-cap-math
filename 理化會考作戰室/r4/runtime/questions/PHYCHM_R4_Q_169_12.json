@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估音叉振動報告時，哪項說明正確？",
+  "stem": "聲音傳播需要介質的微觀原因是什麼？",
   "options": [
-    "聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質",
-    "頻率、振幅與波形都只決定音量大小，與音調和音色無關",
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射"
+    "聲源把同一批空氣送到聽者耳中",
+    "粒子完全不動而聲音自行跳躍",
+    "真空粒子把壓力傳下去",
+    "介質粒子受迫振動並把作用傳給鄰近粒子"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質」。"
+      "isCorrect": false,
+      "reason": "聲音傳播主要是局部粒子往復，不是整批運輸。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「頻率、振幅與波形都只決定音量大小，與音調和音色無關」不成立；頻率主要影響音調，振幅與響度有關，波形特徵與音色有關，三者不可互換。"
+      "reason": "沒有粒子運動就無法形成機械壓力擾動。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「距離為 340×0.40＝136 m，因為回聲時間只包含單程」不成立；回聲測距的聲波經往返路程；若聲速 340 m/s、往返 0.40 s，距離為 68 m。"
+      "reason": "真空定義上沒有足夠介質粒子。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射」不成立；人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射。"
+      "isCorrect": true,
+      "reason": "相鄰粒子的作用使壓縮與疏鬆擾動逐步前進。"
     }
   ],
   "difficulty": "transfer",
@@ -47,16 +47,16 @@
     "限制評估",
     "高層推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "頻率、振幅與波形都只決定音量大小，與音調和音色無關",
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射"
+    "聲源把同一批空氣送到聽者耳中",
+    "粒子完全不動而聲音自行跳躍",
+    "真空粒子把壓力傳下去"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

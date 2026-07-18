@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於資料而非背誦檢驗元素性質趨勢，哪項結論符合題給條件？",
+  "stem": "三個值依序下降，能否直接說第四個必定下降相同幅度？",
   "options": [
-    "要檢驗元素性質趨勢，應比較同條件量得的多個元素資料，並指出趨勢與例外",
-    "週期表橫列稱族、直行稱週期，名稱可互換而不影響意義",
-    "元素的生活用途只由週期表格子顏色決定，不需查導電、活性等性質",
-    "拿一大塊金屬加強熱、一小塊不加熱，也能公平比較金屬本身活性"
+    "不能，因數值不能比較",
+    "能，任何下降都等差",
+    "不能，未證明為等差關係",
+    "能，元素性質都呈直線且每步等幅下降"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「要檢驗元素性質趨勢，應比較同條件量得的多個元素資料，並指出趨勢與例外」。"
+      "isCorrect": false,
+      "reason": "同量同單位可比較。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「週期表橫列稱族、直行稱週期，名稱可互換而不影響意義」不成立；週期表的橫列稱週期，直行稱族；位置是組織元素性質規律的索引。"
+      "reason": "邏輯錯誤。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「元素的生活用途只由週期表格子顏色決定，不需查導電、活性等性質」不成立；銅導電且可拉成導線，氦性質安定可用作保護氣體；應把具體性質連到用途。"
+      "isCorrect": true,
+      "reason": "方向與幅度是不同主張。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「拿一大塊金屬加強熱、一小塊不加熱，也能公平比較金屬本身活性」不成立；比較金屬與氧反應活性時，要控制質量、表面積、氧氣供應與加熱條件，再比較反應難易。"
+      "reason": "不一定線性。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "趨勢限制"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "週期表橫列稱族、直行稱週期，名稱可互換而不影響意義",
-    "元素的生活用途只由週期表格子顏色決定，不需查導電、活性等性質",
-    "拿一大塊金屬加強熱、一小塊不加熱，也能公平比較金屬本身活性"
+    "不能，因數值不能比較",
+    "能，任何下降都等差",
+    "能，元素性質都呈直線且每步等幅下降"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AA-4-4",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

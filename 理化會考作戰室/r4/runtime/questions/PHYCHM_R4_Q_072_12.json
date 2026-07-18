@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估沉澱反應報告時，哪項說明正確？",
+  "stem": "樣品變色且質量增加，產物分析發現結合了空氣中的氧。應如何分類？",
   "options": [
-    "只要外觀或形狀改變，無論有無新物質，都必然是化學變化",
-    "水沸騰產生氣泡就表示生成新氣體，所以必為化學反應",
-    "性質改變只要能恢復外觀就必然沒有新物質，無需檢驗",
-    "沒有證據顯示新物質"
+    "化學變化，形成含氧新物質",
+    "物理混合，因氧沒有質量，增重來自秤重誤差",
+    "無變化，因原元素仍在",
+    "物理變化，只因顏色"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要外觀或形狀改變，無論有無新物質，都必然是化學變化」不成立；物理變化不產生新物質；化學變化形成性質不同的新物質，應以反應前後證據判斷。"
+      "isCorrect": true,
+      "reason": "成分分析直接支持新產物。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「水沸騰產生氣泡就表示生成新氣體，所以必為化學反應」不成立；冰熔化、水沸騰都只改變 H₂O 的狀態，沒有形成新物質，屬物理變化。"
+      "reason": "氧有質量且已結合。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「性質改變只要能恢復外觀就必然沒有新物質，無需檢驗」不成立；鐵生鏽後產物的顏色、導電等性質與鐵不同，可支持形成新物質。"
+      "reason": "原元素可存在於產物中。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「糖溶於水雖外觀消失，可由蒸發水回收糖，沒有證據顯示新物質，屬物理變化」。"
+      "isCorrect": false,
+      "reason": "忽略組成與增重。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "多證據結論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要外觀或形狀改變，無論有無新物質，都必然是化學變化",
-    "水沸騰產生氣泡就表示生成新氣體，所以必為化學反應",
-    "性質改變只要能恢復外觀就必然沒有新物質，無需檢驗"
+    "物理混合，因氧沒有質量，增重來自秤重誤差",
+    "無變化，因原元素仍在",
+    "物理變化，只因顏色"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-AB-4-3",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

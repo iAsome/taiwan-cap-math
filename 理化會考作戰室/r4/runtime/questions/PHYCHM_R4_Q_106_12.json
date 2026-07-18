@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估pH 計操作報告時，哪項說明正確？",
+  "stem": "某液體pH低於7，能直接推論哪一項？",
   "options": [
-    "一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識溶液名稱",
-    "pH＜7 為酸性、pH＝7 為中性、pH＞7 為鹼性；pH 本身沒有單位",
-    "pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗",
-    "任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性"
+    "必定完全不導電",
+    "在題設條件下呈酸性",
+    "pH低於7就必定完全不能接觸任何食品",
+    "必定是濃硫酸"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識…」不成立；廣用指示劑的顏色應對照色階判讀 pH 範圍，只能估計區間，不能單憑顏色確定化學身分。"
+      "reason": "酸液常可導電。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「pH＜7 為酸性、pH＝7 為中性、pH＞7 為鹼性；pH 本身沒有單位」。"
+      "reason": "這是pH分類可支持的結論。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗」不成立；pH 計使用前要依規範校正，電極清洗後輕吸水分，不把測過的溶液倒回原瓶。"
+      "reason": "安全性不能只看酸性。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性」不成立；酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體。"
+      "reason": "物質種類未知。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "推論界限"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識溶液名稱",
-    "pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗",
-    "任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性"
+    "必定完全不導電",
+    "pH低於7就必定完全不能接觸任何食品",
+    "必定是濃硫酸"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

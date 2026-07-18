@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對食鹽水配製結果，哪項說法正確？",
+  "stem": "純水空白也可能有極小讀值，判斷樣品時應怎麼做？",
   "options": [
-    "在相同電路與濃度條件下",
-    "任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電",
-    "外觀透明無色的物質一定是純物質，不可能含多種成分",
-    "溶液中含量較少的一方永遠是溶劑，和物態與作用無關"
+    "刪除空白組",
+    "與空白讀值比較並重複量測",
+    "改看顏色",
+    "把任何非零讀值都直接判成強電解質"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「在相同電路與濃度條件下，水溶液能否導電可用來判斷是否有可移動離子，並輔助區分電解質」。"
+      "isCorrect": false,
+      "reason": "失去基準。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣…」不成立；在相同電路與濃度條件下，水溶液能否導電可用來判斷是否有可移動離子，並輔助區分電解質。"
+      "isCorrect": true,
+      "reason": "可辨背景與樣品效應。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「外觀透明無色的物質一定是純物質，不可能含多種成分」不成立；純物質在固定條件下有固定組成；空氣、海水等由多種物質以可變比例組成，是混合物。"
+      "reason": "顏色不判導電。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「溶液中含量較少的一方永遠是溶劑，和物態與作用無關」不成立；食鹽水中食鹽是溶質、水是溶劑、均勻混合系統是溶液。"
+      "reason": "微小背景不等於強導電。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "對照解讀"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電",
-    "外觀透明無色的物質一定是純物質，不可能含多種成分",
-    "溶液中含量較少的一方永遠是溶劑，和物態與作用無關"
+    "刪除空白組",
+    "改看顏色",
+    "把任何非零讀值都直接判成強電解質"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AB-4-4",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

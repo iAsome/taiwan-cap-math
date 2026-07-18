@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解粒子間距解釋熱脹冷縮，哪項修正合理？",
+  "stem": "受熱後物體長度增加，能否據此說每個原子的直徑都變大？",
   "options": [
-    "熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小",
-    "固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹",
-    "不是單個粒子自身膨脹",
-    "液體和氣體都沒有固定體積，所以兩者的性質完全相同"
+    "能，巨觀變大只能如此",
+    "不能，因物體長度其實沒變",
+    "能，原子會分裂",
+    "不能，通常是平均間距改變"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小」不成立；物體受熱時常是粒子間平均距離增加，不是單個粒子自身膨脹。"
+      "reason": "忽略粒子間距。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹」不成立；固體粒子緊密且在平衡位置附近振動，液體粒子可相對移動，氣體粒子間距大且運動自由。"
+      "reason": "題目已觀察到變長。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體受熱時常是粒子間平均距離增加，不是單個粒子自身膨脹」。"
+      "isCorrect": false,
+      "reason": "沒有分裂證據。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「液體和氣體都沒有固定體積，所以兩者的性質完全相同」不成立；固體保有固定形狀與體積；液體有固定體積但隨容器改變形狀；氣體充滿容器。"
+      "isCorrect": true,
+      "reason": "符合熱膨脹模型。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "模型辨析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小",
-    "固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹",
-    "液體和氣體都沒有固定體積，所以兩者的性質完全相同"
+    "能，巨觀變大只能如此",
+    "不能，因物體長度其實沒變",
+    "能，原子會分裂"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-1",
       "AUTH-NATURAL-LC-AB-4-2",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

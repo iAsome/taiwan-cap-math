@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估線圈感應報告時，哪項說明正確？",
+  "stem": "磁鐵慢速插入條件下，先知磁通量變化慢速增加和電路閉合，再看電流計向右偏小。重複由磁場變化解釋感應電流時，磁通量變化變因與電路單位如何維持？",
   "options": [
-    "只要裝置含線圈就能跳過輸入、輸出的分析，直接說能量在線圈中消失",
-    "穿過線圈的磁通量發生變化時可產生感應電動勢",
-    "只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流",
-    "通電線圈與永久磁鐵完全相同，斷電後磁場必永久保持且不可調整"
+    "主張移動越慢磁通量變化越快",
+    "主張磁鐵只要在線圈內，即使靜止也會產生持續感應電流",
+    "解題時將開路時可能有感應電動勢直接說成必有感應電流",
+    "開路仍可有感應電動勢，但電流計不形成持續回路"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要裝置含線圈就能跳過輸入、輸出的分析，直接說能量在線圈中…」不成立；裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出，例如手搖發電機為機械能→電能→光與熱。"
+      "reason": "誤以為移動越慢磁通量變化越快，所以感應效應越大，結果會錯判電流計。穿過線圈的磁通量發生變化時可產生感應電動勢；磁通量變化未列入由磁場變化解釋感應電流時，電流計的電路大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「穿過線圈的磁通量發生變化時可產生感應電動勢；電路閉合時才會有感應電流」。"
+      "isCorrect": false,
+      "reason": "誤以為磁鐵只要在線圈內，即使靜止也會產生持續感應電流。穿過線圈的磁通量發生變化時可產生感應電動勢；照原做法會把電流計算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流」不成立；穿過線圈的磁通量發生變化時可產生感應電動勢；電路閉合時才會有感應電流。"
+      "reason": "解題時錯將開路時可能有感應電動勢直接說成必有感應電流，結果會錯判電流計。閉合電路才有感應電流；電流計差異若未通過由磁場變化解釋感應電流對磁通量變化的控制，就不能只歸給電路。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「通電線圈與永久磁鐵完全相同，斷電後磁場必永久保持且不可調整」不成立；通電線圈會形成類似棒形磁鐵的磁場，可藉改變電流、線圈圈數與鐵心調整電磁鐵強弱。"
+      "isCorrect": true,
+      "reason": "開路仍可有感應電動勢，但電流計不形成持續回路。磁鐵快速抽出列的磁通量變化為快速減少，電路為閉合；磁鐵快速插入列的磁通量變化為快速增加，電路為閉合。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要裝置含線圈就能跳過輸入、輸出的分析，直接說能量在線圈中消失",
-    "只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流",
-    "通電線圈與永久磁鐵完全相同，斷電後磁場必永久保持且不可調整"
+    "主張移動越慢磁通量變化越快",
+    "主張磁鐵只要在線圈內，即使靜止也會產生持續感應電流",
+    "解題時將開路時可能有感應電動勢直接說成必有感應電流"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-KC-4-4",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

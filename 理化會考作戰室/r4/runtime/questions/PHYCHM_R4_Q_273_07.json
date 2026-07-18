@@ -15,11 +15,11 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "保險絲與接地出現四種說法，哪項有理化概念支持？",
+  "stem": "解題時錯將不同電器、不同工作狀態的電壓與電流交叉相乘，結果會錯判功率。依由電壓電流計算電功率修正時，電壓與電流應採哪個原理連結？",
   "options": [
-    "電阻只會降低溫度，過載與短路都不會使導線發熱",
-    "保險絲應用最粗導線代替以免熔斷，接地插腳則可拆除而不影響安全",
-    "只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關",
+    "把 120×2.0 算成 24 W，錯置十倍的數量級",
+    "主張功率越大表示任何使用時間下的用電量都一定相同",
+    "解題時將電功率算成 V/I，120 V、2.0 A 得到 60 W",
     "電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W"
   ],
   "answerIndex": 3,
@@ -27,39 +27,39 @@
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「電阻只會降低溫度，過載與短路都不會使導線發熱」不成立；過載是同一路線總電流過大，短路是低電阻路徑造成大電流；兩者均可因電阻發熱引起火災。"
+      "reason": "把 120×2.0 算成 24 W，錯置十倍的數量級。由 P＝VI 計算；電流的數值若未依電壓核對，會使功率無法通過由電壓電流計算電功率檢查。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「保險絲應用最粗導線代替以免熔斷，接地插腳則可拆除而不影響安全」不成立；保險絲或斷路器在過大電流時斷開回路；接地將漏電提供低阻安全路徑，三孔插頭不可任意拆除。"
+      "reason": "誤以為功率越大表示任何使用時間下的用電量都一定相同。電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W；電壓未列入由電壓電流計算電功率時，功率的電流大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關」不成立；安全節能做法包括不超過延長線額定、保持線材完好乾燥、不用時關閉高功率電器並比較實際用電量。"
+      "reason": "解題時錯將電功率算成 V/I，120 V、2.0 A 得到 60 W。電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W；照原做法會把功率算錯或判反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W」。"
+      "reason": "電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W。丙列的電壓為60 V，電流為2.0 A；丁列的電壓為12 V，電流為0.50 A。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電阻只會降低溫度，過載與短路都不會使導線發熱",
-    "保險絲應用最粗導線代替以免熔斷，接地插腳則可拆除而不影響安全",
-    "只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關"
+    "把 120×2.0 算成 24 W，錯置十倍的數量級",
+    "主張功率越大表示任何使用時間下的用電量都一定相同",
+    "解題時將電功率算成 V/I，120 V、2.0 A 得到 60 W"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對回聲測距結果，哪項說法正確？",
+  "stem": "某訊號由 18 kHz 調到 25 kHz，振幅不變。對多數成人最可能的變化為何？",
   "options": [
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射",
-    "人耳可聽頻率有範圍",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定",
-    "真空中的聲音傳得最快，因為沒有空氣阻力"
+    "由可能可聽變成通常不可聽",
+    "由超聲變成次聲",
+    "聲音的響度必加倍",
+    "聲速必增加"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射」不成立；人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射。"
+      "isCorrect": true,
+      "reason": "25 kHz 高於常用人耳可聽上限，而 18 kHz 仍可能可聽。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射」。"
+      "isCorrect": false,
+      "reason": "頻率是升高，不是移到低頻。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定」不成立；音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止。"
+      "reason": "振幅未變，不能說響度加倍。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「真空中的聲音傳得最快，因為沒有空氣阻力」不成立；聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質。"
+      "reason": "同介質聲速不因這項頻率改變而必增。"
     }
   ],
   "difficulty": "advanced",
@@ -47,16 +47,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定",
-    "真空中的聲音傳得最快，因為沒有空氣阻力"
+    "由超聲變成次聲",
+    "聲音的響度必加倍",
+    "聲速必增加"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

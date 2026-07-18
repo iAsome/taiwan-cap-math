@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於原子與分子是物質粒子模型，哪項結論符合題給條件？",
+  "stem": "兩個相同原子能形成分子嗎？",
   "options": [
-    "元素、化合物、原子和分子是同一分類層次，任何名稱可相互代換",
-    "原子和分子是用來解釋物質組成與性質的粒子模型；分子由特定種類與數目的原子結合",
-    "模型一旦改變就表示先前所有實驗都是作假，舊證據不再存在",
-    "原子核佔滿幾乎整個原子體積，電子全部固定貼在核表面"
+    "不能，必須不同元素",
+    "不能，分子不含原子",
+    "能，例如 O₂",
+    "能，但只在固體"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「元素、化合物、原子和分子是同一分類層次，任何名稱可相互代換」不成立；銅元素由同類銅原子組成；水是氫、氧元素以固定比例組成的化合物，一個水分子是其粒子表示。"
+      "reason": "元素分子可由同種原子。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「原子和分子是用來解釋物質組成與性質的粒子模型；分子由特定種類與數目的原子結合」。"
+      "isCorrect": false,
+      "reason": "分子正由原子構成。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「模型一旦改變就表示先前所有實驗都是作假，舊證據不再存在」不成立；原子模型會在新實驗證據出現後修正；新模型應解釋既有證據，並對新現象有更好預測。"
+      "isCorrect": true,
+      "reason": "氧分子是反例。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「原子核佔滿幾乎整個原子體積，電子全部固定貼在核表面」不成立；原子的正電與大部分質量集中在微小原子核，電子分布在核外；原子內大部分是空間。"
+      "reason": "氣態氧也有 O₂。"
     }
   ],
-  "difficulty": "standard",
+  "difficulty": "foundation",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "反例理解"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "元素、化合物、原子和分子是同一分類層次，任何名稱可相互代換",
-    "模型一旦改變就表示先前所有實驗都是作假，舊證據不再存在",
-    "原子核佔滿幾乎整個原子體積，電子全部固定貼在核表面"
+    "不能，必須不同元素",
+    "不能，分子不含原子",
+    "能，但只在固體"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-1",
       "AUTH-NATURAL-LC-AA-4-2",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

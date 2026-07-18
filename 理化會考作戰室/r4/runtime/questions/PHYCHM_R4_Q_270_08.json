@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理電表接法資料，哪項敘述合理？",
+  "stem": "解題時錯將 R1 的 4 V 與 R2 的 8 V 相減，誤判電源只有 4 V。按分析串聯電路的電流與電壓檢查電流與電壓時，哪一步先做？",
   "options": [
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "串聯電路各元件的電流相同",
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路"
+    "把串聯單一路徑誤畫成兩個支路後仍套用各處電流相同",
+    "電流不會在通過第一顆電阻後被用完",
+    "主張串聯電路的電流通過第一個電阻後會被用掉，所以後段較小",
+    "解題時將各元件電壓降都設成相同"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「短路和斷路都只會使電流完全為零，不可能出現過大電流」不成立；斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險。"
+      "reason": "把串聯單一路徑誤畫成兩個支路後仍套用各處電流相同，結果會錯判電阻。串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和；電流未列入分析串聯電路的電流與電壓時，電阻的電壓大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和」。"
+      "reason": "電流不會在通過第一顆電阻後被用完。電源列的電流為0.40 A，電壓為12.0 V；電源前主線列的電流為0.40 A，電壓為—。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少」不成立；串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和。"
+      "reason": "誤以為串聯電路的電流通過第一個電阻後會被用掉，所以後段較小。串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和；照原做法會把電阻算錯或判反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路」不成立；電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整。"
+      "reason": "解題時錯將各元件電壓降都設成相同，忽略電阻不同時分配可能不同。此結論針對單一路徑且量表理想；電阻差異若未通過分析串聯電路的電流與電壓對電流的控制，就不能只歸給電壓。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路"
+    "把串聯單一路徑誤畫成兩個支路後仍套用各處電流相同",
+    "主張串聯電路的電流通過第一個電阻後會被用掉，所以後段較小",
+    "解題時將各元件電壓降都設成相同"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

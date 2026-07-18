@@ -16,51 +16,50 @@
     "AUTH-NATURAL-LP-PO-4-2"
   ],
   "stimulusId": null,
-  "stem": "加熱與稀釋安全出現四種說法，哪項有理化概念支持？",
+  "stem": "稀釋濃酸時持續攪拌的作用為何？",
   "options": [
-    "所有玻璃器材的測量精度與耐熱性都一樣，燒杯可代替任何量測工具",
-    "聞氣體要用手輕扇少量氣體",
-    "只有藥品顏色鮮豔時才需看危害標示，無色溶液都可安全徒手處理",
-    "自變項是實驗者要量到的結果，應變項則是所有必須保持不變的條件"
+    "使熱量與酸較均勻分散",
+    "使酸變成金屬",
+    "增加局部高溫",
+    "讓水停止吸熱"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「所有玻璃器材的測量精度與耐熱性都一樣，燒杯可代替任何量測工具」不成立；量取 25 mL 溶液適合用量筒而非燒杯；加熱需選可受熱器材並依藥品性質選熱源。"
+      "isCorrect": true,
+      "reason": "可減少局部濃度與溫度過高。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「聞氣體要用手輕扇少量氣體；加熱試管口不對人；稀釋濃酸應將酸緩慢加入水」。"
+      "isCorrect": false,
+      "reason": "不會生成金屬。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只有藥品顏色鮮豔時才需看危害標示，無色溶液都可安全徒手處理」不成立；操作前應讀取藥品名稱、濃度與危害標示，依飛濺、腐蝕、易燃等風險佩戴適當護目鏡與手套。"
+      "reason": "效果相反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「自變項是實驗者要量到的結果，應變項則是所有必須保持不變的條件」不成立；比較溫度對溶解速度的實驗，溫度是自變項、溶解時間是應變項，質量、顆粒大小與攪拌要控制。"
+      "reason": "水仍吸熱。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "機制解釋"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "所有玻璃器材的測量精度與耐熱性都一樣，燒杯可代替任何量測工具",
-    "只有藥品顏色鮮豔時才需看危害標示，無色溶液都可安全徒手處理",
-    "自變項是實驗者要量到的結果，應變項則是所有必須保持不變的條件"
+    "使酸變成金屬",
+    "增加局部高溫",
+    "讓水停止吸熱"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段探究與實作學習表現; 臺灣國中教育會考自然科實驗設計、安全與資料判讀題型",
     "sourceRefs": [
       "AUTH-NATURAL-LP-AI-4-1",
       "AUTH-NATURAL-LP-AI-4-2",
@@ -73,19 +72,5 @@
       "AUTH-NATURAL-LP-PO-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

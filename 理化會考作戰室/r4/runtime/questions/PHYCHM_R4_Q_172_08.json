@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "報告整理噪音暴露資料，哪項敘述合理？",
+  "stem": "山谷中先後在 0.20 s 與 0.50 s 收到兩面岩壁的回聲，聲速 340 m/s。兩岩壁距離分別為何？",
   "options": [
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定",
-    "距離為 68 m"
+    "68 m 與 170 m",
+    "34 m 與 85 m",
+    "17 m 與 42.5 m",
+    "34 m 與 170 m"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險」不成立；噪音風險同時與聲音強度級和暴露時間有關；較大聲音的安全暴露時間應更短。"
+      "reason": "兩個數都是往返路程，未除以二。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「距離為 340×0.40＝136 m，因為回聲時間只包含單程」不成立；回聲測距的聲波經往返路程；若聲速 340 m/s、往返 0.40 s，距離為 68 m。"
+      "isCorrect": true,
+      "reason": "d₁＝340×0.20/2＝34 m；d₂＝340×0.50/2＝85 m。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定」不成立；音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止。"
+      "reason": "把正確距離又除以二。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「回聲測距的聲波經往返路程；若聲速 340 m/s、往返 0.40 s，距離為 68 m」。"
+      "isCorrect": false,
+      "reason": "第二個 170 m 是往返路程。"
     }
   ],
   "difficulty": "advanced",
@@ -47,16 +47,16 @@
     "關係應用",
     "多步驟推理"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定"
+    "68 m 與 170 m",
+    "17 m 與 42.5 m",
+    "34 m 與 170 m"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

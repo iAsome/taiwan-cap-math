@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "催化劑實驗出現四種說法，哪項有理化概念支持？",
+  "stem": "升溫後前期較快，能直接說平衡產物更多嗎？",
   "options": [
-    "只要實驗條件一樣，任何反應物的反應速率都必然相同",
-    "同時增加溫度、濃度與表面積的實驗，可單獨證明其中任一因素的效果",
-    "最終生成量還受反應物量與平衡等條件影響",
-    "催化劑加快反應是因為它大量變成生成物，因此用得越多產量必無限增加"
+    "不能，因溫度不影響反應",
+    "不能，還需反應吸放熱與平衡資料",
+    "能，溫度只影響產量",
+    "能，快必多"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要實驗條件一樣，任何反應物的反應速率都必然相同」不成立；在溫度、濃度、表面積均相同時，不同物質因本性不同可有不同反應速率。"
+      "reason": "明顯可影響。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「同時增加溫度、濃度與表面積的實驗，可單獨證明其中任一因素的…」不成立；其他條件相同時，提高溫度、增加反應物濃度或將固體磨細，通常可加快反應。"
+      "isCorrect": true,
+      "reason": "速率與平衡效果分開。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「反應較快只表示達到某狀態所需時間較短；最終生成量還受反應物量與平衡等條件影響」。"
+      "isCorrect": false,
+      "reason": "升溫也常改速率。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「催化劑加快反應是因為它大量變成生成物，因此用得越多產量必無…」不成立；催化劑可提供不同反應路徑而改變反應速率，且在反應過程中不被大量消耗成最終產物。"
+      "reason": "錯誤等同。"
     }
   ],
-  "difficulty": "standard",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "多重效應"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要實驗條件一樣，任何反應物的反應速率都必然相同",
-    "同時增加溫度、濃度與表面積的實驗，可單獨證明其中任一因素的效果",
-    "催化劑加快反應是因為它大量變成生成物，因此用得越多產量必無限增加"
+    "不能，因溫度不影響反應",
+    "能，溫度只影響產量",
+    "能，快必多"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科反應速率、控制變因與動態平衡層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JE-4-1",
       "AUTH-NATURAL-LC-JE-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

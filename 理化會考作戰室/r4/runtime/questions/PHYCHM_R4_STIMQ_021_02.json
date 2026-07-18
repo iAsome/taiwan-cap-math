@@ -12,50 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "PHYCHM_R4_STIM_021",
-  "stem": "檢查表中關於粒子間距解釋熱脹冷縮的說法，哪項判讀正確？",
+  "stem": "資料顯示每升高 20 °C，棒長約增加多少？",
   "options": [
-    "教科書的粒子圖是顯微鏡直接拍到的照片，圖上比例可當成實際大小",
-    "熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小",
-    "固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹",
-    "不是單個粒子自身膨脹"
+    "0.24 mm",
+    "0.12 mm",
+    "0.72 mm",
+    "20 mm"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「教科書的粒子圖是顯微鏡直接拍到的照片，圖上比例可當成實際大小」不成立；粒子圖是解釋現象的模型；可表現排列與運動差異，但圖上大小和間距通常不是實際比例。"
+      "isCorrect": true,
+      "reason": "相鄰各列差均為 0.24 mm。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小」不成立；物體受熱時常是粒子間平均距離增加，不是單個粒子自身膨脹。"
+      "reason": "是 10 °C 的推算值。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹」不成立；固體粒子緊密且在平衡位置附近振動，液體粒子可相對移動，氣體粒子間距大且運動自由。"
+      "reason": "是總伸長。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體受熱時常是粒子間平均距離增加，不是單個粒子自身膨脹」。"
+      "isCorrect": false,
+      "reason": "把溫差當長度。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀"
+    "規律判讀"
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "教科書的粒子圖是顯微鏡直接拍到的照片，圖上比例可當成實際大小",
-    "熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小",
-    "固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹"
+    "0.12 mm",
+    "0.72 mm",
+    "20 mm"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-1",
       "AUTH-NATURAL-LC-AB-4-2",
@@ -64,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

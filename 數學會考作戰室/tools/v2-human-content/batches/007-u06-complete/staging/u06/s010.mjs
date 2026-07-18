@@ -737,7 +737,7 @@ export default {
         {
           "choice": "24:54:30",
           "truth": false,
-          "reason": "等值但未最簡，三項可同除2得12:27:15? 且C錯。"
+          "reason": "前兩項24:54符合4:9，但24:30=4:5，不符合A:C=6:5。"
         },
         {
           "choice": "12:9:10",
@@ -766,7 +766,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e565f7fa57da6319f4e6d51d7db5f458948438b7da44411184b7aa30f41664b7"
+      "contentSha256": "9da7cb553b17082b39f33b29533ca53da7b791ba9ea9af5c68c80646fb9ac499"
     },
     {
       "questionId": "u06-s010-v008",
@@ -1513,7 +1513,7 @@ export default {
       "questionId": "u06-s010-v007",
       "unitId": "u06",
       "skillId": "continued-ratio-preview",
-      "contentSha256": "e565f7fa57da6319f4e6d51d7db5f458948438b7da44411184b7aa30f41664b7",
+      "contentSha256": "9da7cb553b17082b39f33b29533ca53da7b791ba9ea9af5c68c80646fb9ac499",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1531,7 +1531,7 @@ export default {
       "optionEvidence": [
         "A份數不一致。",
         "共同項A的4與6對齊到12；第一比乘3得12:27，第二比乘2得12:10。",
-        "等值但未最簡，三項可同除2得12:27:15? 且C錯。",
+        "前兩項24:54符合4:9，但24:30=4:5，不符合A:C=6:5。",
         "B未隨A放大。"
       ],
       "ambiguityChecks": {
@@ -1542,7 +1542,7 @@ export default {
       },
       "difficultyReason": "進階位置變化。",
       "literacyNecessity": null,
-      "reviewerNote": "獨立重算：12:27=4:9，12:10=6:5。 正確選項為「12:27:10」。逐項檢查後，唯一為真的理由是「共同項A的4與6對齊到12；第一比乘3得12:27，第二比乘2得12:10。」；其餘三項分別因「A份數不一致。」、「等值但未最簡，三項可同除2得12:27:15? 且C錯。」、「B未隨A放大。」而排除。邊界與語意再檢查：結果三項最大公因數1。",
+      "reviewerNote": "獨立重算：12:27=4:9，12:10=6:5。 正確選項為「12:27:10」。逐項檢查後，唯一為真的理由是「共同項A的4與6對齊到12；第一比乘3得12:27，第二比乘2得12:10。」；其餘三項分別因「A份數不一致。」、「前兩項24:54符合4:9，但24:30=4:5，不符合A:C=6:5。」、「B未隨A放大。」而排除。邊界與語意再檢查：結果三項最大公因數1。",
       "reviewerDecision": "pass"
     },
     {

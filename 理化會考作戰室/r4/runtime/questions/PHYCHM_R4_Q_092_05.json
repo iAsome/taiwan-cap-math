@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於反應資料找出反應物的消耗比例，哪項結論符合題給條件？",
+  "stem": "A初始10 g剩2 g，B初始15 g剩3 g。實際消耗量的最簡整數比A：B為何？",
   "options": [
-    "一系列實驗中若 A、B 剛好完全反應的消耗質量一直維持 2：3，可以該恆定比來推算同反應資料",
-    "只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比",
-    "CO₂ 的相對分子量為 12＋16＝28，因為同種元素只需加一次",
-    "N₂＋3H₂→2NH₃ 中的下標 2、3、3 才是反應粒子數比"
+    "5：6",
+    "2：3",
+    "10：15",
+    "8：12"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「一系列實驗中若 A、B 剛好完全反應的消耗質量一直維持 2：3，可以該恆定比來推算同反應資料」。"
+      "isCorrect": false,
+      "reason": "5：6不是8：12的等值比。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比」不成立；一系列實驗中若 A、B 剛好完全反應的消耗質量一直維持 2：3，可以該恆定比來推算同反應資料。"
+      "isCorrect": true,
+      "reason": "A消耗8 g、B消耗12 g，8：12約成2：3。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「CO₂ 的相對分子量為 12＋16＝28，因為同種元素只需…」不成立；CO₂ 的相對分子量為 12＋2×16＝44；必須把每種原子量乘以其下標再加總。"
+      "reason": "10：15使用初始量，沒有先扣除剩餘量。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「N₂＋3H₂→2NH₃ 中的下標 2、3、3 才是反應粒子…」不成立；配平式 N₂＋3H₂→2NH₃ 表示粒子數比 1：3：2，讀比例前應確認方程式已配平。"
+      "reason": "8：12是未化簡的消耗量比，不符合最簡整數比。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "剩餘整合"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比",
-    "CO₂ 的相對分子量為 12＋16＝28，因為同種元素只需加一次",
-    "N₂＋3H₂→2NH₃ 中的下標 2、3、3 才是反應粒子數比"
+    "5：6",
+    "10：15",
+    "8：12"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-2",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於液體密度與排開體積對浮力影響，哪項結論符合題給條件？",
+  "stem": "丙的液體密度為1.00 g/cm³、排開體積為150 cm³；丁則是1.20 g/cm³、150 cm³。為避免錯用比較液體密度與排開體積對浮力影響，液體密度或排開體積須符合什麼要求？",
   "options": [
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水",
-    "同液體中排開體積相同則浮力相同",
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關"
+    "物體須完全由同種液體包圍且排開體積已知",
+    "主張完全浸沒的物體沉得越深，排開體積不變時浮力仍會持續增加",
+    "做比較時液體密度影響時同時改變排開體積",
+    "僅根據甲到乙把密度增為 1.25 倍，卻判定浮力維持 0.784 N"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水」不成立；船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉。"
+      "isCorrect": true,
+      "reason": "物體須完全由同種液體包圍且排開體積已知。甲列的液體密度為0.80 g/cm³，排開體積為100 cm³；乙列的液體密度為1.00 g/cm³，排開體積為100 cm³。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「完全沒入時，浮力隨液體密度與排開體積增大；同液體中排開體積相同則浮力相同」。"
+      "isCorrect": false,
+      "reason": "誤以為完全浸沒的物體沉得越深，排開體積不變時浮力仍會持續增加。完全沒入時，浮力隨液體密度與排開體積增大；照原做法會把浮力算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限…」不成立；完全沒入時，浮力隨液體密度與排開體積增大；同液體中排開體積相同則浮力相同。"
+      "reason": "做比較時液體密度影響時同時改變排開體積，卻只把浮力差歸因於密度。物體須完全由同種液體包圍且排開體積已知；浮力差異若未通過比較液體密度與排開體積對浮力影響對液體密度的控制，就不能只歸給排開體積。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關」不成立；沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力。"
+      "reason": "僅根據甲到乙把密度增為 1.25 倍，卻判定浮力維持 0.784 N，結果會錯判浮力。甲乙只改液體密度，乙浮力較大；排開體積的數值若未依液體密度核對，會使浮力無法通過比較液體密度與排開體積對浮力影響檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "條件判斷",
-    "分析"
+    "應用"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水",
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關"
+    "主張完全浸沒的物體沉得越深，排開體積不變時浮力仍會持續增加",
+    "做比較時液體密度影響時同時改變排開體積",
+    "僅根據甲到乙把密度增為 1.25 倍，卻判定浮力維持 0.784 N"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

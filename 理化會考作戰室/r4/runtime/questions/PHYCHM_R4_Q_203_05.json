@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於位置時間圖上的位置與時刻，哪項結論符合題給條件？",
+  "stem": "同一位置—時間圖上，A 點為 t=1 s、x=2 m，B 點為 t=5 s、x=2 m。可確定什麼？",
   "options": [
-    "把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間與位置",
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸",
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑",
-    "位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置"
+    "物體在兩時刻位置相同",
+    "物體在兩時刻間全程靜止",
+    "物體路程必為零",
+    "物體速率始終為 2 m/s"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間…」不成立；「向東等速、停留、向西返回」的位置—時間圖應依序是正斜率、水平、負斜率。"
+      "isCorrect": true,
+      "reason": "兩點縱座標相同只保證端點位置相同，中間仍可能移動。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸」不成立；位置—時間圖的線形描述位置如何隨時間變化，不是物體在空間中的軌跡外觀。"
+      "reason": "物體在兩時刻間全程靜止不成立。兩點縱座標相同只保證端點位置相同，中間仍可能移動。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑」不成立；位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置。"
+      "reason": "物體路程必為零不成立。兩點縱座標相同只保證端點位置相同，中間仍可能移動。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置」。"
+      "isCorrect": false,
+      "reason": "物體速率始終為 2 m/s不成立。兩點縱座標相同只保證端點位置相同，中間仍可能移動。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "條件判斷",
     "分析"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間與位置",
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸",
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑"
+    "物體在兩時刻間全程靜止",
+    "物體路程必為零",
+    "物體速率始終為 2 m/s"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

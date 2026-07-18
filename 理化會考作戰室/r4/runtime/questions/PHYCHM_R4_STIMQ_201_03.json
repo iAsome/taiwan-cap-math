@@ -11,50 +11,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_201",
-  "stem": "往返步行題組中，哪項說明符合紀錄？",
+  "stem": "依表格，高速公路瞬時速率曾為 92 km/h。能否據此判定該段平均速率為 92 km/h？",
   "options": [
-    "儀表在某一刻顯示的是瞬時資訊",
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "路程與位移永遠大小相等，往返原點的路程也是零"
+    "能，瞬時值就是平均值",
+    "不能，表中該段平均速率為 80 km/h",
+    "能，最高讀值會取代平均值",
+    "不能，因為 92 km/h 沒有單位"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「儀表在某一刻顯示的是瞬時資訊；一段旅程的平均速率必須以全路程除以全時間」。"
+      "isCorrect": false,
+      "reason": "能，瞬時值就是平均值不符合題目資料。92 km/h 是某時刻讀值；表中整段平均速率另列為 80 km/h。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均…」不成立；儀表在某一刻顯示的是瞬時資訊；一段旅程的平均速率必須以全路程除以全時間。"
+      "isCorrect": true,
+      "reason": "92 km/h 是某時刻讀值；表中整段平均速率另列為 80 km/h。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只給一個數字「200 m」就能唯一決定物體位置，不需參考點…」不成立；物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整。"
+      "reason": "能，最高讀值會取代平均值不符合題目資料。92 km/h 是某時刻讀值；表中整段平均速率另列為 80 km/h。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「路程與位移永遠大小相等，往返原點的路程也是零」不成立；路程是實際路徑總長，位移是起點到終點的有向改變；往返原點時路程大於零但位移為零。"
+      "reason": "不能，因為 92 km/h 沒有單位不符合題目資料。92 km/h 是某時刻讀值；表中整段平均速率另列為 80 km/h。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "證據評估"
+    "合理性評估"
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "路程與位移永遠大小相等，往返原點的路程也是零"
+    "能，瞬時值就是平均值",
+    "能，最高讀值會取代平均值",
+    "不能，因為 92 km/h 沒有單位"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -62,19 +62,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

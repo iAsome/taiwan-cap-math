@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組根據彈簧秤視重量下結論，哪項符合資料？",
+  "stem": "誤以為懸浮物體沒有重力，因為它在液體中沒有上下移動，結果會錯判其他垂直力。用受繩拉住靜止列的重力12 N 向下檢驗，應改採哪個判準？",
   "options": [
-    "漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力",
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量",
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要"
+    "把判斷加速方向時只比較重力和浮力",
+    "解題時將漂浮靜止的 10 N 重力與 10 N 浮力相加，判成合力為 20 N 向上",
+    "主張懸浮物體並漏掉重力，因為它在液體中並漏掉上下移動",
+    "漂浮或懸浮且靜止時合力為零，浮力等於重力"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力」。"
+      "isCorrect": false,
+      "reason": "解題時誤把判斷加速方向時只比較重力和浮力，漏掉題目給的繩張力。一定要先辨認運動狀態與所有垂直力，不能把下沉直接等同浮力為零；其他垂直力差異若未通過分析漂浮懸浮下沉時的受力對重力的控制，就不能只歸給浮力。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「浮力為 12＋7＝19 N，因為水中讀值要加回原重量」不成立；物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N。"
+      "reason": "解題時錯將漂浮靜止的 10 N 重力與 10 N 浮力相加，誤認合力為 20 N 向上，結果會錯判其他垂直力。漂浮與懸浮靜止時合力為零；浮力的數值若未依重力核對，會使其他垂直力無法通過分析漂浮懸浮下沉時的受力檢查。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限…」不成立；完全沒入時，浮力隨液體密度與排開體積增大；同液體中排開體積相同則浮力相同。"
+      "reason": "誤以為懸浮物體沒有重力，因為它在液體中沒有上下移動，結果會錯判其他垂直力。漂浮或懸浮且靜止時合力為零，浮力等於重力；重力未列入分析漂浮懸浮下沉時的受力時，其他垂直力的浮力大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「浮沉只由物體總質量大小決定，體積與平均密度完全不重要」不成立；物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉。"
+      "isCorrect": true,
+      "reason": "漂浮或懸浮且靜止時合力為零，浮力等於重力。懸浮靜止列的重力為8 N 向下，浮力為8 N 向上；向下加速列的重力為12 N 向下，浮力為8 N 向上。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量",
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要"
+    "把判斷加速方向時只比較重力和浮力",
+    "解題時將漂浮靜止的 10 N 重力與 10 N 浮力相加，判成合力為 20 N 向上",
+    "主張懸浮物體並漏掉重力，因為它在液體中並漏掉上下移動"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

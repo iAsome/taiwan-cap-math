@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組未知質量表資料，哪項判讀仍合理？",
+  "stem": "檢查 4Fe＋3O₂→2Fe₂O₃ 時，哪一列核對表正確？",
   "options": [
-    "開放容器變輕證明質量守恆定律在產氣反應中不適用",
-    "未知生成物為 35＋12＝47 g，因為生成物應加在反應物上",
-    "檢查反應式時要逐種元素計算左右原子總數",
-    "H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標"
+    "Fe：4＝4；O：6＝6",
+    "Fe：1＝2；O：6＝3",
+    "Fe：4＝6；O：2＝6",
+    "Fe：4＝2；O：3＝3"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「開放容器變輕證明質量守恆定律在產氣反應中不適用」不成立；開放容器產生氣體並逸出時，秤得質量可減少；把逸出氣體也納入系統才符合守恆。"
+      "isCorrect": true,
+      "reason": "左 Fe4 O6，右 Fe4 O6。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「未知生成物為 35＋12＝47 g，因為生成物應加在反應物上」不成立；反應物總質量 35 g，已知一生成物 12 g，且系統密閉，另一生成物為 23 g。"
+      "reason": "只看化學式未乘係數。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「檢查反應式時要逐種元素計算左右原子總數，每一種都相等才是已配平」。"
+      "isCorrect": false,
+      "reason": "原子數均算錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標」不成立；2H₂＋O₂→2H₂O 以係數 2、1、2 使氫、氧原子在兩側分別都是 4、2 個。"
+      "reason": "漏乘下標或係數。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "複合核對"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "開放容器變輕證明質量守恆定律在產氣反應中不適用",
-    "未知生成物為 35＋12＝47 g，因為生成物應加在反應物上",
-    "H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標"
+    "Fe：1＝2；O：6＝3",
+    "Fe：4＝6；O：2＝6",
+    "Fe：4＝2；O：3＝3"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估電梯受力報告時，哪項說明正確？",
+  "stem": "若某星球 g 是地球的二分之一，同一物體重量如何？",
   "options": [
-    "合力只需把大小相加，所以向右 8 N 與向左 3 N 的合力是 11 N",
-    "在不同星體可改變",
-    "合力為零時物體速度必立即變為零，不可能繼續等速運動",
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他"
+    "變為地球重量兩倍",
+    "變為地球重量的二分之一",
+    "此時物體保持不變",
+    "變為零"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「合力只需把大小相加，所以向右 8 N 與向左 3 N 的合…」不成立；同直線上向右 8 N 與向左 3 N 的合力為向右 5 N；相反方向力要取差並保留方向。"
+      "reason": "變為地球重量兩倍與受力條件不符。W=mg，m 固定而 g 減半，重量也減半。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「質量是物體慣性的量度，重量是物體所受重力，在不同星體可改變；單位分別常用 kg 與 N」。"
+      "reason": "W=mg，m 固定而 g 減半，重量也減半。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「合力為零時物體速度必立即變為零，不可能繼續等速運動」不成立；物體所受合力為零時加速度為零，可保持靜止或等速直線運動，不限於靜止。"
+      "reason": "此時物體保持不變與受力條件不符。W=mg，m 固定而 g 減半，重量也減半。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他」不成立；慣性是物體維持原運動狀態的性質；車突然剎車時乘客上半身傾向前就是慣性現象。"
+      "reason": "變為零與受力條件不符。W=mg，m 固定而 g 減半，重量也減半。"
     }
   ],
   "difficulty": "transfer",
@@ -50,16 +50,16 @@
     "限制評估",
     "高層推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "合力只需把大小相加，所以向右 8 N 與向左 3 N 的合力是 11 N",
-    "合力為零時物體速度必立即變為零，不可能繼續等速運動",
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他"
+    "變為地球重量兩倍",
+    "此時物體保持不變",
+    "變為零"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

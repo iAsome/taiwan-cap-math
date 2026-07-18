@@ -131,60 +131,58 @@
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "AB=DE=5、BC=EF=7、CA=FD=8，判斷兩三角形。",
+      "prompt": "△GHI與△JKL的三邊分別為GH=JK=6、HI=KL=9、IG=LJ=11。判斷並寫出正確全等式。",
       "solutionSteps": [
-        "三組對應邊分別相等。",
-        "邊的端點對應為 A↔D、B↔E、C↔F。",
-        "由三組邊的共同端點確認A對D、B對E、C對F。"
+        "三組對應邊GH↔JK、HI↔KL、IG↔LJ分別相等。",
+        "由共同端點讀得G↔J、H↔K、I↔L。",
+        "按此順序以SSS寫出全等式。"
       ],
-      "answer": "△ABC≅△DEF（SSS）。",
-      "why": "三個邊長5、7、8在兩圖中一一相等，且依共同端點建立一致的頂點配對，才能同時得到SSS判定與正確全等式。"
+      "answer": "△GHI≅△JKL（SSS）。",
+      "why": "三組邊6、9、11逐一相等並能形成三角形；由相鄰等邊的共同端點決定頂點配對，才能同時保證SSS判定與全等式順序正確。"
     },
     {
       "exampleId": "L2",
-      "prompt": "AB=PQ、AC=PR、∠A=∠P，判斷條件。",
+      "prompt": "已知GH=JK、GI=JL、∠HGI=∠KJL。判斷這些條件是否足以證明兩三角形全等。",
       "solutionSteps": [
-        "∠A 是 AB、AC 的夾角。",
-        "∠P 是 PQ、PR 的夾角。",
-        "兩組已知邊與共同端點角一一對應，因此套用SAS。"
+        "GH、GI共同端點是G，JK、JL共同端點是J。",
+        "∠HGI與∠KJL正好是兩組已知邊的夾角。",
+        "兩邊及夾角分別相等，套用SAS。"
       ],
-      "answer": "可用 SAS 判定。",
-      "why": "∠A正好夾在AB與AC之間，∠P正好夾在PQ與PR之間；兩邊及其夾角對應相等，SAS足以唯一固定三角形。其餘頂點對應也隨之唯一確定。"
+      "answer": "足以，△GHI≅△JKL（SAS）。",
+      "why": "角名稱的中間字母G、J與兩條已知邊共同端點一致，證明所給角確為夾角；SAS因此固定三角形的形狀與大小。"
     },
     {
       "exampleId": "L3",
-      "prompt": "AB=DE、BC=EF、∠A=∠D，能否用 SAS？",
+      "prompt": "兩三角形各有兩邊7公分、10公分，另有一個30°角，但該角位於7公分邊的對面。能否直接使用SAS？",
       "solutionSteps": [
-        "兩已知邊 AB、BC 的夾角是 ∠B。",
-        "給定的是 ∠A，不是夾角。",
-        "因給定角不是夾角，保留一般SSA可能有兩種圖形的結論。"
+        "兩條已知邊的夾角應位於它們的共同端點。",
+        "題給30°位於一條邊的對面，不是兩邊夾角。",
+        "資料是一般SSA，可能不能唯一決定第三頂點。"
       ],
-      "answer": "不能直接用 SAS；資料型態為 SSA。",
-      "why": "AB與BC的夾角應是∠B，題目卻給∠A；非夾角配合兩邊可能產生兩個第三頂點位置，所以不能誤套SAS。這正是一般SSA的二解風險。"
+      "answer": "不能直接使用SAS；這是一般SSA資料。",
+      "why": "SAS要求角同時接觸兩條已知邊；非夾角配合兩邊可能讓固定長度弧與射線有兩個交點，所以不能只數到兩邊一角便判全等。"
     },
     {
       "exampleId": "L4",
-      "prompt": "M 為 AB 中點，CM 為共用邊，且 AC=BC。證明 △AMC≅△BMC。",
+      "prompt": "四邊形WXYZ畫對角線WY，且WX=YZ、XY=ZW。證明△WXY與△YZW全等。",
       "solutionSteps": [
-        "AM=MB（中點）。",
-        "CM=CM（共用邊）。",
-        "AC=BC（已知）。",
-        "三組邊AM－MB、CM－CM、AC－BC齊備後套用SSS。"
+        "列出WX=YZ與XY=ZW兩組已知邊。",
+        "對角線WY為兩三角形共用邊，所以WY=YW。",
+        "三組對應邊相等，按W↔Y、X↔Z、Y↔W使用SSS。"
       ],
-      "answer": "△AMC≅△BMC（SSS）。",
-      "why": "中點、共用邊與已知等腰條件分別提供三組邊相等；將三組資料完整列出後，SSS直接證明兩個小三角形全等。"
+      "answer": "△WXY≅△YZW（SSS）。",
+      "why": "兩組外邊加上共享對角線構成完整三邊資料；明列共用邊的自反性並核對端點順序，才能合法得到SSS結論。"
     },
     {
       "exampleId": "L5",
-      "prompt": "AD 平分 ∠A，AB=AC。證明 △ABD 與 △ACD 全等。",
+      "prompt": "O是AB中點，且CO⊥AB。證明△AOC與△BOC全等。",
       "solutionSteps": [
-        "AB=AC。",
-        "∠BAD=∠CAD。",
-        "AD=AD。",
-        "確認∠BAD與∠CAD是AB、AD和AC、AD各自的夾角。"
+        "由中點定義得AO=BO。",
+        "由垂直得∠AOC=∠BOC=90°。",
+        "OC=OC為共用邊，兩邊及夾角相等。"
       ],
-      "answer": "△ABD≅△ACD（SAS）。",
-      "why": "AD同時出現在兩個三角形，角平分線又把頂角分成相等夾角；配合AB＝AC，資料恰好是邊、角、邊。三項都具有明確且獨立的來源。"
+      "answer": "△AOC≅△BOC（SAS）。",
+      "why": "中點提供一組邊，垂直提供由AO、OC與BO、OC構成的相等夾角，共用邊再補齊另一組邊；三項來源獨立且符合SAS，也可逐項對照兩三角形的邊角順序。"
     }
   ],
   "commonMistakes": [
@@ -276,5 +274,5 @@
     "reviewVersion": "human-lecture-review-u16-r1.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "7e1859b141ddb24e20f2338dd5e63131da46354b55182d4864919ff20c82b1d2"
+  "contentSha256": "b56c72a96b33c8e0c3a19161413f21b9b92efdf0c13081194969c71e202433cb"
 }

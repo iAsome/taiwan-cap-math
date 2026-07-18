@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": "PHYCHM_R4_STIM_181",
-  "stem": "影子與針孔題組中，哪項說明符合紀錄？",
+  "stem": "如何降低單次量角誤差對結論的影響？",
   "options": [
-    "改變入射角並成對記錄入射、反射角",
-    "物體遠離平面鏡時像會縮小，而像距永遠是物距的一半",
-    "光經過第一次反射後就不再遵守反射定律，後續方向可任意",
-    "每次可同時移動鏡面、改入射點並從鏡面量角，只要畫出光線就能驗證"
+    "只保留最大值",
+    "刪除全部原始資料",
+    "改由鏡面量角",
+    "多次量測後取平均並檢查離群原因"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「驗證反射定律應固定鏡面與入射點，準確畫法線，改變入射角並成對記錄入射、反射角」。"
+      "isCorrect": false,
+      "reason": "最大值偏向單一極端。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「物體遠離平面鏡時像會縮小，而像距永遠是物距的一半」不成立；平面鏡的像與物等大，像距等於物距，像與物對鏡面對稱。"
+      "reason": "無原始資料無法查核。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「光經過第一次反射後就不再遵守反射定律，後續方向可任意」不成立；萬花筒、潛望鏡等裝置利用光在多個鏡面依反射定律逐次改變方向。"
+      "reason": "鏡面基準不符合角度定義。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「每次可同時移動鏡面、改入射點並從鏡面量角，只要畫出光線就能…」不成立；驗證反射定律應固定鏡面與入射點，準確畫法線，改變入射角並成對記錄入射、反射角。"
+      "isCorrect": true,
+      "reason": "重複平均可減少隨機誤差，保留資料可追查異常。"
     }
   ],
   "difficulty": "transfer",
@@ -48,14 +48,14 @@
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "物體遠離平面鏡時像會縮小，而像距永遠是物距的一半",
-    "光經過第一次反射後就不再遵守反射定律，後續方向可任意",
-    "每次可同時移動鏡面、改入射點並從鏡面量角，只要畫出光線就能驗證"
+    "只保留最大值",
+    "刪除全部原始資料",
+    "改由鏡面量角"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-6",
       "AUTH-NATURAL-LC-KA-4-7",
@@ -64,20 +64,6 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_004"
   ]

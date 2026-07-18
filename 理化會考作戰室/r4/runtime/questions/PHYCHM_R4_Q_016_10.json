@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "學生根據不規則石塊排水下結論，哪項符合資料？",
+  "stem": "有人以為多次平均必能消除天平固定 +1 g。哪項算式反駁？",
   "options": [
-    "質量是 7.8÷10＝0.78 g，因為密度和體積應相除",
-    "若質量讀值偏大而體積正確",
-    "體積是 135×2.7＝364.5 cm³，因為密度越大體積一定越大",
-    "石塊體積就是沒入後讀值 47.5 cm³，無須減去原有水量"
+    "體積等於質量",
+    "平均值沒有單位",
+    "平均(m真+1)=平均(m真)+1",
+    "1 g=1 cm³"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「質量是 7.8÷10＝0.78 g，因為密度和體積應相除」不成立；密度 7.8 g/cm³、體積 10 cm³ 的鐵塊質量為 78 g，使用 m＝ρV。"
+      "reason": "一般不成立。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「若質量讀值偏大而體積正確，由 ρ＝m/V 可知密度結果偏大；要依誤差方向分析」。"
+      "isCorrect": false,
+      "reason": "平均有質量單位。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「體積是 135×2.7＝364.5 cm³，因為密度越大體…」不成立；質量 135 g、密度 2.7 g/cm³ 的樣品體積為 50 cm³，使用 V＝m/ρ。"
+      "isCorrect": true,
+      "reason": "固定加值保留在平均。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「石塊體積就是沒入後讀值 47.5 cm³，無須減去原有水量」不成立；量筒水面由 35.0 mL 升到 47.5 mL，完全沒入的石塊體積是 12.5 cm³，且不…。"
+      "reason": "只有特定水條件才有數值巧合且物理量不同。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "主張評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "質量是 7.8÷10＝0.78 g，因為密度和體積應相除",
-    "體積是 135×2.7＝364.5 cm³，因為密度越大體積一定越大",
-    "石塊體積就是沒入後讀值 47.5 cm³，無須減去原有水量"
+    "體積等於質量",
+    "平均值沒有單位",
+    "1 g=1 cm³"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-3",
       "AUTH-NATURAL-LC-CA-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

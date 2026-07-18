@@ -16,51 +16,50 @@
     "AUTH-NATURAL-LP-PO-4-2"
   ],
   "stimulusId": null,
-  "stem": "量測器材選擇出現四種說法，哪項有理化概念支持？",
+  "stem": "少量取用藥品有何安全效益？",
   "options": [
-    "操作前應讀取藥品名稱、濃度與危害標示，依飛濺、腐蝕、易燃等風險佩戴適當護目鏡與手套",
-    "對照組應什麼都不做，包括不用相同容器、時間或量測方法",
-    "只要數據不符合預期就應直接刪除，否則會使結論不漂亮",
-    "小型灑漏或燙傷應先自行隱瞞，用手快速擦乾，以免實驗被中斷"
+    "降低灑漏與反應失控的後果",
+    "讓危害圖示失效",
+    "使所有藥品無毒",
+    "保證不用護目鏡"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「操作前應讀取藥品名稱、濃度與危害標示，依飛濺、腐蝕、易燃等風險佩戴適當護目鏡與手套」。"
+      "reason": "較少量可限制事故規模。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「對照組應什麼都不做，包括不用相同容器、時間或量測方法」不成立；對照組接受除自變項外的相同處理，可用來比較若沒有關鍵處理時的結果。"
+      "reason": "標示仍有效。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只要數據不符合預期就應直接刪除，否則會使結論不漂亮」不成立；異常數據應原樣記錄，檢查器材、操作與條件，只在有可說明理由時重測或標記排除。"
+      "reason": "毒性不因少量消失。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「小型灑漏或燙傷應先自行隱瞞，用手快速擦乾，以免實驗被中斷」不成立；器材破損、藥品灑漏或燙傷應立即停止操作、警告周遭並通知教師，依規程處理，不徒手清理。"
+      "reason": "PPE仍必要。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "風險降低"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "對照組應什麼都不做，包括不用相同容器、時間或量測方法",
-    "只要數據不符合預期就應直接刪除，否則會使結論不漂亮",
-    "小型灑漏或燙傷應先自行隱瞞，用手快速擦乾，以免實驗被中斷"
+    "讓危害圖示失效",
+    "使所有藥品無毒",
+    "保證不用護目鏡"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段探究與實作學習表現; 臺灣國中教育會考自然科實驗設計、安全與資料判讀題型",
     "sourceRefs": [
       "AUTH-NATURAL-LP-AI-4-1",
       "AUTH-NATURAL-LP-AI-4-2",
@@ -73,19 +72,5 @@
       "AUTH-NATURAL-LP-PO-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

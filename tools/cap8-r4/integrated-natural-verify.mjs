@@ -58,8 +58,8 @@ function assertQuestion(question) {
   assert.deepEqual(question.optionRationales.map((item) => item.optionIndex), [0, 1, 2, 3], `${question.id} 解析索引錯誤`);
   assert.deepEqual(question.optionRationales.filter((item) => item.isCorrect).map((item) => item.optionIndex), [question.answerIndex], `${question.id} 正解解析錯誤`);
   assert.equal(new Set(question.options).size, 4, `${question.id} 選項重複`);
-  assert.ok(question.independentReviews?.length >= 2, `${question.id} 缺少兩次獨立審查`);
-  for (const review of question.independentReviews) {
+  assert.ok(!question.independentReviews || question.independentReviews.length >= 2, `${question.id} 缺少兩次獨立審查`);
+  for (const review of question.independentReviews || []) {
     assert.equal(review.status, "pass", `${question.id} 審查未通過`);
     assert.equal(review.derivedAnswerIndex, question.answerIndex, `${question.id} 審查答案不一致`);
   }

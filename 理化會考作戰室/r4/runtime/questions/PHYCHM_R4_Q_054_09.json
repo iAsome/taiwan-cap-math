@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對同族資料趨勢結果，哪項說法正確？",
+  "stem": "兩實驗火焰溫度不同，能直接比較金屬活性嗎？",
   "options": [
-    "只要樣品有光澤就能定為金屬，其他性質和例外都不用考慮",
-    "只要記得「同族必完全相同」就已完成檢驗，無需任何數據",
-    "要控制質量、表面積、氧氣供應與加熱條件",
-    "拿一大塊金屬加強熱、一小塊不加熱，也能公平比較金屬本身活性"
+    "不能，加熱強度是混淆變因",
+    "能，只看金屬名稱",
+    "不能，因氧不存在",
+    "能，因溫度永遠不會影響金屬反應"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要樣品有光澤就能定為金屬，其他性質和例外都不用考慮」不成立；元素分類要綜合導電性、光澤、展性與化學反應等證據，單一外觀不足以概括所有元素。"
+      "isCorrect": true,
+      "reason": "高溫可加快或啟動反應。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要記得「同族必完全相同」就已完成檢驗，無需任何數據」不成立；要檢驗元素性質趨勢，應比較同條件量得的多個元素資料，並指出趨勢與例外。"
+      "reason": "需實驗條件。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「比較金屬與氧反應活性時，要控制質量、表面積、氧氣供應與加熱條件，再比較反應難易」。"
+      "isCorrect": false,
+      "reason": "題目是與氧反應。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「拿一大塊金屬加強熱、一小塊不加熱，也能公平比較金屬本身活性」不成立；比較金屬與氧反應活性時，要控制質量、表面積、氧氣供應與加熱條件，再比較反應難易。"
+      "reason": "與事實不符。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "實驗批判"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要樣品有光澤就能定為金屬，其他性質和例外都不用考慮",
-    "只要記得「同族必完全相同」就已完成檢驗，無需任何數據",
-    "拿一大塊金屬加強熱、一小塊不加熱，也能公平比較金屬本身活性"
+    "能，只看金屬名稱",
+    "不能，因氧不存在",
+    "能，因溫度永遠不會影響金屬反應"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AA-4-4",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

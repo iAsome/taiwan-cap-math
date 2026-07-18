@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": null,
-  "stem": "學生根據溫度變化下結論，哪項符合資料？",
+  "stem": "滴定時眼睛應如何讀液面？",
   "options": [
-    "中和是否放熱應用手直接觸摸容器，不需溫度計或對照資料",
-    "以指示劑追蹤中和時",
-    "酸鹼只要曾混合，無論加入量與濃度，最後 pH 都必等於 7",
-    "中和會把酸性與鹼性一起消滅，因此反應後質量必少於反應前"
+    "由上方斜看",
+    "閉眼估計",
+    "與液面同高並依器材規則讀取",
+    "只讀標籤容量"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「中和是否放熱應用手直接觸摸容器，不需溫度計或對照資料」不成立；相同裝置中酸鹼混合後溫度上升，若排除外加熱，可支持中和放熱。"
+      "reason": "會產生視差。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「以指示劑追蹤中和時，應固定起始溶液與指示劑量，逐次加入另一溶液並記錄體積與顏色」。"
+      "isCorrect": false,
+      "reason": "無法量測。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「酸鹼只要曾混合，無論加入量與濃度，最後 pH 都必等於 7」不成立；逐滴加鹼時 pH 由 2 升到 9，終點後溶液偏鹼，表示鹼已過量，不可只看混合過就判中性。"
+      "isCorrect": true,
+      "reason": "降低視差。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「中和會把酸性與鹼性一起消滅，因此反應後質量必少於反應前」不成立；密閉中和系統反應前後總質量守恆；資料表的未知量應由所有反應物與生成物加總求得。"
+      "reason": "標稱容量不是實際用量。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "foundation",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "器材讀值"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "中和是否放熱應用手直接觸摸容器，不需溫度計或對照資料",
-    "酸鹼只要曾混合，無論加入量與濃度，最後 pH 都必等於 7",
-    "中和會把酸性與鹼性一起消滅，因此反應後質量必少於反應前"
+    "由上方斜看",
+    "閉眼估計",
+    "只讀標籤容量"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科中和、資料判讀與生活應用層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

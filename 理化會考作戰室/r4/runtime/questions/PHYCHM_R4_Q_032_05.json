@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於導電實驗區分電解質與非電解質，哪項結論符合題給條件？",
+  "stem": "比較兩溶液導電性時，哪組條件應相同？",
   "options": [
-    "在相同電路與濃度條件下，水溶液能否導電可用來判斷是否有可移動離子，並輔助區分電解質",
-    "20 g 食鹽加 80 g 水的濃度是 20÷80×100%＝25%",
-    "250 g、12% 的溶液含溶質 262 g，因為應把百分數直接加上溶液質量",
-    "5 ppm 和 5% 完全相同，都表示每一百份中有 5 份"
+    "改用不同電壓以讓讀值接近",
+    "一杯升溫、一杯維持室溫",
+    "濃度、電極距離與電源",
+    "只讓兩杯溶液體積相同"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「在相同電路與濃度條件下，水溶液能否導電可用來判斷是否有可移動離子，並輔助區分電解質」。"
+      "isCorrect": false,
+      "reason": "不同電壓會直接改變電流，破壞材料比較。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「20 g 食鹽加 80 g 水的濃度是 20÷80×100…」不成立；20 g 食鹽加 80 g 水形成 100 g 溶液，重量百分濃度為 20%。"
+      "reason": "溫度會影響離子移動，造成額外變因。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「250 g、12% 的溶液含溶質 262 g，因為應把百分…」不成立；250 g、12% 的溶液含溶質 30 g，因為溶質質量＝濃度×溶液質量。"
+      "isCorrect": true,
+      "reason": "濃度、幾何與電源都會影響電流。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「5 ppm 和 5% 完全相同，都表示每一百份中有 5 份」不成立；5 ppm 表示在題目指定的比例基準下，每一百萬份中有 5 份目標成分。"
+      "reason": "體積相同仍未控制離子濃度與電路條件。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "變因控制"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "20 g 食鹽加 80 g 水的濃度是 20÷80×100%＝25%",
-    "250 g、12% 的溶液含溶質 262 g，因為應把百分數直接加上溶液質量",
-    "5 ppm 和 5% 完全相同，都表示每一百份中有 5 份"
+    "改用不同電壓以讓讀值接近",
+    "一杯升溫、一杯維持室溫",
+    "只讓兩杯溶液體積相同"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AB-4-4",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

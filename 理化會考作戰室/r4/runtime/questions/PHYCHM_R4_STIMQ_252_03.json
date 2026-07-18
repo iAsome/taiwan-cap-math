@@ -12,50 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_252",
-  "stem": "斜面搬運題組中，哪項說明符合紀錄？",
+  "stem": "丁：力8 N、垂直力臂0.50 m、力矩4.0 N·m。哪個模型能同時解釋四筆力矩？",
   "options": [
-    "定滑輪一定把所需力減半，動滑輪則只改變方向而不省力",
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功",
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "力矩大小為力乘以作用線到轉軸的垂直距離"
+    "計算力矩時將小數點移一位",
+    "力矩大小為力乘以作用線到轉軸的垂直距離",
+    "主張施力大小相同就有相同力矩",
+    "解題時將力矩算成力除以力臂，導致力臂越長反而力矩越小"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「定滑輪一定把所需力減半，動滑輪則只改變方向而不省力」不成立；理想定滑輪主要改變施力方向；動滑輪或滑輪組可由支撐繩段數分擔負載而省力。"
+      "reason": "力矩大小為力乘以作用線到轉軸的垂直距離。丙列的力為20 N，垂直力臂為0.10 m；丁列的力為8 N，垂直力臂為0.50 m。解題時錯將 10 N×0.30 m 算成 30 N·m，未正確處理小數。力矩＝力×支點到作用線的垂直距離；垂直力臂的數值若未依力核對，會使力矩無法通過由力與力臂計算力矩檢查。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功」不成立；輪軸利用不同力臂，齒輪利用齒數比改變轉速與力矩，斜面以增加距離換取較小力。"
+      "isCorrect": true,
+      "reason": "力矩大小為力乘以作用線到轉軸的垂直距離。丙列的力為20 N，垂直力臂為0.10 m；丁列的力為8 N，垂直力臂為0.50 m。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「機械只要省力就一定同時省距離與省時，不存在任何交換」不成立；省力機械通常要施力移動較長距離；改變方向不必然省力，「省時」與「省力」要分開。"
+      "reason": "力矩大小為力乘以作用線到轉軸的垂直距離。丙列的力為20 N，垂直力臂為0.10 m；丁列的力為8 N，垂直力臂為0.50 m。誤以為施力大小相同就有相同力矩，不必看作用位置與方向，結果會錯判力矩。力矩大小為力乘以作用線到轉軸的垂直距離；力未列入由力與力臂計算力矩時，力矩的垂直力臂大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「力矩大小為力乘以作用線到轉軸的垂直距離；10 N 作用於 0.30 m 力臂產生 3.0 N·m」。"
+      "isCorrect": false,
+      "reason": "力矩大小為力乘以作用線到轉軸的垂直距離。丙列的力為20 N，垂直力臂為0.10 m；丁列的力為8 N，垂直力臂為0.50 m。解題時錯將力矩算成力除以力臂，導致力臂越長反而力矩越小。力矩大小為力乘以作用線到轉軸的垂直距離；照原做法會把力矩算錯或判反。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "證據評估"
+    "限制評估",
+    "遷移"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "定滑輪一定把所需力減半，動滑輪則只改變方向而不省力",
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功",
-    "機械只要省力就一定同時省距離與省時，不存在任何交換"
+    "計算力矩時將小數點移一位",
+    "主張施力大小相同就有相同力矩",
+    "解題時將力矩算成力除以力臂，導致力臂越長反而力矩越小"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -64,20 +65,6 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_013"
   ]

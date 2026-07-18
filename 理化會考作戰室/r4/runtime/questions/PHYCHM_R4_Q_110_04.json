@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查pH 計操作紀錄，哪項判讀正確？",
+  "stem": "哪項最能排除「氣泡只是空氣」？",
   "options": [
-    "高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性",
-    "也可與大理石產生二氧化碳",
-    "任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性",
-    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關"
+    "把杯子換顏色",
+    "提高桌面高度",
+    "收集氣體並做特性檢驗",
+    "只數氣泡顆數"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性」不成立；濃度是溶質所佔比例，酸鹼強弱涉及物質在水中的離子行為；兩者不可完全畫上等號。"
+      "reason": "杯色無關。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體」。"
+      "isCorrect": false,
+      "reason": "高度非關鍵。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性」不成立；酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體。"
+      "isCorrect": true,
+      "reason": "氣體身分提供化學證據。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「酸和鹼只由溶液顏色定義，和水溶液中的離子無關」不成立；在課程模型中，酸性水溶液的酸性與氫離子有關，鹼性水溶液的鹼性與氫氧根離子有關。"
+      "reason": "數量不辨種類。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀",
-    "應用"
+    "替代解釋"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性",
-    "任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性",
-    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關"
+    "把杯子換顏色",
+    "提高桌面高度",
+    "只數氣泡顆數"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

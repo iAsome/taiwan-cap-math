@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據pH 計操作紀錄，哪項判讀合理？",
+  "stem": "強酸加大量水後，最精確的描述是？",
   "options": [
-    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸",
-    "濃度是溶質所佔比例",
-    "一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識溶液名稱",
-    "pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗"
+    "完全沒有酸",
+    "自動變成另一種弱酸",
+    "形成較稀的強酸溶液",
+    "變成強鹼"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「pH 數字越大一定代表酸性越強，所以 pH 5 比 pH …」不成立；在同種、相近條件下，pH 2 的溶液比 pH 5 酸性強；pH 12 比 pH 9 鹼性強。"
+      "reason": "仍有溶質。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「濃度是溶質所佔比例，酸鹼強弱涉及物質在水中的離子行為；兩者不可完全畫上等號」。"
+      "isCorrect": false,
+      "reason": "本性不因稀釋改名。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識…」不成立；廣用指示劑的顏色應對照色階判讀 pH 範圍，只能估計區間，不能單憑顏色確定化學身分。"
+      "isCorrect": true,
+      "reason": "酸種未變，濃度下降。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗」不成立；pH 計使用前要依規範校正，電極清洗後輕吸水分，不把測過的溶液倒回原瓶。"
+      "reason": "加水不會反轉酸鹼。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
-    "概念理解"
+    "概念區分"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸",
-    "一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識溶液名稱",
-    "pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗"
+    "完全沒有酸",
+    "自動變成另一種弱酸",
+    "變成強鹼"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "報告整理墨水色層資料，哪項敘述合理？",
+  "stem": "濾液中仍含目標物，對回收率有何影響？",
   "options": [
-    "只要回收物的總質量較大，就能同時證明回收率和純度都較高",
-    "食鹽水倒過濾紙後，比濾紙孔洞小的水會留下，鹽會通過",
-    "純度比較回收物中目標成分比例",
-    "結晶法只依成分粒徑大小，和溶解度的溫度變化無關"
+    "使回收率超過 200%",
+    "使純度必定 100%",
+    "沒有任何影響",
+    "使回收率降低"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要回收物的總質量較大，就能同時證明回收率和純度都較高」不成立；回收率比較取回的目標物比例，純度比較回收物中目標成分比例；高回收率不保證高純度。"
+      "reason": "方向相反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「食鹽水倒過濾紙後，比濾紙孔洞小的水會留下，鹽會通過」不成立；濾紙可截留粒徑較大的不溶性固體，因此可分開沙與水，不能直接分開已溶解的食鹽。"
+      "reason": "純度另需分析。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「回收率比較取回的目標物比例，純度比較回收物中目標成分比例；高回收率不保證高純度」。"
+      "isCorrect": false,
+      "reason": "物料平衡受影響。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「結晶法只依成分粒徑大小，和溶解度的溫度變化無關」不成立；可先製成高溫飽和溶液，再冷卻使溶解度隨溫度降低的溶質結晶析出。"
+      "isCorrect": true,
+      "reason": "未收回的目標物成為損失。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "誤差分析"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要回收物的總質量較大，就能同時證明回收率和純度都較高",
-    "食鹽水倒過濾紙後，比濾紙孔洞小的水會留下，鹽會通過",
-    "結晶法只依成分粒徑大小，和溶解度的溫度變化無關"
+    "使回收率超過 200%",
+    "使純度必定 100%",
+    "沒有任何影響"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-4",
       "AUTH-NATURAL-LC-CA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

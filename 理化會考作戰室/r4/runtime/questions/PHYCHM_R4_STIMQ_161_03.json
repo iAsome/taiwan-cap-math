@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "PHYCHM_R4_STIM_161",
-  "stem": "繩波題組中，哪項說明符合紀錄？",
+  "stem": "只使用這張同時刻位置表，哪一個量仍無法確定？",
   "options": [
-    "振幅由平衡位置量到波峰",
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端"
+    "頻率",
+    "波峰位置",
+    "此波的振幅",
+    "此波的波長"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「波峰是橫波最高點、波谷是最低點；振幅由平衡位置量到波峰，波長是沿傳播方向相鄰同相位點的距離」。"
+      "reason": "表格只有同一時刻的空間資料，沒有振動次數或時間間隔。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關」不成立；橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行。"
+      "reason": "A、C 已被說明位於局部最高處，位置可由表中讀出。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「任何一張瞬間位置波形圖都可只看波峰數直接得到頻率」不成立；比較波形圖前要讀軸；位置圖可直接量波長與振幅，頻率則還需時間資訊。"
+      "reason": "由波峰相對 y＝0 的位移可求振幅 3.0 cm。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「繩波向右傳時，繩上每一個粒子都從左端一路移到右端」不成立；波將擾動與能量向前傳，介質粒子多在平衡位置附近振動，不隨波整體移到遠處。"
+      "reason": "由相鄰波峰 A、C 的水平座標差可求波長 2.0 m。"
     }
   ],
   "difficulty": "transfer",
@@ -47,14 +47,14 @@
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端"
+    "波峰位置",
+    "此波的振幅",
+    "此波的波長"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -62,20 +62,6 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_002"
   ]

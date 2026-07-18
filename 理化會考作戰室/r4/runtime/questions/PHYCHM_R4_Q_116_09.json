@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對滴定式追蹤結果，哪項說法正確？",
+  "stem": "哪項資料不足以單獨判斷過量方？",
   "options": [
-    "逐滴加鹼時 pH 由 2 升到 9",
-    "中和會把酸性與鹼性一起消滅，因此反應後質量必少於反應前",
-    "化學上所有鹽類都是可食的氯化鈉，名稱與用途完全相同",
-    "既然中和能減少酸鹼性，加入越多相反物就越安全，沒有過量問題"
+    "粒子計數結果",
+    "已知濃度與反應比例",
+    "只知道兩液體積相等",
+    "反應後pH 4"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「逐滴加鹼時 pH 由 2 升到 9，終點後溶液偏鹼，表示鹼已過量，不可只看混合過就判中性」。"
+      "isCorrect": false,
+      "reason": "可配對判斷。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「中和會把酸性與鹼性一起消滅，因此反應後質量必少於反應前」不成立；密閉中和系統反應前後總質量守恆；資料表的未知量應由所有反應物與生成物加總求得。"
+      "reason": "可計算。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「化學上所有鹽類都是可食的氯化鈉，名稱與用途完全相同」不成立；氯化鈉是食鹽，碳酸氫鈉可用於烘焙，但「鹽」是一大類物質，不只指氯化鈉。"
+      "isCorrect": true,
+      "reason": "濃度比例未知。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「既然中和能減少酸鹼性，加入越多相反物就越安全，沒有過量問題」不成立；制酸劑、土壤改良等中和應用要依實際酸鹼量控制加入，並考慮產物與過量危害。"
+      "reason": "酸性可判酸餘。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "資訊充分性"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "中和會把酸性與鹼性一起消滅，因此反應後質量必少於反應前",
-    "化學上所有鹽類都是可食的氯化鈉，名稱與用途完全相同",
-    "既然中和能減少酸鹼性，加入越多相反物就越安全，沒有過量問題"
+    "粒子計數結果",
+    "已知濃度與反應比例",
+    "反應後pH 4"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科中和、資料判讀與生活應用層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

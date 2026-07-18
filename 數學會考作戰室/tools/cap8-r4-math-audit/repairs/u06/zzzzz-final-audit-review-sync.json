@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u06",
+  "batch": "007-u06-complete",
+  "skills": ["s003"],
+  "mc": [
+    {
+      "questionId": "u06-s003-v012",
+      "expectedContentSha256": "4cb2e7f046fbb6d10157a6098c9435c39283d93c8c334cfcaca0bdaad6148fab",
+      "reviewSet": {
+        "independentSolution": "總量減為1.2公升；均勻倒出使A、B同乘0.8，剩0.72與0.48公升，最簡整數比為3:2。",
+        "reviewerNote": "獨立重算：總量減為1.2公升；均勻倒出使A、B同乘0.8，剩0.72與0.48公升，最簡整數比為3:2。正確選項為3:2；6:4雖等值但不符合題幹要求的最簡整數比，2:3顛倒前後項，9:4則不符合均勻移除後比值不變的條件，因此答案唯一。",
+        "ambiguityChecks": {
+          "wording": "題幹明確要求最簡整數比，6:4不再是第二個可接受選項。",
+          "units": "總量與倒出量均以公升表示，成分比為無單位整數比。",
+          "boundary": "混合均勻保證倒出液與剩餘液均維持原成分比，未加入隱藏條件。",
+          "rounding": "0.72與0.48皆為精確值，化簡為3:2不涉及近似。"
+        }
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [],
+  "drawingSpecs": [],
+  "textFiles": []
+}

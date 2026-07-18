@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查簡單通路紀錄，哪項判讀正確？",
+  "stem": "解題時錯將電阻公式寫成 R＝I/V，6.0 V、0.50 A 算成約 0.083 Ω。用使用電壓電流比值求電阻檢查這個做法，V/I應如何重判？",
   "options": [
-    "電阻 R＝V/I＝12 Ω",
-    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過",
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少",
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆"
+    "主張電壓變大時所有元件的電阻一定同比變大",
+    "解題時將電阻公式寫成 R＝I/V，6.0 V、0.50 A 算成約 0.083 Ω",
+    "把元件溫度或材料特性改變時仍把每組 V/I 當成同一固定電阻",
+    "某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω」。"
+      "isCorrect": false,
+      "reason": "誤以為電壓變大時所有元件的電阻一定同比變大。某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω；電壓未列入使用電壓電流比值求電阻時，V/I的電流大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過」不成立；安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性。"
+      "reason": "解題時錯將電阻公式寫成 R＝I/V，6.0 V、0.50 A 算成約 0.083 Ω。某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω；照原做法會把V/I算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少」不成立；串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和。"
+      "reason": "解題時誤把元件溫度或材料特性改變時仍把每組 V/I 當成同一固定電阻，結果會錯判V/I。只有符合近似歐姆行為且溫度等條件受控時，才能把多組 V/I 視為同一固定電阻；V/I差異若未通過使用電壓電流比值求電阻對電壓的控制，就不能只歸給電流。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆」不成立；並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。"
+      "isCorrect": true,
+      "reason": "某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω。丁列的電壓為6.0 V，電流為0.30 A；甲列的電壓為3.0 V，電流為0.25 A。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀",
+    "條件判斷",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過",
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少",
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆"
+    "主張電壓變大時所有元件的電阻一定同比變大",
+    "解題時將電阻公式寫成 R＝I/V，6.0 V、0.50 A 算成約 0.083 Ω",
+    "把元件溫度或材料特性改變時仍把每組 V/I 當成同一固定電阻"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查金屬塊鑑別紀錄，哪項判讀正確？",
+  "stem": "一木塊質量 45 g、體積 60 cm³，密度為？",
   "options": [
-    "質量 54 g、體積 20 cm³ 的物體密度為 2.7 g/cm³，計算式是 ρ＝m/V",
-    "只要密度表列數值相同，就已唯一證明樣品是該物質",
-    "只要有量測誤差，質量和體積必會相互抵銷，密度不受影響",
-    "密度是體積除以質量，所以答案為 20÷54 g/cm³"
+    "1.33 g/cm³",
+    "15 g/cm³",
+    "105 g/cm³",
+    "0.75 g/cm³"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「質量 54 g、體積 20 cm³ 的物體密度為 2.7 g/cm³，計算式是 ρ＝m/V」。"
+      "isCorrect": false,
+      "reason": "這是倒數近似。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要密度表列數值相同，就已唯一證明樣品是該物質」不成立；樣品密度在誤差內符合某材料只能作為身分線索，還要考慮溫度、純度與其他性質。"
+      "reason": "使用差值。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只要有量測誤差，質量和體積必會相互抵銷，密度不受影響」不成立；若質量讀值偏大而體積正確，由 ρ＝m/V 可知密度結果偏大；要依誤差方向分析。"
+      "reason": "使用總和。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「密度是體積除以質量，所以答案為 20÷54 g/cm³」不成立；質量 54 g、體積 20 cm³ 的物體密度為 2.7 g/cm³，計算式是 ρ＝m/V。"
+      "isCorrect": true,
+      "reason": "45÷60＝0.75。"
     }
   ],
   "difficulty": "standard",
@@ -48,16 +48,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要密度表列數值相同，就已唯一證明樣品是該物質",
-    "只要有量測誤差，質量和體積必會相互抵銷，密度不受影響",
-    "密度是體積除以質量，所以答案為 20÷54 g/cm³"
+    "1.33 g/cm³",
+    "15 g/cm³",
+    "105 g/cm³"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-3",
       "AUTH-NATURAL-LC-CA-4-2",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

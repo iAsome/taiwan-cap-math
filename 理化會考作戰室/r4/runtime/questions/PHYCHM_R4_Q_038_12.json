@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估海水蒸餾報告時，哪項說明正確？",
+  "stem": "混合物含可磁選固體、可溶鹽與不溶砂，哪個流程最少且合理？",
   "options": [
-    "將容器完全密閉後加熱可防止溶劑逃散，是最安全的分離方法",
-    "可依序加水溶鹽、過濾取沙、蒸發或結晶取鹽",
-    "可先蒸發乾燥沙鹽混合物，這樣便能在未加水前分開兩種固體",
-    "食鹽水倒過濾紙後，比濾紙孔洞小的水會留下，鹽會通過"
+    "過濾乾粉→蒸餾砂→磁選鹽",
+    "只傾析一次",
+    "結晶→磁選液體→燃燒",
+    "磁選→加水→過濾→結晶"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「將容器完全密閉後加熱可防止溶劑逃散，是最安全的分離方法」不成立；加熱時容器不可密閉，熱過濾要用合適器材，易燃溶劑應遠離明火並在通風處操作。"
+      "reason": "乾粉過濾不分鹽砂。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「分離沙與食鹽時，可依序加水溶鹽、過濾取沙、蒸發或結晶取鹽，每步只利用一個性質差」。"
+      "isCorrect": false,
+      "reason": "無法分三成分。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「可先蒸發乾燥沙鹽混合物，這樣便能在未加水前分開兩種固體」不成立；分離沙與食鹽時，可依序加水溶鹽、過濾取沙、蒸發或結晶取鹽，每步只利用一個性質差。"
+      "reason": "順序與方法不合。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「食鹽水倒過濾紙後，比濾紙孔洞小的水會留下，鹽會通過」不成立；濾紙可截留粒徑較大的不溶性固體，因此可分開沙與水，不能直接分開已溶解的食鹽。"
+      "isCorrect": true,
+      "reason": "逐一利用磁性、溶解性與溶解度。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "完整流程設計"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "將容器完全密閉後加熱可防止溶劑逃散，是最安全的分離方法",
-    "可先蒸發乾燥沙鹽混合物，這樣便能在未加水前分開兩種固體",
-    "食鹽水倒過濾紙後，比濾紙孔洞小的水會留下，鹽會通過"
+    "過濾乾粉→蒸餾砂→磁選鹽",
+    "只傾析一次",
+    "結晶→磁選液體→燃燒"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-4",
       "AUTH-NATURAL-LC-CA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

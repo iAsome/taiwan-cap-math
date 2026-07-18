@@ -1,6 +1,15 @@
 export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
   "unitId": "EARTH_R4_U28",
   "familyKey": "CLIMATE_CHANGE_EVIDENCE",
+  "skillTitles": {
+    "EARTH_R4_S200": "區分自然溫室效應與人為增強效應",
+    "EARTH_R4_S201": "追蹤碳在大氣海洋生物與岩石圈間流動",
+    "EARTH_R4_S202": "由長期多來源資料辨識氣候變遷證據",
+    "EARTH_R4_S203": "連結溫室氣體增加與全球能量收支改變",
+    "EARTH_R4_S204": "分析升溫、海平面與異常降水等連鎖衝擊",
+    "EARTH_R4_S205": "區分氣候變遷減緩與調適措施",
+    "EARTH_R4_S206": "評估氣候主張時區分趨勢變動與單一天氣事件"
+  },
   "lectures": [
     {
       "id": "EARTH_R4_L_S200",
@@ -849,8 +858,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「海平面上升只與海冰融化有關」與「檢查趨勢線和年際變動」所需的查核依據不符；可對照「減緩著重降低排放或增加移除」。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「自然溫室效應使地球適居」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「自然溫室效應使地球適居」可由氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據查核。",
+        "「溫室效應完全由人類創造且應歸零」與「檢查趨勢線和年際變動」所需的查核依據不符；可對照「海洋吸收了全球暖化系統中的大量額外熱」。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -884,8 +893,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "單一情境不能取代不同時間、位置的比較資料。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「具日期、位置與單位的年份、CO₂ ppm、全球溫度距平°C、海平面相對mm紀錄」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "這組資料能直接查核自然溫室效應與人為增強效應，且保留量測脈絡。",
+        "只挑符合預期的紀錄會造成確認偏誤，不能查核自然溫室效應與人為增強效應。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -893,7 +902,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "comparison",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "只留下支持「溫室效應完全由人類創造且應歸零」的紀錄並刪除反例"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -904,7 +913,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       "id": "EARTH_R4_Q_200_03",
       "skillId": "EARTH_R4_S200",
       "stimulusId": null,
-      "stem": "整理「區分節能減碳與防洪調適」的筆記時，哪一項敘述可以保留？",
+      "stem": "比較自然溫室效應與人類排放造成的增強效應時，哪一項說明正確？",
       "options": [
         "判讀自然溫室效應與人為增強效應時，未核對「區分節能減碳與防洪調適」的觀測時間與範圍便認定某地一場寒流可推翻全球長期趨勢",
         "判讀自然溫室效應與人為增強效應時，把「區分節能減碳與防洪調適」的一次局部觀察擴大為「海平面上升只與海冰融化有關」",
@@ -919,8 +928,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「調適措施可以取代所有減緩」與「區分節能減碳與防洪調適」所需的查核依據不符；可對照「調適著重降低既有或預期衝擊」。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「自然溫室效應使地球適居」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「自然溫室效應使地球適居」可由氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據查核。",
+        "「某地一場寒流可推翻全球長期趨勢」與「區分節能減碳與防洪調適」所需的查核依據不符；可對照「化石燃料燃燒會把地質碳庫的碳移入大氣」。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -954,8 +963,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "結論使用情境中的可觀測資訊，且沒有超出單一冷天不否定長期暖化；氣候模型提供情境範圍而非逐日精確預言。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「自然溫室效應使地球適居」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "結論使用情境中的可觀測資訊，且沒有超出單一冷天不否定長期暖化；氣候模型提供情境範圍而非逐日精確預言。",
+        "「判讀自然溫室效應與人為增強效應時，忽略反例後宣稱調適措施可以取代所有減緩」沒有通過氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據的檢查。"
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
@@ -989,8 +998,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「比較百年氣溫與二氧化碳序列」的一次觀察不足以代表所有條件。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "先區分天氣與氣候：此程序先處理變因和證據，再對比較百年氣溫與二氧化碳序列形成結論。",
+        "探討自然溫室效應與人為增強效應時先寫答案，再挑一筆相符資料：先定答案再選「比較百年氣溫與二氧化碳序列」資料會造成確認偏誤。"
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
@@ -998,7 +1007,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "investigation-plan",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "探討自然溫室效應與人為增強效應時先寫答案，再挑一筆相符資料"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1033,7 +1042,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "model-evaluation",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "判斷自然溫室效應與人為增強效應時，資料列多便可忽略不確定性"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1068,7 +1077,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "source-evaluation",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "查核自然溫室效應與人為增強效應只需一張來源不明的網路圖片"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1084,7 +1093,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "先公布自然溫室效應與人為增強效應結論，再決定量哪個變因",
         "解讀「比較百年氣溫與二氧化碳序列」時把年份與海平面相對mm直接相減",
         "判斷自然溫室效應與人為增強效應時只保留「比較百年氣溫與二氧化碳序列」最符合預期的一次觀察",
-        "判讀自然溫室效應與人為增強效應時先先區分天氣與氣候，再檢查反例"
+        "判讀自然溫室效應與人為增強效應時先區分天氣與氣候，再檢查反例"
       ],
       "answerIndex": 3,
       "reasons": [
@@ -1094,7 +1103,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "順序保留從觀測、比較到結論的可檢核鏈。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「判讀自然溫室效應與人為增強效應時先先區分天氣與氣候，再檢查反例」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
+        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「判讀自然溫室效應與人為增強效應時先區分天氣與氣候，再檢查反例」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
         "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
       ],
       "difficulty": "advanced",
@@ -1103,7 +1112,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "procedure",
       "misconceptionTargets": [
-        "調適措施可以取代所有減緩"
+        "先公布自然溫室效應與人為增強效應結論，再決定量哪個變因"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1129,8 +1138,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "選擇性刪除「區分節能減碳與防洪調適」資料會破壞證據鏈。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「自然溫室效應使地球適居」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「自然溫室效應使地球適居」屬於本單元可由證據支持的關係。",
+        "地名沒有指出年份、CO₂ ppm、全球溫度距平°C、海平面相對mm之間的關係。"
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
@@ -1138,7 +1147,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "local-context",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "判讀自然溫室效應與人為增強效應時只抄地名，不讀變因"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1173,7 +1182,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "data-table",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "在「檢查趨勢線和年際變動」的自然溫室效應與人為增強效應資料中，當年份為2020時，海平面相對mm為0。"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1208,7 +1217,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "error-diagnosis",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "自然溫室效應使地球適居"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1224,7 +1233,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄",
         "改看「檢查趨勢線和年際變動」後，省略所有單位",
         "只寫自然溫室效應與人為增強效應的概念名稱，不記錄「檢查趨勢線和年際變動」的觀測",
-        "把判讀移到「檢查趨勢線和年際變動」時，仍先先區分天氣與氣候"
+        "把判讀移到「檢查趨勢線和年際變動」時，仍先區分天氣與氣候"
       ],
       "answerIndex": 3,
       "reasons": [
@@ -1234,8 +1243,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "新情境保留相同變因、證據與適用範圍。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「把判讀移到「檢查趨勢線和年際變動」時，仍先先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "把自然溫室效應與人為增強效應的判準移到另一個情境時，哪一項作法較適當？ 把判讀移到「檢查趨勢線和年際變動」時，仍先區分天氣與氣候：新情境保留相同變因、證據與適用範圍。",
+        "把自然溫室效應與人為增強效應的判準移到另一個情境時，哪一項作法較適當？ 改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄：換情境仍須比較完整資料與替代解釋。"
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
@@ -1243,7 +1252,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "transfer-scenario",
       "misconceptionTargets": [
-        "調適措施可以取代所有減緩"
+        "改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1269,8 +1278,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「調適措施可以取代所有減緩」與「比較百年氣溫與二氧化碳序列」所需的查核依據不符；可對照「調適著重降低既有或預期衝擊」。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「碳會經光合作用、呼吸、分解、海氣交換、風化、沉積與燃燒等過程在大氣、海洋、生物和岩石圈間流動」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「碳會經光合作用、呼吸、分解、海氣交換、風化、沉積與燃燒等過程在大氣、海洋、生物和岩石圈間流動」可由氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據查核。",
+        "「某地一場寒流可推翻全球長期趨勢」與「比較百年氣溫與二氧化碳序列」所需的查核依據不符；可對照「化石燃料燃燒會把地質碳庫的碳移入大氣」。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -1278,7 +1287,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "concept-statement",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "判讀碳在大氣海洋生物與岩石圈間流動時，未核對「比較百年氣溫與二氧化碳序列」的觀測時間與範圍便認定某地一場寒流可推翻全球長期趨勢"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1304,8 +1313,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "單一情境不能取代不同時間、位置的比較資料。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「具日期、位置與單位的年份、CO₂ ppm、全球溫度距平°C、海平面相對mm紀錄」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "這組資料能直接查核碳在大氣海洋生物與岩石圈間流動，且保留量測脈絡。",
+        "只挑符合預期的紀錄會造成確認偏誤，不能查核碳在大氣海洋生物與岩石圈間流動。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -1324,7 +1333,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       "id": "EARTH_R4_Q_201_03",
       "skillId": "EARTH_R4_S201",
       "stimulusId": null,
-      "stem": "整理「檢查趨勢線和年際變動」的筆記時，哪一項敘述可以保留？",
+      "stem": "追蹤碳在大氣、海洋、生物與岩石圈之間移動時，哪一項敘述符合碳循環？",
       "options": [
         "判讀碳在大氣海洋生物與岩石圈間流動時，把「檢查趨勢線和年際變動」的一次局部觀察擴大為「海平面上升只與海冰融化有關」",
         "判讀碳在大氣海洋生物與岩石圈間流動時，忽略反例後宣稱調適措施可以取代所有減緩",
@@ -1339,8 +1348,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「碳會經光合作用、呼吸、分解、海氣交換、風化、沉積與燃燒等過程在大氣、海洋、生物和岩石圈間流動」可由氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據查核。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「碳會經光合作用、呼吸、分解、海氣交換、風化、沉積與燃燒等過程在大氣、海洋、生物和岩石圈間流動」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「碳會經光合作用、呼吸、分解、海氣交換、風化、沉積與燃燒等過程在大氣、海洋、生物和岩石圈間流動」可由氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據查核。",
+        "「海平面上升只與海冰融化有關」與「檢查趨勢線和年際變動」所需的查核依據不符；可對照「減緩著重降低排放或增加移除」。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -1374,8 +1383,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「判讀碳在大氣海洋生物與岩石圈間流動時，把「比較百年氣溫與二氧化碳序列」的一次局部觀察擴大為「海平面上升只與海冰融化有關」」沒有通過氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據的檢查。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「碳會經光合作用、呼吸、分解、海氣交換、風化、沉積與燃燒等過程在大氣、海洋、生物和岩石圈間流動」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "結論使用情境中的可觀測資訊，且沒有超出單一冷天不否定長期暖化；氣候模型提供情境範圍而非逐日精確預言。",
+        "「判讀碳在大氣海洋生物與岩石圈間流動時，僅憑「比較百年氣溫與二氧化碳序列」就斷定溫室效應完全由人類創造且應歸零」沒有通過氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據的檢查。"
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
@@ -1383,7 +1392,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "observation-scenario",
       "misconceptionTargets": [
-        "調適措施可以取代所有減緩"
+        "判讀碳在大氣海洋生物與岩石圈間流動時，僅憑「比較百年氣溫與二氧化碳序列」就斷定溫室效應完全由人類創造且應歸零"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1409,8 +1418,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「區分節能減碳與防洪調適」的一次觀察不足以代表所有條件。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "先區分天氣與氣候：此程序先處理變因和證據，再對區分節能減碳與防洪調適形成結論。",
+        "探討碳在大氣海洋生物與岩石圈間流動時先寫答案，再挑一筆相符資料：先定答案再選「區分節能減碳與防洪調適」資料會造成確認偏誤。"
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
@@ -1418,7 +1427,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "investigation-plan",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "探討碳在大氣海洋生物與岩石圈間流動時先寫答案，再挑一筆相符資料"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1453,7 +1462,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "model-evaluation",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "判斷碳在大氣海洋生物與岩石圈間流動時，資料列多便可忽略不確定性"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1488,7 +1497,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "source-evaluation",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "查核碳在大氣海洋生物與岩石圈間流動只需一張來源不明的網路圖片"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1501,7 +1510,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       "stimulusId": null,
       "stem": "處理碳在大氣海洋生物與岩石圈間流動的資料時，哪一個推理順序較完整？",
       "options": [
-        "判讀碳在大氣海洋生物與岩石圈間流動時先先區分天氣與氣候，再檢查反例",
+        "判讀碳在大氣海洋生物與岩石圈間流動時先區分天氣與氣候，再檢查反例",
         "先公布碳在大氣海洋生物與岩石圈間流動結論，再決定量哪個變因",
         "解讀「區分節能減碳與防洪調適」時把年份與海平面相對mm直接相減",
         "判斷碳在大氣海洋生物與岩石圈間流動時只保留「區分節能減碳與防洪調適」最符合預期的一次觀察"
@@ -1514,7 +1523,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "忽略「區分節能減碳與防洪調適」的變異與反例會高估結論強度。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「判讀碳在大氣海洋生物與岩石圈間流動時先先區分天氣與氣候，再檢查反例」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
+        "逐項核對「區分節能減碳與防洪調適」的條件後，「判讀碳在大氣海洋生物與岩石圈間流動時先區分天氣與氣候，再檢查反例」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
         "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
       ],
       "difficulty": "advanced",
@@ -1523,7 +1532,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "procedure",
       "misconceptionTargets": [
-        "調適措施可以取代所有減緩"
+        "先公布碳在大氣海洋生物與岩石圈間流動結論，再決定量哪個變因"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1549,8 +1558,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "選擇性刪除「檢查趨勢線和年際變動」資料會破壞證據鏈。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「碳會經光合作用、呼吸、分解、海氣交換、風化、沉積與燃燒等過程在大氣、海洋、生物和岩石圈間流動」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「碳會經光合作用、呼吸、分解、海氣交換、風化、沉積與燃燒等過程在大氣、海洋、生物和岩石圈間流動」屬於本單元可由證據支持的關係。",
+        "地名沒有指出年份、CO₂ ppm、全球溫度距平°C、海平面相對mm之間的關係。"
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
@@ -1558,7 +1567,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "local-context",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "判讀碳在大氣海洋生物與岩石圈間流動時只抄地名，不讀變因"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1593,7 +1602,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "data-table",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "在「比較百年氣溫與二氧化碳序列」的碳在大氣海洋生物與岩石圈間流動資料中，當年份為1980時，CO₂ ppm為370。"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1628,7 +1637,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "error-diagnosis",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "碳會經光合作用、呼吸、分解、海氣交換、風化、沉積與燃燒等過程在大氣、海洋、生物和岩石圈間流動"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1641,7 +1650,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       "stimulusId": null,
       "stem": "把碳在大氣海洋生物與岩石圈間流動的判準移到另一個情境時，哪一項作法較適當？",
       "options": [
-        "把判讀移到「檢查趨勢線和年際變動」時，仍先先區分天氣與氣候",
+        "把判讀移到「檢查趨勢線和年際變動」時，仍先區分天氣與氣候",
         "改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄",
         "改看「檢查趨勢線和年際變動」後，省略所有單位",
         "只寫碳在大氣海洋生物與岩石圈間流動的概念名稱，不記錄「檢查趨勢線和年際變動」的觀測"
@@ -1654,8 +1663,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "概念名稱不能取代實際資料。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「把判讀移到「檢查趨勢線和年際變動」時，仍先先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "把碳在大氣海洋生物與岩石圈間流動的判準移到另一個情境時，哪一項作法較適當？ 把判讀移到「檢查趨勢線和年際變動」時，仍先區分天氣與氣候：新情境保留相同變因、證據與適用範圍。",
+        "把碳在大氣海洋生物與岩石圈間流動的判準移到另一個情境時，哪一項作法較適當？ 改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄：換情境仍須比較完整資料與替代解釋。"
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
@@ -1663,7 +1672,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "transfer-scenario",
       "misconceptionTargets": [
-        "調適措施可以取代所有減緩"
+        "改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1689,8 +1698,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「溫室效應完全由人類創造且應歸零」與「區分節能減碳與防洪調適」所需的查核依據不符；可對照「海洋吸收了全球暖化系統中的大量額外熱」。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據」可由氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據查核。",
+        "「海平面上升只與海冰融化有關」與「區分節能減碳與防洪調適」所需的查核依據不符；可對照「減緩著重降低排放或增加移除」。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -1724,8 +1733,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "這組資料能直接查核長期多來源資料辨識氣候變遷證據，且保留量測脈絡。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「具日期、位置與單位的年份、CO₂ ppm、全球溫度距平°C、海平面相對mm紀錄」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "這組資料能直接查核長期多來源資料辨識氣候變遷證據，且保留量測脈絡。",
+        "只挑符合預期的紀錄會造成確認偏誤，不能查核長期多來源資料辨識氣候變遷證據。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -1733,7 +1742,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "comparison",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "只留下支持「海平面上升只與海冰融化有關」的紀錄並刪除反例"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1744,7 +1753,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       "id": "EARTH_R4_Q_202_03",
       "skillId": "EARTH_R4_S202",
       "stimulusId": null,
-      "stem": "整理「比較百年氣溫與二氧化碳序列」的筆記時，哪一項敘述可以保留？",
+      "stem": "判斷氣候是否長期改變時，哪一項資料組合能提供較完整的證據？",
       "options": [
         "氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據",
         "判讀長期多來源資料辨識氣候變遷證據時，忽略反例後宣稱調適措施可以取代所有減緩",
@@ -1759,8 +1768,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「某地一場寒流可推翻全球長期趨勢」與「比較百年氣溫與二氧化碳序列」所需的查核依據不符；可對照「化石燃料燃燒會把地質碳庫的碳移入大氣」。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據」可由氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據查核。",
+        "「調適措施可以取代所有減緩」與「比較百年氣溫與二氧化碳序列」所需的查核依據不符；可對照「調適著重降低既有或預期衝擊」。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -1768,7 +1777,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "evidence-claim",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "判讀長期多來源資料辨識氣候變遷證據時，忽略反例後宣稱調適措施可以取代所有減緩"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1794,8 +1803,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「判讀長期多來源資料辨識氣候變遷證據時，忽略反例後宣稱調適措施可以取代所有減緩」沒有通過氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據的檢查。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "結論使用情境中的可觀測資訊，且沒有超出單一冷天不否定長期暖化；氣候模型提供情境範圍而非逐日精確預言。",
+        "「判讀長期多來源資料辨識氣候變遷證據時，未核對「區分節能減碳與防洪調適」的觀測時間與範圍便認定某地一場寒流可推翻全球長期趨勢」沒有通過氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據的檢查。"
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
@@ -1829,8 +1838,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「檢查趨勢線和年際變動」的一次觀察不足以代表所有條件。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "先區分天氣與氣候：此程序先處理變因和證據，再對檢查趨勢線和年際變動形成結論。",
+        "探討長期多來源資料辨識氣候變遷證據時先寫答案，再挑一筆相符資料：先定答案再選「檢查趨勢線和年際變動」資料會造成確認偏誤。"
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
@@ -1838,7 +1847,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "investigation-plan",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "探討長期多來源資料辨識氣候變遷證據時先寫答案，再挑一筆相符資料"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1873,7 +1882,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "model-evaluation",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "判斷長期多來源資料辨識氣候變遷證據時，資料列多便可忽略不確定性"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1908,7 +1917,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "source-evaluation",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "查核長期多來源資料辨識氣候變遷證據只需一張來源不明的網路圖片"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1922,7 +1931,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       "stem": "處理長期多來源資料辨識氣候變遷證據的資料時，哪一個推理順序較完整？",
       "options": [
         "先公布長期多來源資料辨識氣候變遷證據結論，再決定量哪個變因",
-        "判讀長期多來源資料辨識氣候變遷證據時先先區分天氣與氣候，再檢查反例",
+        "判讀長期多來源資料辨識氣候變遷證據時先區分天氣與氣候，再檢查反例",
         "解讀「檢查趨勢線和年際變動」時把年份與海平面相對mm直接相減",
         "判斷長期多來源資料辨識氣候變遷證據時只保留「檢查趨勢線和年際變動」最符合預期的一次觀察"
       ],
@@ -1934,7 +1943,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "忽略「檢查趨勢線和年際變動」的變異與反例會高估結論強度。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「判讀長期多來源資料辨識氣候變遷證據時先先區分天氣與氣候，再檢查反例」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
+        "逐項核對「檢查趨勢線和年際變動」的條件後，「判讀長期多來源資料辨識氣候變遷證據時先區分天氣與氣候，再檢查反例」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
         "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
       ],
       "difficulty": "advanced",
@@ -1943,7 +1952,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "procedure",
       "misconceptionTargets": [
-        "調適措施可以取代所有減緩"
+        "先公布長期多來源資料辨識氣候變遷證據結論，再決定量哪個變因"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -1969,8 +1978,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "選擇性刪除「比較百年氣溫與二氧化碳序列」資料會破壞證據鏈。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據」屬於本單元可由證據支持的關係。",
+        "地名沒有指出年份、CO₂ ppm、全球溫度距平°C、海平面相對mm之間的關係。"
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
@@ -1978,7 +1987,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "local-context",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "判讀長期多來源資料辨識氣候變遷證據時只抄地名，不讀變因"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2013,7 +2022,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "data-table",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "在「區分節能減碳與防洪調適」的長期多來源資料辨識氣候變遷證據資料中，當年份為2000時，全球溫度距平°C為0.27。"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2062,7 +2071,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       "stem": "把長期多來源資料辨識氣候變遷證據的判準移到另一個情境時，哪一項作法較適當？",
       "options": [
         "改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄",
-        "把判讀移到「檢查趨勢線和年際變動」時，仍先先區分天氣與氣候",
+        "把判讀移到「檢查趨勢線和年際變動」時，仍先區分天氣與氣候",
         "改看「檢查趨勢線和年際變動」後，省略所有單位",
         "只寫長期多來源資料辨識氣候變遷證據的概念名稱，不記錄「檢查趨勢線和年際變動」的觀測"
       ],
@@ -2074,8 +2083,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "概念名稱不能取代實際資料。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「把判讀移到「檢查趨勢線和年際變動」時，仍先先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "把長期多來源資料辨識氣候變遷證據的判準移到另一個情境時，哪一項作法較適當？ 把判讀移到「檢查趨勢線和年際變動」時，仍先區分天氣與氣候：新情境保留相同變因、證據與適用範圍。",
+        "把長期多來源資料辨識氣候變遷證據的判準移到另一個情境時，哪一項作法較適當？ 改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄：換情境仍須比較完整資料與替代解釋。"
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
@@ -2083,7 +2092,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "transfer-scenario",
       "misconceptionTargets": [
-        "調適措施可以取代所有減緩"
+        "改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2109,8 +2118,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「人為排放增加溫室氣體，改變能量收支並推動長期暖化」可由氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據查核。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「人為排放增加溫室氣體，改變能量收支並推動長期暖化」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「人為排放增加溫室氣體，改變能量收支並推動長期暖化」可由氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據查核。",
+        "「調適措施可以取代所有減緩」與「檢查趨勢線和年際變動」所需的查核依據不符；可對照「調適著重降低既有或預期衝擊」。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -2144,8 +2153,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "單一情境不能取代不同時間、位置的比較資料。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「具日期、位置與單位的年份、CO₂ ppm、全球溫度距平°C、海平面相對mm紀錄」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "這組資料能直接查核溫室氣體增加與全球能量收支改變，且保留量測脈絡。",
+        "只挑符合預期的紀錄會造成確認偏誤，不能查核溫室氣體增加與全球能量收支改變。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -2153,7 +2162,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "comparison",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "只留下支持「調適措施可以取代所有減緩」的紀錄並刪除反例"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2164,7 +2173,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       "id": "EARTH_R4_Q_203_03",
       "skillId": "EARTH_R4_S203",
       "stimulusId": null,
-      "stem": "整理「區分節能減碳與防洪調適」的筆記時，哪一項敘述可以保留？",
+      "stem": "溫室氣體濃度增加後，全球能量收支可能如何改變？哪一項解釋可以成立？",
       "options": [
         "判讀溫室氣體增加與全球能量收支改變時，僅憑「區分節能減碳與防洪調適」就斷定溫室效應完全由人類創造且應歸零",
         "人為排放增加溫室氣體，改變能量收支並推動長期暖化",
@@ -2179,8 +2188,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「海平面上升只與海冰融化有關」與「區分節能減碳與防洪調適」所需的查核依據不符；可對照「減緩著重降低排放或增加移除」。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「人為排放增加溫室氣體，改變能量收支並推動長期暖化」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「人為排放增加溫室氣體，改變能量收支並推動長期暖化」可由氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據查核。",
+        "「溫室效應完全由人類創造且應歸零」與「區分節能減碳與防洪調適」所需的查核依據不符；可對照「海洋吸收了全球暖化系統中的大量額外熱」。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -2214,8 +2223,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「判讀溫室氣體增加與全球能量收支改變時，僅憑「檢查趨勢線和年際變動」就斷定溫室效應完全由人類創造且應歸零」沒有通過氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據的檢查。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「人為排放增加溫室氣體，改變能量收支並推動長期暖化」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "結論使用情境中的可觀測資訊，且沒有超出單一冷天不否定長期暖化；氣候模型提供情境範圍而非逐日精確預言。",
+        "「判讀溫室氣體增加與全球能量收支改變時，把「檢查趨勢線和年際變動」的一次局部觀察擴大為「海平面上升只與海冰融化有關」」沒有通過氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據的檢查。"
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
@@ -2249,8 +2258,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "此程序先處理變因和證據，再對比較百年氣溫與二氧化碳序列形成結論。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "先區分天氣與氣候：此程序先處理變因和證據，再對比較百年氣溫與二氧化碳序列形成結論。",
+        "探討溫室氣體增加與全球能量收支改變時先寫答案，再挑一筆相符資料：先定答案再選「比較百年氣溫與二氧化碳序列」資料會造成確認偏誤。"
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
@@ -2258,7 +2267,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "investigation-plan",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "探討溫室氣體增加與全球能量收支改變時先寫答案，再挑一筆相符資料"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2293,7 +2302,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "model-evaluation",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "判斷溫室氣體增加與全球能量收支改變時，資料列多便可忽略不確定性"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2328,7 +2337,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "source-evaluation",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "查核溫室氣體增加與全球能量收支改變只需一張來源不明的網路圖片"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2343,7 +2352,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       "options": [
         "先公布溫室氣體增加與全球能量收支改變結論，再決定量哪個變因",
         "解讀「比較百年氣溫與二氧化碳序列」時把年份與海平面相對mm直接相減",
-        "判讀溫室氣體增加與全球能量收支改變時先先區分天氣與氣候，再檢查反例",
+        "判讀溫室氣體增加與全球能量收支改變時先區分天氣與氣候，再檢查反例",
         "判斷溫室氣體增加與全球能量收支改變時只保留「比較百年氣溫與二氧化碳序列」最符合預期的一次觀察"
       ],
       "answerIndex": 2,
@@ -2354,7 +2363,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "忽略「比較百年氣溫與二氧化碳序列」的變異與反例會高估結論強度。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「判讀溫室氣體增加與全球能量收支改變時先先區分天氣與氣候，再檢查反例」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
+        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「判讀溫室氣體增加與全球能量收支改變時先區分天氣與氣候，再檢查反例」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
         "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
       ],
       "difficulty": "advanced",
@@ -2363,7 +2372,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "procedure",
       "misconceptionTargets": [
-        "調適措施可以取代所有減緩"
+        "先公布溫室氣體增加與全球能量收支改變結論，再決定量哪個變因"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2389,8 +2398,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「人為排放增加溫室氣體，改變能量收支並推動長期暖化」屬於本單元可由證據支持的關係。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「人為排放增加溫室氣體，改變能量收支並推動長期暖化」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「人為排放增加溫室氣體，改變能量收支並推動長期暖化」屬於本單元可由證據支持的關係。",
+        "地名沒有指出年份、CO₂ ppm、全球溫度距平°C、海平面相對mm之間的關係。"
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
@@ -2398,7 +2407,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "local-context",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "判讀溫室氣體增加與全球能量收支改變時只抄地名，不讀變因"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2433,7 +2442,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "data-table",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "在「檢查趨勢線和年際變動」的溫室氣體增加與全球能量收支改變資料中，當年份為2020時，海平面相對mm為0。"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2468,7 +2477,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "error-diagnosis",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "人為排放增加溫室氣體，改變能量收支並推動長期暖化"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2483,7 +2492,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       "options": [
         "改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄",
         "改看「檢查趨勢線和年際變動」後，省略所有單位",
-        "把判讀移到「檢查趨勢線和年際變動」時，仍先先區分天氣與氣候",
+        "把判讀移到「檢查趨勢線和年際變動」時，仍先區分天氣與氣候",
         "只寫溫室氣體增加與全球能量收支改變的概念名稱，不記錄「檢查趨勢線和年際變動」的觀測"
       ],
       "answerIndex": 2,
@@ -2494,8 +2503,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "概念名稱不能取代實際資料。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「把判讀移到「檢查趨勢線和年際變動」時，仍先先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "把溫室氣體增加與全球能量收支改變的判準移到另一個情境時，哪一項作法較適當？ 把判讀移到「檢查趨勢線和年際變動」時，仍先區分天氣與氣候：新情境保留相同變因、證據與適用範圍。",
+        "把溫室氣體增加與全球能量收支改變的判準移到另一個情境時，哪一項作法較適當？ 改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄：換情境仍須比較完整資料與替代解釋。"
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
@@ -2503,7 +2512,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "transfer-scenario",
       "misconceptionTargets": [
-        "調適措施可以取代所有減緩"
+        "改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2529,8 +2538,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「海平面上升只與海冰融化有關」與「比較百年氣溫與二氧化碳序列」所需的查核依據不符；可對照「減緩著重降低排放或增加移除」。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「升溫可透過海水熱膨脹、陸冰融化與水循環改變，連鎖影響海平面及部分極端降水風險」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「升溫可透過海水熱膨脹、陸冰融化與水循環改變，連鎖影響海平面及部分極端降水風險」可由氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據查核。",
+        "「溫室效應完全由人類創造且應歸零」與「比較百年氣溫與二氧化碳序列」所需的查核依據不符；可對照「海洋吸收了全球暖化系統中的大量額外熱」。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -2564,8 +2573,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "單一情境不能取代不同時間、位置的比較資料。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「具日期、位置與單位的年份、CO₂ ppm、全球溫度距平°C、海平面相對mm紀錄」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "這組資料能直接查核升溫海平面與異常降水等連鎖衝擊，且保留量測脈絡。",
+        "只挑符合預期的紀錄會造成確認偏誤，不能查核升溫海平面與異常降水等連鎖衝擊。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -2573,7 +2582,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "comparison",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "只留下支持「溫室效應完全由人類創造且應歸零」的紀錄並刪除反例"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2584,7 +2593,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       "id": "EARTH_R4_Q_204_03",
       "skillId": "EARTH_R4_S204",
       "stimulusId": null,
-      "stem": "整理「檢查趨勢線和年際變動」的筆記時，哪一項敘述可以保留？",
+      "stem": "分析升溫、海平面與異常降水的連鎖影響時，哪一項推論保留必要條件？",
       "options": [
         "判讀升溫海平面與異常降水等連鎖衝擊時，未核對「檢查趨勢線和年際變動」的觀測時間與範圍便認定某地一場寒流可推翻全球長期趨勢",
         "判讀升溫海平面與異常降水等連鎖衝擊時，把「檢查趨勢線和年際變動」的一次局部觀察擴大為「海平面上升只與海冰融化有關」",
@@ -2599,8 +2608,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「調適措施可以取代所有減緩」與「檢查趨勢線和年際變動」所需的查核依據不符；可對照「調適著重降低既有或預期衝擊」。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「升溫可透過海水熱膨脹、陸冰融化與水循環改變，連鎖影響海平面及部分極端降水風險」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「升溫可透過海水熱膨脹、陸冰融化與水循環改變，連鎖影響海平面及部分極端降水風險」可由氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據查核。",
+        "「某地一場寒流可推翻全球長期趨勢」與「檢查趨勢線和年際變動」所需的查核依據不符；可對照「化石燃料燃燒會把地質碳庫的碳移入大氣」。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -2634,8 +2643,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "結論使用情境中的可觀測資訊，且沒有超出單一冷天不否定長期暖化；氣候模型提供情境範圍而非逐日精確預言。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「升溫可透過海水熱膨脹、陸冰融化與水循環改變，連鎖影響海平面及部分極端降水風險」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "結論使用情境中的可觀測資訊，且沒有超出單一冷天不否定長期暖化；氣候模型提供情境範圍而非逐日精確預言。",
+        "「判讀升溫海平面與異常降水等連鎖衝擊時，忽略反例後宣稱調適措施可以取代所有減緩」沒有通過氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據的檢查。"
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
@@ -2669,8 +2678,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「區分節能減碳與防洪調適」的一次觀察不足以代表所有條件。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "先區分天氣與氣候：此程序先處理變因和證據，再對區分節能減碳與防洪調適形成結論。",
+        "探討升溫海平面與異常降水等連鎖衝擊時先寫答案，再挑一筆相符資料：先定答案再選「區分節能減碳與防洪調適」資料會造成確認偏誤。"
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
@@ -2678,7 +2687,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "investigation-plan",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "探討升溫海平面與異常降水等連鎖衝擊時先寫答案，再挑一筆相符資料"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2713,7 +2722,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "model-evaluation",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "判斷升溫海平面與異常降水等連鎖衝擊時，資料列多便可忽略不確定性"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2748,7 +2757,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "source-evaluation",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "查核升溫海平面與異常降水等連鎖衝擊只需一張來源不明的網路圖片"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2764,7 +2773,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "先公布升溫海平面與異常降水等連鎖衝擊結論，再決定量哪個變因",
         "解讀「區分節能減碳與防洪調適」時把年份與海平面相對mm直接相減",
         "判斷升溫海平面與異常降水等連鎖衝擊時只保留「區分節能減碳與防洪調適」最符合預期的一次觀察",
-        "判讀升溫海平面與異常降水等連鎖衝擊時先先區分天氣與氣候，再檢查反例"
+        "判讀升溫海平面與異常降水等連鎖衝擊時先區分天氣與氣候，再檢查反例"
       ],
       "answerIndex": 3,
       "reasons": [
@@ -2774,7 +2783,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "順序保留從觀測、比較到結論的可檢核鏈。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「判讀升溫海平面與異常降水等連鎖衝擊時先先區分天氣與氣候，再檢查反例」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
+        "逐項核對「區分節能減碳與防洪調適」的條件後，「判讀升溫海平面與異常降水等連鎖衝擊時先區分天氣與氣候，再檢查反例」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
         "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
       ],
       "difficulty": "advanced",
@@ -2783,7 +2792,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "procedure",
       "misconceptionTargets": [
-        "調適措施可以取代所有減緩"
+        "先公布升溫海平面與異常降水等連鎖衝擊結論，再決定量哪個變因"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2809,8 +2818,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "選擇性刪除「檢查趨勢線和年際變動」資料會破壞證據鏈。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「升溫可透過海水熱膨脹、陸冰融化與水循環改變，連鎖影響海平面及部分極端降水風險」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「升溫可透過海水熱膨脹、陸冰融化與水循環改變，連鎖影響海平面及部分極端降水風險」屬於本單元可由證據支持的關係。",
+        "地名沒有指出年份、CO₂ ppm、全球溫度距平°C、海平面相對mm之間的關係。"
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
@@ -2818,7 +2827,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "local-context",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "判讀升溫海平面與異常降水等連鎖衝擊時只抄地名，不讀變因"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2853,7 +2862,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "data-table",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "在「比較百年氣溫與二氧化碳序列」的升溫海平面與異常降水等連鎖衝擊資料中，當年份為1980時，CO₂ ppm為370。"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2888,7 +2897,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "error-diagnosis",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "升溫可透過海水熱膨脹、陸冰融化與水循環改變，連鎖影響海平面及部分極端降水風險"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2904,7 +2913,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄",
         "改看「檢查趨勢線和年際變動」後，省略所有單位",
         "只寫升溫海平面與異常降水等連鎖衝擊的概念名稱，不記錄「檢查趨勢線和年際變動」的觀測",
-        "把判讀移到「檢查趨勢線和年際變動」時，仍先先區分天氣與氣候"
+        "把判讀移到「檢查趨勢線和年際變動」時，仍先區分天氣與氣候"
       ],
       "answerIndex": 3,
       "reasons": [
@@ -2914,8 +2923,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "新情境保留相同變因、證據與適用範圍。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「把判讀移到「檢查趨勢線和年際變動」時，仍先先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "把升溫海平面與異常降水等連鎖衝擊的判準移到另一個情境時，哪一項作法較適當？ 把判讀移到「檢查趨勢線和年際變動」時，仍先區分天氣與氣候：新情境保留相同變因、證據與適用範圍。",
+        "把升溫海平面與異常降水等連鎖衝擊的判準移到另一個情境時，哪一項作法較適當？ 改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄：換情境仍須比較完整資料與替代解釋。"
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
@@ -2923,7 +2932,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "transfer-scenario",
       "misconceptionTargets": [
-        "調適措施可以取代所有減緩"
+        "改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2949,8 +2958,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「調適措施可以取代所有減緩」與「區分節能減碳與防洪調適」所需的查核依據不符；可對照「調適著重降低既有或預期衝擊」。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「減緩著重降低溫室氣體排放或增加移除，調適則著重降低已發生或預期氣候衝擊」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「減緩著重降低溫室氣體排放或增加移除，調適則著重降低已發生或預期氣候衝擊」可由氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據查核。",
+        "「某地一場寒流可推翻全球長期趨勢」與「區分節能減碳與防洪調適」所需的查核依據不符；可對照「化石燃料燃燒會把地質碳庫的碳移入大氣」。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -2958,7 +2967,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "concept-statement",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "判讀氣候變遷減緩與調適措施時，未核對「區分節能減碳與防洪調適」的觀測時間與範圍便認定某地一場寒流可推翻全球長期趨勢"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -2984,8 +2993,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "單一情境不能取代不同時間、位置的比較資料。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「具日期、位置與單位的年份、CO₂ ppm、全球溫度距平°C、海平面相對mm紀錄」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "這組資料能直接查核氣候變遷減緩與調適措施，且保留量測脈絡。",
+        "只挑符合預期的紀錄會造成確認偏誤，不能查核氣候變遷減緩與調適措施。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -3004,7 +3013,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       "id": "EARTH_R4_Q_205_03",
       "skillId": "EARTH_R4_S205",
       "stimulusId": null,
-      "stem": "整理「比較百年氣溫與二氧化碳序列」的筆記時，哪一項敘述可以保留？",
+      "stem": "面對氣候變遷，哪一項能正確區分減緩措施與調適措施？",
       "options": [
         "判讀氣候變遷減緩與調適措施時，把「比較百年氣溫與二氧化碳序列」的一次局部觀察擴大為「海平面上升只與海冰融化有關」",
         "判讀氣候變遷減緩與調適措施時，忽略反例後宣稱調適措施可以取代所有減緩",
@@ -3019,8 +3028,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「減緩著重降低溫室氣體排放或增加移除，調適則著重降低已發生或預期氣候衝擊」可由氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據查核。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「減緩著重降低溫室氣體排放或增加移除，調適則著重降低已發生或預期氣候衝擊」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「減緩著重降低溫室氣體排放或增加移除，調適則著重降低已發生或預期氣候衝擊」可由氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據查核。",
+        "「海平面上升只與海冰融化有關」與「比較百年氣溫與二氧化碳序列」所需的查核依據不符；可對照「減緩著重降低排放或增加移除」。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -3054,8 +3063,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「判讀氣候變遷減緩與調適措施時，把「區分節能減碳與防洪調適」的一次局部觀察擴大為「海平面上升只與海冰融化有關」」沒有通過氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據的檢查。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「減緩著重降低溫室氣體排放或增加移除，調適則著重降低已發生或預期氣候衝擊」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "結論使用情境中的可觀測資訊，且沒有超出單一冷天不否定長期暖化；氣候模型提供情境範圍而非逐日精確預言。",
+        "「判讀氣候變遷減緩與調適措施時，僅憑「區分節能減碳與防洪調適」就斷定溫室效應完全由人類創造且應歸零」沒有通過氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據的檢查。"
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
@@ -3063,7 +3072,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "observation-scenario",
       "misconceptionTargets": [
-        "調適措施可以取代所有減緩"
+        "判讀氣候變遷減緩與調適措施時，僅憑「區分節能減碳與防洪調適」就斷定溫室效應完全由人類創造且應歸零"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -3089,8 +3098,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「檢查趨勢線和年際變動」的一次觀察不足以代表所有條件。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "先區分天氣與氣候：此程序先處理變因和證據，再對檢查趨勢線和年際變動形成結論。",
+        "探討氣候變遷減緩與調適措施時先寫答案，再挑一筆相符資料：先定答案再選「檢查趨勢線和年際變動」資料會造成確認偏誤。"
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
@@ -3098,7 +3107,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "investigation-plan",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "探討氣候變遷減緩與調適措施時先寫答案，再挑一筆相符資料"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -3133,7 +3142,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "model-evaluation",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "判斷氣候變遷減緩與調適措施時，資料列多便可忽略不確定性"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -3168,7 +3177,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "source-evaluation",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "查核氣候變遷減緩與調適措施只需一張來源不明的網路圖片"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -3181,7 +3190,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       "stimulusId": null,
       "stem": "處理氣候變遷減緩與調適措施的資料時，哪一個推理順序較完整？",
       "options": [
-        "判讀氣候變遷減緩與調適措施時先先區分天氣與氣候，再檢查反例",
+        "判讀氣候變遷減緩與調適措施時先區分天氣與氣候，再檢查反例",
         "先公布氣候變遷減緩與調適措施結論，再決定量哪個變因",
         "解讀「檢查趨勢線和年際變動」時把年份與海平面相對mm直接相減",
         "判斷氣候變遷減緩與調適措施時只保留「檢查趨勢線和年際變動」最符合預期的一次觀察"
@@ -3194,7 +3203,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "忽略「檢查趨勢線和年際變動」的變異與反例會高估結論強度。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「判讀氣候變遷減緩與調適措施時先先區分天氣與氣候，再檢查反例」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
+        "逐項核對「檢查趨勢線和年際變動」的條件後，「判讀氣候變遷減緩與調適措施時先區分天氣與氣候，再檢查反例」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
         "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
       ],
       "difficulty": "advanced",
@@ -3203,7 +3212,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "procedure",
       "misconceptionTargets": [
-        "調適措施可以取代所有減緩"
+        "先公布氣候變遷減緩與調適措施結論，再決定量哪個變因"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -3229,8 +3238,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "選擇性刪除「比較百年氣溫與二氧化碳序列」資料會破壞證據鏈。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「減緩著重降低溫室氣體排放或增加移除，調適則著重降低已發生或預期氣候衝擊」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「減緩著重降低溫室氣體排放或增加移除，調適則著重降低已發生或預期氣候衝擊」屬於本單元可由證據支持的關係。",
+        "地名沒有指出年份、CO₂ ppm、全球溫度距平°C、海平面相對mm之間的關係。"
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
@@ -3238,7 +3247,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "local-context",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "判讀氣候變遷減緩與調適措施時只抄地名，不讀變因"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -3273,7 +3282,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "data-table",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "在「區分節能減碳與防洪調適」的氣候變遷減緩與調適措施資料中，當年份為2000時，全球溫度距平°C為0.27。"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -3308,7 +3317,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "error-diagnosis",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "減緩著重降低溫室氣體排放或增加移除，調適則著重降低已發生或預期氣候衝擊"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -3321,7 +3330,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       "stimulusId": null,
       "stem": "把氣候變遷減緩與調適措施的判準移到另一個情境時，哪一項作法較適當？",
       "options": [
-        "把判讀移到「檢查趨勢線和年際變動」時，仍先先區分天氣與氣候",
+        "把判讀移到「檢查趨勢線和年際變動」時，仍先區分天氣與氣候",
         "改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄",
         "改看「檢查趨勢線和年際變動」後，省略所有單位",
         "只寫氣候變遷減緩與調適措施的概念名稱，不記錄「檢查趨勢線和年際變動」的觀測"
@@ -3334,8 +3343,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "概念名稱不能取代實際資料。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「把判讀移到「檢查趨勢線和年際變動」時，仍先先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "把氣候變遷減緩與調適措施的判準移到另一個情境時，哪一項作法較適當？ 把判讀移到「檢查趨勢線和年際變動」時，仍先區分天氣與氣候：新情境保留相同變因、證據與適用範圍。",
+        "把氣候變遷減緩與調適措施的判準移到另一個情境時，哪一項作法較適當？ 改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄：換情境仍須比較完整資料與替代解釋。"
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
@@ -3343,7 +3352,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "transfer-scenario",
       "misconceptionTargets": [
-        "調適措施可以取代所有減緩"
+        "改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -3369,8 +3378,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「溫室效應完全由人類創造且應歸零」與「檢查趨勢線和年際變動」所需的查核依據不符；可對照「海洋吸收了全球暖化系統中的大量額外熱」。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「先區分天氣與氣候，再比較基準期、趨勢與不確定性，最後檢查機制是否能同時解釋多種觀測」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「先區分天氣與氣候，再比較基準期、趨勢與不確定性，最後檢查機制是否能同時解釋多種觀測」可由氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據查核。",
+        "「海平面上升只與海冰融化有關」與「檢查趨勢線和年際變動」所需的查核依據不符；可對照「減緩著重降低排放或增加移除」。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -3404,8 +3413,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "這組資料能直接查核氣候主張時區分趨勢變動與單一天氣事件，且保留量測脈絡。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「具日期、位置與單位的年份、CO₂ ppm、全球溫度距平°C、海平面相對mm紀錄」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "這組資料能直接查核氣候主張時區分趨勢變動與單一天氣事件，且保留量測脈絡。",
+        "只挑符合預期的紀錄會造成確認偏誤，不能查核氣候主張時區分趨勢變動與單一天氣事件。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -3413,7 +3422,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "comparison",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "只留下支持「海平面上升只與海冰融化有關」的紀錄並刪除反例"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -3424,7 +3433,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       "id": "EARTH_R4_Q_206_03",
       "skillId": "EARTH_R4_S206",
       "stimulusId": null,
-      "stem": "整理「區分節能減碳與防洪調適」的筆記時，哪一項敘述可以保留？",
+      "stem": "有人用某地一次寒流否定全球暖化趨勢，哪一項回應符合天氣與氣候的尺度差異？",
       "options": [
         "先區分天氣與氣候，再比較基準期、趨勢與不確定性，最後檢查機制是否能同時解釋多種觀測",
         "判讀氣候主張時區分趨勢變動與單一天氣事件時，忽略反例後宣稱調適措施可以取代所有減緩",
@@ -3439,8 +3448,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「某地一場寒流可推翻全球長期趨勢」與「區分節能減碳與防洪調適」所需的查核依據不符；可對照「化石燃料燃燒會把地質碳庫的碳移入大氣」。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「先區分天氣與氣候，再比較基準期、趨勢與不確定性，最後檢查機制是否能同時解釋多種觀測」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「先區分天氣與氣候，再比較基準期、趨勢與不確定性，最後檢查機制是否能同時解釋多種觀測」可由氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據查核。",
+        "「調適措施可以取代所有減緩」與「區分節能減碳與防洪調適」所需的查核依據不符；可對照「調適著重降低既有或預期衝擊」。"
       ],
       "difficulty": "foundation",
       "cognitiveProcess": [
@@ -3448,7 +3457,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "evidence-claim",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "判讀氣候主張時區分趨勢變動與單一天氣事件時，忽略反例後宣稱調適措施可以取代所有減緩"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -3474,8 +3483,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「判讀氣候主張時區分趨勢變動與單一天氣事件時，忽略反例後宣稱調適措施可以取代所有減緩」沒有通過氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據的檢查。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「先區分天氣與氣候，再比較基準期、趨勢與不確定性，最後檢查機制是否能同時解釋多種觀測」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "結論使用情境中的可觀測資訊，且沒有超出單一冷天不否定長期暖化；氣候模型提供情境範圍而非逐日精確預言。",
+        "「判讀氣候主張時區分趨勢變動與單一天氣事件時，未核對「檢查趨勢線和年際變動」的觀測時間與範圍便認定某地一場寒流可推翻全球長期趨勢」沒有通過氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據的檢查。"
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
@@ -3509,8 +3518,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "「比較百年氣溫與二氧化碳序列」的一次觀察不足以代表所有條件。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "先區分天氣與氣候：此程序先處理變因和證據，再對比較百年氣溫與二氧化碳序列形成結論。",
+        "探討氣候主張時區分趨勢變動與單一天氣事件時先寫答案，再挑一筆相符資料：先定答案再選「比較百年氣溫與二氧化碳序列」資料會造成確認偏誤。"
       ],
       "difficulty": "standard",
       "cognitiveProcess": [
@@ -3518,7 +3527,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "investigation-plan",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "探討氣候主張時區分趨勢變動與單一天氣事件時先寫答案，再挑一筆相符資料"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -3553,7 +3562,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "model-evaluation",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "判斷氣候主張時區分趨勢變動與單一天氣事件時，資料列多便可忽略不確定性"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -3588,7 +3597,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "source-evaluation",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "查核氣候主張時區分趨勢變動與單一天氣事件只需一張來源不明的網路圖片"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -3602,7 +3611,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       "stem": "處理氣候主張時區分趨勢變動與單一天氣事件的資料時，哪一個推理順序較完整？",
       "options": [
         "先公布氣候主張時區分趨勢變動與單一天氣事件結論，再決定量哪個變因",
-        "判讀氣候主張時區分趨勢變動與單一天氣事件時先先區分天氣與氣候，再檢查反例",
+        "判讀氣候主張時區分趨勢變動與單一天氣事件時先區分天氣與氣候，再檢查反例",
         "解讀「比較百年氣溫與二氧化碳序列」時把年份與海平面相對mm直接相減",
         "判斷氣候主張時區分趨勢變動與單一天氣事件時只保留「比較百年氣溫與二氧化碳序列」最符合預期的一次觀察"
       ],
@@ -3614,7 +3623,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "忽略「比較百年氣溫與二氧化碳序列」的變異與反例會高估結論強度。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「判讀氣候主張時區分趨勢變動與單一天氣事件時先先區分天氣與氣候，再檢查反例」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
+        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「判讀氣候主張時區分趨勢變動與單一天氣事件時先區分天氣與氣候，再檢查反例」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
         "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
       ],
       "difficulty": "advanced",
@@ -3623,7 +3632,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "procedure",
       "misconceptionTargets": [
-        "調適措施可以取代所有減緩"
+        "先公布氣候主張時區分趨勢變動與單一天氣事件結論，再決定量哪個變因"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -3649,8 +3658,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "選擇性刪除「區分節能減碳與防洪調適」資料會破壞證據鏈。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「先區分天氣與氣候，再比較基準期、趨勢與不確定性，最後檢查機制是否能同時解釋多種觀測」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "「先區分天氣與氣候，再比較基準期、趨勢與不確定性，最後檢查機制是否能同時解釋多種觀測」屬於本單元可由證據支持的關係。",
+        "地名沒有指出年份、CO₂ ppm、全球溫度距平°C、海平面相對mm之間的關係。"
       ],
       "difficulty": "advanced",
       "cognitiveProcess": [
@@ -3658,7 +3667,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "local-context",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "判讀氣候主張時區分趨勢變動與單一天氣事件時只抄地名，不讀變因"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -3693,7 +3702,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "data-table",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "在「檢查趨勢線和年際變動」的氣候主張時區分趨勢變動與單一天氣事件資料中，當年份為2020時，海平面相對mm為0。"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -3742,7 +3751,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       "stem": "把氣候主張時區分趨勢變動與單一天氣事件的判準移到另一個情境時，哪一項作法較適當？",
       "options": [
         "改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄",
-        "把判讀移到「檢查趨勢線和年際變動」時，仍先先區分天氣與氣候",
+        "把判讀移到「檢查趨勢線和年際變動」時，仍先區分天氣與氣候",
         "改看「檢查趨勢線和年際變動」後，省略所有單位",
         "只寫氣候主張時區分趨勢變動與單一天氣事件的概念名稱，不記錄「檢查趨勢線和年際變動」的觀測"
       ],
@@ -3754,8 +3763,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "概念名稱不能取代實際資料。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「把判讀移到「檢查趨勢線和年際變動」時，仍先先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "把氣候主張時區分趨勢變動與單一天氣事件的判準移到另一個情境時，哪一項作法較適當？ 把判讀移到「檢查趨勢線和年際變動」時，仍先區分天氣與氣候：新情境保留相同變因、證據與適用範圍。",
+        "把氣候主張時區分趨勢變動與單一天氣事件的判準移到另一個情境時，哪一項作法較適當？ 改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄：換情境仍須比較完整資料與替代解釋。"
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
@@ -3763,7 +3772,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "transfer-scenario",
       "misconceptionTargets": [
-        "調適措施可以取代所有減緩"
+        "改看「檢查趨勢線和年際變動」後，只採用支持原想法的一筆紀錄"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4138,7 +4147,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "在「檢查趨勢線和年際變動」的自然溫室效應與人為增強效應資料中，當年份為1980時，CO₂ ppm為370。"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4173,7 +4182,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "分析自然溫室效應與人為增強效應時，有3列資料就沒有不確定性"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4199,8 +4208,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "意見調查不是獨立觀測或公平檢驗。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「針對「檢查趨勢線和年際變動」再先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "後續檢驗保留自然溫室效應與人為增強效應的變因、資料與結論間的可重現關係。",
+        "同時改變多個變因且無重複，不能判斷「檢查趨勢線和年際變動」的原因。"
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
@@ -4208,7 +4217,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "同時換掉自然溫室效應與人為增強效應的全部變因後只測一次"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4243,7 +4252,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "在「比較百年氣溫與二氧化碳序列」的碳在大氣海洋生物與岩石圈間流動資料中，當年份為2000時，全球溫度距平°C為0.27。"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4278,7 +4287,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "分析碳在大氣海洋生物與岩石圈間流動時，有3列資料就沒有不確定性"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4304,8 +4313,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "後續檢驗保留碳在大氣海洋生物與岩石圈間流動的變因、資料與結論間的可重現關係。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「針對「比較百年氣溫與二氧化碳序列」再先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "後續檢驗保留碳在大氣海洋生物與岩石圈間流動的變因、資料與結論間的可重現關係。",
+        "同時改變多個變因且無重複，不能判斷「比較百年氣溫與二氧化碳序列」的原因。"
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
@@ -4313,7 +4322,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "同時換掉碳在大氣海洋生物與岩石圈間流動的全部變因後只測一次"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4348,7 +4357,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "在「區分節能減碳與防洪調適」的長期多來源資料辨識氣候變遷證據資料中，當年份為2020時，海平面相對mm為0。"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4383,7 +4392,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "分析長期多來源資料辨識氣候變遷證據時，有3列資料就沒有不確定性"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4409,8 +4418,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "意見調查不是獨立觀測或公平檢驗。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「針對「區分節能減碳與防洪調適」再先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "後續檢驗保留長期多來源資料辨識氣候變遷證據的變因、資料與結論間的可重現關係。",
+        "同時改變多個變因且無重複，不能判斷「區分節能減碳與防洪調適」的原因。"
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
@@ -4418,7 +4427,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "同時換掉長期多來源資料辨識氣候變遷證據的全部變因後只測一次"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4453,7 +4462,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "在「檢查趨勢線和年際變動」的溫室氣體增加與全球能量收支改變資料中，當年份為1980時，CO₂ ppm為370。"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4488,7 +4497,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "分析溫室氣體增加與全球能量收支改變時，有3列資料就沒有不確定性"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4514,8 +4523,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "意見調查不是獨立觀測或公平檢驗。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「針對「檢查趨勢線和年際變動」再先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "後續檢驗保留溫室氣體增加與全球能量收支改變的變因、資料與結論間的可重現關係。",
+        "同時改變多個變因且無重複，不能判斷「檢查趨勢線和年際變動」的原因。"
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
@@ -4523,7 +4532,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "同時換掉溫室氣體增加與全球能量收支改變的全部變因後只測一次"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4558,7 +4567,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "在「比較百年氣溫與二氧化碳序列」的升溫海平面與異常降水等連鎖衝擊資料中，當年份為2000時，全球溫度距平°C為0.27。"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4593,7 +4602,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "分析升溫海平面與異常降水等連鎖衝擊時，有3列資料就沒有不確定性"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4619,8 +4628,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "意見調查不是獨立觀測或公平檢驗。"
       ],
       "reviews": [
-        "逐項核對「比較百年氣溫與二氧化碳序列」的條件後，「針對「比較百年氣溫與二氧化碳序列」再先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "後續檢驗保留升溫海平面與異常降水等連鎖衝擊的變因、資料與結論間的可重現關係。",
+        "同時改變多個變因且無重複，不能判斷「比較百年氣溫與二氧化碳序列」的原因。"
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
@@ -4628,7 +4637,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "同時換掉升溫海平面與異常降水等連鎖衝擊的全部變因後只測一次"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4663,7 +4672,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "在「區分節能減碳與防洪調適」的氣候變遷減緩與調適措施資料中，當年份為2020時，海平面相對mm為0。"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4698,7 +4707,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "分析氣候變遷減緩與調適措施時，有3列資料就沒有不確定性"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4724,8 +4733,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "後續檢驗保留氣候變遷減緩與調適措施的變因、資料與結論間的可重現關係。"
       ],
       "reviews": [
-        "逐項核對「區分節能減碳與防洪調適」的條件後，「針對「區分節能減碳與防洪調適」再先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "後續檢驗保留氣候變遷減緩與調適措施的變因、資料與結論間的可重現關係。",
+        "同時改變多個變因且無重複，不能判斷「區分節能減碳與防洪調適」的原因。"
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
@@ -4733,7 +4742,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "同時換掉氣候變遷減緩與調適措施的全部變因後只測一次"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4768,7 +4777,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "溫室效應完全由人類創造且應歸零"
+        "在「檢查趨勢線和年際變動」的氣候主張時區分趨勢變動與單一天氣事件資料中，當年份為1980時，CO₂ ppm為370。"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4803,7 +4812,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "某地一場寒流可推翻全球長期趨勢"
+        "分析氣候主張時區分趨勢變動與單一天氣事件時，有3列資料就沒有不確定性"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",
@@ -4829,8 +4838,8 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
         "意見調查不是獨立觀測或公平檢驗。"
       ],
       "reviews": [
-        "逐項核對「檢查趨勢線和年際變動」的條件後，「針對「檢查趨勢線和年際變動」再先區分天氣與氣候」符合題目資料；查核依據為：氣溫、海洋熱含量、海平面、冰量、二氧化碳與物候等多項獨立長期資料共同構成證據。",
-        "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單一冷天不否定長期暖化」。"
+        "後續檢驗保留氣候主張時區分趨勢變動與單一天氣事件的變因、資料與結論間的可重現關係。",
+        "同時改變多個變因且無重複，不能判斷「檢查趨勢線和年際變動」的原因。"
       ],
       "difficulty": "transfer",
       "cognitiveProcess": [
@@ -4838,7 +4847,7 @@ export const EARTH_SCIENCE_UNIT_SOURCE = Object.freeze({
       ],
       "representationType": "shared-data-table",
       "misconceptionTargets": [
-        "海平面上升只與海冰融化有關"
+        "同時換掉氣候主張時區分趨勢變動與單一天氣事件的全部變因後只測一次"
       ],
       "assets": [
         "EARTH_R4_ASSET_CLIMATE_GRAPH",

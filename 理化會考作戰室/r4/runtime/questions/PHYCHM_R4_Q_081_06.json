@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解密閉系統反應前後總質量守恆，哪項修正合理？",
+  "stem": "密閉袋中 5.0 g 鐵粉與 3.0 g 氧完全反應，袋與其他內容物質量固定。生成物質量為何？",
   "options": [
-    "H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標",
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2",
-    "所有反應物與生成物的總質量相等",
-    "密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變"
+    "2.0 g",
+    "8.0 g",
+    "3.0 g",
+    "5.0 g"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標」不成立；2H₂＋O₂→2H₂O 以係數 2、1、2 使氫、氧原子在兩側分別都是 4、2 個。"
+      "reason": "2.0 g 是相減。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「配平係數 2：1：2 直接表示三種物質的質量比也是 2：1…」不成立；2H₂＋O₂→2H₂O 表示氫分子、氧分子與水分子的粒子數比為 2：1：2。"
+      "isCorrect": true,
+      "reason": "5.0＋3.0＝8.0 g。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「密閉袋內的反應前後，所有反應物與生成物的總質量相等，因為原子只重新排列」。"
+      "isCorrect": false,
+      "reason": "3.0 g 只算氧。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變」不成立；質量守恆不要求反應前後總體積相等；氣體生成、溫度與壓力都可使體積改變。"
+      "reason": "5.0 g 只算鐵。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "定量推理"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標",
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2",
-    "密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變"
+    "2.0 g",
+    "3.0 g",
+    "5.0 g"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

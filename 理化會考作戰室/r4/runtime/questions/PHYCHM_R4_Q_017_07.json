@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "熱脹冷縮模型出現四種說法，哪項有理化概念支持？",
+  "stem": "為什麼一般情況下水比空氣難壓縮？",
   "options": [
-    "教科書的粒子圖是顯微鏡直接拍到的照片，圖上比例可當成實際大小",
-    "固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹",
-    "液體和氣體都沒有固定體積，所以兩者的性質完全相同",
-    "氣體粒子間距大且運動自由"
+    "水粒子較接近，可縮小的空隙較少",
+    "水粒子完全沒有運動",
+    "水會自動產生更多粒子",
+    "空氣粒子沒有質量"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「教科書的粒子圖是顯微鏡直接拍到的照片，圖上比例可當成實際大小」不成立；粒子圖是解釋現象的模型；可表現排列與運動差異，但圖上大小和間距通常不是實際比例。"
+      "isCorrect": true,
+      "reason": "液態粒子間距較小，符合壓縮差異。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹」不成立；固體粒子緊密且在平衡位置附近振動，液體粒子可相對移動，氣體粒子間距大且運動自由。"
+      "reason": "水粒子仍會運動。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「液體和氣體都沒有固定體積，所以兩者的性質完全相同」不成立；固體保有固定形狀與體積；液體有固定體積但隨容器改變形狀；氣體充滿容器。"
+      "reason": "加壓不會生成水粒子。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「固體粒子緊密且在平衡位置附近振動，液體粒子可相對移動，氣體粒子間距大且運動自由」。"
+      "isCorrect": false,
+      "reason": "空氣有質量。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "比較",
+    "解釋"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "教科書的粒子圖是顯微鏡直接拍到的照片，圖上比例可當成實際大小",
-    "固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹",
-    "液體和氣體都沒有固定體積，所以兩者的性質完全相同"
+    "水粒子完全沒有運動",
+    "水會自動產生更多粒子",
+    "空氣粒子沒有質量"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-1",
       "AUTH-NATURAL-LC-AB-4-2",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

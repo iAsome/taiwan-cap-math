@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "換成另一組彈簧縱波資料，哪項判讀仍合理？",
+  "stem": "要驗證粒子只在平衡位置附近振動，哪組資料最直接？",
   "options": [
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "在介質波模型中，標記粒子應在平衡位置兩側往復運動；波形則表示擾動依序傳開",
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端"
+    "單一時刻整條繩的照片",
+    "波源的外觀顏色",
+    "同一標記點在多個時刻的座標",
+    "繩子的總長度"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關」不成立；橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行。"
+      "reason": "單張照片不能顯示標記點是否回到中心。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「在介質波模型中，標記粒子應在平衡位置兩側往復運動；波形則表示擾動依序傳開」。"
+      "isCorrect": false,
+      "reason": "顏色不提供運動資料。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「任何一張瞬間位置波形圖都可只看波峰數直接得到頻率」不成立；比較波形圖前要讀軸；位置圖可直接量波長與振幅，頻率則還需時間資訊。"
+      "isCorrect": true,
+      "reason": "多時刻座標可檢查平均位置與往復範圍。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「繩波向右傳時，繩上每一個粒子都從左端一路移到右端」不成立；波將擾動與能量向前傳，介質粒子多在平衡位置附近振動，不隨波整體移到遠處。"
+      "reason": "總長度不能追蹤局部粒子。"
     }
   ],
   "difficulty": "transfer",
@@ -46,16 +46,16 @@
     "情境遷移",
     "應用"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端"
+    "單一時刻整條繩的照片",
+    "波源的外觀顏色",
+    "繩子的總長度"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

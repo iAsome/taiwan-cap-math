@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u06",
+  "batch": "007-u06-complete",
+  "skills": ["s003", "s004", "s005", "s006", "s007", "s009", "s011", "s012"],
+  "mc": [
+    {
+      "questionId": "u06-s003-v012",
+      "expectedContentSha256": "a2c4111cb15007bbbb23fa1ebea696120b6b7d7617471c44be45f77a143235a0",
+      "set": {
+        "prompt": "飲料 A:B=3:2，共 1.5 公升。倒出 0.3 公升混合均勻飲料後，剩餘 A:B 的最簡整數比為何？",
+        "text": "飲料 A:B=3:2，共 1.5 公升。倒出 0.3 公升混合均勻飲料後，剩餘 A:B 的最簡整數比為何？",
+        "independentSolution": "總量減為1.2公升；均勻倒出使A、B同乘0.8，剩0.72與0.48公升，最簡整數比為3:2。"
+      }
+    },
+    {
+      "questionId": "u06-s004-v004",
+      "expectedContentSha256": "27e926d87f5f94629ee3e391e035e2f7e2d4ffba2d3b800a5dcd73683f99f74f",
+      "set": {
+        "independentSolution": "由a/b=c/d且四項非零，兩邊同取倒數得b/a=d/c，因此b:a=d:c必成立。"
+      }
+    },
+    {
+      "questionId": "u06-s005-v003",
+      "expectedContentSha256": "4814419fb6d37f45decc159d7fdaba5b9d45ac5535a085c1b8de56aa2cf915a0",
+      "set": {
+        "independentSolution": "第二組依序有6÷2=3、15÷5=3、24÷8=3，所以比值固定為3，可寫成y=3x。"
+      }
+    },
+    {
+      "questionId": "u06-s009-v010",
+      "expectedContentSha256": "a6f7caa4394fd30caefc29f62503181335b9de0497aa702c063b8ae031b99b10",
+      "replaceText": {
+        "100克": "100公克"
+      }
+    },
+    {
+      "questionId": "u06-s011-v006",
+      "expectedContentSha256": "581108a98f36bda9bab10017a81363006691b30ef4736d1e5172167e57443fa2",
+      "set": {
+        "independentSolution": "實物面積為75×40²=120000平方公分，換算為12平方公尺。"
+      }
+    },
+    {
+      "questionId": "u06-s012-v001",
+      "expectedContentSha256": "6dc282a61c2692e07f358c9e104cdf651f06e08fd556926d1f867d3e63bb2cdd",
+      "replaceText": {
+        "100克": "100公克"
+      }
+    },
+    {
+      "questionId": "u06-s012-v006",
+      "expectedContentSha256": "02886fb64487eae84c3b13b9a268c6935baa7da4778cc0a0605b8855a0e68781",
+      "set": {
+        "independentSolution": "甲方案費用為200+10×15=350元，乙方案為30×25=750元，所以甲便宜400元。"
+      }
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u06-s012-cr001",
+      "expectedContentSha256": "97a344989426415db87962601bed68cf45f152e051ee7ab775b633e0f6dec6de",
+      "replaceText": {
+        "100克": "100公克"
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u06-s005-lecture-r1",
+      "expectedContentSha256": "d5ee6be3423955872879f35a48c3c5189d1c9a89421e74bdbf4d286321ba26ed",
+      "replaceText": {
+        "y=kx 中固定不變的 k，也就是 y/x。": "y=kx 中固定不變且不等於 0 的 k，也就是 y/x。",
+        "k 為固定的正比常數。": "k 為固定且非零的正比常數。",
+        "k 可以是正數、負數或 0 的代數情形；生活量通常再受非負限制。": "k 是非零常數，可以是正數或負數；生活量通常再受非負限制。",
+        "存在固定常數 k，使每一組資料都滿足 y=kx。": "存在固定非零常數 k，使每一組資料都滿足 y=kx。",
+        "k 固定": "k 為固定非零常數",
+        "五分之二": "二分之五"
+      }
+    },
+    {
+      "lectureId": "u06-s006-lecture-r1",
+      "expectedContentSha256": "529fb2ee8d20ba120af09cf80277efb1039a5dc322428e1466e7a4bd7b67978c",
+      "replaceText": {
+        "x、y 的乘積固定。": "x、y 的乘積固定為非零常數 k。",
+        "x≠0 時的反比關係式。": "k≠0 且 x≠0 時的反比關係式。",
+        "存在固定非零或指定常數 k，使每組非零資料滿足 xy=k。": "存在固定非零常數 k，使每組非零資料滿足 xy=k。",
+        "x、y 在關係中不取使式子失去情境意義的值": "k≠0，且 x、y≠0"
+      }
+    },
+    {
+      "lectureId": "u06-s007-lecture-r1",
+      "expectedContentSha256": "31b2f8fae68a66973f8e040c2530269e0d9d1c3a1d8b800cda8363af66103702",
+      "replaceText": {
+        "x≠0，且點需滿足 xy=k。": "k≠0、x≠0，且點需滿足 xy=k。",
+        "所有滿足 y=k/x、x≠0 的點集合。": "固定非零常數 k 下，所有滿足 y=k/x 且 x≠0 的點集合。",
+        "a≠0": "k≠0、a≠0"
+      }
+    },
+    {
+      "lectureId": "u06-s009-lecture-r1",
+      "expectedContentSha256": "c908456562f067f77a4b9d154dc628b05d7185e5d4814291a86f838c524f8eeb",
+      "replaceText": {
+        " 克": " 公克",
+        "六十克": "六十公克",
+        "十五克": "十五公克"
+      }
+    },
+    {
+      "lectureId": "u06-s011-lecture-r1",
+      "expectedContentSha256": "9ce67d21a9d7c96174672b1922254a19b204c1e2e5a0b42b96ffeaa7caa7deb9",
+      "replaceText": {
+        " 克": " 公克",
+        "一千零五十克": "一千零五十公克",
+        "七百克": "七百公克"
+      }
+    },
+    {
+      "lectureId": "u06-s012-lecture-r1",
+      "expectedContentSha256": "71d7f7560a554ecf101dc76c3f3c6fe157598e37f16355e45ccbe17c949cc70f",
+      "replaceText": {
+        " 克": " 公克",
+        "每克": "每公克",
+        "每百克": "每百公克"
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估水蒸氣凝結報告時，哪項說明正確？",
+  "stem": "某樣品由氣態變液態，再由液態變固態，依序是哪兩個過程？",
   "options": [
-    "水蒸氣變成液態水稱為凝固，液態水變成冰稱為凝結",
-    "固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹",
-    "冰吸熱熔化成水，水吸熱汽化；水蒸氣冷卻凝結，水再凝固成冰",
-    "液體和氣體都沒有固定體積，所以兩者的性質完全相同"
+    "凝結、凝固",
+    "汽化、熔化",
+    "凝固、凝結",
+    "熔化、汽化"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「水蒸氣變成液態水稱為凝固，液態水變成冰稱為凝結」不成立；冰吸熱熔化成水，水吸熱汽化；水蒸氣冷卻凝結，水再凝固成冰。"
+      "isCorrect": true,
+      "reason": "氣到液為凝結，液到固為凝固。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹」不成立；固體粒子緊密且在平衡位置附近振動，液體粒子可相對移動，氣體粒子間距大且運動自由。"
+      "reason": "方向都相反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「冰吸熱熔化成水，水吸熱汽化；水蒸氣冷卻凝結，水再凝固成冰」。"
+      "isCorrect": false,
+      "reason": "順序與定義不符。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「液體和氣體都沒有固定體積，所以兩者的性質完全相同」不成立；固體保有固定形狀與體積；液體有固定體積但隨容器改變形狀；氣體充滿容器。"
+      "reason": "兩者都是加熱方向。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "序列推理"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "水蒸氣變成液態水稱為凝固，液態水變成冰稱為凝結",
-    "固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹",
-    "液體和氣體都沒有固定體積，所以兩者的性質完全相同"
+    "汽化、熔化",
+    "凝固、凝結",
+    "熔化、汽化"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-1",
       "AUTH-NATURAL-LC-AB-4-2",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

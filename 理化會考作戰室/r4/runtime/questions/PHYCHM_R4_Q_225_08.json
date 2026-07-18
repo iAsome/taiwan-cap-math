@@ -14,34 +14,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "報告整理傳送帶摩擦資料，哪項敘述合理？",
+  "stem": "若斜面上物體被外力拉得有向上滑動趨勢，靜摩擦力向何方？",
   "options": [
-    "摩擦力方向用來阻礙接觸面間的相對運動或滑動趨勢",
-    "物體到月球後原子自動減少，因此質量和重量都以相同比例減少",
-    "受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右",
-    "摩擦力在所有情境都必然與物體質心的當下運動方向相反"
+    "此時物體沿斜面向上",
+    "垂直斜面向內",
+    "沿斜面向下",
+    "一定為零"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「摩擦力方向用來阻礙接觸面間的相對運動或滑動趨勢，不一定和物體運動方向相反」。"
+      "isCorrect": false,
+      "reason": "此時物體沿斜面向上不成立。滑動趨勢改向上，靜摩擦相應改向下。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「物體到月球後原子自動減少，因此質量和重量都以相同比例減少」不成立；同一物體到月球後組成與質量不變，但因當地重力場較弱，重量變小。"
+      "reason": "垂直斜面向內不成立。滑動趨勢改向上，靜摩擦相應改向下。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右」不成立；受力圖只畫作用在目標物上的力，箭頭方向是力方向；物體向右運動不代表必有向右力。"
+      "isCorrect": true,
+      "reason": "滑動趨勢改向上，靜摩擦相應改向下。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「摩擦力在所有情境都必然與物體質心的當下運動方向相反」不成立；摩擦力方向用來阻礙接觸面間的相對運動或滑動趨勢，不一定和物體運動方向相反。"
+      "reason": "一定為零不成立。滑動趨勢改向上，靜摩擦相應改向下。"
     }
   ],
   "difficulty": "advanced",
@@ -49,16 +49,16 @@
     "關係應用",
     "多步驟推理"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體到月球後原子自動減少，因此質量和重量都以相同比例減少",
-    "受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右",
-    "摩擦力在所有情境都必然與物體質心的當下運動方向相反"
+    "此時物體沿斜面向上",
+    "垂直斜面向內",
+    "一定為零"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-10",
       "AUTH-NATURAL-LC-EB-4-11",
@@ -69,19 +69,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解電流電壓與電阻概念，哪項修正合理？",
+  "stem": "表中電阻的單位為Ω，對應物理意義電壓與電流比值與數值12。重做後要先驗證哪個量測條件？",
   "options": [
-    "電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙",
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路"
+    "數值同為 6.0 就互換 A 與 V，並漏掉核對量測意義和儀器接法",
+    "解題時將 6.0 V 記成 6.0 A，卻仍稱為元件兩端的電壓",
+    "必須同時核對量測位置與儀器接法",
+    "主張電阻是電荷每秒流過多少"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙」。"
+      "isCorrect": false,
+      "reason": "數值同為 6.0 就互換 A 與 V，卻未核對量測意義和儀器接法，結果會錯判單位。數值相同也不能互換名稱與單位；單位差異若未通過區分電流電壓與電阻概念對物理意義的控制，就不能只歸給數值。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「短路和斷路都只會使電流完全為零，不可能出現過大電流」不成立；斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險。"
+      "reason": "解題時錯將 6.0 V 記成 6.0 A，卻仍稱為元件兩端的電壓，結果會錯判單位。前三列物理意義與單位相符；數值的數值若未依物理意義核對，會使單位無法通過區分電流電壓與電阻概念檢查。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「電流、電壓與電阻是同一物理量的三個名稱，單位也可互換」不成立；電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。"
+      "isCorrect": true,
+      "reason": "必須同時核對量測位置與儀器接法。電壓列的物理意義為每單位電荷能量差，數值為6.0；電阻列的物理意義為電壓與電流比值，數值為12。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路」不成立；電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整。"
+      "reason": "誤以為電阻是電荷每秒流過多少，混淆電阻與電流的定義。電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙；物理意義未列入區分電流電壓與電阻概念時，單位的數值大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路"
+    "數值同為 6.0 就互換 A 與 V，並漏掉核對量測意義和儀器接法",
+    "解題時將 6.0 V 記成 6.0 A，卻仍稱為元件兩端的電壓",
+    "主張電阻是電荷每秒流過多少"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

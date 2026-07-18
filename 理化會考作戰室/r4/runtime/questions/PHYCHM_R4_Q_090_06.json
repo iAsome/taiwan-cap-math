@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解配平方程式判斷粒子數比例，哪項修正合理？",
+  "stem": "哪組不是1：3：2的等值比例？",
   "options": [
-    "CO₂ 的相對分子量為 12＋16＝28，因為同種元素只需加一次",
-    "生成物乙應為 29 g，因為要把已知生成物加到反應物上",
-    "只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比",
-    "讀比例前應確認方程式已配平"
+    "2：6：4",
+    "5：12：10",
+    "3：9：6",
+    "4：12：8不是1：3：2，因三數都較大"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「CO₂ 的相對分子量為 12＋16＝28，因為同種元素只需…」不成立；CO₂ 的相對分子量為 12＋2×16＝44；必須把每種原子量乘以其下標再加總。"
+      "reason": "同乘2。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「生成物乙應為 29 g，因為要把已知生成物加到反應物上」不成立；密閉系統反應物共 18 g，已知生成物甲 11 g，資料表的乙應補為 7 g。"
+      "isCorrect": true,
+      "reason": "中項應為15。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比」不成立；一系列實驗中若 A、B 剛好完全反應的消耗質量一直維持 2：3，可以該恆定比來推算同反應資料。"
+      "reason": "同乘3。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「配平式 N₂＋3H₂→2NH₃ 表示粒子數比 1：3：2，讀比例前應確認方程式已配平」。"
+      "isCorrect": false,
+      "reason": "同乘4。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "比例檢查"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "CO₂ 的相對分子量為 12＋16＝28，因為同種元素只需加一次",
-    "生成物乙應為 29 g，因為要把已知生成物加到反應物上",
-    "只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比"
+    "2：6：4",
+    "3：9：6",
+    "4：12：8不是1：3：2，因三數都較大"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-2",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

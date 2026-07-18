@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解聲音傳播需要介質，哪項修正合理？",
+  "stem": "在空氣、清水與鋼棒中都可偵測到同一敲擊造成的振動。哪項結論合理？",
   "options": [
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "真空中的聲音傳得最快，因為沒有空氣阻力",
-    "聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定"
+    "只有氣體可傳聲",
+    "三種物態都可傳聲，但傳播特性可不同",
+    "液體與固體內聲速必完全相同",
+    "介質種類不影響任何傳播量"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險」不成立；噪音風險同時與聲音強度級和暴露時間有關；較大聲音的安全暴露時間應更短。"
+      "reason": "實驗已在水與鋼中偵測到聲音。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「真空中的聲音傳得最快，因為沒有空氣阻力」不成立；聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質。"
+      "isCorrect": true,
+      "reason": "氣、液、固皆有粒子可傳遞機械擾動。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質」。"
+      "isCorrect": false,
+      "reason": "不同介質中的粒子作用不同，聲速不必相同。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定」不成立；音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止。"
+      "reason": "介質種類會影響聲速與能量損耗。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "真空中的聲音傳得最快，因為沒有空氣阻力",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定"
+    "只有氣體可傳聲",
+    "液體與固體內聲速必完全相同",
+    "介質種類不影響任何傳播量"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

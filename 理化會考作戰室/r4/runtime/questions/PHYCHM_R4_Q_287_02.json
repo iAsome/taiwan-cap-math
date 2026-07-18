@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "根據簡易馬達紀錄，哪項判讀合理？",
+  "stem": "並列乙與丙，兩者線圈圈數是100、100，電流是0.5 A、1.0 A。處理線圈圈數後，電流要依比較通電線圈與永久磁鐵判斷大小、方向或類別？",
   "options": [
-    "通電線圈會形成類似棒形磁鐵的磁場，可藉改變電流、線圈圈數與鐵心調整電磁鐵強弱",
-    "只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流",
-    "發電機和電動機都只將電能轉成熱能，與機械能無關",
-    "變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大"
+    "做比較時圈數影響時同時改變電流和鐵心，卻把差異全歸因於圈數",
+    "乙丙顯示電流增加會增強",
+    "把甲 50 圈吸 8 枚、乙 100 圈吸 15 枚，卻判定圈數增加使磁力減弱",
+    "主張電磁鐵斷電後一定完全無殘磁，不必考慮鐵心材料"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「通電線圈會形成類似棒形磁鐵的磁場，可藉改變電流、線圈圈數與鐵心調整電磁鐵強弱」。"
+      "isCorrect": false,
+      "reason": "做比較時圈數影響時同時改變電流和鐵心，卻把差異全歸因於圈數，結果會錯判吸起迴紋針數。比較單一變因時其餘條件要固定；吸起迴紋針數差異若未通過比較通電線圈與永久磁鐵對線圈圈數的控制，就不能只歸給電流。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流」不成立；穿過線圈的磁通量發生變化時可產生感應電動勢；電路閉合時才會有感應電流。"
+      "isCorrect": true,
+      "reason": "乙丙顯示電流增加會增強。乙列的線圈圈數為100、電流為0.5 A；丙列的線圈圈數為100、電流為1.0 A。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「發電機和電動機都只將電能轉成熱能，與機械能無關」不成立；發電機主要將機械能轉電能，電動機主要將電能轉機械能，兩者能量流向相反。"
+      "reason": "解題時誤把甲 50 圈吸 8 枚、乙 100 圈吸 15 枚，卻判定圈數增加使磁力減弱。甲乙顯示圈數增加磁效應增強；電流的數值若未依線圈圈數核對，會使吸起迴紋針數無法通過比較通電線圈與永久磁鐵檢查。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大」不成立；變壓器以交流造成變動磁場，改變電壓以利輸電；遠距離高電壓可在同功率下降低電流與線路損耗。"
+      "reason": "誤以為電磁鐵斷電後一定完全無殘磁，不必考慮鐵心材料。通電線圈會形成類似棒形磁鐵的磁場，可藉改變電流、線圈圈數與鐵心調整電磁鐵強弱；線圈圈數未列入比較通電線圈與永久磁鐵時，吸起迴紋針數的電流大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
+    "辨認",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流",
-    "發電機和電動機都只將電能轉成熱能，與機械能無關",
-    "變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大"
+    "做比較時圈數影響時同時改變電流和鐵心，卻把差異全歸因於圈數",
+    "把甲 50 圈吸 8 枚、乙 100 圈吸 15 枚，卻判定圈數增加使磁力減弱",
+    "主張電磁鐵斷電後一定完全無殘磁，不必考慮鐵心材料"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-KC-4-4",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

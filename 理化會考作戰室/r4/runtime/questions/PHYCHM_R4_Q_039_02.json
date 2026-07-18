@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "根據砂鹽混合物紀錄，哪項判讀合理？",
+  "stem": "純度的分母應是哪個量？",
   "options": [
-    "回收率比較取回的目標物比例，純度比較回收物中目標成分比例；高回收率不保證高純度",
-    "可先蒸發乾燥沙鹽混合物，這樣便能在未加水前分開兩種固體",
-    "將容器完全密閉後加熱可防止溶劑逃散，是最安全的分離方法",
-    "只要回收物的總質量較大，就能同時證明回收率和純度都較高"
+    "操作時間",
+    "回收物總質量",
+    "原樣總質量，因純度要和起始樣品比較",
+    "原溶劑質量"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「回收率比較取回的目標物比例，純度比較回收物中目標成分比例；高回收率不保證高純度」。"
+      "isCorrect": false,
+      "reason": "操作時間不是組成物質的質量，不能作純度分母。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「可先蒸發乾燥沙鹽混合物，這樣便能在未加水前分開兩種固體」不成立；分離沙與食鹽時，可依序加水溶鹽、過濾取沙、蒸發或結晶取鹽，每步只利用一個性質差。"
+      "isCorrect": true,
+      "reason": "目標物占回收物比例。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「將容器完全密閉後加熱可防止溶劑逃散，是最安全的分離方法」不成立；加熱時容器不可密閉，熱過濾要用合適器材，易燃溶劑應遠離明火並在通風處操作。"
+      "reason": "原樣總質量是回收率的比較基準，純度則以回收物總量為分母。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要回收物的總質量較大，就能同時證明回收率和純度都較高」不成立；回收率比較取回的目標物比例，純度比較回收物中目標成分比例；高回收率不保證高純度。"
+      "reason": "原溶劑質量不屬於回收固體，不能作純度分母。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
-    "概念理解"
+    "公式辨認"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "可先蒸發乾燥沙鹽混合物，這樣便能在未加水前分開兩種固體",
-    "將容器完全密閉後加熱可防止溶劑逃散，是最安全的分離方法",
-    "只要回收物的總質量較大，就能同時證明回收率和純度都較高"
+    "操作時間",
+    "原樣總質量，因純度要和起始樣品比較",
+    "原溶劑質量"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-4",
       "AUTH-NATURAL-LC-CA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

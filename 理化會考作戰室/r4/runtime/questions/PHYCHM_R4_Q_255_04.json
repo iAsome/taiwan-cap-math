@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查輪軸紀錄，哪項判讀正確？",
+  "stem": "誤以為定滑輪一定把施力減半，忽略它理想上主要改變方向。用比較定滑輪動滑輪與滑輪組檢查這個做法，理想施力應如何重判？",
   "options": [
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關",
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功",
-    "理想定滑輪主要改變施力方向；動滑輪或滑輪組可由支撐繩段數分擔負載而省力",
-    "機械只要省力就一定同時省距離與省時，不存在任何交換"
+    "解題時將自由端拉繩距離與負載上升距離視為相同，忽略省力須多拉距離",
+    "主張定滑輪一定把施力減半",
+    "動滑輪或滑輪組可由支撐繩段數分擔負載而省力",
+    "計算承重繩段時把並漏掉直接支撐移動滑輪的繩段也算入"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關」不成立；槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果。"
+      "reason": "解題時錯將自由端拉繩距離與負載上升距離視為相同，忽略省力須多拉距離。理想定滑輪主要改變施力方向；承重繩段數未列入比較定滑輪動滑輪與滑輪組時，理想施力的負載大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功」不成立；輪軸利用不同力臂，齒輪利用齒數比改變轉速與力矩，斜面以增加距離換取較小力。"
+      "reason": "誤以為定滑輪一定把施力減半，忽略它理想上主要改變方向。理想定滑輪主要改變施力方向；照原做法會把理想施力算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「理想定滑輪主要改變施力方向；動滑輪或滑輪組可由支撐繩段數分擔負載而省力」。"
+      "reason": "動滑輪或滑輪組可由支撐繩段數分擔負載而省力。滑輪組乙列的承重繩段數為4，負載為120 N；定滑輪列的承重繩段數為1，負載為120 N。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「機械只要省力就一定同時省距離與省時，不存在任何交換」不成立；省力機械通常要施力移動較長距離；改變方向不必然省力，「省時」與「省力」要分開。"
+      "reason": "計算承重繩段時把卻未直接支撐移動滑輪的繩段也算入，結果會錯判理想施力。繩段必須直接支撐移動負載才計入；理想施力差異若未通過比較定滑輪動滑輪與滑輪組對承重繩段數的控制，就不能只歸給負載。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀",
+    "條件判斷",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關",
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功",
-    "機械只要省力就一定同時省距離與省時，不存在任何交換"
+    "解題時將自由端拉繩距離與負載上升距離視為相同，忽略省力須多拉距離",
+    "主張定滑輪一定把施力減半",
+    "計算承重繩段時把並漏掉直接支撐移動滑輪的繩段也算入"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估平面鏡成像報告時，哪項說明正確？",
+  "stem": "物體在鏡前 20 cm，鏡面向物體平移 5 cm，而物體不動。新的像離物體多遠？",
   "options": [
-    "每次可同時移動鏡面、改入射點並從鏡面量角，只要畫出光線就能驗證",
-    "平面鏡成像位置可將兩條反射光線反向延長至鏡後交點，得到無法投屏的虛像",
-    "平面鏡像是實際光線在鏡後交會的實像，可把紙屏放在鏡後接到",
-    "影子與針孔成像表示光會自動繞過遮蔽物後沿曲線前進"
+    "40 cm",
+    "30 cm",
+    "20 cm",
+    "10 cm"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「每次可同時移動鏡面、改入射點並從鏡面量角，只要畫出光線就能…」不成立；驗證反射定律應固定鏡面與入射點，準確畫法線，改變入射角並成對記錄入射、反射角。"
+      "reason": "原物像距 40 cm；鏡靠近後物距變 15 cm。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「平面鏡成像位置可將兩條反射光線反向延長至鏡後交點，得到無法投屏的虛像」。"
+      "reason": "新物距 15 cm，新物像距＝2×15＝30 cm。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「平面鏡像是實際光線在鏡後交會的實像，可把紙屏放在鏡後接到」不成立；平面鏡成像位置可將兩條反射光線反向延長至鏡後交點，得到無法投屏的虛像。"
+      "reason": "20 cm 只接近單側距離概念。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「影子與針孔成像表示光會自動繞過遮蔽物後沿曲線前進」不成立；均勻介質中光沿直線傳播，因而形成清楚影子並使針孔可將景物倒立成像。"
+      "reason": "物像總距是兩倍新物距 15 cm。"
     }
   ],
   "difficulty": "transfer",
@@ -47,16 +47,16 @@
     "限制評估",
     "高層推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "每次可同時移動鏡面、改入射點並從鏡面量角，只要畫出光線就能驗證",
-    "平面鏡像是實際光線在鏡後交會的實像，可把紙屏放在鏡後接到",
-    "影子與針孔成像表示光會自動繞過遮蔽物後沿曲線前進"
+    "40 cm",
+    "20 cm",
+    "10 cm"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-6",
       "AUTH-NATURAL-LC-KA-4-7",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

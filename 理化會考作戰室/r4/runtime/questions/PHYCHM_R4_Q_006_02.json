@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據秒表重複計時紀錄，哪項判讀合理？",
+  "stem": "讀值 7.8、8.1、7.9、8.0 s 的全距為？",
   "options": [
-    "只要答案含有數字，就可把它當成直接測量的基本物理量",
-    "儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺",
-    "刻度儀器只能記到最小刻度，任何估讀都是作假",
-    "量得 9.8、10.1、10.0 s 的平均約為 10.0 s"
+    "31.8 s",
+    "0.2 s",
+    "0.3 s",
+    "0.1 s"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要答案含有數字，就可把它當成直接測量的基本物理量」不成立；長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得。"
+      "reason": "這是總和。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺」不成立；量約 12 cm 的鉛筆適合用毫米刻度直尺；儀器量程要大於待測量，最小刻度要能分辨所需差異。"
+      "reason": "不是最大減最小。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「刻度儀器只能記到最小刻度，任何估讀都是作假」不成立；視線應與刻度面垂直，先讀到最小刻度，再估讀一位，並連同單位記錄。"
+      "isCorrect": true,
+      "reason": "8.1−7.8＝0.3。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「量得 9.8、10.1、10.0 s 的平均約為 10.0 s，差異可用範圍或離散情形描述，不應偷刪不同值」。"
+      "isCorrect": false,
+      "reason": "只比較相鄰兩筆。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
-    "概念理解"
+    "關係判讀"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要答案含有數字，就可把它當成直接測量的基本物理量",
-    "儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺",
-    "刻度儀器只能記到最小刻度，任何估讀都是作假"
+    "31.8 s",
+    "0.2 s",
+    "0.1 s"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

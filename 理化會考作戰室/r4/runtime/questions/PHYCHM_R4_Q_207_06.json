@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解速度時間圖判斷加速減速與方向，哪項修正合理？",
+  "stem": "速度由 -2 m/s 變為 +1 m/s，必經過哪一狀態？",
   "options": [
-    "速度由 −2 變 −6 m/s 則是負向快慢增大",
-    "速度數值變得更負就一定是減速，無需比較速度大小與方向",
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快"
+    "物體的速率始終不變",
+    "物體的位置必經過原點",
+    "速度曾等於零並改變方向",
+    "物體的加速度必等於零"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「速度—時間圖上數值由 2 增至 6 m/s 表示正向加速；速度由 −2 變 −6 m/s 則是負向快慢增大」。"
+      "isCorrect": false,
+      "reason": "物體的速率始終不變不成立。連續變化由負到正必先通過速度零點，之後方向反轉。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「速度數值變得更負就一定是減速，無需比較速度大小與方向」不成立；速度—時間圖上數值由 2 增至 6 m/s 表示正向加速；速度由 −2 變 −6 m/s 則是…。"
+      "reason": "物體的位置必經過原點不成立。連續變化由負到正必先通過速度零點，之後方向反轉。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑」不成立；位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置。"
+      "isCorrect": true,
+      "reason": "連續變化由負到正必先通過速度零點，之後方向反轉。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快」不成立；位置—時間圖的斜率為位置變化除以時間變化；斜率絕對值較大表示速度大小較大。"
+      "reason": "物體的加速度必等於零不成立。連續變化由負到正必先通過速度零點，之後方向反轉。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "速度數值變得更負就一定是減速，無需比較速度大小與方向",
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快"
+    "物體的速率始終不變",
+    "物體的位置必經過原點",
+    "物體的加速度必等於零"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

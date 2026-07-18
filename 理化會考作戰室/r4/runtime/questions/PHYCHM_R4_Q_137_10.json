@@ -16,51 +16,50 @@
     "AUTH-NATURAL-LP-PO-4-2"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄根據單一變因實驗下結論，哪項符合資料？",
+  "stem": "量筒讀值多次為24、25、24 mL，合理報告方式為何？",
   "options": [
-    "所有玻璃器材的測量精度與耐熱性都一樣，燒杯可代替任何量測工具",
-    "只有藥品顏色鮮豔時才需看危害標示，無色溶液都可安全徒手處理",
-    "加熱需選可受熱器材並依藥品性質選熱源",
-    "未知氣體應把鼻子靠近容器深吸，稀釋時將水一次倒入濃酸可最快散熱"
+    "只留25 mL",
+    "刪除全部",
+    "保留各次並計算代表值與變異",
+    "改寫成完全相同"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「所有玻璃器材的測量精度與耐熱性都一樣，燒杯可代替任何量測工具」不成立；量取 25 mL 溶液適合用量筒而非燒杯；加熱需選可受熱器材並依藥品性質選熱源。"
+      "reason": "選最大值有偏誤。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只有藥品顏色鮮豔時才需看危害標示，無色溶液都可安全徒手處理」不成立；操作前應讀取藥品名稱、濃度與危害標示，依飛濺、腐蝕、易燃等風險佩戴適當護目鏡與手套。"
+      "reason": "資料仍有用途。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「量取 25 mL 溶液適合用量筒而非燒杯；加熱需選可受熱器材並依藥品性質選熱源」。"
+      "reason": "重複資料可呈現量測變動。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「未知氣體應把鼻子靠近容器深吸，稀釋時將水一次倒入濃酸可最快…」不成立；聞氣體要用手輕扇少量氣體；加熱試管口不對人；稀釋濃酸應將酸緩慢加入水。"
+      "reason": "竄改不誠實。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "資料處理"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "所有玻璃器材的測量精度與耐熱性都一樣，燒杯可代替任何量測工具",
-    "只有藥品顏色鮮豔時才需看危害標示，無色溶液都可安全徒手處理",
-    "未知氣體應把鼻子靠近容器深吸，稀釋時將水一次倒入濃酸可最快散熱"
+    "只留25 mL",
+    "刪除全部",
+    "改寫成完全相同"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段探究與實作學習表現; 臺灣國中教育會考自然科實驗設計、安全與資料判讀題型",
     "sourceRefs": [
       "AUTH-NATURAL-LP-AI-4-1",
       "AUTH-NATURAL-LP-AI-4-2",
@@ -73,19 +72,5 @@
       "AUTH-NATURAL-LP-PO-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

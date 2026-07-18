@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估水壩深度報告時，哪項說明正確？",
+  "stem": "大活塞列給出面積50 cm²，另記施力待算及壓力與小活塞相同。用帕斯卡原理解釋液壓裝置重做量測時，還要記下面積哪個條件？",
   "options": [
-    "密閉氣體體積變小時粒子數自動減少，所以壓力也一定減小",
-    "液壓機可以大面積活塞得到較大力",
-    "液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量",
-    "固體壓力是力乘面積，所以面積越大壓力必然越大"
+    "把在流體外漏、裝置未密閉時仍直接套用理想帕斯卡原理",
+    "主張小活塞增加的壓力傳不到大活塞，所以液壓機無法放大作用力",
+    "僅寫輸出力變大",
+    "若有摩擦，輸出還會低於理想值"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「密閉氣體體積變小時粒子數自動減少，所以壓力也一定減小」不成立；密閉的定量氣體在溫度近似不變時，體積被壓縮而變小，粒子撞壁更頻繁，壓力較大。"
+      "reason": "解題時誤把在流體外漏、裝置未密閉時仍直接套用理想帕斯卡原理，結果會錯判壓力。帕斯卡原理說明密閉流體上的壓力變化可傳至各處；面積未列入用帕斯卡原理解釋液壓裝置時，壓力的施力大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「帕斯卡原理說明密閉流體上的壓力變化可傳至各處；液壓機可以大面積活塞得到較大力」。"
+      "isCorrect": false,
+      "reason": "誤以為小活塞增加的壓力傳不到大活塞，所以液壓機無法放大作用力。帕斯卡原理說明密閉流體上的壓力變化可傳至各處；照原做法會把壓力算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量」不成立；帕斯卡原理說明密閉流體上的壓力變化可傳至各處；液壓機可以大面積活塞得到較大力。"
+      "reason": "僅寫輸出力變大，便宣稱液壓機同時省力、省距離並創造能量，結果會錯判壓力。液壓放大力時，大活塞移動距離較短；壓力差異若未通過用帕斯卡原理解釋液壓裝置對面積的控制，就不能只歸給施力。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「固體壓力是力乘面積，所以面積越大壓力必然越大」不成立；固體壓力 p＝F/A；100 N 均勻作用在 0.020 m² 面積上，壓力為 5000 Pa。"
+      "isCorrect": true,
+      "reason": "若有摩擦，輸出還會低於理想值。裝置狀態列的面積為密閉，施力為忽略摩擦；小活塞列的面積為5.0 cm²，施力為20 N。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "密閉氣體體積變小時粒子數自動減少，所以壓力也一定減小",
-    "液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量",
-    "固體壓力是力乘面積，所以面積越大壓力必然越大"
+    "把在流體外漏、裝置未密閉時仍直接套用理想帕斯卡原理",
+    "主張小活塞增加的壓力傳不到大活塞，所以液壓機無法放大作用力",
+    "僅寫輸出力變大"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

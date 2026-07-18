@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組秒表重複計時資料，哪項判讀仍合理？",
+  "stem": "手機記錄步數後，以步數乘平均步幅估計路程。此路程最適合標成什麼？",
   "options": [
-    "2.35 m＝0.0235 cm，因為換成較小單位時數字也應變小",
-    "數位寫得越多就越精確，因此可記為 12.347826 cm",
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可",
-    "密度、速率與平均值則是用直接測得的量計算而得"
+    "直接量測值，因手機感測器會直接量出完整路程",
+    "基本單位，因結果用公尺",
+    "估算值，因仍使用步幅模型計算",
+    "無效值，因不能出現乘法"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「2.35 m＝0.0235 cm，因為換成較小單位時數字也…」不成立；2.35 m＝235 cm；公制換算要保持同一物理量，並讓數值和單位的改變相互補償。"
+      "reason": "感測器直接記步數，不直接量完整路程。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「數位寫得越多就越精確，因此可記為 12.347826 cm」不成立；最小刻度 0.1 cm 的直尺，測量值可合理記至 0.01 cm；多寫更多位不會增加儀器資訊。"
+      "reason": "公尺是單位，不是數值取得方式。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「三次不相同表示實驗失敗，只保留最接近預期的 10.0 s …」不成立；量得 9.8、10.1、10.0 s 的平均約為 10.0 s，差異可用範圍或離散情形描述，不…。"
+      "isCorrect": true,
+      "reason": "路程依步數與平均步幅的模型估算。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得」。"
+      "isCorrect": false,
+      "reason": "乘法本身不使結果無效。"
     }
   ],
   "difficulty": "transfer",
@@ -48,16 +48,16 @@
     "情境遷移",
     "應用"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "2.35 m＝0.0235 cm，因為換成較小單位時數字也應變小",
-    "數位寫得越多就越精確，因此可記為 12.347826 cm",
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可"
+    "直接量測值，因手機感測器會直接量出完整路程",
+    "基本單位，因結果用公尺",
+    "無效值，因不能出現乘法"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

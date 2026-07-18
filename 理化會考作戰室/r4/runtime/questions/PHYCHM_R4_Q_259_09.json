@@ -10,70 +10,56 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對防靜電接地結果，哪項說法正確？",
+  "stem": "摩擦前和電子轉移在玻璃棒為中性、失去 3 單位電子，到絲布為中性、得到 3 單位電子。從說明摩擦可使物體帶靜電的定義看，摩擦前與電子轉移結果如何連結？",
   "options": [
-    "帶正電物體吸引另一物體就唯一證明另一物必帶負電",
-    "物體帶負電是因大量質子從別的物體移入，電子位置不會改變",
-    "靜電感應必須先接觸摩擦，未接觸的導體內電荷不可能重新分布",
-    "使兩者帶等量異號電荷"
+    "解題時將摩擦生電描述成摩擦創造正電荷與負電荷，而非電子轉移",
+    "系統與外界有電荷交換時仍主張兩物體一定帶等量異號電",
+    "把玻璃棒失去 3 單位電子後被判成 −3，顛倒電子得失與電性",
+    "電子由玻璃棒移到絲布，兩者帶等量異號電，系統總電荷仍為零"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「帶正電物體吸引另一物體就唯一證明另一物必帶負電」不成立；帶電物可藉靜電感應吸引電中性物，因此只觀察吸引不能確定另一物的電性。"
+      "reason": "解題時錯將摩擦生電描述成摩擦創造正電荷與負電荷，而非電子轉移，結果會錯判摩擦後。兩個原本中性且與外界絕緣的不同材料摩擦時，電子可由一物轉移至另一物，使兩者帶等量異號電荷；照原做法會把摩擦後算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「物體帶負電是因大量質子從別的物體移入，電子位置不會改變」不成立；摩擦過程中主要是電子在物體間轉移，原子核內質子不會在一般摩擦中跑到另一物體。"
+      "reason": "系統與外界有電荷交換時仍主張兩物體一定帶等量異號電。結果限於與外界絕緣的系統；摩擦後差異若未通過說明摩擦可使物體帶靜電對摩擦前的控制，就不能只歸給電子轉移。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「靜電感應必須先接觸摩擦，未接觸的導體內電荷不可能重新分布」不成立；帶電物靠近導體時可使導體內電荷重新分布，雖總電量可仍為零，近端與遠端電性分布不同。"
+      "reason": "解題時誤把玻璃棒失去 3 單位電子後被判成 −3，顛倒電子得失與電性。電子由玻璃棒移到絲布，兩者帶等量異號電，系統總電荷仍為零；電子轉移的數值若未依摩擦前核對，會使摩擦後無法通過說明摩擦可使物體帶靜電檢查。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「兩個原本中性且與外界絕緣的不同材料摩擦時，電子可由一物轉移至另一物，使兩者帶等量異號電荷」。"
+      "reason": "電子由玻璃棒移到絲布，兩者帶等量異號電，系統總電荷仍為零。玻璃棒列的摩擦前為中性、電子轉移為失去 3 單位電子；絲布列的摩擦前為中性、電子轉移為得到 3 單位電子。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
     "證據判讀",
-    "分析"
+    "推論"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "帶正電物體吸引另一物體就唯一證明另一物必帶負電",
-    "物體帶負電是因大量質子從別的物體移入，電子位置不會改變",
-    "靜電感應必須先接觸摩擦，未接觸的導體內電荷不可能重新分布"
+    "解題時將摩擦生電描述成摩擦創造正電荷與負電荷，而非電子轉移",
+    "系統與外界有電荷交換時仍主張兩物體一定帶等量異號電",
+    "把玻璃棒失去 3 單位電子後被判成 −3，顛倒電子得失與電性"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KC-4-1",
       "AUTH-NATURAL-LC-KC-4-2",
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

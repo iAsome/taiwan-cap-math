@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組溶液導電比較資料，哪項判讀仍合理？",
+  "stem": "未知液體在不同批次測得不同組成比例，最合理的初步分類是？",
   "options": [
-    "20 g 食鹽加 80 g 水的濃度是 20÷80×100%＝25%",
-    "250 g、12% 的溶液含溶質 262 g，因為應把百分數直接加上溶液質量",
-    "5 ppm 和 5% 完全相同，都表示每一百份中有 5 份",
-    "空氣、海水等由多種物質以可變比例組成"
+    "必定為純化合物",
+    "混合物",
+    "必定為單一元素",
+    "因是液體所以無法分類"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「20 g 食鹽加 80 g 水的濃度是 20÷80×100…」不成立；20 g 食鹽加 80 g 水形成 100 g 溶液，重量百分濃度為 20%。"
+      "reason": "純化合物組成固定。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「250 g、12% 的溶液含溶質 262 g，因為應把百分…」不成立；250 g、12% 的溶液含溶質 30 g，因為溶質質量＝濃度×溶液質量。"
+      "isCorrect": true,
+      "reason": "比例可變支持多成分。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「5 ppm 和 5% 完全相同，都表示每一百份中有 5 份」不成立；5 ppm 表示在題目指定的比例基準下，每一百萬份中有 5 份目標成分。"
+      "reason": "元素樣品組成不隨批次任意變。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「純物質在固定條件下有固定組成；空氣、海水等由多種物質以可變比例組成，是混合物」。"
+      "isCorrect": false,
+      "reason": "狀態不妨礙分類。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "資料推論"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "20 g 食鹽加 80 g 水的濃度是 20÷80×100%＝25%",
-    "250 g、12% 的溶液含溶質 262 g，因為應把百分數直接加上溶液質量",
-    "5 ppm 和 5% 完全相同，都表示每一百份中有 5 份"
+    "必定為純化合物",
+    "必定為單一元素",
+    "因是液體所以無法分類"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AB-4-4",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理電費估算資料，哪項敘述合理？",
+  "stem": "解題時誤把改用過粗保險絲後仍宣稱能更快切斷過載電流，結果會錯判預期保護。按辨識保險絲斷路器與接地用途檢查保險絲／斷路器與接地線時，哪一步先做？",
   "options": [
-    "電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道",
-    "保險絲或斷路器在過大電流時斷開回路",
-    "電阻只會降低溫度，過載與短路都不會使導線發熱",
-    "只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關"
+    "主張三孔插頭的接地腳拆掉不會改變漏電時的風險",
+    "接地不能取代斷路器，也不能保證可安全觸碰帶電設備",
+    "解題時將接地線說成平常供電必經路徑，與火線、零線功能混在一起",
+    "主張有接地就不需要合規保險絲或斷路器"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道」不成立；基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算。"
+      "reason": "誤以為三孔插頭的接地腳拆掉不會改變漏電時的風險。保險絲或斷路器在過大電流時斷開回路；保險絲／斷路器未列入辨識保險絲斷路器與接地用途時，預期保護的接地線大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「保險絲或斷路器在過大電流時斷開回路；接地將漏電提供低阻安全路徑，三孔插頭不可任意拆除」。"
+      "reason": "接地不能取代斷路器，也不能保證可安全觸碰帶電設備。改用過粗保險絲列的保險絲／斷路器為不易及時熔斷，接地線為不補救；過載列的保險絲／斷路器為過大電流時斷開，接地線為通常無故障電流。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「電阻只會降低溫度，過載與短路都不會使導線發熱」不成立；過載是同一路線總電流過大，短路是低電阻路徑造成大電流；兩者均可因電阻發熱引起火災。"
+      "reason": "解題時錯將接地線說成平常供電必經路徑，與火線、零線功能混在一起，結果會錯判預期保護。保險絲或斷路器在過大電流時斷開回路；照原做法會把預期保護算錯或判反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關」不成立；安全節能做法包括不超過延長線額定、保持線材完好乾燥、不用時關閉高功率電器並比較實際用電量。"
+      "reason": "誤以為有接地就不需要合規保險絲或斷路器，結果會錯判預期保護。保護裝置規格必須符合線路；預期保護差異若未通過辨識保險絲斷路器與接地用途對保險絲／斷路器的控制，就不能只歸給接地線。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道",
-    "電阻只會降低溫度，過載與短路都不會使導線發熱",
-    "只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關"
+    "主張三孔插頭的接地腳拆掉不會改變漏電時的風險",
+    "解題時將接地線說成平常供電必經路徑，與火線、零線功能混在一起",
+    "主張有接地就不需要合規保險絲或斷路器"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

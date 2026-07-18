@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解反應物與生成物，哪項修正合理？",
+  "stem": "反應後仍剩餘的過量 A 應稱為什麼？",
   "options": [
-    "生成物圖可任意少畫或多畫原子，因為化學反應不需保留原子",
-    "看到無色氣泡就能直接寫成二氧化碳，不需再作任何檢驗",
-    "文字反應式中箭頭左側是反應物，右側是生成物；例如碳＋氧氣→二氧化碳",
-    "反應前用一種方法、反應後用另一種方法測量，仍可直接比較性質"
+    "催化劑必然",
+    "未反應完的反應物",
+    "另一元素",
+    "新生成物"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「生成物圖可任意少畫或多畫原子，因為化學反應不需保留原子」不成立；粒子圖中反應前後每種原子數必須相等，只是原子重新排列成新粒子。"
+      "reason": "過量不等於催化。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「看到無色氣泡就能直接寫成二氧化碳，不需再作任何檢驗」不成立；驗證氣體或沉澱要選用特定試驗並設對照，例如二氧化碳可以石灰水變濁作一項證據。"
+      "isCorrect": true,
+      "reason": "A 起始即存在。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「文字反應式中箭頭左側是反應物，右側是生成物；例如碳＋氧氣→二氧化碳」。"
+      "isCorrect": false,
+      "reason": "元素身分不變。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「反應前用一種方法、反應後用另一種方法測量，仍可直接比較性質」不成立；比較反應前後性質時，應在同條件量測導電、pH、沉澱或氣體等指標，並設未反應對照。"
+      "reason": "沒有新形成。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "過量辨析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "生成物圖可任意少畫或多畫原子，因為化學反應不需保留原子",
-    "看到無色氣泡就能直接寫成二氧化碳，不需再作任何檢驗",
-    "反應前用一種方法、反應後用另一種方法測量，仍可直接比較性質"
+    "催化劑必然",
+    "另一元素",
+    "新生成物"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-2",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

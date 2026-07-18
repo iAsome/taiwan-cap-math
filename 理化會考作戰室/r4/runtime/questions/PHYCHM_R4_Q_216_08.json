@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理受力與質量比較資料，哪項敘述合理？",
+  "stem": "物體向西但越來越慢。若向東為正，v 與 a 的符號為何？",
   "options": [
-    "只要速率計數字不變，不論運動方向如何改變，加速度都為零",
-    "平均加速度是 (10＋4)/3＝4.67 m/s²，因為速度變化量要相加",
-    "速度—時間圖上縱座標較大就表示加速度較大，不必比較斜率",
-    "加速度與速度同向時快慢增加"
+    "v<0 且 a<0",
+    "v>0 且 a>0",
+    "v<0 且 a>0",
+    "v>0 且 a<0"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要速率計數字不變，不論運動方向如何改變，加速度都為零」不成立；直線上快慢改變有加速度；物體以恆定快慢轉彎時方向改變，也有加速度。"
+      "reason": "v<0 且 a<0不成立。速度向西為負，減速所需加速度向東為正。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「平均加速度是 (10＋4)/3＝4.67 m/s²，因為速…」不成立；速度由 4 m/s 在 3 s 內均勻變為 10 m/s，平均加速度為 (10−4)/3＝2 …。"
+      "reason": "v>0 且 a>0不成立。速度向西為負，減速所需加速度向東為正。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「速度—時間圖上縱座標較大就表示加速度較大，不必比較斜率」不成立；速度—時間圖斜率為加速度；相同時間內速度變化較大的線段斜率絕對值較大。"
+      "isCorrect": true,
+      "reason": "速度向西為負，減速所需加速度向東為正。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「加速度與速度同向時快慢增加，反向時快慢減少；加速度為負不代表一定減速」。"
+      "isCorrect": false,
+      "reason": "v>0 且 a<0不成立。速度向西為負，減速所需加速度向東為正。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "關係應用",
     "多步驟推理"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要速率計數字不變，不論運動方向如何改變，加速度都為零",
-    "平均加速度是 (10＋4)/3＝4.67 m/s²，因為速度變化量要相加",
-    "速度—時間圖上縱座標較大就表示加速度較大，不必比較斜率"
+    "v<0 且 a<0",
+    "v>0 且 a>0",
+    "v>0 且 a<0"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-11",
       "AUTH-NATURAL-LC-EB-4-8",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於化學反應現象與證據中的現象，哪項結論符合題給條件？",
+  "stem": "比較兩液混合前後是否形成沉澱，哪個空白對照最重要？",
   "options": [
-    "兩物質一接觸就必然發生化學反應，不可能只是混合或溶解",
-    "反應前用一種方法、反應後用另一種方法測量，仍可直接比較性質",
-    "箭頭右側是實驗前放入的反應物，左側是實驗後才形成的物質",
-    "應在同條件量測導電、pH、沉澱或氣體等指標"
+    "分別將兩種原液單獨過濾",
+    "只稱量空燒杯",
+    "讓混合液多放一天但不記錄",
+    "改用不同大小濾紙"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「兩物質一接觸就必然發生化學反應，不可能只是混合或溶解」不成立；溶解或單純混合可造成溫度、顏色或外觀變化；只有產物證據才能排除這些假線索。"
+      "isCorrect": true,
+      "reason": "可查明原液是否本來就含固體。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「反應前用一種方法、反應後用另一種方法測量，仍可直接比較性質」不成立；比較反應前後性質時，應在同條件量測導電、pH、沉澱或氣體等指標，並設未反應對照。"
+      "reason": "不能排除原液懸浮物。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「箭頭右側是實驗前放入的反應物，左側是實驗後才形成的物質」不成立；文字反應式中箭頭左側是反應物，右側是生成物；例如碳＋氧氣→二氧化碳。"
+      "reason": "缺乏可比資料。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「比較反應前後性質時，應在同條件量測導電、pH、沉澱或氣體等指標，並設未反應對照」。"
+      "isCorrect": false,
+      "reason": "增加方法差異。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "對照設計"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "兩物質一接觸就必然發生化學反應，不可能只是混合或溶解",
-    "反應前用一種方法、反應後用另一種方法測量，仍可直接比較性質",
-    "箭頭右側是實驗前放入的反應物，左側是實驗後才形成的物質"
+    "只稱量空燒杯",
+    "讓混合液多放一天但不記錄",
+    "改用不同大小濾紙"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-2",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理生活酸鹼安全資料，哪項敘述合理？",
+  "stem": "若各杯加入不同滴數指示劑，會有何問題？",
   "options": [
-    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關",
-    "pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目自由決定",
-    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸",
-    "廣用指示劑的顏色應對照色階判讀 pH 範圍"
+    "pH定義消失",
+    "顏色深淺比較可能失去一致基準",
+    "所有杯自動中性",
+    "液體都變固體"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「酸和鹼只由溶液顏色定義，和水溶液中的離子無關」不成立；在課程模型中，酸性水溶液的酸性與氫離子有關，鹼性水溶液的鹼性與氫氧根離子有關。"
+      "reason": "pH仍有定義。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目…」不成立；pH＜7 為酸性、pH＝7 為中性、pH＞7 為鹼性；pH 本身沒有單位。"
+      "isCorrect": true,
+      "reason": "試劑量成為額外變因。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「pH 數字越大一定代表酸性越強，所以 pH 5 比 pH …」不成立；在同種、相近條件下，pH 2 的溶液比 pH 5 酸性強；pH 12 比 pH 9 鹼性強。"
+      "reason": "不會自動中和。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「廣用指示劑的顏色應對照色階判讀 pH 範圍，只能估計區間，不能單憑顏色確定化學身分」。"
+      "isCorrect": false,
+      "reason": "物態不因此改變。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "控制變因"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關",
-    "pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目自由決定",
-    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸"
+    "pH定義消失",
+    "所有杯自動中性",
+    "液體都變固體"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

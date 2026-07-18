@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告討論相變期間能量改變但溫度可不變，哪項敘述正確？",
+  "stem": "熔化是吸熱或放熱？",
   "options": [
-    "相變時溫度不變就表示吸熱量為零，所有輸入能量都消失",
-    "溫度和熱量是同一物理量，50 °C 就表示物體內有 50 J 熱量",
-    "熱量會自然由低溫物體流向高溫物體，因為低溫處需要更多熱",
-    "熔化或沸騰平臺期間，物質仍吸收能量以改變粒子排列或作用，溫度可保持不變"
+    "只看質量",
+    "吸熱",
+    "無能量",
+    "放熱"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「相變時溫度不變就表示吸熱量為零，所有輸入能量都消失」不成立；熔化或沸騰平臺期間，物質仍吸收能量以改變粒子排列或作用，溫度可保持不變。"
+      "reason": "相變方向已知。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「溫度和熱量是同一物理量，50 °C 就表示物體內有 50 …」不成立；溫度描述物體熱狀態，熱量是因溫差而移轉的能量；物體不是「含有某度熱量」。"
+      "isCorrect": true,
+      "reason": "固到液需能量。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「熱量會自然由低溫物體流向高溫物體，因為低溫處需要更多熱」不成立；兩物體接觸時，熱量淨傳自高溫物體至低溫物體，直到達熱平衡。"
+      "reason": "有潛熱。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「熔化或沸騰平臺期間，物質仍吸收能量以改變粒子排列或作用，溫度可保持不變」。"
+      "isCorrect": false,
+      "reason": "方向反。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "辨認",
-    "概念理解"
+    "辨識"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "相變時溫度不變就表示吸熱量為零，所有輸入能量都消失",
-    "溫度和熱量是同一物理量，50 °C 就表示物體內有 50 J 熱量",
-    "熱量會自然由低溫物體流向高溫物體，因為低溫處需要更多熱"
+    "只看質量",
+    "無能量",
+    "放熱"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱學與能量; 臺灣國中教育會考自然科熱量、比熱、相變與生活現象題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-BA-4-1",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於施力是否使物體沿力的方向移動，哪項結論符合題給條件？",
+  "stem": "水平提袋行走列含作用力100 N 向上及位移5 m 水平；向上提箱列含120 N 向上及1.5 m 向上。為避免錯用判斷施力是否使物體沿力的方向移動，作用力或位移須符合什麼要求？",
   "options": [
-    "能量轉換時可無故多出或少掉能量，因此不必界定系統就能使用守恆",
-    "力對物體作功要有物體沿力的分量方向發生位移；用力提住靜止物體時對物體作功為零",
-    "功率是功乘時間，所以 1200 J 在 30 s 內的功率為 36000 W",
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關"
+    "此處只計題目指定力對物體的功，不以人的疲累程度取代力與位移的幾何關係",
+    "僅要人感到疲累就判定對物體作了功，並漏掉檢查力方向上的位移",
+    "計算某一力的功時把物體所受全部力都混在一起，並漏掉指定是哪個力",
+    "解題時將水平提袋行走的 100 N 與 5 m 相乘，誤算提力作功 500 J"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「能量轉換時可無故多出或少掉能量，因此不必界定系統就能使用守恆」不成立；選定系統若不與外界交換能量，總能量守恆；若動能增加 30 J，其他能量形式總量應減少 30 J。"
+      "isCorrect": true,
+      "reason": "此處只計題目指定力對物體的功，不以人的疲累程度取代力與位移的幾何關係。水平推箱列的作用力為50 N 向東，位移為3 m 向東；提住書包列的作用力為80 N 向上，位移為0。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「力對物體作功要有物體沿力的分量方向發生位移；用力提住靜止物體時對物體作功為零」。"
+      "isCorrect": false,
+      "reason": "僅要人感到疲累就判定對物體作了功，卻未檢查力方向上的位移，結果會錯判該力作功。力對物體作功要有物體沿力的分量方向發生位移；照原做法會把該力作功算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「功率是功乘時間，所以 1200 J 在 30 s 內的功率…」不成立；完成 1200 J 的功耗時 30 s，平均功率 P＝W/t＝40 W；功率比較做功快慢。"
+      "reason": "計算某一力的功時把物體所受全部力都混在一起，卻未指定是哪個力，結果會錯判該力作功。此處只計題目指定力對物體的功，不以人的疲累程度取代力與位移的幾何關係；該力作功差異若未通過判斷施力是否使物體沿力的方向移動對作用力的控制，就不能只歸給位移。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關」不成立；力對物體作功要有物體沿力的分量方向發生位移；用力提住靜止物體時對物體作功為零。"
+      "reason": "解題時錯將水平提袋行走的 100 N 與 5 m 相乘，誤算提力作功 500 J，結果會錯判該力作功。只有位移具有沿力方向分量時該力才作功；位移的數值若未依作用力核對，會使該力作功無法通過判斷施力是否使物體沿力的方向移動檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "條件判斷",
-    "分析"
+    "應用"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "能量轉換時可無故多出或少掉能量，因此不必界定系統就能使用守恆",
-    "功率是功乘時間，所以 1200 J 在 30 s 內的功率為 36000 W",
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關"
+    "僅要人感到疲累就判定對物體作了功，並漏掉檢查力方向上的位移",
+    "計算某一力的功時把物體所受全部力都混在一起，並漏掉指定是哪個力",
+    "解題時將水平提袋行走的 100 N 與 5 m 相乘，誤算提力作功 500 J"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

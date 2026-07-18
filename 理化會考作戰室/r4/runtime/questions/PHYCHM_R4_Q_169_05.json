@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於聲音傳播需要介質，哪項結論符合題給條件？",
+  "stem": "兩名太空人位於艙外近真空環境，彼此頭盔沒有接觸。要交談需使用無線電，原因為何？",
   "options": [
-    "頻率、振幅與波形都只決定音量大小，與音調和音色無關",
-    "真空中沒有可傳遞振動的介質",
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射"
+    "無線電波可穿越真空，聲波不能",
+    "真空中的聲速無限大",
+    "頭盔會讓聲音質量消失",
+    "人耳在太空不會振動"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「頻率、振幅與波形都只決定音量大小，與音調和音色無關」不成立；頻率主要影響音調，振幅與響度有關，波形特徵與音色有關，三者不可互換。"
+      "isCorrect": true,
+      "reason": "無線電以電磁波跨越真空，接收器再於頭盔內產生聲波。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質」。"
+      "isCorrect": false,
+      "reason": "真空中沒有機械聲速可談，更非無限大。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「距離為 340×0.40＝136 m，因為回聲時間只包含單程」不成立；回聲測距的聲波經往返路程；若聲速 340 m/s、往返 0.40 s，距離為 68 m。"
+      "reason": "聲音沒有此種質量消失機制。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射」不成立；人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射。"
+      "reason": "耳朵仍可接收頭盔內設備產生的聲音。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "條件判斷",
     "分析"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "頻率、振幅與波形都只決定音量大小，與音調和音色無關",
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射"
+    "真空中的聲速無限大",
+    "頭盔會讓聲音質量消失",
+    "人耳在太空不會振動"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

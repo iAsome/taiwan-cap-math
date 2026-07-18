@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "換成另一組高壓輸電資料，哪項判讀仍合理？",
+  "stem": "從手搖燈改成電磁起重機時，第一段由手的化學能→機械能變為電能，第二段由發電機→電能變為線圈磁場。跨列解釋終端輸出時，哪個科學概念不能省略？",
   "options": [
-    "只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流",
-    "發電機和電動機都只將電能轉成熱能，與機械能無關",
-    "變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大",
-    "裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出，例如手搖發電機為機械能→電能→光與熱"
+    "裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出，例如手搖發電機為機械能→電能→光與熱",
+    "把手搖燈的光能被排在手的化學能之前，顛倒能量流向",
+    "主張任何電磁裝置都只有電能和機械能，並漏掉內能與聲能損耗",
+    "解題時將線圈或磁鐵本身列為能量來源，而不是轉換裝置"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流」不成立；穿過線圈的磁通量發生變化時可產生感應電動勢；電路閉合時才會有感應電流。"
+      "isCorrect": true,
+      "reason": "裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出，例如手搖發電機為機械能→電能→光與熱。電磁起重機列的第一段為電能，第二段為線圈磁場；無線充電示意列的第一段為電能，第二段為變動磁場→感應。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「發電機和電動機都只將電能轉成熱能，與機械能無關」不成立；發電機主要將機械能轉電能，電動機主要將電能轉機械能，兩者能量流向相反。"
+      "reason": "解題時誤把手搖燈的光能被排在手的化學能之前，顛倒能量流向。依裝置逐段標出輸入、電磁轉換與輸出，便能檢查是否漏列能量來源；第二段的數值若未依第一段核對，會使終端輸出無法通過由裝置圖追蹤電磁能量轉換檢查。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大」不成立；變壓器以交流造成變動磁場，改變電壓以利輸電；遠距離高電壓可在同功率下降低電流與線路損耗。"
+      "reason": "誤以為任何電磁裝置都只有電能和機械能，沒有內能與聲能損耗。裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出，例如手搖發電機為機械能→電能→光與熱；第一段未列入由裝置圖追蹤電磁能量轉換時，終端輸出的第二段大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出，例如手搖發電機為機械能→電能→光與熱」。"
+      "isCorrect": false,
+      "reason": "解題時錯將線圈或磁鐵本身列為能量來源，而不是轉換裝置，結果會錯判終端輸出。裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出，例如手搖發電機為機械能→電能→光與熱；照原做法會把終端輸出算錯或判反。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流",
-    "發電機和電動機都只將電能轉成熱能，與機械能無關",
-    "變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大"
+    "把手搖燈的光能被排在手的化學能之前，顛倒能量流向",
+    "主張任何電磁裝置都只有電能和機械能，並漏掉內能與聲能損耗",
+    "解題時將線圈或磁鐵本身列為能量來源，而不是轉換裝置"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-KC-4-4",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理水平推箱資料後，哪項說明正確？",
+  "stem": "物體受向右 3 N、向左 8 N，水平合力為何？",
   "options": [
-    "同直線上向右 8 N 與向左 3 N 的合力為向右 5 N",
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關",
-    "質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少",
-    "作用力與反作用力同時作用在同一物體，因此永遠互相抵銷"
+    "物體的合力為向右 5 N",
+    "物體的合力為向左 11 N",
+    "物體的合力為 0 N",
+    "合力為向左 5 N"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「同直線上向右 8 N 與向左 3 N 的合力為向右 5 N；相反方向力要取差並保留方向」。"
+      "isCorrect": false,
+      "reason": "物體的合力為向右 5 N與受力條件不符。左力較大，8-3=5 N，方向向左。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「加速度方向永遠和物體當下運動方向相同，與合力方向無關」不成立；物體的加速度方向與合力相同；質量相同時合力較大，或合力相同時質量較小，加速度較大。"
+      "reason": "物體的合力為向左 11 N與受力條件不符。左力較大，8-3=5 N，方向向左。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少」不成立；質量是物體慣性的量度，重量是物體所受重力，在不同星體可改變；單位分別常用 kg 與 N。"
+      "reason": "物體的合力為 0 N與受力條件不符。左力較大，8-3=5 N，方向向左。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「作用力與反作用力同時作用在同一物體，因此永遠互相抵銷」不成立；人推牆的力與牆推人的力是作用力反作用力，大小相等、方向相反，但作用在不同物體。"
+      "isCorrect": true,
+      "reason": "左力較大，8-3=5 N，方向向左。"
     }
   ],
   "difficulty": "foundation",
@@ -50,16 +50,16 @@
     "單位檢核",
     "資料判讀"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關",
-    "質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少",
-    "作用力與反作用力同時作用在同一物體，因此永遠互相抵銷"
+    "物體的合力為向右 5 N",
+    "物體的合力為向左 11 N",
+    "物體的合力為 0 N"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

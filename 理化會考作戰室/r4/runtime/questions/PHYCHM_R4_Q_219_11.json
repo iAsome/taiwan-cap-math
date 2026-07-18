@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組電梯受力資料，哪項判讀仍合理？",
+  "stem": "桌上書本靜止且合力為零，所受力情形為何？",
   "options": [
-    "質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少",
-    "物體所受合力為零時加速度為零",
-    "作用力與反作用力同時作用在同一物體，因此永遠互相抵銷",
-    "合力為零時物體速度必立即變為零，不可能繼續等速運動"
+    "書本完全不受任何力",
+    "只有重力而沒有支持力",
+    "只有支持力而沒有重力",
+    "重力與桌面支持力平衡"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少」不成立；質量是物體慣性的量度，重量是物體所受重力，在不同星體可改變；單位分別常用 kg 與 N。"
+      "reason": "書本完全不受任何力與受力條件不符。靜止可由等大反向的重力與支持力形成零合力。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體所受合力為零時加速度為零，可保持靜止或等速直線運動，不限於靜止」。"
+      "isCorrect": false,
+      "reason": "只有重力而沒有支持力與受力條件不符。靜止可由等大反向的重力與支持力形成零合力。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「作用力與反作用力同時作用在同一物體，因此永遠互相抵銷」不成立；人推牆的力與牆推人的力是作用力反作用力，大小相等、方向相反，但作用在不同物體。"
+      "reason": "只有支持力而沒有重力與受力條件不符。靜止可由等大反向的重力與支持力形成零合力。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「合力為零時物體速度必立即變為零，不可能繼續等速運動」不成立；物體所受合力為零時加速度為零，可保持靜止或等速直線運動，不限於靜止。"
+      "isCorrect": true,
+      "reason": "靜止可由等大反向的重力與支持力形成零合力。"
     }
   ],
   "difficulty": "transfer",
@@ -50,16 +50,16 @@
     "情境遷移",
     "應用"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少",
-    "作用力與反作用力同時作用在同一物體，因此永遠互相抵銷",
-    "合力為零時物體速度必立即變為零，不可能繼續等速運動"
+    "書本完全不受任何力",
+    "只有重力而沒有支持力",
+    "只有支持力而沒有重力"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

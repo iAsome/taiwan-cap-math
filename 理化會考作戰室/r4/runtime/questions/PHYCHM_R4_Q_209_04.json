@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查位置時間圖紀錄，哪項判讀正確？",
+  "stem": "小車先停 2 s，再向右等速行駛。圖形應如何？",
   "options": [
-    "不是物體在空間中的軌跡外觀",
-    "速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度",
-    "速度數值變得更負就一定是減速，無需比較速度大小與方向",
-    "把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間與位置"
+    "此時物體先負斜率，後水平",
+    "先水平，後接正斜率直線",
+    "全程水平",
+    "此時物體先正斜率，後負斜率"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「位置—時間圖的線形描述位置如何隨時間變化，不是物體在空間中的軌跡外觀」。"
+      "isCorrect": false,
+      "reason": "此時物體先負斜率，後水平不成立。停留時位置不變，出發向右後位置線性增加。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度」不成立；速度—時間圖的縱座標直接給各時刻速度；水平線表示速度恆定。"
+      "isCorrect": true,
+      "reason": "停留時位置不變，出發向右後位置線性增加。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「速度數值變得更負就一定是減速，無需比較速度大小與方向」不成立；速度—時間圖上數值由 2 增至 6 m/s 表示正向加速；速度由 −2 變 −6 m/s 則是…。"
+      "reason": "全程水平不成立。停留時位置不變，出發向右後位置線性增加。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間…」不成立；「向東等速、停留、向西返回」的位置—時間圖應依序是正斜率、水平、負斜率。"
+      "reason": "此時物體先正斜率，後負斜率不成立。停留時位置不變，出發向右後位置線性增加。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度",
-    "速度數值變得更負就一定是減速，無需比較速度大小與方向",
-    "把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間與位置"
+    "此時物體先負斜率，後水平",
+    "全程水平",
+    "此時物體先正斜率，後負斜率"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

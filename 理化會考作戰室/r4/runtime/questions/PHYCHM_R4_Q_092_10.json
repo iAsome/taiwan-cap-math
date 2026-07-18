@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "學生根據反應資料表下結論，哪項符合資料？",
+  "stem": "資料得到A：B＝4 g：6 mL。能直接稱為質量消耗比2：3嗎？",
   "options": [
-    "係數 2：1 在任何情況都直接等於質量 2 g：1 g，與物質組成無關",
-    "可以該恆定比來推算同反應資料",
-    "只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比",
-    "CO₂ 的相對分子量為 12＋16＝28，因為同種元素只需加一次"
+    "不能，比例不能約分",
+    "能，所有液體密度都相同，所以g可直接比mL",
+    "能，數字可約分",
+    "不能，g與mL是不同物理量"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「係數 2：1 在任何情況都直接等於質量 2 g：1 g，與…」不成立；反應係數表示粒子數比；要轉成質量比，必須再乘以各物質的相對分子量。"
+      "reason": "比例可以約分。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「一系列實驗中若 A、B 剛好完全反應的消耗質量一直維持 2：3，可以該恆定比來推算同反應資料」。"
+      "isCorrect": false,
+      "reason": "液體密度未必相同。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比」不成立；一系列實驗中若 A、B 剛好完全反應的消耗質量一直維持 2：3，可以該恆定比來推算同反應資料。"
+      "reason": "單位不同不能直接稱質量比。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「CO₂ 的相對分子量為 12＋16＝28，因為同種元素只需…」不成立；CO₂ 的相對分子量為 12＋2×16＝44；必須把每種原子量乘以其下標再加總。"
+      "isCorrect": true,
+      "reason": "一項是質量、一項是體積。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "單位檢查"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "係數 2：1 在任何情況都直接等於質量 2 g：1 g，與物質組成無關",
-    "只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比",
-    "CO₂ 的相對分子量為 12＋16＝28，因為同種元素只需加一次"
+    "不能，比例不能約分",
+    "能，所有液體密度都相同，所以g可直接比mL",
+    "能，數字可約分"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-2",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

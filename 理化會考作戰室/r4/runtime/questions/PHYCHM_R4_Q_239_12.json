@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估潛水艇調整報告時，哪項說明正確？",
+  "stem": "乙條件下，先知排開水體積350 cm³和排開水質量350 g，再看測得浮力3.43 N。使用浮力等於排開液體重量重做量測時，還要記下排開水體積哪個條件？",
   "options": [
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要",
-    "阿基米德原理：物體所受向上浮力的大小",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力"
+    "主張排開體積相同時，物體在任何流體中所受浮力都相同",
+    "解題時將浮力大小直接設成物體自身重量，未計算排開流體的重量",
+    "拿水的密度計算鹽水中的浮力，忽略兩種液體密度不同",
+    "必須使用排開液體的密度與體積，不能直接拿物體質量取代排開液體重量"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限…」不成立；完全沒入時，浮力隨液體密度與排開體積增大；同液體中排開體積相同則浮力相同。"
+      "reason": "誤以為排開體積相同時，物體在任何流體中所受浮力都相同，結果會錯判測得浮力。阿基米德原理：物體所受向上浮力的大小，等於它所排開流體的重量；排開水體積未列入使用浮力等於排開液體重量時，測得浮力的排開水質量大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「浮沉只由物體總質量大小決定，體積與平均密度完全不重要」不成立；物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉。"
+      "reason": "解題時錯將浮力大小直接設成物體自身重量，未計算排開流體的重量，結果會錯判測得浮力。阿基米德原理：物體所受向上浮力的大小，等於它所排開流體的重量；照原做法會把測得浮力算錯或判反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「阿基米德原理：物體所受向上浮力的大小，等於它所排開流體的重量」。"
+      "isCorrect": false,
+      "reason": "拿水的密度計算鹽水中的浮力，忽略兩種液體密度不同。必須使用排開液體的密度與體積，不能直接拿物體質量取代排開液體重量；測得浮力差異若未通過使用浮力等於排開液體重量對排開水體積的控制，就不能只歸給排開水質量。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「漂浮物體既然在水面上，就完全不受浮力，只受向下重力」不成立；漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力。"
+      "isCorrect": true,
+      "reason": "必須使用排開液體的密度與體積，不能直接拿物體質量取代排開液體重量。丁（鹽水）列的排開水體積為200 cm³，排開水質量為240 g；甲列的排開水體積為200 cm³，排開水質量為200 g。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力"
+    "主張排開體積相同時，物體在任何流體中所受浮力都相同",
+    "解題時將浮力大小直接設成物體自身重量，未計算排開流體的重量",
+    "拿水的密度計算鹽水中的浮力，忽略兩種液體密度不同"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

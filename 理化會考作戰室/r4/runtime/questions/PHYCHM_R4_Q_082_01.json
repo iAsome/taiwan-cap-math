@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄討論缺少氣體進出解釋開放系統量測差異，哪項敘述正確？",
+  "stem": "開口燒杯中的產氣反應使讀值下降，最合理的解釋是什麼？",
   "options": [
-    "開放容器變輕證明質量守恆定律在產氣反應中不適用",
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小",
-    "開放容器產生氣體並逸出時，秤得質量可減少；把逸出氣體也納入系統才符合守恆",
-    "未知生成物為 35＋12＝47 g，因為生成物應加在反應物上"
+    "氣體離開了秤盤所量的系統",
+    "天平遇到化學反應一定失效",
+    "生成物完全沒有質量",
+    "一部分原子不再存在"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「開放容器變輕證明質量守恆定律在產氣反應中不適用」不成立；開放容器產生氣體並逸出時，秤得質量可減少；把逸出氣體也納入系統才符合守恆。"
+      "isCorrect": true,
+      "reason": "逸出氣體不再位於秤盤系統內。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小」不成立；密閉袋內的反應前後，所有反應物與生成物的總質量相等，因為原子只重新排列。"
+      "reason": "不能無證據判定天平失效。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「開放容器產生氣體並逸出時，秤得質量可減少；把逸出氣體也納入系統才符合守恆」。"
+      "isCorrect": false,
+      "reason": "生成物具有質量。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「未知生成物為 35＋12＝47 g，因為生成物應加在反應物上」不成立；反應物總質量 35 g，已知一生成物 12 g，且系統密閉，另一生成物為 23 g。"
+      "reason": "原子沒有消失。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "辨認",
-    "概念理解"
+    "因果解釋"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "開放容器變輕證明質量守恆定律在產氣反應中不適用",
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小",
-    "未知生成物為 35＋12＝47 g，因為生成物應加在反應物上"
+    "天平遇到化學反應一定失效",
+    "生成物完全沒有質量",
+    "一部分原子不再存在"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

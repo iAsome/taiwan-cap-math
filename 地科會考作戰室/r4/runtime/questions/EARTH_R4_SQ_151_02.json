@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "EARTH_R4_ST_151",
-  "stem": "閱讀「由日出日落算晝長」的資料後，為了釐清地球自轉解釋晝夜交替，哪一項限制最需要寫入報告？",
+  "stem": "這組資料最能支持哪一項解釋？",
   "options": [
-    "分析地球自轉解釋晝夜交替時，報告需註明：地球軌道遠近不是四季主因",
-    "分析地球自轉解釋晝夜交替時，有3列資料就沒有不確定性",
-    "電腦繪製的「由日出日落算晝長」表格可保證來源正確",
-    "地球自轉解釋晝夜交替結果符合預期便不必檢查反例"
+    "地球自轉使測站依序進入與離開受光面，因而經歷日出、白晝與日落",
+    "太陽在18:30停止發光，所以所有地點同時進入黑夜",
+    "測站在12:00最接近太陽，這是白晝出現的唯一原因",
+    "04:30天空黑暗證明地球當時停止自轉，直到05:30才恢復"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "這項限制界定「由日出日落算晝長」的資料可支持到哪裡。"
+      "reason": "四筆紀錄呈現背光、進入受光、位於受光面及離開受光的連續次序，符合自轉模型。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "資料列數不會消除量測與取樣不確定性。"
+      "reason": "資料只描述臺灣測站，且18:30其他經度仍可能是白晝，不能推論太陽熄滅。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "製圖工具不會自動保證「由日出日落算晝長」的來源可靠。"
+      "reason": "表格沒有日地距離資料；白晝取決於測站是否位於受光面，不是正午距離最小。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "符合「晝夜由地球自轉造成」仍須檢查替代解釋與反例。"
+      "reason": "地球持續自轉才會讓測站越過晨昏線，黑暗並不代表自轉曾經停止。"
     }
   ],
   "difficulty": "advanced",
@@ -49,7 +49,7 @@
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "全球同一天的晝長完全相等"
+    "太陽在18:30停止發光，所以所有地點同時進入黑夜"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "逐項核對「由日出日落算晝長」的條件後，「分析地球自轉解釋晝夜交替時，報告需註明：地球軌道遠近不是四季主因」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "受光位置與天空狀態同步改變，能以一個持續自轉的球形地球解釋整段觀測。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 0,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "「太陽停止發光」會預測全球同時變暗，與只記錄單一測站的資料範圍不符。",
       "status": "pass"
     }
   ],

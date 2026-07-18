@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理車程平均速率資料後，哪項說明正確？",
+  "stem": "一物體速度為 0 m/s，此刻可判定什麼？",
   "options": [
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率",
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理",
-    "速度同時含快慢與方向",
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同"
+    "物體此刻靜止",
+    "物體一定在原點",
+    "物體全程未移動",
+    "物體正向負方向運動"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均…」不成立；儀表在某一刻顯示的是瞬時資訊；一段旅程的平均速率必須以全路程除以全時間。"
+      "isCorrect": true,
+      "reason": "速度為零只表示該時刻位置未隨時間改變。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「運動資料只要代入公式就不必作量級檢查，步行 500 m/s…」不成立；步行速率通常約數 m/s；若算得 500 m/s，應檢查距離、時間單位或小數點。"
+      "reason": "物體一定在原點不符合題目資料。速度為零只表示該時刻位置未隨時間改變。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向」。"
+      "isCorrect": false,
+      "reason": "物體全程未移動不符合題目資料。速度為零只表示該時刻位置未隨時間改變。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「速度只是一個正數快慢，向東與向西 10 m/s 在任何分析…」不成立；速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向。"
+      "reason": "物體正向負方向運動不符合題目資料。速度為零只表示該時刻位置未隨時間改變。"
     }
   ],
   "difficulty": "foundation",
@@ -46,16 +46,16 @@
     "單位檢核",
     "資料判讀"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率",
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理",
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同"
+    "物體一定在原點",
+    "物體全程未移動",
+    "物體正向負方向運動"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

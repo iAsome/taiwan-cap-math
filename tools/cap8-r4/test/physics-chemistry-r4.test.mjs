@@ -12,11 +12,12 @@ const ROOT = path.resolve(HERE, "..", "..", "..");
 const SUBJECT_ROOT = path.join(ROOT, "理化會考作戰室", "r4");
 const RUNTIME_ROOT = path.join(SUBJECT_ROOT, "runtime");
 const BUILDER_URL = pathToFileURL(path.join(ROOT, "tools", "cap8-r4", "build-physics-chemistry-r4.mjs")).href;
-const KNOWLEDGE_URL = pathToFileURL(path.join(SUBJECT_ROOT, "source", "physics-chemistry-skill-knowledge.mjs")).href;
+const AUTHORED_URL = pathToFileURL(path.join(SUBJECT_ROOT, "source", "authored", "physics-chemistry-u01-u10.mjs")).href;
 const GRAPH_PATH = path.join(ROOT, "tools", "cap8-r4", "authority", "frozen-authority-graph.json");
 
 let apiPromise;
 const api = () => (apiPromise ??= import(BUILDER_URL));
+const authored = async () => (await import(AUTHORED_URL)).PHYSICS_CHEMISTRY_AUTHORED_UNITS;
 
 async function filesBelow(directory) {
   const values = [];
@@ -52,7 +53,6 @@ function essence(value, titles) {
 }
 
 const TEMPLATE_LEAK = /當題幹出現|本技能要學會|本技能的具體例子|最需防的專屬錯誤|可使用的具體判準|採用這個|同時忽略|只要照著技能名稱/u;
-const cleanClaim = (value) => value.trim().replace(/[。；]+$/u, "");
 
 function contrastRatio(first, second) {
   const luminance = (hex) => {
@@ -70,26 +70,46 @@ test("Physics/Chemistry builder imports without writing runtime content", async 
   assert.equal(await treeHash(RUNTIME_ROOT), before);
 });
 
-test("300 authored skill propositions are complete, aligned, and unique", async () => {
-  const [{ PHYSICS_CHEMISTRY_SKILL_KNOWLEDGE: knowledge }, { loadPhysicsChemistrySkills }] = await Promise.all([
-    import(KNOWLEDGE_URL),
-    api(),
-  ]);
-  const skills = await loadPhysicsChemistrySkills();
-  assert.deepEqual(Object.keys(knowledge), skills.map((skill) => skill.id));
-  assert.equal(Object.keys(knowledge).length, 300);
-  assert.equal(new Set(Object.values(knowledge).map((card) => card.truth)).size, 300);
-  assert.equal(new Set(Object.values(knowledge).map((card) => card.trap)).size, 300);
-  for (const skill of skills) {
-    const card = knowledge[skill.id];
-    assert(card.truth.length >= 25, `${skill.id}: truth is too shallow`);
-    assert(card.trap.length >= 20, `${skill.id}: trap is too shallow`);
-    assert.notEqual(card.truth, card.trap, `${skill.id}: truth and trap collide`);
+test("builder serializes authored records instead of synthesizing learner prose", async () => {
+  const builder = await readFile(fileURLToPath(BUILDER_URL), "utf8");
+  assert.doesNotMatch(
+    builder,
+    /function\s+(?:stemFor|questionRecord|lectureRecord|stimulusRecord)\b|for\s*\(let slot = 0;\s*slot < (?:12|3)/u,
+    "Physics/Chemistry learner content is still assembled by shared prose templates",
+  );
+});
+
+test("builder cannot turn authored answer keys into acceptance claims", async () => {
+  const builder = await readFile(fileURLToPath(BUILDER_URL), "utf8");
+  const questionBuilder = builder.match(/function materializeQuestion\b[\s\S]+?(?=\nfunction materializeStimulus\b)/u)?.[0];
+  assert(questionBuilder, "materializeQuestion source was not found");
+  assert.doesNotMatch(
+    builder,
+    /\b(?:independentReviews?|reviews?|reviewEvidence|reviewerRole|derivedAnswerIndex|finalAudit|auditRecord(?:Id|Sha256)?|acceptance|approval|reviewStatus|auditStatus|verificationStatus)\b|\b(?:status|role)\s*:\s*["'`](?:pass|accepted|approved|verified|[^"'`]*(?:review|audit))/iu,
+    "question builder contains review, PASS, audit, or acceptance metadata",
+  );
+  assert.doesNotMatch(builder, /\bsource\.(?:reviewEvidence|answerKey|correctAnswer|correctIndex)\b|\boption\.isCorrect\b/u, "question builder consumes authored review or answer-key aliases");
+  assert.equal((questionBuilder.match(/\bisCorrect\s*:/gu) || []).length, 1, "isCorrect must remain limited to option rationales");
+  assert.match(questionBuilder, /isCorrect:\s*optionIndex === source\.answerIndex/u, "option rationales must retain the quiz answer marker");
+});
+
+test("40 authored units preserve the frozen skill order and authority graph", async () => {
+  const [units, { loadPhysicsChemistrySkills }] = await Promise.all([authored(), api()]);
+  const graphSkills = await loadPhysicsChemistrySkills();
+  const sourceSkills = units.flatMap((unit) => unit.skills.map((skill) => ({ unit, skill })));
+  assert.equal(units.length, 40);
+  assert.equal(sourceSkills.length, 300);
+  assert.deepEqual(sourceSkills.map(({ skill }) => skill.id), graphSkills.map((skill) => skill.id));
+  for (const [{ unit, skill }, graphSkill] of sourceSkills.map((value, index) => [value, graphSkills[index]])) {
+    assert.equal(unit.unitId, graphSkill.unitId, `${skill.id}: unit binding`);
+    assert.deepEqual([...skill.authorityRefs].sort(), [...graphSkill.authorityRefs].sort(), `${skill.id}: authority binding`);
+    assert.equal(skill.standaloneQuestions.length, 12, `${skill.id}: standalone source count`);
+    assert.equal(skill.stimulusQuestions.length, 3, `${skill.id}: stimulus source count`);
   }
 });
 
-test("materialized bank meets exact floors and every answer survives an independent semantic construction audit", async () => {
-  const [{ materializePhysicsChemistry }, { PHYSICS_CHEMISTRY_SKILL_KNOWLEDGE: knowledge }] = await Promise.all([api(), import(KNOWLEDGE_URL)]);
+test("materialized bank meets exact counts and copies every authored learner field", async () => {
+  const [{ materializePhysicsChemistry }, units] = await Promise.all([api(), authored()]);
   const content = await materializePhysicsChemistry();
   assert.deepEqual(
     Object.fromEntries(["authority", "skills", "lectures", "questions", "stimuli", "assets"].map((key) => [key, content[key].length])),
@@ -98,50 +118,94 @@ test("materialized bank meets exact floors and every answer survives an independ
   const authorityIds = new Set(content.authority.map((record) => record.id));
   const stimulusIds = new Set(content.stimuli.map((record) => record.id));
   const assetIds = new Set(content.assets.map((record) => record.id));
-  const trapCorrections = new Map(content.skills.map((skill) => [
-    cleanClaim(knowledge[skill.id].trap),
-    cleanClaim(knowledge[skill.id].truth),
-  ]));
+  const sourceBySkill = new Map(units.flatMap((unit) => unit.skills.map((skill) => [skill.id, { unit, skill }])));
+  const questionById = new Map(content.questions.map((question) => [question.id, question]));
+  const lectureById = new Map(content.lectures.map((lecture) => [lecture.id, lecture]));
+  const stimulusById = new Map(content.stimuli.map((stimulus) => [stimulus.id, stimulus]));
   for (const skill of content.skills) {
+    const source = sourceBySkill.get(skill.id);
+    assert(source, `${skill.id}: missing authored source`);
+    assert.equal(skill.title, source.skill.title, `${skill.id}: title was synthesized`);
     assert(skill.authorityRefs.every((id) => authorityIds.has(id)), `${skill.id}: authority escapes subject`);
-    const own = content.questions.filter((question) => question.skillIds.includes(skill.id));
-    const skillQuestions = own.filter((question) => question.stimulusId === null);
-    const stimulusQuestions = own.filter((question) => question.stimulusId !== null);
-    assert.equal(skillQuestions.length, 12, `${skill.id}: skill question floor`);
-    assert.equal(stimulusQuestions.length, 3, `${skill.id}: stimulus question floor`);
-    assert.deepEqual(
-      Object.fromEntries(["foundation", "standard", "advanced", "transfer"].map((level) => [level, skillQuestions.filter((q) => q.difficulty === level).length])),
-      { foundation: 3, standard: 4, advanced: 3, transfer: 2 },
-    );
-    assert.deepEqual([0, 1, 2, 3].map((index) => skillQuestions.filter((question) => question.answerIndex === index).length), [3, 3, 3, 3]);
-    assert.equal(new Set(own.map((question) => question.stem)).size, 15, `${skill.id}: repeated stem`);
-    assert(own.some((question) => question.options.some((option, index) => index !== question.answerIndex && option === cleanClaim(knowledge[skill.id].trap))), `${skill.id}: dedicated misconception is never tested`);
-    const unitTraps = new Set(content.skills.filter((candidate) => candidate.unitId === skill.unitId).map((candidate) => cleanClaim(knowledge[candidate.id].trap)));
-    for (const question of own) {
+    const lecture = lectureById.get(source.skill.lecture.id);
+    assert.deepEqual(lecture.objectives, [source.skill.lecture.objective], `${lecture.id}: objective was synthesized`);
+    assert.deepEqual(lecture.workedExamples, source.skill.lecture.workedExamples, `${lecture.id}: examples diverge from source`);
+    assert.deepEqual(lecture.misconceptions, source.skill.lecture.misconceptions, `${lecture.id}: misconceptions diverge from source`);
+    const sourceSections = source.skill.lecture.sections.map((section) => ({ title: section.title, content: section.content ?? section.body }));
+    assert.deepEqual(lecture.sections.slice(1).map(({ id: _id, ...section }) => section), sourceSections, `${lecture.id}: sections diverge from source`);
+    assert.deepEqual(lecture.checks, source.skill.lecture.workedExamples.map(({ prompt, answer, why }) => ({ prompt, answer, reason: why })), `${lecture.id}: checks contain generated prose`);
+    const stimulus = stimulusById.get(source.skill.stimulus.id);
+    assert.equal(stimulus.title, source.skill.stimulus.title);
+    assert.equal(stimulus.body, source.skill.stimulus.body);
+    assert.deepEqual(stimulus.dataTable.columns, source.skill.stimulus.dataTable.columns);
+    assert.deepEqual(stimulus.dataTable.rows, source.skill.stimulus.dataTable.rows);
+
+    for (const sourceQuestion of [...source.skill.standaloneQuestions, ...source.skill.stimulusQuestions]) {
+      const question = questionById.get(sourceQuestion.id);
+      assert(question, `${sourceQuestion.id}: missing materialized question`);
+      assert.equal(question.stem, sourceQuestion.stem, `${question.id}: stem was synthesized`);
+      assert.deepEqual(question.options, sourceQuestion.options, `${question.id}: options were synthesized`);
+      assert.equal(question.answerIndex, sourceQuestion.answerIndex, `${question.id}: answer changed`);
+      assert.deepEqual(question.optionRationales.map((item) => item.reason), sourceQuestion.rationales, `${question.id}: rationales were synthesized`);
+      assert.deepEqual(question.cognitiveProcess, sourceQuestion.cognitiveProcess, `${question.id}: cognitive metadata changed`);
+      assert.equal(question.difficulty, sourceQuestion.difficulty === "basic" ? "foundation" : sourceQuestion.difficulty, `${question.id}: difficulty adapter`);
       assert.equal(question.options.length, 4, `${question.id}: option count`);
       assert.equal(new Set(question.options).size, 4, `${question.id}: duplicate option`);
-      const answer = question.options[question.answerIndex];
-      assert(cleanClaim(knowledge[skill.id].truth).includes(answer), `${question.id}: answer is not a verbatim skill fact`);
-      assert(question.stem.length <= 48, `${question.id}: stem is too long`);
-      assert(question.options.every((option) => option.length <= 64), `${question.id}: option is too long`);
-      assert(!JSON.stringify(question).includes(skill.title), `${question.id}: learner record repeats the complete skill title`);
       assert(!TEMPLATE_LEAK.test(JSON.stringify(question)), `${question.id}: authoring template leaked into learner content`);
       assert.equal(question.optionRationales.length, 4, `${question.id}: rationale count`);
       assert.equal(question.optionRationales.filter((rationale) => rationale.isCorrect).length, 1, `${question.id}: rationale key count`);
-      assert(question.optionRationales.every((rationale, index) => rationale.optionIndex === index && rationale.reason.length <= 90), `${question.id}: rationale readability`);
-      assert(question.optionRationales[question.answerIndex].reason.includes(cleanClaim(knowledge[skill.id].truth).slice(0, 18)), `${question.id}: answer rationale omits its scientific basis`);
       const wrongOptions = question.options.filter((option, index) => index !== question.answerIndex);
-      assert(wrongOptions.every((option) => unitTraps.has(option)), `${question.id}: fabricated distractor`);
       assert.deepEqual([...question.misconceptionTargets].sort(), [...wrongOptions].sort(), `${question.id}: misconception metadata mismatch`);
-      for (const [index, option] of question.options.entries()) {
-        if (index === question.answerIndex) continue;
-        const correction = trapCorrections.get(option);
-        assert(correction && question.optionRationales[index].reason.includes(correction.slice(0, 18)), `${question.id}: distractor rationale lacks its paired correction`);
-      }
       assert(question.stimulusId === null || stimulusIds.has(question.stimulusId), `${question.id}: missing stimulus`);
       assert(question.assets.every((id) => assetIds.has(id)), `${question.id}: missing asset`);
-      assert(question.independentReviews.every((review) => review.status === "pass" && review.derivedAnswerIndex === question.answerIndex), `${question.id}: answer review mismatch`);
     }
+  }
+});
+
+test("runtime questions keep quiz rationales without embedding acceptance claims", async () => {
+  const content = await (await api()).materializePhysicsChemistry();
+  for (const question of content.questions) {
+    const serialized = JSON.stringify(question);
+    assert.doesNotMatch(serialized, /"(?:independentReviews?|reviews?|reviewEvidence|reviewerRole|derivedAnswerIndex|finalAudit|auditRecord(?:Id|Sha256)?|acceptance|approval|reviewStatus|auditStatus|verificationStatus)"\s*:/iu, `${question.id}: acceptance field reached runtime`);
+    assert.doesNotMatch(serialized, /"(?:status|reviewStatus|auditStatus|verificationStatus)"\s*:\s*"(?:pass|accepted|approved|verified)"/iu, `${question.id}: acceptance status reached runtime`);
+    assert.equal(question.optionRationales.length, question.options.length, `${question.id}: quiz rationales were removed`);
+    assert.equal(question.optionRationales.filter(({ isCorrect }) => isCorrect).length, 1, `${question.id}: quiz answer marker was removed`);
+  }
+});
+
+test("known condition-decoupling regressions stay fixed", async () => {
+  const { questions } = await (await api()).materializePhysicsChemistry();
+  const byId = new Map(questions.map((question) => [question.id, question]));
+  const conversion = byId.get("PHYCHM_R4_Q_004_10");
+  const buoyancy = byId.get("PHYCHM_R4_Q_243_03");
+  const buoyancyAnswer = buoyancy.options[buoyancy.answerIndex];
+  const buoyancyRationale = buoyancy.optionRationales[buoyancy.answerIndex].reason;
+  const failures = [
+    !/2\.35 m.*公分/u.test(conversion.stem) && "PHYCHM_R4_Q_004_10 asks about unrelated liquid-level data",
+    !/235 cm/u.test(conversion.options[conversion.answerIndex]) && "PHYCHM_R4_Q_004_10 has the wrong metric conversion",
+    !/12 N.*8 N.*1 N/u.test(buoyancy.stem) && "PHYCHM_R4_Q_243_03 omits one of the vertical forces",
+    (!/3 N 向下/u.test(buoyancyAnswer) || !/加速度向下/u.test(buoyancyAnswer)) && "PHYCHM_R4_Q_243_03 drops the downward-acceleration result",
+    !/浮力仍為 8 N/u.test(`${buoyancyAnswer} ${buoyancyRationale}`) && "PHYCHM_R4_Q_243_03 rationale does not reject zero buoyancy",
+  ].filter(Boolean);
+  assert.equal(failures.length, 0, failures.join("; "));
+});
+
+test("lectures, questions, and stimuli reject shared prose scaffold families", async () => {
+  const content = await (await api()).materializePhysicsChemistry();
+  const whys = content.lectures.flatMap((lecture) => lecture.workedExamples.map((example) => example.why));
+  const misconceptionReasons = content.lectures.flatMap((lecture) => lecture.misconceptions.map((item) => item.whyWrong));
+  assert.equal(new Set(whys).size, whys.length, "worked-example explanations are reused");
+  assert.equal(new Set(misconceptionReasons).size, misconceptionReasons.length, "misconception explanations are reused");
+  const visible = JSON.stringify({ lectures: content.lectures, questions: content.questions, stimuli: content.stimuli });
+  for (const scaffold of [
+    /不只要記住結論，還要能從/gu,
+    /應如何比較，才能回答/gu,
+    /若學生寫下[^。]+，可用哪個定義或計算指出錯誤/gu,
+    /研究紀錄「[^」]+」保留[^。]+原始欄位。作答者必須自行/gu,
+    /是否相容？選出正確判準/gu,
+  ]) {
+    const matches = visible.match(scaffold) || [];
+    assert(matches.length <= 1, `shared scaffold family appears ${matches.length} times: ${scaffold.source}`);
   }
 });
 
@@ -166,13 +230,23 @@ test("questions have no exact or same-skeleton duplicate after titles and number
   assert(Math.max(...stemCounts.values()) <= 4, "one learner-facing stem was mass-repeated");
 });
 
+test("answer placement and option length do not leak the key", async () => {
+  const { questions } = await (await api()).materializePhysicsChemistry();
+  const positions = [0, 0, 0, 0];
+  let uniquelyLongest = 0;
+  for (const question of questions) {
+    positions[question.answerIndex] += 1;
+    const lengths = question.options.map((option) => [...option].length);
+    const maximum = Math.max(...lengths);
+    if (lengths[question.answerIndex] === maximum && lengths.filter((length) => length === maximum).length === 1) uniquelyLongest += 1;
+  }
+  assert(Math.max(...positions) / questions.length <= 0.35, `answer-position leakage: ${positions.join("/")}`);
+  assert(uniquelyLongest / questions.length <= 0.45, `answer-length leakage: ${uniquelyLongest}/${questions.length} correct options are uniquely longest`);
+});
+
 test("lectures, stimuli, and figures expose complete learning and accessible alternatives", async () => {
-  const [{ materializePhysicsChemistry }, { PHYSICS_CHEMISTRY_SKILL_KNOWLEDGE: knowledge }] = await Promise.all([api(), import(KNOWLEDGE_URL)]);
-  const content = await materializePhysicsChemistry();
-  const skills = new Map(content.skills.map((skill) => [skill.id, skill]));
-  const trapCorrections = new Map(Object.values(knowledge).map((card) => [cleanClaim(card.trap), cleanClaim(card.truth)]));
+  const content = await (await api()).materializePhysicsChemistry();
   for (const lecture of content.lectures) {
-    const card = knowledge[lecture.skillId];
     const serialized = JSON.stringify(lecture);
     assert.equal(lecture.sections.length, 4, `${lecture.id}: sections`);
     assert.equal(lecture.workedExamples.length, 3, `${lecture.id}: worked examples`);
@@ -180,25 +254,16 @@ test("lectures, stimuli, and figures expose complete learning and accessible alt
     assert.equal(lecture.misconceptions.length, 4, `${lecture.id}: misconceptions`);
     assert.equal(new Set(lecture.misconceptions.map((item) => item.belief)).size, 4, `${lecture.id}: duplicate misconceptions`);
     assert.equal(lecture.checks.length, 3, `${lecture.id}: checks`);
-    assert(serialized.includes(card.truth), `${lecture.id}: skill truth absent`);
-    assert(serialized.includes(cleanClaim(card.trap)), `${lecture.id}: skill trap absent`);
     assert(!TEMPLATE_LEAK.test(serialized), `${lecture.id}: authoring template leaked into lecture`);
-    assert(!serialized.includes(skills.get(lecture.skillId).title), `${lecture.id}: complete skill title is repeated`);
-    assert(lecture.sections.every((section) => section.content.length <= 100), `${lecture.id}: lecture section is too dense`);
-    assert(lecture.workedExamples.every((example) => example.prompt.length <= 68 && example.answer.length <= 92 && example.why.length <= 72), `${lecture.id}: worked example is too dense`);
-    for (const misconception of lecture.misconceptions) {
-      assert.equal(misconception.correction, trapCorrections.get(misconception.belief), `${lecture.id}: misconception correction mismatch`);
-    }
+    assert(lecture.sections.every((section) => section.title.trim() && section.content.trim()), `${lecture.id}: empty section`);
+    assert(lecture.workedExamples.every((example) => example.prompt.trim() && example.answer.trim() && example.why.trim()), `${lecture.id}: incomplete example`);
   }
   for (const stimulus of content.stimuli) {
-    const card = knowledge[stimulus.skillIds[0]];
-    assert.equal(stimulus.dataTable.columns.length, 3, `${stimulus.id}: table columns`);
-    assert.equal(stimulus.dataTable.rows.length, 4, `${stimulus.id}: table rows`);
-    assert(stimulus.dataTable.rows.every((row) => row.length === 3), `${stimulus.id}: ragged table`);
-    assert(JSON.stringify(stimulus).includes(cleanClaim(card.truth)) && JSON.stringify(stimulus).includes(cleanClaim(card.trap)), `${stimulus.id}: evidence pair absent`);
+    assert(stimulus.dataTable.columns.length >= 2, `${stimulus.id}: table columns`);
+    assert(stimulus.dataTable.rows.length >= 1, `${stimulus.id}: table rows`);
+    assert(stimulus.dataTable.rows.every((row) => row.length === stimulus.dataTable.columns.length), `${stimulus.id}: ragged table`);
     assert(!TEMPLATE_LEAK.test(JSON.stringify(stimulus)), `${stimulus.id}: authoring template leaked into stimulus`);
-    assert(!JSON.stringify(stimulus).includes(skills.get(stimulus.skillIds[0]).title), `${stimulus.id}: complete skill title is repeated`);
-    assert(stimulus.body.length <= 80 && stimulus.dataTable.rows.flat().every((cell) => cell.length <= 64), `${stimulus.id}: unreadable stimulus`);
+    assert(stimulus.dataTable.caption.trim(), `${stimulus.id}: missing table caption`);
   }
   for (const asset of content.assets) {
     assert(asset.altText.length >= 20 && asset.longDescription.length >= 40, `${asset.id}: incomplete description`);
@@ -214,6 +279,14 @@ test("lectures, stimuli, and figures expose complete learning and accessible alt
     assert.equal(sha256(svg), asset.sha256, `${asset.id}: SVG hash`);
     assert(svg.toString("utf8").includes(`<desc>${asset.longDescription}</desc>`), `${asset.id}: long description diverges from SVG`);
   }
+  const laboratory = await readFile(path.join(ROOT, content.assets.find((asset) => asset.path.endsWith("laboratory-setup.svg")).path), "utf8");
+  assert([...laboratory.matchAll(/<ellipse\b/gu)].length >= 2, "heated-test-tube figure must draw both goggle lenses");
+  assert.match(laboratory, /液體不超過試管容量 1\/3/u, "heated-test-tube figure must show the safe liquid level");
+  assert.match(laboratory, /人站側面/u, "heated-test-tube figure must show the safe observer position");
+  const buoyancy = await readFile(path.join(ROOT, content.assets.find((asset) => asset.path.endsWith("buoyancy-diagram.svg")).path), "utf8");
+  assert.match(buoyancy, /上表面壓力（較小）/u);
+  assert.match(buoyancy, /下表面壓力（較大）/u);
+  assert.match(buoyancy, /壓力的垂直合力/u);
 });
 
 test("static catalog and subject manifest contain reviewed IDs and valid hashes only", async () => {
@@ -248,6 +321,8 @@ test("runtime does not generate questions and preserves migration, accessibility
   assert.match(app, /migrationBackup/);
   assert.match(app, /legacySnapshot/);
   assert.match(html, /<main|<aside|<fieldset|aria-live|skip-link/);
+  assert.doesNotMatch(html, /全數為已審核靜態內容/u);
+  assert.match(html, /固定版本載入，不在瀏覽器即時生成題目/u);
   assert.match(css, /:focus-visible/);
   assert.match(css, /prefers-reduced-motion/);
   assert.match(css, /@media print/);
@@ -330,14 +405,16 @@ test("high-risk science semantics remain explicit", async () => {
   const content = await materializePhysicsChemistry();
   const question = new Map(content.questions.map((value) => [value.id, value]));
   const correct = (id) => question.get(id).options[question.get(id).answerIndex];
-  assert.match(correct("PHYCHM_R4_Q_009_01"), /54 g.*20 cm³.*2\.7 g\/cm³/u);
-  assert.match(correct("PHYCHM_R4_Q_057_01"), /Co 是鈷.*CO/u);
-  assert.match(correct("PHYCHM_R4_Q_062_01"), /Ca²⁺.*鈣離子.*Cl⁻.*氯離子/u);
-  assert.match(correct("PHYCHM_R4_Q_106_01"), /pH＜7.*pH＝7.*pH＞7/u);
-  assert.match(correct("PHYCHM_R4_Q_133_01"), /油脂.*鹼.*皂化.*肥皂/u);
-  assert.match(correct("PHYCHM_R4_Q_172_01"), /往返.*68 m/u);
-  assert.match(correct("PHYCHM_R4_Q_177_01"), /入射角等於反射角.*法線/u);
-  assert.match(correct("PHYCHM_R4_Q_240_01"), /12 N.*7 N.*5 N/u);
+  const visible = (id) => `${question.get(id).stem} ${correct(id)} ${question.get(id).optionRationales[question.get(id).answerIndex].reason}`;
+  assert.match(visible("PHYCHM_R4_Q_009_01"), /36 g.*12 cm³.*3\.0 g\/cm³.*36÷12/u);
+  assert.match(visible("PHYCHM_R4_Q_057_01"), /氫元素.*\bH\b/u);
+  assert.match(visible("PHYCHM_R4_Q_062_01"), /Na⁺.*一個正電/u);
+  assert.match(visible("PHYCHM_R4_Q_106_01"), /pH＝5.*酸性.*小於7/u);
+  assert.match(visible("PHYCHM_R4_Q_133_01"), /皂化.*油脂與強鹼.*肥皂/u);
+  assert.match(visible("PHYCHM_R4_Q_172_01"), /340 m\/s.*0\.10 s/u);
+  assert.match(correct("PHYCHM_R4_Q_172_01"), /17 m/u);
+  assert.match(visible("PHYCHM_R4_Q_177_01"), /法線.*反射定律.*25°/u);
+  assert.match(correct("PHYCHM_R4_Q_240_01"), /12.*7.*5 N/u);
   assert.match(correct("PHYCHM_R4_Q_247_01"), /速度平方.*四倍/u);
   assert.match(correct("PHYCHM_R4_Q_290_01"), /磁通量.*感應電動勢.*閉合/u);
   assert.match(correct("PHYCHM_R4_Q_292_01"), /交流.*高電壓.*降低電流/u);

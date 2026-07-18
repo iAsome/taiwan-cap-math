@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於橫波與縱波的振動方向，哪項結論符合題給條件？",
+  "stem": "一列波向下傳播，粒子在水平方向左右振動。此波屬於哪一類？",
   "options": [
-    "橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行",
-    "若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動",
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差"
+    "縱波",
+    "橫波",
+    "無法分類",
+    "同時是橫波與縱波"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行」。"
+      "isCorrect": false,
+      "reason": "向下與水平方向垂直，不符合縱波。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動」不成立；在介質波模型中，標記粒子應在平衡位置兩側往復運動；波形則表示擾動依序傳開。"
+      "isCorrect": true,
+      "reason": "鉛直傳播與水平振動互相垂直。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關」不成立；橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行。"
+      "reason": "題目已同時給傳播和振動方向，資料足以分類。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「振幅是波峰到波谷的全高，波長是相鄰波峰的高度差」不成立；波峰是橫波最高點、波谷是最低點；振幅由平衡位置量到波峰，波長是沿傳播方向相鄰同相位點的距離。"
+      "reason": "在此理想模型中方向關係單一，不會同時平行又垂直。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "條件判斷",
     "分析"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動",
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差"
+    "縱波",
+    "無法分類",
+    "同時是橫波與縱波"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

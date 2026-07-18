@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於狀態改變時物質種類不變，哪項結論符合題給條件？",
+  "stem": "要檢驗汽化前後總質量是否守恆，哪種設計較恰當？",
   "options": [
-    "教科書的粒子圖是顯微鏡直接拍到的照片，圖上比例可當成實際大小",
-    "狀態改變必然產生新分子，因此冰和水屬於不同化學物質",
-    "固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹",
-    "冰熔化成水時 H₂O 粒子種類不變，改變的是粒子排列、間距與運動狀態"
+    "只看白霧顏色",
+    "用開口杯且不收集蒸氣",
+    "在密閉耐熱容器中量整套裝置前後質量",
+    "改用不同天平量前後"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「教科書的粒子圖是顯微鏡直接拍到的照片，圖上比例可當成實際大小」不成立；粒子圖是解釋現象的模型；可表現排列與運動差異，但圖上大小和間距通常不是實際比例。"
+      "reason": "顏色不是質量。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「狀態改變必然產生新分子，因此冰和水屬於不同化學物質」不成立；冰熔化成水時 H₂O 粒子種類不變，改變的是粒子排列、間距與運動狀態。"
+      "reason": "系統會失去蒸氣。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹」不成立；固體粒子緊密且在平衡位置附近振動，液體粒子可相對移動，氣體粒子間距大且運動自由。"
+      "isCorrect": true,
+      "reason": "能避免物質離開並維持量測基準。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「冰熔化成水時 H₂O 粒子種類不變，改變的是粒子排列、間距與運動狀態」。"
+      "isCorrect": false,
+      "reason": "不同儀器增加系統差異。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "實驗設計"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "教科書的粒子圖是顯微鏡直接拍到的照片，圖上比例可當成實際大小",
-    "狀態改變必然產生新分子，因此冰和水屬於不同化學物質",
-    "固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹"
+    "只看白霧顏色",
+    "用開口杯且不收集蒸氣",
+    "改用不同天平量前後"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-1",
       "AUTH-NATURAL-LC-AB-4-2",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對飲品稀釋結果，哪項說法正確？",
+  "stem": "一瓶標示『100% 純氧』的氣體，若標示與分析皆可靠，屬於？",
   "options": [
-    "5 ppm 和 5% 完全相同，都表示每一百份中有 5 份",
-    "純物質在固定條件下有固定組成；空氣、海水等由多種物質以可變比例組成，是混合物",
-    "加水稀釋會同時減少原有溶質的質量，所以濃度才下降",
-    "任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電"
+    "純化合物",
+    "均勻混合物",
+    "純元素",
+    "非均勻混合物"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「5 ppm 和 5% 完全相同，都表示每一百份中有 5 份」不成立；5 ppm 表示在題目指定的比例基準下，每一百萬份中有 5 份目標成分。"
+      "reason": "沒有不同元素化合。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「純物質在固定條件下有固定組成；空氣、海水等由多種物質以可變比例組成，是混合物」。"
+      "isCorrect": false,
+      "reason": "只含一種物質。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「加水稀釋會同時減少原有溶質的質量，所以濃度才下降」不成立；對溶液只加水而沒有溶質進出時，溶質質量不變、溶液質量增加，因此濃度降低。"
+      "isCorrect": true,
+      "reason": "只含氧元素形成的氧分子。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣…」不成立；在相同電路與濃度條件下，水溶液能否導電可用來判斷是否有可移動離子，並輔助區分電解質。"
+      "reason": "沒有多相。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "資訊應用"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "5 ppm 和 5% 完全相同，都表示每一百份中有 5 份",
-    "加水稀釋會同時減少原有溶質的質量，所以濃度才下降",
-    "任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電"
+    "純化合物",
+    "均勻混合物",
+    "非均勻混合物"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AB-4-4",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

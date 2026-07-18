@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告根據加熱曲線下結論，哪項符合資料？",
+  "stem": "物體A溫度不變，能否斷定沒有熱交換？",
   "options": [
-    "加熱曲線只要出現平臺就表示熱源關閉，與物態改變無關",
-    "相變時溫度不變就表示吸熱量為零，所有輸入能量都消失",
-    "所有物質受熱都以完全相同比例膨脹，因此材料差異不影響伸縮設計",
-    "熱量淨傳自高溫物體至低溫物體"
+    "不能，因溫度沒有單位",
+    "不能，可能同時吸放熱相等或正在相變",
+    "能，熱量必為零",
+    "能，絕對沒有粒子運動"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「加熱曲線只要出現平臺就表示熱源關閉，與物態改變無關」不成立；加熱曲線斜升區表示單一物態升溫，平臺可表示純物質在相變，需先辨認橫縱軸。"
+      "reason": "溫度有單位。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「相變時溫度不變就表示吸熱量為零，所有輸入能量都消失」不成立；熔化或沸騰平臺期間，物質仍吸收能量以改變粒子排列或作用，溫度可保持不變。"
+      "isCorrect": true,
+      "reason": "淨效應可為零或能量用於相變。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「所有物質受熱都以完全相同比例膨脹，因此材料差異不影響伸縮設計」不成立；金屬橋伸縮縫、溫度計液柱變化均可由物質熱脹冷縮解釋，但幅度依材料而異。"
+      "reason": "交換量未必零。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「兩物體接觸時，熱量淨傳自高溫物體至低溫物體，直到達熱平衡」。"
+      "isCorrect": false,
+      "reason": "粒子仍動。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "反例推理"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "加熱曲線只要出現平臺就表示熱源關閉，與物態改變無關",
-    "相變時溫度不變就表示吸熱量為零，所有輸入能量都消失",
-    "所有物質受熱都以完全相同比例膨脹，因此材料差異不影響伸縮設計"
+    "不能，因溫度沒有單位",
+    "能，熱量必為零",
+    "能，絕對沒有粒子運動"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱學與能量; 臺灣國中教育會考自然科熱量、比熱、相變與生活現象題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-BA-4-1",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "EARTH_R4_ST_034",
-  "stem": "閱讀「由全球波線推論外核狀態」的資料後，為了釐清地震波資料推論地球內部具有分層，哪一項讀值正確？",
+  "stem": "三處界線中，哪一處的 P 波速度增加量最大？",
   "options": [
-    "在「由全球波線推論外核狀態」的地震波資料推論地球內部具有分層資料中，當波種為S 波時，通常到時為較早。",
-    "在「由全球波線推論外核狀態」的地震波資料推論地球內部具有分層資料中，附表找不到波種為S 波的紀錄。",
-    "在「由全球波線推論外核狀態」的地震波資料推論地球內部具有分層資料中，當波種為S 波時，通常到時為較晚。",
-    "在「由全球波線推論外核狀態」的地震波資料推論地球內部具有分層資料中，有波種為S 波的紀錄，但沒有通常到時欄。"
+    "660 km，增加 0.8 km/s；明顯折射只被當成儀器誤差。",
+    "410 km，增加 0.8 km/s；單一路徑即可代表全球內部；各深度波速被假定完全相同。",
+    "35 km，增加 1.3 km/s；跨界線的波速差須與量測不確定度比較。",
+    "三處都增加 0.1 km/s；各深度波速被假定完全相同。"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「較早」來自其他資料列；本列記錄的是「較晚」。"
+      "reason": "660 km 界線的速度增加量是 11.0－10.2＝0.8 km/s，小於 35 km 的 1.3 km/s；明顯折射也不能當成儀器誤差。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "表中第2列已列出「S 波」，不能說沒有記錄。"
+      "reason": "410 km 界線的速度增加量是 10.1－9.3＝0.8 km/s，不是三處最大；單一路徑也不足以代表全球，波速更非各深度相同。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "逐欄讀值可直接得到「通常到時為較晚」。"
+      "reason": "35 km 界線的速度增加量是 8.1－6.8＝1.3 km/s，大於另兩處的 0.8 km/s；這些差值也都超過 0.1 km/s 的不確定度。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "欄名已明列「通常到時」，可直接查到數值。"
+      "reason": "0.1 km/s 是題示不確定度上限，不是三處速度增加量；表中三列實際增加 1.3、0.8、0.8 km/s。"
     }
   ],
   "difficulty": "standard",
@@ -49,7 +49,7 @@
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "人類已直接鑽穿地函取得全部資料"
+    "三處都增加 0.1 km/s；各深度波速被假定完全相同。"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "逐項核對「由全球波線推論外核狀態」的條件後，「在「由全球波線推論外核狀態」的地震波資料推論地球內部具有分層資料中，當波種為S 波時，通常到時為較晚。」符合題目資料；查核依據為：P 波可穿過固體與液體。",
+      "evidence": "三列速度差依序為 1.3、0.8、0.8 km/s。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「波的陰影區不是沒有地震」。",
+      "evidence": "0.1 km/s 是不確定度上限。",
       "status": "pass"
     }
   ],

@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組根據位置時間圖下結論，哪項符合資料？",
+  "stem": "位置—時間圖的縱軸通常表示什麼？",
   "options": [
-    "某點座標即表示該時刻位置",
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸",
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快"
+    "經過的總時間",
+    "相對參考點的位置",
+    "物體的加速度大小",
+    "物體質量"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置」。"
+      "isCorrect": false,
+      "reason": "經過的總時間不成立。縱軸讀出各時刻相對原點的有號位置。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸」不成立；位置—時間圖的線形描述位置如何隨時間變化，不是物體在空間中的軌跡外觀。"
+      "isCorrect": true,
+      "reason": "縱軸讀出各時刻相對原點的有號位置。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑」不成立；位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置。"
+      "reason": "物體的加速度大小不成立。縱軸讀出各時刻相對原點的有號位置。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快」不成立；位置—時間圖的斜率為位置變化除以時間變化；斜率絕對值較大表示速度大小較大。"
+      "reason": "物體質量不成立。縱軸讀出各時刻相對原點的有號位置。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "主張評估",
     "證據評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸",
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快"
+    "經過的總時間",
+    "物體的加速度大小",
+    "物體質量"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解狀態改變與化學反應，哪項修正合理？",
+  "stem": "汽水開瓶冒泡通常主要因什麼？",
   "options": [
-    "只要外觀或形狀改變，無論有無新物質，都必然是化學變化",
-    "性質改變只要能恢復外觀就必然沒有新物質，無需檢驗",
-    "只要觀察到任一顏色或溫度變化，就已唯一證明發生特定化學反應",
-    "冰熔化、水沸騰都只改變 H₂O 的狀態"
+    "瓶中產生新元素",
+    "水立即分解",
+    "壓力降低使溶解氣體逸出",
+    "液體必達沸點"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要外觀或形狀改變，無論有無新物質，都必然是化學變化」不成立；物理變化不產生新物質；化學變化形成性質不同的新物質，應以反應前後證據判斷。"
+      "reason": "不生成元素。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「性質改變只要能恢復外觀就必然沒有新物質，無需檢驗」不成立；鐵生鏽後產物的顏色、導電等性質與鐵不同，可支持形成新物質。"
+      "reason": "無分解條件。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「只要觀察到任一顏色或溫度變化，就已唯一證明發生特定化學反應」不成立；沉澱、特定氣體、難以由物理過程解釋的顏色或溫度變化，都可作反應線索。"
+      "isCorrect": true,
+      "reason": "符合降壓釋氣。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「冰熔化、水沸騰都只改變 H₂O 的狀態，沒有形成新物質，屬物理變化」。"
+      "isCorrect": false,
+      "reason": "常溫未必沸騰。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "情境解釋"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要外觀或形狀改變，無論有無新物質，都必然是化學變化",
-    "性質改變只要能恢復外觀就必然沒有新物質，無需檢驗",
-    "只要觀察到任一顏色或溫度變化，就已唯一證明發生特定化學反應"
+    "瓶中產生新元素",
+    "水立即分解",
+    "液體必達沸點"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-AB-4-3",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

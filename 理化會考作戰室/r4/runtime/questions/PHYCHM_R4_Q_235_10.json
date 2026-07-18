@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組根據鞋底壓力下結論，哪項符合資料？",
+  "stem": "誤以為加壓鍋內外海拔相同，所以鍋內氣壓不可能高於外界，結果會錯判沸水溫度。用密閉加壓鍋列的海拔20 m檢驗，應改採哪個判準？",
   "options": [
-    "大氣壓力來自地球引力下空氣的重量與粒子碰撞",
-    "用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與",
-    "密閉氣體體積變小時粒子數自動減少，所以壓力也一定減小",
-    "空氣沒有質量與重量，大氣壓只是溫度計產生的幻覺"
+    "氣壓也受天氣與溫度影響，單次讀值不能只用海拔解釋全部差異",
+    "解題時將任何兩地的氣壓差都歸因於海拔，完全不查同時的天氣與溫度",
+    "看到高山氣壓較低，卻推論高山上方空氣柱重量比海邊更大",
+    "主張加壓鍋內外海拔相同，所以鍋內氣壓不可能高於外界"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變」。"
+      "reason": "氣壓也受天氣與溫度影響，單次讀值不能只用海拔解釋全部差異。丘陵列的海拔為800 m，氣壓為92.0 kPa；高山列的海拔為2500 m，氣壓為75.0 kPa。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與」不成立；吸管、滴管等裝置是先降低內部壓力，外界較大大氣壓才將液體推向低壓處。"
+      "reason": "解題時錯將任何兩地的氣壓差都歸因於海拔，完全不查同時的天氣與溫度，結果會錯判沸水溫度。氣壓也受天氣與溫度影響，單次讀值不能只用海拔解釋全部差異；沸水溫度差異若未通過說明大氣壓力來自空氣重量對海拔的控制，就不能只歸給氣壓。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「密閉氣體體積變小時粒子數自動減少，所以壓力也一定減小」不成立；密閉的定量氣體在溫度近似不變時，體積被壓縮而變小，粒子撞壁更頻繁，壓力較大。"
+      "reason": "一看到高山氣壓較低，卻推論高山上方空氣柱重量比海邊更大，結果會錯判沸水溫度。海拔升高時上方空氣柱較少，量得氣壓下降；氣壓的數值若未依海拔核對，會使沸水溫度無法通過說明大氣壓力來自空氣重量檢查。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「空氣沒有質量與重量，大氣壓只是溫度計產生的幻覺」不成立；大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變。"
+      "reason": "誤以為加壓鍋內外海拔相同，所以鍋內氣壓不可能高於外界，結果會錯判沸水溫度。大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變；海拔未列入說明大氣壓力來自空氣重量時，沸水溫度的氣壓大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與",
-    "密閉氣體體積變小時粒子數自動減少，所以壓力也一定減小",
-    "空氣沒有質量與重量，大氣壓只是溫度計產生的幻覺"
+    "解題時將任何兩地的氣壓差都歸因於海拔，完全不查同時的天氣與溫度",
+    "看到高山氣壓較低，卻推論高山上方空氣柱重量比海邊更大",
+    "主張加壓鍋內外海拔相同，所以鍋內氣壓不可能高於外界"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

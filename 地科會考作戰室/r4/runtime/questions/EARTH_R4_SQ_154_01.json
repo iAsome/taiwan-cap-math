@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "EARTH_R4_ST_154",
-  "stem": "閱讀「由日出日落算晝長」的資料後，為了釐清太陽高度角比較地表受能量大小，哪一項讀值正確？",
+  "stem": "哪一個入射角的單位面積受能最大？",
   "options": [
-    "在「由日出日落算晝長」的太陽高度角比較地表受能量大小資料中，當日期位置為丙時，正午影長相對值為0.6。",
-    "在「由日出日落算晝長」的太陽高度角比較地表受能量大小資料中，當日期位置為丙時，正午影長相對值為1.4。",
-    "在「由日出日落算晝長」的太陽高度角比較地表受能量大小資料中，當日期位置為丙時，正午影長相對值為1。",
-    "在「由日出日落算晝長」的太陽高度角比較地表受能量大小資料中，附表找不到日期位置為丙的紀錄。"
+    "30°，光斑60平方公分",
+    "60°，光斑30平方公分",
+    "90°，每平方公分6單位",
+    "三次光束總能量相同，所以單位面積受能也相同"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「0.6」來自其他資料列；本列記錄的是「1」。"
+      "reason": "30度時120單位分布在60平方公分，每平方公分只有2單位，是三次最低。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「1.4」來自其他資料列；本列記錄的是「1」。"
+      "reason": "60度時每平方公分4單位，高於30度但仍低於90度的6單位。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "逐欄讀值可直接得到「正午影長相對值為1」。"
+      "reason": "90度光斑最小，120單位集中於20平方公分，因此每平方公分得到6單位。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "表中第3列已列出「丙」，不能說沒有記錄。"
+      "reason": "總能量相同不代表分布面積相同；光斑縮小會提高單位面積受能。"
     }
   ],
   "difficulty": "standard",
@@ -49,7 +49,7 @@
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "夏季是因地球明顯更靠近太陽"
+    "三次光束總能量相同，所以單位面積受能也相同"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "逐項核對「由日出日落算晝長」的條件後，「在「由日出日落算晝長」的太陽高度角比較地表受能量大小資料中，當日期位置為丙時，正午影長相對值為1。」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "由120除以20可驗算每平方公分6單位，且表中此值大於另外兩列。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "把總能量相同誤當單位面積相同，忽略了光斑由60縮到20平方公分。",
       "status": "pass"
     }
   ],

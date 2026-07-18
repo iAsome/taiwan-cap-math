@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組根據食鹽水配製下結論，哪項符合資料？",
+  "stem": "若稀釋時灑出部分原溶液，還能假設原溶質量全數保留嗎？",
   "options": [
-    "對溶液只加水而沒有溶質進出時",
-    "5 ppm 和 5% 完全相同，都表示每一百份中有 5 份",
-    "任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電",
-    "加水稀釋會同時減少原有溶質的質量，所以濃度才下降"
+    "不能，灑出的溶液也帶走溶質",
+    "能，只有水會灑出",
+    "不能，因所有溶質會消失",
+    "能，濃度會自動補回"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「對溶液只加水而沒有溶質進出時，溶質質量不變、溶液質量增加，因此濃度降低」。"
+      "reason": "均勻溶液灑出會按比例損失成分。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「5 ppm 和 5% 完全相同，都表示每一百份中有 5 份」不成立；5 ppm 表示在題目指定的比例基準下，每一百萬份中有 5 份目標成分。"
+      "reason": "沒有只灑水的依據。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣…」不成立；在相同電路與濃度條件下，水溶液能否導電可用來判斷是否有可移動離子，並輔助區分電解質。"
+      "reason": "未灑部分仍有溶質。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「加水稀釋會同時減少原有溶質的質量，所以濃度才下降」不成立；對溶液只加水而沒有溶質進出時，溶質質量不變、溶液質量增加，因此濃度降低。"
+      "reason": "沒有補回機制。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "transfer",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "系統界定"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "5 ppm 和 5% 完全相同，都表示每一百份中有 5 份",
-    "任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電",
-    "加水稀釋會同時減少原有溶質的質量，所以濃度才下降"
+    "能，只有水會灑出",
+    "不能，因所有溶質會消失",
+    "能，濃度會自動補回"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AB-4-4",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

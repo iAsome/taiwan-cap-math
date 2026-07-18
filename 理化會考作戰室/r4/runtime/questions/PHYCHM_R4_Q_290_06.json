@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解磁場變化解釋感應電流，哪項修正合理？",
+  "stem": "磁鐵靜止在線圈內條件下，先知磁通量變化不變和電路閉合，再看電流計回到 0。如何用另一列確認這筆電流計沒有錯置？",
   "options": [
-    "載流導線受力方向只由導線顏色決定，電流與磁場方向改變都沒有影響",
-    "電動機是靠轉動線圈自動產生電能，它的主要功能和發電機完全相同",
-    "發電機和電動機都只將電能轉成熱能，與機械能無關",
-    "穿過線圈的磁通量發生變化時可產生感應電動勢"
+    "開路仍可有感應電動勢，但電流計不形成持續回路",
+    "解題時將開路時可能有感應電動勢直接說成必有感應電流",
+    "把磁鐵快速插入與快速抽出時",
+    "主張移動越慢磁通量變化越快，所以感應效應越大"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「載流導線受力方向只由導線顏色決定，電流與磁場方向改變都沒有…」不成立；在受力不為零的配置中，載流導線放在外磁場中會受力；只改變電流或磁場方向之一，受力方向會反轉。"
+      "isCorrect": true,
+      "reason": "開路仍可有感應電動勢，但電流計不形成持續回路。磁鐵慢速插入列的磁通量變化為慢速增加，電路為閉合；磁鐵靜止在線圈內列的磁通量變化為不變，電路為閉合。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「電動機是靠轉動線圈自動產生電能，它的主要功能和發電機完全相同」不成立；電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能。"
+      "reason": "解題時錯將開路時可能有感應電動勢直接說成必有感應電流，結果會錯判電流計。閉合電路才有感應電流；電流計差異若未通過由磁場變化解釋感應電流對磁通量變化的控制，就不能只歸給電路。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「發電機和電動機都只將電能轉成熱能，與機械能無關」不成立；發電機主要將機械能轉電能，電動機主要將電能轉機械能，兩者能量流向相反。"
+      "reason": "解題時誤把磁鐵快速插入與快速抽出時，仍預測電流計向同一方向偏轉，結果會錯判電流計。只有穿過線圈的磁場狀態改變時出現感應；電路的數值若未依磁通量變化核對，會使電流計無法通過由磁場變化解釋感應電流檢查。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「穿過線圈的磁通量發生變化時可產生感應電動勢；電路閉合時才會有感應電流」。"
+      "isCorrect": false,
+      "reason": "誤以為移動越慢磁通量變化越快，所以感應效應越大，結果會錯判電流計。穿過線圈的磁通量發生變化時可產生感應電動勢；磁通量變化未列入由磁場變化解釋感應電流時，電流計的電路大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "載流導線受力方向只由導線顏色決定，電流與磁場方向改變都沒有影響",
-    "電動機是靠轉動線圈自動產生電能，它的主要功能和發電機完全相同",
-    "發電機和電動機都只將電能轉成熱能，與機械能無關"
+    "解題時將開路時可能有感應電動勢直接說成必有感應電流",
+    "把磁鐵快速插入與快速抽出時",
+    "主張移動越慢磁通量變化越快，所以感應效應越大"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-KC-4-4",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

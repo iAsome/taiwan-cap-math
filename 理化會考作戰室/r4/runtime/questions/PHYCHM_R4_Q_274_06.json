@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解功率與時間計算用電量，哪項修正合理？",
+  "stem": "照明列給出功率0.10 kW，另記每天使用5 h及30 天用電量15 kWh。30 天用電量送入由功率與時間計算用電量計算前，每天使用哪個品質要求不能漏？",
   "options": [
-    "只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關",
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間",
-    "電功率為 V/I＝60 W，因為電壓應除以電流",
-    "1000 W 電器使用 2 h 消耗 2 kWh；電能等於功率乘以使用時間"
+    "把漏算待機或功率變動後仍宣稱結果是完整帳單用電量",
+    "W 須先換為 kW",
+    "解題時將 1.2 kW×4 h×30 天算成 14.4 kWh，少乘十倍",
+    "直接用 1000 W×2 h 寫成 2000 kWh，並漏掉先把 W 換成 kW"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關」不成立；安全節能做法包括不超過延長線額定、保持線材完好乾燥、不用時關閉高功率電器並比較實際用電量。"
+      "reason": "解題時誤把漏算待機或功率變動後仍宣稱結果是完整帳單用電量，結果會錯判30 天用電量。資料只計指定期間的電能，不含待機或功率隨運轉變動；30 天用電量差異若未通過由功率與時間計算用電量對功率的控制，就不能只歸給每天使用。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「1000 W 電器使用 2 h 消耗 500 kWh，因為…」不成立；1000 W 電器使用 2 h 消耗 2 kWh；電能等於功率乘以使用時間。"
+      "isCorrect": true,
+      "reason": "W 須先換為 kW。風扇列的功率為0.06 kW，每天使用為8 h；照明列的功率為0.10 kW，每天使用為5 h。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「電功率為 V/I＝60 W，因為電壓應除以電流」不成立；電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W。"
+      "reason": "解題時錯將 1.2 kW×4 h×30 天算成 14.4 kWh，少乘十倍。用電量＝功率(kW)×時間(h)；每天使用的數值若未依功率核對，會使30 天用電量無法通過由功率與時間計算用電量檢查。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「1000 W 電器使用 2 h 消耗 2 kWh；電能等於功率乘以使用時間」。"
+      "isCorrect": false,
+      "reason": "直接用 1000 W×2 h 寫成 2000 kWh，卻未先把 W 換成 kW，結果會錯判30 天用電量。1000 W 電器使用 2 h 消耗 2 kWh；功率未列入由功率與時間計算用電量時，30 天用電量的每天使用大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關",
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間",
-    "電功率為 V/I＝60 W，因為電壓應除以電流"
+    "把漏算待機或功率變動後仍宣稱結果是完整帳單用電量",
+    "解題時將 1.2 kW×4 h×30 天算成 14.4 kWh，少乘十倍",
+    "直接用 1000 W×2 h 寫成 2000 kWh，並漏掉先把 W 換成 kW"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

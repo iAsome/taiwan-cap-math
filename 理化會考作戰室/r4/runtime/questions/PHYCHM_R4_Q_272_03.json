@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理串聯電路資料後，哪項說明正確？",
+  "stem": "正常：等效路徑經過燈泡、主線電流0.30 A、現象燈亮。哪個模型能把等效路徑、主線電流連到現象？",
   "options": [
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換",
-    "短路是低電阻路徑繞過用電器",
-    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過"
+    "斷路使回路不連續而無電流",
+    "看到短路主線 3.5 A 卻判成電路不連續",
+    "主張燈泡不亮就一定是燈絲斷路，並漏掉檢查開關與旁路",
+    "解題時將斷路和短路都說成電流為零，忽略短路形成低電阻大電流路徑"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路」不成立；電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整。"
+      "isCorrect": true,
+      "reason": "斷路使回路不連續而無電流。導線跨過燈泡列的等效路徑為低阻旁路，主線電流為3.5 A；燈絲燒斷列的等效路徑為燈泡內斷路，主線電流為0 A。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「電流、電壓與電阻是同一物理量的三個名稱，單位也可互換」不成立；電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。"
+      "reason": "一看到短路主線 3.5 A 卻判成電路不連續。斷路使電流為零；主線電流的數值若未依等效路徑核對，會使現象無法通過由電路圖判斷短路斷路與元件狀態檢查。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險」。"
+      "isCorrect": false,
+      "reason": "誤以為燈泡不亮就一定是燈絲斷路，卻未檢查開關與旁路。斷路使回路不連續而無電流；等效路徑未列入由電路圖判斷短路斷路與元件狀態時，現象的主線電流大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過」不成立；安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性。"
+      "reason": "解題時錯將斷路和短路都說成電流為零，忽略短路形成低電阻大電流路徑。斷路使回路不連續而無電流；照原做法會把現象算錯或判反。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "辨認",
+    "概念理解"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換",
-    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過"
+    "看到短路主線 3.5 A 卻判成電路不連續",
+    "主張燈泡不亮就一定是燈絲斷路，並漏掉檢查開關與旁路",
+    "解題時將斷路和短路都說成電流為零，忽略短路形成低電阻大電流路徑"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

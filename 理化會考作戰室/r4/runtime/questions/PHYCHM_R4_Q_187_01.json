@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "報告討論光線作圖判斷透鏡成像，哪項敘述正確？",
+  "stem": "凸透鏡前一條光平行主軸入射，折射後應通過哪裡？",
   "options": [
-    "透鏡成像作圖可任意畫兩條曲線，不必通過焦點或遵守光線規則",
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線",
-    "入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾",
-    "凸透鏡作圖可選用平行主軸後通過焦點、通過光心近似不偏折等主要光線"
+    "像側焦點",
+    "物側焦點",
+    "光心後沿原路",
+    "鏡面入射點"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「透鏡成像作圖可任意畫兩條曲線，不必通過焦點或遵守光線規則」不成立；凸透鏡作圖可選用平行主軸後通過焦點、通過光心近似不偏折等主要光線。"
+      "isCorrect": true,
+      "reason": "平行主軸光經凸透鏡後通過像側焦點。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「光由任何介質進入另一介質時速率都不變，也永遠折向法線」不成立；光由空氣進入玻璃時速率降低，斜入射通常折向法線；由玻璃進空氣則通常偏離法線。"
+      "reason": "物側焦點是入射規則的另一端。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾」不成立；入射角是入射光與法線夾角，折射角是折射光與法線夾角，都不從介面量。"
+      "reason": "平行光不等同通過光心光。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「凸透鏡作圖可選用平行主軸後通過焦點、通過光心近似不偏折等主要光線」。"
+      "isCorrect": false,
+      "reason": "透鏡不是鏡面。"
     }
   ],
   "difficulty": "foundation",
@@ -47,16 +47,16 @@
     "辨認",
     "概念理解"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "透鏡成像作圖可任意畫兩條曲線，不必通過焦點或遵守光線規則",
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線",
-    "入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾"
+    "物側焦點",
+    "光心後沿原路",
+    "鏡面入射點"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-7",
       "AUTH-NATURAL-LC-KA-4-8",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

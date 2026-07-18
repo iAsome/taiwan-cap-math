@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估水蒸氣凝結報告時，哪項說明正確？",
+  "stem": "粒子圖中相變前後圓點數相同、符號相同，但間距改變。這最支持哪項結論？",
   "options": [
-    "只有溫度達沸點才會蒸發，而沸騰只發生在液面",
-    "熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小",
-    "冰熔化成水時 H₂O 粒子種類不變",
-    "加熱曲線水平表示停止加熱，所以物質完全沒有吸收能量"
+    "粒子種類與數量保留，狀態改變",
+    "質量必定增加",
+    "物質發生核反應",
+    "圓點代表不同元素"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只有溫度達沸點才會蒸發，而沸騰只發生在液面」不成立；蒸發只在液面進行且各溫度均可發生；沸騰在特定壓力的沸點於液體內部形成氣泡。"
+      "isCorrect": true,
+      "reason": "同符號同數量且排列改變正是相變模型。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小」不成立；物體受熱時常是粒子間平均距離增加，不是單個粒子自身膨脹。"
+      "reason": "數量未增加。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「冰熔化成水時 H₂O 粒子種類不變，改變的是粒子排列、間距與運動狀態」。"
+      "isCorrect": false,
+      "reason": "沒有原子核變化證據。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「加熱曲線水平表示停止加熱，所以物質完全沒有吸收能量」不成立；純物質加熱曲線的水平平臺可表示相變；平臺期間仍吸熱，但溫度可維持。"
+      "reason": "符號相同。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "模型證據整合"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只有溫度達沸點才會蒸發，而沸騰只發生在液面",
-    "熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小",
-    "加熱曲線水平表示停止加熱，所以物質完全沒有吸收能量"
+    "質量必定增加",
+    "物質發生核反應",
+    "圓點代表不同元素"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-1",
       "AUTH-NATURAL-LC-AB-4-2",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

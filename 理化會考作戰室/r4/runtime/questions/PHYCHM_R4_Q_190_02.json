@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "根據顯微鏡與望遠鏡紀錄，哪項判讀合理？",
+  "stem": "完全關燈後，一般紅色紙片為何看不出原本紅色？",
   "options": [
-    "三稜鏡在光通過時創造出原本不存在的顏料，所以色帶與白光組成無關",
-    "物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察",
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色",
-    "不透明紅物體在白光下主要反射紅光、吸收其他多數色光"
+    "紙片材料立即變黑",
+    "缺少入射光可供紙片反射",
+    "紅光速度變為零",
+    "眼睛只在白天成像"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「三稜鏡在光通過時創造出原本不存在的顏料，所以色帶與白光組成…」不成立；白光經三稜鏡分光形成多種色光，說明白光可由不同色光組成。"
+      "reason": "材料未必改變。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察」不成立；紅色物體在只含藍光的照明下可看來很暗，因為沒有足夠可反射的紅光。"
+      "isCorrect": true,
+      "reason": "非自發光物體需反射照明光才能被看見。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色」不成立；紅、綠、藍色光是加法混色的基本光；顏料混合主要透過選擇性吸收，與色光加法原理不同。"
+      "reason": "不是速度問題。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「不透明紅物體在白光下主要反射紅光、吸收其他多數色光，因而看來呈紅色」。"
+      "isCorrect": false,
+      "reason": "眼睛在有適當光時可成像。"
     }
   ],
   "difficulty": "foundation",
@@ -47,16 +47,16 @@
     "關係判讀",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "三稜鏡在光通過時創造出原本不存在的顏料，所以色帶與白光組成無關",
-    "物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察",
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色"
+    "紙片材料立即變黑",
+    "紅光速度變為零",
+    "眼睛只在白天成像"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-10",
       "AUTH-NATURAL-LC-KA-4-11",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

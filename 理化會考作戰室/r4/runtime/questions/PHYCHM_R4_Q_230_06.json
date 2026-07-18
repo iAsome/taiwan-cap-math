@@ -14,34 +14,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解受力圖避免把運動方向當成力方向，哪項修正合理？",
+  "stem": "箱子原本靜止，受到向右淨力。之後如何？",
   "options": [
-    "比較粗糙程度時可同時在其中一組增加負重，結果仍只反映表面性質",
-    "物體沿圓周運動時必有一個向外的真實合力，向內力會使它離開圓軌道",
-    "兩物體距離越遠引力越大，質量變化對引力沒有影響",
-    "物體向右運動不代表必有向右力"
+    "向右加速",
+    "此時物體向左加速",
+    "此時物體保持靜止",
+    "直接以固定速度向右"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「比較粗糙程度時可同時在其中一組增加負重，結果仍只反映表面性質」不成立；摩擦效果受接觸面性質與正向作用力影響；比較實驗要一次只改一項。"
+      "isCorrect": true,
+      "reason": "淨力向右產生向右加速度，速度由零開始增加。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「物體沿圓周運動時必有一個向外的真實合力，向內力會使它離開圓…」不成立；圓周運動的速度方向沿切線，使方向持續改變的合力指向圓心。"
+      "reason": "此時物體向左加速不成立。淨力向右產生向右加速度，速度由零開始增加。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「兩物體距離越遠引力越大，質量變化對引力沒有影響」不成立；萬有引力隨兩物體質量增大而增大，隨中心距離增加而減小；比較時要分開變項。"
+      "reason": "此時物體保持靜止不成立。淨力向右產生向右加速度，速度由零開始增加。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「受力圖只畫作用在目標物上的力，箭頭方向是力方向；物體向右運動不代表必有向右力」。"
+      "isCorrect": false,
+      "reason": "直接以固定速度向右不成立。淨力向右產生向右加速度，速度由零開始增加。"
     }
   ],
   "difficulty": "standard",
@@ -49,16 +49,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "比較粗糙程度時可同時在其中一組增加負重，結果仍只反映表面性質",
-    "物體沿圓周運動時必有一個向外的真實合力，向內力會使它離開圓軌道",
-    "兩物體距離越遠引力越大，質量變化對引力沒有影響"
+    "此時物體向左加速",
+    "此時物體保持靜止",
+    "直接以固定速度向右"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-10",
       "AUTH-NATURAL-LC-EB-4-11",
@@ -69,19 +69,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

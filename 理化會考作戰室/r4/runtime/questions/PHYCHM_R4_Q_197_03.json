@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理速率單位換算資料後，哪項說明正確？",
+  "stem": "運動員繞 400 m 跑道一圈回到起點，其路程與位移為何？",
   "options": [
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同",
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率",
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理",
-    "往返原點時路程大於零但位移為零"
+    "物體的路程 0 m，位移 400 m",
+    "路程 400 m，位移 0 m",
+    "物體的路程 400 m，位移 400 m",
+    "物體的路程與位移都為 0 m"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「速度只是一個正數快慢，向東與向西 10 m/s 在任何分析…」不成立；速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向。"
+      "reason": "物體的路程 0 m，位移 400 m不符合題目資料。實際走完一圈為 400 m，起終點相同使位移為 0。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均…」不成立；儀表在某一刻顯示的是瞬時資訊；一段旅程的平均速率必須以全路程除以全時間。"
+      "isCorrect": true,
+      "reason": "實際走完一圈為 400 m，起終點相同使位移為 0。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「運動資料只要代入公式就不必作量級檢查，步行 500 m/s…」不成立；步行速率通常約數 m/s；若算得 500 m/s，應檢查距離、時間單位或小數點。"
+      "reason": "物體的路程 400 m，位移 400 m不符合題目資料。實際走完一圈為 400 m，起終點相同使位移為 0。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「路程是實際路徑總長，位移是起點到終點的有向改變；往返原點時路程大於零但位移為零」。"
+      "isCorrect": false,
+      "reason": "物體的路程與位移都為 0 m不符合題目資料。實際走完一圈為 400 m，起終點相同使位移為 0。"
     }
   ],
   "difficulty": "foundation",
@@ -46,16 +46,16 @@
     "單位檢核",
     "資料判讀"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同",
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率",
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理"
+    "物體的路程 0 m，位移 400 m",
+    "物體的路程 400 m，位移 400 m",
+    "物體的路程與位移都為 0 m"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

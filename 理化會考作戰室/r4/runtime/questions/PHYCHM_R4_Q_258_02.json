@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據斜面搬運紀錄，哪項判讀合理？",
+  "stem": "並列甲與乙，兩者輸入力×距離是50 N×4 m、60 N×4 m，輸出力×距離是200 N×1 m、200 N×1 m。依說明理想機械不能同時省功核對輸入力×距離後，應算出或辨認什麼？",
   "options": [
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功",
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量",
-    "不能無中生有省功"
+    "拿提升不同負載或不同高度的資料直接比較效率",
+    "把乙的效率算成 240÷200＝120%，顛倒輸入功與輸出功",
+    "其他裝置輸入功較大，差額轉成內能等",
+    "解題時將摩擦造成的能量轉換說成能量消失，因而不承認實際效率低於百分之百"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功」不成立；輪軸利用不同力臂，齒輪利用齒數比改變轉速與力矩，斜面以增加距離換取較小力。"
+      "reason": "解題時拿提升不同負載或不同高度的資料直接比較效率，結果會錯判效率。效率不能高於 100%；效率差異若未通過說明理想機械不能同時省功對輸入力×距離的控制，就不能只歸給輸出力×距離。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「機械只要省力就一定同時省距離與省時，不存在任何交換」不成立；省力機械通常要施力移動較長距離；改變方向不必然省力，「省時」與「省力」要分開。"
+      "reason": "把乙的效率算成 240÷200＝120%，顛倒輸入功與輸出功。理想甲輸入、輸出功皆 200 J；輸出力×距離的數值若未依輸入力×距離核對，會使效率無法通過說明理想機械不能同時省功檢查。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量」不成立；理想機械輸入功等於輸出功；可用較小力換較長施力距離，但不能無中生有省功。"
+      "isCorrect": true,
+      "reason": "其他裝置輸入功較大，差額轉成內能等。甲列的輸入力×距離為50 N×4 m、輸出力×距離為200 N×1 m；乙列的輸入力×距離為60 N×4 m、輸出力×距離為200 N×1 m。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「理想機械輸入功等於輸出功；可用較小力換較長施力距離，但不能無中生有省功」。"
+      "isCorrect": false,
+      "reason": "解題時錯將摩擦造成的能量轉換說成能量消失，因而不承認實際效率低於百分之百。理想機械輸入功等於輸出功；輸入力×距離未列入說明理想機械不能同時省功時，效率的輸出力×距離大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
+    "辨認",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功",
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量"
+    "拿提升不同負載或不同高度的資料直接比較效率",
+    "把乙的效率算成 240÷200＝120%，顛倒輸入功與輸出功",
+    "解題時將摩擦造成的能量轉換說成能量消失，因而不承認實際效率低於百分之百"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解波速等於頻率乘波長的關係，哪項修正合理？",
+  "stem": "空氣中聲速取 340 m/s，一聲波波長為 0.17 m。頻率為何？",
   "options": [
-    "頻率 5.0 Hz、波長 0.80 m 的波速為 v＝fλ＝4.0 m/s；計算前要統一單位",
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端",
-    "若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動"
+    "57.8 Hz",
+    "500 Hz",
+    "2000 Hz",
+    "340.17 Hz"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「頻率 5.0 Hz、波長 0.80 m 的波速為 v＝fλ＝4.0 m/s；計算前要統一單位」。"
+      "isCorrect": false,
+      "reason": "340×0.17＝57.8 的運算方向錯誤。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「任何一張瞬間位置波形圖都可只看波峰數直接得到頻率」不成立；比較波形圖前要讀軸；位置圖可直接量波長與振幅，頻率則還需時間資訊。"
+      "reason": "若為 500 Hz，波長應是 0.68 m。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「繩波向右傳時，繩上每一個粒子都從左端一路移到右端」不成立；波將擾動與能量向前傳，介質粒子多在平衡位置附近振動，不隨波整體移到遠處。"
+      "isCorrect": true,
+      "reason": "f＝340/0.17＝2000 Hz。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動」不成立；在介質波模型中，標記粒子應在平衡位置兩側往復運動；波形則表示擾動依序傳開。"
+      "reason": "相加波速與波長沒有物理意義。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端",
-    "若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動"
+    "57.8 Hz",
+    "500 Hz",
+    "340.17 Hz"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

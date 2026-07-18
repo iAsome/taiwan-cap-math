@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估分子量加總報告時，哪項說明正確？",
+  "stem": "兩反應物都沒有剩餘，能推出什麼？",
   "options": [
-    "若 A 與 B 的完全消耗比是 1：2，提供 3 g A、10 g B 時 A 先用完，B 消耗 6 g 並剩 4 g",
-    "N₂＋3H₂→2NH₃ 中的下標 2、3、3 才是反應粒子數比",
-    "生成物乙應為 29 g，因為要把已知生成物加到反應物上",
-    "只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比"
+    "兩物質質量必相等",
+    "反應式係數都為1",
+    "投入量符合其完全反應消耗比",
+    "生成物必只有一種"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「若 A 與 B 的完全消耗比是 1：2，提供 3 g A、10 g B 時 A 先用完，B 消耗 6 g 並剩 4 g」。"
+      "isCorrect": false,
+      "reason": "比例可不為1：1。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「N₂＋3H₂→2NH₃ 中的下標 2、3、3 才是反應粒子…」不成立；配平式 N₂＋3H₂→2NH₃ 表示粒子數比 1：3：2，讀比例前應確認方程式已配平。"
+      "reason": "係數可不同。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「生成物乙應為 29 g，因為要把已知生成物加到反應物上」不成立；密閉系統反應物共 18 g，已知生成物甲 11 g，資料表的乙應補為 7 g。"
+      "isCorrect": true,
+      "reason": "恰好用完表示投入比例適合。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比」不成立；一系列實驗中若 A、B 剛好完全反應的消耗質量一直維持 2：3，可以該恆定比來推算同反應資料。"
+      "reason": "可有多種生成物。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "反向推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "N₂＋3H₂→2NH₃ 中的下標 2、3、3 才是反應粒子數比",
-    "生成物乙應為 29 g，因為要把已知生成物加到反應物上",
-    "只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比"
+    "兩物質質量必相等",
+    "反應式係數都為1",
+    "生成物必只有一種"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-2",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

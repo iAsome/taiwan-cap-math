@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "學生討論把曲線軌跡誤當位置時間圖的解讀，哪項敘述正確？",
+  "stem": "小車沿直線向右做等速運動，其位置—時間圖應有何特徵？",
   "options": [
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸",
-    "位置—時間圖的線形描述位置如何隨時間變化，不是物體在空間中的軌跡外觀",
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快"
+    "位置隨時間等量增加，呈正斜率直線",
+    "物體的位置保持不變，呈水平線",
+    "物體的位置隨時間等量減少",
+    "圖線畫成道路的俯視形狀"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸」不成立；位置—時間圖的線形描述位置如何隨時間變化，不是物體在空間中的軌跡外觀。"
+      "isCorrect": true,
+      "reason": "等速向右使位置對時間以固定正斜率增加。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「位置—時間圖的線形描述位置如何隨時間變化，不是物體在空間中的軌跡外觀」。"
+      "isCorrect": false,
+      "reason": "物體的位置保持不變，呈水平線不成立。等速向右使位置對時間以固定正斜率增加。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑」不成立；位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置。"
+      "reason": "物體的位置隨時間等量減少不成立。等速向右使位置對時間以固定正斜率增加。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快」不成立；位置—時間圖的斜率為位置變化除以時間變化；斜率絕對值較大表示速度大小較大。"
+      "reason": "圖線畫成道路的俯視形狀不成立。等速向右使位置對時間以固定正斜率增加。"
     }
   ],
   "difficulty": "foundation",
@@ -46,16 +46,16 @@
     "辨認",
     "概念理解"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸",
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快"
+    "物體的位置保持不變，呈水平線",
+    "物體的位置隨時間等量減少",
+    "圖線畫成道路的俯視形狀"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

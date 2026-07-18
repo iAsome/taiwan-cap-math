@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對頻率波長計算結果，哪項說法正確？",
+  "stem": "高速攝影顯示波峰連續前進，但每個色點都繞固定中心運動。最符合哪項敘述？",
   "options": [
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端",
-    "若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動",
-    "標記粒子應在平衡位置兩側往復運動"
+    "波形前進源於各點依序振動",
+    "色點共同搬運波峰",
+    "波峰前進表示平衡位置全向前移",
+    "只有第一個色點真正振動"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「任何一張瞬間位置波形圖都可只看波峰數直接得到頻率」不成立；比較波形圖前要讀軸；位置圖可直接量波長與振幅，頻率則還需時間資訊。"
+      "isCorrect": true,
+      "reason": "相鄰點的振動時間差使局部最大位移的位置向前移。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「繩波向右傳時，繩上每一個粒子都從左端一路移到右端」不成立；波將擾動與能量向前傳，介質粒子多在平衡位置附近振動，不隨波整體移到遠處。"
+      "reason": "色點中心固定，不支持共同搬運。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動」不成立；在介質波模型中，標記粒子應在平衡位置兩側往復運動；波形則表示擾動依序傳開。"
+      "reason": "平衡位置未隨波峰改變。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「在介質波模型中，標記粒子應在平衡位置兩側往復運動；波形則表示擾動依序傳開」。"
+      "isCorrect": false,
+      "reason": "後續色點也有紀錄到振動。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端",
-    "若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動"
+    "色點共同搬運波峰",
+    "波峰前進表示平衡位置全向前移",
+    "只有第一個色點真正振動"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

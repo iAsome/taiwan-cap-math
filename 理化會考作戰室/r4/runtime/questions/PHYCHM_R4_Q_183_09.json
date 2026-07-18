@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對相機鏡頭結果，哪項說法正確？",
+  "stem": "入射角55°、折射角37°。偏折量若定義為兩角差，數值為何？",
   "options": [
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線",
-    "水中物體看來較淺是因物體實際漂浮上升，與光的折射無關",
-    "凸透鏡與凹透鏡都只能使光發散，兩者的形狀與光線作用無關",
-    "折射角是折射光與法線夾角"
+    "18°",
+    "37°",
+    "55°",
+    "92°"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「光由任何介質進入另一介質時速率都不變，也永遠折向法線」不成立；光由空氣進入玻璃時速率降低，斜入射通常折向法線；由玻璃進空氣則通常偏離法線。"
+      "isCorrect": true,
+      "reason": "偏折量＝55°−37°＝18°。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「水中物體看來較淺是因物體實際漂浮上升，與光的折射無關」不成立；水中物體的光進入空氣後折射，眼睛沿折射光反向延伸，使物體看來比實際淺。"
+      "reason": "37°是折射角。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「凸透鏡與凹透鏡都只能使光發散，兩者的形狀與光線作用無關」不成立；凸透鏡可使與主軸平行的光近似會聚至焦點，凹透鏡使光發散，反向延長似來自虛焦點。"
+      "reason": "55°是入射角。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「入射角是入射光與法線夾角，折射角是折射光與法線夾角，都不從介面量」。"
+      "isCorrect": false,
+      "reason": "92°是兩角和。"
     }
   ],
   "difficulty": "advanced",
@@ -47,16 +47,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線",
-    "水中物體看來較淺是因物體實際漂浮上升，與光的折射無關",
-    "凸透鏡與凹透鏡都只能使光發散，兩者的形狀與光線作用無關"
+    "37°",
+    "55°",
+    "92°"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-7",
       "AUTH-NATURAL-LC-KA-4-8",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

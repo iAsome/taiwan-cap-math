@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "學生根據曬衣蒸發下結論，哪項符合資料？",
+  "stem": "若提高液面上方空氣的濕度，其他條件相同，水的淨蒸發通常如何？",
   "options": [
-    "教科書的粒子圖是顯微鏡直接拍到的照片，圖上比例可當成實際大小",
-    "沸騰在特定壓力的沸點於液體內部形成氣泡",
-    "只有溫度達沸點才會蒸發，而沸騰只發生在液面",
-    "固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹"
+    "一定瞬間沸騰",
+    "水直接凝固",
+    "不受任何影響",
+    "變慢"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「教科書的粒子圖是顯微鏡直接拍到的照片，圖上比例可當成實際大小」不成立；粒子圖是解釋現象的模型；可表現排列與運動差異，但圖上大小和間距通常不是實際比例。"
+      "reason": "濕度不等於沸點。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「蒸發只在液面進行且各溫度均可發生；沸騰在特定壓力的沸點於液體內部形成氣泡」。"
+      "isCorrect": false,
+      "reason": "沒有降至凝固條件。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只有溫度達沸點才會蒸發，而沸騰只發生在液面」不成立；蒸發只在液面進行且各溫度均可發生；沸騰在特定壓力的沸點於液體內部形成氣泡。"
+      "reason": "濕度是蒸發條件之一。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹」不成立；固體粒子緊密且在平衡位置附近振動，液體粒子可相對移動，氣體粒子間距大且運動自由。"
+      "isCorrect": true,
+      "reason": "周圍水蒸氣多，淨逸出減少。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "條件預測"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "教科書的粒子圖是顯微鏡直接拍到的照片，圖上比例可當成實際大小",
-    "只有溫度達沸點才會蒸發，而沸騰只發生在液面",
-    "固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹"
+    "一定瞬間沸騰",
+    "水直接凝固",
+    "不受任何影響"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-1",
       "AUTH-NATURAL-LC-AB-4-2",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

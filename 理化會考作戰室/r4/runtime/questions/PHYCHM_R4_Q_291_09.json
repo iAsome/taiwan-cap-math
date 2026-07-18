@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對高壓輸電結果，哪項說法正確？",
+  "stem": "電動機的主要輸入為電能、主要輸出為機械能；手搖發電機則是機械能、電能。兩列交由比較發電機與電動機能量轉換判讀，主要輸出呈現哪個量化或方向結果？",
   "options": [
-    "載流導線受力方向只由導線顏色決定，電流與磁場方向改變都沒有影響",
-    "電動機是靠轉動線圈自動產生電能，它的主要功能和發電機完全相同",
-    "只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流",
-    "兩者能量流向相反"
+    "解題時將發電機描述成將電能轉機械能，把電動機描述成相反",
+    "僅憑裝置名稱就判能量流向，並漏掉追蹤實際輸入與輸出",
+    "馬達與發電機的主要能量流向相反，但都遵守能量守恆並有損耗",
+    "把手搖發電機點燈時，把光能誤列為手搖前的輸入"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「載流導線受力方向只由導線顏色決定，電流與磁場方向改變都沒有…」不成立；在受力不為零的配置中，載流導線放在外磁場中會受力；只改變電流或磁場方向之一，受力方向會反轉。"
+      "reason": "解題時錯將發電機描述成將電能轉機械能，把電動機描述成相反。發電機主要將機械能轉電能，電動機主要將電能轉機械能，兩者能量流向相反；照原做法會把附帶損耗算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「電動機是靠轉動線圈自動產生電能，它的主要功能和發電機完全相同」不成立；電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能。"
+      "reason": "僅憑裝置名稱就判能量流向，卻未追蹤實際輸入與輸出，結果會錯判附帶損耗。裝置名稱不能取代能量追蹤；附帶損耗差異若未通過比較發電機與電動機能量轉換對主要輸入的控制，就不能只歸給主要輸出。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流」不成立；穿過線圈的磁通量發生變化時可產生感應電動勢；電路閉合時才會有感應電流。"
+      "isCorrect": true,
+      "reason": "馬達與發電機的主要能量流向相反，但都遵守能量守恆並有損耗。電動機列的主要輸入為電能、主要輸出為機械能；手搖發電機列的主要輸入為機械能、主要輸出為電能。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「發電機主要將機械能轉電能，電動機主要將電能轉機械能，兩者能量流向相反」。"
+      "isCorrect": false,
+      "reason": "解題時誤把手搖發電機點燈時，把光能誤列為手搖前的輸入，結果會錯判附帶損耗。馬達與發電機的主要能量流向相反，但都遵守能量守恆並有損耗；主要輸出的數值若未依主要輸入核對，會使附帶損耗無法通過比較發電機與電動機能量轉換檢查。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
     "證據判讀",
-    "分析"
+    "推論"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "載流導線受力方向只由導線顏色決定，電流與磁場方向改變都沒有影響",
-    "電動機是靠轉動線圈自動產生電能，它的主要功能和發電機完全相同",
-    "只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流"
+    "解題時將發電機描述成將電能轉機械能，把電動機描述成相反",
+    "僅憑裝置名稱就判能量流向，並漏掉追蹤實際輸入與輸出",
+    "把手搖發電機點燈時，把光能誤列為手搖前的輸入"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-KC-4-4",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

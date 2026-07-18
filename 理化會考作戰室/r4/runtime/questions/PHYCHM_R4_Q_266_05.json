@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於電源導線開關與用電器形成通路，哪項結論符合題給條件？",
+  "stem": "丙列含開關閉合及回路只接電池一端；丁列含閉合及導線繞過燈泡。套用辨識電源導線開關與用電器形成通路到這兩列，哪項開關條件必須保留？",
   "options": [
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路"
+    "把電池只接到燈泡一端就判定有持續電流，忽略必須形成閉合通路",
+    "閉合開關不代表一定正確，仍要沿導線追蹤是否形成經過用電器的完整通路",
+    "看到開關閉合便直接判定燈亮，並漏掉沿導線檢查是否繞過燈泡",
+    "把配置丙只接電池一端仍被判成完整回路"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆」不成立；並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。"
+      "reason": "解題時誤把電池只接到燈泡一端就判定有持續電流，忽略必須形成閉合通路。電源、導線、開關與用電器必須形成閉合通路才有持續電流；照原做法會把燈泡算錯或判反。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「短路和斷路都只會使電流完全為零，不可能出現過大電流」不成立；斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險。"
+      "isCorrect": true,
+      "reason": "閉合開關不代表一定正確，仍要沿導線追蹤是否形成經過用電器的完整通路。甲列的開關為閉合，回路為電池兩端皆連回燈泡；乙列的開關為斷開，回路為有一處缺口。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整」。"
+      "isCorrect": false,
+      "reason": "一看到開關閉合便直接判定燈亮，卻未沿導線檢查是否繞過燈泡，結果會錯判燈泡。閉合開關不代表一定正確，仍要沿導線追蹤是否形成經過用電器的完整通路；燈泡差異若未通過辨識電源導線開關與用電器形成通路對開關的控制，就不能只歸給回路。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路」不成立；電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整。"
+      "reason": "解題時誤把配置丙只接電池一端仍被判成完整回路。只有甲形成電流必須經過燈泡的完整回路；回路的數值若未依開關核對，會使燈泡無法通過辨識電源導線開關與用電器形成通路檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "條件判斷",
-    "分析"
+    "應用"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路"
+    "把電池只接到燈泡一端就判定有持續電流，忽略必須形成閉合通路",
+    "看到開關閉合便直接判定燈亮，並漏掉沿導線檢查是否繞過燈泡",
+    "把配置丙只接電池一端仍被判成完整回路"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於速度時間圖的速度變化，哪項結論符合題給條件？",
+  "stem": "圖線由 +2 m/s 降到 -2 m/s，途中穿越零。最合理的描述為何？",
   "options": [
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸",
-    "速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度",
-    "速度—時間圖的縱座標直接給各時刻速度；水平線表示速度恆定",
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑"
+    "先向正方向減速至停下，再向負方向加快",
+    "此時物體始終向正方向加快",
+    "此時物體始終向負方向減速",
+    "全程保持同一速率方向"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸」不成立；位置—時間圖的線形描述位置如何隨時間變化，不是物體在空間中的軌跡外觀。"
+      "isCorrect": true,
+      "reason": "速度由正經零到負，表示先正向、停止、再反向。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度」不成立；速度—時間圖的縱座標直接給各時刻速度；水平線表示速度恆定。"
+      "reason": "此時物體始終向正方向加快不成立。速度由正經零到負，表示先正向、停止、再反向。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「速度—時間圖的縱座標直接給各時刻速度；水平線表示速度恆定」。"
+      "isCorrect": false,
+      "reason": "此時物體始終向負方向減速不成立。速度由正經零到負，表示先正向、停止、再反向。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑」不成立；位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置。"
+      "reason": "全程保持同一速率方向不成立。速度由正經零到負，表示先正向、停止、再反向。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "條件判斷",
     "分析"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸",
-    "速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度",
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑"
+    "此時物體始終向正方向加快",
+    "此時物體始終向負方向減速",
+    "全程保持同一速率方向"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

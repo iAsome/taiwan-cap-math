@@ -12,50 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_253",
-  "stem": "翹翹板題組中，哪項說明符合紀錄？",
+  "stem": "合計列給出方向—，另記力矩逆 6、順 6 N·m及轉動效果平衡。哪個模型能同時解釋四筆轉動效果？",
   "options": [
+    "把順時針與逆時針力矩全部相加",
     "轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零",
-    "力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離",
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關",
-    "定滑輪一定把所需力減半，動滑輪則只改變方向而不省力"
+    "主張合力為零必然等於合力矩為零，忽略力的作用線位置",
+    "僅比較左右兩邊的力大小，未計入力臂便判定轉動平衡"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零」。"
+      "isCorrect": false,
+      "reason": "轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零。丙列的方向為向下，力矩為2 N·m；合計列的方向為—，力矩為逆 6、順 6 N·m。僅根據逆 6、順 4 與順 2 N·m 誤算成合力矩 12 N·m。順時針力矩 4＋2＝6 N·m，恰與逆時針 6 N·m 抵消，合力矩為零；力矩的數值若未依方向核對，會使轉動效果無法通過使用合力矩為零判斷轉動平衡檢查。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離」不成立；力矩大小為力乘以作用線到轉軸的垂直距離；10 N 作用於 0.30 m 力臂產生 3.0 N·m。"
+      "isCorrect": true,
+      "reason": "轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零。丙列的方向為向下，力矩為2 N·m；合計列的方向為—，力矩為逆 6、順 6 N·m。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關」不成立；槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果。"
+      "reason": "轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零。丙列的方向為向下，力矩為2 N·m；合計列的方向為—，力矩為逆 6、順 6 N·m。誤以為合力為零必然等於合力矩為零，忽略力的作用線位置。轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零；方向未列入使用合力矩為零判斷轉動平衡時，轉動效果的力矩大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「定滑輪一定把所需力減半，動滑輪則只改變方向而不省力」不成立；理想定滑輪主要改變施力方向；動滑輪或滑輪組可由支撐繩段數分擔負載而省力。"
+      "reason": "轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零。丙列的方向為向下，力矩為2 N·m；合計列的方向為—，力矩為逆 6、順 6 N·m。僅比較左右兩邊的力大小，未計入力臂便判定轉動平衡，結果會錯判轉動效果。轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零；照原做法會把轉動效果算錯或判反。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "證據評估"
+    "限制評估",
+    "遷移"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離",
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關",
-    "定滑輪一定把所需力減半，動滑輪則只改變方向而不省力"
+    "把順時針與逆時針力矩全部相加",
+    "主張合力為零必然等於合力矩為零，忽略力的作用線位置",
+    "僅比較左右兩邊的力大小，未計入力臂便判定轉動平衡"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -64,20 +65,6 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_013"
   ]

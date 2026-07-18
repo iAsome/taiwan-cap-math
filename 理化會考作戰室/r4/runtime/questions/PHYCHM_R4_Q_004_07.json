@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "天平歸零出現四種說法，哪項有理化概念支持？",
+  "stem": "若只知道某物長 20 cm，能直接換成多少公克嗎？",
   "options": [
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失",
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受",
-    "公制換算要保持同一物理量",
-    "2.35 m＝0.0235 cm，因為換成較小單位時數字也應變小"
+    "能，20 cm＝20 g，因公制單位可直接互換",
+    "不能，長度與質量是不同物理量",
+    "能，乘 100 即可",
+    "不能，因公分不是公制"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要重複次數足夠多，未歸零造成的固定偏差就會自動消失」不成立；天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動。"
+      "reason": "相同數字不代表等量。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受」不成立；成人桌子高度約 0.7 m；若記成 70 m，即使計算步驟完整，也應由量級發現單位或小數點錯誤。"
+      "isCorrect": true,
+      "reason": "缺少材料與其他關係，不能換算。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「2.35 m＝235 cm；公制換算要保持同一物理量，並讓數值和單位的改變相互補償」。"
+      "isCorrect": false,
+      "reason": "倍率不能跨物理量使用。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「2.35 m＝0.0235 cm，因為換成較小單位時數字也…」不成立；2.35 m＝235 cm；公制換算要保持同一物理量，並讓數值和單位的改變相互補償。"
+      "reason": "公分是公制長度單位。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "證據判讀"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失",
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受",
-    "2.35 m＝0.0235 cm，因為換成較小單位時數字也應變小"
+    "能，20 cm＝20 g，因公制單位可直接互換",
+    "能，乘 100 即可",
+    "不能，因公分不是公制"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

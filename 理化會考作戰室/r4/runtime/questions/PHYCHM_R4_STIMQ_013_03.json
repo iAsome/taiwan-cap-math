@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_013",
-  "stem": "金屬塊鑑別題組中，哪項說明符合紀錄？",
+  "stem": "若乙重測並排除氣泡，後液面可能比 65.1 mL 如何變化？",
   "options": [
-    "完全沒入的石塊體積是 12.5 cm³",
-    "體積是 135×2.7＝364.5 cm³，因為密度越大體積一定越大",
-    "物體切半後質量減半，所以密度也一定減半",
-    "只要密度表列數值相同，就已唯一證明樣品是該物質"
+    "仍必為 65.1",
+    "一定較高",
+    "較低",
+    "變成質量單位"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「量筒水面由 35.0 mL 升到 47.5 mL，完全沒入的石塊體積是 12.5 cm³，且不可有氣泡」。"
+      "isCorrect": false,
+      "reason": "原值含氣泡影響。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「體積是 135×2.7＝364.5 cm³，因為密度越大體…」不成立；質量 135 g、密度 2.7 g/cm³ 的樣品體積為 50 cm³，使用 V＝m/ρ。"
+      "reason": "沒有增加占空間。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「物體切半後質量減半，所以密度也一定減半」不成立；同一均勻銅塊切成兩半後，每塊的質量和體積同比減少，密度仍相同。"
+      "isCorrect": true,
+      "reason": "移除氣泡減少額外排水。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要密度表列數值相同，就已唯一證明樣品是該物質」不成立；樣品密度在誤差內符合某材料只能作為身分線索，還要考慮溫度、純度與其他性質。"
+      "reason": "仍讀 mL。"
     }
   ],
   "difficulty": "transfer",
@@ -49,14 +49,14 @@
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "體積是 135×2.7＝364.5 cm³，因為密度越大體積一定越大",
-    "物體切半後質量減半，所以密度也一定減半",
-    "只要密度表列數值相同，就已唯一證明樣品是該物質"
+    "仍必為 65.1",
+    "一定較高",
+    "變成質量單位"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-3",
       "AUTH-NATURAL-LC-CA-4-2",
@@ -66,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

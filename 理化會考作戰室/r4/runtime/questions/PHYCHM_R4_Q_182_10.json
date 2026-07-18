@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "報告根據相機鏡頭下結論，哪項符合資料？",
+  "stem": "光由空氣進入透明材料，入射角40°、折射角25°。哪項判讀合理？",
   "options": [
-    "近視眼應佩戴凸透鏡使光更提前會聚，因為所有視力問題都用同一透鏡",
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線",
-    "入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾",
-    "由玻璃進空氣則通常偏離法線"
+    "材料中光速較大，光離開法線",
+    "兩介質光速相同",
+    "此波的頻率在材料中降為零",
+    "材料中光速小於空氣中，光折向法線"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「近視眼應佩戴凸透鏡使光更提前會聚，因為所有視力問題都用同一…」不成立；近視眼需發散透鏡輔助將遠物像後移至視網膜；相機和眼睛均利用會聚系統成實像。"
+      "reason": "若更快通常折射角會較大。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「光由任何介質進入另一介質時速率都不變，也永遠折向法線」不成立；光由空氣進入玻璃時速率降低，斜入射通常折向法線；由玻璃進空氣則通常偏離法線。"
+      "reason": "方向已改變，不支持光速完全相同。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾」不成立；入射角是入射光與法線夾角，折射角是折射光與法線夾角，都不從介面量。"
+      "reason": "透射光仍有非零頻率。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「光由空氣進入玻璃時速率降低，斜入射通常折向法線；由玻璃進空氣則通常偏離法線」。"
+      "reason": "25°＜40°，符合進入較慢介質折向法線。"
     }
   ],
   "difficulty": "advanced",
@@ -47,16 +47,16 @@
     "主張評估",
     "證據評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "近視眼應佩戴凸透鏡使光更提前會聚，因為所有視力問題都用同一透鏡",
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線",
-    "入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾"
+    "材料中光速較大，光離開法線",
+    "兩介質光速相同",
+    "此波的頻率在材料中降為零"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-7",
       "AUTH-NATURAL-LC-KA-4-8",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_002",
-  "stem": "量筒液面題組中，哪項說明符合紀錄？",
+  "stem": "若實驗規範要求量筒的最小刻度不大於 0.1 mL，表中三支是否有符合者？",
   "options": [
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可",
-    "最小刻度要能分辨所需差異",
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失",
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受"
+    "三支都不符合最小刻度規範",
+    "甲符合，因量程最小",
+    "乙符合，因量程超過 18 mL",
+    "丙符合，因量程最大"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「三次不相同表示實驗失敗，只保留最接近預期的 10.0 s …」不成立；量得 9.8、10.1、10.0 s 的平均約為 10.0 s，差異可用範圍或離散情形描述，不…。"
+      "isCorrect": true,
+      "reason": "0.2、0.5、2 mL 都大於 0.1 mL。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「量約 12 cm 的鉛筆適合用毫米刻度直尺；儀器量程要大於待測量，最小刻度要能分辨所需差異」。"
+      "isCorrect": false,
+      "reason": "甲的最小刻度為 0.2 mL，大於規範上限。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只要重複次數足夠多，未歸零造成的固定偏差就會自動消失」不成立；天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動。"
+      "reason": "乙雖可容納 18 mL，0.5 mL 刻度仍過粗。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受」不成立；成人桌子高度約 0.7 m；若記成 70 m，即使計算步驟完整，也應由量級發現單位或小數點錯誤。"
+      "reason": "丙的 2 mL 刻度比規範上限大二十倍。"
     }
   ],
   "difficulty": "transfer",
@@ -49,14 +49,14 @@
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可",
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失",
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受"
+    "甲符合，因量程最小",
+    "乙符合，因量程超過 18 mL",
+    "丙符合，因量程最大"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -66,19 +66,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

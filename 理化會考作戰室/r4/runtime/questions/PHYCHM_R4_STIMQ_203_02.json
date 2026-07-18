@@ -11,50 +11,50 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_203",
-  "stem": "檢查表中關於位置時間圖上的位置與時刻的說法，哪項判讀正確？",
+  "stem": "依表格，哪一組時刻與位置配對正確？",
   "options": [
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸",
-    "位置—時間圖的橫軸是時間、縱軸是相對參考點的位置",
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快"
+    "t=2 s 時，x=2 m",
+    "t=2 s 時，x=6 m",
+    "t=4 s 時，x=2 m",
+    "t=6 s 時，x=-2 m"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸」不成立；位置—時間圖的線形描述位置如何隨時間變化，不是物體在空間中的軌跡外觀。"
+      "isCorrect": true,
+      "reason": "資料列明 2 s 對應 2 m，其餘配對交換或符號錯誤。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置」。"
+      "isCorrect": false,
+      "reason": "t=2 s 時，x=6 m不成立。資料列明 2 s 對應 2 m，其餘配對交換或符號錯誤。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑」不成立；位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置。"
+      "reason": "t=4 s 時，x=2 m不成立。資料列明 2 s 對應 2 m，其餘配對交換或符號錯誤。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快」不成立；位置—時間圖的斜率為位置變化除以時間變化；斜率絕對值較大表示速度大小較大。"
+      "reason": "t=6 s 時，x=-2 m不成立。資料列明 2 s 對應 2 m，其餘配對交換或符號錯誤。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "資料判讀"
+    "圖形分析"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸",
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快"
+    "t=2 s 時，x=6 m",
+    "t=4 s 時，x=2 m",
+    "t=6 s 時，x=-2 m"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -62,20 +62,6 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_007"
   ]

@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估速率單位換算報告時，哪項說明正確？",
+  "stem": "一車先向西 3 m/s，後向西 7 m/s。若向東為正，速度數值如何變化？",
   "options": [
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘",
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率",
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理",
-    "速度同時含快慢與方向"
+    "由 -3 m/s 變為 -7 m/s",
+    "由 +3 m/s 變為 +7 m/s",
+    "由 -7 m/s 變為 -3 m/s",
+    "由 0 變為 -4 m/s"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「72 km/h＝72×1000×3600 m/s，分子分母…」不成立；72 km/h＝20 m/s，因為 1 km＝1000 m、1 h＝3600 s；長度與時間都…。"
+      "isCorrect": true,
+      "reason": "向西皆為負，速率增大使速度由 -3 變 -7 m/s。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均…」不成立；儀表在某一刻顯示的是瞬時資訊；一段旅程的平均速率必須以全路程除以全時間。"
+      "reason": "由 +3 m/s 變為 +7 m/s不符合題目資料。向西皆為負，速率增大使速度由 -3 變 -7 m/s。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「運動資料只要代入公式就不必作量級檢查，步行 500 m/s…」不成立；步行速率通常約數 m/s；若算得 500 m/s，應檢查距離、時間單位或小數點。"
+      "reason": "由 -7 m/s 變為 -3 m/s不符合題目資料。向西皆為負，速率增大使速度由 -3 變 -7 m/s。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向」。"
+      "isCorrect": false,
+      "reason": "由 0 變為 -4 m/s不符合題目資料。向西皆為負，速率增大使速度由 -3 變 -7 m/s。"
     }
   ],
   "difficulty": "transfer",
@@ -46,16 +46,16 @@
     "限制評估",
     "高層推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘",
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率",
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理"
+    "由 +3 m/s 變為 +7 m/s",
+    "由 -7 m/s 變為 -3 m/s",
+    "由 0 變為 -4 m/s"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

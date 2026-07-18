@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "換成另一組高壓輸電資料，哪項判讀仍合理？",
+  "stem": "輸入和電磁作用在接通電源為電能、線圈兩側受相反方向力，到軸承摩擦為部分電能、—。輸出依由電流磁場受力解釋電動機計算時，電磁作用方向建立在哪項原理？",
   "options": [
-    "變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大",
-    "只要裝置含線圈就能跳過輸入、輸出的分析，直接說能量在線圈中消失",
-    "電動機是靠轉動線圈自動產生電能，它的主要功能和發電機完全相同",
-    "主要將電能轉成機械能"
+    "把斷電後線圈逐漸停轉，卻解釋為電磁力仍持續供能",
+    "主張線圈旋轉能自行供應原本的電能，不需外部電源",
+    "電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能",
+    "解題時將電動機說成主要將機械能轉成電能，混同發電機"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大」不成立；變壓器以交流造成變動磁場，改變電壓以利輸電；遠距離高電壓可在同功率下降低電流與線路損耗。"
+      "reason": "解題時誤把斷電後線圈逐漸停轉，卻解釋為電磁力仍持續供能，結果會錯判輸出。馬達把電能主要轉為機械能，並有部分內能與聲能；電磁作用的數值若未依輸入核對，會使輸出無法通過由電流磁場受力解釋電動機檢查。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要裝置含線圈就能跳過輸入、輸出的分析，直接說能量在線圈中…」不成立；裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出，例如手搖發電機為機械能→電能→光與熱。"
+      "reason": "誤以為線圈旋轉能自行供應原本的電能，不需外部電源，結果會錯判輸出。電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能；輸入未列入由電流磁場受力解釋電動機時，輸出的電磁作用大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「電動機是靠轉動線圈自動產生電能，它的主要功能和發電機完全相同」不成立；電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能。"
+      "isCorrect": true,
+      "reason": "電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能。軸承摩擦列的輸入為部分電能，電磁作用為—；斷電列的輸入為無持續輸入，電磁作用為電磁力消失。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能」。"
+      "isCorrect": false,
+      "reason": "解題時錯將電動機說成主要將機械能轉成電能，混同發電機，結果會錯判輸出。電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能；照原做法會把輸出算錯或判反。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大",
-    "只要裝置含線圈就能跳過輸入、輸出的分析，直接說能量在線圈中消失",
-    "電動機是靠轉動線圈自動產生電能，它的主要功能和發電機完全相同"
+    "把斷電後線圈逐漸停轉，卻解釋為電磁力仍持續供能",
+    "主張線圈旋轉能自行供應原本的電能，不需外部電源",
+    "解題時將電動機說成主要將機械能轉成電能，混同發電機"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-KC-4-4",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解靜止等速與折返圖形，哪項修正合理？",
+  "stem": "折線圖由水平線轉為負斜率，代表什麼？",
   "options": [
-    "速度數值變得更負就一定是減速，無需比較速度大小與方向",
-    "把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間與位置",
-    "直線斜率不變表示等速",
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸"
+    "由正向運動改為靜止",
+    "由負向運動改為正向運動",
+    "物體的位置瞬間變為零",
+    "由靜止改為向負方向運動"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「速度數值變得更負就一定是減速，無需比較速度大小與方向」不成立；速度—時間圖上數值由 2 增至 6 m/s 表示正向加速；速度由 −2 變 −6 m/s 則是…。"
+      "reason": "由正向運動改為靜止不成立。水平段速度為零，接著負斜率表示向負方向。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間…」不成立；「向東等速、停留、向西返回」的位置—時間圖應依序是正斜率、水平、負斜率。"
+      "reason": "由負向運動改為正向運動不成立。水平段速度為零，接著負斜率表示向負方向。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「位置—時間圖的水平線表示靜止，直線斜率不變表示等速，斜率變號表示折返」。"
+      "isCorrect": false,
+      "reason": "物體的位置瞬間變為零不成立。水平段速度為零，接著負斜率表示向負方向。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸」不成立；位置—時間圖的線形描述位置如何隨時間變化，不是物體在空間中的軌跡外觀。"
+      "isCorrect": true,
+      "reason": "水平段速度為零，接著負斜率表示向負方向。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "速度數值變得更負就一定是減速，無需比較速度大小與方向",
-    "把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間與位置",
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸"
+    "由正向運動改為靜止",
+    "由負向運動改為正向運動",
+    "物體的位置瞬間變為零"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

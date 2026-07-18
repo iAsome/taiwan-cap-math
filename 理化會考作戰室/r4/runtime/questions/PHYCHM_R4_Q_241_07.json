@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "船的平均密度出現四種說法，哪項有理化概念支持？",
+  "stem": "做比較時液體密度影響時同時改變排開體積，卻只把浮力差歸因於密度。依比較液體密度與排開體積對浮力影響修正時，液體密度與排開體積應採哪個原理連結？",
   "options": [
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水",
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "浮力隨液體密度與排開體積增大"
+    "僅根據甲到乙把密度增為 1.25 倍",
+    "主張同一液體中所有物體的浮力相同，不必知道排開體積",
+    "完全沒入時，浮力隨液體密度與排開體積增大",
+    "主張完全浸沒的物體沉得越深，排開體積不變時浮力仍會持續增加"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「漂浮物體既然在水面上，就完全不受浮力，只受向下重力」不成立；漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力。"
+      "reason": "僅根據甲到乙把密度增為 1.25 倍，卻判定浮力維持 0.784 N，結果會錯判浮力。甲乙只改液體密度，乙浮力較大；排開體積的數值若未依液體密度核對，會使浮力無法通過比較液體密度與排開體積對浮力影響檢查。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水」不成立；船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉。"
+      "reason": "誤以為同一液體中所有物體的浮力相同，不必知道排開體積，結果會錯判浮力。完全沒入時，浮力隨液體密度與排開體積增大；液體密度未列入比較液體密度與排開體積對浮力影響時，浮力的排開體積大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限…」不成立；完全沒入時，浮力隨液體密度與排開體積增大；同液體中排開體積相同則浮力相同。"
+      "isCorrect": true,
+      "reason": "完全沒入時，浮力隨液體密度與排開體積增大。丙列的液體密度為1.00 g/cm³，排開體積為150 cm³；丁列的液體密度為1.20 g/cm³，排開體積為150 cm³。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「完全沒入時，浮力隨液體密度與排開體積增大；同液體中排開體積相同則浮力相同」。"
+      "isCorrect": false,
+      "reason": "誤以為完全浸沒的物體沉得越深，排開體積不變時浮力仍會持續增加。完全沒入時，浮力隨液體密度與排開體積增大；照原做法會把浮力算錯或判反。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水",
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大"
+    "僅根據甲到乙把密度增為 1.25 倍",
+    "主張同一液體中所有物體的浮力相同，不必知道排開體積",
+    "主張完全浸沒的物體沉得越深，排開體積不變時浮力仍會持續增加"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

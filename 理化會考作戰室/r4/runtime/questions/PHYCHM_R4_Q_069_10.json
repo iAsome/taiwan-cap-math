@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄根據糖溶解下結論，哪項符合資料？",
+  "stem": "若對照組也與實驗組同樣升溫，最合理解讀為何？",
   "options": [
-    "只要觀察到任一顏色或溫度變化，就已唯一證明發生特定化學反應",
-    "所有能逆轉的過程都是物理變化，所有不可逆過程都是化學變化",
-    "反應線索要排除沸騰、溶解、外界加熱等原因，並用產物性質或對照試驗驗證",
-    "化學反應會把原子徹底消滅後再創造新原子，所以前後元素可任意改變"
+    "實驗組必定放熱更多",
+    "溫度計證明新元素",
+    "對照組沒有用途",
+    "升溫可能來自共同操作而非待測反應"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要觀察到任一顏色或溫度變化，就已唯一證明發生特定化學反應」不成立；沉澱、特定氣體、難以由物理過程解釋的顏色或溫度變化，都可作反應線索。"
+      "reason": "資料說同樣。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「所有能逆轉的過程都是物理變化，所有不可逆過程都是化學變化」不成立；物理變化常可逆，但「可逆」不是分類標準；部分化學反應也可逆，核心仍是新物質。"
+      "reason": "溫度計只量溫度，不能證明生成新元素。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「反應線索要排除沸騰、溶解、外界加熱等原因，並用產物性質或對照試驗驗證」。"
+      "isCorrect": false,
+      "reason": "對照揭露混淆。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「化學反應會把原子徹底消滅後再創造新原子，所以前後元素可任意…」不成立；化學變化中原子種類與總數保留，但原子連結和排列改變，形成不同粒子。"
+      "isCorrect": true,
+      "reason": "共同背景可解釋現象。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "對照解讀"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要觀察到任一顏色或溫度變化，就已唯一證明發生特定化學反應",
-    "所有能逆轉的過程都是物理變化，所有不可逆過程都是化學變化",
-    "化學反應會把原子徹底消滅後再創造新原子，所以前後元素可任意改變"
+    "實驗組必定放熱更多",
+    "溫度計證明新元素",
+    "對照組沒有用途"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-AB-4-3",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

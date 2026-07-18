@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u08",
+  "batch": "009-u08-complete",
+  "skills": [
+    "s001",
+    "s003",
+    "s004",
+    "s012",
+    "s013",
+    "s014"
+  ],
+  "mc": [
+    {
+      "questionId": "u08-s001-v011",
+      "expectedContentSha256": "ba2f4700734801afc8464137980311f5fe0cfbeed5b286d2cbc6a700e3810004",
+      "replaceText": {
+        "一份機械圖說寫著：「": "一份機械圖說有兩條不同直線 l、m，並寫著：「",
+        "P 到 l、m 的距離相等": "P 到 l、m 的距離都大於 0",
+        "位在線上表示距離為 0，但題意重點是共同點，不是一般等距軌跡。": "P 位在兩條線上時，到兩線的距離都為 0，不會大於 0。",
+        "直線沒有端點，而共同點也不會推出兩線平行或 P 到兩線距離相等。": "直線沒有端點，而兩條不同直線若共有 P 也不可能平行；共同點到兩線的距離都為 0，所以距離不會大於 0。",
+        "把同時在線上的共同點誤解為與兩線等距，或忽略不同直線已有交點而選平行。": "誤以為兩條有共同點的不同直線可以平行，或誤認共同點到兩線的距離會大於 0。"
+      }
+    },
+    {
+      "questionId": "u08-s004-v011",
+      "expectedContentSha256": "59854e27784d888253422d522390dc564dc0f999b5dd559aa945610dedcd27c2",
+      "replaceText": {
+        "設計值由內角和唯一決定：180−62−62=56°。": "實際度數由內角和唯一決定：180−62−62=56°。"
+      }
+    },
+    {
+      "questionId": "u08-s013-v012",
+      "expectedContentSha256": "f23cd4a161670258616bbdf2eab033452dc34ec0a101f08df424a37717ef0224",
+      "replaceText": {
+        "四格基底 4 箱加一個 4 層堆只得 7 箱，且還須另一交叉位置達 2；6 更不可能。": "四格基底已有 4 箱；把其中一堆加高到 4 層要再加 3 箱，已達 7 箱，且另一交叉位置還須達 2 層，所以 6 箱不可能。"
+      }
+    },
+    {
+      "questionId": "u08-s014-v010",
+      "expectedContentSha256": "5528ab6153ddea39b029059e1a73bb61c73f1c44879525cb49f9f7038682890f",
+      "replaceText": {
+        "步道條件 alone 不能保證到兩建築等距。": "單獨使用步道條件，不能保證到兩建築等距。"
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [
+    {
+      "lectureId": "u08-s001-lecture-r1",
+      "expectedContentSha256": "46054bf9c69f015325cc9a864924f4e1394306cf9b4e9bd5c51fc21ca91974bd",
+      "set": {
+        "accessibilityNote": "本技能的直線圖以黑白粗線、A、B 點標籤及未按比例提示呈現；替代文字完整說明可見元素，作答仍以題幹定義為準。"
+      }
+    },
+    {
+      "lectureId": "u08-s003-lecture-r1",
+      "expectedContentSha256": "a924ba0d7c6ca7528e16b3fd704d674a6a2d80afd3565ff169100aa943d86e96",
+      "set": {
+        "accessibilityNote": "本技能的相交直線圖以黑白粗線呈現 124° 與相鄰未知角；替代文字說明交點、標示與直線關係，不以角弧外觀或比例推論。"
+      }
+    },
+    {
+      "lectureId": "u08-s004-lecture-r1",
+      "expectedContentSha256": "376711885668b41d27d82f9c644cb30cc3e96c61137fa5ec030c0ddf6f852523",
+      "set": {
+        "accessibilityNote": "本技能的三角形圖以 A、B、C 與三個角度代數式完整標示；替代文字列出相同資訊，圖形未按比例，角度以標示為準。"
+      }
+    },
+    {
+      "lectureId": "u08-s012-lecture-r1",
+      "expectedContentSha256": "8fff2c34f05f76b97765ccee8aa6144e983bc17f2ab96c7586d2a92d2f34a947",
+      "set": {
+        "accessibilityNote": "本技能附有標示長、寬、高及右側觀察箭頭的長方體圖；替代文字完整敘述可見尺寸與方向，視圖判讀仍須依題幹與標示。"
+      }
+    },
+    {
+      "lectureId": "u08-s013-lecture-r1",
+      "expectedContentSha256": "ed628852ee7984ac61aba5af225d9dd86487379353b4db29d43a22dedd621579",
+      "replaceText": {
+        "正視與側視的最大高度不同時，不一定相容；需檢查是否有方向或順序誤讀。": "同一立體的正視與側視全域最大高度不同時必不相容；若資料宣稱相容，需檢查方向或順序是否誤讀。"
+      }
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u08-s001-fig001",
+      "expectedContentSha256": "49cb47d9787e45b8d817313071fab98da723e347fe26528ac39e4c91edade43f",
+      "set": {
+        "purpose": "通過 A、B 兩點並向左右延伸的直線示意",
+        "altText": "一條向左右兩端延伸的直線，點 A 在左側、點 B 在右側。",
+        "svgTitle": "通過 A 與 B 的直線",
+        "svgDescription": "白底圖中央有一條水平黑色直線，左右兩端各以箭頭表示持續延伸；線上左側黑點標示 A，右側黑點標示 B，底部註明示意圖未按比例。",
+        "answerLeakageReview": "圖與替代文字只呈現一條通過 A、B 並向兩端延伸的直線，不陳述交換點名順序後的關係或任何選項答案。",
+        "figureReview": {
+          "decision": "pass",
+          "manualRenderedInspection": true,
+          "reviewNote": "已核對水平直線、雙向箭頭、A、B 標籤、未按比例提示及手機縮放；移除原替代文字中的答案敘述後，圖形只保留題幹可見資訊。",
+          "reviewedAt": "2026-07-18"
+        }
+      }
+    },
+    {
+      "figureId": "u08-s003-fig001",
+      "expectedContentSha256": "3cd80dc60b3a305e764115a630451a74d2e2514f163c20f72038e970bc62fffc",
+      "set": {
+        "svgDescription": "兩條直線在 O 點相交，上方角標示 124 度，右側相鄰角標示問號。兩角的非共邊形成一直線。"
+      }
+    },
+    {
+      "figureId": "u08-s004-fig001",
+      "expectedContentSha256": "9725fcf9a33a11d7d7ed98f2a940d02db1ff4e43726979798da2cef9cd07d6b2",
+      "set": {
+        "svgDescription": "三角形 ABC，A 角標示 x 度，B 角標示 x 加 20 度，C 角標示 2x 減 10 度。圖形未按比例。"
+      }
+    },
+    {
+      "figureId": "u08-s012-fig001",
+      "expectedContentSha256": "b0f7c4727303740ed9e0007eecee8ec36e1a7380728b5503db16d6e9c0e52f4d",
+      "set": {
+        "svgDescription": "白底黑線透視長方體；正面底邊標示長 9 公分，右後斜邊標示寬 4 公分，左側垂直邊標示高 6 公分。圖形右側標有『由右側看』的向左箭頭，底部註明示意圖未按比例、尺寸以標示為準。"
+      }
+    }
+  ],
+  "textFiles": [
+    {
+      "path": "figures/u08/u08-s001-fig001.svg",
+      "replacements": [
+        {
+          "from": "一條向左右兩端延伸的直線，點 A 在左側、點 B 在右側。圖示用來說明直線 AB 與直線 BA 是同一條直線。",
+          "to": "白底圖中央有一條水平黑色直線，左右兩端各以箭頭表示持續延伸；線上左側黑點標示 A，右側黑點標示 B，底部註明示意圖未按比例。"
+        }
+      ]
+    },
+    {
+      "path": "figures/u08/u08-s012-fig001.svg",
+      "replacements": [
+        {
+          "from": "未按比例的透視長方體，前方水平邊標示長9公分，斜向深度邊標示寬4公分，垂直邊標示高6公分；圖右側有向左的觀察箭頭。",
+          "to": "白底黑線透視長方體；正面底邊標示長 9 公分，右後斜邊標示寬 4 公分，左側垂直邊標示高 6 公分。圖形右側標有『由右側看』的向左箭頭，底部註明示意圖未按比例、尺寸以標示為準。"
+        }
+      ]
+    }
+  ]
+}

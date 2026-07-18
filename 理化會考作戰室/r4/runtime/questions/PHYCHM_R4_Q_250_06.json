@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解能量守恆檢查理想系統，哪項修正合理？",
+  "stem": "丙條件下，先知動能70 J和位能20 J，再看總能量100 J。這筆總能量紀錄與動能的另一列互證，先做什麼？",
   "options": [
-    "有摩擦時機械能直接消失且不轉成其他能量，因此總能量不守恆",
-    "功率是功乘時間，所以 1200 J 在 30 s 內的功率為 36000 W",
-    "能量轉換時可無故多出或少掉能量，因此不必界定系統就能使用守恆",
-    "其他能量形式總量應減少 30 J"
+    "若有外力作功，必須列入能量帳",
+    "把系統有外力作功時仍把外界輸入排除，硬把內部能量總和判成固定",
+    "看到甲到丙動能增加 60 J，卻並漏掉核對位能與彈性位能合計也減少 60 J",
+    "主張總能量守恆表示物體速度、位置和形變都不能改變"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「有摩擦時機械能直接消失且不轉成其他能量，因此總能量不守恆」不成立；物體下落時重力位能可轉成動能；有摩擦時，部分機械能轉成內能與聲能。"
+      "isCorrect": true,
+      "reason": "若有外力作功，必須列入能量帳。乙列的動能為35 J，位能為45 J；丙列的動能為70 J，位能為20 J。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「功率是功乘時間，所以 1200 J 在 30 s 內的功率…」不成立；完成 1200 J 的功耗時 30 s，平均功率 P＝W/t＝40 W；功率比較做功快慢。"
+      "reason": "解題時誤把系統有外力作功時仍把外界輸入排除，硬把內部能量總和判成固定。守恆結論以所選系統不與外界交換能量為前提；總能量差異若未通過用能量守恆檢查理想系統對動能的控制，就不能只歸給位能。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「能量轉換時可無故多出或少掉能量，因此不必界定系統就能使用守恆」不成立；選定系統若不與外界交換能量，總能量守恆；若動能增加 30 J，其他能量形式總量應減少 30 J。"
+      "reason": "一看到甲到丙動能增加 60 J，卻沒有核對位能與彈性位能合計也減少 60 J。各時刻三種能量形式合計皆為 100 J；位能的數值若未依動能核對，會使總能量無法通過用能量守恆檢查理想系統檢查。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「選定系統若不與外界交換能量，總能量守恆；若動能增加 30 J，其他能量形式總量應減少 30 J」。"
+      "isCorrect": false,
+      "reason": "誤以為總能量守恆表示物體速度、位置和形變都不能改變。選定系統若不與外界交換能量，總能量守恆；動能未列入用能量守恆檢查理想系統時，總能量的位能大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "有摩擦時機械能直接消失且不轉成其他能量，因此總能量不守恆",
-    "功率是功乘時間，所以 1200 J 在 30 s 內的功率為 36000 W",
-    "能量轉換時可無故多出或少掉能量，因此不必界定系統就能使用守恆"
+    "把系統有外力作功時仍把外界輸入排除，硬把內部能量總和判成固定",
+    "看到甲到丙動能增加 60 J，卻並漏掉核對位能與彈性位能合計也減少 60 J",
+    "主張總能量守恆表示物體速度、位置和形變都不能改變"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

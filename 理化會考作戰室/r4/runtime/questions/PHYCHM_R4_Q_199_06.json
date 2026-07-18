@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解速率常用單位間換算，哪項修正合理？",
+  "stem": "54 km/h 等於多少 m/s？",
   "options": [
-    "72 km/h＝20 m/s，因為 1 km＝1000 m、1 h＝3600 s；長度與時間都要換算",
-    "路程與位移永遠大小相等，往返原點的路程也是零",
-    "平均速率是路程乘時間，所以為 4500 m/s",
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同"
+    "等於 194.4 m/s",
+    "等於 5.4 m/s",
+    "等於 150 m/s",
+    "等於 15 m/s"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「72 km/h＝20 m/s，因為 1 km＝1000 m、1 h＝3600 s；長度與時間都要換算」。"
+      "isCorrect": false,
+      "reason": "等於 194.4 m/s不符合題目資料。54÷3.6=15 m/s。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「路程與位移永遠大小相等，往返原點的路程也是零」不成立；路程是實際路徑總長，位移是起點到終點的有向改變；往返原點時路程大於零但位移為零。"
+      "reason": "等於 5.4 m/s不符合題目資料。54÷3.6=15 m/s。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「平均速率是路程乘時間，所以為 4500 m/s」不成立；移動 150 m 耗時 30 s 的平均速率為路程除以總時間，即 5 m/s。"
+      "reason": "等於 150 m/s不符合題目資料。54÷3.6=15 m/s。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「速度只是一個正數快慢，向東與向西 10 m/s 在任何分析…」不成立；速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向。"
+      "isCorrect": true,
+      "reason": "54÷3.6=15 m/s。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "路程與位移永遠大小相等，往返原點的路程也是零",
-    "平均速率是路程乘時間，所以為 4500 m/s",
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同"
+    "等於 194.4 m/s",
+    "等於 5.4 m/s",
+    "等於 150 m/s"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "同材質樣品比較出現四種說法，哪項有理化概念支持？",
+  "stem": "哪項證據能判斷密度偏差方向？",
   "options": [
-    "1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖改變，數值不必變",
-    "質量是 7.8÷10＝0.78 g，因為密度和體積應相除",
-    "由 ρ＝m/V 可知密度結果偏大",
-    "體積是 135×2.7＝364.5 cm³，因為密度越大體積一定越大"
+    "只看最後密度有幾位小數",
+    "質量與體積各自的偏差方向",
+    "只知道兩量都曾重複測三次",
+    "只比較樣品與參考物的外觀"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖…」不成立；1.20 g/cm³＝1200 kg/m³；質量和體積的換算倍率需一起納入。"
+      "reason": "小數位數不指出 m、V 被高估或低估。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「質量是 7.8÷10＝0.78 g，因為密度和體積應相除」不成立；密度 7.8 g/cm³、體積 10 cm³ 的鐵塊質量為 78 g，使用 m＝ρV。"
+      "isCorrect": true,
+      "reason": "m 位於分子、V 位於分母，偏差方向會產生相反作用。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「若質量讀值偏大而體積正確，由 ρ＝m/V 可知密度結果偏大；要依誤差方向分析」。"
+      "isCorrect": false,
+      "reason": "重複次數本身不提供系統偏差方向。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「體積是 135×2.7＝364.5 cm³，因為密度越大體…」不成立；質量 135 g、密度 2.7 g/cm³ 的樣品體積為 50 cm³，使用 V＝m/ρ。"
+      "reason": "外觀相似無法代入密度比值分析。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "證據判讀"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖改變，數值不必變",
-    "質量是 7.8÷10＝0.78 g，因為密度和體積應相除",
-    "體積是 135×2.7＝364.5 cm³，因為密度越大體積一定越大"
+    "只看最後密度有幾位小數",
+    "只知道兩量都曾重複測三次",
+    "只比較樣品與參考物的外觀"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-3",
       "AUTH-NATURAL-LC-CA-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

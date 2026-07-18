@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查眼球成像紀錄，哪項判讀正確？",
+  "stem": "天文望遠鏡的物鏡主要先完成哪一項作用？",
   "options": [
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色",
-    "水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光",
-    "顯微鏡利用物鏡形成中間像再由目鏡放大；望遠鏡也以多個光學元件組合改變觀察角度",
-    "近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正"
+    "把遠方天體移近觀察者",
+    "將遠方物體的光會聚形成實像",
+    "直接在視網膜上形成虛像",
+    "只把光分解成各種顏色"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色」不成立；紅、綠、藍色光是加法混色的基本光；顏料混合主要透過選擇性吸收，與色光加法原理不同。"
+      "reason": "望遠鏡不能改變天體與觀察者的實際距離。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光」不成立；眼球的角膜與水晶體等會聚光線，使外物在視網膜上形成倒立實像，再由神經系統處理。"
+      "isCorrect": true,
+      "reason": "遠方光近似平行，經望遠鏡物鏡會聚後在焦平面附近形成實像。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「顯微鏡利用物鏡形成中間像再由目鏡放大；望遠鏡也以多個光學元件組合改變觀察角度」。"
+      "isCorrect": false,
+      "reason": "物鏡先在鏡筒內形成實像，再由目鏡供眼睛觀察。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正」不成立；近視的遠物焦點在視網膜前，用凹透鏡矯正；遠視或老花相關情形可用凸透鏡輔助會聚。"
+      "reason": "色散可能造成像差，但不是望遠鏡物鏡的主要成像功能。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色",
-    "水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光",
-    "近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正"
+    "把遠方天體移近觀察者",
+    "直接在視網膜上形成虛像",
+    "只把光分解成各種顏色"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-10",
       "AUTH-NATURAL-LC-KA-4-11",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

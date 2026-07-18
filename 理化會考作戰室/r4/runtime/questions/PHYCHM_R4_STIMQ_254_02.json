@@ -12,50 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_254",
-  "stem": "檢查表中關於槓桿支點施力點與抗力點的說法，哪項判讀正確？",
+  "stem": "從甲改成乙時，支點位置由兩力之間變為抗力在中間，施力臂由0.60 m變為0.60 m。分析槓桿支點施力點與抗力點在此受到哪個施力臂適用限制？",
   "options": [
-    "槓桿以支點為轉軸",
-    "轉動平衡只需左右作用力大小相同，施力位置和力臂不重要",
-    "定滑輪一定把所需力減半，動滑輪則只改變方向而不省力",
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功"
+    "力並漏掉垂直槓桿時仍把桿長當成完整力臂",
+    "把甲配置抗力 90 N、施力臂三倍長，卻算施力也要 90 N",
+    "槓桿不保證所有配置都省力",
+    "解題時將支點、施力點與抗力點的位置名稱互換後仍沿用原本力矩關係"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果」。"
+      "isCorrect": false,
+      "reason": "槓桿不保證所有配置都省力。乙列的支點位置為抗力在中間，施力臂為0.60 m；丙列的支點位置為施力在中間，施力臂為0.20 m。力沒有垂直槓桿時仍把桿長當成完整力臂，結果會錯判抗力臂。結果以理想剛性槓桿、力垂直作用為前提；抗力臂差異若未通過分析槓桿支點施力點與抗力點對支點位置的控制，就不能只歸給施力臂。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「轉動平衡只需左右作用力大小相同，施力位置和力臂不重要」不成立；轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零。"
+      "reason": "槓桿不保證所有配置都省力。乙列的支點位置為抗力在中間，施力臂為0.60 m；丙列的支點位置為施力在中間，施力臂為0.20 m。解題時誤把甲配置抗力 90 N、施力臂三倍長，卻算施力也要 90 N，結果會錯判抗力臂。甲需 30 N、乙需 45 N、丙需 270 N；施力臂的數值若未依支點位置核對，會使抗力臂無法通過分析槓桿支點施力點與抗力點檢查。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「定滑輪一定把所需力減半，動滑輪則只改變方向而不省力」不成立；理想定滑輪主要改變施力方向；動滑輪或滑輪組可由支撐繩段數分擔負載而省力。"
+      "isCorrect": true,
+      "reason": "槓桿不保證所有配置都省力。乙列的支點位置為抗力在中間，施力臂為0.60 m；丙列的支點位置為施力在中間，施力臂為0.20 m。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功」不成立；輪軸利用不同力臂，齒輪利用齒數比改變轉速與力矩，斜面以增加距離換取較小力。"
+      "reason": "槓桿不保證所有配置都省力。乙列的支點位置為抗力在中間，施力臂為0.60 m；丙列的支點位置為施力在中間，施力臂為0.20 m。解題時錯將支點、施力點與抗力點的位置名稱互換後仍沿用原本力矩關係，結果會錯判抗力臂。槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果；支點位置未列入分析槓桿支點施力點與抗力點時，抗力臂的施力臂大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "資料判讀"
+    "證據判讀",
+    "推論"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "轉動平衡只需左右作用力大小相同，施力位置和力臂不重要",
-    "定滑輪一定把所需力減半，動滑輪則只改變方向而不省力",
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功"
+    "力並漏掉垂直槓桿時仍把桿長當成完整力臂",
+    "把甲配置抗力 90 N、施力臂三倍長，卻算施力也要 90 N",
+    "解題時將支點、施力點與抗力點的位置名稱互換後仍沿用原本力矩關係"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -64,20 +65,6 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_013"
   ]

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u15",
+  "batch": "016-u15-complete",
+  "skills": ["s006"],
+  "mc": [],
+  "constructedResponse": [],
+  "lectures": [],
+  "drawingSpecs": [
+    {
+      "figureId": "u15-s006-mc01-fig",
+      "expectedContentSha256": "208d26a77ef94559936cd45d4d0ca36d945d6c41d3be81e31ae57e60bb913a97",
+      "replaceText": {
+        "表格列 x=-2、y=3 的坐標位置": "表格資料在坐標平面的位置",
+        "小表格列出 x 等於負二、y 等於三，坐標平面標出點負二逗號三。": "小表格列出x等於負二、y等於三；坐標平面以未寫坐標的點P與虛線呈現這組資料。",
+        "(-2,3)": "P"
+      },
+      "set": {
+        "answerLeakageReview": "圖只重述題幹給定的x、y表格值；點標為P，不直接寫出任何選項中的有序對答案。"
+      }
+    }
+  ],
+  "textFiles": [
+    {
+      "path": "figures/u15/u15-s006-mc01-fig.svg",
+      "replacements": [
+        {
+          "from": "表格列 x=-2、y=3 的坐標位置",
+          "to": "表格資料在坐標平面的位置",
+          "count": 1
+        },
+        {
+          "from": "小表格列出 x 等於負二、y 等於三，坐標平面標出點負二逗號三。",
+          "to": "小表格列出x等於負二、y等於三；坐標平面以未寫坐標的點P與虛線呈現這組資料。",
+          "count": 1
+        },
+        {
+          "from": ">(-2,3)</text>",
+          "to": ">P</text>",
+          "count": 1
+        },
+        {
+          "from": "<text x=\"608\" y=\"48\" font-size=\"14\">x</text><text x=\"47\" y=\"48\" font-size=\"14\">y</text>",
+          "to": "<text x=\"15\" y=\"48\" font-size=\"14\">x</text><text x=\"47\" y=\"48\" font-size=\"14\">y</text>",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

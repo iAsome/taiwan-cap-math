@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "把地球自轉解釋晝夜交替的判準移到另一個情境時，哪一項作法較適當？",
+  "stem": "若把臺灣的晝夜模型用到另一經度測站，哪個作法完整？",
   "options": [
-    "改看「解釋閏年調整的週期來源」後，只採用支持原想法的一筆紀錄",
-    "改看「解釋閏年調整的週期來源」後，省略所有單位",
-    "把判讀移到「解釋閏年調整的週期來源」時，仍先先判定半球與日期位置",
-    "只寫地球自轉解釋晝夜交替的概念名稱，不記錄「解釋閏年調整的週期來源」的觀測"
+    "直接套用臺灣05:30日出，不查當地經度與日期",
+    "只看當地午夜照片，便宣稱太陽每天熄滅",
+    "沿相同自轉機制追蹤測站進出受光面，另用當地資料求實際時刻",
+    "把一年公轉週期除以二，當成一個晝夜長度"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "換情境仍須比較完整資料與替代解釋。"
+      "reason": "直接套用臺灣05:30日出，不查當地經度與日期；日出鐘面時刻同時受日期、經度與時區影響，臺灣數值不能直接移植。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "跨情境比較更需要一致單位。"
+      "reason": "只看當地午夜照片，便宣稱太陽每天熄滅；單一黑暗時刻只能表示測站位於背光面，不能說明太陽本身的狀態。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "新情境保留相同變因、證據與適用範圍。"
+      "reason": "沿相同自轉機制追蹤測站進出受光面，另用當地資料求實際時刻；受光與背光的成因可跨地點沿用，地方時刻則由新測站資料決定。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "概念名稱不能取代實際資料。"
+      "reason": "把一年公轉週期除以二，當成一個晝夜長度；公轉週期描述繞日運動，不能替代地球自轉造成的晝夜循環。"
     }
   ],
   "difficulty": "transfer",
@@ -49,7 +49,7 @@
   ],
   "representationType": "transfer-scenario",
   "misconceptionTargets": [
-    "太陽高度越低地表單位面積受能越多"
+    "把一年公轉週期除以二，當成一個晝夜長度"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "逐項核對「比較夏至冬至正午影長」的條件後，「把判讀移到「解釋閏年調整的週期來源」時，仍先先判定半球與日期位置」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "答案把可通用的自轉受光模型與必須重測的地方日出時刻分開，沒有把臺灣鐘面數字當成全球常數。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "若用公轉週期推算晝夜，會把約一年的尺度誤當成約一天的尺度，無法解釋測站每日進出受光面。",
       "status": "pass"
     }
   ],

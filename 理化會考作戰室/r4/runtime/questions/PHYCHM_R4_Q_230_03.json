@@ -14,34 +14,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "整理傳送帶摩擦資料後，哪項說明正確？",
+  "stem": "箱子正向右運動，受到向左淨力。短時間內通常如何？",
   "options": [
-    "受力圖只畫作用在目標物上的力，箭頭方向是力方向；物體向右運動不代表必有向右力",
-    "只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力",
-    "摩擦力在所有情境都必然與物體質心的當下運動方向相反",
-    "比較粗糙程度時可同時在其中一組增加負重，結果仍只反映表面性質"
+    "仍向右但速率減小",
+    "此時物體立即向左且加快",
+    "此時物體向右且速率增加",
+    "此時物體保持等速"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「受力圖只畫作用在目標物上的力，箭頭方向是力方向；物體向右運動不代表必有向右力」。"
+      "reason": "反向合力先造成向左加速度，使正速度降低。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力」不成立；靜摩擦力在最大值內隨滑動趨勢調整，以阻止接觸面相對滑動；動摩擦力則在已相對滑動時出現。"
+      "reason": "此時物體立即向左且加快不成立。反向合力先造成向左加速度，使正速度降低。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「摩擦力在所有情境都必然與物體質心的當下運動方向相反」不成立；摩擦力方向用來阻礙接觸面間的相對運動或滑動趨勢，不一定和物體運動方向相反。"
+      "reason": "此時物體向右且速率增加不成立。反向合力先造成向左加速度，使正速度降低。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「比較粗糙程度時可同時在其中一組增加負重，結果仍只反映表面性質」不成立；摩擦效果受接觸面性質與正向作用力影響；比較實驗要一次只改一項。"
+      "reason": "此時物體保持等速不成立。反向合力先造成向左加速度，使正速度降低。"
     }
   ],
   "difficulty": "foundation",
@@ -49,16 +49,16 @@
     "單位檢核",
     "資料判讀"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力",
-    "摩擦力在所有情境都必然與物體質心的當下運動方向相反",
-    "比較粗糙程度時可同時在其中一組增加負重，結果仍只反映表面性質"
+    "此時物體立即向左且加快",
+    "此時物體向右且速率增加",
+    "此時物體保持等速"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-10",
       "AUTH-NATURAL-LC-EB-4-11",
@@ -69,19 +69,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

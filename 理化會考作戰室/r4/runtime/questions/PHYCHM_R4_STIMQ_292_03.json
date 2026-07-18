@@ -13,50 +13,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": "PHYCHM_R4_STIM_292",
-  "stem": "高壓輸電題組中，哪項說明符合紀錄？",
+  "stem": "變壓器輸入：輸送功率交流、電壓依匝數調整、相同線阻下 I²R 比有少量損耗。全表的輸送功率、電壓與相同線阻下 I²R 比形成何種關係？",
   "options": [
-    "變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大",
-    "通電線圈與永久磁鐵完全相同，斷電後磁場必永久保持且不可調整",
-    "載流導線受力方向只由導線顏色決定，電流與磁場方向改變都沒有影響",
-    "變壓器以交流造成變動磁場"
+    "把100 kW 以 100 kV 輸送被算成 100 A，而不是 1 A",
+    "主張變壓器升高電壓也會無限增加輸出功率",
+    "變壓器以交流造成變動磁場，改變電壓以利輸電",
+    "主張提高輸電電壓會在同功率下提高電流，因此線損更大"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大」不成立；變壓器以交流造成變動磁場，改變電壓以利輸電；遠距離高電壓可在同功率下降低電流與線路損耗。"
+      "reason": "變壓器以交流造成變動磁場，改變電壓以利輸電。丙列的輸送功率為100 kW，電壓為100 kV；變壓器輸入列的輸送功率為交流，電壓為依匝數調整。解題時誤把100 kW 以 100 kV 輸送被算成 100 A，而不是 1 A。同功率提高電壓可降低電流，使 I²R 線損大幅減少；電壓的數值若未依輸送功率核對，會使相同線阻下 I²R 比無法通過說明變壓與電力輸送的基本目的檢查。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「通電線圈與永久磁鐵完全相同，斷電後磁場必永久保持且不可調整」不成立；通電線圈會形成類似棒形磁鐵的磁場，可藉改變電流、線圈圈數與鐵心調整電磁鐵強弱。"
+      "reason": "變壓器以交流造成變動磁場，改變電壓以利輸電。丙列的輸送功率為100 kW，電壓為100 kV；變壓器輸入列的輸送功率為交流，電壓為依匝數調整。誤以為變壓器升高電壓也會無限增加輸出功率。變壓器以交流造成變動磁場，改變電壓以利輸電；輸送功率未列入說明變壓與電力輸送的基本目的時，相同線阻下 I²R 比的電壓大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「載流導線受力方向只由導線顏色決定，電流與磁場方向改變都沒有…」不成立；在受力不為零的配置中，載流導線放在外磁場中會受力；只改變電流或磁場方向之一，受力方向會反轉。"
+      "isCorrect": true,
+      "reason": "變壓器以交流造成變動磁場，改變電壓以利輸電。丙列的輸送功率為100 kW，電壓為100 kV；變壓器輸入列的輸送功率為交流，電壓為依匝數調整。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「變壓器以交流造成變動磁場，改變電壓以利輸電；遠距離高電壓可在同功率下降低電流與線路損耗」。"
+      "isCorrect": false,
+      "reason": "變壓器以交流造成變動磁場，改變電壓以利輸電。丙列的輸送功率為100 kW，電壓為100 kV；變壓器輸入列的輸送功率為交流，電壓為依匝數調整。誤以為提高輸電電壓會在同功率下提高電流，因此線損更大。變壓器以交流造成變動磁場，改變電壓以利輸電；照原做法會把相同線阻下 I²R 比算錯或判反。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "證據評估"
+    "限制評估",
+    "遷移"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大",
-    "通電線圈與永久磁鐵完全相同，斷電後磁場必永久保持且不可調整",
-    "載流導線受力方向只由導線顏色決定，電流與磁場方向改變都沒有影響"
+    "把100 kW 以 100 kV 輸送被算成 100 A，而不是 1 A",
+    "主張變壓器升高電壓也會無限增加輸出功率",
+    "主張提高輸電電壓會在同功率下提高電流，因此線損更大"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-KC-4-4",
@@ -66,20 +67,6 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_016"
   ]

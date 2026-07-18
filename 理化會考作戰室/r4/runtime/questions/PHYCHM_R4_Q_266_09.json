@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對串聯電路結果，哪項說法正確？",
+  "stem": "甲列含開關閉合及回路電池兩端皆連回燈泡；乙列含斷開及有一處缺口。處理開關後，回路要依辨識電源導線開關與用電器形成通路判斷大小、方向或類別？",
   "options": [
-    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓",
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少",
-    "電源、導線、開關與用電器必須形成閉合通路才有持續電流",
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆"
+    "把電池只接到燈泡一端就判定有持續電流，忽略必須形成閉合通路",
+    "看到開關閉合便直接判定燈亮",
+    "只有甲形成電流必須經過燈泡的完整回路",
+    "把配置丙只接電池一端仍被判成完整回路"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「電阻為 I/V＝0.083 Ω，因為電流應除以電壓」不成立；某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω。"
+      "reason": "解題時誤把電池只接到燈泡一端就判定有持續電流，忽略必須形成閉合通路。電源、導線、開關與用電器必須形成閉合通路才有持續電流；照原做法會把燈泡算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少」不成立；串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和。"
+      "reason": "一看到開關閉合便直接判定燈亮，卻未沿導線檢查是否繞過燈泡，結果會錯判燈泡。閉合開關不代表一定正確，仍要沿導線追蹤是否形成經過用電器的完整通路；燈泡差異若未通過辨識電源導線開關與用電器形成通路對開關的控制，就不能只歸給回路。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整」。"
+      "reason": "只有甲形成電流必須經過燈泡的完整回路。甲列的開關為閉合、回路為電池兩端皆連回燈泡；乙列的開關為斷開、回路為有一處缺口。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆」不成立；並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。"
+      "reason": "解題時誤把配置丙只接電池一端仍被判成完整回路。只有甲形成電流必須經過燈泡的完整回路；回路的數值若未依開關核對，會使燈泡無法通過辨識電源導線開關與用電器形成通路檢查。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
     "證據判讀",
-    "分析"
+    "推論"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓",
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少",
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆"
+    "把電池只接到燈泡一端就判定有持續電流，忽略必須形成閉合通路",
+    "看到開關閉合便直接判定燈亮",
+    "把配置丙只接電池一端仍被判成完整回路"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

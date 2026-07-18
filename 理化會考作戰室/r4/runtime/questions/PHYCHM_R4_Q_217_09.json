@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對電梯受力結果，哪項說法正確？",
+  "stem": "若更換力圖比例尺，物理力不變時箭長可以改變嗎？",
   "options": [
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他",
-    "力的箭頭長度表示大小、箭頭指向表示方向、起點標在作用點，三項都是力的表示資訊",
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關",
-    "質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少"
+    "不可以，箭長就是力的單位",
+    "不可以，比例尺不影響圖",
+    "可以，箭長依新比例尺重畫",
+    "可以，但力的方向也必反轉"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他」不成立；慣性是物體維持原運動狀態的性質；車突然剎車時乘客上半身傾向前就是慣性現象。"
+      "reason": "不可以，箭長就是力的單位與受力條件不符。圖面箭長取決於比例尺；力的實際大小和方向不因重畫而變。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「力的箭頭長度表示大小、箭頭指向表示方向、起點標在作用點，三項都是力的表示資訊」。"
+      "isCorrect": false,
+      "reason": "不可以，比例尺不影響圖與受力條件不符。圖面箭長取決於比例尺；力的實際大小和方向不因重畫而變。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「加速度方向永遠和物體當下運動方向相同，與合力方向無關」不成立；物體的加速度方向與合力相同；質量相同時合力較大，或合力相同時質量較小，加速度較大。"
+      "isCorrect": true,
+      "reason": "圖面箭長取決於比例尺；力的實際大小和方向不因重畫而變。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少」不成立；質量是物體慣性的量度，重量是物體所受重力，在不同星體可改變；單位分別常用 kg 與 N。"
+      "reason": "可以，但力的方向也必反轉與受力條件不符。圖面箭長取決於比例尺；力的實際大小和方向不因重畫而變。"
     }
   ],
   "difficulty": "advanced",
@@ -50,16 +50,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他",
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關",
-    "質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少"
+    "不可以，箭長就是力的單位",
+    "不可以，比例尺不影響圖",
+    "可以，但力的方向也必反轉"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

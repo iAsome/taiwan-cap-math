@@ -13,50 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_008",
-  "stem": "檢查表中關於數量級檢查測量結果是否合理的說法，哪項判讀正確？",
+  "stem": "操場紀錄最可能原本想寫哪個值？",
   "options": [
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可",
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失",
-    "成人桌子高度約 0.7 m；若記成 70 m，即使計算步驟完整，也應由量級發現單位或小數點錯誤",
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受"
+    "25 m",
+    "2.5 cm",
+    "0.25 mm",
+    "0.25 km"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「三次不相同表示實驗失敗，只保留最接近預期的 10.0 s …」不成立；量得 9.8、10.1、10.0 s 的平均約為 10.0 s，差異可用範圍或離散情形描述，不…。"
+      "reason": "低於表中估計範圍。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要重複次數足夠多，未歸零造成的固定偏差就會自動消失」不成立；天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動。"
+      "reason": "仍小於手掌。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「成人桌子高度約 0.7 m；若記成 70 m，即使計算步驟完整，也應由量級發現單位或小數點錯誤」。"
+      "isCorrect": false,
+      "reason": "遠小於操場。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受」不成立；成人桌子高度約 0.7 m；若記成 70 m，即使計算步驟完整，也應由量級發現單位或小數點錯誤。"
+      "isCorrect": true,
+      "reason": "0.25 km＝250 m，在估計範圍內。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "資料判讀"
+    "資料判讀",
+    "單位換算"
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可",
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失",
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受"
+    "25 m",
+    "2.5 cm",
+    "0.25 mm"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -66,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

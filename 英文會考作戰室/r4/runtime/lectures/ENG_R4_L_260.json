@@ -17,30 +17,30 @@
     "ENG_R4_S259"
   ],
   "objectives": [
-    "找出故事目前尚未完成的目标或问题。",
-    "选择能直接延续人物行动的下一步。",
-    "排除突然加入新人物、远期结局或违背角色目标的选项。"
+    "找出故事目前尚未完成的目標或問題。",
+    "選擇能直接延續人物行動的下一步。",
+    "排除突然加入新人物、遠期結局或違背角色目標的選項。"
   ],
   "sections": [
     {
       "id": "ENG_R4_U38_ENG_R4_S260_SEC_1",
-      "title": "预测不是写结局",
-      "content": "题目问 next，优先找时间线上紧接的一步，不跳到多年后或整个人生结果。"
+      "title": "預測不是寫結局",
+      "content": "題目問 next，優先找時間線上緊接的一步，不跳到多年後或整個人生結果。"
     },
     {
       "id": "ENG_R4_U38_ENG_R4_S260_SEC_2",
-      "title": "回到未解决目标",
-      "content": "人物正在找钥匙，下一步应继续检查可能地点或使用刚得到线索，而非突然参加比赛。"
+      "title": "回到未解決目標",
+      "content": "人物正在找鑰匙，下一步應繼續檢查可能地點或使用剛得到線索，而非突然參加比賽。"
     },
     {
       "id": "ENG_R4_U38_ENG_R4_S260_SEC_3",
       "title": "最近事件提供入口",
-      "content": "门刚打开，下一步可能进入；收到地址，下一步可能前往。用最近动作连接，不另起故事。"
+      "content": "門剛打開，下一步可能進入；收到地址，下一步可能前往。用最近動作連接，不另起故事。"
     },
     {
       "id": "ENG_R4_U38_ENG_R4_S260_SEC_4",
       "title": "保留可能性",
-      "content": "正确预测是最合线索，不代表现实唯一。选项仍需不超出本文角色、地点与时间。"
+      "content": "正確預測是最合線索，不代表現實唯一。選項仍需不超出本文角色、地點與時間。"
     }
   ],
   "workedExamples": [
@@ -48,9 +48,9 @@
       "id": "ENG_R4_U38_ENG_R4_S260_EX_1",
       "prompt": "Nora found the address and stood outside the building.",
       "steps": [
-        "目标是到达。",
-        "已在门外。",
-        "下一步可能敲门。"
+        "目標是到達。",
+        "已在門外。",
+        "下一步可能敲門。"
       ],
       "answer": "She will likely knock or enter.",
       "why": "不跳到回家。"
@@ -59,62 +59,62 @@
       "id": "ENG_R4_U38_ENG_R4_S260_EX_2",
       "prompt": "The bus was full; the board showed another in ten minutes.",
       "steps": [
-        "问题是无法上车。",
-        "新线索是 next bus。",
+        "問題是無法上車。",
+        "新線索是 next bus。",
         "合理等待。"
       ],
       "answer": "Wait for the next bus.",
-      "why": "不推买车。"
+      "why": "不推買車。"
     },
     {
       "id": "ENG_R4_U38_ENG_R4_S260_EX_3",
       "prompt": "Ben mixed all ingredients and put the pan in the oven.",
       "steps": [
-        "烹饪步骤。",
-        "已进 oven。",
+        "烹飪步驟。",
+        "已進 oven。",
         "下一步等待烤熟。"
       ],
       "answer": "He will wait for it to bake.",
-      "why": "不立刻吃生面糊。"
+      "why": "不立刻吃生麵糊。"
     }
   ],
   "misconceptions": [
     {
-      "belief": "最戏剧化结局最可能。",
-      "whyWrong": "next 受当前线索限制。",
-      "correction": "选紧接一步。"
+      "belief": "最戲劇化結局最可能。",
+      "whyWrong": "next 受當前線索限制。",
+      "correction": "選緊接一步。"
     },
     {
-      "belief": "可以加入新人物解决。",
-      "whyWrong": "若未出现就是新前提。",
-      "correction": "延续现有角色资源。"
+      "belief": "可以加入新人物解決。",
+      "whyWrong": "若未出現就是新前提。",
+      "correction": "延續現有角色資源。"
     },
     {
-      "belief": "预测要完全确定。",
-      "whyWrong": "是证据支持的最合理下一步。",
+      "belief": "預測要完全確定。",
+      "whyWrong": "是證據支持的最合理下一步。",
       "correction": "保留 likely。"
     },
     {
-      "belief": "人物会突然放弃目标。",
-      "whyWrong": "需要文本转折支持。",
-      "correction": "追踪当前动机。"
+      "belief": "人物會突然放棄目標。",
+      "whyWrong": "需要文本轉折支持。",
+      "correction": "追蹤當前動機。"
     }
   ],
   "checks": [
     {
-      "prompt": "next 可跳到多年后吗？",
+      "prompt": "next 可跳到多年後嗎？",
       "answer": "通常不可",
-      "reason": "应紧接当前事件。"
+      "reason": "應緊接當前事件。"
     },
     {
-      "prompt": "预测最重要的两项？",
-      "answer": "未解决目标与最近事件",
+      "prompt": "預測最重要的兩項？",
+      "answer": "未解決目標與最近事件",
       "reason": "共同限制下一步。"
     },
     {
-      "prompt": "可凭空加入救援人物吗？",
+      "prompt": "可憑空加入救援人物嗎？",
       "answer": "不可",
-      "reason": "需要文本铺垫。"
+      "reason": "需要文本鋪墊。"
     }
   ],
   "assets": [],

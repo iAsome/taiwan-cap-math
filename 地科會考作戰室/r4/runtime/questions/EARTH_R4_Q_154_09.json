@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "把觀測結果用於「比較夏至冬至正午影長」中的太陽高度角比較地表受能量大小時，哪一項解釋較合理？",
+  "stem": "相同手電筒以不同角度照同一紙面，斜射光斑面積是直射的兩倍。若總能量相同，哪項正確？",
   "options": [
-    "判讀太陽高度角比較地表受能量大小時只抄地名，不讀變因",
-    "用「比較夏至冬至正午影長」的一筆局部資料推論各地太陽高度角比較地表受能量大小都相同",
-    "太陽高度較大時單位面積受能通常較多",
-    "先選好太陽高度角比較地表受能量大小答案，再刪除「比較夏至冬至正午影長」中不一致的觀測"
+    "斜射每單位面積能量是直射兩倍",
+    "兩者面積不同但單位面積能量必相同",
+    "直射每單位面積能量約為斜射兩倍",
+    "光斑面積只能判斷日地距離，不能比較能量分布"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "地名沒有指出日期位置、臺灣日出、臺灣日落、正午影長相對值之間的關係。"
+      "reason": "相同能量分到兩倍面積，每單位面積應減少而不是增加。 單位面積受能還須結合入射角與光斑面積判讀。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "結論超出「比較夏至冬至正午影長」資料的空間範圍。"
+      "reason": "總能量相同而面積不同，單位面積能量不可能仍完全相同。 單位面積受能還須結合入射角與光斑面積判讀。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "「太陽高度較大時單位面積受能通常較多」屬於本單元可由證據支持的關係。"
+      "reason": "直射面積為斜射一半，因此相同總能量下每單位面積約為兩倍。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "選擇性刪除「比較夏至冬至正午影長」資料會破壞證據鏈。"
+      "reason": "光斑直接反映光束在表面的分布，不需要以日地距離解釋。 單位面積受能還須結合入射角與光斑面積判讀。"
     }
   ],
   "difficulty": "advanced",
@@ -49,7 +49,7 @@
   ],
   "representationType": "local-context",
   "misconceptionTargets": [
-    "夏季是因地球明顯更靠近太陽"
+    "兩者面積不同但單位面積能量必相同"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "逐項核對「比較夏至冬至正午影長」的條件後，「太陽高度較大時單位面積受能通常較多」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "以總能量除面積，直射分母只有斜射一半，所以商約為兩倍。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "若宣稱面積不同但面積能量相同，兩次總能量便不可能維持相同。",
       "status": "pass"
     }
   ],

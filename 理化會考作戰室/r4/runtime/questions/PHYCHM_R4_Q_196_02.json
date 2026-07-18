@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據直線座標紀錄，哪項判讀合理？",
+  "stem": "數線上甲的位置為 -3 m、乙為 +4 m。兩人的距離是多少？",
   "options": [
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘",
-    "例如「車站東方 200 m」資訊完整",
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同",
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率"
+    "兩人的距離為 7 m",
+    "兩人的距離為 1 m",
+    "兩人的距離為 -7 m",
+    "兩人的距離為 12 m"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「72 km/h＝72×1000×3600 m/s，分子分母…」不成立；72 km/h＝20 m/s，因為 1 km＝1000 m、1 h＝3600 s；長度與時間都…。"
+      "isCorrect": true,
+      "reason": "距離等於兩座標差的絕對值，即 |4-(-3)|=7 m。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整」。"
+      "isCorrect": false,
+      "reason": "兩人的距離為 1 m不符合題目資料。距離等於兩座標差的絕對值，即 |4-(-3)|=7 m。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「速度只是一個正數快慢，向東與向西 10 m/s 在任何分析…」不成立；速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向。"
+      "reason": "兩人的距離為 -7 m不符合題目資料。距離等於兩座標差的絕對值，即 |4-(-3)|=7 m。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均…」不成立；儀表在某一刻顯示的是瞬時資訊；一段旅程的平均速率必須以全路程除以全時間。"
+      "reason": "兩人的距離為 12 m不符合題目資料。距離等於兩座標差的絕對值，即 |4-(-3)|=7 m。"
     }
   ],
   "difficulty": "foundation",
@@ -46,16 +46,16 @@
     "關係判讀",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘",
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同",
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率"
+    "兩人的距離為 1 m",
+    "兩人的距離為 -7 m",
+    "兩人的距離為 12 m"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

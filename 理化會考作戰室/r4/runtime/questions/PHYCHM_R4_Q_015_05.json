@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於密度資料協助鑑別物質，哪項結論符合題給條件？",
+  "stem": "兩候選密度範圍重疊，樣品值落在重疊區。應如何？",
   "options": [
-    "只要有量測誤差，質量和體積必會相互抵銷，密度不受影響",
-    "只要密度表列數值相同，就已唯一證明樣品是該物質",
-    "密度是體積除以質量，所以答案為 20÷54 g/cm³",
-    "樣品密度在誤差內符合某材料只能作為身分線索"
+    "任選第一個",
+    "宣稱兩物質完全相同",
+    "把密度改成不重疊",
+    "增加其他物性測試"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要有量測誤差，質量和體積必會相互抵銷，密度不受影響」不成立；若質量讀值偏大而體積正確，由 ρ＝m/V 可知密度結果偏大；要依誤差方向分析。"
+      "reason": "沒有證據。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要密度表列數值相同，就已唯一證明樣品是該物質」不成立；樣品密度在誤差內符合某材料只能作為身分線索，還要考慮溫度、純度與其他性質。"
+      "reason": "範圍重疊不等於身分相同。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「密度是體積除以質量，所以答案為 20÷54 g/cm³」不成立；質量 54 g、體積 20 cm³ 的物體密度為 2.7 g/cm³，計算式是 ρ＝m/V。"
+      "reason": "不能修改資料。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「樣品密度在誤差內符合某材料只能作為身分線索，還要考慮溫度、純度與其他性質」。"
+      "reason": "獨立性質可區分候選。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "條件判斷"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要有量測誤差，質量和體積必會相互抵銷，密度不受影響",
-    "只要密度表列數值相同，就已唯一證明樣品是該物質",
-    "密度是體積除以質量，所以答案為 20÷54 g/cm³"
+    "任選第一個",
+    "宣稱兩物質完全相同",
+    "把密度改成不重疊"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-3",
       "AUTH-NATURAL-LC-CA-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對顯微鏡與望遠鏡結果，哪項說法正確？",
+  "stem": "哪一組儀器與成像功能的配對正確？",
   "options": [
-    "水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光",
-    "近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正",
-    "顯微鏡和望遠鏡只是用一片平面玻璃把物體實際變大，無需多個透鏡成像",
-    "望遠鏡也以多個光學元件組合改變觀察角度"
+    "望遠鏡物鏡先形成遠方物體的實像",
+    "顯微鏡目鏡先形成標本的中間實像",
+    "放大鏡把虛像投影在屏幕上",
+    "相機目鏡把影像記錄在底片上"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光」不成立；眼球的角膜與水晶體等會聚光線，使外物在視網膜上形成倒立實像，再由神經系統處理。"
+      "isCorrect": true,
+      "reason": "望遠鏡物鏡接收遠方近似平行光，先在焦平面附近形成實像。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正」不成立；近視的遠物焦點在視網膜前，用凹透鏡矯正；遠視或老花相關情形可用凸透鏡輔助會聚。"
+      "reason": "顯微鏡中間實像先由靠近標本的物鏡形成。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「顯微鏡和望遠鏡只是用一片平面玻璃把物體實際變大，無需多個透…」不成立；顯微鏡利用物鏡形成中間像再由目鏡放大；望遠鏡也以多個光學元件組合改變觀察角度。"
+      "reason": "放大鏡形成的虛像不能直接投影在屏幕上。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「顯微鏡利用物鏡形成中間像再由目鏡放大；望遠鏡也以多個光學元件組合改變觀察角度」。"
+      "isCorrect": false,
+      "reason": "相機由鏡頭在底片或感光元件上成像，不需目鏡記錄。"
     }
   ],
   "difficulty": "advanced",
@@ -47,16 +47,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光",
-    "近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正",
-    "顯微鏡和望遠鏡只是用一片平面玻璃把物體實際變大，無需多個透鏡成像"
+    "顯微鏡目鏡先形成標本的中間實像",
+    "放大鏡把虛像投影在屏幕上",
+    "相機目鏡把影像記錄在底片上"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-10",
       "AUTH-NATURAL-LC-KA-4-11",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

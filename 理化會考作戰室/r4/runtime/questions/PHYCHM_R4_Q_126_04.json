@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查粉末與塊狀比較紀錄，哪項判讀正確？",
+  "stem": "平衡時[A]大於[B]是否可能？",
   "options": [
-    "實驗前十秒產氣較快的組別，最終生成氣體必然比其他組多",
-    "可逆反應達動態平衡時",
-    "動態平衡表示正逆反應都已完全停止，系統內粒子不再互動",
-    "反應速率只能由最後生成物總量判斷，和所需時間無關"
+    "可能，平衡不要求濃度相等",
+    "不可能，必各一半",
+    "可能，但只因正逆反應都已經完全停止",
+    "不可能，A必為零"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「實驗前十秒產氣較快的組別，最終生成氣體必然比其他組多」不成立；反應較快只表示達到某狀態所需時間較短；最終生成量還受反應物量與平衡等條件影響。"
+      "isCorrect": true,
+      "reason": "組成由該系統條件決定。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「可逆反應達動態平衡時，正、逆反應仍持續且速率相等，因此巨觀濃度維持穩定」。"
+      "isCorrect": false,
+      "reason": "無一半規則。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「動態平衡表示正逆反應都已完全停止，系統內粒子不再互動」不成立；可逆反應達動態平衡時，正、逆反應仍持續且速率相等，因此巨觀濃度維持穩定。"
+      "reason": "反應仍進行。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「反應速率只能由最後生成物總量判斷，和所需時間無關」不成立；反應速率可用單位時間內反應物的減少量，或生成物的增加量表示。"
+      "reason": "A可存在。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀",
-    "應用"
+    "概念邊界"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "實驗前十秒產氣較快的組別，最終生成氣體必然比其他組多",
-    "動態平衡表示正逆反應都已完全停止，系統內粒子不再互動",
-    "反應速率只能由最後生成物總量判斷，和所需時間無關"
+    "不可能，必各一半",
+    "可能，但只因正逆反應都已經完全停止",
+    "不可能，A必為零"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科反應速率、控制變因與動態平衡層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JE-4-1",
       "AUTH-NATURAL-LC-JE-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

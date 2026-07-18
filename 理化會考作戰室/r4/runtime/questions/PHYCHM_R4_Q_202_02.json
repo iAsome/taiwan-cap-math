@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據速率單位換算紀錄，哪項判讀合理？",
+  "stem": "有人計算步行速率為 80 m/s。最合理的判斷為何？",
   "options": [
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同",
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率",
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理",
-    "應檢查距離、時間單位或小數點"
+    "數值符合一般步行",
+    "數值明顯過大，應檢查單位或計時",
+    "數值太小，應再乘 1000",
+    "只要有單位就一定正確"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「速度只是一個正數快慢，向東與向西 10 m/s 在任何分析…」不成立；速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向。"
+      "reason": "數值符合一般步行不符合題目資料。80 m/s 相當於 288 km/h，遠超一般步行，顯示換算或資料可能出錯。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均…」不成立；儀表在某一刻顯示的是瞬時資訊；一段旅程的平均速率必須以全路程除以全時間。"
+      "isCorrect": true,
+      "reason": "80 m/s 相當於 288 km/h，遠超一般步行，顯示換算或資料可能出錯。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「運動資料只要代入公式就不必作量級檢查，步行 500 m/s…」不成立；步行速率通常約數 m/s；若算得 500 m/s，應檢查距離、時間單位或小數點。"
+      "reason": "數值太小，應再乘 1000不符合題目資料。80 m/s 相當於 288 km/h，遠超一般步行，顯示換算或資料可能出錯。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「步行速率通常約數 m/s；若算得 500 m/s，應檢查距離、時間單位或小數點」。"
+      "isCorrect": false,
+      "reason": "只要有單位就一定正確不符合題目資料。80 m/s 相當於 288 km/h，遠超一般步行，顯示換算或資料可能出錯。"
     }
   ],
   "difficulty": "foundation",
@@ -46,16 +46,16 @@
     "關係判讀",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同",
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率",
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理"
+    "數值符合一般步行",
+    "數值太小，應再乘 1000",
+    "只要有單位就一定正確"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

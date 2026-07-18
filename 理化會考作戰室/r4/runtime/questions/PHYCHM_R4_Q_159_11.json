@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "換成另一組海陸風對流資料，哪項判讀仍合理？",
+  "stem": "判定海風應同時量？",
   "options": [
-    "傳導必須由熱物質粒子一路移動到冷端，否則能量不能傳遞",
-    "白天陸地升溫較快",
-    "對流是固體內粒子在原位碰撞，不包含流體的整體移動",
-    "太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞"
+    "只量空氣濕度即可判定風由海上或陸地吹來",
+    "只有時間",
+    "海陸溫度與風向",
+    "只有海色"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「傳導必須由熱物質粒子一路移動到冷端，否則能量不能傳遞」不成立；熱傳導可由相鄰粒子碰撞與振動傳遞能量，金屬中自由電子也有助於快速傳熱。"
+      "reason": "濕度不能單獨指出風向；還要比較海陸溫度並直接量測風向。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「白天陸地升溫較快，陸地上方空氣上升，較冷海上空氣向陸地流動，形成海風」。"
+      "isCorrect": false,
+      "reason": "只記時間沒有海陸溫度和風向，不能判定當時是否為海風。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「對流是固體內粒子在原位碰撞，不包含流體的整體移動」不成立；流體受熱後密度常減小而上升，較冷流體下沉形成對流循環。"
+      "isCorrect": true,
+      "reason": "檢查驅動與結果。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞」不成立；熱輻射以電磁波傳遞能量，不需介質，因此太陽能穿過太空將能量傳至地球。"
+      "reason": "海面顏色不是氣流方向量測，不能單獨判定海風。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "方法"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "傳導必須由熱物質粒子一路移動到冷端，否則能量不能傳遞",
-    "對流是固體內粒子在原位碰撞，不包含流體的整體移動",
-    "太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞"
+    "只量空氣濕度即可判定風由海上或陸地吹來",
+    "只有時間",
+    "只有海色"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱傳播與生活應用; 臺灣國中教育會考自然科導熱、對流、輻射與保溫題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BB-4-1",
       "AUTH-NATURAL-LC-BB-4-3",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
@@ -23,28 +24,69 @@ function summaryText(value) {
   return String(value || "").trim().split(/\r?\n/).slice(-3).join(" | ");
 }
 
+function readTail(file, maxBytes = 64 * 1024) {
+  const size = fs.statSync(file).size;
+  const length = Math.min(size, maxBytes);
+  const buffer = Buffer.alloc(length);
+  const descriptor = fs.openSync(file, "r");
+  try {
+    if (length) fs.readSync(descriptor, buffer, 0, length, size - length);
+  } finally {
+    fs.closeSync(descriptor);
+  }
+  return buffer.toString("utf8");
+}
+
 function run(label, executable, args) {
   const started = performance.now();
-  const result = spawnSync(executable, args, { cwd: repo, encoding: "utf8", windowsHide: true, maxBuffer: 64 * 1024 * 1024 });
+  const temporary = fs.mkdtempSync(path.join(os.tmpdir(), "math-v2-release-gate-"));
+  const stdoutPath = path.join(temporary, "stdout.log");
+  const stderrPath = path.join(temporary, "stderr.log");
+  let result;
+  let stdout = "";
+  let stderr = "";
+  try {
+    const stdoutDescriptor = fs.openSync(stdoutPath, "w");
+    const stderrDescriptor = fs.openSync(stderrPath, "w");
+    try {
+      result = spawnSync(executable, args, {
+        cwd: repo,
+        windowsHide: true,
+        stdio: ["ignore", stdoutDescriptor, stderrDescriptor],
+      });
+    } finally {
+      fs.closeSync(stdoutDescriptor);
+      fs.closeSync(stderrDescriptor);
+    }
+    stdout = readTail(stdoutPath);
+    stderr = readTail(stderrPath);
+  } finally {
+    fs.rmSync(temporary, { recursive: true, force: true });
+  }
   evidence.push({
     label,
     command: [executable, ...args].join(" "),
     workingDirectory: repo.replace(/\\/g, "/"),
     exitCode: result.status ?? -1,
-    stdoutSummary: summaryText(result.stdout),
-    stderrSummary: summaryText(result.stderr || result.error?.message),
+    stdoutSummary: summaryText(stdout),
+    stderrSummary: summaryText(stderr || result.error?.message),
     durationMs: Number((performance.now() - started).toFixed(2))
   });
   if (result.error || result.status !== 0) {
-    const detail = [result.stdout, result.stderr, result.error?.message].filter(Boolean).join("\n").trim();
+    const detail = [stdout, stderr, result.error?.message].filter(Boolean).join("\n").trim();
     throw new Error(`${label} failed${detail ? `\n${detail}` : ""}`);
   }
   console.log(`OK ${label}`);
-  return result.stdout;
+  return stdout;
 }
 
 function gitStatus() {
-  const result = spawnSync("git", ["status", "--porcelain=v1", "-z"], { cwd: repo, encoding: "buffer", windowsHide: true });
+  const result = spawnSync("git", ["status", "--porcelain=v1", "-z"], {
+    cwd: repo,
+    encoding: "buffer",
+    windowsHide: true,
+    maxBuffer: 64 * 1024 * 1024,
+  });
   if (result.status !== 0) throw new Error("git status failed");
   return result.stdout;
 }

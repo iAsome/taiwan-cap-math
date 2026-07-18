@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理水平推箱資料後，哪項說明正確？",
+  "stem": "物體由地球帶到月球，質量如何？",
   "options": [
-    "單位分別常用 kg 與 N",
-    "合力為零時物體速度必立即變為零，不可能繼續等速運動",
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他",
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關"
+    "物體的質量變為六分之一",
+    "物體的質量變為零",
+    "質量不變",
+    "物體的質量隨重量增加"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「質量是物體慣性的量度，重量是物體所受重力，在不同星體可改變；單位分別常用 kg 與 N」。"
+      "isCorrect": false,
+      "reason": "物體的質量變為六分之一與受力條件不符。搬移不改變物質量，因此 kg 數不變。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「合力為零時物體速度必立即變為零，不可能繼續等速運動」不成立；物體所受合力為零時加速度為零，可保持靜止或等速直線運動，不限於靜止。"
+      "reason": "物體的質量變為零與受力條件不符。搬移不改變物質量，因此 kg 數不變。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他」不成立；慣性是物體維持原運動狀態的性質；車突然剎車時乘客上半身傾向前就是慣性現象。"
+      "isCorrect": true,
+      "reason": "搬移不改變物質量，因此 kg 數不變。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「加速度方向永遠和物體當下運動方向相同，與合力方向無關」不成立；物體的加速度方向與合力相同；質量相同時合力較大，或合力相同時質量較小，加速度較大。"
+      "reason": "物體的質量隨重量增加與受力條件不符。搬移不改變物質量，因此 kg 數不變。"
     }
   ],
   "difficulty": "foundation",
@@ -50,16 +50,16 @@
     "單位檢核",
     "資料判讀"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "合力為零時物體速度必立即變為零，不可能繼續等速運動",
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他",
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關"
+    "物體的質量變為六分之一",
+    "物體的質量變為零",
+    "物體的質量隨重量增加"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

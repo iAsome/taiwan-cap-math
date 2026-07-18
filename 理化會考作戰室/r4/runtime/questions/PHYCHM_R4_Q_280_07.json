@@ -10,70 +10,56 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "載流直導線出現四種說法，哪項有理化概念支持？",
+  "stem": "僅憑相吸就判定兩物一定是異名磁極，忽略可磁化材料也會被吸引。依辨認磁鐵磁極吸引與排斥修正時，相對磁極與觀察應採哪個原理連結？",
   "options": [
-    "只有永久磁鐵可產生磁場，一般導線中的電流不會影響指南針",
-    "安培右手定則中拇指指電子運動方向，四指則指導線的運動方向",
+    "看到 N 對 N 相斥卻把其中一端標成 S 極",
+    "主張條形磁鐵切半後能得到一塊只有 N 極、另一塊只有 S 極",
     "磁鐵同名極相斥、異名極相吸",
-    "撒鐵粉看到的線條證明磁力線是真實繩子，鐵粉只是黏在繩子上"
+    "解題時將磁極作用規則記反"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只有永久磁鐵可產生磁場，一般導線中的電流不會影響指南針」不成立；電流通過導線時，導線周圍產生磁場；改變電流方向會反轉磁場方向。"
+      "reason": "一看到 N 對 N 相斥卻把其中一端標成 S 極，結果會錯判切割後。同名極相斥、異名極相吸；觀察的數值若未依相對磁極核對，會使切割後無法通過辨認磁鐵磁極吸引與排斥檢查。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「安培右手定則中拇指指電子運動方向，四指則指導線的運動方向」不成立；安培右手定則用拇指指傳統電流方向，其餘四指彎曲方向表示直導線環形磁場方向。"
+      "reason": "誤以為條形磁鐵切半後能得到一塊只有 N 極、另一塊只有 S 極。磁鐵同名極相斥、異名極相吸；相對磁極未列入辨認磁鐵磁極吸引與排斥時，切割後的觀察大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「磁鐵同名極相斥、異名極相吸；將磁鐵切開後每一段仍各有南北極」。"
+      "reason": "磁鐵同名極相斥、異名極相吸。丙列的相對磁極為N 對 S，觀察為相吸；條形磁鐵切半列的相對磁極為—，觀察為兩段。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「撒鐵粉看到的線條證明磁力線是真實繩子，鐵粉只是黏在繩子上」不成立；磁場線是表示場方向與強弱的模型圖線，空間中並沒有可觸摸的實體線條。"
+      "reason": "解題時錯將磁極作用規則記反，認為同名極相吸、異名極相斥，結果會錯判切割後。磁鐵同名極相斥、異名極相吸；照原做法會把切割後算錯或判反。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只有永久磁鐵可產生磁場，一般導線中的電流不會影響指南針",
-    "安培右手定則中拇指指電子運動方向，四指則指導線的運動方向",
-    "撒鐵粉看到的線條證明磁力線是真實繩子，鐵粉只是黏在繩子上"
+    "看到 N 對 N 相斥卻把其中一端標成 S 極",
+    "主張條形磁鐵切半後能得到一塊只有 N 極、另一塊只有 S 極",
+    "解題時將磁極作用規則記反"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KC-4-3",
       "AUTH-NATURAL-LC-KC-4-4",
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解係數配平簡單化學反應式，哪項修正合理？",
+  "stem": "Al＋O₂→Al₂O₃ 的最簡係數為何？",
   "options": [
-    "H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標",
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小",
-    "2H₂＋O₂→2H₂O 以係數 2、1、2 使氫、氧原子在兩側分別都是 4、2 個",
-    "開放容器變輕證明質量守恆定律在產氣反應中不適用"
+    "1、1、1",
+    "2、1、1",
+    "4、3、2",
+    "4、2、2"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標」不成立；2H₂＋O₂→2H₂O 以係數 2、1、2 使氫、氧原子在兩側分別都是 4、2 個。"
+      "reason": "兩元素皆不等。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小」不成立；密閉袋內的反應前後，所有反應物與生成物的總質量相等，因為原子只重新排列。"
+      "reason": "Al 左2右2，但 O 左2右3。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「2H₂＋O₂→2H₂O 以係數 2、1、2 使氫、氧原子在兩側分別都是 4、2 個」。"
+      "reason": "Al4＝4，O6＝6。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「開放容器變輕證明質量守恆定律在產氣反應中不適用」不成立；開放容器產生氣體並逸出時，秤得質量可減少；把逸出氣體也納入系統才符合守恆。"
+      "reason": "O 左4右6。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "最小公倍數"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標",
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小",
-    "開放容器變輕證明質量守恆定律在產氣反應中不適用"
+    "1、1、1",
+    "2、1、1",
+    "4、2、2"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

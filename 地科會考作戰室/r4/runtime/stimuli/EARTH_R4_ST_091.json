@@ -15,48 +15,51 @@
   ],
   "type": "accessible-figure-and-data",
   "content": {
-    "title": "比較岬角與海灣的侵蝕沉積：臺灣附近海流的季節變化觀測紀錄",
-    "scenario": "比較岬角與海灣的侵蝕沉積",
+    "title": "臺灣東岸與海峽測線的冬夏表層流",
+    "scenario": "調查船在相同測線、相同深度，以各季30日平均比較冬季與夏季表層流。",
     "table": {
       "columns": [
-        "時間",
-        "水位公尺",
-        "浪高公尺"
+        "測線",
+        "季節",
+        "主要流向",
+        "平均流速（m/s）"
       ],
       "rows": [
         [
-          "00:00",
-          0.8,
-          1.2
+          "東岸E",
+          "冬季",
+          "向北",
+          0.9
         ],
         [
-          "06:00",
-          2.4,
+          "東岸E",
+          "夏季",
+          "向北",
           1.1
         ],
         [
-          "12:00",
-          0.7,
-          1.3
+          "海峽W",
+          "冬季",
+          "向南",
+          0.3
         ],
         [
-          "18:00",
-          2.3,
-          1
+          "海峽W",
+          "夏季",
+          "向北",
+          0.6
         ]
       ]
     },
-    "readingGuide": "先讀欄位、單位、時間與資料範圍；圖形資訊均有下列資料表替代。",
-    "skillSpecificCriterion": "判讀重點為「臺灣附近表層海流會有季節差異」；結論不得超出資料的時間、位置與量測範圍。"
+    "readingGuide": "先在東岸E內比較冬夏，再在海峽W內比較冬夏；相同測線才能把方向或速度差連到季節。",
+    "skillSpecificCriterion": "臺灣附近表層海流會受季風、黑潮與沿岸水影響，局部流向和強弱可隨季節改變。"
   },
   "accessibility": {
-    "textAlternative": "比較岬角與海灣的侵蝕沉積資料表，欄位為時間、水位公尺、浪高公尺，共有4列。波浪前進不表示同一團海水一路移到岸邊；潮汐也不是由海風吹成。",
+    "textAlternative": "東岸E冬夏都向北，流速由0.9變1.1 m/s；海峽W冬季向南0.3 m/s、夏季向北0.6 m/s。",
     "colorIndependent": true,
     "printSafe": true
   },
-  "assets": [
-    "EARTH_R4_ASSET_TIDE"
-  ],
+  "assets": [],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 Earth Science content author",

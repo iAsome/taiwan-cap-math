@@ -12,50 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_087",
-  "stem": "未知質量表題組中，哪項說明符合紀錄？",
+  "stem": "若只知道內容積增加，卻沒有質量資料與密閉說明，能否推論質量守恆？",
   "options": [
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2",
-    "反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查",
-    "質量守恆不要求反應前後總體積相等",
-    "密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變"
+    "能，因室溫是25 °C",
+    "不能，仍需確認系統邊界與完整質量",
+    "不能，因化學反應從不守恆",
+    "能，任何體積增加都守恆"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「配平係數 2：1：2 直接表示三種物質的質量比也是 2：1…」不成立；2H₂＋O₂→2H₂O 表示氫分子、氧分子與水分子的粒子數比為 2：1：2。"
+      "reason": "室溫不替代質量資料。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查」不成立；粒子模型驗證配平時，要對每種顏色或符號的原子逐個計數，不是只數分子團數。"
+      "isCorrect": true,
+      "reason": "邊界與質量量測是必要證據。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「質量守恆不要求反應前後總體積相等；氣體生成、溫度與壓力都可使體積改變」。"
+      "isCorrect": false,
+      "reason": "化學反應遵守守恆。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變」不成立；質量守恆不要求反應前後總體積相等；氣體生成、溫度與壓力都可使體積改變。"
+      "reason": "體積不能單獨證明。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "證據評估"
+    "證據限制"
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2",
-    "反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查",
-    "密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變"
+    "能，因室溫是25 °C",
+    "不能，因化學反應從不守恆",
+    "能，任何體積增加都守恆"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -64,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

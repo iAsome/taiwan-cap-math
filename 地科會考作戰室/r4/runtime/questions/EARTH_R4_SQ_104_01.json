@@ -13,43 +13,43 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": "EARTH_R4_ST_104",
-  "stem": "閱讀「比較雷達回波與雨量器讀值」的資料後，為了釐清風向風速與雨量資料描述天氣，哪一項讀值正確？",
+  "stem": "哪個敘述正確描述16:00的風與雨？",
   "options": [
-    "在「比較雷達回波與雨量器讀值」的風向風速與雨量資料描述天氣資料中，當時間為06時時，氣壓hPa為1016。",
-    "在「比較雷達回波與雨量器讀值」的風向風速與雨量資料描述天氣資料中，當時間為06時時，氣壓hPa為1012。",
-    "在「比較雷達回波與雨量器讀值」的風向風速與雨量資料描述天氣資料中，當時間為06時時，氣壓hPa為1013。",
-    "在「比較雷達回波與雨量器讀值」的風向風速與雨量資料描述天氣資料中，附表找不到時間為06時的紀錄。"
+    "16:00西南風9 m/s，時雨量24 mm。",
+    "風正吹向西南，9 mm是雨量而24 m/s是風速。",
+    "雨滴落速為24 mm/s，故風速可省略。",
+    "24 mm代表每顆雨滴直徑，而且不受一小時累積時段影響。"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "逐欄讀值可直接得到「氣壓hPa為1016」。"
+      "reason": "「16:00西南風9 m/s，時雨量24 mm。」直接回應題幹，並保留本題所需的量測對象、單位、時空尺度與適用條件。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「1012」來自其他資料列；本列記錄的是「1016」。"
+      "reason": "「風正吹向西南，9 mm是雨量而24 m/s是風速。」混淆本題的量測對象、單位、時間或適用範圍；對照「16:00西南風9 m/s，時雨量24 mm。」可知它不能支持題幹結論。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「1013」來自其他資料列；本列記錄的是「1016」。"
+      "reason": "「雨滴落速為24 mm/s，故風速可省略。」混淆本題的量測對象、單位、時間或適用範圍；對照「16:00西南風9 m/s，時雨量24 mm。」可知它不能支持題幹結論。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "表中第1列已列出「06時」，不能說沒有記錄。"
+      "reason": "「24 mm代表每顆雨滴直徑，而且不受一小時累積時段影響。」混淆本題的量測對象、單位、時間或適用範圍；對照「16:00西南風9 m/s，時雨量24 mm。」可知它不能支持題幹結論。"
     }
   ],
-  "difficulty": "standard",
+  "difficulty": "advanced",
   "cognitiveProcess": [
     "derive-from-shared-data"
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "濕度計直接量測降雨量"
+    "風正吹向西南，9 mm是雨量而24 m/s是風速。"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "逐項核對「比較雷達回波與雨量器讀值」的條件後，「在「比較雷達回波與雨量器讀值」的風向風速與雨量資料描述天氣資料中，當時間為06時時，氣壓hPa為1016。」符合題目資料；查核依據為：逐時表格、折線圖、雷達與衛星資料各有不同時空尺度。",
+      "evidence": "針對「哪個敘述正確描述16:00的風與雨？」，可由「16:00西南風9 m/s，時雨量24 mm。」直接判定；這項證據明確保留題目指定的物理量、時空尺度與觀測條件。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 0,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單次讀值只代表當時當地」。",
+      "evidence": "交叉檢查「風正吹向西南，9 mm是雨量而24 m/s是風速。」：該說法在量測對象、單位、時間或適用範圍上與「16:00西南風9 m/s，時雨量24 mm。」衝突，不能支持題幹結論。",
       "status": "pass"
     }
   ],

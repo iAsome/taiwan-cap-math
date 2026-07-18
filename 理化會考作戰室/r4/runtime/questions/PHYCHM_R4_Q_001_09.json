@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對量筒液面結果，哪項說法正確？",
+  "stem": "研究報告只寫「密度為 0.92 g/mL」，卻沒有原始資料。要確認此值如何得到，最需要補哪項資訊？",
   "options": [
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可",
-    "長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得",
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失",
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受"
+    "只補最後一次四捨五入的位數",
+    "只補上 g/mL 的單位換算表",
+    "只補上液體的名稱",
+    "質量、體積及其量測方法"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「三次不相同表示實驗失敗，只保留最接近預期的 10.0 s …」不成立；量得 9.8、10.1、10.0 s 的平均約為 10.0 s，差異可用範圍或離散情形描述，不…。"
+      "reason": "捨入位數只說明呈現方式，不能重建數值來源。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得」。"
+      "isCorrect": false,
+      "reason": "單位關係不能取代該樣品的原始 m、V。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只要重複次數足夠多，未歸零造成的固定偏差就會自動消失」不成立；天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動。"
+      "reason": "名稱不能顯示 0.92 是由哪些讀值求得。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受」不成立；成人桌子高度約 0.7 m；若記成 70 m，即使計算步驟完整，也應由量級發現單位或小數點錯誤。"
+      "isCorrect": true,
+      "reason": "密度計算與資料追溯都需要質量、體積和操作。"
     }
   ],
   "difficulty": "advanced",
@@ -48,16 +48,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可",
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失",
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受"
+    "只補最後一次四捨五入的位數",
+    "只補上 g/mL 的單位換算表",
+    "只補上液體的名稱"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

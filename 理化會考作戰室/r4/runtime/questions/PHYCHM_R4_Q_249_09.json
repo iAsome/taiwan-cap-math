@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對車輛動能結果，哪項說法正確？",
+  "stem": "重力位能和動能在坡頂為120 J、0 J，到中段為70 J、42 J。分析動能、位能及其他形式間的能量轉換對動能隨重力位能變化的解釋為何？",
   "options": [
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J",
-    "部分機械能轉成內能與聲能",
-    "動能只由物體所在高度決定，質量與速度都不影響",
-    "重力位能是物體固定不變的性質，與參考面、重量和高度都無關"
+    "主張有摩擦時能量會消失",
+    "解題時將機械能減少直接說成總能量不守恆，未先界定包含哪些能量形式",
+    "重力位能減少時，動能及內能、聲能增加",
+    "坡底的 5 J、98 J、17 J 並漏掉相加，就誤判總量少於坡頂 120 J"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「功是力除以位移，所以 20 N 推 3 m 作功為 6.6…」不成立；恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J。"
+      "reason": "誤以為有摩擦時能量會消失，卻未追蹤轉成的內能與聲能。物體下落時重力位能可轉成動能；照原做法會把內能與聲能算錯或判反。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體下落時重力位能可轉成動能；有摩擦時，部分機械能轉成內能與聲能」。"
+      "isCorrect": false,
+      "reason": "解題時錯將機械能減少直接說成總能量不守恆，未先界定包含哪些能量形式。若只把動能與位能稱為機械能，它會因摩擦而減少，但包含內能與聲能的總能量不消失；內能與聲能差異若未通過分析動能、位能及其他形式間的能量轉換對重力位能的控制，就不能只歸給動能。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「動能只由物體所在高度決定，質量與速度都不影響」不成立；動能與質量成正比、與速度平方成正比；同質量者速度加倍，動能變為四倍。"
+      "isCorrect": true,
+      "reason": "重力位能減少時，動能及內能、聲能增加。坡頂列的重力位能為120 J、動能為0 J；中段列的重力位能為70 J、動能為42 J。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「重力位能是物體固定不變的性質，與參考面、重量和高度都無關」不成立；重力位能在選定參考高度後，隨物體重量與高度增加而增大。"
+      "reason": "坡底的 5 J、98 J、17 J 卻未相加，就誤判總量少於坡頂 120 J。重力位能減少時，動能及內能、聲能增加；動能的數值若未依重力位能核對，會使內能與聲能無法通過分析動能、位能及其他形式間的能量轉換檢查。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
     "證據判讀",
-    "分析"
+    "推論"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J",
-    "動能只由物體所在高度決定，質量與速度都不影響",
-    "重力位能是物體固定不變的性質，與參考面、重量和高度都無關"
+    "主張有摩擦時能量會消失",
+    "解題時將機械能減少直接說成總能量不守恆，未先界定包含哪些能量形式",
+    "坡底的 5 J、98 J、17 J 並漏掉相加，就誤判總量少於坡頂 120 J"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

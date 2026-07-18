@@ -16,50 +16,50 @@
     "AUTH-NATURAL-LP-PO-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_137",
-  "stem": "量測器材選擇題組中，哪項說明符合紀錄？",
+  "stem": "若A量筒損壞，改用B量筒的主要代價為何？",
   "options": [
-    "量取 25 mL 溶液適合用量筒而非燒杯；加熱需選可受熱器材並依藥品性質選熱源",
-    "所有玻璃器材的測量精度與耐熱性都一樣，燒杯可代替任何量測工具",
-    "只有藥品顏色鮮豔時才需看危害標示，無色溶液都可安全徒手處理",
-    "未知氣體應把鼻子靠近容器深吸，稀釋時將水一次倒入濃酸可最快散熱"
+    "36 mL會超過B量筒量程，所以不能改用B",
+    "最小刻度變大，讀值較粗",
+    "B無法盛液體",
+    "B會測成質量"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「量取 25 mL 溶液適合用量筒而非燒杯；加熱需選可受熱器材並依藥品性質選熱源」。"
+      "isCorrect": false,
+      "reason": "B量程100 mL足夠。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「所有玻璃器材的測量精度與耐熱性都一樣，燒杯可代替任何量測工具」不成立；量取 25 mL 溶液適合用量筒而非燒杯；加熱需選可受熱器材並依藥品性質選熱源。"
+      "isCorrect": true,
+      "reason": "B的2 mL刻度比A的1 mL粗。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只有藥品顏色鮮豔時才需看危害標示，無色溶液都可安全徒手處理」不成立；操作前應讀取藥品名稱、濃度與危害標示，依飛濺、腐蝕、易燃等風險佩戴適當護目鏡與手套。"
+      "reason": "量筒可盛液。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「未知氣體應把鼻子靠近容器深吸，稀釋時將水一次倒入濃酸可最快…」不成立；聞氣體要用手輕扇少量氣體；加熱試管口不對人；稀釋濃酸應將酸緩慢加入水。"
+      "reason": "仍量體積。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "證據評估"
+    "替代評估"
   ],
-  "representationType": "stimulus-figure-and-data",
+  "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "所有玻璃器材的測量精度與耐熱性都一樣，燒杯可代替任何量測工具",
-    "只有藥品顏色鮮豔時才需看危害標示，無色溶液都可安全徒手處理",
-    "未知氣體應把鼻子靠近容器深吸，稀釋時將水一次倒入濃酸可最快散熱"
+    "36 mL會超過B量筒量程，所以不能改用B",
+    "B無法盛液體",
+    "B會測成質量"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段探究與實作學習表現; 臺灣國中教育會考自然科實驗設計、安全與資料判讀題型",
     "sourceRefs": [
       "AUTH-NATURAL-LP-AI-4-1",
       "AUTH-NATURAL-LP-AI-4-2",
@@ -72,21 +72,5 @@
       "AUTH-NATURAL-LP-PO-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
-  "assets": [
-    "PHYCHM_R4_ASSET_001"
-  ]
+  "assets": []
 }

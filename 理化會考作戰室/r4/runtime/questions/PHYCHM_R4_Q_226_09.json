@@ -14,34 +14,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對衛星運動結果，哪項說法正確？",
+  "stem": "粗糙面上拉力 5 N 才能等速，光滑面只需 2 N。可推論什麼？",
   "options": [
-    "受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右",
-    "比較粗糙程度時可同時在其中一組增加負重，結果仍只反映表面性質",
-    "摩擦效果受接觸面性質與正向作用力影響；比較實驗要一次只改一項",
-    "只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力"
+    "相同正向力下粗糙面的動摩擦較大",
+    "光滑面摩擦較大",
+    "兩面摩擦都為零",
+    "箱子在粗糙面質量較小"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右」不成立；受力圖只畫作用在目標物上的力，箭頭方向是力方向；物體向右運動不代表必有向右力。"
+      "isCorrect": true,
+      "reason": "等速拉力等於摩擦，5 N 大於 2 N。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「比較粗糙程度時可同時在其中一組增加負重，結果仍只反映表面性質」不成立；摩擦效果受接觸面性質與正向作用力影響；比較實驗要一次只改一項。"
+      "reason": "光滑面摩擦較大不成立。等速拉力等於摩擦，5 N 大於 2 N。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「摩擦效果受接觸面性質與正向作用力影響；比較實驗要一次只改一項」。"
+      "isCorrect": false,
+      "reason": "兩面摩擦都為零不成立。等速拉力等於摩擦，5 N 大於 2 N。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力」不成立；靜摩擦力在最大值內隨滑動趨勢調整，以阻止接觸面相對滑動；動摩擦力則在已相對滑動時出現。"
+      "reason": "箱子在粗糙面質量較小不成立。等速拉力等於摩擦，5 N 大於 2 N。"
     }
   ],
   "difficulty": "advanced",
@@ -49,16 +49,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右",
-    "比較粗糙程度時可同時在其中一組增加負重，結果仍只反映表面性質",
-    "只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力"
+    "光滑面摩擦較大",
+    "兩面摩擦都為零",
+    "箱子在粗糙面質量較小"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-10",
       "AUTH-NATURAL-LC-EB-4-11",
@@ -69,19 +69,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

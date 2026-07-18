@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "換成另一組彩色照明資料，哪項判讀仍合理？",
+  "stem": "有人說望遠鏡看見月球變大，是因為月球被鏡片拉近。此說法錯在哪裡？",
   "options": [
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色",
-    "顯微鏡利用物鏡形成中間像再由目鏡放大",
-    "水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光",
-    "近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正"
+    "望遠鏡會增加月球質量",
+    "望遠鏡使光速永久變慢",
+    "望遠鏡讓月球停止反射光",
+    "望遠鏡增大影像視角，並未改變月球距離"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色」不成立；紅、綠、藍色光是加法混色的基本光；顏料混合主要透過選擇性吸收，與色光加法原理不同。"
+      "reason": "光學儀器不會改變月球質量。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「顯微鏡利用物鏡形成中間像再由目鏡放大；望遠鏡也以多個光學元件組合改變觀察角度」。"
+      "isCorrect": false,
+      "reason": "光進入鏡片時傳播速率可改變，但離開後不會因此永久變慢，也不是放大原因。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光」不成立；眼球的角膜與水晶體等會聚光線，使外物在視網膜上形成倒立實像，再由神經系統處理。"
+      "reason": "月球仍反射太陽光，望遠鏡才能收集並形成影像。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正」不成立；近視的遠物焦點在視網膜前，用凹透鏡矯正；遠視或老花相關情形可用凸透鏡輔助會聚。"
+      "isCorrect": true,
+      "reason": "望遠鏡以物鏡成像、目鏡增大視角，使細節較易辨認，月球的實際位置不變。"
     }
   ],
   "difficulty": "transfer",
@@ -47,16 +47,16 @@
     "情境遷移",
     "應用"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色",
-    "水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光",
-    "近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正"
+    "望遠鏡會增加月球質量",
+    "望遠鏡使光速永久變慢",
+    "望遠鏡讓月球停止反射光"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-10",
       "AUTH-NATURAL-LC-KA-4-11",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

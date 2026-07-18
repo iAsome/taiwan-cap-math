@@ -11,50 +11,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_211",
-  "stem": "檢查表中關於快慢改變與方向改變造成的加速度的說法，哪項判讀正確？",
+  "stem": "依表格，C 的速度由 +4 變 -4 m/s，Δv 為何？",
   "options": [
-    "圓周運動的快慢恆定就表示速度向量恆定，所以加速度必為零",
-    "直線上快慢改變有加速度；物體以恆定快慢轉彎時方向改變，也有加速度",
-    "物體質量越大，在相同合力下速度改變必然越快",
-    "加速度只要是負值就一定減速，只要是正值就一定加速"
+    "C 的 Δv 為 -8 m/s",
+    "C 的 Δv 為 0 m/s",
+    "C 的 Δv 為 +8 m/s",
+    "C 的 Δv 為 -4 m/s"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「圓周運動的快慢恆定就表示速度向量恆定，所以加速度必為零」不成立；等速圓周運動雖速度大小不變，速度方向持續改變，因此具有指向圓心的加速度。"
+      "isCorrect": true,
+      "reason": "-4-(+4)=-8 m/s。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「直線上快慢改變有加速度；物體以恆定快慢轉彎時方向改變，也有加速度」。"
+      "isCorrect": false,
+      "reason": "C 的 Δv 為 0 m/s不成立。-4-(+4)=-8 m/s。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「物體質量越大，在相同合力下速度改變必然越快」不成立；質量相同時，合力較大者速度改變較快；合力相同時，質量較大者速度改變較慢。"
+      "reason": "C 的 Δv 為 +8 m/s不成立。-4-(+4)=-8 m/s。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「加速度只要是負值就一定減速，只要是正值就一定加速」不成立；加速度與速度同向時快慢增加，反向時快慢減少；加速度為負不代表一定減速。"
+      "reason": "C 的 Δv 為 -4 m/s不成立。-4-(+4)=-8 m/s。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "資料判讀"
+    "加速度計算"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "圓周運動的快慢恆定就表示速度向量恆定，所以加速度必為零",
-    "物體質量越大，在相同合力下速度改變必然越快",
-    "加速度只要是負值就一定減速，只要是正值就一定加速"
+    "C 的 Δv 為 0 m/s",
+    "C 的 Δv 為 +8 m/s",
+    "C 的 Δv 為 -4 m/s"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-11",
       "AUTH-NATURAL-LC-EB-4-8",
@@ -62,20 +62,6 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_008"
   ]

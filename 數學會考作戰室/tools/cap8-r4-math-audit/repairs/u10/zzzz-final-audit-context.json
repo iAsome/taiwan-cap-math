@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u10",
+  "batch": "011-u10-complete",
+  "skills": ["s011"],
+  "mc": [
+    {
+      "questionId": "u10-s011-v011",
+      "expectedContentSha256": "79cd71cabd4207c995f30fdf41ffe18c677bb64681806c71ed3361f14023a47a",
+      "set": {
+        "prompt": "某工廠有 203 箱零件，每箱 197 個。零件總數可用平方差快速算成多少？",
+        "target": "用平方差計算總件數",
+        "choices": ["40009 個", "39999 個", "40600 個", "39991 個"],
+        "independentSolution": {
+          "derivation": "總數為 203×197=(200+3)(200-3)=40000-9=39991 個。",
+          "derivedChoice": "39991 個",
+          "didNotTrustStoredAnswer": true
+        },
+        "explanation": "箱數乘每箱個數得到零件總數。203 與 197 以 200 為共同中心，分別是 200+3 與 200-3，因此總數為 200²-3²=40000-9=39991 個；末位 3×7=21 也能核對答案末位為 1。",
+        "steps": [
+          "依題意列出總數 203×197。",
+          "改寫為 (200+3)(200-3)。",
+          "套用平方差，得 40000-9=39991 個。"
+        ],
+        "optionAnalysis": [
+          {"choice": "40009 個", "truth": false, "reason": "把平方差的 -9 誤算成 +9。"},
+          {"choice": "39999 個", "truth": false, "reason": "只減 1，沒有計算 3²。"},
+          {"choice": "40600 個", "truth": false, "reason": "以 203×200 粗估，沒有完成原乘法。"},
+          {"choice": "39991 個", "truth": true, "reason": "203×197=39991，且單位為個。"}
+        ],
+        "unitCheck": "箱×個/箱=個，答案單位為個。",
+        "ambiguityAudit": "題目明確給出箱數與每箱個數；四個選項單位一致，獨立計算後只有 39991 個成立。",
+        "difficultyReason": "素養：須先由箱數與每箱個數建立乘法，再辨認兩因數以 200 為中心等距並使用平方差。",
+        "literacyContextNecessity": "箱數與每箱個數決定總件數使用乘法；203、197 以 200 為中心等距，提供平方差心算結構。"
+      },
+      "reviewSet": {
+        "independentSolution": "總數為 203×197=(200+3)(200-3)=40000-9=39991 個。",
+        "derivedAnswer": "39991 個",
+        "storedAnswer": "39991 個",
+        "answerMatch": true,
+        "optionTruth": [false, false, false, true],
+        "uniqueCorrectAnswer": true,
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "逐項重算：40009 把 -9 當 +9；39999 只減 1；40600 未完成原乘法；只有 39991 等於 203×197。",
+          "undefinedSymbol": "題幹沒有未定義符號。",
+          "unitConflict": "箱×個/箱=個，四個選項均以個作答。",
+          "roundingConflict": "全程精確運算，不需四捨五入。",
+          "domainBoundary": "只使用國中會考範圍的乘法與平方差公式。",
+          "alternateReading": "203 是箱數、197 是每箱個數，乘法關係明確，沒有加法或其他合理解讀。"
+        },
+        "difficultyReason": "素養：須先由箱數與每箱個數建立乘法，再辨認兩因數以 200 為中心等距並使用平方差。",
+        "literacyContextNecessity": "箱數與每箱個數決定總件數使用乘法；203、197 以 200 為中心等距，提供平方差心算結構。",
+        "prerequisiteCheck": "使用先備技能 square-difference-formula；未使用後續單元知識。",
+        "languageCheck": "使用臺灣繁體中文；題幹、單位與所求量完整。",
+        "reviewerDecision": "pass",
+        "reviewerNote": "獨立以一般乘法與平方差重算 203×197=39991；四個選項逐一檢查後只有 39991 個成立，箱與每箱個數的量綱關係完整。"
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [],
+  "drawingSpecs": [],
+  "textFiles": []
+}

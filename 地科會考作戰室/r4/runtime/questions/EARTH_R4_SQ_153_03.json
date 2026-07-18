@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "EARTH_R4_ST_153",
-  "stem": "閱讀「比較夏至冬至正午影長」的資料後，為了釐清不同季節的晝夜長短，哪一項後續檢驗最適當？",
+  "stem": "若要檢驗「赤道附近全年晝長變化較小」，應增加哪組資料？",
   "options": [
-    "同時換掉不同季節的晝夜長短的全部變因後只測一次",
-    "刪除「比較夏至冬至正午影長」中不合預期的資料後重畫圖",
-    "只詢問同意「地軸傾斜配合公轉使同一地點的白晝長度隨季節改變，南北半球的季節變化相反」的人",
-    "針對「比較夏至冬至正午影長」再先判定半球與日期位置"
+    "只增加臺北六月更多日出照片，不記錄日落",
+    "改量臺北三日的正午氣溫，不再計算晝長",
+    "刪除十二月資料，使曲線看來較平坦",
+    "以赤道附近同一測站記錄全年多個日期的日出與日落"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "同時改變多個變因且無重複，不能判斷「比較夏至冬至正午影長」的原因。"
+      "reason": "缺少日落便不能算晝長，而且單一月份也無法呈現全年振幅。 晝長必須用同一日期的日落減去日出後再比較。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "未說明便刪除資料會造成偏誤。"
+      "reason": "氣溫不是白晝長度，受雲量、海陸性與熱慣性等因素共同影響。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "意見調查不是獨立觀測或公平檢驗。"
+      "reason": "選擇性刪除極端月份會低估變化幅度，不能形成可靠的緯度比較。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "後續檢驗保留不同季節的晝夜長短的變因、資料與結論間的可重現關係。"
+      "reason": "赤道測站的全年成對時刻可算出晝長範圍，再與臺北振幅直接比較。"
     }
   ],
   "difficulty": "transfer",
@@ -49,7 +49,7 @@
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "晝夜交替由地球公轉造成"
+    "刪除十二月資料，使曲線看來較平坦"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "逐項核對「比較夏至冬至正午影長」的條件後，「針對「比較夏至冬至正午影長」再先判定半球與日期位置」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "要檢驗全年變化小，必須有赤道附近跨月份的成對日出、日落紀錄，而非單日照片。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "刪除十二月會人為縮小臺北的晝長範圍，不能作為赤道季節變化的證據。",
       "status": "pass"
     }
   ],

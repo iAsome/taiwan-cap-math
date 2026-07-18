@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "根據彈簧縱波紀錄，哪項判讀合理？",
+  "stem": "彈簧的壓縮區向左移動，而線圈沿彈簧方向左右振動。此波屬於哪一類？",
   "options": [
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行",
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端",
-    "若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動"
+    "橫波，因傳播方向向左",
+    "縱波，因線圈跟著壓縮區遠移",
+    "橫波，因壓縮區可畫成曲線",
+    "縱波，因線圈振動與傳播在同一直線"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「任何一張瞬間位置波形圖都可只看波峰數直接得到頻率」不成立；比較波形圖前要讀軸；位置圖可直接量波長與振幅，頻率則還需時間資訊。"
+      "reason": "向左只是傳播箭頭，不能單獨判為橫波。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行」。"
+      "isCorrect": false,
+      "reason": "線圈在原處附近往復，不隨壓縮區一路移走。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「繩波向右傳時，繩上每一個粒子都從左端一路移到右端」不成立；波將擾動與能量向前傳，介質粒子多在平衡位置附近振動，不隨波整體移到遠處。"
+      "reason": "圖的畫法不取代實際振動方向。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動」不成立；在介質波模型中，標記粒子應在平衡位置兩側往復運動；波形則表示擾動依序傳開。"
+      "isCorrect": true,
+      "reason": "線圈左右振動與波向左傳皆沿彈簧軸線，故為縱波。"
     }
   ],
   "difficulty": "foundation",
@@ -46,16 +46,16 @@
     "關係判讀",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端",
-    "若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動"
+    "橫波，因傳播方向向左",
+    "縱波，因線圈跟著壓縮區遠移",
+    "橫波，因壓縮區可畫成曲線"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

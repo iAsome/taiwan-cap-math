@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "依附表判讀不同季節的晝夜長短，哪一項讀值正確？",
+  "stem": "某地6月21日日出05:10、日落18:50；12月21日日出06:30、日落17:20。兩日晝長差多少？",
   "options": [
-    "在「比較夏至冬至正午影長」的不同季節的晝夜長短資料中，當日期位置為甲時，臺灣日出為06:35。",
-    "在「比較夏至冬至正午影長」的不同季節的晝夜長短資料中，當日期位置為甲時，臺灣日出為05:50。",
-    "在「比較夏至冬至正午影長」的不同季節的晝夜長短資料中，當日期位置為甲時，臺灣日出為05:05。",
-    "在「比較夏至冬至正午影長」的不同季節的晝夜長短資料中，附表找不到日期位置為甲的紀錄。"
+    "1小時50分",
+    "2小時20分",
+    "2小時50分",
+    "3小時00分"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「06:35」來自其他資料列；本列記錄的是「05:05」。"
+      "reason": "夏至晝長13小時40分、冬至10小時50分，兩者差值不是1小時50分。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「05:50」來自其他資料列；本列記錄的是「05:05」。"
+      "reason": "2小時20分漏算了兩端時刻共同造成的差異，與完整相減不符。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "逐欄讀值可直接得到「臺灣日出為05:05」。"
+      "reason": "13小時40分減10小時50分等於2小時50分，兩次計算可互相驗算。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "表中第1列已列出「甲」，不能說沒有記錄。"
+      "reason": "兩個晝長相減為2小時50分，不是整整3小時，需保留分鐘。"
     }
   ],
   "difficulty": "advanced",
@@ -49,7 +49,7 @@
   ],
   "representationType": "data-table",
   "misconceptionTargets": [
-    "全球同一天的晝長完全相等"
+    "2小時20分"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "逐項核對「比較夏至冬至正午影長」的條件後，「在「比較夏至冬至正午影長」的不同季節的晝夜長短資料中，當日期位置為甲時，臺灣日出為05:05。」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "兩組日落減日出分別得13小時40分與10小時50分，再相減得到2小時50分。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "若只比較日出差或日落差，會漏掉另一端對晝長的貢獻，無法得到完整差值。",
       "status": "pass"
     }
   ],

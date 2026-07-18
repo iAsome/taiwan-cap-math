@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於瞬時資訊與一段時間平均，哪項結論符合題給條件？",
+  "stem": "要測量短跑選手通過終點瞬間的速率，最適合使用哪種資料？",
   "options": [
-    "路程與位移永遠大小相等，往返原點的路程也是零",
-    "儀表在某一刻顯示的是瞬時資訊",
-    "平均速率是路程乘時間，所以為 4500 m/s",
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘"
+    "整場路程除以總時間",
+    "起點停留時間",
+    "跑道總長而不量時間",
+    "終點附近極短時間內的位移變化"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「路程與位移永遠大小相等，往返原點的路程也是零」不成立；路程是實際路徑總長，位移是起點到終點的有向改變；往返原點時路程大於零但位移為零。"
+      "reason": "整場路程除以總時間不符合題目資料。極短時間區間的位置變化可近似終點時刻的瞬時速率。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「儀表在某一刻顯示的是瞬時資訊；一段旅程的平均速率必須以全路程除以全時間」。"
+      "isCorrect": false,
+      "reason": "起點停留時間不符合題目資料。極短時間區間的位置變化可近似終點時刻的瞬時速率。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「平均速率是路程乘時間，所以為 4500 m/s」不成立；移動 150 m 耗時 30 s 的平均速率為路程除以總時間，即 5 m/s。"
+      "reason": "跑道總長而不量時間不符合題目資料。極短時間區間的位置變化可近似終點時刻的瞬時速率。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「72 km/h＝72×1000×3600 m/s，分子分母…」不成立；72 km/h＝20 m/s，因為 1 km＝1000 m、1 h＝3600 s；長度與時間都…。"
+      "isCorrect": true,
+      "reason": "極短時間區間的位置變化可近似終點時刻的瞬時速率。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "條件判斷",
     "分析"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "路程與位移永遠大小相等，往返原點的路程也是零",
-    "平均速率是路程乘時間，所以為 4500 m/s",
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘"
+    "整場路程除以總時間",
+    "起點停留時間",
+    "跑道總長而不量時間"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄根據超聲波下結論，哪項符合資料？",
+  "stem": "隔著關閉的玻璃窗仍可聽見戶外聲音。下列過程何者合理？",
   "options": [
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射",
-    "聲波需要氣體、液體或固體介質傳播",
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險"
+    "聲音直接穿過沒有振動的玻璃",
+    "玻璃把聲波變成永久物質流",
+    "室外聲音在玻璃內成為真空波",
+    "空氣振動使玻璃振動，再擾動室內空氣"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「距離為 340×0.40＝136 m，因為回聲時間只包含單程」不成立；回聲測距的聲波經往返路程；若聲速 340 m/s、往返 0.40 s，距離為 68 m。"
+      "reason": "玻璃必須受迫振動才能傳遞機械擾動。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射」不成立；人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射。"
+      "reason": "傳聲不需永久搬運物質。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質」。"
+      "isCorrect": false,
+      "reason": "玻璃是固體介質，不是真空。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險」不成立；噪音風險同時與聲音強度級和暴露時間有關；較大聲音的安全暴露時間應更短。"
+      "isCorrect": true,
+      "reason": "聲音可依序透過室外空氣、玻璃與室內空氣傳遞。"
     }
   ],
   "difficulty": "advanced",
@@ -47,16 +47,16 @@
     "主張評估",
     "證據評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射",
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險"
+    "聲音直接穿過沒有振動的玻璃",
+    "玻璃把聲波變成永久物質流",
+    "室外聲音在玻璃內成為真空波"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

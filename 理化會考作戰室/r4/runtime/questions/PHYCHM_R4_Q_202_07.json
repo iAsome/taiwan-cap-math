@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "往返步行出現四種說法，哪項有理化概念支持？",
+  "stem": "比較 5 m/s 與 15 km/h，應先做什麼？",
   "options": [
-    "步行速率通常約數 m/s；若算得 500 m/s，應檢查距離、時間單位或小數點",
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率",
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向"
+    "直接比較 5 與 15",
+    "把兩數相加",
+    "刪除所有單位",
+    "先換成相同速率單位"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「步行速率通常約數 m/s；若算得 500 m/s，應檢查距離、時間單位或小數點」。"
+      "isCorrect": false,
+      "reason": "直接比較 5 與 15不符合題目資料。5 m/s=18 km/h，統一單位後才能正確判斷前者較快。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均…」不成立；儀表在某一刻顯示的是瞬時資訊；一段旅程的平均速率必須以全路程除以全時間。"
+      "reason": "把兩數相加不符合題目資料。5 m/s=18 km/h，統一單位後才能正確判斷前者較快。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「運動資料只要代入公式就不必作量級檢查，步行 500 m/s…」不成立；步行速率通常約數 m/s；若算得 500 m/s，應檢查距離、時間單位或小數點。"
+      "reason": "刪除所有單位不符合題目資料。5 m/s=18 km/h，統一單位後才能正確判斷前者較快。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「只給一個數字「200 m」就能唯一決定物體位置，不需參考點…」不成立；物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整。"
+      "isCorrect": true,
+      "reason": "5 m/s=18 km/h，統一單位後才能正確判斷前者較快。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "證據判讀",
     "推論"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率",
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向"
+    "直接比較 5 與 15",
+    "把兩數相加",
+    "刪除所有單位"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

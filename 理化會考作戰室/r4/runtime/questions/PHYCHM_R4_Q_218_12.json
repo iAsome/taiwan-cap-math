@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估電梯受力報告時，哪項說明正確？",
+  "stem": "若物體質量不變，合力由 2 N 增至 6 N，加速度如何？",
   "options": [
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他",
-    "同直線上向右 8 N 與向左 3 N 的合力為向右 5 N",
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關",
-    "質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少"
+    "加速度變為原來 3 倍",
+    "物體的加速度變為原來三分之一",
+    "物體的加速度不變",
+    "物體的加速度變為零"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他」不成立；慣性是物體維持原運動狀態的性質；車突然剎車時乘客上半身傾向前就是慣性現象。"
+      "isCorrect": true,
+      "reason": "a=F合/m，同質量下 6:2=3:1。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「同直線上向右 8 N 與向左 3 N 的合力為向右 5 N；相反方向力要取差並保留方向」。"
+      "isCorrect": false,
+      "reason": "物體的加速度變為原來三分之一與受力條件不符。a=F合/m，同質量下 6:2=3:1。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「加速度方向永遠和物體當下運動方向相同，與合力方向無關」不成立；物體的加速度方向與合力相同；質量相同時合力較大，或合力相同時質量較小，加速度較大。"
+      "reason": "物體的加速度不變與受力條件不符。a=F合/m，同質量下 6:2=3:1。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少」不成立；質量是物體慣性的量度，重量是物體所受重力，在不同星體可改變；單位分別常用 kg 與 N。"
+      "reason": "物體的加速度變為零與受力條件不符。a=F合/m，同質量下 6:2=3:1。"
     }
   ],
   "difficulty": "transfer",
@@ -50,16 +50,16 @@
     "限制評估",
     "高層推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他",
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關",
-    "質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少"
+    "物體的加速度變為原來三分之一",
+    "物體的加速度不變",
+    "物體的加速度變為零"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

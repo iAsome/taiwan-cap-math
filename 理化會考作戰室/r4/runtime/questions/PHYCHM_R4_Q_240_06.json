@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解視重量差求浮力，哪項修正合理？",
+  "stem": "丙條件下，先知空氣中讀值8 N和完全浸水讀值3 N，再看水中浮力待算。複查水中浮力時應先核對哪個欄位？",
   "options": [
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要",
-    "浮力為視重量差 5 N",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水"
+    "未完全浸沒時排開體積不同，不能直接與完全浸沒比較",
+    "把物體碰到容器底仍拿彈簧秤讀值計算浮力",
+    "把 12 N 與 7 N 相加，誤算甲物體浮力為 19 N",
+    "把未完全浸沒的丁與完全浸沒的甲視為排開體積一定相同"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「浮沉只由物體總質量大小決定，體積與平均密度完全不重要」不成立；物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉。"
+      "isCorrect": true,
+      "reason": "未完全浸沒時排開體積不同，不能直接與完全浸沒比較。乙列的空氣中讀值為18 N，完全浸水讀值為11 N；丙列的空氣中讀值為8 N，完全浸水讀值為3 N。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N」。"
+      "isCorrect": false,
+      "reason": "解題時誤把物體碰到容器底仍拿彈簧秤讀值計算浮力，漏掉底部支持力。彈簧秤必須穩定且物體未接觸容器；水中浮力差異若未通過由視重量差求浮力對空氣中讀值的控制，就不能只歸給完全浸水讀值。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「漂浮物體既然在水面上，就完全不受浮力，只受向下重力」不成立；漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力。"
+      "reason": "把 12 N 與 7 N 相加，誤算甲物體浮力為 19 N，結果會錯判水中浮力。甲的浮力為 12−7＝5 N；完全浸水讀值的數值若未依空氣中讀值核對，會使水中浮力無法通過由視重量差求浮力檢查。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水」不成立；船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉。"
+      "reason": "把未完全浸沒的丁與完全浸沒的甲視為排開體積一定相同。物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N；空氣中讀值未列入由視重量差求浮力時，水中浮力的完全浸水讀值大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水"
+    "把物體碰到容器底仍拿彈簧秤讀值計算浮力",
+    "把 12 N 與 7 N 相加，誤算甲物體浮力為 19 N",
+    "把未完全浸沒的丁與完全浸沒的甲視為排開體積一定相同"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

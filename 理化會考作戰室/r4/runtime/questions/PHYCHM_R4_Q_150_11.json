@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組水的升溫資料，哪項判讀仍合理？",
+  "stem": "溫度計量程頂端造成水平線，如何排除是假平台？",
   "options": [
-    "加熱曲線斜升區表示單一物態升溫",
-    "比熱較大表示物質每吸收一點熱就升溫更多，所以一定更快變熱",
-    "比較吸熱量只需看最後溫度，不必知道質量、初溫或比熱",
-    "相變時溫度不變就表示吸熱量為零，所有輸入能量都消失"
+    "換更大量程並觀察相態",
+    "刪除線段",
+    "直接宣稱沸騰",
+    "增加顏色"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「加熱曲線斜升區表示單一物態升溫，平臺可表示純物質在相變，需先辨認橫縱軸」。"
+      "reason": "檢查儀器飽和。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「比熱較大表示物質每吸收一點熱就升溫更多，所以一定更快變熱」不成立；相同質量吸收相同熱量時，比熱較大的物質溫度上升較少。"
+      "reason": "不解決。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「比較吸熱量只需看最後溫度，不必知道質量、初溫或比熱」不成立；沒有相變時，吸放熱大小由 Q＝mcΔT 比較；質量、比熱與溫差都必須納入。"
+      "reason": "證據不足。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「相變時溫度不變就表示吸熱量為零，所有輸入能量都消失」不成立；熔化或沸騰平臺期間，物質仍吸收能量以改變粒子排列或作用，溫度可保持不變。"
+      "reason": "增加圖線顏色不會擴大溫度計量程，仍無法排除頂格造成的假平台。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "實驗批判"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "比熱較大表示物質每吸收一點熱就升溫更多，所以一定更快變熱",
-    "比較吸熱量只需看最後溫度，不必知道質量、初溫或比熱",
-    "相變時溫度不變就表示吸熱量為零，所有輸入能量都消失"
+    "刪除線段",
+    "直接宣稱沸騰",
+    "增加顏色"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱學與能量; 臺灣國中教育會考自然科熱量、比熱、相變與生活現象題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-BA-4-1",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

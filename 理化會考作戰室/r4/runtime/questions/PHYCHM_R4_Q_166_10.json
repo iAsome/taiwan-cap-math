@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "報告根據頻率波長計算下結論，哪項符合資料？",
+  "stem": "連續波通過繩上固定色環，色環每次上升後又下降。十個週期內色環的路程與位移可能如何？",
   "options": [
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長",
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "不隨波整體移到遠處"
+    "物體的路程與位移都必為零",
+    "路程大於零，最後位移可為零",
+    "物體的路程為零，位移大於零",
+    "物體的位移必等於波傳十個波長"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「波速為 f/λ＝6.25 m/s，因為頻率應除以波長」不成立；頻率 5.0 Hz、波長 0.80 m 的波速為 v＝fλ＝4.0 m/s；計算前要統一單位。"
+      "reason": "色環反覆運動，因此路程不會為零。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關」不成立；橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行。"
+      "isCorrect": true,
+      "reason": "色環累積上下路程，但回到出發位置時淨位移為零。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「任何一張瞬間位置波形圖都可只看波峰數直接得到頻率」不成立；比較波形圖前要讀軸；位置圖可直接量波長與振幅，頻率則還需時間資訊。"
+      "reason": "有運動就有正路程，不可能路程為零。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「波將擾動與能量向前傳，介質粒子多在平衡位置附近振動，不隨波整體移到遠處」。"
+      "isCorrect": false,
+      "reason": "波形前進距離不等於色環位移。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "主張評估",
     "證據評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長",
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率"
+    "物體的路程與位移都必為零",
+    "物體的路程為零，位移大於零",
+    "物體的位移必等於波傳十個波長"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

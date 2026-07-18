@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組討論電價資料計算基本電費情境，哪項敘述正確？",
+  "stem": "合計列含功率—及月使用時間—；照明列含0.20 kW及120 h。依電價資料計算基本電費情境對月使用時間隨功率變化的解釋為何？",
   "options": [
-    "基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算",
-    "電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道",
-    "電功率為 V/I＝60 W，因為電壓應除以電流",
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間"
+    "把估算電費只數電器台數，不計功率、使用時間與電價規則",
+    "漏列實際帳單的級距與附加規則，直接把單一單價套到所有情況",
+    "三項合計 246 kWh",
+    "把照明 0.20 kW 使用 120 h 被算成 240 kWh，而非 24 kWh"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算」。"
+      "isCorrect": false,
+      "reason": "解題時誤把估算電費只數電器台數，不計功率、使用時間與電價規則。基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算；照原做法會把月用電量算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道」不成立；基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算。"
+      "reason": "未納入實際帳單的級距與附加規則，直接把單一單價套到所有情況，結果會錯判月用電量。實際帳單可能有級距與其他費用，必須依題給電價規則，不能只用電器台數估算；月用電量差異若未通過依電價資料計算基本電費情境對功率的控制，就不能只歸給月使用時間。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「電功率為 V/I＝60 W，因為電壓應除以電流」不成立；電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W。"
+      "isCorrect": true,
+      "reason": "三項合計 246 kWh。合計列的功率為—、月使用時間為—；照明列的功率為0.20 kW、月使用時間為120 h。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「1000 W 電器使用 2 h 消耗 500 kWh，因為…」不成立；1000 W 電器使用 2 h 消耗 2 kWh；電能等於功率乘以使用時間。"
+      "reason": "解題時誤把照明 0.20 kW 使用 120 h 被算成 240 kWh，而非 24 kWh。三項合計 246 kWh；月使用時間的數值若未依功率核對，會使月用電量無法通過依電價資料計算基本電費情境檢查。"
     }
   ],
   "difficulty": "foundation",
@@ -50,16 +50,16 @@
     "辨認",
     "概念理解"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道",
-    "電功率為 V/I＝60 W，因為電壓應除以電流",
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間"
+    "把估算電費只數電器台數，不計功率、使用時間與電價規則",
+    "漏列實際帳單的級距與附加規則，直接把單一單價套到所有情況",
+    "把照明 0.20 kW 使用 120 h 被算成 240 kWh，而非 24 kWh"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

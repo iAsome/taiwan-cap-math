@@ -10,70 +10,56 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解正電負電與電中性，哪項修正合理？",
+  "stem": "丙條件下，先知原有正負量+8、−8和電子改變無改變，再看最後電性中性。哪項檢查可防止原有正負量與電子改變混用？",
   "options": [
-    "接地線的功能是在物體上累積更多靜電，以增加火花能量",
-    "物體失去部分電子帶正電",
-    "帶正電表示物體新增許多質子且失去所有電子，電中性則是完全沒有電荷",
-    "摩擦生電是摩擦動作創造大量正負電荷，原先物體中沒有帶電粒子"
+    "中性仍含等量正負電荷",
+    "把電中性解釋成物體內完全並漏掉正電荷與負電荷",
+    "把甲原有 +10、−10 且失去 2 電子，卻算成淨電量 −2",
+    "主張得到電子的物體會帶正電，因為電子移入使電量增加"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「接地線的功能是在物體上累積更多靜電，以增加火花能量」不成立；接地提供電荷與大地間移動的路徑，可減少靜電累積；在易燃環境更需防止靜電火花。"
+      "isCorrect": true,
+      "reason": "中性仍含等量正負電荷。乙列的原有正負量為+10、−10，電子改變為得到 3；丙列的原有正負量為+8、−8，電子改變為無改變。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體失去部分電子帶正電，得到額外電子帶負電，正負電量相等時呈電中性」。"
+      "isCorrect": false,
+      "reason": "把電中性解釋成物體內完全沒有正電荷與負電荷，結果會錯判最後電性。一般摩擦或接觸起電不搬動原子核內質子；最後電性差異若未通過區分正電負電與電中性對原有正負量的控制，就不能只歸給電子改變。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「帶正電表示物體新增許多質子且失去所有電子，電中性則是完全沒…」不成立；物體失去部分電子帶正電，得到額外電子帶負電，正負電量相等時呈電中性。"
+      "reason": "解題時誤把甲原有 +10、−10 且失去 2 電子，卻算成淨電量 −2。失去電子形成正電，得到電子形成負電；電子改變的數值若未依原有正負量核對，會使最後電性無法通過區分正電負電與電中性檢查。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「摩擦生電是摩擦動作創造大量正負電荷，原先物體中沒有帶電粒子」不成立；兩個原本中性且與外界絕緣的不同材料摩擦時，電子可由一物轉移至另一物，使兩者帶等量異號電荷。"
+      "reason": "誤以為得到電子的物體會帶正電，因為電子移入使電量增加。物體失去部分電子帶正電，得到額外電子帶負電，正負電量相等時呈電中性；原有正負量未列入區分正電負電與電中性時，最後電性的電子改變大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "接地線的功能是在物體上累積更多靜電，以增加火花能量",
-    "帶正電表示物體新增許多質子且失去所有電子，電中性則是完全沒有電荷",
-    "摩擦生電是摩擦動作創造大量正負電荷，原先物體中沒有帶電粒子"
+    "把電中性解釋成物體內完全並漏掉正電荷與負電荷",
+    "把甲原有 +10、−10 且失去 2 電子，卻算成淨電量 −2",
+    "主張得到電子的物體會帶正電，因為電子移入使電量增加"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KC-4-1",
       "AUTH-NATURAL-LC-KC-4-2",
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

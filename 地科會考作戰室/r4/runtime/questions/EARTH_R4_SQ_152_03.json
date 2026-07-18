@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "EARTH_R4_ST_152",
-  "stem": "閱讀「解釋閏年調整的週期來源」的資料後，為了釐清自轉方向判斷不同地區先後見到日出，哪一項後續檢驗最適當？",
+  "stem": "要把本題方法用於東京與臺北，研究者首先應補做什麼？",
   "options": [
-    "同時換掉自轉方向判斷不同地區先後見到日出的全部變因後只測一次",
-    "刪除「解釋閏年調整的週期來源」中不合預期的資料後重畫圖",
-    "針對「解釋閏年調整的週期來源」再先判定半球與日期位置",
-    "只詢問同意「同一日期且緯度相近時，位置較東的地區通常較早因地球自轉進入日照而見到日出」的人"
+    "直接比較兩地鐘面數字，不必查日期或時區",
+    "只比較城市名稱在地圖上的左右位置",
+    "把兩地日出換算到同一日期與同一時間基準，再比較經度",
+    "改用兩地正午氣溫高低代表實際日出先後"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "同時改變多個變因且無重複，不能判斷「解釋閏年調整的週期來源」的原因。"
+      "reason": "東京與臺北使用不同時區，未換算的鐘面數字可能掩蓋實際發生先後。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "未說明便刪除資料會造成偏誤。"
+      "reason": "地圖方向與投影可能不同，城市名稱位置也不是可量測的經度資料。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "後續檢驗保留自轉方向判斷不同地區先後見到日出的變因、資料與結論間的可重現關係。"
+      "reason": "統一日期和時間基準後，時刻才可直接排序，再用經度檢查自轉機制。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "意見調查不是獨立觀測或公平檢驗。"
+      "reason": "氣溫受天氣與地表影響，且常有熱慣性，不能替代天文日出紀錄。"
     }
   ],
   "difficulty": "transfer",
@@ -49,7 +49,7 @@
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "晝夜交替由地球公轉造成"
+    "直接比較兩地鐘面數字，不必查日期或時區"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "逐項核對「解釋閏年調整的週期來源」的條件後，「針對「解釋閏年調整的週期來源」再先判定半球與日期位置」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "跨時區比較的必要控制是統一時間基準，否則相同數字代表的實際瞬間不同。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "用正午氣溫替代日出會改變研究量，無法檢查兩城市何時越過晨昏線。",
       "status": "pass"
     }
   ],

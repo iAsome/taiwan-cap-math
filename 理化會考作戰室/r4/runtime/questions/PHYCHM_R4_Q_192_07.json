@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "眼球成像出現四種說法，哪項有理化概念支持？",
+  "stem": "印表機把多種墨水疊在白紙上，主要接近哪種模型？",
   "options": [
-    "近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正",
-    "顯微鏡和望遠鏡只是用一片平面玻璃把物體實際變大，無需多個透鏡成像",
-    "顏料混合主要透過選擇性吸收",
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色"
+    "色光加法混色",
+    "鏡面反射無吸收",
+    "聲音頻率混合",
+    "顏料減法混色"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正」不成立；近視的遠物焦點在視網膜前，用凹透鏡矯正；遠視或老花相關情形可用凸透鏡輔助會聚。"
+      "reason": "墨水是材料，不是發光束。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「顯微鏡和望遠鏡只是用一片平面玻璃把物體實際變大，無需多個透…」不成立；顯微鏡利用物鏡形成中間像再由目鏡放大；望遠鏡也以多個光學元件組合改變觀察角度。"
+      "reason": "墨水會選擇性吸收。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「紅、綠、藍色光是加法混色的基本光；顏料混合主要透過選擇性吸收，與色光加法原理不同」。"
+      "isCorrect": false,
+      "reason": "與聲音無關。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色」不成立；紅、綠、藍色光是加法混色的基本光；顏料混合主要透過選擇性吸收，與色光加法原理不同。"
+      "isCorrect": true,
+      "reason": "墨水層吸收不同色光，剩餘反射成分形成顏色。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "證據判讀",
     "推論"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正",
-    "顯微鏡和望遠鏡只是用一片平面玻璃把物體實際變大，無需多個透鏡成像",
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色"
+    "色光加法混色",
+    "鏡面反射無吸收",
+    "聲音頻率混合"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-10",
       "AUTH-NATURAL-LC-KA-4-11",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄根據天平歸零下結論，哪項符合資料？",
+  "stem": "有人說『末尾零沒有用，8.40 s 應一律改成 8.4 s』。哪項反駁最完整？",
   "options": [
-    "2.35 m＝0.0235 cm，因為換成較小單位時數字也應變小",
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可",
-    "測量值可合理記至 0.01 cm",
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失"
+    "末尾零可表示秒表讀到 0.01 s，刪除會遺失解析度資訊",
+    "所有數值都必須有兩個零",
+    "8.40 比 8.4 大",
+    "零看起來比較整齊"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「2.35 m＝0.0235 cm，因為換成較小單位時數字也…」不成立；2.35 m＝235 cm；公制換算要保持同一物理量，並讓數值和單位的改變相互補償。"
+      "isCorrect": true,
+      "reason": "說明了測量語意。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「三次不相同表示實驗失敗，只保留最接近預期的 10.0 s …」不成立；量得 9.8、10.1、10.0 s 的平均約為 10.0 s，差異可用範圍或離散情形描述，不…。"
+      "reason": "位數依儀器，不是一律兩零。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「最小刻度 0.1 cm 的直尺，測量值可合理記至 0.01 cm；多寫更多位不會增加儀器資訊」。"
+      "isCorrect": false,
+      "reason": "兩個數值相等。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要重複次數足夠多，未歸零造成的固定偏差就會自動消失」不成立；天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動。"
+      "reason": "整齊不是科學理由。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "主張評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "2.35 m＝0.0235 cm，因為換成較小單位時數字也應變小",
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可",
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失"
+    "所有數值都必須有兩個零",
+    "8.40 比 8.4 大",
+    "零看起來比較整齊"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

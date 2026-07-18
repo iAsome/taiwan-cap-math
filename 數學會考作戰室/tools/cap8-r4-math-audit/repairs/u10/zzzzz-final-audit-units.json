@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u10",
+  "batch": "011-u10-complete",
+  "skills": ["s009", "s010", "s012", "s013"],
+  "mc": [
+    {
+      "questionId": "u10-s009-v012",
+      "expectedContentSha256": "142f8ce756ff2e658c67fab40361dbd00191e0725000bb1a740aa5a3e6a2dabd",
+      "set": {
+        "choices": ["3 平方單位", "6 平方單位", "x² 平方單位", "9 平方單位"],
+        "independentSolution": {"derivation": "小正方形邊長為 3，所以面積 3²=9 平方單位。", "derivedChoice": "9 平方單位", "didNotTrustStoredAnswer": true},
+        "optionAnalysis": [
+          {"choice": "3 平方單位", "truth": false, "reason": "把邊長 3 直接當成面積。"},
+          {"choice": "6 平方單位", "truth": false, "reason": "把兩條邊相加，而非相乘。"},
+          {"choice": "x² 平方單位", "truth": false, "reason": "這是另一個大區塊的面積。"},
+          {"choice": "9 平方單位", "truth": true, "reason": "邊長 3 的正方形面積為 9 平方單位。"}
+        ]
+      },
+      "appendText": {"explanation": " 答案以平方單位表示。"},
+      "reviewSet": {
+        "independentSolution": "小正方形邊長為 3，所以面積 3²=9 平方單位。",
+        "derivedAnswer": "9 平方單位",
+        "storedAnswer": "9 平方單位",
+        "ambiguityChecks": {"secondCorrectAnswer": "逐項重算後，3 是邊長、6 是邊長和、x² 是另一區塊面積，只有 9 平方單位成立。", "undefinedSymbol": "x 與圖中分割關係均已定義。", "unitConflict": "邊長使用抽象長度單位，四個面積選項均使用平方單位。", "roundingConflict": "全程精確運算，不需四捨五入。", "domainBoundary": "只使用國中正方形面積與和平方範圍。", "alternateReading": "圖示分割與題幹尺寸一致，小正方形兩邊皆為 3。"},
+        "reviewerNote": "獨立由小正方形邊長 3 重算面積為 9 平方單位；四個同單位選項中只有索引 3 成立。"
+      }
+    },
+    {
+      "questionId": "u10-s010-v012",
+      "expectedContentSha256": "4bb5b9f8d15bc2ba76d006c52d75badecb960e30312c472ec79f90eebce2a571",
+      "set": {
+        "choices": ["x²-4x+4 平方單位", "x²-4 平方單位", "x²-2x+4 平方單位", "x²+4x+4 平方單位"],
+        "independentSolution": {"derivation": "中央正方形邊長為 x-2，因此面積 (x-2)²=x²-4x+4 平方單位。", "derivedChoice": "x²-4x+4 平方單位", "didNotTrustStoredAnswer": true},
+        "optionAnalysis": [
+          {"choice": "x²-4x+4 平方單位", "truth": true, "reason": "中央正方形邊長為 x-2，平方後即為此式。"},
+          {"choice": "x²-4 平方單位", "truth": false, "reason": "誤用平方差，漏掉中間項。"},
+          {"choice": "x²-2x+4 平方單位", "truth": false, "reason": "中間項少一倍。"},
+          {"choice": "x²+4x+4 平方單位", "truth": false, "reason": "切除後面積不應使用和的平方。"}
+        ]
+      },
+      "appendText": {"explanation": " 面積以平方單位表示。"},
+      "reviewSet": {
+        "independentSolution": "中央正方形邊長為 x-2，因此面積 (x-2)²=x²-4x+4 平方單位。",
+        "derivedAnswer": "x²-4x+4 平方單位",
+        "storedAnswer": "x²-4x+4 平方單位",
+        "ambiguityChecks": {"secondCorrectAnswer": "逐項展開後只有 x²-4x+4 等於 (x-2)²。", "undefinedSymbol": "x 與切除寬度 2 均由題幹和圖示定義。", "unitConflict": "邊長使用抽象長度單位，四個面積選項均使用平方單位。", "roundingConflict": "全程精確運算，不需四捨五入。", "domainBoundary": "只使用國中正方形面積與差的平方範圍。", "alternateReading": "右側與下側各切寬 2，使中央水平、垂直邊長都為 x-2。"},
+        "reviewerNote": "獨立由兩方向各減 2 得中央邊長 x-2，面積唯一為 x²-4x+4 平方單位。"
+      }
+    },
+    {
+      "questionId": "u10-s012-v012",
+      "expectedContentSha256": "7232e96b035bfbc6a9f0bd27bfebb69230bcddbfd08cbeab06c473e64947ebe3",
+      "set": {
+        "prompt": "一個正方形庭院邊長為 x+2 公尺，中央挖去邊長 x-2 公尺的正方形。剩餘面積為何？",
+        "choices": ["4x 平方公尺", "8 平方公尺", "8x 平方公尺", "4x+8 平方公尺"],
+        "independentSolution": {"derivation": "剩餘面積=(x+2)²-(x-2)²=8x 平方公尺。", "derivedChoice": "8x 平方公尺", "didNotTrustStoredAnswer": true},
+        "optionAnalysis": [
+          {"choice": "4x 平方公尺", "truth": false, "reason": "平方差計算少一倍。"},
+          {"choice": "8 平方公尺", "truth": false, "reason": "錯誤消去變數 x。"},
+          {"choice": "8x 平方公尺", "truth": true, "reason": "外面積減內面積等於 8x 平方公尺。"},
+          {"choice": "4x+8 平方公尺", "truth": false, "reason": "多出不存在的常數項。"}
+        ],
+        "unitCheck": "兩個邊長都以公尺表示，面積差的單位為平方公尺。"
+      },
+      "appendText": {"explanation": " 因此答案為 8x 平方公尺。"},
+      "reviewSet": {
+        "independentSolution": "剩餘面積=(x+2)²-(x-2)²=8x 平方公尺。",
+        "derivedAnswer": "8x 平方公尺",
+        "storedAnswer": "8x 平方公尺",
+        "ambiguityChecks": {"secondCorrectAnswer": "外面積減內面積獨立展開為 8x，只有 8x 平方公尺成立。", "undefinedSymbol": "x 表示以公尺計的長度量，且實際情境需 x>2。", "unitConflict": "兩個正方形邊長均為公尺，四個選項均以平方公尺表示。", "roundingConflict": "全程精確運算，不需四捨五入。", "domainBoundary": "只使用國中正方形面積與平方差公式。", "alternateReading": "題幹明確要求外正方形扣除中央正方形的剩餘面積。"},
+        "reviewerNote": "獨立計算 (x+2)²-(x-2)²=8x，且面積單位為平方公尺；只有索引 2 成立。"
+      }
+    },
+    {
+      "questionId": "u10-s013-v004",
+      "expectedContentSha256": "4940cfb3081443660fdfd75210c2e1b61c27f53e94ca660fb8ac7f766010fe76",
+      "set": {
+        "choices": ["x²+16 平方公尺", "x²+4x+16 平方公尺", "x²+8x+16 平方公尺", "2x²+8x+16 平方公尺"],
+        "independentSolution": {"derivation": "面積=(x+4)²=x²+8x+16 平方公尺。", "derivedChoice": "x²+8x+16 平方公尺", "didNotTrustStoredAnswer": true},
+        "optionAnalysis": [
+          {"choice": "x²+16 平方公尺", "truth": false, "reason": "漏掉中間項。"},
+          {"choice": "x²+4x+16 平方公尺", "truth": false, "reason": "中間項少一倍。"},
+          {"choice": "x²+8x+16 平方公尺", "truth": true, "reason": "和平方展開及面積單位都正確。"},
+          {"choice": "2x²+8x+16 平方公尺", "truth": false, "reason": "首項平方被重複計算。"}
+        ]
+      },
+      "reviewSet": {"independentSolution": "面積=(x+4)²=x²+8x+16 平方公尺。", "derivedAnswer": "x²+8x+16 平方公尺", "storedAnswer": "x²+8x+16 平方公尺", "ambiguityChecks": {"secondCorrectAnswer": "和平方獨立展開後只有 x²+8x+16 成立。", "undefinedSymbol": "x 為題幹邊長式中的變數。", "unitConflict": "邊長以公尺表示，四個面積選項均以平方公尺表示。", "roundingConflict": "全程精確運算。", "domainBoundary": "只使用國中正方形面積與和平方公式。", "alternateReading": "題目問正方形面積，不是周長或增加量。"}, "reviewerNote": "獨立重算 (x+4)²=x²+8x+16 平方公尺，只有索引 2 成立。"}
+    },
+    {
+      "questionId": "u10-s013-v006",
+      "expectedContentSha256": "222c3d8b7004b1066c77bb406729f040fe08c1983754d0355ad1b47acb1e1c3d",
+      "set": {
+        "prompt": "一長方形長 x+5 公尺、寬 x-2 公尺。面積為何？",
+        "choices": ["x²+7x-10 平方公尺", "x²-3x-10 平方公尺", "x²+3x+10 平方公尺", "x²+3x-10 平方公尺"],
+        "independentSolution": {"derivation": "(x+5)(x-2)=x²+3x-10 平方公尺。", "derivedChoice": "x²+3x-10 平方公尺", "didNotTrustStoredAnswer": true},
+        "optionAnalysis": [
+          {"choice": "x²+7x-10 平方公尺", "truth": false, "reason": "交叉項合併錯誤。"},
+          {"choice": "x²-3x-10 平方公尺", "truth": false, "reason": "一次項符號顛倒。"},
+          {"choice": "x²+3x+10 平方公尺", "truth": false, "reason": "常數乘積符號錯誤。"},
+          {"choice": "x²+3x-10 平方公尺", "truth": true, "reason": "長乘寬展開及面積單位都正確。"}
+        ],
+        "unitCheck": "兩邊長均以公尺表示，面積單位為平方公尺。"
+      },
+      "reviewSet": {"independentSolution": "(x+5)(x-2)=x²+3x-10 平方公尺。", "derivedAnswer": "x²+3x-10 平方公尺", "storedAnswer": "x²+3x-10 平方公尺", "ambiguityChecks": {"secondCorrectAnswer": "四個乘積合併後只有 x²+3x-10 成立。", "undefinedSymbol": "x 為邊長式中的變數，實際情境需 x>2。", "unitConflict": "長與寬均為公尺，四個選項均為平方公尺。", "roundingConflict": "全程精確運算。", "domainBoundary": "只使用國中長方形面積與二項式乘法。", "alternateReading": "長、寬及所求面積均由題幹明確指定。"}, "reviewerNote": "獨立重算 (x+5)(x-2)=x²+3x-10 平方公尺，只有索引 3 成立。"}
+    },
+    {
+      "questionId": "u10-s013-v007",
+      "expectedContentSha256": "8f3b9935dac6bbec04a6e54b3d4a348b809af3bafa7619a86a5589cc9d27a730",
+      "set": {
+        "prompt": "某方案總成本 C(x)=2x²+30x+500 元，收入 R(x)=5x²+10x 元。利潤 R-C 為何？",
+        "choices": ["3x²+40x+500 元", "7x²+40x+500 元", "3x²-20x-500 元", "-3x²+20x+500 元"],
+        "independentSolution": {"derivation": "R-C=(5x²+10x)-(2x²+30x+500)=3x²-20x-500 元。", "derivedChoice": "3x²-20x-500 元", "didNotTrustStoredAnswer": true},
+        "optionAnalysis": [
+          {"choice": "3x²+40x+500 元", "truth": false, "reason": "沒有把成本各項完整變號。"},
+          {"choice": "7x²+40x+500 元", "truth": false, "reason": "把收入與成本相加。"},
+          {"choice": "3x²-20x-500 元", "truth": true, "reason": "收入減成本的各次項及單位都正確。"},
+          {"choice": "-3x²+20x+500 元", "truth": false, "reason": "把相減方向顛倒。"}
+        ],
+        "unitCheck": "收入、成本與利潤各項均以元表示。"
+      },
+      "reviewSet": {"independentSolution": "R-C=(5x²+10x)-(2x²+30x+500)=3x²-20x-500 元。", "derivedAnswer": "3x²-20x-500 元", "storedAnswer": "3x²-20x-500 元", "ambiguityChecks": {"secondCorrectAnswer": "逐次項計算收入減成本後只有 3x²-20x-500 成立。", "undefinedSymbol": "C、R 與 x 均由題幹定義。", "unitConflict": "收入、成本、利潤和四個選項都以元表示。", "roundingConflict": "全程精確運算。", "domainBoundary": "只使用國中多項式減法。", "alternateReading": "R-C 明確指定收入減成本，方向唯一。"}, "reviewerNote": "獨立逐項重算 R-C=3x²-20x-500 元，只有索引 2 成立。"}
+    },
+    {
+      "questionId": "u10-s013-v008",
+      "expectedContentSha256": "4b8eda84c084384ebb1bb558986cc98251476b4874b22426dfa24378c77d84d4",
+      "set": {
+        "prompt": "外正方形邊長 x+3 公尺，內正方形邊長 x-1 公尺。框形面積為何？",
+        "choices": ["8x+8 平方公尺", "4x+8 平方公尺", "8x-8 平方公尺", "4x²+8 平方公尺"],
+        "independentSolution": {"derivation": "框形面積=(x+3)²-(x-1)²=8x+8 平方公尺。", "derivedChoice": "8x+8 平方公尺", "didNotTrustStoredAnswer": true},
+        "optionAnalysis": [
+          {"choice": "8x+8 平方公尺", "truth": true, "reason": "外面積減內面積的展開與單位都正確。"},
+          {"choice": "4x+8 平方公尺", "truth": false, "reason": "一次項少算一半。"},
+          {"choice": "8x-8 平方公尺", "truth": false, "reason": "常數差符號錯誤。"},
+          {"choice": "4x²+8 平方公尺", "truth": false, "reason": "二次項應在面積相減時抵消。"}
+        ],
+        "unitCheck": "外、內邊長均以公尺表示，框形面積單位為平方公尺。"
+      },
+      "reviewSet": {"independentSolution": "框形面積=(x+3)²-(x-1)²=8x+8 平方公尺。", "derivedAnswer": "8x+8 平方公尺", "storedAnswer": "8x+8 平方公尺", "ambiguityChecks": {"secondCorrectAnswer": "外面積減內面積獨立展開後只有 8x+8 成立。", "undefinedSymbol": "x 為邊長式中的變數，實際情境需 x>1。", "unitConflict": "兩個邊長均為公尺，四個選項均為平方公尺。", "roundingConflict": "全程精確運算。", "domainBoundary": "只使用國中正方形面積與平方差。", "alternateReading": "框形面積明確是外正方形扣除內正方形。"}, "reviewerNote": "獨立重算 (x+3)²-(x-1)²=8x+8 平方公尺，只有索引 0 成立。"}
+    },
+    {
+      "questionId": "u10-s013-v009",
+      "expectedContentSha256": "a8bf4e8dbe7679e353f0640e4096d6847b8ceca65cd008aef5303b68cdd2482f",
+      "set": {
+        "choices": ["-2x²+120x+8000 元", "2x²+120x+8000 元", "-2x²+160x+8000 元", "-2x²+200x+80 元"],
+        "independentSolution": {"derivation": "銷售額=(x+40)(200-2x)=-2x²+120x+8000 元。", "derivedChoice": "-2x²+120x+8000 元", "didNotTrustStoredAnswer": true},
+        "optionAnalysis": [
+          {"choice": "-2x²+120x+8000 元", "truth": true, "reason": "單價乘銷量的展開與金額單位都正確。"},
+          {"choice": "2x²+120x+8000 元", "truth": false, "reason": "二次項符號錯誤。"},
+          {"choice": "-2x²+160x+8000 元", "truth": false, "reason": "一次項合併錯誤。"},
+          {"choice": "-2x²+200x+80 元", "truth": false, "reason": "常數與一次項都未正確相乘。"}
+        ]
+      },
+      "reviewSet": {"independentSolution": "銷售額=(x+40)(200-2x)=-2x²+120x+8000 元。", "derivedAnswer": "-2x²+120x+8000 元", "storedAnswer": "-2x²+120x+8000 元", "ambiguityChecks": {"secondCorrectAnswer": "四個乘積合併後只有 -2x²+120x+8000 成立。", "undefinedSymbol": "x 為題幹價格與銷量模型中的變數。", "unitConflict": "元/件乘件得到元，四個選項均以元表示。", "roundingConflict": "全程精確運算。", "domainBoundary": "只使用國中二項式乘法與情境建模。", "alternateReading": "銷售額明確等於單價乘銷量。"}, "reviewerNote": "獨立展開單價乘銷量得 -2x²+120x+8000 元，只有索引 0 成立。"}
+    },
+    {
+      "questionId": "u10-s013-v010",
+      "expectedContentSha256": "7154c60c569b589ff22318c1092a947f3ef8ec546aad0b2f356ee917485ce71e",
+      "set": {
+        "choices": ["60+25t 元", "25(t-2) 元", "60+25(t-2) 元", "60(t-2)+25 元"],
+        "independentSolution": {"derivation": "超過時間為 t-2 小時，費用為 60+25(t-2) 元。", "derivedChoice": "60+25(t-2) 元", "didNotTrustStoredAnswer": true},
+        "optionAnalysis": [
+          {"choice": "60+25t 元", "truth": false, "reason": "把已含在固定費中的前兩小時重複計費。"},
+          {"choice": "25(t-2) 元", "truth": false, "reason": "漏掉固定費 60 元。"},
+          {"choice": "60+25(t-2) 元", "truth": true, "reason": "固定費加超時費的結構與單位都正確。"},
+          {"choice": "60(t-2)+25 元", "truth": false, "reason": "誤把固定費乘超時時數。"}
+        ]
+      },
+      "reviewSet": {"independentSolution": "超過時間為 t-2 小時，費用為 60+25(t-2) 元。", "derivedAnswer": "60+25(t-2) 元", "storedAnswer": "60+25(t-2) 元", "ambiguityChecks": {"secondCorrectAnswer": "依分段規則逐項檢查，只有 60+25(t-2) 元同時含固定費與正確超時費。", "undefinedSymbol": "t 表示停車小時數，且題幹指定 t>2。", "unitConflict": "25 元/小時乘超時時數再加 60 元，四個選項均為元。", "roundingConflict": "全程精確運算。", "domainBoundary": "只使用國中一次式與分段情境。", "alternateReading": "前兩小時已由固定 60 元涵蓋，超時時數唯一為 t-2。"}, "reviewerNote": "獨立由固定費與超時費重建 60+25(t-2) 元，只有索引 2 成立。"}
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [],
+  "drawingSpecs": [],
+  "textFiles": []
+}

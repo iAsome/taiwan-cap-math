@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解作圖判斷平面鏡成像位置，哪項修正合理？",
+  "stem": "物體向平面鏡靠近 4 cm，像相對鏡面如何移動？",
   "options": [
-    "法線是鏡面本身的水平線，入射角應從光線與鏡面之間量起",
-    "入射角與反射角都要從鏡面量起，因此兩者和法線無關",
-    "物體遠離平面鏡時像會縮小，而像距永遠是物距的一半",
-    "平面鏡成像位置可將兩條反射光線反向延長至鏡後交點，得到無法投屏的虛像"
+    "遠離鏡面 4 cm",
+    "此時物體保持原位",
+    "穿過鏡面到物體旁",
+    "也向鏡面靠近 4 cm"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「法線是鏡面本身的水平線，入射角應從光線與鏡面之間量起」不成立；入射線射向反射面，法線垂直於入射點的表面，反射線由入射點離開。"
+      "reason": "對稱關係使物像同時靠近。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「入射角與反射角都要從鏡面量起，因此兩者和法線無關」不成立；反射定律規定入射角等於反射角，兩角均由光線與法線之間量得。"
+      "reason": "像距必等於新的物距。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「物體遠離平面鏡時像會縮小，而像距永遠是物距的一半」不成立；平面鏡的像與物等大，像距等於物距，像與物對鏡面對稱。"
+      "reason": "像仍為鏡後虛像。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「平面鏡成像位置可將兩條反射光線反向延長至鏡後交點，得到無法投屏的虛像」。"
+      "reason": "物距減少 4 cm，像距同步減少 4 cm。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "法線是鏡面本身的水平線，入射角應從光線與鏡面之間量起",
-    "入射角與反射角都要從鏡面量起，因此兩者和法線無關",
-    "物體遠離平面鏡時像會縮小，而像距永遠是物距的一半"
+    "遠離鏡面 4 cm",
+    "此時物體保持原位",
+    "穿過鏡面到物體旁"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-6",
       "AUTH-NATURAL-LC-KA-4-7",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "PHYCHM_R4_STIM_166",
-  "stem": "根據頻率波長計算表中紀錄，哪項結論最合理？",
+  "stem": "由表估算波峰向右傳播的速度為何？",
   "options": [
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比",
-    "波將擾動與能量向前傳，介質粒子多在平衡位置附近振動，不隨波整體移到遠處"
+    "0 m/s",
+    "1.0 m/s",
+    "4.6 m/s",
+    "3.0 m/s"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「繩波向右傳時，繩上每一個粒子都從左端一路移到右端」不成立；波將擾動與能量向前傳，介質粒子多在平衡位置附近振動，不隨波整體移到遠處。"
+      "reason": "0 是 P 點水平速度，不是波峰速度。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「振幅是波峰到波谷的全高，波長是相鄰波峰的高度差」不成立；波峰是橫波最高點、波谷是最低點；振幅由平衡位置量到波峰，波長是沿傳播方向相鄰同相位點的距離。"
+      "reason": "波峰每 0.2 s 前進 0.6 m，不是 0.2 m。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「週期越長表示每秒振動次數越多，所以頻率和週期成正比」不成立；週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T。"
+      "reason": "用末位置除時間忽略初位置，運算錯誤。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「波將擾動與能量向前傳，介質粒子多在平衡位置附近振動，不隨波整體移到遠處」。"
+      "reason": "v＝(2.3−0.5)/0.6＝3.0 m/s。"
     }
   ],
   "difficulty": "standard",
@@ -47,14 +47,14 @@
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比"
+    "0 m/s",
+    "1.0 m/s",
+    "4.6 m/s"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -62,20 +62,6 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_002"
   ]

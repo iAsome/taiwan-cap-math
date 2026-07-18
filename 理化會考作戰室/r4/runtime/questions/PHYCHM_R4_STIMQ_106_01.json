@@ -15,50 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_106",
-  "stem": "根據生活酸鹼安全表中紀錄，哪項結論最合理？",
+  "stem": "哪一杯為中性？",
   "options": [
-    "pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目自由決定",
-    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關",
-    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸",
-    "pH＜7 為酸性、pH＝7 為中性、pH＞7 為鹼性；pH 本身沒有單位"
+    "丁",
+    "乙",
+    "丙",
+    "甲"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目…」不成立；pH＜7 為酸性、pH＝7 為中性、pH＞7 為鹼性；pH 本身沒有單位。"
+      "reason": "丁大於7。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「酸和鹼只由溶液顏色定義，和水溶液中的離子無關」不成立；在課程模型中，酸性水溶液的酸性與氫離子有關，鹼性水溶液的鹼性與氫氧根離子有關。"
+      "reason": "乙仍小於7。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「pH 數字越大一定代表酸性越強，所以 pH 5 比 pH …」不成立；在同種、相近條件下，pH 2 的溶液比 pH 5 酸性強；pH 12 比 pH 9 鹼性強。"
+      "isCorrect": true,
+      "reason": "丙pH正好7.0。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「pH＜7 為酸性、pH＝7 為中性、pH＞7 為鹼性；pH 本身沒有單位」。"
+      "isCorrect": false,
+      "reason": "甲明顯酸性。"
     }
   ],
-  "difficulty": "standard",
+  "difficulty": "foundation",
   "cognitiveProcess": [
-    "資料判讀"
+    "表格分類"
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目自由決定",
-    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關",
-    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸"
+    "丁",
+    "乙",
+    "甲"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -70,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

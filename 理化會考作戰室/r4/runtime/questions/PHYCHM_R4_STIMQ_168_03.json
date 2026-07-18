@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": "PHYCHM_R4_STIM_168",
-  "stem": "噪音暴露題組中，哪項說明符合紀錄？",
+  "stem": "此資料最支持哪項解釋？",
   "options": [
-    "頻率、振幅與波形都只決定音量大小，與音調和音色無關",
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射",
-    "音叉、鼓面與聲帶發聲時都在振動"
+    "音叉振動衰減時，聲音訊號也隨之衰減",
+    "音叉頻率必隨時間持續增加",
+    "麥克風訊號造成叉腳質量減少",
+    "叉腳位移越小，聲音反而越強"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「頻率、振幅與波形都只決定音量大小，與音調和音色無關」不成立；頻率主要影響音調，振幅與響度有關，波形特徵與音色有關，三者不可互換。"
+      "isCorrect": true,
+      "reason": "控制環境與距離後，叉腳位移和聲音訊號同步減小。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「距離為 340×0.40＝136 m，因為回聲時間只包含單程」不成立；回聲測距的聲波經往返路程；若聲速 340 m/s、往返 0.40 s，距離為 68 m。"
+      "reason": "表中沒有頻率資料，不能推出持續增加。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射」不成立；人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射。"
+      "reason": "資料未量質量，也沒有此因果機制。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止」。"
+      "isCorrect": false,
+      "reason": "訊號與位移同方向下降，不是反向。"
     }
   ],
   "difficulty": "transfer",
@@ -48,14 +48,14 @@
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "頻率、振幅與波形都只決定音量大小，與音調和音色無關",
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射"
+    "音叉頻率必隨時間持續增加",
+    "麥克風訊號造成叉腳質量減少",
+    "叉腳位移越小，聲音反而越強"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -64,20 +64,6 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_003"
   ]

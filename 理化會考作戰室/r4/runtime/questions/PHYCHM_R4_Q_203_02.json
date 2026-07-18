@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據位置時間圖紀錄，哪項判讀合理？",
+  "stem": "一位置—時間圖通過點 t=2 s、x=-4 m。物體在該時刻位於何處？",
   "options": [
-    "位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置",
-    "速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度",
-    "速度數值變得更負就一定是減速，無需比較速度大小與方向",
-    "把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間與位置"
+    "位於原點負方向 4 m",
+    "此時物體位於原點正方向 4 m",
+    "已走過總路程 4 m",
+    "正以 4 m/s 運動"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置」。"
+      "reason": "位置 -4 m 表示物體在原點負側 4 m，不直接給路程或速度。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度」不成立；速度—時間圖的縱座標直接給各時刻速度；水平線表示速度恆定。"
+      "reason": "此時物體位於原點正方向 4 m不成立。位置 -4 m 表示物體在原點負側 4 m，不直接給路程或速度。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「速度數值變得更負就一定是減速，無需比較速度大小與方向」不成立；速度—時間圖上數值由 2 增至 6 m/s 表示正向加速；速度由 −2 變 −6 m/s 則是…。"
+      "reason": "已走過總路程 4 m不成立。位置 -4 m 表示物體在原點負側 4 m，不直接給路程或速度。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間…」不成立；「向東等速、停留、向西返回」的位置—時間圖應依序是正斜率、水平、負斜率。"
+      "reason": "正以 4 m/s 運動不成立。位置 -4 m 表示物體在原點負側 4 m，不直接給路程或速度。"
     }
   ],
   "difficulty": "foundation",
@@ -46,16 +46,16 @@
     "關係判讀",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度",
-    "速度數值變得更負就一定是減速，無需比較速度大小與方向",
-    "把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間與位置"
+    "此時物體位於原點正方向 4 m",
+    "已走過總路程 4 m",
+    "正以 4 m/s 運動"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

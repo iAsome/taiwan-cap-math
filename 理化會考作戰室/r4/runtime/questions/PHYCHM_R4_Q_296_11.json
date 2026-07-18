@@ -49,51 +49,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "換成另一組能源效率資料，哪項判讀仍合理？",
+  "stem": "燃氣列含可調度性高及運轉排放有；風力列含風況時變動及低。跨列解釋其他限制時，哪個科學概念不能省略？",
   "options": [
-    "只要有一張圖表趨勢符合預期，就可忽略實驗方法、模型限制與其他來源",
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性",
-    "太陽、風能可再生但有間歇性與土地、儲能需求",
-    "可再生能源必然零環境影響且可全天恆定發電，化石燃料則沒有任何系統優點"
+    "把儲能列為一次能源，並漏掉追查充電電能來自何處",
+    "主張化石燃料可調度性高就表示並漏掉溫室氣體與燃料價格問題",
+    "化石燃料能量密度高但會排放溫室氣體",
+    "把再生能源等同並漏掉任何環境代價"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要有一張圖表趨勢符合預期，就可忽略實驗方法、模型限制與其…」不成立；形成科學解釋時要互相印證實驗結果、圖表趨勢、模型機制與可追溯資料，並區分相關、因果與不確定。"
+      "reason": "把儲能列為一次能源，卻未追查充電電能來自何處，結果會錯判其他限制。不同來源各有優勢與限制；運轉排放的數值若未依可調度性核對，會使其他限制無法通過比較化石燃料再生能源與新興能源條件檢查。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標…」不成立；可檢驗的節能決策應寫明基準用能、具體措施、量測期間、成功指標與氣溫、使用人數等不確定因素。"
+      "reason": "誤以為化石燃料可調度性高就表示卻未溫室氣體與燃料價格問題，結果會錯判其他限制。化石燃料能量密度高但會排放溫室氣體；可調度性未列入比較化石燃料再生能源與新興能源條件時，其他限制的運轉排放大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「化石燃料能量密度高但會排放溫室氣體；太陽、風能可再生但有間歇性與土地、儲能需求，新興能源也需證據評估」。"
+      "reason": "化石燃料能量密度高但會排放溫室氣體。風力列的可調度性為風況時變動，運轉排放為低；儲能列的可調度性為非一次能源，運轉排放為依充電來源。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「可再生能源必然零環境影響且可全天恆定發電，化石燃料則沒有任…」不成立；化石燃料能量密度高但會排放溫室氣體；太陽、風能可再生但有間歇性與土地、儲能需求，新興能源也需證…。"
+      "reason": "把再生能源等同沒有任何環境代價，忽略土地、儲能與選址限制。化石燃料能量密度高但會排放溫室氣體；照原做法會把其他限制算錯或判反。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要有一張圖表趨勢符合預期，就可忽略實驗方法、模型限制與其他來源",
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性",
-    "可再生能源必然零環境影響且可全天恆定發電，化石燃料則沒有任何系統優點"
+    "把儲能列為一次能源，並漏掉追查充電電能來自何處",
+    "主張化石燃料可調度性高就表示並漏掉溫室氣體與燃料價格問題",
+    "把再生能源等同並漏掉任何環境代價"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-INA-4-1",
       "AUTH-NATURAL-LC-INA-4-2",
@@ -139,19 +139,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "金屬與非金屬比較出現四種說法，哪項有理化概念支持？",
+  "stem": "某同族三元素與水都產生同一種氣體，最直接支持什麼？",
   "options": [
-    "元素符號可自由取元素中任一字母，因此鈉也可寫成 S 或 NA",
-    "同族元素常呈現相似化學性質與規律，但程度與個別性質仍可不同，需由資料比較",
-    "週期表中每一欄都必然只含金屬或只含非金屬，沒有概略分界",
-    "週期表橫列稱族、直行稱週期，名稱可互換而不影響意義"
+    "三者原子序相同",
+    "三者密度相同",
+    "三者速率必相等",
+    "反應產物型態具有相似性"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「元素符號可自由取元素中任一字母，因此鈉也可寫成 S 或 NA」不成立；週期表格子同時提供元素名稱與符號；Na 是鈉，符號大小寫必須依表中記錄。"
+      "reason": "不同元素原子序不同。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「同族元素常呈現相似化學性質與規律，但程度與個別性質仍可不同，需由資料比較」。"
+      "isCorrect": false,
+      "reason": "未測密度。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「週期表中每一欄都必然只含金屬或只含非金屬，沒有概略分界」不成立；金屬大多分布於週期表左側與中央，非金屬多在右側，類金屬約在階梯狀分界附近。"
+      "reason": "未提供速率。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「週期表橫列稱族、直行稱週期，名稱可互換而不影響意義」不成立；週期表的橫列稱週期，直行稱族；位置是組織元素性質規律的索引。"
+      "isCorrect": true,
+      "reason": "共同產物是相似證據。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "證據解讀"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "元素符號可自由取元素中任一字母，因此鈉也可寫成 S 或 NA",
-    "週期表中每一欄都必然只含金屬或只含非金屬，沒有概略分界",
-    "週期表橫列稱族、直行稱週期，名稱可互換而不影響意義"
+    "三者原子序相同",
+    "三者密度相同",
+    "三者速率必相等"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AA-4-4",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

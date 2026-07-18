@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據車程平均速率紀錄，哪項判讀合理？",
+  "stem": "以向東為正，小明向東走 20 m，再向西走 5 m。位移為何？",
   "options": [
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "平均速率是路程乘時間，所以為 4500 m/s",
-    "位移是起點到終點的有向改變",
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘"
+    "物體的位移為向西 15 m",
+    "物體的位移為向東 25 m",
+    "位移為向東 15 m",
+    "物體的位移為 0 m"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只給一個數字「200 m」就能唯一決定物體位置，不需參考點…」不成立；物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整。"
+      "reason": "物體的位移為向西 15 m不符合題目資料。淨位置改變為 +20-5=+15 m，所以向東 15 m。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「平均速率是路程乘時間，所以為 4500 m/s」不成立；移動 150 m 耗時 30 s 的平均速率為路程除以總時間，即 5 m/s。"
+      "reason": "物體的位移為向東 25 m不符合題目資料。淨位置改變為 +20-5=+15 m，所以向東 15 m。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「路程是實際路徑總長，位移是起點到終點的有向改變；往返原點時路程大於零但位移為零」。"
+      "reason": "淨位置改變為 +20-5=+15 m，所以向東 15 m。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「72 km/h＝72×1000×3600 m/s，分子分母…」不成立；72 km/h＝20 m/s，因為 1 km＝1000 m、1 h＝3600 s；長度與時間都…。"
+      "reason": "物體的位移為 0 m不符合題目資料。淨位置改變為 +20-5=+15 m，所以向東 15 m。"
     }
   ],
   "difficulty": "foundation",
@@ -46,16 +46,16 @@
     "關係判讀",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "平均速率是路程乘時間，所以為 4500 m/s",
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘"
+    "物體的位移為向西 15 m",
+    "物體的位移為向東 25 m",
+    "物體的位移為 0 m"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

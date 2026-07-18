@@ -1192,7 +1192,7 @@ export default {
       "commonErrors": [
         "未先排除 x=3，使比例式可能出現零後項。",
         "展開括號時漏乘負三，錯把四倍的整體寫成只放大未知數。",
-        "代回時把除以二十五分之二誤作乘以二十五分之二。"
+        "代回時把除以二分之二十五誤作乘以二分之二十五。"
       ],
       "visualMode": "text-only",
       "figureId": null,
@@ -1207,7 +1207,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "4852639850e54a61d71159087e44e3b458165500ed21534d9b5dac95fd7c9652"
+      "contentSha256": "49e49804a524f92c88225c69f66d7fd0a02c533161f3acdaaef05bd6e71a1d0b"
     },
     {
       "questionId": "u06-s002-cr002",

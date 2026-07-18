@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_210",
-  "stem": "根據受力與質量比較表中紀錄，哪項結論最合理？",
+  "stem": "依表格，速度由 1 m/s、3 m/s、5 m/s 到 7 m/s，變化特徵為何？",
   "options": [
-    "加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度",
-    "只要速率計數字不變，不論運動方向如何改變，加速度都為零",
-    "平均加速度是 (10＋4)/3＝4.67 m/s²，因為速度變化量要相加",
-    "加速度表示速度隨時間的變化；速度大小、方向或兩者改變都可產生加速度"
+    "此時物體每秒增加 1 m/s",
+    "此時物體每秒減少 2 m/s",
+    "每秒增加 2 m/s",
+    "物體的速度始終不變"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度」不成立；加速度表示速度隨時間的變化；速度大小、方向或兩者改變都可產生加速度。"
+      "reason": "此時物體每秒增加 1 m/s不成立。相鄰速度差均為 +2 m/s，時間間隔皆為 1 s。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要速率計數字不變，不論運動方向如何改變，加速度都為零」不成立；直線上快慢改變有加速度；物體以恆定快慢轉彎時方向改變，也有加速度。"
+      "reason": "此時物體每秒減少 2 m/s不成立。相鄰速度差均為 +2 m/s，時間間隔皆為 1 s。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「平均加速度是 (10＋4)/3＝4.67 m/s²，因為速…」不成立；速度由 4 m/s 在 3 s 內均勻變為 10 m/s，平均加速度為 (10−4)/3＝2 …。"
+      "isCorrect": true,
+      "reason": "相鄰速度差均為 +2 m/s，時間間隔皆為 1 s。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「加速度表示速度隨時間的變化；速度大小、方向或兩者改變都可產生加速度」。"
+      "isCorrect": false,
+      "reason": "物體的速度始終不變不成立。相鄰速度差均為 +2 m/s，時間間隔皆為 1 s。"
     }
   ],
   "difficulty": "standard",
@@ -47,14 +47,14 @@
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度",
-    "只要速率計數字不變，不論運動方向如何改變，加速度都為零",
-    "平均加速度是 (10＋4)/3＝4.67 m/s²，因為速度變化量要相加"
+    "此時物體每秒增加 1 m/s",
+    "此時物體每秒減少 2 m/s",
+    "物體的速度始終不變"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-11",
       "AUTH-NATURAL-LC-EB-4-8",
@@ -62,20 +62,6 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_008"
   ]

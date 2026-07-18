@@ -393,7 +393,7 @@ function applyLedger(ledger) {
     if ("contentSha256" in drawing) drawing.contentSha256 = canonicalHash(drawing, "contentSha256");
     box.rows[box.index] = drawing;
     writeJsonl(box.file, box.rows);
-    if (drawing.contentSha256) changed.set(drawing.figureId, drawing.contentSha256);
+    if (drawing.contentSha256) changed.set(drawing.figureId || drawing.drawingSpecId, drawing.contentSha256);
   }
 
   applyTextFiles(batchDir, ledger.textFiles);

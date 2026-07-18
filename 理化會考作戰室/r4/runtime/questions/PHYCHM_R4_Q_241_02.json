@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據潛水艇調整紀錄，哪項判讀合理？",
+  "stem": "乙的液體密度為1.00 g/cm³、排開體積為100 cm³；丙則是1.00 g/cm³、150 cm³。兩列交由比較液體密度與排開體積對浮力影響判讀，排開體積呈現哪個量化或方向結果？",
   "options": [
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "同液體中排開體積相同則浮力相同",
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水"
+    "乙丙只改排開體積，丙浮力較大",
+    "做比較時液體密度影響時同時改變排開體積，卻只把浮力差歸因於密度",
+    "僅根據甲到乙把密度增為 1.25 倍，卻判定浮力維持 0.784 N",
+    "主張同一液體中所有物體的浮力相同，不必知道排開體積"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「浮沉只由物體總質量大小決定，體積與平均密度完全不重要」不成立；物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉。"
+      "isCorrect": true,
+      "reason": "乙丙只改排開體積，丙浮力較大。乙列的液體密度為1.00 g/cm³、排開體積為100 cm³；丙列的液體密度為1.00 g/cm³、排開體積為150 cm³。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「漂浮物體既然在水面上，就完全不受浮力，只受向下重力」不成立；漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力。"
+      "reason": "做比較時液體密度影響時同時改變排開體積，卻只把浮力差歸因於密度。物體須完全由同種液體包圍且排開體積已知；浮力差異若未通過比較液體密度與排開體積對浮力影響對液體密度的控制，就不能只歸給排開體積。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「完全沒入時，浮力隨液體密度與排開體積增大；同液體中排開體積相同則浮力相同」。"
+      "isCorrect": false,
+      "reason": "僅根據甲到乙把密度增為 1.25 倍，卻判定浮力維持 0.784 N，結果會錯判浮力。甲乙只改液體密度，乙浮力較大；排開體積的數值若未依液體密度核對，會使浮力無法通過比較液體密度與排開體積對浮力影響檢查。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水」不成立；船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉。"
+      "reason": "誤以為同一液體中所有物體的浮力相同，不必知道排開體積，結果會錯判浮力。完全沒入時，浮力隨液體密度與排開體積增大；液體密度未列入比較液體密度與排開體積對浮力影響時，浮力的排開體積大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
+    "辨認",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水"
+    "做比較時液體密度影響時同時改變排開體積，卻只把浮力差歸因於密度",
+    "僅根據甲到乙把密度增為 1.25 倍，卻判定浮力維持 0.784 N",
+    "主張同一液體中所有物體的浮力相同，不必知道排開體積"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

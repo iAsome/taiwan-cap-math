@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組延長線過載資料，哪項判讀仍合理？",
+  "stem": "照明列含功率0.20 kW及月使用時間120 h；冷氣列含1.50 kW及100 h。要把觀察連到月用電量，應採用什麼模型？",
   "options": [
-    "額定電壓只是建議值，110 V 電器直接接 220 V 也一定保持 550 W 且無風險",
-    "電阻只會降低溫度，過載與短路都不會使導線發熱",
-    "乘使用小時得 kWh",
-    "保險絲應用最粗導線代替以免熔斷，接地插腳則可拆除而不影響安全"
+    "基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算",
+    "把照明 0.20 kW 使用 120 h 被算成 240 kWh，而非 24 kWh",
+    "解題時將每月 246 kWh 當成 246 kW，混淆電能與功率",
+    "把估算電費只數電器台數，不計功率、使用時間與電價規則"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「額定電壓只是建議值，110 V 電器直接接 220 V 也…」不成立；額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W，不可任意接…。"
+      "isCorrect": true,
+      "reason": "基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算。冷氣列的功率為1.50 kW，月使用時間為100 h；合計列的功率為—，月使用時間為—。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「電阻只會降低溫度，過載與短路都不會使導線發熱」不成立；過載是同一路線總電流過大，短路是低電阻路徑造成大電流；兩者均可因電阻發熱引起火災。"
+      "reason": "解題時誤把照明 0.20 kW 使用 120 h 被算成 240 kWh，而非 24 kWh。三項合計 246 kWh；月使用時間的數值若未依功率核對，會使月用電量無法通過依電價資料計算基本電費情境檢查。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算」。"
+      "isCorrect": false,
+      "reason": "解題時錯將每月 246 kWh 當成 246 kW，混淆電能與功率。基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算；功率未列入依電價資料計算基本電費情境時，月用電量的月使用時間大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「保險絲應用最粗導線代替以免熔斷，接地插腳則可拆除而不影響安全」不成立；保險絲或斷路器在過大電流時斷開回路；接地將漏電提供低阻安全路徑，三孔插頭不可任意拆除。"
+      "reason": "解題時誤把估算電費只數電器台數，不計功率、使用時間與電價規則。基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算；照原做法會把月用電量算錯或判反。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "額定電壓只是建議值，110 V 電器直接接 220 V 也一定保持 550 W 且無風險",
-    "電阻只會降低溫度，過載與短路都不會使導線發熱",
-    "保險絲應用最粗導線代替以免熔斷，接地插腳則可拆除而不影響安全"
+    "把照明 0.20 kW 使用 120 h 被算成 240 kWh，而非 24 kWh",
+    "解題時將每月 246 kWh 當成 246 kW，混淆電能與功率",
+    "把估算電費只數電器台數，不計功率、使用時間與電價規則"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

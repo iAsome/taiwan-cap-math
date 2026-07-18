@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對化學式讀取結果，哪項說法正確？",
+  "stem": "2Ca(OH)₂ 共有多少 O 原子？",
   "options": [
-    "3H₂O 表示 3 個水分子，共含 6 個 H 原子與 3 個 O 原子；係數乘入整個化學式",
-    "二氧化碳可寫成 Co₂，因為碳 C 與鈷 Co 的符號可互換",
-    "Ca²⁺ 表示一個粒子含 2 個鈣原子，右上角數字是原子個數",
-    "模型圖上一共有幾個球，就把該數字全部寫成一個化學式的下標"
+    "6",
+    "4",
+    "1",
+    "2"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「3H₂O 表示 3 個水分子，共含 6 個 H 原子與 3 個 O 原子；係數乘入整個化學式」。"
+      "isCorrect": false,
+      "reason": "把 H 加入。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「二氧化碳可寫成 Co₂，因為碳 C 與鈷 Co 的符號可互換」不成立；水是 H₂O、二氧化碳是 CO₂、氯化鈉是 NaCl；配對時要同時核對元素種類與比例。"
+      "isCorrect": true,
+      "reason": "每單位 2O，再乘係數 2。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「Ca²⁺ 表示一個粒子含 2 個鈣原子，右上角數字是原子個數」不成立；Ca²⁺ 表示帶 2 個正電單位的鈣離子，Cl⁻ 表示帶 1 個負電單位的氯離子。"
+      "reason": "漏括號下標。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「模型圖上一共有幾個球，就把該數字全部寫成一個化學式的下標」不成立；若模型顯示每個粒子由兩個 A 與一個 B 連結，其化學式可表為 A₂B；多粒子再用係數計數。"
+      "reason": "漏係數。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "括號與係數"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "二氧化碳可寫成 Co₂，因為碳 C 與鈷 Co 的符號可互換",
-    "Ca²⁺ 表示一個粒子含 2 個鈣原子，右上角數字是原子個數",
-    "模型圖上一共有幾個球，就把該數字全部寫成一個化學式的下標"
+    "6",
+    "1",
+    "2"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AA-4-5",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

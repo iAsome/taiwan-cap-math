@@ -13,50 +13,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "PHYCHM_R4_STIM_127",
-  "stem": "催化劑實驗題組中，哪項說明符合紀錄？",
+  "stem": "移走部分B後，吸光值由立即測得的0.20回升到新平衡0.31，但仍低於原平衡0.40。這表示什麼？",
   "options": [
-    "動態平衡表示正逆反應都已完全停止，系統內粒子不再互動",
-    "實驗前十秒產氣較快的組別，最終生成氣體必然比其他組多",
-    "改變溫度或濃度後，平衡系統可調整到新的巨觀穩定狀態；方向需依題目提供的反應資訊判斷",
-    "任何平衡系統一旦達平衡，就不可能因溫度或濃度改變而轉移"
+    "系統補回部分B，但未恢復原比例",
+    "吸光值回升只能由溫度上升造成",
+    "A與B在擾動後停止互相轉換",
+    "B在新平衡時已全部消失"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「動態平衡表示正逆反應都已完全停止，系統內粒子不再互動」不成立；可逆反應達動態平衡時，正、逆反應仍持續且速率相等，因此巨觀濃度維持穩定。"
+      "isCorrect": true,
+      "reason": "0.20回升至0.31表示B增加，而0.31低於0.40表示未完全恢復。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「實驗前十秒產氣較快的組別，最終生成氣體必然比其他組多」不成立；反應較快只表示達到某狀態所需時間較短；最終生成量還受反應物量與平衡等條件影響。"
+      "reason": "刺激只提供移走B的操作，沒有溫度升高的資料。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「改變溫度或濃度後，平衡系統可調整到新的巨觀穩定狀態；方向需依題目提供的反應資訊判斷」。"
+      "isCorrect": false,
+      "reason": "數值由0.20改變到0.31，顯示組成仍在調整。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「任何平衡系統一旦達平衡，就不可能因溫度或濃度改變而轉移」不成立；改變溫度或濃度後，平衡系統可調整到新的巨觀穩定狀態；方向需依題目提供的反應資訊判斷。"
+      "reason": "新平衡仍有0.31的吸光值，不能判為B全部消失。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "證據評估"
+    "補償界限"
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "動態平衡表示正逆反應都已完全停止，系統內粒子不再互動",
-    "實驗前十秒產氣較快的組別，最終生成氣體必然比其他組多",
-    "任何平衡系統一旦達平衡，就不可能因溫度或濃度改變而轉移"
+    "吸光值回升只能由溫度上升造成",
+    "A與B在擾動後停止互相轉換",
+    "B在新平衡時已全部消失"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科反應速率、控制變因與動態平衡層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JE-4-1",
       "AUTH-NATURAL-LC-JE-4-2",
@@ -66,19 +66,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

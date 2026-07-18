@@ -15,50 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_249",
-  "stem": "根據高處位能表中紀錄，哪項結論最合理？",
+  "stem": "重力位能和動能在坡頂為120 J、0 J，到中段為70 J、42 J。處理重力位能後，動能要依分析動能、位能及其他形式間的能量轉換判斷大小、方向或類別？",
   "options": [
-    "有摩擦時機械能直接消失且不轉成其他能量，因此總能量不守恆",
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "物體下落時重力位能可轉成動能；有摩擦時，部分機械能轉成內能與聲能",
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J"
+    "重力位能減少時，動能及內能、聲能增加",
+    "主張有摩擦時能量會消失",
+    "解題時將機械能減少直接說成總能量不守恆，未先界定包含哪些能量形式",
+    "坡底的 5 J、98 J、17 J 並漏掉相加，就誤判總量少於坡頂 120 J"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「有摩擦時機械能直接消失且不轉成其他能量，因此總能量不守恆」不成立；物體下落時重力位能可轉成動能；有摩擦時，部分機械能轉成內能與聲能。"
+      "isCorrect": true,
+      "reason": "重力位能減少時，動能及內能、聲能增加。坡頂列的重力位能為120 J、動能為0 J；中段列的重力位能為70 J、動能為42 J。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關」不成立；力對物體作功要有物體沿力的分量方向發生位移；用力提住靜止物體時對物體作功為零。"
+      "reason": "重力位能減少時，動能及內能、聲能增加。坡頂列的重力位能為120 J、動能為0 J；中段列的重力位能為70 J、動能為42 J。誤以為有摩擦時能量會消失，卻未追蹤轉成的內能與聲能。物體下落時重力位能可轉成動能；照原做法會把內能與聲能算錯或判反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體下落時重力位能可轉成動能；有摩擦時，部分機械能轉成內能與聲能」。"
+      "isCorrect": false,
+      "reason": "重力位能減少時，動能及內能、聲能增加。坡頂列的重力位能為120 J、動能為0 J；中段列的重力位能為70 J、動能為42 J。解題時錯將機械能減少直接說成總能量不守恆，未先界定包含哪些能量形式。若只把動能與位能稱為機械能，它會因摩擦而減少，但包含內能與聲能的總能量不消失；內能與聲能差異若未通過分析動能、位能及其他形式間的能量轉換對重力位能的控制，就不能只歸給動能。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「功是力除以位移，所以 20 N 推 3 m 作功為 6.6…」不成立；恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J。"
+      "reason": "重力位能減少時，動能及內能、聲能增加。坡頂列的重力位能為120 J、動能為0 J；中段列的重力位能為70 J、動能為42 J。坡底的 5 J、98 J、17 J 卻未相加，就誤判總量少於坡頂 120 J。重力位能減少時，動能及內能、聲能增加；動能的數值若未依重力位能核對，會使內能與聲能無法通過分析動能、位能及其他形式間的能量轉換檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀"
+    "資料判讀",
+    "計算"
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "有摩擦時機械能直接消失且不轉成其他能量，因此總能量不守恆",
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J"
+    "主張有摩擦時能量會消失",
+    "解題時將機械能減少直接說成總能量不守恆，未先界定包含哪些能量形式",
+    "坡底的 5 J、98 J、17 J 並漏掉相加，就誤判總量少於坡頂 120 J"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -70,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理延長線過載資料後，哪項說明正確？",
+  "stem": "紀錄照明時，功率是0.20 kW，月使用時間是120 h，月用電量為24 kWh。哪個模型能把功率、月使用時間連到月用電量？",
   "options": [
-    "電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道",
-    "電功率為 V/I＝60 W，因為電壓應除以電流",
-    "乘使用小時得 kWh",
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間"
+    "把照明 0.20 kW 使用 120 h 被算成 240 kWh，而非 24 kWh",
+    "解題時將每月 246 kWh 當成 246 kW，混淆電能與功率",
+    "把估算電費只數電器台數，不計功率、使用時間與電價規則",
+    "基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道」不成立；基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算。"
+      "reason": "解題時誤把照明 0.20 kW 使用 120 h 被算成 240 kWh，而非 24 kWh。三項合計 246 kWh；月使用時間的數值若未依功率核對，會使月用電量無法通過依電價資料計算基本電費情境檢查。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「電功率為 V/I＝60 W，因為電壓應除以電流」不成立；電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W。"
+      "reason": "解題時錯將每月 246 kWh 當成 246 kW，混淆電能與功率。基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算；功率未列入依電價資料計算基本電費情境時，月用電量的月使用時間大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算」。"
+      "isCorrect": false,
+      "reason": "解題時誤把估算電費只數電器台數，不計功率、使用時間與電價規則。基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算；照原做法會把月用電量算錯或判反。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「1000 W 電器使用 2 h 消耗 500 kWh，因為…」不成立；1000 W 電器使用 2 h 消耗 2 kWh；電能等於功率乘以使用時間。"
+      "isCorrect": true,
+      "reason": "基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算。冷氣列的功率為1.50 kW，月使用時間為100 h；合計列的功率為—，月使用時間為—。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "辨認",
+    "概念理解"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道",
-    "電功率為 V/I＝60 W，因為電壓應除以電流",
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間"
+    "把照明 0.20 kW 使用 120 h 被算成 240 kWh，而非 24 kWh",
+    "解題時將每月 246 kWh 當成 246 kW，混淆電能與功率",
+    "把估算電費只數電器台數，不計功率、使用時間與電價規則"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

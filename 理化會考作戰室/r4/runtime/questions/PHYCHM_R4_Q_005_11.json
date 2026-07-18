@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組秒表重複計時資料，哪項判讀仍合理？",
+  "stem": "家用體重計只顯示到 0.1 kg，螢幕為 52.7 kg。健康紀錄應怎麼寫？",
   "options": [
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受",
-    "數位寫得越多就越精確，因此可記為 12.347826 cm",
-    "只要答案含有數字，就可把它當成直接測量的基本物理量",
-    "多寫更多位不會增加儀器資訊"
+    "52.70000 kg",
+    "527 kg",
+    "52.7 kg",
+    "53 kg 並刪除原值"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受」不成立；成人桌子高度約 0.7 m；若記成 70 m，即使計算步驟完整，也應由量級發現單位或小數點錯誤。"
+      "reason": "增加未量得位數。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「數位寫得越多就越精確，因此可記為 12.347826 cm」不成立；最小刻度 0.1 cm 的直尺，測量值可合理記至 0.01 cm；多寫更多位不會增加儀器資訊。"
+      "reason": "小數點移錯。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「只要答案含有數字，就可把它當成直接測量的基本物理量」不成立；長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得。"
+      "isCorrect": true,
+      "reason": "保留儀器顯示位。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「最小刻度 0.1 cm 的直尺，測量值可合理記至 0.01 cm；多寫更多位不會增加儀器資訊」。"
+      "isCorrect": false,
+      "reason": "不必要取整且遺失資訊。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "情境遷移"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受",
-    "數位寫得越多就越精確，因此可記為 12.347826 cm",
-    "只要答案含有數字，就可把它當成直接測量的基本物理量"
+    "52.70000 kg",
+    "527 kg",
+    "53 kg 並刪除原值"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

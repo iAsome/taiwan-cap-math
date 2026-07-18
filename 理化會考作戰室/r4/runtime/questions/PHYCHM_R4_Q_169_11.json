@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "換成另一組噪音暴露資料，哪項判讀仍合理？",
+  "stem": "某學生說「抽氣後聽不見，所以沒有任何能量離開蜂鳴器」。哪項修正較完整？",
   "options": [
-    "真空中的聲音傳得最快，因為沒有空氣阻力",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定",
-    "音調較高的聲音一定在空氣中傳得較快，因為頻率較大",
-    "真空中沒有可傳遞振動的介質"
+    "完全正確，聽不見就代表所有能量為零",
+    "應改成真空會產生更強聲音",
+    "仍可能有微弱聲、固體振動或熱傳遞，只是空氣聲路徑大幅減弱",
+    "應改成蜂鳴器頻率必變成負值"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「真空中的聲音傳得最快，因為沒有空氣阻力」不成立；聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質。"
+      "reason": "聽覺閾值不能證明所有能量形式皆為零。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定」不成立；音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止。"
+      "reason": "抽氣使機械聲傳播減弱，不會增強。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「音調較高的聲音一定在空氣中傳得較快，因為頻率較大」不成立；聲速由介質與溫度等條件決定；在同一介質同條件下，高低音的聲速近似相同。"
+      "isCorrect": true,
+      "reason": "外部空氣聲訊號趨近零，不等於系統沒有其他能量轉移。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質」。"
+      "isCorrect": false,
+      "reason": "頻率不會因抽氣成為負值。"
     }
   ],
   "difficulty": "transfer",
@@ -47,16 +47,16 @@
     "情境遷移",
     "應用"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "真空中的聲音傳得最快，因為沒有空氣阻力",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定",
-    "音調較高的聲音一定在空氣中傳得較快，因為頻率較大"
+    "完全正確，聽不見就代表所有能量為零",
+    "應改成真空會產生更強聲音",
+    "應改成蜂鳴器頻率必變成負值"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

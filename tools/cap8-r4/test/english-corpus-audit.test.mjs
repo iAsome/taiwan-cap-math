@@ -26,7 +26,8 @@ function describeScene([count, action, object, position, feature]) {
   const people = count === 1 ? "One person" : `${["Zero", "One", "Two", "Three", "Four"][count]} people`;
   const wearing = feature === "none" ? " with no marked accessory" : feature === "hat" ? ` and wearing ${count === 1 ? "a hat" : "hats"}` : feature === "glasses" ? " and wearing glasses" : ` and wearing ${count === 1 ? "a scarf" : "scarves"}`;
   const verb = count === 1 ? { standing: "is standing", walking: "is walking", sitting: "is sitting", pointing: "is pointing" }[action] : { standing: "are standing", walking: "are walking", sitting: "are sitting", pointing: "are pointing" }[action];
-  return `${people} ${verb}${wearing}; a ${object} is ${position} the table.`;
+  const article = /^[aeiou]/iu.test(object) ? "an" : "a";
+  return `${people} ${verb}${wearing}; ${article} ${object} is ${position} the table.`;
 }
 
 function solveReadingQuestion(item, question, title) {
@@ -55,6 +56,7 @@ function solvePictureQuestion(item, question) {
 
 test("all 6,740 English questions have unique evidence-bound constructions and accepted independent decisions", { timeout: 60_000 }, async () => {
   const corpus = await materializeEnglishCorpus({ synthesizeAudio: false });
+  assert.equal(JSON.stringify(corpus).includes("a umbrella"), false, "picture-listening prose must use 'an umbrella'");
   const questions = [...corpus.questions, ...corpus.stimulusQuestions];
   assert.equal(questions.length, 6_740);
   assertUnique(questions.map((value) => value.id), "question IDs");

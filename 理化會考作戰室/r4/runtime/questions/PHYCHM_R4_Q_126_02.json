@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "根據可逆反應平衡紀錄，哪項判讀合理？",
+  "stem": "動態平衡時哪項相等？",
   "options": [
-    "反應速率只能由最後生成物總量判斷，和所需時間無關",
-    "只要實驗條件一樣，任何反應物的反應速率都必然相同",
-    "同時增加溫度、濃度與表面積的實驗，可單獨證明其中任一因素的效果",
-    "因此巨觀濃度維持穩定"
+    "正反應速率與逆反應速率",
+    "平衡時反應物濃度必須等於產物濃度",
+    "反應物種類數",
+    "所有物質質量"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「反應速率只能由最後生成物總量判斷，和所需時間無關」不成立；反應速率可用單位時間內反應物的減少量，或生成物的增加量表示。"
+      "isCorrect": true,
+      "reason": "使淨變化為零。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要實驗條件一樣，任何反應物的反應速率都必然相同」不成立；在溫度、濃度、表面積均相同時，不同物質因本性不同可有不同反應速率。"
+      "reason": "平衡只要求正逆速率相等，反應物與產物濃度可以不同。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「同時增加溫度、濃度與表面積的實驗，可單獨證明其中任一因素的…」不成立；其他條件相同時，提高溫度、增加反應物濃度或將固體磨細，通常可加快反應。"
+      "reason": "種類數不構成條件。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「可逆反應達動態平衡時，正、逆反應仍持續且速率相等，因此巨觀濃度維持穩定」。"
+      "isCorrect": false,
+      "reason": "個別質量可不同。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
-    "概念理解"
+    "定義辨識"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "反應速率只能由最後生成物總量判斷，和所需時間無關",
-    "只要實驗條件一樣，任何反應物的反應速率都必然相同",
-    "同時增加溫度、濃度與表面積的實驗，可單獨證明其中任一因素的效果"
+    "平衡時反應物濃度必須等於產物濃度",
+    "反應物種類數",
+    "所有物質質量"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科反應速率、控制變因與動態平衡層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JE-4-1",
       "AUTH-NATURAL-LC-JE-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

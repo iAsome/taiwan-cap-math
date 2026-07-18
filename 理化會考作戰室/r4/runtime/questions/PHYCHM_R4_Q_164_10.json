@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "學生根據彈簧縱波下結論，哪項符合資料？",
+  "stem": "要判斷一張聲波曲線代表橫波或縱波，最需要補充哪項資料？",
   "options": [
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "縱波的振動方向與傳播方向平行",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比"
+    "曲線使用的顏色",
+    "聲音是否悅耳",
+    "空氣粒子的實際振動方向",
+    "紙張的長與寬"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關」不成立；橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行。"
+      "reason": "圖線顏色與粒子運動方向無關。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行」。"
+      "isCorrect": false,
+      "reason": "主觀聽感不提供傳播與振動的幾何關係。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「振幅是波峰到波谷的全高，波長是相鄰波峰的高度差」不成立；波峰是橫波最高點、波谷是最低點；振幅由平衡位置量到波峰，波長是沿傳播方向相鄰同相位點的距離。"
+      "isCorrect": true,
+      "reason": "必須把粒子振動方向和聲波傳播方向作比較。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「週期越長表示每秒振動次數越多，所以頻率和週期成正比」不成立；週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T。"
+      "reason": "紙張尺寸只改變呈現比例。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "主張評估",
     "證據評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比"
+    "曲線使用的顏色",
+    "聲音是否悅耳",
+    "紙張的長與寬"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

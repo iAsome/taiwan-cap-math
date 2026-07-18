@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "EARTH_R4_ST_157",
-  "stem": "閱讀「由日出日落算晝長」的資料後，為了釐清地球公轉週期與曆年調整概念，哪一項後續檢驗最適當？",
+  "stem": "要檢驗公曆世紀年規則是否降低長期漂移，哪個做法最適當？",
   "options": [
-    "同時換掉地球公轉週期與曆年調整概念的全部變因後只測一次",
-    "刪除「由日出日落算晝長」中不合預期的資料後重畫圖",
-    "只詢問同意「曆年調整與公轉週期不等於整數日有關」的人",
-    "針對「由日出日落算晝長」再先判定半球與日期位置"
+    "只檢查單一平年的365日，便宣稱數千年都無誤差",
+    "把0.24日當成24日後直接乘以年份",
+    "詢問使用者是否喜歡二月二十九日，不計算季節位置",
+    "比較數百年間採用與不採用世紀年例外時，曆日對回歸年的累積差"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "同時改變多個變因且無重複，不能判斷「由日出日落算晝長」的原因。"
+      "reason": "單年資料無法顯示四年近似與世紀尺度的小誤差如何累積。 差額應以日為單位逐年累積，並用曆年總日數驗算。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "未說明便刪除資料會造成偏誤。"
+      "reason": "小數單位解讀錯誤會把累積值放大百倍，所得比較沒有科學意義。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "意見調查不是獨立觀測或公平檢驗。"
+      "reason": "偏好調查不會量到曆日與季節位置的差，不能檢驗校正效果。 差額應以日為單位逐年累積，並用曆年總日數驗算。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "後續檢驗保留地球公轉週期與曆年調整概念的變因、資料與結論間的可重現關係。"
+      "reason": "並列兩套規則的長期累積差，可直接判斷世紀年例外是否減少漂移。"
     }
   ],
   "difficulty": "transfer",
@@ -49,7 +49,7 @@
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "晝夜交替由地球公轉造成"
+    "只檢查單一平年的365日，便宣稱數千年都無誤差"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "逐項核對「由日出日落算晝長」的條件後，「針對「由日出日落算晝長」再先判定半球與日期位置」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "長期規則要用長期累積量檢驗；數百年比較能顯示少閏幾日對季節對齊的影響。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "只看一年無法區分兩套規則，因為世紀年例外在絕大多數年份都不會啟動。",
       "status": "pass"
     }
   ],

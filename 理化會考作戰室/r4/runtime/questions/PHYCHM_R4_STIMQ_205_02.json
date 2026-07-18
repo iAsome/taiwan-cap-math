@@ -11,50 +11,50 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_205",
-  "stem": "檢查表中關於靜止等速與折返圖形的說法，哪項判讀正確？",
+  "stem": "依圖表，哪兩個時段物體保持靜止？",
   "options": [
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快",
-    "速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度",
-    "速度數值變得更負就一定是減速，無需比較速度大小與方向",
-    "斜率變號表示折返"
+    "0 至 2 s 與 4 至 6 s",
+    "0 至 4 s 與 4 至 8 s",
+    "2 至 4 s 與 6 至 8 s",
+    "只有 4 至 6 s"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快」不成立；位置—時間圖的斜率為位置變化除以時間變化；斜率絕對值較大表示速度大小較大。"
+      "reason": "0 至 2 s 與 4 至 6 s不成立。這兩段位置分別固定為 4 m 與 1 m，位置—時間線皆水平。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度」不成立；速度—時間圖的縱座標直接給各時刻速度；水平線表示速度恆定。"
+      "reason": "0 至 4 s 與 4 至 8 s不成立。這兩段位置分別固定為 4 m 與 1 m，位置—時間線皆水平。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「速度數值變得更負就一定是減速，無需比較速度大小與方向」不成立；速度—時間圖上數值由 2 增至 6 m/s 表示正向加速；速度由 −2 變 −6 m/s 則是…。"
+      "isCorrect": true,
+      "reason": "這兩段位置分別固定為 4 m 與 1 m，位置—時間線皆水平。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「位置—時間圖的水平線表示靜止，直線斜率不變表示等速，斜率變號表示折返」。"
+      "isCorrect": false,
+      "reason": "只有 4 至 6 s不成立。這兩段位置分別固定為 4 m 與 1 m，位置—時間線皆水平。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "資料判讀"
+    "圖形分析"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快",
-    "速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度",
-    "速度數值變得更負就一定是減速，無需比較速度大小與方向"
+    "0 至 2 s 與 4 至 6 s",
+    "0 至 4 s 與 4 至 8 s",
+    "只有 4 至 6 s"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -62,20 +62,6 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_007"
   ]

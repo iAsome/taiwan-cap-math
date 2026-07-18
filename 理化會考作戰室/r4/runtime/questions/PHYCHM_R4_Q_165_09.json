@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對彈簧縱波結果，哪項說法正確？",
+  "stem": "甲圖每格縱軸 1 cm、波峰高 4 格；乙圖每格 2 cm、波峰高 3 格。哪張振幅較大？",
   "options": [
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比",
-    "比較波形圖前要讀軸",
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長",
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關"
+    "甲，振幅 4 cm",
+    "甲，振幅 8 cm",
+    "兩者都是 4 格所以相同",
+    "乙，振幅 6 cm"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「週期越長表示每秒振動次數越多，所以頻率和週期成正比」不成立；週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T。"
+      "reason": "甲只有 4×1＝4 cm，小於乙的 6 cm。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「比較波形圖前要讀軸；位置圖可直接量波長與振幅，頻率則還需時間資訊」。"
+      "isCorrect": false,
+      "reason": "甲每格 1 cm，不能按 2 cm 計。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「波速為 f/λ＝6.25 m/s，因為頻率應除以波長」不成立；頻率 5.0 Hz、波長 0.80 m 的波速為 v＝fλ＝4.0 m/s；計算前要統一單位。"
+      "reason": "乙雖格數少，比例尺較大。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關」不成立；橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行。"
+      "isCorrect": true,
+      "reason": "A甲＝4×1＝4 cm，A乙＝3×2＝6 cm。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比",
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長",
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關"
+    "甲，振幅 4 cm",
+    "甲，振幅 8 cm",
+    "兩者都是 4 格所以相同"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

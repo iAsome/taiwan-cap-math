@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解吸熱與放熱反應的能量變化，哪項修正合理？",
+  "stem": "量測反應溫變時，為何兩溶液初溫要相同？",
   "options": [
-    "放熱反應將能量傳向周遭，吸熱反應由周遭吸收能量；應用溫度資料與能量流向判斷",
-    "反應前用一種方法、反應後用另一種方法測量，仍可直接比較性質",
-    "兩物質一接觸就必然發生化學反應，不可能只是混合或溶解",
-    "只要容器摸起來冷就必是放熱，摸起來熱就必是吸熱"
+    "使化學式相同",
+    "避免單純熱混合造成假溫變",
+    "改變元素種類",
+    "讓質量歸零"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「放熱反應將能量傳向周遭，吸熱反應由周遭吸收能量；應用溫度資料與能量流向判斷」。"
+      "isCorrect": false,
+      "reason": "不改化學式。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「反應前用一種方法、反應後用另一種方法測量，仍可直接比較性質」不成立；比較反應前後性質時，應在同條件量測導電、pH、沉澱或氣體等指標，並設未反應對照。"
+      "isCorrect": true,
+      "reason": "控制初始熱狀態。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「兩物質一接觸就必然發生化學反應，不可能只是混合或溶解」不成立；溶解或單純混合可造成溫度、顏色或外觀變化；只有產物證據才能排除這些假線索。"
+      "reason": "不改元素。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要容器摸起來冷就必是放熱，摸起來熱就必是吸熱」不成立；放熱反應將能量傳向周遭，吸熱反應由周遭吸收能量；應用溫度資料與能量流向判斷。"
+      "reason": "不影響到零。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "控制變因"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "反應前用一種方法、反應後用另一種方法測量，仍可直接比較性質",
-    "兩物質一接觸就必然發生化學反應，不可能只是混合或溶解",
-    "只要容器摸起來冷就必是放熱，摸起來熱就必是吸熱"
+    "使化學式相同",
+    "改變元素種類",
+    "讓質量歸零"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-2",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

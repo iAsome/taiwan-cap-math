@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "元素與化合物分類出現四種說法，哪項有理化概念支持？",
+  "stem": "一盒畫 3 個 AB，另一盒畫 6 個 AB。若溫壓與容器資訊未提供，可確定什麼？",
   "options": [
-    "H₂O 的相對分子量為 1＋16＝17，因為下標 2 不需乘入",
-    "不同元素若以固定比例化學結合",
-    "只要原子種類相同，不論排列和連結如何，巨觀性質都必然完全相同",
-    "一個模型若不能同時精準呈現所有原子性質，就完全沒有科學用途"
+    "兩盒一定是不同物質",
+    "第一盒元素種類較少",
+    "兩盒示意的粒子種類相同",
+    "第二盒密度必為兩倍"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「H₂O 的相對分子量為 1＋16＝17，因為下標 2 不需…」不成立；水 H₂O 的相對分子量為 2×1＋16＝18；這是相對比較值，未直接表示一個分子質量為 18…。"
+      "reason": "粒子種類一致。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「同一元素可因原子排列不同形成性質不同的物質；不同元素若以固定比例化學結合，則形成化合物」。"
+      "isCorrect": false,
+      "reason": "兩盒都含 A、B。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「只要原子種類相同，不論排列和連結如何，巨觀性質都必然完全相同」不成立；石墨和金剛石都由碳原子組成，但原子排列與連結不同，因而性質明顯不同。"
+      "isCorrect": true,
+      "reason": "重複單元都是 AB。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「一個模型若不能同時精準呈現所有原子性質，就完全沒有科學用途」不成立；球棒模型適合呈現種類、數目與連接，但不宜由球的顯示大小推斷實際原子尺寸。"
+      "reason": "取樣數不等於密度。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "模型限制"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "H₂O 的相對分子量為 1＋16＝17，因為下標 2 不需乘入",
-    "只要原子種類相同，不論排列和連結如何，巨觀性質都必然完全相同",
-    "一個模型若不能同時精準呈現所有原子性質，就完全沒有科學用途"
+    "兩盒一定是不同物質",
+    "第一盒元素種類較少",
+    "第二盒密度必為兩倍"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-1",
       "AUTH-NATURAL-LC-AA-4-2",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

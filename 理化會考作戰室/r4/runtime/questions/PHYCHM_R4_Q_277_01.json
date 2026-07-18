@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "學生討論過載短路與電阻發熱風險，哪項敘述正確？",
+  "stem": "並列正常與接多台電熱器，兩者總電流是5 A、12 A，導線電阻是固定、固定。說明過載短路與電阻發熱風險對導線電阻隨總電流變化的解釋為何？",
   "options": [
-    "電阻只會降低溫度，過載與短路都不會使導線發熱",
-    "過載是同一路線總電流過大，短路是低電阻路徑造成大電流；兩者均可因電阻發熱引起火災",
-    "電功率為 V/I＝60 W，因為電壓應除以電流",
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間"
+    "主張過載與短路都只會讓電器停止，不會造成導線發熱",
+    "僅憑導線電阻很小就忽略 I²R，認為大電流不會帶來高溫",
+    "過載提高線路電流，鬆動接點提高局部電阻，兩者都可能增加發熱",
+    "把插頭鬆動時接點電阻較大、溫升 25°C，卻判成比正常更安全"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「電阻只會降低溫度，過載與短路都不會使導線發熱」不成立；過載是同一路線總電流過大，短路是低電阻路徑造成大電流；兩者均可因電阻發熱引起火災。"
+      "reason": "誤以為過載與短路都只會讓電器停止，不會造成導線發熱。過載是同一路線總電流過大，短路是低電阻路徑造成大電流；照原做法會把10 分鐘後溫升算錯或判反。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「過載是同一路線總電流過大，短路是低電阻路徑造成大電流；兩者均可因電阻發熱引起火災」。"
+      "isCorrect": false,
+      "reason": "僅憑導線電阻很小就忽略 I²R，認為大電流不會帶來高溫。實際溫升受線徑、散熱與時間影響；10 分鐘後溫升差異若未通過說明過載短路與電阻發熱風險對總電流的控制，就不能只歸給導線電阻。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「電功率為 V/I＝60 W，因為電壓應除以電流」不成立；電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W。"
+      "isCorrect": true,
+      "reason": "過載提高線路電流，鬆動接點提高局部電阻，兩者都可能增加發熱。正常列的總電流為5 A、導線電阻為固定；接多台電熱器列的總電流為12 A、導線電阻為固定。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「1000 W 電器使用 2 h 消耗 500 kWh，因為…」不成立；1000 W 電器使用 2 h 消耗 2 kWh；電能等於功率乘以使用時間。"
+      "reason": "解題時誤把插頭鬆動時接點電阻較大、溫升 25°C，卻判成比正常更安全。過載提高線路電流，鬆動接點提高局部電阻，兩者都可能增加發熱；導線電阻的數值若未依總電流核對，會使10 分鐘後溫升無法通過說明過載短路與電阻發熱風險檢查。"
     }
   ],
   "difficulty": "foundation",
@@ -50,16 +50,16 @@
     "辨認",
     "概念理解"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電阻只會降低溫度，過載與短路都不會使導線發熱",
-    "電功率為 V/I＝60 W，因為電壓應除以電流",
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間"
+    "主張過載與短路都只會讓電器停止，不會造成導線發熱",
+    "僅憑導線電阻很小就忽略 I²R，認為大電流不會帶來高溫",
+    "把插頭鬆動時接點電阻較大、溫升 25°C，卻判成比正常更安全"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "折返運動出現四種說法，哪項有理化概念支持？",
+  "stem": "要判斷圖線斜率的物理意義，第一步應做什麼？",
   "options": [
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快",
-    "「向東等速、停留、向西返回」的位置—時間圖應依序是正斜率、水平、負斜率",
-    "位置—時間圖的水平線表示物體以水平方向等速前進"
+    "只看圖線顏色",
+    "確認橫軸與縱軸的物理量及單位",
+    "此時物體先數折點個數",
+    "直接把斜率當成速率"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑」不成立；位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置。"
+      "reason": "只看圖線顏色不成立。軸標決定斜率是位置對時間或速度對時間的變化率。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快」不成立；位置—時間圖的斜率為位置變化除以時間變化；斜率絕對值較大表示速度大小較大。"
+      "isCorrect": true,
+      "reason": "軸標決定斜率是位置對時間或速度對時間的變化率。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「「向東等速、停留、向西返回」的位置—時間圖應依序是正斜率、水平、負斜率」。"
+      "isCorrect": false,
+      "reason": "此時物體先數折點個數不成立。軸標決定斜率是位置對時間或速度對時間的變化率。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「位置—時間圖的水平線表示物體以水平方向等速前進」不成立；位置—時間圖的水平線表示靜止，直線斜率不變表示等速，斜率變號表示折返。"
+      "reason": "直接把斜率當成速率不成立。軸標決定斜率是位置對時間或速度對時間的變化率。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "證據判讀",
     "推論"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快",
-    "位置—時間圖的水平線表示物體以水平方向等速前進"
+    "只看圖線顏色",
+    "此時物體先數折點個數",
+    "直接把斜率當成速率"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

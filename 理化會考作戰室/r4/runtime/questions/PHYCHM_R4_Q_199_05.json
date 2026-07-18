@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於速率常用單位間換算，哪項結論符合題給條件？",
+  "stem": "甲速率 10 m/s，乙速率 30 km/h。何者較快？",
   "options": [
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理",
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "長度與時間都要換算"
+    "乙較快",
+    "甲較快",
+    "兩者同樣快",
+    "無法換算比較"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「運動資料只要代入公式就不必作量級檢查，步行 500 m/s…」不成立；步行速率通常約數 m/s；若算得 500 m/s，應檢查距離、時間單位或小數點。"
+      "reason": "乙較快不符合題目資料。10 m/s=36 km/h，大於乙的 30 km/h。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「72 km/h＝72×1000×3600 m/s，分子分母…」不成立；72 km/h＝20 m/s，因為 1 km＝1000 m、1 h＝3600 s；長度與時間都…。"
+      "isCorrect": true,
+      "reason": "10 m/s=36 km/h，大於乙的 30 km/h。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只給一個數字「200 m」就能唯一決定物體位置，不需參考點…」不成立；物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整。"
+      "reason": "兩者同樣快不符合題目資料。10 m/s=36 km/h，大於乙的 30 km/h。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「72 km/h＝20 m/s，因為 1 km＝1000 m、1 h＝3600 s；長度與時間都要換算」。"
+      "isCorrect": false,
+      "reason": "無法換算比較不符合題目資料。10 m/s=36 km/h，大於乙的 30 km/h。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "條件判斷",
     "分析"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理",
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向"
+    "乙較快",
+    "兩者同樣快",
+    "無法換算比較"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

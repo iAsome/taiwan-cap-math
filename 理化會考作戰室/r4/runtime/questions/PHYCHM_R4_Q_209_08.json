@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理位置時間圖資料，哪項敘述合理？",
+  "stem": "道路向右延伸但車停在路邊，位置—時間圖應如何？",
   "options": [
-    "位置—時間圖的線形描述位置如何隨時間變化，不是物體在空間中的軌跡外觀",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快",
-    "位置—時間圖的水平線表示物體以水平方向等速前進",
-    "速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度"
+    "呈水平線",
+    "呈正斜率直線",
+    "畫成道路形狀",
+    "呈負斜率直線"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「位置—時間圖的線形描述位置如何隨時間變化，不是物體在空間中的軌跡外觀」。"
+      "reason": "道路方向不等於運動；車未移動時位置不變。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快」不成立；位置—時間圖的斜率為位置變化除以時間變化；斜率絕對值較大表示速度大小較大。"
+      "reason": "呈正斜率直線不成立。道路方向不等於運動；車未移動時位置不變。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「位置—時間圖的水平線表示物體以水平方向等速前進」不成立；位置—時間圖的水平線表示靜止，直線斜率不變表示等速，斜率變號表示折返。"
+      "reason": "畫成道路形狀不成立。道路方向不等於運動；車未移動時位置不變。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度」不成立；速度—時間圖的縱座標直接給各時刻速度；水平線表示速度恆定。"
+      "reason": "呈負斜率直線不成立。道路方向不等於運動；車未移動時位置不變。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "關係應用",
     "多步驟推理"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快",
-    "位置—時間圖的水平線表示物體以水平方向等速前進",
-    "速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度"
+    "呈正斜率直線",
+    "畫成道路形狀",
+    "呈負斜率直線"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

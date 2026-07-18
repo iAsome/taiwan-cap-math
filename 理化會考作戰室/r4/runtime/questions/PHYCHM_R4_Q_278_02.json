@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據保險絲與接地紀錄，哪項判讀合理？",
+  "stem": "並列過載與火線碰金屬外殼，兩者保險絲／斷路器是過大電流時斷開、故障電流達門檻時斷開，接地線是通常無故障電流、提供低阻回路。從辨識保險絲斷路器與接地用途的定義看，保險絲／斷路器與接地線結果如何連結？",
   "options": [
-    "保險絲應用最粗導線代替以免熔斷，接地插腳則可拆除而不影響安全",
-    "電功率為 V/I＝60 W，因為電壓應除以電流",
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間",
-    "三孔插頭不可任意拆除"
+    "主張有接地就不需要合規保險絲或斷路器",
+    "把改用過粗保險絲後仍宣稱能更快切斷過載電流",
+    "斷路保護與接地功能互補：一者切斷過大電流，一者提供故障電流安全路徑",
+    "主張三孔插頭的接地腳拆掉不會改變漏電時的風險"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「保險絲應用最粗導線代替以免熔斷，接地插腳則可拆除而不影響安全」不成立；保險絲或斷路器在過大電流時斷開回路；接地將漏電提供低阻安全路徑，三孔插頭不可任意拆除。"
+      "reason": "誤以為有接地就不需要合規保險絲或斷路器，結果會錯判預期保護。保護裝置規格必須符合線路；預期保護差異若未通過辨識保險絲斷路器與接地用途對保險絲／斷路器的控制，就不能只歸給接地線。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「電功率為 V/I＝60 W，因為電壓應除以電流」不成立；電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W。"
+      "reason": "解題時誤把改用過粗保險絲後仍宣稱能更快切斷過載電流，結果會錯判預期保護。斷路保護與接地功能互補：一者切斷過大電流，一者提供故障電流安全路徑；接地線的數值若未依保險絲／斷路器核對，會使預期保護無法通過辨識保險絲斷路器與接地用途檢查。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「1000 W 電器使用 2 h 消耗 500 kWh，因為…」不成立；1000 W 電器使用 2 h 消耗 2 kWh；電能等於功率乘以使用時間。"
+      "isCorrect": true,
+      "reason": "斷路保護與接地功能互補：一者切斷過大電流，一者提供故障電流安全路徑。過載列的保險絲／斷路器為過大電流時斷開、接地線為通常無故障電流；火線碰金屬外殼列的保險絲／斷路器為故障電流達門檻時斷開、接地線為提供低阻回路。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「保險絲或斷路器在過大電流時斷開回路；接地將漏電提供低阻安全路徑，三孔插頭不可任意拆除」。"
+      "isCorrect": false,
+      "reason": "誤以為三孔插頭的接地腳拆掉不會改變漏電時的風險。保險絲或斷路器在過大電流時斷開回路；保險絲／斷路器未列入辨識保險絲斷路器與接地用途時，預期保護的接地線大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
+    "辨認",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "保險絲應用最粗導線代替以免熔斷，接地插腳則可拆除而不影響安全",
-    "電功率為 V/I＝60 W，因為電壓應除以電流",
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間"
+    "主張有接地就不需要合規保險絲或斷路器",
+    "把改用過粗保險絲後仍宣稱能更快切斷過載電流",
+    "主張三孔插頭的接地腳拆掉不會改變漏電時的風險"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

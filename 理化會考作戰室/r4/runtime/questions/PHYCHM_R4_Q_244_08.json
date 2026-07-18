@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理船的平均密度資料，哪項敘述合理？",
+  "stem": "一看到壓載水增加到總質量 1080 t，仍判定平均密度只有 900 kg/m³。按連結船潛水艇與密度調整應用檢查總質量與外形排水體積時，哪一步先做？",
   "options": [
-    "浮力大小永遠等於物體自身重量，不論它沉沒、漂浮或被外力拉住",
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量",
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "潛水艇藉壓載水量調整平均密度與浮沉"
+    "實際操作還要看推進與水流",
+    "主張潛水艇只要下潛到更深處，平均密度就會在未進水時自動增加",
+    "解題時將鋼船漂浮歸因於鋼的密度小於水，忽略中空船體的整體平均密度",
+    "把討論潛水艇進排水時假定外殼體積也同比改變，混淆質量與排水體積"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「浮力大小永遠等於物體自身重量，不論它沉沒、漂浮或被外力拉住」不成立；阿基米德原理：物體所受向上浮力的大小，等於它所排開流體的重量。"
+      "isCorrect": true,
+      "reason": "實際操作還要看推進與水流。改變深度但不進排水列的總質量為1000 t，外形排水體積為1000 m³；排出壓載水列的總質量為900 t，外形排水體積為1000 m³。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「浮力為 12＋7＝19 N，因為水中讀值要加回原重量」不成立；物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N。"
+      "reason": "誤以為潛水艇只要下潛到更深處，平均密度就會在未進水時自動增加。船以中空結構降低整體平均密度；總質量未列入連結船潛水艇與密度調整應用時，平均密度的外形排水體積大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限…」不成立；完全沒入時，浮力隨液體密度與排開體積增大；同液體中排開體積相同則浮力相同。"
+      "reason": "解題時錯將鋼船漂浮歸因於鋼的密度小於水，忽略中空船體的整體平均密度。船以中空結構降低整體平均密度；照原做法會把平均密度算錯或判反。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉」。"
+      "isCorrect": false,
+      "reason": "解題時誤把討論潛水艇進排水時假定外殼體積也同比改變，混淆質量與排水體積。假設外殼體積近似固定且忽略海水密度隨深度的小變化；平均密度差異若未通過連結船潛水艇與密度調整應用對總質量的控制，就不能只歸給外形排水體積。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "浮力大小永遠等於物體自身重量，不論它沉沒、漂浮或被外力拉住",
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量",
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大"
+    "主張潛水艇只要下潛到更深處，平均密度就會在未進水時自動增加",
+    "解題時將鋼船漂浮歸因於鋼的密度小於水，忽略中空船體的整體平均密度",
+    "把討論潛水艇進排水時假定外殼體積也同比改變，混淆質量與排水體積"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

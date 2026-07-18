@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "冰熔化出現四種說法，哪項有理化概念支持？",
+  "stem": "要分辨蒸發氣體與反應新氣體，哪項最有用？",
   "options": [
-    "冰熔化、水沸騰都只改變 H₂O 的狀態，沒有形成新物質，屬物理變化",
-    "冒泡或變色本身就是完整證明，不需知道操作過程或排除其他原因",
-    "所有能逆轉的過程都是物理變化，所有不可逆過程都是化學變化",
-    "化學反應會把原子徹底消滅後再創造新原子，所以前後元素可任意改變"
+    "只問反應時間長短",
+    "只數容器顏色",
+    "只看氣泡大小",
+    "檢驗氣體性質及是否可冷凝回原液體"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「冰熔化、水沸騰都只改變 H₂O 的狀態，沒有形成新物質，屬物理變化」。"
+      "isCorrect": false,
+      "reason": "速率不能唯一辨別。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「冒泡或變色本身就是完整證明，不需知道操作過程或排除其他原因」不成立；反應線索要排除沸騰、溶解、外界加熱等原因，並用產物性質或對照試驗驗證。"
+      "reason": "容器顏色不提供氣體成分或相變可逆性的證據。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「所有能逆轉的過程都是物理變化，所有不可逆過程都是化學變化」不成立；物理變化常可逆，但「可逆」不是分類標準；部分化學反應也可逆，核心仍是新物質。"
+      "reason": "大小受多因素。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「化學反應會把原子徹底消滅後再創造新原子，所以前後元素可任意…」不成立；化學變化中原子種類與總數保留，但原子連結和排列改變，形成不同粒子。"
+      "isCorrect": true,
+      "reason": "直接追蹤氣體身分。"
     }
   ],
-  "difficulty": "standard",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "驗證設計"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "冒泡或變色本身就是完整證明，不需知道操作過程或排除其他原因",
-    "所有能逆轉的過程都是物理變化，所有不可逆過程都是化學變化",
-    "化學反應會把原子徹底消滅後再創造新原子，所以前後元素可任意改變"
+    "只問反應時間長短",
+    "只數容器顏色",
+    "只看氣泡大小"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-AB-4-3",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

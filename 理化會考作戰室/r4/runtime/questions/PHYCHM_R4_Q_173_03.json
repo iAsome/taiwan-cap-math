@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "整理噪音暴露資料後，哪項說明正確？",
+  "stem": "超聲波檢查可利用組織界面的反射形成資訊。人耳聽不見並不妨礙使用，原因為何？",
   "options": [
-    "音調較高的聲音一定在空氣中傳得較快，因為頻率較大",
-    "頻率、振幅與波形都只決定音量大小，與音調和音色無關",
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "人耳可聽頻率有範圍"
+    "超聲波沒有能量，只會顯示顏色",
+    "人耳其實能聽見所有超聲波",
+    "探頭可發射與接收高頻反射訊號",
+    "超聲波不需要介質也能在人體傳播"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「音調較高的聲音一定在空氣中傳得較快，因為頻率較大」不成立；聲速由介質與溫度等條件決定；在同一介質同條件下，高低音的聲速近似相同。"
+      "reason": "能形成回波表示它傳遞能量。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「頻率、振幅與波形都只決定音量大小，與音調和音色無關」不成立；頻率主要影響音調，振幅與響度有關，波形特徵與音色有關，三者不可互換。"
+      "reason": "人耳有頻率上限。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「距離為 340×0.40＝136 m，因為回聲時間只包含單程」不成立；回聲測距的聲波經往返路程；若聲速 340 m/s、往返 0.40 s，距離為 68 m。"
+      "isCorrect": true,
+      "reason": "儀器取代耳朵偵測高頻壓力波與回波時間。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射」。"
+      "isCorrect": false,
+      "reason": "人體超聲仍是機械波，需要組織介質。"
     }
   ],
   "difficulty": "foundation",
@@ -47,16 +47,16 @@
     "單位檢核",
     "資料判讀"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "音調較高的聲音一定在空氣中傳得較快，因為頻率較大",
-    "頻率、振幅與波形都只決定音量大小，與音調和音色無關",
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程"
+    "超聲波沒有能量，只會顯示顏色",
+    "人耳其實能聽見所有超聲波",
+    "超聲波不需要介質也能在人體傳播"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

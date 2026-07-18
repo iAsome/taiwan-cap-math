@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據車輛慣性紀錄，哪項判讀合理？",
+  "stem": "對 1 kg 小車施加 6 N 的水平合力，小車每秒速度改變多少？",
   "options": [
-    "合力只需把大小相加，所以向右 8 N 與向左 3 N 的合力是 11 N",
-    "合力為零時物體速度必立即變為零，不可能繼續等速運動",
-    "質量相同時合力較大",
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他"
+    "物體的加速度為 1 m/s²",
+    "物體的加速度為 0.17 m/s²",
+    "加速度為 6 m/s²",
+    "物體的加速度為 7 m/s²"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「合力只需把大小相加，所以向右 8 N 與向左 3 N 的合…」不成立；同直線上向右 8 N 與向左 3 N 的合力為向右 5 N；相反方向力要取差並保留方向。"
+      "reason": "物體的加速度為 1 m/s²與受力條件不符。a=6÷1=6 m/s²。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「合力為零時物體速度必立即變為零，不可能繼續等速運動」不成立；物體所受合力為零時加速度為零，可保持靜止或等速直線運動，不限於靜止。"
+      "reason": "物體的加速度為 0.17 m/s²與受力條件不符。a=6÷1=6 m/s²。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「物體的加速度方向與合力相同；質量相同時合力較大，或合力相同時質量較小，加速度較大」。"
+      "reason": "a=6÷1=6 m/s²。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他」不成立；慣性是物體維持原運動狀態的性質；車突然剎車時乘客上半身傾向前就是慣性現象。"
+      "reason": "物體的加速度為 7 m/s²與受力條件不符。a=6÷1=6 m/s²。"
     }
   ],
   "difficulty": "foundation",
@@ -50,16 +50,16 @@
     "關係判讀",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "合力只需把大小相加，所以向右 8 N 與向左 3 N 的合力是 11 N",
-    "合力為零時物體速度必立即變為零，不可能繼續等速運動",
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他"
+    "物體的加速度為 1 m/s²",
+    "物體的加速度為 0.17 m/s²",
+    "物體的加速度為 7 m/s²"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

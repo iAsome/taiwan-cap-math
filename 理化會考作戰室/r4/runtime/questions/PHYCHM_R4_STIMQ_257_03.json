@@ -12,50 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_257",
-  "stem": "翹翹板題組中，哪項說明符合紀錄？",
+  "stem": "表中實際斜面的輸入功為240 J，對應施力60 N與施力距離4.0 m。哪個模型能同時解釋四筆輸入功？",
   "options": [
-    "改變方向不必然省力",
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離",
-    "轉動平衡只需左右作用力大小相同，施力位置和力臂不重要"
+    "將斜面長度當成物體上升高度",
+    "主張改變施力方向必然也會減小施力大小",
+    "把省力等同省時間",
+    "省力機械通常要施力移動較長距離"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「省力機械通常要施力移動較長距離；改變方向不必然省力，「省時」與「省力」要分開」。"
+      "isCorrect": false,
+      "reason": "省力機械通常要施力移動較長距離。斜面乙列的施力為50 N，施力距離為4.0 m；實際斜面列的施力為60 N，施力距離為4.0 m。僅根據 50 N×4 m 誤算成 20 J，因而判定斜面乙真的省功。理想方案省力時要增加施力距離；施力距離的數值若未依施力核對，會使輸入功無法通過區分省力省時省距離與改變方向檢查。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「機械只要省力就一定同時省距離與省時，不存在任何交換」不成立；省力機械通常要施力移動較長距離；改變方向不必然省力，「省時」與「省力」要分開。"
+      "reason": "省力機械通常要施力移動較長距離。斜面乙列的施力為50 N，施力距離為4.0 m；實際斜面列的施力為60 N，施力距離為4.0 m。誤以為改變施力方向必然也會減小施力大小。省力機械通常要施力移動較長距離；施力未列入區分省力省時省距離與改變方向時，輸入功的施力距離大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離」不成立；力矩大小為力乘以作用線到轉軸的垂直距離；10 N 作用於 0.30 m 力臂產生 3.0 N·m。"
+      "reason": "省力機械通常要施力移動較長距離。斜面乙列的施力為50 N，施力距離為4.0 m；實際斜面列的施力為60 N，施力距離為4.0 m。把省力等同省時間，卻未考慮施力端需要移動更長距離，結果會錯判輸入功。省力機械通常要施力移動較長距離；照原做法會把輸入功算錯或判反。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「轉動平衡只需左右作用力大小相同，施力位置和力臂不重要」不成立；轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零。"
+      "isCorrect": true,
+      "reason": "省力機械通常要施力移動較長距離。斜面乙列的施力為50 N，施力距離為4.0 m；實際斜面列的施力為60 N，施力距離為4.0 m。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "證據評估"
+    "限制評估",
+    "遷移"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離",
-    "轉動平衡只需左右作用力大小相同，施力位置和力臂不重要"
+    "將斜面長度當成物體上升高度",
+    "主張改變施力方向必然也會減小施力大小",
+    "把省力等同省時間"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -64,20 +65,6 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_013"
   ]

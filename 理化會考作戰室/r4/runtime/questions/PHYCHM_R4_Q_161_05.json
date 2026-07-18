@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於波峰波谷振幅與波長，哪項結論符合題給條件？",
+  "stem": "某質點的位移—時間圖每 0.25 s 重複一次。由此圖可直接得到哪項結果？",
   "options": [
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端",
-    "波峰是橫波最高點、波谷是最低點",
-    "若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差"
+    "此波的波長 0.25 m，波速 1.0 m/s",
+    "此波的週期 4.0 s，頻率 0.25 Hz",
+    "此波的振幅 0.25 m，頻率 4.0 Hz",
+    "週期 0.25 s，頻率 4.0 Hz"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「繩波向右傳時，繩上每一個粒子都從左端一路移到右端」不成立；波將擾動與能量向前傳，介質粒子多在平衡位置附近振動，不隨波整體移到遠處。"
+      "reason": "圖上沒有空間座標或波速，不能直接求波長與波速。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「波峰是橫波最高點、波谷是最低點；振幅由平衡位置量到波峰，波長是沿傳播方向相鄰同相位點的距離」。"
+      "isCorrect": false,
+      "reason": "把週期與頻率的數值對調，違反 f＝1/T。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動」不成立；在介質波模型中，標記粒子應在平衡位置兩側往復運動；波形則表示擾動依序傳開。"
+      "reason": "0.25 s 是橫軸時間間隔，不是縱軸振幅。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「振幅是波峰到波谷的全高，波長是相鄰波峰的高度差」不成立；波峰是橫波最高點、波谷是最低點；振幅由平衡位置量到波峰，波長是沿傳播方向相鄰同相位點的距離。"
+      "isCorrect": true,
+      "reason": "重複一次所需時間是週期，取倒數得 f＝1/0.25＝4.0 Hz。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "條件判斷",
     "分析"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端",
-    "若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差"
+    "此波的波長 0.25 m，波速 1.0 m/s",
+    "此波的週期 4.0 s，頻率 0.25 Hz",
+    "此波的振幅 0.25 m，頻率 4.0 Hz"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

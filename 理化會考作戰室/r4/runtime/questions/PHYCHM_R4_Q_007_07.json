@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "量筒液面出現四種說法，哪項有理化概念支持？",
+  "stem": "哪項證據較支持『隨機變動』而非固定偏差？",
   "options": [
-    "數位寫得越多就越精確，因此可記為 12.347826 cm",
-    "天平未歸零使所有讀值同方向偏移",
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可",
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受"
+    "所有值都比標準高 5 cm",
+    "空載天平固定顯示 2 g",
+    "多次值在中心上下分散，沒有固定方向",
+    "溫度計刻度印錯一格"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「數位寫得越多就越精確，因此可記為 12.347826 cm」不成立；最小刻度 0.1 cm 的直尺，測量值可合理記至 0.01 cm；多寫更多位不會增加儀器資訊。"
+      "reason": "同方向偏高支持系統性偏差。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動」。"
+      "isCorrect": false,
+      "reason": "固定零點是系統性問題。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「三次不相同表示實驗失敗，只保留最接近預期的 10.0 s …」不成立；量得 9.8、10.1、10.0 s 的平均約為 10.0 s，差異可用範圍或離散情形描述，不…。"
+      "isCorrect": true,
+      "reason": "無固定方向的上下波動符合隨機型態。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受」不成立；成人桌子高度約 0.7 m；若記成 70 m，即使計算步驟完整，也應由量級發現單位或小數點錯誤。"
+      "reason": "錯印刻度會規律影響讀值。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "證據判讀"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "數位寫得越多就越精確，因此可記為 12.347826 cm",
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可",
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受"
+    "所有值都比標準高 5 cm",
+    "空載天平固定顯示 2 g",
+    "溫度計刻度印錯一格"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於影子與針孔成像說明光直進，哪項結論符合題給條件？",
+  "stem": "針孔直徑略增大時，常見的像有何變化？",
   "options": [
-    "光經過第一次反射後就不再遵守反射定律，後續方向可任意",
-    "每次可同時移動鏡面、改入射點並從鏡面量角，只要畫出光線就能驗證",
-    "影子與針孔成像表示光會自動繞過遮蔽物後沿曲線前進",
-    "因而形成清楚影子並使針孔可將景物倒立成像"
+    "通常較亮但較模糊",
+    "較暗且更清楚",
+    "上下方向改回正立",
+    "像完全消失且屏幕變黑"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「光經過第一次反射後就不再遵守反射定律，後續方向可任意」不成立；萬花筒、潛望鏡等裝置利用光在多個鏡面依反射定律逐次改變方向。"
+      "isCorrect": true,
+      "reason": "進光增加提升亮度，不同路徑重疊使物點光斑變大。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「每次可同時移動鏡面、改入射點並從鏡面量角，只要畫出光線就能…」不成立；驗證反射定律應固定鏡面與入射點，準確畫法線，改變入射角並成對記錄入射、反射角。"
+      "reason": "較大孔徑讓更多光通過，不會更暗。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「影子與針孔成像表示光會自動繞過遮蔽物後沿曲線前進」不成立；均勻介質中光沿直線傳播，因而形成清楚影子並使針孔可將景物倒立成像。"
+      "reason": "倒立由直線幾何決定，不因小幅增孔而改正。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「均勻介質中光沿直線傳播，因而形成清楚影子並使針孔可將景物倒立成像」。"
+      "isCorrect": false,
+      "reason": "仍有光通過，不會完全消失。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "條件判斷",
     "分析"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "光經過第一次反射後就不再遵守反射定律，後續方向可任意",
-    "每次可同時移動鏡面、改入射點並從鏡面量角，只要畫出光線就能驗證",
-    "影子與針孔成像表示光會自動繞過遮蔽物後沿曲線前進"
+    "較暗且更清楚",
+    "上下方向改回正立",
+    "像完全消失且屏幕變黑"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-6",
       "AUTH-NATURAL-LC-KA-4-7",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

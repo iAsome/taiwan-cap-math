@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據木塊漂浮紀錄，哪項判讀合理？",
+  "stem": "空氣中讀值和完全浸水讀值在乙為18 N、11 N，到甲為12 N、7 N。由視重量差求浮力用這兩筆空氣中讀值資料會得到什麼結果？",
   "options": [
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水",
-    "物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N",
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量",
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關"
+    "把物體碰到容器底仍拿彈簧秤讀值計算浮力，漏掉底部支持力",
+    "乙為 7 N",
+    "把 12 N 與 7 N 相加，誤算甲物體浮力為 19 N",
+    "把未完全浸沒的丁與完全浸沒的甲視為排開體積一定相同"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水」不成立；船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉。"
+      "reason": "解題時誤把物體碰到容器底仍拿彈簧秤讀值計算浮力，漏掉底部支持力。彈簧秤必須穩定且物體未接觸容器；水中浮力差異若未通過由視重量差求浮力對空氣中讀值的控制，就不能只歸給完全浸水讀值。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N」。"
+      "reason": "乙為 7 N。乙列的空氣中讀值為18 N、完全浸水讀值為11 N；甲列的空氣中讀值為12 N、完全浸水讀值為7 N。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「浮力為 12＋7＝19 N，因為水中讀值要加回原重量」不成立；物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N。"
+      "reason": "把 12 N 與 7 N 相加，誤算甲物體浮力為 19 N，結果會錯判水中浮力。甲的浮力為 12−7＝5 N；完全浸水讀值的數值若未依空氣中讀值核對，會使水中浮力無法通過由視重量差求浮力檢查。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關」不成立；沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力。"
+      "reason": "把未完全浸沒的丁與完全浸沒的甲視為排開體積一定相同。物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N；空氣中讀值未列入由視重量差求浮力時，水中浮力的完全浸水讀值大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
+    "辨認",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水",
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量",
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關"
+    "把物體碰到容器底仍拿彈簧秤讀值計算浮力，漏掉底部支持力",
+    "把 12 N 與 7 N 相加，誤算甲物體浮力為 19 N",
+    "把未完全浸沒的丁與完全浸沒的甲視為排開體積一定相同"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

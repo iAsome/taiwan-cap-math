@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於物體顏色來自選擇性反射，哪項結論符合題給條件？",
+  "stem": "同一材料換成不同照明後外觀改變，這證明什麼？",
   "options": [
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色",
-    "水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光",
-    "不透明紅物體在白光下主要反射紅光、吸收其他多數色光，因而看來呈紅色",
-    "近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正"
+    "所見顏色由照明光譜與材料反射共同決定",
+    "材料質量必改變",
+    "物體顏色只由名稱決定",
+    "眼睛不需要光"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色」不成立；紅、綠、藍色光是加法混色的基本光；顏料混合主要透過選擇性吸收，與色光加法原理不同。"
+      "isCorrect": true,
+      "reason": "材料只能反射照明中實際存在且可反射的成分。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光」不成立；眼球的角膜與水晶體等會聚光線，使外物在視網膜上形成倒立實像，再由神經系統處理。"
+      "reason": "照明不必改材料質量。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「不透明紅物體在白光下主要反射紅光、吸收其他多數色光，因而看來呈紅色」。"
+      "isCorrect": false,
+      "reason": "外觀已隨照明改變。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正」不成立；近視的遠物焦點在視網膜前，用凹透鏡矯正；遠視或老花相關情形可用凸透鏡輔助會聚。"
+      "reason": "看見物體需要進眼光。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "條件判斷",
     "分析"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色",
-    "水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光",
-    "近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正"
+    "材料質量必改變",
+    "物體顏色只由名稱決定",
+    "眼睛不需要光"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-10",
       "AUTH-NATURAL-LC-KA-4-11",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

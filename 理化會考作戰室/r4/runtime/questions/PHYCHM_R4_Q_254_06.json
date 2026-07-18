@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解槓桿支點施力點與抗力點，哪項修正合理？",
+  "stem": "丙列給出支點位置施力在中間，另記施力臂0.20 m及抗力臂0.60 m。哪項檢查可防止支點位置與施力臂混用？",
   "options": [
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功",
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量",
-    "槓桿以支點為轉軸"
+    "力並漏掉垂直槓桿時仍把桿長當成完整力臂",
+    "把甲配置抗力 90 N、施力臂三倍長，卻算施力也要 90 N",
+    "解題時將支點、施力點與抗力點的位置名稱互換後仍沿用原本力矩關係",
+    "槓桿不保證所有配置都省力"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功」不成立；輪軸利用不同力臂，齒輪利用齒數比改變轉速與力矩，斜面以增加距離換取較小力。"
+      "reason": "力沒有垂直槓桿時仍把桿長當成完整力臂，結果會錯判抗力臂。結果以理想剛性槓桿、力垂直作用為前提；抗力臂差異若未通過分析槓桿支點施力點與抗力點對支點位置的控制，就不能只歸給施力臂。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「機械只要省力就一定同時省距離與省時，不存在任何交換」不成立；省力機械通常要施力移動較長距離；改變方向不必然省力，「省時」與「省力」要分開。"
+      "reason": "解題時誤把甲配置抗力 90 N、施力臂三倍長，卻算施力也要 90 N，結果會錯判抗力臂。甲需 30 N、乙需 45 N、丙需 270 N；施力臂的數值若未依支點位置核對，會使抗力臂無法通過分析槓桿支點施力點與抗力點檢查。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量」不成立；理想機械輸入功等於輸出功；可用較小力換較長施力距離，但不能無中生有省功。"
+      "reason": "解題時錯將支點、施力點與抗力點的位置名稱互換後仍沿用原本力矩關係，結果會錯判抗力臂。槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果；支點位置未列入分析槓桿支點施力點與抗力點時，抗力臂的施力臂大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果」。"
+      "reason": "槓桿不保證所有配置都省力。乙列的支點位置為抗力在中間，施力臂為0.60 m；丙列的支點位置為施力在中間，施力臂為0.20 m。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功",
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量"
+    "力並漏掉垂直槓桿時仍把桿長當成完整力臂",
+    "把甲配置抗力 90 N、施力臂三倍長，卻算施力也要 90 N",
+    "解題時將支點、施力點與抗力點的位置名稱互換後仍沿用原本力矩關係"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

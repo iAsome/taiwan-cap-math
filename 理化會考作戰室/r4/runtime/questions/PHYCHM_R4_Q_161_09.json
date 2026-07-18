@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對彈簧縱波結果，哪項說法正確？",
+  "stem": "甲、乙兩張位置波形圖使用相同比例尺；甲的極端位移為 ±2 cm，乙為 ±4 cm。哪項比較正確？",
   "options": [
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "波峰是橫波最高點、波谷是最低點",
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端"
+    "乙的波長必為甲的兩倍",
+    "甲的振幅是乙的兩倍",
+    "乙的振幅是甲的兩倍",
+    "兩圖振幅都為 6 cm"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關」不成立；橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行。"
+      "reason": "極端位移只提供振幅，沒有峰峰水平距離便不能比較波長。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「波峰是橫波最高點、波谷是最低點；振幅由平衡位置量到波峰，波長是沿傳播方向相鄰同相位點的距離」。"
+      "isCorrect": false,
+      "reason": "數值 2 cm 小於 4 cm，比例方向顛倒。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「任何一張瞬間位置波形圖都可只看波峰數直接得到頻率」不成立；比較波形圖前要讀軸；位置圖可直接量波長與振幅，頻率則還需時間資訊。"
+      "isCorrect": true,
+      "reason": "兩圖平衡線皆為零，振幅分別為 2 cm 與 4 cm。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「繩波向右傳時，繩上每一個粒子都從左端一路移到右端」不成立；波將擾動與能量向前傳，介質粒子多在平衡位置附近振動，不隨波整體移到遠處。"
+      "reason": "振幅不把兩張圖的極端位移相加。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端"
+    "乙的波長必為甲的兩倍",
+    "甲的振幅是乙的兩倍",
+    "兩圖振幅都為 6 cm"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

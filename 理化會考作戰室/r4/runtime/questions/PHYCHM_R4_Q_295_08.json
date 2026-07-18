@@ -49,51 +49,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "報告整理能源效率資料，哪項敘述合理？",
+  "stem": "解題時誤把甲輸入 500 J、輸出 150 J 被算成 70% 效率。按以有用能量比例比較能源效率檢查總輸入與有用輸出時，哪一步先做？",
   "options": [
-    "只要有一張圖表趨勢符合預期，就可忽略實驗方法、模型限制與其他來源",
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性",
-    "輸入 500 J、有用輸出 150 J 的效率為 30%",
-    "能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 100% 且持續創能"
+    "看到丁有用輸出 420 J 大於輸入 400 J，仍直接接受資料無須檢查",
+    "解題時將效率算成總輸入除以有用輸出，使結果可能超過百分之百",
+    "做比較時不同功能設備時並漏掉統一有用輸出的定義與系統邊界",
+    "比較設備必須把有用輸出的定義與量測邊界設為相同，不能拿不同功能直接比百分比"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要有一張圖表趨勢符合預期，就可忽略實驗方法、模型限制與其…」不成立；形成科學解釋時要互相印證實驗結果、圖表趨勢、模型機制與可追溯資料，並區分相關、因果與不確定。"
+      "reason": "一看到丁有用輸出 420 J 大於輸入 400 J，仍直接接受資料無須檢查，結果會錯判效率。能源效率＝有用輸出能量÷總輸入能量×100%；總輸入未列入以有用能量比例比較能源效率時，效率的有用輸出大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標…」不成立；可檢驗的節能決策應寫明基準用能、具體措施、量測期間、成功指標與氣溫、使用人數等不確定因素。"
+      "reason": "解題時錯將效率算成總輸入除以有用輸出，使結果可能超過百分之百。能源效率＝有用輸出能量÷總輸入能量×100%；照原做法會把效率算錯或判反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「能源效率＝有用輸出能量÷總輸入能量×100%；輸入 500 J、有用輸出 150 J 的效率為 30%」。"
+      "isCorrect": false,
+      "reason": "做比較時不同功能設備時卻未統一有用輸出的定義與系統邊界，結果會錯判效率。比較設備必須把有用輸出的定義與量測邊界設為相同，不能拿不同功能直接比百分比；效率差異若未通過以有用能量比例比較能源效率對總輸入的控制，就不能只歸給有用輸出。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 10…」不成立；能源效率＝有用輸出能量÷總輸入能量×100%；輸入 500 J、有用輸出 150 J 的效率為…。"
+      "isCorrect": true,
+      "reason": "比較設備必須把有用輸出的定義與量測邊界設為相同，不能拿不同功能直接比百分比。丁列的總輸入為400 J，有用輸出為420 J；甲列的總輸入為500 J，有用輸出為150 J。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要有一張圖表趨勢符合預期，就可忽略實驗方法、模型限制與其他來源",
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性",
-    "能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 100% 且持續創能"
+    "看到丁有用輸出 420 J 大於輸入 400 J，仍直接接受資料無須檢查",
+    "解題時將效率算成總輸入除以有用輸出，使結果可能超過百分之百",
+    "做比較時不同功能設備時並漏掉統一有用輸出的定義與系統邊界"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-INA-4-1",
       "AUTH-NATURAL-LC-INA-4-2",
@@ -139,19 +139,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

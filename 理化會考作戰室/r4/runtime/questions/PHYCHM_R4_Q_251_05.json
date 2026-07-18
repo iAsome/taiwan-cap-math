@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於功與時間計算功率，哪項結論符合題給條件？",
+  "stem": "丙的作功為1800 J、時間為30 s；丁則是2400 J、40 s。解讀這兩列時，由功與時間計算功率有哪些交換、量測或系統限制？",
   "options": [
-    "功率是功乘時間，所以 1200 J 在 30 s 內的功率為 36000 W",
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J",
-    "功率比較做功快慢"
+    "解題時將功率公式寫成 P＝W×t，所以做功時間越久反而算出越大功率",
+    "功率比較做功快慢，不能僅由功率判斷一段不指定時間的總作功",
+    "僅憑機器的功率就比較不指定時間內的總作功",
+    "解題時將 1200 J 除以 30 s 算成 400 W，錯置小數位"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「功率是功乘時間，所以 1200 J 在 30 s 內的功率…」不成立；完成 1200 J 的功耗時 30 s，平均功率 P＝W/t＝40 W；功率比較做功快慢。"
+      "reason": "解題時錯將功率公式寫成 P＝W×t，所以做功時間越久反而算出越大功率，結果會錯判平均功率。完成 1200 J 的功耗時 30 s，平均功率 P＝W/t＝40 W；照原做法會把平均功率算錯或判反。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關」不成立；力對物體作功要有物體沿力的分量方向發生位移；用力提住靜止物體時對物體作功為零。"
+      "isCorrect": true,
+      "reason": "功率比較做功快慢，不能僅由功率判斷一段不指定時間的總作功。甲列的作功為1200 J，時間為30 s；乙列的作功為1200 J，時間為20 s。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「功是力除以位移，所以 20 N 推 3 m 作功為 6.6…」不成立；恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J。"
+      "reason": "僅憑機器的功率就比較不指定時間內的總作功，結果會錯判平均功率。功率比較做功快慢，不能僅由功率判斷一段不指定時間的總作功；平均功率差異若未通過由功與時間計算功率對作功的控制，就不能只歸給時間。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「完成 1200 J 的功耗時 30 s，平均功率 P＝W/t＝40 W；功率比較做功快慢」。"
+      "isCorrect": false,
+      "reason": "解題時錯將 1200 J 除以 30 s 算成 400 W，錯置小數位。功率 P＝W/t；時間的數值若未依作功核對，會使平均功率無法通過由功與時間計算功率檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "條件判斷",
-    "分析"
+    "應用"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "功率是功乘時間，所以 1200 J 在 30 s 內的功率為 36000 W",
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J"
+    "解題時將功率公式寫成 P＝W×t，所以做功時間越久反而算出越大功率",
+    "僅憑機器的功率就比較不指定時間內的總作功",
+    "解題時將 1200 J 除以 30 s 算成 400 W，錯置小數位"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

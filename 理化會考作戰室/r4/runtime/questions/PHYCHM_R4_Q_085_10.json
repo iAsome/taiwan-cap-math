@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄根據未知質量表下結論，哪項符合資料？",
+  "stem": "某生配出 2Na＋Cl₂→2NaCl。如何驗算？",
   "options": [
-    "只要反應式兩側的分子個數相同，就不必再檢查各元素原子數",
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2",
-    "2H₂＋O₂→2H₂O 以係數 2、1、2 使氫、氧原子在兩側分別都是 4、2 個",
-    "密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變"
+    "Na 左2右2，Cl 左2右2",
+    "只看係數和 3＝2",
+    "確認兩側分子數相同",
+    "Na 左1右2，Cl 左1右1"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要反應式兩側的分子個數相同，就不必再檢查各元素原子數」不成立；檢查反應式時要逐種元素計算左右原子總數，每一種都相等才是已配平。"
+      "isCorrect": true,
+      "reason": "兩元素原子數均相等。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「配平係數 2：1：2 直接表示三種物質的質量比也是 2：1…」不成立；2H₂＋O₂→2H₂O 表示氫分子、氧分子與水分子的粒子數比為 2：1：2。"
+      "reason": "係數和不是判準。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「2H₂＋O₂→2H₂O 以係數 2、1、2 使氫、氧原子在兩側分別都是 4、2 個」。"
+      "isCorrect": false,
+      "reason": "分子數不必相同。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變」不成立；質量守恆不要求反應前後總體積相等；氣體生成、溫度與壓力都可使體積改變。"
+      "reason": "漏乘係數與下標。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "驗算"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要反應式兩側的分子個數相同，就不必再檢查各元素原子數",
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2",
-    "密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變"
+    "只看係數和 3＝2",
+    "確認兩側分子數相同",
+    "Na 左1右2，Cl 左1右1"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

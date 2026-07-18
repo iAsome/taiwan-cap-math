@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "係數與下標出現四種說法，哪項有理化概念支持？",
+  "stem": "H₂O 與 H₂O₂ 的關係為何？",
   "options": [
-    "模型圖上一共有幾個球，就把該數字全部寫成一個化學式的下標",
-    "若原子數不等，最快方法是直接改生成物的下標，化學式仍代表原物質",
-    "共含 6 個 H 原子與 3 個 O 原子",
-    "3H₂O 表示每個水分子含 3 個氫，係數只乘第一個元素"
+    "只是水分子數不同，O 下標 2 表示兩個水分子",
+    "下標不同，代表不同物質",
+    "兩式完全同義",
+    "H₂O₂ 不含氧"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「模型圖上一共有幾個球，就把該數字全部寫成一個化學式的下標」不成立；若模型顯示每個粒子由兩個 A 與一個 B 連結，其化學式可表為 A₂B；多粒子再用係數計數。"
+      "reason": "沒有前方係數差。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「若原子數不等，最快方法是直接改生成物的下標，化學式仍代表原…」不成立；配平反應式只能調整化學式前係數；改動 H₂O 的下標會把水變成不同組成的物質。"
+      "isCorrect": true,
+      "reason": "O 數 1 與 2。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「3H₂O 表示 3 個水分子，共含 6 個 H 原子與 3 個 O 原子；係數乘入整個化學式」。"
+      "isCorrect": false,
+      "reason": "組成不同。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「3H₂O 表示每個水分子含 3 個氫，係數只乘第一個元素」不成立；3H₂O 表示 3 個水分子，共含 6 個 H 原子與 3 個 O 原子；係數乘入整個化學式。"
+      "reason": "H₂O₂ 有 O。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "物質身分"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "模型圖上一共有幾個球，就把該數字全部寫成一個化學式的下標",
-    "若原子數不等，最快方法是直接改生成物的下標，化學式仍代表原物質",
-    "3H₂O 表示每個水分子含 3 個氫，係數只乘第一個元素"
+    "只是水分子數不同，O 下標 2 表示兩個水分子",
+    "兩式完全同義",
+    "H₂O₂ 不含氧"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AA-4-5",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

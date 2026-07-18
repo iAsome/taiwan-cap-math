@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估液壓機報告時，哪項說明正確？",
+  "stem": "紀錄丘陵時，海拔是800 m，氣壓是92.0 kPa，沸水溫度為約 97°C。說明大氣壓力來自空氣重量重做量測時，還要記下海拔哪個條件？",
   "options": [
-    "液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量",
-    "用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與",
-    "大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變",
-    "密閉氣體體積變小時粒子數自動減少，所以壓力也一定減小"
+    "主張加壓鍋內外海拔相同，所以鍋內氣壓不可能高於外界",
+    "氣壓也受天氣與溫度影響，單次讀值不能只用海拔解釋全部差異",
+    "主張空氣並漏掉重量，因此氣壓計讀值只是儀器本身造成",
+    "解題時將任何兩地的氣壓差都歸因於海拔，完全不查同時的天氣與溫度"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量」不成立；帕斯卡原理說明密閉流體上的壓力變化可傳至各處；液壓機可以大面積活塞得到較大力。"
+      "reason": "誤以為加壓鍋內外海拔相同，所以鍋內氣壓不可能高於外界，結果會錯判沸水溫度。大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變；海拔未列入說明大氣壓力來自空氣重量時，沸水溫度的氣壓大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與」不成立；吸管、滴管等裝置是先降低內部壓力，外界較大大氣壓才將液體推向低壓處。"
+      "isCorrect": true,
+      "reason": "氣壓也受天氣與溫度影響，單次讀值不能只用海拔解釋全部差異。密閉加壓鍋列的海拔為20 m，氣壓為高於外界；海邊列的海拔為20 m，氣壓為101.1 kPa。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變」。"
+      "isCorrect": false,
+      "reason": "誤以為空氣沒有重量，因此氣壓計讀值只是儀器本身造成。大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變；照原做法會把沸水溫度算錯或判反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「密閉氣體體積變小時粒子數自動減少，所以壓力也一定減小」不成立；密閉的定量氣體在溫度近似不變時，體積被壓縮而變小，粒子撞壁更頻繁，壓力較大。"
+      "reason": "解題時錯將任何兩地的氣壓差都歸因於海拔，完全不查同時的天氣與溫度，結果會錯判沸水溫度。氣壓也受天氣與溫度影響，單次讀值不能只用海拔解釋全部差異；沸水溫度差異若未通過說明大氣壓力來自空氣重量對海拔的控制，就不能只歸給氣壓。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量",
-    "用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與",
-    "密閉氣體體積變小時粒子數自動減少，所以壓力也一定減小"
+    "主張加壓鍋內外海拔相同，所以鍋內氣壓不可能高於外界",
+    "主張空氣並漏掉重量，因此氣壓計讀值只是儀器本身造成",
+    "解題時將任何兩地的氣壓差都歸因於海拔，完全不查同時的天氣與溫度"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

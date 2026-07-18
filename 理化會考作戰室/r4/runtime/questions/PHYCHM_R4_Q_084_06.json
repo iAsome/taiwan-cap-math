@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解方程式兩側各元素原子數，哪項修正合理？",
+  "stem": "檢查 2Al＋3Cl₂→2AlCl₃，下列計數何者正確？",
   "options": [
-    "未知生成物為 35＋12＝47 g，因為生成物應加在反應物上",
-    "每一種都相等才是已配平",
-    "H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標",
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2"
+    "左 Al＝2、右 Al＝2；左 Cl＝6、右 Cl＝6",
+    "左 Al＝2、右 Al＝1；左 Cl＝3、右 Cl＝3",
+    "左右元素項數相同即可",
+    "左 Al＝1、右 Al＝2；左 Cl＝6、右 Cl＝3"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「未知生成物為 35＋12＝47 g，因為生成物應加在反應物上」不成立；反應物總質量 35 g，已知一生成物 12 g，且系統密閉，另一生成物為 23 g。"
+      "isCorrect": true,
+      "reason": "係數與下標均正確套用。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「檢查反應式時要逐種元素計算左右原子總數，每一種都相等才是已配平」。"
+      "isCorrect": false,
+      "reason": "漏乘右側係數與左側氯下標。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標」不成立；2H₂＋O₂→2H₂O 以係數 2、1、2 使氫、氧原子在兩側分別都是 4、2 個。"
+      "reason": "項數不是原子數。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「配平係數 2：1：2 直接表示三種物質的質量比也是 2：1…」不成立；2H₂＋O₂→2H₂O 表示氫分子、氧分子與水分子的粒子數比為 2：1：2。"
+      "reason": "漏讀多個係數。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "原子核對"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "未知生成物為 35＋12＝47 g，因為生成物應加在反應物上",
-    "H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標",
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2"
+    "左 Al＝2、右 Al＝1；左 Cl＝3、右 Cl＝3",
+    "左右元素項數相同即可",
+    "左 Al＝1、右 Al＝2；左 Cl＝6、右 Cl＝3"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

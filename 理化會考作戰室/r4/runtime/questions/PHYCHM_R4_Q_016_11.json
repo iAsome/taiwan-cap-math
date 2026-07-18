@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組同材質樣品比較資料，哪項判讀仍合理？",
+  "stem": "量石頭時忘了擦乾表面水，天平讀值偏大而排水體積正確。密度如何？",
   "options": [
-    "物體切半後質量減半，所以密度也一定減半",
-    "只要密度表列數值相同，就已唯一證明樣品是該物質",
-    "由 ρ＝m/V 可知密度結果偏大",
-    "只要有量測誤差，質量和體積必會相互抵銷，密度不受影響"
+    "偏大",
+    "偏小",
+    "不變",
+    "無法計算任何方向"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「物體切半後質量減半，所以密度也一定減半」不成立；同一均勻銅塊切成兩半後，每塊的質量和體積同比減少，密度仍相同。"
+      "isCorrect": true,
+      "reason": "附水增加質量分子。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要密度表列數值相同，就已唯一證明樣品是該物質」不成立；樣品密度在誤差內符合某材料只能作為身分線索，還要考慮溫度、純度與其他性質。"
+      "reason": "方向相反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「若質量讀值偏大而體積正確，由 ρ＝m/V 可知密度結果偏大；要依誤差方向分析」。"
+      "isCorrect": false,
+      "reason": "比值變大。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要有量測誤差，質量和體積必會相互抵銷，密度不受影響」不成立；若質量讀值偏大而體積正確，由 ρ＝m/V 可知密度結果偏大；要依誤差方向分析。"
+      "reason": "已知偏差方向。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "情境遷移"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體切半後質量減半，所以密度也一定減半",
-    "只要密度表列數值相同，就已唯一證明樣品是該物質",
-    "只要有量測誤差，質量和體積必會相互抵銷，密度不受影響"
+    "偏小",
+    "不變",
+    "無法計算任何方向"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-3",
       "AUTH-NATURAL-LC-CA-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

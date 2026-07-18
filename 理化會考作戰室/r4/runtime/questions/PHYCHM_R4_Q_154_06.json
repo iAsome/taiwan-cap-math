@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解密度變化解釋流體對流，哪項修正合理？",
+  "stem": "風扇使室內空氣流動，這主要屬於哪種熱傳方式？",
   "options": [
-    "傳導必須由熱物質粒子一路移動到冷端，否則能量不能傳遞",
-    "太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞",
-    "導熱快的材料在任何用途都較好，因此鍋柄也應用最厚金屬",
-    "流體受熱後密度常減小而上升，較冷流體下沉形成對流循環"
+    "由外力驅動流體的強制對流",
+    "不需流體移動便可傳播的熱輻射",
+    "能量只在靜止固體內傳遞的傳導",
+    "只由冷熱密度差形成的自然對流"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「傳導必須由熱物質粒子一路移動到冷端，否則能量不能傳遞」不成立；熱傳導可由相鄰粒子碰撞與振動傳遞能量，金屬中自由電子也有助於快速傳熱。"
+      "isCorrect": true,
+      "reason": "風扇對空氣作功並驅動整體流動，屬強制對流。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞」不成立；熱輻射以電磁波傳遞能量，不需介質，因此太陽能穿過太空將能量傳至地球。"
+      "reason": "風扇主要增加空氣流動，不是產生電磁波來傳熱。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「導熱快的材料在任何用途都較好，因此鍋柄也應用最厚金屬」不成立；金屬導熱快適合鍋底，木材或低導熱材料適合握柄與隔熱層；用途取決所需熱流。"
+      "reason": "此現象有空氣整體移動，不是只靠相鄰粒子傳導。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「流體受熱後密度常減小而上升，較冷流體下沉形成對流循環」。"
+      "isCorrect": false,
+      "reason": "自然對流由溫差造成密度差與浮力，不以風扇驅動。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "辨識"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "傳導必須由熱物質粒子一路移動到冷端，否則能量不能傳遞",
-    "太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞",
-    "導熱快的材料在任何用途都較好，因此鍋柄也應用最厚金屬"
+    "不需流體移動便可傳播的熱輻射",
+    "能量只在靜止固體內傳遞的傳導",
+    "只由冷熱密度差形成的自然對流"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱傳播與生活應用; 臺灣國中教育會考自然科導熱、對流、輻射與保溫題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BB-4-1",
       "AUTH-NATURAL-LC-BB-4-3",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

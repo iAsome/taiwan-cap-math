@@ -17,51 +17,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理金屬燃燒資料，哪項敘述合理？",
+  "stem": "2H₂＋O₂→2H₂O 中，H₂的角色為何？",
   "options": [
-    "在氧化銅與碳的反應中，氧化銅失氧而被還原，碳得氧而被氧化",
-    "放電、充電與電解的能量流向都是化學能自動轉成電能",
-    "電壓低的電池不可能短路發熱，電解產生的氣體也可直接靠近火源檢驗",
-    "氧化銅把氧給出去所以被氧化，碳得氧所以被還原"
+    "只作催化劑",
+    "被氧化，並作為還原劑",
+    "被還原，並作為氧化劑",
+    "未參與反應"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「在氧化銅與碳的反應中，氧化銅失氧而被還原，碳得氧而被氧化」。"
+      "isCorrect": false,
+      "reason": "氫被消耗。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「放電、充電與電解的能量流向都是化學能自動轉成電能」不成立；電池放電是化學能轉電能；充電和電解都需外加電能驅動非自發化學改變。"
+      "isCorrect": true,
+      "reason": "H₂得氧並使O₂參與還原配對。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「電壓低的電池不可能短路發熱，電解產生的氣體也可直接靠近火源…」不成立；燃燒應控制火源與可燃物，電池電解應防短路、腐蝕液接觸與未知氣體累積。"
+      "reason": "氫沒有失氧。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「氧化銅把氧給出去所以被氧化，碳得氧所以被還原」不成立；在氧化銅與碳的反應中，氧化銅失氧而被還原，碳得氧而被氧化。"
+      "reason": "它是反應物。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "角色分析"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "放電、充電與電解的能量流向都是化學能自動轉成電能",
-    "電壓低的電池不可能短路發熱，電解產生的氣體也可直接靠近火源檢驗",
-    "氧化銅把氧給出去所以被氧化，碳得氧所以被還原"
+    "只作催化劑",
+    "被還原，並作為氧化劑",
+    "未參與反應"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科公開題型之證據判讀與生活情境層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -75,19 +74,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

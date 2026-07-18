@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對金屬與氧反應結果，哪項說法正確？",
+  "stem": "一項分類測試若把汞錯判為非金屬，可能用了哪個不當規則？",
   "options": [
-    "同族元素的所有物理性質、化學性質和反應速率都完全相同",
-    "週期表橫列稱族、直行稱週期，名稱可互換而不影響意義",
-    "元素的生活用途只由週期表格子顏色決定，不需查導電、活性等性質",
-    "元素分類要綜合導電性、光澤、展性與化學反應等證據，單一外觀不足以概括所有元素"
+    "可導電就是金屬",
+    "第 1 族都是金屬",
+    "液體就是非金屬",
+    "固體就是金屬"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「同族元素的所有物理性質、化學性質和反應速率都完全相同」不成立；同族元素常呈現相似化學性質與規律，但程度與個別性質仍可不同，需由資料比較。"
+      "reason": "此規則會把汞判金屬。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「週期表橫列稱族、直行稱週期，名稱可互換而不影響意義」不成立；週期表的橫列稱週期，直行稱族；位置是組織元素性質規律的索引。"
+      "reason": "汞不在第 1 族。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「元素的生活用途只由週期表格子顏色決定，不需查導電、活性等性質」不成立；銅導電且可拉成導線，氦性質安定可用作保護氣體；應把具體性質連到用途。"
+      "isCorrect": true,
+      "reason": "汞是液體但為金屬。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「元素分類要綜合導電性、光澤、展性與化學反應等證據，單一外觀不足以概括所有元素」。"
+      "isCorrect": false,
+      "reason": "汞不是固體。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "錯誤診斷"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "同族元素的所有物理性質、化學性質和反應速率都完全相同",
-    "週期表橫列稱族、直行稱週期，名稱可互換而不影響意義",
-    "元素的生活用途只由週期表格子顏色決定，不需查導電、活性等性質"
+    "可導電就是金屬",
+    "第 1 族都是金屬",
+    "固體就是金屬"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AA-4-4",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

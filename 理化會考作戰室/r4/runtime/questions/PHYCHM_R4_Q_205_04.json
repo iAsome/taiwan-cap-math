@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查位置時間圖紀錄，哪項判讀正確？",
+  "stem": "圖線在 6 至 8 s 保持 x=1 m。此段表示什麼？",
   "options": [
-    "位置—時間圖的水平線表示靜止，直線斜率不變表示等速，斜率變號表示折返",
-    "把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間與位置",
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸",
-    "位置—時間圖的水平線表示物體以水平方向等速前進"
+    "物體以 1 m/s 移動",
+    "物體停在原點正側 1 m",
+    "物體回到原點",
+    "物體以 -1 m/s 移動"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「位置—時間圖的水平線表示靜止，直線斜率不變表示等速，斜率變號表示折返」。"
+      "isCorrect": false,
+      "reason": "物體以 1 m/s 移動不成立。水平線代表靜止，縱座標 1 m 表示停在原點正側。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間…」不成立；「向東等速、停留、向西返回」的位置—時間圖應依序是正斜率、水平、負斜率。"
+      "isCorrect": true,
+      "reason": "水平線代表靜止，縱座標 1 m 表示停在原點正側。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸」不成立；位置—時間圖的線形描述位置如何隨時間變化，不是物體在空間中的軌跡外觀。"
+      "reason": "物體回到原點不成立。水平線代表靜止，縱座標 1 m 表示停在原點正側。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「位置—時間圖的水平線表示物體以水平方向等速前進」不成立；位置—時間圖的水平線表示靜止，直線斜率不變表示等速，斜率變號表示折返。"
+      "reason": "物體以 -1 m/s 移動不成立。水平線代表靜止，縱座標 1 m 表示停在原點正側。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間與位置",
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸",
-    "位置—時間圖的水平線表示物體以水平方向等速前進"
+    "物體以 1 m/s 移動",
+    "物體回到原點",
+    "物體以 -1 m/s 移動"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

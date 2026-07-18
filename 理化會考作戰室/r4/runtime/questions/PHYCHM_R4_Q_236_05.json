@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於氣壓差解釋生活裝置，哪項結論符合題給條件？",
+  "stem": "管頂漏氣列含管內壓力約 101 kPa及杯面外壓101 kPa；真空環境假設列含皆近 0及近 0。由氣壓差解釋生活裝置能否直接外推，取決於哪項管內壓力條件？",
   "options": [
-    "吸管、滴管等裝置是先降低內部壓力，外界較大大氣壓才將液體推向低壓處",
-    "液體壓力只由容器底面積決定，和深度與液體種類無關",
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁",
-    "液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量"
+    "必須有連續液柱與外界壓力差",
+    "解題時將吸管中的飲料上升說成嘴巴隔空向上拉液體，漏掉外界大氣壓",
+    "漏列管頂漏氣與液柱連續性",
+    "僅根據管內 96 kPa、外界 101 kPa 推論液體會被較小壓力往下壓"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「吸管、滴管等裝置是先降低內部壓力，外界較大大氣壓才將液體推向低壓處」。"
+      "reason": "必須有連續液柱與外界壓力差。未吸列的管內壓力為101 kPa，杯面外壓為101 kPa；吸氣列的管內壓力為96 kPa，杯面外壓為101 kPa。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「液體壓力只由容器底面積決定，和深度與液體種類無關」不成立；同一液體中深度越大壓力越大；同深度時液體密度較大者壓力較大。"
+      "reason": "解題時錯將吸管中的飲料上升說成嘴巴隔空向上拉液體，漏掉外界大氣壓。吸管、滴管等裝置是先降低內部壓力，外界較大大氣壓才將液體推向低壓處；照原做法會把液面反應算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁」不成立；靜止液體中同一點的壓力可向各方向作用，不只向下；容器側壁也受液體壓力。"
+      "reason": "未納入管頂漏氣與液柱連續性，認為只要做吸的動作液體一定上升。必須有連續液柱與外界壓力差；液面反應差異若未通過由氣壓差解釋生活裝置對管內壓力的控制，就不能只歸給杯面外壓。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量」不成立；帕斯卡原理說明密閉流體上的壓力變化可傳至各處；液壓機可以大面積活塞得到較大力。"
+      "reason": "僅根據管內 96 kPa、外界 101 kPa 推論液體會被較小壓力往下壓。吸氣使管內壓力低於杯面外界壓力，外界大氣壓把飲料推向管內低壓處；杯面外壓的數值若未依管內壓力核對，會使液面反應無法通過由氣壓差解釋生活裝置檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "條件判斷",
-    "分析"
+    "應用"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "液體壓力只由容器底面積決定，和深度與液體種類無關",
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁",
-    "液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量"
+    "解題時將吸管中的飲料上升說成嘴巴隔空向上拉液體，漏掉外界大氣壓",
+    "漏列管頂漏氣與液柱連續性",
+    "僅根據管內 96 kPa、外界 101 kPa 推論液體會被較小壓力往下壓"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

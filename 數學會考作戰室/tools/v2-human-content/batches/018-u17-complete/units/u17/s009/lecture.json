@@ -10,7 +10,7 @@
   "reviewStatus": "independently-reviewed",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-  "prerequisiteBridge": "先備技能：parallelogram-opposite-sides。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "prerequisiteBridge": "承接平行四邊形對邊性質；本節改看AC與BD在交點O的分段，掌握互相平分及其逆判定。",
   "learningOutcomes": [
     "辨認兩條對角線",
     "運用對角線互相平分",
@@ -90,35 +90,35 @@
     }
   ],
   "nonApplicableCases": [
-    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
-    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
-    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+    "互相平分只表示AO＝OC與BO＝OD，不表示AO＝BO。",
+    "一般平行四邊形的兩條完整對角線不必等長，也不必垂直。",
+    "只有一條對角線被O平分，不能使用兩對角線互相平分的判定。"
   ],
   "method": [
     {
       "step": 1,
       "instruction": "畫出AC與BD並標交點O",
-      "check": "完成第1步後，確認未引入題目未給的條件。"
+      "check": "AC連A與C、BD連B與D，O同時位於兩條對角線上。"
     },
     {
       "step": 2,
       "instruction": "配對同一條對角線上的兩段",
-      "check": "完成第2步後，確認未引入題目未給的條件。"
+      "check": "AC配AO與OC，BD配BO與OD，沒有跨線配對。"
     },
     {
       "step": 3,
       "instruction": "只使用互相平分，不自行加上垂直或等長",
-      "check": "完成第3步後，確認未引入題目未給的條件。"
+      "check": "式子只含AO＝OC、BO＝OD及各自全長，沒有假設AC＝BD或AC⊥BD。"
     },
     {
       "step": 4,
       "instruction": "建立方程",
-      "check": "完成第4步後，確認未引入題目未給的條件。"
+      "check": "同一條對角線的兩半相等，全長由兩半相加。"
     },
     {
       "step": 5,
       "instruction": "需要時用逆性質判定",
-      "check": "完成第5步後，確認未引入題目未給的條件。"
+      "check": "AO＝OC與BO＝OD兩式都成立，才判四邊形為平行四邊形。"
     }
   ],
   "workedExamples": [
@@ -170,40 +170,41 @@
   "commonMistakes": [
     {
       "mistake": "把AO與BO設相等",
-      "why": "它們在不同對角線上",
-      "correction": "它們在不同對角線上"
+      "why": "兩段分屬不同對角線，互相平分不會使它們等長。",
+      "correction": "只配AO與OC、BO與OD。"
     },
     {
       "mistake": "認為兩對角線一定等長",
-      "why": "矩形才必有此附加性質",
-      "correction": "矩形才必有此附加性質"
+      "why": "等長是矩形的附加性質，一般平行四邊形沒有。",
+      "correction": "除非題目另給矩形或AC＝BD，否則分別處理兩條對角線。"
     },
     {
       "mistake": "認為一定垂直",
-      "why": "菱形才必有此附加性質",
-      "correction": "菱形才必有此附加性質"
+      "why": "垂直是菱形的附加性質，不能由互相平分推出。",
+      "correction": "只採用題目標示的角度或垂直記號。"
     },
     {
       "mistake": "只知AO=OC就判平行四邊形",
-      "why": "還需另一條也被平分",
-      "correction": "還需另一條也被平分"
+      "why": "判定要求兩條對角線都被同一交點平分。",
+      "correction": "還要取得BO＝OD後再引用判定。"
     },
     {
       "mistake": "忘記全長是兩段相加",
-      "why": "AC=AO+OC",
-      "correction": "AC=AO+OC"
+      "why": "AO或OC只是AC的一半，不是完整對角線。",
+      "correction": "寫AC＝AO＋OC、BD＝BO＋OD。"
     }
   ],
   "selfCheck": [
-    "我能否不用目測，說明「平行四邊形對角線」所需的條件？",
-    "我是否先辨認角、邊、對角線、底或高的正確位置？",
-    "方程解出後是否代回題目真正所求？",
-    "角度、長度與面積單位是否正確？"
+    "我是否把AC與BD的半段分別正確配對？",
+    "是否只使用互相平分，沒有自行加上等長或垂直？",
+    "求完整對角線時是否把兩個半段相加？",
+    "使用逆判定時，兩條對角線是否都被O平分？"
   ],
   "summary": [
-    "ABCD的對角線是AC與BD，不是四條邊。",
-    "AO=OC，BO=OD",
-    "解題時先確認「平行四邊形對角線互相平分」。"
+    "平行四邊形的對角線AC與BD在O互相平分：AO＝OC、BO＝OD。",
+    "同一對角線的全長等於兩半相加；不同對角線的半段不能交叉設等。",
+    "一般情況不保證AC＝BD或AC⊥BD。",
+    "反向使用時，兩條對角線都互相平分才能判為平行四邊形。"
   ],
   "connections": {
     "previous": "承接parallelogram-opposite-sides。",
@@ -242,5 +243,5 @@
     "figureChecked": true,
     "reviewNote": "講義明確區隔「互相平分」與「等長、垂直」三種不同的對角線性質。"
   },
-  "contentSha256": "8dbd3060b63de89cac62a4df8f8eb0c213c7add23af6b5bbd1b89ee4eb0fa065"
+  "contentSha256": "457bf34f29077f7df1b3ae1e4810ffa2c2beed4166f596d14b0d894befd9fa31"
 }

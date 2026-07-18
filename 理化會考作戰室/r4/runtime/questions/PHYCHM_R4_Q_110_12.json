@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估pH 計操作報告時，哪項說明正確？",
+  "stem": "哪組證據最能辨識酸性未知液？",
   "options": [
-    "高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性",
-    "酸可能與某些金屬產生氫氣",
-    "任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性",
-    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關"
+    "pH低於7且與大理石產生經檢驗的CO₂",
+    "無色且透明",
+    "液體溫度是25°C",
+    "杯中有氣泡但未檢驗"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性」不成立；濃度是溶質所佔比例，酸鹼強弱涉及物質在水中的離子行為；兩者不可完全畫上等號。"
+      "isCorrect": true,
+      "reason": "直接測量與反應證據一致。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體」。"
+      "isCorrect": false,
+      "reason": "許多溶液無色。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性」不成立；酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體。"
+      "reason": "溫度不分類酸鹼。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「酸和鹼只由溶液顏色定義，和水溶液中的離子無關」不成立；在課程模型中，酸性水溶液的酸性與氫離子有關，鹼性水溶液的鹼性與氫氧根離子有關。"
+      "reason": "泡泡來源未知。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據整合"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性",
-    "任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性",
-    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關"
+    "無色且透明",
+    "液體溫度是25°C",
+    "杯中有氣泡但未檢驗"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組根據繩波下結論，哪項符合資料？",
+  "stem": "P 點在 t＝0 位於波峰，四分之一週期後通過平衡線。此過程顯示什麼？",
   "options": [
-    "波形則表示擾動依序傳開",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比",
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長"
+    "P 隨波前進四分之一波長",
+    "P 從極端位置回到平衡位置，仍留在原水平座標附近",
+    "P 的平衡位置移到波谷",
+    "P 在波峰時已停止振動"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「在介質波模型中，標記粒子應在平衡位置兩側往復運動；波形則表示擾動依序傳開」。"
+      "isCorrect": false,
+      "reason": "四分之一週期描述局部振動，不是水平搬移。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「振幅是波峰到波谷的全高，波長是相鄰波峰的高度差」不成立；波峰是橫波最高點、波谷是最低點；振幅由平衡位置量到波峰，波長是沿傳播方向相鄰同相位點的距離。"
+      "isCorrect": true,
+      "reason": "同一粒子的 y 隨時間改變，而其平衡水平位置可不變。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「週期越長表示每秒振動次數越多，所以頻率和週期成正比」不成立；週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T。"
+      "reason": "平衡位置是固定中心，不移到波谷。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「波速為 f/λ＝6.25 m/s，因為頻率應除以波長」不成立；頻率 5.0 Hz、波長 0.80 m 的波速為 v＝fλ＝4.0 m/s；計算前要統一單位。"
+      "reason": "波峰時瞬時速度可為零，但隨後仍會運動。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "主張評估",
     "證據評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比",
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長"
+    "P 隨波前進四分之一波長",
+    "P 的平衡位置移到波谷",
+    "P 在波峰時已停止振動"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

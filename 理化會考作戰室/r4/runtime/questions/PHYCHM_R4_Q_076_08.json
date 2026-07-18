@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "報告整理粒子重排資料，哪項敘述合理？",
+  "stem": "只確認產生『可燃氣體』，文字式產物能直接寫氫氣嗎？",
   "options": [
-    "箭頭右側是實驗前放入的反應物，左側是實驗後才形成的物質",
-    "實驗者預期會反應就是足夠證據，無需記錄前後性質",
-    "只要容器摸起來冷就必是放熱，摸起來熱就必是吸熱",
-    "不把觀察現象當成物質名稱"
+    "能，氣泡必是氫",
+    "不能，還需更具體身分檢驗或題目明示",
+    "能，所有可燃氣體都是氫",
+    "不能，因氫不可燃"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「箭頭右側是實驗前放入的反應物，左側是實驗後才形成的物質」不成立；文字反應式中箭頭左側是反應物，右側是生成物；例如碳＋氧氣→二氧化碳。"
+      "reason": "氣泡來源多種。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「實驗者預期會反應就是足夠證據，無需記錄前後性質」不成立；要判斷反應可能發生，應記錄操作前後現象，排除物理原因，再用產物性質或對照試驗支持。"
+      "isCorrect": true,
+      "reason": "避免超出證據。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只要容器摸起來冷就必是放熱，摸起來熱就必是吸熱」不成立；放熱反應將能量傳向周遭，吸熱反應由周遭吸收能量；應用溫度資料與能量流向判斷。"
+      "reason": "甲烷等也可燃。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「「碳與氧氣反應生成二氧化碳」應保留反應物、生成物和方向，不把觀察現象當成物質名稱」。"
+      "isCorrect": false,
+      "reason": "氫可燃。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "命名門檻"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "箭頭右側是實驗前放入的反應物，左側是實驗後才形成的物質",
-    "實驗者預期會反應就是足夠證據，無需記錄前後性質",
-    "只要容器摸起來冷就必是放熱，摸起來熱就必是吸熱"
+    "能，氣泡必是氫",
+    "能，所有可燃氣體都是氫",
+    "不能，因氫不可燃"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-2",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

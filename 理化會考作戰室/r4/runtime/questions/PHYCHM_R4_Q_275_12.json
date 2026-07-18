@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估延長線過載報告時，哪項說明正確？",
+  "stem": "紀錄乙時，額定電壓是110 V，額定功率是1000 W，供電為220 V。驗證供電前須保留哪項操作條件？",
   "options": [
-    "電功率為 V/I＝60 W，因為電壓應除以電流",
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間",
-    "額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W",
-    "電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道"
+    "主張額定功率是電器所能儲存的電能總量",
+    "解題時將額定 110 V、550 W 解讀成電器任何供電下都固定消耗 550 W",
+    "主張接上高於額定的電壓只會使電器更省電，不影響安全",
+    "不能假設任意電壓下功率與安全都不變"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「電功率為 V/I＝60 W，因為電壓應除以電流」不成立；電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W。"
+      "reason": "誤以為額定功率是電器所能儲存的電能總量，結果會錯判供電。額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W，不可任意接更高電壓；額定電壓未列入讀取電器額定電壓與功率標示時，供電的額定功率大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「1000 W 電器使用 2 h 消耗 500 kWh，因為…」不成立；1000 W 電器使用 2 h 消耗 2 kWh；電能等於功率乘以使用時間。"
+      "reason": "解題時錯將額定 110 V、550 W 解讀成電器任何供電下都固定消耗 550 W，結果會錯判供電。額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W，不可任意接更高電壓；照原做法會把供電算錯或判反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W，不可任意接更高電壓」。"
+      "isCorrect": false,
+      "reason": "誤以為接上高於額定的電壓只會使電器更省電，不影響安全。額定功率描述額定電壓下的工作狀態；供電差異若未通過讀取電器額定電壓與功率標示對額定電壓的控制，就不能只歸給額定功率。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道」不成立；基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算。"
+      "isCorrect": true,
+      "reason": "不能假設任意電壓下功率與安全都不變。丁列的額定電壓為USB 5 V，額定功率為10 W；甲列的額定電壓為110 V，額定功率為550 W。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電功率為 V/I＝60 W，因為電壓應除以電流",
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間",
-    "電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道"
+    "主張額定功率是電器所能儲存的電能總量",
+    "解題時將額定 110 V、550 W 解讀成電器任何供電下都固定消耗 550 W",
+    "主張接上高於額定的電壓只會使電器更省電，不影響安全"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

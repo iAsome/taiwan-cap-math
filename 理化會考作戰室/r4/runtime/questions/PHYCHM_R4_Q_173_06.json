@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解可聽聲超聲波與人耳限制，哪項修正合理？",
+  "stem": "蝙蝠使用人耳難以聽見的高頻聲波定位。這說明什麼？",
   "options": [
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "人耳可聽頻率有範圍",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射"
+    "超聲波只存在於真空",
+    "不同生物的可聽頻率範圍可不同",
+    "高頻聲波不會反射",
+    "所有動物都只能聽到 500 Hz"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「距離為 340×0.40＝136 m，因為回聲時間只包含單程」不成立；回聲測距的聲波經往返路程；若聲速 340 m/s、往返 0.40 s，距離為 68 m。"
+      "reason": "聲波定位需介質。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險」不成立；噪音風險同時與聲音強度級和暴露時間有關；較大聲音的安全暴露時間應更短。"
+      "isCorrect": true,
+      "reason": "對人屬超聲的頻率仍可被其他動物發射或感受。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射」。"
+      "isCorrect": false,
+      "reason": "回聲定位正利用反射。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射」不成立；人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射。"
+      "reason": "不同物種的感覺器官範圍不同。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射"
+    "超聲波只存在於真空",
+    "高頻聲波不會反射",
+    "所有動物都只能聽到 500 Hz"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

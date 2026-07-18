@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解電壓電流比值求電阻，哪項修正合理？",
+  "stem": "丙條件下，先知電壓9.0 V和電流0.75 A，再看V/I12 Ω。重做後要先驗證哪個量測條件？",
   "options": [
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換",
-    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過",
-    "某元件兩端 6.0 V、通過 0.50 A 時",
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少"
+    "把元件溫度或材料特性改變時仍把每組 V/I 當成同一固定電阻",
+    "把 6.0÷0.50 計算成 3 Ω，並漏掉正確處理除法",
+    "只有符合近似歐姆行為且溫度等條件受控時，才能把多組 V/I 視為同一固定電阻",
+    "主張電壓變大時所有元件的電阻一定同比變大"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「電流、電壓與電阻是同一物理量的三個名稱，單位也可互換」不成立；電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。"
+      "reason": "解題時誤把元件溫度或材料特性改變時仍把每組 V/I 當成同一固定電阻，結果會錯判V/I。只有符合近似歐姆行為且溫度等條件受控時，才能把多組 V/I 視為同一固定電阻；V/I差異若未通過使用電壓電流比值求電阻對電壓的控制，就不能只歸給電流。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過」不成立；安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性。"
+      "reason": "把 6.0÷0.50 計算成 3 Ω，卻未正確處理除法。甲乙丙的 V/I 固定為 12 Ω；電流的數值若未依電壓核對，會使V/I無法通過使用電壓電流比值求電阻檢查。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω」。"
+      "reason": "只有符合近似歐姆行為且溫度等條件受控時，才能把多組 V/I 視為同一固定電阻。乙列的電壓為6.0 V，電流為0.50 A；丙列的電壓為9.0 V，電流為0.75 A。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少」不成立；串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和。"
+      "reason": "誤以為電壓變大時所有元件的電阻一定同比變大。某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω；電壓未列入使用電壓電流比值求電阻時，V/I的電流大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換",
-    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過",
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少"
+    "把元件溫度或材料特性改變時仍把每組 V/I 當成同一固定電阻",
+    "把 6.0÷0.50 計算成 3 Ω，並漏掉正確處理除法",
+    "主張電壓變大時所有元件的電阻一定同比變大"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

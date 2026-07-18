@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查搬運重物紀錄，哪項判讀正確？",
+  "stem": "誤以為有摩擦時能量會消失，卻未追蹤轉成的內能與聲能。用分析動能、位能及其他形式間的能量轉換檢查這個做法，內能與聲能應如何重判？",
   "options": [
-    "物體下落時重力位能可轉成動能；有摩擦時，部分機械能轉成內能與聲能",
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J",
-    "動能只由物體所在高度決定，質量與速度都不影響"
+    "主張物體下坡時位能與動能都必須同時減少，才符合能量守恆",
+    "有摩擦時，部分機械能轉成內能與聲能",
+    "主張有摩擦時能量會消失",
+    "解題時將機械能減少直接說成總能量不守恆，未先界定包含哪些能量形式"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體下落時重力位能可轉成動能；有摩擦時，部分機械能轉成內能與聲能」。"
+      "isCorrect": false,
+      "reason": "誤以為物體下坡時位能與動能都必須同時減少，才符合能量守恆。物體下落時重力位能可轉成動能；重力位能未列入分析動能、位能及其他形式間的能量轉換時，內能與聲能的動能大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關」不成立；力對物體作功要有物體沿力的分量方向發生位移；用力提住靜止物體時對物體作功為零。"
+      "isCorrect": true,
+      "reason": "有摩擦時，部分機械能轉成內能與聲能。總量列的重力位能為—，動能為—；坡頂列的重力位能為120 J，動能為0 J。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「功是力除以位移，所以 20 N 推 3 m 作功為 6.6…」不成立；恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J。"
+      "reason": "誤以為有摩擦時能量會消失，卻未追蹤轉成的內能與聲能。物體下落時重力位能可轉成動能；照原做法會把內能與聲能算錯或判反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「動能只由物體所在高度決定，質量與速度都不影響」不成立；動能與質量成正比、與速度平方成正比；同質量者速度加倍，動能變為四倍。"
+      "reason": "解題時錯將機械能減少直接說成總能量不守恆，未先界定包含哪些能量形式。若只把動能與位能稱為機械能，它會因摩擦而減少，但包含內能與聲能的總能量不消失；內能與聲能差異若未通過分析動能、位能及其他形式間的能量轉換對重力位能的控制，就不能只歸給動能。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀",
+    "條件判斷",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J",
-    "動能只由物體所在高度決定，質量與速度都不影響"
+    "主張物體下坡時位能與動能都必須同時減少，才符合能量守恆",
+    "主張有摩擦時能量會消失",
+    "解題時將機械能減少直接說成總能量不守恆，未先界定包含哪些能量形式"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

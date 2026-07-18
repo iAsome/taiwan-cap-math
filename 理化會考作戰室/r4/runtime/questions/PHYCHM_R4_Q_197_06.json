@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解路程與位移，哪項修正合理？",
+  "stem": "甲走過的路程為 30 m，位移大小為 10 m。此資料最能說明什麼？",
   "options": [
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理",
-    "路程與位移永遠大小相等，往返原點的路程也是零",
-    "位移是起點到終點的有向改變",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向"
+    "甲一定全程直線同向",
+    "甲一定回到起點",
+    "甲的路線中可能曾改變方向",
+    "甲的路程計算為負值"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「運動資料只要代入公式就不必作量級檢查，步行 500 m/s…」不成立；步行速率通常約數 m/s；若算得 500 m/s，應檢查距離、時間單位或小數點。"
+      "reason": "甲一定全程直線同向不符合題目資料。路程大於位移大小，表示實際路徑不是單純直線同向，可能折返或繞行。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「路程與位移永遠大小相等，往返原點的路程也是零」不成立；路程是實際路徑總長，位移是起點到終點的有向改變；往返原點時路程大於零但位移為零。"
+      "reason": "甲一定回到起點不符合題目資料。路程大於位移大小，表示實際路徑不是單純直線同向，可能折返或繞行。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「路程是實際路徑總長，位移是起點到終點的有向改變；往返原點時路程大於零但位移為零」。"
+      "reason": "路程大於位移大小，表示實際路徑不是單純直線同向，可能折返或繞行。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只給一個數字「200 m」就能唯一決定物體位置，不需參考點…」不成立；物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整。"
+      "reason": "甲的路程計算為負值不符合題目資料。路程大於位移大小，表示實際路徑不是單純直線同向，可能折返或繞行。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理",
-    "路程與位移永遠大小相等，往返原點的路程也是零",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向"
+    "甲一定全程直線同向",
+    "甲一定回到起點",
+    "甲的路程計算為負值"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u16",
+  "batch": "017-u16-complete",
+  "skills": ["s017"],
+  "mc": [
+    {
+      "questionId": "u16-s017-v001",
+      "expectedContentSha256": "50ddac895882a48decbbf91e8505660508dde2f4df2b6a681ac4fd86ed69909d",
+      "set": {"explanation": "高線是從三角形一個頂點到其對邊所在直線的垂直線段。A是頂點，H在BC所在直線上且AH⊥BC，因此AH是對BC的高。"}
+    },
+    {
+      "questionId": "u16-s017-v002",
+      "expectedContentSha256": "14fc82b0e087d867dcdbf8e8b31ac47ac0fdc1148443e3e41f8438f933e78789",
+      "set": {"explanation": "三角形有三個頂點，每個頂點都能向其唯一的對邊所在直線作一條垂線，所以任一非退化三角形共有3條高。"}
+    },
+    {
+      "questionId": "u16-s017-v003",
+      "expectedContentSha256": "2273586319dc0fb0575fdb709712a6b2e6eb98992982b09b54af7e6f2d5a3b47",
+      "set": {"explanation": "∠C=90°表示AC⊥BC。以BC為底時，AC本身是從A到BC的高；以AC為底時，BC本身是從B到AC的高，所以兩股都是高。"}
+    },
+    {
+      "questionId": "u16-s017-v004",
+      "expectedContentSha256": "cdd52f06044d4d7d264deaf5fe9a00fa7b0bfb638df91b872c9df25cf22006ba",
+      "set": {"explanation": "底12 cm與高7 cm互相對應，三角形面積為12×7÷2=42 cm²。84 cm²是漏除以2所得。"}
+    },
+    {
+      "questionId": "u16-s017-v005",
+      "expectedContentSha256": "272f7d89112afe40bc06f4f6b0ffd7eae7b056331aaae065da3db662903e92e9",
+      "set": {"explanation": "設對應高為h cm，由54=9h÷2得9h=108，所以h=12。代回9×12÷2=54 cm²，面積與單位都吻合。"}
+    },
+    {
+      "questionId": "u16-s017-v006",
+      "expectedContentSha256": "a0e6d04eb1e1871a4c4b7e2325ae36d4678d7740458c25d2fd4b5bcfa41ebed3",
+      "set": {"explanation": "鈍角三角形從兩個銳角頂點向各自對邊所在直線作高時，垂足落在對邊的延長線上。高的定義要求垂足在線上，不要求在線段內。"}
+    },
+    {
+      "questionId": "u16-s017-v007",
+      "expectedContentSha256": "9b866ecad63b2de9ac03cd15fd9074e1ff6c7aa31982f379ce36ac83c7786df1",
+      "set": {"explanation": "D是BC中點，所以BD=DC=7.5 cm。△ABD與△ACD對直線BC的高同為8 cm，等底共高使兩面積都為7.5×8÷2=30 cm²，面積差為0。"}
+    },
+    {
+      "questionId": "u16-s017-v008",
+      "expectedContentSha256": "906a46da40a199c0f326da343337b92f45ce439c59bf41fbc29a3f8dd32402a0",
+      "set": {"explanation": "同一三角形面積S固定，以底b計算時高h=2S÷b，因此底與對應高反向排序。6<8<10，所以以6為底的高>以8為底的高>以10為底的高。"}
+    },
+    {
+      "questionId": "u16-s017-v009",
+      "expectedContentSha256": "0a45b03611100a2fef62392764b13657bf315b8041bc5590ee25eacdd64ff0e6",
+      "set": {"explanation": "由面積36 cm²得2S=72。a=72÷9=8 cm，b=72÷6=12 cm，所以a:b=8:12=2:3；底長與其對應高成反比。"}
+    },
+    {
+      "questionId": "u16-s017-v010",
+      "expectedContentSha256": "c63e9014a1ca23a992b82fdc0e5e4d63d4abd85ee68ff58d4d585575d46d199b",
+      "set": {"explanation": "題目選地面3.6 m那一段作底，對應高必須與地面垂直。牆面與地面垂直，所以牆上的4.8 m線段就是高；6.0 m是斜邊長。"}
+    },
+    {
+      "questionId": "u16-s017-v011",
+      "expectedContentSha256": "f42800676a5cb6177b76174793bb1758e4096f9db0cf71358f0387cb41a874f4",
+      "set": {"explanation": "設垂直距離為h，由1.35=1.8h÷2得h=2×1.35÷1.8=2.7÷1.8=1.5 m。代回可得1.8×1.5÷2=1.35 m²。"}
+    },
+    {
+      "questionId": "u16-s017-v012",
+      "expectedContentSha256": "cb2d80ed34bc647df079268aff9e737453619b8fe8e792228dddfd57f07367f7",
+      "set": {"explanation": "甲地面積為20×13÷2=130 m²，乙地面積為26×10÷2=130 m²。雖然兩組底、高各不相同，底高乘積都為260，所以面積相等。"}
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u16-s017-cr001",
+      "expectedContentSha256": "604b00d60270e79782c6987202c721cdb0335c433665f9adf8d45a58f0ec84b5",
+      "set": {
+        "fullCreditSolution": [
+          "設對應高為h公尺，由96=16h÷2得h=2×96÷16=12公尺。",
+          "高是頂點到該底邊所在直線的垂直距離；即使垂足在底邊延長線上，這個非負距離仍可代入面積公式。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s017-cr002",
+      "expectedContentSha256": "cd6134de5d73c9fe2457450fa45e0349b79dde186b6e45450dffe552eb2c9d7d",
+      "set": {
+        "fullCreditSolution": [
+          "同一三角形面積相同，所以a×9÷2=b×12÷2，得9a=12b，化簡為a:b=4:3。",
+          "設a=4k、b=3k，由a+b=28得7k=28、k=4，因此a=16 cm、b=12 cm。",
+          "面積為16×9÷2=72 cm²；用12×12÷2也得到72 cm²。"
+        ]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u16-s017-lecture-r1",
+      "expectedContentSha256": "d88e572f9a80ee05129a1b8ee5c1575b331dc9dcbc4bdeaee8f4cab5b71d2a1e",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "在△PQR中，S位於QR所在直線且PS⊥QR。判斷PS的名稱。",
+            "solutionSteps": [
+              "P是三角形頂點，QR是P的對邊。",
+              "S在QR所在直線上，且PS與該直線垂直。",
+              "線段PS符合頂點到對邊所在直線的垂直條件。"
+            ],
+            "answer": "PS是△PQR對QR的高。",
+            "why": "垂足S可以在線段QR內或其延長線上；高的關鍵是從對面頂點P作到整條QR直線的垂線段。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "鈍角三角形的某條高落在圖形外，是否仍可用來計算面積？",
+            "solutionSteps": [
+              "延長所選底邊，使頂點的垂線能與底邊所在直線相交。",
+              "把頂點到該直線的垂直距離作為正高度h。",
+              "以原底邊長b與h代入bh÷2。"
+            ],
+            "answer": "可以；外部垂足不影響底乘高除以2。",
+            "why": "面積公式使用的是頂點到對邊所在直線的距離，不要求垂足位於有限線段內；延長線只協助標出同一底線。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "三角形底為15公分，對應高為8公分，求面積。",
+            "solutionSteps": [
+              "確認15公分的邊與8公分的高互相垂直且相互對應。",
+              "計算15×8=120。",
+              "三角形面積為120÷2=60平方公分。"
+            ],
+            "answer": "面積為60平方公分。",
+            "why": "底與高必須成對選取；乘積給同底同高平行四邊形面積，三角形恰為其一半。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "三角形面積84平方公分，以14公分的邊為底，求對應高。",
+            "solutionSteps": [
+              "設高為h，列84=14h÷2。",
+              "兩邊乘2得168=14h。",
+              "除以14得h=12公分。"
+            ],
+            "answer": "對應高為12公分。",
+            "why": "反求高時要用h=2A÷b，不能只做面積除以底；代回14×12÷2可恢復84。"
+          },
+          {
+            "exampleId": "L5",
+            "prompt": "直角三角形兩股為9公分與12公分。分別以兩股為底時，對應高為何？",
+            "solutionSteps": [
+              "兩股互相垂直。",
+              "以9公分股為底時，12公分股是對應高。",
+              "以12公分股為底時，9公分股是對應高。"
+            ],
+            "answer": "兩組底高分別為(9,12)與(12,9)。",
+            "why": "直角三角形的兩股可互換底與高，兩次都得到面積9×12÷2=54平方公分；斜邊不是這兩組的高。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

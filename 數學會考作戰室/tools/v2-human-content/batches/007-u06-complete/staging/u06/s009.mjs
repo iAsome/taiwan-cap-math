@@ -148,13 +148,13 @@ export default {
       },
       {
         "exampleId": "L2",
-        "prompt": "4 杯果汁需糖 60 克，做 10 杯需多少糖？",
+        "prompt": "4 杯果汁需糖 60 公克，做 10 杯需多少糖？",
         "solutionSteps": [
           "杯數放大 10/4=2.5 倍。",
-          "糖量 60×2.5=150 克。"
+          "糖量 60×2.5=150 公克。"
         ],
-        "answer": "150 克。",
-        "why": "配方不變表示杯數與糖量使用同一放大倍率。十杯是四杯的二點五倍，糖量也乘二點五；若只增加六十克，就無法維持每杯十五克的固定配方。"
+        "answer": "150 公克。",
+        "why": "配方不變表示杯數與糖量使用同一放大倍率。十杯是四杯的二點五倍，糖量也乘二點五；若只增加六十公克，就無法維持每杯十五公克的固定配方。"
       },
       {
         "exampleId": "L3",
@@ -261,7 +261,7 @@ export default {
       "reviewVersion": "human-lecture-review-u06-r1.0",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "c908456562f067f77a4b9d154dc628b05d7185e5d4814291a86f838c524f8eeb"
+    "contentSha256": "349546850b02eada58b1d92407317edd2493fbbd1d22c0b5c562e7ae505c1a85"
   },
   "mcQuestions": [
     {
@@ -941,7 +941,7 @@ export default {
         "乙，16元"
       ],
       "answerIndex": 1,
-      "independentSolution": "乙每100克少1元。",
+      "independentSolution": "乙每100公克少1元。",
       "mainExplanation": "包裝重量不同，必須換成相同的一百公克基準。甲每一百公克是九十六除以六，等於十六元；乙每一百公克是百三十五除以九，等於十五元，因此乙每一百公克便宜一元。",
       "explanation": "包裝重量不同，必須換成相同的一百公克基準。甲每一百公克是九十六除以六，等於十六元；乙每一百公克是百三十五除以九，等於十五元，因此乙每一百公克便宜一元。",
       "steps": [
@@ -958,7 +958,7 @@ export default {
         {
           "choice": "乙，15元",
           "truth": true,
-          "reason": "甲每100克16元；乙每100克15元。"
+          "reason": "甲每100公克16元；乙每100公克15元。"
         },
         {
           "choice": "甲，15元",
@@ -992,7 +992,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "a6f7caa4394fd30caefc29f62503181335b9de0497aa702c063b8ae031b99b10"
+      "contentSha256": "0b5a844612ee09359b01bd83085bb292f84a0b7c740586b3ba976f5c37b277c9"
     },
     {
       "questionId": "u06-s009-v011",
@@ -1632,11 +1632,11 @@ export default {
       "questionId": "u06-s009-v010",
       "unitId": "u06",
       "skillId": "ratio-word-problem",
-      "contentSha256": "a6f7caa4394fd30caefc29f62503181335b9de0497aa702c063b8ae031b99b10",
+      "contentSha256": "0b5a844612ee09359b01bd83085bb292f84a0b7c740586b3ba976f5c37b277c9",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "independentSolution": "乙每100克少1元。",
+      "independentSolution": "乙每100公克少1元。",
       "derivedAnswer": "乙，15元",
       "storedAnswer": "乙，15元",
       "answerMatch": true,
@@ -1649,7 +1649,7 @@ export default {
       ],
       "optionEvidence": [
         "甲16元計算對但不是較便宜。",
-        "甲每100克16元；乙每100克15元。",
+        "甲每100公克16元；乙每100公克15元。",
         "甲不是15元。",
         "乙單價不是16元。"
       ],
@@ -1661,7 +1661,7 @@ export default {
       },
       "difficultyReason": "購物素養。",
       "literacyNecessity": "包裝大小不同，情境要求換成同分母才能公平比較。",
-      "reviewerNote": "獨立重算：乙每100克少1元。 正確選項為「乙，15元」。逐項檢查後，唯一為真的理由是「甲每100克16元；乙每100克15元。」；其餘三項分別因「甲16元計算對但不是較便宜。」、「甲不是15元。」、「乙單價不是16元。」而排除。邊界與語意再檢查：比較基準一致。",
+      "reviewerNote": "獨立重算：乙每100公克少1元。 正確選項為「乙，15元」。逐項檢查後，唯一為真的理由是「甲每100公克16元；乙每100公克15元。」；其餘三項分別因「甲16元計算對但不是較便宜。」、「甲不是15元。」、「乙單價不是16元。」而排除。邊界與語意再檢查：比較基準一致。",
       "reviewerDecision": "pass"
     },
     {

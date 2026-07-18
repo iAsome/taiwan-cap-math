@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對水平推箱結果，哪項說法正確？",
+  "stem": "裝滿水的杯子向右突然加速，水面相對杯子較高的一側通常是哪側？",
   "options": [
-    "慣性是物體維持原運動狀態的性質；車突然剎車時乘客上半身傾向前就是慣性現象",
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關",
-    "質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少",
-    "作用力與反作用力同時作用在同一物體，因此永遠互相抵銷"
+    "右側較高",
+    "前後完全垂直",
+    "水面不可能傾斜",
+    "左側較高"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「慣性是物體維持原運動狀態的性質；車突然剎車時乘客上半身傾向前就是慣性現象」。"
+      "isCorrect": false,
+      "reason": "右側較高與受力條件不符。水因慣性較慢向右加速，相對杯子向左偏。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「加速度方向永遠和物體當下運動方向相同，與合力方向無關」不成立；物體的加速度方向與合力相同；質量相同時合力較大，或合力相同時質量較小，加速度較大。"
+      "reason": "前後完全垂直與受力條件不符。水因慣性較慢向右加速，相對杯子向左偏。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少」不成立；質量是物體慣性的量度，重量是物體所受重力，在不同星體可改變；單位分別常用 kg 與 N。"
+      "reason": "水面不可能傾斜與受力條件不符。水因慣性較慢向右加速，相對杯子向左偏。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「作用力與反作用力同時作用在同一物體，因此永遠互相抵銷」不成立；人推牆的力與牆推人的力是作用力反作用力，大小相等、方向相反，但作用在不同物體。"
+      "isCorrect": true,
+      "reason": "水因慣性較慢向右加速，相對杯子向左偏。"
     }
   ],
   "difficulty": "advanced",
@@ -50,16 +50,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關",
-    "質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少",
-    "作用力與反作用力同時作用在同一物體，因此永遠互相抵銷"
+    "右側較高",
+    "前後完全垂直",
+    "水面不可能傾斜"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

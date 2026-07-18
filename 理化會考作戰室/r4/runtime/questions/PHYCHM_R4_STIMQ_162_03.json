@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "PHYCHM_R4_STIM_162",
-  "stem": "彈簧縱波題組中，哪項說明符合紀錄？",
+  "stem": "甲的頻率是丙的幾倍？",
   "options": [
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "兩者關係為 f＝1/T",
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長",
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關"
+    "2 倍",
+    "4 倍",
+    "3 倍",
+    "5 倍"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「振幅是波峰到波谷的全高，波長是相鄰波峰的高度差」不成立；波峰是橫波最高點、波谷是最低點；振幅由平衡位置量到波峰，波長是沿傳播方向相鄰同相位點的距離。"
+      "reason": "甲 2.0 Hz 除以丙 0.50 Hz 不是 2。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T」。"
+      "reason": "f甲/f丙＝(10/5.0)/(6/12.0)＝2.0/0.50＝4。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「波速為 f/λ＝6.25 m/s，因為頻率應除以波長」不成立；頻率 5.0 Hz、波長 0.80 m 的波速為 v＝fλ＝4.0 m/s；計算前要統一單位。"
+      "reason": "只比較次數差會得到錯誤比例。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關」不成立；橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行。"
+      "reason": "2.0/0.50＝4，不是 5。"
     }
   ],
   "difficulty": "transfer",
@@ -47,14 +47,14 @@
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長",
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關"
+    "2 倍",
+    "3 倍",
+    "5 倍"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -62,20 +62,6 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_002"
   ]

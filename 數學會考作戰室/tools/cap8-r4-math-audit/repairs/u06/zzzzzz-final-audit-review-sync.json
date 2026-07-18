@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u06",
+  "batch": "007-u06-complete",
+  "skills": ["s004", "s005", "s009", "s011", "s012"],
+  "mc": [
+    {
+      "questionId": "u06-s004-v004",
+      "expectedContentSha256": "a085de3c2c095e378acb493f63d2435ffa082b7f3776668b45e56a9961bad933",
+      "reviewSet": {
+        "independentSolution": "由a/b=c/d且四項非零，兩邊同取倒數得b/a=d/c，因此b:a=d:c必成立。",
+        "reviewerNote": "獨立證明：由a/b=c/d且四項非零，兩邊同取倒數得b/a=d/c，因此b:a=d:c必成立。其餘三式都不是原比例的一般等價變形；以2:3=4:6可分別排除和、差與錯誤重排，故倒比式是唯一必然成立的選項。"
+      }
+    },
+    {
+      "questionId": "u06-s005-v003",
+      "expectedContentSha256": "3083c252f8cda9a0ddd56d38ec2a43b4699b29b8f7286d16838c6a862a4d6c90",
+      "reviewSet": {
+        "independentSolution": "第二組依序有6÷2=3、15÷5=3、24÷8=3，所以比值固定為3，可寫成y=3x。",
+        "reviewerNote": "獨立重算：第二組依序有6÷2=3、15÷5=3、24÷8=3，所以比值固定為3，可寫成y=3x。第一組的14÷5、第三組的各組比值、第四組的28÷9均破壞固定比值，因此第二組資料是唯一符合正比定義的選項。"
+      }
+    },
+    {
+      "questionId": "u06-s009-v010",
+      "expectedContentSha256": "0b5a844612ee09359b01bd83085bb292f84a0b7c740586b3ba976f5c37b277c9",
+      "reviewReplaceText": {
+        "100克": "100公克"
+      }
+    },
+    {
+      "questionId": "u06-s011-v006",
+      "expectedContentSha256": "c1028764c31141711da9f8540c8d432937d29144a858174ede51d4c76396560b",
+      "reviewSet": {
+        "independentSolution": "實物面積為75×40²=120000平方公分，換算為12平方公尺。",
+        "reviewerNote": "獨立重算：實物面積為75×40²=120000平方公分，換算為12平方公尺。比例尺的40是線性倍率，面積必須乘40²；平方公分再除以10000換成平方公尺，四個選項中只有12平方公尺同時符合平方倍率與單位換算。"
+      }
+    },
+    {
+      "questionId": "u06-s012-v001",
+      "expectedContentSha256": "581458b09312815a686d0797b43d8e612cf1ed5ddeaa7b5cee176fdff87f800e",
+      "reviewReplaceText": {
+        "100克": "100公克"
+      }
+    },
+    {
+      "questionId": "u06-s012-v006",
+      "expectedContentSha256": "edbd9236a917514b0c8c5c7c2654336e86dbe50daf5a1f206c3c0c3d3da7583a",
+      "reviewSet": {
+        "independentSolution": "甲方案費用為200+10×15=350元，乙方案為30×25=750元，所以甲便宜400元。",
+        "reviewerNote": "獨立重算：甲方案費用為200+10×15=350元，乙方案為30×25=750元，所以甲便宜400元。甲的20GB已包含在月費中，只有超出的10GB另計；逐項比較後，方向、金額與價差都只符合甲便宜400元。"
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [],
+  "drawingSpecs": [],
+  "textFiles": []
+}

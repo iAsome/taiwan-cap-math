@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理電表接法資料後，哪項說明正確？",
+  "stem": "表中電流的單位為A，對應物理意義每秒通過截面的電荷量與數值0.50。若從已知量重建單位，第一條科學關係為何？",
   "options": [
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少",
-    "電流表示電荷流動率",
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流"
+    "解題時將 6.0 V 記成 6.0 A，卻仍稱為元件兩端的電壓",
+    "主張電阻是電荷每秒流過多少，混淆電阻與電流的定義",
+    "電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙",
+    "解題時將電流、電壓與電阻視為同一物理量，只因它們都和電路有關"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少」不成立；串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和。"
+      "reason": "解題時錯將 6.0 V 記成 6.0 A，卻仍稱為元件兩端的電壓，結果會錯判單位。前三列物理意義與單位相符；數值的數值若未依物理意義核對，會使單位無法通過區分電流電壓與電阻概念檢查。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙」。"
+      "isCorrect": false,
+      "reason": "誤以為電阻是電荷每秒流過多少，混淆電阻與電流的定義。電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙；物理意義未列入區分電流電壓與電阻概念時，單位的數值大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆」不成立；並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。"
+      "isCorrect": true,
+      "reason": "電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。電流列的物理意義為每秒通過截面的電荷量，數值為0.50；電壓列的物理意義為每單位電荷能量差，數值為6.0。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「短路和斷路都只會使電流完全為零，不可能出現過大電流」不成立；斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險。"
+      "reason": "解題時錯將電流、電壓與電阻視為同一物理量，只因它們都和電路有關。電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙；照原做法會把單位算錯或判反。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "辨認",
+    "概念理解"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少",
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流"
+    "解題時將 6.0 V 記成 6.0 A，卻仍稱為元件兩端的電壓",
+    "主張電阻是電荷每秒流過多少，混淆電阻與電流的定義",
+    "解題時將電流、電壓與電阻視為同一物理量，只因它們都和電路有關"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

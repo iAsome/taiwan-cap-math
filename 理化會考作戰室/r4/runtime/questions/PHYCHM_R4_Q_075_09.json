@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對粒子重排結果，哪項說法正確？",
+  "stem": "反應溫度下降也可能由蒸發造成，如何排除？",
   "options": [
-    "兩物質一接觸就必然發生化學反應，不可能只是混合或溶解",
-    "只要容器摸起來冷就必是放熱，摸起來熱就必是吸熱",
-    "箭頭右側是實驗前放入的反應物，左側是實驗後才形成的物質",
-    "應用溫度資料與能量流向判斷"
+    "打開風扇加速蒸發",
+    "使用有蓋裝置並設不反應空白比較",
+    "忽略液體損失",
+    "只量一次末溫"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「兩物質一接觸就必然發生化學反應，不可能只是混合或溶解」不成立；溶解或單純混合可造成溫度、顏色或外觀變化；只有產物證據才能排除這些假線索。"
+      "reason": "增加混淆。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「只要容器摸起來冷就必是放熱，摸起來熱就必是吸熱」不成立；放熱反應將能量傳向周遭，吸熱反應由周遭吸收能量；應用溫度資料與能量流向判斷。"
+      "isCorrect": true,
+      "reason": "降低並量出蒸發背景。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「箭頭右側是實驗前放入的反應物，左側是實驗後才形成的物質」不成立；文字反應式中箭頭左側是反應物，右側是生成物；例如碳＋氧氣→二氧化碳。"
+      "reason": "會誤判。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「放熱反應將能量傳向周遭，吸熱反應由周遭吸收能量；應用溫度資料與能量流向判斷」。"
+      "isCorrect": false,
+      "reason": "缺曲線與對照。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "替代機制控制"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "兩物質一接觸就必然發生化學反應，不可能只是混合或溶解",
-    "只要容器摸起來冷就必是放熱，摸起來熱就必是吸熱",
-    "箭頭右側是實驗前放入的反應物，左側是實驗後才形成的物質"
+    "打開風扇加速蒸發",
+    "忽略液體損失",
+    "只量一次末溫"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-2",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

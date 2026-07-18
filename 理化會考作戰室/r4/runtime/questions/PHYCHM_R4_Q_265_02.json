@@ -10,70 +10,56 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "根據驗電器感應紀錄，哪項判讀合理？",
+  "stem": "0 s列含金屬設備電位+8 kV及接地狀態未接地；1 s列含+3 kV及接地。分析接地與生活靜電安全對接地狀態隨金屬設備電位變化的解釋為何？",
   "options": [
-    "物體帶負電是因大量質子從別的物體移入，電子位置不會改變",
-    "靜電感應必須先接觸摩擦，未接觸的導體內電荷不可能重新分布",
-    "在易燃環境更需防止靜電火花",
-    "接地線的功能是在物體上累積更多靜電，以增加火花能量"
+    "主張只要有接地線就能取代斷路、防爆與其他安全措施",
+    "看到設備電位由 +8 kV 降到接近 0，卻說靜電累積變得更嚴重",
+    "主張易燃環境的靜電火花與電位差無關，因此無須控制電荷累積",
+    "接地提供電荷移動路徑，使電位差快速下降並降低放電火花風險"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「物體帶負電是因大量質子從別的物體移入，電子位置不會改變」不成立；摩擦過程中主要是電子在物體間轉移，原子核內質子不會在一般摩擦中跑到另一物體。"
+      "reason": "誤以為只要有接地線就能取代斷路、防爆與其他安全措施。接地線需可靠連接且不能取代其他防爆措施；火花觀察差異若未通過分析接地與生活靜電安全對金屬設備電位的控制，就不能只歸給接地狀態。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「靜電感應必須先接觸摩擦，未接觸的導體內電荷不可能重新分布」不成立；帶電物靠近導體時可使導體內電荷重新分布，雖總電量可仍為零，近端與遠端電性分布不同。"
+      "reason": "一看到設備電位由 +8 kV 降到接近 0，卻說靜電累積變得更嚴重，結果會錯判火花觀察。接地提供電荷移動路徑，使電位差快速下降並降低放電火花風險；接地狀態的數值若未依金屬設備電位核對，會使火花觀察無法通過分析接地與生活靜電安全檢查。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「接地提供電荷與大地間移動的路徑，可減少靜電累積；在易燃環境更需防止靜電火花」。"
+      "isCorrect": false,
+      "reason": "誤以為易燃環境的靜電火花與電位差無關，因此無須控制電荷累積，結果會錯判火花觀察。接地提供電荷與大地間移動的路徑，可減少靜電累積；金屬設備電位未列入分析接地與生活靜電安全時，火花觀察的接地狀態大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「接地線的功能是在物體上累積更多靜電，以增加火花能量」不成立；接地提供電荷與大地間移動的路徑，可減少靜電累積；在易燃環境更需防止靜電火花。"
+      "isCorrect": true,
+      "reason": "接地提供電荷移動路徑，使電位差快速下降並降低放電火花風險。0 s列的金屬設備電位為+8 kV、接地狀態為未接地；1 s列的金屬設備電位為+3 kV、接地狀態為接地。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
+    "辨認",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體帶負電是因大量質子從別的物體移入，電子位置不會改變",
-    "靜電感應必須先接觸摩擦，未接觸的導體內電荷不可能重新分布",
-    "接地線的功能是在物體上累積更多靜電，以增加火花能量"
+    "主張只要有接地線就能取代斷路、防爆與其他安全措施",
+    "看到設備電位由 +8 kV 降到接近 0，卻說靜電累積變得更嚴重",
+    "主張易燃環境的靜電火花與電位差無關，因此無須控制電荷累積"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KC-4-1",
       "AUTH-NATURAL-LC-KC-4-2",
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

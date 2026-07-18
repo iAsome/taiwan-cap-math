@@ -16,51 +16,50 @@
     "AUTH-NATURAL-LP-PO-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組異常數據處理資料，哪項判讀仍合理？",
+  "stem": "預測『若增加光照，產氣可能增加，也可能無顯著差異』是否可接受？",
   "options": [
-    "只要一次實驗符合預測，就可宣稱所有情況都成立，不需說明限制",
-    "對照組應什麼都不做，包括不用相同容器、時間或量測方法",
-    "所有玻璃器材的測量精度與耐熱性都一樣，燒杯可代替任何量測工具",
-    "對照組接受除自變項外的相同處理"
+    "不可，不能提無差異",
+    "可，且不必量測",
+    "可，前提是明訂量測與判定標準",
+    "不可，預測只能寫成功"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要一次實驗符合預測，就可宣稱所有情況都成立，不需說明限制」不成立；實驗結論應限於已測條件，說明樣本數、量測精度、潛在干擾並提出只改一項的具體改善。"
+      "reason": "無差異是可能結果。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「對照組應什麼都不做，包括不用相同容器、時間或量測方法」不成立；對照組接受除自變項外的相同處理，可用來比較若沒有關鍵處理時的結果。"
+      "reason": "仍須量測。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「所有玻璃器材的測量精度與耐熱性都一樣，燒杯可代替任何量測工具」不成立；量取 25 mL 溶液適合用量筒而非燒杯；加熱需選可受熱器材並依藥品性質選熱源。"
+      "isCorrect": true,
+      "reason": "可列競爭結果並事先定義。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「對照組接受除自變項外的相同處理，可用來比較若沒有關鍵處理時的結果」。"
+      "isCorrect": false,
+      "reason": "科學預測可被否定。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "假設表述"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要一次實驗符合預測，就可宣稱所有情況都成立，不需說明限制",
-    "對照組應什麼都不做，包括不用相同容器、時間或量測方法",
-    "所有玻璃器材的測量精度與耐熱性都一樣，燒杯可代替任何量測工具"
+    "不可，不能提無差異",
+    "可，且不必量測",
+    "不可，預測只能寫成功"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段探究與實作學習表現; 臺灣國中教育會考自然科實驗設計、安全與資料判讀題型",
     "sourceRefs": [
       "AUTH-NATURAL-LP-AI-4-1",
       "AUTH-NATURAL-LP-AI-4-2",
@@ -73,19 +72,5 @@
       "AUTH-NATURAL-LP-PO-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

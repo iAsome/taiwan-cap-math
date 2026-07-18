@@ -10,70 +10,56 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "換成另一組條形磁鐵資料，哪項判讀仍合理？",
+  "stem": "甲的指南針北端為向東、指南針南端為向西；丙則是向西南、向東北。磁場方向依由指南針方向判斷磁場計算時，指南針南端方向建立在哪項原理？",
   "options": [
-    "北極在某一點所指的切線方向",
-    "安培右手定則中拇指指電子運動方向，四指則指導線的運動方向",
-    "撒鐵粉看到的線條證明磁力線是真實繩子，鐵粉只是黏在繩子上",
-    "指南針的南極所指方向才定義為磁場方向，北極方向不能提供資訊"
+    "把甲位置北端向東，卻把該點磁場記成向西",
+    "主張指南針只有在地球磁場中才會轉向，磁鐵附近不適用",
+    "小指南針靜止後，北極在某一點所指的切線方向，定義為該點磁場方向",
+    "拿指南針南端所指方向定義磁場方向，得到與標準相反的結果"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「小指南針靜止後，北極在某一點所指的切線方向，定義為該點磁場方向」。"
+      "isCorrect": false,
+      "reason": "解題時誤把甲位置北端向東，卻把該點磁場記成向西，結果會錯判磁場方向。指南針靜止後北端所指方向定義當地磁場方向；指南針南端的數值若未依指南針北端核對，會使磁場方向無法通過由指南針方向判斷磁場檢查。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「安培右手定則中拇指指電子運動方向，四指則指導線的運動方向」不成立；安培右手定則用拇指指傳統電流方向，其餘四指彎曲方向表示直導線環形磁場方向。"
+      "reason": "誤以為指南針只有在地球磁場中才會轉向，磁鐵附近不適用。小指南針靜止後，北極在某一點所指的切線方向，定義為該點磁場方向；指南針北端未列入由指南針方向判斷磁場時，磁場方向的指南針南端大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「撒鐵粉看到的線條證明磁力線是真實繩子，鐵粉只是黏在繩子上」不成立；磁場線是表示場方向與強弱的模型圖線，空間中並沒有可觸摸的實體線條。"
+      "isCorrect": true,
+      "reason": "小指南針靜止後，北極在某一點所指的切線方向，定義為該點磁場方向。丙列的指南針北端為向西南，指南針南端為向東北；丁列的指南針北端為未穩定，指南針南端為擺動。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「指南針的南極所指方向才定義為磁場方向，北極方向不能提供資訊」不成立；小指南針靜止後，北極在某一點所指的切線方向，定義為該點磁場方向。"
+      "reason": "拿指南針南端所指方向定義磁場方向，得到與標準相反的結果。小指南針靜止後，北極在某一點所指的切線方向，定義為該點磁場方向；照原做法會把磁場方向算錯或判反。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "安培右手定則中拇指指電子運動方向，四指則指導線的運動方向",
-    "撒鐵粉看到的線條證明磁力線是真實繩子，鐵粉只是黏在繩子上",
-    "指南針的南極所指方向才定義為磁場方向，北極方向不能提供資訊"
+    "把甲位置北端向東，卻把該點磁場記成向西",
+    "主張指南針只有在地球磁場中才會轉向，磁鐵附近不適用",
+    "拿指南針南端所指方向定義磁場方向，得到與標準相反的結果"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KC-4-3",
       "AUTH-NATURAL-LC-KC-4-4",
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

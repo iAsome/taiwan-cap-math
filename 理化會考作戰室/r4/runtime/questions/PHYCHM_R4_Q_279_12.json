@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估延長線過載報告時，哪項說明正確？",
+  "stem": "延長線超過額定仍串接條件下，先知安全否和節能否，再看理由過載發熱。驗證理由前須保留哪項操作條件？",
   "options": [
-    "只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關",
-    "電功率為 V/I＝60 W，因為電壓應除以電流",
-    "安全節能做法包括不超過延長線額定、保持線材完好乾燥、不用時關閉高功率電器並比較實際用電量",
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間"
+    "節能措施也不能犧牲必要的防護",
+    "主張拔插頭時拉扯電線比握住插頭本體更能保護線材",
+    "僅要電器功率低就宣稱安全，即使電線破損或環境潮濕",
+    "解題時將節能當成唯一目標"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關」不成立；安全節能做法包括不超過延長線額定、保持線材完好乾燥、不用時關閉高功率電器並比較實際用電量。"
+      "isCorrect": true,
+      "reason": "節能措施也不能犧牲必要的防護。潮濕處使用破損電線列的安全為否，節能為否；乾手拔插頭並握插頭本體列的安全為是，節能為中性。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「電功率為 V/I＝60 W，因為電壓應除以電流」不成立；電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W。"
+      "reason": "誤以為拔插頭時拉扯電線比握住插頭本體更能保護線材，結果會錯判理由。安全節能做法包括不超過延長線額定、保持線材完好乾燥、不用時關閉高功率電器並比較實際用電量；安全未列入規劃兼顧安全與節能的用電方式時，理由的節能大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「安全節能做法包括不超過延長線額定、保持線材完好乾燥、不用時關閉高功率電器並比較實際用電量」。"
+      "isCorrect": false,
+      "reason": "僅要電器功率低就宣稱安全，即使電線破損或環境潮濕。安全節能做法包括不超過延長線額定、保持線材完好乾燥、不用時關閉高功率電器並比較實際用電量；照原做法會把理由算錯或判反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「1000 W 電器使用 2 h 消耗 500 kWh，因為…」不成立；1000 W 電器使用 2 h 消耗 2 kWh；電能等於功率乘以使用時間。"
+      "reason": "解題時錯將節能當成唯一目標，忽略延長線額定與漏電防護。低功率不代表破損或潮濕環境安全；理由差異若未通過規劃兼顧安全與節能的用電方式對安全的控制，就不能只歸給節能。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關",
-    "電功率為 V/I＝60 W，因為電壓應除以電流",
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間"
+    "主張拔插頭時拉扯電線比握住插頭本體更能保護線材",
+    "僅要電器功率低就宣稱安全，即使電線破損或環境潮濕",
+    "解題時將節能當成唯一目標"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

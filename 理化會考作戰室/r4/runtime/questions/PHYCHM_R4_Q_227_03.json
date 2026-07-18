@@ -14,34 +14,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "整理車輛轉彎資料後，哪項說明正確？",
+  "stem": "汽車在平坦彎道轉彎，輪胎不打滑時，主要哪個水平力提供向心力？",
   "options": [
-    "物體沿圓周運動時必有一個向外的真實合力，向內力會使它離開圓軌道",
-    "圓周運動的速度方向沿切線",
-    "只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力",
-    "摩擦力在所有情境都必然與物體質心的當下運動方向相反"
+    "地面對輪胎的靜摩擦力",
+    "汽車重力",
+    "空氣浮力",
+    "引擎內部熱力"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「物體沿圓周運動時必有一個向外的真實合力，向內力會使它離開圓…」不成立；圓周運動的速度方向沿切線，使方向持續改變的合力指向圓心。"
+      "isCorrect": true,
+      "reason": "水平靜摩擦指向彎道圓心，使車改變方向。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「圓周運動的速度方向沿切線，使方向持續改變的合力指向圓心」。"
+      "isCorrect": false,
+      "reason": "汽車重力不成立。水平靜摩擦指向彎道圓心，使車改變方向。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力」不成立；靜摩擦力在最大值內隨滑動趨勢調整，以阻止接觸面相對滑動；動摩擦力則在已相對滑動時出現。"
+      "reason": "空氣浮力不成立。水平靜摩擦指向彎道圓心，使車改變方向。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「摩擦力在所有情境都必然與物體質心的當下運動方向相反」不成立；摩擦力方向用來阻礙接觸面間的相對運動或滑動趨勢，不一定和物體運動方向相反。"
+      "reason": "引擎內部熱力不成立。水平靜摩擦指向彎道圓心，使車改變方向。"
     }
   ],
   "difficulty": "foundation",
@@ -49,16 +49,16 @@
     "單位檢核",
     "資料判讀"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體沿圓周運動時必有一個向外的真實合力，向內力會使它離開圓軌道",
-    "只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力",
-    "摩擦力在所有情境都必然與物體質心的當下運動方向相反"
+    "汽車重力",
+    "空氣浮力",
+    "引擎內部熱力"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-10",
       "AUTH-NATURAL-LC-EB-4-11",
@@ -69,19 +69,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

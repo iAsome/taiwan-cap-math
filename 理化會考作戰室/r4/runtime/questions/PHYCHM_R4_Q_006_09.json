@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對天平歸零結果，哪項說法正確？",
+  "stem": "兩組資料平均相同，能否判定量測品質相同？",
   "options": [
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失",
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受",
-    "差異可用範圍或離散情形描述",
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可"
+    "不能，還要比較分散、校正與操作",
+    "能，平均相同就完全相同",
+    "能，只要筆數不同",
+    "不能，平均值一律無效"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要重複次數足夠多，未歸零造成的固定偏差就會自動消失」不成立；天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動。"
+      "isCorrect": true,
+      "reason": "這些證據共同影響品質。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受」不成立；成人桌子高度約 0.7 m；若記成 70 m，即使計算步驟完整，也應由量級發現單位或小數點錯誤。"
+      "reason": "平均忽略分散與偏差。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「量得 9.8、10.1、10.0 s 的平均約為 10.0 s，差異可用範圍或離散情形描述，不應偷刪不同值」。"
+      "isCorrect": false,
+      "reason": "筆數不同不會自動相同。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「三次不相同表示實驗失敗，只保留最接近預期的 10.0 s …」不成立；量得 9.8、10.1、10.0 s 的平均約為 10.0 s，差異可用範圍或離散情形描述，不…。"
+      "reason": "平均是有用但有限的摘要。"
     }
   ],
   "difficulty": "advanced",
@@ -48,16 +48,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失",
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受",
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可"
+    "能，平均相同就完全相同",
+    "能，只要筆數不同",
+    "不能，平均值一律無效"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

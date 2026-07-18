@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於金屬非金屬與類金屬的大致分布，哪項結論符合題給條件？",
+  "stem": "哪項最支持未知固體為金屬？",
   "options": [
-    "只要樣品有光澤就能定為金屬，其他性質和例外都不用考慮",
-    "只要記得「同族必完全相同」就已完成檢驗，無需任何數據",
-    "金屬大多分布於週期表左側與中央，非金屬多在右側，類金屬約在階梯狀分界附近",
-    "週期表中每一欄都必然只含金屬或只含非金屬，沒有概略分界"
+    "導電佳且可拉成線",
+    "常溫為氣體",
+    "不導電且一敲即碎",
+    "只因顏色深"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要樣品有光澤就能定為金屬，其他性質和例外都不用考慮」不成立；元素分類要綜合導電性、光澤、展性與化學反應等證據，單一外觀不足以概括所有元素。"
+      "isCorrect": true,
+      "reason": "導電與延展性是典型金屬性質。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要記得「同族必完全相同」就已完成檢驗，無需任何數據」不成立；要檢驗元素性質趨勢，應比較同條件量得的多個元素資料，並指出趨勢與例外。"
+      "reason": "多數金屬常溫為固體。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「金屬大多分布於週期表左側與中央，非金屬多在右側，類金屬約在階梯狀分界附近」。"
+      "isCorrect": false,
+      "reason": "較像非金屬固體。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「週期表中每一欄都必然只含金屬或只含非金屬，沒有概略分界」不成立；金屬大多分布於週期表左側與中央，非金屬多在右側，類金屬約在階梯狀分界附近。"
+      "reason": "顏色單項不足。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "證據分類"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要樣品有光澤就能定為金屬，其他性質和例外都不用考慮",
-    "只要記得「同族必完全相同」就已完成檢驗，無需任何數據",
-    "週期表中每一欄都必然只含金屬或只含非金屬，沒有概略分界"
+    "常溫為氣體",
+    "不導電且一敲即碎",
+    "只因顏色深"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AA-4-4",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

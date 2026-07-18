@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄討論上下表面壓力差解釋浮力，哪項敘述正確？",
+  "stem": "並列左表面與右表面，兩者深度是中心 0.35 m、中心 0.35 m，面積是0.010 m²、0.010 m²。依由上下表面壓力差解釋浮力完成深度與面積比較，應如何解釋？",
   "options": [
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關",
-    "浮力大小永遠等於物體自身重量，不論它沉沒、漂浮或被外力拉住",
-    "沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力",
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量"
+    "左右作用互相抵消",
+    "把浮力說成液體只推物體上表面，並漏掉合成上下表面的壓力作用",
+    "僅列下表面向上的作用力就當成浮力，並漏掉扣除上表面向下作用力",
+    "把因左右表面也受力，便把兩個方向相反且相等的力都加進浮力"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關」不成立；沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力。"
+      "isCorrect": true,
+      "reason": "左右作用互相抵消。左表面列的深度為中心 0.35 m、面積為0.010 m²；右表面列的深度為中心 0.35 m、面積為0.010 m²。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「浮力大小永遠等於物體自身重量，不論它沉沒、漂浮或被外力拉住」不成立；阿基米德原理：物體所受向上浮力的大小，等於它所排開流體的重量。"
+      "reason": "把浮力說成液體只推物體上表面，卻未合成上下表面的壓力作用。沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力；照原做法會把液體作用力算錯或判反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力」。"
+      "isCorrect": false,
+      "reason": "僅列下表面向上的作用力就當成浮力，卻未扣除上表面向下作用力，結果會錯判液體作用力。需比較同一物體各表面的壓力作用，不能只看上表面或把重量算進液體壓力差；液體作用力差異若未通過由上下表面壓力差解釋浮力對深度的控制，就不能只歸給面積。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「浮力為 12＋7＝19 N，因為水中讀值要加回原重量」不成立；物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N。"
+      "reason": "解題時誤把因左右表面也受力，便把兩個方向相反且相等的力都加進浮力。左右作用互相抵消；面積的數值若未依深度核對，會使液體作用力無法通過由上下表面壓力差解釋浮力檢查。"
     }
   ],
   "difficulty": "foundation",
@@ -46,16 +46,16 @@
     "辨認",
     "概念理解"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關",
-    "浮力大小永遠等於物體自身重量，不論它沉沒、漂浮或被外力拉住",
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量"
+    "把浮力說成液體只推物體上表面，並漏掉合成上下表面的壓力作用",
+    "僅列下表面向上的作用力就當成浮力，並漏掉扣除上表面向下作用力",
+    "把因左右表面也受力，便把兩個方向相反且相等的力都加進浮力"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

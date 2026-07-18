@@ -17,51 +17,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組根據金屬燃燒下結論，哪項符合資料？",
+  "stem": "比較金屬活性時，為何不能只比較生成物顏色深淺？",
   "options": [
-    "比較金屬氧化活性時要使樣品質量、表面積、氧供應和加熱條件相同",
-    "只有看得到火焰的反應才能稱為氧化，生鏽不屬氧化",
-    "鏽蝕、燃燒與漂白只要外觀相像，反應物、條件和安全性就完全一樣",
-    "氧化銅把氧給出去所以被氧化，碳得氧所以被還原"
+    "顏色只由質量決定",
+    "深色物質一定不含氧",
+    "顏色不直接量化起燃難易或反應速率",
+    "所有氧化物顏色相同"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「比較金屬氧化活性時要使樣品質量、表面積、氧供應和加熱條件相同」。"
+      "isCorrect": false,
+      "reason": "成分也影響顏色。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只有看得到火焰的反應才能稱為氧化，生鏽不屬氧化」不成立；燃燒是快速氧化，常發光發熱；緩慢的鏽蝕也是氧化，不需出現火焰。"
+      "reason": "黑色氧化銅含氧。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「鏽蝕、燃燒與漂白只要外觀相像，反應物、條件和安全性就完全一樣」不成立；鐵的鏽蝕需氧與水，燃燒是快速氧化，漂白則須依實際物質與反應證據分析。"
+      "isCorrect": true,
+      "reason": "顏色是物性，非速率尺度。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「氧化銅把氧給出去所以被氧化，碳得氧所以被還原」不成立；在氧化銅與碳的反應中，氧化銅失氧而被還原，碳得氧而被氧化。"
+      "reason": "氧化物顏色不同。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "指標評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只有看得到火焰的反應才能稱為氧化，生鏽不屬氧化",
-    "鏽蝕、燃燒與漂白只要外觀相像，反應物、條件和安全性就完全一樣",
-    "氧化銅把氧給出去所以被氧化，碳得氧所以被還原"
+    "顏色只由質量決定",
+    "深色物質一定不含氧",
+    "所有氧化物顏色相同"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科公開題型之證據判讀與生活情境層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -75,19 +74,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

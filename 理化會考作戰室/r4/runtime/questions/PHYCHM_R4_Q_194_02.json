@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "根據顯微鏡與望遠鏡紀錄，哪項判讀合理？",
+  "stem": "矯正近視時，眼鏡應使用哪一種鏡片？",
   "options": [
-    "近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正",
-    "三稜鏡在光通過時創造出原本不存在的顏料，所以色帶與白光組成無關",
-    "物體顏色是物體自行持續發出的固定色光，與入射光譜無關",
-    "近視的遠物焦點在視網膜前，用凹透鏡矯正；遠視或老花相關情形可用凸透鏡輔助會聚"
+    "凹透鏡",
+    "凸透鏡",
+    "平面玻璃",
+    "三稜鏡"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正」不成立；近視的遠物焦點在視網膜前，用凹透鏡矯正；遠視或老花相關情形可用凸透鏡輔助會聚。"
+      "isCorrect": true,
+      "reason": "凹透鏡先使入眼光線發散，再由眼球會聚，可使焦點後移到視網膜上。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「三稜鏡在光通過時創造出原本不存在的顏料，所以色帶與白光組成…」不成立；白光經三稜鏡分光形成多種色光，說明白光可由不同色光組成。"
+      "reason": "凸透鏡會增加會聚，使原已在視網膜前的焦點更向前。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「物體顏色是物體自行持續發出的固定色光，與入射光譜無關」不成立；不透明紅物體在白光下主要反射紅光、吸收其他多數色光，因而看來呈紅色。"
+      "reason": "平面玻璃不改變光線的會聚程度，不能矯正焦點位置。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「近視的遠物焦點在視網膜前，用凹透鏡矯正；遠視或老花相關情形可用凸透鏡輔助會聚」。"
+      "isCorrect": false,
+      "reason": "三稜鏡主要改變光線方向，不能提供近視矯正所需的發散作用。"
     }
   ],
   "difficulty": "foundation",
@@ -47,16 +47,16 @@
     "關係判讀",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正",
-    "三稜鏡在光通過時創造出原本不存在的顏料，所以色帶與白光組成無關",
-    "物體顏色是物體自行持續發出的固定色光，與入射光譜無關"
+    "凸透鏡",
+    "平面玻璃",
+    "三稜鏡"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-10",
       "AUTH-NATURAL-LC-KA-4-11",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

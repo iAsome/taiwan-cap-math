@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "學生討論瞬時資訊與一段時間平均，哪項敘述正確？",
+  "stem": "汽車速度表某一刻顯示 50 km/h，這是哪一種量？",
   "options": [
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率",
-    "儀表在某一刻顯示的是瞬時資訊；一段旅程的平均速率必須以全路程除以全時間",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "路程與位移永遠大小相等，往返原點的路程也是零"
+    "該時刻的瞬時速率",
+    "全程平均速率",
+    "全程位移",
+    "平均加速度"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均…」不成立；儀表在某一刻顯示的是瞬時資訊；一段旅程的平均速率必須以全路程除以全時間。"
+      "isCorrect": true,
+      "reason": "儀表的當下讀值描述單一時刻的快慢，因此是瞬時速率。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「儀表在某一刻顯示的是瞬時資訊；一段旅程的平均速率必須以全路程除以全時間」。"
+      "isCorrect": false,
+      "reason": "全程平均速率不符合題目資料。儀表的當下讀值描述單一時刻的快慢，因此是瞬時速率。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只給一個數字「200 m」就能唯一決定物體位置，不需參考點…」不成立；物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整。"
+      "reason": "全程位移不符合題目資料。儀表的當下讀值描述單一時刻的快慢，因此是瞬時速率。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「路程與位移永遠大小相等，往返原點的路程也是零」不成立；路程是實際路徑總長，位移是起點到終點的有向改變；往返原點時路程大於零但位移為零。"
+      "reason": "平均加速度不符合題目資料。儀表的當下讀值描述單一時刻的快慢，因此是瞬時速率。"
     }
   ],
   "difficulty": "foundation",
@@ -46,16 +46,16 @@
     "辨認",
     "概念理解"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "路程與位移永遠大小相等，往返原點的路程也是零"
+    "全程平均速率",
+    "全程位移",
+    "平均加速度"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

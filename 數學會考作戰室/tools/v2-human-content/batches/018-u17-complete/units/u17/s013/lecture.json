@@ -10,7 +10,7 @@
   "reviewStatus": "independently-reviewed",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-  "prerequisiteBridge": "先備技能：quadrilateral-area。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "prerequisiteBridge": "承接平行四邊形與四邊形面積；菱形在平行四邊形性質之外，再加入四邊等長、對角線垂直與平分頂角。",
   "learningOutcomes": [
     "由定義辨認菱形",
     "運用邊、角與對角線性質",
@@ -99,35 +99,35 @@
     }
   ],
   "nonApplicableCases": [
-    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
-    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
-    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+    "一般菱形的內角不必是90°，不能當成正方形處理。",
+    "菱形對角線互相垂直且平分，但兩條完整對角線通常不等長。",
+    "使用對角線乘積除以2求面積時，必須代入兩條完整對角線，不是半段。"
   ],
   "method": [
     {
       "step": 1,
       "instruction": "先確認四邊等長或菱形已知",
-      "check": "完成第1步後，確認未引入題目未給的條件。"
+      "check": "題目明示菱形，或四邊形的四條邊確實全部等長。"
     },
     {
       "step": 2,
       "instruction": "標出對角線交點",
-      "check": "完成第2步後，確認未引入題目未給的條件。"
+      "check": "AC與BD交於O，各半段配對正確。"
     },
     {
       "step": 3,
       "instruction": "分別使用平分、垂直或角平分性質",
-      "check": "完成第3步後，確認未引入題目未給的條件。"
+      "check": "所選性質對應題目所求，沒有把不同性質混成一式。"
     },
     {
       "step": 4,
       "instruction": "建立直角三角形或面積式",
-      "check": "完成第4步後，確認未引入題目未給的條件。"
+      "check": "直角來自AC⊥BD；面積代入兩條完整對角線。"
     },
     {
       "step": 5,
       "instruction": "不自行假設對角線等長",
-      "check": "完成第5步後，確認未引入題目未給的條件。"
+      "check": "除非另有正方形條件，AC與BD分別保留各自長度。"
     }
   ],
   "workedExamples": [
@@ -179,40 +179,41 @@
   "commonMistakes": [
     {
       "mistake": "菱形四角都是90°",
-      "why": "只有正方形必然如此",
-      "correction": "只有正方形必然如此"
+      "why": "四邊等長不會自動產生直角，一般菱形有銳角與鈍角。",
+      "correction": "只有另給直角時才判為正方形。"
     },
     {
       "mistake": "對角線等長",
-      "why": "一般菱形不保證",
-      "correction": "一般菱形不保證"
+      "why": "菱形只保證對角線垂直且互相平分，不保證全長相等。",
+      "correction": "分別計算AC與BD，不跨線設等。"
     },
     {
       "mistake": "只用四邊形四邊等長卻忘記依序",
-      "why": "定義需封閉四邊形",
-      "correction": "定義需封閉四邊形"
+      "why": "必須確認四條線段構成同一封閉四邊形。",
+      "correction": "沿ABCD周界逐邊核對AB＝BC＝CD＝DA。"
     },
     {
       "mistake": "面積用兩對角線直接相乘",
-      "why": "要除2",
-      "correction": "要除2"
+      "why": "對角線乘積形成四個直角三角形的兩倍面積。",
+      "correction": "計算AC×BD÷2。"
     },
     {
       "mistake": "角平分套錯頂點",
-      "why": "AC只平分A與C，BD平分B與D",
-      "correction": "AC只平分A與C，BD平分B與D"
+      "why": "AC只平分A、C角，BD只平分B、D角。",
+      "correction": "先看對角線連接哪兩個頂點，再配角平分。"
     }
   ],
   "selfCheck": [
-    "我能否不用目測，說明「菱形性質」所需的條件？",
-    "我是否先辨認角、邊、對角線、底或高的正確位置？",
-    "方程解出後是否代回題目真正所求？",
-    "角度、長度與面積單位是否正確？"
+    "題目是否確實給出菱形或四邊等長？",
+    "我使用的是對角線平分、垂直，還是平分頂角的正確性質？",
+    "面積是否代入完整對角線並除以2？",
+    "是否避免把一般菱形誤當成對角線等長或四角直角？"
   ],
   "summary": [
-    "菱形先是平行四邊形，所以具有對邊平行、對角相等、鄰角互補與對角線互相平分。",
-    "四邊等長",
-    "解題時先確認「菱形定義」。"
+    "菱形是四邊等長的平行四邊形，因此承接所有平行四邊形性質。",
+    "菱形的對角線互相垂直、互相平分，並各自平分所連頂角。",
+    "面積可用AC×BD÷2，但AC、BD必須是完整對角線。",
+    "一般菱形不保證四個直角或兩條對角線等長。"
   ],
   "connections": {
     "previous": "承接quadrilateral-area。",
@@ -251,5 +252,5 @@
     "figureChecked": true,
     "reviewNote": "講義保留平行四邊形共通性質，並清楚標出菱形專屬的垂直與角平分性質。"
   },
-  "contentSha256": "05793a559345aa1fcde7e573f2d074a75e1aaa0ae92579aeac5db87fb18393b9"
+  "contentSha256": "008d478cec0a921830c5f2730c2dc4af9b8fb35bd24f97bfafcdc4772f117751"
 }

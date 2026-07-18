@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對文字與圖形轉換結果，哪項說法正確？",
+  "stem": "位置—時間圖的橫軸通常表示什麼？",
   "options": [
-    "速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度",
-    "速度數值變得更負就一定是減速，無需比較速度大小與方向",
-    "把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間與位置",
-    "位置—時間圖的橫軸是時間、縱軸是相對參考點的位置"
+    "物體的位置",
+    "物體的速率",
+    "時間",
+    "受力大小"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度」不成立；速度—時間圖的縱座標直接給各時刻速度；水平線表示速度恆定。"
+      "reason": "物體的位置不成立。位置—時間圖以時間為自變量放在橫軸，位置在縱軸。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「速度數值變得更負就一定是減速，無需比較速度大小與方向」不成立；速度—時間圖上數值由 2 增至 6 m/s 表示正向加速；速度由 −2 變 −6 m/s 則是…。"
+      "reason": "物體的速率不成立。位置—時間圖以時間為自變量放在橫軸，位置在縱軸。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間…」不成立；「向東等速、停留、向西返回」的位置—時間圖應依序是正斜率、水平、負斜率。"
+      "isCorrect": true,
+      "reason": "位置—時間圖以時間為自變量放在橫軸，位置在縱軸。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置」。"
+      "isCorrect": false,
+      "reason": "受力大小不成立。位置—時間圖以時間為自變量放在橫軸，位置在縱軸。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度",
-    "速度數值變得更負就一定是減速，無需比較速度大小與方向",
-    "把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間與位置"
+    "物體的位置",
+    "物體的速率",
+    "受力大小"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

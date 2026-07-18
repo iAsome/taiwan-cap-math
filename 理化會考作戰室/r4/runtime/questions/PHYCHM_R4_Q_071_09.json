@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對沉澱反應結果，哪項說法正確？",
+  "stem": "2A₂＋B₂→2A₂B 是否守恆？",
   "options": [
-    "性質改變只要能恢復外觀就必然沒有新物質，無需檢驗",
-    "只要觀察到任一顏色或溫度變化，就已唯一證明發生特定化學反應",
-    "冒泡或變色本身就是完整證明，不需知道操作過程或排除其他原因",
-    "化學變化中原子種類與總數保留"
+    "不守恆，左側 B₂ 只算一個 B",
+    "不守恆，生成物的 A 原子少 2 個",
+    "守恆，左右 A4、B2",
+    "不守恆，生成物的 B 原子多 4 個"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「性質改變只要能恢復外觀就必然沒有新物質，無需檢驗」不成立；鐵生鏽後產物的顏色、導電等性質與鐵不同，可支持形成新物質。"
+      "reason": "B₂ 的下標表示兩個 B，不能把一個分子誤當一個原子。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要觀察到任一顏色或溫度變化，就已唯一證明發生特定化學反應」不成立；沉澱、特定氣體、難以由物理過程解釋的顏色或溫度變化，都可作反應線索。"
+      "reason": "生成物兩個 A₂B 共含四個 A，與反應物相等。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「冒泡或變色本身就是完整證明，不需知道操作過程或排除其他原因」不成立；反應線索要排除沸騰、溶解、外界加熱等原因，並用產物性質或對照試驗驗證。"
+      "isCorrect": true,
+      "reason": "左側有 A4、B2；右側 2×A₂B 也有 A4、B2。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「化學變化中原子種類與總數保留，但原子連結和排列改變，形成不同粒子」。"
+      "isCorrect": false,
+      "reason": "生成物只含兩個 B，不是多出四個。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "等式驗算"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "性質改變只要能恢復外觀就必然沒有新物質，無需檢驗",
-    "只要觀察到任一顏色或溫度變化，就已唯一證明發生特定化學反應",
-    "冒泡或變色本身就是完整證明，不需知道操作過程或排除其他原因"
+    "不守恆，左側 B₂ 只算一個 B",
+    "不守恆，生成物的 A 原子少 2 個",
+    "不守恆，生成物的 B 原子多 4 個"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-AB-4-3",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

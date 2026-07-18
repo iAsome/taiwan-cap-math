@@ -13,50 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_270",
-  "stem": "檢查表中關於串聯電路的電流與電壓的說法，哪項判讀正確？",
+  "stem": "電流和電壓在電源前主線為0.40 A、—，到R1為0.40 A、4.0 V。由分析串聯電路的電流與電壓作結論前，哪項電流前提不能省略？",
   "options": [
-    "電源電壓等於各元件電壓降總和",
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少"
+    "解題時將各元件電壓降都設成相同",
+    "電流不會在通過第一顆電阻後被用完",
+    "把串聯兩電阻的電壓相減",
+    "把串聯單一路徑誤畫成兩個支路後仍套用各處電流相同"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和」。"
+      "isCorrect": false,
+      "reason": "電流不會在通過第一顆電阻後被用完。R1列的電流為0.40 A，電壓為4.0 V；R2列的電流為0.40 A，電壓為8.0 V。解題時錯將各元件電壓降都設成相同，忽略電阻不同時分配可能不同。此結論針對單一路徑且量表理想；電阻差異若未通過分析串聯電路的電流與電壓對電流的控制，就不能只歸給電壓。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆」不成立；並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。"
+      "isCorrect": true,
+      "reason": "電流不會在通過第一顆電阻後被用完。R1列的電流為0.40 A，電壓為4.0 V；R2列的電流為0.40 A，電壓為8.0 V。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「短路和斷路都只會使電流完全為零，不可能出現過大電流」不成立；斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險。"
+      "reason": "電流不會在通過第一顆電阻後被用完。R1列的電流為0.40 A，電壓為4.0 V；R2列的電流為0.40 A，電壓為8.0 V。解題時錯將 R1 的 4 V 與 R2 的 8 V 相減，誤判電源只有 4 V。串聯各處電流皆 0.40 A，兩元件電壓降 4.0＋8.0＝12.0 V；電壓的數值若未依電流核對，會使電阻無法通過分析串聯電路的電流與電壓檢查。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少」不成立；串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和。"
+      "reason": "電流不會在通過第一顆電阻後被用完。R1列的電流為0.40 A，電壓為4.0 V；R2列的電流為0.40 A，電壓為8.0 V。把串聯單一路徑誤畫成兩個支路後仍套用各處電流相同，結果會錯判電阻。串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和；電流未列入分析串聯電路的電流與電壓時，電阻的電壓大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "資料判讀"
+    "證據判讀",
+    "推論"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少"
+    "解題時將各元件電壓降都設成相同",
+    "把串聯兩電阻的電壓相減",
+    "把串聯單一路徑誤畫成兩個支路後仍套用各處電流相同"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -66,20 +67,6 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_014"
   ]

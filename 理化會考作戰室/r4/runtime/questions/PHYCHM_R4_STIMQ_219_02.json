@@ -15,50 +15,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_219",
-  "stem": "檢查表中關於合力為零判斷靜止或等速運動的說法，哪項判讀正確？",
+  "stem": "依表格，C 初速度為 -3 m/s 且合力為零，末速度為何？",
   "options": [
-    "合力只需把大小相加，所以向右 8 N 與向左 3 N 的合力是 11 N",
-    "可保持靜止或等速直線運動",
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他",
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關"
+    "C 末速度為 -3 m/s",
+    "C 末速度為 0",
+    "C 末速度為 +3 m/s",
+    "C 末速度為 -6 m/s"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「合力只需把大小相加，所以向右 8 N 與向左 3 N 的合…」不成立；同直線上向右 8 N 與向左 3 N 的合力為向右 5 N；相反方向力要取差並保留方向。"
+      "isCorrect": true,
+      "reason": "零合力下速度不變，仍為 -3 m/s。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體所受合力為零時加速度為零，可保持靜止或等速直線運動，不限於靜止」。"
+      "isCorrect": false,
+      "reason": "C 末速度為 0與受力條件不符。零合力下速度不變，仍為 -3 m/s。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他」不成立；慣性是物體維持原運動狀態的性質；車突然剎車時乘客上半身傾向前就是慣性現象。"
+      "reason": "C 末速度為 +3 m/s與受力條件不符。零合力下速度不變，仍為 -3 m/s。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「加速度方向永遠和物體當下運動方向相同，與合力方向無關」不成立；物體的加速度方向與合力相同；質量相同時合力較大，或合力相同時質量較小，加速度較大。"
+      "reason": "C 末速度為 -6 m/s與受力條件不符。零合力下速度不變，仍為 -3 m/s。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "資料判讀"
+    "力學計算"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "合力只需把大小相加，所以向右 8 N 與向左 3 N 的合力是 11 N",
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他",
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關"
+    "C 末速度為 0",
+    "C 末速度為 +3 m/s",
+    "C 末速度為 -6 m/s"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -70,20 +70,6 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_009"
   ]

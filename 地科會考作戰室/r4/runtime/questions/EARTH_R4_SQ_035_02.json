@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "EARTH_R4_ST_035",
-  "stem": "閱讀「區分成分分層與力學分層」的資料後，為了釐清P波與S波的傳播特性，哪一項限制最需要寫入報告？",
+  "stem": "只比較固態岩石到時，可得哪項結論？",
   "options": [
-    "分析P波與S波的傳播特性時，報告需註明：波的陰影區不是沒有地震",
-    "分析P波與S波的傳播特性時，有2列資料就沒有不確定性",
-    "電腦繪製的「區分成分分層與力學分層」表格可保證來源正確",
-    "P波與S波的傳播特性結果符合預期便不必檢查反例"
+    "P 型 2.0 ms 先於 S 型 3.4 ms；固態介質中通常也是 P 波先抵達。",
+    "S 型 3.4 ms 先於 P 型 2.0 ms；未偵測的 S 波到時被記成零；S 波被判定能穿過液態外核。",
+    "S 型未偵測，不能比較；S 波被判定能穿過液態外核。",
+    "兩者都在 4.7 ms 抵達；刪除未偵測紀錄仍不影響結論。"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "這項限制界定「區分成分分層與力學分層」的資料可支持到哪裡。"
+      "reason": "素材中的數值或分類顯示：相同固態材料下 2.0 ms 小於 3.4 ms；因此「P 型 2.0 ms 先於 S 型 3.4 ms；固態介質中通常也是 P 波先抵達。」符合題幹指定的判讀。 「固態介質中通常也是 P 波先抵達」與題示證據相容。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "資料列數不會消除量測與取樣不確定性。"
+      "reason": "素材中的數值或分類顯示：相同固態材料下 2.0 ms 小於 3.4 ms；所以「S 型 3.4 ms 先於 P 型 2.0 ms；未偵測的 S 波到時被記成零；S 波被判定能穿過液態外核。」與表中資料或適用範圍不符。 「未偵測的 S 波到時被記成零；S 波被判定能穿過液態外核」與題示證據矛盾。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "製圖工具不會自動保證「區分成分分層與力學分層」的來源可靠。"
+      "reason": "素材中的數值或分類顯示：相同固態材料下 2.0 ms 小於 3.4 ms；所以「S 型未偵測，不能比較；S 波被判定能穿過液態外核。」與表中資料或適用範圍不符。 「S 波被判定能穿過液態外核」與題示證據矛盾。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "符合「P 波可在固體與液體中傳播，S 波只能在固體中傳播，且 P 波通常較早到達」仍須檢查替代解釋與反例。"
+      "reason": "素材中的數值或分類顯示：相同固態材料下 2.0 ms 小於 3.4 ms；所以「兩者都在 4.7 ms 抵達；刪除未偵測紀錄仍不影響結論。」與表中資料或適用範圍不符。 「刪除未偵測紀錄仍不影響結論」與題示證據矛盾。"
     }
   ],
   "difficulty": "advanced",
@@ -49,7 +49,7 @@
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "S 波可自由穿過液態外核"
+    "S 型 3.4 ms 先於 P 型 2.0 ms；未偵測的 S 波到時被記成零；S 波被判定能穿過液態外核。"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "逐項核對「區分成分分層與力學分層」的條件後，「分析P波與S波的傳播特性時，報告需註明：波的陰影區不是沒有地震」符合題目資料；查核依據為：P 波可穿過固體與液體。",
+      "evidence": "相同固態材料下 2.0 ms 小於 3.4 ms。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 0,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「波的陰影區不是沒有地震」。",
+      "evidence": "未偵測只出現在 S 型液態欄。",
       "status": "pass"
     }
   ],

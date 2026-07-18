@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對超聲波結果，哪項說法正確？",
+  "stem": "聲速寫成 340 m/s 的意義為何？",
   "options": [
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "音調較高的聲音一定在空氣中傳得較快，因為頻率較大",
-    "在同一介質同條件下",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定"
+    "每個空氣粒子每秒永久移動 340 m",
+    "聲音頻率固定為 340 Hz",
+    "所有聲音波長都是 340 m",
+    "聲波在該條件下每秒傳播約 340 m"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險」不成立；噪音風險同時與聲音強度級和暴露時間有關；較大聲音的安全暴露時間應更短。"
+      "reason": "介質粒子主要局部振動，不隨波遠移此距離。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「音調較高的聲音一定在空氣中傳得較快，因為頻率較大」不成立；聲速由介質與溫度等條件決定；在同一介質同條件下，高低音的聲速近似相同。"
+      "reason": "m/s 是速率單位，不是 Hz。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「聲速由介質與溫度等條件決定；在同一介質同條件下，高低音的聲速近似相同」。"
+      "isCorrect": false,
+      "reason": "波長還取決於頻率。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定」不成立；音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止。"
+      "isCorrect": true,
+      "reason": "340 m/s 描述擾動相對地面的傳播速率。"
     }
   ],
   "difficulty": "advanced",
@@ -47,16 +47,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "音調較高的聲音一定在空氣中傳得較快，因為頻率較大",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定"
+    "每個空氣粒子每秒永久移動 340 m",
+    "聲音頻率固定為 340 Hz",
+    "所有聲音波長都是 340 m"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

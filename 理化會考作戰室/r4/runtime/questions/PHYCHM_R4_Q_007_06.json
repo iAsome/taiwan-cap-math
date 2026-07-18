@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解系統性偏差與隨機變動，哪項修正合理？",
+  "stem": "學生以平均值修正未歸零天平，為何不充分？",
   "options": [
-    "天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動",
-    "儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺",
-    "刻度儀器只能記到最小刻度，任何估讀都是作假",
-    "2.35 m＝0.0235 cm，因為換成較小單位時數字也應變小"
+    "平均不能使用加法",
+    "固定偏移會一起進入平均",
+    "天平沒有單位",
+    "重複次數必須為偶數"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動」。"
+      "isCorrect": false,
+      "reason": "平均需要加法。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺」不成立；量約 12 cm 的鉛筆適合用毫米刻度直尺；儀器量程要大於待測量，最小刻度要能分辨所需差異。"
+      "isCorrect": true,
+      "reason": "每筆同加偏移，平均也同加。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「刻度儀器只能記到最小刻度，任何估讀都是作假」不成立；視線應與刻度面垂直，先讀到最小刻度，再估讀一位，並連同單位記錄。"
+      "reason": "天平讀值有質量單位。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「2.35 m＝0.0235 cm，因為換成較小單位時數字也…」不成立；2.35 m＝235 cm；公制換算要保持同一物理量，並讓數值和單位的改變相互補償。"
+      "reason": "奇偶與平均有效性無關。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "錯誤分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺",
-    "刻度儀器只能記到最小刻度，任何估讀都是作假",
-    "2.35 m＝0.0235 cm，因為換成較小單位時數字也應變小"
+    "平均不能使用加法",
+    "天平沒有單位",
+    "重複次數必須為偶數"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

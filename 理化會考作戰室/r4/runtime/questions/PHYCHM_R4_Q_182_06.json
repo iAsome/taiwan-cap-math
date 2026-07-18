@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解介質改變判斷光速與折射方向，哪項修正合理？",
+  "stem": "光在空氣、水、玻璃中的速率約為 3.0、2.25、1.9×10⁸ m/s。哪種介質中最慢？",
   "options": [
-    "入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾",
-    "水中物體看來較淺是因物體實際漂浮上升，與光的折射無關",
-    "凸透鏡與凹透鏡都只能使光發散，兩者的形狀與光線作用無關",
-    "由玻璃進空氣則通常偏離法線"
+    "玻璃",
+    "空氣",
+    "水",
+    "三者相同"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾」不成立；入射角是入射光與法線夾角，折射角是折射光與法線夾角，都不從介面量。"
+      "isCorrect": true,
+      "reason": "1.9×10⁸ m/s 是三者最小值。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「水中物體看來較淺是因物體實際漂浮上升，與光的折射無關」不成立；水中物體的光進入空氣後折射，眼睛沿折射光反向延伸，使物體看來比實際淺。"
+      "reason": "3.0×10⁸ 最大。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「凸透鏡與凹透鏡都只能使光發散，兩者的形狀與光線作用無關」不成立；凸透鏡可使與主軸平行的光近似會聚至焦點，凹透鏡使光發散，反向延長似來自虛焦點。"
+      "reason": "2.25×10⁸ 仍大於1.9×10⁸。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「光由空氣進入玻璃時速率降低，斜入射通常折向法線；由玻璃進空氣則通常偏離法線」。"
+      "isCorrect": false,
+      "reason": "數值並不相同。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾",
-    "水中物體看來較淺是因物體實際漂浮上升，與光的折射無關",
-    "凸透鏡與凹透鏡都只能使光發散，兩者的形狀與光線作用無關"
+    "空氣",
+    "水",
+    "三者相同"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-7",
       "AUTH-NATURAL-LC-KA-4-8",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

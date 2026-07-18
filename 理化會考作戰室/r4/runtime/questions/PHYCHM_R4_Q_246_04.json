@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查車輛動能紀錄，哪項判讀正確？",
+  "stem": "解題時錯將功的公式寫成 W＝F/d，20 N 推 3 m 只算出約 6.7 J。用計算定力沿同方向所作的功檢查這個做法，功應如何重判？",
   "options": [
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J",
+    "解題時將功的單位寫成瓦特，混淆能量單位焦耳與功率單位瓦特",
+    "解題時將功的公式寫成 W＝F/d，20 N 推 3 m 只算出約 6.7 J",
     "恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J",
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "動能只由物體所在高度決定，質量與速度都不影響"
+    "力與位移不平行時仍用完整力乘路程，並漏掉取沿位移方向的分量"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「功是力除以位移，所以 20 N 推 3 m 作功為 6.6…」不成立；恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J。"
+      "reason": "解題時錯將功的單位寫成瓦特，混淆能量單位焦耳與功率單位瓦特。恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J；力未列入計算定力沿同方向所作的功時，功的沿力方向位移大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J」。"
+      "isCorrect": false,
+      "reason": "解題時錯將功的公式寫成 W＝F/d，20 N 推 3 m 只算出約 6.7 J。恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J；照原做法會把功算錯或判反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關」不成立；力對物體作功要有物體沿力的分量方向發生位移；用力提住靜止物體時對物體作功為零。"
+      "isCorrect": true,
+      "reason": "恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J。丁列的力為20 N，沿力方向位移為0.5 m；甲列的力為20 N，沿力方向位移為3.0 m。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「動能只由物體所在高度決定，質量與速度都不影響」不成立；動能與質量成正比、與速度平方成正比；同質量者速度加倍，動能變為四倍。"
+      "reason": "力與位移不平行時仍用完整力乘路程，卻未取沿位移方向的分量，結果會錯判功。若力不與位移同方向，不能直接用整個力乘路程；功差異若未通過計算定力沿同方向所作的功對力的控制，就不能只歸給沿力方向位移。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀",
+    "條件判斷",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J",
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "動能只由物體所在高度決定，質量與速度都不影響"
+    "解題時將功的單位寫成瓦特，混淆能量單位焦耳與功率單位瓦特",
+    "解題時將功的公式寫成 W＝F/d，20 N 推 3 m 只算出約 6.7 J",
+    "力與位移不平行時仍用完整力乘路程，並漏掉取沿位移方向的分量"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

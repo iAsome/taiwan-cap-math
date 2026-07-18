@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解基本物理量與由計算得到的物理量，哪項修正合理？",
+  "stem": "小明量得紙張長 29.7 cm，再計算面積 623.7 cm²。哪個敘述最精確？",
   "options": [
-    "數位寫得越多就越精確，因此可記為 12.347826 cm",
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可",
-    "長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得",
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失"
+    "兩者都是直尺直接顯示",
+    "29.7 cm 是直接量測，623.7 cm² 是計算結果",
+    "有小數的數值都屬計算結果",
+    "面積是直接量測，長度是計算結果"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「數位寫得越多就越精確，因此可記為 12.347826 cm」不成立；最小刻度 0.1 cm 的直尺，測量值可合理記至 0.01 cm；多寫更多位不會增加儀器資訊。"
+      "reason": "直尺不直接顯示面積。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「三次不相同表示實驗失敗，只保留最接近預期的 10.0 s …」不成立；量得 9.8、10.1、10.0 s 的平均約為 10.0 s，差異可用範圍或離散情形描述，不…。"
+      "isCorrect": true,
+      "reason": "長度由直尺讀取，面積由長與寬相乘。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得」。"
+      "isCorrect": false,
+      "reason": "小數位數與取得方式無必然關係。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要重複次數足夠多，未歸零造成的固定偏差就會自動消失」不成立；天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動。"
+      "reason": "兩者取得方式恰好相反。"
     }
   ],
   "difficulty": "standard",
@@ -48,16 +48,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "數位寫得越多就越精確，因此可記為 12.347826 cm",
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可",
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失"
+    "兩者都是直尺直接顯示",
+    "有小數的數值都屬計算結果",
+    "面積是直接量測，長度是計算結果"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

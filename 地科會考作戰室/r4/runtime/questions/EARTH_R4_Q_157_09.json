@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "把觀測結果用於「比較夏至冬至正午影長」中的地球公轉週期與曆年調整概念時，哪一項解釋較合理？",
+  "stem": "某曆法每年固定365日，經100年後不作調整。依365.24日估算，季節位置約漂移多少日？",
   "options": [
-    "判讀地球公轉週期與曆年調整概念時只抄地名，不讀變因",
-    "曆年調整與公轉週期不等於整數日有關",
-    "用「比較夏至冬至正午影長」的一筆局部資料推論各地地球公轉週期與曆年調整概念都相同",
-    "先選好地球公轉週期與曆年調整概念答案，再刪除「比較夏至冬至正午影長」中不一致的觀測"
+    "0.24日",
+    "24日",
+    "2.4日",
+    "240日"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "地名沒有指出日期位置、臺灣日出、臺灣日落、正午影長相對值之間的關係。"
+      "reason": "0.24日只是一年的近似差，沒有乘上100年。 差額應以日為單位逐年累積，並用曆年總日數驗算。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "「曆年調整與公轉週期不等於整數日有關」屬於本單元可由證據支持的關係。"
+      "reason": "每年0.24日乘100年約24日，足以造成日期與季節明顯錯位。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "結論超出「比較夏至冬至正午影長」資料的空間範圍。"
+      "reason": "2.4日相當於十年累積，少乘了一個十倍。 差額應以日為單位逐年累積，並用曆年總日數驗算。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "選擇性刪除「比較夏至冬至正午影長」資料會破壞證據鏈。"
+      "reason": "240日把0.24乘1000或誤移小數點，與百年期間不符。"
     }
   ],
   "difficulty": "advanced",
@@ -49,7 +49,7 @@
   ],
   "representationType": "local-context",
   "misconceptionTargets": [
-    "夏季是因地球明顯更靠近太陽"
+    "2.4日"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "逐項核對「比較夏至冬至正午影長」的條件後，「曆年調整與公轉週期不等於整數日有關」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "0.24乘100等於24，單位仍是日，顯示長期不調整會累積大幅漂移。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "2.4日只涵蓋十年差額，與題目的一百年時間尺度不一致。",
       "status": "pass"
     }
   ],

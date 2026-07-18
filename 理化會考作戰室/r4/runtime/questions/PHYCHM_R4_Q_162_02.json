@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "根據頻率波長計算紀錄，哪項判讀合理？",
+  "stem": "振子在 5.0 s 內完成 20 次完整振動。它的頻率與週期為何？",
   "options": [
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長",
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "兩者關係為 f＝1/T"
+    "此波的頻率 0.25 Hz，週期 4.0 s",
+    "頻率 4.0 Hz，週期 0.25 s",
+    "此波的頻率 20 Hz，週期 5.0 s",
+    "此波的頻率 4.0 Hz，週期 5.0 s"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「振幅是波峰到波谷的全高，波長是相鄰波峰的高度差」不成立；波峰是橫波最高點、波谷是最低點；振幅由平衡位置量到波峰，波長是沿傳播方向相鄰同相位點的距離。"
+      "reason": "把頻率與週期互換；20/5 應為每秒次數。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「波速為 f/λ＝6.25 m/s，因為頻率應除以波長」不成立；頻率 5.0 Hz、波長 0.80 m 的波速為 v＝fλ＝4.0 m/s；計算前要統一單位。"
+      "isCorrect": true,
+      "reason": "f＝20/5.0＝4.0 Hz，T＝1/f＝0.25 s。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關」不成立；橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行。"
+      "reason": "直接抄總次數與總時間，沒有換算成每次或每秒。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T」。"
+      "isCorrect": false,
+      "reason": "5.0 s 是 20 次的總時間，一次只需 0.25 s。"
     }
   ],
   "difficulty": "foundation",
@@ -46,16 +46,16 @@
     "關係判讀",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長",
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關"
+    "此波的頻率 0.25 Hz，週期 4.0 s",
+    "此波的頻率 20 Hz，週期 5.0 s",
+    "此波的頻率 4.0 Hz，週期 5.0 s"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

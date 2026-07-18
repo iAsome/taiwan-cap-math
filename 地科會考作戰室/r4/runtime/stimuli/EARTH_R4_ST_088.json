@@ -15,48 +15,51 @@
   ],
   "type": "accessible-figure-and-data",
   "content": {
-    "title": "比較岬角與海灣的侵蝕沉積：海水鹽度溫度與密度的基本差異觀測紀錄",
-    "scenario": "比較岬角與海灣的侵蝕沉積",
+    "title": "四個海水樣本的溫度、鹽度與密度",
+    "scenario": "研究小組用同一支校正過的密度計量測四個海水樣本，A與B鹽度相同，A與C溫度相同；數值皆為三次量測平均。",
     "table": {
       "columns": [
-        "時間",
-        "水位公尺",
-        "浪高公尺"
+        "水樣",
+        "溫度（°C）",
+        "鹽度（psu）",
+        "密度（g/cm³）"
       ],
       "rows": [
         [
-          "00:00",
-          0.8,
-          1.2
+          "A",
+          20,
+          34,
+          1.024
         ],
         [
-          "06:00",
-          2.4,
-          1.1
+          "B",
+          10,
+          34,
+          1.027
         ],
         [
-          "12:00",
-          0.7,
-          1.3
+          "C",
+          20,
+          36,
+          1.026
         ],
         [
-          "18:00",
-          2.3,
-          1
+          "D",
+          15,
+          33,
+          1.024
         ]
       ]
     },
-    "readingGuide": "先讀欄位、單位、時間與資料範圍；圖形資訊均有下列資料表替代。",
-    "skillSpecificCriterion": "判讀重點為「一般情況下海水鹽度增加會使密度增加，溫度降低也常使密度增加，判讀時仍須核對兩個變因」；結論不得超出資料的時間、位置與量測範圍。"
+    "readingGuide": "先用A—B隔離溫度差，再用A—C隔離鹽度差；比較D時直接讀密度，因為它的溫度與鹽度都和A不同。",
+    "skillSpecificCriterion": "海水密度受溫度與鹽度共同影響；一般而言溫度較低或鹽度較高時，密度較大。"
   },
   "accessibility": {
-    "textAlternative": "比較岬角與海灣的侵蝕沉積資料表，欄位為時間、水位公尺、浪高公尺，共有4列。波浪前進不表示同一團海水一路移到岸邊；潮汐也不是由海風吹成。",
+    "textAlternative": "A為20°C、34 psu、1.024 g/cm³；B為10°C、34 psu、1.027；C為20°C、36 psu、1.026；D為15°C、33 psu、1.024。",
     "colorIndependent": true,
     "printSafe": true
   },
-  "assets": [
-    "EARTH_R4_ASSET_TIDE"
-  ],
+  "assets": [],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 Earth Science content author",

@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組鞋底壓力資料，哪項判讀仍合理？",
+  "stem": "從小活塞改成位移紀錄時，面積由5.0 cm²變為小活塞下降 10 cm，施力由20 N變為大活塞上升 1 cm。說明壓力應用哪個原理？",
   "options": [
-    "帕斯卡原理說明密閉流體上的壓力變化可傳至各處",
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁",
-    "空氣沒有質量與重量，大氣壓只是溫度計產生的幻覺",
-    "用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與"
+    "把大、小活塞的作用力判成相同，並漏掉依活塞面積比較 F＝pA",
+    "把在流體外漏、裝置未密閉時仍直接套用理想帕斯卡原理",
+    "主張小活塞增加的壓力傳不到大活塞",
+    "帕斯卡原理說明密閉流體上的壓力變化可傳至各處"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「帕斯卡原理說明密閉流體上的壓力變化可傳至各處；液壓機可以大面積活塞得到較大力」。"
+      "isCorrect": false,
+      "reason": "把大、小活塞的作用力判成相同，卻未依活塞面積比較 F＝pA。小活塞壓力為 20÷0.0005＝40000 Pa；施力的數值若未依面積核對，會使壓力無法通過用帕斯卡原理解釋液壓裝置檢查。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁」不成立；靜止液體中同一點的壓力可向各方向作用，不只向下；容器側壁也受液體壓力。"
+      "reason": "解題時誤把在流體外漏、裝置未密閉時仍直接套用理想帕斯卡原理，結果會錯判壓力。帕斯卡原理說明密閉流體上的壓力變化可傳至各處；面積未列入用帕斯卡原理解釋液壓裝置時，壓力的施力大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「空氣沒有質量與重量，大氣壓只是溫度計產生的幻覺」不成立；大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變。"
+      "reason": "誤以為小活塞增加的壓力傳不到大活塞，所以液壓機無法放大作用力。帕斯卡原理說明密閉流體上的壓力變化可傳至各處；照原做法會把壓力算錯或判反。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與」不成立；吸管、滴管等裝置是先降低內部壓力，外界較大大氣壓才將液體推向低壓處。"
+      "isCorrect": true,
+      "reason": "帕斯卡原理說明密閉流體上的壓力變化可傳至各處。位移紀錄列的面積為小活塞下降 10 cm，施力為大活塞上升 1 cm；裝置狀態列的面積為密閉，施力為忽略摩擦。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁",
-    "空氣沒有質量與重量，大氣壓只是溫度計產生的幻覺",
-    "用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與"
+    "把大、小活塞的作用力判成相同，並漏掉依活塞面積比較 F＝pA",
+    "把在流體外漏、裝置未密閉時仍直接套用理想帕斯卡原理",
+    "主張小活塞增加的壓力傳不到大活塞"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

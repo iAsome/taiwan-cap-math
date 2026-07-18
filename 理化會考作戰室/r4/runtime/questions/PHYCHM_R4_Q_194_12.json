@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估彩色照明報告時，哪項說明正確？",
+  "stem": "要用光路圖比較近視與遠視，最關鍵的判讀依據為何？",
   "options": [
-    "物體顏色是物體自行持續發出的固定色光，與入射光譜無關",
-    "近視的遠物焦點在視網膜前",
-    "物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察",
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色"
+    "鏡框的顏色",
+    "物體表面的溫度",
+    "眼鏡片的直徑大小",
+    "未矯正時焦點相對視網膜的位置"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「物體顏色是物體自行持續發出的固定色光，與入射光譜無關」不成立；不透明紅物體在白光下主要反射紅光、吸收其他多數色光，因而看來呈紅色。"
+      "reason": "鏡框顏色不參與光線會聚。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「近視的遠物焦點在視網膜前，用凹透鏡矯正；遠視或老花相關情形可用凸透鏡輔助會聚」。"
+      "isCorrect": false,
+      "reason": "物體溫度不是幾何光學焦點判斷的條件。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察」不成立；紅色物體在只含藍光的照明下可看來很暗，因為沒有足夠可反射的紅光。"
+      "reason": "在題目未涉及視野時，鏡片直徑不能決定焦點在視網膜前或後。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色」不成立；紅、綠、藍色光是加法混色的基本光；顏料混合主要透過選擇性吸收，與色光加法原理不同。"
+      "isCorrect": true,
+      "reason": "近視焦點在視網膜前、遠視焦點在視網膜後，位置關係直接決定矯正鏡片。"
     }
   ],
   "difficulty": "transfer",
@@ -47,16 +47,16 @@
     "限制評估",
     "高層推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體顏色是物體自行持續發出的固定色光，與入射光譜無關",
-    "物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察",
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色"
+    "鏡框的顏色",
+    "物體表面的溫度",
+    "眼鏡片的直徑大小"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-10",
       "AUTH-NATURAL-LC-KA-4-11",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

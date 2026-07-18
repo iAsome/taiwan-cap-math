@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估高壓輸電報告時，哪項說明正確？",
+  "stem": "表中乙的受力為向下，對應電流方向向西與磁場方向向北。重複判斷載流導線在磁場中的受力時，電流方向變因與磁場方向單位如何維持？",
   "options": [
-    "只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流",
-    "發電機和電動機都只將電能轉成熱能，與機械能無關",
-    "變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大",
-    "只改變電流或磁場方向之一"
+    "若平行，受力可能為零",
+    "把同時反轉電流與磁場方向，卻只反轉一次而判定受力改向",
+    "主張載流導線在任何磁場配置中都不受力",
+    "把導線與磁場平行時仍斷言必有和垂直配置相同的受力"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流」不成立；穿過線圈的磁通量發生變化時可產生感應電動勢；電路閉合時才會有感應電流。"
+      "isCorrect": true,
+      "reason": "若平行，受力可能為零。丁列的電流方向為向西，磁場方向為向南；甲列的電流方向為向東，磁場方向為向北。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「發電機和電動機都只將電能轉成熱能，與機械能無關」不成立；發電機主要將機械能轉電能，電動機主要將電能轉機械能，兩者能量流向相反。"
+      "reason": "解題時誤把同時反轉電流與磁場方向，卻只反轉一次而判定受力改向。在受力不為零的配置中，載流導線放在外磁場中會受力；電流方向未列入判斷載流導線在磁場中的受力時，受力的磁場方向大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大」不成立；變壓器以交流造成變動磁場，改變電壓以利輸電；遠距離高電壓可在同功率下降低電流與線路損耗。"
+      "reason": "誤以為載流導線在任何磁場配置中都不受力，結果會錯判受力。在受力不為零的配置中，載流導線放在外磁場中會受力；照原做法會把受力算錯或判反。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「在受力不為零的配置中，載流導線放在外磁場中會受力；只改變電流或磁場方向之一，受力方向會反轉」。"
+      "isCorrect": false,
+      "reason": "解題時誤把導線與磁場平行時仍斷言必有和垂直配置相同的受力，結果會錯判受力。結論限於導線與磁場方向構成非零受力的配置；受力差異若未通過判斷載流導線在磁場中的受力對電流方向的控制，就不能只歸給磁場方向。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流",
-    "發電機和電動機都只將電能轉成熱能，與機械能無關",
-    "變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大"
+    "把同時反轉電流與磁場方向，卻只反轉一次而判定受力改向",
+    "主張載流導線在任何磁場配置中都不受力",
+    "把導線與磁場平行時仍斷言必有和垂直配置相同的受力"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-KC-4-4",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

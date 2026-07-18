@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組木塊漂浮資料，哪項判讀仍合理？",
+  "stem": "從漂浮靜止改成向下加速時，重力由10 N 向下變為12 N 向下，浮力由10 N 向上變為8 N 向上。哪項科學關係能解釋兩列其他垂直力？",
   "options": [
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水",
-    "漂浮或懸浮且靜止時合力為零",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關"
+    "解題時將漂浮靜止的 10 N 重力與 10 N 浮力相加，判成合力為 20 N 向上",
+    "主張懸浮物體並漏掉重力，因為它在液體中並漏掉上下移動",
+    "漂浮或懸浮且靜止時合力為零，浮力等於重力",
+    "看到物體下沉就認為浮力為零"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水」不成立；船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉。"
+      "reason": "解題時錯將漂浮靜止的 10 N 重力與 10 N 浮力相加，誤認合力為 20 N 向上，結果會錯判其他垂直力。漂浮與懸浮靜止時合力為零；浮力的數值若未依重力核對，會使其他垂直力無法通過分析漂浮懸浮下沉時的受力檢查。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力」。"
+      "isCorrect": false,
+      "reason": "誤以為懸浮物體沒有重力，因為它在液體中沒有上下移動，結果會錯判其他垂直力。漂浮或懸浮且靜止時合力為零，浮力等於重力；重力未列入分析漂浮懸浮下沉時的受力時，其他垂直力的浮力大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「漂浮物體既然在水面上，就完全不受浮力，只受向下重力」不成立；漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力。"
+      "isCorrect": true,
+      "reason": "漂浮或懸浮且靜止時合力為零，浮力等於重力。向下加速列的重力為12 N 向下，浮力為8 N 向上；受繩拉住靜止列的重力為12 N 向下，浮力為8 N 向上。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關」不成立；沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力。"
+      "reason": "一看到物體下沉就認為浮力為零，卻未把浮力列入受力圖。漂浮或懸浮且靜止時合力為零，浮力等於重力；照原做法會把其他垂直力算錯或判反。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關"
+    "解題時將漂浮靜止的 10 N 重力與 10 N 浮力相加，判成合力為 20 N 向上",
+    "主張懸浮物體並漏掉重力，因為它在液體中並漏掉上下移動",
+    "看到物體下沉就認為浮力為零"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

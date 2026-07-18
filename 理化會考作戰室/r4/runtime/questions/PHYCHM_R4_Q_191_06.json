@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解不同色光照明下物體可能顏色，哪項修正合理？",
+  "stem": "同一紅紙在紅、綠、藍單色光下反射值0.90、0.08、0.05。哪個照明下最亮？",
   "options": [
-    "紅色物體在只含藍光的照明下可看來很暗",
-    "水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光",
-    "近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正",
-    "顯微鏡和望遠鏡只是用一片平面玻璃把物體實際變大，無需多個透鏡成像"
+    "綠光",
+    "藍光",
+    "紅光",
+    "三者相同"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「紅色物體在只含藍光的照明下可看來很暗，因為沒有足夠可反射的紅光」。"
+      "isCorrect": false,
+      "reason": "0.08小於0.90。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光」不成立；眼球的角膜與水晶體等會聚光線，使外物在視網膜上形成倒立實像，再由神經系統處理。"
+      "reason": "0.05最小。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正」不成立；近視的遠物焦點在視網膜前，用凹透鏡矯正；遠視或老花相關情形可用凸透鏡輔助會聚。"
+      "isCorrect": true,
+      "reason": "紅光下反射相對值最高0.90。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「顯微鏡和望遠鏡只是用一片平面玻璃把物體實際變大，無需多個透…」不成立；顯微鏡利用物鏡形成中間像再由目鏡放大；望遠鏡也以多個光學元件組合改變觀察角度。"
+      "reason": "三讀值明顯不同。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光",
-    "近視和遠視都是焦點在視網膜前，所以全部使用凸透鏡矯正",
-    "顯微鏡和望遠鏡只是用一片平面玻璃把物體實際變大，無需多個透鏡成像"
+    "綠光",
+    "藍光",
+    "三者相同"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-10",
       "AUTH-NATURAL-LC-KA-4-11",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

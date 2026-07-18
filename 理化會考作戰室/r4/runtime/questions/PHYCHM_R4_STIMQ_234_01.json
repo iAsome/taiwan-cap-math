@@ -12,50 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_234",
-  "stem": "根據吸管與氣壓表中紀錄，哪項結論最合理？",
+  "stem": "從小活塞改成大活塞時，面積由5.0 cm²變為50 cm²，施力由20 N變為待算。從用帕斯卡原理解釋液壓裝置的定義看，面積與施力結果如何連結？",
   "options": [
-    "液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量",
-    "固體壓力是力乘面積，所以面積越大壓力必然越大",
-    "液體壓力只由容器底面積決定，和深度與液體種類無關",
-    "帕斯卡原理說明密閉流體上的壓力變化可傳至各處；液壓機可以大面積活塞得到較大力"
+    "小活塞壓力為 20÷0.0005＝40000 Pa",
+    "主張小活塞增加的壓力傳不到大活塞",
+    "僅寫輸出力變大，便宣稱液壓機同時省力、省距離並創造能量",
+    "把大、小活塞的作用力判成相同，並漏掉依活塞面積比較 F＝pA"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量」不成立；帕斯卡原理說明密閉流體上的壓力變化可傳至各處；液壓機可以大面積活塞得到較大力。"
+      "isCorrect": true,
+      "reason": "小活塞壓力為 20÷0.0005＝40000 Pa。小活塞列的面積為5.0 cm²、施力為20 N；大活塞列的面積為50 cm²、施力為待算。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「固體壓力是力乘面積，所以面積越大壓力必然越大」不成立；固體壓力 p＝F/A；100 N 均勻作用在 0.020 m² 面積上，壓力為 5000 Pa。"
+      "reason": "小活塞壓力為 20÷0.0005＝40000 Pa。小活塞列的面積為5.0 cm²、施力為20 N；大活塞列的面積為50 cm²、施力為待算。誤以為小活塞增加的壓力傳不到大活塞，所以液壓機無法放大作用力。帕斯卡原理說明密閉流體上的壓力變化可傳至各處；照原做法會把壓力算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「液體壓力只由容器底面積決定，和深度與液體種類無關」不成立；同一液體中深度越大壓力越大；同深度時液體密度較大者壓力較大。"
+      "reason": "小活塞壓力為 20÷0.0005＝40000 Pa。小活塞列的面積為5.0 cm²、施力為20 N；大活塞列的面積為50 cm²、施力為待算。僅寫輸出力變大，便宣稱液壓機同時省力、省距離並創造能量，結果會錯判壓力。液壓放大力時，大活塞移動距離較短；壓力差異若未通過用帕斯卡原理解釋液壓裝置對面積的控制，就不能只歸給施力。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「帕斯卡原理說明密閉流體上的壓力變化可傳至各處；液壓機可以大面積活塞得到較大力」。"
+      "isCorrect": false,
+      "reason": "小活塞壓力為 20÷0.0005＝40000 Pa。小活塞列的面積為5.0 cm²、施力為20 N；大活塞列的面積為50 cm²、施力為待算。把大、小活塞的作用力判成相同，卻未依活塞面積比較 F＝pA。小活塞壓力為 20÷0.0005＝40000 Pa；施力的數值若未依面積核對，會使壓力無法通過用帕斯卡原理解釋液壓裝置檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀"
+    "資料判讀",
+    "計算"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量",
-    "固體壓力是力乘面積，所以面積越大壓力必然越大",
-    "液體壓力只由容器底面積決定，和深度與液體種類無關"
+    "主張小活塞增加的壓力傳不到大活塞",
+    "僅寫輸出力變大，便宣稱液壓機同時省力、省距離並創造能量",
+    "把大、小活塞的作用力判成相同，並漏掉依活塞面積比較 F＝pA"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -64,20 +65,6 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_011"
   ]

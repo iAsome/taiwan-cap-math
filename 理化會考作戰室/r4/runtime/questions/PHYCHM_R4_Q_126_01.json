@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄討論可逆反應與動態平衡概念，哪項敘述正確？",
+  "stem": "可逆反應符號A⇌B表示？",
   "options": [
-    "動態平衡表示正逆反應都已完全停止，系統內粒子不再互動",
-    "反應速率只能由最後生成物總量判斷，和所需時間無關",
-    "可逆反應達動態平衡時，正、逆反應仍持續且速率相等，因此巨觀濃度維持穩定",
-    "只要實驗條件一樣，任何反應物的反應速率都必然相同"
+    "A與B在任何時刻的濃度都必須完全相等",
+    "A與B都不反應",
+    "只有A成B",
+    "A可成B，B也可成A"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「動態平衡表示正逆反應都已完全停止，系統內粒子不再互動」不成立；可逆反應達動態平衡時，正、逆反應仍持續且速率相等，因此巨觀濃度維持穩定。"
+      "reason": "濃度不必相等。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「反應速率只能由最後生成物總量判斷，和所需時間無關」不成立；反應速率可用單位時間內反應物的減少量，或生成物的增加量表示。"
+      "reason": "符號正表示反應。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「可逆反應達動態平衡時，正、逆反應仍持續且速率相等，因此巨觀濃度維持穩定」。"
+      "isCorrect": false,
+      "reason": "忽略逆反應。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「只要實驗條件一樣，任何反應物的反應速率都必然相同」不成立；在溫度、濃度、表面積均相同時，不同物質因本性不同可有不同反應速率。"
+      "isCorrect": true,
+      "reason": "雙向皆可進行。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "辨認",
-    "概念理解"
+    "符號辨識"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "動態平衡表示正逆反應都已完全停止，系統內粒子不再互動",
-    "反應速率只能由最後生成物總量判斷，和所需時間無關",
-    "只要實驗條件一樣，任何反應物的反應速率都必然相同"
+    "A與B在任何時刻的濃度都必須完全相等",
+    "A與B都不反應",
+    "只有A成B"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科反應速率、控制變因與動態平衡層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JE-4-1",
       "AUTH-NATURAL-LC-JE-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

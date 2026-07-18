@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告討論位置時間圖上的位置與時刻，哪項敘述正確？",
+  "stem": "位置—時間圖上，t=3 s 時圖線位於 x=5 m。此資訊表示什麼？",
   "options": [
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快",
-    "位置—時間圖的水平線表示物體以水平方向等速前進",
-    "位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置"
+    "物體在 3 s 內走了 5 m",
+    "物體在 3 s 時的位置為 5 m",
+    "物體速率為 5 m/s",
+    "物體加速度為 5 m/s²"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑」不成立；位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置。"
+      "reason": "物體在 3 s 內走了 5 m不成立。圖上一點的橫座標是時刻，縱座標是該時刻的位置。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快」不成立；位置—時間圖的斜率為位置變化除以時間變化；斜率絕對值較大表示速度大小較大。"
+      "isCorrect": true,
+      "reason": "圖上一點的橫座標是時刻，縱座標是該時刻的位置。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「位置—時間圖的水平線表示物體以水平方向等速前進」不成立；位置—時間圖的水平線表示靜止，直線斜率不變表示等速，斜率變號表示折返。"
+      "reason": "物體速率為 5 m/s不成立。圖上一點的橫座標是時刻，縱座標是該時刻的位置。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置」。"
+      "isCorrect": false,
+      "reason": "物體加速度為 5 m/s²不成立。圖上一點的橫座標是時刻，縱座標是該時刻的位置。"
     }
   ],
   "difficulty": "foundation",
@@ -46,16 +46,16 @@
     "辨認",
     "概念理解"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑",
-    "位置—時間圖上縱座標較大的物體在所有時刻都一定運動較快",
-    "位置—時間圖的水平線表示物體以水平方向等速前進"
+    "物體在 3 s 內走了 5 m",
+    "物體速率為 5 m/s",
+    "物體加速度為 5 m/s²"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

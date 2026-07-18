@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u16",
+  "batch": "017-u16-complete",
+  "skills": ["s008"],
+  "mc": [
+    {
+      "questionId": "u16-s008-v010",
+      "expectedContentSha256": "416143b7dce864f806e5fa581ac09a734168538785a8c40af25f362ceeec3f8f",
+      "replaceText": {
+        "已知AB＝1.8公分只是描述幾何距離": "已知AB＝1.8公尺只是描述幾何距離"
+      },
+      "reviewReplaceText": {
+        "已知AB＝1.8公分只是描述幾何距離": "已知AB＝1.8公尺只是描述幾何距離"
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [
+    {
+      "lectureId": "u16-s008-lecture-r1",
+      "expectedContentSha256": "77a9bd86d6fdae26b3bc77dca33395d6e92c0d8c7a85bc7939cc9f783c7ebf3c",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "已知線段CD及以R為端點的射線RY。只用無刻度直尺與圓規，在射線上作出點S，使RS=CD。",
+            "solutionSteps": [
+              "把圓規兩腳分別放在C、D，取得線段CD的跨距。",
+              "保持圓規開口不變，以R為圓心畫弧，使弧與射線RY相交。",
+              "將交點命名為S；圓弧半徑同為CD，所以RS=CD。"
+            ],
+            "answer": "以R為圓心、CD為半徑畫弧，弧與射線RY的交點S即為所求。",
+            "why": "圓規能直接保存既有線段的幾何距離，不必先讀出數值；同一圓的半徑都相等，因此交點S必定滿足RS=CD。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "作線段UV的垂直平分線，並說明為什麼兩次畫弧的半徑必須大於UV的一半。",
+            "solutionSteps": [
+              "取大於UV一半的固定圓規開口，分別以U、V為圓心，在線段兩側畫弧。",
+              "把兩組弧的交點命名為M、N，再用直尺連接MN。",
+              "M、N都與U、V等距，所以MN是UV的垂直平分線。"
+            ],
+            "answer": "直線MN即為UV的垂直平分線。",
+            "why": "半徑大於UV的一半時，兩個等半徑圓會有分居線段兩側的兩個交點，才能決定唯一直線；若恰等於一半，只有一個相切點，資料不足。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "只用尺規作出∠XYZ的角平分線，並以全等說明作法正確。",
+            "solutionSteps": [
+              "以Y為圓心畫弧，分別交YX、YZ於M、N，使YM=YN。",
+              "用同一圓規開口分別以M、N為圓心畫弧，兩弧在角內交於T。",
+              "連接YT；因YM=YN、MT=NT且YT共用，△YMT與△YNT由SSS全等。"
+            ],
+            "answer": "射線YT是∠XYZ的角平分線。",
+            "why": "兩個全等三角形在Y點的對應角相等，所以∠XYT=∠TYZ；整個結論來自等半徑弧與共用邊，不依賴量角器。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "以線段KL為一邊作等邊三角形。若兩個等半徑圓在線段兩側各有一個交點，應如何選點？",
+            "solutionSteps": [
+              "保持圓規開口為KL，分別以K、L為圓心畫圓弧。",
+              "選擇題目指定側的交點P；若未指定側，可任選其中一個交點。",
+              "連接KP、LP，因KP=KL且LP=KL，所以三邊相等。"
+            ],
+            "answer": "△KLP為等邊三角形；未指定側時，兩個交點都能形成正確作圖。",
+            "why": "兩圓交點到K、L的距離都等於共同半徑KL，因此任一交點都給出三條等長邊；兩個成品互為關於KL的鏡射。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u16-fig-008-construction-tools",
+      "expectedContentSha256": "ee8f83ed22cb4ed2ec42ce15e8aa6f86a6ad5abe7b10dcc28180e379f6213ebd",
+      "replaceText": {
+        "禁止以刻度量半長或角度": "不可用刻度直接量長度或角度"
+      }
+    }
+  ],
+  "textFiles": [
+    {
+      "path": "figures/u16/u16-fig-008-construction-tools.svg",
+      "replacements": [
+        {
+          "from": "禁止以刻度量半長或角度",
+          "to": "不可用刻度直接量長度或角度",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

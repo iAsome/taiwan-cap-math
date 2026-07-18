@@ -78,7 +78,11 @@ function describeScene([count,action,object,position,feature]){
   const people=count===1?"One person":`${["Zero","One","Two","Three","Four"][count]} people`;
   const wearing=feature==="none"?" with no marked accessory":feature==="hat"?` and wearing ${count===1?"a hat":"hats"}`:feature==="glasses"?" and wearing glasses":` and wearing ${count===1?"a scarf":"scarves"}`;
   const verb=count===1?({standing:"is standing",walking:"is walking",sitting:"is sitting",pointing:"is pointing"}[action]):({standing:"are standing",walking:"are walking",sitting:"are sitting",pointing:"are pointing"}[action]);
-  return `${people} ${verb}${wearing}; a ${object} is ${position} the table.`;
+  return `${people} ${verb}${wearing}; ${indefinite(object)} is ${position} the table.`;
+}
+
+function indefinite(noun){
+  return `${/^[aeiou]/iu.test(noun)?"an":"a"} ${noun}`;
 }
 
 function peopleFrame([count,action,,,feature]){
@@ -103,8 +107,8 @@ function pictureItem(index){
   return {
     id,section:"picture",transcript,spokenText:transcript,audioDescription:`Two ordered scene descriptions for four-panel listening board ${boardIndex+1}.`,visualAssetId,pauseMs:3000,voiceProfile:{voice:"Microsoft Zira Desktop",rate:-1},
     questions:[
-      makeSemanticQuestion({id:`ENG_R4_Q_LISTEN_${String(number).padStart(3,"0")}_01`,skillId:"ENG_R4_S310",stem:`The later scene shows ${peopleFrame(second)}, with a ${second[2]} ${second[3]} the table. Which panel matches every detail in the first scene?`,correct:`Panel ${LABELS[firstIndex]}`,distractors:LABELS.filter((_,i)=>i!==firstIndex).map((x)=>`Panel ${x}`),index,operation:"match-first-picture-scene",evidence:`第一段完整描述對應圖 ${LABELS[firstIndex]}。`,assets}),
-      makeSemanticQuestion({id:`ENG_R4_Q_LISTEN_${String(number).padStart(3,"0")}_02`,skillId:"ENG_R4_S311",stem:`The earlier scene shows ${peopleFrame(first)}, with a ${first[2]} ${first[3]} the table. Which panel matches every detail in the second scene?`,correct:`Panel ${LABELS[secondIndex]}`,distractors:LABELS.filter((_,i)=>i!==secondIndex).map((x)=>`Panel ${x}`),index:index+1,operation:"match-second-picture-position",evidence:`第二段的物件、人物與位置唯一對應圖 ${LABELS[secondIndex]}。`,assets}),
+      makeSemanticQuestion({id:`ENG_R4_Q_LISTEN_${String(number).padStart(3,"0")}_01`,skillId:"ENG_R4_S310",stem:`The later scene shows ${peopleFrame(second)}, with ${indefinite(second[2])} ${second[3]} the table. Which panel matches every detail in the first scene?`,correct:`Panel ${LABELS[firstIndex]}`,distractors:LABELS.filter((_,i)=>i!==firstIndex).map((x)=>`Panel ${x}`),index,operation:"match-first-picture-scene",evidence:`第一段完整描述對應圖 ${LABELS[firstIndex]}。`,assets}),
+      makeSemanticQuestion({id:`ENG_R4_Q_LISTEN_${String(number).padStart(3,"0")}_02`,skillId:"ENG_R4_S311",stem:`The earlier scene shows ${peopleFrame(first)}, with ${indefinite(first[2])} ${first[3]} the table. Which panel matches every detail in the second scene?`,correct:`Panel ${LABELS[secondIndex]}`,distractors:LABELS.filter((_,i)=>i!==secondIndex).map((x)=>`Panel ${x}`),index:index+1,operation:"match-second-picture-position",evidence:`第二段的物件、人物與位置唯一對應圖 ${LABELS[secondIndex]}。`,assets}),
       makeSemanticQuestion({id:`ENG_R4_Q_LISTEN_${String(number).padStart(3,"0")}_03`,skillId:"ENG_R4_S316",stem:`The first scene shows ${peopleFrame(first)}, and the second shows ${peopleFrame(second)}. Which object order is heard?`,correct:objectPairs[0],distractors:objectPairs.slice(1),index:index+2,operation:"integrate-two-scene-object-order",evidence:`音稿先說 ${first[2]}，再說 ${second[2]}。`,assets}),
     ],provenance:provenance("picture-sequence"),
   };

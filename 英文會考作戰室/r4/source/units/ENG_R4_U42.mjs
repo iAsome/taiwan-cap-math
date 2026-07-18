@@ -66,12 +66,44 @@ function asset(card, index) {
 const assets = cards.map(asset);
 const a = (number) => [`ENG_R4_FIG_42_${String(number).padStart(2, "0")}`];
 
-const commonMisconceptions = [
-  ["看到熟悉單字就選，不核對列欄。", "同一單字可能出現在不同區塊。", "先定位區塊、欄名與同一列。"],
-  ["圖中最大圖形一定是答案。", "尺寸可能只是版面，數值與標籤才有意義。", "讀數字、單位與圖例。"],
-  ["附註可以忽略。", "附註常改變資格、時間或可用方式。", "最後把 NOTE 套回候選答案。"],
-  ["不同列的資訊可以自由拼接。", "跨列拼接會製造不存在的組合。", "用手指沿同一列橫向核對。"],
-];
+const misconceptionsBySkill = {
+  ENG_R4_S279: [
+    ["看到相同時間就把不同列的地點與狀態接在一起。", "每列才代表一筆完整行程，跨列會製造不存在的安排。", "沿目標列核對 TIME、PLACE 與 STATUS。"],
+    ["把 DELAY 10 MIN 解讀成活動改到十點。", "10 MIN 是延後的分鐘數，不是新的鐘點。", "在表定時間上加十分鐘。"],
+    ["把 FULL 或 CANCELLED 當成時間資訊。", "這兩個詞都是狀態，分別表示額滿與取消。", "先辨認欄名，再解讀欄內文字。"],
+    ["只看地點名稱，不確認題目指定的時間。", "同一張時刻表可能列出相近地點或多個時段。", "用時間與地點兩個條件鎖定同一列。"],
+  ],
+  ENG_R4_S280: [
+    ["只挑最便宜的品項，忽略題目的飲食限制。", "低價品若標示 CONTAINS NUTS，仍不適合堅果過敏者。", "先用標籤篩選，再比較價格。"],
+    ["把 VEGAN 當成一定是 NUT-FREE。", "純素與不含堅果是兩項不同條件。", "只依菜單明示的實際標籤判斷。"],
+    ["把相鄰品項的價格接到另一個品名。", "ITEM、PRICE 與 LABEL 必須沿同一列閱讀。", "逐列核對品名、價格與標示。"],
+    ["計算總價時漏掉重複購買的數量。", "two Bananas 表示香蕉價格要計算兩次。", "列出各品項的數量與小計，再檢查預算。"],
+  ],
+  ENG_R4_S281: [
+    ["看見三角形就自行猜它代表山或危險。", "圖形代碼的意義由這張圖的圖例決定。", "在 MAP LEGEND 找同一符號與名稱。"],
+    ["把 Workshop (3) 解讀成第三號工作坊。", "括號數字在這張圖表示標記出現的數量。", "分清代碼名稱與出現次數。"],
+    ["只靠顏色辨認地圖標記。", "列印或色覺差異可能使顏色失去辨識力。", "同時使用文字、形狀與紋理。"],
+    ["把不同圖例項目的數量互相配錯。", "每個數字只屬於同列的符號與服務。", "沿圖例同一列讀代碼、意義與數量。"],
+  ],
+  ENG_R4_S282: [
+    ["看到最高的圖形就直接作答，不先讀單位。", "圖高只在同一尺度下有意義，kg、people 與 % 不能混用。", "先讀標題、標籤與單位。"],
+    ["把折線往下看成數值增加。", "線段方向要配合由左到右的時間順序判讀。", "依標籤順序逐點比較數值。"],
+    ["把圓餅圖的 40% 當成四十人。", "百分比表示全體中的比例，不等於人數。", "保留 % 單位再敘述資料。"],
+    ["計算差值時用較小值減較大值。", "how many more 要求正的相差量。", "用大值減小值，並核對結果的單位。"],
+  ],
+  ENG_R4_S283: [
+    ["把圖中數值接到錯誤的類別主詞。", "每個值只屬於同一標籤，錯接後整句就與圖表不符。", "先配對主詞與資料，再寫完整句子。"],
+    ["數值下降卻使用 rose。", "rose 與 fell 的方向必須符合前後資料。", "比較相鄰資料點後再選動詞。"],
+    ["看到最高值就寫成 every 或 always。", "單張圖只支持顯示期間與類別內的結論。", "使用 largest、during the three days 等有限表述。"],
+    ["把百分比差寫成人數差。", "百分點與人數是不同的量。", "沿用圖上的單位，準確寫出比較。"],
+  ],
+  ENG_R4_S284: [
+    ["找到主表中符合的一列就忽略 NOTE。", "附註可能加入截止、資格或用品限制。", "作答前把 NOTE 套回候選方案。"],
+    ["只確認時間，不核對地點與狀態。", "完整方案必須同時滿足題目指定的所有欄位。", "把需求拆成時間、地點、狀態與附註。"],
+    ["把 DELAY 或 early report 原樣當成實際時間。", "兩者都需要在表定時間上加減分鐘。", "算出實際時間後再判斷是否可行。"],
+    ["用資訊頁的無關數字替代規則證據。", "同一頁的表格、圖例與附註各自回答不同問題。", "只引用能直接支持該條件的區塊。"],
+  ],
+};
 
 const skills = [
   {
@@ -79,7 +111,7 @@ const skills = [
     objectives: ["辨認時刻表欄名與列的對齊關係。", "區分表定時間、延誤時間與狀態。", "依問題鎖定一列而不跨列拼接。"],
     sections: [["先找欄再找列", "先看問題要 TIME、PLACE 或 STATUS，再沿同一列讀完。表格線與欄名比單字位置更可靠。"], ["延誤要做一次運算", "DELAY 10 MIN 表示在表定時間加十分鐘，不是延誤到十點。CANCELLED、FULL 則是狀態，不可當時間。"], ["同名地點仍要看時間", "一個地點可能有多項活動。用時間與狀態一起縮小，不要只看到 place 就停止。"], ["用一句話回填", "選完後讀成 At 10:50, the bus reaches the museum。若時間、地點、狀態不能共存，就是跨列。"]],
     examples: [["Museum 10:40 DELAY 10 MIN", ["定位 Museum 列。", "10:40 加十分鐘。", "保留同列地點。"], "10:50", "延誤時間需由表定時間加上分鐘數。"], ["Pool 11:00 CANCELLED", ["找 Pool。", "讀 STATUS。", "不把 11:00 當成仍會舉行。"], "The pool event will not take place.", "CANCELLED 直接否定活動。"], ["Room 2 / 14:30 / COOKING", ["由 COOKING 找狀態欄。", "橫讀到 Room 2。", "再核對 14:30。"], "Cooking is in Room 2 at 14:30.", "三格來自同一列。"]],
-    misconceptions: commonMisconceptions,
+    misconceptions: misconceptionsBySkill.ENG_R4_S279,
     checks: [["DELAY 15 MIN 要如何處理？", "在表定時間加十五分鐘", "delay 數字是增加量。"], ["FULL 是時間嗎？", "不是，是狀態", "它表示名額已滿。"], ["何時可以橫跨兩列組合？", "題目明示比較兩列時", "查單一活動不可混列。"]],
     questions: questions([
       ["The Museum trip is delayed. What is its new time?", "10:50", "Museum 列為 10:40，延誤十分鐘後是 10:50。", [["10:30", "把延誤誤算成提前。"], ["10:40", "忽略延誤。"], ["12:10", "誤用 Market 列。"]], a(1)],
@@ -101,7 +133,7 @@ const skills = [
     objectives: ["由圖例代碼找到對應意義。", "區分代碼種類與出現數量。", "使用文字與紋理而非顏色辨識。"],
     sections: [["先讀圖例，不猜圖形", "代碼本身不保證意思；TRIANGLE 可能代表任何事物。先在 MAP LEGEND 找同一代碼，再讀右側服務名稱。"], ["括號數字是數量", "Workshop (3) 表示三個工作坊標記，不是第三號工作坊。問題若問 how many，回答括號數字。"], ["比較要保持同一單位", "比較 Experiment 與 Build Area 時都使用圖例 count。不要把活動時間或價格拿來比較。"], ["替代資料與圖例等價", "黑白紋理、印出的代碼與 fallback 表格都保留代碼、意義、數量；任何方式都應得到同一答案。"]],
     examples: [["TRIANGLE: Workshop (3)", ["找 TRIANGLE。", "讀冒號後意義。", "讀括號數量。"], "TRIANGLE means Workshop, and there are 3.", "代碼、意義、數量完整對齊。"], ["CROSS: First Aid (1)", ["不要把 cross 當取消。", "以圖例定義 First Aid。", "確認數量一。"], "one First Aid point", "圖例會覆蓋日常符號猜測。"], ["FLASK 4; GEAR 2", ["兩者單位皆為 count。", "計算 4 - 2。", "保留服務名稱。"], "There are 2 more Experiment points.", "同單位比較才能相減。"]],
-    misconceptions: commonMisconceptions,
+    misconceptions: misconceptionsBySkill.ENG_R4_S281,
     checks: [["圖例代碼可只靠形狀猜意思嗎？", "不可", "需讀明示對照。"], ["括號中的 3 通常表示什麼？", "該代碼的數量", "不是時間或價格。"], ["黑白列印時靠什麼辨識？", "代碼、文字、形狀與紋理", "不依賴顏色。"]],
     questions: questions([
       ["Which code marks workshops, and how many are shown?", "TRIANGLE, 3", "圖例明示 TRIANGLE: Workshop (3)。", [["SQUARE, 1", "這是 Help Desk。"], ["CIRCLE, 2", "這是 Water Point。"], ["TRIANGLE, 1", "意義正確但數量錯。"]], a(1)],
@@ -123,7 +155,7 @@ const skills = [
     objectives: ["讀取長條、折線與圓餅圖標示值。", "以相同單位比較差值、總和或倍數。", "區分最高值、增減方向與比例點差。"],
     sections: [["先讀標題與單位", "people、kg、% 不可互換。圓餅圖的 10 表示十個百分點，不一定是十人。"], ["標籤與數值成對", "沿著長條、折線點或圓餅圖例讀值。不要把相鄰類別的數字交換。"], ["把比較詞翻成運算", "how many more 用大減小，total 用加法，twice 表乘二。先寫兩個原值再運算。"], ["折線只描述已給區間", "由 Mon 到 Tue 上升，只能描述這段資料；不能推成每天都會繼續上升。"]],
     examples: [["10 AM 35; 9 AM 20", ["單位都是 people。", "用 35 - 20。", "保留時間標籤。"], "15 more people", "同圖同單位可直接相減。"], ["Mystery 40%; Science 25%", ["確認百分比。", "40 - 25 = 15。", "稱 percentage points。"], "15 percentage points", "百分比相減得到百分點差。"], ["Tue 24; Wed 12", ["比較 24 與 12。", "24 = 2 × 12。", "寫倍數方向。"], "Tuesday is twice Wednesday.", "兩值皆為 walkers。"]],
-    misconceptions: commonMisconceptions,
+    misconceptions: misconceptionsBySkill.ENG_R4_S282,
     checks: [["40% 減 25% 得到什麼？", "15 個百分點", "這是比例之差。"], ["how many more 使用哪個運算？", "大值減小值", "差值回答多多少。"], ["折線上升可保證未來也上升嗎？", "不可", "只能描述資料區間。"]],
     questions: questions([
       ["How many more visitors came at 10 AM than at 9 AM?", "15", "10 AM 三十五人減 9 AM 二十人為十五。", [["5", "誤比 10 AM 與 11 AM。"], ["20", "這是 9 AM 原值。"], ["55", "把兩值相加。"]], a(1)],
@@ -145,7 +177,7 @@ const skills = [
     objectives: ["把圖表值轉述為語法完整的英文句。", "選擇與資料強度一致的比較語句。", "避免把局部資料擴張成永遠或所有情況。"],
     sections: [["主詞先對標籤", "句子主詞必須是圖中類別。10 AM had 35 visitors 的 35 不可接到 9 AM。"], ["動詞選擇符合圖型", "長條圖可用 had、was；折線有時間順序時可用 rose 或 fell；圓餅圖用 accounted for 或 had a share of。"], ["比較方向不能顛倒", "higher than 前是大值，lower than 前是小值。先寫原值，再決定比較詞。"], ["只說資料支持的範圍", "圖只涵蓋三天，就說 during the three days；不能使用 always、never 或 every future day。"]],
     examples: [["Fri 12 kg; Sat 8 kg; Sun 5 kg", ["依時間讀三值。", "數值持續下降。", "限制在 Friday to Sunday。"], "Waste fell each day from Friday to Sunday.", "方向與範圍都符合。"], ["Photo 45%; Clay 30%; Print 25%", ["找最高值 Photo。", "保留 45%。", "不用 every visitor。"], "Photo received the largest share, at 45%.", "largest 與數值皆正確。"], ["Nature 48; Design 40", ["主詞 Nature 對 48。", "比較方向為高。", "差值八非必要。"], "Nature had more visits than Design.", "句子不增加圖外原因。"]],
-    misconceptions: commonMisconceptions,
+    misconceptions: misconceptionsBySkill.ENG_R4_S283,
     checks: [["圖表只有三天，可說 always 嗎？", "不可", "範圍超出資料。"], ["higher than 前放哪個值？", "較大值的類別", "比較方向由主詞決定。"], ["圓餅圖 45% 可說 every visitor 嗎？", "不可", "45% 不是全部。"]],
     questions: questions([
       ["Which sentence accurately reports the visitor chart?", "The 10 AM count was the highest at 35.", "10 AM 的三十五高於另外兩時段。", [["Only 9 AM had visitors.", "其餘時段也有數值。"], ["The count fell from 9 AM to 10 AM.", "20 到 35 是上升。"], ["Every hour had 35 visitors.", "三個值不同。"]], a(1)],
@@ -167,7 +199,7 @@ const skills = [
     objectives: ["整合不同區塊的互補資訊。", "把附註轉為資格、截止或用品限制。", "用最小充分步驟解決生活情境。"],
     sections: [["先把需求拆成條件", "人物可能同時有時間、預算、地點與資格。把每項寫成勾選框，再逐區塊找證據。"], ["NOTE 是硬條件", "closes、required、may not 等字會排除方案。它不是背景裝飾，必須在最後決策中出現。"], ["延誤與提前報到要算實際時間", "DELAY 加上分鐘，report early 則從開始時間倒推。運算方向由語意決定。"], ["答案只處理題目目標", "若問能否參加，回答可否與關鍵原因即可；不要加入未提供的交通、天氣或人物。"]],
     examples: [["Court match 09:20; report 15 minutes early", ["活動開始 09:20。", "early 表往前算。", "減十五分鐘。"], "Report at 09:05.", "表格與附註共同決定。"], ["Lab B demo 16:20; goggles required", ["定位 Lab B。", "核對 DEMO。", "套用 required。"], "Arrive for 16:20 with goggles.", "缺任一資訊都不完整。"], ["Cooking 14:30; register before noon", ["課程尚未開始不等於能加入。", "before noon 是截止。", "未登記且下午才到已太晚。"], "The unregistered visitor cannot join.", "資格截止壓過尚有時間的直覺。"]],
-    misconceptions: commonMisconceptions,
+    misconceptions: misconceptionsBySkill.ENG_R4_S284,
     checks: [["report 15 minutes early 是加還是減？", "從開始時間減十五分鐘", "early 表較早。"], ["required 可當建議嗎？", "不可", "它表示必要條件。"], ["主表可行但 NOTE 不合，能選嗎？", "不能", "所有條件需同時滿足。"]],
     questions: questions([
       ["Mia reaches Harbor Day at 10:50 without a workshop booking. Can she still make a booking?", "No, booking closed at 10:20.", "實際抵達 10:50 晚於附註截止 10:20。", [["Yes, because the Museum time was 10:40.", "忽略延誤與截止。"], ["Yes, because three workshop markers exist.", "數量不取消預約截止。"], ["No, because the Market is full.", "Market 狀態與 workshop booking 無關。"]], a(1)],
@@ -189,7 +221,7 @@ const skills = [
     objectives: ["沿同一列整合品項、價格與標籤。", "辨認 VEGAN、NUT-FREE 與 CONTAINS 等限制詞。", "計算簡單合計並檢查預算。"],
     sections: [["限制先於喜好", "若題目說 must avoid nuts，先刪除 CONTAINS NUTS，再比較價格。不能因最便宜而忽略安全標籤。"], ["價格要跟著品項", "ITEM、PRICE、LABEL 是同一列資訊。沿表格橫讀，避免把便宜價格接到另一個品項。"], ["合計逐項列式", "買兩樣時先寫每項價格，再做加法。若 under $8，答案必須小於八，不包含八。"], ["沒有標示就不自行保證", "VEGAN 不自動等於 NUT-FREE；表格只支持明示標籤。對未標示條件保留未知。"]],
     examples: [["Fruit Cup $3 NUT-FREE", ["先找 nut 限制。", "同列確認 NUT-FREE。", "再讀價格。"], "The $3 Fruit Cup fits.", "限制與價格均由同列提供。"], ["Tea $2 + Sandwich $5", ["列出 2 與 5。", "相加得 7。", "比較 $8 預算。"], "$7, so it is under $8.", "under 表嚴格小於。"], ["Pie $5 CONTAINS NUTS", ["看到 contains。", "確認受限成分 nuts。", "即使在預算內也排除。"], "Do not choose the pie for a nut allergy.", "安全限制優先。"]],
-    misconceptions: commonMisconceptions,
+    misconceptions: misconceptionsBySkill.ENG_R4_S280,
     checks: [["CONTAINS NUTS 對堅果過敏者表示什麼？", "不可選", "標籤明示含有過敏原。"], ["under $5 包含 $5 嗎？", "不包含", "under 是嚴格小於。"], ["VEGAN 一定代表無堅果嗎？", "不一定", "需另有 NUT-FREE 資訊。"]],
     questions: questions([
       ["Which item is both nut-free and the least expensive?", "Fruit Cup for $3", "Fruit Cup 同列明示 NUT-FREE，且價格三元最低。", [["Bean Wrap for $4", "雖 vegan，但未標 nut-free。"], ["Fish Roll for $6", "價格較高且標示魚類。"], ["Fruit Cup for $6", "品項正確但價格跨列。"]], a(1)],

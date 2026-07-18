@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於密度與體積求質量，哪項結論符合題給條件？",
+  "stem": "同材質實心甲體積 10 cm³、乙體積 30 cm³。若密度相同，質量關係為？",
   "options": [
-    "體積是 135×2.7＝364.5 cm³，因為密度越大體積一定越大",
-    "石塊體積就是沒入後讀值 47.5 cm³，無須減去原有水量",
-    "物體切半後質量減半，所以密度也一定減半",
-    "密度 7.8 g/cm³、體積 10 cm³ 的鐵塊質量為 78 g"
+    "甲為乙的 3 倍",
+    "兩者質量相同",
+    "無法由體積推論",
+    "乙為甲的 3 倍"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「體積是 135×2.7＝364.5 cm³，因為密度越大體…」不成立；質量 135 g、密度 2.7 g/cm³ 的樣品體積為 50 cm³，使用 V＝m/ρ。"
+      "reason": "比例方向相反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「石塊體積就是沒入後讀值 47.5 cm³，無須減去原有水量」不成立；量筒水面由 35.0 mL 升到 47.5 mL，完全沒入的石塊體積是 12.5 cm³，且不…。"
+      "reason": "體積不同。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「物體切半後質量減半，所以密度也一定減半」不成立；同一均勻銅塊切成兩半後，每塊的質量和體積同比減少，密度仍相同。"
+      "reason": "同材質密度已給定相同。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「密度 7.8 g/cm³、體積 10 cm³ 的鐵塊質量為 78 g，使用 m＝ρV」。"
+      "reason": "m 與 V 在同密度下成正比。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "條件判斷"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "體積是 135×2.7＝364.5 cm³，因為密度越大體積一定越大",
-    "石塊體積就是沒入後讀值 47.5 cm³，無須減去原有水量",
-    "物體切半後質量減半，所以密度也一定減半"
+    "甲為乙的 3 倍",
+    "兩者質量相同",
+    "無法由體積推論"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-3",
       "AUTH-NATURAL-LC-CA-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

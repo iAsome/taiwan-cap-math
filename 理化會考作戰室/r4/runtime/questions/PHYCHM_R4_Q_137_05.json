@@ -16,51 +16,50 @@
     "AUTH-NATURAL-LP-PO-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於實驗目的選擇量測與加熱器材，哪項結論符合題給條件？",
+  "stem": "溫度計感溫部位貼住正被加熱的燒杯底，讀值可能如何？",
   "options": [
-    "只有藥品顏色鮮豔時才需看危害標示，無色溶液都可安全徒手處理",
-    "量取 25 mL 溶液適合用量筒而非燒杯；加熱需選可受熱器材並依藥品性質選熱源",
-    "未知氣體應把鼻子靠近容器深吸，稀釋時將水一次倒入濃酸可最快散熱",
-    "自變項是實驗者要量到的結果，應變項則是所有必須保持不變的條件"
+    "不受位置影響",
+    "偏向底部受熱面的溫度",
+    "必定為零",
+    "必定等於室溫"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只有藥品顏色鮮豔時才需看危害標示，無色溶液都可安全徒手處理」不成立；操作前應讀取藥品名稱、濃度與危害標示，依飛濺、腐蝕、易燃等風險佩戴適當護目鏡與手套。"
+      "reason": "位置會影響代表性。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「量取 25 mL 溶液適合用量筒而非燒杯；加熱需選可受熱器材並依藥品性質選熱源」。"
+      "reason": "底部可能比液體其他位置熱。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「未知氣體應把鼻子靠近容器深吸，稀釋時將水一次倒入濃酸可最快…」不成立；聞氣體要用手輕扇少量氣體；加熱試管口不對人；稀釋濃酸應將酸緩慢加入水。"
+      "reason": "沒有歸零關係。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「自變項是實驗者要量到的結果，應變項則是所有必須保持不變的條件」不成立；比較溫度對溶解速度的實驗，溫度是自變項、溶解時間是應變項，質量、顆粒大小與攪拌要控制。"
+      "reason": "加熱時不一定室溫。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "誤差分析"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只有藥品顏色鮮豔時才需看危害標示，無色溶液都可安全徒手處理",
-    "未知氣體應把鼻子靠近容器深吸，稀釋時將水一次倒入濃酸可最快散熱",
-    "自變項是實驗者要量到的結果，應變項則是所有必須保持不變的條件"
+    "不受位置影響",
+    "必定為零",
+    "必定等於室溫"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段探究與實作學習表現; 臺灣國中教育會考自然科實驗設計、安全與資料判讀題型",
     "sourceRefs": [
       "AUTH-NATURAL-LP-AI-4-1",
       "AUTH-NATURAL-LP-AI-4-2",
@@ -73,19 +72,5 @@
       "AUTH-NATURAL-LP-PO-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

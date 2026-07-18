@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄討論能量守恆檢查理想系統，哪項敘述正確？",
+  "stem": "動能和位能在甲為10 J、60 J，到乙為35 J、45 J。用能量守恆檢查理想系統用這兩筆動能資料會得到什麼結果？",
   "options": [
-    "能量轉換時可無故多出或少掉能量，因此不必界定系統就能使用守恆",
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "選定系統若不與外界交換能量，總能量守恆；若動能增加 30 J，其他能量形式總量應減少 30 J",
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J"
+    "各時刻三種能量形式合計皆為 100 J",
+    "解題時將能量守恆解釋成每一種能量都各自不變，而不是各形式總和不變",
+    "把系統有外力作功時仍把外界輸入排除，硬把內部能量總和判成固定",
+    "看到甲到丙動能增加 60 J"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「能量轉換時可無故多出或少掉能量，因此不必界定系統就能使用守恆」不成立；選定系統若不與外界交換能量，總能量守恆；若動能增加 30 J，其他能量形式總量應減少 30 J。"
+      "isCorrect": true,
+      "reason": "各時刻三種能量形式合計皆為 100 J。甲列的動能為10 J、位能為60 J；乙列的動能為35 J、位能為45 J。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關」不成立；力對物體作功要有物體沿力的分量方向發生位移；用力提住靜止物體時對物體作功為零。"
+      "reason": "解題時錯將能量守恆解釋成每一種能量都各自不變，而不是各形式總和不變，結果會錯判總能量。選定系統若不與外界交換能量，總能量守恆；照原做法會把總能量算錯或判反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「選定系統若不與外界交換能量，總能量守恆；若動能增加 30 J，其他能量形式總量應減少 30 J」。"
+      "isCorrect": false,
+      "reason": "解題時誤把系統有外力作功時仍把外界輸入排除，硬把內部能量總和判成固定。守恆結論以所選系統不與外界交換能量為前提；總能量差異若未通過用能量守恆檢查理想系統對動能的控制，就不能只歸給位能。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「功是力除以位移，所以 20 N 推 3 m 作功為 6.6…」不成立；恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J。"
+      "reason": "一看到甲到丙動能增加 60 J，卻沒有核對位能與彈性位能合計也減少 60 J。各時刻三種能量形式合計皆為 100 J；位能的數值若未依動能核對，會使總能量無法通過用能量守恆檢查理想系統檢查。"
     }
   ],
   "difficulty": "foundation",
@@ -50,16 +50,16 @@
     "辨認",
     "概念理解"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "能量轉換時可無故多出或少掉能量，因此不必界定系統就能使用守恆",
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J"
+    "解題時將能量守恆解釋成每一種能量都各自不變，而不是各形式總和不變",
+    "把系統有外力作功時仍把外界輸入排除，硬把內部能量總和判成固定",
+    "看到甲到丙動能增加 60 J"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估船的平均密度報告時，哪項說明正確？",
+  "stem": "部分進水列給出總質量1000 t，另記外形排水體積1000 m³及平均密度1000 kg/m³。為使平均密度可重現，紀錄中缺少什麼？",
   "options": [
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水",
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關",
-    "浮力大小永遠等於物體自身重量，不論它沉沒、漂浮或被外力拉住",
-    "船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉"
+    "主張潛水艇只要下潛到更深處，平均密度就會在未進水時自動增加",
+    "解題時將鋼船漂浮歸因於鋼的密度小於水，忽略中空船體的整體平均密度",
+    "實際操作還要看推進與水流",
+    "把討論潛水艇進排水時假定外殼體積也同比改變，混淆質量與排水體積"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水」不成立；船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉。"
+      "reason": "誤以為潛水艇只要下潛到更深處，平均密度就會在未進水時自動增加。船以中空結構降低整體平均密度；總質量未列入連結船潛水艇與密度調整應用時，平均密度的外形排水體積大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關」不成立；沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力。"
+      "reason": "解題時錯將鋼船漂浮歸因於鋼的密度小於水，忽略中空船體的整體平均密度。船以中空結構降低整體平均密度；照原做法會把平均密度算錯或判反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「浮力大小永遠等於物體自身重量，不論它沉沒、漂浮或被外力拉住」不成立；阿基米德原理：物體所受向上浮力的大小，等於它所排開流體的重量。"
+      "isCorrect": true,
+      "reason": "實際操作還要看推進與水流。改變深度但不進排水列的總質量為1000 t，外形排水體積為1000 m³；排出壓載水列的總質量為900 t，外形排水體積為1000 m³。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉」。"
+      "isCorrect": false,
+      "reason": "解題時誤把討論潛水艇進排水時假定外殼體積也同比改變，混淆質量與排水體積。假設外殼體積近似固定且忽略海水密度隨深度的小變化；平均密度差異若未通過連結船潛水艇與密度調整應用對總質量的控制，就不能只歸給外形排水體積。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水",
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關",
-    "浮力大小永遠等於物體自身重量，不論它沉沒、漂浮或被外力拉住"
+    "主張潛水艇只要下潛到更深處，平均密度就會在未進水時自動增加",
+    "解題時將鋼船漂浮歸因於鋼的密度小於水，忽略中空船體的整體平均密度",
+    "把討論潛水艇進排水時假定外殼體積也同比改變，混淆質量與排水體積"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

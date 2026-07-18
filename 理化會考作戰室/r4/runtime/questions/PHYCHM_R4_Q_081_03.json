@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理反應式配平資料後，哪項說明正確？",
+  "stem": "要用天平驗證產氣反應的質量守恆，哪個裝置最合適？",
   "options": [
-    "只要反應式兩側的分子個數相同，就不必再檢查各元素原子數",
-    "H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標",
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2",
-    "因為原子只重新排列"
+    "把生成氣體排出後只秤原容器與殘留物",
+    "敞口試管，氣泡消失後再秤",
+    "開口燒杯，反應後只秤液體",
+    "密封袋，整袋在反應前後都放上天平"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要反應式兩側的分子個數相同，就不必再檢查各元素原子數」不成立；檢查反應式時要逐種元素計算左右原子總數，每一種都相等才是已配平。"
+      "reason": "排走氣體破壞封閉系統。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標」不成立；2H₂＋O₂→2H₂O 以係數 2、1、2 使氫、氧原子在兩側分別都是 4、2 個。"
+      "reason": "開口試管遺漏逸出的氣體。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「配平係數 2：1：2 直接表示三種物質的質量比也是 2：1…」不成立；2H₂＋O₂→2H₂O 表示氫分子、氧分子與水分子的粒子數比為 2：1：2。"
+      "reason": "氣體會離開且未納入量測。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「密閉袋內的反應前後，所有反應物與生成物的總質量相等，因為原子只重新排列」。"
+      "reason": "密封袋保留所有反應物與產物。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "實驗設計"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要反應式兩側的分子個數相同，就不必再檢查各元素原子數",
-    "H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標",
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2"
+    "把生成氣體排出後只秤原容器與殘留物",
+    "敞口試管，氣泡消失後再秤",
+    "開口燒杯，反應後只秤液體"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

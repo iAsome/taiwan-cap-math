@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u15",
+  "batch": "016-u15-complete",
+  "skills": ["s008"],
+  "mc": [],
+  "constructedResponse": [],
+  "lectures": [
+    {
+      "lectureId": "u15-s008-lecture",
+      "expectedContentSha256": "340f7e98415ec9c9df83428ecd311565c158f7add48663af00873391d25cf09b",
+      "set": {
+        "definitionsAndMeaning": "斜截式y=ax+b以a表示斜率、b表示y軸截距；令x=0可得交點(0,b)，已知斜率與線上一點則可代入求出b。",
+        "workedExamples": [
+          {
+            "exampleId": "s008-ex01",
+            "title": "辨認係數",
+            "prompt": "對函數y=-(1/2)x+6，指出斜率、y軸截距點，並判斷圖形向右上升或下降。",
+            "solution": "斜率為-1/2，y軸截距點為(0,6)；因斜率為負，圖形向右下降。",
+            "solutionSteps": [
+              "對照y=ax+b，讀得a=-1/2、b=6。",
+              "令x=0得到y=6，所以y軸截距點是(0,6)。",
+              "斜率-1/2小於0，因此x增加時y減少，圖形向右下降。"
+            ],
+            "why": "x的係數必須連同負號判讀；常數項給出x=0時的函數值，而斜率正負決定直線向右的升降方向。",
+            "level": "basic"
+          },
+          {
+            "exampleId": "s008-ex02",
+            "title": "整理成斜截式",
+            "prompt": "把5x+2y=8整理成y=ax+b，並指出斜率與y軸截距。",
+            "solution": "2y=-5x+8，所以y=-(5/2)x+4；斜率為-5/2，y軸截距為4。",
+            "solutionSteps": [
+              "把5x移到等號右側，得到2y=-5x+8。",
+              "等式兩邊每一項都除以2，得到y=-(5/2)x+4。",
+              "對照y=ax+b，讀得斜率-5/2與y軸截距4。"
+            ],
+            "why": "解出y時，右側所有項都必須同除以y的係數；完整整理後才能從x的係數與常數項正確讀取兩個參數。",
+            "level": "standard"
+          },
+          {
+            "exampleId": "s008-ex03",
+            "title": "已知點求截距",
+            "prompt": "一直線斜率為-2且通過(3,1)。用y=ax+b求b、完整函數式與y軸截距點。",
+            "solution": "b=7，函數式y=-2x+7，y軸截距點為(0,7)。",
+            "solutionSteps": [
+              "依斜率先寫成y=-2x+b。",
+              "代入(3,1)：1=-6+b，解得b=7。",
+              "寫成y=-2x+7；令x=0得到y軸截距點(0,7)。"
+            ],
+            "why": "斜率只決定直線的傾斜程度；還要用通過點求出b，才能唯一決定直線，再以x=0核對截距。",
+            "level": "advanced"
+          },
+          {
+            "exampleId": "s008-ex04",
+            "title": "陡峭比較",
+            "prompt": "在相同坐標尺度下，比較y=4x+1與y=-2x+1的陡峭程度與向右升降方向，並說明為何要比較|a|。",
+            "solution": "第一條向右上升且較陡，第二條向右下降；因4>2，所以第一條較陡。",
+            "solutionSteps": [
+              "讀出兩條直線斜率分別為4與-2。",
+              "依正負判斷第一條向右上升、第二條向右下降。",
+              "陡峭程度比較斜率絕對值：4與2，所以第一條較陡。"
+            ],
+            "why": "斜率正負描述升降方向，絕對值描述每一單位水平變化造成的垂直變化量；兩者用途不同，不能只按斜率的數值大小判斷陡峭。",
+            "level": "connection"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

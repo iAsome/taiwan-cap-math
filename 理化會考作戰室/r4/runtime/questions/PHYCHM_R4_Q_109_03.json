@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理生活酸鹼安全資料後，哪項說明正確？",
+  "stem": "量測時讀值尚未穩定，應如何做？",
   "options": [
-    "高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性",
-    "pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗",
-    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關",
-    "不把測過的溶液倒回原瓶"
+    "把樣品倒回原瓶",
+    "立刻選自己喜歡的數值",
+    "依說明等待穩定再記錄",
+    "用力撞擊探頭"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性」不成立；濃度是溶質所佔比例，酸鹼強弱涉及物質在水中的離子行為；兩者不可完全畫上等號。"
+      "reason": "會污染原液。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗」不成立；pH 計使用前要依規範校正，電極清洗後輕吸水分，不把測過的溶液倒回原瓶。"
+      "reason": "屬主觀造數據。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「酸和鹼只由溶液顏色定義，和水溶液中的離子無關」不成立；在課程模型中，酸性水溶液的酸性與氫離子有關，鹼性水溶液的鹼性與氫氧根離子有關。"
+      "isCorrect": true,
+      "reason": "感測需時間達平衡。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「pH 計使用前要依規範校正，電極清洗後輕吸水分，不把測過的溶液倒回原瓶」。"
+      "isCorrect": false,
+      "reason": "可能損壞儀器。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "量測規範"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性",
-    "pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗",
-    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關"
+    "把樣品倒回原瓶",
+    "立刻選自己喜歡的數值",
+    "用力撞擊探頭"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

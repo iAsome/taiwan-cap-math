@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解輪軸齒輪與斜面功能，哪項修正合理？",
+  "stem": "紀錄斜面時，輸入條件是同一高度、坡長加倍，輸出觀察是所需推力較小，交換為路程增加。哪項檢查可防止輸入條件與輸出觀察混用？",
   "options": [
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功",
-    "輪軸利用不同力臂",
-    "力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離",
-    "轉動平衡只需左右作用力大小相同，施力位置和力臂不重要"
+    "僅憑輸出力變大就宣稱裝置省功",
+    "看到坡長加倍、推力減小，卻判定斜面提升的高度也加倍",
+    "不能只看瞬間力而忽略移動距離",
+    "主張小齒輪帶動大齒輪時，大齒輪會轉得更快且力矩更小"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功」不成立；輪軸利用不同力臂，齒輪利用齒數比改變轉速與力矩，斜面以增加距離換取較小力。"
+      "reason": "僅憑輸出力變大就宣稱裝置省功，未比較輸入與輸出移動距離，結果會錯判交換。實際裝置有摩擦，輸出功通常小於輸入功；交換差異若未通過解釋輪軸齒輪與斜面功能對輸入條件的控制，就不能只歸給輸出觀察。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「輪軸利用不同力臂，齒輪利用齒數比改變轉速與力矩，斜面以增加距離換取較小力」。"
+      "isCorrect": false,
+      "reason": "一看到坡長加倍、推力減小，卻判定斜面提升的高度也加倍，結果會錯判交換。三種裝置都以距離或轉速的交換改變所需力與力矩，理想情況不增加功；輸出觀察的數值若未依輸入條件核對，會使交換無法通過解釋輪軸齒輪與斜面功能檢查。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離」不成立；力矩大小為力乘以作用線到轉軸的垂直距離；10 N 作用於 0.30 m 力臂產生 3.0 N·m。"
+      "isCorrect": true,
+      "reason": "不能只看瞬間力而忽略移動距離。齒輪列的輸入條件為小齒輪帶大齒輪，輸出觀察為大齒輪轉慢、力矩較大；斜面列的輸入條件為同一高度、坡長加倍，輸出觀察為所需推力較小。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「轉動平衡只需左右作用力大小相同，施力位置和力臂不重要」不成立；轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零。"
+      "reason": "誤以為小齒輪帶動大齒輪時，大齒輪會轉得更快且力矩更小。輪軸利用不同力臂，齒輪利用齒數比改變轉速與力矩，斜面以增加距離換取較小力；輸入條件未列入解釋輪軸齒輪與斜面功能時，交換的輸出觀察大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功",
-    "力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離",
-    "轉動平衡只需左右作用力大小相同，施力位置和力臂不重要"
+    "僅憑輸出力變大就宣稱裝置省功",
+    "看到坡長加倍、推力減小，卻判定斜面提升的高度也加倍",
+    "主張小齒輪帶動大齒輪時，大齒輪會轉得更快且力矩更小"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

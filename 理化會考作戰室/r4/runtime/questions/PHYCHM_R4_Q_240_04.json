@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查船的平均密度紀錄，哪項判讀正確？",
+  "stem": "拿水中彈簧秤讀值減空氣中讀值，算出負值後就說浮力向下，結果會錯判水中浮力。用由視重量差求浮力檢查這個做法，水中浮力應如何重判？",
   "options": [
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水",
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量",
-    "物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N"
+    "把未完全浸沒的丁與完全浸沒的甲視為排開體積一定相同",
+    "拿水中彈簧秤讀值減空氣中讀值，算出負值後就說浮力向下",
+    "物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N",
+    "把物體碰到容器底仍拿彈簧秤讀值計算浮力，漏掉底部支持力"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「漂浮物體既然在水面上，就完全不受浮力，只受向下重力」不成立；漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力。"
+      "reason": "把未完全浸沒的丁與完全浸沒的甲視為排開體積一定相同。物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N；空氣中讀值未列入由視重量差求浮力時，水中浮力的完全浸水讀值大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水」不成立；船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉。"
+      "reason": "拿水中彈簧秤讀值減空氣中讀值，算出負值後就說浮力向下，結果會錯判水中浮力。物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N；照原做法會把水中浮力算錯或判反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「浮力為 12＋7＝19 N，因為水中讀值要加回原重量」不成立；物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N。"
+      "isCorrect": true,
+      "reason": "物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N。丁（未完全浸沒）列的空氣中讀值為12 N，完全浸水讀值為9 N；甲列的空氣中讀值為12 N，完全浸水讀值為7 N。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N」。"
+      "isCorrect": false,
+      "reason": "解題時誤把物體碰到容器底仍拿彈簧秤讀值計算浮力，漏掉底部支持力。彈簧秤必須穩定且物體未接觸容器；水中浮力差異若未通過由視重量差求浮力對空氣中讀值的控制，就不能只歸給完全浸水讀值。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀",
+    "條件判斷",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水",
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量"
+    "把未完全浸沒的丁與完全浸沒的甲視為排開體積一定相同",
+    "拿水中彈簧秤讀值減空氣中讀值，算出負值後就說浮力向下",
+    "把物體碰到容器底仍拿彈簧秤讀值計算浮力，漏掉底部支持力"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解運動圖表中的現象，哪項修正合理？",
+  "stem": "速度—時間圖由正值線性下降到零，代表什麼？",
   "options": [
-    "速度數值變得更負就一定是減速，無需比較速度大小與方向",
-    "「向東等速、停留、向西返回」的位置—時間圖應依序是正斜率、水平、負斜率",
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸",
-    "把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間與位置"
+    "向正方向運動並逐漸減速至停止",
+    "此時物體向負方向逐漸加速",
+    "物體的位置回到原點",
+    "此時物體始終保持等速"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「速度數值變得更負就一定是減速，無需比較速度大小與方向」不成立；速度—時間圖上數值由 2 增至 6 m/s 表示正向加速；速度由 −2 變 −6 m/s 則是…。"
+      "isCorrect": true,
+      "reason": "速度保持正但數值減小，至零時停止。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「「向東等速、停留、向西返回」的位置—時間圖應依序是正斜率、水平、負斜率」。"
+      "isCorrect": false,
+      "reason": "此時物體向負方向逐漸加速不成立。速度保持正但數值減小，至零時停止。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸」不成立；位置—時間圖的線形描述位置如何隨時間變化，不是物體在空間中的軌跡外觀。"
+      "reason": "物體的位置回到原點不成立。速度保持正但數值減小，至零時停止。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間…」不成立；「向東等速、停留、向西返回」的位置—時間圖應依序是正斜率、水平、負斜率。"
+      "reason": "此時物體始終保持等速不成立。速度保持正但數值減小，至零時停止。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "速度數值變得更負就一定是減速，無需比較速度大小與方向",
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸",
-    "把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間與位置"
+    "此時物體向負方向逐漸加速",
+    "物體的位置回到原點",
+    "此時物體始終保持等速"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據彈簧秤視重量紀錄，哪項判讀合理？",
+  "stem": "排開水體積和排開水質量在甲為200 cm³、200 g，到丁（鹽水）為200 cm³、240 g。使用浮力等於排開液體重量用這兩筆排開水體積資料會得到什麼結果？",
   "options": [
-    "阿基米德原理：物體所受向上浮力的大小，等於它所排開流體的重量",
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關",
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量",
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大"
+    "拿水的密度計算鹽水中的浮力",
+    "解題時將排開水 350 g 換算成 350 N，造成浮力大了一百倍",
+    "主張排開體積相同時，物體在任何流體中所受浮力都相同",
+    "同體積在較密鹽水中排開質量較大，浮力也較大"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「阿基米德原理：物體所受向上浮力的大小，等於它所排開流體的重量」。"
+      "isCorrect": false,
+      "reason": "拿水的密度計算鹽水中的浮力，忽略兩種液體密度不同。必須使用排開液體的密度與體積，不能直接拿物體質量取代排開液體重量；測得浮力差異若未通過使用浮力等於排開液體重量對排開水體積的控制，就不能只歸給排開水質量。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關」不成立；沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力。"
+      "reason": "解題時錯將排開水 350 g 換算成 350 N，造成浮力大了一百倍。每列浮力都等於排開液體的重量；排開水質量的數值若未依排開水體積核對，會使測得浮力無法通過使用浮力等於排開液體重量檢查。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「浮力為 12＋7＝19 N，因為水中讀值要加回原重量」不成立；物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N。"
+      "reason": "誤以為排開體積相同時，物體在任何流體中所受浮力都相同，結果會錯判測得浮力。阿基米德原理：物體所受向上浮力的大小，等於它所排開流體的重量；排開水體積未列入使用浮力等於排開液體重量時，測得浮力的排開水質量大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限…」不成立；完全沒入時，浮力隨液體密度與排開體積增大；同液體中排開體積相同則浮力相同。"
+      "isCorrect": true,
+      "reason": "同體積在較密鹽水中排開質量較大，浮力也較大。甲列的排開水體積為200 cm³、排開水質量為200 g；丁（鹽水）列的排開水體積為200 cm³、排開水質量為240 g。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
+    "辨認",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關",
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量",
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大"
+    "拿水的密度計算鹽水中的浮力",
+    "解題時將排開水 350 g 換算成 350 N，造成浮力大了一百倍",
+    "主張排開體積相同時，物體在任何流體中所受浮力都相同"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

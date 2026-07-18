@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄根據墨水色層下結論，哪項符合資料？",
+  "stem": "上層液體密度一定較大嗎？",
   "options": [
-    "出現同一顏色的色帶就能唯一證明兩樣品是同一物質",
-    "可先蒸發乾燥沙鹽混合物，這樣便能在未加水前分開兩種固體",
-    "濁水靜置後可先沉降再傾析",
-    "只要回收物的總質量較大，就能同時證明回收率和純度都較高"
+    "一定，顏色深者在上",
+    "不一定，因密度沒有意義",
+    "一定，重液會浮起",
+    "不一定；穩定分層時通常較小密度液在上"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「出現同一顏色的色帶就能唯一證明兩樣品是同一物質」不成立；濾紙色層分析利用成分對溶劑與濾紙的親和差異，移動距離不同可顯示多個色帶。"
+      "reason": "顏色不判密度。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「可先蒸發乾燥沙鹽混合物，這樣便能在未加水前分開兩種固體」不成立；分離沙與食鹽時，可依序加水溶鹽、過濾取沙、蒸發或結晶取鹽，每步只利用一個性質差。"
+      "reason": "密度是重要性質。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「鐵粉與砂可用磁鐵分離；濁水靜置後可先沉降再傾析，方法要對應性質差」。"
+      "isCorrect": false,
+      "reason": "方向顛倒。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「只要回收物的總質量較大，就能同時證明回收率和純度都較高」不成立；回收率比較取回的目標物比例，純度比較回收物中目標成分比例；高回收率不保證高純度。"
+      "isCorrect": true,
+      "reason": "符合重力分層。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "密度應用"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "出現同一顏色的色帶就能唯一證明兩樣品是同一物質",
-    "可先蒸發乾燥沙鹽混合物，這樣便能在未加水前分開兩種固體",
-    "只要回收物的總質量較大，就能同時證明回收率和純度都較高"
+    "一定，顏色深者在上",
+    "不一定，因密度沒有意義",
+    "一定，重液會浮起"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-4",
       "AUTH-NATURAL-LC-CA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "酸與金屬出現四種說法，哪項有理化概念支持？",
+  "stem": "指示劑估得介於pH 5與6兩色之間，應如何記錄？",
   "options": [
-    "家用物質就一定無害，酸性或鹼性清潔劑可任意混合以加強效果",
-    "高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性",
-    "廣用指示劑的顏色應對照色階判讀 pH 範圍，只能估計區間，不能單憑顏色確定化學身分",
-    "一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識溶液名稱"
+    "完全不記錄",
+    "精確pH 5.500000",
+    "一定pH 7",
+    "約pH 5～6"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「家用物質就一定無害，酸性或鹼性清潔劑可任意混合以加強效果」不成立；醋可用於某些水垢處理，氫氧化鈉可用於特定清潔；但酸鹼均可腐蝕，要依標示防護。"
+      "reason": "仍有可用範圍。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性」不成立；濃度是溶質所佔比例，酸鹼強弱涉及物質在水中的離子行為；兩者不可完全畫上等號。"
+      "reason": "肉眼無此精度。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「廣用指示劑的顏色應對照色階判讀 pH 範圍，只能估計區間，不能單憑顏色確定化學身分」。"
+      "isCorrect": false,
+      "reason": "顏色不在7區。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識…」不成立；廣用指示劑的顏色應對照色階判讀 pH 範圍，只能估計區間，不能單憑顏色確定化學身分。"
+      "isCorrect": true,
+      "reason": "符合色階解析度。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "數據表達"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "家用物質就一定無害，酸性或鹼性清潔劑可任意混合以加強效果",
-    "高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性",
-    "一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識溶液名稱"
+    "完全不記錄",
+    "精確pH 5.500000",
+    "一定pH 7"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "換成另一組音叉振動資料，哪項判讀仍合理？",
+  "stem": "同一空氣條件下把傳播距離由 34 m 加倍為 68 m。若聲速不變，單程時間如何？",
   "options": [
-    "聲速由介質與溫度等條件決定；在同一介質同條件下，高低音的聲速近似相同",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射",
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "音調較高的聲音一定在空氣中傳得較快，因為頻率較大"
+    "約減半",
+    "此時物體保持不變",
+    "約加倍",
+    "變成四倍"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「聲速由介質與溫度等條件決定；在同一介質同條件下，高低音的聲速近似相同」。"
+      "isCorrect": false,
+      "reason": "t＝d/v，距離增加不會使時間減半。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射」不成立；人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射。"
+      "reason": "v 固定時時間與距離成正比。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險」不成立；噪音風險同時與聲音強度級和暴露時間有關；較大聲音的安全暴露時間應更短。"
+      "isCorrect": true,
+      "reason": "t＝d/v；d 加倍且 v 固定，t 也加倍。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「音調較高的聲音一定在空氣中傳得較快，因為頻率較大」不成立；聲速由介質與溫度等條件決定；在同一介質同條件下，高低音的聲速近似相同。"
+      "reason": "沒有平方關係。"
     }
   ],
   "difficulty": "transfer",
@@ -47,16 +47,16 @@
     "情境遷移",
     "應用"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射",
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "音調較高的聲音一定在空氣中傳得較快，因為頻率較大"
+    "約減半",
+    "此時物體保持不變",
+    "變成四倍"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

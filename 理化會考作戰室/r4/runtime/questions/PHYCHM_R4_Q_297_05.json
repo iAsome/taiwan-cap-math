@@ -49,51 +49,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於發電方式的環境經濟與社會影響，哪項結論符合題給條件？",
+  "stem": "並列丙與丁，兩者生命週期排放是低、中，可用率是高、低。這兩列若依分析發電方式的環境經濟與社會影響比較，還要注意哪個可用率邊界？",
   "options": [
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性",
-    "比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響",
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統"
+    "僅用單一小時電價比較發電方式",
+    "把不同年份或功能單位的資料直接並列，卻不標示定義差異",
+    "指標定義、年份與功能單位必須一致",
+    "看到方案乙排放低便忽略可用率與土地需求，直接宣稱全面優於其他方案"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標…」不成立；可檢驗的節能決策應寫明基準用能、具體措施、量測期間、成功指標與氣溫、使用人數等不確定因素。"
+      "reason": "僅用單一小時電價比較發電方式，忽略生命週期排放、可靠性與社會影響。比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響；照原做法會把成本區間算錯或判反。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響」。"
+      "isCorrect": false,
+      "reason": "解題時誤把不同年份或功能單位的資料直接並列，卻不標示定義差異，結果會錯判成本區間。指標定義、年份與功能單位必須一致；成本區間差異若未通過分析發電方式的環境經濟與社會影響對生命週期排放的控制，就不能只歸給可用率。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「發電決策只要比較單一小時電價，其他環境、系統與社會資料都應…」不成立；比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響。"
+      "isCorrect": true,
+      "reason": "指標定義、年份與功能單位必須一致。甲列的生命週期排放為高，可用率為高；乙列的生命週期排放為低，可用率為中。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源…」不成立；能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式。"
+      "reason": "一看到方案乙排放低便忽略可用率與土地需求，直接宣稱全面優於其他方案。沒有一列在所有指標都占優，決策需先說明權重、需求與可接受風險；可用率的數值若未依生命週期排放核對，會使成本區間無法通過分析發電方式的環境經濟與社會影響檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "條件判斷",
-    "分析"
+    "應用"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性",
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統"
+    "僅用單一小時電價比較發電方式",
+    "把不同年份或功能單位的資料直接並列，卻不標示定義差異",
+    "看到方案乙排放低便忽略可用率與土地需求，直接宣稱全面優於其他方案"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-INA-4-1",
       "AUTH-NATURAL-LC-INA-4-2",
@@ -139,19 +139,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

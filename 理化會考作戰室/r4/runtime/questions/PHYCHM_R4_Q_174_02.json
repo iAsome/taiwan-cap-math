@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "根據噪音暴露紀錄，哪項判讀合理？",
+  "stem": "甲在 90 dB 環境 5 min，乙在 70 dB 環境 60 min。能否只由時間判定乙風險較高？",
   "options": [
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射",
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "噪音風險同時與聲音強度級和暴露時間有關"
+    "能；60 一定比 5 危險十二倍",
+    "不能；還要合併聲級與防護評估",
+    "不能；只需比較活動名稱",
+    "能；分貝對風險完全無關"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「距離為 340×0.40＝136 m，因為回聲時間只包含單程」不成立；回聲測距的聲波經往返路程；若聲速 340 m/s、往返 0.40 s，距離為 68 m。"
+      "reason": "分鐘數不能直接轉成風險倍數。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射」不成立；人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射。"
+      "isCorrect": true,
+      "reason": "兩人的聲級與時間方向相反，不能只取單一變因排序。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險」不成立；噪音風險同時與聲音強度級和暴露時間有關；較大聲音的安全暴露時間應更短。"
+      "reason": "活動名稱不提供聲學量測。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「噪音風險同時與聲音強度級和暴露時間有關；較大聲音的安全暴露時間應更短」。"
+      "isCorrect": false,
+      "reason": "聲級是評估的重要條件。"
     }
   ],
   "difficulty": "foundation",
@@ -47,16 +47,16 @@
     "關係判讀",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射",
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險"
+    "能；60 一定比 5 危險十二倍",
+    "不能；只需比較活動名稱",
+    "能；分貝對風險完全無關"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

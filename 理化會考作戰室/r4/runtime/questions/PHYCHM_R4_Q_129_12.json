@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LC-NA-4-4"
   ],
   "stimulusId": null,
-  "stem": "評估酒精與醋酸報告時，哪項說明正確？",
+  "stem": "未知物只知道含C、H、O，能否確定類別？",
   "options": [
-    "許多有機化合物含碳，但 CO₂、碳酸鹽等常列為無機物；分類要依課程定義與組成性質",
-    "材料只要價格最低就是最適合，用途、安全與處理條件都不影響選擇",
-    "「天然」必然代表無害、「人造」必然有害，因此不用比較任何數據",
-    "所有含碳物質都必然是有機物，所有不含碳物質都不可能與有機化學有關"
+    "一定無機",
+    "一定是乙醇",
+    "一定有機",
+    "仍需結構或物質類別資訊"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「許多有機化合物含碳，但 CO₂、碳酸鹽等常列為無機物；分類要依課程定義與組成性質」。"
+      "isCorrect": false,
+      "reason": "也可能有機。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「材料只要價格最低就是最適合，用途、安全與處理條件都不影響選擇」不成立；比較塑膠材料時應同時考慮耐熱、透明度、韌性、重複使用與當地處理條件。"
+      "reason": "多物質同元素。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「「天然」必然代表無害、「人造」必然有害，因此不用比較任何數據」不成立；材料決策應比較功能、安全、壽命、資源與廢棄影響，並標明資料來源與不確定性。"
+      "reason": "可能有例外或資訊不足。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「所有含碳物質都必然是有機物，所有不含碳物質都不可能與有機化…」不成立；許多有機化合物含碳，但 CO₂、碳酸鹽等常列為無機物；分類要依課程定義與組成性質。"
+      "isCorrect": true,
+      "reason": "元素組合不是唯一身分。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "資訊充分性"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "材料只要價格最低就是最適合，用途、安全與處理條件都不影響選擇",
-    "「天然」必然代表無害、「人造」必然有害，因此不用比較任何數據",
-    "所有含碳物質都必然是有機物，所有不含碳物質都不可能與有機化學有關"
+    "一定無機",
+    "一定是乙醇",
+    "一定有機"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科有機物、材料性質與永續判讀層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JF-4-1",
       "AUTH-NATURAL-LC-JF-4-2",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LC-NA-4-4"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組根據翹翹板下結論，哪項符合資料？",
+  "stem": "解題時錯將自由端拉繩距離與負載上升距離視為相同，忽略省力須多拉距離。用滑輪組乙列的承重繩段數4檢驗，應改採哪個判準？",
   "options": [
-    "理想定滑輪主要改變施力方向；動滑輪或滑輪組可由支撐繩段數分擔負載而省力",
-    "定滑輪一定把所需力減半，動滑輪則只改變方向而不省力",
-    "力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離",
-    "轉動平衡只需左右作用力大小相同，施力位置和力臂不重要"
+    "計算承重繩段時把並漏掉直接支撐移動滑輪的繩段也算入",
+    "把三段繩支撐 120 N 負載卻除以 2，誤算理想施力 60 N",
+    "動滑輪或滑輪組可由支撐繩段數分擔負載而省力",
+    "解題時將自由端拉繩距離與負載上升距離視為相同，忽略省力須多拉距離"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「理想定滑輪主要改變施力方向；動滑輪或滑輪組可由支撐繩段數分擔負載而省力」。"
+      "isCorrect": false,
+      "reason": "計算承重繩段時把卻未直接支撐移動滑輪的繩段也算入，結果會錯判理想施力。繩段必須直接支撐移動負載才計入；理想施力差異若未通過比較定滑輪動滑輪與滑輪組對承重繩段數的控制，就不能只歸給負載。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「定滑輪一定把所需力減半，動滑輪則只改變方向而不省力」不成立；理想定滑輪主要改變施力方向；動滑輪或滑輪組可由支撐繩段數分擔負載而省力。"
+      "reason": "解題時誤把三段繩支撐 120 N 負載卻除以 2，誤算理想施力 60 N，結果會錯判理想施力。忽略摩擦且同一繩張力相同時，承重繩段越多，每段需分擔的力越小；負載的數值若未依承重繩段數核對，會使理想施力無法通過比較定滑輪動滑輪與滑輪組檢查。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離」不成立；力矩大小為力乘以作用線到轉軸的垂直距離；10 N 作用於 0.30 m 力臂產生 3.0 N·m。"
+      "isCorrect": true,
+      "reason": "動滑輪或滑輪組可由支撐繩段數分擔負載而省力。單動滑輪列的承重繩段數為2，負載為120 N；滑輪組甲列的承重繩段數為3，負載為120 N。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「轉動平衡只需左右作用力大小相同，施力位置和力臂不重要」不成立；轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零。"
+      "reason": "解題時錯將自由端拉繩距離與負載上升距離視為相同，忽略省力須多拉距離。理想定滑輪主要改變施力方向；承重繩段數未列入比較定滑輪動滑輪與滑輪組時，理想施力的負載大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "定滑輪一定把所需力減半，動滑輪則只改變方向而不省力",
-    "力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離",
-    "轉動平衡只需左右作用力大小相同，施力位置和力臂不重要"
+    "計算承重繩段時把並漏掉直接支撐移動滑輪的繩段也算入",
+    "把三段繩支撐 120 N 負載卻除以 2，誤算理想施力 60 N",
+    "解題時將自由端拉繩距離與負載上升距離視為相同，忽略省力須多拉距離"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

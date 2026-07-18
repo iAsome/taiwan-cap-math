@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解電路、電流、電壓與電阻中的現象，哪項修正合理？",
+  "stem": "表中安培計丙的讀值為過大，對應連接位置直接跨電池與量程0–1 A。重做後要先驗證哪個量測條件？",
   "options": [
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少",
-    "安培計串聯在待測支路中",
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流"
+    "實際接線還要檢查極性與量程，初次量測宜由較大量程開始",
+    "把初次量測直接選最小量程且不查極性，增加儀表受損或超量程風險",
+    "把伏特計串聯主支路的讀值當成電阻兩端電壓",
+    "主張安培計與伏特計接法可以互換，只要畫在電路圖上即可"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少」不成立；串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和。"
+      "isCorrect": true,
+      "reason": "實際接線還要檢查極性與量程，初次量測宜由較大量程開始。伏特計乙列的連接位置為並聯電阻兩端，量程為0–10 V；安培計丙列的連接位置為直接跨電池，量程為0–1 A。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性」。"
+      "isCorrect": false,
+      "reason": "解題時誤把初次量測直接選最小量程且不查極性，增加儀表受損或超量程風險。實際接線還要檢查極性與量程，初次量測宜由較大量程開始；讀值差異若未通過正確連接安培計與伏特計對連接位置的控制，就不能只歸給量程。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆」不成立；並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。"
+      "reason": "把伏特計串聯主支路的讀值當成電阻兩端電壓，結果會錯判讀值。甲乙接法可分別量支路電流與元件電壓；量程的數值若未依連接位置核對，會使讀值無法通過正確連接安培計與伏特計檢查。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「短路和斷路都只會使電流完全為零，不可能出現過大電流」不成立；斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險。"
+      "reason": "誤以為安培計與伏特計接法可以互換，只要畫在電路圖上即可。安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性；連接位置未列入正確連接安培計與伏特計時，讀值的量程大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少",
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流"
+    "把初次量測直接選最小量程且不查極性，增加儀表受損或超量程風險",
+    "把伏特計串聯主支路的讀值當成電阻兩端電壓",
+    "主張安培計與伏特計接法可以互換，只要畫在電路圖上即可"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

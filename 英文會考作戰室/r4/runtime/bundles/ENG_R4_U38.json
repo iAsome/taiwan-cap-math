@@ -189,8 +189,8 @@
           "id": "ENG_R4_U38_ENG_R4_S255_EX_3",
           "prompt": "The plate was empty. Ben asked for another bowl.",
           "steps": [
-            "empty plate 表已吃完。",
-            "asks another 表仍想吃。",
+            "empty plate 表示已吃完。",
+            "asks another 表示仍想吃。",
             "推出仍餓。"
           ],
           "answer": "Ben was probably still hungry.",
@@ -552,7 +552,7 @@
         {
           "id": "ENG_R4_U38_ENG_R4_S258_SEC_1",
           "title": "推論仍要有腳印",
-          "content": "每一步都应能指出原文。若答案需要『也許他是醫生』這類新身份才能成立，就是猜測。"
+          "content": "每一步都應能指出原文。若答案需要『也許他是醫生』這類新身份才能成立，就是猜測。"
         },
         {
           "id": "ENG_R4_U38_ENG_R4_S258_SEC_2",
@@ -576,18 +576,18 @@
           "prompt": "Wet umbrella + rain sound → probably raining.",
           "steps": [
             "兩項文本證據。",
-            "结论一般。",
-            "无需新身份。"
+            "結論一般。",
+            "無需新身份。"
           ],
           "answer": "reasonable inference",
-          "why": "不能加台风名称。"
+          "why": "不能加颱風名稱。"
         },
         {
           "id": "ENG_R4_U38_ENG_R4_S258_EX_2",
           "prompt": "A man wears a white coat → he is a doctor.",
           "steps": [
             "只有衣著。",
-            "多职业可穿。",
+            "多職業可穿。",
             "需要新前提。"
           ],
           "answer": "unsupported guess",
@@ -599,7 +599,7 @@
           "steps": [
             "只有一小時。",
             "never 是永久。",
-            "强度超出。"
+            "強度超出。"
           ],
           "answer": "unsupported",
           "why": "最多說尚未回。"
@@ -618,8 +618,8 @@
         },
         {
           "belief": "must 比 may 更有力所以更好。",
-          "whyWrong": "强度需匹配证据。",
-          "correction": "有限证据用保留语气。"
+          "whyWrong": "強度需匹配證據。",
+          "correction": "有限證據用保留語氣。"
         },
         {
           "belief": "沒有否定就可肯定。",
@@ -630,7 +630,7 @@
       "checks": [
         {
           "prompt": "合理推論需能做什麼？",
-          "answer": "逐步連回文本",
+          "answer": "逐步連迴文本",
           "reason": "保有證據腳印。"
         },
         {
@@ -688,96 +688,96 @@
         {
           "id": "ENG_R4_U38_ENG_R4_S259_SEC_1",
           "title": "圖與文各負責一部分",
-          "content": "圖可能給時間、位置或数量，题干给人物需要。只有把两者合并才能作答。"
+          "content": "圖可能給時間、位置或數量，題幹給人物需要。只有把兩者合併才能作答。"
         },
         {
           "id": "ENG_R4_U38_ENG_R4_S259_SEC_2",
-          "title": "不只看颜色",
-          "content": "本单元所有图以文字、形状、线型与点纹重复编码；黑白列印仍可分辨。"
+          "title": "不只看顏色",
+          "content": "本單元所有圖以文字、形狀、線型與點紋重複編碼；黑白列印仍可分辨。"
         },
         {
           "id": "ENG_R4_U38_ENG_R4_S259_SEC_3",
-          "title": "先读标籤再看关系",
-          "content": "確認 START、箭頭、FULL 等标签，再解释位置与方向。不要凭图像外观猜故事。"
+          "title": "先讀標籤再看關係",
+          "content": "確認 START、箭頭、FULL 等標籤，再解釋位置與方向。不要憑圖像外觀猜故事。"
         },
         {
           "id": "ENG_R4_U38_ENG_R4_S259_SEC_4",
-          "title": "替代资料必须等价",
-          "content": "若看不到图，可用完整图形说明与资料表作答；答案不能依赖替代资料缺少的细节。"
+          "title": "替代資料必須等價",
+          "content": "若看不到圖，可用完整圖形說明與資料表作答；答案不能依賴替代資料缺少的細節。"
         }
       ],
       "workedExamples": [
         {
           "id": "ENG_R4_U38_ENG_R4_S259_EX_1",
-          "prompt": "图标 8:20 SCHOOL；题干说 Mia must arrive before 8:15.",
+          "prompt": "圖標 8:20 SCHOOL；題幹說 Mia must arrive before 8:15.",
           "steps": [
-            "图给车时刻。",
-            "文给 deadline。",
+            "圖給車時刻。",
+            "文給 deadline。",
             "8:20 太晚。"
           ],
           "answer": "She cannot use that bus.",
-          "why": "需图文共同。"
+          "why": "需圖文共同。"
         },
         {
           "id": "ENG_R4_U38_ENG_R4_S259_EX_2",
-          "prompt": "图示 bridge crossed out and Green Street arrow.",
+          "prompt": "圖示 bridge crossed out and Green Street arrow.",
           "steps": [
-            "叉号表封闭。",
-            "箭头指替代线。",
-            "读标签到 park。"
+            "叉號表封閉。",
+            "箭頭指替代線。",
+            "讀標籤到 park。"
           ],
           "answer": "Use Green Street.",
-          "why": "不靠颜色。"
+          "why": "不靠顏色。"
         },
         {
           "id": "ENG_R4_U38_ENG_R4_S259_EX_3",
-          "prompt": "图中 FULL 3:00、OPEN 4:30；文说 after four.",
+          "prompt": "圖中 FULL 3:00、OPEN 4:30；文說 after four.",
           "steps": [
-            "图给状态与时间。",
-            "文给 after four。",
-            "选 4:30 OPEN。"
+            "圖給狀態與時間。",
+            "文給 after four。",
+            "選 4:30 OPEN。"
           ],
           "answer": "Room B at 4:30",
-          "why": "两条件交集。"
+          "why": "兩條件交集。"
         }
       ],
       "misconceptions": [
         {
-          "belief": "只读题干不看图。",
-          "whyWrong": "会缺时间或位置。",
-          "correction": "列出图文各一证据。"
+          "belief": "只讀題幹不看圖。",
+          "whyWrong": "會缺時間或位置。",
+          "correction": "列出圖文各一證據。"
         },
         {
-          "belief": "只凭图像颜色。",
-          "whyWrong": "颜色可能无法列印或辨识。",
-          "correction": "用标签、纹理与形状。"
+          "belief": "只憑圖像顏色。",
+          "whyWrong": "顏色可能無法列印或辨識。",
+          "correction": "用標籤、紋理與形狀。"
         },
         {
-          "belief": "图中最近元素就是答案。",
-          "whyWrong": "关系由箭头与标签决定。",
-          "correction": "按图例阅读。"
+          "belief": "圖中最近元素就是答案。",
+          "whyWrong": "關係由箭頭與標籤決定。",
+          "correction": "按圖例閱讀。"
         },
         {
-          "belief": "alt 可以比图少信息。",
-          "whyWrong": "替代必须等价。",
-          "correction": "用资料表核对。"
+          "belief": "alt 可以比圖少信息。",
+          "whyWrong": "替代必須等價。",
+          "correction": "用資料表核對。"
         }
       ],
       "checks": [
         {
-          "prompt": "图文题至少需哪两类证据？",
-          "answer": "图形与文字",
-          "reason": "答案来自交集。"
+          "prompt": "圖文題至少需哪兩類證據？",
+          "answer": "圖形與文字",
+          "reason": "答案來自交集。"
         },
         {
-          "prompt": "黑白图如何避免只靠颜色？",
-          "answer": "标签、形状与纹理",
-          "reason": "多重编码。"
+          "prompt": "黑白圖如何避免只靠顏色？",
+          "answer": "標籤、形狀與紋理",
+          "reason": "多重編碼。"
         },
         {
-          "prompt": "资料表 fallback 应支持同一答案吗？",
-          "answer": "应",
-          "reason": "可及性等价。"
+          "prompt": "資料表 fallback 應支持同一答案嗎？",
+          "answer": "應",
+          "reason": "可及性等價。"
         }
       ],
       "assets": [],
@@ -816,30 +816,30 @@
         "ENG_R4_S259"
       ],
       "objectives": [
-        "找出故事目前尚未完成的目标或问题。",
-        "选择能直接延续人物行动的下一步。",
-        "排除突然加入新人物、远期结局或违背角色目标的选项。"
+        "找出故事目前尚未完成的目標或問題。",
+        "選擇能直接延續人物行動的下一步。",
+        "排除突然加入新人物、遠期結局或違背角色目標的選項。"
       ],
       "sections": [
         {
           "id": "ENG_R4_U38_ENG_R4_S260_SEC_1",
-          "title": "预测不是写结局",
-          "content": "题目问 next，优先找时间线上紧接的一步，不跳到多年后或整个人生结果。"
+          "title": "預測不是寫結局",
+          "content": "題目問 next，優先找時間線上緊接的一步，不跳到多年後或整個人生結果。"
         },
         {
           "id": "ENG_R4_U38_ENG_R4_S260_SEC_2",
-          "title": "回到未解决目标",
-          "content": "人物正在找钥匙，下一步应继续检查可能地点或使用刚得到线索，而非突然参加比赛。"
+          "title": "回到未解決目標",
+          "content": "人物正在找鑰匙，下一步應繼續檢查可能地點或使用剛得到線索，而非突然參加比賽。"
         },
         {
           "id": "ENG_R4_U38_ENG_R4_S260_SEC_3",
           "title": "最近事件提供入口",
-          "content": "门刚打开，下一步可能进入；收到地址，下一步可能前往。用最近动作连接，不另起故事。"
+          "content": "門剛打開，下一步可能進入；收到地址，下一步可能前往。用最近動作連接，不另起故事。"
         },
         {
           "id": "ENG_R4_U38_ENG_R4_S260_SEC_4",
           "title": "保留可能性",
-          "content": "正确预测是最合线索，不代表现实唯一。选项仍需不超出本文角色、地点与时间。"
+          "content": "正確預測是最合線索，不代表現實唯一。選項仍需不超出本文角色、地點與時間。"
         }
       ],
       "workedExamples": [
@@ -847,9 +847,9 @@
           "id": "ENG_R4_U38_ENG_R4_S260_EX_1",
           "prompt": "Nora found the address and stood outside the building.",
           "steps": [
-            "目标是到达。",
-            "已在门外。",
-            "下一步可能敲门。"
+            "目標是到達。",
+            "已在門外。",
+            "下一步可能敲門。"
           ],
           "answer": "She will likely knock or enter.",
           "why": "不跳到回家。"
@@ -858,62 +858,62 @@
           "id": "ENG_R4_U38_ENG_R4_S260_EX_2",
           "prompt": "The bus was full; the board showed another in ten minutes.",
           "steps": [
-            "问题是无法上车。",
-            "新线索是 next bus。",
+            "問題是無法上車。",
+            "新線索是 next bus。",
             "合理等待。"
           ],
           "answer": "Wait for the next bus.",
-          "why": "不推买车。"
+          "why": "不推買車。"
         },
         {
           "id": "ENG_R4_U38_ENG_R4_S260_EX_3",
           "prompt": "Ben mixed all ingredients and put the pan in the oven.",
           "steps": [
-            "烹饪步骤。",
-            "已进 oven。",
+            "烹飪步驟。",
+            "已進 oven。",
             "下一步等待烤熟。"
           ],
           "answer": "He will wait for it to bake.",
-          "why": "不立刻吃生面糊。"
+          "why": "不立刻吃生麵糊。"
         }
       ],
       "misconceptions": [
         {
-          "belief": "最戏剧化结局最可能。",
-          "whyWrong": "next 受当前线索限制。",
-          "correction": "选紧接一步。"
+          "belief": "最戲劇化結局最可能。",
+          "whyWrong": "next 受當前線索限制。",
+          "correction": "選緊接一步。"
         },
         {
-          "belief": "可以加入新人物解决。",
-          "whyWrong": "若未出现就是新前提。",
-          "correction": "延续现有角色资源。"
+          "belief": "可以加入新人物解決。",
+          "whyWrong": "若未出現就是新前提。",
+          "correction": "延續現有角色資源。"
         },
         {
-          "belief": "预测要完全确定。",
-          "whyWrong": "是证据支持的最合理下一步。",
+          "belief": "預測要完全確定。",
+          "whyWrong": "是證據支持的最合理下一步。",
           "correction": "保留 likely。"
         },
         {
-          "belief": "人物会突然放弃目标。",
-          "whyWrong": "需要文本转折支持。",
-          "correction": "追踪当前动机。"
+          "belief": "人物會突然放棄目標。",
+          "whyWrong": "需要文本轉折支持。",
+          "correction": "追蹤當前動機。"
         }
       ],
       "checks": [
         {
-          "prompt": "next 可跳到多年后吗？",
+          "prompt": "next 可跳到多年後嗎？",
           "answer": "通常不可",
-          "reason": "应紧接当前事件。"
+          "reason": "應緊接當前事件。"
         },
         {
-          "prompt": "预测最重要的两项？",
-          "answer": "未解决目标与最近事件",
+          "prompt": "預測最重要的兩項？",
+          "answer": "未解決目標與最近事件",
           "reason": "共同限制下一步。"
         },
         {
-          "prompt": "可凭空加入救援人物吗？",
+          "prompt": "可憑空加入救援人物嗎？",
           "answer": "不可",
-          "reason": "需要文本铺垫。"
+          "reason": "需要文本鋪墊。"
         }
       ],
       "assets": [],
@@ -3057,7 +3057,7 @@
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "Night users caused the lamps to disappear：方向與事实相反。"
+          "reason": "Night users caused the lamps to disappear：方向與事實相反。"
         },
         {
           "optionIndex": 2,
@@ -3410,12 +3410,12 @@
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "Rain opened the box：与 sealed/dry 相反。"
+          "reason": "Rain opened the box：與 sealed/dry 相反。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "The papers sealed themselves：动作者与机制不合。"
+          "reason": "The papers sealed themselves：動作者與機制不合。"
         }
       ],
       "difficulty": "standard",
@@ -3661,7 +3661,7 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "bridge → rain → new river：无此关系。"
+          "reason": "bridge → rain → new river：無此關係。"
         },
         {
           "optionIndex": 1,
@@ -3676,7 +3676,7 @@
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "high water → no rain → bridge opens：结果相反。"
+          "reason": "high water → no rain → bridge opens：結果相反。"
         }
       ],
       "difficulty": "advanced",
@@ -3748,7 +3748,7 @@
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "focused practice：同一 difficult part 的慢练与后续流畅连接。"
+          "reason": "focused practice：同一 difficult part 的慢練與後續流暢連接。"
         },
         {
           "optionIndex": 1,
@@ -3763,7 +3763,7 @@
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "the week alone, without practice：忽略机制。"
+          "reason": "the week alone, without practice：忽略機制。"
         }
       ],
       "difficulty": "advanced",
@@ -3937,7 +3937,7 @@
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "Seats certainly caused every visitor to stay：过度因果与 every。"
+          "reason": "Seats certainly caused every visitor to stay：過度因果與 every。"
         }
       ],
       "difficulty": "transfer",
@@ -4009,7 +4009,7 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "the leaves had become metal：无证据。"
+          "reason": "the leaves had become metal：無證據。"
         },
         {
           "optionIndex": 1,
@@ -4019,7 +4019,7 @@
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "a wish to hide the window：移动方向相反。"
+          "reason": "a wish to hide the window：移動方向相反。"
         },
         {
           "optionIndex": 3,
@@ -4142,7 +4142,7 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "先遮住選項，依「合理推論能逐步連回文本，猜測需加入未提供的新前提」可推出 It is probably raining；再核對題面每個線索，答案索引一致。",
+          "evidence": "先遮住選項，依「合理推論能逐步連迴文本，猜測需加入未提供的新前提」可推出 It is probably raining；再核對題面每個線索，答案索引一致。",
           "status": "pass"
         },
         {
@@ -4229,7 +4229,7 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "先遮住選項，依「合理推論能逐步連回文本，猜測需加入未提供的新前提」可推出 The person is the hospital's chief doctor；再核對題面每個線索，答案索引一致。",
+          "evidence": "先遮住選項，依「合理推論能逐步連迴文本，猜測需加入未提供的新前提」可推出 The person is the hospital's chief doctor；再核對題面每個線索，答案索引一致。",
           "status": "pass"
         },
         {
@@ -4316,7 +4316,7 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "先遮住選項，依「合理推論能逐步連回文本，猜測需加入未提供的新前提」可推出 Ben has not replied yet；再核對題面每個線索，答案索引一致。",
+          "evidence": "先遮住選項，依「合理推論能逐步連迴文本，猜測需加入未提供的新前提」可推出 Ben has not replied yet；再核對題面每個線索，答案索引一致。",
           "status": "pass"
         },
         {
@@ -4403,7 +4403,7 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "先遮住選項，依「合理推論能逐步連回文本，猜測需加入未提供的新前提」可推出 The shop is temporarily closed；再核對題面每個線索，答案索引一致。",
+          "evidence": "先遮住選項，依「合理推論能逐步連迴文本，猜測需加入未提供的新前提」可推出 The shop is temporarily closed；再核對題面每個線索，答案索引一致。",
           "status": "pass"
         },
         {
@@ -4490,7 +4490,7 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "先遮住選項，依「合理推論能逐步連回文本，猜測需加入未提供的新前提」可推出 Mia will pass every test；再核對題面每個線索，答案索引一致。",
+          "evidence": "先遮住選項，依「合理推論能逐步連迴文本，猜測需加入未提供的新前提」可推出 Mia will pass every test；再核對題面每個線索，答案索引一致。",
           "status": "pass"
         },
         {
@@ -4577,7 +4577,7 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "先遮住選項，依「合理推論能逐步連回文本，猜測需加入未提供的新前提」可推出 Something living may be inside；再核對題面每個線索，答案索引一致。",
+          "evidence": "先遮住選項，依「合理推論能逐步連迴文本，猜測需加入未提供的新前提」可推出 Something living may be inside；再核對題面每個線索，答案索引一致。",
           "status": "pass"
         },
         {
@@ -4628,7 +4628,7 @@
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "It rained exactly ten minutes ago：wet road 可能多因，精確時間未给。"
+          "reason": "It rained exactly ten minutes ago：wet road 可能多因，精確時間未給。"
         },
         {
           "optionIndex": 3,
@@ -4664,7 +4664,7 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "先遮住選項，依「合理推論能逐步連回文本，猜測需加入未提供的新前提」可推出 It rained exactly ten minutes ago；再核對題面每個線索，答案索引一致。",
+          "evidence": "先遮住選項，依「合理推論能逐步連迴文本，猜測需加入未提供的新前提」可推出 It rained exactly ten minutes ago；再核對題面每個線索，答案索引一致。",
           "status": "pass"
         },
         {
@@ -4715,7 +4715,7 @@
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "The email may have pleased Nora：may 與 smile 强度匹配。"
+          "reason": "The email may have pleased Nora：may 與 smile 強度匹配。"
         },
         {
           "optionIndex": 3,
@@ -4751,7 +4751,7 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "先遮住選項，依「合理推論能逐步連回文本，猜測需加入未提供的新前提」可推出 The email contained the best news of her life；再核對題面每個線索，答案索引一致。",
+          "evidence": "先遮住選項，依「合理推論能逐步連迴文本，猜測需加入未提供的新前提」可推出 The email contained the best news of her life；再核對題面每個線索，答案索引一致。",
           "status": "pass"
         },
         {
@@ -4792,22 +4792,22 @@
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "More people may have been expected：extra chairs 与 meeting 支持可能人數增加。"
+          "reason": "More people may have been expected：extra chairs 與 meeting 支持可能人數增加。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "Exactly five surprise guests arrived：expected 不等於实际 arrived。"
+          "reason": "Exactly five surprise guests arrived：expected 不等於實際 arrived。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "The room was sold：无证据。"
+          "reason": "The room was sold：無證據。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "Every chair in town was moved：范围过度。"
+          "reason": "Every chair in town was moved：範圍過度。"
         }
       ],
       "difficulty": "advanced",
@@ -4838,7 +4838,7 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 0,
-          "evidence": "先遮住選項，依「合理推論能逐步連回文本，猜測需加入未提供的新前提」可推出 More people may have been expected；再核對題面每個線索，答案索引一致。",
+          "evidence": "先遮住選項，依「合理推論能逐步連迴文本，猜測需加入未提供的新前提」可推出 More people may have been expected；再核對題面每個線索，答案索引一致。",
           "status": "pass"
         },
         {
@@ -4879,7 +4879,7 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "Passengers could not board at that moment：doors 未开直接支持。"
+          "reason": "Passengers could not board at that moment：doors 未開直接支持。"
         },
         {
           "optionIndex": 1,
@@ -4889,12 +4889,12 @@
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "The reason is not stated：原文确未解释。"
+          "reason": "The reason is not stated：原文確未解釋。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "The driver disliked every waiting passenger：行为不能证明个人情绪与 every。"
+          "reason": "The driver disliked every waiting passenger：行爲不能證明個人情緒與 every。"
         }
       ],
       "difficulty": "advanced",
@@ -4925,7 +4925,7 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 3,
-          "evidence": "先遮住選項，依「合理推論能逐步連回文本，猜測需加入未提供的新前提」可推出 The driver disliked every waiting passenger；再核對題面每個線索，答案索引一致。",
+          "evidence": "先遮住選項，依「合理推論能逐步連迴文本，猜測需加入未提供的新前提」可推出 The driver disliked every waiting passenger；再核對題面每個線索，答案索引一致。",
           "status": "pass"
         },
         {
@@ -4976,7 +4976,7 @@
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "The paper map remained usable without phone power：电池死后仍 use paper map。"
+          "reason": "The paper map remained usable without phone power：電池死後仍 use paper map。"
         },
         {
           "optionIndex": 3,
@@ -5012,7 +5012,7 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 2,
-          "evidence": "先遮住選項，依「合理推論能逐步連回文本，猜測需加入未提供的新前提」可推出 The paper map remained usable without phone power；再核對題面每個線索，答案索引一致。",
+          "evidence": "先遮住選項，依「合理推論能逐步連迴文本，猜測需加入未提供的新前提」可推出 The paper map remained usable without phone power；再核對題面每個線索，答案索引一致。",
           "status": "pass"
         },
         {
@@ -5053,22 +5053,22 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "At least 300 books were collected：明示数量。"
+          "reason": "At least 300 books were collected：明示數量。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "The principal promised everyone a prize：奖励与 principal 未提。"
+          "reason": "The principal promised everyone a prize：獎勵與 principal 未提。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "The goal was 150 books：300 是 twice，计算得 150。"
+          "reason": "The goal was 150 books：300 是 twice，計算得 150。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "The class exceeded its goal：twice 明示超标。"
+          "reason": "The class exceeded its goal：twice 明示超標。"
         }
       ],
       "difficulty": "transfer",
@@ -5099,7 +5099,7 @@
         {
           "reviewerRole": "english-grammar-solution-review",
           "derivedAnswerIndex": 1,
-          "evidence": "先遮住選項，依「合理推論能逐步連回文本，猜測需加入未提供的新前提」可推出 The principal promised everyone a prize；再核對題面每個線索，答案索引一致。",
+          "evidence": "先遮住選項，依「合理推論能逐步連迴文本，猜測需加入未提供的新前提」可推出 The principal promised everyone a prize；再核對題面每個線索，答案索引一致。",
           "status": "pass"
         },
         {
@@ -5140,22 +5140,22 @@
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "No, the bus time is 8:20：图给 8:20，题干给 by 8:15，时间太晚。"
+          "reason": "No, the bus time is 8:20：圖給 8:20，題幹給 by 8:15，時間太晚。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "Yes, because SCHOOL is written：目的地合但时间不合。"
+          "reason": "Yes, because SCHOOL is written：目的地合但時間不合。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "Yes, because the person has an umbrella：雨伞与 deadline 无关。"
+          "reason": "Yes, because the person has an umbrella：雨傘與 deadline 無關。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "No, because no school exists：图明确写 SCHOOL。"
+          "reason": "No, because no school exists：圖明確寫 SCHOOL。"
         }
       ],
       "difficulty": "foundation",
@@ -5234,17 +5234,17 @@
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "in a waste bin：图无 waste bin。"
+          "reason": "in a waste bin：圖無 waste bin。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "back on the customer's table：箭头方向相反。"
+          "reason": "back on the customer's table：箭頭方向相反。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "the RETURN COUNTER：图中 USED 杯箭头与柜台标签共同指向。"
+          "reason": "the RETURN COUNTER：圖中 USED 杯箭頭與櫃檯標籤共同指向。"
         }
       ],
       "difficulty": "foundation",
@@ -5318,22 +5318,22 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "a route through the river：图没有此路线。"
+          "reason": "a route through the river：圖沒有此路線。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "return to START and stop：替代箭头继续到 park。"
+          "reason": "return to START and stop：替代箭頭繼續到 park。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "Green Street：桥有叉，弧形箭头 Green Street 到 PARK。"
+          "reason": "Green Street：橋有叉，弧形箭頭 Green Street 到 PARK。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "the bridge：图示封闭。"
+          "reason": "the bridge：圖示封閉。"
         }
       ],
       "difficulty": "foundation",
@@ -5407,22 +5407,22 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "Bring snow shoes for deep snow：图没有 snow。"
+          "reason": "Bring snow shoes for deep snow：圖沒有 snow。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "Take a raincoat and prepare for cool wind：图同时给雨、14°C、WINDY。"
+          "reason": "Take a raincoat and prepare for cool wind：圖同時給雨、14°C、WINDY。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "Wear only summer clothes for 35°C：温度与图相反。"
+          "reason": "Wear only summer clothes for 35°C：溫度與圖相反。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "Expect a dry, windless day：雨图与 WINDY 相反。"
+          "reason": "Expect a dry, windless day：雨圖與 WINDY 相反。"
         }
       ],
       "difficulty": "standard",
@@ -5496,22 +5496,22 @@
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "CANS：图中文本与圆罐图示双重标记。"
+          "reason": "CANS：圖中文本與圓罐圖示雙重標記。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "PAPER：材质不合。"
+          "reason": "PAPER：材質不合。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "OTHER：已有专门 cans 类。"
+          "reason": "OTHER：已有專門 cans 類。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "any bin because colors are absent：分类不靠颜色。"
+          "reason": "any bin because colors are absent：分類不靠顏色。"
         }
       ],
       "difficulty": "standard",
@@ -5585,22 +5585,22 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "Room A at 3:00：时间早且 FULL。"
+          "reason": "Room A at 3:00：時間早且 FULL。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "Room A at 4:30：图未列此组合。"
+          "reason": "Room A at 4:30：圖未列此組合。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "Room B at 3:00：跨列错误。"
+          "reason": "Room B at 3:00：跨列錯誤。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "Room B at 4:30：图示 4:30 B OPEN；3:00 A FULL。"
+          "reason": "Room B at 4:30：圖示 4:30 B OPEN；3:00 A FULL。"
         }
       ],
       "difficulty": "standard",
@@ -5674,22 +5674,22 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "The plant received less water：箭头明确 WATER。"
+          "reason": "The plant received less water：箭頭明確 WATER。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "The plant changed into a tree overnight：图只显示叶片状态。"
+          "reason": "The plant changed into a tree overnight：圖只顯示葉片狀態。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "Water helped the leaves recover：图示下垂→WATER→叶片向上。"
+          "reason": "Water helped the leaves recover：圖示下垂→WATER→葉片向上。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "Someone cut off every leaf：图中叶片仍在。"
+          "reason": "Someone cut off every leaf：圖中葉片仍在。"
         }
       ],
       "difficulty": "standard",
@@ -5763,12 +5763,12 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "outside the library：图提供合适区，不需外出。"
+          "reason": "outside the library：圖提供合適區，不需外出。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "the GROUP AREA：图示 GROUP AREA、TABLES FOR 4；安静区禁小组谈话。"
+          "reason": "the GROUP AREA：圖示 GROUP AREA、TABLES FOR 4；安靜區禁小組談話。"
         },
         {
           "optionIndex": 2,
@@ -5778,7 +5778,7 @@
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "either area：安静区硬限制不合。"
+          "reason": "either area：安靜區硬限制不合。"
         }
       ],
       "difficulty": "advanced",
@@ -5852,22 +5852,22 @@
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "Yes, five is below the six-person limit：图示五人与 MAX 6 PEOPLE；题干说明 box 不计人数。"
+          "reason": "Yes, five is below the six-person limit：圖示五人與 MAX 6 PEOPLE；題幹說明 box 不計人數。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "No, because the box is a sixth person：题干说 counts people only。"
+          "reason": "No, because the box is a sixth person：題幹說 counts people only。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "No, because seven people are shown：图中只有五人。"
+          "reason": "No, because seven people are shown：圖中只有五人。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "Yes, because there is no limit：图明确 MAX 6。"
+          "reason": "Yes, because there is no limit：圖明確 MAX 6。"
         }
       ],
       "difficulty": "advanced",
@@ -5941,22 +5941,22 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "the phone map：0% 表无电。"
+          "reason": "the phone map：0% 表無電。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "neither item：纸图可用。"
+          "reason": "neither item：紙圖可用。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "a bus ticket：图无 ticket。"
+          "reason": "a bus ticket：圖無 ticket。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "the paper map：手机 0%，纸图可见且不需电。"
+          "reason": "the paper map：手機 0%，紙圖可見且不需電。"
         }
       ],
       "difficulty": "advanced",
@@ -6030,22 +6030,22 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "Yes, because the package is black and white：颜色与成分无关。"
+          "reason": "Yes, because the package is black and white：顏色與成分無關。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "The label gives no ingredient warning：图明确 WARNING。"
+          "reason": "The label gives no ingredient warning：圖明確 WARNING。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "No, the label says CONTAINS NUTS：图示坚果与警语双重明确。"
+          "reason": "No, the label says CONTAINS NUTS：圖示堅果與警語雙重明確。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "Yes, because it is an oat bar：产品名称不能抵消警语。"
+          "reason": "Yes, because it is an oat bar：產品名稱不能抵消警語。"
         }
       ],
       "difficulty": "transfer",
@@ -6119,17 +6119,17 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "No later bus is listed：明确有 NEXT。"
+          "reason": "No later bus is listed：明確有 NEXT。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "8:45：图中 8/8 USED 与 NEXT 8:45。"
+          "reason": "8:45：圖中 8/8 USED 與 NEXT 8:45。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "8:08：这是座位数视觉误读。"
+          "reason": "8:08：這是座位數視覺誤讀。"
         },
         {
           "optionIndex": 3,
@@ -6208,22 +6208,22 @@
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "knock on or open the door：已到目标门外，下一步是尝试进入。"
+          "reason": "knock on or open the door：已到目標門外，下一步是嘗試進入。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "travel to another country：跳离当前目标。"
+          "reason": "travel to another country：跳離當前目標。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "forget why she came：无转折。"
+          "reason": "forget why she came：無轉折。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "buy a new room：不合理且无资源。"
+          "reason": "buy a new room：不合理且無資源。"
         }
       ],
       "difficulty": "foundation",
@@ -6295,22 +6295,22 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "buy a bus company：远超当前情境。"
+          "reason": "buy a bus company：遠超當前情境。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "walk into the full bus：无法上车。"
+          "reason": "walk into the full bus：無法上車。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "return next year：时间跨度无证据。"
+          "reason": "return next year：時間跨度無證據。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "wait for the next bus：问题与最近解决线索直接相接。"
+          "reason": "wait for the next bus：問題與最近解決線索直接相接。"
         }
       ],
       "difficulty": "foundation",
@@ -6387,17 +6387,17 @@
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "serve it without change despite her goal：与 not enough 评价不合。"
+          "reason": "serve it without change despite her goal：與 not enough 評價不合。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "add a small amount of salt：未解决味道与可用 salt 共同支持。"
+          "reason": "add a small amount of salt：未解決味道與可用 salt 共同支持。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "throw away the kitchen：过度。"
+          "reason": "throw away the kitchen：過度。"
         }
       ],
       "difficulty": "foundation",
@@ -6469,22 +6469,22 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "open every desk：地点明确无需。"
+          "reason": "open every desk：地點明確無需。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "go to Desk 2：email 给地点，已进入 library。"
+          "reason": "go to Desk 2：email 給地點，已進入 library。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "write a novel：与 package 目标无关。"
+          "reason": "write a novel：與 package 目標無關。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "leave without the package：无放弃线索。"
+          "reason": "leave without the package：無放棄線索。"
         }
       ],
       "difficulty": "standard",
@@ -6556,22 +6556,22 @@
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "someone may open the box to check it：dog 聚焦 box/lid，下一步检查来源。"
+          "reason": "someone may open the box to check it：dog 聚焦 box/lid，下一步檢查來源。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "The dog will certainly fly：无能力线索。"
+          "reason": "The dog will certainly fly：無能力線索。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "The box becomes a river：无事件关系。"
+          "reason": "The box becomes a river：無事件關係。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "Everyone forgets the box for years：与当前 scratching 不连续。"
+          "reason": "Everyone forgets the box for years：與當前 scratching 不連續。"
         }
       ],
       "difficulty": "standard",
@@ -6643,22 +6643,22 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "ask the rain to stop：不现实。"
+          "reason": "ask the rain to stop：不現實。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "hold lunch outside without considering rain：忽略已知风险。"
+          "reason": "hold lunch outside without considering rain：忽略已知風險。"
         },
         {
           "optionIndex": 2,
           "isCorrect": false,
-          "reason": "cancel school forever：强度过度。"
+          "reason": "cancel school forever：強度過度。"
         },
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "move lunch into the hall：天气冲突与 free indoor space 提供直接方案。"
+          "reason": "move lunch into the hall：天氣衝突與 free indoor space 提供直接方案。"
         }
       ],
       "difficulty": "standard",
@@ -6730,22 +6730,22 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "throw away both keys before trying：违背目标。"
+          "reason": "throw away both keys before trying：違背目標。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "wait for a new house：跳到远期。"
+          "reason": "wait for a new house：跳到遠期。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "try the second key：第一钥匙失败，现有替代线索在手。"
+          "reason": "try the second key：第一鑰匙失敗，現有替代線索在手。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "break the door immediately：未先用现有安全选项。"
+          "reason": "break the door immediately：未先用現有安全選項。"
         }
       ],
       "difficulty": "standard",
@@ -6817,12 +6817,12 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "write a different subject forever：不连续。"
+          "reason": "write a different subject forever：不連續。"
         },
         {
           "optionIndex": 1,
           "isCorrect": true,
-          "reason": "review the draft with the checklist：draft 完成、checklist 就位，下一流程是检查。"
+          "reason": "review the draft with the checklist：draft 完成、checklist 就位，下一流程是檢查。"
         },
         {
           "optionIndex": 2,
@@ -6832,7 +6832,7 @@
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "destroy the checklist：无动机。"
+          "reason": "destroy the checklist：無動機。"
         }
       ],
       "difficulty": "advanced",
@@ -6904,12 +6904,12 @@
         {
           "optionIndex": 0,
           "isCorrect": true,
-          "reason": "water the plant：状态、工具与移动方向全指向浇水。"
+          "reason": "water the plant：狀態、工具與移動方向全指向澆水。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "pour water on his books：目标对象不合。"
+          "reason": "pour water on his books：目標對象不合。"
         },
         {
           "optionIndex": 2,
@@ -6919,7 +6919,7 @@
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "leave the plant dry on purpose：行动方向相反。"
+          "reason": "leave the plant dry on purpose：行動方向相反。"
         }
       ],
       "difficulty": "advanced",
@@ -6991,12 +6991,12 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "cross the closed bridge：违反提示。"
+          "reason": "cross the closed bridge：違反提示。"
         },
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "build a new park immediately：无必要且过度。"
+          "reason": "build a new park immediately：無必要且過度。"
         },
         {
           "optionIndex": 2,
@@ -7006,7 +7006,7 @@
         {
           "optionIndex": 3,
           "isCorrect": true,
-          "reason": "take Green Street：封闭问题与明确替代路线。"
+          "reason": "take Green Street：封閉問題與明確替代路線。"
         }
       ],
       "difficulty": "advanced",
@@ -7083,17 +7083,17 @@
         {
           "optionIndex": 1,
           "isCorrect": false,
-          "reason": "leave it cooking for several days：完成信号相反。"
+          "reason": "leave it cooking for several days：完成信號相反。"
         },
         {
           "optionIndex": 2,
           "isCorrect": true,
-          "reason": "remove the bread from the oven：timer、完成外观与 oven gloves 共同支持。"
+          "reason": "remove the bread from the oven：timer、完成外觀與 oven gloves 共同支持。"
         },
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "put bare hands into the oven：gloves 表安全处理。"
+          "reason": "put bare hands into the oven：gloves 表安全處理。"
         }
       ],
       "difficulty": "transfer",
@@ -7165,7 +7165,7 @@
         {
           "optionIndex": 0,
           "isCorrect": false,
-          "reason": "sing an unrelated song：无音乐线索。"
+          "reason": "sing an unrelated song：無音樂線索。"
         },
         {
           "optionIndex": 1,
@@ -7180,7 +7180,7 @@
         {
           "optionIndex": 3,
           "isCorrect": false,
-          "reason": "hide the card for a year：行动方向相反。"
+          "reason": "hide the card for a year：行動方向相反。"
         }
       ],
       "difficulty": "transfer",

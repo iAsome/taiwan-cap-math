@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解波形圖比較振幅頻率與波長，哪項修正合理？",
+  "stem": "只有一張位置波形圖，讀得波長 0.80 m，但沒有波速。哪項仍無法確定？",
   "options": [
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "位置圖可直接量波長與振幅",
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比"
+    "此波的波長",
+    "頻率",
+    "波峰座標",
+    "此波的振幅"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「任何一張瞬間位置波形圖都可只看波峰數直接得到頻率」不成立；比較波形圖前要讀軸；位置圖可直接量波長與振幅，頻率則還需時間資訊。"
+      "reason": "題目已由相鄰波峰讀得 0.80 m。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「振幅是波峰到波谷的全高，波長是相鄰波峰的高度差」不成立；波峰是橫波最高點、波谷是最低點；振幅由平衡位置量到波峰，波長是沿傳播方向相鄰同相位點的距離。"
+      "isCorrect": true,
+      "reason": "缺少時間資訊與波速，無法由 f＝v/λ 求頻率。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「比較波形圖前要讀軸；位置圖可直接量波長與振幅，頻率則還需時間資訊」。"
+      "isCorrect": false,
+      "reason": "位置圖可直接讀出各波峰所在位置。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「週期越長表示每秒振動次數越多，所以頻率和週期成正比」不成立；週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T。"
+      "reason": "若有縱軸刻度即可讀平衡線到極值。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比"
+    "此波的波長",
+    "波峰座標",
+    "此波的振幅"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

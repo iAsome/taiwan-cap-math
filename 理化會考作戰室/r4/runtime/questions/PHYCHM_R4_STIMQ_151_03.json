@@ -14,50 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_151",
-  "stem": "混合熱平衡題組中，哪項說明符合紀錄？",
+  "stem": "累積吸熱27.1 kJ時溫度升到1°C，這項資料說明什麼？",
   "options": [
-    "加熱曲線只要出現平臺就表示熱源關閉，與物態改變無關",
-    "所有物質受熱都以完全相同比例膨脹，因此材料差異不影響伸縮設計",
-    "物質仍吸收能量以改變粒子排列或作用",
-    "相變時溫度不變就表示吸熱量為零，所有輸入能量都消失"
+    "冰已全熔，後續熱量使液態水升溫",
+    "液態水已經到達沸點",
+    "仍有80 g冰與20 g水共存",
+    "混合物在此之前沒有吸收熱量"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「加熱曲線只要出現平臺就表示熱源關閉，與物態改變無關」不成立；加熱曲線斜升區表示單一物態升溫，平臺可表示純物質在相變，需先辨認橫縱軸。"
+      "isCorrect": true,
+      "reason": "該列冰為0 g且水為100 g，離開0°C熔化平台後水升溫。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「所有物質受熱都以完全相同比例膨脹，因此材料差異不影響伸縮設計」不成立；金屬橋伸縮縫、溫度計液柱變化均可由物質熱脹冷縮解釋，但幅度依材料而異。"
+      "reason": "表中溫度僅1°C，遠低於一般壓力下水的沸點。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「熔化或沸騰平臺期間，物質仍吸收能量以改變粒子排列或作用，溫度可保持不變」。"
+      "isCorrect": false,
+      "reason": "80 g冰只出現在累積吸熱0 kJ的起始列。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「相變時溫度不變就表示吸熱量為零，所有輸入能量都消失」不成立；熔化或沸騰平臺期間，物質仍吸收能量以改變粒子排列或作用，溫度可保持不變。"
+      "reason": "累積吸熱欄已記為27.1 kJ，不能解讀為未吸熱。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "證據評估"
+    "分段推理"
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "加熱曲線只要出現平臺就表示熱源關閉，與物態改變無關",
-    "所有物質受熱都以完全相同比例膨脹，因此材料差異不影響伸縮設計",
-    "相變時溫度不變就表示吸熱量為零，所有輸入能量都消失"
+    "液態水已經到達沸點",
+    "仍有80 g冰與20 g水共存",
+    "混合物在此之前沒有吸收熱量"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱學與能量; 臺灣國中教育會考自然科熱量、比熱、相變與生活現象題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-BA-4-1",
@@ -68,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

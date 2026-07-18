@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "串聯電路出現四種說法，哪項有理化概念支持？",
+  "stem": "把導線跨過燈泡視為正常並聯，卻未辨認它近乎直接連接兩端，結果會錯判現象。依由電路圖判斷短路斷路與元件狀態修正時，等效路徑與主線電流應採哪個原理連結？",
   "options": [
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "短路是低電阻路徑繞過用電器",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路"
+    "看到短路主線 3.5 A 卻判成電路不連續",
+    "主張燈泡不亮就一定是燈絲斷路，並漏掉檢查開關與旁路",
+    "解題時將斷路和短路都說成電流為零，忽略短路形成低電阻大電流路徑",
+    "斷路使回路不連續而無電流"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆」不成立；並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。"
+      "reason": "一看到短路主線 3.5 A 卻判成電路不連續。斷路使電流為零；主線電流的數值若未依等效路徑核對，會使現象無法通過由電路圖判斷短路斷路與元件狀態檢查。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「短路和斷路都只會使電流完全為零，不可能出現過大電流」不成立；斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險。"
+      "reason": "誤以為燈泡不亮就一定是燈絲斷路，卻未檢查開關與旁路。斷路使回路不連續而無電流；等效路徑未列入由電路圖判斷短路斷路與元件狀態時，現象的主線電流大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險」。"
+      "isCorrect": false,
+      "reason": "解題時錯將斷路和短路都說成電流為零，忽略短路形成低電阻大電流路徑。斷路使回路不連續而無電流；照原做法會把現象算錯或判反。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路」不成立；電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整。"
+      "isCorrect": true,
+      "reason": "斷路使回路不連續而無電流。導線跨過燈泡列的等效路徑為低阻旁路，主線電流為3.5 A；燈絲燒斷列的等效路徑為燈泡內斷路，主線電流為0 A。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路"
+    "看到短路主線 3.5 A 卻判成電路不連續",
+    "主張燈泡不亮就一定是燈絲斷路，並漏掉檢查開關與旁路",
+    "解題時將斷路和短路都說成電流為零，忽略短路形成低電阻大電流路徑"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

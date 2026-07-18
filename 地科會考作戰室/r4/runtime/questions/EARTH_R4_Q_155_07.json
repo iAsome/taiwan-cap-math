@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "研究「解釋閏年調整的週期來源」中的地軸傾斜與公轉共同造成四季時，哪一種資料來源較可靠？",
+  "stem": "要檢驗地軸傾斜與公轉共同造成四季，哪組觀測最完整？",
   "options": [
-    "查核地軸傾斜與公轉共同造成四季只需一張來源不明的網路圖片",
-    "查核地軸傾斜與公轉共同造成四季時採用有日期、位置與單位的太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型",
-    "刪除與四季主要由地軸傾斜且傾斜方向在公轉中近似保持所造成的太陽高度與日長變化不一致的資料後再判讀",
-    "以個人印象取代日期位置、臺灣日出、臺灣日落、正午影長相對值紀錄"
+    "只量臺北一年中日地距離，不看日長或半球差異",
+    "同月比較臺北與雪梨晝長，並跨季記錄兩地正午太陽高度",
+    "只記臺北每月用電量，未排除生活型態改變",
+    "用無比例尺軌道圖量紙面上的日地距離"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "來源、時間與尺度不明，不能驗證「解釋閏年調整的週期來源」的條件。"
+      "reason": "單一北半球距離資料無法檢查兩半球相反季節與太陽高度機制。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "資料具備來源與量測條件，可重現解釋閏年調整的週期來源的判讀。"
+      "reason": "跨半球、跨季的日長和高度能同時檢驗地軸傾斜模型的兩項預測。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "刪除反例會扭曲證據分布。"
+      "reason": "用電量受人口、設備與行為影響，不能直接代表太陽高度或日長。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "主觀印象不能取代可檢核觀測。"
+      "reason": "沒有比例尺的紙面距離不能換算真實軌道資料，也無法量到季節受能。"
     }
   ],
   "difficulty": "standard",
@@ -49,7 +49,7 @@
   ],
   "representationType": "source-evaluation",
   "misconceptionTargets": [
-    "晝夜交替由地球公轉造成"
+    "只量臺北一年中日地距離，不看日長或半球差異"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "逐項核對「解釋閏年調整的週期來源」的條件後，「查核地軸傾斜與公轉共同造成四季時採用有日期、位置與單位的太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "兩半球同月對照加上跨季高度，可檢查相反季節與公轉位置兩個關係。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "只看臺北距離缺少南半球對照，無法區分距離假說和傾斜模型。",
       "status": "pass"
     }
   ],

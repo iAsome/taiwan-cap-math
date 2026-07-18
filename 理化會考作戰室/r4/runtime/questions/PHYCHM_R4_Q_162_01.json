@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄討論週期與頻率判斷振動快慢，哪項敘述正確？",
+  "stem": "擺錘在 12 s 內完成 6 次往復，頻率與週期各是多少？",
   "options": [
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T",
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長"
+    "此波的頻率 2.0 Hz，週期 0.50 s",
+    "此波的頻率 6.0 Hz，週期 12 s",
+    "此波的頻率 0.50 Hz，週期 12 s",
+    "頻率 0.50 Hz，週期 2.0 s"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「週期越長表示每秒振動次數越多，所以頻率和週期成正比」不成立；週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T。"
+      "reason": "把 N/t 與 t/N 對調了；6÷12 才是頻率。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「振幅是波峰到波谷的全高，波長是相鄰波峰的高度差」不成立；波峰是橫波最高點、波谷是最低點；振幅由平衡位置量到波峰，波長是沿傳播方向相鄰同相位點的距離。"
+      "reason": "總次數與總時間不是頻率、週期本身。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T」。"
+      "isCorrect": false,
+      "reason": "週期須以總時間除以次數，不是沿用 12 s。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「波速為 f/λ＝6.25 m/s，因為頻率應除以波長」不成立；頻率 5.0 Hz、波長 0.80 m 的波速為 v＝fλ＝4.0 m/s；計算前要統一單位。"
+      "isCorrect": true,
+      "reason": "f＝6/12＝0.50 Hz，T＝12/6＝2.0 s。"
     }
   ],
   "difficulty": "foundation",
@@ -46,16 +46,16 @@
     "辨認",
     "概念理解"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長"
+    "此波的頻率 2.0 Hz，週期 0.50 s",
+    "此波的頻率 6.0 Hz，週期 12 s",
+    "此波的頻率 0.50 Hz，週期 12 s"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

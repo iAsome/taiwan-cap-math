@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理水質 ppm資料後，哪項說明正確？",
+  "stem": "5 g 糖與 95 g 水形成的溶液，重量百分濃度為？",
   "options": [
-    "溶液中含量較少的一方永遠是溶劑，和物態與作用無關",
-    "只要肉眼一時看不到粒子，就能斷定混合物完全均勻",
-    "20 g 食鹽加 80 g 水形成 100 g 溶液，重量百分濃度為 20%",
-    "250 g、12% 的溶液含溶質 262 g，因為應把百分數直接加上溶液質量"
+    "5%",
+    "95%",
+    "19%",
+    "5.26%"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「溶液中含量較少的一方永遠是溶劑，和物態與作用無關」不成立；食鹽水中食鹽是溶質、水是溶劑、均勻混合系統是溶液。"
+      "isCorrect": true,
+      "reason": "5÷100×100%＝5%。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要肉眼一時看不到粒子，就能斷定混合物完全均勻」不成立；食鹽水在各處取樣組成近似相同，屬均勻混合；泥水可見沉降且組成不一，屬非均勻混合。"
+      "reason": "是水占近似比例。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「20 g 食鹽加 80 g 水形成 100 g 溶液，重量百分濃度為 20%」。"
+      "isCorrect": false,
+      "reason": "把 95÷5。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「250 g、12% 的溶液含溶質 262 g，因為應把百分…」不成立；250 g、12% 的溶液含溶質 30 g，因為溶質質量＝濃度×溶液質量。"
+      "reason": "用 95 g 水作分母。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "代入計算"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "溶液中含量較少的一方永遠是溶劑，和物態與作用無關",
-    "只要肉眼一時看不到粒子，就能斷定混合物完全均勻",
-    "250 g、12% 的溶液含溶質 262 g，因為應把百分數直接加上溶液質量"
+    "95%",
+    "19%",
+    "5.26%"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AB-4-4",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

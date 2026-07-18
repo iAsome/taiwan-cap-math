@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "把地軸傾斜與公轉共同造成四季的判準移到另一個情境時，哪一項作法較適當？",
+  "stem": "要用另一對南北半球城市檢驗四季模型，哪個作法完整？",
   "options": [
-    "改看「解釋閏年調整的週期來源」後，只採用支持原想法的一筆紀錄",
-    "改看「解釋閏年調整的週期來源」後，省略所有單位",
-    "把判讀移到「解釋閏年調整的週期來源」時，仍先先判定半球與日期位置",
-    "只寫地軸傾斜與公轉共同造成四季的概念名稱，不記錄「解釋閏年調整的週期來源」的觀測"
+    "只比兩城同月氣溫，不記緯度或海陸位置",
+    "把地軸在每個公轉位置重新轉向太陽",
+    "同月比較兩城日長與正午高度，並保持模型地軸方向近似平行",
+    "只量兩城日地距離，預設兩地必同季"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "換情境仍須比較完整資料與替代解釋。"
+      "reason": "只比兩城同月氣溫，不記緯度或海陸位置；氣溫受海陸與洋流等因素影響，缺少位置條件不能單獨檢驗季節機制。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "跨情境比較更需要一致單位。"
+      "reason": "把地軸在每個公轉位置重新轉向太陽；這會破壞地軸在公轉中近似平行的關係，模型因而製造不存在的受光變化。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "新情境保留相同變因、證據與適用範圍。"
+      "reason": "同月比較兩城日長與正午高度，並保持模型地軸方向近似平行；南北半球受光差可由兩項觀測交叉檢查，模型也保留正確軸向。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "概念名稱不能取代實際資料。"
+      "reason": "只量兩城日地距離，預設兩地必同季；同一時刻兩城與太陽距離幾乎相同，卻可能因分處南北半球而季節相反。"
     }
   ],
   "difficulty": "transfer",
@@ -49,7 +49,7 @@
   ],
   "representationType": "transfer-scenario",
   "misconceptionTargets": [
-    "太陽高度越低地表單位面積受能越多"
+    "只量兩城日地距離，預設兩地必同季"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "逐項核對「由日出日落算晝長」的條件後，「把判讀移到「解釋閏年調整的週期來源」時，仍先先判定半球與日期位置」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "答案以同月日長和正午高度呈現兩半球受光差，且模型地軸不隨位置亂轉，觀測與機制彼此相符。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "兩城共享近乎相同的日地距離仍可出現相反季節，因此只量距離沒有辨別南北半球受光狀態。",
       "status": "pass"
     }
   ],

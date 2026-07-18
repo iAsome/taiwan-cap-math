@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解合力質量與加速度，哪項修正合理？",
+  "stem": "同受 3 N，質量由 1 kg 增至 2 kg，加速度如何？",
   "options": [
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關",
-    "力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的意義",
-    "質量相同時合力較大",
-    "合力只需把大小相加，所以向右 8 N 與向左 3 N 的合力是 11 N"
+    "由 3 增至 6 m/s²",
+    "由 3 降至 1.5 m/s²",
+    "此時物體保持 3 m/s²",
+    "降為 1 m/s²"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「加速度方向永遠和物體當下運動方向相同，與合力方向無關」不成立；物體的加速度方向與合力相同；質量相同時合力較大，或合力相同時質量較小，加速度較大。"
+      "reason": "由 3 增至 6 m/s²與受力條件不符。同力下質量加倍，加速度減半。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的…」不成立；力的箭頭長度表示大小、箭頭指向表示方向、起點標在作用點，三項都是力的表示資訊。"
+      "isCorrect": true,
+      "reason": "同力下質量加倍，加速度減半。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體的加速度方向與合力相同；質量相同時合力較大，或合力相同時質量較小，加速度較大」。"
+      "isCorrect": false,
+      "reason": "此時物體保持 3 m/s²與受力條件不符。同力下質量加倍，加速度減半。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「合力只需把大小相加，所以向右 8 N 與向左 3 N 的合…」不成立；同直線上向右 8 N 與向左 3 N 的合力為向右 5 N；相反方向力要取差並保留方向。"
+      "reason": "降為 1 m/s²與受力條件不符。同力下質量加倍，加速度減半。"
     }
   ],
   "difficulty": "standard",
@@ -50,16 +50,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關",
-    "力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的意義",
-    "合力只需把大小相加，所以向右 8 N 與向左 3 N 的合力是 11 N"
+    "由 3 增至 6 m/s²",
+    "此時物體保持 3 m/s²",
+    "降為 1 m/s²"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,50 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_252",
-  "stem": "根據滑輪組表中紀錄，哪項結論最合理？",
+  "stem": "甲的力為10 N、垂直力臂為0.30 m；乙則是15 N、0.20 m。依由力與力臂計算力矩完成力與垂直力臂比較，應如何解釋？",
   "options": [
-    "力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離",
-    "力矩大小為力乘以作用線到轉軸的垂直距離；10 N 作用於 0.30 m 力臂產生 3.0 N·m",
-    "轉動平衡只需左右作用力大小相同，施力位置和力臂不重要",
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關"
+    "解題時將力矩算成力除以力臂，導致力臂越長反而力矩越小",
+    "力矩＝力×支點到作用線的垂直距離",
+    "直接用支點到施力點的斜距離當力臂",
+    "計算力矩時將小數點移一位"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離」不成立；力矩大小為力乘以作用線到轉軸的垂直距離；10 N 作用於 0.30 m 力臂產生 3.0 N·m。"
+      "reason": "力矩＝力×支點到作用線的垂直距離。甲列的力為10 N、垂直力臂為0.30 m；乙列的力為15 N、垂直力臂為0.20 m。解題時錯將力矩算成力除以力臂，導致力臂越長反而力矩越小。力矩大小為力乘以作用線到轉軸的垂直距離；照原做法會把力矩算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「力矩大小為力乘以作用線到轉軸的垂直距離；10 N 作用於 0.30 m 力臂產生 3.0 N·m」。"
+      "reason": "力矩＝力×支點到作用線的垂直距離。甲列的力為10 N、垂直力臂為0.30 m；乙列的力為15 N、垂直力臂為0.20 m。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「轉動平衡只需左右作用力大小相同，施力位置和力臂不重要」不成立；轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零。"
+      "reason": "力矩＝力×支點到作用線的垂直距離。甲列的力為10 N、垂直力臂為0.30 m；乙列的力為15 N、垂直力臂為0.20 m。直接用支點到施力點的斜距離當力臂，卻未找作用線的垂直距離，結果會錯判力矩。力臂不是支點到施力點的任意斜距離；力矩差異若未通過由力與力臂計算力矩對力的控制，就不能只歸給垂直力臂。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關」不成立；槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果。"
+      "reason": "力矩＝力×支點到作用線的垂直距離。甲列的力為10 N、垂直力臂為0.30 m；乙列的力為15 N、垂直力臂為0.20 m。解題時錯將 10 N×0.30 m 算成 30 N·m，未正確處理小數。力矩＝力×支點到作用線的垂直距離；垂直力臂的數值若未依力核對，會使力矩無法通過由力與力臂計算力矩檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀"
+    "資料判讀",
+    "計算"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離",
-    "轉動平衡只需左右作用力大小相同，施力位置和力臂不重要",
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關"
+    "解題時將力矩算成力除以力臂，導致力臂越長反而力矩越小",
+    "直接用支點到施力點的斜距離當力臂",
+    "計算力矩時將小數點移一位"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -64,20 +65,6 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_013"
   ]

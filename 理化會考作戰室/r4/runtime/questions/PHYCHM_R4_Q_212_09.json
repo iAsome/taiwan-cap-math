@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對車輛起步煞車結果，哪項說法正確？",
+  "stem": "平均加速度 -2 m/s² 持續 5 s，速度變化量為何？",
   "options": [
-    "速度由 4 m/s 在 3 s 內均勻變為 10 m/s",
-    "加速度只要是負值就一定減速，只要是正值就一定加速",
-    "平均加速度是 (10＋4)/3＝4.67 m/s²，因為速度變化量要相加",
-    "加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度"
+    "物體的速度變化量為 +10 m/s",
+    "速度變化量為 -10 m/s",
+    "物體的速度變化量為 -2.5 m/s",
+    "物體的速度變化量為 +3 m/s"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「速度由 4 m/s 在 3 s 內均勻變為 10 m/s，平均加速度為 (10−4)/3＝2 m/s²」。"
+      "isCorrect": false,
+      "reason": "物體的速度變化量為 +10 m/s不成立。Δv=(-2)×5=-10 m/s。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「加速度只要是負值就一定減速，只要是正值就一定加速」不成立；加速度與速度同向時快慢增加，反向時快慢減少；加速度為負不代表一定減速。"
+      "isCorrect": true,
+      "reason": "Δv=(-2)×5=-10 m/s。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「平均加速度是 (10＋4)/3＝4.67 m/s²，因為速…」不成立；速度由 4 m/s 在 3 s 內均勻變為 10 m/s，平均加速度為 (10−4)/3＝2 …。"
+      "reason": "物體的速度變化量為 -2.5 m/s不成立。Δv=(-2)×5=-10 m/s。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度」不成立；加速度表示速度隨時間的變化；速度大小、方向或兩者改變都可產生加速度。"
+      "reason": "物體的速度變化量為 +3 m/s不成立。Δv=(-2)×5=-10 m/s。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "加速度只要是負值就一定減速，只要是正值就一定加速",
-    "平均加速度是 (10＋4)/3＝4.67 m/s²，因為速度變化量要相加",
-    "加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度"
+    "物體的速度變化量為 +10 m/s",
+    "物體的速度變化量為 -2.5 m/s",
+    "物體的速度變化量為 +3 m/s"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-11",
       "AUTH-NATURAL-LC-EB-4-8",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

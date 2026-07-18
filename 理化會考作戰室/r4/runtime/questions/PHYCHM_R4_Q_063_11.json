@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組粒子模型轉換資料，哪項判讀仍合理？",
+  "stem": "粒子圖只畫 4 個 AB，能否斷定整瓶只有 4 個分子？",
   "options": [
-    "元素符號的大小寫只是排版選擇，Co、CO 與 co 意義完全相同",
-    "若模型顯示每個粒子由兩個 A 與一個 B 連結",
-    "H₂SO₄ 含 2＋1＋4＝7 種元素，因為每個原子都算一種",
-    "H₂SO₄ 中未寫下標的 S 表示沒有硫原子"
+    "能，係數不可省略",
+    "不能，可能是代表性取樣",
+    "能，圖一定按總數",
+    "不能，因 AB 沒有原子"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「元素符號的大小寫只是排版選擇，Co、CO 與 co 意義完…」不成立；元素符號第一個字母大寫、第二個字母小寫，例如 Co 是鈷而 CO 是由碳與氧組成的化學式。"
+      "reason": "與總樣品粒子無關。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「若模型顯示每個粒子由兩個 A 與一個 B 連結，其化學式可表為 A₂B；多粒子再用係數計數」。"
+      "reason": "模型常抽樣。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「H₂SO₄ 含 2＋1＋4＝7 種元素，因為每個原子都算一種」不成立；H₂SO₄ 含氫、硫、氧三種元素；元素種類由不同元素符號判定，不由下標大小判定。"
+      "reason": "未有總數保證。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「H₂SO₄ 中未寫下標的 S 表示沒有硫原子」不成立；一個 H₂SO₄ 粒子含 2 個氫、1 個硫、4 個氧原子，共 7 個原子。"
+      "reason": "AB 含原子。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "模型限制"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "元素符號的大小寫只是排版選擇，Co、CO 與 co 意義完全相同",
-    "H₂SO₄ 含 2＋1＋4＝7 種元素，因為每個原子都算一種",
-    "H₂SO₄ 中未寫下標的 S 表示沒有硫原子"
+    "能，係數不可省略",
+    "能，圖一定按總數",
+    "不能，因 AB 沒有原子"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AA-4-5",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

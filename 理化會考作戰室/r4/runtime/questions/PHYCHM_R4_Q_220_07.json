@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "車輛慣性出現四種說法，哪項有理化概念支持？",
+  "stem": "車頂鬆動物品在車突然加速時容易向後滑，車外觀察者如何解釋？",
   "options": [
-    "質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少",
-    "作用力與反作用力同時作用在同一物體，因此永遠互相抵銷",
-    "慣性是物體維持原運動狀態的性質",
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他"
+    "物品受到巨大向後推力",
+    "物品主動向後加速",
+    "物品未及獲得與車相同的向前速度",
+    "物品重力改為水平向後"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少」不成立；質量是物體慣性的量度，重量是物體所受重力，在不同星體可改變；單位分別常用 kg 與 N。"
+      "reason": "物品受到巨大向後推力與受力條件不符。車先向前加速，物品因慣性較慢改變速度。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「作用力與反作用力同時作用在同一物體，因此永遠互相抵銷」不成立；人推牆的力與牆推人的力是作用力反作用力，大小相等、方向相反，但作用在不同物體。"
+      "reason": "物品主動向後加速與受力條件不符。車先向前加速，物品因慣性較慢改變速度。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「慣性是物體維持原運動狀態的性質；車突然剎車時乘客上半身傾向前就是慣性現象」。"
+      "reason": "車先向前加速，物品因慣性較慢改變速度。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他」不成立；慣性是物體維持原運動狀態的性質；車突然剎車時乘客上半身傾向前就是慣性現象。"
+      "reason": "物品重力改為水平向後與受力條件不符。車先向前加速，物品因慣性較慢改變速度。"
     }
   ],
   "difficulty": "standard",
@@ -50,16 +50,16 @@
     "證據判讀",
     "推論"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少",
-    "作用力與反作用力同時作用在同一物體，因此永遠互相抵銷",
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他"
+    "物品受到巨大向後推力",
+    "物品主動向後加速",
+    "物品重力改為水平向後"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

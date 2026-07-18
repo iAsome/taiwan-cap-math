@@ -14,50 +14,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": "PHYCHM_R4_STIM_226",
-  "stem": "車輛轉彎題組中，哪項說明符合紀錄？",
+  "stem": "依表格，哪一條件下測得的摩擦力最大？",
   "options": [
-    "受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右",
-    "比較實驗要一次只改一項",
-    "比較粗糙程度時可同時在其中一組增加負重，結果仍只反映表面性質",
-    "只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力"
+    "光滑面且無負載",
+    "粗糙面且無負載",
+    "粗糙面且加負載",
+    "光滑面且加負載"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右」不成立；受力圖只畫作用在目標物上的力，箭頭方向是力方向；物體向右運動不代表必有向右力。"
+      "reason": "光滑面且無負載不成立。四值 2.0、4.5、3.2、7.0 N 中，粗糙加負載的 7.0 N 最大。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「摩擦效果受接觸面性質與正向作用力影響；比較實驗要一次只改一項」。"
+      "isCorrect": false,
+      "reason": "粗糙面且無負載不成立。四值 2.0、4.5、3.2、7.0 N 中，粗糙加負載的 7.0 N 最大。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「比較粗糙程度時可同時在其中一組增加負重，結果仍只反映表面性質」不成立；摩擦效果受接觸面性質與正向作用力影響；比較實驗要一次只改一項。"
+      "isCorrect": true,
+      "reason": "四值 2.0、4.5、3.2、7.0 N 中，粗糙加負載的 7.0 N 最大。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力」不成立；靜摩擦力在最大值內隨滑動趨勢調整，以阻止接觸面相對滑動；動摩擦力則在已相對滑動時出現。"
+      "reason": "光滑面且加負載不成立。四值 2.0、4.5、3.2、7.0 N 中，粗糙加負載的 7.0 N 最大。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "證據評估"
+    "條件評估"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右",
-    "比較粗糙程度時可同時在其中一組增加負重，結果仍只反映表面性質",
-    "只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力"
+    "光滑面且無負載",
+    "粗糙面且無負載",
+    "光滑面且加負載"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-10",
       "AUTH-NATURAL-LC-EB-4-11",
@@ -68,20 +68,6 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_010"
   ]

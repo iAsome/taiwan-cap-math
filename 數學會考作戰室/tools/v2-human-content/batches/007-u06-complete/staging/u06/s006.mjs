@@ -53,11 +53,11 @@ export default {
       },
       {
         "symbol": "xy=k",
-        "meaning": "x、y 的乘積固定。"
+        "meaning": "x、y 的乘積固定為非零常數 k。"
       },
       {
         "symbol": "y=k/x",
-        "meaning": "x≠0 時的反比關係式。"
+        "meaning": "k≠0 且 x≠0 時的反比關係式。"
       }
     ],
     "conceptNarrative": [
@@ -70,7 +70,7 @@ export default {
     "formalDefinitions": [
       {
         "name": "反比關係",
-        "statement": "存在固定非零或指定常數 k，使每組非零資料滿足 xy=k。"
+        "statement": "存在固定非零常數 k，使每組非零資料滿足 xy=k。"
       },
       {
         "name": "反比常數",
@@ -81,7 +81,7 @@ export default {
       {
         "formula": "xy=k",
         "conditions": [
-          "x、y 在關係中不取使式子失去情境意義的值"
+          "k≠0，且 x、y≠0"
         ],
         "meaning": "反比乘積形式。"
       },
@@ -257,7 +257,7 @@ export default {
       "reviewVersion": "human-lecture-review-u06-r1.0",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "529fb2ee8d20ba120af09cf80277efb1039a5dc322428e1466e7a4bd7b67978c"
+    "contentSha256": "41f61fc3085f08eeba3b9707e9caf80958c041bbb0fbabcddf75ba7e5f4a8234"
   },
   "mcQuestions": [
     {

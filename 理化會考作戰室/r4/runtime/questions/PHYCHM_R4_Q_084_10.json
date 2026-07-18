@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "學生根據產氣開放系統下結論，哪項符合資料？",
+  "stem": "反應式 aH₂＋bO₂→cH₂O 已知 a＝4、b＝2。要使氫、氧都相等，c 應是多少？",
   "options": [
-    "反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查",
-    "檢查反應式時要逐種元素計算左右原子總數，每一種都相等才是已配平",
-    "只要反應式兩側的分子個數相同，就不必再檢查各元素原子數",
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小"
+    "8",
+    "2",
+    "4",
+    "3"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查」不成立；粒子模型驗證配平時，要對每種顏色或符號的原子逐個計數，不是只數分子團數。"
+      "reason": "右 H 16、O 8，過多。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「檢查反應式時要逐種元素計算左右原子總數，每一種都相等才是已配平」。"
+      "isCorrect": false,
+      "reason": "右 H 只有 4，左為 8。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「只要反應式兩側的分子個數相同，就不必再檢查各元素原子數」不成立；檢查反應式時要逐種元素計算左右原子總數，每一種都相等才是已配平。"
+      "isCorrect": true,
+      "reason": "右 H 8、O 4，與左相同。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小」不成立；密閉袋內的反應前後，所有反應物與生成物的總質量相等，因為原子只重新排列。"
+      "reason": "右 H 6、O 3，均不符。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "代數推理"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查",
-    "只要反應式兩側的分子個數相同，就不必再檢查各元素原子數",
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小"
+    "8",
+    "2",
+    "3"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

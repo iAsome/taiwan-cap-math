@@ -53,7 +53,7 @@ export default {
       },
       {
         "symbol": "y=k/x",
-        "meaning": "x≠0，且點需滿足 xy=k。"
+        "meaning": "k≠0、x≠0，且點需滿足 xy=k。"
       },
       {
         "symbol": "k>0 或 k<0",
@@ -70,7 +70,7 @@ export default {
     "formalDefinitions": [
       {
         "name": "反比圖形",
-        "statement": "所有滿足 y=k/x、x≠0 的點集合。"
+        "statement": "固定非零常數 k 下，所有滿足 y=k/x 且 x≠0 的點集合。"
       },
       {
         "name": "象限判斷",
@@ -81,7 +81,7 @@ export default {
       {
         "formula": "點 (a,b) 在圖上 ⇔ ab=k",
         "conditions": [
-          "a≠0"
+          "k≠0、a≠0"
         ],
         "meaning": "以乘積判點。"
       },
@@ -259,7 +259,7 @@ export default {
       "reviewVersion": "human-lecture-review-u06-r1.0",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "31b2f8fae68a66973f8e040c2530269e0d9d1c3a1d8b800cda8363af66103702"
+    "contentSha256": "439d593f1a27cb69779202324715682510712089259323aee2191f0a45f12f47"
   },
   "mcQuestions": [
     {

@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組根據繩波下結論，哪項符合資料？",
+  "stem": "關係式 v＝fλ 的單位檢查何者正確？",
   "options": [
-    "頻率 5.0 Hz、波長 0.80 m 的波速為 v＝fλ＝4.0 m/s",
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比",
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率"
+    "Hz×m 可化為 m²",
+    "m/s 除以 Hz 可化為 1/m",
+    "Hz×m 可化為 m/s",
+    "m/s 乘以 m 可化為 Hz"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「頻率 5.0 Hz、波長 0.80 m 的波速為 v＝fλ＝4.0 m/s；計算前要統一單位」。"
+      "isCorrect": false,
+      "reason": "Hz 是 s⁻¹，相乘長度不會得到面積。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「週期越長表示每秒振動次數越多，所以頻率和週期成正比」不成立；週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T。"
+      "reason": "(m/s)/(s⁻¹)＝m，並非 1/m。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關」不成立；橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行。"
+      "isCorrect": true,
+      "reason": "Hz＝s⁻¹，因此 Hz×m＝m/s。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「任何一張瞬間位置波形圖都可只看波峰數直接得到頻率」不成立；比較波形圖前要讀軸；位置圖可直接量波長與振幅，頻率則還需時間資訊。"
+      "reason": "速度乘長度的單位是 m²/s，不是 Hz。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "主張評估",
     "證據評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比",
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "任何一張瞬間位置波形圖都可只看波峰數直接得到頻率"
+    "Hz×m 可化為 m²",
+    "m/s 除以 Hz 可化為 1/m",
+    "m/s 乘以 m 可化為 Hz"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

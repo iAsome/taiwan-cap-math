@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "秒表重複計時出現四種說法，哪項有理化概念支持？",
+  "stem": "判斷一個數值是否為直接量測值，最可靠的證據是什麼？",
   "options": [
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受",
-    "只要答案含有數字，就可把它當成直接測量的基本物理量",
-    "儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺",
-    "長度、質量、時間和溫度可由儀器直接測量"
+    "單位是否只有一個字母",
+    "數值是否為整數",
+    "答案是否寫在表格第一列",
+    "是否能找到對應儀器的直接讀值步驟"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受」不成立；成人桌子高度約 0.7 m；若記成 70 m，即使計算步驟完整，也應由量級發現單位或小數點錯誤。"
+      "reason": "單位形式不代表取得方式。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要答案含有數字，就可把它當成直接測量的基本物理量」不成立；長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得。"
+      "reason": "整數也可能由計算得到。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺」不成立；量約 12 cm 的鉛筆適合用毫米刻度直尺；儀器量程要大於待測量，最小刻度要能分辨所需差異。"
+      "reason": "表格位置沒有科學判準。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得」。"
+      "reason": "實際量測步驟能追溯數值來源。"
     }
   ],
   "difficulty": "standard",
@@ -48,16 +48,16 @@
     "證據判讀",
     "推論"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受",
-    "只要答案含有數字，就可把它當成直接測量的基本物理量",
-    "儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺"
+    "單位是否只有一個字母",
+    "數值是否為整數",
+    "答案是否寫在表格第一列"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

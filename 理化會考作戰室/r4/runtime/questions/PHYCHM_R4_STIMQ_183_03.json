@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": "PHYCHM_R4_STIM_183",
-  "stem": "眼鏡矯正題組中，哪項說明符合紀錄？",
+  "stem": "為何不能把53°稱為丁的折射角？",
   "options": [
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線",
-    "水中物體看來較淺是因物體實際漂浮上升，與光的折射無關",
-    "入射角是入射光與法線夾角",
-    "凸透鏡與凹透鏡都只能使光發散，兩者的形狀與光線作用無關"
+    "53°由界面量，折射角應由法線量得37°",
+    "因53°是光速",
+    "因水中沒有法線",
+    "因折射角必等於入射角55°"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「光由任何介質進入另一介質時速率都不變，也永遠折向法線」不成立；光由空氣進入玻璃時速率降低，斜入射通常折向法線；由玻璃進空氣則通常偏離法線。"
+      "isCorrect": true,
+      "reason": "53°與37°互餘，只有37°符合折射角定義。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「水中物體看來較淺是因物體實際漂浮上升，與光的折射無關」不成立；水中物體的光進入空氣後折射，眼睛沿折射光反向延伸，使物體看來比實際淺。"
+      "reason": "角度不是速度。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「入射角是入射光與法線夾角，折射角是折射光與法線夾角，都不從介面量」。"
+      "isCorrect": false,
+      "reason": "法線可延伸到水中。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「凸透鏡與凹透鏡都只能使光發散，兩者的形狀與光線作用無關」不成立；凸透鏡可使與主軸平行的光近似會聚至焦點，凹透鏡使光發散，反向延長似來自虛焦點。"
+      "reason": "折射不遵循反射角相等規則。"
     }
   ],
   "difficulty": "transfer",
@@ -48,14 +48,14 @@
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線",
-    "水中物體看來較淺是因物體實際漂浮上升，與光的折射無關",
-    "凸透鏡與凹透鏡都只能使光發散，兩者的形狀與光線作用無關"
+    "因53°是光速",
+    "因水中沒有法線",
+    "因折射角必等於入射角55°"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-7",
       "AUTH-NATURAL-LC-KA-4-8",
@@ -64,20 +64,6 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_005"
   ]

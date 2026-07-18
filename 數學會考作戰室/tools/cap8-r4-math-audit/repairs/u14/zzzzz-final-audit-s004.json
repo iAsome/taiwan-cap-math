@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u14",
+  "batch": "015-u14-complete",
+  "skills": ["s004"],
+  "mc": [
+    {
+      "questionId": "u14-s004-v010",
+      "expectedContentSha256": "fe4aff46ee8ca6a77c54a55c77236aaecc91715289d2295f734208d2a2cd5c2b",
+      "replaceText": {
+        "從80隻開始連續乘2三次": "從80個開始連續乘2三次",
+        "得到80×2³＝640隻": "得到80×2³＝640個",
+        "起始的80隻": "起始的80個"
+      },
+      "reviewReplaceText": {
+        "從80隻開始連續乘2三次": "從80個開始連續乘2三次",
+        "得到80×2³＝640隻": "得到80×2³＝640個",
+        "起始的80隻": "起始的80個"
+      }
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u14-s004-cr001",
+      "expectedContentSha256": "90ca0ef5d951324453bbcc2ac37267230bc99c698d475fbe9508ecac9581980c",
+      "set": {
+        "fullCreditSolution": [
+          "以後一項除以前一項，（－6）÷2＝－3、18÷（－6）＝－3、（－54）÷18＝－3。",
+          "每組相鄰比都等於－3，所以這是公比r＝－3的等比數列。",
+          "下一項由－54乘公比，（－54）×（－3）＝162。",
+          "再下一項為162×（－3）＝－486；負公比使符號逐項交替，而絕對值每次乘3。"
+        ]
+      }
+    }
+  ],
+  "lectures": [],
+  "drawingSpecs": [],
+  "textFiles": []
+}

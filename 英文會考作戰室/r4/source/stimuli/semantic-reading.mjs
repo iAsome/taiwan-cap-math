@@ -51,11 +51,6 @@ function shortQuote(value, limit = 18) {
   return `${tokens.slice(0, limit).join(" ")}${tokens.length > limit ? "…" : ""}`;
 }
 
-function hideTitle(value, title) {
-  const escaped = title.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
-  return String(value).replace(new RegExp(escaped, "giu"), "this subject");
-}
-
 function containsText(value, target) {
   return String(value).toLowerCase().includes(String(target).toLowerCase());
 }
@@ -173,11 +168,13 @@ function question({ id, skillId, stem, correct, distractors, index, operation, r
 
 function titleQuestion(record, avoid) {
   const distractors = RELATED[record.index].slice(0, 3).map((index) => RECORDS[index].item.title);
-  const opening = record.sentences.find((sentence) => !containsText(sentence, avoid)) ?? record.sentences[0];
+  const opening = record.sentences.find((sentence) =>
+    !containsText(sentence, avoid) && !containsText(sentence, record.item.title));
+  assert(opening, `${record.item.id}: title question requires a non-title evidence sentence`);
   return question({
     id: `ENG_R4_Q_READ_${String(record.index + 1).padStart(3, "0")}_01`,
     skillId: "ENG_R4_S247",
-    stem: `Which title is best for the complete passage that includes “${shortQuote(hideTitle(opening, record.item.title))}”?`,
+    stem: `Which title is best for the complete passage that includes “${shortQuote(opening)}”?`,
     correct: record.item.title,
     distractors,
     index: record.index,
@@ -188,7 +185,9 @@ function titleQuestion(record, avoid) {
 }
 
 function relationOrDetailQuestion(record) {
-  const usableRelations = record.relations.filter((relation) => !containsText(record.sentences.at(-1), relation.answer));
+  const usableRelations = record.relations.filter((relation) =>
+    !containsText(record.sentences.at(-1), relation.answer)
+      && !containsText(relation.situation, record.item.title));
   const relation = usableRelations[record.index % Math.max(1, usableRelations.length)];
   if (relation) {
     const selector = relation.kind === "reason"
@@ -200,8 +199,8 @@ function relationOrDetailQuestion(record) {
       id: `ENG_R4_Q_READ_${String(record.index + 1).padStart(3, "0")}_02`,
       skillId: "ENG_R4_S257",
       stem: relation.kind === "reason"
-        ? `Which reason does the passage give for this situation: “${shortQuote(hideTitle(relation.situation, record.item.title))}”?`
-        : `What result follows this event in the passage: “${shortQuote(hideTitle(relation.situation, record.item.title))}”?`,
+        ? `Which reason does the passage give for this situation: “${shortQuote(relation.situation)}”?`
+        : `What result follows this event in the passage: “${shortQuote(relation.situation)}”?`,
       correct,
       distractors,
       index: record.index + 1,
@@ -210,12 +209,17 @@ function relationOrDetailQuestion(record) {
       evidence: relation.answer,
     });
   }
-  const sentenceIndex = Math.min(record.sentences.length - 2, 1 + (record.index % Math.max(1, record.sentences.length - 2)));
+  const sentenceIndexes = Array.from({ length: record.sentences.length - 1 }, (_, index) => index + 1);
+  const sentenceIndex = sentenceIndexes.find((index) => !containsText(record.sentences[index], record.item.title));
+  assert(Number.isInteger(sentenceIndex), `${record.item.id}: detail question requires a non-title sentence`);
   const correct = record.sentences[sentenceIndex];
+  const context = record.sentences.find((sentence, index) =>
+    index !== sentenceIndex && !containsText(sentence, record.item.title));
+  assert(context, `${record.item.id}: detail question requires a non-title context sentence`);
   return question({
     id: `ENG_R4_Q_READ_${String(record.index + 1).padStart(3, "0")}_02`,
     skillId: "ENG_R4_S250",
-    stem: `Which answer is supported by the passage that includes “${shortQuote(hideTitle(record.sentences[0], record.item.title))}”?`,
+    stem: `Which answer is supported by the passage that includes “${shortQuote(context)}”?`,
     correct,
     distractors: chooseForeign(record, correct, (candidate) => candidate.sentences),
     index: record.index + 1,
@@ -229,13 +233,18 @@ function sequenceQuestion(record, avoid) {
   const candidateIndexes = Array.from({ length: record.sentences.length - 1 }, (_, index) => index);
   const preferred = Math.min(record.sentences.length - 2, Math.max(0, Math.floor(record.sentences.length / 2) - 1));
   const anchorIndex = candidateIndexes.sort((left, right) => Math.abs(left - preferred) - Math.abs(right - preferred))
-    .find((index) => !containsText(record.sentences[index], avoid) && !containsText(record.sentences[index + 1], avoid)) ?? preferred;
+    .find((index) =>
+      !containsText(record.sentences[index], avoid)
+        && !containsText(record.sentences[index + 1], avoid)
+        && !containsText(record.sentences[index], record.item.title)
+        && !containsText(record.sentences[index + 1], record.item.title));
+  assert(Number.isInteger(anchorIndex), `${record.item.id}: sequence question requires a non-title sentence pair`);
   const anchor = record.sentences[anchorIndex];
   const correct = record.sentences[anchorIndex + 1];
   return question({
     id: `ENG_R4_Q_READ_${String(record.index + 1).padStart(3, "0")}_03`,
     skillId: "ENG_R4_S273",
-    stem: `What happens next in this passage after “${shortQuote(hideTitle(anchor, record.item.title))}”?`,
+    stem: `What happens next in this passage after “${shortQuote(anchor)}”?`,
     correct,
     distractors: chooseForeign(record, correct, (candidate) => candidate.sentences),
     index: record.index + 2,
@@ -247,11 +256,13 @@ function sequenceQuestion(record, avoid) {
 
 function outcomeQuestion(record, avoid) {
   const correct = record.sentences.at(-1);
-  const anchor = [...record.sentences.slice(0, -1)].reverse().find((sentence) => !containsText(sentence, avoid)) ?? record.sentences.at(-2);
+  const anchor = [...record.sentences.slice(0, -1)].reverse().find((sentence) =>
+    !containsText(sentence, avoid) && !containsText(sentence, record.item.title));
+  assert(anchor, `${record.item.id}: outcome question requires a non-title evidence sentence`);
   return question({
     id: `ENG_R4_Q_READ_${String(record.index + 1).padStart(3, "0")}_04`,
     skillId: "ENG_R4_S245",
-    stem: `Which ending result or final point follows “${shortQuote(hideTitle(anchor, record.item.title))}”?`,
+    stem: `Which ending result or final point follows “${shortQuote(anchor)}”?`,
     correct,
     distractors: chooseForeign(record, correct, (candidate) => [candidate.sentences.at(-1)]),
     index: record.index + 3,

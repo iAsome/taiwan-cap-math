@@ -15,50 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_274",
-  "stem": "根據保險絲與接地表中紀錄，哪項結論最合理？",
+  "stem": "從冷氣改成風扇時，功率由1.2 kW變為0.06 kW，每天使用由4 h變為8 h。兩列交由由功率與時間計算用電量判讀，每天使用呈現哪個量化或方向結果？",
   "options": [
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間",
-    "電功率為 V/I＝60 W，因為電壓應除以電流",
-    "額定電壓只是建議值，110 V 電器直接接 220 V 也一定保持 550 W 且無風險",
-    "1000 W 電器使用 2 h 消耗 2 kWh；電能等於功率乘以使用時間"
+    "把計算用電量時把功率除以時間，而不是將兩者相乘",
+    "把漏算待機或功率變動後仍宣稱結果是完整帳單用電量",
+    "用電量＝功率(kW)×時間(h)",
+    "解題時將 1.2 kW×4 h×30 天算成 14.4 kWh，少乘十倍"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「1000 W 電器使用 2 h 消耗 500 kWh，因為…」不成立；1000 W 電器使用 2 h 消耗 2 kWh；電能等於功率乘以使用時間。"
+      "reason": "用電量＝功率(kW)×時間(h)。冷氣列的功率為1.2 kW、每天使用為4 h；風扇列的功率為0.06 kW、每天使用為8 h。解題時誤把計算用電量時把功率除以時間，而不是將兩者相乘，結果會錯判30 天用電量。1000 W 電器使用 2 h 消耗 2 kWh；照原做法會把30 天用電量算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「電功率為 V/I＝60 W，因為電壓應除以電流」不成立；電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W。"
+      "reason": "用電量＝功率(kW)×時間(h)。冷氣列的功率為1.2 kW、每天使用為4 h；風扇列的功率為0.06 kW、每天使用為8 h。解題時誤把漏算待機或功率變動後仍宣稱結果是完整帳單用電量，結果會錯判30 天用電量。資料只計指定期間的電能，不含待機或功率隨運轉變動；30 天用電量差異若未通過由功率與時間計算用電量對功率的控制，就不能只歸給每天使用。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「額定電壓只是建議值，110 V 電器直接接 220 V 也…」不成立；額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W，不可任意接…。"
+      "isCorrect": true,
+      "reason": "用電量＝功率(kW)×時間(h)。冷氣列的功率為1.2 kW、每天使用為4 h；風扇列的功率為0.06 kW、每天使用為8 h。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「1000 W 電器使用 2 h 消耗 2 kWh；電能等於功率乘以使用時間」。"
+      "isCorrect": false,
+      "reason": "用電量＝功率(kW)×時間(h)。冷氣列的功率為1.2 kW、每天使用為4 h；風扇列的功率為0.06 kW、每天使用為8 h。解題時錯將 1.2 kW×4 h×30 天算成 14.4 kWh，少乘十倍。用電量＝功率(kW)×時間(h)；每天使用的數值若未依功率核對，會使30 天用電量無法通過由功率與時間計算用電量檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀"
+    "資料判讀",
+    "計算"
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間",
-    "電功率為 V/I＝60 W，因為電壓應除以電流",
-    "額定電壓只是建議值，110 V 電器直接接 220 V 也一定保持 550 W 且無風險"
+    "把計算用電量時把功率除以時間，而不是將兩者相乘",
+    "把漏算待機或功率變動後仍宣稱結果是完整帳單用電量",
+    "解題時將 1.2 kW×4 h×30 天算成 14.4 kWh，少乘十倍"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -70,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

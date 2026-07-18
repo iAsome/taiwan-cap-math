@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解受力與質量定性比較速度改變，哪項修正合理？",
+  "stem": "質量 4 kg、加速度 2 m/s²，所受合力為何？",
   "options": [
-    "合力較大者速度改變較快",
-    "圓周運動的快慢恆定就表示速度向量恆定，所以加速度必為零",
-    "加速度只要是負值就一定減速，只要是正值就一定加速",
-    "物體質量越大，在相同合力下速度改變必然越快"
+    "物體的合力為 2 N",
+    "物體的合力為 0.5 N",
+    "物體的合力為 6 N",
+    "合力為 8 N"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「質量相同時，合力較大者速度改變較快；合力相同時，質量較大者速度改變較慢」。"
+      "isCorrect": false,
+      "reason": "物體的合力為 2 N不成立。F=ma=4×2=8 N。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「圓周運動的快慢恆定就表示速度向量恆定，所以加速度必為零」不成立；等速圓周運動雖速度大小不變，速度方向持續改變，因此具有指向圓心的加速度。"
+      "reason": "物體的合力為 0.5 N不成立。F=ma=4×2=8 N。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「加速度只要是負值就一定減速，只要是正值就一定加速」不成立；加速度與速度同向時快慢增加，反向時快慢減少；加速度為負不代表一定減速。"
+      "reason": "物體的合力為 6 N不成立。F=ma=4×2=8 N。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「物體質量越大，在相同合力下速度改變必然越快」不成立；質量相同時，合力較大者速度改變較快；合力相同時，質量較大者速度改變較慢。"
+      "isCorrect": true,
+      "reason": "F=ma=4×2=8 N。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "圓周運動的快慢恆定就表示速度向量恆定，所以加速度必為零",
-    "加速度只要是負值就一定減速，只要是正值就一定加速",
-    "物體質量越大，在相同合力下速度改變必然越快"
+    "物體的合力為 2 N",
+    "物體的合力為 0.5 N",
+    "物體的合力為 6 N"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-11",
       "AUTH-NATURAL-LC-EB-4-8",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解導電實驗區分電解質與非電解質，哪項修正合理？",
+  "stem": "燈泡在未知液中不亮，哪個結論最穩妥？",
   "options": [
-    "加水稀釋會同時減少原有溶質的質量，所以濃度才下降",
-    "在相同電路與濃度條件下",
-    "任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電",
-    "外觀透明無色的物質一定是純物質，不可能含多種成分"
+    "尚需排除裝置故障與弱電流",
+    "電源一定過強",
+    "未知液絕對沒有任何離子，因燈泡未亮",
+    "未知液一定是純水"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「加水稀釋會同時減少原有溶質的質量，所以濃度才下降」不成立；對溶液只加水而沒有溶質進出時，溶質質量不變、溶液質量增加，因此濃度降低。"
+      "isCorrect": true,
+      "reason": "一次暗燈證據有限。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「在相同電路與濃度條件下，水溶液能否導電可用來判斷是否有可移動離子，並輔助區分電解質」。"
+      "isCorrect": false,
+      "reason": "暗燈不支持過強。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣…」不成立；在相同電路與濃度條件下，水溶液能否導電可用來判斷是否有可移動離子，並輔助區分電解質。"
+      "reason": "可能低於亮燈門檻。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「外觀透明無色的物質一定是純物質，不可能含多種成分」不成立；純物質在固定條件下有固定組成；空氣、海水等由多種物質以可變比例組成，是混合物。"
+      "reason": "許多非電解質溶液也不亮。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "證據限制"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "加水稀釋會同時減少原有溶質的質量，所以濃度才下降",
-    "任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電",
-    "外觀透明無色的物質一定是純物質，不可能含多種成分"
+    "電源一定過強",
+    "未知液絕對沒有任何離子，因燈泡未亮",
+    "未知液一定是純水"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AB-4-4",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

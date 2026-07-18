@@ -13,43 +13,43 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": "EARTH_R4_ST_106",
-  "stem": "閱讀「把每小時氣溫畫成折線圖」的資料後，為了釐清逐時觀測整理成表格與折線圖，哪一項限制最需要寫入報告？",
+  "stem": "哪一段可由相鄰實測值直接判定？",
   "options": [
-    "分析逐時觀測整理成表格與折線圖時，有3列資料就沒有不確定性",
-    "電腦繪製的「把每小時氣溫畫成折線圖」表格可保證來源正確",
-    "逐時觀測整理成表格與折線圖結果符合預期便不必檢查反例",
-    "分析逐時觀測整理成表格與折線圖時，報告需註明：單次讀值只代表當時當地"
+    "10:00到11:00降到0 hPa。",
+    "11:00到12:00由0升至1006 hPa。",
+    "14:00後必定持續上升。",
+    "13至14時氣壓回升。"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "資料列數不會消除量測與取樣不確定性。"
+      "reason": "「10:00到11:00降到0 hPa。」混淆本題的量測對象、單位、時間或適用範圍；對照「13至14時氣壓回升。」可知它不能支持題幹結論。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "製圖工具不會自動保證「把每小時氣溫畫成折線圖」的來源可靠。"
+      "reason": "「11:00到12:00由0升至1006 hPa。」混淆本題的量測對象、單位、時間或適用範圍；對照「13至14時氣壓回升。」可知它不能支持題幹結論。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "符合「逐時表格、折線圖、雷達與衛星資料各有不同時空尺度，合併前要核對時間、位置與單位」仍須檢查替代解釋與反例。"
+      "reason": "「14:00後必定持續上升。」混淆本題的量測對象、單位、時間或適用範圍；對照「13至14時氣壓回升。」可知它不能支持題幹結論。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "這項限制界定「把每小時氣溫畫成折線圖」的資料可支持到哪裡。"
+      "reason": "「13至14時氣壓回升。」直接回應題幹，並保留本題所需的量測對象、單位、時空尺度與適用條件。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "evaluate-shared-data-limit"
+    "compare-shared-data"
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "風向東風表示風往東吹"
+    "10:00到11:00降到0 hPa。"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "逐項核對「把每小時氣溫畫成折線圖」的條件後，「分析逐時觀測整理成表格與折線圖時，報告需註明：單次讀值只代表當時當地」符合題目資料；查核依據為：逐時表格、折線圖、雷達與衛星資料各有不同時空尺度。",
+      "evidence": "針對「哪一段可由相鄰實測值直接判定？」，可由「13至14時氣壓回升。」直接判定；這項證據明確保留題目指定的物理量、時空尺度與觀測條件。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單次讀值只代表當時當地」。",
+      "evidence": "交叉檢查「10:00到11:00降到0 hPa。」：該說法在量測對象、單位、時間或適用範圍上與「13至14時氣壓回升。」衝突，不能支持題幹結論。",
       "status": "pass"
     }
   ],

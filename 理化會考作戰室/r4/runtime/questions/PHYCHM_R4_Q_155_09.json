@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對保溫瓶設計結果，哪項說法正確？",
+  "stem": "輻射淨熱流方向通常？",
   "options": [
-    "只要物體摸起來較冷，就代表「冷」當作物質流入手中，無需描述能量流向",
-    "太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞",
-    "傳導必須由熱物質粒子一路移動到冷端，否則能量不能傳遞",
-    "熱輻射以電磁波傳遞能量"
+    "只有單向放射",
+    "低溫到高溫",
+    "高溫到低溫",
+    "由顏色決定方向"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要物體摸起來較冷，就代表「冷」當作物質流入手中，無需描述…」不成立；解釋熱現象要先標出高低溫與能量淨流向，再判斷介質、流體移動或電磁波對應的機制。"
+      "reason": "兩邊都放。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞」不成立；熱輻射以電磁波傳遞能量，不需介質，因此太陽能穿過太空將能量傳至地球。"
+      "reason": "淨值相反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「傳導必須由熱物質粒子一路移動到冷端，否則能量不能傳遞」不成立；熱傳導可由相鄰粒子碰撞與振動傳遞能量，金屬中自由電子也有助於快速傳熱。"
+      "isCorrect": true,
+      "reason": "高溫放得更多。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「熱輻射以電磁波傳遞能量，不需介質，因此太陽能穿過太空將能量傳至地球」。"
+      "isCorrect": false,
+      "reason": "顏色影響量非基本方向。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "方向"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要物體摸起來較冷，就代表「冷」當作物質流入手中，無需描述能量流向",
-    "太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞",
-    "傳導必須由熱物質粒子一路移動到冷端，否則能量不能傳遞"
+    "只有單向放射",
+    "低溫到高溫",
+    "由顏色決定方向"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱傳播與生活應用; 臺灣國中教育會考自然科導熱、對流、輻射與保溫題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BB-4-1",
       "AUTH-NATURAL-LC-BB-4-3",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

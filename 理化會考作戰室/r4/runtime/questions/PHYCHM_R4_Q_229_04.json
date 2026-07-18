@@ -14,34 +14,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查傳送帶摩擦紀錄，哪項判讀正確？",
+  "stem": "行星 A 的 g 是行星 B 的 5 倍，同一探測器重量關係為何？",
   "options": [
-    "同一物體到月球後組成與質量不變",
-    "受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右",
-    "物體到月球後原子自動減少，因此質量和重量都以相同比例減少",
-    "只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力"
+    "B 上是 A 上的 5 倍",
+    "兩地重量相同",
+    "A 上重量是 B 上的 5 倍",
+    "兩地重量都為零"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「同一物體到月球後組成與質量不變，但因當地重力場較弱，重量變小」。"
+      "isCorrect": false,
+      "reason": "B 上是 A 上的 5 倍不成立。質量固定時 W 與 g 成正比。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右」不成立；受力圖只畫作用在目標物上的力，箭頭方向是力方向；物體向右運動不代表必有向右力。"
+      "reason": "兩地重量相同不成立。質量固定時 W 與 g 成正比。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「物體到月球後原子自動減少，因此質量和重量都以相同比例減少」不成立；同一物體到月球後組成與質量不變，但因當地重力場較弱，重量變小。"
+      "isCorrect": true,
+      "reason": "質量固定時 W 與 g 成正比。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力」不成立；靜摩擦力在最大值內隨滑動趨勢調整，以阻止接觸面相對滑動；動摩擦力則在已相對滑動時出現。"
+      "reason": "兩地重量都為零不成立。質量固定時 W 與 g 成正比。"
     }
   ],
   "difficulty": "standard",
@@ -49,16 +49,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右",
-    "物體到月球後原子自動減少，因此質量和重量都以相同比例減少",
-    "只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力"
+    "B 上是 A 上的 5 倍",
+    "兩地重量相同",
+    "兩地重量都為零"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-10",
       "AUTH-NATURAL-LC-EB-4-11",
@@ -69,19 +69,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

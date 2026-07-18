@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "超聲波出現四種說法，哪項有理化概念支持？",
+  "stem": "音叉發聲時肉眼看不清叉腳移動。要驗證它正在振動，哪個方法最適合？",
   "options": [
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射",
-    "音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止",
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險"
+    "只記錄音叉的顏色",
+    "讓叉腳輕觸懸掛小球並觀察小球反覆彈開",
+    "把音叉放遠但不量任何變化",
+    "關閉照明後憑猜測判定"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「距離為 340×0.40＝136 m，因為回聲時間只包含單程」不成立；回聲測距的聲波經往返路程；若聲速 340 m/s、往返 0.40 s，距離為 68 m。"
+      "reason": "顏色不反映快速微小位移。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射」不成立；人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射。"
+      "isCorrect": true,
+      "reason": "小球受叉腳週期碰撞會重複偏轉，放大不可見的振動。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止」。"
+      "isCorrect": false,
+      "reason": "改變距離只改聽感，不能直接顯示叉腳運動。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險」不成立；噪音風險同時與聲音強度級和暴露時間有關；較大聲音的安全暴露時間應更短。"
+      "reason": "缺少可觀察證據，無法驗證。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "證據判讀",
     "推論"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射",
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險"
+    "只記錄音叉的顏色",
+    "把音叉放遠但不量任何變化",
+    "關閉照明後憑猜測判定"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

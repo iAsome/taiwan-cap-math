@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估吸放熱量測報告時，哪項說明正確？",
+  "stem": "要比較 P、Q 哪個每克反應物放熱較多，還需哪些資料？",
   "options": [
-    "只要容器摸起來冷就必是放熱，摸起來熱就必是吸熱",
-    "箭頭右側是實驗前放入的反應物，左側是實驗後才形成的物質",
-    "吸熱反應由周遭吸收能量",
-    "實驗者預期會反應就是足夠證據，無需記錄前後性質"
+    "只依放熱反應的名稱排序",
+    "只看最高溫度而忽略起始溫度也能比較放熱量",
+    "只比較反應時火焰顏色",
+    "反應物實際消耗質量與系統熱容量"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要容器摸起來冷就必是放熱，摸起來熱就必是吸熱」不成立；放熱反應將能量傳向周遭，吸熱反應由周遭吸收能量；應用溫度資料與能量流向判斷。"
+      "reason": "名稱不提供反應程度與定量能量。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「箭頭右側是實驗前放入的反應物，左側是實驗後才形成的物質」不成立；文字反應式中箭頭左側是反應物，右側是生成物；例如碳＋氧氣→二氧化碳。"
+      "reason": "沒有起始溫度就無法得到溫度變化量。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「放熱反應將能量傳向周遭，吸熱反應由周遭吸收能量；應用溫度資料與能量流向判斷」。"
+      "isCorrect": false,
+      "reason": "火焰顏色與每克釋熱量沒有固定換算關係。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「實驗者預期會反應就是足夠證據，無需記錄前後性質」不成立；要判斷反應可能發生，應記錄操作前後現象，排除物理原因，再用產物性質或對照試驗支持。"
+      "isCorrect": true,
+      "reason": "先由熱容量與溫變估能量，再除以實際消耗質量。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "資料需求"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要容器摸起來冷就必是放熱，摸起來熱就必是吸熱",
-    "箭頭右側是實驗前放入的反應物，左側是實驗後才形成的物質",
-    "實驗者預期會反應就是足夠證據，無需記錄前後性質"
+    "只依放熱反應的名稱排序",
+    "只看最高溫度而忽略起始溫度也能比較放熱量",
+    "只比較反應時火焰顏色"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-2",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

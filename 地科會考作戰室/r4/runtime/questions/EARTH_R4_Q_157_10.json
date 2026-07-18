@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "依附表判讀地球公轉週期與曆年調整概念，哪一項讀值正確？",
+  "stem": "以一年365.24日估算，連續三個365日平年會累積多少日差？",
   "options": [
-    "在「由日出日落算晝長」的地球公轉週期與曆年調整概念資料中，當日期位置為乙時，臺灣日落為18:45。",
-    "在「由日出日落算晝長」的地球公轉週期與曆年調整概念資料中，當日期位置為乙時，臺灣日落為18:05。",
-    "在「由日出日落算晝長」的地球公轉週期與曆年調整概念資料中，當日期位置為乙時，臺灣日落為17:20。",
-    "在「由日出日落算晝長」的地球公轉週期與曆年調整概念資料中，附表找不到日期位置為乙的紀錄。"
+    "0.24日",
+    "0.48日",
+    "0.72日",
+    "1.24日"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「18:45」來自其他資料列；本列記錄的是「17:20」。"
+      "reason": "0.24日只計入一年的小數差，沒有乘上三年。 差額應以日為單位逐年累積，並用曆年總日數驗算。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「18:05」來自其他資料列；本列記錄的是「17:20」。"
+      "reason": "0.48日是兩年累積值，仍少算第三年的0.24日。 差額應以日為單位逐年累積，並用曆年總日數驗算。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "逐欄讀值可直接得到「臺灣日落為17:20」。"
+      "reason": "每年差0.24日，三年相乘得到0.72日，單位與題意一致。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "表中第2列已列出「乙」，不能說沒有記錄。"
+      "reason": "1.24日混入一個完整日，三個平年尚未累積到此數值。 差額應以日為單位逐年累積，並用曆年總日數驗算。"
     }
   ],
   "difficulty": "advanced",
@@ -49,7 +49,7 @@
   ],
   "representationType": "data-table",
   "misconceptionTargets": [
-    "全球同一天的晝長完全相等"
+    "0.48日"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "逐項核對「由日出日落算晝長」的條件後，「在「由日出日落算晝長」的地球公轉週期與曆年調整概念資料中，當日期位置為乙時，臺灣日落為17:20。」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "用0.24日乘3得到0.72日，亦可由1095.72日減1095日驗算。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "0.48日只涵蓋兩年；題目指定三年，還須再加一次0.24日。",
       "status": "pass"
     }
   ],

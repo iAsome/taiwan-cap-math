@@ -11,50 +11,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_214",
-  "stem": "速度時間圖題組中，哪項說明符合紀錄？",
+  "stem": "依示意表，物體在最低點時，速度與向心方向依序為何？",
   "options": [
-    "只要速率計數字不變，不論運動方向如何改變，加速度都為零",
-    "因此具有指向圓心的加速度",
-    "平均加速度是 (10＋4)/3＝4.67 m/s²，因為速度變化量要相加",
-    "速度—時間圖上縱座標較大就表示加速度較大，不必比較斜率"
+    "速度向右、向心向上",
+    "物體的速度向上、向心向右",
+    "物體的速度向左、向心向下",
+    "物體的速度向下、向心向左"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要速率計數字不變，不論運動方向如何改變，加速度都為零」不成立；直線上快慢改變有加速度；物體以恆定快慢轉彎時方向改變，也有加速度。"
+      "isCorrect": true,
+      "reason": "最低點逆時針切線向右，圓心位於上方。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「等速圓周運動雖速度大小不變，速度方向持續改變，因此具有指向圓心的加速度」。"
+      "isCorrect": false,
+      "reason": "物體的速度向上、向心向右不成立。最低點逆時針切線向右，圓心位於上方。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「平均加速度是 (10＋4)/3＝4.67 m/s²，因為速…」不成立；速度由 4 m/s 在 3 s 內均勻變為 10 m/s，平均加速度為 (10−4)/3＝2 …。"
+      "reason": "物體的速度向左、向心向下不成立。最低點逆時針切線向右，圓心位於上方。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「速度—時間圖上縱座標較大就表示加速度較大，不必比較斜率」不成立；速度—時間圖斜率為加速度；相同時間內速度變化較大的線段斜率絕對值較大。"
+      "reason": "物體的速度向下、向心向左不成立。最低點逆時針切線向右，圓心位於上方。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "證據評估"
+    "向量評估"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "只要速率計數字不變，不論運動方向如何改變，加速度都為零",
-    "平均加速度是 (10＋4)/3＝4.67 m/s²，因為速度變化量要相加",
-    "速度—時間圖上縱座標較大就表示加速度較大，不必比較斜率"
+    "物體的速度向上、向心向右",
+    "物體的速度向左、向心向下",
+    "物體的速度向下、向心向左"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-11",
       "AUTH-NATURAL-LC-EB-4-8",
@@ -62,20 +62,6 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_008"
   ]

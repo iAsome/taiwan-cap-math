@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u16",
+  "batch": "017-u16-complete",
+  "skills": ["s014"],
+  "mc": [
+    {
+      "questionId": "u16-s014-v001",
+      "expectedContentSha256": "e2bfd520463ee854e5198462ba85109c35475f23c830a8d9b3616012130b460a",
+      "set": {"explanation": "在同一三角形中，邊越長，所對的角越大。三邊5、7、9中最長邊是9，所以最大角的對邊長為9；21是周長而不是任何一邊。"}
+    },
+    {
+      "questionId": "u16-s014-v002",
+      "expectedContentSha256": "d446e376e53f3c4e92ad7b450a2e1d2db414d3c25a946fb42ef790bd25efb065",
+      "set": {"explanation": "三邊中BC=11最長，而BC不接觸的對面頂點是A，因此∠A最大。∠B的對邊AC=6最短，∠C的對邊AB=8居中。"}
+    },
+    {
+      "questionId": "u16-s014-v003",
+      "expectedContentSha256": "43556c691eae2b4904049b2a9d4e7632af98e937f35feeaf3bf6159f0161347e",
+      "set": {"explanation": "三個角中∠Q=71°最大，所以它的對邊PR最長。PQ對∠R=67°，QR對∠P=42°，都不可能是最長邊。"}
+    },
+    {
+      "questionId": "u16-s014-v004",
+      "expectedContentSha256": "41bc2cd0fa8708ef6584bd75dc687b786d9e7e19ee79c80709474f7c92d23228",
+      "set": {"explanation": "代入x=4得AB=9、AC=10、BC=9。相等的AB、BC分別對∠C、∠A，所以∠A=∠C；最長邊AC對∠B，因此∠A=∠C<∠B。"}
+    },
+    {
+      "questionId": "u16-s014-v005",
+      "expectedContentSha256": "1cc18ac9cc74c2c2d6ffa0a412d93b92d1b31f7185870657ff5b1cb3c43183e5",
+      "set": {"explanation": "∠A的對邊是BC，∠B的對邊是AC。同一三角形中大角對大邊，所以∠A>∠B必然推出BC>AC；已知AC=9，故BC>9。"}
+    },
+    {
+      "questionId": "u16-s014-v006",
+      "expectedContentSha256": "d64c3b1c809109d191260c3a655e6e765d7abac2429b531d57886345d8157e08",
+      "set": {"explanation": "a、b、c分別是∠A、∠B、∠C的對邊，邊角大小在同一三角形中保持相同順序。因此a<c<b直接對應A<C<B。"}
+    },
+    {
+      "questionId": "u16-s014-v007",
+      "expectedContentSha256": "4645fb4fd99fa19507cd6963020f02412131a9ca51119ac3e504bedd3826732c",
+      "set": {"explanation": "∠B的對邊AC=10，∠C的對邊AB=13。由10<13必有∠B<∠C，與題設∠B>∠C矛盾；這個矛盾與BC取何整數無關，所以可能數為0。"}
+    },
+    {
+      "questionId": "u16-s014-v008",
+      "expectedContentSha256": "29310a6104c67e7036fdd61a4f95a070b424cec0e64537c064f71b8b9b1238c4",
+      "set": {"explanation": "角比2:3:4的各項皆為正，所以∠A<∠B<∠C。它們的對邊依序是BC、CA、AB，故邊長關係為BC<CA<AB。"}
+    },
+    {
+      "questionId": "u16-s014-v009",
+      "expectedContentSha256": "1e1e32f0942d581d855497eb7a767e4c5b2252555e6bae634cc74dfd70e9413b",
+      "set": {"explanation": "x所對的角是唯一最小角，所以x必須是唯一最短邊，得x<9。三角形不等式又要求9+x>12，得x>3；正整數為4、5、6、7、8，共5個。"}
+    },
+    {
+      "questionId": "u16-s014-v010",
+      "expectedContentSha256": "853c07afe391c74b659dc24d899ddb848880457d4c3ef1377e266067a4d630cf",
+      "set": {"explanation": "三條拉索形成同一三角形，最長的30 m拉索所對角最大。18 m、24 m較短，所對角也依序較小，不需要從圖面量角。"}
+    },
+    {
+      "questionId": "u16-s014-v011",
+      "expectedContentSha256": "4a321a3d16d6101c1f2f4462b992f60f5de10c23474f25fda942c3fd81c2e69f",
+      "set": {"explanation": "三段距離中BC=6.1 km最長，它的對面頂點是A，所以∠A是唯一最大內角。∠B、∠C的對邊分別為5.5 km、4.8 km，均較短。"}
+    },
+    {
+      "questionId": "u16-s014-v012",
+      "expectedContentSha256": "2ff9f314c298ddffddda3f71bd00de0809bebcc12447d5d8444ba559c663af58",
+      "set": {"explanation": "角X的對邊為2.4 m，但三邊中最長的是2.6 m，所以2.6 m所對的角才是最大角。由於2.4<2.6，設計要求X最大與精確量測不相符。"}
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u16-s014-cr001",
+      "expectedContentSha256": "5e430ca67f45ad57b254dfb3e7ba84c8a3bbccf4d00046c6363acedb12e69722",
+      "set": {
+        "fullCreditSolution": [
+          "三組配對為∠A↔BC=12、∠B↔CA=15、∠C↔AB=9。",
+          "因9<12<15，同一三角形中短邊對小角、長邊對大角，所以∠C<∠A<∠B。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s014-cr002",
+      "expectedContentSha256": "774887f9facdc2e4b1e8a8c91a8003075cecaa2936ac706d789fbf8380fcd11c",
+      "set": {
+        "prompt": "某三角形中，兩角A、B滿足A>B，其對邊長分別為a=2x+3、b=5x-6。若x為整數且三邊均為正，求x；再說明現有資料是否足以確認這個三角形實際存在。",
+        "requiredWork": [
+          "把A>B轉成a>b。",
+          "解2x+3>5x-6。",
+          "結合邊長正值與整數條件。",
+          "說明x唯一，但第三邊資料仍不足以確認三角形存在。"
+        ]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u16-s014-lecture-r1",
+      "expectedContentSha256": "4e59e72ee0b05500b7d6a310f12cadf426e38e4137d950dbbe157fffb3e6f968",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "△ABC中AB=6、AC=10、BC=13，將三個內角由大到小排列。",
+            "solutionSteps": [
+              "最長邊BC=13對∠A。",
+              "次長邊AC=10對∠B，最短邊AB=6對∠C。",
+              "依邊長13>10>6保持順序排列對角。"
+            ],
+            "answer": "∠A>∠B>∠C。",
+            "why": "三條邊與其對角分別是BC↔A、AC↔B、AB↔C；在同一三角形中，邊長大小與對角大小同序。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "△DEF的三角為37°、58°、85°，依序比較EF、FD、DE。",
+            "solutionSteps": [
+              "∠D=37°最小，對邊EF最短。",
+              "∠E=58°居中，對邊FD居中。",
+              "∠F=85°最大，對邊DE最長。"
+            ],
+            "answer": "EF<FD<DE。",
+            "why": "由角轉成邊時，不應配同字母，而要找不接觸該頂點的對邊；三個角互異，因此三邊也嚴格排序。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "△PQR中PQ=PR，能推出哪兩個角相等？",
+            "solutionSteps": [
+              "邊PQ的對角是∠R。",
+              "邊PR的對角是∠Q。",
+              "相等邊對相等角，所以兩個對角相等。"
+            ],
+            "answer": "∠Q=∠R。",
+            "why": "PQ、PR雖都連到P，但它們各自的對角位於R、Q；保留正確配對才能得到等腰三角形的底角關係。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "△XYZ中∠X<∠Z，比較邊YZ與XY。",
+            "solutionSteps": [
+              "∠X的對邊是YZ。",
+              "∠Z的對邊是XY。",
+              "小角對小邊，因此保持不等號方向。"
+            ],
+            "answer": "YZ<XY。",
+            "why": "同一三角形的大角對大邊與小角對小邊是同一個雙向關係；題目沒有提供∠Y資料，也不需要比較第三邊。"
+          },
+          {
+            "exampleId": "L5",
+            "prompt": "三角形三邊為x+2、2x-1、x+6，且x=5。哪一邊所對角最大？",
+            "solutionSteps": [
+              "代入x=5，三邊依序為7、9、11。",
+              "最長邊是x+6所代表的11。",
+              "檢查7+9>11，三邊確能形成非退化三角形。"
+            ],
+            "answer": "x+6那一邊所對的角最大。",
+            "why": "含參數時先算出實際正邊長並確認可成三角形，再以唯一最長邊對唯一最大角；不能只比較式子的外觀。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u16-fig-014-side-angle",
+      "expectedContentSha256": "36c174fd43f717fba0768b47b55f27063b18801a0b54a83eb5399b5953de68a7",
+      "set": {
+        "svgAssertions": ["角大小看對邊", "stroke-width=\"5\"", "A36 36", "短邊"]
+      }
+    }
+  ],
+  "textFiles": [
+    {
+      "path": "figures/u16/u16-fig-014-side-angle.svg",
+      "replacements": [
+        {
+          "from": "<path d=\"M66 185 A22 22 0 0 1 57 166\"/><path d=\"M117 80 A25 25 0 0 1 143 80 M112 85 A32 32 0 0 1 149 86\"/><path d=\"M291 185 A24 24 0 0 0 301 164 M284 185 A31 31 0 0 0 297 157 M277 185 A38 38 0 0 0 292 151\"/>",
+          "to": "<path d=\"M66 185 A22 22 0 0 1 57 166 M73 185 A29 29 0 0 1 61 160 M80 185 A36 36 0 0 1 65 154\"/><path d=\"M117 80 A25 25 0 0 1 143 80 M112 85 A32 32 0 0 1 149 86\"/><path d=\"M291 185 A24 24 0 0 0 301 164\"/>",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

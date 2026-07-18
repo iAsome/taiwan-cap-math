@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "延長線過載出現四種說法，哪項有理化概念支持？",
+  "stem": "未納入實際帳單的級距與附加規則，直接把單一單價套到所有情況，結果會錯判月用電量。依依電價資料計算基本電費情境修正時，功率與月使用時間應採哪個原理連結？",
   "options": [
-    "保險絲應用最粗導線代替以免熔斷，接地插腳則可拆除而不影響安全",
-    "只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關",
-    "乘使用小時得 kWh",
-    "電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道"
+    "基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算",
+    "把照明 0.20 kW 使用 120 h 被算成 240 kWh，而非 24 kWh",
+    "解題時將每月 246 kWh 當成 246 kW，混淆電能與功率",
+    "把估算電費只數電器台數，不計功率、使用時間與電價規則"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「保險絲應用最粗導線代替以免熔斷，接地插腳則可拆除而不影響安全」不成立；保險絲或斷路器在過大電流時斷開回路；接地將漏電提供低阻安全路徑，三孔插頭不可任意拆除。"
+      "isCorrect": true,
+      "reason": "基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算。冷氣列的功率為1.50 kW，月使用時間為100 h；合計列的功率為—，月使用時間為—。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關」不成立；安全節能做法包括不超過延長線額定、保持線材完好乾燥、不用時關閉高功率電器並比較實際用電量。"
+      "reason": "解題時誤把照明 0.20 kW 使用 120 h 被算成 240 kWh，而非 24 kWh。三項合計 246 kWh；月使用時間的數值若未依功率核對，會使月用電量無法通過依電價資料計算基本電費情境檢查。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算」。"
+      "isCorrect": false,
+      "reason": "解題時錯將每月 246 kWh 當成 246 kW，混淆電能與功率。基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算；功率未列入依電價資料計算基本電費情境時，月用電量的月使用時間大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道」不成立；基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算。"
+      "reason": "解題時誤把估算電費只數電器台數，不計功率、使用時間與電價規則。基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算；照原做法會把月用電量算錯或判反。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "保險絲應用最粗導線代替以免熔斷，接地插腳則可拆除而不影響安全",
-    "只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關",
-    "電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道"
+    "把照明 0.20 kW 使用 120 h 被算成 240 kWh，而非 24 kWh",
+    "解題時將每月 246 kWh 當成 246 kW，混淆電能與功率",
+    "把估算電費只數電器台數，不計功率、使用時間與電價規則"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

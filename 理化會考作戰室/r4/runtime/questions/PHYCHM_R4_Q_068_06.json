@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解沉澱氣體顏色與溫度等反應線索，哪項修正合理？",
+  "stem": "只觀察到液體升溫時，哪個替代解釋最需要先排除？",
   "options": [
-    "性質改變只要能恢復外觀就必然沒有新物質，無需檢驗",
-    "沉澱、特定氣體、難以由物理過程解釋的顏色或溫度變化",
-    "冒泡或變色本身就是完整證明，不需知道操作過程或排除其他原因",
-    "所有能逆轉的過程都是物理變化，所有不可逆過程都是化學變化"
+    "溫度計讀值必定等於反應熱",
+    "任何升溫都表示生成相同產物",
+    "兩液初溫不同而發生熱傳",
+    "原子在反應中全部消失"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「性質改變只要能恢復外觀就必然沒有新物質，無需檢驗」不成立；鐵生鏽後產物的顏色、導電等性質與鐵不同，可支持形成新物質。"
+      "reason": "反應熱還與質量及熱容量有關，不能直接等同溫度。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「沉澱、特定氣體、難以由物理過程解釋的顏色或溫度變化，都可作反應線索」。"
+      "isCorrect": false,
+      "reason": "升溫只提供能量線索，無法指定產物身分。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「冒泡或變色本身就是完整證明，不需知道操作過程或排除其他原因」不成立；反應線索要排除沸騰、溶解、外界加熱等原因，並用產物性質或對照試驗驗證。"
+      "isCorrect": true,
+      "reason": "不同初溫的液體混合即可升溫，未必發生反應。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「所有能逆轉的過程都是物理變化，所有不可逆過程都是化學變化」不成立；物理變化常可逆，但「可逆」不是分類標準；部分化學反應也可逆，核心仍是新物質。"
+      "reason": "一般化學變化遵守原子守恆，不能用原子消失解釋。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "概括"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "性質改變只要能恢復外觀就必然沒有新物質，無需檢驗",
-    "冒泡或變色本身就是完整證明，不需知道操作過程或排除其他原因",
-    "所有能逆轉的過程都是物理變化，所有不可逆過程都是化學變化"
+    "溫度計讀值必定等於反應熱",
+    "任何升溫都表示生成相同產物",
+    "原子在反應中全部消失"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-AB-4-3",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

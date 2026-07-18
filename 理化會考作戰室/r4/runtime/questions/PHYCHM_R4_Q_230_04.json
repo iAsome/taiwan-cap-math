@@ -14,34 +14,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查車輛轉彎紀錄，哪項判讀正確？",
+  "stem": "向左淨力持續作用於向右運動箱子足夠久，可能發生什麼？",
   "options": [
-    "物體沿圓周運動時必有一個向外的真實合力，向內力會使它離開圓軌道",
-    "受力圖只畫作用在目標物上的力",
-    "兩物體距離越遠引力越大，質量變化對引力沒有影響",
-    "物體到月球後原子自動減少，因此質量和重量都以相同比例減少"
+    "永遠保持向右等速",
+    "先停下，再向左運動",
+    "物體的速度不會經過零",
+    "物體的合力自動變為零"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「物體沿圓周運動時必有一個向外的真實合力，向內力會使它離開圓…」不成立；圓周運動的速度方向沿切線，使方向持續改變的合力指向圓心。"
+      "reason": "永遠保持向右等速不成立。向左加速度可使正速度降到零並繼續成負速度。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「受力圖只畫作用在目標物上的力，箭頭方向是力方向；物體向右運動不代表必有向右力」。"
+      "reason": "向左加速度可使正速度降到零並繼續成負速度。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「兩物體距離越遠引力越大，質量變化對引力沒有影響」不成立；萬有引力隨兩物體質量增大而增大，隨中心距離增加而減小；比較時要分開變項。"
+      "reason": "物體的速度不會經過零不成立。向左加速度可使正速度降到零並繼續成負速度。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「物體到月球後原子自動減少，因此質量和重量都以相同比例減少」不成立；同一物體到月球後組成與質量不變，但因當地重力場較弱，重量變小。"
+      "reason": "物體的合力自動變為零不成立。向左加速度可使正速度降到零並繼續成負速度。"
     }
   ],
   "difficulty": "standard",
@@ -49,16 +49,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體沿圓周運動時必有一個向外的真實合力，向內力會使它離開圓軌道",
-    "兩物體距離越遠引力越大，質量變化對引力沒有影響",
-    "物體到月球後原子自動減少，因此質量和重量都以相同比例減少"
+    "永遠保持向右等速",
+    "物體的速度不會經過零",
+    "物體的合力自動變為零"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-10",
       "AUTH-NATURAL-LC-EB-4-11",
@@ -69,19 +69,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

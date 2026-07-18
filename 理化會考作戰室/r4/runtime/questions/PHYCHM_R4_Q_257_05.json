@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於省力省時省距離與改變方向，哪項結論符合題給條件？",
+  "stem": "並列斜面乙與實際斜面，兩者施力是50 N、60 N，施力距離是4.0 m、4.0 m。解讀這兩列時，區分省力省時省距離與改變方向有哪些交換、量測或系統限制？",
   "options": [
-    "轉動平衡只需左右作用力大小相同，施力位置和力臂不重要",
-    "省力機械通常要施力移動較長距離",
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關",
-    "定滑輪一定把所需力減半，動滑輪則只改變方向而不省力"
+    "把省力等同省時間，並漏掉考慮施力端需要移動更長距離",
+    "只有在輸出高度與負載相同時才能比較",
+    "做比較時兩方案時改變負載或提升高度",
+    "僅根據 50 N×4 m 誤算成 20 J，因而判定斜面乙真的省功"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「轉動平衡只需左右作用力大小相同，施力位置和力臂不重要」不成立；轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零。"
+      "reason": "把省力等同省時間，卻未考慮施力端需要移動更長距離，結果會錯判輸入功。省力機械通常要施力移動較長距離；照原做法會把輸入功算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「省力機械通常要施力移動較長距離；改變方向不必然省力，「省時」與「省力」要分開」。"
+      "reason": "只有在輸出高度與負載相同時才能比較。直接抬升列的施力為200 N，施力距離為1.0 m；斜面甲列的施力為100 N，施力距離為2.0 m。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關」不成立；槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果。"
+      "reason": "做比較時兩方案時改變負載或提升高度，卻把功的差異歸因於機械種類，結果會錯判輸入功。只有在輸出高度與負載相同時才能比較；輸入功差異若未通過區分省力省時省距離與改變方向對施力的控制，就不能只歸給施力距離。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「定滑輪一定把所需力減半，動滑輪則只改變方向而不省力」不成立；理想定滑輪主要改變施力方向；動滑輪或滑輪組可由支撐繩段數分擔負載而省力。"
+      "reason": "僅根據 50 N×4 m 誤算成 20 J，因而判定斜面乙真的省功。理想方案省力時要增加施力距離；施力距離的數值若未依施力核對，會使輸入功無法通過區分省力省時省距離與改變方向檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "條件判斷",
-    "分析"
+    "應用"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "轉動平衡只需左右作用力大小相同，施力位置和力臂不重要",
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關",
-    "定滑輪一定把所需力減半，動滑輪則只改變方向而不省力"
+    "把省力等同省時間，並漏掉考慮施力端需要移動更長距離",
+    "做比較時兩方案時改變負載或提升高度",
+    "僅根據 50 N×4 m 誤算成 20 J，因而判定斜面乙真的省功"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

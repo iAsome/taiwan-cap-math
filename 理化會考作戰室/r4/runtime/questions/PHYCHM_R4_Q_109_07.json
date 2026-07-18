@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "生活酸鹼安全出現四種說法，哪項有理化概念支持？",
+  "stem": "同一樣品重測差異很大，合理的處理是？",
   "options": [
-    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸",
-    "一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識溶液名稱",
-    "任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性",
-    "不把測過的溶液倒回原瓶"
+    "把所有值改成平均7",
+    "宣布pH不存在",
+    "只保留最接近期望的值",
+    "檢查校正、清洗、溫度與探頭狀態"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「pH 數字越大一定代表酸性越強，所以 pH 5 比 pH …」不成立；在同種、相近條件下，pH 2 的溶液比 pH 5 酸性強；pH 12 比 pH 9 鹼性強。"
+      "reason": "無根據竄改。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識…」不成立；廣用指示劑的顏色應對照色階判讀 pH 範圍，只能估計區間，不能單憑顏色確定化學身分。"
+      "reason": "量測問題不否定概念。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性」不成立；酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體。"
+      "reason": "屬選擇性刪除。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「pH 計使用前要依規範校正，電極清洗後輕吸水分，不把測過的溶液倒回原瓶」。"
+      "reason": "先找變異來源。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "品質判斷"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸",
-    "一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識溶液名稱",
-    "任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性"
+    "把所有值改成平均7",
+    "宣布pH不存在",
+    "只保留最接近期望的值"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

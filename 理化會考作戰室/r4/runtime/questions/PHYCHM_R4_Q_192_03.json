@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "整理眼球成像資料後，哪項說明正確？",
+  "stem": "紅、綠、藍三束適當強度色光在白屏重疊，最可能接近什麼？",
   "options": [
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色",
-    "三稜鏡在光通過時創造出原本不存在的顏料，所以色帶與白光組成無關",
-    "顏料混合主要透過選擇性吸收",
-    "物體顏色是物體自行持續發出的固定色光，與入射光譜無關"
+    "黑色",
+    "白光",
+    "單一紅光",
+    "青色顏料"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色」不成立；紅、綠、藍色光是加法混色的基本光；顏料混合主要透過選擇性吸收，與色光加法原理不同。"
+      "reason": "加法疊加不是全吸收。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「三稜鏡在光通過時創造出原本不存在的顏料，所以色帶與白光組成…」不成立；白光經三稜鏡分光形成多種色光，說明白光可由不同色光組成。"
+      "isCorrect": true,
+      "reason": "三原色光適當疊加可形成近白光。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「紅、綠、藍色光是加法混色的基本光；顏料混合主要透過選擇性吸收，與色光加法原理不同」。"
+      "isCorrect": false,
+      "reason": "另有綠藍成分。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「物體顏色是物體自行持續發出的固定色光，與入射光譜無關」不成立；不透明紅物體在白光下主要反射紅光、吸收其他多數色光，因而看來呈紅色。"
+      "reason": "題目不是顏料。"
     }
   ],
   "difficulty": "foundation",
@@ -47,16 +47,16 @@
     "單位檢核",
     "資料判讀"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色",
-    "三稜鏡在光通過時創造出原本不存在的顏料，所以色帶與白光組成無關",
-    "物體顏色是物體自行持續發出的固定色光，與入射光譜無關"
+    "黑色",
+    "單一紅光",
+    "青色顏料"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-10",
       "AUTH-NATURAL-LC-KA-4-11",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

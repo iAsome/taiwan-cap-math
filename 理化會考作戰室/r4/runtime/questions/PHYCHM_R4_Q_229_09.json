@@ -14,34 +14,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對車輛轉彎結果，哪項說法正確？",
+  "stem": "探測器繞行行星時為何能持續轉彎？",
   "options": [
-    "物體到月球後原子自動減少，因此質量和重量都以相同比例減少",
-    "同一物體到月球後組成與質量不變，但因當地重力場較弱，重量變小",
-    "只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力",
-    "摩擦力在所有情境都必然與物體質心的當下運動方向相反"
+    "軌道上完全沒有任何力",
+    "探測器質量變為零",
+    "切線速度直接指向行星",
+    "行星引力提供向心加速度"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「物體到月球後原子自動減少，因此質量和重量都以相同比例減少」不成立；同一物體到月球後組成與質量不變，但因當地重力場較弱，重量變小。"
+      "reason": "軌道上完全沒有任何力不成立。引力指向行星中心，持續改變探測器速度方向。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「同一物體到月球後組成與質量不變，但因當地重力場較弱，重量變小」。"
+      "isCorrect": false,
+      "reason": "探測器質量變為零不成立。引力指向行星中心，持續改變探測器速度方向。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力」不成立；靜摩擦力在最大值內隨滑動趨勢調整，以阻止接觸面相對滑動；動摩擦力則在已相對滑動時出現。"
+      "reason": "切線速度直接指向行星不成立。引力指向行星中心，持續改變探測器速度方向。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「摩擦力在所有情境都必然與物體質心的當下運動方向相反」不成立；摩擦力方向用來阻礙接觸面間的相對運動或滑動趨勢，不一定和物體運動方向相反。"
+      "isCorrect": true,
+      "reason": "引力指向行星中心，持續改變探測器速度方向。"
     }
   ],
   "difficulty": "advanced",
@@ -49,16 +49,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體到月球後原子自動減少，因此質量和重量都以相同比例減少",
-    "只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力",
-    "摩擦力在所有情境都必然與物體質心的當下運動方向相反"
+    "軌道上完全沒有任何力",
+    "探測器質量變為零",
+    "切線速度直接指向行星"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-10",
       "AUTH-NATURAL-LC-EB-4-11",
@@ -69,19 +69,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -28,34 +28,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": "EARTH_R4_ST_220",
-  "stem": "閱讀「比較模型預報和實測路徑」的資料後，為了釐清圖表文字與來源資訊完整溝通探究結果，哪一項讀值正確？",
+  "stem": "依「氣溫報告檢核」，哪版本可完整查核？",
   "options": [
-    "在「比較模型預報和實測路徑」的圖表文字與來源資訊完整溝通探究結果資料中，當站點為丙時，坡度度為36。",
-    "在「比較模型預報和實測路徑」的圖表文字與來源資訊完整溝通探究結果資料中，當站點為丙時，坡度度為34。",
-    "在「比較模型預報和實測路徑」的圖表文字與來源資訊完整溝通探究結果資料中，當站點為丙時，坡度度為18。",
-    "在「比較模型預報和實測路徑」的圖表文字與來源資訊完整溝通探究結果資料中，附表找不到站點為丙的紀錄。"
+    "甲",
+    "乙",
+    "丙",
+    "丁"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "逐欄讀值可直接得到「坡度度為36」。"
+      "reason": "選項「甲」：此選項可由表內指定欄位、數值與本技能限制逐項推出，沒有超出資料範圍。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「34」來自其他資料列；本列記錄的是「36」。"
+      "reason": "選項「乙」：此選項誤讀表格、忽略限制或過度外推，與指定欄位及觀測值不一致。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「18」來自其他資料列；本列記錄的是「36」。"
+      "reason": "選項「丙」：此選項誤讀表格、忽略限制或過度外推，與指定欄位及觀測值不一致。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "表中第3列已列出「丙」，不能說沒有記錄。"
+      "reason": "選項「丁」：此選項誤讀表格、忽略限制或過度外推，與指定欄位及觀測值不一致。"
     }
   ],
   "difficulty": "standard",
@@ -64,7 +64,7 @@
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "兩條曲線相似即可證明因果"
+    "乙"
   ],
   "provenance": {
     "status": "original",
@@ -98,17 +98,15 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "逐項核對「比較模型預報和實測路徑」的條件後，「在「比較模型預報和實測路徑」的圖表文字與來源資訊完整溝通探究結果資料中，當站點為丙時，坡度度為36。」符合題目資料；查核依據為：資料品質包含來源、單位、取樣、解析度、缺值與校正。",
+      "evidence": "題示「依「氣溫報告檢核」，哪版本可完整查核」中，「甲」符合資料或技能判準；具體依據為：選項「甲」：此選項可由表內指定欄位、數值與本技能限制逐項推出，沒有超出資料範圍。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 0,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「漂亮的圖不等於可靠資料」。",
+      "evidence": "交叉核對「乙」與「丙」：前者選項「乙」：此選項誤讀表格、忽略限制或過度外推，與指定欄位及觀測值不一致。後者選項「丙」：此選項誤讀表格、忽略限制或過度外推，與指定欄位及觀測值不一致。兩項均不能取代「甲」。",
       "status": "pass"
     }
   ],
-  "assets": [
-    "EARTH_R4_ASSET_DATA_REASONING"
-  ]
+  "assets": []
 }

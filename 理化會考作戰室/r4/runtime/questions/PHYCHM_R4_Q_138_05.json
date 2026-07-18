@@ -16,51 +16,50 @@
     "AUTH-NATURAL-LP-PO-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於藥品標示與個人防護需求，哪項結論符合題給條件？",
+  "stem": "無標籤試藥瓶應如何處理？",
   "options": [
-    "小型灑漏或燙傷應先自行隱瞞，用手快速擦乾，以免實驗被中斷",
-    "只要一次實驗符合預測，就可宣稱所有情況都成立，不需說明限制",
-    "操作前應讀取藥品名稱、濃度與危害標示",
-    "只有藥品顏色鮮豔時才需看危害標示，無色溶液都可安全徒手處理"
+    "停止使用並通知教師",
+    "自行依瓶子外觀補寫猜測的藥品名稱",
+    "品嘗一滴",
+    "和其他廢液混合"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「小型灑漏或燙傷應先自行隱瞞，用手快速擦乾，以免實驗被中斷」不成立；器材破損、藥品灑漏或燙傷應立即停止操作、警告周遭並通知教師，依規程處理，不徒手清理。"
+      "isCorrect": true,
+      "reason": "未知身分不可操作。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要一次實驗符合預測，就可宣稱所有情況都成立，不需說明限制」不成立；實驗結論應限於已測條件，說明樣本數、量測精度、潛在干擾並提出只改一項的具體改善。"
+      "reason": "猜測標示會誤導。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「操作前應讀取藥品名稱、濃度與危害標示，依飛濺、腐蝕、易燃等風險佩戴適當護目鏡與手套」。"
+      "isCorrect": false,
+      "reason": "品嘗極危險。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只有藥品顏色鮮豔時才需看危害標示，無色溶液都可安全徒手處理」不成立；操作前應讀取藥品名稱、濃度與危害標示，依飛濺、腐蝕、易燃等風險佩戴適當護目鏡與手套。"
+      "reason": "未知混合可能反應。"
     }
   ],
-  "difficulty": "standard",
+  "difficulty": "foundation",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "情境決策"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "小型灑漏或燙傷應先自行隱瞞，用手快速擦乾，以免實驗被中斷",
-    "只要一次實驗符合預測，就可宣稱所有情況都成立，不需說明限制",
-    "只有藥品顏色鮮豔時才需看危害標示，無色溶液都可安全徒手處理"
+    "自行依瓶子外觀補寫猜測的藥品名稱",
+    "品嘗一滴",
+    "和其他廢液混合"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段探究與實作學習表現; 臺灣國中教育會考自然科實驗設計、安全與資料判讀題型",
     "sourceRefs": [
       "AUTH-NATURAL-LP-AI-4-1",
       "AUTH-NATURAL-LP-AI-4-2",
@@ -73,19 +72,5 @@
       "AUTH-NATURAL-LP-PO-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -16,50 +16,50 @@
     "AUTH-NATURAL-LP-PO-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_144",
-  "stem": "異常數據處理題組中，哪項說明符合紀錄？",
+  "stem": "在尚未改善前，哪個結論最恰當？",
   "options": [
-    "未知氣體應把鼻子靠近容器深吸，稀釋時將水一次倒入濃酸可最快散熱",
-    "自變項是實驗者要量到的結果，應變項則是所有必須保持不變的條件",
-    "對照組應什麼都不做，包括不用相同容器、時間或量測方法",
-    "實驗結論應限於已測條件"
+    "時間隨設定水溫升高而下降，但攪拌差異與單次量測限制因果判斷",
+    "60°C一定是最佳飲用溫度",
+    "溫度是唯一原因且適用所有情況",
+    "攪拌完全沒有影響"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「未知氣體應把鼻子靠近容器深吸，稀釋時將水一次倒入濃酸可最快…」不成立；聞氣體要用手輕扇少量氣體；加熱試管口不對人；稀釋濃酸應將酸緩慢加入水。"
+      "isCorrect": true,
+      "reason": "同時呈現觀察趨勢與方法限制。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「自變項是實驗者要量到的結果，應變項則是所有必須保持不變的條件」不成立；比較溫度對溶解速度的實驗，溫度是自變項、溶解時間是應變項，質量、顆粒大小與攪拌要控制。"
+      "reason": "研究不是飲用安全。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「對照組應什麼都不做，包括不用相同容器、時間或量測方法」不成立；對照組接受除自變項外的相同處理，可用來比較若沒有關鍵處理時的結果。"
+      "reason": "因果過強且外推。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「實驗結論應限於已測條件，說明樣本數、量測精度、潛在干擾並提出只改一項的具體改善」。"
+      "isCorrect": false,
+      "reason": "未控制不能判定。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "證據評估"
+    "限制結論"
   ],
-  "representationType": "stimulus-figure-and-data",
+  "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "未知氣體應把鼻子靠近容器深吸，稀釋時將水一次倒入濃酸可最快散熱",
-    "自變項是實驗者要量到的結果，應變項則是所有必須保持不變的條件",
-    "對照組應什麼都不做，包括不用相同容器、時間或量測方法"
+    "60°C一定是最佳飲用溫度",
+    "溫度是唯一原因且適用所有情況",
+    "攪拌完全沒有影響"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段探究與實作學習表現; 臺灣國中教育會考自然科實驗設計、安全與資料判讀題型",
     "sourceRefs": [
       "AUTH-NATURAL-LP-AI-4-1",
       "AUTH-NATURAL-LP-AI-4-2",
@@ -72,21 +72,5 @@
       "AUTH-NATURAL-LP-PO-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
-  "assets": [
-    "PHYCHM_R4_ASSET_001"
-  ]
+  "assets": []
 }

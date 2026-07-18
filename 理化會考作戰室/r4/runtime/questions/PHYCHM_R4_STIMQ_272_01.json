@@ -13,50 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_272",
-  "stem": "根據電表接法表中紀錄，哪項結論最合理？",
+  "stem": "正常的等效路徑為經過燈泡、主線電流為0.30 A；開關斷開則是不連續、0 A。兩列交由由電路圖判斷短路斷路與元件狀態判讀，主線電流呈現哪個量化或方向結果？",
   "options": [
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換"
+    "解題時將斷路和短路都說成電流為零，忽略短路形成低電阻大電流路徑",
+    "把導線跨過燈泡視為正常並聯，並漏掉辨認它近乎直接連接兩端",
+    "斷路使電流為零",
+    "看到短路主線 3.5 A 卻判成電路不連續"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「短路和斷路都只會使電流完全為零，不可能出現過大電流」不成立；斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險。"
+      "reason": "斷路使電流為零。正常列的等效路徑為經過燈泡、主線電流為0.30 A；開關斷開列的等效路徑為不連續、主線電流為0 A。解題時錯將斷路和短路都說成電流為零，忽略短路形成低電阻大電流路徑。斷路使回路不連續而無電流；照原做法會把現象算錯或判反。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險」。"
+      "isCorrect": false,
+      "reason": "斷路使電流為零。正常列的等效路徑為經過燈泡、主線電流為0.30 A；開關斷開列的等效路徑為不連續、主線電流為0 A。把導線跨過燈泡視為正常並聯，卻未辨認它近乎直接連接兩端，結果會錯判現象。短路電流仍受電源內阻與導線電阻限制，但絕不能把它描述成必然零電流；現象差異若未通過由電路圖判斷短路斷路與元件狀態對等效路徑的控制，就不能只歸給主線電流。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路」不成立；電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整。"
+      "isCorrect": true,
+      "reason": "斷路使電流為零。正常列的等效路徑為經過燈泡、主線電流為0.30 A；開關斷開列的等效路徑為不連續、主線電流為0 A。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「電流、電壓與電阻是同一物理量的三個名稱，單位也可互換」不成立；電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。"
+      "reason": "斷路使電流為零。正常列的等效路徑為經過燈泡、主線電流為0.30 A；開關斷開列的等效路徑為不連續、主線電流為0 A。一看到短路主線 3.5 A 卻判成電路不連續。斷路使電流為零；主線電流的數值若未依等效路徑核對，會使現象無法通過由電路圖判斷短路斷路與元件狀態檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀"
+    "資料判讀",
+    "計算"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換"
+    "解題時將斷路和短路都說成電流為零，忽略短路形成低電阻大電流路徑",
+    "把導線跨過燈泡視為正常並聯，並漏掉辨認它近乎直接連接兩端",
+    "看到短路主線 3.5 A 卻判成電路不連續"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -66,20 +67,6 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_014"
   ]

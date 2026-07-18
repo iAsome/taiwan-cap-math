@@ -49,51 +49,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解能源系統、效率與證據決策中的現象，哪項修正合理？",
+  "stem": "儲存列給出進入能量399 kWh，另記離開至下一段359 kWh及本段損失40 kWh。重新以追蹤能源由來源轉換輸送到使用的過程判讀時，進入能量單位與離開至下一段方向先查哪個？",
   "options": [
-    "能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 100% 且持續創能",
-    "可再生能源必然零環境影響且可全天恆定發電，化石燃料則沒有任何系統優點",
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除",
-    "追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式"
+    "把各階段使用不同期間或系統邊界，仍直接把能量數值串接",
+    "解題時將 1000 kWh 發電輸入到 287 kWh 有用輸出判成完全無損失",
+    "主張輸電或儲存階段只傳遞能量",
+    "只看插座端會漏掉上游轉換和輸送損失"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 10…」不成立；能源效率＝有用輸出能量÷總輸入能量×100%；輸入 500 J、有用輸出 150 J 的效率為…。"
+      "reason": "解題時誤把各階段使用不同期間或系統邊界，仍直接把能量數值串接。各段數據須採相同系統邊界與期間；本段損失差異若未通過追蹤能源由來源轉換輸送到使用的過程對進入能量的控制，就不能只歸給離開至下一段。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「可再生能源必然零環境影響且可全天恆定發電，化石燃料則沒有任…」不成立；化石燃料能量密度高但會排放溫室氣體；太陽、風能可再生但有間歇性與土地、儲能需求，新興能源也需證…。"
+      "reason": "解題時錯將 1000 kWh 發電輸入到 287 kWh 有用輸出判成完全無損失。從一次能源到終端有用輸出需追蹤每段，總有用比例為 287÷1000＝28.7%；離開至下一段的數值若未依進入能量核對，會使本段損失無法通過追蹤能源由來源轉換輸送到使用的過程檢查。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「發電決策只要比較單一小時電價，其他環境、系統與社會資料都應…」不成立；比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響。"
+      "reason": "誤以為輸電或儲存階段只傳遞能量，不可能有任何轉換損耗。能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式；進入能量未列入追蹤能源由來源轉換輸送到使用的過程時，本段損失的離開至下一段大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式」。"
+      "reason": "只看插座端會漏掉上游轉換和輸送損失。輸電列的進入能量為420 kWh，離開至下一段為399 kWh；儲存列的進入能量為399 kWh，離開至下一段為359 kWh。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 100% 且持續創能",
-    "可再生能源必然零環境影響且可全天恆定發電，化石燃料則沒有任何系統優點",
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除"
+    "把各階段使用不同期間或系統邊界，仍直接把能量數值串接",
+    "解題時將 1000 kWh 發電輸入到 287 kWh 有用輸出判成完全無損失",
+    "主張輸電或儲存階段只傳遞能量"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-INA-4-1",
       "AUTH-NATURAL-LC-INA-4-2",
@@ -139,19 +139,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

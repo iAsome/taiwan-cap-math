@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理電器標示資料，哪項敘述合理？",
+  "stem": "解題時誤把插頭鬆動時接點電阻較大、溫升 25°C，卻判成比正常更安全。按說明過載短路與電阻發熱風險檢查總電流與導線電阻時，哪一步先做？",
   "options": [
-    "過載是同一路線總電流過大，短路是低電阻路徑造成大電流；兩者均可因電阻發熱引起火災",
-    "只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關",
-    "電阻只會降低溫度，過載與短路都不會使導線發熱",
-    "電功率為 V/I＝60 W，因為電壓應除以電流"
+    "解題時將短路解釋成電阻變大而電流變小",
+    "主張過載與短路都只會讓電器停止，不會造成導線發熱",
+    "表中只支持本裝置條件，不能宣稱電阻永遠使溫度下降",
+    "僅憑導線電阻很小就忽略 I²R，認為大電流不會帶來高溫"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「過載是同一路線總電流過大，短路是低電阻路徑造成大電流；兩者均可因電阻發熱引起火災」。"
+      "isCorrect": false,
+      "reason": "解題時錯將短路解釋成電阻變大而電流變小，結果會錯判10 分鐘後溫升。過載是同一路線總電流過大，短路是低電阻路徑造成大電流；總電流未列入說明過載短路與電阻發熱風險時，10 分鐘後溫升的導線電阻大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關」不成立；安全節能做法包括不超過延長線額定、保持線材完好乾燥、不用時關閉高功率電器並比較實際用電量。"
+      "reason": "誤以為過載與短路都只會讓電器停止，不會造成導線發熱。過載是同一路線總電流過大，短路是低電阻路徑造成大電流；照原做法會把10 分鐘後溫升算錯或判反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「電阻只會降低溫度，過載與短路都不會使導線發熱」不成立；過載是同一路線總電流過大，短路是低電阻路徑造成大電流；兩者均可因電阻發熱引起火災。"
+      "isCorrect": true,
+      "reason": "表中只支持本裝置條件，不能宣稱電阻永遠使溫度下降。火線零線直接接觸列的總電流為極大，導線電阻為路徑很低；正常列的總電流為5 A，導線電阻為固定。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「電功率為 V/I＝60 W，因為電壓應除以電流」不成立；電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W。"
+      "reason": "僅憑導線電阻很小就忽略 I²R，認為大電流不會帶來高溫。實際溫升受線徑、散熱與時間影響；10 分鐘後溫升差異若未通過說明過載短路與電阻發熱風險對總電流的控制，就不能只歸給導線電阻。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關",
-    "電阻只會降低溫度，過載與短路都不會使導線發熱",
-    "電功率為 V/I＝60 W，因為電壓應除以電流"
+    "解題時將短路解釋成電阻變大而電流變小",
+    "主張過載與短路都只會讓電器停止，不會造成導線發熱",
+    "僅憑導線電阻很小就忽略 I²R，認為大電流不會帶來高溫"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

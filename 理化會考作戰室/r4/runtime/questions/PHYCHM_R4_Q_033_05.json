@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於粒徑差選擇過濾方法，哪項結論符合題給條件？",
+  "stem": "混合液面高過濾紙邊緣會造成什麼風險？",
   "options": [
-    "結晶法只依成分粒徑大小，和溶解度的溫度變化無關",
-    "濾紙可截留粒徑較大的不溶性固體",
-    "蒸餾時收集的是永遠留在蒸餾瓶底的高沸點成分",
-    "出現同一顏色的色帶就能唯一證明兩樣品是同一物質"
+    "未過濾液體繞入濾液",
+    "溶質變成元素",
+    "讓所有水立即沸騰，液體便會繞過濾紙",
+    "濾渣自動乾燥"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「結晶法只依成分粒徑大小，和溶解度的溫度變化無關」不成立；可先製成高溫飽和溶液，再冷卻使溶解度隨溫度降低的溶質結晶析出。"
+      "isCorrect": true,
+      "reason": "混合物可從濾紙與漏斗間通過。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「濾紙可截留粒徑較大的不溶性固體，因此可分開沙與水，不能直接分開已溶解的食鹽」。"
+      "isCorrect": false,
+      "reason": "沒有化學反應。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「蒸餾時收集的是永遠留在蒸餾瓶底的高沸點成分」不成立；蒸餾加熱混合液，使沸點較低的成分先汽化，再經冷凝收集；需有足夠沸點差。"
+      "reason": "無加熱條件。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「出現同一顏色的色帶就能唯一證明兩樣品是同一物質」不成立；濾紙色層分析利用成分對溶劑與濾紙的親和差異，移動距離不同可顯示多個色帶。"
+      "reason": "仍含水分。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "風險判斷"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "結晶法只依成分粒徑大小，和溶解度的溫度變化無關",
-    "蒸餾時收集的是永遠留在蒸餾瓶底的高沸點成分",
-    "出現同一顏色的色帶就能唯一證明兩樣品是同一物質"
+    "溶質變成元素",
+    "讓所有水立即沸騰，液體便會繞過濾紙",
+    "濾渣自動乾燥"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-4",
       "AUTH-NATURAL-LC-CA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

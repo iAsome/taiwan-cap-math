@@ -13,43 +13,43 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組要探討截切關係判斷斷層或岩脈年代，哪一項規劃最能避免確認偏誤？",
+  "stem": "檢查隧道口截切剖面筆記，哪項指出迷思後果？（用截切關係判斷斷層或岩脈年代）",
   "options": [
-    "探討截切關係判斷斷層或岩脈年代時先寫答案，再挑一筆相符資料",
-    "探討截切關係判斷斷層或岩脈年代時只看事件顏色，不讀單位",
-    "逐一列出沉積、變形、侵蝕、侵入與斷層事件",
-    "用「以相同化石對比兩地岩層」的一次觀察代表截切關係判斷斷層或岩脈年代在所有時間與地點的情形"
+    "依「岩脈丁穿過砂岩甲和頁岩乙，斷層戊又把丁錯開」記錄接觸或尺度，會抹除真正的年代線索。",
+    "查核「交會處未見穿切、終止或錯移就不能排序」反而會造成錯誤年代排序。",
+    "錯信「被切過的地層一定比截切它的岩脈年輕。」會把題述年代關係顛倒或過度確定；應改由「岩脈丁穿過砂岩甲和頁岩乙，斷層戊又把丁錯開」建立甲乙早於丁，丁早於戊。",
+    "被切過的地層一定比截切它的岩脈年輕。"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "先定答案再選「以相同化石對比兩地岩層」資料會造成確認偏誤。"
+      "reason": "這筆觀察正是建立甲乙早於丁，丁早於戊的直接線索，記錄它不會抹除年代證據。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "顏色不能取代事件、觀察關係、相對判斷的實際讀值。"
+      "reason": "查核適用限制並保留沒有證據的關係為未定，能避免捏造先後；刪除相反觀察也不是科學作法。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "此程序先處理變因和證據，再對以相同化石對比兩地岩層形成結論。"
+      "reason": "題述「岩脈丁穿過砂岩甲和頁岩乙，斷層戊又把丁錯開」支持甲乙早於丁，丁早於戊；迷思會把這項關係顛倒或推到資料以外。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「以相同化石對比兩地岩層」的一次觀察不足以代表所有條件。"
+      "reason": "這句本身就是待修正的迷思，沒有說明採信後會如何破壞甲乙早於丁，丁早於戊。"
     }
   ],
-  "difficulty": "standard",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "select-investigation-method"
+    "diagnose-misconception"
   ],
-  "representationType": "investigation-plan",
+  "representationType": "evidence-reasoning",
   "misconceptionTargets": [
-    "所有上方岩層都必定較新而無例外"
+    "被切過的地層一定比截切它的岩脈年輕。"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "逐項核對「以相同化石對比兩地岩層」的條件後，「逐一列出沉積、變形、侵蝕、侵入與斷層事件」符合題目資料；查核依據為：未翻轉沉積層通常下老上新。",
+      "evidence": "迷思「被切過的地層一定比截切它的岩脈年輕。」會使「甲乙早於丁，丁早於戊」被顛倒、過度確定或誤寫成精確年數。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地層可能翻轉、缺失或受侵蝕」。",
+      "evidence": "回到「岩脈丁穿過砂岩甲和頁岩乙，斷層戊又把丁錯開」可重建甲乙早於丁，丁早於戊，不需要猜測缺失關係。",
       "status": "pass"
     }
   ],

@@ -49,51 +49,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於證據評估臺灣能源選擇與限制，哪項結論符合題給條件？",
+  "stem": "並列丙與丁，兩者年份是未標、2025，定義是未明確界定的綠能比例、尖峰可用容量。這兩列若依由證據評估臺灣能源選擇與限制比較，還要注意哪個定義邊界？",
   "options": [
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除",
-    "只要有一張圖表趨勢符合預期，就可忽略實驗方法、模型限制與其他來源",
-    "把進口、電網與地理限制納入",
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性"
+    "解題時將不同年份、裝置容量占比與淨發電量占比直接放在同一分母比較",
+    "能源資料並漏掉日期或定義仍用來做永久性的政策結論",
+    "能源情勢會變動，結論要標日期並納入進口、電網與地理限制，不可永久外推",
+    "解題時將 2015 年裝置容量占比和 2025 年淨發電占比視為同一指標"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「發電決策只要比較單一小時電價，其他環境、系統與社會資料都應…」不成立；比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響。"
+      "reason": "解題時錯將不同年份、裝置容量占比與淨發電量占比直接放在同一分母比較，結果會錯判可否直接比較。評估臺灣能源選擇要使用有日期、定義一致的需電、發電、排放、成本與風險資料，並把進口、電網與地理限制納入；照原做法會把可否直接比較算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要有一張圖表趨勢符合預期，就可忽略實驗方法、模型限制與其…」不成立；形成科學解釋時要互相印證實驗結果、圖表趨勢、模型機制與可追溯資料，並區分相關、因果與不確定。"
+      "reason": "能源資料沒有日期或定義仍用來做永久性的政策結論，結果會錯判可否直接比較。能源情勢會變動，結論要標日期並納入進口、電網與地理限制，不可永久外推；可否直接比較差異若未通過由證據評估臺灣能源選擇與限制對年份的控制，就不能只歸給定義。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「評估臺灣能源選擇要使用有日期、定義一致的需電、發電、排放、成本與風險資料，並把進口、電網與地理限制納入」。"
+      "reason": "能源情勢會變動，結論要標日期並納入進口、電網與地理限制，不可永久外推。甲列的年份為2025，定義為淨發電量占比；乙列的年份為2015，定義為裝置容量占比。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標…」不成立；可檢驗的節能決策應寫明基準用能、具體措施、量測期間、成功指標與氣溫、使用人數等不確定因素。"
+      "reason": "解題時錯將 2015 年裝置容量占比和 2025 年淨發電占比視為同一指標，結果會錯判可否直接比較。只有同年、同定義、同系統邊界的資料可直接比較；定義的數值若未依年份核對，會使可否直接比較無法通過由證據評估臺灣能源選擇與限制檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "條件判斷",
-    "分析"
+    "應用"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除",
-    "只要有一張圖表趨勢符合預期，就可忽略實驗方法、模型限制與其他來源",
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性"
+    "解題時將不同年份、裝置容量占比與淨發電量占比直接放在同一分母比較",
+    "能源資料並漏掉日期或定義仍用來做永久性的政策結論",
+    "解題時將 2015 年裝置容量占比和 2025 年淨發電占比視為同一指標"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-INA-4-1",
       "AUTH-NATURAL-LC-INA-4-2",
@@ -139,19 +139,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

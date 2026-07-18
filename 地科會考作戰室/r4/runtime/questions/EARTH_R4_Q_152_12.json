@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "把自轉方向判斷不同地區先後見到日出的判準移到另一個情境時，哪一項作法較適當？",
+  "stem": "把臺灣東西測站方法移到跨時區城市時，哪個作法完整？",
   "options": [
-    "改看「解釋閏年調整的週期來源」後，只採用支持原想法的一筆紀錄",
-    "改看「解釋閏年調整的週期來源」後，省略所有單位",
-    "只寫自轉方向判斷不同地區先後見到日出的概念名稱，不記錄「解釋閏年調整的週期來源」的觀測",
-    "把判讀移到「解釋閏年調整的週期來源」時，仍先先判定半球與日期位置"
+    "先以城市人口排序日出，再用經度補充",
+    "直接比較鐘面數字，不換算時區",
+    "只看地圖左右，不確認投影方向",
+    "先統一日期與時間基準，再依經度和天文日出判斷先後"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "換情境仍須比較完整資料與替代解釋。"
+      "reason": "先以城市人口排序日出，再用經度補充；人口不是地球自轉中的位置量，無法決定哪個測站先轉入受光面。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "跨情境比較更需要一致單位。"
+      "reason": "直接比較鐘面數字，不換算時區；不同時區的相同數字不代表同一瞬間，排序前必須先統一時間基準。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "概念名稱不能取代實際資料。"
+      "reason": "只看地圖左右，不確認投影方向；地圖版面左右未必對應東西，必須由經線數值確認相對經度。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "新情境保留相同變因、證據與適用範圍。"
+      "reason": "先統一日期與時間基準，再依經度和天文日出判斷先後；同一時間尺度消除時區假象，經度與日出資料才可比較。"
     }
   ],
   "difficulty": "transfer",
@@ -49,7 +49,7 @@
   ],
   "representationType": "transfer-scenario",
   "misconceptionTargets": [
-    "太陽高度越低地表單位面積受能越多"
+    "先以城市人口排序日出，再用經度補充"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "逐項核對「由日出日落算晝長」的條件後，「把判讀移到「解釋閏年調整的週期來源」時，仍先先判定半球與日期位置」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "答案先把各地時刻換到共同基準，再以測站經度和當日日出資料排序，因此比較的是同一時間軸。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "人口排序即使碰巧得到相同次序，也沒有連結自轉方向與測站位置，不能作為可重複的科學判準。",
       "status": "pass"
     }
   ],

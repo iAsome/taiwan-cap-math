@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組輪軸資料，哪項判讀仍合理？",
+  "stem": "甲的力為10 N、垂直力臂為0.30 m；丙則是20 N、0.10 m。由力與垂直力臂的改變判讀力矩，依據為何？",
   "options": [
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關",
-    "定滑輪一定把所需力減半，動滑輪則只改變方向而不省力",
-    "力矩大小為力乘以作用線到轉軸的垂直距離",
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功"
+    "解題時將 10 N×0.30 m 算成 30 N·m，未正確處理小數",
+    "主張施力大小相同就有相同力矩",
+    "解題時將力矩算成力除以力臂，導致力臂越長反而力矩越小",
+    "力矩大小為力乘以作用線到轉軸的垂直距離"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關」不成立；槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果。"
+      "reason": "解題時錯將 10 N×0.30 m 算成 30 N·m，未正確處理小數。力矩＝力×支點到作用線的垂直距離；垂直力臂的數值若未依力核對，會使力矩無法通過由力與力臂計算力矩檢查。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「定滑輪一定把所需力減半，動滑輪則只改變方向而不省力」不成立；理想定滑輪主要改變施力方向；動滑輪或滑輪組可由支撐繩段數分擔負載而省力。"
+      "reason": "誤以為施力大小相同就有相同力矩，不必看作用位置與方向，結果會錯判力矩。力矩大小為力乘以作用線到轉軸的垂直距離；力未列入由力與力臂計算力矩時，力矩的垂直力臂大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「力矩大小為力乘以作用線到轉軸的垂直距離；10 N 作用於 0.30 m 力臂產生 3.0 N·m」。"
+      "isCorrect": false,
+      "reason": "解題時錯將力矩算成力除以力臂，導致力臂越長反而力矩越小。力矩大小為力乘以作用線到轉軸的垂直距離；照原做法會把力矩算錯或判反。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功」不成立；輪軸利用不同力臂，齒輪利用齒數比改變轉速與力矩，斜面以增加距離換取較小力。"
+      "isCorrect": true,
+      "reason": "力矩大小為力乘以作用線到轉軸的垂直距離。丙列的力為20 N，垂直力臂為0.10 m；丁列的力為8 N，垂直力臂為0.50 m。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關",
-    "定滑輪一定把所需力減半，動滑輪則只改變方向而不省力",
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功"
+    "解題時將 10 N×0.30 m 算成 30 N·m，未正確處理小數",
+    "主張施力大小相同就有相同力矩",
+    "解題時將力矩算成力除以力臂，導致力臂越長反而力矩越小"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "吸管與氣壓出現四種說法，哪項有理化概念支持？",
+  "stem": "做比較時感測面方向時同時改變量測深度，卻把讀值差全歸因於方向，結果會錯判讀值。依說明液體壓力向各方向傳遞修正時，位置與感測面朝向應採哪個原理連結？",
   "options": [
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁",
-    "固體壓力是力乘面積，所以面積越大壓力必然越大",
-    "液體壓力只由容器底面積決定，和深度與液體種類無關",
-    "容器側壁也受液體壓力"
+    "把同深度三個方向的相同讀值解釋成液體並漏掉壓力",
+    "主張側壁破孔不會噴水，因為液體壓力只能朝容器底部作用",
+    "把因液體重量向下，就認為靜止液體不會對容器側壁施加壓力",
+    "靜止液體中同一點的壓力可向各方向作用，不只向下"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁」不成立；靜止液體中同一點的壓力可向各方向作用，不只向下；容器側壁也受液體壓力。"
+      "reason": "把同深度三個方向的相同讀值解釋成液體沒有壓力，結果會錯判讀值。同深度的甲乙丙雖朝向不同，讀值相同，顯示靜止液體在該點向各方向施壓；感測面朝向的數值若未依位置核對，會使讀值無法通過說明液體壓力向各方向傳遞檢查。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「固體壓力是力乘面積，所以面積越大壓力必然越大」不成立；固體壓力 p＝F/A；100 N 均勻作用在 0.020 m² 面積上，壓力為 5000 Pa。"
+      "reason": "誤以為側壁破孔不會噴水，因為液體壓力只能朝容器底部作用。靜止液體中同一點的壓力可向各方向作用，不只向下；位置未列入說明液體壓力向各方向傳遞時，讀值的感測面朝向大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「液體壓力只由容器底面積決定，和深度與液體種類無關」不成立；同一液體中深度越大壓力越大；同深度時液體密度較大者壓力較大。"
+      "reason": "解題時誤把因液體重量向下，就認為靜止液體不會對容器側壁施加壓力。靜止液體中同一點的壓力可向各方向作用，不只向下；照原做法會把讀值算錯或判反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「靜止液體中同一點的壓力可向各方向作用，不只向下；容器側壁也受液體壓力」。"
+      "reason": "靜止液體中同一點的壓力可向各方向作用，不只向下。丙列的位置為水下 15 cm，感測面朝向為向右；丁列的位置為水下 30 cm，感測面朝向為向右。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁",
-    "固體壓力是力乘面積，所以面積越大壓力必然越大",
-    "液體壓力只由容器底面積決定，和深度與液體種類無關"
+    "把同深度三個方向的相同讀值解釋成液體並漏掉壓力",
+    "主張側壁破孔不會噴水，因為液體壓力只能朝容器底部作用",
+    "把因液體重量向下，就認為靜止液體不會對容器側壁施加壓力"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

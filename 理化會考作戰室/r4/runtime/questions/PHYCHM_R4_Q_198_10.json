@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告根據速率單位換算下結論，哪項符合資料？",
+  "stem": "兩段路程相同，但第二段花的時間較長。第二段對全程平均速率有何影響？",
   "options": [
-    "路程與位移永遠大小相等，往返原點的路程也是零",
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘",
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同",
-    "移動 150 m 耗時 30 s 的平均速率為路程除以總時間"
+    "較長時間會提高平均速率",
+    "平均速率只由第一段決定",
+    "時間不列入平均速率",
+    "較長時間會拉低全程平均速率"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「路程與位移永遠大小相等，往返原點的路程也是零」不成立；路程是實際路徑總長，位移是起點到終點的有向改變；往返原點時路程大於零但位移為零。"
+      "reason": "較長時間會提高平均速率不符合題目資料。總路程固定時，總時間增加會使總路程除以總時間的值變小。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「72 km/h＝72×1000×3600 m/s，分子分母…」不成立；72 km/h＝20 m/s，因為 1 km＝1000 m、1 h＝3600 s；長度與時間都…。"
+      "reason": "平均速率只由第一段決定不符合題目資料。總路程固定時，總時間增加會使總路程除以總時間的值變小。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「速度只是一個正數快慢，向東與向西 10 m/s 在任何分析…」不成立；速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向。"
+      "reason": "時間不列入平均速率不符合題目資料。總路程固定時，總時間增加會使總路程除以總時間的值變小。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「移動 150 m 耗時 30 s 的平均速率為路程除以總時間，即 5 m/s」。"
+      "reason": "總路程固定時，總時間增加會使總路程除以總時間的值變小。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "主張評估",
     "證據評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "路程與位移永遠大小相等，往返原點的路程也是零",
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘",
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同"
+    "較長時間會提高平均速率",
+    "平均速率只由第一段決定",
+    "時間不列入平均速率"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

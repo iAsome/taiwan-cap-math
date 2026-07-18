@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "學生討論電壓電流比值求電阻，哪項敘述正確？",
+  "stem": "電壓和電流在甲為3.0 V、0.25 A，到乙為6.0 V、0.50 A。依使用電壓電流比值求電阻核對電壓後，應算出或辨認什麼？",
   "options": [
-    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓",
-    "某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換"
+    "甲乙丙的 V/I 固定為 12 Ω",
+    "解題時將電阻公式寫成 R＝I/V",
+    "把元件溫度或材料特性改變時仍把每組 V/I 當成同一固定電阻",
+    "把 6.0÷0.50 計算成 3 Ω，並漏掉正確處理除法"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「電阻為 I/V＝0.083 Ω，因為電流應除以電壓」不成立；某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω。"
+      "isCorrect": true,
+      "reason": "甲乙丙的 V/I 固定為 12 Ω。甲列的電壓為3.0 V、電流為0.25 A；乙列的電壓為6.0 V、電流為0.50 A。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω」。"
+      "isCorrect": false,
+      "reason": "解題時錯將電阻公式寫成 R＝I/V，6.0 V、0.50 A 算成約 0.083 Ω。某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω；照原做法會把V/I算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路」不成立；電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整。"
+      "reason": "解題時誤把元件溫度或材料特性改變時仍把每組 V/I 當成同一固定電阻，結果會錯判V/I。只有符合近似歐姆行為且溫度等條件受控時，才能把多組 V/I 視為同一固定電阻；V/I差異若未通過使用電壓電流比值求電阻對電壓的控制，就不能只歸給電流。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「電流、電壓與電阻是同一物理量的三個名稱，單位也可互換」不成立；電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。"
+      "reason": "把 6.0÷0.50 計算成 3 Ω，卻未正確處理除法。甲乙丙的 V/I 固定為 12 Ω；電流的數值若未依電壓核對，會使V/I無法通過使用電壓電流比值求電阻檢查。"
     }
   ],
   "difficulty": "foundation",
@@ -48,16 +48,16 @@
     "辨認",
     "概念理解"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換"
+    "解題時將電阻公式寫成 R＝I/V",
+    "把元件溫度或材料特性改變時仍把每組 V/I 當成同一固定電阻",
+    "把 6.0÷0.50 計算成 3 Ω，並漏掉正確處理除法"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

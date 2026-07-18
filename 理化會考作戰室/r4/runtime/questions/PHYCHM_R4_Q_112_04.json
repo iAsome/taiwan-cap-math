@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查生活酸鹼安全紀錄，哪項判讀正確？",
+  "stem": "同一酸稀釋後pH由2升到3，表示？",
   "options": [
-    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關",
-    "pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目自由決定",
-    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸",
-    "兩者不可完全畫上等號"
+    "酸性更強",
+    "酸性表現減弱但酸種未變",
+    "已成鹼性",
+    "強酸定義失效"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「酸和鹼只由溶液顏色定義，和水溶液中的離子無關」不成立；在課程模型中，酸性水溶液的酸性與氫離子有關，鹼性水溶液的鹼性與氫氧根離子有關。"
+      "reason": "酸性方向相反。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目…」不成立；pH＜7 為酸性、pH＝7 為中性、pH＞7 為鹼性；pH 本身沒有單位。"
+      "isCorrect": true,
+      "reason": "pH朝7上升。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「pH 數字越大一定代表酸性越強，所以 pH 5 比 pH …」不成立；在同種、相近條件下，pH 2 的溶液比 pH 5 酸性強；pH 12 比 pH 9 鹼性強。"
+      "reason": "3仍小於7。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「濃度是溶質所佔比例，酸鹼強弱涉及物質在水中的離子行為；兩者不可完全畫上等號」。"
+      "isCorrect": false,
+      "reason": "本性未改。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀",
-    "應用"
+    "稀釋判讀"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關",
-    "pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目自由決定",
-    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸"
+    "酸性更強",
+    "已成鹼性",
+    "強酸定義失效"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

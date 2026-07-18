@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_198",
-  "stem": "根據速率單位換算表中紀錄，哪項結論最合理？",
+  "stem": "依分段紀錄，四段路程總和是多少？",
   "options": [
-    "平均速率是路程乘時間，所以為 4500 m/s",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "路程與位移永遠大小相等，往返原點的路程也是零",
-    "移動 150 m 耗時 30 s 的平均速率為路程除以總時間，即 5 m/s"
+    "總路程為 3000 m",
+    "物體的總路程為 600 m",
+    "物體的總路程為 1200 m",
+    "物體的總路程為 4000 m"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「平均速率是路程乘時間，所以為 4500 m/s」不成立；移動 150 m 耗時 30 s 的平均速率為路程除以總時間，即 5 m/s。"
+      "isCorrect": true,
+      "reason": "表中路程相加為 600+900+500+1000=3000 m。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只給一個數字「200 m」就能唯一決定物體位置，不需參考點…」不成立；物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整。"
+      "reason": "物體的總路程為 600 m不符合題目資料。表中路程相加為 600+900+500+1000=3000 m。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「路程與位移永遠大小相等，往返原點的路程也是零」不成立；路程是實際路徑總長，位移是起點到終點的有向改變；往返原點時路程大於零但位移為零。"
+      "reason": "物體的總路程為 1200 m不符合題目資料。表中路程相加為 600+900+500+1000=3000 m。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「移動 150 m 耗時 30 s 的平均速率為路程除以總時間，即 5 m/s」。"
+      "isCorrect": false,
+      "reason": "物體的總路程為 4000 m不符合題目資料。表中路程相加為 600+900+500+1000=3000 m。"
     }
   ],
   "difficulty": "standard",
@@ -47,14 +47,14 @@
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "平均速率是路程乘時間，所以為 4500 m/s",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "路程與位移永遠大小相等，往返原點的路程也是零"
+    "物體的總路程為 600 m",
+    "物體的總路程為 1200 m",
+    "物體的總路程為 4000 m"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -62,19 +62,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

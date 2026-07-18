@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查反射定律實驗紀錄，哪項判讀正確？",
+  "stem": "兩個裝置都讓光反射兩次，但最後方向相反。這說明什麼？",
   "options": [
-    "每次可同時移動鏡面、改入射點並從鏡面量角，只要畫出光線就能驗證",
-    "光經過第一次反射後就不再遵守反射定律，後續方向可任意",
-    "影子與針孔成像表示光會自動繞過遮蔽物後沿曲線前進",
-    "萬花筒、潛望鏡等裝置利用光在多個鏡面依反射定律逐次改變方向"
+    "兩次反射必然方向相同",
+    "其中一個一定違反反射定律",
+    "反射次數相同仍需知道鏡面方向",
+    "光的頻率決定最後方向"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「每次可同時移動鏡面、改入射點並從鏡面量角，只要畫出光線就能…」不成立；驗證反射定律應固定鏡面與入射點，準確畫法線，改變入射角並成對記錄入射、反射角。"
+      "reason": "資料已顯示可有相反方向。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「光經過第一次反射後就不再遵守反射定律，後續方向可任意」不成立；萬花筒、潛望鏡等裝置利用光在多個鏡面依反射定律逐次改變方向。"
+      "reason": "不同鏡面配置可都遵守定律。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「影子與針孔成像表示光會自動繞過遮蔽物後沿曲線前進」不成立；均勻介質中光沿直線傳播，因而形成清楚影子並使針孔可將景物倒立成像。"
+      "isCorrect": true,
+      "reason": "每次反射方向由當地法線決定，鏡面配置不可省略。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「萬花筒、潛望鏡等裝置利用光在多個鏡面依反射定律逐次改變方向」。"
+      "isCorrect": false,
+      "reason": "頻率不是平面鏡幾何方向的決定量。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "每次可同時移動鏡面、改入射點並從鏡面量角，只要畫出光線就能驗證",
-    "光經過第一次反射後就不再遵守反射定律，後續方向可任意",
-    "影子與針孔成像表示光會自動繞過遮蔽物後沿曲線前進"
+    "兩次反射必然方向相同",
+    "其中一個一定違反反射定律",
+    "光的頻率決定最後方向"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-6",
       "AUTH-NATURAL-LC-KA-4-7",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

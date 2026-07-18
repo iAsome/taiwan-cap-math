@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u16",
+  "batch": "017-u16-complete",
+  "skills": ["s014", "s016", "s017"],
+  "mc": [
+    {
+      "questionId": "u16-s014-v004",
+      "expectedContentSha256": "b1fa64d9bad96cc6cbf4a829819fd596b1e9225e0d70ef2c1e93d6e15d8e870d",
+      "set": {"explanation": "代入x=4得AB=9、AC=10、BC=9。相等的AB、BC分別對∠C、∠A，所以∠A=∠C；最長邊AC對∠B，因此∠A=∠C<∠B。等邊對等角的等號必須保留。最短兩邊同長，因此最小兩角也同大。代回三邊也滿足三角形不等式。"}
+    },
+    {
+      "questionId": "u16-s016-v008",
+      "expectedContentSha256": "983843395837a40d8e7e8604b392b9903d01030921e7d4f573e0c45e6f73bbff",
+      "set": {"explanation": "設GD=k，則由AG:GD=2:1得AG=2k。已知AG-GD=k=5 cm，所以整條中線AD=AG+GD=3k=15 cm。比例、差與總長三項資料彼此一致。五公分正好是兩段的差，也是一個比例份。所以GD為五公分，AG為十公分。"}
+    },
+    {
+      "questionId": "u16-s016-v012",
+      "expectedContentSha256": "97bb8fc77e501da511cfbec32b1f88a2200779e3113118e09e4bec13ed307959",
+      "set": {"explanation": "沿中線AD，重心滿足AG:GD=2:1，所以從頂點A到G是整條AD的2/3。AG=1.8×2/3=1.2 m；0.6 m是從G到D的距離。兩段1.2與0.6相加正好是1.8 m。較長的1.2公尺確實位於頂點一側。重心分點次序為A、G、D。"}
+    },
+    {
+      "questionId": "u16-s017-v009",
+      "expectedContentSha256": "977d46139e937937c3ca2cf7d4a989613a16e9fa74a2f8738d6327ae3e63ef23",
+      "set": {"explanation": "由面積36 cm²得2S=72。a=72÷9=8 cm，b=72÷6=12 cm，所以a:b=8:12=2:3；底長與其對應高成反比。比值化簡後仍保持反比次序。高九對底八，高六對底十二，乘積相同。兩次面積都算得三十六平方公分。"}
+    },
+    {
+      "questionId": "u16-s017-v011",
+      "expectedContentSha256": "4334ac5069ff93baf2fb3f85838d1feb0e206c6b918f1c2ae280a4405bba8dc0",
+      "set": {"explanation": "設垂直距離為h，由1.35=1.8h÷2得h=2×1.35÷1.8=2.7÷1.8=1.5 m。代回可得1.8×1.5÷2=1.35 m²。所求為垂直長度，單位應是公尺。距離為正且小於已知底邊，數值在情境中合理。這也驗證原式左右兩邊相等。"}
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [],
+  "drawingSpecs": [],
+  "textFiles": []
+}

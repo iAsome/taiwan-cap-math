@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "不規則石塊排水出現四種說法，哪項有理化概念支持？",
+  "stem": "哪項第二證據可協助區分鐵與鋁？",
   "options": [
-    "石塊體積就是沒入後讀值 47.5 cm³，無須減去原有水量",
-    "樣品密度在誤差內符合某材料只能作為身分線索，還要考慮溫度、純度與其他性質",
-    "物體切半後質量減半，所以密度也一定減半",
-    "只要有量測誤差，質量和體積必會相互抵銷，密度不受影響"
+    "磁鐵吸引情形",
+    "再量一次同一樣品的外觀尺寸",
+    "只把密度小數位增加",
+    "改用更大的兩塊樣品但不測性質"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「石塊體積就是沒入後讀值 47.5 cm³，無須減去原有水量」不成立；量筒水面由 35.0 mL 升到 47.5 mL，完全沒入的石塊體積是 12.5 cm³，且不…。"
+      "isCorrect": true,
+      "reason": "一般鐵樣品與鋁樣品的磁性表現不同。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「樣品密度在誤差內符合某材料只能作為身分線索，還要考慮溫度、純度與其他性質」。"
+      "isCorrect": false,
+      "reason": "尺寸不是區分兩種材料身分的獨立性質。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「物體切半後質量減半，所以密度也一定減半」不成立；同一均勻銅塊切成兩半後，每塊的質量和體積同比減少，密度仍相同。"
+      "reason": "增加書寫位數不會新增材料證據。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要有量測誤差，質量和體積必會相互抵銷，密度不受影響」不成立；若質量讀值偏大而體積正確，由 ρ＝m/V 可知密度結果偏大；要依誤差方向分析。"
+      "reason": "放大樣品仍未提供能區分鐵、鋁的測試結果。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "證據判讀"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "石塊體積就是沒入後讀值 47.5 cm³，無須減去原有水量",
-    "物體切半後質量減半，所以密度也一定減半",
-    "只要有量測誤差，質量和體積必會相互抵銷，密度不受影響"
+    "再量一次同一樣品的外觀尺寸",
+    "只把密度小數位增加",
+    "改用更大的兩塊樣品但不測性質"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-3",
       "AUTH-NATURAL-LC-CA-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

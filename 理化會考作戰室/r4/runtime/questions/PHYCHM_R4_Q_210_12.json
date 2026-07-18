@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估速度時間圖報告時，哪項說明正確？",
+  "stem": "若加速度固定為 -2 m/s²，表示什麼？",
   "options": [
-    "物體質量越大，在相同合力下速度改變必然越快",
-    "速度大小、方向或兩者改變都可產生加速度",
-    "加速度只要是負值就一定減速，只要是正值就一定加速",
-    "加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度"
+    "速度每秒改變 -2 m/s",
+    "物體的速率每秒必減少 2 m/s",
+    "物體的位置每秒減少 2 m",
+    "物體的速度永遠為 -2 m/s"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「物體質量越大，在相同合力下速度改變必然越快」不成立；質量相同時，合力較大者速度改變較快；合力相同時，質量較大者速度改變較慢。"
+      "isCorrect": true,
+      "reason": "負加速度表示速度數值每秒減少 2 m/s；是否變慢仍視速度方向而定。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「加速度表示速度隨時間的變化；速度大小、方向或兩者改變都可產生加速度」。"
+      "isCorrect": false,
+      "reason": "物體的速率每秒必減少 2 m/s不成立。負加速度表示速度數值每秒減少 2 m/s；是否變慢仍視速度方向而定。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「加速度只要是負值就一定減速，只要是正值就一定加速」不成立；加速度與速度同向時快慢增加，反向時快慢減少；加速度為負不代表一定減速。"
+      "reason": "物體的位置每秒減少 2 m不成立。負加速度表示速度數值每秒減少 2 m/s；是否變慢仍視速度方向而定。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度」不成立；加速度表示速度隨時間的變化；速度大小、方向或兩者改變都可產生加速度。"
+      "reason": "物體的速度永遠為 -2 m/s不成立。負加速度表示速度數值每秒減少 2 m/s；是否變慢仍視速度方向而定。"
     }
   ],
   "difficulty": "transfer",
@@ -46,16 +46,16 @@
     "限制評估",
     "高層推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體質量越大，在相同合力下速度改變必然越快",
-    "加速度只要是負值就一定減速，只要是正值就一定加速",
-    "加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度"
+    "物體的速率每秒必減少 2 m/s",
+    "物體的位置每秒減少 2 m",
+    "物體的速度永遠為 -2 m/s"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-11",
       "AUTH-NATURAL-LC-EB-4-8",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

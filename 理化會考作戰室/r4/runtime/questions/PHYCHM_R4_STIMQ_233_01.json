@@ -12,50 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_233",
-  "stem": "根據液壓機表中紀錄，哪項結論最合理？",
+  "stem": "從甲改成乙時，位置由水下 15 cm變為水下 15 cm，感測面朝向由向下變為向左。從說明液體壓力向各方向傳遞的定義看，位置與感測面朝向結果如何連結？",
   "options": [
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁",
-    "固體壓力是力乘面積，所以面積越大壓力必然越大",
-    "靜止液體中同一點的壓力可向各方向作用，不只向下；容器側壁也受液體壓力",
-    "液體壓力只由容器底面積決定，和深度與液體種類無關"
+    "把因液體重量向下，就認為靜止液體不會對容器側壁施加壓力",
+    "做比較時感測面方向時同時改變量測深度，卻把讀值差全歸因於方向",
+    "把同深度三個方向的相同讀值解釋成液體並漏掉壓力",
+    "同深度的甲乙丙雖朝向不同，讀值相同，顯示靜止液體在該點向各方向施壓"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁」不成立；靜止液體中同一點的壓力可向各方向作用，不只向下；容器側壁也受液體壓力。"
+      "reason": "同深度的甲乙丙雖朝向不同，讀值相同，顯示靜止液體在該點向各方向施壓。甲列的位置為水下 15 cm、感測面朝向為向下；乙列的位置為水下 15 cm、感測面朝向為向左。解題時誤把因液體重量向下，就認為靜止液體不會對容器側壁施加壓力。靜止液體中同一點的壓力可向各方向作用，不只向下；照原做法會把讀值算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「固體壓力是力乘面積，所以面積越大壓力必然越大」不成立；固體壓力 p＝F/A；100 N 均勻作用在 0.020 m² 面積上，壓力為 5000 Pa。"
+      "reason": "同深度的甲乙丙雖朝向不同，讀值相同，顯示靜止液體在該點向各方向施壓。甲列的位置為水下 15 cm、感測面朝向為向下；乙列的位置為水下 15 cm、感測面朝向為向左。做比較時感測面方向時同時改變量測深度，卻把讀值差全歸因於方向，結果會錯判讀值。感測器必須位於同一液體、同一深度且校正相同，才可比較方向；讀值差異若未通過說明液體壓力向各方向傳遞對位置的控制，就不能只歸給感測面朝向。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「靜止液體中同一點的壓力可向各方向作用，不只向下；容器側壁也受液體壓力」。"
+      "isCorrect": false,
+      "reason": "同深度的甲乙丙雖朝向不同，讀值相同，顯示靜止液體在該點向各方向施壓。甲列的位置為水下 15 cm、感測面朝向為向下；乙列的位置為水下 15 cm、感測面朝向為向左。把同深度三個方向的相同讀值解釋成液體沒有壓力，結果會錯判讀值。同深度的甲乙丙雖朝向不同，讀值相同，顯示靜止液體在該點向各方向施壓；感測面朝向的數值若未依位置核對，會使讀值無法通過說明液體壓力向各方向傳遞檢查。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「液體壓力只由容器底面積決定，和深度與液體種類無關」不成立；同一液體中深度越大壓力越大；同深度時液體密度較大者壓力較大。"
+      "isCorrect": true,
+      "reason": "同深度的甲乙丙雖朝向不同，讀值相同，顯示靜止液體在該點向各方向施壓。甲列的位置為水下 15 cm、感測面朝向為向下；乙列的位置為水下 15 cm、感測面朝向為向左。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀"
+    "資料判讀",
+    "計算"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁",
-    "固體壓力是力乘面積，所以面積越大壓力必然越大",
-    "液體壓力只由容器底面積決定，和深度與液體種類無關"
+    "把因液體重量向下，就認為靜止液體不會對容器側壁施加壓力",
+    "做比較時感測面方向時同時改變量測深度，卻把讀值差全歸因於方向",
+    "把同深度三個方向的相同讀值解釋成液體並漏掉壓力"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -64,20 +65,6 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_011"
   ]

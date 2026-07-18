@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估沉澱反應報告時，哪項說明正確？",
+  "stem": "設計產氣反應實驗時，哪組證據最完整？",
   "options": [
-    "所有能逆轉的過程都是物理變化，所有不可逆過程都是化學變化",
-    "化學反應會把原子徹底消滅後再創造新原子，所以前後元素可任意改變",
-    "只要肉眼看不到原物質，就表示它已化學分解成新物質",
-    "沉澱、特定氣體、難以由物理過程解釋的顏色或溫度變化"
+    "量氣體體積、做身分檢驗並記錄反應物消耗",
+    "只記錄液面下降而不設空白",
+    "只以氣味猜測未知氣體身分",
+    "只計算氣泡顆數，不收集氣體"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「所有能逆轉的過程都是物理變化，所有不可逆過程都是化學變化」不成立；物理變化常可逆，但「可逆」不是分類標準；部分化學反應也可逆，核心仍是新物質。"
+      "isCorrect": true,
+      "reason": "這同時涵蓋產物數量、性質與來源。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「化學反應會把原子徹底消滅後再創造新原子，所以前後元素可任意…」不成立；化學變化中原子種類與總數保留，但原子連結和排列改變，形成不同粒子。"
+      "reason": "液面下降可由蒸發造成，沒有空白便無法歸因反應。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只要肉眼看不到原物質，就表示它已化學分解成新物質」不成立；糖溶於水雖外觀消失，可由蒸發水回收糖，沒有證據顯示新物質，屬物理變化。"
+      "reason": "直接聞未知氣體不安全，氣味也通常不具唯一性。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「沉澱、特定氣體、難以由物理過程解釋的顏色或溫度變化，都可作反應線索」。"
+      "isCorrect": false,
+      "reason": "氣泡大小不一且可能來自逸氣，顆數不能辨識身分。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據方案"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "所有能逆轉的過程都是物理變化，所有不可逆過程都是化學變化",
-    "化學反應會把原子徹底消滅後再創造新原子，所以前後元素可任意改變",
-    "只要肉眼看不到原物質，就表示它已化學分解成新物質"
+    "只記錄液面下降而不設空白",
+    "只以氣味猜測未知氣體身分",
+    "只計算氣泡顆數，不收集氣體"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-AB-4-3",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

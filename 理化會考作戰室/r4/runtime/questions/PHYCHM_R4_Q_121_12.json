@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估產氣速率報告時，哪項說明正確？",
+  "stem": "同一資料改用反應物剩餘量作圖，反應最快處通常？",
   "options": [
-    "反應速率可用單位時間內反應物的減少量，或生成物的增加量表示",
-    "任何平衡系統一旦達平衡，就不可能因溫度或濃度改變而轉移",
-    "實驗前十秒產氣較快的組別，最終生成氣體必然比其他組多",
-    "反應速率只能由最後生成物總量判斷，和所需時間無關"
+    "縱軸為零後",
+    "剩餘量最大必等於平台",
+    "曲線向下最陡處",
+    "完全水平處"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「反應速率可用單位時間內反應物的減少量，或生成物的增加量表示」。"
+      "isCorrect": false,
+      "reason": "反應物耗盡後速率近零。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「任何平衡系統一旦達平衡，就不可能因溫度或濃度改變而轉移」不成立；改變溫度或濃度後，平衡系統可調整到新的巨觀穩定狀態；方向需依題目提供的反應資訊判斷。"
+      "reason": "最大量只是起點。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「實驗前十秒產氣較快的組別，最終生成氣體必然比其他組多」不成立；反應較快只表示達到某狀態所需時間較短；最終生成量還受反應物量與平衡等條件影響。"
+      "isCorrect": true,
+      "reason": "單位時間消耗量最大。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「反應速率只能由最後生成物總量判斷，和所需時間無關」不成立；反應速率可用單位時間內反應物的減少量，或生成物的增加量表示。"
+      "reason": "水平表示不再消耗。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "圖形轉換"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "任何平衡系統一旦達平衡，就不可能因溫度或濃度改變而轉移",
-    "實驗前十秒產氣較快的組別，最終生成氣體必然比其他組多",
-    "反應速率只能由最後生成物總量判斷，和所需時間無關"
+    "縱軸為零後",
+    "剩餘量最大必等於平台",
+    "完全水平處"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科反應速率、控制變因與動態平衡層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JE-4-1",
       "AUTH-NATURAL-LC-JE-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

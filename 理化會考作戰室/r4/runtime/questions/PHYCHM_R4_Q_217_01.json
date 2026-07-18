@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "學生討論箭頭表示力的大小方向與作用點，哪項敘述正確？",
+  "stem": "力圖比例為 1 cm 代表 2 N，向右 3 cm 的箭頭表示何力？",
   "options": [
-    "力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的意義",
-    "力的箭頭長度表示大小、箭頭指向表示方向、起點標在作用點，三項都是力的表示資訊",
-    "合力只需把大小相加，所以向右 8 N 與向左 3 N 的合力是 11 N",
-    "合力為零時物體速度必立即變為零，不可能繼續等速運動"
+    "大小 3 N、方向向右",
+    "大小 6 N、方向向左",
+    "大小 1.5 N、方向向右",
+    "大小 6 N、方向向右"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的…」不成立；力的箭頭長度表示大小、箭頭指向表示方向、起點標在作用點，三項都是力的表示資訊。"
+      "reason": "大小 3 N、方向向右與受力條件不符。3 cm×2 N/cm=6 N，箭頭向右決定方向。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「力的箭頭長度表示大小、箭頭指向表示方向、起點標在作用點，三項都是力的表示資訊」。"
+      "isCorrect": false,
+      "reason": "大小 6 N、方向向左與受力條件不符。3 cm×2 N/cm=6 N，箭頭向右決定方向。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「合力只需把大小相加，所以向右 8 N 與向左 3 N 的合…」不成立；同直線上向右 8 N 與向左 3 N 的合力為向右 5 N；相反方向力要取差並保留方向。"
+      "reason": "大小 1.5 N、方向向右與受力條件不符。3 cm×2 N/cm=6 N，箭頭向右決定方向。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「合力為零時物體速度必立即變為零，不可能繼續等速運動」不成立；物體所受合力為零時加速度為零，可保持靜止或等速直線運動，不限於靜止。"
+      "isCorrect": true,
+      "reason": "3 cm×2 N/cm=6 N，箭頭向右決定方向。"
     }
   ],
   "difficulty": "foundation",
@@ -50,16 +50,16 @@
     "辨認",
     "概念理解"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的意義",
-    "合力只需把大小相加，所以向右 8 N 與向左 3 N 的合力是 11 N",
-    "合力為零時物體速度必立即變為零，不可能繼續等速運動"
+    "大小 3 N、方向向右",
+    "大小 6 N、方向向左",
+    "大小 1.5 N、方向向右"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

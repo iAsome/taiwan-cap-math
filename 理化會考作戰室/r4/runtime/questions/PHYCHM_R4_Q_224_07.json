@@ -14,34 +14,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "衛星運動出現四種說法，哪項有理化概念支持？",
+  "stem": "箱子受 4 N 拉力而等速滑動，動摩擦力為何？",
   "options": [
-    "兩物體距離越遠引力越大，質量變化對引力沒有影響",
-    "物體到月球後原子自動減少，因此質量和重量都以相同比例減少",
-    "以阻止接觸面相對滑動",
-    "受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右"
+    "大小 0 N",
+    "大小 4 N、方向反向",
+    "大小 8 N、方向同向",
+    "大小 2 N、方向反向"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「兩物體距離越遠引力越大，質量變化對引力沒有影響」不成立；萬有引力隨兩物體質量增大而增大，隨中心距離增加而減小；比較時要分開變項。"
+      "reason": "大小 0 N不成立。等速表示合力為零，故動摩擦力等大反向。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「物體到月球後原子自動減少，因此質量和重量都以相同比例減少」不成立；同一物體到月球後組成與質量不變，但因當地重力場較弱，重量變小。"
+      "isCorrect": true,
+      "reason": "等速表示合力為零，故動摩擦力等大反向。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「靜摩擦力在最大值內隨滑動趨勢調整，以阻止接觸面相對滑動；動摩擦力則在已相對滑動時出現」。"
+      "isCorrect": false,
+      "reason": "大小 8 N、方向同向不成立。等速表示合力為零，故動摩擦力等大反向。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右」不成立；受力圖只畫作用在目標物上的力，箭頭方向是力方向；物體向右運動不代表必有向右力。"
+      "reason": "大小 2 N、方向反向不成立。等速表示合力為零，故動摩擦力等大反向。"
     }
   ],
   "difficulty": "standard",
@@ -49,16 +49,16 @@
     "證據判讀",
     "推論"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "兩物體距離越遠引力越大，質量變化對引力沒有影響",
-    "物體到月球後原子自動減少，因此質量和重量都以相同比例減少",
-    "受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右"
+    "大小 0 N",
+    "大小 8 N、方向同向",
+    "大小 2 N、方向反向"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-10",
       "AUTH-NATURAL-LC-EB-4-11",
@@ -69,19 +69,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

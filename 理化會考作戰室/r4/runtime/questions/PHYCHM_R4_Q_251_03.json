@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理車輛動能資料後，哪項說明正確？",
+  "stem": "甲：作功1200 J、時間30 s、平均功率40 W。判定平均功率所需的定義是哪一個？",
   "options": [
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "完成 1200 J 的功耗時 30 s",
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J",
-    "動能只由物體所在高度決定，質量與速度都不影響"
+    "完成 1200 J 的功耗時 30 s，平均功率 P＝W/t＝40 W",
+    "解題時將 1200 J 除以 30 s 算成 400 W，錯置小數位",
+    "主張乙與丙功率同為 60 W，所以兩台機器做的功與時間一定都相同",
+    "解題時將功率公式寫成 P＝W×t，所以做功時間越久反而算出越大功率"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關」不成立；力對物體作功要有物體沿力的分量方向發生位移；用力提住靜止物體時對物體作功為零。"
+      "isCorrect": true,
+      "reason": "完成 1200 J 的功耗時 30 s，平均功率 P＝W/t＝40 W。丙列的作功為1800 J，時間為30 s；丁列的作功為2400 J，時間為40 s。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「完成 1200 J 的功耗時 30 s，平均功率 P＝W/t＝40 W；功率比較做功快慢」。"
+      "isCorrect": false,
+      "reason": "解題時錯將 1200 J 除以 30 s 算成 400 W，錯置小數位。功率 P＝W/t；時間的數值若未依作功核對，會使平均功率無法通過由功與時間計算功率檢查。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「功是力除以位移，所以 20 N 推 3 m 作功為 6.6…」不成立；恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J。"
+      "reason": "誤以為乙與丙功率同為 60 W，所以兩台機器做的功與時間一定都相同。完成 1200 J 的功耗時 30 s，平均功率 P＝W/t＝40 W；作功未列入由功與時間計算功率時，平均功率的時間大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「動能只由物體所在高度決定，質量與速度都不影響」不成立；動能與質量成正比、與速度平方成正比；同質量者速度加倍，動能變為四倍。"
+      "reason": "解題時錯將功率公式寫成 P＝W×t，所以做功時間越久反而算出越大功率，結果會錯判平均功率。完成 1200 J 的功耗時 30 s，平均功率 P＝W/t＝40 W；照原做法會把平均功率算錯或判反。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "辨認",
+    "概念理解"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J",
-    "動能只由物體所在高度決定，質量與速度都不影響"
+    "解題時將 1200 J 除以 30 s 算成 400 W，錯置小數位",
+    "主張乙與丙功率同為 60 W，所以兩台機器做的功與時間一定都相同",
+    "解題時將功率公式寫成 P＝W×t，所以做功時間越久反而算出越大功率"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

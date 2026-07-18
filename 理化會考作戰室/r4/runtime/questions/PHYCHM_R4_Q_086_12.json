@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估產氣開放系統報告時，哪項說明正確？",
+  "stem": "要把粒子數比轉成質量比，還缺少哪類資訊？",
   "options": [
-    "反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查",
-    "2H₂＋O₂→2H₂O 表示氫分子、氧分子與水分子的粒子數比為 2：1：2",
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2",
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小"
+    "反應容器顏色",
+    "實驗者座號",
+    "分子運動方向",
+    "各物質粒子的相對質量"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查」不成立；粒子模型驗證配平時，要對每種顏色或符號的原子逐個計數，不是只數分子團數。"
+      "reason": "顏色無關。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「2H₂＋O₂→2H₂O 表示氫分子、氧分子與水分子的粒子數比為 2：1：2」。"
+      "isCorrect": false,
+      "reason": "座號無關。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「配平係數 2：1：2 直接表示三種物質的質量比也是 2：1…」不成立；2H₂＋O₂→2H₂O 表示氫分子、氧分子與水分子的粒子數比為 2：1：2。"
+      "reason": "方向不決定質量比。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小」不成立；密閉袋內的反應前後，所有反應物與生成物的總質量相等，因為原子只重新排列。"
+      "isCorrect": true,
+      "reason": "粒子質量才能連結個數與總質量。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "資訊需求"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查",
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2",
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小"
+    "反應容器顏色",
+    "實驗者座號",
+    "分子運動方向"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

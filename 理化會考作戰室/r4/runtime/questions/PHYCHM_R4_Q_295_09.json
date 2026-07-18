@@ -49,51 +49,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對多來源證據評估結果，哪項說法正確？",
+  "stem": "甲列含總輸入500 J及有用輸出150 J；乙列含600 J及240 J。兩列交由以有用能量比例比較能源效率判讀，有用輸出呈現哪個量化或方向結果？",
   "options": [
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統",
-    "可再生能源必然零環境影響且可全天恆定發電，化石燃料則沒有任何系統優點",
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除",
-    "能源效率＝有用輸出能量÷總輸入能量×100%；輸入 500 J、有用輸出 150 J 的效率為 30%"
+    "解題時將效率算成總輸入除以有用輸出，使結果可能超過百分之百",
+    "做比較時不同功能設備時並漏掉統一有用輸出的定義與系統邊界",
+    "把甲輸入 500 J、輸出 150 J 被算成 70% 效率",
+    "效率＝有用輸出÷總輸入×100%"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源…」不成立；能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式。"
+      "reason": "解題時錯將效率算成總輸入除以有用輸出，使結果可能超過百分之百。能源效率＝有用輸出能量÷總輸入能量×100%；照原做法會把效率算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「可再生能源必然零環境影響且可全天恆定發電，化石燃料則沒有任…」不成立；化石燃料能量密度高但會排放溫室氣體；太陽、風能可再生但有間歇性與土地、儲能需求，新興能源也需證…。"
+      "reason": "做比較時不同功能設備時卻未統一有用輸出的定義與系統邊界，結果會錯判效率。比較設備必須把有用輸出的定義與量測邊界設為相同，不能拿不同功能直接比百分比；效率差異若未通過以有用能量比例比較能源效率對總輸入的控制，就不能只歸給有用輸出。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「發電決策只要比較單一小時電價，其他環境、系統與社會資料都應…」不成立；比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響。"
+      "reason": "解題時誤把甲輸入 500 J、輸出 150 J 被算成 70% 效率。效率＝有用輸出÷總輸入×100%；有用輸出的數值若未依總輸入核對，會使效率無法通過以有用能量比例比較能源效率檢查。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「能源效率＝有用輸出能量÷總輸入能量×100%；輸入 500 J、有用輸出 150 J 的效率為 30%」。"
+      "reason": "效率＝有用輸出÷總輸入×100%。甲列的總輸入為500 J、有用輸出為150 J；乙列的總輸入為600 J、有用輸出為240 J。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
     "證據判讀",
-    "分析"
+    "推論"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統",
-    "可再生能源必然零環境影響且可全天恆定發電，化石燃料則沒有任何系統優點",
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除"
+    "解題時將效率算成總輸入除以有用輸出，使結果可能超過百分之百",
+    "做比較時不同功能設備時並漏掉統一有用輸出的定義與系統邊界",
+    "把甲輸入 500 J、輸出 150 J 被算成 70% 效率"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-INA-4-1",
       "AUTH-NATURAL-LC-INA-4-2",
@@ -139,19 +139,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

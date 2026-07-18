@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組不同材料比熱資料，哪項判讀仍合理？",
+  "stem": "壓力改變時沸點可改變，這表示平台溫度？",
   "options": [
-    "溫度和熱量是同一物理量，50 °C 就表示物體內有 50 J 熱量",
-    "物質仍吸收能量以改變粒子排列或作用",
-    "熱量會自然由低溫物體流向高溫物體，因為低溫處需要更多熱",
-    "Q＝mcΔT 中應把質量、比熱與溫差相加，所以為 109.2 J"
+    "須連同壓力條件描述",
+    "只由質量決定",
+    "相變平台溫度永遠固定為100°C，與壓力無關",
+    "沒有單位"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「溫度和熱量是同一物理量，50 °C 就表示物體內有 50 …」不成立；溫度描述物體熱狀態，熱量是因溫差而移轉的能量；物體不是「含有某度熱量」。"
+      "isCorrect": true,
+      "reason": "沸點受壓力影響。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「熔化或沸騰平臺期間，物質仍吸收能量以改變粒子排列或作用，溫度可保持不變」。"
+      "isCorrect": false,
+      "reason": "非質量決定。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「熱量會自然由低溫物體流向高溫物體，因為低溫處需要更多熱」不成立；兩物體接觸時，熱量淨傳自高溫物體至低溫物體，直到達熱平衡。"
+      "reason": "只在特定壓力近似。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「Q＝mcΔT 中應把質量、比熱與溫差相加，所以為 109.…」不成立；若 100 g 水的比熱為 4.2 J/(g·°C)，升溫 5 °C 需熱量 Q＝100×4.…。"
+      "reason": "有°C。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "條件分析"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "溫度和熱量是同一物理量，50 °C 就表示物體內有 50 J 熱量",
-    "熱量會自然由低溫物體流向高溫物體，因為低溫處需要更多熱",
-    "Q＝mcΔT 中應把質量、比熱與溫差相加，所以為 109.2 J"
+    "只由質量決定",
+    "相變平台溫度永遠固定為100°C，與壓力無關",
+    "沒有單位"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱學與能量; 臺灣國中教育會考自然科熱量、比熱、相變與生活現象題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-BA-4-1",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

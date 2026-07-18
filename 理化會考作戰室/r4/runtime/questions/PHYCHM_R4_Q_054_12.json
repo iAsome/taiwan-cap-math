@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估金屬與非金屬比較報告時，哪項說明正確？",
+  "stem": "金屬 A 常溫有保護膜，磨除後迅速氧化。對 A 活性最佳描述？",
   "options": [
-    "只要記得「同族必完全相同」就已完成檢驗，無需任何數據",
-    "要控制質量、表面積、氧氣供應與加熱條件",
-    "拿一大塊金屬加強熱、一小塊不加熱，也能公平比較金屬本身活性",
-    "元素符號可自由取元素中任一字母，因此鈉也可寫成 S 或 NA"
+    "磨除使 A 變成另一元素",
+    "保護膜證明氧不存在",
+    "A 可與氧快速反應，常溫表面現象受膜抑制",
+    "A 完全不與氧反應"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要記得「同族必完全相同」就已完成檢驗，無需任何數據」不成立；要檢驗元素性質趨勢，應比較同條件量得的多個元素資料，並指出趨勢與例外。"
+      "reason": "機械磨除不改元素。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「比較金屬與氧反應活性時，要控制質量、表面積、氧氣供應與加熱條件，再比較反應難易」。"
+      "isCorrect": false,
+      "reason": "環境仍有氧。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「拿一大塊金屬加強熱、一小塊不加熱，也能公平比較金屬本身活性」不成立；比較金屬與氧反應活性時，要控制質量、表面積、氧氣供應與加熱條件，再比較反應難易。"
+      "isCorrect": true,
+      "reason": "兼顧本質反應與表面阻隔。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「元素符號可自由取元素中任一字母，因此鈉也可寫成 S 或 NA」不成立；週期表格子同時提供元素名稱與符號；Na 是鈉，符號大小寫必須依表中記錄。"
+      "reason": "與磨除後現象矛盾。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "因果判定"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要記得「同族必完全相同」就已完成檢驗，無需任何數據",
-    "拿一大塊金屬加強熱、一小塊不加熱，也能公平比較金屬本身活性",
-    "元素符號可自由取元素中任一字母，因此鈉也可寫成 S 或 NA"
+    "磨除使 A 變成另一元素",
+    "保護膜證明氧不存在",
+    "A 完全不與氧反應"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AA-4-4",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -49,51 +49,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "整理家庭節能資料後，哪項說明正確？",
+  "stem": "發電轉換列給出進入能量1000 kWh，另記離開至下一段420 kWh及本段損失580 kWh。進入能量與離開至下一段須依哪項定律才能說明本段損失？",
   "options": [
-    "追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式",
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統",
-    "能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 100% 且持續創能"
+    "解題時將 1000 kWh 發電輸入到 287 kWh 有用輸出判成完全無損失",
+    "能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式",
+    "主張輸電或儲存階段只傳遞能量，不可能有任何轉換損耗",
+    "僅從插座端開始算能源效率，完全漏掉發電、輸電與儲存損失"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式」。"
+      "isCorrect": false,
+      "reason": "解題時錯將 1000 kWh 發電輸入到 287 kWh 有用輸出判成完全無損失。從一次能源到終端有用輸出需追蹤每段，總有用比例為 287÷1000＝28.7%；離開至下一段的數值若未依進入能量核對，會使本段損失無法通過追蹤能源由來源轉換輸送到使用的過程檢查。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標…」不成立；可檢驗的節能決策應寫明基準用能、具體措施、量測期間、成功指標與氣溫、使用人數等不確定因素。"
+      "isCorrect": true,
+      "reason": "能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式。儲存列的進入能量為399 kWh，離開至下一段為359 kWh；儲存列的進入能量為399 kWh，離開至下一段為359 kWh。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源…」不成立；能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式。"
+      "reason": "誤以為輸電或儲存階段只傳遞能量，不可能有任何轉換損耗。能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式；進入能量未列入追蹤能源由來源轉換輸送到使用的過程時，本段損失的離開至下一段大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 10…」不成立；能源效率＝有用輸出能量÷總輸入能量×100%；輸入 500 J、有用輸出 150 J 的效率為…。"
+      "reason": "僅從插座端開始算能源效率，完全漏掉發電、輸電與儲存損失。能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式；照原做法會把本段損失算錯或判反。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "辨認",
+    "概念理解"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統",
-    "能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 100% 且持續創能"
+    "解題時將 1000 kWh 發電輸入到 287 kWh 有用輸出判成完全無損失",
+    "主張輸電或儲存階段只傳遞能量，不可能有任何轉換損耗",
+    "僅從插座端開始算能源效率，完全漏掉發電、輸電與儲存損失"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-INA-4-1",
       "AUTH-NATURAL-LC-INA-4-2",
@@ -139,19 +139,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

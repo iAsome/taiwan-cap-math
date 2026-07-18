@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u16",
+  "batch": "017-u16-complete",
+  "skills": ["s005"],
+  "mc": [],
+  "constructedResponse": [],
+  "lectures": [
+    {
+      "lectureId": "u16-s005-lecture-r1",
+      "expectedContentSha256": "6162d0f65f153bc9de8ebe749562b0c6707b3dc2ce0c766c4cbd77545d2eb988",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "△GHI與△JKL中，∠G=∠J、GH=JK、∠H=∠K。判定是否全等並寫出順序。",
+            "solutionSteps": [
+              "GH連接已知角G、H，JK連接已知角J、K，因此是夾邊。",
+              "兩角及夾邊分別相等，符合ASA。",
+              "由G↔J、H↔K、I↔L寫出全等式。"
+            ],
+            "answer": "△GHI≅△JKL（ASA）。",
+            "why": "相等邊的兩端正是兩個已知角的頂點，所以資料位置為角、邊、角；先核對夾邊再按角配對，可避免誤寫AAS或排錯全等式。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "△PQR與△XYZ中，∠P=∠X、∠R=∠Z，且PQ=XY。這是哪一種全等判定？",
+            "solutionSteps": [
+              "兩個已知角P、R之間的夾邊是PR；X、Z之間是XZ。",
+              "給定PQ、XY不是上述夾邊，但依P↔X、R↔Z可知Q↔Y。",
+              "兩角及一組非夾邊相等，使用AAS。"
+            ],
+            "answer": "可用AAS判定△PQR≅△XYZ。",
+            "why": "已知邊只接觸兩個已知角中的一個，不是連接兩角頂點的夾邊；兩角已固定形狀，對應非夾邊再固定尺度，因此AAS有效。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "△GHI與△JKL中，∠G=∠J=42°、∠H=∠K=73°，且GI=JL。求第三角並判定兩三角形。",
+            "solutionSteps": [
+              "第三角∠I與∠L都為180°-42°-73°=65°。",
+              "GI、JL對應相等，且相對於已知角G、H及J、K是非夾邊。",
+              "以兩角與非夾邊使用AAS，頂點配對G-J、H-K、I-L。"
+            ],
+            "answer": "∠I=∠L=65°，且△GHI≅△JKL（AAS）。",
+            "why": "內角和補出相同第三角，而給定邊GI與JL依端點正確對應；一組對應邊固定了角度形狀的尺度，所以不只是AAA相似。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "兩直角三角形各有一個28°角相等，且連接直角頂點與28°頂點的對應股都長9公分。如何判定？",
+            "solutionSteps": [
+              "兩個直角均為90°，另一組已知角均為28°。",
+              "9公分的股連接這兩組角的頂點，是夾邊。",
+              "兩角及夾邊相等，使用ASA。"
+            ],
+            "answer": "兩直角三角形以ASA全等。",
+            "why": "直角不會自動代表RHS；本題真正資料是90°、28°與兩角間的對應邊，因此應依資料位置選ASA，而非套用未給斜邊的RHS。"
+          },
+          {
+            "exampleId": "L5",
+            "prompt": "兩三角形各有55°與65°兩組對應角相等，但完全沒有邊長資料。可以判定全等嗎？",
+            "solutionSteps": [
+              "由內角和可知兩圖第三角都為60°。",
+              "現有資料仍只有三組角相等，即AAA。",
+              "同比例放大或縮小會保留所有角度但改變邊長。"
+            ],
+            "answer": "不能判定全等，只能保證相似。",
+            "why": "兩角雖能決定第三角與形狀，卻沒有任何對應邊固定實際尺度；不同大小的相似三角形提供反例，所以ASA或AAS都不能成立。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

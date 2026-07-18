@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估週期表查找報告時，哪項說明正確？",
+  "stem": "某材料同時導電佳、低密度，但遇水快速反應。若用於潮濕環境，最佳判斷為何？",
   "options": [
-    "銅導電且可拉成導線，氦性質安定可用作保護氣體；應把具體性質連到用途",
-    "週期表中每一欄都必然只含金屬或只含非金屬，沒有概略分界",
-    "同族元素的所有物理性質、化學性質和反應速率都完全相同",
-    "週期表橫列稱族、直行稱週期，名稱可互換而不影響意義"
+    "只要材料密度低就可直接使用，不必測遇水反應",
+    "增加用量就能停止反應",
+    "需防水隔離或改選較穩定材料",
+    "遇水反應與安全無關"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「銅導電且可拉成導線，氦性質安定可用作保護氣體；應把具體性質連到用途」。"
+      "isCorrect": false,
+      "reason": "忽略必要安全條件。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「週期表中每一欄都必然只含金屬或只含非金屬，沒有概略分界」不成立；金屬大多分布於週期表左側與中央，非金屬多在右側，類金屬約在階梯狀分界附近。"
+      "reason": "增加量通常增風險。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「同族元素的所有物理性質、化學性質和反應速率都完全相同」不成立；同族元素常呈現相似化學性質與規律，但程度與個別性質仍可不同，需由資料比較。"
+      "isCorrect": true,
+      "reason": "正面處理反應風險。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「週期表橫列稱族、直行稱週期，名稱可互換而不影響意義」不成立；週期表的橫列稱週期，直行稱族；位置是組織元素性質規律的索引。"
+      "reason": "反應可能腐蝕或產危害。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "情境風險評估"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "週期表中每一欄都必然只含金屬或只含非金屬，沒有概略分界",
-    "同族元素的所有物理性質、化學性質和反應速率都完全相同",
-    "週期表橫列稱族、直行稱週期，名稱可互換而不影響意義"
+    "只要材料密度低就可直接使用，不必測遇水反應",
+    "增加用量就能停止反應",
+    "遇水反應與安全無關"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AA-4-4",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

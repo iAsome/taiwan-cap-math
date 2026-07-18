@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": null,
-  "stem": "土壤酸鹼調整出現四種說法，哪項有理化概念支持？",
+  "stem": "若反應會產生氣體且開放秤量，應如何維持完整守恆分析？",
   "options": [
-    "中和是否放熱應用手直接觸摸容器，不需溫度計或對照資料",
-    "酸鹼只要曾混合，無論加入量與濃度，最後 pH 都必等於 7",
-    "化學上所有鹽類都是可食的氯化鈉，名稱與用途完全相同",
-    "密閉中和系統反應前後總質量守恆；資料表的未知量應由所有反應物與生成物加總求得"
+    "把逸出氣體質量也計入",
+    "忽略氣體",
+    "只算容器",
+    "宣稱守恆失效"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「中和是否放熱應用手直接觸摸容器，不需溫度計或對照資料」不成立；相同裝置中酸鹼混合後溫度上升，若排除外加熱，可支持中和放熱。"
+      "isCorrect": true,
+      "reason": "完整系統需含所有產物。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「酸鹼只要曾混合，無論加入量與濃度，最後 pH 都必等於 7」不成立；逐滴加鹼時 pH 由 2 升到 9，終點後溶液偏鹼，表示鹼已過量，不可只看混合過就判中性。"
+      "reason": "會漏算物質。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「化學上所有鹽類都是可食的氯化鈉，名稱與用途完全相同」不成立；氯化鈉是食鹽，碳酸氫鈉可用於烘焙，但「鹽」是一大類物質，不只指氯化鈉。"
+      "reason": "容器不是反應物全部。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「密閉中和系統反應前後總質量守恆；資料表的未知量應由所有反應物與生成物加總求得」。"
+      "isCorrect": false,
+      "reason": "定律未失效。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "邊界修正"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "中和是否放熱應用手直接觸摸容器，不需溫度計或對照資料",
-    "酸鹼只要曾混合，無論加入量與濃度，最後 pH 都必等於 7",
-    "化學上所有鹽類都是可食的氯化鈉，名稱與用途完全相同"
+    "忽略氣體",
+    "只算容器",
+    "宣稱守恆失效"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科中和、資料判讀與生活應用層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對熱脹冷縮模型結果，哪項說法正確？",
+  "stem": "密閉容器中 20.0 g 冰完全融化，忽略容器浮力變化，水的質量應最接近？",
   "options": [
-    "水蒸氣變成液態水稱為凝固，液態水變成冰稱為凝結",
-    "只有溫度達沸點才會蒸發，而沸騰只發生在液面",
-    "熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小",
-    "冰熔化成水時 H₂O 粒子種類不變"
+    "20.0 g",
+    "40.0 g",
+    "10.0 g",
+    "0 g"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「水蒸氣變成液態水稱為凝固，液態水變成冰稱為凝結」不成立；冰吸熱熔化成水，水吸熱汽化；水蒸氣冷卻凝結，水再凝固成冰。"
+      "isCorrect": true,
+      "reason": "密閉相變質量守恆。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只有溫度達沸點才會蒸發，而沸騰只發生在液面」不成立；蒸發只在液面進行且各溫度均可發生；沸騰在特定壓力的沸點於液體內部形成氣泡。"
+      "reason": "沒有新增水。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小」不成立；物體受熱時常是粒子間平均距離增加，不是單個粒子自身膨脹。"
+      "reason": "沒有失去一半。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「冰熔化成水時 H₂O 粒子種類不變，改變的是粒子排列、間距與運動狀態」。"
+      "isCorrect": false,
+      "reason": "物質未消失。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "守恆計算"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "水蒸氣變成液態水稱為凝固，液態水變成冰稱為凝結",
-    "只有溫度達沸點才會蒸發，而沸騰只發生在液面",
-    "熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小"
+    "40.0 g",
+    "10.0 g",
+    "0 g"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-1",
       "AUTH-NATURAL-LC-AB-4-2",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

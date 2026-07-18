@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "根據回聲測距紀錄，哪項判讀合理？",
+  "stem": "在鼓面放少量紙屑並敲鼓，紙屑上下跳動。若用手按住鼓面，聲音與跳動都迅速減弱。合理解釋為何？",
   "options": [
-    "頻率、振幅與波形都只決定音量大小，與音調和音色無關",
-    "音叉、鼓面與聲帶發聲時都在振動",
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射"
+    "鼓面振幅衰減，使產生的聲波也減弱",
+    "紙屑吸收空氣，所以聲音消失",
+    "手使鼓面振動更快，音調超出可聽範圍",
+    "鼓聲與鼓面運動沒有關係"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「頻率、振幅與波形都只決定音量大小，與音調和音色無關」不成立；頻率主要影響音調，振幅與響度有關，波形特徵與音色有關，三者不可互換。"
+      "isCorrect": true,
+      "reason": "按住鼓面增加阻尼，鼓面位移與麥克風振幅會一起下降。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止」。"
+      "isCorrect": false,
+      "reason": "紙屑量少，且關鍵變化是按住鼓面。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「距離為 340×0.40＝136 m，因為回聲時間只包含單程」不成立；回聲測距的聲波經往返路程；若聲速 340 m/s、往返 0.40 s，距離為 68 m。"
+      "reason": "按住主要增加阻尼，不是必然提高頻率。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射」不成立；人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射。"
+      "reason": "兩項同步衰減正支持振動與發聲相關。"
     }
   ],
   "difficulty": "foundation",
@@ -47,16 +47,16 @@
     "關係判讀",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "頻率、振幅與波形都只決定音量大小，與音調和音色無關",
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射"
+    "紙屑吸收空氣，所以聲音消失",
+    "手使鼓面振動更快，音調超出可聽範圍",
+    "鼓聲與鼓面運動沒有關係"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

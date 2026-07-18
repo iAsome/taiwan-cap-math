@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄根據眼鏡矯正下結論，哪項符合資料？",
+  "stem": "要量凸透鏡焦距，哪種方法適合？",
   "options": [
-    "凸透鏡與凹透鏡都只能使光發散，兩者的形狀與光線作用無關",
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線",
-    "反向延長似來自虛焦點",
-    "入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾"
+    "用手摸透鏡厚度直接當焦距",
+    "讓遠處物體或平行光成清晰實像，量透鏡到屏幕距離",
+    "把屏幕放在物側任意位置",
+    "只量透鏡直徑"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「凸透鏡與凹透鏡都只能使光發散，兩者的形狀與光線作用無關」不成立；凸透鏡可使與主軸平行的光近似會聚至焦點，凹透鏡使光發散，反向延長似來自虛焦點。"
+      "reason": "厚度不等於焦距。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「光由任何介質進入另一介質時速率都不變，也永遠折向法線」不成立；光由空氣進入玻璃時速率降低，斜入射通常折向法線；由玻璃進空氣則通常偏離法線。"
+      "isCorrect": true,
+      "reason": "遠物入射近似平行，清晰像位置接近焦平面。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「凸透鏡可使與主軸平行的光近似會聚至焦點，凹透鏡使光發散，反向延長似來自虛焦點」。"
+      "isCorrect": false,
+      "reason": "實像通常在像側屏幕。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾」不成立；入射角是入射光與法線夾角，折射角是折射光與法線夾角，都不從介面量。"
+      "reason": "直徑不是焦距。"
     }
   ],
   "difficulty": "advanced",
@@ -47,16 +47,16 @@
     "主張評估",
     "證據評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "凸透鏡與凹透鏡都只能使光發散，兩者的形狀與光線作用無關",
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線",
-    "入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾"
+    "用手摸透鏡厚度直接當焦距",
+    "把屏幕放在物側任意位置",
+    "只量透鏡直徑"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-7",
       "AUTH-NATURAL-LC-KA-4-8",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

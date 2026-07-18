@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u16",
+  "batch": "017-u16-complete",
+  "skills": ["s001"],
+  "mc": [
+    {
+      "questionId": "u16-s001-v011",
+      "expectedContentSha256": "70ccbcb0c279cebb122954c4073d0f4d700a6fc23808380a5dbdebc7e55e809c",
+      "replaceText": {
+        "只需再標一個周長，但不必對應邊": "只知道其中一片的周長，另一片不必有任何長度資料",
+        "相同周長可固定尺度，但說法未指出兩片周長相同；最直接標一組對應邊。": "只知道其中一片的周長不能固定另一片的尺度；最直接的方法是標出兩片一組對應邊相等。"
+      },
+      "reviewReplaceText": {
+        "只需再標一個周長，但不必對應邊": "只知道其中一片的周長，另一片不必有任何長度資料",
+        "相同周長可固定尺度，但說法未指出兩片周長相同；最直接標一組對應邊。": "只知道其中一片的周長不能固定另一片的尺度；最直接的方法是標出兩片一組對應邊相等。"
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [
+    {
+      "lectureId": "u16-s001-lecture-r1",
+      "expectedContentSha256": "a45d829176058daa3947c711e2c53305d5a627fccb40ca0187565ff172731b20",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "△JKL的三邊JK、KL、LJ依序為4、6、7公分，△MNP的三邊MN、NP、PM也依序為4、6、7公分。判斷兩三角形並寫出全等式。",
+            "solutionSteps": [
+              "依長度配對JK↔MN、KL↔NP、LJ↔PM。",
+              "三組對應邊相等，符合SSS判定。",
+              "由共同端點確認J↔M、K↔N、L↔P，寫出正確順序。"
+            ],
+            "answer": "△JKL≅△MNP（SSS）。",
+            "why": "SSS用三組對應邊固定形狀與大小；再由相鄰邊的共同端點決定頂點配對，能避免只看數值集合相同卻把全等式次序寫錯。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "已知PQ=UV、PR=UW，且∠QPR=∠VUW。說明為何這組資料可判定△PQR與△UVW全等。",
+            "solutionSteps": [
+              "PQ與PR的共同端點是P，UV與UW的共同端點是U。",
+              "所給∠QPR與∠VUW正好位於兩組已知邊之間。",
+              "兩邊及夾角分別相等，因此套用SAS。"
+            ],
+            "answer": "△PQR≅△UVW（SAS）。",
+            "why": "SAS的角必須由兩條已知邊構成；本題角的中間字母P、U正是兩邊共同端點，所以不是資料不足的一般SSA情形。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "兩三角形的內角都為35°、65°、80°，其中一個三角形某邊長10公分，另一個對應邊可能為20公分。能否只由角度判定全等？",
+            "solutionSteps": [
+              "三組角相等只形成AAA資料。",
+              "把一個三角形各邊放大兩倍，三個角仍保持不變。",
+              "對應邊10與20不同，兩圖不能完全重合。"
+            ],
+            "answer": "不能；AAA只能保證相似，沒有固定尺度。",
+            "why": "角度決定三角形的形狀比例，但不決定實際大小；一組對應邊可取10與20而保持同樣三角，因此AAA不是全等判定。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "已知△RST≅△XZY。依全等式判斷頂點配對，並指出邊ST與∠R各對應什麼。",
+            "solutionSteps": [
+              "逐位讀得R↔X、S↔Z、T↔Y。",
+              "ST連接S、T，所以對應連接Z、Y的邊ZY。",
+              "角R的頂點對應X，所以∠R對應∠X。"
+            ],
+            "answer": "ST對應ZY，∠R對應∠X。",
+            "why": "全等式的同一位置直接決定頂點配對；邊的兩個端點和角的頂點都必須依這個順序轉換，不能按圖形朝向任意猜測。"
+          },
+          {
+            "exampleId": "L5",
+            "prompt": "兩個直角三角形的斜邊都為17公分，且各有一條對應股為8公分。這些資料是否足以判定全等？",
+            "solutionSteps": [
+              "先確認兩圖都含有直角。",
+              "配對相等斜邊17公分與相等的一股8公分。",
+              "套用直角三角形的斜邊直角邊判定RHS。"
+            ],
+            "answer": "足以判定全等，可用RHS。",
+            "why": "直角條件已固定一組相等角，再加上斜邊及一股分別相等，RHS可唯一決定直角三角形，排除一般SSA可能有兩種形狀的問題。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": [
+    {
+      "path": "figures/u16/u16-fig-001-congruence-correspondence.svg",
+      "replacements": [
+        {"from":"<text x=\"166\" y=\"203\">C</text>","to":"<text x=\"170\" y=\"180\">C</text>","count":1},
+        {"from":"<text x=\"204\" y=\"203\">D</text>","to":"<text x=\"200\" y=\"180\">D</text>","count":1}
+      ]
+    }
+  ]
+}

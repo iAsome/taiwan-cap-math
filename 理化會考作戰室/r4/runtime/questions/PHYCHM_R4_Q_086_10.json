@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告根據反應式配平下結論，哪項符合資料？",
+  "stem": "某生把 N₂＋3H₂→2NH₃ 的比例寫成 2：2：3。他最可能混淆了什麼？",
   "options": [
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小",
-    "開放容器變輕證明質量守恆定律在產氣反應中不適用",
-    "未知生成物為 35＋12＝47 g，因為生成物應加在反應物上",
-    "2H₂＋O₂→2H₂O 表示氫分子、氧分子與水分子的粒子數比為 2：1：2"
+    "係數順序與化學式下標",
+    "酸與鹼",
+    "質量與溫度",
+    "體積與密度"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小」不成立；密閉袋內的反應前後，所有反應物與生成物的總質量相等，因為原子只重新排列。"
+      "isCorrect": true,
+      "reason": "2、2、3來自亂取下標與係數。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「開放容器變輕證明質量守恆定律在產氣反應中不適用」不成立；開放容器產生氣體並逸出時，秤得質量可減少；把逸出氣體也納入系統才符合守恆。"
+      "reason": "不是酸鹼反應。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「未知生成物為 35＋12＝47 g，因為生成物應加在反應物上」不成立；反應物總質量 35 g，已知一生成物 12 g，且系統密閉，另一生成物為 23 g。"
+      "reason": "題目未涉及溫度。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「2H₂＋O₂→2H₂O 表示氫分子、氧分子與水分子的粒子數比為 2：1：2」。"
+      "isCorrect": false,
+      "reason": "未提供體積密度。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "錯誤診斷"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小",
-    "開放容器變輕證明質量守恆定律在產氣反應中不適用",
-    "未知生成物為 35＋12＝47 g，因為生成物應加在反應物上"
+    "酸與鹼",
+    "質量與溫度",
+    "體積與密度"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

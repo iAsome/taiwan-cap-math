@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "保險絲與接地出現四種說法，哪項有理化概念支持？",
+  "stem": "僅憑導線電阻很小就忽略 I²R，認為大電流不會帶來高溫。依說明過載短路與電阻發熱風險修正時，總電流與導線電阻應採哪個原理連結？",
   "options": [
-    "額定電壓只是建議值，110 V 電器直接接 220 V 也一定保持 550 W 且無風險",
-    "電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道",
-    "保險絲應用最粗導線代替以免熔斷，接地插腳則可拆除而不影響安全",
-    "兩者均可因電阻發熱引起火災"
+    "把插頭鬆動時接點電阻較大、溫升 25°C，卻判成比正常更安全",
+    "過載是同一路線總電流過大，短路是低電阻路徑造成大電流",
+    "解題時將短路解釋成電阻變大而電流變小",
+    "主張過載與短路都只會讓電器停止，不會造成導線發熱"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「額定電壓只是建議值，110 V 電器直接接 220 V 也…」不成立；額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W，不可任意接…。"
+      "reason": "解題時誤把插頭鬆動時接點電阻較大、溫升 25°C，卻判成比正常更安全。過載提高線路電流，鬆動接點提高局部電阻，兩者都可能增加發熱；導線電阻的數值若未依總電流核對，會使10 分鐘後溫升無法通過說明過載短路與電阻發熱風險檢查。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道」不成立；基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算。"
+      "isCorrect": true,
+      "reason": "過載是同一路線總電流過大，短路是低電阻路徑造成大電流。插頭鬆動列的總電流為8 A，導線電阻為接點電阻較大；火線零線直接接觸列的總電流為極大，導線電阻為路徑很低。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「保險絲應用最粗導線代替以免熔斷，接地插腳則可拆除而不影響安全」不成立；保險絲或斷路器在過大電流時斷開回路；接地將漏電提供低阻安全路徑，三孔插頭不可任意拆除。"
+      "reason": "解題時錯將短路解釋成電阻變大而電流變小，結果會錯判10 分鐘後溫升。過載是同一路線總電流過大，短路是低電阻路徑造成大電流；總電流未列入說明過載短路與電阻發熱風險時，10 分鐘後溫升的導線電阻大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「過載是同一路線總電流過大，短路是低電阻路徑造成大電流；兩者均可因電阻發熱引起火災」。"
+      "isCorrect": false,
+      "reason": "誤以為過載與短路都只會讓電器停止，不會造成導線發熱。過載是同一路線總電流過大，短路是低電阻路徑造成大電流；照原做法會把10 分鐘後溫升算錯或判反。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "額定電壓只是建議值，110 V 電器直接接 220 V 也一定保持 550 W 且無風險",
-    "電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道",
-    "保險絲應用最粗導線代替以免熔斷，接地插腳則可拆除而不影響安全"
+    "把插頭鬆動時接點電阻較大、溫升 25°C，卻判成比正常更安全",
+    "解題時將短路解釋成電阻變大而電流變小",
+    "主張過載與短路都只會讓電器停止，不會造成導線發熱"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對海水蒸餾結果，哪項說法正確？",
+  "stem": "砂糖水靜置很久，能用沉降分出已溶糖嗎？",
   "options": [
-    "食鹽水倒過濾紙後，比濾紙孔洞小的水會留下，鹽會通過",
-    "鐵粉與砂可用磁鐵分離",
-    "結晶法只依成分粒徑大小，和溶解度的溫度變化無關",
-    "蒸餾時收集的是永遠留在蒸餾瓶底的高沸點成分"
+    "不能，溶解糖粒子不會形成可沉降大顆粒",
+    "能，水會自動消失",
+    "能，糖必定全部沉底",
+    "不能，因糖沒有質量"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「食鹽水倒過濾紙後，比濾紙孔洞小的水會留下，鹽會通過」不成立；濾紙可截留粒徑較大的不溶性固體，因此可分開沙與水，不能直接分開已溶解的食鹽。"
+      "isCorrect": true,
+      "reason": "需蒸發或結晶。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「鐵粉與砂可用磁鐵分離；濁水靜置後可先沉降再傾析，方法要對應性質差」。"
+      "isCorrect": false,
+      "reason": "靜置不使水消失。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「結晶法只依成分粒徑大小，和溶解度的溫度變化無關」不成立；可先製成高溫飽和溶液，再冷卻使溶解度隨溫度降低的溶質結晶析出。"
+      "reason": "未飽和溶液不會如此。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「蒸餾時收集的是永遠留在蒸餾瓶底的高沸點成分」不成立；蒸餾加熱混合液，使沸點較低的成分先汽化，再經冷凝收集；需有足夠沸點差。"
+      "reason": "糖有質量。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "適用範圍"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "食鹽水倒過濾紙後，比濾紙孔洞小的水會留下，鹽會通過",
-    "結晶法只依成分粒徑大小，和溶解度的溫度變化無關",
-    "蒸餾時收集的是永遠留在蒸餾瓶底的高沸點成分"
+    "能，水會自動消失",
+    "能，糖必定全部沉底",
+    "不能，因糖沒有質量"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-4",
       "AUTH-NATURAL-LC-CA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

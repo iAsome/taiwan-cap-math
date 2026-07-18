@@ -12,50 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_088",
-  "stem": "根據產氣開放系統表中紀錄，哪項結論最合理？",
+  "stem": "反應前後A原子各有多少？",
   "options": [
-    "反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查",
-    "粒子模型驗證配平時，要對每種顏色或符號的原子逐個計數，不是只數分子團數",
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小",
-    "開放容器變輕證明質量守恆定律在產氣反應中不適用"
+    "前2、後4",
+    "前2、後2",
+    "前4、後2",
+    "前4、後4"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查」不成立；粒子模型驗證配平時，要對每種顏色或符號的原子逐個計數，不是只數分子團數。"
+      "reason": "前側不是2A。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「粒子模型驗證配平時，要對每種顏色或符號的原子逐個計數，不是只數分子團數」。"
+      "isCorrect": false,
+      "reason": "漏算每團A₂的兩個A。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小」不成立；密閉袋內的反應前後，所有反應物與生成物的總質量相等，因為原子只重新排列。"
+      "reason": "後側仍有4A。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「開放容器變輕證明質量守恆定律在產氣反應中不適用」不成立；開放容器產生氣體並逸出時，秤得質量可減少；把逸出氣體也納入系統才符合守恆。"
+      "isCorrect": true,
+      "reason": "前兩團A-A共4，後兩團A-A-B共4。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀"
+    "文字模型計數"
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查",
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小",
-    "開放容器變輕證明質量守恆定律在產氣反應中不適用"
+    "前2、後4",
+    "前2、後2",
+    "前4、後2"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -64,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

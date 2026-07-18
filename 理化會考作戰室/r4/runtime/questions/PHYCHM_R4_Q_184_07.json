@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "眼鏡矯正出現四種說法，哪項有理化概念支持？",
+  "stem": "魚在水中看岸上的物體涉及光由空氣進入水。能否直接套用「水中物體看來較淺」結論？",
   "options": [
-    "水中物體看來較淺是因物體實際漂浮上升，與光的折射無關",
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線",
-    "眼睛沿折射光反向延伸",
-    "入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾"
+    "能；所有跨水面物體都一定看來較淺",
+    "不能；光行進方向與觀察介質不同，需重新畫折射光路",
+    "能；折射與方向無關",
+    "不能；因水中沒有光"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「水中物體看來較淺是因物體實際漂浮上升，與光的折射無關」不成立；水中物體的光進入空氣後折射，眼睛沿折射光反向延伸，使物體看來比實際淺。"
+      "reason": "該結論特指由空氣看水中。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「光由任何介質進入另一介質時速率都不變，也永遠折向法線」不成立；光由空氣進入玻璃時速率降低，斜入射通常折向法線；由玻璃進空氣則通常偏離法線。"
+      "isCorrect": true,
+      "reason": "必須依實際入射介質、觀察者位置和法線作圖。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「水中物體的光進入空氣後折射，眼睛沿折射光反向延伸，使物體看來比實際淺」。"
+      "isCorrect": false,
+      "reason": "折射路徑具方向與介質條件。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾」不成立；入射角是入射光與法線夾角，折射角是折射光與法線夾角，都不從介面量。"
+      "reason": "水中可有光傳播。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "證據判讀",
     "推論"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "水中物體看來較淺是因物體實際漂浮上升，與光的折射無關",
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線",
-    "入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾"
+    "能；所有跨水面物體都一定看來較淺",
+    "能；折射與方向無關",
+    "不能；因水中沒有光"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-7",
       "AUTH-NATURAL-LC-KA-4-8",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

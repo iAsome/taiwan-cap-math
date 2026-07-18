@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查音叉振動紀錄，哪項判讀正確？",
+  "stem": "潛水員在水中可聽到附近金屬敲擊聲。此現象最直接說明什麼？",
   "options": [
-    "聲波需要氣體、液體或固體介質傳播",
-    "真空中的聲音傳得最快，因為沒有空氣阻力",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定",
-    "音調較高的聲音一定在空氣中傳得較快，因為頻率較大"
+    "水中沒有粒子卻能傳聲",
+    "聲音只能沿水面傳",
+    "液體也能作為聲音傳播介質",
+    "金屬聲先變成光再進入耳朵"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質」。"
+      "isCorrect": false,
+      "reason": "水由粒子組成，可傳遞壓力擾動。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「真空中的聲音傳得最快，因為沒有空氣阻力」不成立；聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質。"
+      "reason": "聲波可在水體內傳播，不限水面。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定」不成立；音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止。"
+      "isCorrect": true,
+      "reason": "水中的粒子傳遞金屬造成的機械振動。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「音調較高的聲音一定在空氣中傳得較快，因為頻率較大」不成立；聲速由介質與溫度等條件決定；在同一介質同條件下，高低音的聲速近似相同。"
+      "reason": "不需要先轉成光。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "真空中的聲音傳得最快，因為沒有空氣阻力",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定",
-    "音調較高的聲音一定在空氣中傳得較快，因為頻率較大"
+    "水中沒有粒子卻能傳聲",
+    "聲音只能沿水面傳",
+    "金屬聲先變成光再進入耳朵"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

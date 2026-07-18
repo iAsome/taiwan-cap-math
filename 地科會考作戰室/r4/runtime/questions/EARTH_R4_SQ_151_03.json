@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "EARTH_R4_ST_151",
-  "stem": "閱讀「由日出日落算晝長」的資料後，為了釐清地球自轉解釋晝夜交替，哪一項後續檢驗最適當？",
+  "stem": "若要進一步檢驗晝夜由自轉造成，哪個新增觀測最有辨識力？",
   "options": [
-    "同時換掉地球自轉解釋晝夜交替的全部變因後只測一次",
-    "針對「由日出日落算晝長」再先判定半球與日期位置",
-    "刪除「由日出日落算晝長」中不合預期的資料後重畫圖",
-    "只詢問同意「晝夜由地球自轉造成」的人"
+    "只在12:00量一次氣溫，並把最高溫當成自轉證據",
+    "在不同經度設同步測站，記錄各站依序越過晨昏線的實際時刻",
+    "刪除04:30的黑暗紀錄，使表格只保留白晝資料",
+    "改量一年中近日點與遠日點距離，不再記錄天空明暗"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "同時改變多個變因且無重複，不能判斷「由日出日落算晝長」的原因。"
+      "reason": "單次氣溫受雲量、地表與熱慣性影響，不能追蹤測站由背光面進入受光面。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "後續檢驗保留地球自轉解釋晝夜交替的變因、資料與結論間的可重現關係。"
+      "reason": "多個經度的同步紀錄可檢查日出是否隨自西向東自轉依序發生，直接延伸原資料。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "未說明便刪除資料會造成偏誤。"
+      "reason": "刪除夜間紀錄會失去由暗轉亮的關鍵轉換，反而削弱對晝夜交替的檢驗。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "意見調查不是獨立觀測或公平檢驗。"
+      "reason": "日地距離主要涉及軌道位置，無法取代一天內連續照明狀態的觀測。"
     }
   ],
   "difficulty": "transfer",
@@ -49,7 +49,7 @@
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "晝夜交替由地球公轉造成"
+    "只在12:00量一次氣溫，並把最高溫當成自轉證據"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "逐項核對「由日出日落算晝長」的條件後，「針對「由日出日落算晝長」再先判定半球與日期位置」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "跨經度同步記錄能預測並核對晨昏線通過的先後，是原自轉解釋的獨立檢查。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "只量正午氣溫沒有時間序列，也沒有受光與背光位置，無法區分自轉模型與其他說法。",
       "status": "pass"
     }
   ],

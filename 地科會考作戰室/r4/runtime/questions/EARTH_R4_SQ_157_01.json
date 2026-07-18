@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "EARTH_R4_ST_157",
-  "stem": "閱讀「由日出日落算晝長」的資料後，為了釐清地球公轉週期與曆年調整概念，哪一項讀值正確？",
+  "stem": "若連續只用365日的曆年，兩年後累積落後多少日？",
   "options": [
-    "在「由日出日落算晝長」的地球公轉週期與曆年調整概念資料中，當日期位置為丙時，正午影長相對值為0.6。",
-    "在「由日出日落算晝長」的地球公轉週期與曆年調整概念資料中，當日期位置為丙時，正午影長相對值為1。",
-    "在「由日出日落算晝長」的地球公轉週期與曆年調整概念資料中，當日期位置為丙時，正午影長相對值為1.4。",
-    "在「由日出日落算晝長」的地球公轉週期與曆年調整概念資料中，附表找不到日期位置為丙的紀錄。"
+    "0.24日",
+    "0.48日",
+    "0.72日",
+    "0.96日"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「0.6」來自其他資料列；本列記錄的是「1」。"
+      "reason": "0.24日是一年後的差值，沒有累加第二年的0.24日。 差額應以日為單位逐年累積，並用曆年總日數驗算。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "逐欄讀值可直接得到「正午影長相對值為1」。"
+      "reason": "表中兩年列為730.48日減730日，差值正好是0.48日。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「1.4」來自其他資料列；本列記錄的是「1」。"
+      "reason": "0.72日對應三年累積，不是題目指定的兩年時間。 差額應以日為單位逐年累積，並用曆年總日數驗算。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "表中第3列已列出「丙」，不能說沒有記錄。"
+      "reason": "0.96日是四年的近似累積值，超出題目指定的期間。 差額應以日為單位逐年累積，並用曆年總日數驗算。"
     }
   ],
   "difficulty": "standard",
@@ -49,7 +49,7 @@
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "夏季是因地球明顯更靠近太陽"
+    "0.24日"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "逐項核對「由日出日落算晝長」的條件後，「在「由日出日落算晝長」的地球公轉週期與曆年調整概念資料中，當日期位置為丙時，正午影長相對值為1。」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "由兩年列直接相減，730.48日減730日得到0.48日，與每年0.24日累加一致。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "選0.24日只計算一年差額，沒有依題意把第二年的差額納入。",
       "status": "pass"
     }
   ],

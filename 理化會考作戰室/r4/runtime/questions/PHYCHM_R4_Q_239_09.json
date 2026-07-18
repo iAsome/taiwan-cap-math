@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對船的平均密度結果，哪項說法正確？",
+  "stem": "排開水體積和排開水質量在甲為200 cm³、200 g，到乙為350 cm³、350 g。依使用浮力等於排開液體重量核對排開水體積後，應算出或辨認什麼？",
   "options": [
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關",
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量",
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "阿基米德原理：物體所受向上浮力的大小"
+    "每列浮力都等於排開液體的重量",
+    "解題時將浮力大小直接設成物體自身重量，未計算排開流體的重量",
+    "拿水的密度計算鹽水中的浮力",
+    "解題時將排開水 350 g 換算成 350 N，造成浮力大了一百倍"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關」不成立；沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力。"
+      "isCorrect": true,
+      "reason": "每列浮力都等於排開液體的重量。甲列的排開水體積為200 cm³、排開水質量為200 g；乙列的排開水體積為350 cm³、排開水質量為350 g。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「浮力為 12＋7＝19 N，因為水中讀值要加回原重量」不成立；物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N。"
+      "reason": "解題時錯將浮力大小直接設成物體自身重量，未計算排開流體的重量，結果會錯判測得浮力。阿基米德原理：物體所受向上浮力的大小，等於它所排開流體的重量；照原做法會把測得浮力算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限…」不成立；完全沒入時，浮力隨液體密度與排開體積增大；同液體中排開體積相同則浮力相同。"
+      "reason": "拿水的密度計算鹽水中的浮力，忽略兩種液體密度不同。必須使用排開液體的密度與體積，不能直接拿物體質量取代排開液體重量；測得浮力差異若未通過使用浮力等於排開液體重量對排開水體積的控制，就不能只歸給排開水質量。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「阿基米德原理：物體所受向上浮力的大小，等於它所排開流體的重量」。"
+      "isCorrect": false,
+      "reason": "解題時錯將排開水 350 g 換算成 350 N，造成浮力大了一百倍。每列浮力都等於排開液體的重量；排開水質量的數值若未依排開水體積核對，會使測得浮力無法通過使用浮力等於排開液體重量檢查。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
     "證據判讀",
-    "分析"
+    "推論"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關",
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量",
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大"
+    "解題時將浮力大小直接設成物體自身重量，未計算排開流體的重量",
+    "拿水的密度計算鹽水中的浮力",
+    "解題時將排開水 350 g 換算成 350 N，造成浮力大了一百倍"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

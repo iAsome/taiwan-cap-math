@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理車輛動能資料，哪項敘述合理？",
+  "stem": "一看到甲、乙、丙的力和距離不同，就認為三者作功不可能相同，結果會錯判功。按計算定力沿同方向所作的功檢查力與沿力方向位移時，哪一步先做？",
   "options": [
-    "能量轉換時可無故多出或少掉能量，因此不必界定系統就能使用守恆",
-    "恆力 20 N 沿位移方向推動 3 m",
-    "功率是功乘時間，所以 1200 J 在 30 s 內的功率為 36000 W",
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J"
+    "解題時將功的單位寫成瓦特，混淆能量單位焦耳與功率單位瓦特",
+    "本表限定同方向恆力",
+    "解題時將功的公式寫成 W＝F/d，20 N 推 3 m 只算出約 6.7 J",
+    "力與位移不平行時仍用完整力乘路程，並漏掉取沿位移方向的分量"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「能量轉換時可無故多出或少掉能量，因此不必界定系統就能使用守恆」不成立；選定系統若不與外界交換能量，總能量守恆；若動能增加 30 J，其他能量形式總量應減少 30 J。"
+      "reason": "解題時錯將功的單位寫成瓦特，混淆能量單位焦耳與功率單位瓦特。恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J；力未列入計算定力沿同方向所作的功時，功的沿力方向位移大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J」。"
+      "reason": "本表限定同方向恆力。丁列的力為20 N，沿力方向位移為0.5 m；甲列的力為20 N，沿力方向位移為3.0 m。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「功率是功乘時間，所以 1200 J 在 30 s 內的功率…」不成立；完成 1200 J 的功耗時 30 s，平均功率 P＝W/t＝40 W；功率比較做功快慢。"
+      "reason": "解題時錯將功的公式寫成 W＝F/d，20 N 推 3 m 只算出約 6.7 J。恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J；照原做法會把功算錯或判反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「功是力除以位移，所以 20 N 推 3 m 作功為 6.6…」不成立；恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J。"
+      "reason": "力與位移不平行時仍用完整力乘路程，卻未取沿位移方向的分量，結果會錯判功。若力不與位移同方向，不能直接用整個力乘路程；功差異若未通過計算定力沿同方向所作的功對力的控制，就不能只歸給沿力方向位移。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "能量轉換時可無故多出或少掉能量，因此不必界定系統就能使用守恆",
-    "功率是功乘時間，所以 1200 J 在 30 s 內的功率為 36000 W",
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J"
+    "解題時將功的單位寫成瓦特，混淆能量單位焦耳與功率單位瓦特",
+    "解題時將功的公式寫成 W＝F/d，20 N 推 3 m 只算出約 6.7 J",
+    "力與位移不平行時仍用完整力乘路程，並漏掉取沿位移方向的分量"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

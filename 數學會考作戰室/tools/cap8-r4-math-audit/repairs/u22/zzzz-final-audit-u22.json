@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u22",
+  "batch": "023-u22-complete",
+  "skills": ["s002", "s007", "s012", "s014", "s015", "s018"],
+  "mc": [],
+  "constructedResponse": [
+    {
+      "questionId": "u22-s015-cr001",
+      "expectedContentSha256": "82d99cf8662e72aa8a89a28baaeee5993db988d67319a1058a7fb3e586b36db4",
+      "replaceText": {
+        "白黑與黑白": "紅藍與藍紅"
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u22-s002-lecture-r1",
+      "expectedContentSha256": "f0c9b23a6d365125452ed463b9c1f004af8d4ea6476c3fbde4124e8e023e2b97",
+      "replaceText": {
+        "水平盒狀圖，數軸4到26，最小值4、第一四分位數9、中位數13、第三四分位數18、最大值26。": "水平盒狀圖，線性數軸上最小值4、第一四分位數9、中位數13、第三四分位數18、最大值26。"
+      }
+    },
+    {
+      "lectureId": "u22-s012-lecture-r1",
+      "expectedContentSha256": "4236b75bff2add921244f7029fd9f5b6c3e83bde840f01263af5182564da7d46",
+      "replaceText": {
+        "兩階段樹狀圖，第一層A機率三分之一、B機率三分之二；A後成功二分之一，B後成功四分之一。": "兩階段樹狀圖：A機率三分之一，A後成功與失敗各二分之一；B機率三分之二，B後成功四分之一、失敗四分之三。A成功與B成功路徑各為六分之一，合計三分之一。"
+      }
+    },
+    {
+      "lectureId": "u22-s018-lecture-r1",
+      "expectedContentSha256": "c026fd0944b34fe89ed4d11c523cdca0b96e8ddb698e8edd27f45a315c9f6f77",
+      "replaceText": {
+        "上方為甲乙兩校同尺度盒狀圖，下方為甲校80人與乙校120人的抽樣比例條。": "上方同尺度盒狀圖中，甲校五數為10、18、25、35、70分鐘，乙校為12、20、27、32、48分鐘；下方200人抽樣比例條分成甲校80人與乙校120人。"
+      }
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "fig-u22-boxplot-basic",
+      "set": {
+        "altText": "水平盒狀圖，線性數軸上最小值4、第一四分位數9、中位數13、第三四分位數18、最大值26。",
+        "svgDescription": "水平盒狀圖，線性數軸上最小值4、第一四分位數9、中位數13、第三四分位數18、最大值26。",
+        "geometryTokenAssertions": {
+          "minX": 152.9,
+          "q1X": 256.4,
+          "medianX": 339.3,
+          "q3X": 442.9,
+          "maxX": 608.6,
+          "linearScale": true
+        }
+      }
+    },
+    {
+      "figureId": "fig-u22-ogive",
+      "set": {
+        "layoutConstraints": [
+          "橫軸成績50到90分",
+          "縱軸累積人數0到40人",
+          "五個資料點與折線",
+          "網格與座標標籤",
+          "縱軸明示累積人數"
+        ]
+      }
+    },
+    {
+      "figureId": "fig-u22-tree-conditional",
+      "set": {
+        "canvas": {"width": 820, "height": 430},
+        "viewBox": "0 0 820 430",
+        "altText": "兩階段樹狀圖：A機率三分之一，A後成功與失敗各二分之一；B機率三分之二，B後成功四分之一、失敗四分之三。A成功與B成功路徑各為六分之一，合計三分之一。",
+        "svgDescription": "兩階段樹狀圖：A機率三分之一，A後成功與失敗各二分之一；B機率三分之二，B後成功四分之一、失敗四分之三。A成功與B成功路徑各為六分之一，合計三分之一。",
+        "layoutConstraints": [
+          "起點",
+          "第一層A與B分支及機率",
+          "第二層成功與失敗分支",
+          "A成功與B成功兩條路徑",
+          "兩條成功路徑各1/6且總和1/3"
+        ]
+      }
+    },
+    {
+      "figureId": "fig-u22-tree-without-replacement",
+      "set": {
+        "canvas": {"width": 820, "height": 450},
+        "viewBox": "0 0 820 450"
+      }
+    },
+    {
+      "figureId": "fig-u22-stat-prob-combined",
+      "set": {
+        "altText": "上方同尺度盒狀圖中，甲校五數為10、18、25、35、70分鐘，乙校為12、20、27、32、48分鐘；下方200人抽樣比例條分成甲校80人與乙校120人。",
+        "svgDescription": "上方同尺度盒狀圖中，甲校五數為10、18、25、35、70分鐘，乙校為12、20、27、32、48分鐘；下方200人抽樣比例條分成甲校80人與乙校120人。"
+      }
+    }
+  ],
+  "textFiles": [
+    {
+      "path": "figures/u22/fig-u22-boxplot-basic.svg",
+      "replacements": [
+        {
+          "from": "<desc id=\"desc\">水平盒狀圖，數軸4到26，最小值4、第一四分位數9、中位數13、第三四分位數18、最大值26。</desc>",
+          "to": "<desc id=\"desc\">水平盒狀圖，線性數軸上最小值4、第一四分位數9、中位數13、第三四分位數18、最大值26。</desc>",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "figures/u22/fig-u22-tree-conditional.svg",
+      "replacements": [
+        {
+          "from": "<desc id=\"desc\">兩階段樹狀圖，第一層A機率三分之一、B機率三分之二；A後成功二分之一，B後成功四分之一。</desc>",
+          "to": "<desc id=\"desc\">兩階段樹狀圖：A機率三分之一，A後成功與失敗各二分之一；B機率三分之二，B後成功四分之一、失敗四分之三。A成功與B成功路徑各為六分之一，合計三分之一。</desc>",
+          "count": 1
+        },
+        {
+          "from": "<text x=\"610\" y=\"70\" font-size=\"15\">此支為成功</text><text x=\"610\" y=\"260\" font-size=\"15\">此支為成功</text><text x=\"610\" y=\"220\" font-size=\"15\">將兩條成功路徑相加</text>",
+          "to": "<text x=\"610\" y=\"70\" font-size=\"15\">A成功=1/6</text><text x=\"610\" y=\"260\" font-size=\"15\">B成功=1/6</text><text x=\"610\" y=\"220\" font-size=\"15\">成功總和=1/3</text>",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "figures/u22/fig-u22-spinner-weighted.svg",
+      "replacements": [
+        {
+          "from": "<path d=\"M260 30 l-12 26 h24 z\" fill=\"black\"/>",
+          "to": "<path d=\"M260 68 l-12 -26 h24 z\" fill=\"black\"/>",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "figures/u22/fig-u22-stat-prob-combined.svg",
+      "replacements": [
+        {
+          "from": "<desc id=\"desc\">上方為甲乙兩校同尺度盒狀圖，下方為甲校80人與乙校120人的抽樣比例條。</desc>",
+          "to": "<desc id=\"desc\">上方同尺度盒狀圖中，甲校五數為10、18、25、35、70分鐘，乙校為12、20、27、32、48分鐘；下方200人抽樣比例條分成甲校80人與乙校120人。</desc>",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

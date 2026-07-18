@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告討論大氣壓力來自空氣重量，哪項敘述正確？",
+  "stem": "海邊列含海拔20 m及氣壓101.1 kPa；丘陵列含800 m及92.0 kPa。依說明大氣壓力來自空氣重量完成海拔與氣壓比較，應如何解釋？",
   "options": [
-    "空氣沒有質量與重量，大氣壓只是溫度計產生的幻覺",
-    "固體壓力是力乘面積，所以面積越大壓力必然越大",
-    "液體壓力只由容器底面積決定，和深度與液體種類無關",
-    "大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變"
+    "海拔升高時上方空氣柱較少，量得氣壓下降",
+    "主張空氣並漏掉重量，因此氣壓計讀值只是儀器本身造成",
+    "解題時將任何兩地的氣壓差都歸因於海拔",
+    "看到高山氣壓較低，卻推論高山上方空氣柱重量比海邊更大"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「空氣沒有質量與重量，大氣壓只是溫度計產生的幻覺」不成立；大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變。"
+      "isCorrect": true,
+      "reason": "海拔升高時上方空氣柱較少，量得氣壓下降。海邊列的海拔為20 m、氣壓為101.1 kPa；丘陵列的海拔為800 m、氣壓為92.0 kPa。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「固體壓力是力乘面積，所以面積越大壓力必然越大」不成立；固體壓力 p＝F/A；100 N 均勻作用在 0.020 m² 面積上，壓力為 5000 Pa。"
+      "reason": "誤以為空氣沒有重量，因此氣壓計讀值只是儀器本身造成。大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變；照原做法會把沸水溫度算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「液體壓力只由容器底面積決定，和深度與液體種類無關」不成立；同一液體中深度越大壓力越大；同深度時液體密度較大者壓力較大。"
+      "reason": "解題時錯將任何兩地的氣壓差都歸因於海拔，完全不查同時的天氣與溫度，結果會錯判沸水溫度。氣壓也受天氣與溫度影響，單次讀值不能只用海拔解釋全部差異；沸水溫度差異若未通過說明大氣壓力來自空氣重量對海拔的控制，就不能只歸給氣壓。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變」。"
+      "isCorrect": false,
+      "reason": "一看到高山氣壓較低，卻推論高山上方空氣柱重量比海邊更大，結果會錯判沸水溫度。海拔升高時上方空氣柱較少，量得氣壓下降；氣壓的數值若未依海拔核對，會使沸水溫度無法通過說明大氣壓力來自空氣重量檢查。"
     }
   ],
   "difficulty": "foundation",
@@ -47,16 +47,16 @@
     "辨認",
     "概念理解"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "空氣沒有質量與重量，大氣壓只是溫度計產生的幻覺",
-    "固體壓力是力乘面積，所以面積越大壓力必然越大",
-    "液體壓力只由容器底面積決定，和深度與液體種類無關"
+    "主張空氣並漏掉重量，因此氣壓計讀值只是儀器本身造成",
+    "解題時將任何兩地的氣壓差都歸因於海拔",
+    "看到高山氣壓較低，卻推論高山上方空氣柱重量比海邊更大"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

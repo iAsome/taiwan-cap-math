@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對鍋具傳導結果，哪項說法正確？",
+  "stem": "熱流入系統通常記為？",
   "options": [
-    "解釋熱現象要先標出高低溫與能量淨流向，再判斷介質、流體移動或電磁波對應的機制",
-    "只要物體摸起來較冷，就代表「冷」當作物質流入手中，無需描述能量流向",
-    "傳導必須由熱物質粒子一路移動到冷端，否則能量不能傳遞",
-    "對流是固體內粒子在原位碰撞，不包含流體的整體移動"
+    "質量流",
+    "吸熱",
+    "無能量",
+    "放熱"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「解釋熱現象要先標出高低溫與能量淨流向，再判斷介質、流體移動或電磁波對應的機制」。"
+      "isCorrect": false,
+      "reason": "不必有質量。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「只要物體摸起來較冷，就代表「冷」當作物質流入手中，無需描述…」不成立；解釋熱現象要先標出高低溫與能量淨流向，再判斷介質、流體移動或電磁波對應的機制。"
+      "isCorrect": true,
+      "reason": "系統取得能量。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「傳導必須由熱物質粒子一路移動到冷端，否則能量不能傳遞」不成立；熱傳導可由相鄰粒子碰撞與振動傳遞能量，金屬中自由電子也有助於快速傳熱。"
+      "reason": "有交換。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「對流是固體內粒子在原位碰撞，不包含流體的整體移動」不成立；流體受熱後密度常減小而上升，較冷流體下沉形成對流循環。"
+      "reason": "方向反。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "foundation",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "辨識"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要物體摸起來較冷，就代表「冷」當作物質流入手中，無需描述能量流向",
-    "傳導必須由熱物質粒子一路移動到冷端，否則能量不能傳遞",
-    "對流是固體內粒子在原位碰撞，不包含流體的整體移動"
+    "質量流",
+    "無能量",
+    "放熱"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱傳播與生活應用; 臺灣國中教育會考自然科導熱、對流、輻射與保溫題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BB-4-1",
       "AUTH-NATURAL-LC-BB-4-3",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告根據並聯電路下結論，哪項符合資料？",
+  "stem": "誤以為導線直接跨接電池兩端只是讓燈更亮，不會有短路風險。用丁列的開關閉合檢驗，應改採哪個判準？",
   "options": [
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換",
-    "開關斷開時電路不完整"
+    "看到開關閉合便直接判定燈亮，並漏掉沿導線檢查是否繞過燈泡",
+    "把配置丙只接電池一端仍被判成完整回路",
+    "主張導線直接跨接電池兩端只是讓燈更亮，不會有短路風險",
+    "電源、導線、開關與用電器必須形成閉合通路才有持續電流"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「短路和斷路都只會使電流完全為零，不可能出現過大電流」不成立；斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險。"
+      "reason": "一看到開關閉合便直接判定燈亮，卻未沿導線檢查是否繞過燈泡，結果會錯判燈泡。閉合開關不代表一定正確，仍要沿導線追蹤是否形成經過用電器的完整通路；燈泡差異若未通過辨識電源導線開關與用電器形成通路對開關的控制，就不能只歸給回路。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路」不成立；電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整。"
+      "reason": "解題時誤把配置丙只接電池一端仍被判成完整回路。只有甲形成電流必須經過燈泡的完整回路；回路的數值若未依開關核對，會使燈泡無法通過辨識電源導線開關與用電器形成通路檢查。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「電流、電壓與電阻是同一物理量的三個名稱，單位也可互換」不成立；電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。"
+      "reason": "誤以為導線直接跨接電池兩端只是讓燈更亮，不會有短路風險。電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關未列入辨識電源導線開關與用電器形成通路時，燈泡的回路大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整」。"
+      "reason": "電源、導線、開關與用電器必須形成閉合通路才有持續電流。乙列的開關為斷開，回路為有一處缺口；丙列的開關為閉合，回路為只接電池一端。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換"
+    "看到開關閉合便直接判定燈亮，並漏掉沿導線檢查是否繞過燈泡",
+    "把配置丙只接電池一端仍被判成完整回路",
+    "主張導線直接跨接電池兩端只是讓燈更亮，不會有短路風險"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

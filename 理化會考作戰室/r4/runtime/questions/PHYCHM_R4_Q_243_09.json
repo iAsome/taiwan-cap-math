@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對船的平均密度結果，哪項說法正確？",
+  "stem": "從懸浮靜止改成漂浮靜止時，重力由8 N 向下變為10 N 向下，浮力由8 N 向上變為10 N 向上。分析漂浮懸浮下沉時的受力對浮力隨重力變化的解釋為何？",
   "options": [
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關",
-    "浮力大小永遠等於物體自身重量，不論它沉沒、漂浮或被外力拉住",
-    "重力大於浮力與其他向上力的合力"
+    "看到物體下沉就認為浮力為零，並漏掉把浮力列入受力圖",
+    "漂浮與懸浮靜止時合力為零",
+    "把判斷加速方向時只比較重力和浮力，漏掉題目給的繩張力",
+    "解題時將漂浮靜止的 10 N 重力與 10 N 浮力相加，判成合力為 20 N 向上"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「漂浮物體既然在水面上，就完全不受浮力，只受向下重力」不成立；漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力。"
+      "reason": "一看到物體下沉就認為浮力為零，卻未把浮力列入受力圖。漂浮或懸浮且靜止時合力為零，浮力等於重力；照原做法會把其他垂直力算錯或判反。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關」不成立；沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力。"
+      "isCorrect": true,
+      "reason": "漂浮與懸浮靜止時合力為零。懸浮靜止列的重力為8 N 向下、浮力為8 N 向上；漂浮靜止列的重力為10 N 向下、浮力為10 N 向上。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「浮力大小永遠等於物體自身重量，不論它沉沒、漂浮或被外力拉住」不成立；阿基米德原理：物體所受向上浮力的大小，等於它所排開流體的重量。"
+      "reason": "解題時誤把判斷加速方向時只比較重力和浮力，漏掉題目給的繩張力。一定要先辨認運動狀態與所有垂直力，不能把下沉直接等同浮力為零；其他垂直力差異若未通過分析漂浮懸浮下沉時的受力對重力的控制，就不能只歸給浮力。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力」。"
+      "isCorrect": false,
+      "reason": "解題時錯將漂浮靜止的 10 N 重力與 10 N 浮力相加，誤認合力為 20 N 向上，結果會錯判其他垂直力。漂浮與懸浮靜止時合力為零；浮力的數值若未依重力核對，會使其他垂直力無法通過分析漂浮懸浮下沉時的受力檢查。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
     "證據判讀",
-    "分析"
+    "推論"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關",
-    "浮力大小永遠等於物體自身重量，不論它沉沒、漂浮或被外力拉住"
+    "看到物體下沉就認為浮力為零，並漏掉把浮力列入受力圖",
+    "把判斷加速方向時只比較重力和浮力，漏掉題目給的繩張力",
+    "解題時將漂浮靜止的 10 N 重力與 10 N 浮力相加，判成合力為 20 N 向上"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

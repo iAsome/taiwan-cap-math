@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組根據金屬塊鑑別下結論，哪項符合資料？",
+  "stem": "『最接近參考值』與『已證明身分』有何差別？",
   "options": [
-    "樣品密度在誤差內符合某材料只能作為身分線索，還要考慮溫度、純度與其他性質",
-    "物體切半後質量減半，所以密度也一定減半",
-    "只要有量測誤差，質量和體積必會相互抵銷，密度不受影響",
-    "只要密度表列數值相同，就已唯一證明樣品是該物質"
+    "前者是候選判斷，後者還需排除誤差與其他候選",
+    "最接近一定比證明更強",
+    "兩句完全相同",
+    "密度表可直接決定純度"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「樣品密度在誤差內符合某材料只能作為身分線索，還要考慮溫度、純度與其他性質」。"
+      "reason": "正確區分證據強度。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「物體切半後質量減半，所以密度也一定減半」不成立；同一均勻銅塊切成兩半後，每塊的質量和體積同比減少，密度仍相同。"
+      "reason": "最接近只是初步。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只要有量測誤差，質量和體積必會相互抵銷，密度不受影響」不成立；若質量讀值偏大而體積正確，由 ρ＝m/V 可知密度結果偏大；要依誤差方向分析。"
+      "reason": "證據門檻不同。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要密度表列數值相同，就已唯一證明樣品是該物質」不成立；樣品密度在誤差內符合某材料只能作為身分線索，還要考慮溫度、純度與其他性質。"
+      "reason": "純度需另證。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "主張評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體切半後質量減半，所以密度也一定減半",
-    "只要有量測誤差，質量和體積必會相互抵銷，密度不受影響",
-    "只要密度表列數值相同，就已唯一證明樣品是該物質"
+    "最接近一定比證明更強",
+    "兩句完全相同",
+    "密度表可直接決定純度"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-3",
       "AUTH-NATURAL-LC-CA-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "水蒸氣凝結出現四種說法，哪項有理化概念支持？",
+  "stem": "『水的沸點一定是 100 °C』這句話缺少哪個重要條件？",
   "options": [
-    "狀態改變必然產生新分子，因此冰和水屬於不同化學物質",
-    "教科書的粒子圖是顯微鏡直接拍到的照片，圖上比例可當成實際大小",
-    "沸騰在特定壓力的沸點於液體內部形成氣泡",
-    "只有溫度達沸點才會蒸發，而沸騰只發生在液面"
+    "外界壓力與水的純度",
+    "容器顏色",
+    "量筒刻度顏色",
+    "觀察者年齡"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「狀態改變必然產生新分子，因此冰和水屬於不同化學物質」不成立；冰熔化成水時 H₂O 粒子種類不變，改變的是粒子排列、間距與運動狀態。"
+      "isCorrect": true,
+      "reason": "壓力與溶質會影響沸點。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「教科書的粒子圖是顯微鏡直接拍到的照片，圖上比例可當成實際大小」不成立；粒子圖是解釋現象的模型；可表現排列與運動差異，但圖上大小和間距通常不是實際比例。"
+      "reason": "顏色不決定沸點。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「蒸發只在液面進行且各溫度均可發生；沸騰在特定壓力的沸點於液體內部形成氣泡」。"
+      "isCorrect": false,
+      "reason": "刻度顏色無關。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只有溫度達沸點才會蒸發，而沸騰只發生在液面」不成立；蒸發只在液面進行且各溫度均可發生；沸騰在特定壓力的沸點於液體內部形成氣泡。"
+      "reason": "年齡不是物理條件。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "條件辨析"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "狀態改變必然產生新分子，因此冰和水屬於不同化學物質",
-    "教科書的粒子圖是顯微鏡直接拍到的照片，圖上比例可當成實際大小",
-    "只有溫度達沸點才會蒸發，而沸騰只發生在液面"
+    "容器顏色",
+    "量筒刻度顏色",
+    "觀察者年齡"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-1",
       "AUTH-NATURAL-LC-AB-4-2",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

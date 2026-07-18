@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "報告根據顯微鏡與望遠鏡下結論，哪項符合資料？",
+  "stem": "某人換戴不同度數的近視眼鏡後看清路牌。這表示鏡片主要改變了什麼？",
   "options": [
-    "物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察",
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色",
-    "水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光",
-    "遠視或老花相關情形可用凸透鏡輔助會聚"
+    "眼球的質量",
+    "視網膜的顏色",
+    "物體實際所在的位置",
+    "光線進入眼球前的方向"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察」不成立；紅色物體在只含藍光的照明下可看來很暗，因為沒有足夠可反射的紅光。"
+      "reason": "眼鏡不會因度數不同而改變眼球質量。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色」不成立；紅、綠、藍色光是加法混色的基本光；顏料混合主要透過選擇性吸收，與色光加法原理不同。"
+      "reason": "視網膜顏色不是屈光度數矯正的變因。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光」不成立；眼球的角膜與水晶體等會聚光線，使外物在視網膜上形成倒立實像，再由神經系統處理。"
+      "reason": "鏡片改變光路，不會移動遠方路牌。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「近視的遠物焦點在視網膜前，用凹透鏡矯正；遠視或老花相關情形可用凸透鏡輔助會聚」。"
+      "reason": "鏡片折射光線，調整眼球最後的會聚位置，使像落在視網膜。"
     }
   ],
   "difficulty": "advanced",
@@ -47,16 +47,16 @@
     "主張評估",
     "證據評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察",
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色",
-    "水晶體像平面鏡一樣在視網膜後形成虛像，視網膜不實際接收光"
+    "眼球的質量",
+    "視網膜的顏色",
+    "物體實際所在的位置"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-10",
       "AUTH-NATURAL-LC-KA-4-11",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

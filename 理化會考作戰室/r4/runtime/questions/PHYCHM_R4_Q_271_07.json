@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "電表接法出現四種說法，哪項有理化概念支持？",
+  "stem": "僅因電路線條畫得平行就判成並聯，卻未確認接在同一對節點。依分析並聯電路的電流與電壓修正時，電流與電壓應採哪個原理連結？",
   "options": [
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "聯電路各支路兩端電壓相同",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換",
-    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過"
+    "解題時將 0.60 A 與 0.30 A 相減，誤算主線電流為 0.30 A",
+    "主張電阻較大的並聯支路電流一定較大",
+    "並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和",
+    "主張並聯支路會分掉電壓，所以每一支路電壓小於電源電壓"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路」不成立；電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整。"
+      "reason": "解題時錯將 0.60 A 與 0.30 A 相減，誤算主線電流為 0.30 A，結果會錯判電阻。並聯支路電壓皆 12 V，主線電流 0.90 A 等於 0.60＋0.30 A；電壓的數值若未依電流核對，會使電阻無法通過分析並聯電路的電流與電壓檢查。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和」。"
+      "isCorrect": false,
+      "reason": "誤以為電阻較大的並聯支路電流一定較大。並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和；電流未列入分析並聯電路的電流與電壓時，電阻的電壓大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「電流、電壓與電阻是同一物理量的三個名稱，單位也可互換」不成立；電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。"
+      "isCorrect": true,
+      "reason": "並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。主線列的電流為0.90 A，電壓為12 V；支路 R2列的電流為0.30 A，電壓為12 V。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過」不成立；安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性。"
+      "reason": "誤以為並聯支路會分掉電壓，所以每一支路電壓小於電源電壓。並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和；照原做法會把電阻算錯或判反。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換",
-    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過"
+    "解題時將 0.60 A 與 0.30 A 相減，誤算主線電流為 0.30 A",
+    "主張電阻較大的並聯支路電流一定較大",
+    "主張並聯支路會分掉電壓，所以每一支路電壓小於電源電壓"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

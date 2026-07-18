@@ -15,50 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_246",
-  "stem": "根據機器功率表中紀錄，哪項結論最合理？",
+  "stem": "甲列含力20 N及沿力方向位移3.0 m；乙列含30 N及2.0 m。處理力後，沿力方向位移要依計算定力沿同方向所作的功判斷大小、方向或類別？",
   "options": [
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J",
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "動能只由物體所在高度決定，質量與速度都不影響",
-    "恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J"
+    "將功寫成力除以位移",
+    "力與位移不平行時仍用完整力乘路程，並漏掉取沿位移方向的分量",
+    "同方向恆力作功 W＝Fd",
+    "看到甲、乙、丙的力和距離不同，就認為三者作功不可能相同"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「功是力除以位移，所以 20 N 推 3 m 作功為 6.6…」不成立；恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J。"
+      "reason": "同方向恆力作功 W＝Fd。甲列的力為20 N、沿力方向位移為3.0 m；乙列的力為30 N、沿力方向位移為2.0 m。解題時錯將功的公式寫成 W＝F/d，20 N 推 3 m 只算出約 6.7 J。恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J；照原做法會把功算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關」不成立；力對物體作功要有物體沿力的分量方向發生位移；用力提住靜止物體時對物體作功為零。"
+      "reason": "同方向恆力作功 W＝Fd。甲列的力為20 N、沿力方向位移為3.0 m；乙列的力為30 N、沿力方向位移為2.0 m。力與位移不平行時仍用完整力乘路程，卻未取沿位移方向的分量，結果會錯判功。若力不與位移同方向，不能直接用整個力乘路程；功差異若未通過計算定力沿同方向所作的功對力的控制，就不能只歸給沿力方向位移。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「動能只由物體所在高度決定，質量與速度都不影響」不成立；動能與質量成正比、與速度平方成正比；同質量者速度加倍，動能變為四倍。"
+      "isCorrect": true,
+      "reason": "同方向恆力作功 W＝Fd。甲列的力為20 N、沿力方向位移為3.0 m；乙列的力為30 N、沿力方向位移為2.0 m。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J」。"
+      "isCorrect": false,
+      "reason": "同方向恆力作功 W＝Fd。甲列的力為20 N、沿力方向位移為3.0 m；乙列的力為30 N、沿力方向位移為2.0 m。一看到甲、乙、丙的力和距離不同，就認為三者作功不可能相同，結果會錯判功。同方向恆力作功 W＝Fd；沿力方向位移的數值若未依力核對，會使功無法通過計算定力沿同方向所作的功檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀"
+    "資料判讀",
+    "計算"
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J",
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "動能只由物體所在高度決定，質量與速度都不影響"
+    "將功寫成力除以位移",
+    "力與位移不平行時仍用完整力乘路程，並漏掉取沿位移方向的分量",
+    "看到甲、乙、丙的力和距離不同，就認為三者作功不可能相同"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -70,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

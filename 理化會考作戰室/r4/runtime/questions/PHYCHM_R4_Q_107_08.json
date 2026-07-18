@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理酸與金屬資料，哪項敘述合理？",
+  "stem": "要比較兩杯同種酸溶液的酸性表現，哪一資料最直接？",
   "options": [
-    "pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗",
-    "任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性",
-    "pH 2 的溶液比 pH 5 酸性強",
-    "家用物質就一定無害，酸性或鹼性清潔劑可任意混合以加強效果"
+    "杯子高度",
+    "標籤顏色",
+    "液體總價",
+    "在相同條件量得的pH"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗」不成立；pH 計使用前要依規範校正，電極清洗後輕吸水分，不把測過的溶液倒回原瓶。"
+      "reason": "容器尺寸無關。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性」不成立；酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體。"
+      "reason": "標籤非證據。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「在同種、相近條件下，pH 2 的溶液比 pH 5 酸性強；pH 12 比 pH 9 鹼性強」。"
+      "isCorrect": false,
+      "reason": "價格不決定酸鹼。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「家用物質就一定無害，酸性或鹼性清潔劑可任意混合以加強效果」不成立；醋可用於某些水垢處理，氫氧化鈉可用於特定清潔；但酸鹼均可腐蝕，要依標示防護。"
+      "isCorrect": true,
+      "reason": "pH直接描述酸鹼表現。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "指標選擇"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗",
-    "任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性",
-    "家用物質就一定無害，酸性或鹼性清潔劑可任意混合以加強效果"
+    "杯子高度",
+    "標籤顏色",
+    "液體總價"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

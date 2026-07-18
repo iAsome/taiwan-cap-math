@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組電費估算資料，哪項判讀仍合理？",
+  "stem": "甲列含額定電壓110 V及額定功率550 W；丙列含220 V及1200 W。要把觀察連到供電，應採用什麼模型？",
   "options": [
-    "保險絲應用最粗導線代替以免熔斷，接地插腳則可拆除而不影響安全",
+    "解題時將 110 V 電器乙接到 220 V 仍列為正常使用",
+    "主張額定功率是電器所能儲存的電能總量",
     "額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W，不可任意接更高電壓",
-    "只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關",
-    "額定電壓只是建議值，110 V 電器直接接 220 V 也一定保持 550 W 且無風險"
+    "解題時將額定 110 V、550 W 解讀成電器任何供電下都固定消耗 550 W"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「保險絲應用最粗導線代替以免熔斷，接地插腳則可拆除而不影響安全」不成立；保險絲或斷路器在過大電流時斷開回路；接地將漏電提供低阻安全路徑，三孔插頭不可任意拆除。"
+      "reason": "解題時錯將 110 V 電器乙接到 220 V 仍列為正常使用。甲丙丁供電符合額定電壓；額定功率的數值若未依額定電壓核對，會使供電無法通過讀取電器額定電壓與功率標示檢查。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W，不可任意接更高電壓」。"
+      "isCorrect": false,
+      "reason": "誤以為額定功率是電器所能儲存的電能總量，結果會錯判供電。額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W，不可任意接更高電壓；額定電壓未列入讀取電器額定電壓與功率標示時，供電的額定功率大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關」不成立；安全節能做法包括不超過延長線額定、保持線材完好乾燥、不用時關閉高功率電器並比較實際用電量。"
+      "isCorrect": true,
+      "reason": "額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W，不可任意接更高電壓。丙列的額定電壓為220 V，額定功率為1200 W；丁列的額定電壓為USB 5 V，額定功率為10 W。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「額定電壓只是建議值，110 V 電器直接接 220 V 也…」不成立；額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W，不可任意接…。"
+      "reason": "解題時錯將額定 110 V、550 W 解讀成電器任何供電下都固定消耗 550 W，結果會錯判供電。額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W，不可任意接更高電壓；照原做法會把供電算錯或判反。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "保險絲應用最粗導線代替以免熔斷，接地插腳則可拆除而不影響安全",
-    "只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關",
-    "額定電壓只是建議值，110 V 電器直接接 220 V 也一定保持 550 W 且無風險"
+    "解題時將 110 V 電器乙接到 220 V 仍列為正常使用",
+    "主張額定功率是電器所能儲存的電能總量",
+    "解題時將額定 110 V、550 W 解讀成電器任何供電下都固定消耗 550 W"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

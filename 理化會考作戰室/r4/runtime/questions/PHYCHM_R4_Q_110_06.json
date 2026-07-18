@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解金屬大理石反應辨識酸性溶液，哪項修正合理？",
+  "stem": "未知液與大理石反應後固體變小，且有CO₂，何者最合理？",
   "options": [
-    "pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗",
-    "家用物質就一定無害，酸性或鹼性清潔劑可任意混合以加強效果",
-    "高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性",
-    "酸可能與某些金屬產生氫氣"
+    "CO₂來自空杯",
+    "質量守恆失效",
+    "碳酸鈣被酸消耗",
+    "大理石只熔化"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗」不成立；pH 計使用前要依規範校正，電極清洗後輕吸水分，不把測過的溶液倒回原瓶。"
+      "reason": "對照可排除。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「家用物質就一定無害，酸性或鹼性清潔劑可任意混合以加強效果」不成立；醋可用於某些水垢處理，氫氧化鈉可用於特定清潔；但酸鹼均可腐蝕，要依標示防護。"
+      "reason": "氣體逸出但完整系統守恆。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性」不成立；濃度是溶質所佔比例，酸鹼強弱涉及物質在水中的離子行為；兩者不可完全畫上等號。"
+      "isCorrect": true,
+      "reason": "反應物轉成可溶鹽、水與氣體。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體」。"
+      "isCorrect": false,
+      "reason": "室溫不是熔化。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "現象解釋"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗",
-    "家用物質就一定無害，酸性或鹼性清潔劑可任意混合以加強效果",
-    "高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性"
+    "CO₂來自空杯",
+    "質量守恆失效",
+    "大理石只熔化"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

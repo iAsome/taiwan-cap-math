@@ -462,7 +462,7 @@ export async function discoverSubjectArtifacts({
   validateRecord = validateAuthoringRecord,
 } = {}) {
   const entries = validateFloorAndLocks(floor, locks, expectedSubjects);
-  const allIds = new Set();
+  const allIds = new Map();
   const allPaths = new Set();
   const artifacts = [];
   const subjects = [];
@@ -489,8 +489,6 @@ export async function discoverSubjectArtifacts({
     };
 
     for (const descriptor of manifest.artifacts) {
-      assert(!allIds.has(descriptor.id), `duplicate artifact ID: ${descriptor.id}`);
-      allIds.add(descriptor.id);
       assert(!allPaths.has(descriptor.path), `artifact path is reused: ${descriptor.path}`);
       allPaths.add(descriptor.path);
       const bytes = await readRepositoryFile(repoRoot, descriptor.path);
@@ -501,13 +499,35 @@ export async function discoverSubjectArtifacts({
         assert.equal(record.id, descriptor.id, `${descriptor.id}: artifact ID does not match file`);
         assert.equal(record.subject, subject, `${descriptor.id}: artifact subject mismatch`);
         await validateRecord(descriptor.type, record);
+        const existing = allIds.get(descriptor.id);
+        if (existing) {
+          assert.equal(descriptor.type, "authority", `duplicate artifact ID: ${descriptor.id}`);
+          assert.equal(existing.type, "authority", `duplicate artifact ID: ${descriptor.id}`);
+          const { subject: _subject, ...sharedAuthority } = record;
+          assert.equal(
+            canonicalJson(sharedAuthority),
+            existing.sharedAuthority,
+            `${descriptor.id}: shared authority content mismatch`,
+          );
+        } else {
+          const { subject: _subject, ...sharedAuthority } = record;
+          allIds.set(descriptor.id, {
+            type: descriptor.type,
+            sharedAuthority: descriptor.type === "authority" ? canonicalJson(sharedAuthority) : null,
+          });
+        }
         if (descriptor.type === "question") {
           observed[record.stimulusId ? "stimulusQuestions" : "skillQuestions"] += 1;
         } else {
           observed[descriptor.type] += 1;
         }
       } else if (descriptor.type !== "ui") {
+        assert(!allIds.has(descriptor.id), `duplicate artifact ID: ${descriptor.id}`);
+        allIds.set(descriptor.id, { type: descriptor.type, sharedAuthority: null });
         observed[descriptor.type] += 1;
+      } else {
+        assert(!allIds.has(descriptor.id), `duplicate artifact ID: ${descriptor.id}`);
+        allIds.set(descriptor.id, { type: descriptor.type, sharedAuthority: null });
       }
       artifacts.push({ ...descriptor, subject });
     }
@@ -610,7 +630,11 @@ async function verifySourceEvidence() {
 async function verifyInventoryEvidence(repoRoot) {
   const recorded = await readJson(repoRoot, "tools/cap8-r4/evidence/migration/current-site-inventory.json");
   const current = await inventoryCurrentSite();
-  assert.deepEqual(recorded, current, "current-site inventory evidence is stale or modified");
+  assert.equal(
+    sha256(Buffer.from(canonicalJson(recorded), "utf8")),
+    sha256(Buffer.from(canonicalJson(current), "utf8")),
+    "current-site inventory evidence is stale or modified",
+  );
   return { records: current.records.length, counts: current.counts };
 }
 
@@ -703,7 +727,16 @@ export function runMathV2ReleaseGate(repoRoot = REPO_ROOT) {
 async function loadFinalEvidence(repoRoot, evidencePaths) {
   const audits = records(await readJson(repoRoot, evidencePaths.audits), "final audits");
   const ranges = records(await readJson(repoRoot, evidencePaths.ranges), "corpus ranges");
-  const corpus = await readRepositoryFile(repoRoot, evidencePaths.corpus);
+  let corpus;
+  try {
+    corpus = await readRepositoryFile(repoRoot, evidencePaths.corpus);
+  } catch (error) {
+    if (error?.code !== "ENOENT" || evidencePaths.corpus !== DEFAULT_FINAL_EVIDENCE_PATHS.corpus) throw error;
+    corpus = Buffer.concat(await Promise.all([...SUBJECTS, "math"].map((subject) => readRepositoryFile(
+      repoRoot,
+      `tools/cap8-r4/evidence/final-audit-subjects/${subject}/student-visible-corpus.txt`,
+    ))));
+  }
   return { audits, ranges, corpus };
 }
 

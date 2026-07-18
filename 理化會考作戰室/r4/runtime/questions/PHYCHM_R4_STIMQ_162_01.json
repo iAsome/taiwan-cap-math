@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "PHYCHM_R4_STIM_162",
-  "stem": "根據頻率波長計算表中紀錄，哪項結論最合理？",
+  "stem": "表中哪一個振子的頻率最大？",
   "options": [
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長",
-    "週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T"
+    "甲",
+    "乙",
+    "丙",
+    "丁"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「週期越長表示每秒振動次數越多，所以頻率和週期成正比」不成立；週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T。"
+      "reason": "甲頻率為 10/5.0＝2.0 Hz，小於丁。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「振幅是波峰到波谷的全高，波長是相鄰波峰的高度差」不成立；波峰是橫波最高點、波谷是最低點；振幅由平衡位置量到波峰，波長是沿傳播方向相鄰同相位點的距離。"
+      "reason": "乙頻率為 8/8.0＝1.0 Hz。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「波速為 f/λ＝6.25 m/s，因為頻率應除以波長」不成立；頻率 5.0 Hz、波長 0.80 m 的波速為 v＝fλ＝4.0 m/s；計算前要統一單位。"
+      "reason": "丙頻率為 6/12.0＝0.50 Hz。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T」。"
+      "reason": "四者頻率依序為 2.0、1.0、0.50、3.0 Hz，故丁最大。"
     }
   ],
   "difficulty": "standard",
@@ -47,14 +47,14 @@
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長"
+    "甲",
+    "乙",
+    "丙"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -62,20 +62,6 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_002"
   ]

@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": null,
-  "stem": "根據潛望鏡多次反射紀錄，哪項判讀合理？",
+  "stem": "為檢查反射定律是否適用不同角度，哪個設計較好？",
   "options": [
-    "物體遠離平面鏡時像會縮小，而像距永遠是物距的一半",
-    "光經過第一次反射後就不再遵守反射定律，後續方向可任意",
-    "改變入射角並成對記錄入射、反射角",
-    "每次可同時移動鏡面、改入射點並從鏡面量角，只要畫出光線就能驗證"
+    "設定多個入射角，各自重複量反射角",
+    "只量 30° 一次",
+    "每次隨意移動所有器材",
+    "只觀察反射光顏色"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「物體遠離平面鏡時像會縮小，而像距永遠是物距的一半」不成立；平面鏡的像與物等大，像距等於物距，像與物對鏡面對稱。"
+      "isCorrect": true,
+      "reason": "多角度與重複量測可檢查 r 隨 i 的相等關係。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「光經過第一次反射後就不再遵守反射定律，後續方向可任意」不成立；萬花筒、潛望鏡等裝置利用光在多個鏡面依反射定律逐次改變方向。"
+      "reason": "單次單角度證據範圍太窄。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「驗證反射定律應固定鏡面與入射點，準確畫法線，改變入射角並成對記錄入射、反射角」。"
+      "isCorrect": false,
+      "reason": "無控制變因會混淆結果。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「每次可同時移動鏡面、改入射點並從鏡面量角，只要畫出光線就能…」不成立；驗證反射定律應固定鏡面與入射點，準確畫法線，改變入射角並成對記錄入射、反射角。"
+      "reason": "顏色不提供幾何角度。"
     }
   ],
   "difficulty": "foundation",
@@ -47,16 +47,16 @@
     "關係判讀",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體遠離平面鏡時像會縮小，而像距永遠是物距的一半",
-    "光經過第一次反射後就不再遵守反射定律，後續方向可任意",
-    "每次可同時移動鏡面、改入射點並從鏡面量角，只要畫出光線就能驗證"
+    "只量 30° 一次",
+    "每次隨意移動所有器材",
+    "只觀察反射光顏色"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-6",
       "AUTH-NATURAL-LC-KA-4-7",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -49,51 +49,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解有用能量比例比較能源效率，哪項修正合理？",
+  "stem": "紀錄丙時，總輸入是800 J，有用輸出是600 J，效率為75%。重新以以有用能量比例比較能源效率判讀時，總輸入單位與有用輸出方向先查哪個？",
   "options": [
-    "能源效率＝有用輸出能量÷總輸入能量×100%；輸入 500 J、有用輸出 150 J 的效率為 30%",
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性",
-    "能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 100% 且持續創能",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統"
+    "比較設備必須把有用輸出的定義與量測邊界設為相同，不能拿不同功能直接比百分比",
+    "做比較時不同功能設備時並漏掉統一有用輸出的定義與系統邊界",
+    "把甲輸入 500 J、輸出 150 J 被算成 70% 效率",
+    "看到丁有用輸出 420 J 大於輸入 400 J，仍直接接受資料無須檢查"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「能源效率＝有用輸出能量÷總輸入能量×100%；輸入 500 J、有用輸出 150 J 的效率為 30%」。"
+      "reason": "比較設備必須把有用輸出的定義與量測邊界設為相同，不能拿不同功能直接比百分比。乙列的總輸入為600 J，有用輸出為240 J；丙列的總輸入為800 J，有用輸出為600 J。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標…」不成立；可檢驗的節能決策應寫明基準用能、具體措施、量測期間、成功指標與氣溫、使用人數等不確定因素。"
+      "reason": "做比較時不同功能設備時卻未統一有用輸出的定義與系統邊界，結果會錯判效率。比較設備必須把有用輸出的定義與量測邊界設為相同，不能拿不同功能直接比百分比；效率差異若未通過以有用能量比例比較能源效率對總輸入的控制，就不能只歸給有用輸出。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 10…」不成立；能源效率＝有用輸出能量÷總輸入能量×100%；輸入 500 J、有用輸出 150 J 的效率為…。"
+      "reason": "解題時誤把甲輸入 500 J、輸出 150 J 被算成 70% 效率。效率＝有用輸出÷總輸入×100%；有用輸出的數值若未依總輸入核對，會使效率無法通過以有用能量比例比較能源效率檢查。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源…」不成立；能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式。"
+      "reason": "一看到丁有用輸出 420 J 大於輸入 400 J，仍直接接受資料無須檢查，結果會錯判效率。能源效率＝有用輸出能量÷總輸入能量×100%；總輸入未列入以有用能量比例比較能源效率時，效率的有用輸出大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性",
-    "能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 100% 且持續創能",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統"
+    "做比較時不同功能設備時並漏掉統一有用輸出的定義與系統邊界",
+    "把甲輸入 500 J、輸出 150 J 被算成 70% 效率",
+    "看到丁有用輸出 420 J 大於輸入 400 J，仍直接接受資料無須檢查"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-INA-4-1",
       "AUTH-NATURAL-LC-INA-4-2",
@@ -139,19 +139,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

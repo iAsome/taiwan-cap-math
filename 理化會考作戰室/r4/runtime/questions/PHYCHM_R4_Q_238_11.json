@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組彈簧秤視重量資料，哪項判讀仍合理？",
+  "stem": "並列上表面與下表面，兩者深度是0.20 m、0.50 m，面積是0.010 m²、0.010 m²。說明液體作用力應用哪個原理？",
   "options": [
-    "與上表面壓力差合成向上浮力",
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量",
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要"
+    "把因左右表面也受力，便把兩個方向相反且相等的力都加進浮力",
+    "沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力",
+    "主張下表面較深只會增加向下壓力，所以沒入物體不可能受向上合力",
+    "把浮力說成液體只推物體上表面，並漏掉合成上下表面的壓力作用"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力」。"
+      "isCorrect": false,
+      "reason": "解題時誤把因左右表面也受力，便把兩個方向相反且相等的力都加進浮力。左右作用互相抵消；面積的數值若未依深度核對，會使液體作用力無法通過由上下表面壓力差解釋浮力檢查。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「浮力為 12＋7＝19 N，因為水中讀值要加回原重量」不成立；物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N。"
+      "isCorrect": true,
+      "reason": "沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力。上表面列的深度為0.20 m，面積為0.010 m²；下表面列的深度為0.50 m，面積為0.010 m²。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限…」不成立；完全沒入時，浮力隨液體密度與排開體積增大；同液體中排開體積相同則浮力相同。"
+      "reason": "誤以為下表面較深只會增加向下壓力，所以沒入物體不可能受向上合力。沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力；深度未列入由上下表面壓力差解釋浮力時，液體作用力的面積大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「浮沉只由物體總質量大小決定，體積與平均密度完全不重要」不成立；物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉。"
+      "reason": "把浮力說成液體只推物體上表面，卻未合成上下表面的壓力作用。沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力；照原做法會把液體作用力算錯或判反。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量",
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要"
+    "把因左右表面也受力，便把兩個方向相反且相等的力都加進浮力",
+    "主張下表面較深只會增加向下壓力，所以沒入物體不可能受向上合力",
+    "把浮力說成液體只推物體上表面，並漏掉合成上下表面的壓力作用"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

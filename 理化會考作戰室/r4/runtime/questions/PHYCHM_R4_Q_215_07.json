@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "速度時間圖出現四種說法，哪項有理化概念支持？",
+  "stem": "物體合力為零，依牛頓第二定律加速度為何？",
   "options": [
-    "加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度",
-    "質量較大者速度改變較慢",
-    "只要速率計數字不變，不論運動方向如何改變，加速度都為零",
-    "平均加速度是 (10＋4)/3＝4.67 m/s²，因為速度變化量要相加"
+    "加速度為零",
+    "物體的加速度等於質量",
+    "物體的加速度無限大",
+    "物體的加速度方向任意"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度」不成立；加速度表示速度隨時間的變化；速度大小、方向或兩者改變都可產生加速度。"
+      "isCorrect": true,
+      "reason": "a=F/m，非零質量且 F=0 時 a=0。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「質量相同時，合力較大者速度改變較快；合力相同時，質量較大者速度改變較慢」。"
+      "isCorrect": false,
+      "reason": "物體的加速度等於質量不成立。a=F/m，非零質量且 F=0 時 a=0。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只要速率計數字不變，不論運動方向如何改變，加速度都為零」不成立；直線上快慢改變有加速度；物體以恆定快慢轉彎時方向改變，也有加速度。"
+      "reason": "物體的加速度無限大不成立。a=F/m，非零質量且 F=0 時 a=0。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「平均加速度是 (10＋4)/3＝4.67 m/s²，因為速…」不成立；速度由 4 m/s 在 3 s 內均勻變為 10 m/s，平均加速度為 (10−4)/3＝2 …。"
+      "reason": "物體的加速度方向任意不成立。a=F/m，非零質量且 F=0 時 a=0。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "證據判讀",
     "推論"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度",
-    "只要速率計數字不變，不論運動方向如何改變，加速度都為零",
-    "平均加速度是 (10＋4)/3＝4.67 m/s²，因為速度變化量要相加"
+    "物體的加速度等於質量",
+    "物體的加速度無限大",
+    "物體的加速度方向任意"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-11",
       "AUTH-NATURAL-LC-EB-4-8",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

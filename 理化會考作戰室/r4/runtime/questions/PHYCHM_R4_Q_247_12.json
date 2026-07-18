@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估高處位能報告時，哪項說明正確？",
+  "stem": "表中乙的相對動能為4，對應質量m與速度2v。為使相對動能可重現，紀錄中缺少什麼？",
   "options": [
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J",
-    "動能與質量成正比、與速度平方成正比；同質量者速度加倍，動能變為四倍",
-    "重力位能是物體固定不變的性質，與參考面、重量和高度都無關"
+    "把物體所在高度當成動能的直接決定量，並漏掉查看質量與速度",
+    "主張動能只與速度成正比，速度加倍時動能也只加倍",
+    "做比較時兩車動能時使用不同參考系的速度",
+    "不能把高度或路徑長度當成動能的直接決定量"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關」不成立；力對物體作功要有物體沿力的分量方向發生位移；用力提住靜止物體時對物體作功為零。"
+      "reason": "把物體所在高度當成動能的直接決定量，卻未查看質量與速度，結果會錯判相對動能。動能與質量成正比、與速度平方成正比；質量未列入比較動能與速度質量的關係時，相對動能的速度大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「功是力除以位移，所以 20 N 推 3 m 作功為 6.6…」不成立；恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J。"
+      "reason": "誤以為動能只與速度成正比，速度加倍時動能也只加倍。動能與質量成正比、與速度平方成正比；照原做法會把相對動能算錯或判反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「動能與質量成正比、與速度平方成正比；同質量者速度加倍，動能變為四倍」。"
+      "isCorrect": false,
+      "reason": "做比較時兩車動能時使用不同參考系的速度，卻當成可直接相比。比較時要使用同一參考系的速度；相對動能差異若未通過比較動能與速度質量的關係對質量的控制，就不能只歸給速度。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「重力位能是物體固定不變的性質，與參考面、重量和高度都無關」不成立；重力位能在選定參考高度後，隨物體重量與高度增加而增大。"
+      "isCorrect": true,
+      "reason": "不能把高度或路徑長度當成動能的直接決定量。丁列的質量為2m，速度為2v；甲列的質量為m，速度為v。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J",
-    "重力位能是物體固定不變的性質，與參考面、重量和高度都無關"
+    "把物體所在高度當成動能的直接決定量，並漏掉查看質量與速度",
+    "主張動能只與速度成正比，速度加倍時動能也只加倍",
+    "做比較時兩車動能時使用不同參考系的速度"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

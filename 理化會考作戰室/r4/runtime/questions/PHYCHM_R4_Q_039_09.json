@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對鐵粉與砂分離結果，哪項說法正確？",
+  "stem": "選擇高純度方法前還應考慮什麼？",
   "options": [
-    "蒸餾時收集的是永遠留在蒸餾瓶底的高沸點成分",
-    "出現同一顏色的色帶就能唯一證明兩樣品是同一物質",
-    "所有固體混合物都可用磁鐵完全分開，因為固體都有磁性",
-    "高回收率不保證高純度"
+    "只看回收物顏色",
+    "步驟越多越好",
+    "回收率、時間、安全與用途",
+    "忽略所有成本"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「蒸餾時收集的是永遠留在蒸餾瓶底的高沸點成分」不成立；蒸餾加熱混合液，使沸點較低的成分先汽化，再經冷凝收集；需有足夠沸點差。"
+      "reason": "顏色非充分。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「出現同一顏色的色帶就能唯一證明兩樣品是同一物質」不成立；濾紙色層分析利用成分對溶劑與濾紙的親和差異，移動距離不同可顯示多個色帶。"
+      "reason": "多步增加損失。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「所有固體混合物都可用磁鐵完全分開，因為固體都有磁性」不成立；鐵粉與砂可用磁鐵分離；濁水靜置後可先沉降再傾析，方法要對應性質差。"
+      "isCorrect": true,
+      "reason": "完整反映決策取捨。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「回收率比較取回的目標物比例，純度比較回收物中目標成分比例；高回收率不保證高純度」。"
+      "isCorrect": false,
+      "reason": "實務需考量。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "多準則決策"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "蒸餾時收集的是永遠留在蒸餾瓶底的高沸點成分",
-    "出現同一顏色的色帶就能唯一證明兩樣品是同一物質",
-    "所有固體混合物都可用磁鐵完全分開，因為固體都有磁性"
+    "只看回收物顏色",
+    "步驟越多越好",
+    "忽略所有成本"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-4",
       "AUTH-NATURAL-LC-CA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

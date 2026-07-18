@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import {
   discoverMathAuditArtifacts,
+  discoverSubjectArtifacts,
   verifyAppendixEvidence,
   verifyAuthorityNodeReview,
   verifyAuthorityGraphEvidence,
@@ -16,6 +17,7 @@ import {
   verifyR4GovernanceAndLegacyIsolation,
   verifyUserRequirements,
 } from "../run-full-release-gate.mjs";
+import { productionFloor, scopeLocks, SUBJECTS } from "../r4-core.mjs";
 
 test("R4 supersedes stale stop/publish rules and excludes the legacy text-only policy", async () => {
   const result = await verifyR4GovernanceAndLegacyIsolation();
@@ -101,6 +103,16 @@ test("Math final-audit inventory covers every production record and reachable UI
   assert.deepEqual(result.counts, { units: 23, lectures: 339, questions: 4746, assets: 178, ui: 37 });
   assert.equal(result.artifacts.length, 5300);
   assert.equal(new Set(result.artifacts.map((artifact) => artifact.id)).size, 5300);
+});
+
+test("shared social authority IDs remain identical apart from their owning subject", async () => {
+  const result = await discoverSubjectArtifacts({
+    floor: await productionFloor(),
+    locks: await scopeLocks(),
+    expectedSubjects: SUBJECTS,
+  });
+  const shared = result.artifacts.filter(({ id }) => id === "AUTH-SOCIAL-LP-SOC-1A-4-1");
+  assert.deepEqual(shared.map(({ subject }) => subject), ["geography", "history", "civics"]);
 });
 
 test("mechanical extraction remains separate while the reviewed production graph is frozen", async () => {

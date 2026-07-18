@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "報告整理眼球成像資料，哪項敘述合理？",
+  "stem": "要提高複式顯微鏡的總放大效果，應考慮哪兩部分的放大作用？",
   "options": [
-    "物體顏色是物體自行持續發出的固定色光，與入射光譜無關",
-    "物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察",
-    "顯微鏡利用物鏡形成中間像再由目鏡放大",
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色"
+    "光源與載物臺",
+    "鏡筒與鏡座",
+    "標本與玻片",
+    "物鏡與目鏡"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「物體顏色是物體自行持續發出的固定色光，與入射光譜無關」不成立；不透明紅物體在白光下主要反射紅光、吸收其他多數色光，因而看來呈紅色。"
+      "reason": "光源提供照明、載物臺承載標本，兩者不構成主要放大鏡組。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察」不成立；紅色物體在只含藍光的照明下可看來很暗，因為沒有足夠可反射的紅光。"
+      "reason": "鏡筒與鏡座提供結構支撐，不負責兩階段成像。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「顯微鏡利用物鏡形成中間像再由目鏡放大；望遠鏡也以多個光學元件組合改變觀察角度」。"
+      "isCorrect": false,
+      "reason": "標本與玻片是被觀察物和載體，不是放大元件。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色」不成立；紅、綠、藍色光是加法混色的基本光；顏料混合主要透過選擇性吸收，與色光加法原理不同。"
+      "isCorrect": true,
+      "reason": "複式顯微鏡先由物鏡放大成實像，再由目鏡放大觀察視角。"
     }
   ],
   "difficulty": "advanced",
@@ -47,16 +47,16 @@
     "關係應用",
     "多步驟推理"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體顏色是物體自行持續發出的固定色光，與入射光譜無關",
-    "物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察",
-    "色光與顏料的混合規則完全相同，紅綠藍光全加起來會變成黑色"
+    "光源與載物臺",
+    "鏡筒與鏡座",
+    "標本與玻片"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-10",
       "AUTH-NATURAL-LC-KA-4-11",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

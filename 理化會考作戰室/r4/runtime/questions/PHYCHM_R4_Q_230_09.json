@@ -14,34 +14,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對衛星運動結果，哪項說法正確？",
+  "stem": "向右速度與向左加速度同時存在是否矛盾？",
   "options": [
-    "兩物體距離越遠引力越大，質量變化對引力沒有影響",
-    "物體到月球後原子自動減少，因此質量和重量都以相同比例減少",
-    "箭頭方向是力方向",
-    "受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右"
+    "不矛盾，表示箱子正向右減速",
+    "矛盾，速度與加速度必同向",
+    "不矛盾，但表示向右加速",
+    "矛盾，箱子必靜止"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「兩物體距離越遠引力越大，質量變化對引力沒有影響」不成立；萬有引力隨兩物體質量增大而增大，隨中心距離增加而減小；比較時要分開變項。"
+      "isCorrect": true,
+      "reason": "速度描述當下運動，加速度描述速度變化，兩者可反向。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「物體到月球後原子自動減少，因此質量和重量都以相同比例減少」不成立；同一物體到月球後組成與質量不變，但因當地重力場較弱，重量變小。"
+      "reason": "矛盾，速度與加速度必同向不成立。速度描述當下運動，加速度描述速度變化，兩者可反向。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「受力圖只畫作用在目標物上的力，箭頭方向是力方向；物體向右運動不代表必有向右力」。"
+      "isCorrect": false,
+      "reason": "不矛盾，但表示向右加速不成立。速度描述當下運動，加速度描述速度變化，兩者可反向。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右」不成立；受力圖只畫作用在目標物上的力，箭頭方向是力方向；物體向右運動不代表必有向右力。"
+      "reason": "矛盾，箱子必靜止不成立。速度描述當下運動，加速度描述速度變化，兩者可反向。"
     }
   ],
   "difficulty": "advanced",
@@ -49,16 +49,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "兩物體距離越遠引力越大，質量變化對引力沒有影響",
-    "物體到月球後原子自動減少，因此質量和重量都以相同比例減少",
-    "受力圖中應把物體的速度也畫成一個力，運動向右就必有合力向右"
+    "矛盾，速度與加速度必同向",
+    "不矛盾，但表示向右加速",
+    "矛盾，箱子必靜止"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-10",
       "AUTH-NATURAL-LC-EB-4-11",
@@ -69,19 +69,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "把地球公轉週期與曆年調整概念的判準移到另一個情境時，哪一項作法較適當？",
+  "stem": "要評估另一種曆法能否維持季節對齊，哪個作法完整？",
   "options": [
-    "把判讀移到「解釋閏年調整的週期來源」時，仍先先判定半球與日期位置",
-    "改看「解釋閏年調整的週期來源」後，只採用支持原想法的一筆紀錄",
-    "改看「解釋閏年調整的週期來源」後，省略所有單位",
-    "只寫地球公轉週期與曆年調整概念的概念名稱，不記錄「解釋閏年調整的週期來源」的觀測"
+    "逐年比較曆年與公轉週期，累積差值並檢查插入日的長期效果",
+    "只看第一年是否有365日",
+    "把0.24日讀成24日後估算",
+    "用喜好調查決定是否需要閏日"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "新情境保留相同變因、證據與適用範圍。"
+      "reason": "逐年比較曆年與公轉週期，累積差值並檢查插入日的長期效果；每年約0.24日可直接累加，插入一日後也能檢查剩餘誤差。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "換情境仍須比較完整資料與替代解釋。"
+      "reason": "只看第一年是否有365日；單年整數日數遮蔽了約0.24日的小差，無法顯示誤差如何逐年累積。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "跨情境比較更需要一致單位。"
+      "reason": "把0.24日讀成24日後估算；小數點誤讀使每年差值放大一百倍，所得閏日頻率與季節漂移都會失真。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "概念名稱不能取代實際資料。"
+      "reason": "用喜好調查決定是否需要閏日；曆法校正取決於週期差的累積，不會因使用者偏好而改變。"
     }
   ],
   "difficulty": "transfer",
@@ -49,7 +49,7 @@
   ],
   "representationType": "transfer-scenario",
   "misconceptionTargets": [
-    "太陽高度越低地表單位面積受能越多"
+    "只看第一年是否有365日"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "逐項核對「比較夏至冬至正午影長」的條件後，「把判讀移到「解釋閏年調整的週期來源」時，仍先先判定半球與日期位置」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "答案以365.24日減365日取得每年差值，再逐年累積並扣除插入日，可量化校正前後的漂移。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 0,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "只確認第一年有365日沒有追蹤小數日差；約四年後接近一日的偏移正是單年觀察看不出的結果。",
       "status": "pass"
     }
   ],

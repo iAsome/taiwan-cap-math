@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查三稜鏡分光紀錄，哪項判讀正確？",
+  "stem": "瞳孔變小最直接影響哪項？",
   "options": [
-    "眼球的角膜與水晶體等會聚光線",
-    "三稜鏡在光通過時創造出原本不存在的顏料，所以色帶與白光組成無關",
-    "物體顏色是物體自行持續發出的固定色光，與入射光譜無關",
-    "物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察"
+    "水晶體材質",
+    "視網膜位置",
+    "外物實際大小",
+    "進入眼球的光量"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「眼球的角膜與水晶體等會聚光線，使外物在視網膜上形成倒立實像，再由神經系統處理」。"
+      "isCorrect": false,
+      "reason": "瞳孔不是水晶體。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「三稜鏡在光通過時創造出原本不存在的顏料，所以色帶與白光組成…」不成立；白光經三稜鏡分光形成多種色光，說明白光可由不同色光組成。"
+      "reason": "視網膜不因瞳孔大小搬移。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「物體顏色是物體自行持續發出的固定色光，與入射光譜無關」不成立；不透明紅物體在白光下主要反射紅光、吸收其他多數色光，因而看來呈紅色。"
+      "reason": "物體大小不受眼睛開口改變。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察」不成立；紅色物體在只含藍光的照明下可看來很暗，因為沒有足夠可反射的紅光。"
+      "isCorrect": true,
+      "reason": "瞳孔是虹膜中央開口，口徑控制入光量。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "三稜鏡在光通過時創造出原本不存在的顏料，所以色帶與白光組成無關",
-    "物體顏色是物體自行持續發出的固定色光，與入射光譜無關",
-    "物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察"
+    "水晶體材質",
+    "視網膜位置",
+    "外物實際大小"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-10",
       "AUTH-NATURAL-LC-KA-4-11",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

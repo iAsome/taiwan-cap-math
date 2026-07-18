@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估曬衣蒸發報告時，哪項說明正確？",
+  "stem": "未知樣品可流動、換容器後體積幾乎不變，且不會占滿容器。最合理的狀態是？",
   "options": [
-    "只有溫度達沸點才會蒸發，而沸騰只發生在液面",
-    "液體有固定體積但隨容器改變形狀",
-    "熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小",
-    "加熱曲線水平表示停止加熱，所以物質完全沒有吸收能量"
+    "液態",
+    "資訊必定互相矛盾",
+    "氣態",
+    "固態大塊"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只有溫度達沸點才會蒸發，而沸騰只發生在液面」不成立；蒸發只在液面進行且各溫度均可發生；沸騰在特定壓力的沸點於液體內部形成氣泡。"
+      "isCorrect": true,
+      "reason": "三項觀察共同符合液態。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「固體保有固定形狀與體積；液體有固定體積但隨容器改變形狀；氣體充滿容器」。"
+      "isCorrect": false,
+      "reason": "觀察可一致指向液態。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小」不成立；物體受熱時常是粒子間平均距離增加，不是單個粒子自身膨脹。"
+      "reason": "氣體會占滿且體積隨容器。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「加熱曲線水平表示停止加熱，所以物質完全沒有吸收能量」不成立；純物質加熱曲線的水平平臺可表示相變；平臺期間仍吸熱，但溫度可維持。"
+      "reason": "大塊固體通常不流動配合容器。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "多證據推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只有溫度達沸點才會蒸發，而沸騰只發生在液面",
-    "熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小",
-    "加熱曲線水平表示停止加熱，所以物質完全沒有吸收能量"
+    "資訊必定互相矛盾",
+    "氣態",
+    "固態大塊"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-1",
       "AUTH-NATURAL-LC-AB-4-2",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

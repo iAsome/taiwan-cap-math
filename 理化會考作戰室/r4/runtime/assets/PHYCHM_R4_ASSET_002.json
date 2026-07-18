@@ -12,7 +12,7 @@
   ],
   "type": "graph",
   "path": "理化會考作戰室/r4/assets/physics-chemistry/wave-graph.svg",
-  "sha256": "2c3381cda8131d53550267c52dff514bd3ee12ad270913b2c107823d43916108",
+  "sha256": "7f014ead99bc2c62f6e460c934e7d318fdeca6ee58da23f8f5634050c51937b1",
   "creator": "Codex R4 Physics/Chemistry original diagram author",
   "source": "Original data-driven SVG calibrated against official CAP figure clarity; no external artwork copied.",
   "license": "Repository original educational content",
@@ -25,34 +25,26 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "caption": "繩波的波長與振幅",
-  "altText": "繩波的波長與振幅；圖內以文字、線型、箭頭與位置共同標示，不需依靠顏色辨認。",
-  "longDescription": "橫軸為位置公尺，縱軸為位移公分。波峰位於一與五公尺，兩峰距離四公尺；振幅二公分。",
+  "altText": "繩波空間示意圖，以位置與位移軸標出相鄰波峰間的波長及平衡線到波峰的振幅。",
+  "longDescription": "橫軸表示位置 x，縱軸表示相對平衡線的位移 y。虛線通過兩個相鄰波峰，兩峰的水平距離以波長 λ 標示；平衡線到波峰的垂直距離以振幅 A 標示。此圖只表示相對幾何關係，不提供數值刻度。",
   "dataFallback": {
     "summary": "繩波的波長與振幅的文字資料替代",
     "columns": [
       "項目",
-      "圖中資訊"
+      "文字／數據替代"
     ],
     "rows": [
       [
-        "波峰",
-        "圖上明確標示：波峰"
+        "座標",
+        "橫軸為位置 x，縱軸為相對平衡線的位移 y；兩軸無數值刻度。"
       ],
       [
-        "波長",
-        "圖上明確標示：波長"
+        "波長 λ",
+        "兩條虛線通過相鄰波峰，λ 為兩峰間的水平距離。"
       ],
       [
-        "振幅",
-        "圖上明確標示：振幅"
-      ],
-      [
-        "位置",
-        "圖上明確標示：位置"
-      ],
-      [
-        "位移",
-        "圖上明確標示：位移"
+        "振幅 A",
+        "A 為平衡線到波峰的垂直距離。"
       ]
     ]
   },
@@ -69,22 +61,19 @@
       "位置",
       "位移"
     ],
-    "units": [
-      "m",
-      "cm"
-    ],
+    "units": [],
     "scale": "非依比例；只呈現題目所需相對位置與方向",
     "orientation": "橫式 720×420 viewBox",
     "legend": "實線表示元件或主要路徑，虛線表示法線或輔助線，箭頭表示方向。",
     "axes": [
-      "橫軸：位置 x（m）",
-      "縱軸：位移 y（cm）"
+      "橫軸：位置 x（無數值刻度）",
+      "縱軸：位移 y（無數值刻度）"
     ],
-    "significantFigures": "圖示讀值以整數呈現：波長 4 m、振幅 2 cm。",
+    "significantFigures": "不提供數值讀值；只標示波長 λ 與振幅 A 的幾何定義。",
     "controlledVariables": [
       "同一時間截面",
       "同一條繩與傳播介質"
     ],
-    "dataSource": "原創示意數據；依波長 4 m、振幅 2 cm 的正弦波關係繪製。"
+    "dataSource": "原創示意波形；不對應任一刺激表格的特定數值。"
   }
 }

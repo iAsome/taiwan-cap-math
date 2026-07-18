@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解回收率與純度比較分離結果，哪項修正合理？",
+  "stem": "實測回收率 108%，最先檢查什麼？",
   "options": [
-    "回收率比較取回的目標物比例，純度比較回收物中目標成分比例；高回收率不保證高純度",
-    "結晶法只依成分粒徑大小，和溶解度的溫度變化無關",
-    "蒸餾時收集的是永遠留在蒸餾瓶底的高沸點成分",
-    "出現同一顏色的色帶就能唯一證明兩樣品是同一物質"
+    "回收物是否未乾或受污染",
+    "方法是否創造質量",
+    "是否把目標物燒掉",
+    "百分號是否應刪除"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「回收率比較取回的目標物比例，純度比較回收物中目標成分比例；高回收率不保證高純度」。"
+      "reason": "水分雜質會高估。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「結晶法只依成分粒徑大小，和溶解度的溫度變化無關」不成立；可先製成高溫飽和溶液，再冷卻使溶解度隨溫度降低的溶質結晶析出。"
+      "reason": "分離不創造目標物。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「蒸餾時收集的是永遠留在蒸餾瓶底的高沸點成分」不成立；蒸餾加熱混合液，使沸點較低的成分先汽化，再經冷凝收集；需有足夠沸點差。"
+      "reason": "會降低而非超過。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「出現同一顏色的色帶就能唯一證明兩樣品是同一物質」不成立；濾紙色層分析利用成分對溶劑與濾紙的親和差異，移動距離不同可顯示多個色帶。"
+      "reason": "表示法不是根因。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "合理性檢核"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "結晶法只依成分粒徑大小，和溶解度的溫度變化無關",
-    "蒸餾時收集的是永遠留在蒸餾瓶底的高沸點成分",
-    "出現同一顏色的色帶就能唯一證明兩樣品是同一物質"
+    "方法是否創造質量",
+    "是否把目標物燒掉",
+    "百分號是否應刪除"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-4",
       "AUTH-NATURAL-LC-CA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

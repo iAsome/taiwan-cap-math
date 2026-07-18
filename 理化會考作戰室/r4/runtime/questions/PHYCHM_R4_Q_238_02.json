@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據船的平均密度紀錄，哪項判讀合理？",
+  "stem": "並列上表面與下表面，兩者深度是0.20 m、0.50 m，面積是0.010 m²、0.010 m²。由上下表面壓力差解釋浮力用這兩筆深度資料會得到什麼結果？",
   "options": [
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "與上表面壓力差合成向上浮力"
+    "僅列下表面向上的作用力就當成浮力，並漏掉扣除上表面向下作用力",
+    "把因左右表面也受力，便把兩個方向相反且相等的力都加進浮力",
+    "下表面向上作用比上表面向下作用多 29.4 N，合成向上浮力",
+    "主張下表面較深只會增加向下壓力，所以沒入物體不可能受向上合力"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限…」不成立；完全沒入時，浮力隨液體密度與排開體積增大；同液體中排開體積相同則浮力相同。"
+      "reason": "僅列下表面向上的作用力就當成浮力，卻未扣除上表面向下作用力，結果會錯判液體作用力。需比較同一物體各表面的壓力作用，不能只看上表面或把重量算進液體壓力差；液體作用力差異若未通過由上下表面壓力差解釋浮力對深度的控制，就不能只歸給面積。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「浮沉只由物體總質量大小決定，體積與平均密度完全不重要」不成立；物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉。"
+      "reason": "解題時誤把因左右表面也受力，便把兩個方向相反且相等的力都加進浮力。左右作用互相抵消；面積的數值若未依深度核對，會使液體作用力無法通過由上下表面壓力差解釋浮力檢查。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「漂浮物體既然在水面上，就完全不受浮力，只受向下重力」不成立；漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力。"
+      "isCorrect": true,
+      "reason": "下表面向上作用比上表面向下作用多 29.4 N，合成向上浮力。上表面列的深度為0.20 m、面積為0.010 m²；下表面列的深度為0.50 m、面積為0.010 m²。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力」。"
+      "isCorrect": false,
+      "reason": "誤以為下表面較深只會增加向下壓力，所以沒入物體不可能受向上合力。沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力；深度未列入由上下表面壓力差解釋浮力時，液體作用力的面積大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
+    "辨認",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力"
+    "僅列下表面向上的作用力就當成浮力，並漏掉扣除上表面向下作用力",
+    "把因左右表面也受力，便把兩個方向相反且相等的力都加進浮力",
+    "主張下表面較深只會增加向下壓力，所以沒入物體不可能受向上合力"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於等速圓周運動仍具有加速度，哪項結論符合題給條件？",
+  "stem": "物體在圓的最右端時，向心加速度向何方？",
   "options": [
-    "速度—時間圖上縱座標較大就表示加速度較大，不必比較斜率",
-    "物體質量越大，在相同合力下速度改變必然越快",
-    "速度方向持續改變",
-    "加速度只要是負值就一定減速，只要是正值就一定加速"
+    "物體的加速度向上",
+    "物體的加速度向右",
+    "加速度向左",
+    "物體的加速度向下"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「速度—時間圖上縱座標較大就表示加速度較大，不必比較斜率」不成立；速度—時間圖斜率為加速度；相同時間內速度變化較大的線段斜率絕對值較大。"
+      "reason": "物體的加速度向上不成立。圓心在物體左方，所以向心加速度向左。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「物體質量越大，在相同合力下速度改變必然越快」不成立；質量相同時，合力較大者速度改變較快；合力相同時，質量較大者速度改變較慢。"
+      "reason": "物體的加速度向右不成立。圓心在物體左方，所以向心加速度向左。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「等速圓周運動雖速度大小不變，速度方向持續改變，因此具有指向圓心的加速度」。"
+      "reason": "圓心在物體左方，所以向心加速度向左。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「加速度只要是負值就一定減速，只要是正值就一定加速」不成立；加速度與速度同向時快慢增加，反向時快慢減少；加速度為負不代表一定減速。"
+      "reason": "物體的加速度向下不成立。圓心在物體左方，所以向心加速度向左。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "條件判斷",
     "分析"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "速度—時間圖上縱座標較大就表示加速度較大，不必比較斜率",
-    "物體質量越大，在相同合力下速度改變必然越快",
-    "加速度只要是負值就一定減速，只要是正值就一定加速"
+    "物體的加速度向上",
+    "物體的加速度向右",
+    "物體的加速度向下"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-11",
       "AUTH-NATURAL-LC-EB-4-8",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

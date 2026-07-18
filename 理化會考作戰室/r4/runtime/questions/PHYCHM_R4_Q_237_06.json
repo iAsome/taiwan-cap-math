@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解密閉定量氣體壓力與體積關係，哪項修正合理？",
+  "stem": "表中丙的壓力為200 kPa，對應體積30 mL與溫度25°C。複查壓力時應先核對哪個欄位？",
   "options": [
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁",
-    "液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量",
-    "體積被壓縮而變小",
-    "空氣沒有質量與重量，大氣壓只是溫度計產生的幻覺"
+    "做比較時氣體壓力與體積時忽略溫度，將 50°C 的資料併入定溫關係",
+    "解題時將 60 mL 到 30 mL 的變化解讀成體積減半、壓力也減半",
+    "把對開口容器中的氣體也直接套用定量密閉氣體的反比關係",
+    "丁不能直接併入定溫比較"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁」不成立；靜止液體中同一點的壓力可向各方向作用，不只向下；容器側壁也受液體壓力。"
+      "reason": "做比較時氣體壓力與體積時忽略溫度，將 50°C 的資料併入定溫關係。反比判斷只適用於密閉定量氣體且溫度近似不變；壓力差異若未通過定性判斷密閉定量氣體壓力與體積關係對體積的控制，就不能只歸給溫度。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量」不成立；帕斯卡原理說明密閉流體上的壓力變化可傳至各處；液壓機可以大面積活塞得到較大力。"
+      "reason": "解題時錯將 60 mL 到 30 mL 的變化解讀成體積減半、壓力也減半，結果會錯判壓力。甲乙丙的氣體量與溫度相同，PV 都約 6000 kPa·mL，體積越小壓力越大；溫度的數值若未依體積核對，會使壓力無法通過定性判斷密閉定量氣體壓力與體積關係檢查。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「密閉的定量氣體在溫度近似不變時，體積被壓縮而變小，粒子撞壁更頻繁，壓力較大」。"
+      "isCorrect": false,
+      "reason": "解題時誤把對開口容器中的氣體也直接套用定量密閉氣體的反比關係，結果會錯判壓力。密閉的定量氣體在溫度近似不變時，體積被壓縮而變小，粒子撞壁更頻繁，壓力較大；體積未列入定性判斷密閉定量氣體壓力與體積關係時，壓力的溫度大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「空氣沒有質量與重量，大氣壓只是溫度計產生的幻覺」不成立；大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變。"
+      "isCorrect": true,
+      "reason": "丁不能直接併入定溫比較。丁列的體積為30 mL，溫度為50°C；乙列的體積為40 mL，溫度為25°C。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁",
-    "液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量",
-    "空氣沒有質量與重量，大氣壓只是溫度計產生的幻覺"
+    "做比較時氣體壓力與體積時忽略溫度，將 50°C 的資料併入定溫關係",
+    "解題時將 60 mL 到 30 mL 的變化解讀成體積減半、壓力也減半",
+    "把對開口容器中的氣體也直接套用定量密閉氣體的反比關係"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "海水蒸餾出現四種說法，哪項有理化概念支持？",
+  "stem": "回收物未完全乾燥，對表觀純度可能有何影響？",
   "options": [
-    "所有固體混合物都可用磁鐵完全分開，因為固體都有磁性",
-    "回收率比較取回的目標物比例",
-    "可先蒸發乾燥沙鹽混合物，這樣便能在未加水前分開兩種固體",
-    "將容器完全密閉後加熱可防止溶劑逃散，是最安全的分離方法"
+    "完全不影響任何量",
+    "一定提高到 100%",
+    "把水變成目標物",
+    "因水增加總質量而低估純度"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「所有固體混合物都可用磁鐵完全分開，因為固體都有磁性」不成立；鐵粉與砂可用磁鐵分離；濁水靜置後可先沉降再傾析，方法要對應性質差。"
+      "reason": "質量與比例都受影響。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「回收率比較取回的目標物比例，純度比較回收物中目標成分比例；高回收率不保證高純度」。"
+      "isCorrect": false,
+      "reason": "沒有純化作用。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「可先蒸發乾燥沙鹽混合物，這樣便能在未加水前分開兩種固體」不成立；分離沙與食鹽時，可依序加水溶鹽、過濾取沙、蒸發或結晶取鹽，每步只利用一個性質差。"
+      "reason": "水不變目標物。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「將容器完全密閉後加熱可防止溶劑逃散，是最安全的分離方法」不成立；加熱時容器不可密閉，熱過濾要用合適器材，易燃溶劑應遠離明火並在通風處操作。"
+      "isCorrect": true,
+      "reason": "分母含額外水分。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "誤差方向"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "所有固體混合物都可用磁鐵完全分開，因為固體都有磁性",
-    "可先蒸發乾燥沙鹽混合物，這樣便能在未加水前分開兩種固體",
-    "將容器完全密閉後加熱可防止溶劑逃散，是最安全的分離方法"
+    "完全不影響任何量",
+    "一定提高到 100%",
+    "把水變成目標物"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-4",
       "AUTH-NATURAL-LC-CA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

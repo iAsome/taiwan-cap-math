@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組車程平均速率資料，哪項判讀仍合理？",
+  "stem": "小車從 +10 cm 移到 +4 cm，位移為何？",
   "options": [
-    "平均速率是路程乘時間，所以為 4500 m/s",
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘",
-    "例如「車站東方 200 m」資訊完整",
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同"
+    "位移為 -6 cm",
+    "物體的位移為 +6 cm",
+    "物體的位移為 +14 cm",
+    "物體的位移為 -14 cm"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「平均速率是路程乘時間，所以為 4500 m/s」不成立；移動 150 m 耗時 30 s 的平均速率為路程除以總時間，即 5 m/s。"
+      "isCorrect": true,
+      "reason": "位移是末位置減初位置，4-10=-6 cm。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「72 km/h＝72×1000×3600 m/s，分子分母…」不成立；72 km/h＝20 m/s，因為 1 km＝1000 m、1 h＝3600 s；長度與時間都…。"
+      "reason": "物體的位移為 +6 cm不符合題目資料。位移是末位置減初位置，4-10=-6 cm。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整」。"
+      "isCorrect": false,
+      "reason": "物體的位移為 +14 cm不符合題目資料。位移是末位置減初位置，4-10=-6 cm。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「速度只是一個正數快慢，向東與向西 10 m/s 在任何分析…」不成立；速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向。"
+      "reason": "物體的位移為 -14 cm不符合題目資料。位移是末位置減初位置，4-10=-6 cm。"
     }
   ],
   "difficulty": "transfer",
@@ -46,16 +46,16 @@
     "情境遷移",
     "應用"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "平均速率是路程乘時間，所以為 4500 m/s",
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘",
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同"
+    "物體的位移為 +6 cm",
+    "物體的位移為 +14 cm",
+    "物體的位移為 -14 cm"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

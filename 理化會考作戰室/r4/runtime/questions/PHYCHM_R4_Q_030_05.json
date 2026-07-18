@@ -14,51 +14,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於混合物、溶液與濃度中的現象，哪項結論符合題給條件？",
+  "stem": "500 g 食品含添加物 1.5 mg，質量濃度為？",
   "options": [
-    "溶液中含量較少的一方永遠是溶劑，和物態與作用無關",
-    "只要肉眼一時看不到粒子，就能斷定混合物完全均勻",
-    "5 ppm 表示在題目指定的比例基準下",
-    "20 g 食鹽加 80 g 水的濃度是 20÷80×100%＝25%"
+    "750 ppm",
+    "3 ppm",
+    "1.5 ppm",
+    "0.75 ppm"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「溶液中含量較少的一方永遠是溶劑，和物態與作用無關」不成立；食鹽水中食鹽是溶質、水是溶劑、均勻混合系統是溶液。"
+      "reason": "多兩百五十倍。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「只要肉眼一時看不到粒子，就能斷定混合物完全均勻」不成立；食鹽水在各處取樣組成近似相同，屬均勻混合；泥水可見沉降且組成不一，屬非均勻混合。"
+      "isCorrect": true,
+      "reason": "1.5÷0.5＝3 mg/kg。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「5 ppm 表示在題目指定的比例基準下，每一百萬份中有 5 份目標成分」。"
+      "isCorrect": false,
+      "reason": "忽略只有半公斤。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「20 g 食鹽加 80 g 水的濃度是 20÷80×100…」不成立；20 g 食鹽加 80 g 水形成 100 g 溶液，重量百分濃度為 20%。"
+      "reason": "誤把乘法當除法。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "單位換算",
+    "計算"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "溶液中含量較少的一方永遠是溶劑，和物態與作用無關",
-    "只要肉眼一時看不到粒子，就能斷定混合物完全均勻",
-    "20 g 食鹽加 80 g 水的濃度是 20÷80×100%＝25%"
+    "750 ppm",
+    "1.5 ppm",
+    "0.75 ppm"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AB-4-4",
@@ -69,19 +69,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

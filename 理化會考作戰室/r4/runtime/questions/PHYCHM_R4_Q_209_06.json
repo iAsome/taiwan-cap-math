@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解把曲線軌跡誤當位置時間圖的解讀，哪項修正合理？",
+  "stem": "物體沿圓形跑道運動一圈，能否只用一張一維位置—時間圖完整重建路徑？",
   "options": [
-    "位置—時間圖的水平線表示物體以水平方向等速前進",
-    "速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度",
-    "位置—時間圖的線形描述位置如何隨時間變化",
-    "速度數值變得更負就一定是減速，無需比較速度大小與方向"
+    "能，圖線必定是一個圓",
+    "能，只要圖線長度等於周長",
+    "不能，因為時間不能作橫軸",
+    "不能，單一位置分量不足以描述整個平面路徑"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「位置—時間圖的水平線表示物體以水平方向等速前進」不成立；位置—時間圖的水平線表示靜止，直線斜率不變表示等速，斜率變號表示折返。"
+      "reason": "能，圖線必定是一個圓不成立。圓周運動需要至少兩個空間座標或直接的路徑圖。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度」不成立；速度—時間圖的縱座標直接給各時刻速度；水平線表示速度恆定。"
+      "reason": "能，只要圖線長度等於周長不成立。圓周運動需要至少兩個空間座標或直接的路徑圖。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「位置—時間圖的線形描述位置如何隨時間變化，不是物體在空間中的軌跡外觀」。"
+      "isCorrect": false,
+      "reason": "不能，因為時間不能作橫軸不成立。圓周運動需要至少兩個空間座標或直接的路徑圖。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「速度數值變得更負就一定是減速，無需比較速度大小與方向」不成立；速度—時間圖上數值由 2 增至 6 m/s 表示正向加速；速度由 −2 變 −6 m/s 則是…。"
+      "isCorrect": true,
+      "reason": "圓周運動需要至少兩個空間座標或直接的路徑圖。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "位置—時間圖的水平線表示物體以水平方向等速前進",
-    "速度—時間圖的縱座標是物體位置，必須再對圖形求斜率才得速度",
-    "速度數值變得更負就一定是減速，無需比較速度大小與方向"
+    "能，圖線必定是一個圓",
+    "能，只要圖線長度等於周長",
+    "不能，因為時間不能作橫軸"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查冰熔化紀錄，哪項判讀正確？",
+  "stem": "兩溶液混合升溫，哪項是需要排除的替代解釋？",
   "options": [
-    "反應線索要排除沸騰、溶解、外界加熱等原因，並用產物性質或對照試驗驗證",
-    "水沸騰產生氣泡就表示生成新氣體，所以必為化學反應",
-    "性質改變只要能恢復外觀就必然沒有新物質，無需檢驗",
-    "只要觀察到任一顏色或溫度變化，就已唯一證明發生特定化學反應"
+    "反應一定放熱，因混合後量到溫度上升",
+    "溫度計可讀數",
+    "其中一液初溫較高",
+    "溶液有體積"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「反應線索要排除沸騰、溶解、外界加熱等原因，並用產物性質或對照試驗驗證」。"
+      "isCorrect": false,
+      "reason": "是待驗假設。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「水沸騰產生氣泡就表示生成新氣體，所以必為化學反應」不成立；冰熔化、水沸騰都只改變 H₂O 的狀態，沒有形成新物質，屬物理變化。"
+      "reason": "是量測工具功能。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「性質改變只要能恢復外觀就必然沒有新物質，無需檢驗」不成立；鐵生鏽後產物的顏色、導電等性質與鐵不同，可支持形成新物質。"
+      "isCorrect": true,
+      "reason": "熱混合可造成升溫。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要觀察到任一顏色或溫度變化，就已唯一證明發生特定化學反應」不成立；沉澱、特定氣體、難以由物理過程解釋的顏色或溫度變化，都可作反應線索。"
+      "reason": "不是升溫原因。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀",
-    "應用"
+    "混淆辨識"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "水沸騰產生氣泡就表示生成新氣體，所以必為化學反應",
-    "性質改變只要能恢復外觀就必然沒有新物質，無需檢驗",
-    "只要觀察到任一顏色或溫度變化，就已唯一證明發生特定化學反應"
+    "反應一定放熱，因混合後量到溫度上升",
+    "溫度計可讀數",
+    "溶液有體積"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-AB-4-3",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

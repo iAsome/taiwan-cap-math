@@ -14,34 +14,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查不同星體重量紀錄，哪項判讀正確？",
+  "stem": "中心距離由 r 變為 3r，質量不變，引力為何？",
   "options": [
-    "只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力",
-    "摩擦力在所有情境都必然與物體質心的當下運動方向相反",
-    "比較粗糙程度時可同時在其中一組增加負重，結果仍只反映表面性質",
-    "比較時要分開變項"
+    "引力變為 F/9",
+    "兩物體間的引力變為 F/3",
+    "兩物體間的引力變為 3F",
+    "兩物體間的引力變為 9F"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力」不成立；靜摩擦力在最大值內隨滑動趨勢調整，以阻止接觸面相對滑動；動摩擦力則在已相對滑動時出現。"
+      "isCorrect": true,
+      "reason": "引力與 r² 成反比，3²=9。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「摩擦力在所有情境都必然與物體質心的當下運動方向相反」不成立；摩擦力方向用來阻礙接觸面間的相對運動或滑動趨勢，不一定和物體運動方向相反。"
+      "reason": "兩物體間的引力變為 F/3不成立。引力與 r² 成反比，3²=9。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「比較粗糙程度時可同時在其中一組增加負重，結果仍只反映表面性質」不成立；摩擦效果受接觸面性質與正向作用力影響；比較實驗要一次只改一項。"
+      "reason": "兩物體間的引力變為 3F不成立。引力與 r² 成反比，3²=9。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「萬有引力隨兩物體質量增大而增大，隨中心距離增加而減小；比較時要分開變項」。"
+      "isCorrect": false,
+      "reason": "兩物體間的引力變為 9F不成立。引力與 r² 成反比，3²=9。"
     }
   ],
   "difficulty": "standard",
@@ -49,16 +49,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要物體整體在移動，接觸面的摩擦力就必定是動摩擦力",
-    "摩擦力在所有情境都必然與物體質心的當下運動方向相反",
-    "比較粗糙程度時可同時在其中一組增加負重，結果仍只反映表面性質"
+    "兩物體間的引力變為 F/3",
+    "兩物體間的引力變為 3F",
+    "兩物體間的引力變為 9F"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-10",
       "AUTH-NATURAL-LC-EB-4-11",
@@ -69,19 +69,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

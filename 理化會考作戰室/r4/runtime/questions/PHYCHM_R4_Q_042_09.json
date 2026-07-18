@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對原子模型證據結果，哪項說法正確？",
+  "stem": "粒子圖含未連接 A 與 B 原子，整體最可能是？",
   "options": [
-    "模型一旦改變就表示先前所有實驗都是作假，舊證據不再存在",
-    "原子核佔滿幾乎整個原子體積，電子全部固定貼在核表面",
-    "水是氫、氧元素以固定比例組成的化合物",
-    "H₂O 的相對分子量為 1＋16＝17，因為下標 2 不需乘入"
+    "兩元素的混合物",
+    "純 AB 化合物",
+    "單一元素",
+    "真空"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「模型一旦改變就表示先前所有實驗都是作假，舊證據不再存在」不成立；原子模型會在新實驗證據出現後修正；新模型應解釋既有證據，並對新現象有更好預測。"
+      "isCorrect": true,
+      "reason": "有兩種未結合粒子。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「原子核佔滿幾乎整個原子體積，電子全部固定貼在核表面」不成立；原子的正電與大部分質量集中在微小原子核，電子分布在核外；原子內大部分是空間。"
+      "reason": "沒有 AB 組合。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「銅元素由同類銅原子組成；水是氫、氧元素以固定比例組成的化合物，一個水分子是其粒子表示」。"
+      "isCorrect": false,
+      "reason": "有 A、B 兩類。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「H₂O 的相對分子量為 1＋16＝17，因為下標 2 不需…」不成立；水 H₂O 的相對分子量為 2×1＋16＝18；這是相對比較值，未直接表示一個分子質量為 18…。"
+      "reason": "有粒子。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "模型分類"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "模型一旦改變就表示先前所有實驗都是作假，舊證據不再存在",
-    "原子核佔滿幾乎整個原子體積，電子全部固定貼在核表面",
-    "H₂O 的相對分子量為 1＋16＝17，因為下標 2 不需乘入"
+    "純 AB 化合物",
+    "單一元素",
+    "真空"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-1",
       "AUTH-NATURAL-LC-AA-4-2",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

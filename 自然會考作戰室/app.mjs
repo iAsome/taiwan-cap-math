@@ -31,7 +31,7 @@ function renderTable(table, label) {
 function renderAsset(asset) {
   if (!asset) return "";
   return `<figure class="science-figure">
-    <img src="${escapeHtml(asset.runtimePath)}" alt="${escapeHtml(asset.altText)}" loading="lazy">
+    <img src="${escapeHtml(asset.runtimePath)}" alt="${escapeHtml(asset.altText)}">
     <figcaption>${escapeHtml(asset.caption)}</figcaption>
     <details><summary>圖形文字與資料說明</summary><p>${escapeHtml(asset.longDescription)}</p>${renderTable(asset.dataFallback, `${asset.caption}替代資料`)}</details>
   </figure>`;

@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於電價資料計算基本電費情境，哪項結論符合題給條件？",
+  "stem": "冷氣列含功率1.50 kW及月使用時間100 h；合計列含—及—。依電價資料計算基本電費情境在此受到哪個月使用時間適用限制？",
   "options": [
-    "基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算",
-    "只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關",
-    "電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道",
-    "電功率為 V/I＝60 W，因為電壓應除以電流"
+    "實際帳單可能有級距與其他費用，必須依題給電價規則，不能只用電器台數估算",
+    "把估算電費只數電器台數，不計功率、使用時間與電價規則",
+    "漏列實際帳單的級距與附加規則，直接把單一單價套到所有情況",
+    "把照明 0.20 kW 使用 120 h 被算成 240 kWh，而非 24 kWh"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算」。"
+      "reason": "實際帳單可能有級距與其他費用，必須依題給電價規則，不能只用電器台數估算。照明列的功率為0.20 kW，月使用時間為120 h；冰箱平均列的功率為0.10 kW，月使用時間為720 h。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關」不成立；安全節能做法包括不超過延長線額定、保持線材完好乾燥、不用時關閉高功率電器並比較實際用電量。"
+      "reason": "解題時誤把估算電費只數電器台數，不計功率、使用時間與電價規則。基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算；照原做法會把月用電量算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道」不成立；基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算。"
+      "reason": "未納入實際帳單的級距與附加規則，直接把單一單價套到所有情況，結果會錯判月用電量。實際帳單可能有級距與其他費用，必須依題給電價規則，不能只用電器台數估算；月用電量差異若未通過依電價資料計算基本電費情境對功率的控制，就不能只歸給月使用時間。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「電功率為 V/I＝60 W，因為電壓應除以電流」不成立；電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W。"
+      "reason": "解題時誤把照明 0.20 kW 使用 120 h 被算成 240 kWh，而非 24 kWh。三項合計 246 kWh；月使用時間的數值若未依功率核對，會使月用電量無法通過依電價資料計算基本電費情境檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "條件判斷",
-    "分析"
+    "應用"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關",
-    "電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道",
-    "電功率為 V/I＝60 W，因為電壓應除以電流"
+    "把估算電費只數電器台數，不計功率、使用時間與電價規則",
+    "漏列實際帳單的級距與附加規則，直接把單一單價套到所有情況",
+    "把照明 0.20 kW 使用 120 h 被算成 240 kWh，而非 24 kWh"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

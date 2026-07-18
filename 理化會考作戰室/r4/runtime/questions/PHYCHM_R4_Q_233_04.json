@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查鞋底壓力紀錄，哪項判讀正確？",
+  "stem": "解題時誤把因液體重量向下，就認為靜止液體不會對容器側壁施加壓力。用說明液體壓力向各方向傳遞檢查這個做法，讀值應如何重判？",
   "options": [
+    "主張側壁破孔不會噴水",
     "容器側壁也受液體壓力",
-    "用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與",
-    "密閉氣體體積變小時粒子數自動減少，所以壓力也一定減小",
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁"
+    "把因液體重量向下，就認為靜止液體不會對容器側壁施加壓力",
+    "做比較時感測面方向時同時改變量測深度，卻把讀值差全歸因於方向"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「靜止液體中同一點的壓力可向各方向作用，不只向下；容器側壁也受液體壓力」。"
+      "isCorrect": false,
+      "reason": "誤以為側壁破孔不會噴水，因為液體壓力只能朝容器底部作用。靜止液體中同一點的壓力可向各方向作用，不只向下；位置未列入說明液體壓力向各方向傳遞時，讀值的感測面朝向大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與」不成立；吸管、滴管等裝置是先降低內部壓力，外界較大大氣壓才將液體推向低壓處。"
+      "isCorrect": true,
+      "reason": "容器側壁也受液體壓力。丁列的位置為水下 30 cm，感測面朝向為向右；甲列的位置為水下 15 cm，感測面朝向為向下。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「密閉氣體體積變小時粒子數自動減少，所以壓力也一定減小」不成立；密閉的定量氣體在溫度近似不變時，體積被壓縮而變小，粒子撞壁更頻繁，壓力較大。"
+      "reason": "解題時誤把因液體重量向下，就認為靜止液體不會對容器側壁施加壓力。靜止液體中同一點的壓力可向各方向作用，不只向下；照原做法會把讀值算錯或判反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁」不成立；靜止液體中同一點的壓力可向各方向作用，不只向下；容器側壁也受液體壓力。"
+      "reason": "做比較時感測面方向時同時改變量測深度，卻把讀值差全歸因於方向，結果會錯判讀值。感測器必須位於同一液體、同一深度且校正相同，才可比較方向；讀值差異若未通過說明液體壓力向各方向傳遞對位置的控制，就不能只歸給感測面朝向。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀",
+    "條件判斷",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與",
-    "密閉氣體體積變小時粒子數自動減少，所以壓力也一定減小",
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁"
+    "主張側壁破孔不會噴水",
+    "把因液體重量向下，就認為靜止液體不會對容器側壁施加壓力",
+    "做比較時感測面方向時同時改變量測深度，卻把讀值差全歸因於方向"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

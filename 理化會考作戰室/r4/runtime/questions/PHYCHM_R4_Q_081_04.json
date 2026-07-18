@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查密閉袋反應紀錄，哪項判讀正確？",
+  "stem": "塞緊的錐形瓶總質量在反應前為 78.35 g，反應後為 78.34 g，天平最小顯示 0.01 g。最合理的處理是什麼？",
   "options": [
-    "密閉袋內的反應前後，所有反應物與生成物的總質量相等，因為原子只重新排列",
-    "密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變",
-    "反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查",
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小"
+    "把反應後讀值改寫成 78.35 g",
+    "立刻宣布質量守恆失效",
+    "檢查裝置並重複量測，判斷末位變動",
+    "只秤瓶中的液體以減少誤差"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「密閉袋內的反應前後，所有反應物與生成物的總質量相等，因為原子只重新排列」。"
+      "isCorrect": false,
+      "reason": "不可任意修改原始數據。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變」不成立；質量守恆不要求反應前後總體積相等；氣體生成、溫度與壓力都可使體積改變。"
+      "reason": "一格差異不足以推翻定律。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查」不成立；粒子模型驗證配平時，要對每種顏色或符號的原子逐個計數，不是只數分子團數。"
+      "isCorrect": true,
+      "reason": "檢查與重測可判斷差異是否為量測變動。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小」不成立；密閉袋內的反應前後，所有反應物與生成物的總質量相等，因為原子只重新排列。"
+      "reason": "改變量測系統會遺漏物質。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀",
-    "應用"
+    "數據判讀",
+    "證據評估"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變",
-    "反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查",
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小"
+    "把反應後讀值改寫成 78.35 g",
+    "立刻宣布質量守恆失效",
+    "只秤瓶中的液體以減少誤差"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

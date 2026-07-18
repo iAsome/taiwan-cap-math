@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對未知質量表結果，哪項說法正確？",
+  "stem": "N₂＋3H₂→2NH₃ 中投入 3 個 N₂ 與 6 個 H₂。哪個反應物不足以讓 N₂ 全反應？",
   "options": [
-    "密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變",
-    "反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查",
-    "2H₂＋O₂→2H₂O 表示氫分子、氧分子與水分子的粒子數比為 2：1：2",
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2"
+    "N₂",
+    "兩者都恰好",
+    "NH₃",
+    "H₂"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變」不成立；質量守恆不要求反應前後總體積相等；氣體生成、溫度與壓力都可使體積改變。"
+      "reason": "N₂數量已知，不是相對不足者。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查」不成立；粒子模型驗證配平時，要對每種顏色或符號的原子逐個計數，不是只數分子團數。"
+      "reason": "比例3：6不是1：3。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「2H₂＋O₂→2H₂O 表示氫分子、氧分子與水分子的粒子數比為 2：1：2」。"
+      "isCorrect": false,
+      "reason": "NH₃是生成物。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「配平係數 2：1：2 直接表示三種物質的質量比也是 2：1…」不成立；2H₂＋O₂→2H₂O 表示氫分子、氧分子與水分子的粒子數比為 2：1：2。"
+      "isCorrect": true,
+      "reason": "3個N₂需9個H₂，只有6個。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "比例限制"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "密閉系統中質量相等必然表示體積、粒子數和物質種類也全部不變",
-    "反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查",
-    "配平係數 2：1：2 直接表示三種物質的質量比也是 2：1：2"
+    "N₂",
+    "兩者都恰好",
+    "NH₃"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

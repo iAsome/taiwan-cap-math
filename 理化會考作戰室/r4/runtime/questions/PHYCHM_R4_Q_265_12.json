@@ -10,70 +10,56 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估摩擦起電報告時，哪項說明正確？",
+  "stem": "紀錄1 s時，金屬設備電位是+3 kV，接地狀態是接地，火花觀察為未出現。如何補足紀錄，才能解釋火花觀察？",
   "options": [
-    "接地提供電荷與大地間移動的路徑，可減少靜電累積；在易燃環境更需防止靜電火花",
-    "接地線的功能是在物體上累積更多靜電，以增加火花能量",
-    "摩擦生電是摩擦動作創造大量正負電荷，原先物體中沒有帶電粒子",
-    "帶正電表示物體新增許多質子且失去所有電子，電中性則是完全沒有電荷"
+    "主張易燃環境的靜電火花與電位差無關，因此無須控制電荷累積",
+    "解題時將接地功能說成永久增加物體電荷，而不是提供電荷移動路徑",
+    "資料只顯示此設備與測試條件",
+    "主張只要有接地線就能取代斷路、防爆與其他安全措施"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「接地提供電荷與大地間移動的路徑，可減少靜電累積；在易燃環境更需防止靜電火花」。"
+      "isCorrect": false,
+      "reason": "誤以為易燃環境的靜電火花與電位差無關，因此無須控制電荷累積，結果會錯判火花觀察。接地提供電荷與大地間移動的路徑，可減少靜電累積；金屬設備電位未列入分析接地與生活靜電安全時，火花觀察的接地狀態大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「接地線的功能是在物體上累積更多靜電，以增加火花能量」不成立；接地提供電荷與大地間移動的路徑，可減少靜電累積；在易燃環境更需防止靜電火花。"
+      "reason": "解題時錯將接地功能說成永久增加物體電荷，而不是提供電荷移動路徑。接地提供電荷與大地間移動的路徑，可減少靜電累積；照原做法會把火花觀察算錯或判反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「摩擦生電是摩擦動作創造大量正負電荷，原先物體中沒有帶電粒子」不成立；兩個原本中性且與外界絕緣的不同材料摩擦時，電子可由一物轉移至另一物，使兩者帶等量異號電荷。"
+      "isCorrect": true,
+      "reason": "資料只顯示此設備與測試條件。5 s列的金屬設備電位為約 0 kV，接地狀態為接地；0 s列的金屬設備電位為+8 kV，接地狀態為未接地。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「帶正電表示物體新增許多質子且失去所有電子，電中性則是完全沒…」不成立；物體失去部分電子帶正電，得到額外電子帶負電，正負電量相等時呈電中性。"
+      "reason": "誤以為只要有接地線就能取代斷路、防爆與其他安全措施。接地線需可靠連接且不能取代其他防爆措施；火花觀察差異若未通過分析接地與生活靜電安全對金屬設備電位的控制，就不能只歸給接地狀態。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "接地線的功能是在物體上累積更多靜電，以增加火花能量",
-    "摩擦生電是摩擦動作創造大量正負電荷，原先物體中沒有帶電粒子",
-    "帶正電表示物體新增許多質子且失去所有電子，電中性則是完全沒有電荷"
+    "主張易燃環境的靜電火花與電位差無關，因此無須控制電荷累積",
+    "解題時將接地功能說成永久增加物體電荷，而不是提供電荷移動路徑",
+    "主張只要有接地線就能取代斷路、防爆與其他安全措施"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KC-4-1",
       "AUTH-NATURAL-LC-KC-4-2",
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

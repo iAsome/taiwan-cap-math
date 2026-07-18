@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "整理高壓輸電資料後，哪項說明正確？",
+  "stem": "接通電源條件下，先知輸入電能和電磁作用線圈兩側受相反方向力，再看輸出線圈開始轉。計算輸出前應先選定什麼公式或原理？",
   "options": [
-    "載流導線受力方向只由導線顏色決定，電流與磁場方向改變都沒有影響",
-    "只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流",
-    "發電機和電動機都只將電能轉成熱能，與機械能無關",
-    "電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能"
+    "電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能",
+    "把斷電後線圈逐漸停轉，卻解釋為電磁力仍持續供能",
+    "主張線圈旋轉能自行供應原本的電能，不需外部電源",
+    "解題時將電動機說成主要將機械能轉成電能，混同發電機"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「載流導線受力方向只由導線顏色決定，電流與磁場方向改變都沒有…」不成立；在受力不為零的配置中，載流導線放在外磁場中會受力；只改變電流或磁場方向之一，受力方向會反轉。"
+      "isCorrect": true,
+      "reason": "電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能。軸承摩擦列的輸入為部分電能，電磁作用為—；斷電列的輸入為無持續輸入，電磁作用為電磁力消失。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流」不成立；穿過線圈的磁通量發生變化時可產生感應電動勢；電路閉合時才會有感應電流。"
+      "reason": "解題時誤把斷電後線圈逐漸停轉，卻解釋為電磁力仍持續供能，結果會錯判輸出。馬達把電能主要轉為機械能，並有部分內能與聲能；電磁作用的數值若未依輸入核對，會使輸出無法通過由電流磁場受力解釋電動機檢查。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「發電機和電動機都只將電能轉成熱能，與機械能無關」不成立；發電機主要將機械能轉電能，電動機主要將電能轉機械能，兩者能量流向相反。"
+      "reason": "誤以為線圈旋轉能自行供應原本的電能，不需外部電源，結果會錯判輸出。電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能；輸入未列入由電流磁場受力解釋電動機時，輸出的電磁作用大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能」。"
+      "isCorrect": false,
+      "reason": "解題時錯將電動機說成主要將機械能轉成電能，混同發電機，結果會錯判輸出。電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能；照原做法會把輸出算錯或判反。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "辨認",
+    "概念理解"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "載流導線受力方向只由導線顏色決定，電流與磁場方向改變都沒有影響",
-    "只要磁鐵放在線圈旁邊靜止不動，就必有持續感應電流",
-    "發電機和電動機都只將電能轉成熱能，與機械能無關"
+    "把斷電後線圈逐漸停轉，卻解釋為電磁力仍持續供能",
+    "主張線圈旋轉能自行供應原本的電能，不需外部電源",
+    "解題時將電動機說成主要將機械能轉成電能，混同發電機"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-KC-4-4",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "搬運重物出現四種說法，哪項有理化概念支持？",
+  "stem": "解題時誤把系統有外力作功時仍把外界輸入排除，硬把內部能量總和判成固定。依用能量守恆檢查理想系統修正時，動能與位能應採哪個原理連結？",
   "options": [
-    "選定系統若不與外界交換能量，總能量守恆；若動能增加 30 J，其他能量形式總量應減少 30 J",
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J",
-    "動能只由物體所在高度決定，質量與速度都不影響"
+    "看到甲到丙動能增加 60 J",
+    "選定系統若不與外界交換能量，總能量守恆",
+    "主張總能量守恆表示物體速度、位置和形變都不能改變",
+    "解題時將能量守恆解釋成每一種能量都各自不變，而不是各形式總和不變"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「選定系統若不與外界交換能量，總能量守恆；若動能增加 30 J，其他能量形式總量應減少 30 J」。"
+      "isCorrect": false,
+      "reason": "一看到甲到丙動能增加 60 J，卻沒有核對位能與彈性位能合計也減少 60 J。各時刻三種能量形式合計皆為 100 J；位能的數值若未依動能核對，會使總能量無法通過用能量守恆檢查理想系統檢查。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關」不成立；力對物體作功要有物體沿力的分量方向發生位移；用力提住靜止物體時對物體作功為零。"
+      "isCorrect": true,
+      "reason": "選定系統若不與外界交換能量，總能量守恆。丙列的動能為70 J，位能為20 J；丁列的動能為90 J，位能為5 J。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「功是力除以位移，所以 20 N 推 3 m 作功為 6.6…」不成立；恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J。"
+      "reason": "誤以為總能量守恆表示物體速度、位置和形變都不能改變。選定系統若不與外界交換能量，總能量守恆；動能未列入用能量守恆檢查理想系統時，總能量的位能大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「動能只由物體所在高度決定，質量與速度都不影響」不成立；動能與質量成正比、與速度平方成正比；同質量者速度加倍，動能變為四倍。"
+      "reason": "解題時錯將能量守恆解釋成每一種能量都各自不變，而不是各形式總和不變，結果會錯判總能量。選定系統若不與外界交換能量，總能量守恆；照原做法會把總能量算錯或判反。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J",
-    "動能只由物體所在高度決定，質量與速度都不影響"
+    "看到甲到丙動能增加 60 J",
+    "主張總能量守恆表示物體速度、位置和形變都不能改變",
+    "解題時將能量守恆解釋成每一種能量都各自不變，而不是各形式總和不變"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "整理催化劑實驗資料後，哪項說明正確？",
+  "stem": "兩組最終產物相同，能否有不同速率？",
   "options": [
-    "動態平衡表示正逆反應都已完全停止，系統內粒子不再互動",
-    "任何平衡系統一旦達平衡，就不可能因溫度或濃度改變而轉移",
-    "反應較快只表示達到某狀態所需時間較短",
-    "實驗前十秒產氣較快的組別，最終生成氣體必然比其他組多"
+    "能，但只因質量不守恆",
+    "不能，終量相同表示每一時刻的速率都相同",
+    "能，達到相同終量所需時間可不同",
+    "不能，速率不存在"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「動態平衡表示正逆反應都已完全停止，系統內粒子不再互動」不成立；可逆反應達動態平衡時，正、逆反應仍持續且速率相等，因此巨觀濃度維持穩定。"
+      "reason": "與守恆無關。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「任何平衡系統一旦達平衡，就不可能因溫度或濃度改變而轉移」不成立；改變溫度或濃度後，平衡系統可調整到新的巨觀穩定狀態；方向需依題目提供的反應資訊判斷。"
+      "reason": "錯把終點當全曲線。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「反應較快只表示達到某狀態所需時間較短；最終生成量還受反應物量與平衡等條件影響」。"
+      "reason": "歷程可不同。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「實驗前十秒產氣較快的組別，最終生成氣體必然比其他組多」不成立；反應較快只表示達到某狀態所需時間較短；最終生成量還受反應物量與平衡等條件影響。"
+      "reason": "速率可測。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "反例理解"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "動態平衡表示正逆反應都已完全停止，系統內粒子不再互動",
-    "任何平衡系統一旦達平衡，就不可能因溫度或濃度改變而轉移",
-    "實驗前十秒產氣較快的組別，最終生成氣體必然比其他組多"
+    "能，但只因質量不守恆",
+    "不能，終量相同表示每一時刻的速率都相同",
+    "不能，速率不存在"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科反應速率、控制變因與動態平衡層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JE-4-1",
       "AUTH-NATURAL-LC-JE-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

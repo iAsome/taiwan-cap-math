@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估並聯電路報告時，哪項說明正確？",
+  "stem": "開關斷開：等效路徑不連續、主線電流0 A、現象燈滅。驗證現象前須保留哪項操作條件？",
   "options": [
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換",
-    "可產生過大電流與發熱風險"
+    "主張燈泡不亮就一定是燈絲斷路，並漏掉檢查開關與旁路",
+    "短路電流仍受電源內阻與導線電阻限制，但絕不能把它描述成必然零電流",
+    "解題時將斷路和短路都說成電流為零，忽略短路形成低電阻大電流路徑",
+    "把導線跨過燈泡視為正常並聯，並漏掉辨認它近乎直接連接兩端"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「短路和斷路都只會使電流完全為零，不可能出現過大電流」不成立；斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險。"
+      "reason": "誤以為燈泡不亮就一定是燈絲斷路，卻未檢查開關與旁路。斷路使回路不連續而無電流；等效路徑未列入由電路圖判斷短路斷路與元件狀態時，現象的主線電流大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路」不成立；電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整。"
+      "isCorrect": true,
+      "reason": "短路電流仍受電源內阻與導線電阻限制，但絕不能把它描述成必然零電流。燈絲燒斷列的等效路徑為燈泡內斷路，主線電流為0 A；正常列的等效路徑為經過燈泡，主線電流為0.30 A。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「電流、電壓與電阻是同一物理量的三個名稱，單位也可互換」不成立；電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。"
+      "reason": "解題時錯將斷路和短路都說成電流為零，忽略短路形成低電阻大電流路徑。斷路使回路不連續而無電流；照原做法會把現象算錯或判反。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險」。"
+      "isCorrect": false,
+      "reason": "把導線跨過燈泡視為正常並聯，卻未辨認它近乎直接連接兩端，結果會錯判現象。短路電流仍受電源內阻與導線電阻限制，但絕不能把它描述成必然零電流；現象差異若未通過由電路圖判斷短路斷路與元件狀態對等效路徑的控制，就不能只歸給主線電流。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換"
+    "主張燈泡不亮就一定是燈絲斷路，並漏掉檢查開關與旁路",
+    "解題時將斷路和短路都說成電流為零，忽略短路形成低電阻大電流路徑",
+    "把導線跨過燈泡視為正常並聯，並漏掉辨認它近乎直接連接兩端"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

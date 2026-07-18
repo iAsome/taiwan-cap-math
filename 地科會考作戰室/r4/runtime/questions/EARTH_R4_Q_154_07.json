@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "研究「由日出日落算晝長」中的太陽高度角比較地表受能量大小時，哪一種資料來源較可靠？",
+  "stem": "要檢驗太陽高度與單位面積受能的關係，哪個實驗紀錄最合適？",
   "options": [
-    "查核太陽高度角比較地表受能量大小時採用有日期、位置與單位的太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型",
-    "查核太陽高度角比較地表受能量大小只需一張來源不明的網路圖片",
-    "刪除與太陽高度較大時單位面積受能通常較多不一致的資料後再判讀",
-    "以個人印象取代日期位置、臺灣日出、臺灣日落、正午影長相對值紀錄"
+    "固定燈距與總能量，改變入射角並量光斑面積及面積能量",
+    "每次同時更換燈泡、距離、紙張與照射角，再比較亮暗",
+    "只量紙面最後溫度，不記錄照射時間與環境溫度",
+    "依肉眼判斷哪次比較亮，不保留任何數值"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "資料具備來源與量測條件，可重現由日出日落算晝長的判讀。"
+      "reason": "控制燈距與能量後，角度、光斑面積及面積能量可形成可檢驗的因果鏈。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "來源、時間與尺度不明，不能驗證「由日出日落算晝長」的條件。"
+      "reason": "多項條件同時改變，結果差異不能單獨歸因於入射角。 單位面積受能還須結合入射角與光斑面積判讀。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "刪除反例會扭曲證據分布。"
+      "reason": "末溫還受初溫與照射時間影響，缺少控制便不能代表面積受能。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "主觀印象不能取代可檢核觀測。"
+      "reason": "肉眼印象缺乏尺度與原始數值，別人無法重做或比較差異。 單位面積受能還須結合入射角與光斑面積判讀。"
     }
   ],
   "difficulty": "standard",
@@ -49,7 +49,7 @@
   ],
   "representationType": "source-evaluation",
   "misconceptionTargets": [
-    "晝夜交替由地球公轉造成"
+    "每次同時更換燈泡、距離、紙張與照射角，再比較亮暗"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "逐項核對「由日出日落算晝長」的條件後，「查核太陽高度角比較地表受能量大小時採用有日期、位置與單位的太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "固定其他條件並量得光斑與面積能量，能直接檢查斜射分散效應。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 0,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "同時更換燈泡和距離會改變入射總能量，使角度效果無法分離。",
       "status": "pass"
     }
   ],

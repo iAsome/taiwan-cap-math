@@ -138,16 +138,16 @@
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "AD 平分 ∠BAC，且 AB=AC。證明 △ABD≅△ACD。",
+      "prompt": "四邊形PQRS中，PQ=PS、∠QPR=∠RPS，並畫出對角線PR。證明△PQR≅△PSR。",
       "solutionSteps": [
-        "AB=AC（已知）。",
-        "∠BAD=∠CAD（角平分線定義）。",
-        "AD=AD（共用邊）。",
+        "PQ=PS（已知）。",
+        "PR=PR（共用邊）。",
+        "∠QPR=∠RPS（已知）。",
         "兩邊及夾角相等。",
-        "三項資料依邊、夾角、邊排列，因此使用SAS完成結論。"
+        "三項資料依邊、夾角、邊排列，因此使用SAS完成結論並核對P↔P、Q↔S、R↔R。"
       ],
-      "answer": "△ABD≅△ACD（SAS）。",
-      "why": "AB與AC及共用邊AD分別對應，角平分線又給出兩邊之間的夾角相等；三項資料依SAS排列，證明沒有偷用待證結論。"
+      "answer": "△PQR≅△PSR（SAS）。",
+      "why": "PQ與PS及共用邊PR分別對應，所給兩角又正好位於這兩組邊之間；三項資料依SAS排列，證明沒有偷用待證結論。"
     },
     {
       "exampleId": "L2",
@@ -274,5 +274,5 @@
     "reviewVersion": "human-lecture-review-u16-r1.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "04b8e67ef6e6288b0f0ff1df0f75de4ce647767a694c2f979834f5a9ff7ed705"
+  "contentSha256": "86dda61e30dda670698224f60a1a4a6e38a001c723bc0bd0686e0abdd7dad1bb"
 }

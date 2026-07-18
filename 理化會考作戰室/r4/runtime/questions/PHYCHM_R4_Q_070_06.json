@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解可逆物理變化與化學可逆反應，哪項修正合理？",
+  "stem": "鐵生鏽後即使另用方法取得鐵，原先生鏽仍屬化學變化，為什麼？",
   "options": [
-    "冒泡或變色本身就是完整證明，不需知道操作過程或排除其他原因",
-    "化學反應會把原子徹底消滅後再創造新原子，所以前後元素可任意改變",
-    "只要肉眼看不到原物質，就表示它已化學分解成新物質",
-    "物理變化常可逆，但「可逆」不是分類標準；部分化學反應也可逆，核心仍是新物質"
+    "生鏽時曾形成性質不同的鐵鏽",
+    "取得鐵表示鐵鏽從未存在",
+    "鐵原子的數量必定增加",
+    "只要後續步驟多就是化學變化"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「冒泡或變色本身就是完整證明，不需知道操作過程或排除其他原因」不成立；反應線索要排除沸騰、溶解、外界加熱等原因，並用產物性質或對照試驗驗證。"
+      "isCorrect": true,
+      "reason": "鐵鏽是原過程形成的新物質。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「化學反應會把原子徹底消滅後再創造新原子，所以前後元素可任意…」不成立；化學變化中原子種類與總數保留，但原子連結和排列改變，形成不同粒子。"
+      "reason": "後續處理不能抹去先前產物證據。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只要肉眼看不到原物質，就表示它已化學分解成新物質」不成立；糖溶於水雖外觀消失，可由蒸發水回收糖，沒有證據顯示新物質，屬物理變化。"
+      "reason": "化學反應遵守原子守恆，不必增加鐵原子。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「物理變化常可逆，但「可逆」不是分類標準；部分化學反應也可逆，核心仍是新物質」。"
+      "isCorrect": false,
+      "reason": "步驟數量不決定變化類別。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "過程切分"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "冒泡或變色本身就是完整證明，不需知道操作過程或排除其他原因",
-    "化學反應會把原子徹底消滅後再創造新原子，所以前後元素可任意改變",
-    "只要肉眼看不到原物質，就表示它已化學分解成新物質"
+    "取得鐵表示鐵鏽從未存在",
+    "鐵原子的數量必定增加",
+    "只要後續步驟多就是化學變化"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-AB-4-3",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

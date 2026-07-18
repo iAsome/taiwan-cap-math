@@ -13,50 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_270",
-  "stem": "根據並聯電路表中紀錄，哪項結論最合理？",
+  "stem": "電流和電壓在電源前主線為0.40 A、—，到R1為0.40 A、4.0 V。分析串聯電路的電流與電壓用這兩筆電流資料會得到什麼結果？",
   "options": [
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換",
-    "串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和"
+    "主張串聯電路的電流通過第一個電阻後會被用掉，所以後段較小",
+    "解題時將各元件電壓降都設成相同，忽略電阻不同時分配可能不同",
+    "把串聯兩電阻的電壓相減",
+    "串聯各處電流皆 0.40 A，兩元件電壓降 4.0＋8.0＝12.0 V"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少」不成立；串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和。"
+      "reason": "串聯各處電流皆 0.40 A，兩元件電壓降 4.0＋8.0＝12.0 V。電源前主線列的電流為0.40 A、電壓為—；R1列的電流為0.40 A、電壓為4.0 V。誤以為串聯電路的電流通過第一個電阻後會被用掉，所以後段較小。串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和；照原做法會把電阻算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路」不成立；電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整。"
+      "reason": "串聯各處電流皆 0.40 A，兩元件電壓降 4.0＋8.0＝12.0 V。電源前主線列的電流為0.40 A、電壓為—；R1列的電流為0.40 A、電壓為4.0 V。解題時錯將各元件電壓降都設成相同，忽略電阻不同時分配可能不同。此結論針對單一路徑且量表理想；電阻差異若未通過分析串聯電路的電流與電壓對電流的控制，就不能只歸給電壓。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「電流、電壓與電阻是同一物理量的三個名稱，單位也可互換」不成立；電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。"
+      "reason": "串聯各處電流皆 0.40 A，兩元件電壓降 4.0＋8.0＝12.0 V。電源前主線列的電流為0.40 A、電壓為—；R1列的電流為0.40 A、電壓為4.0 V。解題時錯將 R1 的 4 V 與 R2 的 8 V 相減，誤判電源只有 4 V。串聯各處電流皆 0.40 A，兩元件電壓降 4.0＋8.0＝12.0 V；電壓的數值若未依電流核對，會使電阻無法通過分析串聯電路的電流與電壓檢查。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和」。"
+      "reason": "串聯各處電流皆 0.40 A，兩元件電壓降 4.0＋8.0＝12.0 V。電源前主線列的電流為0.40 A、電壓為—；R1列的電流為0.40 A、電壓為4.0 V。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀"
+    "資料判讀",
+    "計算"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換"
+    "主張串聯電路的電流通過第一個電阻後會被用掉，所以後段較小",
+    "解題時將各元件電壓降都設成相同，忽略電阻不同時分配可能不同",
+    "把串聯兩電阻的電壓相減"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -66,20 +67,6 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_014"
   ]

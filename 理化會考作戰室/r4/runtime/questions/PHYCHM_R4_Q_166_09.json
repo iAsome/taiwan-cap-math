@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對波形比較結果，哪項說法正確？",
+  "stem": "要區分河面的水流與波動，哪一種量測最有用？",
   "options": [
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "介質粒子多在平衡位置附近振動",
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比"
+    "追蹤浮標的長時間平均位置與短時間往復位移",
+    "只拍一張波峰照片",
+    "只記水面顏色",
+    "只數河岸石頭數量"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「繩波向右傳時，繩上每一個粒子都從左端一路移到右端」不成立；波將擾動與能量向前傳，介質粒子多在平衡位置附近振動，不隨波整體移到遠處。"
+      "isCorrect": true,
+      "reason": "平均位置持續改變顯示流動；繞平均位置的週期變化顯示波動。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「振幅是波峰到波谷的全高，波長是相鄰波峰的高度差」不成立；波峰是橫波最高點、波谷是最低點；振幅由平衡位置量到波峰，波長是沿傳播方向相鄰同相位點的距離。"
+      "reason": "單張照片沒有時間變化，難分平均漂移與振動。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「波將擾動與能量向前傳，介質粒子多在平衡位置附近振動，不隨波整體移到遠處」。"
+      "isCorrect": false,
+      "reason": "顏色通常不提供速度或位移資料。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「週期越長表示每秒振動次數越多，所以頻率和週期成正比」不成立；週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T。"
+      "reason": "石頭數量與浮標運動無關。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "繩波向右傳時，繩上每一個粒子都從左端一路移到右端",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "週期越長表示每秒振動次數越多，所以頻率和週期成正比"
+    "只拍一張波峰照片",
+    "只記水面顏色",
+    "只數河岸石頭數量"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

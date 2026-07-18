@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_196",
-  "stem": "根據直線座標表中紀錄，哪項結論最合理？",
+  "stem": "依表格，以門為原點且向東為正，B 點的位置為何？",
   "options": [
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整",
-    "路程與位移永遠大小相等，往返原點的路程也是零",
-    "平均速率是路程乘時間，所以為 4500 m/s"
+    "B 點在門東方 4 m",
+    "B 點就在門口",
+    "B 點在門西方 10 m",
+    "B 點在門西方 4 m"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只給一個數字「200 m」就能唯一決定物體位置，不需參考點…」不成立；物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整。"
+      "reason": "B 點在門東方 4 m不符合題目資料。表中 B 的座標是 -4 m，負號表示門的西方。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整」。"
+      "isCorrect": false,
+      "reason": "B 點就在門口不符合題目資料。表中 B 的座標是 -4 m，負號表示門的西方。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「路程與位移永遠大小相等，往返原點的路程也是零」不成立；路程是實際路徑總長，位移是起點到終點的有向改變；往返原點時路程大於零但位移為零。"
+      "reason": "B 點在門西方 10 m不符合題目資料。表中 B 的座標是 -4 m，負號表示門的西方。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「平均速率是路程乘時間，所以為 4500 m/s」不成立；移動 150 m 耗時 30 s 的平均速率為路程除以總時間，即 5 m/s。"
+      "isCorrect": true,
+      "reason": "表中 B 的座標是 -4 m，負號表示門的西方。"
     }
   ],
   "difficulty": "standard",
@@ -47,14 +47,14 @@
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "路程與位移永遠大小相等，往返原點的路程也是零",
-    "平均速率是路程乘時間，所以為 4500 m/s"
+    "B 點在門東方 4 m",
+    "B 點就在門口",
+    "B 點在門西方 10 m"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -62,19 +62,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

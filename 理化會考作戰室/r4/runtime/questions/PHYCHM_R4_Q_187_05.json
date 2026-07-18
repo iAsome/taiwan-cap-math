@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於光線作圖判斷透鏡成像，哪項結論符合題給條件？",
+  "stem": "物在焦距內時，兩條折射光在像側發散。如何定位虛像？",
   "options": [
-    "入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾",
-    "水中物體看來較淺是因物體實際漂浮上升，與光的折射無關",
-    "凸透鏡與凹透鏡都只能使光發散，兩者的形狀與光線作用無關",
-    "凸透鏡作圖可選用平行主軸後通過焦點、通過光心近似不偏折等主要光線"
+    "把折射光反向延長到物側交會",
+    "把實際光硬折到像側交會",
+    "在屏幕任意點標像",
+    "不需任何光線"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾」不成立；入射角是入射光與法線夾角，折射角是折射光與法線夾角，都不從介面量。"
+      "isCorrect": true,
+      "reason": "發散光的物側反向延長線交會形成虛像。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「水中物體看來較淺是因物體實際漂浮上升，與光的折射無關」不成立；水中物體的光進入空氣後折射，眼睛沿折射光反向延伸，使物體看來比實際淺。"
+      "reason": "實際路徑不能任意更改。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「凸透鏡與凹透鏡都只能使光發散，兩者的形狀與光線作用無關」不成立；凸透鏡可使與主軸平行的光近似會聚至焦點，凹透鏡使光發散，反向延長似來自虛焦點。"
+      "reason": "虛像位置不是任意屏幕點。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「凸透鏡作圖可選用平行主軸後通過焦點、通過光心近似不偏折等主要光線」。"
+      "isCorrect": false,
+      "reason": "仍需延長線作圖。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "條件判斷",
     "分析"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾",
-    "水中物體看來較淺是因物體實際漂浮上升，與光的折射無關",
-    "凸透鏡與凹透鏡都只能使光發散，兩者的形狀與光線作用無關"
+    "把實際光硬折到像側交會",
+    "在屏幕任意點標像",
+    "不需任何光線"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-7",
       "AUTH-NATURAL-LC-KA-4-8",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

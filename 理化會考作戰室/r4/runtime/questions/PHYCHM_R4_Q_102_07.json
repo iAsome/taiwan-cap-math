@@ -17,51 +17,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "金屬燃燒出現四種說法，哪項有理化概念支持？",
+  "stem": "電池長時間放電後電壓下降，哪項解釋較合理？",
   "options": [
-    "鋅銅電池放電時，自發化學反應驅動外電路電流，將化學能轉為電能",
-    "電池先在內部儲存固定的電流，接上導線後把電流倒出而無化學反應",
-    "得氧的物質叫被還原，失氧的物質叫被氧化",
-    "只有看得到火焰的反應才能稱為氧化，生鏽不屬氧化"
+    "化學能違反守恆",
+    "導線長度自行消失",
+    "反應物與電極狀態逐漸改變",
+    "伏特單位逐漸變小"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「鋅銅電池放電時，自發化學反應驅動外電路電流，將化學能轉為電能」。"
+      "isCorrect": false,
+      "reason": "能量轉換仍守恆。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「電池先在內部儲存固定的電流，接上導線後把電流倒出而無化學反應」不成立；鋅銅電池放電時，自發化學反應驅動外電路電流，將化學能轉為電能。"
+      "reason": "導線未必變短。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「得氧的物質叫被還原，失氧的物質叫被氧化」不成立；狹義氧化是物質得氧，還原是物質失氧；同一反應中得氧與失氧相互配對。"
+      "isCorrect": true,
+      "reason": "放電改變可反應條件。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只有看得到火焰的反應才能稱為氧化，生鏽不屬氧化」不成立；燃燒是快速氧化，常發光發熱；緩慢的鏽蝕也是氧化，不需出現火焰。"
+      "reason": "單位不會改變。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "趨勢解釋"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電池先在內部儲存固定的電流，接上導線後把電流倒出而無化學反應",
-    "得氧的物質叫被還原，失氧的物質叫被氧化",
-    "只有看得到火焰的反應才能稱為氧化，生鏽不屬氧化"
+    "化學能違反守恆",
+    "導線長度自行消失",
+    "伏特單位逐漸變小"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科公開題型之證據判讀與生活情境層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -75,19 +74,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

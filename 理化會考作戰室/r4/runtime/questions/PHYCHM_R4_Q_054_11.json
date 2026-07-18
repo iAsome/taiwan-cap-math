@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "換成另一組週期表查找資料，哪項判讀仍合理？",
+  "stem": "金屬完全燃燒後質量未增加，最應先檢查什麼？",
   "options": [
-    "比較金屬與氧反應活性時",
-    "週期表橫列稱族、直行稱週期，名稱可互換而不影響意義",
-    "元素的生活用途只由週期表格子顏色決定，不需查導電、活性等性質",
-    "只要樣品有光澤就能定為金屬，其他性質和例外都不用考慮"
+    "金屬是否增加質子",
+    "天平是否把氧變沒",
+    "是否有產物飛散未被收集",
+    "氧化是否不涉及氧"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「比較金屬與氧反應活性時，要控制質量、表面積、氧氣供應與加熱條件，再比較反應難易」。"
+      "isCorrect": false,
+      "reason": "化學反應不改質子。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「週期表橫列稱族、直行稱週期，名稱可互換而不影響意義」不成立；週期表的橫列稱週期，直行稱族；位置是組織元素性質規律的索引。"
+      "reason": "天平不移除氧。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「元素的生活用途只由週期表格子顏色決定，不需查導電、活性等性質」不成立；銅導電且可拉成導線，氦性質安定可用作保護氣體；應把具體性質連到用途。"
+      "isCorrect": true,
+      "reason": "產物損失會使量測偏低。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要樣品有光澤就能定為金屬，其他性質和例外都不用考慮」不成立；元素分類要綜合導電性、光澤、展性與化學反應等證據，單一外觀不足以概括所有元素。"
+      "reason": "氧化包含與氧反應情境。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "異常資料診斷"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "週期表橫列稱族、直行稱週期，名稱可互換而不影響意義",
-    "元素的生活用途只由週期表格子顏色決定，不需查導電、活性等性質",
-    "只要樣品有光澤就能定為金屬，其他性質和例外都不用考慮"
+    "金屬是否增加質子",
+    "天平是否把氧變沒",
+    "氧化是否不涉及氧"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AA-4-4",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

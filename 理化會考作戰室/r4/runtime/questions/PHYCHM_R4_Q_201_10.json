@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄根據車程平均速率下結論，哪項符合資料？",
+  "stem": "相機連拍顯示球在相鄰兩張照片間移動距離越來越大，拍攝間隔相同。可判斷什麼？",
   "options": [
-    "平均速率是路程乘時間，所以為 4500 m/s",
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘",
-    "儀表在某一刻顯示的是瞬時資訊；一段旅程的平均速率必須以全路程除以全時間",
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同"
+    "球的平均速率必為零",
+    "球每一刻速率完全相同",
+    "球的運動方向必定反轉",
+    "球的瞬時速率有增大趨勢"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「平均速率是路程乘時間，所以為 4500 m/s」不成立；移動 150 m 耗時 30 s 的平均速率為路程除以總時間，即 5 m/s。"
+      "reason": "球的平均速率必為零不符合題目資料。等時間內位移距離增加，表示相應時刻附近的快慢增加。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「72 km/h＝72×1000×3600 m/s，分子分母…」不成立；72 km/h＝20 m/s，因為 1 km＝1000 m、1 h＝3600 s；長度與時間都…。"
+      "reason": "球每一刻速率完全相同不符合題目資料。等時間內位移距離增加，表示相應時刻附近的快慢增加。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「儀表在某一刻顯示的是瞬時資訊；一段旅程的平均速率必須以全路程除以全時間」。"
+      "isCorrect": false,
+      "reason": "球的運動方向必定反轉不符合題目資料。等時間內位移距離增加，表示相應時刻附近的快慢增加。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「速度只是一個正數快慢，向東與向西 10 m/s 在任何分析…」不成立；速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向。"
+      "isCorrect": true,
+      "reason": "等時間內位移距離增加，表示相應時刻附近的快慢增加。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "主張評估",
     "證據評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "平均速率是路程乘時間，所以為 4500 m/s",
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘",
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同"
+    "球的平均速率必為零",
+    "球每一刻速率完全相同",
+    "球的運動方向必定反轉"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

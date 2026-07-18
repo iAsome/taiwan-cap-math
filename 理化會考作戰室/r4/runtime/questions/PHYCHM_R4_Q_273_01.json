@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "學生討論電壓電流計算電功率，哪項敘述正確？",
+  "stem": "從甲改成乙時，電壓由120 V變為120 V，電流由2.0 A變為1.5 A。由電壓電流計算電功率對電流隨電壓變化的解釋為何？",
   "options": [
-    "電功率為 V/I＝60 W，因為電壓應除以電流",
-    "電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W",
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間",
-    "額定電壓只是建議值，110 V 電器直接接 220 V 也一定保持 550 W 且無風險"
+    "由 P＝VI 計算",
+    "解題時將電功率算成 V/I，120 V、2.0 A 得到 60 W",
+    "解題時將不同電器、不同工作狀態的電壓與電流交叉相乘",
+    "把 120×2.0 算成 24 W，錯置十倍的數量級"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「電功率為 V/I＝60 W，因為電壓應除以電流」不成立；電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W。"
+      "isCorrect": true,
+      "reason": "由 P＝VI 計算。甲列的電壓為120 V、電流為2.0 A；乙列的電壓為120 V、電流為1.5 A。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W」。"
+      "isCorrect": false,
+      "reason": "解題時錯將電功率算成 V/I，120 V、2.0 A 得到 60 W。電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W；照原做法會把功率算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「1000 W 電器使用 2 h 消耗 500 kWh，因為…」不成立；1000 W 電器使用 2 h 消耗 2 kWh；電能等於功率乘以使用時間。"
+      "reason": "解題時錯將不同電器、不同工作狀態的電壓與電流交叉相乘，結果會錯判功率。比較前確認電壓與電流屬於同一電器、同一工作狀態，不能用 V/I 代替功率；功率差異若未通過由電壓電流計算電功率對電壓的控制，就不能只歸給電流。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「額定電壓只是建議值，110 V 電器直接接 220 V 也…」不成立；額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W，不可任意接…。"
+      "reason": "把 120×2.0 算成 24 W，錯置十倍的數量級。由 P＝VI 計算；電流的數值若未依電壓核對，會使功率無法通過由電壓電流計算電功率檢查。"
     }
   ],
   "difficulty": "foundation",
@@ -50,16 +50,16 @@
     "辨認",
     "概念理解"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電功率為 V/I＝60 W，因為電壓應除以電流",
-    "1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間",
-    "額定電壓只是建議值，110 V 電器直接接 220 V 也一定保持 550 W 且無風險"
+    "解題時將電功率算成 V/I，120 V、2.0 A 得到 60 W",
+    "解題時將不同電器、不同工作狀態的電壓與電流交叉相乘",
+    "把 120×2.0 算成 24 W，錯置十倍的數量級"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -14,51 +14,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估飲品稀釋報告時，哪項說明正確？",
+  "stem": "某標準上限為 10 ppm，樣品 0.5 kg 含 0.008 g 目標物，是否超標？",
   "options": [
-    "任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電",
-    "每一百萬份中有 5 份目標成分",
-    "5 ppm 和 5% 完全相同，都表示每一百份中有 5 份",
-    "外觀透明無色的物質一定是純物質，不可能含多種成分"
+    "剛好 10 ppm",
+    "未超標，濃度為 0.016 ppm",
+    "超標，濃度為 16 ppm",
+    "資料無法換成毫克"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣…」不成立；在相同電路與濃度條件下，水溶液能否導電可用來判斷是否有可移動離子，並輔助區分電解質。"
+      "reason": "實際為 16 ppm。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「5 ppm 表示在題目指定的比例基準下，每一百萬份中有 5 份目標成分」。"
+      "isCorrect": false,
+      "reason": "克毫克換算錯。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「5 ppm 和 5% 完全相同，都表示每一百份中有 5 份」不成立；5 ppm 表示在題目指定的比例基準下，每一百萬份中有 5 份目標成分。"
+      "isCorrect": true,
+      "reason": "0.008 g＝8 mg，8/0.5＝16 mg/kg。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「外觀透明無色的物質一定是純物質，不可能含多種成分」不成立；純物質在固定條件下有固定組成；空氣、海水等由多種物質以可變比例組成，是混合物。"
+      "reason": "0.008 g 可換為 8 mg。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "多步換算",
+    "門檻判斷"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電",
-    "5 ppm 和 5% 完全相同，都表示每一百份中有 5 份",
-    "外觀透明無色的物質一定是純物質，不可能含多種成分"
+    "剛好 10 ppm",
+    "未超標，濃度為 0.016 ppm",
+    "資料無法換成毫克"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AB-4-4",
@@ -69,19 +69,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

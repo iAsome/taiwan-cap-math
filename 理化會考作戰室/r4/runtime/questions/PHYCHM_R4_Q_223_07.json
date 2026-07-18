@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "電梯受力出現四種說法，哪項有理化概念支持？",
+  "stem": "書本壓桌面的力，其反作用力為何？",
   "options": [
-    "質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少",
-    "人推牆的力與牆推人的力是作用力反作用力",
-    "作用力與反作用力同時作用在同一物體，因此永遠互相抵銷",
-    "力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的意義"
+    "地球吸引書本的力",
+    "書本受到的重力",
+    "桌面受到地球的重力",
+    "桌面支持書本的力"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少」不成立；質量是物體慣性的量度，重量是物體所受重力，在不同星體可改變；單位分別常用 kg 與 N。"
+      "reason": "地球吸引書本的力與受力條件不符。書桌接觸交互作用中，書壓桌與桌托書等大反向。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「人推牆的力與牆推人的力是作用力反作用力，大小相等、方向相反，但作用在不同物體」。"
+      "isCorrect": false,
+      "reason": "書本受到的重力與受力條件不符。書桌接觸交互作用中，書壓桌與桌托書等大反向。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「作用力與反作用力同時作用在同一物體，因此永遠互相抵銷」不成立；人推牆的力與牆推人的力是作用力反作用力，大小相等、方向相反，但作用在不同物體。"
+      "reason": "桌面受到地球的重力與受力條件不符。書桌接觸交互作用中，書壓桌與桌托書等大反向。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的…」不成立；力的箭頭長度表示大小、箭頭指向表示方向、起點標在作用點，三項都是力的表示資訊。"
+      "isCorrect": true,
+      "reason": "書桌接觸交互作用中，書壓桌與桌托書等大反向。"
     }
   ],
   "difficulty": "standard",
@@ -50,16 +50,16 @@
     "證據判讀",
     "推論"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少",
-    "作用力與反作用力同時作用在同一物體，因此永遠互相抵銷",
-    "力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的意義"
+    "地球吸引書本的力",
+    "書本受到的重力",
+    "桌面受到地球的重力"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

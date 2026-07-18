@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於液體深度與密度對壓力的影響，哪項結論符合題給條件？",
+  "stem": "丙的液體密度為1.00 g/cm³、深度為10 cm；丁則是1.00 g/cm³、20 cm。比較液體深度與密度對壓力的影響能否直接外推，取決於哪項液體密度條件？",
   "options": [
-    "同深度時液體密度較大者壓力較大",
-    "液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量",
-    "空氣沒有質量與重量，大氣壓只是溫度計產生的幻覺",
-    "用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與"
+    "結論限於靜止液體的表壓比較，不能把容器形狀或液體總量當成唯一原因",
+    "解題時將容器底面積當成液體壓力的決定量，忽略深度與液體密度",
+    "拿不同液體、不同深度的兩個讀值比較，就斷定壓力只受深度影響",
+    "看到水深增加便主張壓力變小，理由是液面離量測點更遠"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「同一液體中深度越大壓力越大；同深度時液體密度較大者壓力較大」。"
+      "reason": "結論限於靜止液體的表壓比較，不能把容器形狀或液體總量當成唯一原因。甲列的液體密度為0.80 g/cm³，深度為10 cm；乙列的液體密度為0.80 g/cm³，深度為20 cm。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量」不成立；帕斯卡原理說明密閉流體上的壓力變化可傳至各處；液壓機可以大面積活塞得到較大力。"
+      "reason": "解題時錯將容器底面積當成液體壓力的決定量，忽略深度與液體密度。同一液體中深度越大壓力越大；照原做法會把壓力計讀值算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「空氣沒有質量與重量，大氣壓只是溫度計產生的幻覺」不成立；大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變。"
+      "reason": "解題時拿不同液體、不同深度的兩個讀值比較，就斷定壓力只受深度影響。結論限於靜止液體的表壓比較，不能把容器形狀或液體總量當成唯一原因；壓力計讀值差異若未通過比較液體深度與密度對壓力的影響對液體密度的控制，就不能只歸給深度。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與」不成立；吸管、滴管等裝置是先降低內部壓力，外界較大大氣壓才將液體推向低壓處。"
+      "reason": "一看到水深增加便主張壓力變小，理由是液面離量測點更遠。甲乙控制密度而加深，壓力增加；深度的數值若未依液體密度核對，會使壓力計讀值無法通過比較液體深度與密度對壓力的影響檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "條件判斷",
-    "分析"
+    "應用"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量",
-    "空氣沒有質量與重量，大氣壓只是溫度計產生的幻覺",
-    "用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與"
+    "解題時將容器底面積當成液體壓力的決定量，忽略深度與液體密度",
+    "拿不同液體、不同深度的兩個讀值比較，就斷定壓力只受深度影響",
+    "看到水深增加便主張壓力變小，理由是液面離量測點更遠"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理車輛慣性資料後，哪項說明正確？",
+  "stem": "公車突然向左轉，乘客相對車廂容易向何方偏？",
   "options": [
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他",
-    "力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的意義",
-    "慣性是物體維持原運動狀態的性質；車突然剎車時乘客上半身傾向前就是慣性現象",
-    "合力只需把大小相加，所以向右 8 N 與向左 3 N 的合力是 11 N"
+    "此時物體向左偏",
+    "向右偏",
+    "此時物體向前偏",
+    "沒有相對偏移"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他」不成立；慣性是物體維持原運動狀態的性質；車突然剎車時乘客上半身傾向前就是慣性現象。"
+      "reason": "此時物體向左偏與受力條件不符。人體傾向沿原方向直行，車廂向左轉，故相對看向右偏。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的…」不成立；力的箭頭長度表示大小、箭頭指向表示方向、起點標在作用點，三項都是力的表示資訊。"
+      "isCorrect": true,
+      "reason": "人體傾向沿原方向直行，車廂向左轉，故相對看向右偏。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「慣性是物體維持原運動狀態的性質；車突然剎車時乘客上半身傾向前就是慣性現象」。"
+      "isCorrect": false,
+      "reason": "此時物體向前偏與受力條件不符。人體傾向沿原方向直行，車廂向左轉，故相對看向右偏。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「合力只需把大小相加，所以向右 8 N 與向左 3 N 的合…」不成立；同直線上向右 8 N 與向左 3 N 的合力為向右 5 N；相反方向力要取差並保留方向。"
+      "reason": "沒有相對偏移與受力條件不符。人體傾向沿原方向直行，車廂向左轉，故相對看向右偏。"
     }
   ],
   "difficulty": "foundation",
@@ -50,16 +50,16 @@
     "單位檢核",
     "資料判讀"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他",
-    "力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的意義",
-    "合力只需把大小相加，所以向右 8 N 與向左 3 N 的合力是 11 N"
+    "此時物體向左偏",
+    "此時物體向前偏",
+    "沒有相對偏移"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

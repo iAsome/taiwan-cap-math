@@ -49,51 +49,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估多來源證據評估報告時，哪項說明正確？",
+  "stem": "紀錄太陽光電時，可調度性是日照時變動，運轉排放是低，其他限制為土地與儲能。要讓他人重現其他限制，表格還須交代什麼？",
   "options": [
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統",
-    "能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 100% 且持續創能",
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除",
-    "新興能源也需證據評估"
+    "主張化石燃料可調度性高就表示並漏掉溫室氣體與燃料價格問題",
+    "把再生能源等同並漏掉任何環境代價，忽略土地、儲能與選址限制",
+    "把缺少成本、地點和時間資料時仍宣布某一能源在所有情境唯一最佳",
+    "表中是定性比較，不能在沒有成本、地點、時間與生命週期資料時宣布唯一最佳來源"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源…」不成立；能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式。"
+      "reason": "誤以為化石燃料可調度性高就表示卻未溫室氣體與燃料價格問題，結果會錯判其他限制。化石燃料能量密度高但會排放溫室氣體；可調度性未列入比較化石燃料再生能源與新興能源條件時，其他限制的運轉排放大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 10…」不成立；能源效率＝有用輸出能量÷總輸入能量×100%；輸入 500 J、有用輸出 150 J 的效率為…。"
+      "reason": "把再生能源等同沒有任何環境代價，忽略土地、儲能與選址限制。化石燃料能量密度高但會排放溫室氣體；照原做法會把其他限制算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「發電決策只要比較單一小時電價，其他環境、系統與社會資料都應…」不成立；比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響。"
+      "reason": "解題時誤把缺少成本、地點和時間資料時仍宣布某一能源在所有情境唯一最佳，結果會錯判其他限制。表中是定性比較，不能在沒有成本、地點、時間與生命週期資料時宣布唯一最佳來源；其他限制差異若未通過比較化石燃料再生能源與新興能源條件對可調度性的控制，就不能只歸給運轉排放。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「化石燃料能量密度高但會排放溫室氣體；太陽、風能可再生但有間歇性與土地、儲能需求，新興能源也需證據評估」。"
+      "reason": "表中是定性比較，不能在沒有成本、地點、時間與生命週期資料時宣布唯一最佳來源。儲能列的可調度性為非一次能源，運轉排放為依充電來源；燃氣列的可調度性為高，運轉排放為有。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統",
-    "能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 100% 且持續創能",
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除"
+    "主張化石燃料可調度性高就表示並漏掉溫室氣體與燃料價格問題",
+    "把再生能源等同並漏掉任何環境代價，忽略土地、儲能與選址限制",
+    "把缺少成本、地點和時間資料時仍宣布某一能源在所有情境唯一最佳"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-INA-4-1",
       "AUTH-NATURAL-LC-INA-4-2",
@@ -139,19 +139,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

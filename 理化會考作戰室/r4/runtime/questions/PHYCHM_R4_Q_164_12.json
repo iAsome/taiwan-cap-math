@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估頻率波長計算報告時，哪項說明正確？",
+  "stem": "某機械波的粒子振動方向與波傳方向夾角為 0° 或 180°。應判為何種波？",
   "options": [
-    "若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動",
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差",
-    "橫波的介質振動方向與波傳方向垂直"
+    "橫波",
+    "兩角分別代表兩種波",
+    "沒有介質的波",
+    "縱波"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動」不成立；在介質波模型中，標記粒子應在平衡位置兩側往復運動；波形則表示擾動依序傳開。"
+      "reason": "橫波要求夾角約 90°。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關」不成立；橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行。"
+      "reason": "0° 與 180° 都表示兩方向共線。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「振幅是波峰到波谷的全高，波長是相鄰波峰的高度差」不成立；波峰是橫波最高點、波谷是最低點；振幅由平衡位置量到波峰，波長是沿傳播方向相鄰同相位點的距離。"
+      "reason": "題目已稱機械波，且方向關係不代表沒有介質。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行」。"
+      "reason": "共線方向屬平行或反平行，符合縱波。"
     }
   ],
   "difficulty": "transfer",
@@ -46,16 +46,16 @@
     "限制評估",
     "高層推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動",
-    "橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差"
+    "橫波",
+    "兩角分別代表兩種波",
+    "沒有介質的波"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

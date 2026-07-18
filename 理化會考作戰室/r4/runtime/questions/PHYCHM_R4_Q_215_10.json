@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組根據車輛起步煞車下結論，哪項符合資料？",
+  "stem": "甲 F=3 N、m=1 kg；乙 F=6 N、m=2 kg。加速度有何關係？",
   "options": [
-    "質量較大者速度改變較慢",
-    "平均加速度是 (10＋4)/3＝4.67 m/s²，因為速度變化量要相加",
-    "速度—時間圖上縱座標較大就表示加速度較大，不必比較斜率",
-    "圓周運動的快慢恆定就表示速度向量恆定，所以加速度必為零"
+    "甲較大",
+    "乙較大",
+    "乙是甲的 4 倍",
+    "兩者加速度相同"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「質量相同時，合力較大者速度改變較快；合力相同時，質量較大者速度改變較慢」。"
+      "isCorrect": false,
+      "reason": "甲較大不成立。甲 3÷1=3，乙 6÷2=3 m/s²。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「平均加速度是 (10＋4)/3＝4.67 m/s²，因為速…」不成立；速度由 4 m/s 在 3 s 內均勻變為 10 m/s，平均加速度為 (10−4)/3＝2 …。"
+      "reason": "乙較大不成立。甲 3÷1=3，乙 6÷2=3 m/s²。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「速度—時間圖上縱座標較大就表示加速度較大，不必比較斜率」不成立；速度—時間圖斜率為加速度；相同時間內速度變化較大的線段斜率絕對值較大。"
+      "reason": "乙是甲的 4 倍不成立。甲 3÷1=3，乙 6÷2=3 m/s²。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「圓周運動的快慢恆定就表示速度向量恆定，所以加速度必為零」不成立；等速圓周運動雖速度大小不變，速度方向持續改變，因此具有指向圓心的加速度。"
+      "isCorrect": true,
+      "reason": "甲 3÷1=3，乙 6÷2=3 m/s²。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "主張評估",
     "證據評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "平均加速度是 (10＋4)/3＝4.67 m/s²，因為速度變化量要相加",
-    "速度—時間圖上縱座標較大就表示加速度較大，不必比較斜率",
-    "圓周運動的快慢恆定就表示速度向量恆定，所以加速度必為零"
+    "甲較大",
+    "乙較大",
+    "乙是甲的 4 倍"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-11",
       "AUTH-NATURAL-LC-EB-4-8",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

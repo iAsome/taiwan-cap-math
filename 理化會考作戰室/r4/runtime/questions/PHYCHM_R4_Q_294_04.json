@@ -49,51 +49,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查發電組合紀錄，哪項判讀正確？",
+  "stem": "僅從插座端開始算能源效率，完全漏掉發電、輸電與儲存損失。用追蹤能源由來源轉換輸送到使用的過程檢查這個做法，本段損失應如何重判？",
   "options": [
-    "可再生能源必然零環境影響且可全天恆定發電，化石燃料則沒有任何系統優點",
     "能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式",
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除",
-    "只需引用一個沒有日期與定義的百分比，就能永久決定臺灣唯一正確能源方案"
+    "主張輸電或儲存階段只傳遞能量，不可能有任何轉換損耗",
+    "僅從插座端開始算能源效率，完全漏掉發電、輸電與儲存損失",
+    "把各階段使用不同期間或系統邊界，仍直接把能量數值串接"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「可再生能源必然零環境影響且可全天恆定發電，化石燃料則沒有任…」不成立；化石燃料能量密度高但會排放溫室氣體；太陽、風能可再生但有間歇性與土地、儲能需求，新興能源也需證…。"
+      "isCorrect": true,
+      "reason": "能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式。儲存列的進入能量為399 kWh，離開至下一段為359 kWh；終端設備列的進入能量為359 kWh，離開至下一段為287 kWh 有用輸出。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式」。"
+      "isCorrect": false,
+      "reason": "誤以為輸電或儲存階段只傳遞能量，不可能有任何轉換損耗。能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式；進入能量未列入追蹤能源由來源轉換輸送到使用的過程時，本段損失的離開至下一段大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「發電決策只要比較單一小時電價，其他環境、系統與社會資料都應…」不成立；比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響。"
+      "reason": "僅從插座端開始算能源效率，完全漏掉發電、輸電與儲存損失。能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式；照原做法會把本段損失算錯或判反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只需引用一個沒有日期與定義的百分比，就能永久決定臺灣唯一正…」不成立；評估臺灣能源選擇要使用有日期、定義一致的需電、發電、排放、成本與風險資料，並把進口、電網與地理…。"
+      "reason": "解題時誤把各階段使用不同期間或系統邊界，仍直接把能量數值串接。各段數據須採相同系統邊界與期間；本段損失差異若未通過追蹤能源由來源轉換輸送到使用的過程對進入能量的控制，就不能只歸給離開至下一段。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀",
+    "條件判斷",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "可再生能源必然零環境影響且可全天恆定發電，化石燃料則沒有任何系統優點",
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除",
-    "只需引用一個沒有日期與定義的百分比，就能永久決定臺灣唯一正確能源方案"
+    "主張輸電或儲存階段只傳遞能量，不可能有任何轉換損耗",
+    "僅從插座端開始算能源效率，完全漏掉發電、輸電與儲存損失",
+    "把各階段使用不同期間或系統邊界，仍直接把能量數值串接"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-INA-4-1",
       "AUTH-NATURAL-LC-INA-4-2",
@@ -139,19 +139,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

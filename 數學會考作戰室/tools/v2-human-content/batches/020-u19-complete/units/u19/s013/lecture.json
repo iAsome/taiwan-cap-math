@@ -98,28 +98,28 @@
   "method": [
     {
       "step": 1,
-      "instruction": "判定給的是半徑或直徑。",
-      "check": "完成此步後，確認仍在「圓面積」的CAP範圍且沒有只憑圖形目測。"
+      "instruction": "判定題目給的是半徑或直徑。",
+      "check": "圓面積公式使用半徑；若給直徑，下一步必須先除以 2。"
     },
     {
       "step": 2,
-      "instruction": "必要時用r=d/2。",
-      "check": "完成此步後，確認仍在「圓面積」的CAP範圍且沒有只憑圖形目測。"
+      "instruction": "必要時用 r=d/2。",
+      "check": "轉換後以 2r 回推應等於題目原直徑。"
     },
     {
       "step": 3,
-      "instruction": "代入πr²。",
-      "check": "完成此步後，確認仍在「圓面積」的CAP範圍且沒有只憑圖形目測。"
+      "instruction": "代入 πr²。",
+      "check": "要平方的是整個半徑值，不能把圓周長 2πr 當成面積。"
     },
     {
       "step": 4,
-      "instruction": "反求時先求r²再取正根。",
-      "check": "完成此步後，確認仍在「圓面積」的CAP範圍且沒有只憑圖形目測。"
+      "instruction": "反求時先求 r² 再取正根。",
+      "check": "半徑為幾何長度，只接受正值；回代平方後要復原題給面積。"
     },
     {
       "step": 5,
       "instruction": "檢查平方單位與合理大小。",
-      "check": "完成此步後，確認仍在「圓面積」的CAP範圍且沒有只憑圖形目測。"
+      "check": "面積用 cm²、m² 等平方單位；半徑放大 k 倍時面積應放大 k² 倍。"
     }
   ],
   "workedExamples": [
@@ -167,10 +167,10 @@
     }
   ],
   "difficultyConnections": {
-    "basic": "辨認「圓面積」的定義、符號與單一步驟關係。",
-    "standard": "把「圓面積」與前置技能、比例或一次代數連接。",
-    "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「圓面積」。",
-    "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「圓面積」的數學模型。"
+    "basic": "由半徑或直徑求圓面積。",
+    "standard": "由面積反求半徑，或由圓周長先反求半徑再求面積。",
+    "advanced": "比較兩圓半徑比與面積比，或解半徑改變後的面積差。",
+    "literacy": "將圓形水池、地墊或披薩的尺寸轉成面積與成本計算。"
   },
   "commonMistakes": [
     {
@@ -195,10 +195,10 @@
     }
   ],
   "selfCheck": [
-    "我是否先確認「圓面積」的適用條件？",
-    "我是否分清半徑、直徑、弦、弧與角的角色？",
-    "我是否寫出必要單位，並在最後才取近似值？",
-    "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+    "題目給的是半徑、直徑還是圓周長？",
+    "我代入 πr² 的 r 是否已正確轉成半徑？",
+    "由 r² 反求半徑時，我是否只取符合長度的正根？",
+    "答案是否使用平方單位，並符合半徑比平方的面積比？"
   ],
   "summary": [
     "圓面積為πr²。",
@@ -248,5 +248,5 @@
   },
   "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-  "contentSha256": "77e0193f66033798d82616e786601fc45aa2494efc6cc259dde9eaade0fa5ed1"
+  "contentSha256": "e7c0ac7b27b4d79a46e1078c2d3bd7a7779985562da241260f628b66a1a8aecb"
 }

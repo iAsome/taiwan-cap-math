@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對反應式配平結果，哪項說法正確？",
+  "stem": "密閉反應前總質量 86.4 g，反應後量到固體 52.7 g、液體 31.2 g。其餘氣體為多少？",
   "options": [
-    "反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查",
-    "未知生成物為 35＋12＝47 g，因為生成物應加在反應物上",
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小",
-    "另一生成物為 23 g"
+    "33.7 g",
+    "2.5 g",
+    "3.9 g",
+    "170.3 g"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查」不成立；粒子模型驗證配平時，要對每種顏色或符號的原子逐個計數，不是只數分子團數。"
+      "reason": "33.7 g 只做一次相減。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「未知生成物為 35＋12＝47 g，因為生成物應加在反應物上」不成立；反應物總質量 35 g，已知一生成物 12 g，且系統密閉，另一生成物為 23 g。"
+      "isCorrect": true,
+      "reason": "86.4−52.7−31.2＝2.5 g。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小」不成立；密閉袋內的反應前後，所有反應物與生成物的總質量相等，因為原子只重新排列。"
+      "reason": "3.9 g 計算錯誤。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「反應物總質量 35 g，已知一生成物 12 g，且系統密閉，另一生成物為 23 g」。"
+      "isCorrect": false,
+      "reason": "相加反應前後不合理。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "多項計算"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "反應前後粒子團數一樣就代表已配平，團內原子種類和數目不必檢查",
-    "未知生成物為 35＋12＝47 g，因為生成物應加在反應物上",
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小"
+    "33.7 g",
+    "3.9 g",
+    "170.3 g"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "依附表判讀地球自轉解釋晝夜交替，哪一項讀值正確？",
+  "stem": "某測站連續記錄：05:40日出、18:20日落。當天白晝長度為何？",
   "options": [
-    "在「由日出日落算晝長」的地球自轉解釋晝夜交替資料中，當日期位置為乙時，臺灣日落為17:20。",
-    "在「由日出日落算晝長」的地球自轉解釋晝夜交替資料中，當日期位置為乙時，臺灣日落為18:45。",
-    "在「由日出日落算晝長」的地球自轉解釋晝夜交替資料中，當日期位置為乙時，臺灣日落為18:05。",
-    "在「由日出日落算晝長」的地球自轉解釋晝夜交替資料中，附表找不到日期位置為乙的紀錄。"
+    "12小時40分",
+    "11小時40分",
+    "13小時20分",
+    "24小時整"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "逐欄讀值可直接得到「臺灣日落為17:20」。"
+      "reason": "由日落18:20減日出05:40可得12小時40分，起訖時刻與算法一致。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「18:45」來自其他資料列；本列記錄的是「17:20」。"
+      "reason": "11小時40分少算一小時，未正確處理20分減40分時的借位。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「18:05」來自其他資料列；本列記錄的是「17:20」。"
+      "reason": "13小時20分是把分鐘借位處理錯誤後的結果，不能由兩時刻相減得到。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "表中第2列已列出「乙」，不能說沒有記錄。"
+      "reason": "一天有24小時不表示測站全日受光，表中另有日出與日落界線。"
     }
   ],
   "difficulty": "advanced",
@@ -49,7 +49,7 @@
   ],
   "representationType": "data-table",
   "misconceptionTargets": [
-    "全球同一天的晝長完全相等"
+    "11小時40分"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "逐項核對「由日出日落算晝長」的條件後，「在「由日出日落算晝長」的地球自轉解釋晝夜交替資料中，當日期位置為乙時，臺灣日落為17:20。」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "把18:20換成17小時80分，再減05:40，得到12小時40分的白晝。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 0,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "若直接把20減40而未借一小時，容易少算一小時，必須按時刻進位相減。",
       "status": "pass"
     }
   ],

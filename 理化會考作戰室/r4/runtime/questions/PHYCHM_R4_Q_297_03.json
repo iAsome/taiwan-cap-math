@@ -49,51 +49,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "整理多來源證據評估資料後，哪項說明正確？",
+  "stem": "表中甲的成本區間為中，對應生命週期排放高與可用率高。生命週期排放與可用率須依哪項定律才能說明成本區間？",
   "options": [
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統",
-    "能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 100% 且持續創能",
-    "比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響"
+    "比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響",
+    "看到方案乙排放低便忽略可用率與土地需求，直接宣稱全面優於其他方案",
+    "主張成本最低的方案一定同時最安全、最可靠且環境影響最小",
+    "僅用單一小時電價比較發電方式，忽略生命週期排放、可靠性與社會影響"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「發電決策只要比較單一小時電價，其他環境、系統與社會資料都應…」不成立；比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響。"
+      "isCorrect": true,
+      "reason": "比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響。丙列的生命週期排放為低，可用率為高；丁列的生命週期排放為中，可用率為低。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源…」不成立；能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式。"
+      "reason": "一看到方案乙排放低便忽略可用率與土地需求，直接宣稱全面優於其他方案。沒有一列在所有指標都占優，決策需先說明權重、需求與可接受風險；可用率的數值若未依生命週期排放核對，會使成本區間無法通過分析發電方式的環境經濟與社會影響檢查。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 10…」不成立；能源效率＝有用輸出能量÷總輸入能量×100%；輸入 500 J、有用輸出 150 J 的效率為…。"
+      "reason": "誤以為成本最低的方案一定同時最安全、最可靠且環境影響最小。比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響；生命週期排放未列入分析發電方式的環境經濟與社會影響時，成本區間的可用率大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響」。"
+      "isCorrect": false,
+      "reason": "僅用單一小時電價比較發電方式，忽略生命週期排放、可靠性與社會影響。比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響；照原做法會把成本區間算錯或判反。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "辨認",
+    "概念理解"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統",
-    "能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 100% 且持續創能"
+    "看到方案乙排放低便忽略可用率與土地需求，直接宣稱全面優於其他方案",
+    "主張成本最低的方案一定同時最安全、最可靠且環境影響最小",
+    "僅用單一小時電價比較發電方式，忽略生命週期排放、可靠性與社會影響"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-INA-4-1",
       "AUTH-NATURAL-LC-INA-4-2",
@@ -139,19 +139,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

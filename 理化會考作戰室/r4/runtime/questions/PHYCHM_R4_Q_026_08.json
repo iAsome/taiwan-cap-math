@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理飲品稀釋資料，哪項敘述合理？",
+  "stem": "若把 10 g 糖完全溶於 90 g 水，所得溶液總質量為多少？",
   "options": [
-    "任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電",
-    "食鹽水中食鹽是溶質、水是溶劑、均勻混合系統是溶液",
-    "溶液中含量較少的一方永遠是溶劑，和物態與作用無關",
-    "外觀透明無色的物質一定是純物質，不可能含多種成分"
+    "90 g，因溶液質量只計溶劑與部分溶質",
+    "80 g",
+    "10 g",
+    "100 g"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣…」不成立；在相同電路與濃度條件下，水溶液能否導電可用來判斷是否有可移動離子，並輔助區分電解質。"
+      "reason": "只算水。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「食鹽水中食鹽是溶質、水是溶劑、均勻混合系統是溶液」。"
+      "isCorrect": false,
+      "reason": "錯誤相減。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「溶液中含量較少的一方永遠是溶劑，和物態與作用無關」不成立；食鹽水中食鹽是溶質、水是溶劑、均勻混合系統是溶液。"
+      "reason": "只算糖。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「外觀透明無色的物質一定是純物質，不可能含多種成分」不成立；純物質在固定條件下有固定組成；空氣、海水等由多種物質以可變比例組成，是混合物。"
+      "isCorrect": true,
+      "reason": "10＋90＝100。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "守恆計算"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電",
-    "溶液中含量較少的一方永遠是溶劑，和物態與作用無關",
-    "外觀透明無色的物質一定是純物質，不可能含多種成分"
+    "90 g，因溶液質量只計溶劑與部分溶質",
+    "80 g",
+    "10 g"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AB-4-4",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

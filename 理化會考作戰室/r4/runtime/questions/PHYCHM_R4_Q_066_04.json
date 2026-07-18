@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查鐵生鏽紀錄，哪項判讀正確？",
+  "stem": "水蒸氣在冷杯外形成水滴屬何種過程？",
   "options": [
-    "只要觀察到任一顏色或溫度變化，就已唯一證明發生特定化學反應",
-    "冰熔化、水沸騰都只改變 H₂O 的狀態",
-    "冒泡或變色本身就是完整證明，不需知道操作過程或排除其他原因",
-    "所有能逆轉的過程都是物理變化，所有不可逆過程都是化學變化"
+    "凝結",
+    "分解",
+    "燃燒",
+    "昇華"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要觀察到任一顏色或溫度變化，就已唯一證明發生特定化學反應」不成立；沉澱、特定氣體、難以由物理過程解釋的顏色或溫度變化，都可作反應線索。"
+      "isCorrect": true,
+      "reason": "氣態變液態。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「冰熔化、水沸騰都只改變 H₂O 的狀態，沒有形成新物質，屬物理變化」。"
+      "isCorrect": false,
+      "reason": "組成不變。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「冒泡或變色本身就是完整證明，不需知道操作過程或排除其他原因」不成立；反應線索要排除沸騰、溶解、外界加熱等原因，並用產物性質或對照試驗驗證。"
+      "reason": "無燃燒。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「所有能逆轉的過程都是物理變化，所有不可逆過程都是化學變化」不成立；物理變化常可逆，但「可逆」不是分類標準；部分化學反應也可逆，核心仍是新物質。"
+      "reason": "昇華為固氣直接轉換。"
     }
   ],
-  "difficulty": "standard",
+  "difficulty": "foundation",
   "cognitiveProcess": [
-    "資料判讀",
-    "應用"
+    "相變命名"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要觀察到任一顏色或溫度變化，就已唯一證明發生特定化學反應",
-    "冒泡或變色本身就是完整證明，不需知道操作過程或排除其他原因",
-    "所有能逆轉的過程都是物理變化，所有不可逆過程都是化學變化"
+    "分解",
+    "燃燒",
+    "昇華"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-AB-4-3",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

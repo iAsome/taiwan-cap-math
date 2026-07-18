@@ -17,51 +17,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對鋅銅電池結果，哪項說法正確？",
+  "stem": "電子在鋅銅電池的外部導線中，依此簡化模型由何處流向何處？",
   "options": [
-    "放電、充電與電解的能量流向都是化學能自動轉成電能",
-    "電壓低的電池不可能短路發熱，電解產生的氣體也可直接靠近火源檢驗",
-    "將化學能轉為電能",
-    "電池先在內部儲存固定的電流，接上導線後把電流倒出而無化學反應"
+    "由鋅端流向銅端",
+    "由溶液流向空氣",
+    "完全不移動",
+    "由銅端流向鋅端"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「放電、充電與電解的能量流向都是化學能自動轉成電能」不成立；電池放電是化學能轉電能；充電和電解都需外加電能驅動非自發化學改變。"
+      "isCorrect": true,
+      "reason": "鋅較易失去電子。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「電壓低的電池不可能短路發熱，電解產生的氣體也可直接靠近火源…」不成立；燃燒應控制火源與可燃物，電池電解應防短路、腐蝕液接觸與未知氣體累積。"
+      "reason": "外導線連接電極。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「鋅銅電池放電時，自發化學反應驅動外電路電流，將化學能轉為電能」。"
+      "isCorrect": false,
+      "reason": "有電流時電子定向移動。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「電池先在內部儲存固定的電流，接上導線後把電流倒出而無化學反應」不成立；鋅銅電池放電時，自發化學反應驅動外電路電流，將化學能轉為電能。"
+      "reason": "方向相反。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "路徑判讀"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "放電、充電與電解的能量流向都是化學能自動轉成電能",
-    "電壓低的電池不可能短路發熱，電解產生的氣體也可直接靠近火源檢驗",
-    "電池先在內部儲存固定的電流，接上導線後把電流倒出而無化學反應"
+    "由溶液流向空氣",
+    "完全不移動",
+    "由銅端流向鋅端"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科公開題型之證據判讀與生活情境層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -75,19 +74,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

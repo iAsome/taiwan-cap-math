@@ -49,51 +49,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估發電組合報告時，哪項說明正確？",
+  "stem": "輸電列給出進入能量420 kWh，另記離開至下一段399 kWh及本段損失21 kWh。要讓他人重現本段損失，表格還須交代什麼？",
   "options": [
-    "只要有一張圖表趨勢符合預期，就可忽略實驗方法、模型限制與其他來源",
-    "追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式",
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統"
+    "主張輸電或儲存階段只傳遞能量",
+    "只看插座端會漏掉上游轉換和輸送損失",
+    "僅從插座端開始算能源效率，完全漏掉發電、輸電與儲存損失",
+    "把各階段使用不同期間或系統邊界，仍直接把能量數值串接"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要有一張圖表趨勢符合預期，就可忽略實驗方法、模型限制與其…」不成立；形成科學解釋時要互相印證實驗結果、圖表趨勢、模型機制與可追溯資料，並區分相關、因果與不確定。"
+      "reason": "誤以為輸電或儲存階段只傳遞能量，不可能有任何轉換損耗。能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式；進入能量未列入追蹤能源由來源轉換輸送到使用的過程時，本段損失的離開至下一段大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式」。"
+      "reason": "只看插座端會漏掉上游轉換和輸送損失。終端設備列的進入能量為359 kWh，離開至下一段為287 kWh 有用輸出；發電轉換列的進入能量為1000 kWh，離開至下一段為420 kWh。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標…」不成立；可檢驗的節能決策應寫明基準用能、具體措施、量測期間、成功指標與氣溫、使用人數等不確定因素。"
+      "reason": "僅從插座端開始算能源效率，完全漏掉發電、輸電與儲存損失。能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式；照原做法會把本段損失算錯或判反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源…」不成立；能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式。"
+      "reason": "解題時誤把各階段使用不同期間或系統邊界，仍直接把能量數值串接。各段數據須採相同系統邊界與期間；本段損失差異若未通過追蹤能源由來源轉換輸送到使用的過程對進入能量的控制，就不能只歸給離開至下一段。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要有一張圖表趨勢符合預期，就可忽略實驗方法、模型限制與其他來源",
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統"
+    "主張輸電或儲存階段只傳遞能量",
+    "僅從插座端開始算能源效率，完全漏掉發電、輸電與儲存損失",
+    "把各階段使用不同期間或系統邊界，仍直接把能量數值串接"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-INA-4-1",
       "AUTH-NATURAL-LC-INA-4-2",
@@ -139,19 +139,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

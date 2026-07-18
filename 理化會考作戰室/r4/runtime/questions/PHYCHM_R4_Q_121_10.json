@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄根據催化劑實驗下結論，哪項符合資料？",
+  "stem": "反應前期常比後期快，合理原因之一是？",
   "options": [
-    "反應速率只能由最後生成物總量判斷，和所需時間無關",
-    "只要實驗條件一樣，任何反應物的反應速率都必然相同",
-    "反應速率可用單位時間內反應物的減少量",
-    "同時增加溫度、濃度與表面積的實驗，可單獨證明其中任一因素的效果"
+    "時間會消滅化學定律",
+    "反應物逐漸消耗，有效碰撞機會降低",
+    "後期溫度一定為零",
+    "產物越多必讓反應物增加"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「反應速率只能由最後生成物總量判斷，和所需時間無關」不成立；反應速率可用單位時間內反應物的減少量，或生成物的增加量表示。"
+      "reason": "定律不隨時間消失。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「只要實驗條件一樣，任何反應物的反應速率都必然相同」不成立；在溫度、濃度、表面積均相同時，不同物質因本性不同可有不同反應速率。"
+      "isCorrect": true,
+      "reason": "可反應粒子減少。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「反應速率可用單位時間內反應物的減少量，或生成物的增加量表示」。"
+      "isCorrect": false,
+      "reason": "無此條件。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「同時增加溫度、濃度與表面積的實驗，可單獨證明其中任一因素的…」不成立；其他條件相同時，提高溫度、增加反應物濃度或將固體磨細，通常可加快反應。"
+      "reason": "不必然。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "微觀解釋"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "反應速率只能由最後生成物總量判斷，和所需時間無關",
-    "只要實驗條件一樣，任何反應物的反應速率都必然相同",
-    "同時增加溫度、濃度與表面積的實驗，可單獨證明其中任一因素的效果"
+    "時間會消滅化學定律",
+    "後期溫度一定為零",
+    "產物越多必讓反應物增加"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科反應速率、控制變因與動態平衡層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JE-4-1",
       "AUTH-NATURAL-LC-JE-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

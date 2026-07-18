@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理往返步行資料後，哪項說明正確？",
+  "stem": "自行車行駛 3.6 km 用 12 min，平均速率為何？",
   "options": [
-    "步行速率通常約數 m/s；若算得 500 m/s，應檢查距離、時間單位或小數點",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "路程與位移永遠大小相等，往返原點的路程也是零",
-    "平均速率是路程乘時間，所以為 4500 m/s"
+    "平均速率為 18 km/h",
+    "平均速率為 0.3 km/h",
+    "平均速率為 180 km/h",
+    "平均速率為 5 km/h"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「步行速率通常約數 m/s；若算得 500 m/s，應檢查距離、時間單位或小數點」。"
+      "reason": "12 min=0.2 h，3.6÷0.2=18 km/h，符合自行車情境。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只給一個數字「200 m」就能唯一決定物體位置，不需參考點…」不成立；物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整。"
+      "reason": "平均速率為 0.3 km/h不符合題目資料。12 min=0.2 h，3.6÷0.2=18 km/h，符合自行車情境。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「路程與位移永遠大小相等，往返原點的路程也是零」不成立；路程是實際路徑總長，位移是起點到終點的有向改變；往返原點時路程大於零但位移為零。"
+      "reason": "平均速率為 180 km/h不符合題目資料。12 min=0.2 h，3.6÷0.2=18 km/h，符合自行車情境。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「平均速率是路程乘時間，所以為 4500 m/s」不成立；移動 150 m 耗時 30 s 的平均速率為路程除以總時間，即 5 m/s。"
+      "reason": "平均速率為 5 km/h不符合題目資料。12 min=0.2 h，3.6÷0.2=18 km/h，符合自行車情境。"
     }
   ],
   "difficulty": "foundation",
@@ -46,16 +46,16 @@
     "單位檢核",
     "資料判讀"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "路程與位移永遠大小相等，往返原點的路程也是零",
-    "平均速率是路程乘時間，所以為 4500 m/s"
+    "平均速率為 0.3 km/h",
+    "平均速率為 180 km/h",
+    "平均速率為 5 km/h"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

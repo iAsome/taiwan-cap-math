@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估冰水加熱曲線報告時，哪項說明正確？",
+  "stem": "長 2.000 m 的金屬桿升溫後變為 2.002 m，哪項敘述同時符合數據與模型？",
   "options": [
-    "不是單個粒子自身膨脹",
-    "液體和氣體都沒有固定體積，所以兩者的性質完全相同",
-    "水蒸氣變成液態水稱為凝固，液態水變成冰稱為凝結",
-    "只有溫度達沸點才會蒸發，而沸騰只發生在液面"
+    "伸長 0.002 m，粒子平均間距略增",
+    "伸長 2 m，粒子數加倍",
+    "長度沒變，讀值可忽略",
+    "縮短 0.002 m，因受熱使粒子間距增大"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「物體受熱時常是粒子間平均距離增加，不是單個粒子自身膨脹」。"
+      "reason": "2.002−2.000＝0.002 m。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「液體和氣體都沒有固定體積，所以兩者的性質完全相同」不成立；固體保有固定形狀與體積；液體有固定體積但隨容器改變形狀；氣體充滿容器。"
+      "reason": "差值不是 2 m。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「水蒸氣變成液態水稱為凝固，液態水變成冰稱為凝結」不成立；冰吸熱熔化成水，水吸熱汽化；水蒸氣冷卻凝結，水再凝固成冰。"
+      "reason": "0.002 m 是實際記錄差。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只有溫度達沸點才會蒸發，而沸騰只發生在液面」不成立；蒸發只在液面進行且各溫度均可發生；沸騰在特定壓力的沸點於液體內部形成氣泡。"
+      "reason": "數據顯示伸長。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "計算",
+    "模型連結"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "液體和氣體都沒有固定體積，所以兩者的性質完全相同",
-    "水蒸氣變成液態水稱為凝固，液態水變成冰稱為凝結",
-    "只有溫度達沸點才會蒸發，而沸騰只發生在液面"
+    "伸長 2 m，粒子數加倍",
+    "長度沒變，讀值可忽略",
+    "縮短 0.002 m，因受熱使粒子間距增大"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-1",
       "AUTH-NATURAL-LC-AB-4-2",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

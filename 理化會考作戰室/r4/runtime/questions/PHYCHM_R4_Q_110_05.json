@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於金屬大理石反應辨識酸性溶液，哪項結論符合題給條件？",
+  "stem": "銅片放入稀鹽酸無明顯氣泡，合理結論是？",
   "options": [
-    "pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目自由決定",
-    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸",
-    "酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體",
-    "一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識溶液名稱"
+    "鹽酸一定中性",
+    "此條件下銅未明顯產氫，不能據此否定酸性",
+    "銅已變成氧氣",
+    "所有金屬都不與酸反應"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目…」不成立；pH＜7 為酸性、pH＝7 為中性、pH＞7 為鹼性；pH 本身沒有單位。"
+      "reason": "鹽酸呈酸性。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「pH 數字越大一定代表酸性越強，所以 pH 5 比 pH …」不成立；在同種、相近條件下，pH 2 的溶液比 pH 5 酸性強；pH 12 比 pH 9 鹼性強。"
+      "isCorrect": true,
+      "reason": "金屬種類會影響反應。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體」。"
+      "isCorrect": false,
+      "reason": "元素不如此轉變。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識…」不成立；廣用指示劑的顏色應對照色階判讀 pH 範圍，只能估計區間，不能單憑顏色確定化學身分。"
+      "reason": "鋅等可反應。"
     }
   ],
-  "difficulty": "standard",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "證據限制"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目自由決定",
-    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸",
-    "一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識溶液名稱"
+    "鹽酸一定中性",
+    "銅已變成氧氣",
+    "所有金屬都不與酸反應"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

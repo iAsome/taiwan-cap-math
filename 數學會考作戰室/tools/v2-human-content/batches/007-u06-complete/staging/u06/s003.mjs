@@ -1070,8 +1070,8 @@ export default {
       "difficulty": "literacy",
       "itemType": "multiple-choice",
       "type": "mc",
-      "prompt": "飲料 A:B=3:2，共 1.5 公升。倒出 0.3 公升混合均勻飲料後，剩餘 A:B 為何？",
-      "text": "飲料 A:B=3:2，共 1.5 公升。倒出 0.3 公升混合均勻飲料後，剩餘 A:B 為何？",
+      "prompt": "飲料 A:B=3:2，共 1.5 公升。倒出 0.3 公升混合均勻飲料後，剩餘 A:B 的最簡整數比為何？",
+      "text": "飲料 A:B=3:2，共 1.5 公升。倒出 0.3 公升混合均勻飲料後，剩餘 A:B 的最簡整數比為何？",
       "givenConditions": "倒出前混合均勻。",
       "target": "判斷同比例移除對比的影響",
       "choices": [
@@ -1081,7 +1081,7 @@ export default {
         "3:2"
       ],
       "answerIndex": 3,
-      "independentSolution": "以實際量驗算0.72/0.48=1.5。",
+      "independentSolution": "總量減為1.2公升；均勻倒出使A、B同乘0.8，剩0.72與0.48公升，最簡整數比為3:2。",
       "mainExplanation": "倒出混合液相當於 A、B 同乘相同剩餘比例，因此比值維持3:2。",
       "explanation": "飲料已混合均勻，倒出的每一部分都含相同比例的 A 與 B，因此兩成分同乘相同的剩餘倍數。總量雖減少零點三公升，A:B 仍保持 3:2。",
       "steps": [
@@ -1132,7 +1132,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "a2c4111cb15007bbbb23fa1ebea696120b6b7d7617471c44be45f77a143235a0"
+      "contentSha256": "4cb2e7f046fbb6d10157a6098c9435c39283d93c8c334cfcaca0bdaad6148fab"
     }
   ],
   "constructedResponses": [
@@ -1698,11 +1698,11 @@ export default {
       "questionId": "u06-s003-v012",
       "unitId": "u06",
       "skillId": "ratio-part-total",
-      "contentSha256": "a2c4111cb15007bbbb23fa1ebea696120b6b7d7617471c44be45f77a143235a0",
+      "contentSha256": "4cb2e7f046fbb6d10157a6098c9435c39283d93c8c334cfcaca0bdaad6148fab",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "independentSolution": "以實際量驗算0.72/0.48=1.5。",
+      "independentSolution": "總量減為1.2公升；均勻倒出使A、B同乘0.8，剩0.72與0.48公升，最簡整數比為3:2。",
       "derivedAnswer": "3:2",
       "storedAnswer": "3:2",
       "answerMatch": true,
@@ -1720,14 +1720,14 @@ export default {
         "混合均勻後倒出時兩成分按同一比例減少，剩餘比不變。"
       ],
       "ambiguityChecks": {
-        "wording": "題幹中的所求量為「判斷同比例移除對比的影響」，已明示必要條件：倒出前混合均勻。，不存在需猜測的隱藏量。",
-        "units": "單位審查結果：公升。；因此選項可在同一基準下比較。",
-        "boundary": "範圍審查結果：『混合均勻』保證倒出液成分比與原液相同。，未超出 U06 鎖定技能邊界。",
-        "rounding": "近似與取整審查：無近似。。"
+        "wording": "題幹明確要求最簡整數比，6:4不再是第二個可接受選項。",
+        "units": "總量與倒出量均以公升表示，成分比為無單位整數比。",
+        "boundary": "混合均勻保證倒出液與剩餘液均維持原成分比，未加入隱藏條件。",
+        "rounding": "0.72與0.48皆為精確值，化簡為3:2不涉及近似。"
       },
       "difficultyReason": "概念判斷而非只算份數。",
       "literacyNecessity": "混合均勻是比保持不變的必要條件，具有數學作用。",
-      "reviewerNote": "獨立重算：以實際量驗算0.72/0.48=1.5。 正確選項為「3:2」。逐項檢查後，唯一為真的理由是「混合均勻後倒出時兩成分按同一比例減少，剩餘比不變。」；其餘三項分別因「6:4等值但不是最簡。」、「2:3為倒比。」、「9:4沒有依據。」而排除。邊界與語意再檢查：『混合均勻』保證倒出液成分比與原液相同。",
+      "reviewerNote": "獨立重算：總量減為1.2公升；均勻倒出使A、B同乘0.8，剩0.72與0.48公升，最簡整數比為3:2。正確選項為3:2；6:4雖等值但不符合題幹要求的最簡整數比，2:3顛倒前後項，9:4則不符合均勻移除後比值不變的條件，因此答案唯一。",
       "reviewerDecision": "pass"
     }
   ],

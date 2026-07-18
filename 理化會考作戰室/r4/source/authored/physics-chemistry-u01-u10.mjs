@@ -1,0 +1,87 @@
+import { PHYSICS_CHEMISTRY_AUTHORED_U01 } from "./physics-chemistry-u01.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U02 } from "./physics-chemistry-u02.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U03 } from "./physics-chemistry-u03.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U04 } from "./physics-chemistry-u04.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U05 } from "./physics-chemistry-u05.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U06 } from "./physics-chemistry-u06.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U07 } from "./physics-chemistry-u07.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U08 } from "./physics-chemistry-u08.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U09 } from "./physics-chemistry-u09.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U10 } from "./physics-chemistry-u10.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U11 } from "./physics-chemistry-u11.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U12 } from "./physics-chemistry-u12.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U13 } from "./physics-chemistry-u13.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U14 } from "./physics-chemistry-u14.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U15 } from "./physics-chemistry-u15.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U16 } from "./physics-chemistry-u16.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U17 } from "./physics-chemistry-u17.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U18 } from "./physics-chemistry-u18.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U19 } from "./physics-chemistry-u19.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U20 } from "./physics-chemistry-u20.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U21 } from "./physics-chemistry-u21.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U22 } from "./physics-chemistry-u22.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U23 } from "./physics-chemistry-u23.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U24 } from "./physics-chemistry-u24.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U25 } from "./physics-chemistry-u25.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U26 } from "./physics-chemistry-u26.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U27 } from "./physics-chemistry-u27.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U28 } from "./physics-chemistry-u28.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U29 } from "./physics-chemistry-u29.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U30 } from "./physics-chemistry-u30.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U31 } from "./physics-chemistry-u31.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U32 } from "./physics-chemistry-u32.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U33 } from "./physics-chemistry-u33.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U34 } from "./physics-chemistry-u34.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U35 } from "./physics-chemistry-u35.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U36 } from "./physics-chemistry-u36.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U37 } from "./physics-chemistry-u37.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U38 } from "./physics-chemistry-u38.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U39 } from "./physics-chemistry-u39.mjs";
+import { PHYSICS_CHEMISTRY_AUTHORED_U40 } from "./physics-chemistry-u40.mjs";
+
+export const PHYSICS_CHEMISTRY_AUTHORED_U01_U10 = [
+  PHYSICS_CHEMISTRY_AUTHORED_U01,
+  PHYSICS_CHEMISTRY_AUTHORED_U02,
+  PHYSICS_CHEMISTRY_AUTHORED_U03,
+  PHYSICS_CHEMISTRY_AUTHORED_U04,
+  PHYSICS_CHEMISTRY_AUTHORED_U05,
+  PHYSICS_CHEMISTRY_AUTHORED_U06,
+  PHYSICS_CHEMISTRY_AUTHORED_U07,
+  PHYSICS_CHEMISTRY_AUTHORED_U08,
+  PHYSICS_CHEMISTRY_AUTHORED_U09,
+  PHYSICS_CHEMISTRY_AUTHORED_U10,
+];
+
+export const PHYSICS_CHEMISTRY_AUTHORED_UNITS = [
+  ...PHYSICS_CHEMISTRY_AUTHORED_U01_U10,
+  PHYSICS_CHEMISTRY_AUTHORED_U11,
+  PHYSICS_CHEMISTRY_AUTHORED_U12,
+  PHYSICS_CHEMISTRY_AUTHORED_U13,
+  PHYSICS_CHEMISTRY_AUTHORED_U14,
+  PHYSICS_CHEMISTRY_AUTHORED_U15,
+  PHYSICS_CHEMISTRY_AUTHORED_U16,
+  PHYSICS_CHEMISTRY_AUTHORED_U17,
+  PHYSICS_CHEMISTRY_AUTHORED_U18,
+  PHYSICS_CHEMISTRY_AUTHORED_U19,
+  PHYSICS_CHEMISTRY_AUTHORED_U20,
+  PHYSICS_CHEMISTRY_AUTHORED_U21,
+  PHYSICS_CHEMISTRY_AUTHORED_U22,
+  PHYSICS_CHEMISTRY_AUTHORED_U23,
+  PHYSICS_CHEMISTRY_AUTHORED_U24,
+  PHYSICS_CHEMISTRY_AUTHORED_U25,
+  PHYSICS_CHEMISTRY_AUTHORED_U26,
+  PHYSICS_CHEMISTRY_AUTHORED_U27,
+  PHYSICS_CHEMISTRY_AUTHORED_U28,
+  PHYSICS_CHEMISTRY_AUTHORED_U29,
+  PHYSICS_CHEMISTRY_AUTHORED_U30,
+  PHYSICS_CHEMISTRY_AUTHORED_U31,
+  PHYSICS_CHEMISTRY_AUTHORED_U32,
+  PHYSICS_CHEMISTRY_AUTHORED_U33,
+  PHYSICS_CHEMISTRY_AUTHORED_U34,
+  PHYSICS_CHEMISTRY_AUTHORED_U35,
+  PHYSICS_CHEMISTRY_AUTHORED_U36,
+  PHYSICS_CHEMISTRY_AUTHORED_U37,
+  PHYSICS_CHEMISTRY_AUTHORED_U38,
+  PHYSICS_CHEMISTRY_AUTHORED_U39,
+  PHYSICS_CHEMISTRY_AUTHORED_U40,
+];

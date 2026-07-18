@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對車程平均速率結果，哪項說法正確？",
+  "stem": "一物體繞跑道一圈回起點，路程 200 m、時間 40 s。平均速率為何？",
   "options": [
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理",
-    "平均速率是路程乘時間，所以為 4500 m/s",
-    "移動 150 m 耗時 30 s 的平均速率為路程除以總時間，即 5 m/s",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向"
+    "平均速率為 0 m/s",
+    "平均速率為 5 m/s",
+    "平均速率為 8 m/s",
+    "平均速率為 200 m/s"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「運動資料只要代入公式就不必作量級檢查，步行 500 m/s…」不成立；步行速率通常約數 m/s；若算得 500 m/s，應檢查距離、時間單位或小數點。"
+      "reason": "平均速率為 0 m/s不符合題目資料。平均速率使用路程，200÷40=5 m/s，即使位移為零也不影響。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「平均速率是路程乘時間，所以為 4500 m/s」不成立；移動 150 m 耗時 30 s 的平均速率為路程除以總時間，即 5 m/s。"
+      "isCorrect": true,
+      "reason": "平均速率使用路程，200÷40=5 m/s，即使位移為零也不影響。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「移動 150 m 耗時 30 s 的平均速率為路程除以總時間，即 5 m/s」。"
+      "isCorrect": false,
+      "reason": "平均速率為 8 m/s不符合題目資料。平均速率使用路程，200÷40=5 m/s，即使位移為零也不影響。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只給一個數字「200 m」就能唯一決定物體位置，不需參考點…」不成立；物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整。"
+      "reason": "平均速率為 200 m/s不符合題目資料。平均速率使用路程，200÷40=5 m/s，即使位移為零也不影響。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "運動資料只要代入公式就不必作量級檢查，步行 500 m/s 也很合理",
-    "平均速率是路程乘時間，所以為 4500 m/s",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向"
+    "平均速率為 0 m/s",
+    "平均速率為 8 m/s",
+    "平均速率為 200 m/s"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

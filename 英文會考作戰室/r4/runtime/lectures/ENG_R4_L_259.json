@@ -25,96 +25,96 @@
     {
       "id": "ENG_R4_U38_ENG_R4_S259_SEC_1",
       "title": "圖與文各負責一部分",
-      "content": "圖可能給時間、位置或数量，题干给人物需要。只有把两者合并才能作答。"
+      "content": "圖可能給時間、位置或數量，題幹給人物需要。只有把兩者合併才能作答。"
     },
     {
       "id": "ENG_R4_U38_ENG_R4_S259_SEC_2",
-      "title": "不只看颜色",
-      "content": "本单元所有图以文字、形状、线型与点纹重复编码；黑白列印仍可分辨。"
+      "title": "不只看顏色",
+      "content": "本單元所有圖以文字、形狀、線型與點紋重複編碼；黑白列印仍可分辨。"
     },
     {
       "id": "ENG_R4_U38_ENG_R4_S259_SEC_3",
-      "title": "先读标籤再看关系",
-      "content": "確認 START、箭頭、FULL 等标签，再解释位置与方向。不要凭图像外观猜故事。"
+      "title": "先讀標籤再看關係",
+      "content": "確認 START、箭頭、FULL 等標籤，再解釋位置與方向。不要憑圖像外觀猜故事。"
     },
     {
       "id": "ENG_R4_U38_ENG_R4_S259_SEC_4",
-      "title": "替代资料必须等价",
-      "content": "若看不到图，可用完整图形说明与资料表作答；答案不能依赖替代资料缺少的细节。"
+      "title": "替代資料必須等價",
+      "content": "若看不到圖，可用完整圖形說明與資料表作答；答案不能依賴替代資料缺少的細節。"
     }
   ],
   "workedExamples": [
     {
       "id": "ENG_R4_U38_ENG_R4_S259_EX_1",
-      "prompt": "图标 8:20 SCHOOL；题干说 Mia must arrive before 8:15.",
+      "prompt": "圖標 8:20 SCHOOL；題幹說 Mia must arrive before 8:15.",
       "steps": [
-        "图给车时刻。",
-        "文给 deadline。",
+        "圖給車時刻。",
+        "文給 deadline。",
         "8:20 太晚。"
       ],
       "answer": "She cannot use that bus.",
-      "why": "需图文共同。"
+      "why": "需圖文共同。"
     },
     {
       "id": "ENG_R4_U38_ENG_R4_S259_EX_2",
-      "prompt": "图示 bridge crossed out and Green Street arrow.",
+      "prompt": "圖示 bridge crossed out and Green Street arrow.",
       "steps": [
-        "叉号表封闭。",
-        "箭头指替代线。",
-        "读标签到 park。"
+        "叉號表封閉。",
+        "箭頭指替代線。",
+        "讀標籤到 park。"
       ],
       "answer": "Use Green Street.",
-      "why": "不靠颜色。"
+      "why": "不靠顏色。"
     },
     {
       "id": "ENG_R4_U38_ENG_R4_S259_EX_3",
-      "prompt": "图中 FULL 3:00、OPEN 4:30；文说 after four.",
+      "prompt": "圖中 FULL 3:00、OPEN 4:30；文說 after four.",
       "steps": [
-        "图给状态与时间。",
-        "文给 after four。",
-        "选 4:30 OPEN。"
+        "圖給狀態與時間。",
+        "文給 after four。",
+        "選 4:30 OPEN。"
       ],
       "answer": "Room B at 4:30",
-      "why": "两条件交集。"
+      "why": "兩條件交集。"
     }
   ],
   "misconceptions": [
     {
-      "belief": "只读题干不看图。",
-      "whyWrong": "会缺时间或位置。",
-      "correction": "列出图文各一证据。"
+      "belief": "只讀題幹不看圖。",
+      "whyWrong": "會缺時間或位置。",
+      "correction": "列出圖文各一證據。"
     },
     {
-      "belief": "只凭图像颜色。",
-      "whyWrong": "颜色可能无法列印或辨识。",
-      "correction": "用标签、纹理与形状。"
+      "belief": "只憑圖像顏色。",
+      "whyWrong": "顏色可能無法列印或辨識。",
+      "correction": "用標籤、紋理與形狀。"
     },
     {
-      "belief": "图中最近元素就是答案。",
-      "whyWrong": "关系由箭头与标签决定。",
-      "correction": "按图例阅读。"
+      "belief": "圖中最近元素就是答案。",
+      "whyWrong": "關係由箭頭與標籤決定。",
+      "correction": "按圖例閱讀。"
     },
     {
-      "belief": "alt 可以比图少信息。",
-      "whyWrong": "替代必须等价。",
-      "correction": "用资料表核对。"
+      "belief": "alt 可以比圖少信息。",
+      "whyWrong": "替代必須等價。",
+      "correction": "用資料表核對。"
     }
   ],
   "checks": [
     {
-      "prompt": "图文题至少需哪两类证据？",
-      "answer": "图形与文字",
-      "reason": "答案来自交集。"
+      "prompt": "圖文題至少需哪兩類證據？",
+      "answer": "圖形與文字",
+      "reason": "答案來自交集。"
     },
     {
-      "prompt": "黑白图如何避免只靠颜色？",
-      "answer": "标签、形状与纹理",
-      "reason": "多重编码。"
+      "prompt": "黑白圖如何避免只靠顏色？",
+      "answer": "標籤、形狀與紋理",
+      "reason": "多重編碼。"
     },
     {
-      "prompt": "资料表 fallback 应支持同一答案吗？",
-      "answer": "应",
-      "reason": "可及性等价。"
+      "prompt": "資料表 fallback 應支持同一答案嗎？",
+      "answer": "應",
+      "reason": "可及性等價。"
     }
   ],
   "assets": [],

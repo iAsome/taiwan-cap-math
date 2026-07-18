@@ -152,7 +152,7 @@
     "question": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "subject", "skillIds", "authorityRefs", "stem", "options", "answerIndex", "optionRationales", "difficulty", "cognitiveProcess", "representationType", "misconceptionTargets", "provenance", "independentReviews", "assets"],
+      "required": ["id", "subject", "skillIds", "authorityRefs", "stem", "options", "answerIndex", "optionRationales", "difficulty", "cognitiveProcess", "representationType", "misconceptionTargets", "provenance", "assets"],
       "properties": {
         "id": { "$ref": "#/$defs/id" },
         "subject": { "$ref": "#/$defs/subject" },
@@ -168,19 +168,12 @@
         "representationType": { "type": "string", "minLength": 1 },
         "misconceptionTargets": { "type": "array", "items": { "type": "string", "minLength": 1 } },
         "provenance": { "$ref": "#/$defs/provenance" },
-        "independentReviews": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/independentReview" } },
+        "independentReviews": {
+          "type": "array",
+          "deprecated": true,
+          "description": "Legacy compatibility payload only; external final-audit evidence determines acceptance."
+        },
         "assets": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } }
-      }
-    },
-    "independentReview": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["reviewerRole", "derivedAnswerIndex", "evidence", "status"],
-      "properties": {
-        "reviewerRole": { "type": "string", "minLength": 1 },
-        "derivedAnswerIndex": { "type": "integer", "minimum": 0, "maximum": 3 },
-        "evidence": { "type": "string", "minLength": 1 },
-        "status": { "const": "pass" }
       }
     },
     "provenance": {

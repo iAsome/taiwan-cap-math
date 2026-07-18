@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查平面鏡成像紀錄，哪項判讀正確？",
+  "stem": "眼睛看到鏡後虛像，實際反射光位於何處？",
   "options": [
-    "入射角與反射角都要從鏡面量起，因此兩者和法線無關",
-    "平面鏡成像位置可將兩條反射光線反向延長至鏡後交點",
-    "物體遠離平面鏡時像會縮小，而像距永遠是物距的一半",
-    "光經過第一次反射後就不再遵守反射定律，後續方向可任意"
+    "實際光穿透不透明鏡面在像點會聚",
+    "鏡後完全沒有任何幾何意義",
+    "實際光在鏡前進入眼睛，鏡後只有反向延長線",
+    "光在像點停住再返回眼睛"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「入射角與反射角都要從鏡面量起，因此兩者和法線無關」不成立；反射定律規定入射角等於反射角，兩角均由光線與法線之間量得。"
+      "reason": "一般平面鏡反射光不穿到鏡後會聚。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「平面鏡成像位置可將兩條反射光線反向延長至鏡後交點，得到無法投屏的虛像」。"
+      "isCorrect": false,
+      "reason": "鏡後延長線交點用來定位視覺來源。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「物體遠離平面鏡時像會縮小，而像距永遠是物距的一半」不成立；平面鏡的像與物等大，像距等於物距，像與物對鏡面對稱。"
+      "isCorrect": true,
+      "reason": "眼睛沿到達光線反向追溯，延長線交於鏡後。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「光經過第一次反射後就不再遵守反射定律，後續方向可任意」不成立；萬花筒、潛望鏡等裝置利用光在多個鏡面依反射定律逐次改變方向。"
+      "reason": "光直接由鏡面反射進眼。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "入射角與反射角都要從鏡面量起，因此兩者和法線無關",
-    "物體遠離平面鏡時像會縮小，而像距永遠是物距的一半",
-    "光經過第一次反射後就不再遵守反射定律，後續方向可任意"
+    "實際光穿透不透明鏡面在像點會聚",
+    "鏡後完全沒有任何幾何意義",
+    "光在像點停住再返回眼睛"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-6",
       "AUTH-NATURAL-LC-KA-4-7",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

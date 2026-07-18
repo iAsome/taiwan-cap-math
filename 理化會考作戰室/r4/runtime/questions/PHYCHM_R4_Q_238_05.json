@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於上下表面壓力差解釋浮力，哪項結論符合題給條件？",
+  "stem": "並列左表面與右表面，兩者深度是中心 0.35 m、中心 0.35 m，面積是0.010 m²、0.010 m²。由上下表面壓力差解釋浮力能否直接外推，取決於哪項深度條件？",
   "options": [
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水",
-    "與上表面壓力差合成向上浮力",
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關"
+    "把浮力說成液體只推物體上表面，並漏掉合成上下表面的壓力作用",
+    "僅列下表面向上的作用力就當成浮力，並漏掉扣除上表面向下作用力",
+    "需比較同一物體各表面的壓力作用，不能只看上表面或把重量算進液體壓力差",
+    "把因左右表面也受力，便把兩個方向相反且相等的力都加進浮力"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「漂浮物體既然在水面上，就完全不受浮力，只受向下重力」不成立；漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力。"
+      "reason": "把浮力說成液體只推物體上表面，卻未合成上下表面的壓力作用。沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力；照原做法會把液體作用力算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水」不成立；船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉。"
+      "reason": "僅列下表面向上的作用力就當成浮力，卻未扣除上表面向下作用力，結果會錯判液體作用力。需比較同一物體各表面的壓力作用，不能只看上表面或把重量算進液體壓力差；液體作用力差異若未通過由上下表面壓力差解釋浮力對深度的控制，就不能只歸給面積。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力」。"
+      "reason": "需比較同一物體各表面的壓力作用，不能只看上表面或把重量算進液體壓力差。上表面列的深度為0.20 m，面積為0.010 m²；上表面列的深度為0.20 m，面積為0.010 m²。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關」不成立；沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力。"
+      "reason": "解題時誤把因左右表面也受力，便把兩個方向相反且相等的力都加進浮力。左右作用互相抵消；面積的數值若未依深度核對，會使液體作用力無法通過由上下表面壓力差解釋浮力檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "條件判斷",
-    "分析"
+    "應用"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水",
-    "浮力是液體只對物體上表面向下壓迫所造成，和上下壓力差無關"
+    "把浮力說成液體只推物體上表面，並漏掉合成上下表面的壓力作用",
+    "僅列下表面向上的作用力就當成浮力，並漏掉扣除上表面向下作用力",
+    "把因左右表面也受力，便把兩個方向相反且相等的力都加進浮力"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

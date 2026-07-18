@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據未知質量表紀錄，哪項判讀合理？",
+  "stem": "密閉反應盒中有 24 g 的甲與 36 g 的乙。兩者完全反應後，盒內生成物合計多少克？",
   "options": [
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小",
-    "開放容器變輕證明質量守恆定律在產氣反應中不適用",
-    "所有反應物與生成物的總質量相等",
-    "未知生成物為 35＋12＝47 g，因為生成物應加在反應物上"
+    "60 g",
+    "864 g",
+    "12 g",
+    "36 g"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小」不成立；密閉袋內的反應前後，所有反應物與生成物的總質量相等，因為原子只重新排列。"
+      "isCorrect": true,
+      "reason": "24＋36＝60，密閉系統前後相等。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「開放容器變輕證明質量守恆定律在產氣反應中不適用」不成立；開放容器產生氣體並逸出時，秤得質量可減少；把逸出氣體也納入系統才符合守恆。"
+      "reason": "864 是不具物理意義的相乘結果。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「密閉袋內的反應前後，所有反應物與生成物的總質量相等，因為原子只重新排列」。"
+      "isCorrect": false,
+      "reason": "12 g 是兩反應物的差。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「未知生成物為 35＋12＝47 g，因為生成物應加在反應物上」不成立；反應物總質量 35 g，已知一生成物 12 g，且系統密閉，另一生成物為 23 g。"
+      "reason": "36 g 只計入乙。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
-    "概念理解"
+    "計算",
+    "守恆應用"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "化學反應會消耗質量來產生能量，所以密閉系統後的總質量必較小",
-    "開放容器變輕證明質量守恆定律在產氣反應中不適用",
-    "未知生成物為 35＋12＝47 g，因為生成物應加在反應物上"
+    "864 g",
+    "12 g",
+    "36 g"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

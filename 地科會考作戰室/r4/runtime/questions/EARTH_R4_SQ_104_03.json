@@ -13,43 +13,43 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": "EARTH_R4_ST_104",
-  "stem": "閱讀「比較雷達回波與雨量器讀值」的資料後，為了釐清風向風速與雨量資料描述天氣，哪一項後續檢驗最適當？",
+  "stem": "為何可直接比較四筆雨量？",
   "options": [
-    "同時換掉風向風速與雨量資料描述天氣的全部變因後只測一次",
-    "刪除「比較雷達回波與雨量器讀值」中不合預期的資料後重畫圖",
-    "針對「比較雷達回波與雨量器讀值」再先確認問題所需變因",
-    "只詢問同意「風向表示風的來向，風速表示空氣移動快慢，雨量則記錄一定時間內累積的降水深度」的人"
+    "只要單位是mm，不論一小時或一天都能直接比強度。",
+    "風速與雨量同時變大，所以兩者是同一物理量。",
+    "四筆累積時段都為一小時，因此24 mm可判為其中最大。",
+    "西南風含兩個方位，雨量必定較大。"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "同時改變多個變因且無重複，不能判斷「比較雷達回波與雨量器讀值」的原因。"
+      "reason": "「只要單位是mm，不論一小時或一天都能直接比強度。」混淆本題的量測對象、單位、時間或適用範圍；對照「四筆累積時段都為一小時，因此24 mm可判為其中最大。」可知它不能支持題幹結論。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "未說明便刪除資料會造成偏誤。"
+      "reason": "「風速與雨量同時變大，所以兩者是同一物理量。」混淆本題的量測對象、單位、時間或適用範圍；對照「四筆累積時段都為一小時，因此24 mm可判為其中最大。」可知它不能支持題幹結論。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "後續檢驗保留風向風速與雨量資料描述天氣的變因、資料與結論間的可重現關係。"
+      "reason": "「四筆累積時段都為一小時，因此24 mm可判為其中最大。」直接回應題幹，並保留本題所需的量測對象、單位、時空尺度與適用條件。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "意見調查不是獨立觀測或公平檢驗。"
+      "reason": "「西南風含兩個方位，雨量必定較大。」混淆本題的量測對象、單位、時間或適用範圍；對照「四筆累積時段都為一小時，因此24 mm可判為其中最大。」可知它不能支持題幹結論。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "design-follow-up-check"
+    "plan-from-shared-data"
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "一日最高溫可代表當地氣候"
+    "只要單位是mm，不論一小時或一天都能直接比強度。"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "逐項核對「比較雷達回波與雨量器讀值」的條件後，「針對「比較雷達回波與雨量器讀值」再先確認問題所需變因」符合題目資料；查核依據為：逐時表格、折線圖、雷達與衛星資料各有不同時空尺度。",
+      "evidence": "針對「為何可直接比較四筆雨量？」，可由「四筆累積時段都為一小時，因此24 mm可判為其中最大。」直接判定；這項證據明確保留題目指定的物理量、時空尺度與觀測條件。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「單次讀值只代表當時當地」。",
+      "evidence": "交叉檢查「只要單位是mm，不論一小時或一天都能直接比強度。」：該說法在量測對象、單位、時間或適用範圍上與「四筆累積時段都為一小時，因此24 mm可判為其中最大。」衝突，不能支持題幹結論。",
       "status": "pass"
     }
   ],

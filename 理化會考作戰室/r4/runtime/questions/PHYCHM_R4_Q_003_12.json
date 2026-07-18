@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估天平歸零報告時，哪項說明正確？",
+  "stem": "一張照片未拍到量筒的最小刻度，只看得到液面。能否寫出精確體積？",
   "options": [
-    "刻度儀器只能記到最小刻度，任何估讀都是作假",
-    "只要答案含有數字，就可把它當成直接測量的基本物理量",
-    "視線應與刻度面垂直，先讀到最小刻度，再估讀一位，並連同單位記錄",
-    "儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺"
+    "不能，缺少格值與比例",
+    "不能，因任何照片都不算證據",
+    "能，液面高度足夠",
+    "能，任填三位小數"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「刻度儀器只能記到最小刻度，任何估讀都是作假」不成立；視線應與刻度面垂直，先讀到最小刻度，再估讀一位，並連同單位記錄。"
+      "isCorrect": true,
+      "reason": "格值與比例是必要資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要答案含有數字，就可把它當成直接測量的基本物理量」不成立；長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得。"
+      "reason": "若刻度清楚且拍攝正確，照片可作證據。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「視線應與刻度面垂直，先讀到最小刻度，再估讀一位，並連同單位記錄」。"
+      "isCorrect": false,
+      "reason": "沒有刻度無法把高度轉成體積。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺」不成立；量約 12 cm 的鉛筆適合用毫米刻度直尺；儀器量程要大於待測量，最小刻度要能分辨所需差異。"
+      "reason": "小數位不能憑空指定。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "限制評估"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "刻度儀器只能記到最小刻度，任何估讀都是作假",
-    "只要答案含有數字，就可把它當成直接測量的基本物理量",
-    "儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺"
+    "不能，因任何照片都不算證據",
+    "能，液面高度足夠",
+    "能，任填三位小數"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -16,51 +16,50 @@
     "AUTH-NATURAL-LP-PO-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於證據檢討方法限制與改善方式，哪項結論符合題給條件？",
+  "stem": "只測一所學校學生，結論應如何限制？",
   "options": [
-    "實驗結論應限於已測條件",
-    "自變項是實驗者要量到的結果，應變項則是所有必須保持不變的條件",
-    "對照組應什麼都不做，包括不用相同容器、時間或量測方法",
-    "只要數據不符合預期就應直接刪除，否則會使結論不漂亮"
+    "必須刪除資料",
+    "先限於該樣本，不能直接代表所有學生",
+    "樣本地點不重要",
+    "可代表全世界"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「實驗結論應限於已測條件，說明樣本數、量測精度、潛在干擾並提出只改一項的具體改善」。"
+      "isCorrect": false,
+      "reason": "資料仍可用。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「自變項是實驗者要量到的結果，應變項則是所有必須保持不變的條件」不成立；比較溫度對溶解速度的實驗，溫度是自變項、溶解時間是應變項，質量、顆粒大小與攪拌要控制。"
+      "isCorrect": true,
+      "reason": "樣本代表性有限。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「對照組應什麼都不做，包括不用相同容器、時間或量測方法」不成立；對照組接受除自變項外的相同處理，可用來比較若沒有關鍵處理時的結果。"
+      "reason": "地點可能影響。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要數據不符合預期就應直接刪除，否則會使結論不漂亮」不成立；異常數據應原樣記錄，檢查器材、操作與條件，只在有可說明理由時重測或標記排除。"
+      "reason": "外推過度。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "外推限制"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "自變項是實驗者要量到的結果，應變項則是所有必須保持不變的條件",
-    "對照組應什麼都不做，包括不用相同容器、時間或量測方法",
-    "只要數據不符合預期就應直接刪除，否則會使結論不漂亮"
+    "必須刪除資料",
+    "樣本地點不重要",
+    "可代表全世界"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段探究與實作學習表現; 臺灣國中教育會考自然科實驗設計、安全與資料判讀題型",
     "sourceRefs": [
       "AUTH-NATURAL-LP-AI-4-1",
       "AUTH-NATURAL-LP-AI-4-2",
@@ -73,19 +72,5 @@
       "AUTH-NATURAL-LP-PO-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

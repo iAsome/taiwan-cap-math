@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據高處位能紀錄，哪項判讀合理？",
+  "stem": "提住書包列含作用力80 N 向上及位移0；水平提袋行走列含100 N 向上及5 m 水平。兩列交由判斷施力是否使物體沿力的方向移動判讀，位移呈現哪個量化或方向結果？",
   "options": [
-    "重力位能是物體固定不變的性質，與參考面、重量和高度都無關",
-    "有摩擦時機械能直接消失且不轉成其他能量，因此總能量不守恆",
-    "力對物體作功要有物體沿力的分量方向發生位移；用力提住靜止物體時對物體作功為零",
-    "能量轉換時可無故多出或少掉能量，因此不必界定系統就能使用守恆"
+    "計算某一力的功時把物體所受全部力都混在一起，並漏掉指定是哪個力",
+    "解題時將水平提袋行走的 100 N 與 5 m 相乘，誤算提力作功 500 J",
+    "提住不動與垂直力配水平位移都為零",
+    "主張提住靜止書包時持續施力"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「重力位能是物體固定不變的性質，與參考面、重量和高度都無關」不成立；重力位能在選定參考高度後，隨物體重量與高度增加而增大。"
+      "reason": "計算某一力的功時把物體所受全部力都混在一起，卻未指定是哪個力，結果會錯判該力作功。此處只計題目指定力對物體的功，不以人的疲累程度取代力與位移的幾何關係；該力作功差異若未通過判斷施力是否使物體沿力的方向移動對作用力的控制，就不能只歸給位移。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「有摩擦時機械能直接消失且不轉成其他能量，因此總能量不守恆」不成立；物體下落時重力位能可轉成動能；有摩擦時，部分機械能轉成內能與聲能。"
+      "reason": "解題時錯將水平提袋行走的 100 N 與 5 m 相乘，誤算提力作功 500 J，結果會錯判該力作功。只有位移具有沿力方向分量時該力才作功；位移的數值若未依作用力核對，會使該力作功無法通過判斷施力是否使物體沿力的方向移動檢查。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「力對物體作功要有物體沿力的分量方向發生位移；用力提住靜止物體時對物體作功為零」。"
+      "reason": "提住不動與垂直力配水平位移都為零。提住書包列的作用力為80 N 向上、位移為0；水平提袋行走列的作用力為100 N 向上、位移為5 m 水平。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「能量轉換時可無故多出或少掉能量，因此不必界定系統就能使用守恆」不成立；選定系統若不與外界交換能量，總能量守恆；若動能增加 30 J，其他能量形式總量應減少 30 J。"
+      "reason": "誤以為提住靜止書包時持續施力，所以書包位移為零也有正功。力對物體作功要有物體沿力的分量方向發生位移；作用力未列入判斷施力是否使物體沿力的方向移動時，該力作功的位移大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
+    "辨認",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "重力位能是物體固定不變的性質，與參考面、重量和高度都無關",
-    "有摩擦時機械能直接消失且不轉成其他能量，因此總能量不守恆",
-    "能量轉換時可無故多出或少掉能量，因此不必界定系統就能使用守恆"
+    "計算某一力的功時把物體所受全部力都混在一起，並漏掉指定是哪個力",
+    "解題時將水平提袋行走的 100 N 與 5 m 相乘，誤算提力作功 500 J",
+    "主張提住靜止書包時持續施力"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

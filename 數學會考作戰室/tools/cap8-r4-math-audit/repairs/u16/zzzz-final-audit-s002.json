@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u16",
+  "batch": "017-u16-complete",
+  "skills": ["s002"],
+  "mc": [],
+  "constructedResponse": [
+    {
+      "questionId": "u16-s002-cr001",
+      "expectedContentSha256": "025eb11dbdb146ffecd1efe60133a74a2ab0267f4b0d42b2dd9e67723a0a5cbf",
+      "replaceText": {
+        "把∠ABC對到∠DC A以外的角。": "把∠ABC對到∠CDA以外的角。"
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u16-s002-lecture-r1",
+      "expectedContentSha256": "04b8e67ef6e6288b0f0ff1df0f75de4ce647767a694c2f979834f5a9ff7ed705",
+      "replaceText": {
+        "AD 平分 ∠BAC，且 AB=AC。證明 △ABD≅△ACD。": "四邊形PQRS中，PQ=PS、∠QPR=∠RPS，並畫出對角線PR。證明△PQR≅△PSR。",
+        "AB=AC（已知）。": "PQ=PS（已知）。",
+        "∠BAD=∠CAD（角平分線定義）。": "PR=PR（共用邊）。",
+        "AD=AD（共用邊）。": "∠QPR=∠RPS（已知）。",
+        "三項資料依邊、夾角、邊排列，因此使用SAS完成結論。": "三項資料依邊、夾角、邊排列，因此使用SAS完成結論並核對P↔P、Q↔S、R↔R。",
+        "△ABD≅△ACD（SAS）。": "△PQR≅△PSR（SAS）。",
+        "AB與AC及共用邊AD分別對應，角平分線又給出兩邊之間的夾角相等；三項資料依SAS排列，證明沒有偷用待證結論。": "PQ與PS及共用邊PR分別對應，所給兩角又正好位於這兩組邊之間；三項資料依SAS排列，證明沒有偷用待證結論。"
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

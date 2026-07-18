@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據生活酸鹼安全紀錄，哪項判讀合理？",
+  "stem": "檢驗二氧化碳常用哪一現象？",
   "options": [
-    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關",
-    "pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目自由決定",
-    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸",
-    "酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體"
+    "使澄清石灰水混濁",
+    "使磁鐵吸力增加",
+    "使餘燼復燃",
+    "讓藍石蕊必定變白"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「酸和鹼只由溶液顏色定義，和水溶液中的離子無關」不成立；在課程模型中，酸性水溶液的酸性與氫離子有關，鹼性水溶液的鹼性與氫氧根離子有關。"
+      "isCorrect": true,
+      "reason": "CO₂與石灰水反應成混濁。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目…」不成立；pH＜7 為酸性、pH＝7 為中性、pH＞7 為鹼性；pH 本身沒有單位。"
+      "reason": "與磁性無關。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「pH 數字越大一定代表酸性越強，所以 pH 5 比 pH …」不成立；在同種、相近條件下，pH 2 的溶液比 pH 5 酸性強；pH 12 比 pH 9 鹼性強。"
+      "reason": "餘燼復燃是氧氣特徵。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體」。"
+      "isCorrect": false,
+      "reason": "不是標準檢驗。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
-    "概念理解"
+    "氣體檢驗"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關",
-    "pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目自由決定",
-    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸"
+    "使磁鐵吸力增加",
+    "使餘燼復燃",
+    "讓藍石蕊必定變白"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

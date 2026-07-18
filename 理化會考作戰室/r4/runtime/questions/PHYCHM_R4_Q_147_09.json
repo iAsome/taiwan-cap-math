@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對加熱曲線結果，哪項說法正確？",
+  "stem": "何時不能只用mcΔT？",
   "options": [
-    "所有物質受熱都以完全相同比例膨脹，因此材料差異不影響伸縮設計",
-    "Q＝mcΔT 中應把質量、比熱與溫差相加，所以為 109.2 J",
-    "溫度和熱量是同一物理量，50 °C 就表示物體內有 50 J 熱量",
-    "升溫 5 °C 需熱量 Q＝100×4.2×5＝2100 J"
+    "液態水20升30°C",
+    "液態水降5°C",
+    "水正在沸騰相變",
+    "同相態小溫變"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「所有物質受熱都以完全相同比例膨脹，因此材料差異不影響伸縮設計」不成立；金屬橋伸縮縫、溫度計液柱變化均可由物質熱脹冷縮解釋，但幅度依材料而異。"
+      "reason": "可用。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「Q＝mcΔT 中應把質量、比熱與溫差相加，所以為 109.…」不成立；若 100 g 水的比熱為 4.2 J/(g·°C)，升溫 5 °C 需熱量 Q＝100×4.…。"
+      "reason": "可用。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「溫度和熱量是同一物理量，50 °C 就表示物體內有 50 …」不成立；溫度描述物體熱狀態，熱量是因溫差而移轉的能量；物體不是「含有某度熱量」。"
+      "isCorrect": true,
+      "reason": "相變需潛熱。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「若 100 g 水的比熱為 4.2 J/(g·°C)，升溫 5 °C 需熱量 Q＝100×4.2×5＝2100 J」。"
+      "isCorrect": false,
+      "reason": "可用。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "適用判斷"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "所有物質受熱都以完全相同比例膨脹，因此材料差異不影響伸縮設計",
-    "Q＝mcΔT 中應把質量、比熱與溫差相加，所以為 109.2 J",
-    "溫度和熱量是同一物理量，50 °C 就表示物體內有 50 J 熱量"
+    "液態水20升30°C",
+    "液態水降5°C",
+    "同相態小溫變"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱學與能量; 臺灣國中教育會考自然科熱量、比熱、相變與生活現象題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-BA-4-1",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查水平推箱紀錄，哪項判讀正確？",
+  "stem": "受力圖中箭頭方向通常表示什麼？",
   "options": [
-    "力的箭頭長度表示大小、箭頭指向表示方向、起點標在作用點",
-    "合力為零時物體速度必立即變為零，不可能繼續等速運動",
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他",
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關"
+    "物體運動路徑",
+    "物體質量大小",
+    "時間長短",
+    "力作用的方向"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「力的箭頭長度表示大小、箭頭指向表示方向、起點標在作用點，三項都是力的表示資訊」。"
+      "isCorrect": false,
+      "reason": "物體運動路徑與受力條件不符。力向量的箭向直接標示作用方向。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「合力為零時物體速度必立即變為零，不可能繼續等速運動」不成立；物體所受合力為零時加速度為零，可保持靜止或等速直線運動，不限於靜止。"
+      "reason": "物體質量大小與受力條件不符。力向量的箭向直接標示作用方向。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他」不成立；慣性是物體維持原運動狀態的性質；車突然剎車時乘客上半身傾向前就是慣性現象。"
+      "reason": "時間長短與受力條件不符。力向量的箭向直接標示作用方向。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「加速度方向永遠和物體當下運動方向相同，與合力方向無關」不成立；物體的加速度方向與合力相同；質量相同時合力較大，或合力相同時質量較小，加速度較大。"
+      "isCorrect": true,
+      "reason": "力向量的箭向直接標示作用方向。"
     }
   ],
   "difficulty": "standard",
@@ -50,16 +50,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "合力為零時物體速度必立即變為零，不可能繼續等速運動",
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他",
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關"
+    "物體運動路徑",
+    "物體質量大小",
+    "時間長短"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

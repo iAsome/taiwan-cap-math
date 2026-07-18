@@ -14,34 +14,34 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": "EARTH_R4_ST_191",
-  "stem": "閱讀「規劃安全的投影式太陽觀測」的資料後，為了釐清可見光電波與太空望遠鏡的觀測限制，哪一項後續檢驗最適當？",
+  "stem": "要檢驗雲層是否造成地面甲與地面乙資料差異，哪項安排最合適？",
   "options": [
-    "同時換掉可見光電波與太空望遠鏡的觀測限制的全部變因後只測一次",
-    "針對「規劃安全的投影式太陽觀測」再先定觀測目標和波段",
-    "刪除「規劃安全的投影式太陽觀測」中不合預期的資料後重畫圖",
-    "只詢問同意「電波望遠鏡可在可見光以外觀測」的人"
+    "只在晴天使用甲、只在陰天使用乙，且不記錄時間與雲量。",
+    "同時段指向同一目標，連續記錄雲量、甲的可見光訊號與乙的電波訊號，再比較變化。",
+    "從太空丙任選一張影像，宣布所有地面電波都不受干擾。",
+    "刪除乙受到通訊干擾的時段，使兩組曲線看起來一致。"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "同時改變多個變因且無重複，不能判斷「規劃安全的投影式太陽觀測」的原因。"
+      "reason": "觀測時段與天氣完全分開會混入時間差，且沒有雲量紀錄可供檢驗。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "後續檢驗保留可見光電波與太空望遠鏡的觀測限制的變因、資料與結論間的可重現關係。"
+      "reason": "同目標、同時段並同步記錄雲量與兩波段，可比較雲增加時可見光和電波訊號是否出現不同反應。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "未說明便刪除資料會造成偏誤。"
+      "reason": "太空紅外線單張影像不能代表地面電波，也無法檢驗通訊干擾。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "意見調查不是獨立觀測或公平檢驗。"
+      "reason": "刪除受干擾資料會隱藏乙的真實限制，造成選擇偏誤。 不同波段與平台各有特定限制，不能用名稱或主觀印象替代。"
     }
   ],
   "difficulty": "transfer",
@@ -50,7 +50,7 @@
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "星圖在任何緯度時間都完全相同"
+    "刪除乙受到通訊干擾的時段，使兩組曲線看起來一致。"
   ],
   "provenance": {
     "status": "original",
@@ -70,13 +70,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "逐項核對「規劃安全的投影式太陽觀測」的條件後，「針對「規劃安全的投影式太陽觀測」再先定觀測目標和波段」符合題目資料；查核依據為：望遠鏡口徑影響集光能力。",
+      "evidence": "同步觀測把目標和時間控制一致，雲量序列則提供可與兩種訊號對照的自變條件。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「一般太陽眼鏡、燻黑玻璃或未濾光望遠鏡都不能安全直視太陽」。",
+      "evidence": "分開天氣、跨平台任取影像或刪除干擾時段都不能建立雲層與訊號差異的可靠關係。",
       "status": "pass"
     }
   ],

@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "搬運重物出現四種說法，哪項有理化概念支持？",
+  "stem": "力與位移不平行時仍用完整力乘路程，卻未取沿位移方向的分量，結果會錯判功。依計算定力沿同方向所作的功修正時，力與沿力方向位移應採哪個原理連結？",
   "options": [
     "恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J",
-    "動能只由物體所在高度決定，質量與速度都不影響",
-    "重力位能是物體固定不變的性質，與參考面、重量和高度都無關",
-    "有摩擦時機械能直接消失且不轉成其他能量，因此總能量不守恆"
+    "看到甲、乙、丙的力和距離不同，就認為三者作功不可能相同",
+    "解題時將功的單位寫成瓦特，混淆能量單位焦耳與功率單位瓦特",
+    "解題時將功的公式寫成 W＝F/d，20 N 推 3 m 只算出約 6.7 J"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J」。"
+      "reason": "恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J。丙列的力為15 N，沿力方向位移為4.0 m；丁列的力為20 N，沿力方向位移為0.5 m。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「動能只由物體所在高度決定，質量與速度都不影響」不成立；動能與質量成正比、與速度平方成正比；同質量者速度加倍，動能變為四倍。"
+      "reason": "一看到甲、乙、丙的力和距離不同，就認為三者作功不可能相同，結果會錯判功。同方向恆力作功 W＝Fd；沿力方向位移的數值若未依力核對，會使功無法通過計算定力沿同方向所作的功檢查。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「重力位能是物體固定不變的性質，與參考面、重量和高度都無關」不成立；重力位能在選定參考高度後，隨物體重量與高度增加而增大。"
+      "reason": "解題時錯將功的單位寫成瓦特，混淆能量單位焦耳與功率單位瓦特。恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J；力未列入計算定力沿同方向所作的功時，功的沿力方向位移大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「有摩擦時機械能直接消失且不轉成其他能量，因此總能量不守恆」不成立；物體下落時重力位能可轉成動能；有摩擦時，部分機械能轉成內能與聲能。"
+      "reason": "解題時錯將功的公式寫成 W＝F/d，20 N 推 3 m 只算出約 6.7 J。恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J；照原做法會把功算錯或判反。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "動能只由物體所在高度決定，質量與速度都不影響",
-    "重力位能是物體固定不變的性質，與參考面、重量和高度都無關",
-    "有摩擦時機械能直接消失且不轉成其他能量，因此總能量不守恆"
+    "看到甲、乙、丙的力和距離不同，就認為三者作功不可能相同",
+    "解題時將功的單位寫成瓦特，混淆能量單位焦耳與功率單位瓦特",
+    "解題時將功的公式寫成 W＝F/d，20 N 推 3 m 只算出約 6.7 J"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

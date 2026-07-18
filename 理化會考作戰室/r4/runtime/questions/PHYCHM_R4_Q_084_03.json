@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理未知質量表資料後，哪項說明正確？",
+  "stem": "判斷 N₂＋3H₂→2NH₃ 時，左側氫原子共有多少個？",
   "options": [
-    "開放容器變輕證明質量守恆定律在產氣反應中不適用",
-    "未知生成物為 35＋12＝47 g，因為生成物應加在反應物上",
-    "每一種都相等才是已配平",
-    "H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標"
+    "9",
+    "2",
+    "3",
+    "6"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「開放容器變輕證明質量守恆定律在產氣反應中不適用」不成立；開放容器產生氣體並逸出時，秤得質量可減少；把逸出氣體也納入系統才符合守恆。"
+      "reason": "3×3 不是原子計數。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「未知生成物為 35＋12＝47 g，因為生成物應加在反應物上」不成立；反應物總質量 35 g，已知一生成物 12 g，且系統密閉，另一生成物為 23 g。"
+      "reason": "2 是單一 H₂ 的原子數。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「檢查反應式時要逐種元素計算左右原子總數，每一種都相等才是已配平」。"
+      "isCorrect": false,
+      "reason": "3 是分子數。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標」不成立；2H₂＋O₂→2H₂O 以係數 2、1、2 使氫、氧原子在兩側分別都是 4、2 個。"
+      "isCorrect": true,
+      "reason": "3×2＝6。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "係數與下標"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "開放容器變輕證明質量守恆定律在產氣反應中不適用",
-    "未知生成物為 35＋12＝47 g，因為生成物應加在反應物上",
-    "H₂＋O₂→H₂O₂ 是正確配平，因為可直接改生成物下標"
+    "9",
+    "2",
+    "3"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-5",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

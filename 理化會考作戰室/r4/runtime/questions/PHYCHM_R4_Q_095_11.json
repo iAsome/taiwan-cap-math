@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組反應資料表資料，哪項判讀仍合理？",
+  "stem": "同一表中A以g、B以個數記錄，能否直接求A：B質量比？",
   "options": [
-    "CO₂ 的相對分子量為 12＋16＝28，因為同種元素只需加一次",
-    "使用比例前要確認兩邊都是質量、體積或粒子數，並先統一 g、kg、mL 等單位",
-    "N₂＋3H₂→2NH₃ 中的下標 2、3、3 才是反應粒子數比",
-    "生成物乙應為 29 g，因為要把已知生成物加到反應物上"
+    "能，將兩個數相除",
+    "不能，還需B每個粒子的質量",
+    "能，個數就是克數",
+    "不能，因g不是質量"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「CO₂ 的相對分子量為 12＋16＝28，因為同種元素只需…」不成立；CO₂ 的相對分子量為 12＋2×16＝44；必須把每種原子量乘以其下標再加總。"
+      "reason": "跨物理量。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「使用比例前要確認兩邊都是質量、體積或粒子數，並先統一 g、kg、mL 等單位」。"
+      "reason": "需把B個數轉成質量。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「N₂＋3H₂→2NH₃ 中的下標 2、3、3 才是反應粒子…」不成立；配平式 N₂＋3H₂→2NH₃ 表示粒子數比 1：3：2，讀比例前應確認方程式已配平。"
+      "reason": "個數與克數不同。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「生成物乙應為 29 g，因為要把已知生成物加到反應物上」不成立；密閉系統反應物共 18 g，已知生成物甲 11 g，資料表的乙應補為 7 g。"
+      "reason": "g是質量單位。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "資料可比性"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "CO₂ 的相對分子量為 12＋16＝28，因為同種元素只需加一次",
-    "N₂＋3H₂→2NH₃ 中的下標 2、3、3 才是反應粒子數比",
-    "生成物乙應為 29 g，因為要把已知生成物加到反應物上"
+    "能，將兩個數相除",
+    "能，個數就是克數",
+    "不能，因g不是質量"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-2",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

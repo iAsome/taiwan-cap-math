@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "cap8-r4-math-normalized-batch-audit-r1",
+  "contentVersion": "681a40a14624818603abb60a47b6ee6ac25ac3352e9b5e6ac92591a32ad49cd5",
+  "units": [
+    "u21"
+  ],
+  "counts": {
+    "units": 1,
+    "skills": 12,
+    "lectures": 12,
+    "mc": 144,
+    "cr": 24,
+    "figures": 12
+  },
+  "findingCounts": {
+    "BLOCKER": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 0
+  },
+  "findings": [],
+  "reviewCandidateCounts": {
+    "question-essence-candidate": 4
+  },
+  "unresolvedReviewCandidateCounts": {
+    "question-essence-candidate": 0
+  },
+  "reviewCandidates": [
+    {
+      "rule": "question-essence-candidate",
+      "id": "u21-s006-v002",
+      "field": "text+choices",
+      "evidence": "u21-s006-v001",
+      "resolution": "adjudicated-legitimate"
+    },
+    {
+      "rule": "question-essence-candidate",
+      "id": "u21-s007-v002",
+      "field": "text+choices",
+      "evidence": "u21-s007-v001",
+      "resolution": "adjudicated-legitimate"
+    },
+    {
+      "rule": "question-essence-candidate",
+      "id": "u21-s007-v004",
+      "field": "text+choices",
+      "evidence": "u21-s003-v004",
+      "resolution": "adjudicated-legitimate"
+    },
+    {
+      "rule": "question-essence-candidate",
+      "id": "u21-s007-v007",
+      "field": "text+choices",
+      "evidence": "u21-s003-v007",
+      "resolution": "adjudicated-legitimate"
+    }
+  ],
+  "semanticReviewComplete": true,
+  "semanticReviewEvidence": "tools/cap8-r4-math-audit/results/final-duplicate-reference-audit.json",
+  "semanticDisclaimer": "Mechanical normalization checks do not prove mathematical or pedagogical correctness; review candidates require separate human adjudication."
+}

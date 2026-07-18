@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_200",
-  "stem": "根據直線座標表中紀錄，哪項結論最合理？",
+  "stem": "依表格，A 與 B 的速度大小皆為 4 m/s，但符號相反。可得何結論？",
   "options": [
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同",
-    "速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "路程與位移永遠大小相等，往返原點的路程也是零"
+    "兩者速度完全相同",
+    "兩者速率相同、方向相反",
+    "A 與 B 都向正方向",
+    "B 的速率為負值"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「速度只是一個正數快慢，向東與向西 10 m/s 在任何分析…」不成立；速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向。"
+      "reason": "兩者速度完全相同不符合題目資料。速度絕對值相同表示速率相同，正負相反表示方向相反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向」。"
+      "reason": "速度絕對值相同表示速率相同，正負相反表示方向相反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只給一個數字「200 m」就能唯一決定物體位置，不需參考點…」不成立；物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整。"
+      "reason": "A 與 B 都向正方向不符合題目資料。速度絕對值相同表示速率相同，正負相反表示方向相反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「路程與位移永遠大小相等，往返原點的路程也是零」不成立；路程是實際路徑總長，位移是起點到終點的有向改變；往返原點時路程大於零但位移為零。"
+      "reason": "B 的速率為負值不符合題目資料。速度絕對值相同表示速率相同，正負相反表示方向相反。"
     }
   ],
   "difficulty": "standard",
@@ -47,14 +47,14 @@
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同",
-    "只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向",
-    "路程與位移永遠大小相等，往返原點的路程也是零"
+    "兩者速度完全相同",
+    "A 與 B 都向正方向",
+    "B 的速率為負值"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -62,19 +62,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

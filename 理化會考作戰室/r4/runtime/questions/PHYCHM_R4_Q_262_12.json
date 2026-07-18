@@ -10,70 +10,56 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估紙屑吸引報告時，哪項說明正確？",
+  "stem": "中性導體：帶電棒負、靠近後近端正電偏近端、結果吸引。如何補足紀錄，才能解釋結果？",
   "options": [
-    "接地線的功能是在物體上累積更多靜電，以增加火花能量",
-    "帶電物可藉靜電感應吸引電中性物，因此只觀察吸引不能確定另一物的電性",
-    "帶正電物體吸引另一物體就唯一證明另一物必帶負電",
-    "摩擦生電是摩擦動作創造大量正負電荷，原先物體中沒有帶電粒子"
+    "主張靜電感應只能造成排斥，不能使帶電體吸引中性物",
+    "看到帶電棒吸引紙球",
+    "吸引現象本身證據不足",
+    "把未做排斥或已知電性測試，就把吸引當成未知物電性的唯一證據"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「接地線的功能是在物體上累積更多靜電，以增加火花能量」不成立；接地提供電荷與大地間移動的路徑，可減少靜電累積；在易燃環境更需防止靜電火花。"
+      "reason": "誤以為靜電感應只能造成排斥，不能使帶電體吸引中性物。帶電物可藉靜電感應吸引電中性物，因此只觀察吸引不能確定另一物的電性；帶電棒未列入由吸引現象辨認不能直接確定電性時，結果的靠近後近端大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「帶電物可藉靜電感應吸引電中性物，因此只觀察吸引不能確定另一物的電性」。"
+      "isCorrect": false,
+      "reason": "一看到帶電棒吸引紙球，就直接認定紙球帶與棒相反的電荷。帶電物可藉靜電感應吸引電中性物，因此只觀察吸引不能確定另一物的電性；照原做法會把結果算錯或判反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「帶正電物體吸引另一物體就唯一證明另一物必帶負電」不成立；帶電物可藉靜電感應吸引電中性物，因此只觀察吸引不能確定另一物的電性。"
+      "isCorrect": true,
+      "reason": "吸引現象本身證據不足。負電紙球列的帶電棒為正，靠近後近端為異號；中性導體列的帶電棒為正，靠近後近端為負電偏近端。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「摩擦生電是摩擦動作創造大量正負電荷，原先物體中沒有帶電粒子」不成立；兩個原本中性且與外界絕緣的不同材料摩擦時，電子可由一物轉移至另一物，使兩者帶等量異號電荷。"
+      "reason": "解題時誤把未做排斥或已知電性測試，就把吸引當成未知物電性的唯一證據，結果會錯判結果。必須結合排斥或其他測試才能判定未知電性；結果差異若未通過由吸引現象辨認不能直接確定電性對帶電棒的控制，就不能只歸給靠近後近端。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "接地線的功能是在物體上累積更多靜電，以增加火花能量",
-    "帶正電物體吸引另一物體就唯一證明另一物必帶負電",
-    "摩擦生電是摩擦動作創造大量正負電荷，原先物體中沒有帶電粒子"
+    "主張靜電感應只能造成排斥，不能使帶電體吸引中性物",
+    "看到帶電棒吸引紙球",
+    "把未做排斥或已知電性測試，就把吸引當成未知物電性的唯一證據"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KC-4-1",
       "AUTH-NATURAL-LC-KC-4-2",
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -14,34 +14,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄根據衛星運動下結論，哪項符合資料？",
+  "stem": "軌道中的「失重感」最接近哪一解釋？",
   "options": [
-    "比較粗糙程度時可同時在其中一組增加負重，結果仍只反映表面性質",
-    "物體沿圓周運動時必有一個向外的真實合力，向內力會使它離開圓軌道",
-    "同一物體到月球後組成與質量不變",
-    "兩物體距離越遠引力越大，質量變化對引力沒有影響"
+    "萬有引力完全消失",
+    "探測器不再有質量",
+    "所有速度都變為零",
+    "探測器與物體共同自由落體，支持力很小"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「比較粗糙程度時可同時在其中一組增加負重，結果仍只反映表面性質」不成立；摩擦效果受接觸面性質與正向作用力影響；比較實驗要一次只改一項。"
+      "reason": "萬有引力完全消失不成立。軌道仍受重力，只是缺少平常支撐造成的視重量。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「物體沿圓周運動時必有一個向外的真實合力，向內力會使它離開圓…」不成立；圓周運動的速度方向沿切線，使方向持續改變的合力指向圓心。"
+      "reason": "探測器不再有質量不成立。軌道仍受重力，只是缺少平常支撐造成的視重量。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「同一物體到月球後組成與質量不變，但因當地重力場較弱，重量變小」。"
+      "isCorrect": false,
+      "reason": "所有速度都變為零不成立。軌道仍受重力，只是缺少平常支撐造成的視重量。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「兩物體距離越遠引力越大，質量變化對引力沒有影響」不成立；萬有引力隨兩物體質量增大而增大，隨中心距離增加而減小；比較時要分開變項。"
+      "isCorrect": true,
+      "reason": "軌道仍受重力，只是缺少平常支撐造成的視重量。"
     }
   ],
   "difficulty": "advanced",
@@ -49,16 +49,16 @@
     "主張評估",
     "證據評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "比較粗糙程度時可同時在其中一組增加負重，結果仍只反映表面性質",
-    "物體沿圓周運動時必有一個向外的真實合力，向內力會使它離開圓軌道",
-    "兩物體距離越遠引力越大，質量變化對引力沒有影響"
+    "萬有引力完全消失",
+    "探測器不再有質量",
+    "所有速度都變為零"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-10",
       "AUTH-NATURAL-LC-EB-4-11",
@@ -69,19 +69,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

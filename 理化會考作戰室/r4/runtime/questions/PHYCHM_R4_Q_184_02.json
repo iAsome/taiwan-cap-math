@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "根據凸透鏡成像紀錄，哪項判讀合理？",
+  "stem": "水中物體的光進入空氣後，眼睛為何把它判得較淺？",
   "options": [
-    "近視眼應佩戴凸透鏡使光更提前會聚，因為所有視力問題都用同一透鏡",
-    "水中物體的光進入空氣後折射",
-    "水中物體看來較淺是因物體實際漂浮上升，與光的折射無關",
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線"
+    "物體真的向上漂移",
+    "水面把光完全反射回底部",
+    "眼睛沿折射光反向直線延長，交點位於較淺處",
+    "光進入空氣後停止"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「近視眼應佩戴凸透鏡使光更提前會聚，因為所有視力問題都用同一…」不成立；近視眼需發散透鏡輔助將遠物像後移至視網膜；相機和眼睛均利用會聚系統成實像。"
+      "reason": "物體位置沒有改變。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「水中物體的光進入空氣後折射，眼睛沿折射光反向延伸，使物體看來比實際淺」。"
+      "isCorrect": false,
+      "reason": "仍有光進入眼睛。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「水中物體看來較淺是因物體實際漂浮上升，與光的折射無關」不成立；水中物體的光進入空氣後折射，眼睛沿折射光反向延伸，使物體看來比實際淺。"
+      "isCorrect": true,
+      "reason": "折射使到眼光線方向改變，反向追溯產生較淺虛位置。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「光由任何介質進入另一介質時速率都不變，也永遠折向法線」不成立；光由空氣進入玻璃時速率降低，斜入射通常折向法線；由玻璃進空氣則通常偏離法線。"
+      "reason": "眼睛能接收光表示光未停止。"
     }
   ],
   "difficulty": "foundation",
@@ -47,16 +47,16 @@
     "關係判讀",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "近視眼應佩戴凸透鏡使光更提前會聚，因為所有視力問題都用同一透鏡",
-    "水中物體看來較淺是因物體實際漂浮上升，與光的折射無關",
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線"
+    "物體真的向上漂移",
+    "水面把光完全反射回底部",
+    "光進入空氣後停止"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-7",
       "AUTH-NATURAL-LC-KA-4-8",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

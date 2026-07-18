@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u16",
+  "batch": "017-u16-complete",
+  "skills": ["s009"],
+  "mc": [],
+  "constructedResponse": [],
+  "lectures": [
+    {
+      "lectureId": "u16-s009-lecture-r1",
+      "expectedContentSha256": "f900d94e72db7359bca119eb81152b88b83ea168b7afc70a0d9005f134c71635",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "已知∠JKL及以R為端點的基準射線RS。敘述如何在RS上方作出與∠JKL相等的角。",
+            "solutionSteps": [
+              "以K為圓心任取適當半徑畫弧，交KJ、KL於M、N。",
+              "保持半徑，以R為圓心畫弧，交RS於U。",
+              "把圓規開口改為MN，以U為圓心截新弧上方於V，最後作射線RV。"
+            ],
+            "answer": "∠SRV=∠JKL，且V選在RS上方。",
+            "why": "KM、KN、RU、RV是同一作圖半徑，且MN=UV；因此△KMN與△RUV依SSS全等，K、R處的對應角相等，所選交點也符合上方限制。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "複製角時，有人先在原角畫半徑4公分的弧，卻在新頂點改畫半徑6公分的弧，再原長搬移原弦。說明為何不能保證成功。",
+            "solutionSteps": [
+              "原角內的小三角形兩腰都是4公分。",
+              "新角內的小三角形兩腰都是6公分，但第三邊仍是原弦長。",
+              "兩組三邊不能逐一對應相等，無法用SSS推出圓心角相等。"
+            ],
+            "answer": "不能保證等角；新弧必須沿用原弧半徑，或連同所有長度按同一比例改變。",
+            "why": "固定弦長時，半徑改變通常會改變弦所對的圓心角；標準尺規作法直接保持半徑與弦長，才能取得兩個全等的小三角形。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "原作圖得到QA=QB，新作圖得到TC=TD，且QA=TC、AB=CD。補足證明，判斷∠AQB與∠CTD是否相等。",
+            "solutionSteps": [
+              "由QA=QB及QA=TC，得QB=TC。",
+              "又TC=TD，所以QB=TD；配合QA=TC及AB=CD，共有三組對應邊相等。",
+              "依SSS得△QAB≅△TCD，故對應角∠AQB=∠CTD。"
+            ],
+            "answer": "∠AQB=∠CTD。",
+            "why": "證明使用的都是同半徑及搬移弦產生的邊長關係；沒有先假設待證角相等，因此論證完整且不循環。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "在水平向右的射線PX上複製一個角，最後兩弧在PX上下各交於F、G。題目未指定方向時，哪些結果成立？",
+            "solutionSteps": [
+              "F、G到P的距離都等於新弧半徑，到基準截點E的距離也都等於原弦。",
+              "分別比較原小三角形與△PEF、△PEG，兩者都符合SSS。",
+              "F、G關於PX互為鏡射，所以兩個角大小相同而方向相反。"
+            ],
+            "answer": "射線PF與PG都能形成合法的複製角；若另指定上方或下方，才只保留相應交點。",
+            "why": "未附位置限制時，尺規作圖允許鏡射的兩個等角解；側別是額外條件，不會改變由相同半徑與弦長保證的角度。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

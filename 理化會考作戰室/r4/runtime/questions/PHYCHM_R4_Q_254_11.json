@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組翹翹板資料，哪項判讀仍合理？",
+  "stem": "從甲改成丙時，支點位置由兩力之間變為施力在中間，施力臂由0.60 m變為0.20 m。由支點位置與施力臂的改變判讀抗力臂，依據為何？",
   "options": [
+    "把甲配置抗力 90 N、施力臂三倍長，卻算施力也要 90 N",
     "槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果",
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量",
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關"
+    "解題時將支點、施力點與抗力點的位置名稱互換後仍沿用原本力矩關係",
+    "主張任何槓桿配置都一定省力，並漏掉比較施力臂與抗力臂"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果」。"
+      "isCorrect": false,
+      "reason": "解題時誤把甲配置抗力 90 N、施力臂三倍長，卻算施力也要 90 N，結果會錯判抗力臂。甲需 30 N、乙需 45 N、丙需 270 N；施力臂的數值若未依支點位置核對，會使抗力臂無法通過分析槓桿支點施力點與抗力點檢查。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「機械只要省力就一定同時省距離與省時，不存在任何交換」不成立；省力機械通常要施力移動較長距離；改變方向不必然省力，「省時」與「省力」要分開。"
+      "isCorrect": true,
+      "reason": "槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果。丙列的支點位置為施力在中間，施力臂為0.20 m；共同抗力列的支點位置為—，施力臂為—。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量」不成立；理想機械輸入功等於輸出功；可用較小力換較長施力距離，但不能無中生有省功。"
+      "reason": "解題時錯將支點、施力點與抗力點的位置名稱互換後仍沿用原本力矩關係，結果會錯判抗力臂。槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果；支點位置未列入分析槓桿支點施力點與抗力點時，抗力臂的施力臂大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關」不成立；槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果。"
+      "reason": "誤以為任何槓桿配置都一定省力，卻未比較施力臂與抗力臂。槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果；照原做法會把抗力臂算錯或判反。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量",
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關"
+    "把甲配置抗力 90 N、施力臂三倍長，卻算施力也要 90 N",
+    "解題時將支點、施力點與抗力點的位置名稱互換後仍沿用原本力矩關係",
+    "主張任何槓桿配置都一定省力，並漏掉比較施力臂與抗力臂"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

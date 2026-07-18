@@ -49,51 +49,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "報告整理多來源證據評估資料，哪項敘述合理？",
+  "stem": "把儲能列為一次能源，卻未追查充電電能來自何處，結果會錯判其他限制。按比較化石燃料再生能源與新興能源條件檢查可調度性與運轉排放時，哪一步先做？",
   "options": [
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除",
-    "只需引用一個沒有日期與定義的百分比，就能永久決定臺灣唯一正確能源方案",
-    "只要有一張圖表趨勢符合預期，就可忽略實驗方法、模型限制與其他來源",
-    "新興能源也需證據評估"
+    "表中是定性比較，不能在沒有成本、地點、時間與生命週期資料時宣布唯一最佳來源",
+    "主張化石燃料可調度性高就表示並漏掉溫室氣體與燃料價格問題",
+    "把再生能源等同並漏掉任何環境代價，忽略土地、儲能與選址限制",
+    "把缺少成本、地點和時間資料時仍宣布某一能源在所有情境唯一最佳"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「發電決策只要比較單一小時電價，其他環境、系統與社會資料都應…」不成立；比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響。"
+      "isCorrect": true,
+      "reason": "表中是定性比較，不能在沒有成本、地點、時間與生命週期資料時宣布唯一最佳來源。儲能列的可調度性為非一次能源，運轉排放為依充電來源；燃氣列的可調度性為高，運轉排放為有。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只需引用一個沒有日期與定義的百分比，就能永久決定臺灣唯一正…」不成立；評估臺灣能源選擇要使用有日期、定義一致的需電、發電、排放、成本與風險資料，並把進口、電網與地理…。"
+      "reason": "誤以為化石燃料可調度性高就表示卻未溫室氣體與燃料價格問題，結果會錯判其他限制。化石燃料能量密度高但會排放溫室氣體；可調度性未列入比較化石燃料再生能源與新興能源條件時，其他限制的運轉排放大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只要有一張圖表趨勢符合預期，就可忽略實驗方法、模型限制與其…」不成立；形成科學解釋時要互相印證實驗結果、圖表趨勢、模型機制與可追溯資料，並區分相關、因果與不確定。"
+      "reason": "把再生能源等同沒有任何環境代價，忽略土地、儲能與選址限制。化石燃料能量密度高但會排放溫室氣體；照原做法會把其他限制算錯或判反。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「化石燃料能量密度高但會排放溫室氣體；太陽、風能可再生但有間歇性與土地、儲能需求，新興能源也需證據評估」。"
+      "isCorrect": false,
+      "reason": "解題時誤把缺少成本、地點和時間資料時仍宣布某一能源在所有情境唯一最佳，結果會錯判其他限制。表中是定性比較，不能在沒有成本、地點、時間與生命週期資料時宣布唯一最佳來源；其他限制差異若未通過比較化石燃料再生能源與新興能源條件對可調度性的控制，就不能只歸給運轉排放。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除",
-    "只需引用一個沒有日期與定義的百分比，就能永久決定臺灣唯一正確能源方案",
-    "只要有一張圖表趨勢符合預期，就可忽略實驗方法、模型限制與其他來源"
+    "主張化石燃料可調度性高就表示並漏掉溫室氣體與燃料價格問題",
+    "把再生能源等同並漏掉任何環境代價，忽略土地、儲能與選址限制",
+    "把缺少成本、地點和時間資料時仍宣布某一能源在所有情境唯一最佳"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-INA-4-1",
       "AUTH-NATURAL-LC-INA-4-2",
@@ -139,19 +139,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

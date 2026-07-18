@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "根據超聲波紀錄，哪項判讀合理？",
+  "stem": "若鐘罩接近真空，蜂鳴片仍以 500 Hz 振動，罩外麥克風最可能如何？",
   "options": [
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定",
-    "音調較高的聲音一定在空氣中傳得較快，因為頻率較大",
-    "真空中沒有可傳遞振動的介質",
-    "頻率、振幅與波形都只決定音量大小，與音調和音色無關"
+    "此時物體仍收到與大氣中相同訊號",
+    "訊號振幅無限增大",
+    "收到的聲音訊號趨近零",
+    "此波的頻率變成 0 Hz 且蜂鳴片靜止"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定」不成立；音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止。"
+      "reason": "介質顯著減少，外傳訊號不會維持相同。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「音調較高的聲音一定在空氣中傳得較快，因為頻率較大」不成立；聲速由介質與溫度等條件決定；在同一介質同條件下，高低音的聲速近似相同。"
+      "reason": "真空不會放大機械聲波。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質」。"
+      "reason": "真空缺少傳遞振動的粒子，因此罩外聲音訊號趨近零。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「頻率、振幅與波形都只決定音量大小，與音調和音色無關」不成立；頻率主要影響音調，振幅與響度有關，波形特徵與音色有關，三者不可互換。"
+      "reason": "蜂鳴片仍振動，不能說頻率為零。"
     }
   ],
   "difficulty": "foundation",
@@ -47,16 +47,16 @@
     "關係判讀",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定",
-    "音調較高的聲音一定在空氣中傳得較快，因為頻率較大",
-    "頻率、振幅與波形都只決定音量大小，與音調和音色無關"
+    "此時物體仍收到與大氣中相同訊號",
+    "訊號振幅無限增大",
+    "此波的頻率變成 0 Hz 且蜂鳴片靜止"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組簡單通路資料，哪項判讀仍合理？",
+  "stem": "甲列含開關閉合及回路電池兩端皆連回燈泡；丙列含閉合及只接電池一端。這組燈泡資料對應哪個定義或定律？",
   "options": [
-    "電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整",
-    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過",
-    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓",
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少"
+    "把配置丙只接電池一端仍被判成完整回路",
+    "主張導線直接跨接電池兩端只是讓燈更亮，不會有短路風險",
+    "電源、導線、開關與用電器必須形成閉合通路才有持續電流",
+    "把電池只接到燈泡一端就判定有持續電流，忽略必須形成閉合通路"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整」。"
+      "isCorrect": false,
+      "reason": "解題時誤把配置丙只接電池一端仍被判成完整回路。只有甲形成電流必須經過燈泡的完整回路；回路的數值若未依開關核對，會使燈泡無法通過辨識電源導線開關與用電器形成通路檢查。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過」不成立；安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性。"
+      "reason": "誤以為導線直接跨接電池兩端只是讓燈更亮，不會有短路風險。電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關未列入辨識電源導線開關與用電器形成通路時，燈泡的回路大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「電阻為 I/V＝0.083 Ω，因為電流應除以電壓」不成立；某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω。"
+      "isCorrect": true,
+      "reason": "電源、導線、開關與用電器必須形成閉合通路才有持續電流。丙列的開關為閉合，回路為只接電池一端；丁列的開關為閉合，回路為導線繞過燈泡。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少」不成立；串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和。"
+      "reason": "解題時誤把電池只接到燈泡一端就判定有持續電流，忽略必須形成閉合通路。電源、導線、開關與用電器必須形成閉合通路才有持續電流；照原做法會把燈泡算錯或判反。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過",
-    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓",
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少"
+    "把配置丙只接電池一端仍被判成完整回路",
+    "主張導線直接跨接電池兩端只是讓燈更亮，不會有短路風險",
+    "把電池只接到燈泡一端就判定有持續電流，忽略必須形成閉合通路"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解能驗證氣體或沉澱的適當證據，哪項修正合理？",
+  "stem": "為何要讓原溶液各自靜置作空白？",
   "options": [
-    "生成物圖可任意少畫或多畫原子，因為化學反應不需保留原子",
-    "反應前用一種方法、反應後用另一種方法測量，仍可直接比較性質",
-    "兩物質一接觸就必然發生化學反應，不可能只是混合或溶解",
-    "例如二氧化碳可以石灰水變濁作一項證據"
+    "排除原有懸浮物自行沉降",
+    "讓兩溶液先反應",
+    "增加沉澱量",
+    "改變元素種類"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「生成物圖可任意少畫或多畫原子，因為化學反應不需保留原子」不成立；粒子圖中反應前後每種原子數必須相等，只是原子重新排列成新粒子。"
+      "isCorrect": true,
+      "reason": "確認固體源於混合。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「反應前用一種方法、反應後用另一種方法測量，仍可直接比較性質」不成立；比較反應前後性質時，應在同條件量測導電、pH、沉澱或氣體等指標，並設未反應對照。"
+      "reason": "各自未混合。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「兩物質一接觸就必然發生化學反應，不可能只是混合或溶解」不成立；溶解或單純混合可造成溫度、顏色或外觀變化；只有產物證據才能排除這些假線索。"
+      "reason": "不是目的。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「驗證氣體或沉澱要選用特定試驗並設對照，例如二氧化碳可以石灰水變濁作一項證據」。"
+      "isCorrect": false,
+      "reason": "不改元素。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "空白用途"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "生成物圖可任意少畫或多畫原子，因為化學反應不需保留原子",
-    "反應前用一種方法、反應後用另一種方法測量，仍可直接比較性質",
-    "兩物質一接觸就必然發生化學反應，不可能只是混合或溶解"
+    "讓兩溶液先反應",
+    "增加沉澱量",
+    "改變元素種類"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-2",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

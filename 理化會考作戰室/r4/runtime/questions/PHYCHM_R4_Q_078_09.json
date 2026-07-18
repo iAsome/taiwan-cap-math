@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對吸放熱量測結果，哪項說法正確？",
+  "stem": "石灰水變濁能否單獨證明氣體是純 CO₂？",
   "options": [
-    "反應前用一種方法、反應後用另一種方法測量，仍可直接比較性質",
-    "兩物質一接觸就必然發生化學反應，不可能只是混合或溶解",
-    "例如二氧化碳可以石灰水變濁作一項證據",
-    "看到無色氣泡就能直接寫成二氧化碳，不需再作任何檢驗"
+    "不能，只支持相關性質，純度需更多資料",
+    "不能，因 CO₂ 不會反應",
+    "能，所有混濁都只由純 CO₂",
+    "能，測試同時量純度"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「反應前用一種方法、反應後用另一種方法測量，仍可直接比較性質」不成立；比較反應前後性質時，應在同條件量測導電、pH、沉澱或氣體等指標，並設未反應對照。"
+      "isCorrect": true,
+      "reason": "定性測試非純度測定。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「兩物質一接觸就必然發生化學反應，不可能只是混合或溶解」不成立；溶解或單純混合可造成溫度、顏色或外觀變化；只有產物證據才能排除這些假線索。"
+      "reason": "CO₂ 可使石灰水變濁。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「驗證氣體或沉澱要選用特定試驗並設對照，例如二氧化碳可以石灰水變濁作一項證據」。"
+      "isCorrect": false,
+      "reason": "可能有混合氣體。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「看到無色氣泡就能直接寫成二氧化碳，不需再作任何檢驗」不成立；驗證氣體或沉澱要選用特定試驗並設對照，例如二氧化碳可以石灰水變濁作一項證據。"
+      "reason": "未量比例。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "測試限制"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "反應前用一種方法、反應後用另一種方法測量，仍可直接比較性質",
-    "兩物質一接觸就必然發生化學反應，不可能只是混合或溶解",
-    "看到無色氣泡就能直接寫成二氧化碳，不需再作任何檢驗"
+    "不能，因 CO₂ 不會反應",
+    "能，所有混濁都只由純 CO₂",
+    "能，測試同時量純度"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-2",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

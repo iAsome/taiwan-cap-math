@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理水平推箱資料，哪項敘述合理？",
+  "stem": "質量 4 kg 的物體要有 3 m/s² 加速度，需多大合力？",
   "options": [
-    "物體的加速度方向與合力相同；質量相同時合力較大，或合力相同時質量較小，加速度較大",
-    "作用力與反作用力同時作用在同一物體，因此永遠互相抵銷",
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關",
-    "力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的意義"
+    "物體的合力為 7 N",
+    "合力為 12 N",
+    "物體的合力為 1.33 N",
+    "物體的合力為 3 N"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體的加速度方向與合力相同；質量相同時合力較大，或合力相同時質量較小，加速度較大」。"
+      "isCorrect": false,
+      "reason": "物體的合力為 7 N與受力條件不符。F=ma=4×3=12 N。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「作用力與反作用力同時作用在同一物體，因此永遠互相抵銷」不成立；人推牆的力與牆推人的力是作用力反作用力，大小相等、方向相反，但作用在不同物體。"
+      "isCorrect": true,
+      "reason": "F=ma=4×3=12 N。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「加速度方向永遠和物體當下運動方向相同，與合力方向無關」不成立；物體的加速度方向與合力相同；質量相同時合力較大，或合力相同時質量較小，加速度較大。"
+      "reason": "物體的合力為 1.33 N與受力條件不符。F=ma=4×3=12 N。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的…」不成立；力的箭頭長度表示大小、箭頭指向表示方向、起點標在作用點，三項都是力的表示資訊。"
+      "reason": "物體的合力為 3 N與受力條件不符。F=ma=4×3=12 N。"
     }
   ],
   "difficulty": "advanced",
@@ -50,16 +50,16 @@
     "關係應用",
     "多步驟推理"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "作用力與反作用力同時作用在同一物體，因此永遠互相抵銷",
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關",
-    "力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的意義"
+    "物體的合力為 7 N",
+    "物體的合力為 1.33 N",
+    "物體的合力為 3 N"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

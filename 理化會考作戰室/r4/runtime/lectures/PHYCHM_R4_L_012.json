@@ -15,110 +15,109 @@
     "PHYCHM_R4_S011"
   ],
   "objectives": [
-    "能掌握密度與質量求體積的判準與適用條件。",
-    "能由實驗或生活資料判讀密度與質量求體積，並修正常見錯誤。"
+    "能以質量除以密度求體積，並辨認適用的樣品條件。"
   ],
   "sections": [
     {
       "id": "PHYCHM_R4_L_012_SEC_01",
-      "title": "核心概念",
-      "content": "質量 135 g、密度 2.7 g/cm³ 的樣品體積為 50 cm³，使用 V＝m/ρ。先找出題目的觀察量與條件，再用這項判準核對。"
+      "title": "由密度與質量求體積",
+      "content": "能以質量除以密度求體積，並辨認適用的樣品條件。"
     },
     {
       "id": "PHYCHM_R4_L_012_SEC_02",
-      "title": "關係與單位",
-      "content": "密度 ρ＝質量 m÷體積 V；m＝ρV；V＝m÷ρ。1 g/cm³＝1000 kg/m³。固體常用 g/cm³，液體常用 g/mL；換算時 1 cm³＝1 mL。"
+      "title": "移項得到體積",
+      "content": "從 ρ＝m/V 得 V＝m/ρ。密度表示每一體積單位含有的質量，因此總質量除以每單位體積的質量，就得到含有多少個體積單位。"
     },
     {
       "id": "PHYCHM_R4_L_012_SEC_03",
-      "title": "解題流程",
-      "content": "列出已知量，統一單位後代入關係式，再檢查量級。作答前再檢查方向、單位、數量級與證據強度。"
+      "title": "單位檢查",
+      "content": "g÷(g/cm³)＝cm³，kg÷(kg/m³)＝m³。若質量與密度分子的單位不同，必須先換算，否則數字看似可除，物理意義卻不成立。"
     },
     {
       "id": "PHYCHM_R4_L_012_SEC_04",
-      "title": "限制與迷思",
-      "content": "常見錯誤是「體積是 135×2.7＝364.5 cm³，因為密度越大體積一定越大」。用密度鑑別物質時必須考慮純度、溫度與量測不確定性，密度相近不能單獨證明物質相同。"
+      "title": "不要混用外部體積",
+      "content": "計算得到的是和所用密度相符的材料或樣品體積。若物體空心、吸水或不是均勻材料，需先確認採用的是材料密度還是整體平均密度。"
     }
   ],
   "workedExamples": [
     {
       "id": "PHYCHM_R4_L_012_EX_01",
-      "prompt": "金屬塊鑑別紀錄中有人主張「體積是 135×2.7＝364.5 cm³，因為密度越大體積一定越大」。如何修正？",
+      "prompt": "鋁樣品質量 135 g、密度 2.7 g/cm³，體積為何？",
       "steps": [
-        "找出金屬塊鑑別提供的觀察量與條件。",
-        "列出已知量，統一單位後代入關係式，再檢查量級",
-        "比對資料是否支持結論。"
+        "寫 V＝m/ρ。",
+        "135÷2.7。",
+        "得到 cm³。"
       ],
-      "answer": "質量 135 g、密度 2.7 g/cm³ 的樣品體積為 50 cm³，使用 V＝m/ρ",
-      "why": "原主張與「質量 135 g、密度 2.7 g/cm³ 的樣品體積為 50 cm³，使用 V＝m/ρ」相衝突。"
+      "answer": "50 cm³。",
+      "why": "135 g 包含 50 個每立方公分 2.7 g 的單位體積。"
     },
     {
       "id": "PHYCHM_R4_L_012_EX_02",
-      "prompt": "整理不規則石塊排水資料時，計算或單位應如何檢查？",
+      "prompt": "液體質量 184 g、密度 0.92 g/mL，體積為何？",
       "steps": [
-        "找出不規則石塊排水提供的觀察量與條件。",
-        "列出已知量，統一單位後代入關係式，再檢查量級",
-        "比對資料是否支持結論。"
+        "g 與 g/mL 相容。",
+        "184÷0.92。",
+        "保留 mL。"
       ],
-      "answer": "密度 ρ＝質量 m÷體積 V；m＝ρV；V＝m÷ρ。1 g/cm³＝1000 kg/m³；固體常用 g/cm³，液體常用 g/mL；換算時 1 cm³＝1 mL",
-      "why": "數值、物理量與單位必須同時一致，不能只檢查算式。"
+      "answer": "200 mL。",
+      "why": "g 約掉後剩 mL，計算為 200。"
     },
     {
       "id": "PHYCHM_R4_L_012_EX_03",
-      "prompt": "同材質樣品比較只提供部分資料時，結論要保留什麼限制？",
+      "prompt": "材料質量 12 kg、密度 600 kg/m³，體積為何？",
       "steps": [
-        "找出同材質樣品比較提供的觀察量與條件。",
-        "列出已知量，統一單位後代入關係式，再檢查量級",
-        "比對資料是否支持結論。"
+        "使用 kg 與 kg/m³。",
+        "12÷600。",
+        "以 m³ 表示。"
       ],
-      "answer": "用密度鑑別物質時必須考慮純度、溫度與量測不確定性，密度相近不能單獨證明物質相同",
-      "why": "資料不足時保留限制，才能避免把局部結果當成普遍規律。"
+      "answer": "0.020 m³。",
+      "why": "kg 約掉後留下 m³，結果與材料尺度相符。"
     }
   ],
   "misconceptions": [
     {
-      "belief": "體積是 135×2.7＝364.5 cm³，因為密度越大體積一定越大",
-      "whyWrong": "這項說法忽略定義、條件或可核對的資料。",
-      "correction": "質量 135 g、密度 2.7 g/cm³ 的樣品體積為 50 cm³，使用 V＝m/ρ"
+      "belief": "求體積用密度除以質量。",
+      "whyWrong": "單位不會剩下體積。",
+      "correction": "使用 V＝m/ρ。"
     },
     {
-      "belief": "密度是體積除以質量，所以答案為 20÷54 g/cm³",
-      "whyWrong": "這項說法忽略定義、條件或可核對的資料。",
-      "correction": "質量 54 g、體積 20 cm³ 的物體密度為 2.7 g/cm³，計算式是 ρ＝m/V"
+      "belief": "相同質量的物體體積必相同。",
+      "whyWrong": "密度不同時體積不同。",
+      "correction": "比較 m/ρ。"
     },
     {
-      "belief": "1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖改變，數值不必變",
-      "whyWrong": "這項說法忽略定義、條件或可核對的資料。",
-      "correction": "1.20 g/cm³＝1200 kg/m³；質量和體積的換算倍率需一起納入"
+      "belief": "g 可直接除 kg/m³。",
+      "whyWrong": "質量單位不一致。",
+      "correction": "先把 g 與 kg 統一。"
     },
     {
-      "belief": "質量是 7.8÷10＝0.78 g，因為密度和體積應相除",
-      "whyWrong": "這項說法忽略定義、條件或可核對的資料。",
-      "correction": "密度 7.8 g/cm³、體積 10 cm³ 的鐵塊質量為 78 g，使用 m＝ρV"
+      "belief": "計算材料體積就是物體外部體積。",
+      "whyWrong": "空腔或孔隙可能使兩者不同。",
+      "correction": "先確認密度代表的對象。"
     }
   ],
   "checks": [
     {
-      "prompt": "金屬塊鑑別中哪項判準可直接核對？",
-      "answer": "質量 135 g、密度 2.7 g/cm³ 的樣品體積為 50 cm³，使用 V＝m/ρ",
-      "reason": "質量 135 g、密度 2.7 g/cm³ 的樣品體積為 50 cm³，使用 V＝m/ρ"
+      "prompt": "鋁樣品質量 135 g、密度 2.7 g/cm³，體積為何？",
+      "answer": "50 cm³。",
+      "reason": "135 g 包含 50 個每立方公分 2.7 g 的單位體積。"
     },
     {
-      "prompt": "不規則石塊排水的數值如何避免單位錯誤？",
-      "answer": "固體常用 g/cm³，液體常用 g/mL；換算時 1 cm³＝1 mL",
-      "reason": "固體常用 g/cm³，液體常用 g/mL；換算時 1 cm³＝1 mL"
+      "prompt": "液體質量 184 g、密度 0.92 g/mL，體積為何？",
+      "answer": "200 mL。",
+      "reason": "g 約掉後剩 mL，計算為 200。"
     },
     {
-      "prompt": "同材質樣品比較的結論可推到多大範圍？",
-      "answer": "用密度鑑別物質時必須考慮純度、溫度與量測不確定性，密度相近不能單獨證明物質相同",
-      "reason": "用密度鑑別物質時必須考慮純度、溫度與量測不確定性，密度相近不能單獨證明物質相同"
+      "prompt": "材料質量 12 kg、密度 600 kg/m³，體積為何？",
+      "answer": "0.020 m³。",
+      "reason": "kg 約掉後留下 m³，結果與材料尺度相符。"
     }
   ],
   "assets": [],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-3",
       "AUTH-NATURAL-LC-CA-4-2",

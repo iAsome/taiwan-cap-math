@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u11",
+  "batch": "012-u11-complete",
+  "skills": ["s015"],
+  "mc": [
+    {
+      "questionId": "u11-s015-v005",
+      "expectedContentSha256": "99aed68f61b1aadeefea2d4138383887cfc971d07a15a5d36b8eb035f112357b",
+      "set": {
+        "text": "要用 p²+q²=r² 的形式檢查某三角形是否為直角，三邊符號應如何安排？",
+        "target": "辨認等式中的最長邊角色。",
+        "independentSolution": "先將三邊排序。畢氏定理逆命題的檢查式要把候選斜邊平方單獨放在等號一側，因此 r 應代表最長邊。",
+        "explanation": "先將三邊排序；直角三角形的斜邊必為最長邊，所以檢查式 p²+q²=r² 中，r 應代表最長邊，p、q 代表另外兩邊。",
+        "steps": [
+          "確認 p、q、r 表示同一三角形的三邊。",
+          "將三邊由小到大排序。",
+          "把最長邊指定為 r，再檢查 p²+q² 是否等於 r²。"
+        ],
+        "optionAnalysis": [
+          {"choice": "p=q", "truth": false, "reason": "直角三角形不必是等腰三角形。"},
+          {"choice": "r 是最長邊", "truth": true, "reason": "等式右側的 r 必須是候選斜邊，也就是三邊中的最長邊。"},
+          {"choice": "三邊都是偶數", "truth": false, "reason": "逆命題不要求三邊為偶數。"},
+          {"choice": "面積已知", "truth": false, "reason": "以三邊平方關係判定直角不需要面積。"}
+        ],
+        "misconceptionTarget": "未先排序三邊，便把任意輸入順序中的第三邊當成候選斜邊。",
+        "ambiguityAndBoundaryAudit": "題目問符號安排而非補充已由平方等式推出的條件；唯一正確安排是讓 r 代表最長邊。",
+        "difficultyReason": "考查使用逆命題前的邊角色安排。"
+      },
+      "reviewSet": {
+        "independentSolution": "先將三邊排序。檢查式 p²+q²=r² 要把候選斜邊平方放在等號一側，因此 r 應代表最長邊。",
+        "derivedAnswer": "r 是最長邊",
+        "storedAnswer": "r 是最長邊",
+        "answerMatch": true,
+        "uniqueCorrectAnswer": true,
+        "optionTruth": [false, true, false, false],
+        "difficultyReason": "考查使用逆命題前的邊角色安排。",
+        "ambiguityChecks": {
+          "givenConditions": "p、q、r 明確表示同一三角形三邊，所問是檢查式中的符號安排。",
+          "target": "題目只問哪一邊應指定為 r，不把平方等式已經蘊含的大小關係誤寫成額外前提。",
+          "choices": "p=q、三邊皆偶數與已知面積都不是逆命題的符號安排要求；只有 r 是最長邊正確。",
+          "scope": "只使用臺灣國中畢氏定理逆命題與三邊排序。",
+          "units": "純符號判定題，沒有單位或近似衝突。"
+        },
+        "reviewerNote": "獨立由逆命題的邊角色判斷：先排序並讓候選斜邊 r 為最長邊，再檢查 p²+q²=r²；四個選項中只有索引 1 是正確安排。"
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [],
+  "drawingSpecs": [],
+  "textFiles": []
+}

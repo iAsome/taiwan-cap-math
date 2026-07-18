@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": "PHYCHM_R4_STIM_191",
-  "stem": "眼球成像題組中，哪項說明符合紀錄？",
+  "stem": "能否只由白光下顏色預測所有照明外觀？",
   "options": [
-    "顯微鏡和望遠鏡只是用一片平面玻璃把物體實際變大，無需多個透鏡成像",
-    "物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察",
-    "紅色物體在只含藍光的照明下可看來很暗，因為沒有足夠可反射的紅光",
-    "三稜鏡在光通過時創造出原本不存在的顏料，所以色帶與白光組成無關"
+    "不能，還要知道照明光譜與反射特性",
+    "能，物體永遠保持同樣亮紅",
+    "能，物體永遠全黑",
+    "只需知道紙片大小"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「顯微鏡和望遠鏡只是用一片平面玻璃把物體實際變大，無需多個透…」不成立；顯微鏡利用物鏡形成中間像再由目鏡放大；望遠鏡也以多個光學元件組合改變觀察角度。"
+      "isCorrect": true,
+      "reason": "外觀是燈光成分與材料選擇性反射的共同結果。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察」不成立；紅色物體在只含藍光的照明下可看來很暗，因為沒有足夠可反射的紅光。"
+      "reason": "照明成分改變會改外觀。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「紅色物體在只含藍光的照明下可看來很暗，因為沒有足夠可反射的紅光」。"
+      "isCorrect": false,
+      "reason": "紅光照明下可很亮。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「三稜鏡在光通過時創造出原本不存在的顏料，所以色帶與白光組成…」不成立；白光經三稜鏡分光形成多種色光，說明白光可由不同色光組成。"
+      "reason": "大小不提供光譜。"
     }
   ],
   "difficulty": "transfer",
@@ -48,14 +48,14 @@
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "顯微鏡和望遠鏡只是用一片平面玻璃把物體實際變大，無需多個透鏡成像",
-    "物體在任何色光下看起來都是白光下的原色，照明光譜不會影響觀察",
-    "三稜鏡在光通過時創造出原本不存在的顏料，所以色帶與白光組成無關"
+    "能，物體永遠保持同樣亮紅",
+    "能，物體永遠全黑",
+    "只需知道紙片大小"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-10",
       "AUTH-NATURAL-LC-KA-4-11",
@@ -64,20 +64,6 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_006"
   ]

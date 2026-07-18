@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": null,
-  "stem": "胃酸制酸劑出現四種說法，哪項有理化概念支持？",
+  "stem": "滴定曲線中pH快速改變區通常用來？",
   "options": [
-    "既然中和能減少酸鹼性，加入越多相反物就越安全，沒有過量問題",
-    "每次可同時更換酸、鹼、指示劑與容器，只要最後顏色一樣就是公平實驗",
-    "不可只看混合過就判中性",
-    "酸鹼只要曾混合，無論加入量與濃度，最後 pH 都必等於 7"
+    "pH快速改變區可證明酸鹼之間沒有發生反應",
+    "界定中和終點附近",
+    "判斷杯子質量",
+    "計算液體顏色"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「既然中和能減少酸鹼性，加入越多相反物就越安全，沒有過量問題」不成立；制酸劑、土壤改良等中和應用要依實際酸鹼量控制加入，並考慮產物與過量危害。"
+      "reason": "快速變化反而支持中和。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「每次可同時更換酸、鹼、指示劑與容器，只要最後顏色一樣就是公…」不成立；以指示劑追蹤中和時，應固定起始溶液與指示劑量，逐次加入另一溶液並記錄體積與顏色。"
+      "isCorrect": true,
+      "reason": "少量滴加即可跨酸鹼。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「逐滴加鹼時 pH 由 2 升到 9，終點後溶液偏鹼，表示鹼已過量，不可只看混合過就判中性」。"
+      "isCorrect": false,
+      "reason": "與杯重無關。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「酸鹼只要曾混合，無論加入量與濃度，最後 pH 都必等於 7」不成立；逐滴加鹼時 pH 由 2 升到 9，終點後溶液偏鹼，表示鹼已過量，不可只看混合過就判中性。"
+      "reason": "顏色非曲線量。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "曲線功能"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "既然中和能減少酸鹼性，加入越多相反物就越安全，沒有過量問題",
-    "每次可同時更換酸、鹼、指示劑與容器，只要最後顏色一樣就是公平實驗",
-    "酸鹼只要曾混合，無論加入量與濃度，最後 pH 都必等於 7"
+    "pH快速改變區可證明酸鹼之間沒有發生反應",
+    "判斷杯子質量",
+    "計算液體顏色"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科中和、資料判讀與生活應用層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

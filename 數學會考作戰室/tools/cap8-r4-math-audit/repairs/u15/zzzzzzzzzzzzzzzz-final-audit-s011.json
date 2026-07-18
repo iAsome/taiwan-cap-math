@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u15",
+  "batch": "016-u15-complete",
+  "skills": ["s011"],
+  "mc": [
+    {
+      "questionId": "u15-s011-mc06",
+      "expectedContentSha256": "de910c1feb58eab4cadf49603f8d8b62d782fbfb7582c42a99f25b0af5294064",
+      "replaceText": {
+        "接合，兩段在分界都趨近或取到 y=1": "接合，第一段包含(0,1)，第二段由同一位置向右延伸",
+        "第二段若由右靠近也趨近 1": "第二段在x>0的圖形由同一位置向右延伸",
+        "第二段從右側也接近 1": "第二段的圖形由同一位置向右延伸",
+        "不含端點不代表右側線段不能靠近同點。": "第二段不含x=0，仍可由同一坐標位置向右延伸。"
+      },
+      "reviewReplaceText": {
+        "接合，兩段在分界都趨近或取到 y=1": "接合，第一段包含(0,1)，第二段由同一位置向右延伸",
+        "第二段若由右靠近也趨近 1": "第二段在x>0的圖形由同一位置向右延伸",
+        "第二段從右側也接近 1": "第二段的圖形由同一位置向右延伸",
+        "不含端點不代表右側線段不能靠近同點。": "第二段不含x=0，仍可由同一坐標位置向右延伸。"
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [
+    {
+      "lectureId": "u15-s011-lecture",
+      "expectedContentSha256": "cdf9a2c0ff47e400f47939fcf2cd8b8422744e34e91b4313c487aa0425bdbca1",
+      "set": {
+        "definitionsAndMeaning": "分段函數依輸入所在區間選用唯一規則；分界值是否納入某段由≤、≥等號決定，反求輸入時還要逐一檢查候選解是否符合該段條件。"
+      },
+      "replaceText": {
+        "分段函數第一段為 2x+1、第二段為 x+k，兩段要在 x=3 接合。求 k。": "分段函數第一段為3x-2、第二段為2x+k，兩段要在x=4接合。求k。",
+        "第一段在 x=3 的值為 2×3+1=7。要接合，第二段的邊界值 3+k 也要等於 7，故 k=4。": "第一段在x=4的值為3×4-2=10。要接合，第二段的邊界值8+k也要等於10，故k=2。",
+        "代入 x=3 求第一段邊界值 7。": "代入x=4求第一段邊界值10。",
+        "將第二段邊界值寫成 3+k，並列 3+k=7。": "將第二段邊界值寫成8+k，並列8+k=10。",
+        "解方程式得 k=4，再代回檢查兩邊都為 7。": "解方程式得k=2，再代回檢查兩邊都為10。",
+        "兩段圖形要在同一點接合，必須在相同 x 值具有相同高度。所以不是比較斜率是否相同，而是把分界值代入兩段，以相等條件求未知數。": "兩段圖形要在同一點接合，必須在相同輸入具有相同高度；把分界值分別代入兩段並令結果相等，才能決定未知常數，斜率不必相同。"
+      }
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u15-fig-piecewise",
+      "expectedContentSha256": "13ace88091befd07a5b34155c21733b00b6ce443b86179859041db2ecd2d7d09",
+      "replaceText": {
+        "8 5": "none",
+        "272.0": "250",
+        "429.8": "420",
+        "138.7": "115",
+        "338.0": "350",
+        "218.7": "200"
+      }
+    },
+    {
+      "figureId": "u15-s011-mc06-fig",
+      "expectedContentSha256": "c316c91fe4079ee5ee6a23b29d442d945b04359edff9aa283d560cb5c8029c31",
+      "replaceText": {
+        "8 5": "none",
+        "272.0": "250",
+        "461.0": "461",
+        "128.0": "105",
+        "338.0": "350",
+        "224.0": "205"
+      }
+    },
+    {
+      "figureId": "u15-s011-mc09-fig",
+      "expectedContentSha256": "f4d88cde492ee711647947f45a6748dbc2b4de01debbd1ed96cc242dbc572b3a",
+      "replaceText": {
+        "8 5": "none",
+        "186.0": "160",
+        "224.0": "290"
+      }
+    }
+  ],
+  "textFiles": [
+    {
+      "path": "figures/u15/u15-fig-piecewise.svg",
+      "replacements": [
+        {"from":"stroke-dasharray=\"8 5\"","to":"stroke-dasharray=\"none\"","count":1},
+        {"from":"<text x=\"211.0\" y=\"272.0\" font-size=\"14\">第一段 x≤0</text>","to":"<text x=\"211.0\" y=\"250\" font-size=\"14\">第一段 x≤0</text>","count":1},
+        {"from":"<text x=\"429.8\" y=\"138.7\" font-size=\"14\">第二段 x&gt;0</text>","to":"<text x=\"420\" y=\"115\" font-size=\"14\">第二段 x&gt;0</text>","count":1},
+        {"from":"<text x=\"338.0\" y=\"218.7\" font-size=\"14\">分界 (0,1)</text>","to":"<text x=\"350\" y=\"200\" font-size=\"14\">分界 (0,1)</text>","count":1}
+      ]
+    },
+    {
+      "path": "figures/u15/u15-s011-mc06-fig.svg",
+      "replacements": [
+        {"from":"stroke-dasharray=\"8 5\"","to":"stroke-dasharray=\"none\"","count":1},
+        {"from":"<text x=\"211.0\" y=\"272.0\" font-size=\"14\">y=x+1</text>","to":"<text x=\"211.0\" y=\"250\" font-size=\"14\">y=x+1</text>","count":1},
+        {"from":"<text x=\"461.0\" y=\"128.0\" font-size=\"14\">y=2x+1</text>","to":"<text x=\"461\" y=\"105\" font-size=\"14\">y=2x+1</text>","count":1},
+        {"from":"<text x=\"338.0\" y=\"224.0\" font-size=\"14\">共同高度 1</text>","to":"<text x=\"350\" y=\"205\" font-size=\"14\">共同高度 1</text>","count":1}
+      ]
+    },
+    {
+      "path": "figures/u15/u15-s011-mc09-fig.svg",
+      "replacements": [
+        {"from":"stroke-dasharray=\"8 5\"","to":"stroke-dasharray=\"none\"","count":1},
+        {"from":"<text x=\"186.0\" y=\"224.0\" font-size=\"14\">第一段 y=2x</text>","to":"<text x=\"160\" y=\"290\" font-size=\"14\">第一段 y=2x</text>","count":1}
+      ]
+    }
+  ]
+}

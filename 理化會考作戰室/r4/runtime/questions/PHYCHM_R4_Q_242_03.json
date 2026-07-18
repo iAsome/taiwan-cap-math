@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理彈簧秤視重量資料後，哪項說明正確？",
+  "stem": "甲：質量80 g、外形體積100 cm³、放入 1.00 g/cm³ 水中上浮後漂浮。質量和外形體積如何連結才能重算放入 1.00 g/cm³ 水中？",
   "options": [
-    "物體平均密度小於液體時可上浮並漂浮",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要"
+    "物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉",
+    "把甲的 80 g 除以 100 cm³ 算成 1.25 g/cm³，因而誤判下沉",
+    "主張物體密度等於液體密度時一定浮在水面，不能在水中懸浮",
+    "僅憑造船材料密度大於水，就斷定中空船體一定下沉"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉」。"
+      "reason": "物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉。丙列的質量為130 g，外形體積為100 cm³；丁（中空）列的質量為600 g，外形體積為800 cm³。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「漂浮物體既然在水面上，就完全不受浮力，只受向下重力」不成立；漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力。"
+      "reason": "把甲的 80 g 除以 100 cm³ 算成 1.25 g/cm³，因而誤判下沉。平均密度依序為 0.80、1.00、1.30、0.75 g/cm³，與水比較可解釋各浮沉結果；外形體積的數值若未依質量核對，會使放入 1.00 g/cm³ 水中無法通過由平均密度判斷浮沉狀態檢查。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水」不成立；船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉。"
+      "reason": "誤以為物體密度等於液體密度時一定浮在水面，不能在水中懸浮。物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉；質量未列入由平均密度判斷浮沉狀態時，放入 1.00 g/cm³ 水中的外形體積大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「浮沉只由物體總質量大小決定，體積與平均密度完全不重要」不成立；物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉。"
+      "reason": "僅憑造船材料密度大於水，就斷定中空船體一定下沉。物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉；照原做法會把放入 1.00 g/cm³ 水中算錯或判反。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "辨認",
+    "概念理解"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要"
+    "把甲的 80 g 除以 100 cm³ 算成 1.25 g/cm³，因而誤判下沉",
+    "主張物體密度等於液體密度時一定浮在水面，不能在水中懸浮",
+    "僅憑造船材料密度大於水，就斷定中空船體一定下沉"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

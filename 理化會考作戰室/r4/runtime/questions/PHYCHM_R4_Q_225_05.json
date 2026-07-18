@@ -14,34 +14,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於摩擦力方向與相對運動趨勢，哪項結論符合題給條件？",
+  "stem": "車輪煞死後車仍向前滑，路面對車輪的摩擦力向何方？",
   "options": [
-    "物體沿圓周運動時必有一個向外的真實合力，向內力會使它離開圓軌道",
-    "摩擦力方向用來阻礙接觸面間的相對運動或滑動趨勢",
-    "兩物體距離越遠引力越大，質量變化對引力沒有影響",
-    "物體到月球後原子自動減少，因此質量和重量都以相同比例減少"
+    "向後",
+    "此時物體向前",
+    "垂直向上",
+    "此時物體沿車輪半徑向內"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「物體沿圓周運動時必有一個向外的真實合力，向內力會使它離開圓…」不成立；圓周運動的速度方向沿切線，使方向持續改變的合力指向圓心。"
+      "isCorrect": true,
+      "reason": "輪胎相對路面向前滑，動摩擦反向為向後。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「摩擦力方向用來阻礙接觸面間的相對運動或滑動趨勢，不一定和物體運動方向相反」。"
+      "isCorrect": false,
+      "reason": "此時物體向前不成立。輪胎相對路面向前滑，動摩擦反向為向後。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「兩物體距離越遠引力越大，質量變化對引力沒有影響」不成立；萬有引力隨兩物體質量增大而增大，隨中心距離增加而減小；比較時要分開變項。"
+      "reason": "垂直向上不成立。輪胎相對路面向前滑，動摩擦反向為向後。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「物體到月球後原子自動減少，因此質量和重量都以相同比例減少」不成立；同一物體到月球後組成與質量不變，但因當地重力場較弱，重量變小。"
+      "reason": "此時物體沿車輪半徑向內不成立。輪胎相對路面向前滑，動摩擦反向為向後。"
     }
   ],
   "difficulty": "standard",
@@ -49,16 +49,16 @@
     "條件判斷",
     "分析"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體沿圓周運動時必有一個向外的真實合力，向內力會使它離開圓軌道",
-    "兩物體距離越遠引力越大，質量變化對引力沒有影響",
-    "物體到月球後原子自動減少，因此質量和重量都以相同比例減少"
+    "此時物體向前",
+    "垂直向上",
+    "此時物體沿車輪半徑向內"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-10",
       "AUTH-NATURAL-LC-EB-4-11",
@@ -69,19 +69,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

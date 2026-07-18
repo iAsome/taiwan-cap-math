@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理生活酸鹼安全資料後，哪項說明正確？",
+  "stem": "食鹽水能導電但接近中性，最能說明什麼？",
   "options": [
-    "一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識溶液名稱",
-    "pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗",
-    "任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性",
-    "鹼性水溶液的鹼性與氫氧根離子有關"
+    "水分子不參與溶液，所以導電一定代表酸鹼性",
+    "所有鹽都是酸",
+    "導電不能單獨判定酸鹼",
+    "中性溶液沒有離子"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識…」不成立；廣用指示劑的顏色應對照色階判讀 pH 範圍，只能估計區間，不能單憑顏色確定化學身分。"
+      "reason": "水是溶劑。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗」不成立；pH 計使用前要依規範校正，電極清洗後輕吸水分，不把測過的溶液倒回原瓶。"
+      "reason": "題示為中性。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性」不成立；酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體。"
+      "isCorrect": true,
+      "reason": "鹽水提供導電反例。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「在課程模型中，酸性水溶液的酸性與氫離子有關，鹼性水溶液的鹼性與氫氧根離子有關」。"
+      "isCorrect": false,
+      "reason": "食鹽水有離子。"
     }
   ],
-  "difficulty": "foundation",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "反例推論"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識溶液名稱",
-    "pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗",
-    "任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性"
+    "水分子不參與溶液，所以導電一定代表酸鹼性",
+    "所有鹽都是酸",
+    "中性溶液沒有離子"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

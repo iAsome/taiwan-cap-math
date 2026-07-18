@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "飲品稀釋出現四種說法，哪項有理化概念支持？",
+  "stem": "上一題需加入多少水？",
   "options": [
-    "250 g、12% 的溶液含溶質 262 g，因為應把百分數直接加上溶液質量",
-    "對溶液只加水而沒有溶質進出時",
-    "5 ppm 和 5% 完全相同，都表示每一百份中有 5 份",
-    "任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電"
+    "200 g",
+    "400 g",
+    "100 g",
+    "300 g"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「250 g、12% 的溶液含溶質 262 g，因為應把百分…」不成立；250 g、12% 的溶液含溶質 30 g，因為溶質質量＝濃度×溶液質量。"
+      "isCorrect": true,
+      "reason": "400−200＝200 g。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「對溶液只加水而沒有溶質進出時，溶質質量不變、溶液質量增加，因此濃度降低」。"
+      "isCorrect": false,
+      "reason": "把最終總量當加水量。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「5 ppm 和 5% 完全相同，都表示每一百份中有 5 份」不成立；5 ppm 表示在題目指定的比例基準下，每一百萬份中有 5 份目標成分。"
+      "reason": "最終只有 300 g。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣…」不成立；在相同電路與濃度條件下，水溶液能否導電可用來判斷是否有可移動離子，並輔助區分電解質。"
+      "reason": "會得到 500 g。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "差量計算"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "250 g、12% 的溶液含溶質 262 g，因為應把百分數直接加上溶液質量",
-    "5 ppm 和 5% 完全相同，都表示每一百份中有 5 份",
-    "任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電"
+    "400 g",
+    "100 g",
+    "300 g"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AB-4-4",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

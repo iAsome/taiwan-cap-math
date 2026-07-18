@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "報告整理保溫瓶設計資料，哪項敘述合理？",
+  "stem": "保溫層新增後主要熱漏可能轉到？",
   "options": [
-    "保溫瓶只要有真空就能完全阻斷一切熱傳，無需考慮輻射與瓶口",
-    "比較表面輻射時可同時改變容器材質、大小、初溫與照射距離，結果仍只由顏色造成",
-    "海風是因太陽直接推動空氣水平移動，與海陸升溫差和對流無關",
-    "判斷介質、流體移動或電磁波對應的機制"
+    "能量消失",
+    "瓶口或支撐熱橋",
+    "增加保溫層後，低溫端會成為主要主動熱源",
+    "原子停止"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「保溫瓶只要有真空就能完全阻斷一切熱傳，無需考慮輻射與瓶口」不成立；保溫瓶的真空層減少傳導與對流，低輻射表面減少輻射，瓶塞也限制空氣交換。"
+      "reason": "不消失。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「比較表面輻射時可同時改變容器材質、大小、初溫與照射距離，結…」不成立；在相同溫度與面積下，不同顏色和表面狀態可有不同熱輻射吸收與發射效果，比較時要控制其他條件。"
+      "isCorrect": true,
+      "reason": "其他路徑占比增。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「海風是因太陽直接推動空氣水平移動，與海陸升溫差和對流無關」不成立；白天陸地升溫較快，陸地上方空氣上升，較冷海上空氣向陸地流動，形成海風。"
+      "reason": "不產熱。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「解釋熱現象要先標出高低溫與能量淨流向，再判斷介質、流體移動或電磁波對應的機制」。"
+      "isCorrect": false,
+      "reason": "不停。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "工程"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "保溫瓶只要有真空就能完全阻斷一切熱傳，無需考慮輻射與瓶口",
-    "比較表面輻射時可同時改變容器材質、大小、初溫與照射距離，結果仍只由顏色造成",
-    "海風是因太陽直接推動空氣水平移動，與海陸升溫差和對流無關"
+    "能量消失",
+    "增加保溫層後，低溫端會成為主要主動熱源",
+    "原子停止"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱傳播與生活應用; 臺灣國中教育會考自然科導熱、對流、輻射與保溫題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BB-4-1",
       "AUTH-NATURAL-LC-BB-4-3",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

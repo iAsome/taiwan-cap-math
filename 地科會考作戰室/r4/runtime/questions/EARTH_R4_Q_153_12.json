@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "把不同季節的晝夜長短的判準移到另一個情境時，哪一項作法較適當？",
+  "stem": "要比較另一北半球城市的夏冬晝長，哪個作法完整？",
   "options": [
-    "把判讀移到「解釋閏年調整的週期來源」時，仍先先判定半球與日期位置",
-    "改看「解釋閏年調整的週期來源」後，只採用支持原想法的一筆紀錄",
-    "改看「解釋閏年調整的週期來源」後，省略所有單位",
-    "只寫不同季節的晝夜長短的概念名稱，不記錄「解釋閏年調整的週期來源」的觀測"
+    "同站記錄兩季日出與日落，相減求晝長，並標示緯度與日期",
+    "只比較兩季日出，不記日落",
+    "用臺北晝長直接代替另一緯度城市",
+    "只問居民哪一季感覺白天較久"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "新情境保留相同變因、證據與適用範圍。"
+      "reason": "同站記錄兩季日出與日落，相減求晝長，並標示緯度與日期；日落減日出直接給出受光時段，緯度與日期則界定比較條件。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "換情境仍須比較完整資料與替代解釋。"
+      "reason": "只比較兩季日出，不記日落；日出較早可能同時伴隨日落較早，缺少另一端點就不能求出晝長。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "跨情境比較更需要一致單位。"
+      "reason": "用臺北晝長直接代替另一緯度城市；季節日長差隨緯度改變，跨緯度地點必須使用各自的日出、日落紀錄。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "概念名稱不能取代實際資料。"
+      "reason": "只問居民哪一季感覺白天較久；主觀感受沒有固定起訖點，無法換算成可比較的時數。"
     }
   ],
   "difficulty": "transfer",
@@ -49,7 +49,7 @@
   ],
   "representationType": "transfer-scenario",
   "misconceptionTargets": [
-    "太陽高度越低地表單位面積受能越多"
+    "只比較兩季日出，不記日落"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "逐項核對「解釋閏年調整的週期來源」的條件後，「把判讀移到「解釋閏年調整的週期來源」時，仍先先判定半球與日期位置」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "答案在同一測站以日落時刻減日出時刻，並保留日期與緯度，所得晝長可在兩季間直接比較。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 0,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "只列日出會漏掉白晝終點；例如日出與日落同時提早時，僅看日出會錯判白晝一定變長。",
       "status": "pass"
     }
   ],

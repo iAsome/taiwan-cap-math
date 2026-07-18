@@ -17,51 +17,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "電解實驗出現四種說法，哪項有理化概念支持？",
+  "stem": "哪一配對正確？",
   "options": [
-    "不同金屬可用完全不同的大小與加熱時間比較，反應較大即表示本性較活潑",
-    "鏽蝕、燃燒與漂白只要外觀相像，反應物、條件和安全性就完全一樣",
-    "電池先在內部儲存固定的電流，接上導線後把電流倒出而無化學反應",
-    "氧化銅失氧而被還原"
+    "還原劑—使對方得到氧",
+    "氧化劑—使對方失去氧",
+    "被還原物質—失去氧",
+    "被氧化物質—失去氧"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「不同金屬可用完全不同的大小與加熱時間比較，反應較大即表示本…」不成立；比較金屬氧化活性時要使樣品質量、表面積、氧供應和加熱條件相同。"
+      "reason": "還原劑使對方失氧。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「鏽蝕、燃燒與漂白只要外觀相像，反應物、條件和安全性就完全一樣」不成立；鐵的鏽蝕需氧與水，燃燒是快速氧化，漂白則須依實際物質與反應證據分析。"
+      "reason": "氧化劑使對方得氧。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「電池先在內部儲存固定的電流，接上導線後把電流倒出而無化學反應」不成立；鋅銅電池放電時，自發化學反應驅動外電路電流，將化學能轉為電能。"
+      "isCorrect": true,
+      "reason": "符合狹義還原。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「在氧化銅與碳的反應中，氧化銅失氧而被還原，碳得氧而被氧化」。"
+      "isCorrect": false,
+      "reason": "被氧化應得氧。"
     }
   ],
-  "difficulty": "standard",
+  "difficulty": "foundation",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "配對"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "不同金屬可用完全不同的大小與加熱時間比較，反應較大即表示本性較活潑",
-    "鏽蝕、燃燒與漂白只要外觀相像，反應物、條件和安全性就完全一樣",
-    "電池先在內部儲存固定的電流，接上導線後把電流倒出而無化學反應"
+    "還原劑—使對方得到氧",
+    "氧化劑—使對方失去氧",
+    "被氧化物質—失去氧"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科公開題型之證據判讀與生活情境層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -75,19 +74,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於串聯電路的電流與電壓，哪項結論符合題給條件？",
+  "stem": "電流和電壓在R2為0.40 A、8.0 V，到電源為0.40 A、12.0 V。套用分析串聯電路的電流與電壓到這兩列，哪項電流條件必須保留？",
   "options": [
-    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓",
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "串聯電路各元件的電流相同",
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流"
+    "主張串聯電路的電流通過第一個電阻後會被用掉，所以後段較小",
+    "解題時將各元件電壓降都設成相同，忽略電阻不同時分配可能不同",
+    "此結論針對單一路徑且量表理想",
+    "解題時將 R1 的 4 V 與 R2 的 8 V 相減，誤判電源只有 4 V"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「電阻為 I/V＝0.083 Ω，因為電流應除以電壓」不成立；某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω。"
+      "reason": "誤以為串聯電路的電流通過第一個電阻後會被用掉，所以後段較小。串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和；照原做法會把電阻算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆」不成立；並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。"
+      "reason": "解題時錯將各元件電壓降都設成相同，忽略電阻不同時分配可能不同。此結論針對單一路徑且量表理想；電阻差異若未通過分析串聯電路的電流與電壓對電流的控制，就不能只歸給電壓。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和」。"
+      "reason": "此結論針對單一路徑且量表理想。電源前主線列的電流為0.40 A，電壓為—；R1列的電流為0.40 A，電壓為4.0 V。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「短路和斷路都只會使電流完全為零，不可能出現過大電流」不成立；斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險。"
+      "reason": "解題時錯將 R1 的 4 V 與 R2 的 8 V 相減，誤判電源只有 4 V。串聯各處電流皆 0.40 A，兩元件電壓降 4.0＋8.0＝12.0 V；電壓的數值若未依電流核對，會使電阻無法通過分析串聯電路的電流與電壓檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "條件判斷",
-    "分析"
+    "應用"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓",
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流"
+    "主張串聯電路的電流通過第一個電阻後會被用掉，所以後段較小",
+    "解題時將各元件電壓降都設成相同，忽略電阻不同時分配可能不同",
+    "解題時將 R1 的 4 V 與 R2 的 8 V 相減，誤判電源只有 4 V"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -14,34 +14,34 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": "EARTH_R4_ST_189",
-  "stem": "閱讀「為觀察星團選擇望遠鏡口徑」的資料後，為了釐清方位高度與時間讀取簡化星圖，哪一項後續檢驗最適當？",
+  "stem": "若二十二時要用簡化星圖尋找乙星，哪個操作順序最合理？",
   "options": [
-    "同時換掉方位高度與時間讀取簡化星圖的全部變因後只測一次",
-    "刪除「為觀察星團選擇望遠鏡口徑」中不合預期的資料後重畫圖",
-    "只詢問同意「星圖還需方位、高度、時間與地點」的人",
-    "針對「為觀察星團選擇望遠鏡口徑」再先定觀測目標和波段"
+    "先把星圖北方固定朝上，再面向任何方向搜尋高度二百一十度。",
+    "只找離天頂三十二度的位置，不必知道觀測者面向。",
+    "沿東方地平線找三十二度高處，再把星圖旋轉到西方。",
+    "先面向西南並把西南方位邊朝下對準地平線，再向上估計三十二度。"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "同時改變多個變因且無重複，不能判斷「為觀察星團選擇望遠鏡口徑」的原因。"
+      "reason": "高度不可能為二百一十度；該數值是方位角，且星圖方向須配合面向。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "未說明便刪除資料會造成偏誤。"
+      "reason": "三十二度是由地平線起算的高度，不是離天頂角度，缺少方位也無法定位。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "意見調查不是獨立觀測或公平檢驗。"
+      "reason": "二百一十度屬西南而非東方，先找東方會指向錯誤天區。 方位角與高度角必須取自同一星體、同一地點和指定時刻。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "後續檢驗保留方位高度與時間讀取簡化星圖的變因、資料與結論間的可重現關係。"
+      "reason": "先以方位限定西南天區，再由地平線向上讀高度，符合星圖方位與高度的兩階段定位。"
     }
   ],
   "difficulty": "transfer",
@@ -50,7 +50,7 @@
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "星圖在任何緯度時間都完全相同"
+    "先把星圖北方固定朝上，再面向任何方向搜尋高度二百一十度。"
   ],
   "provenance": {
     "status": "original",
@@ -70,13 +70,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "逐項核對「為觀察星團選擇望遠鏡口徑」的條件後，「針對「為觀察星團選擇望遠鏡口徑」再先定觀測目標和波段」符合題目資料；查核依據為：望遠鏡口徑影響集光能力。",
+      "evidence": "乙星的二百一十度先決定西南象限，三十二度再決定由地平線向上的位置，兩個量缺一不可。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「一般太陽眼鏡、燻黑玻璃或未濾光望遠鏡都不能安全直視太陽」。",
+      "evidence": "錯誤程序分別混淆方位與高度、天頂距及東西方向；旋轉星圖要在搜尋前配合實際面向。",
       "status": "pass"
     }
   ],

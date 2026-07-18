@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對胃酸制酸劑結果，哪項說法正確？",
+  "stem": "哪項計算適合一對一粒子模型？",
   "options": [
-    "中和是否放熱應用手直接觸摸容器，不需溫度計或對照資料",
-    "酸鹼只要曾混合，無論加入量與濃度，最後 pH 都必等於 7",
-    "中和的核心粒子過程可表為氫離子與氫氧根離子結合成水",
-    "中和會把酸性與鹼性一起消滅，因此反應後質量必少於反應前"
+    "剩餘量＝較多者－較少者",
+    "剩餘量等於兩種粒子加入量相乘",
+    "不需比較數量",
+    "水份數＝兩者總數"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「中和是否放熱應用手直接觸摸容器，不需溫度計或對照資料」不成立；相同裝置中酸鹼混合後溫度上升，若排除外加熱，可支持中和放熱。"
+      "isCorrect": true,
+      "reason": "先配對再求差。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「酸鹼只要曾混合，無論加入量與濃度，最後 pH 都必等於 7」不成立；逐滴加鹼時 pH 由 2 升到 9，終點後溶液偏鹼，表示鹼已過量，不可只看混合過就判中性。"
+      "reason": "乘法無化學意義。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「中和的核心粒子過程可表為氫離子與氫氧根離子結合成水」。"
+      "isCorrect": false,
+      "reason": "過量判斷需比較。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「中和會把酸性與鹼性一起消滅，因此反應後質量必少於反應前」不成立；密閉中和系統反應前後總質量守恆；資料表的未知量應由所有反應物與生成物加總求得。"
+      "reason": "一對才成一份水。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "foundation",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "模型運算"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "中和是否放熱應用手直接觸摸容器，不需溫度計或對照資料",
-    "酸鹼只要曾混合，無論加入量與濃度，最後 pH 都必等於 7",
-    "中和會把酸性與鹼性一起消滅，因此反應後質量必少於反應前"
+    "剩餘量等於兩種粒子加入量相乘",
+    "不需比較數量",
+    "水份數＝兩者總數"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科中和、資料判讀與生活應用層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

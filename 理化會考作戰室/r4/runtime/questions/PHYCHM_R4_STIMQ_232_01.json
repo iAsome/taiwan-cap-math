@@ -12,50 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_232",
-  "stem": "根據水壩深度表中紀錄，哪項結論最合理？",
+  "stem": "甲的液體密度為0.80 g/cm³、深度為10 cm；乙則是0.80 g/cm³、20 cm。從比較液體深度與密度對壓力的影響的定義看，液體密度與深度結果如何連結？",
   "options": [
-    "液體壓力只由容器底面積決定，和深度與液體種類無關",
-    "同一液體中深度越大壓力越大；同深度時液體密度較大者壓力較大",
-    "固體壓力是力乘面積，所以面積越大壓力必然越大",
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁"
+    "解題時將容器底面積當成液體壓力的決定量，忽略深度與液體密度",
+    "拿不同液體、不同深度的兩個讀值比較，就斷定壓力只受深度影響",
+    "甲乙控制密度而加深，壓力增加",
+    "看到水深增加便主張壓力變小"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「液體壓力只由容器底面積決定，和深度與液體種類無關」不成立；同一液體中深度越大壓力越大；同深度時液體密度較大者壓力較大。"
+      "reason": "甲乙控制密度而加深，壓力增加。甲列的液體密度為0.80 g/cm³、深度為10 cm；乙列的液體密度為0.80 g/cm³、深度為20 cm。解題時錯將容器底面積當成液體壓力的決定量，忽略深度與液體密度。同一液體中深度越大壓力越大；照原做法會把壓力計讀值算錯或判反。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「同一液體中深度越大壓力越大；同深度時液體密度較大者壓力較大」。"
+      "isCorrect": false,
+      "reason": "甲乙控制密度而加深，壓力增加。甲列的液體密度為0.80 g/cm³、深度為10 cm；乙列的液體密度為0.80 g/cm³、深度為20 cm。解題時拿不同液體、不同深度的兩個讀值比較，就斷定壓力只受深度影響。結論限於靜止液體的表壓比較，不能把容器形狀或液體總量當成唯一原因；壓力計讀值差異若未通過比較液體深度與密度對壓力的影響對液體密度的控制，就不能只歸給深度。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「固體壓力是力乘面積，所以面積越大壓力必然越大」不成立；固體壓力 p＝F/A；100 N 均勻作用在 0.020 m² 面積上，壓力為 5000 Pa。"
+      "isCorrect": true,
+      "reason": "甲乙控制密度而加深，壓力增加。甲列的液體密度為0.80 g/cm³、深度為10 cm；乙列的液體密度為0.80 g/cm³、深度為20 cm。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁」不成立；靜止液體中同一點的壓力可向各方向作用，不只向下；容器側壁也受液體壓力。"
+      "reason": "甲乙控制密度而加深，壓力增加。甲列的液體密度為0.80 g/cm³、深度為10 cm；乙列的液體密度為0.80 g/cm³、深度為20 cm。一看到水深增加便主張壓力變小，理由是液面離量測點更遠。甲乙控制密度而加深，壓力增加；深度的數值若未依液體密度核對，會使壓力計讀值無法通過比較液體深度與密度對壓力的影響檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀"
+    "資料判讀",
+    "計算"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "液體壓力只由容器底面積決定，和深度與液體種類無關",
-    "固體壓力是力乘面積，所以面積越大壓力必然越大",
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁"
+    "解題時將容器底面積當成液體壓力的決定量，忽略深度與液體密度",
+    "拿不同液體、不同深度的兩個讀值比較，就斷定壓力只受深度影響",
+    "看到水深增加便主張壓力變小"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -64,20 +65,6 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_011"
   ]

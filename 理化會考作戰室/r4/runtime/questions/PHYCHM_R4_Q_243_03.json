@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理木塊漂浮資料後，哪項說明正確？",
+  "stem": "沒入水中的物體同時受到 12 N 重力向下、8 N 浮力向上，以及 1 N 的其他力向上。它所受合力與加速度方向為何？",
   "options": [
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量",
-    "重力大於浮力與其他向上力的合力",
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要"
+    "合力 1 N 向上，加速度向上",
+    "合力 4 N 向下，加速度向下",
+    "合力 3 N 向下，加速度向下",
+    "合力 12 N 向下，加速度向下"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「浮力為 12＋7＝19 N，因為水中讀值要加回原重量」不成立；物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N。"
+      "reason": "向上兩力合計 9 N，仍小於向下的 12 N，所以合力不會向上。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力」。"
+      "isCorrect": false,
+      "reason": "12−8＝4 N 漏掉了題目明列的 1 N 向上作用力，因此不是完整合力。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限…」不成立；完全沒入時，浮力隨液體密度與排開體積增大；同液體中排開體積相同則浮力相同。"
+      "isCorrect": true,
+      "reason": "物體仍在水中，浮力仍為 8 N；取向下為正方向，12−8−1＝3 N。合力向下，所以加速度也向下。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「浮沉只由物體總質量大小決定，體積與平均密度完全不重要」不成立；物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉。"
+      "reason": "12 N 只是重力；浮力 8 N 與其他向上力 1 N 都會減少向下合力。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "辨認",
+    "概念理解"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量",
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要"
+    "合力 1 N 向上，加速度向上",
+    "合力 4 N 向下，加速度向下",
+    "合力 12 N 向下，加速度向下"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

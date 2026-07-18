@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "報告整理凸透鏡成像資料，哪項敘述合理？",
+  "stem": "要在屏幕上取得凸透鏡像，物距應滿足什麼？",
   "options": [
-    "近視眼應佩戴凸透鏡使光更提前會聚，因為所有視力問題都用同一透鏡",
-    "物距大於凸透鏡焦距時可成倒立實像",
-    "凸透鏡無論物距如何都只會形成正立實像，像的性質不隨物距改變",
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線"
+    "大於焦距",
+    "小於焦距",
+    "必等於焦距",
+    "任何物距皆可"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「近視眼應佩戴凸透鏡使光更提前會聚，因為所有視力問題都用同一…」不成立；近視眼需發散透鏡輔助將遠物像後移至視網膜；相機和眼睛均利用會聚系統成實像。"
+      "isCorrect": true,
+      "reason": "物距大於f時折射光可在像側實際會聚。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「物距大於凸透鏡焦距時可成倒立實像；物在焦點內時成正立放大虛像」。"
+      "isCorrect": false,
+      "reason": "焦內像是虛像。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「凸透鏡無論物距如何都只會形成正立實像，像的性質不隨物距改變」不成立；物距大於凸透鏡焦距時可成倒立實像；物在焦點內時成正立放大虛像。"
+      "reason": "焦點出射光近似平行。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「光由任何介質進入另一介質時速率都不變，也永遠折向法線」不成立；光由空氣進入玻璃時速率降低，斜入射通常折向法線；由玻璃進空氣則通常偏離法線。"
+      "reason": "並非所有物距都成實像。"
     }
   ],
   "difficulty": "advanced",
@@ -47,16 +47,16 @@
     "關係應用",
     "多步驟推理"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "近視眼應佩戴凸透鏡使光更提前會聚，因為所有視力問題都用同一透鏡",
-    "凸透鏡無論物距如何都只會形成正立實像，像的性質不隨物距改變",
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線"
+    "小於焦距",
+    "必等於焦距",
+    "任何物距皆可"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-7",
       "AUTH-NATURAL-LC-KA-4-8",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

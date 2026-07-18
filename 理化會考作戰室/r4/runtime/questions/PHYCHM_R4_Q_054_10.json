@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "報告根據金屬與氧反應下結論，哪項符合資料？",
+  "stem": "只看到火花較多，還應確認哪項才有助比較活性？",
   "options": [
-    "元素符號可自由取元素中任一字母，因此鈉也可寫成 S 或 NA",
-    "週期表中每一欄都必然只含金屬或只含非金屬，沒有概略分界",
-    "同族元素的所有物理性質、化學性質和反應速率都完全相同",
-    "比較金屬與氧反應活性時，要控制質量、表面積、氧氣供應與加熱條件，再比較反應難易"
+    "試樣質量、形態與供氧是否相同",
+    "直接比較金屬粉末與同質量金屬塊",
+    "只比較火花持續時間而不控制試樣量",
+    "一組使用純氧、另一組使用空氣"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「元素符號可自由取元素中任一字母，因此鈉也可寫成 S 或 NA」不成立；週期表格子同時提供元素名稱與符號；Na 是鈉，符號大小寫必須依表中記錄。"
+      "isCorrect": true,
+      "reason": "用量、表面積與供氧都會影響火花現象。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「週期表中每一欄都必然只含金屬或只含非金屬，沒有概略分界」不成立；金屬大多分布於週期表左側與中央，非金屬多在右側，類金屬約在階梯狀分界附近。"
+      "reason": "粉末表面積較大，速率差未必來自材料活性。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「同族元素的所有物理性質、化學性質和反應速率都完全相同」不成立；同族元素常呈現相似化學性質與規律，但程度與個別性質仍可不同，需由資料比較。"
+      "reason": "持續時間也受用量影響，仍不能公平比較。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「比較金屬與氧反應活性時，要控制質量、表面積、氧氣供應與加熱條件，再比較反應難易」。"
+      "isCorrect": false,
+      "reason": "氧氣濃度不同會直接改變燃燒劇烈程度。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "證據品質"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "元素符號可自由取元素中任一字母，因此鈉也可寫成 S 或 NA",
-    "週期表中每一欄都必然只含金屬或只含非金屬，沒有概略分界",
-    "同族元素的所有物理性質、化學性質和反應速率都完全相同"
+    "直接比較金屬粉末與同質量金屬塊",
+    "只比較火花持續時間而不控制試樣量",
+    "一組使用純氧、另一組使用空氣"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AA-4-4",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

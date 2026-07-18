@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估水質 ppm報告時，哪項說明正確？",
+  "stem": "某樣品上層含溶質 2%，下層含 9%，哪項結論最穩妥？",
   "options": [
-    "只要肉眼一時看不到粒子，就能斷定混合物完全均勻",
-    "外觀透明無色的物質一定是純物質，不可能含多種成分",
-    "泥水可見沉降且組成不一",
-    "溶液中含量較少的一方永遠是溶劑，和物態與作用無關"
+    "必定是純物質",
+    "在此取樣尺度下不均勻",
+    "只因量測結果有數字，就能證明各處均勻",
+    "兩處濃度相同"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要肉眼一時看不到粒子，就能斷定混合物完全均勻」不成立；食鹽水在各處取樣組成近似相同，屬均勻混合；泥水可見沉降且組成不一，屬非均勻混合。"
+      "reason": "純物質組成固定。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「外觀透明無色的物質一定是純物質，不可能含多種成分」不成立；純物質在固定條件下有固定組成；空氣、海水等由多種物質以可變比例組成，是混合物。"
+      "isCorrect": true,
+      "reason": "不同位置比例差明顯。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「食鹽水在各處取樣組成近似相同，屬均勻混合；泥水可見沉降且組成不一，屬非均勻混合」。"
+      "isCorrect": false,
+      "reason": "數字本身不是判準。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「溶液中含量較少的一方永遠是溶劑，和物態與作用無關」不成立；食鹽水中食鹽是溶質、水是溶劑、均勻混合系統是溶液。"
+      "reason": "2% 不等於 9%。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "定量判斷"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要肉眼一時看不到粒子，就能斷定混合物完全均勻",
-    "外觀透明無色的物質一定是純物質，不可能含多種成分",
-    "溶液中含量較少的一方永遠是溶劑，和物態與作用無關"
+    "必定是純物質",
+    "只因量測結果有數字，就能證明各處均勻",
+    "兩處濃度相同"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AB-4-4",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

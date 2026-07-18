@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解變壓與電力輸送的基本目的，哪項修正合理？",
+  "stem": "丙：輸送功率100 kW、電壓100 kV、相同線阻下 I²R 比1。重新以說明變壓與電力輸送的基本目的判讀時，輸送功率單位與電壓方向先查哪個？",
   "options": [
-    "發電機和電動機都只將電能轉成熱能，與機械能無關",
-    "變壓器以交流造成變動磁場",
-    "只要裝置含線圈就能跳過輸入、輸出的分析，直接說能量在線圈中消失",
-    "變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大"
+    "解題時將穩定直流接入一般變壓器，期待持續得到正常變壓輸出",
+    "把100 kW 以 100 kV 輸送被算成 100 A，而不是 1 A",
+    "變壓器靠交流變動磁場工作，輸出功率不會無限增加，穩定直流不能維持正常變壓",
+    "主張變壓器升高電壓也會無限增加輸出功率"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「發電機和電動機都只將電能轉成熱能，與機械能無關」不成立；發電機主要將機械能轉電能，電動機主要將電能轉機械能，兩者能量流向相反。"
+      "reason": "解題時錯將穩定直流接入一般變壓器，期待持續得到正常變壓輸出，結果會錯判相同線阻下 I²R 比。變壓器靠交流變動磁場工作，輸出功率不會無限增加，穩定直流不能維持正常變壓；相同線阻下 I²R 比差異若未通過說明變壓與電力輸送的基本目的對輸送功率的控制，就不能只歸給電壓。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「變壓器以交流造成變動磁場，改變電壓以利輸電；遠距離高電壓可在同功率下降低電流與線路損耗」。"
+      "isCorrect": false,
+      "reason": "解題時誤把100 kW 以 100 kV 輸送被算成 100 A，而不是 1 A。同功率提高電壓可降低電流，使 I²R 線損大幅減少；電壓的數值若未依輸送功率核對，會使相同線阻下 I²R 比無法通過說明變壓與電力輸送的基本目的檢查。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「只要裝置含線圈就能跳過輸入、輸出的分析，直接說能量在線圈中…」不成立；裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出，例如手搖發電機為機械能→電能→光與熱。"
+      "isCorrect": true,
+      "reason": "變壓器靠交流變動磁場工作，輸出功率不會無限增加，穩定直流不能維持正常變壓。乙列的輸送功率為100 kW，電壓為10 kV；丙列的輸送功率為100 kW，電壓為100 kV。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大」不成立；變壓器以交流造成變動磁場，改變電壓以利輸電；遠距離高電壓可在同功率下降低電流與線路損耗。"
+      "reason": "誤以為變壓器升高電壓也會無限增加輸出功率。變壓器以交流造成變動磁場，改變電壓以利輸電；輸送功率未列入說明變壓與電力輸送的基本目的時，相同線阻下 I²R 比的電壓大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "發電機和電動機都只將電能轉成熱能，與機械能無關",
-    "只要裝置含線圈就能跳過輸入、輸出的分析，直接說能量在線圈中消失",
-    "變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大"
+    "解題時將穩定直流接入一般變壓器，期待持續得到正常變壓輸出",
+    "把100 kW 以 100 kV 輸送被算成 100 A，而不是 1 A",
+    "主張變壓器升高電壓也會無限增加輸出功率"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-KC-4-4",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

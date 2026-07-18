@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "水壩深度出現四種說法，哪項有理化概念支持？",
+  "stem": "解題時錯將任何兩地的氣壓差都歸因於海拔，完全不查同時的天氣與溫度，結果會錯判沸水溫度。依說明大氣壓力來自空氣重量修正時，海拔與氣壓應採哪個原理連結？",
   "options": [
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁",
-    "大氣壓力來自地球引力下空氣的重量與粒子碰撞",
-    "液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量",
-    "用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與"
+    "看到高山氣壓較低，卻推論高山上方空氣柱重量比海邊更大",
+    "主張加壓鍋內外海拔相同，所以鍋內氣壓不可能高於外界",
+    "主張空氣並漏掉重量，因此氣壓計讀值只是儀器本身造成",
+    "大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁」不成立；靜止液體中同一點的壓力可向各方向作用，不只向下；容器側壁也受液體壓力。"
+      "reason": "一看到高山氣壓較低，卻推論高山上方空氣柱重量比海邊更大，結果會錯判沸水溫度。海拔升高時上方空氣柱較少，量得氣壓下降；氣壓的數值若未依海拔核對，會使沸水溫度無法通過說明大氣壓力來自空氣重量檢查。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變」。"
+      "isCorrect": false,
+      "reason": "誤以為加壓鍋內外海拔相同，所以鍋內氣壓不可能高於外界，結果會錯判沸水溫度。大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變；海拔未列入說明大氣壓力來自空氣重量時，沸水溫度的氣壓大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量」不成立；帕斯卡原理說明密閉流體上的壓力變化可傳至各處；液壓機可以大面積活塞得到較大力。"
+      "reason": "誤以為空氣沒有重量，因此氣壓計讀值只是儀器本身造成。大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變；照原做法會把沸水溫度算錯或判反。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與」不成立；吸管、滴管等裝置是先降低內部壓力，外界較大大氣壓才將液體推向低壓處。"
+      "isCorrect": true,
+      "reason": "大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變。高山列的海拔為2500 m，氣壓為75.0 kPa；密閉加壓鍋列的海拔為20 m，氣壓為高於外界。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁",
-    "液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量",
-    "用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與"
+    "看到高山氣壓較低，卻推論高山上方空氣柱重量比海邊更大",
+    "主張加壓鍋內外海拔相同，所以鍋內氣壓不可能高於外界",
+    "主張空氣並漏掉重量，因此氣壓計讀值只是儀器本身造成"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

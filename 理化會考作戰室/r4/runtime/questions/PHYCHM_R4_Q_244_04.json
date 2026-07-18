@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查船的平均密度紀錄，哪項判讀正確？",
+  "stem": "解題時錯將鋼船漂浮歸因於鋼的密度小於水，忽略中空船體的整體平均密度。用連結船潛水艇與密度調整應用檢查這個做法，平均密度應如何重判？",
   "options": [
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "船以中空結構降低整體平均密度"
+    "主張潛水艇只要下潛到更深處",
+    "解題時將鋼船漂浮歸因於鋼的密度小於水，忽略中空船體的整體平均密度",
+    "潛水艇藉壓載水量調整平均密度與浮沉",
+    "把討論潛水艇進排水時假定外殼體積也同比改變，混淆質量與排水體積"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限…」不成立；完全沒入時，浮力隨液體密度與排開體積增大；同液體中排開體積相同則浮力相同。"
+      "reason": "誤以為潛水艇只要下潛到更深處，平均密度就會在未進水時自動增加。船以中空結構降低整體平均密度；總質量未列入連結船潛水艇與密度調整應用時，平均密度的外形排水體積大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「浮沉只由物體總質量大小決定，體積與平均密度完全不重要」不成立；物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉。"
+      "reason": "解題時錯將鋼船漂浮歸因於鋼的密度小於水，忽略中空船體的整體平均密度。船以中空結構降低整體平均密度；照原做法會把平均密度算錯或判反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「漂浮物體既然在水面上，就完全不受浮力，只受向下重力」不成立；漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力。"
+      "isCorrect": true,
+      "reason": "潛水艇藉壓載水量調整平均密度與浮沉。改變深度但不進排水列的總質量為1000 t，外形排水體積為1000 m³；排出壓載水列的總質量為900 t，外形排水體積為1000 m³。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉」。"
+      "isCorrect": false,
+      "reason": "解題時誤把討論潛水艇進排水時假定外殼體積也同比改變，混淆質量與排水體積。假設外殼體積近似固定且忽略海水密度隨深度的小變化；平均密度差異若未通過連結船潛水艇與密度調整應用對總質量的控制，就不能只歸給外形排水體積。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀",
+    "條件判斷",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力"
+    "主張潛水艇只要下潛到更深處",
+    "解題時將鋼船漂浮歸因於鋼的密度小於水，忽略中空船體的整體平均密度",
+    "把討論潛水艇進排水時假定外殼體積也同比改變，混淆質量與排水體積"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

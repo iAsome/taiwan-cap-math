@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於催化劑改變速率而不被大量消耗，哪項結論符合題給條件？",
+  "stem": "催化劑回收98%，缺少2%一定是被反應掉嗎？",
   "options": [
-    "在反應過程中不被大量消耗成最終產物",
-    "催化劑加快反應是因為它大量變成生成物，因此用得越多產量必無限增加",
-    "反應速率只能由最後生成物總量判斷，和所需時間無關",
-    "只要實驗條件一樣，任何反應物的反應速率都必然相同"
+    "不一定，可能是操作回收損失",
+    "一定違反守恆",
+    "一定全部成產物",
+    "一定蒸發成電子"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「催化劑可提供不同反應路徑而改變反應速率，且在反應過程中不被大量消耗成最終產物」。"
+      "reason": "需空白與重複證據。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「催化劑加快反應是因為它大量變成生成物，因此用得越多產量必無…」不成立；催化劑可提供不同反應路徑而改變反應速率，且在反應過程中不被大量消耗成最終產物。"
+      "reason": "完整系統仍守恆。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「反應速率只能由最後生成物總量判斷，和所需時間無關」不成立；反應速率可用單位時間內反應物的減少量，或生成物的增加量表示。"
+      "reason": "單次差值不足。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要實驗條件一樣，任何反應物的反應速率都必然相同」不成立；在溫度、濃度、表面積均相同時，不同物質因本性不同可有不同反應速率。"
+      "reason": "無此轉換。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "誤差分析"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "催化劑加快反應是因為它大量變成生成物，因此用得越多產量必無限增加",
-    "反應速率只能由最後生成物總量判斷，和所需時間無關",
-    "只要實驗條件一樣，任何反應物的反應速率都必然相同"
+    "一定違反守恆",
+    "一定全部成產物",
+    "一定蒸發成電子"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科反應速率、控制變因與動態平衡層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JE-4-1",
       "AUTH-NATURAL-LC-JE-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

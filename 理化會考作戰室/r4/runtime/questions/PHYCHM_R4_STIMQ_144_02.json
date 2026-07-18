@@ -16,50 +16,50 @@
     "AUTH-NATURAL-LP-PO-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_144",
-  "stem": "檢查表中關於證據檢討方法限制與改善方式的說法，哪項判讀正確？",
+  "stem": "哪項改善最能同時處理攪拌與重複不足？",
   "options": [
-    "只要數據不符合預期就應直接刪除，否則會使結論不漂亮",
-    "小型灑漏或燙傷應先自行隱瞞，用手快速擦乾，以免實驗被中斷",
-    "說明樣本數、量測精度、潛在干擾並提出只改一項的具體改善",
-    "只要一次實驗符合預測，就可宣稱所有情況都成立，不需說明限制"
+    "使用固定轉速攪拌器，且每個溫度獨立重做多次",
+    "只把時間寫到小數點後三位",
+    "刪除60°C",
+    "讓更多人自由攪拌一次"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要數據不符合預期就應直接刪除，否則會使結論不漂亮」不成立；異常數據應原樣記錄，檢查器材、操作與條件，只在有可說明理由時重測或標記排除。"
+      "isCorrect": true,
+      "reason": "標準化攪拌並估計變異。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「小型灑漏或燙傷應先自行隱瞞，用手快速擦乾，以免實驗被中斷」不成立；器材破損、藥品灑漏或燙傷應立即停止操作、警告周遭並通知教師，依規程處理，不徒手清理。"
+      "reason": "不改善方法。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「實驗結論應限於已測條件，說明樣本數、量測精度、潛在干擾並提出只改一項的具體改善」。"
+      "isCorrect": false,
+      "reason": "失去範圍且未修問題。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要一次實驗符合預測，就可宣稱所有情況都成立，不需說明限制」不成立；實驗結論應限於已測條件，說明樣本數、量測精度、潛在干擾並提出只改一項的具體改善。"
+      "reason": "增加操作差異。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀"
+    "方案設計"
   ],
-  "representationType": "stimulus-figure-and-data",
+  "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "只要數據不符合預期就應直接刪除，否則會使結論不漂亮",
-    "小型灑漏或燙傷應先自行隱瞞，用手快速擦乾，以免實驗被中斷",
-    "只要一次實驗符合預測，就可宣稱所有情況都成立，不需說明限制"
+    "只把時間寫到小數點後三位",
+    "刪除60°C",
+    "讓更多人自由攪拌一次"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段探究與實作學習表現; 臺灣國中教育會考自然科實驗設計、安全與資料判讀題型",
     "sourceRefs": [
       "AUTH-NATURAL-LP-AI-4-1",
       "AUTH-NATURAL-LP-AI-4-2",
@@ -72,21 +72,5 @@
       "AUTH-NATURAL-LP-PO-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
-  "assets": [
-    "PHYCHM_R4_ASSET_001"
-  ]
+  "assets": []
 }

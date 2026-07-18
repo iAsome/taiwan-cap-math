@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估混合熱平衡報告時，哪項說明正確？",
+  "stem": "平台終了後再供熱，溫度通常？",
   "options": [
-    "比熱較大表示物質每吸收一點熱就升溫更多，所以一定更快變熱",
-    "比較吸熱量只需看最後溫度，不必知道質量、初溫或比熱",
-    "熔化或沸騰平臺期間，物質仍吸收能量以改變粒子排列或作用，溫度可保持不變",
-    "加熱曲線只要出現平臺就表示熱源關閉，與物態改變無關"
+    "開始改變",
+    "永遠不變",
+    "必降到零",
+    "失去單位"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「比熱較大表示物質每吸收一點熱就升溫更多，所以一定更快變熱」不成立；相同質量吸收相同熱量時，比熱較大的物質溫度上升較少。"
+      "isCorrect": true,
+      "reason": "新相態開始升溫。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「比較吸熱量只需看最後溫度，不必知道質量、初溫或比熱」不成立；沒有相變時，吸放熱大小由 Q＝mcΔT 比較；質量、比熱與溫差都必須納入。"
+      "reason": "相變已完成。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「熔化或沸騰平臺期間，物質仍吸收能量以改變粒子排列或作用，溫度可保持不變」。"
+      "isCorrect": false,
+      "reason": "無依據。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「加熱曲線只要出現平臺就表示熱源關閉，與物態改變無關」不成立；加熱曲線斜升區表示單一物態升溫，平臺可表示純物質在相變，需先辨認橫縱軸。"
+      "reason": "仍有單位。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "預測"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "比熱較大表示物質每吸收一點熱就升溫更多，所以一定更快變熱",
-    "比較吸熱量只需看最後溫度，不必知道質量、初溫或比熱",
-    "加熱曲線只要出現平臺就表示熱源關閉，與物態改變無關"
+    "永遠不變",
+    "必降到零",
+    "失去單位"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱學與能量; 臺灣國中教育會考自然科熱量、比熱、相變與生活現象題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-BA-4-1",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

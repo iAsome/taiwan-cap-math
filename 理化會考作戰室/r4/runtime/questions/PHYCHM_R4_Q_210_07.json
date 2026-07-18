@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "車輛起步煞車出現四種說法，哪項有理化概念支持？",
+  "stem": "物體向東運動但逐漸變慢，加速度方向如何？",
   "options": [
-    "加速度表示速度隨時間的變化；速度大小、方向或兩者改變都可產生加速度",
-    "圓周運動的快慢恆定就表示速度向量恆定，所以加速度必為零",
-    "物體質量越大，在相同合力下速度改變必然越快",
-    "加速度只要是負值就一定減速，只要是正值就一定加速"
+    "物體的加速度必向東",
+    "物體的加速度必為零",
+    "加速度具有向西分量",
+    "物體的加速度方向無法與速度相反"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「加速度表示速度隨時間的變化；速度大小、方向或兩者改變都可產生加速度」。"
+      "isCorrect": false,
+      "reason": "物體的加速度必向東不成立。減慢時加速度與現有速度方向相反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「圓周運動的快慢恆定就表示速度向量恆定，所以加速度必為零」不成立；等速圓周運動雖速度大小不變，速度方向持續改變，因此具有指向圓心的加速度。"
+      "reason": "物體的加速度必為零不成立。減慢時加速度與現有速度方向相反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「物體質量越大，在相同合力下速度改變必然越快」不成立；質量相同時，合力較大者速度改變較快；合力相同時，質量較大者速度改變較慢。"
+      "isCorrect": true,
+      "reason": "減慢時加速度與現有速度方向相反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「加速度只要是負值就一定減速，只要是正值就一定加速」不成立；加速度與速度同向時快慢增加，反向時快慢減少；加速度為負不代表一定減速。"
+      "reason": "物體的加速度方向無法與速度相反不成立。減慢時加速度與現有速度方向相反。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "證據判讀",
     "推論"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "圓周運動的快慢恆定就表示速度向量恆定，所以加速度必為零",
-    "物體質量越大，在相同合力下速度改變必然越快",
-    "加速度只要是負值就一定減速，只要是正值就一定加速"
+    "物體的加速度必向東",
+    "物體的加速度必為零",
+    "物體的加速度方向無法與速度相反"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-11",
       "AUTH-NATURAL-LC-EB-4-8",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

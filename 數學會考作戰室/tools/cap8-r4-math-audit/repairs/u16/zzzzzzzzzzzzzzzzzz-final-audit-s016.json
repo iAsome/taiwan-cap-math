@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u16",
+  "batch": "017-u16-complete",
+  "skills": ["s016"],
+  "mc": [
+    {
+      "questionId": "u16-s016-v001",
+      "expectedContentSha256": "fdd87e5166e09336bf23c8ad293d8a6c9f28605be0ee33583585d68d1de99f62",
+      "set": {"explanation": "三角形中線的兩端分別是一個頂點與該頂點對邊的中點。頂點向對邊作垂線是高，連結兩邊中點則是中點連線，角色都不同。"}
+    },
+    {
+      "questionId": "u16-s016-v002",
+      "expectedContentSha256": "05f78eaf733beb8098148d34aa1ad477becc16590d40f91379abe26bf2892991",
+      "set": {"explanation": "D是BC中點，所以BD=DC，且BD+DC=BC=14 cm。兩段相等，因此BD=14÷2=7 cm。"}
+    },
+    {
+      "questionId": "u16-s016-v003",
+      "expectedContentSha256": "7cc38e6c2ab6fe66856ff8252d18e72f1bcb6d1858bf382a0bc29d7bd0b1c9b3",
+      "set": {"explanation": "三角形有三個頂點，每個頂點都有唯一的一條線段連到其對邊中點，所以任一非退化三角形共有3條中線。"}
+    },
+    {
+      "questionId": "u16-s016-v004",
+      "expectedContentSha256": "70cdfc572636ad6012936c0c133612cc3dc244ed0a29160408cd31ad68af4911",
+      "set": {"explanation": "重心沿中線滿足AG:GD=2:1，靠頂點A的AG是兩份。已知AG=8 cm，所以一份GD=8÷2=4 cm。"}
+    },
+    {
+      "questionId": "u16-s016-v005",
+      "expectedContentSha256": "dc9633c55f8bd26169be674b60022e405d600d04dd6412fae01629aa2fe772ad",
+      "set": {"explanation": "重心把中線PM分成PG:GM=2:1，所以PG占完整中線的2/3。PG=15×2/3=10 cm，剩下的GM為5 cm。"}
+    },
+    {
+      "questionId": "u16-s016-v006",
+      "expectedContentSha256": "80177abe7e3d116e4b1cade6d6ade76df92181aa4f10c43d2884f121237e555f",
+      "set": {"explanation": "AD是中線，所以BD=DC。△ABD與△ACD的底分別為BD、DC，且對直線BC的高相同，因此面積比為1:1，△ACD面積也是18 cm²。"}
+    },
+    {
+      "questionId": "u16-s016-v007",
+      "expectedContentSha256": "0bc1604d6a868855f278274c97874e15a72b3a54724e3cdf4e9c4213cfedb388",
+      "set": {"explanation": "每一條中線上，頂點到重心的長度都是完整中線的2/3。所求總和為(12+15+18)×2/3=45×2/3=30 cm。"}
+    },
+    {
+      "questionId": "u16-s016-v008",
+      "expectedContentSha256": "23dcb15143644364b3ac282f37c8141e5d1f54c8813d5caa97340a7f720218dc",
+      "set": {"explanation": "設GD=k，則由AG:GD=2:1得AG=2k。已知AG-GD=k=5 cm，所以整條中線AD=AG+GD=3k=15 cm。"}
+    },
+    {
+      "questionId": "u16-s016-v009",
+      "expectedContentSha256": "9e54d1af5575840e8f9f40939d072f8f247de2186b4f9b5686a3d0534dcf15f7",
+      "set": {"explanation": "E是CA中點，所以BE是中線；G為兩條中線交點，也就是重心。在中線BE上有BG:GE=2:1，故GE=3可得BG=6、BE=9。AG=6屬於另一條中線，不應與GE直接相加。"}
+    },
+    {
+      "questionId": "u16-s016-v010",
+      "expectedContentSha256": "d71ddb568a6678666b26a96c002b3c16af29a4e0fa985994f30d95150af7fe43",
+      "set": {"explanation": "密度與厚度均勻的三角形薄板，其質量中心位於三條中線的交點，也就是重心。垂心或任一邊中點一般不代表整片薄板的平衡位置。"}
+    },
+    {
+      "questionId": "u16-s016-v011",
+      "expectedContentSha256": "c5d3012e61a9aa13172be609fb3bb5a31516d902576b36deb270f7547ab93b15",
+      "set": {"explanation": "中線把對邊分成等長兩段，兩側小三角形又共用同一個高，因此面積相等。忽略耗損時，每片面積為7.2÷2=3.6 m²。"}
+    },
+    {
+      "questionId": "u16-s016-v012",
+      "expectedContentSha256": "5248af5cccc1af9223b78e0c250d3cc7f4581cf44a1796e6c9772f0efee8060f",
+      "set": {"explanation": "沿中線AD，重心滿足AG:GD=2:1，所以從頂點A到G是整條AD的2/3。AG=1.8×2/3=1.2 m；0.6 m是從G到D的距離。"}
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u16-s016-cr001",
+      "expectedContentSha256": "b51ea7cae6607c2c18df98b1ab249bd9da77be67d0bbea8e19049f59abe65601",
+      "set": {
+        "fullCreditSolution": [
+          "A是頂點、D是對邊中點，故重心比例為AG:GD=2:1。已知AG=14 cm代表兩份，所以GD=14÷2=7 cm。",
+          "完整中線AD=AG+GD=14+7=21 cm；也可由AG=(2/3)AD反求AD=21 cm。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s016-cr002",
+      "expectedContentSha256": "dc6c7a383d2b0688cf204812b11265deee4cfc8a1e49598f725a234055321ca7",
+      "set": {
+        "prompt": "一塊三角形帆布面積為24 m²。從一個頂點沿中線裁開後，其中一片又沿該小三角形的一條中線裁開。若兩次裁切均無耗損，所得各片互不重疊，第二次產生的兩片各多少面積？另一大半片多少面積？",
+        "fullCreditSolution": [
+          "第一次沿中線裁切，把24 m²分成12 m²與12 m²。",
+          "其中一個12 m²小三角形再沿中線裁開，得到6 m²與6 m²。",
+          "未再裁的另一片仍為12 m²；驗算6+6+12=24 m²。"
+        ]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u16-s016-lecture-r1",
+      "expectedContentSha256": "461007946575fd4f6c56af18fc1d19b912bc92718b8397cfad4b6e576df86498",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "在△PQR中，N在線段QR上且QN=NR。判斷PN的名稱。",
+            "solutionSteps": [
+              "PN的一端P是三角形頂點。",
+              "QN=NR且N在QR上，所以N是對邊QR的中點。",
+              "線段PN連接頂點與其對邊中點。"
+            ],
+            "answer": "PN是△PQR從P出發的中線。",
+            "why": "中線定義同時要求頂點端與對邊中點端；等長標記和N在線段上的條件共同確認N確為中點。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "S是TU中點且TU=26公分，求ST與SU。",
+            "solutionSteps": [
+              "中點使ST=SU。",
+              "兩段總和ST+SU=26公分。",
+              "每段為26÷2=13公分。"
+            ],
+            "answer": "ST=SU=13公分。",
+            "why": "中點將完整線段二等分；兩個13公分相加回26公分，可同時核對等長與總長。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "△ABC面積為46平方公分，AM是BC上的中線，求△AMC面積。",
+            "solutionSteps": [
+              "M為BC中點，所以BM=MC。",
+              "△ABM與△AMC對直線BC的高相同，底也等長。",
+              "兩面積相等，各占總面積一半。"
+            ],
+            "answer": "△AMC面積為23平方公分。",
+            "why": "中線二等分的是三角形面積，不一定二等分周長或頂角；等底共高才是面積相等的直接理由。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "V是△XYZ的重心，且從頂點X到對邊中點M的中線長24公分，求XV與VM。",
+            "solutionSteps": [
+              "重心比例XV:VM=2:1，完整中線共有三份。",
+              "每份為24÷3=8公分。",
+              "XV占兩份為16公分，VM占一份為8公分。"
+            ],
+            "answer": "XV=16公分，VM=8公分。",
+            "why": "較長的兩份靠近頂點X；兩段相加16+8=24，比例與完整中線長度都吻合。"
+          },
+          {
+            "exampleId": "L5",
+            "prompt": "從△ABC頂點A向BC作垂線AH。僅由AH⊥BC，能否斷定AH也是中線？",
+            "solutionSteps": [
+              "AH垂直BC只能確認AH是從A出發的高。",
+              "中線還要求H是BC中點，也就是BH=HC。",
+              "題目沒有等長或中點條件，兩種特殊線不能合併判定。"
+            ],
+            "answer": "不能；還要知道BH=HC。",
+            "why": "一般三角形的高與中線彼此獨立；只有附加對稱或中點條件時，同一線段才可能同時具有兩種名稱。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

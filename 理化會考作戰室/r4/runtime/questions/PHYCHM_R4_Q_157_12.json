@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估鍋具傳導報告時，哪項說明正確？",
+  "stem": "只量外殼溫度的限制？",
   "options": [
-    "保溫瓶的真空層減少傳導與對流，低輻射表面減少輻射，瓶塞也限制空氣交換",
-    "對流是固體內粒子在原位碰撞，不包含流體的整體移動",
-    "太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞",
-    "導熱快的材料在任何用途都較好，因此鍋柄也應用最厚金屬"
+    "外殼無溫度",
+    "不能直接得知內液體保溫程度",
+    "溫度計不能使用",
+    "可完全取代內溫"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「保溫瓶的真空層減少傳導與對流，低輻射表面減少輻射，瓶塞也限制空氣交換」。"
+      "isCorrect": false,
+      "reason": "有溫度。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「對流是固體內粒子在原位碰撞，不包含流體的整體移動」不成立；流體受熱後密度常減小而上升，較冷流體下沉形成對流循環。"
+      "isCorrect": true,
+      "reason": "需量內容物。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞」不成立；熱輻射以電磁波傳遞能量，不需介質，因此太陽能穿過太空將能量傳至地球。"
+      "reason": "可使用。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「導熱快的材料在任何用途都較好，因此鍋柄也應用最厚金屬」不成立；金屬導熱快適合鍋底，木材或低導熱材料適合握柄與隔熱層；用途取決所需熱流。"
+      "reason": "不能。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "評估"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "對流是固體內粒子在原位碰撞，不包含流體的整體移動",
-    "太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞",
-    "導熱快的材料在任何用途都較好，因此鍋柄也應用最厚金屬"
+    "外殼無溫度",
+    "溫度計不能使用",
+    "可完全取代內溫"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱傳播與生活應用; 臺灣國中教育會考自然科導熱、對流、輻射與保溫題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BB-4-1",
       "AUTH-NATURAL-LC-BB-4-3",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

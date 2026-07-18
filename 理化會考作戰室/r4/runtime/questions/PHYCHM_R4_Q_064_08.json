@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理離子符號資料，哪項敘述合理？",
+  "stem": "係數 4、2、4 是否為 2、1、2 的最簡倍數？",
   "options": [
-    "二氧化碳可寫成 Co₂，因為碳 C 與鈷 Co 的符號可互換",
-    "Ca²⁺ 表示一個粒子含 2 個鈣原子，右上角數字是原子個數",
-    "模型圖上一共有幾個球，就把該數字全部寫成一個化學式的下標",
-    "改動 H₂O 的下標會把水變成不同組成的物質"
+    "否，係數不可除",
+    "否，比例不同",
+    "是，可同除以 2",
+    "是，因下標相同就表示係數已是最簡"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「二氧化碳可寫成 Co₂，因為碳 C 與鈷 Co 的符號可互換」不成立；水是 H₂O、二氧化碳是 CO₂、氯化鈉是 NaCl；配對時要同時核對元素種類與比例。"
+      "reason": "整體公因數可約。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「Ca²⁺ 表示一個粒子含 2 個鈣原子，右上角數字是原子個數」不成立；Ca²⁺ 表示帶 2 個正電單位的鈣離子，Cl⁻ 表示帶 1 個負電單位的氯離子。"
+      "reason": "比例相同。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「模型圖上一共有幾個球，就把該數字全部寫成一個化學式的下標」不成立；若模型顯示每個粒子由兩個 A 與一個 B 連結，其化學式可表為 A₂B；多粒子再用係數計數。"
+      "isCorrect": true,
+      "reason": "4:2:4＝2:1:2。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「配平反應式只能調整化學式前係數；改動 H₂O 的下標會把水變成不同組成的物質」。"
+      "isCorrect": false,
+      "reason": "理由在係數比。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "比例化簡"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "二氧化碳可寫成 Co₂，因為碳 C 與鈷 Co 的符號可互換",
-    "Ca²⁺ 表示一個粒子含 2 個鈣原子，右上角數字是原子個數",
-    "模型圖上一共有幾個球，就把該數字全部寫成一個化學式的下標"
+    "否，係數不可除",
+    "否，比例不同",
+    "是，因下標相同就表示係數已是最簡"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AA-4-5",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

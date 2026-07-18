@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對保險絲與接地結果，哪項說法正確？",
+  "stem": "甲列含額定電壓110 V及額定功率550 W；丙列含220 V及1200 W。依讀取電器額定電壓與功率標示完成額定電壓與額定功率比較，應如何解釋？",
   "options": [
-    "只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關",
-    "額定電壓只是建議值，110 V 電器直接接 220 V 也一定保持 550 W 且無風險",
-    "電功率為 V/I＝60 W，因為電壓應除以電流",
-    "額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W"
+    "解題時將額定 110 V、550 W 解讀成電器任何供電下都固定消耗 550 W",
+    "甲丙丁供電符合額定電壓",
+    "主張接上高於額定的電壓只會使電器更省電，不影響安全",
+    "解題時將 110 V 電器乙接到 220 V 仍列為正常使用"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關」不成立；安全節能做法包括不超過延長線額定、保持線材完好乾燥、不用時關閉高功率電器並比較實際用電量。"
+      "reason": "解題時錯將額定 110 V、550 W 解讀成電器任何供電下都固定消耗 550 W，結果會錯判供電。額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W，不可任意接更高電壓；照原做法會把供電算錯或判反。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「額定電壓只是建議值，110 V 電器直接接 220 V 也…」不成立；額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W，不可任意接…。"
+      "isCorrect": true,
+      "reason": "甲丙丁供電符合額定電壓。甲列的額定電壓為110 V、額定功率為550 W；丙列的額定電壓為220 V、額定功率為1200 W。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「電功率為 V/I＝60 W，因為電壓應除以電流」不成立；電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W。"
+      "reason": "誤以為接上高於額定的電壓只會使電器更省電，不影響安全。額定功率描述額定電壓下的工作狀態；供電差異若未通過讀取電器額定電壓與功率標示對額定電壓的控制，就不能只歸給額定功率。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W，不可任意接更高電壓」。"
+      "isCorrect": false,
+      "reason": "解題時錯將 110 V 電器乙接到 220 V 仍列為正常使用。甲丙丁供電符合額定電壓；額定功率的數值若未依額定電壓核對，會使供電無法通過讀取電器額定電壓與功率標示檢查。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
     "證據判讀",
-    "分析"
+    "推論"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要用低功率電器就可在潮濕環境摸裸露導線，安全和線材狀態無關",
-    "額定電壓只是建議值，110 V 電器直接接 220 V 也一定保持 550 W 且無風險",
-    "電功率為 V/I＝60 W，因為電壓應除以電流"
+    "解題時將額定 110 V、550 W 解讀成電器任何供電下都固定消耗 550 W",
+    "主張接上高於額定的電壓只會使電器更省電，不影響安全",
+    "解題時將 110 V 電器乙接到 220 V 仍列為正常使用"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

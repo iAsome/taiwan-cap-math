@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u20",
+  "batch": "021-u20-complete",
+  "skills": ["s002", "s003", "s007", "s008", "s013"],
+  "mc": [
+    {
+      "questionId": "u20-s007-v003",
+      "expectedContentSha256": "b0047e3459edd0a0297583bd161a6638637daa9293195b30a239115dca2d76ec",
+      "replaceText": {
+        "內切圓的圓心": "內心"
+      },
+      "reviewReplaceText": {
+        "內切圓的圓心": "內心"
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [],
+  "drawingSpecs": [],
+  "textFiles": [
+    {
+      "path": "figures/u20/fig-u20-proof-ramp-01.svg",
+      "replacements": [
+        {
+          "from": "<path class=\"mark\" d=\"M132 171 l8 -10 M315 126 l8 -10\"/>",
+          "to": "<path class=\"mark\" d=\"M132 171 l8 -10 l8 10 M315 126 l8 -10 l8 10\"/>",
+          "count": 1
+        },
+        {
+          "from": "<path class=\"mark\" d=\"M132 171 l8 -10 l8 10 M315 126 l8 -10 l8 10\"/>",
+          "to": "<path class=\"mark\" d=\"M113 194 L124 187 L121 200 M311 197 L324 190 L317 204\"/>",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "figures/u20/fig-u20-proof-roads-01.svg",
+      "replacements": [
+        {
+          "from": "<path class=\"mark\" d=\"M185 78 l7 -10 M183 188 l7 -10\"/>",
+          "to": "<path class=\"mark\" d=\"M185 78 l7 -10 l7 10 M183 188 l7 -10 l7 10\"/>",
+          "count": 1
+        },
+        {
+          "from": "<path class=\"mark\" d=\"M185 78 l7 -10 l7 10 M183 188 l7 -10 l7 10\"/>",
+          "to": "<path class=\"mark\" d=\"M185 79 L197 86 L185 91 M183 189 L195 196 L183 201\"/>",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "figures/u20/fig-u20-centroid-survey-01.svg",
+      "replacements": [
+        {
+          "from": "<path class=\"mark\" d=\"M147 247 l4 -12 M338 243 l4 -12 M309 135 l10 7 M110 185 l10 7 M130 139 l8 -10 M278 97 l8 -10\"/>",
+          "to": "<path class=\"mark\" d=\"M154 246 v12 M331 242 v12 M171 92 l10 7 M167 98 l10 7 M98 197 l10 7 M94 203 l10 7 M252 95 l8 -9 M258 101 l8 -9 M264 107 l8 -9 M357 195 l8 -9 M363 201 l8 -9 M369 207 l8 -9\"/>",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "figures/u20/fig-u20-centers-compare-01.svg",
+      "replacements": [
+        {
+          "from": "<path class=\"line\" d=\"M90 65 L88 245 M25 245 L120 155 M150 245 L58 155\"/>",
+          "to": "<path class=\"line\" d=\"M90 65 L88 245 M25 245 L120 155 M150 245 L58 155\"/><path class=\"mark\" d=\"M56 239 v12 M119 239 v12 M68 104 l10 4 M71 112 l10 4 M35 194 l10 4 M38 202 l10 4 M98 107 l10 -4 M101 115 l10 -4 M104 123 l10 -4 M128 197 l10 -4 M131 205 l10 -4 M134 213 l10 -4\"/>",
+          "count": 1
+        },
+        {
+          "from": "<path class=\"line\" d=\"M25 245 L90 65 L150 245 Z\"/><path class=\"aux\" d=\"M90 65 L88.3 200.5 M25 245 L88.3 200.5 M150 245 L88.3 200.5\"/>",
+          "to": "<path class=\"line\" d=\"M25 245 L90 65 L150 245 Z\"/><path class=\"aux\" d=\"M90 65 L88.3 200.5 M25 245 L88.3 200.5 M150 245 L88.3 200.5\"/><path class=\"mark\" d=\"M82 88 Q86 90 90 90 M90 90 Q94 90 98 88 M33 223 Q40 225 41 228 M41 228 Q46 235 49 245 M126 245 Q130 236 131 231 M131 231 Q136 225 142 222\"/>",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

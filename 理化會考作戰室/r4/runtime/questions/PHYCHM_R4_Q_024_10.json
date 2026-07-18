@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "學生根據曬衣蒸發下結論，哪項符合資料？",
+  "stem": "『模型省略細節，所以一定錯』這項說法有何缺陷？",
   "options": [
-    "水蒸氣變成液態水稱為凝固，液態水變成冰稱為凝結",
-    "粒子圖是解釋現象的模型",
-    "只有溫度達沸點才會蒸發，而沸騰只發生在液面",
-    "熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小"
+    "模型不需證據",
+    "所有細節都不重要",
+    "簡化只要不影響目標解釋就可有用",
+    "錯誤模型也永遠可接受"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「水蒸氣變成液態水稱為凝固，液態水變成冰稱為凝結」不成立；冰吸熱熔化成水，水吸熱汽化；水蒸氣冷卻凝結，水再凝固成冰。"
+      "reason": "模型仍需證據。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「粒子圖是解釋現象的模型；可表現排列與運動差異，但圖上大小和間距通常不是實際比例」。"
+      "isCorrect": false,
+      "reason": "細節重要性依問題而定。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「只有溫度達沸點才會蒸發，而沸騰只發生在液面」不成立；蒸發只在液面進行且各溫度均可發生；沸騰在特定壓力的沸點於液體內部形成氣泡。"
+      "isCorrect": true,
+      "reason": "正確界定簡化的條件。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小」不成立；物體受熱時常是粒子間平均距離增加，不是單個粒子自身膨脹。"
+      "reason": "模型必須可檢驗。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "transfer",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "論證評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "水蒸氣變成液態水稱為凝固，液態水變成冰稱為凝結",
-    "只有溫度達沸點才會蒸發，而沸騰只發生在液面",
-    "熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小"
+    "模型不需證據",
+    "所有細節都不重要",
+    "錯誤模型也永遠可接受"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-1",
       "AUTH-NATURAL-LC-AB-4-2",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

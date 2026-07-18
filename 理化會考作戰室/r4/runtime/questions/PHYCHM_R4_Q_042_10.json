@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "報告根據相對質量加總下結論，哪項符合資料？",
+  "stem": "判斷元素或化合物時，最重要先數什麼？",
   "options": [
-    "只要原子種類相同，不論排列和連結如何，巨觀性質都必然完全相同",
-    "任何性質不同的物質都必定含有不同元素，與原子排列無關",
-    "一個模型若不能同時精準呈現所有原子性質，就完全沒有科學用途",
-    "一個水分子是其粒子表示"
+    "整張圖畫了多少個粒子",
+    "一個代表粒子中的原子總數",
+    "一個代表粒子中的原子種類",
+    "不同粒子之間的距離"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要原子種類相同，不論排列和連結如何，巨觀性質都必然完全相同」不成立；石墨和金剛石都由碳原子組成，但原子排列與連結不同，因而性質明顯不同。"
+      "reason": "取樣粒子多寡不會改變每個粒子的組成。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「任何性質不同的物質都必定含有不同元素，與原子排列無關」不成立；同一元素可因原子排列不同形成性質不同的物質；不同元素若以固定比例化學結合，則形成化合物。"
+      "reason": "O₂ 含兩個原子仍屬同一元素，總數不能分類。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「一個模型若不能同時精準呈現所有原子性質，就完全沒有科學用途」不成立；球棒模型適合呈現種類、數目與連接，但不宜由球的顯示大小推斷實際原子尺寸。"
+      "isCorrect": true,
+      "reason": "原子種類數直接區分單一元素與多元素組成。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「銅元素由同類銅原子組成；水是氫、氧元素以固定比例組成的化合物，一個水分子是其粒子表示」。"
+      "isCorrect": false,
+      "reason": "間距主要表現物態，不指出含幾種元素。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "分類策略"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要原子種類相同，不論排列和連結如何，巨觀性質都必然完全相同",
-    "任何性質不同的物質都必定含有不同元素，與原子排列無關",
-    "一個模型若不能同時精準呈現所有原子性質，就完全沒有科學用途"
+    "整張圖畫了多少個粒子",
+    "一個代表粒子中的原子總數",
+    "不同粒子之間的距離"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-1",
       "AUTH-NATURAL-LC-AA-4-2",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查音叉振動紀錄，哪項判讀正確？",
+  "stem": "把 30 kHz 超聲波的振幅提高，但頻率維持 30 kHz。一般人是否因此必定聽見？",
   "options": [
-    "超聲波是頻率高於人類一般可聽範圍的聲波",
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定"
+    "不一定；頻率仍在可聽範圍之外",
+    "一定；振幅大就會變成 3 kHz",
+    "一定；響度可以取代頻率",
+    "不會；因超聲波完全沒有振幅"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射」。"
+      "reason": "頻率仍為 30000 Hz，未因振幅改變而進入可聽範圍。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險」不成立；噪音風險同時與聲音強度級和暴露時間有關；較大聲音的安全暴露時間應更短。"
+      "reason": "振幅改變不會自動把頻率除以十。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射」不成立；人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射。"
+      "reason": "響度與音調頻率是不同性質。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定」不成立；音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止。"
+      "reason": "超聲波可以有非零振幅。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要聲音不連續，無論多大聲、暴露多久都不會有聽力風險",
-    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射",
-    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定"
+    "一定；振幅大就會變成 3 kHz",
+    "一定；響度可以取代頻率",
+    "不會；因超聲波完全沒有振幅"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

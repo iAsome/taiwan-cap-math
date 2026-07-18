@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查眼鏡矯正紀錄，哪項判讀正確？",
+  "stem": "定位凸透鏡實像，至少需要什麼？",
   "options": [
-    "近視眼應佩戴凸透鏡使光更提前會聚，因為所有視力問題都用同一透鏡",
-    "透鏡成像作圖可任意畫兩條曲線，不必通過焦點或遵守光線規則",
-    "凸透鏡作圖可選用平行主軸後通過焦點、通過光心近似不偏折等主要光線",
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線"
+    "任意一條光線",
+    "兩條可追蹤折射光的實際交會",
+    "只標透鏡焦距數字",
+    "只畫物體高度"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「近視眼應佩戴凸透鏡使光更提前會聚，因為所有視力問題都用同一…」不成立；近視眼需發散透鏡輔助將遠物像後移至視網膜；相機和眼睛均利用會聚系統成實像。"
+      "reason": "一條線上有無限多可能點。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「透鏡成像作圖可任意畫兩條曲線，不必通過焦點或遵守光線規則」不成立；凸透鏡作圖可選用平行主軸後通過焦點、通過光心近似不偏折等主要光線。"
+      "isCorrect": true,
+      "reason": "兩條來自同一物點的折射線交點唯一定位像點。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「凸透鏡作圖可選用平行主軸後通過焦點、通過光心近似不偏折等主要光線」。"
+      "isCorrect": false,
+      "reason": "焦點本身不等於任意物體像點。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「光由任何介質進入另一介質時速率都不變，也永遠折向法線」不成立；光由空氣進入玻璃時速率降低，斜入射通常折向法線；由玻璃進空氣則通常偏離法線。"
+      "reason": "物高不給像位置。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "近視眼應佩戴凸透鏡使光更提前會聚，因為所有視力問題都用同一透鏡",
-    "透鏡成像作圖可任意畫兩條曲線，不必通過焦點或遵守光線規則",
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線"
+    "任意一條光線",
+    "只標透鏡焦距數字",
+    "只畫物體高度"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-7",
       "AUTH-NATURAL-LC-KA-4-8",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

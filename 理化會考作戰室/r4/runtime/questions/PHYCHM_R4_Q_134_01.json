@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LC-NA-4-4"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄討論常見塑膠標示與性質差異，哪項敘述正確？",
+  "stem": "樹脂辨識碼1代表哪種常見塑膠？",
   "options": [
-    "同一回收數字代表所有性質、添加物和可回收方式在任何地區都完全相同",
-    "所有含碳物質都必然是有機物，所有不含碳物質都不可能與有機化學有關",
-    "塑膠回收標示可輔助辨識材質，但材料的耐熱、強度與當地回收系統仍需另查",
-    "烷類、醇類、有機酸和酯類只是不同商品名，化學性質完全一樣"
+    "PET",
+    "HDPE",
+    "PP",
+    "PS"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「同一回收數字代表所有性質、添加物和可回收方式在任何地區都完…」不成立；塑膠回收標示可輔助辨識材質，但材料的耐熱、強度與當地回收系統仍需另查。"
+      "isCorrect": true,
+      "reason": "1號是PET。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「所有含碳物質都必然是有機物，所有不含碳物質都不可能與有機化…」不成立；許多有機化合物含碳，但 CO₂、碳酸鹽等常列為無機物；分類要依課程定義與組成性質。"
+      "reason": "HDPE是2號。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「塑膠回收標示可輔助辨識材質，但材料的耐熱、強度與當地回收系統仍需另查」。"
+      "isCorrect": false,
+      "reason": "PP是5號。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「烷類、醇類、有機酸和酯類只是不同商品名，化學性質完全一樣」不成立；甲烷屬烷類，乙醇屬醇類，醋酸屬有機酸，乙酸乙酯屬酯類；應根據名稱與性質辨識。"
+      "reason": "PS是6號。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "辨認",
-    "概念理解"
+    "代碼辨識"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "同一回收數字代表所有性質、添加物和可回收方式在任何地區都完全相同",
-    "所有含碳物質都必然是有機物，所有不含碳物質都不可能與有機化學有關",
-    "烷類、醇類、有機酸和酯類只是不同商品名，化學性質完全一樣"
+    "HDPE",
+    "PP",
+    "PS"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科有機物、材料性質與永續判讀層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JF-4-1",
       "AUTH-NATURAL-LC-JF-4-2",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LC-NA-4-4"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

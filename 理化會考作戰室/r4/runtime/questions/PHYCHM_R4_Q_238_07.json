@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "彈簧秤視重量出現四種說法，哪項有理化概念支持？",
+  "stem": "僅列下表面向上的作用力就當成浮力，卻未扣除上表面向下作用力，結果會錯判液體作用力。依由上下表面壓力差解釋浮力修正時，深度與面積應採哪個原理連結？",
   "options": [
-    "沒入液體的物體下表面較深、受向上壓力較大",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水"
+    "把因左右表面也受力，便把兩個方向相反且相等的力都加進浮力",
+    "沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力",
+    "主張下表面較深只會增加向下壓力，所以沒入物體不可能受向上合力",
+    "把浮力說成液體只推物體上表面，並漏掉合成上下表面的壓力作用"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力」。"
+      "isCorrect": false,
+      "reason": "解題時誤把因左右表面也受力，便把兩個方向相反且相等的力都加進浮力。左右作用互相抵消；面積的數值若未依深度核對，會使液體作用力無法通過由上下表面壓力差解釋浮力檢查。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「浮沉只由物體總質量大小決定，體積與平均密度完全不重要」不成立；物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉。"
+      "isCorrect": true,
+      "reason": "沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力。上表面列的深度為0.20 m，面積為0.010 m²；下表面列的深度為0.50 m，面積為0.010 m²。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「漂浮物體既然在水面上，就完全不受浮力，只受向下重力」不成立；漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力。"
+      "reason": "誤以為下表面較深只會增加向下壓力，所以沒入物體不可能受向上合力。沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力；深度未列入由上下表面壓力差解釋浮力時，液體作用力的面積大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水」不成立；船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉。"
+      "reason": "把浮力說成液體只推物體上表面，卻未合成上下表面的壓力作用。沒入液體的物體下表面較深、受向上壓力較大，與上表面壓力差合成向上浮力；照原做法會把液體作用力算錯或判反。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水"
+    "把因左右表面也受力，便把兩個方向相反且相等的力都加進浮力",
+    "主張下表面較深只會增加向下壓力，所以沒入物體不可能受向上合力",
+    "把浮力說成液體只推物體上表面，並漏掉合成上下表面的壓力作用"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

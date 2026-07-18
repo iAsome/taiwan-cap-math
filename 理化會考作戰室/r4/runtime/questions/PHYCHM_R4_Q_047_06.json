@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解同元素不同排列與不同元素組合，哪項修正合理？",
+  "stem": "判斷兩個粒子模型是否為相同物質，哪組資訊最完整？",
   "options": [
-    "同一元素可因原子排列不同形成性質不同的物質",
-    "元素、化合物、原子和分子是同一分類層次，任何名稱可相互代換",
-    "模型一旦改變就表示先前所有實驗都是作假，舊證據不再存在",
-    "原子核佔滿幾乎整個原子體積，電子全部固定貼在核表面"
+    "只比較元素種類而忽略數量比例",
+    "原子種類、比例與連接排列",
+    "只比較所有圓球的總顆數",
+    "只比較原子比例而忽略連接排列"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「同一元素可因原子排列不同形成性質不同的物質；不同元素若以固定比例化學結合，則形成化合物」。"
+      "isCorrect": false,
+      "reason": "相同元素可依不同比例形成不同物質。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「元素、化合物、原子和分子是同一分類層次，任何名稱可相互代換」不成立；銅元素由同類銅原子組成；水是氫、氧元素以固定比例組成的化合物，一個水分子是其粒子表示。"
+      "isCorrect": true,
+      "reason": "三者共同決定模型所示組成結構。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「模型一旦改變就表示先前所有實驗都是作假，舊證據不再存在」不成立；原子模型會在新實驗證據出現後修正；新模型應解釋既有證據，並對新現象有更好預測。"
+      "reason": "取樣粒子數可不同，總球數不能代表單粒子身分。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「原子核佔滿幾乎整個原子體積，電子全部固定貼在核表面」不成立；原子的正電與大部分質量集中在微小原子核，電子分布在核外；原子內大部分是空間。"
+      "reason": "同一比例也可能有不同排列與結構。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "證據選擇"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "元素、化合物、原子和分子是同一分類層次，任何名稱可相互代換",
-    "模型一旦改變就表示先前所有實驗都是作假，舊證據不再存在",
-    "原子核佔滿幾乎整個原子體積，電子全部固定貼在核表面"
+    "只比較元素種類而忽略數量比例",
+    "只比較所有圓球的總顆數",
+    "只比較原子比例而忽略連接排列"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-1",
       "AUTH-NATURAL-LC-AA-4-2",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

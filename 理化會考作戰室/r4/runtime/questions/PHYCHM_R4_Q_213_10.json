@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄根據轉彎運動下結論，哪項符合資料？",
+  "stem": "圖線越陡，代表什麼？",
   "options": [
-    "速度—時間圖上縱座標較大就表示加速度較大，不必比較斜率",
-    "加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度",
-    "速度—時間圖斜率為加速度；相同時間內速度變化較大的線段斜率絕對值較大",
-    "只要速率計數字不變，不論運動方向如何改變，加速度都為零"
+    "物體的速度必越大",
+    "加速度絕對值越大",
+    "物體的位置必越遠",
+    "時間必越長"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「速度—時間圖上縱座標較大就表示加速度較大，不必比較斜率」不成立；速度—時間圖斜率為加速度；相同時間內速度變化較大的線段斜率絕對值較大。"
+      "reason": "物體的速度必越大不成立。在相同軸刻度下，陡峭表示速度對時間變化率的絕對值較大。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度」不成立；加速度表示速度隨時間的變化；速度大小、方向或兩者改變都可產生加速度。"
+      "isCorrect": true,
+      "reason": "在相同軸刻度下，陡峭表示速度對時間變化率的絕對值較大。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「速度—時間圖斜率為加速度；相同時間內速度變化較大的線段斜率絕對值較大」。"
+      "isCorrect": false,
+      "reason": "物體的位置必越遠不成立。在相同軸刻度下，陡峭表示速度對時間變化率的絕對值較大。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要速率計數字不變，不論運動方向如何改變，加速度都為零」不成立；直線上快慢改變有加速度；物體以恆定快慢轉彎時方向改變，也有加速度。"
+      "reason": "時間必越長不成立。在相同軸刻度下，陡峭表示速度對時間變化率的絕對值較大。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "主張評估",
     "證據評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "速度—時間圖上縱座標較大就表示加速度較大，不必比較斜率",
-    "加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度",
-    "只要速率計數字不變，不論運動方向如何改變，加速度都為零"
+    "物體的速度必越大",
+    "物體的位置必越遠",
+    "時間必越長"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-11",
       "AUTH-NATURAL-LC-EB-4-8",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

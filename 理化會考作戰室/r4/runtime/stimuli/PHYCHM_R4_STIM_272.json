@@ -13,35 +13,40 @@
     "AUTH-NATURAL-LP-PA-4-2",
     "AUTH-NATURAL-LP-PE-4-2"
   ],
-  "title": "簡單通路：電路圖判斷短路斷路與元件狀態",
-  "body": "小組整理簡單通路資料，準備核對電路圖判斷短路斷路與元件狀態。附圖以線型、箭頭和文字標示，並可配合下表判讀。表內保留原始結果、待查說法與作答條件。",
+  "title": "斷路與短路測試：四筆紀錄",
+  "body": "斷路與短路測試記錄四種條件。正常：等效路徑經過燈泡、主線電流0.30 A、現象燈亮；開關斷開：等效路徑不連續、主線電流0 A、現象燈滅；導線跨過燈泡：等效路徑低阻旁路、主線電流3.5 A、現象線材發熱；燈絲燒斷：等效路徑燈泡內斷路、主線電流0 A、現象燈滅。",
   "dataTable": {
-    "caption": "簡單通路實驗紀錄",
+    "caption": "斷路與短路測試整理表",
     "columns": [
-      "紀錄",
-      "內容",
-      "檢核重點"
+      "狀態",
+      "等效路徑",
+      "主線電流",
+      "現象"
     ],
     "rows": [
       [
-        "觀察或計算",
-        "斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險",
-        "對照觀察或計算"
+        "正常",
+        "經過燈泡",
+        "0.30 A",
+        "燈亮"
       ],
       [
-        "同學推論",
-        "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-        "找出與資料矛盾處"
+        "開關斷開",
+        "不連續",
+        "0 A",
+        "燈滅"
       ],
       [
-        "適用條件",
-        "電阻不等於單次量得的電壓或電流；量表接法錯誤可能造成短路或讀不到正確值",
-        "界定結論範圍"
+        "導線跨過燈泡",
+        "低阻旁路",
+        "3.5 A",
+        "線材發熱"
       ],
       [
-        "表示方式",
-        "電流 A、電壓 V、電阻 Ω；電路圖使用標準符號並標節點",
-        "核對物理量與單位"
+        "燈絲燒斷",
+        "燈泡內斷路",
+        "0 A",
+        "燈滅"
       ]
     ]
   },
@@ -51,7 +56,7 @@
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",

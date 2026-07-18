@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解加入量與pH變化判斷過量一方，哪項修正合理？",
+  "stem": "酸濃度為鹼3倍、體積相同且1：1反應，混合後？",
   "options": [
-    "中和是否放熱應用手直接觸摸容器，不需溫度計或對照資料",
-    "逐滴加鹼時 pH 由 2 升到 9",
-    "中和會把酸性與鹼性一起消滅，因此反應後質量必少於反應前",
-    "化學上所有鹽類都是可食的氯化鈉，名稱與用途完全相同"
+    "鹼過量",
+    "酸過量",
+    "無反應",
+    "必定中性"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「中和是否放熱應用手直接觸摸容器，不需溫度計或對照資料」不成立；相同裝置中酸鹼混合後溫度上升，若排除外加熱，可支持中和放熱。"
+      "reason": "鹼較少。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「逐滴加鹼時 pH 由 2 升到 9，終點後溶液偏鹼，表示鹼已過量，不可只看混合過就判中性」。"
+      "reason": "酸反應量是鹼三倍。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「中和會把酸性與鹼性一起消滅，因此反應後質量必少於反應前」不成立；密閉中和系統反應前後總質量守恆；資料表的未知量應由所有反應物與生成物加總求得。"
+      "reason": "仍會部分中和。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「化學上所有鹽類都是可食的氯化鈉，名稱與用途完全相同」不成立；氯化鈉是食鹽，碳酸氫鈉可用於烘焙，但「鹽」是一大類物質，不只指氯化鈉。"
+      "reason": "反應量不等。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "濃度比較"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "中和是否放熱應用手直接觸摸容器，不需溫度計或對照資料",
-    "中和會把酸性與鹼性一起消滅，因此反應後質量必少於反應前",
-    "化學上所有鹽類都是可食的氯化鈉，名稱與用途完全相同"
+    "鹼過量",
+    "無反應",
+    "必定中性"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科中和、資料判讀與生活應用層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

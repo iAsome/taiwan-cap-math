@@ -49,51 +49,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估家庭節能報告時，哪項說明正確？",
+  "stem": "表中乙的成本區間為中，對應生命週期排放低與可用率中。要讓他人重現成本區間，表格還須交代什麼？",
   "options": [
-    "比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響",
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性",
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統"
+    "主張成本最低的方案一定同時最安全、最可靠且環境影響最小",
+    "單一小時電價不能代表全生命週期影響",
+    "僅用單一小時電價比較發電方式",
+    "把不同年份或功能單位的資料直接並列，卻不標示定義差異"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響」。"
+      "isCorrect": false,
+      "reason": "誤以為成本最低的方案一定同時最安全、最可靠且環境影響最小。比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響；生命週期排放未列入分析發電方式的環境經濟與社會影響時，成本區間的可用率大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標…」不成立；可檢驗的節能決策應寫明基準用能、具體措施、量測期間、成功指標與氣溫、使用人數等不確定因素。"
+      "isCorrect": true,
+      "reason": "單一小時電價不能代表全生命週期影響。丁列的生命週期排放為中，可用率為低；甲列的生命週期排放為高，可用率為高。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「發電決策只要比較單一小時電價，其他環境、系統與社會資料都應…」不成立；比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響。"
+      "reason": "僅用單一小時電價比較發電方式，忽略生命週期排放、可靠性與社會影響。比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響；照原做法會把成本區間算錯或判反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源…」不成立；能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式。"
+      "reason": "解題時誤把不同年份或功能單位的資料直接並列，卻不標示定義差異，結果會錯判成本區間。指標定義、年份與功能單位必須一致；成本區間差異若未通過分析發電方式的環境經濟與社會影響對生命週期排放的控制，就不能只歸給可用率。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性",
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統"
+    "主張成本最低的方案一定同時最安全、最可靠且環境影響最小",
+    "僅用單一小時電價比較發電方式",
+    "把不同年份或功能單位的資料直接並列，卻不標示定義差異"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-INA-4-1",
       "AUTH-NATURAL-LC-INA-4-2",
@@ -139,19 +139,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

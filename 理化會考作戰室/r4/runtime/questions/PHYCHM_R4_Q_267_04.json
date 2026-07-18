@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查串聯電路紀錄，哪項判讀正確？",
+  "stem": "解題時錯將電流、電壓與電阻視為同一物理量，只因它們都和電路有關。用區分電流電壓與電阻概念檢查這個做法，單位應如何重判？",
   "options": [
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "電壓是每單位電荷的能量差",
-    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過"
+    "主張電阻是電荷每秒流過多少，混淆電阻與電流的定義",
+    "電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙",
+    "解題時將電流、電壓與電阻視為同一物理量，只因它們都和電路有關",
+    "數值同為 6.0 就互換 A 與 V，並漏掉核對量測意義和儀器接法"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「電流、電壓與電阻是同一物理量的三個名稱，單位也可互換」不成立；電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。"
+      "reason": "誤以為電阻是電荷每秒流過多少，混淆電阻與電流的定義。電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙；物理意義未列入區分電流電壓與電阻概念時，單位的數值大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路」不成立；電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整。"
+      "isCorrect": true,
+      "reason": "電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。電流列的物理意義為每秒通過截面的電荷量，數值為0.50；電壓列的物理意義為每單位電荷能量差，數值為6.0。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙」。"
+      "isCorrect": false,
+      "reason": "解題時錯將電流、電壓與電阻視為同一物理量，只因它們都和電路有關。電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙；照原做法會把單位算錯或判反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過」不成立；安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性。"
+      "reason": "數值同為 6.0 就互換 A 與 V，卻未核對量測意義和儀器接法，結果會錯判單位。數值相同也不能互換名稱與單位；單位差異若未通過區分電流電壓與電阻概念對物理意義的控制，就不能只歸給數值。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀",
+    "條件判斷",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過"
+    "主張電阻是電荷每秒流過多少，混淆電阻與電流的定義",
+    "解題時將電流、電壓與電阻視為同一物理量，只因它們都和電路有關",
+    "數值同為 6.0 就互換 A 與 V，並漏掉核對量測意義和儀器接法"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

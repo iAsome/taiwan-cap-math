@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "根據沉澱反應紀錄，哪項判讀合理？",
+  "stem": "冰熔化後可再凝固，判為物理變化的主要理由為何？",
   "options": [
-    "只要外觀或形狀改變，無論有無新物質，都必然是化學變化",
-    "水沸騰產生氣泡就表示生成新氣體，所以必為化學反應",
-    "性質改變只要能恢復外觀就必然沒有新物質，無需檢驗",
-    "部分化學反應也可逆"
+    "任何可恢復過程都沒有能量變化",
+    "前後都是 H₂O，只改變物態",
+    "冷卻會把所有反應產物消除",
+    "液態物質一定不是新物質"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要外觀或形狀改變，無論有無新物質，都必然是化學變化」不成立；物理變化不產生新物質；化學變化形成性質不同的新物質，應以反應前後證據判斷。"
+      "reason": "熔化與凝固都伴隨能量傳遞。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「水沸騰產生氣泡就表示生成新氣體，所以必為化學反應」不成立；冰熔化、水沸騰都只改變 H₂O 的狀態，沒有形成新物質，屬物理變化。"
+      "isCorrect": true,
+      "reason": "固態冰與液態水的物質身分相同。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「性質改變只要能恢復外觀就必然沒有新物質，無需檢驗」不成立；鐵生鏽後產物的顏色、導電等性質與鐵不同，可支持形成新物質。"
+      "reason": "冷卻不會普遍逆轉化學反應。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「物理變化常可逆，但「可逆」不是分類標準；部分化學反應也可逆，核心仍是新物質」。"
+      "isCorrect": false,
+      "reason": "液態也可能是化學反應的產物。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
-    "概念理解"
+    "實例解釋"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要外觀或形狀改變，無論有無新物質，都必然是化學變化",
-    "水沸騰產生氣泡就表示生成新氣體，所以必為化學反應",
-    "性質改變只要能恢復外觀就必然沒有新物質，無需檢驗"
+    "任何可恢復過程都沒有能量變化",
+    "冷卻會把所有反應產物消除",
+    "液態物質一定不是新物質"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-AB-4-3",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

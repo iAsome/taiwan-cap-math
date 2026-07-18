@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對食鹽水配製結果，哪項說法正確？",
+  "stem": "同為 200 g 溶液，甲含 20 g 糖，乙含 30 g 糖，何者濃度較高？",
   "options": [
-    "20 g 食鹽加 80 g 水形成 100 g 溶液，重量百分濃度為 20%",
-    "250 g、12% 的溶液含溶質 262 g，因為應把百分數直接加上溶液質量",
-    "5 ppm 和 5% 完全相同，都表示每一百份中有 5 份",
-    "加水稀釋會同時減少原有溶質的質量，所以濃度才下降"
+    "無法比較因溶液質量相同",
+    "乙",
+    "相同",
+    "甲"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「20 g 食鹽加 80 g 水形成 100 g 溶液，重量百分濃度為 20%」。"
+      "isCorrect": false,
+      "reason": "分母相同更容易比較。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「250 g、12% 的溶液含溶質 262 g，因為應把百分…」不成立；250 g、12% 的溶液含溶質 30 g，因為溶質質量＝濃度×溶液質量。"
+      "isCorrect": true,
+      "reason": "乙為 15%，甲為 10%。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「5 ppm 和 5% 完全相同，都表示每一百份中有 5 份」不成立；5 ppm 表示在題目指定的比例基準下，每一百萬份中有 5 份目標成分。"
+      "reason": "溶質量不同。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「加水稀釋會同時減少原有溶質的質量，所以濃度才下降」不成立；對溶液只加水而沒有溶質進出時，溶質質量不變、溶液質量增加，因此濃度降低。"
+      "reason": "20/200 小於 30/200。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "比較計算"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "250 g、12% 的溶液含溶質 262 g，因為應把百分數直接加上溶液質量",
-    "5 ppm 和 5% 完全相同，都表示每一百份中有 5 份",
-    "加水稀釋會同時減少原有溶質的質量，所以濃度才下降"
+    "無法比較因溶液質量相同",
+    "相同",
+    "甲"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AB-4-4",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

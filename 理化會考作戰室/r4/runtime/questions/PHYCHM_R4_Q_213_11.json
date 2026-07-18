@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組受力與質量比較資料，哪項判讀仍合理？",
+  "stem": "速度—時間圖線穿過橫軸時，斜率仍為 +2 m/s²。當下加速度為何？",
   "options": [
-    "平均加速度是 (10＋4)/3＝4.67 m/s²，因為速度變化量要相加",
-    "圓周運動的快慢恆定就表示速度向量恆定，所以加速度必為零",
-    "物體質量越大，在相同合力下速度改變必然越快",
-    "速度—時間圖斜率為加速度"
+    "物體的加速度為 0",
+    "物體的加速度改為負值",
+    "仍為 +2 m/s²",
+    "無法定義加速度"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「平均加速度是 (10＋4)/3＝4.67 m/s²，因為速…」不成立；速度由 4 m/s 在 3 s 內均勻變為 10 m/s，平均加速度為 (10−4)/3＝2 …。"
+      "reason": "物體的加速度為 0不成立。速度為零不會使圖線斜率消失，加速度仍是 +2 m/s²。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「圓周運動的快慢恆定就表示速度向量恆定，所以加速度必為零」不成立；等速圓周運動雖速度大小不變，速度方向持續改變，因此具有指向圓心的加速度。"
+      "reason": "物體的加速度改為負值不成立。速度為零不會使圖線斜率消失，加速度仍是 +2 m/s²。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「物體質量越大，在相同合力下速度改變必然越快」不成立；質量相同時，合力較大者速度改變較快；合力相同時，質量較大者速度改變較慢。"
+      "isCorrect": true,
+      "reason": "速度為零不會使圖線斜率消失，加速度仍是 +2 m/s²。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「速度—時間圖斜率為加速度；相同時間內速度變化較大的線段斜率絕對值較大」。"
+      "isCorrect": false,
+      "reason": "無法定義加速度不成立。速度為零不會使圖線斜率消失，加速度仍是 +2 m/s²。"
     }
   ],
   "difficulty": "transfer",
@@ -46,16 +46,16 @@
     "情境遷移",
     "應用"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "平均加速度是 (10＋4)/3＝4.67 m/s²，因為速度變化量要相加",
-    "圓周運動的快慢恆定就表示速度向量恆定，所以加速度必為零",
-    "物體質量越大，在相同合力下速度改變必然越快"
+    "物體的加速度為 0",
+    "物體的加速度改為負值",
+    "無法定義加速度"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-11",
       "AUTH-NATURAL-LC-EB-4-8",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

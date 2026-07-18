@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於電路、電流、電壓與電阻中的現象，哪項結論符合題給條件？",
+  "stem": "並列安培計丙與伏特計丁，兩者連接位置是直接跨電池、串聯主支路，量程是0–1 A、0–10 V。套用正確連接安培計與伏特計到這兩列，哪項連接位置條件必須保留？",
   "options": [
-    "安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換",
-    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓"
+    "解題時將安培計並聯在電池兩端，因內阻小而造成過大電流",
+    "實際接線還要檢查極性與量程，初次量測宜由較大量程開始",
+    "把初次量測直接選最小量程且不查極性，增加儀表受損或超量程風險",
+    "把伏特計串聯主支路的讀值當成電阻兩端電壓"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性」。"
+      "isCorrect": false,
+      "reason": "解題時錯將安培計並聯在電池兩端，因內阻小而造成過大電流。安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性；照原做法會把讀值算錯或判反。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路」不成立；電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整。"
+      "isCorrect": true,
+      "reason": "實際接線還要檢查極性與量程，初次量測宜由較大量程開始。安培計甲列的連接位置為串聯主支路，量程為0–1 A；伏特計乙列的連接位置為並聯電阻兩端，量程為0–10 V。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「電流、電壓與電阻是同一物理量的三個名稱，單位也可互換」不成立；電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。"
+      "reason": "解題時誤把初次量測直接選最小量程且不查極性，增加儀表受損或超量程風險。實際接線還要檢查極性與量程，初次量測宜由較大量程開始；讀值差異若未通過正確連接安培計與伏特計對連接位置的控制，就不能只歸給量程。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「電阻為 I/V＝0.083 Ω，因為電流應除以電壓」不成立；某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω。"
+      "reason": "把伏特計串聯主支路的讀值當成電阻兩端電壓，結果會錯判讀值。甲乙接法可分別量支路電流與元件電壓；量程的數值若未依連接位置核對，會使讀值無法通過正確連接安培計與伏特計檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "條件判斷",
-    "分析"
+    "應用"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換",
-    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓"
+    "解題時將安培計並聯在電池兩端，因內阻小而造成過大電流",
+    "把初次量測直接選最小量程且不查極性，增加儀表受損或超量程風險",
+    "把伏特計串聯主支路的讀值當成電阻兩端電壓"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

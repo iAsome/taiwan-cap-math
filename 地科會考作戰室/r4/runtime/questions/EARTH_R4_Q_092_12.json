@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-PA-4-1"
   ],
   "stimulusId": null,
-  "stem": "把暖流寒流對沿岸氣候的影響的判準移到另一個情境時，哪一項作法較適當？",
+  "stem": "要在另一洲檢驗暖、寒流的沿岸氣候影響，哪一項比較最完整？",
   "options": [
-    "改看「從逐時水位辨認潮汐週期」後，只採用支持原想法的一筆紀錄",
-    "改看「從逐時水位辨認潮汐週期」後，省略所有單位",
-    "只寫暖流寒流對沿岸氣候的影響的概念名稱，不記錄「從逐時水位辨認潮汐週期」的觀測",
-    "把判讀移到「從逐時水位辨認潮汐週期」時，仍先先辨認資料描述的是週期水位、波能傳遞或水團位移"
+    "選緯度差很大的城市，只比較一天最高溫，並把差異全歸因於外海海流。",
+    "只讀各站年雨量，較濕地點直接標成暖流海岸，完全不核對風向、天氣系統與山脈位置。",
+    "略去風與山脈，把全部氣候差歸給海流。",
+    "選相近緯度與同期沿岸站，比較海溫、風向、地形、氣溫和雨量。"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "換情境仍須比較完整資料與替代解釋。"
+      "reason": "緯度與日期都未控制，單日最高溫差不能全歸因於海流。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "跨情境比較更需要一致單位。"
+      "reason": "只用年雨量標示海流會混入風向、天氣系統與山脈的作用。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "概念名稱不能取代實際資料。"
+      "reason": "省略風與山脈後，無法區分水氣來源、向岸輸送及地形抬升。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "新情境保留相同變因、證據與適用範圍。"
+      "reason": "相近緯度、同期站點控制主要背景差異，再共同比較海溫、風、地形、氣溫與雨量。"
     }
   ],
   "difficulty": "transfer",
@@ -49,7 +49,7 @@
   ],
   "representationType": "transfer-scenario",
   "misconceptionTargets": [
-    "全年海流方向在任何海域都固定不變"
+    "只讀各站年雨量，較濕地點直接標成暖流海岸，完全不核對風向、天氣系統與山脈位置。"
   ],
   "provenance": {
     "status": "original",
@@ -68,17 +68,15 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "逐項核對「比較岬角與海灣的侵蝕沉積」的條件後，「把判讀移到「從逐時水位辨認潮汐週期」時，仍先先辨認資料描述的是週期水位、波能傳遞或水團位移」符合題目資料；查核依據為：海溫、鹽度、密度、流向、波向與海岸沉積資料可連結海洋運動和沿岸環境。",
+      "evidence": "跨洲比較先控制緯度與時期，再並列海溫、風向、地形和溫雨資料，才能檢查海流影響是否仍然存在。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「波浪前進不表示同一團海水一路移到岸邊」。",
+      "evidence": "緯度差、單一溫度或雨量，以及刪去風與山脈，都會留下足以取代海流解釋的混淆因素。",
       "status": "pass"
     }
   ],
-  "assets": [
-    "EARTH_R4_ASSET_TIDE"
-  ]
+  "assets": []
 }

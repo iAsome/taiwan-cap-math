@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查滑輪組紀錄，哪項判讀正確？",
+  "stem": "誤以為任何槓桿配置都一定省力，卻未比較施力臂與抗力臂。用分析槓桿支點施力點與抗力點檢查這個做法，抗力臂應如何重判？",
   "options": [
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "施力點和抗力點的力臂決定省力、省距離或改變方向的效果",
-    "理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量",
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關"
+    "解題時將支點、施力點與抗力點的位置名稱互換後仍沿用原本力矩關係",
+    "主張任何槓桿配置都一定省力，並漏掉比較施力臂與抗力臂",
+    "槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果",
+    "力並漏掉垂直槓桿時仍把桿長當成完整力臂"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「機械只要省力就一定同時省距離與省時，不存在任何交換」不成立；省力機械通常要施力移動較長距離；改變方向不必然省力，「省時」與「省力」要分開。"
+      "reason": "解題時錯將支點、施力點與抗力點的位置名稱互換後仍沿用原本力矩關係，結果會錯判抗力臂。槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果；支點位置未列入分析槓桿支點施力點與抗力點時，抗力臂的施力臂大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果」。"
+      "isCorrect": false,
+      "reason": "誤以為任何槓桿配置都一定省力，卻未比較施力臂與抗力臂。槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果；照原做法會把抗力臂算錯或判反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量」不成立；理想機械輸入功等於輸出功；可用較小力換較長施力距離，但不能無中生有省功。"
+      "isCorrect": true,
+      "reason": "槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果。共同抗力列的支點位置為—，施力臂為—；甲列的支點位置為兩力之間，施力臂為0.60 m。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關」不成立；槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果。"
+      "reason": "力沒有垂直槓桿時仍把桿長當成完整力臂，結果會錯判抗力臂。結果以理想剛性槓桿、力垂直作用為前提；抗力臂差異若未通過分析槓桿支點施力點與抗力點對支點位置的控制，就不能只歸給施力臂。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀",
+    "條件判斷",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量",
-    "任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關"
+    "解題時將支點、施力點與抗力點的位置名稱互換後仍沿用原本力矩關係",
+    "主張任何槓桿配置都一定省力，並漏掉比較施力臂與抗力臂",
+    "力並漏掉垂直槓桿時仍把桿長當成完整力臂"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

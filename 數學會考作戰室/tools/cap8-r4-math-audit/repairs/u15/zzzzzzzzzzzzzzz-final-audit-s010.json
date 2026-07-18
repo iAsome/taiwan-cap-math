@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u15",
+  "batch": "016-u15-complete",
+  "skills": ["s010"],
+  "mc": [],
+  "constructedResponse": [],
+  "lectures": [
+    {
+      "lectureId": "u15-s010-lecture",
+      "expectedContentSha256": "c92573fa53535a08254af806d5c744b60217cad7f4d7880115d0043c676b1e66",
+      "set": {
+        "definitionsAndMeaning": "點(a,b)位於函數圖形上，表示輸入a時輸出b，也就是f(a)=b；反找指定輸出時，必須列出該水平線與定義域內圖形的所有交點。"
+      },
+      "replaceText": {
+        "函數圖形上標示點 (2,5)。由圖讀出 f(2)，並說明橫坐標與縱坐標的角色。": "函數圖形上標示點(-4,3)。由圖讀出f(-4)，並說明橫坐標與縱坐標的角色。",
+        "圖上有點 (2,5)，所以 f(2)=5；二是輸入，五是對應輸出。": "圖上有點(-4,3)，所以f(-4)=3；負四是輸入，三是對應輸出。",
+        "先確認橫軸表示輸入 x、縱軸表示輸出。": "先確認橫軸表示輸入x、縱軸表示輸出。",
+        "讀點的第一坐標二並代入函數括號。": "讀點的第一坐標負四，連同負號代入函數括號。",
+        "讀第二坐標五，寫成 f(2)=5 並用原點回查。": "讀第二坐標三，寫成f(-4)=3並用原點回查。",
+        "函數圖上的序對固定先寫輸入再寫輸出；把二放進括號、五放在等號右邊，能同時核對坐標順序，避免把同一點誤寫成 f(5)=2。": "函數圖上的序對固定先寫輸入再寫輸出；保留輸入的負號並把三放在等號右邊，可避免交換坐標或擅自改變符號。"
+      }
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u15-fig-read-point",
+      "expectedContentSha256": "d9f227642b7dce28f1dd6c72b42d6ec68c6ee9990185bd6731e16d424f5c178c",
+      "replaceText": {
+        "336.0": "390",
+        "209.8": "235",
+        "218": "200",
+        "245": "300",
+        "285": "310",
+        "158": "120"
+      }
+    },
+    {
+      "figureId": "u15-s010-mc07-fig",
+      "expectedContentSha256": "7933eae26c9e680884d25b92596b94b78e6dbb171914ff572a2ef450e22fc2ac",
+      "replaceText": {
+        "92": "120",
+        "230": "265"
+      }
+    },
+    {
+      "figureId": "u15-s010-cr01-fig",
+      "expectedContentSha256": "949af9066f54ad89b1570edf91f1eb58d2adac52675568eab64f919604c724a6",
+      "replaceText": {
+        "336.0": "360",
+        "192.0": "250",
+        "159.4": "100",
+        "306.3": "295",
+        "302.3": "310",
+        "214.9": "195",
+        "516.6": "470",
+        "77.7": "70"
+      }
+    },
+    {
+      "figureId": "u15-s010-cr02-fig",
+      "expectedContentSha256": "83a37b8ad710bf1d02c268218bfa13f8a760a62360789df77aa5b99fe029f94a",
+      "replaceText": {
+        "336.0": "400",
+        "242.2": "190",
+        "275.5": "285",
+        "174.2": "150"
+      }
+    }
+  ],
+  "textFiles": [
+    {
+      "path": "figures/u15/u15-fig-read-point.svg",
+      "replacements": [
+        {"from":"<text x=\"336.0\" y=\"209.8\" font-size=\"14\">f</text>","to":"<text x=\"390\" y=\"235\" font-size=\"14\">f</text>","count":1},
+        {"from":"<text x=\"218\" y=\"245\" font-size=\"14\">g</text>","to":"<text x=\"200\" y=\"300\" font-size=\"14\">g</text>","count":1},
+        {"from":"<text x=\"285\" y=\"158\" font-size=\"14\">交點 (2,4)</text>","to":"<text x=\"310\" y=\"120\" font-size=\"14\">交點 (2,4)</text>","count":1}
+      ]
+    },
+    {
+      "path": "figures/u15/u15-s010-mc07-fig.svg",
+      "replacements": [
+        {"from":"<text x=\"180\" y=\"92\" font-size=\"14\">f</text>","to":"<text x=\"180\" y=\"120\" font-size=\"14\">f</text>","count":1},
+        {"from":"<text x=\"230\" y=\"230\" font-size=\"14\">g</text>","to":"<text x=\"265\" y=\"265\" font-size=\"14\">g</text>","count":1}
+      ]
+    },
+    {
+      "path": "figures/u15/u15-s010-cr01-fig.svg",
+      "replacements": [
+        {"from":"<text x=\"336.0\" y=\"192.0\" font-size=\"14\">f</text>","to":"<text x=\"360\" y=\"250\" font-size=\"14\">f</text>","count":1},
+        {"from":"<text x=\"159.4\" y=\"306.3\" font-size=\"14\">(-2,0)</text>","to":"<text x=\"100\" y=\"295\" font-size=\"14\">(-2,0)</text>","count":1},
+        {"from":"<text x=\"302.3\" y=\"214.9\" font-size=\"14\">(0,4)</text>","to":"<text x=\"310\" y=\"195\" font-size=\"14\">(0,4)</text>","count":1},
+        {"from":"<text x=\"516.6\" y=\"77.7\" font-size=\"14\">(3,10)</text>","to":"<text x=\"470\" y=\"70\" font-size=\"14\">(3,10)</text>","count":1}
+      ]
+    },
+    {
+      "path": "figures/u15/u15-s010-cr02-fig.svg",
+      "replacements": [
+        {"from":"<text x=\"336.0\" y=\"209.8\" font-size=\"14\">f</text>","to":"<text x=\"400\" y=\"209.8\" font-size=\"14\">f</text>","count":1},
+        {"from":"<text x=\"242.2\" y=\"209.8\" font-size=\"14\">g</text>","to":"<text x=\"190\" y=\"209.8\" font-size=\"14\">g</text>","count":1},
+        {"from":"<text x=\"275.5\" y=\"174.2\" font-size=\"14\">交點</text>","to":"<text x=\"285\" y=\"150\" font-size=\"14\">交點</text>","count":1}
+      ]
+    }
+  ]
+}

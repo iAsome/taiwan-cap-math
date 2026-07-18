@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估車輛慣性報告時，哪項說明正確？",
+  "stem": "作用力與反作用力在時間上有何關係？",
   "options": [
-    "作用力與反作用力同時作用在同一物體，因此永遠互相抵銷",
-    "力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的意義",
-    "人推牆的力與牆推人的力是作用力反作用力，大小相等、方向相反，但作用在不同物體",
-    "合力只需把大小相加，所以向右 8 N 與向左 3 N 的合力是 11 N"
+    "同時產生也同時消失",
+    "作用力先出現",
+    "反作用力先出現",
+    "兩力時間互不相關"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「作用力與反作用力同時作用在同一物體，因此永遠互相抵銷」不成立；人推牆的力與牆推人的力是作用力反作用力，大小相等、方向相反，但作用在不同物體。"
+      "isCorrect": true,
+      "reason": "力對來自同一交互作用，不存在先後延遲。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的…」不成立；力的箭頭長度表示大小、箭頭指向表示方向、起點標在作用點，三項都是力的表示資訊。"
+      "reason": "作用力先出現與受力條件不符。力對來自同一交互作用，不存在先後延遲。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「人推牆的力與牆推人的力是作用力反作用力，大小相等、方向相反，但作用在不同物體」。"
+      "isCorrect": false,
+      "reason": "反作用力先出現與受力條件不符。力對來自同一交互作用，不存在先後延遲。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「合力只需把大小相加，所以向右 8 N 與向左 3 N 的合…」不成立；同直線上向右 8 N 與向左 3 N 的合力為向右 5 N；相反方向力要取差並保留方向。"
+      "reason": "兩力時間互不相關與受力條件不符。力對來自同一交互作用，不存在先後延遲。"
     }
   ],
   "difficulty": "transfer",
@@ -50,16 +50,16 @@
     "限制評估",
     "高層推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "作用力與反作用力同時作用在同一物體，因此永遠互相抵銷",
-    "力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的意義",
-    "合力只需把大小相加，所以向右 8 N 與向左 3 N 的合力是 11 N"
+    "作用力先出現",
+    "反作用力先出現",
+    "兩力時間互不相關"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

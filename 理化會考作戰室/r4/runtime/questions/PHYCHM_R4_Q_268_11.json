@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組串聯電路資料，哪項判讀仍合理？",
+  "stem": "並列安培計甲與安培計丙，兩者連接位置是串聯主支路、直接跨電池，量程是0–1 A、0–1 A。這組讀值資料對應哪個定義或定律？",
   "options": [
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "伏特計並聯在待測元件兩端",
-    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過"
+    "把伏特計串聯主支路的讀值當成電阻兩端電壓",
+    "安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性",
+    "主張安培計與伏特計接法可以互換，只要畫在電路圖上即可",
+    "解題時將安培計並聯在電池兩端，因內阻小而造成過大電流"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆」不成立；並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。"
+      "reason": "把伏特計串聯主支路的讀值當成電阻兩端電壓，結果會錯判讀值。甲乙接法可分別量支路電流與元件電壓；量程的數值若未依連接位置核對，會使讀值無法通過正確連接安培計與伏特計檢查。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「短路和斷路都只會使電流完全為零，不可能出現過大電流」不成立；斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險。"
+      "isCorrect": true,
+      "reason": "安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性。安培計丙列的連接位置為直接跨電池，量程為0–1 A；伏特計丁列的連接位置為串聯主支路，量程為0–10 V。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性」。"
+      "isCorrect": false,
+      "reason": "誤以為安培計與伏特計接法可以互換，只要畫在電路圖上即可。安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性；連接位置未列入正確連接安培計與伏特計時，讀值的量程大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過」不成立；安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性。"
+      "reason": "解題時錯將安培計並聯在電池兩端，因內阻小而造成過大電流。安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性；照原做法會把讀值算錯或判反。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過"
+    "把伏特計串聯主支路的讀值當成電阻兩端電壓",
+    "主張安培計與伏特計接法可以互換，只要畫在電路圖上即可",
+    "解題時將安培計並聯在電池兩端，因內阻小而造成過大電流"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

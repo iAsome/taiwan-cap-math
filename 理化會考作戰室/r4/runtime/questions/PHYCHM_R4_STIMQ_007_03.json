@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_007",
-  "stem": "天平歸零題組中，哪項說明符合紀錄？",
+  "stem": "若直接平均乙的四筆，能否消除其主要問題？",
   "options": [
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可",
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受",
-    "反應時差引起的忽大忽小屬隨機變動",
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失"
+    "不能，因平均不能用於溫度",
+    "能，平均一定等於 0 °C",
+    "能，因有四筆",
+    "不能，平均仍約為 2.0 °C"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「三次不相同表示實驗失敗，只保留最接近預期的 10.0 s …」不成立；量得 9.8、10.1、10.0 s 的平均約為 10.0 s，差異可用範圍或離散情形描述，不…。"
+      "reason": "溫度可計算平均。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受」不成立；成人桌子高度約 0.7 m；若記成 70 m，即使計算步驟完整，也應由量級發現單位或小數點錯誤。"
+      "reason": "固定偏差不會變成零。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動」。"
+      "isCorrect": false,
+      "reason": "筆數不修正校正差。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「只要重複次數足夠多，未歸零造成的固定偏差就會自動消失」不成立；天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動。"
+      "isCorrect": true,
+      "reason": "(2.1+1.9+2.0+2.1)÷4 約 2.0。"
     }
   ],
   "difficulty": "transfer",
@@ -49,14 +49,14 @@
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可",
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受",
-    "只要重複次數足夠多，未歸零造成的固定偏差就會自動消失"
+    "不能，因平均不能用於溫度",
+    "能，平均一定等於 0 °C",
+    "能，因有四筆"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -66,19 +66,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

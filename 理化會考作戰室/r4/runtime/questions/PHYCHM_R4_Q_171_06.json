@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解頻率振幅與波形判斷音調響度音色，哪項修正合理？",
+  "stem": "示波圖相鄰兩波峰間隔縮短，但峰值高度不變。最合理的判讀是什麼？",
   "options": [
-    "波形特徵與音色有關",
-    "真空中的聲音傳得最快，因為沒有空氣阻力",
-    "音調較高的聲音一定在空氣中傳得較快，因為頻率較大",
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程"
+    "此波的頻率降低、音調降低",
+    "頻率升高、音調升高，響度條件近似不變",
+    "此波的振幅增大、聲音變響",
+    "音色必完全改變"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「頻率主要影響音調，振幅與響度有關，波形特徵與音色有關，三者不可互換」。"
+      "isCorrect": false,
+      "reason": "週期縮短使頻率升高。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「真空中的聲音傳得最快，因為沒有空氣阻力」不成立；聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質。"
+      "isCorrect": true,
+      "reason": "T 變短令 f＝1/T 增大；振幅仍相同。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「音調較高的聲音一定在空氣中傳得較快，因為頻率較大」不成立；聲速由介質與溫度等條件決定；在同一介質同條件下，高低音的聲速近似相同。"
+      "reason": "峰值高度未變，振幅沒有增大。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「距離為 340×0.40＝136 m，因為回聲時間只包含單程」不成立；回聲測距的聲波經往返路程；若聲速 340 m/s、往返 0.40 s，距離為 68 m。"
+      "reason": "單由週期改變不能斷定音色完全改變。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "真空中的聲音傳得最快，因為沒有空氣阻力",
-    "音調較高的聲音一定在空氣中傳得較快，因為頻率較大",
-    "距離為 340×0.40＝136 m，因為回聲時間只包含單程"
+    "此波的頻率降低、音調降低",
+    "此波的振幅增大、聲音變響",
+    "音色必完全改變"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-3",
       "AUTH-NATURAL-LC-KA-4-4",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

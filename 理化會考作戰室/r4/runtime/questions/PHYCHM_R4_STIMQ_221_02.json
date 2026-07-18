@@ -15,50 +15,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_221",
-  "stem": "檢查表中關於合力質量與加速度的說法，哪項判讀正確？",
+  "stem": "依表格，A 與 C 受力同為 3 N，為何 A 加速度較大？",
   "options": [
-    "質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少",
-    "作用力與反作用力同時作用在同一物體，因此永遠互相抵銷",
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關",
-    "或合力相同時質量較小"
+    "A 的質量較大",
+    "C 的受力方向不同",
+    "A 的質量較小",
+    "C 的合力為零"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少」不成立；質量是物體慣性的量度，重量是物體所受重力，在不同星體可改變；單位分別常用 kg 與 N。"
+      "reason": "A 的質量較大與受力條件不符。A 為 1 kg、C 為 2 kg，同力下較小質量有較大加速度。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「作用力與反作用力同時作用在同一物體，因此永遠互相抵銷」不成立；人推牆的力與牆推人的力是作用力反作用力，大小相等、方向相反，但作用在不同物體。"
+      "reason": "C 的受力方向不同與受力條件不符。A 為 1 kg、C 為 2 kg，同力下較小質量有較大加速度。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「加速度方向永遠和物體當下運動方向相同，與合力方向無關」不成立；物體的加速度方向與合力相同；質量相同時合力較大，或合力相同時質量較小，加速度較大。"
+      "isCorrect": true,
+      "reason": "A 為 1 kg、C 為 2 kg，同力下較小質量有較大加速度。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體的加速度方向與合力相同；質量相同時合力較大，或合力相同時質量較小，加速度較大」。"
+      "isCorrect": false,
+      "reason": "C 的合力為零與受力條件不符。A 為 1 kg、C 為 2 kg，同力下較小質量有較大加速度。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "資料判讀"
+    "力學計算"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "質量和重量是同一量，都用 kg，到月球後物體質量會大幅減少",
-    "作用力與反作用力同時作用在同一物體，因此永遠互相抵銷",
-    "加速度方向永遠和物體當下運動方向相同，與合力方向無關"
+    "A 的質量較大",
+    "C 的受力方向不同",
+    "C 的合力為零"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -70,20 +70,6 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_009"
   ]

@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理斜面搬運資料後，哪項說明正確？",
+  "stem": "甲列給出方向向下，另記力矩6 N·m及轉動效果逆時針。判定轉動效果所需的定義是哪一個？",
   "options": [
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功",
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量",
-    "轉動平衡時順時針總力矩大小等於逆時針總力矩"
+    "僅根據逆 6、順 4 與順 2 N·m 誤算成合力矩 12 N·m",
+    "主張合力為零必然等於合力矩為零，忽略力的作用線位置",
+    "僅比較左右兩邊的力大小，未計入力臂便判定轉動平衡",
+    "轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功」不成立；輪軸利用不同力臂，齒輪利用齒數比改變轉速與力矩，斜面以增加距離換取較小力。"
+      "reason": "僅根據逆 6、順 4 與順 2 N·m 誤算成合力矩 12 N·m。順時針力矩 4＋2＝6 N·m，恰與逆時針 6 N·m 抵消，合力矩為零；力矩的數值若未依方向核對，會使轉動效果無法通過使用合力矩為零判斷轉動平衡檢查。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「機械只要省力就一定同時省距離與省時，不存在任何交換」不成立；省力機械通常要施力移動較長距離；改變方向不必然省力，「省時」與「省力」要分開。"
+      "reason": "誤以為合力為零必然等於合力矩為零，忽略力的作用線位置。轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零；方向未列入使用合力矩為零判斷轉動平衡時，轉動效果的力矩大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量」不成立；理想機械輸入功等於輸出功；可用較小力換較長施力距離，但不能無中生有省功。"
+      "reason": "僅比較左右兩邊的力大小，未計入力臂便判定轉動平衡，結果會錯判轉動效果。轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零；照原做法會把轉動效果算錯或判反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零」。"
+      "reason": "轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零。丙列的方向為向下，力矩為2 N·m；合計列的方向為—，力矩為逆 6、順 6 N·m。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "辨認",
+    "概念理解"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功",
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量"
+    "僅根據逆 6、順 4 與順 2 N·m 誤算成合力矩 12 N·m",
+    "主張合力為零必然等於合力矩為零，忽略力的作用線位置",
+    "僅比較左右兩邊的力大小，未計入力臂便判定轉動平衡"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

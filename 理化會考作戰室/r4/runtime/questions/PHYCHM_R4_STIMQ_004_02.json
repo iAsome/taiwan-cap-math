@@ -13,50 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_004",
-  "stem": "檢查表中關於公制單位間進行合理換算的說法，哪項判讀正確？",
+  "stem": "桌面面積 0.72 m² 換成 cm² 應為？",
   "options": [
-    "儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺",
-    "刻度儀器只能記到最小刻度，任何估讀都是作假",
-    "公制換算要保持同一物理量",
-    "數位寫得越多就越精確，因此可記為 12.347826 cm"
+    "720 cm²",
+    "72,000 cm²",
+    "72 cm²",
+    "7200 cm²"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺」不成立；量約 12 cm 的鉛筆適合用毫米刻度直尺；儀器量程要大於待測量，最小刻度要能分辨所需差異。"
+      "reason": "少一個 10 倍。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「刻度儀器只能記到最小刻度，任何估讀都是作假」不成立；視線應與刻度面垂直，先讀到最小刻度，再估讀一位，並連同單位記錄。"
+      "reason": "多一個 10 倍。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「2.35 m＝235 cm；公制換算要保持同一物理量，並讓數值和單位的改變相互補償」。"
+      "isCorrect": false,
+      "reason": "只乘 100。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「數位寫得越多就越精確，因此可記為 12.347826 cm」不成立；最小刻度 0.1 cm 的直尺，測量值可合理記至 0.01 cm；多寫更多位不會增加儀器資訊。"
+      "isCorrect": true,
+      "reason": "0.72×10,000＝7200。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "資料判讀"
+    "資料判讀",
+    "計算"
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺",
-    "刻度儀器只能記到最小刻度，任何估讀都是作假",
-    "數位寫得越多就越精確，因此可記為 12.347826 cm"
+    "720 cm²",
+    "72,000 cm²",
+    "72 cm²"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -66,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

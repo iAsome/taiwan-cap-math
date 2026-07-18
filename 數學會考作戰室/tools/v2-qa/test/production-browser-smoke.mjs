@@ -278,10 +278,17 @@ try {
   console.log(`production-browser-smoke: OK — ${report.assertions.length} browser assertions`);
   console.log(JSON.stringify(report));
 } finally {
+  try { await cdp?.send("Browser.close"); } catch {}
   cdp?.close();
-  browser.kill();
-  if (process.platform === "win32") spawnSync("taskkill", ["/pid", String(browser.pid), "/T", "/F"], { stdio: "ignore", windowsHide: true });
+  if (browser.exitCode === null) {
+    browser.kill();
+    if (process.platform === "win32") spawnSync("taskkill", ["/pid", String(browser.pid), "/T", "/F"], { stdio: "ignore", windowsHide: true });
+    await Promise.race([
+      new Promise(resolve => browser.once("exit", resolve)),
+      new Promise(resolve => setTimeout(resolve, 5000)),
+    ]);
+  }
   await new Promise(resolve => server.close(resolve));
   await new Promise(resolve => setTimeout(resolve, 200));
-  fs.rmSync(profileDir, { recursive: true, force: true, maxRetries: 20, retryDelay: 100 });
+  fs.rmSync(profileDir, { recursive: true, force: true, maxRetries: 100, retryDelay: 200 });
 }

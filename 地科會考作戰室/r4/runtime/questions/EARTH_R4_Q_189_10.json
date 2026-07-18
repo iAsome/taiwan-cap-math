@@ -14,34 +14,34 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "依附表判讀方位高度與時間讀取簡化星圖，哪一項讀值正確？",
+  "stem": "觀測者面向南方，星圖標示某星在西南方、高度角 30°。哪一項讀圖與尋星方式正確？",
   "options": [
-    "在「為觀察星團選擇望遠鏡口徑」的方位高度與時間讀取簡化星圖資料中，當觀測目標為月面時，主要波段為電波。",
-    "在「為觀察星團選擇望遠鏡口徑」的方位高度與時間讀取簡化星圖資料中，附表找不到觀測目標為月面的紀錄。",
-    "在「為觀察星團選擇望遠鏡口徑」的方位高度與時間讀取簡化星圖資料中，當觀測目標為月面時，主要波段為可見光。",
-    "在「為觀察星團選擇望遠鏡口徑」的方位高度與時間讀取簡化星圖資料中，有觀測目標為月面的紀錄，但沒有主要波段欄。"
+    "把星圖上方永遠當作實際北方，不必配合面向旋轉。",
+    "高度角 30° 表示該星距離地平線 30 公里。",
+    "先確認方位為西南，再由地平線向上估計約 30° 尋找。",
+    "只要星名出現在圖上，任何日期與時刻都會位於同一位置。"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「電波」來自其他資料列；本列記錄的是「可見光」。"
+      "reason": "星圖需依觀測者面向與圖例定向，不能固定把紙面上方當北。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "表中第1列已列出「月面」，不能說沒有記錄。"
+      "reason": "高度角是角度，不是線性距離。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "逐欄讀值可直接得到「主要波段為可見光」。"
+      "reason": "方位決定沿地平線的方向，高度角決定向上仰角，這個順序正確。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "欄名已明列「主要波段」，可直接查到數值。"
+      "reason": "天體位置會隨日期、時間與觀測地改變。"
     }
   ],
   "difficulty": "advanced",
@@ -50,7 +50,7 @@
   ],
   "representationType": "data-table",
   "misconceptionTargets": [
-    "任何深色玻璃都能安全觀察太陽"
+    "把星圖上方永遠當作實際北方，不必配合面向旋轉。"
   ],
   "provenance": {
     "status": "original",
@@ -70,13 +70,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "逐項核對「為觀察星團選擇望遠鏡口徑」的條件後，「在「為觀察星團選擇望遠鏡口徑」的方位高度與時間讀取簡化星圖資料中，當觀測目標為月面時，主要波段為可見光。」符合題目資料；查核依據為：望遠鏡口徑影響集光能力。",
+      "evidence": "尋星要先用方位找到西南方向，再以地平線為 0° 向上估計 30°。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「一般太陽眼鏡、燻黑玻璃或未濾光望遠鏡都不能安全直視太陽」。",
+      "evidence": "其餘選項混淆圖面方向、角度單位或忽略觀測時間。",
       "status": "pass"
     }
   ],

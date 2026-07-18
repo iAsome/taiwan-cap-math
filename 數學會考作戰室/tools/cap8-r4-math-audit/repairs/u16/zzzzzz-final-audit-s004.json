@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u16",
+  "batch": "017-u16-complete",
+  "skills": ["s004"],
+  "mc": [],
+  "constructedResponse": [],
+  "lectures": [
+    {
+      "lectureId": "u16-s004-lecture-r1",
+      "expectedContentSha256": "7e1859b141ddb24e20f2338dd5e63131da46354b55182d4864919ff20c82b1d2",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "△GHI與△JKL的三邊分別為GH=JK=6、HI=KL=9、IG=LJ=11。判斷並寫出正確全等式。",
+            "solutionSteps": [
+              "三組對應邊GH↔JK、HI↔KL、IG↔LJ分別相等。",
+              "由共同端點讀得G↔J、H↔K、I↔L。",
+              "按此順序以SSS寫出全等式。"
+            ],
+            "answer": "△GHI≅△JKL（SSS）。",
+            "why": "三組邊6、9、11逐一相等並能形成三角形；由相鄰等邊的共同端點決定頂點配對，才能同時保證SSS判定與全等式順序正確。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "已知GH=JK、GI=JL、∠HGI=∠KJL。判斷這些條件是否足以證明兩三角形全等。",
+            "solutionSteps": [
+              "GH、GI共同端點是G，JK、JL共同端點是J。",
+              "∠HGI與∠KJL正好是兩組已知邊的夾角。",
+              "兩邊及夾角分別相等，套用SAS。"
+            ],
+            "answer": "足以，△GHI≅△JKL（SAS）。",
+            "why": "角名稱的中間字母G、J與兩條已知邊共同端點一致，證明所給角確為夾角；SAS因此固定三角形的形狀與大小。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "兩三角形各有兩邊7公分、10公分，另有一個30°角，但該角位於7公分邊的對面。能否直接使用SAS？",
+            "solutionSteps": [
+              "兩條已知邊的夾角應位於它們的共同端點。",
+              "題給30°位於一條邊的對面，不是兩邊夾角。",
+              "資料是一般SSA，可能不能唯一決定第三頂點。"
+            ],
+            "answer": "不能直接使用SAS；這是一般SSA資料。",
+            "why": "SAS要求角同時接觸兩條已知邊；非夾角配合兩邊可能讓固定長度弧與射線有兩個交點，所以不能只數到兩邊一角便判全等。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "四邊形WXYZ畫對角線WY，且WX=YZ、XY=ZW。證明△WXY與△YZW全等。",
+            "solutionSteps": [
+              "列出WX=YZ與XY=ZW兩組已知邊。",
+              "對角線WY為兩三角形共用邊，所以WY=YW。",
+              "三組對應邊相等，按W↔Y、X↔Z、Y↔W使用SSS。"
+            ],
+            "answer": "△WXY≅△YZW（SSS）。",
+            "why": "兩組外邊加上共享對角線構成完整三邊資料；明列共用邊的自反性並核對端點順序，才能合法得到SSS結論。"
+          },
+          {
+            "exampleId": "L5",
+            "prompt": "O是AB中點，且CO⊥AB。證明△AOC與△BOC全等。",
+            "solutionSteps": [
+              "由中點定義得AO=BO。",
+              "由垂直得∠AOC=∠BOC=90°。",
+              "OC=OC為共用邊，兩邊及夾角相等。"
+            ],
+            "answer": "△AOC≅△BOC（SAS）。",
+            "why": "中點提供一組邊，垂直提供由AO、OC與BO、OC構成的相等夾角，共用邊再補齊另一組邊；三項來源獨立且符合SAS。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

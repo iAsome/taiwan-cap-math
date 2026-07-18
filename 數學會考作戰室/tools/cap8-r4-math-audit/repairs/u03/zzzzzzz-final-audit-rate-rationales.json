@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u03",
+  "batch": "004-u03-complete",
+  "skills": ["s010"],
+  "mc": [
+    {
+      "questionId": "u03-s010-v003",
+      "expectedContentSha256": "aa20d9d99b06da4ad0f2982fae9a309c7fb945e0d2f03559de616dadf1d42c69",
+      "optionReasons": {
+        "0": "一小時內乙車只比甲車多走 15 公里，尚未補回 30 公里的領先距離。",
+        "3": "六小時內乙車會比甲車多走 90 公里，早已超過原先 30 公里的差距。"
+      }
+    },
+    {
+      "questionId": "u03-s010-v004",
+      "expectedContentSha256": "30211c8c21f908435f317e4393488ba9a8873047f75b766954856f006748dcf5",
+      "optionReasons": {
+        "0": "兩小時內兩車合計只走 200 公里，尚未走完 300 公里的間距。",
+        "1": "五小時內兩車合計會走 500 公里，已超過原先 300 公里的間距。",
+        "2": "六小時內兩車合計會走 600 公里，不是相遇所需時間。"
+      }
+    },
+    {
+      "questionId": "u03-s010-v007",
+      "expectedContentSha256": "931fafabf6c32527dd42db25fe0cc1819b1be1071513098af88556179be4ca0b",
+      "optionReasons": {
+        "0": "逆流速率為每小時 9 公里，2.5 小時只能行 22.5 公里。"
+      }
+    },
+    {
+      "questionId": "u03-s010-v008",
+      "expectedContentSha256": "acbe1089232c7730d8958a6c36c1f043c4d9a973a73bbf63a3ba9474cb2daf53",
+      "optionReasons": {
+        "1": "單程 100 公里時，去回程總時間為 100/60+100/40，不等於 5 小時。",
+        "2": "單程 150 公里時，去回程總時間為 2.5+3.75=6.25 小時。",
+        "3": "單程 200 公里時，去回程總時間超過 8 小時，不符合題意。"
+      }
+    },
+    {
+      "questionId": "u03-s010-v009",
+      "expectedContentSha256": "47098f3dceea30c45461998e6c02ecb3b0a37c121db3065ed579e62463ae8237",
+      "optionReasons": {
+        "0": "若第二段為 12 公里，第二段需 12/9 小時，與第一段 3 小時相加不滿 5 小時。"
+      },
+      "set": {
+        "commonMistake": "把圖上線段的視覺長短當成實際距離比例，或直接把五小時全乘第二段速率，都會誤算第二段距離。"
+      }
+    },
+    {
+      "questionId": "u03-s010-v011",
+      "expectedContentSha256": "e4407bb45584bad515655642cad55821914c0e923f6261b4ae4df2c946886877",
+      "optionReasons": {
+        "2": "代入 x=17/5 時，50x+20=190 公里，不是題目的 170 公里。"
+      }
+    },
+    {
+      "questionId": "u03-s010-v012",
+      "expectedContentSha256": "0a8cd63d15e401def27fe4d6f62fad4a7919a47c9ba817c5180390240948c3ea",
+      "optionReasons": {
+        "3": "只用步道每秒 0.8 公尺計算 120\u00f70.8，漏掉乘客相對步道的步行速率。"
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [],
+  "drawingSpecs": [],
+  "textFiles": []
+}

@@ -98,28 +98,28 @@
   "method": [
     {
       "step": 1,
-      "instruction": "確認T是切點。",
-      "check": "完成此步後，確認仍在「切線與半徑」的CAP範圍且沒有只憑圖形目測。"
+      "instruction": "確認 T 是切點。",
+      "check": "題目必須明示 PT 為切線段或直線在 T 點與圓相切。"
     },
     {
       "step": 2,
-      "instruction": "連接O與T並標90°。",
-      "check": "完成此步後，確認仍在「切線與半徑」的CAP範圍且沒有只憑圖形目測。"
+      "instruction": "連接 O 與 T 並標 90°。",
+      "check": "只有連到切點 T 的半徑 OT 與切線 PT 必然垂直。"
     },
     {
       "step": 3,
-      "instruction": "辨認OP為斜邊。",
-      "check": "完成此步後，確認仍在「切線與半徑」的CAP範圍且沒有只憑圖形目測。"
+      "instruction": "辨認 OP 為斜邊。",
+      "check": "∠OTP=90°，對面的 OP 是最長邊，OT 與 PT 為兩股。"
     },
     {
       "step": 4,
       "instruction": "套用畢氏定理。",
-      "check": "完成此步後，確認仍在「切線與半徑」的CAP範圍且沒有只憑圖形目測。"
+      "check": "求斜邊用平方和，求一股用斜邊平方減另一股平方。"
     },
     {
       "step": 5,
       "instruction": "檢查斜邊大於兩股。",
-      "check": "完成此步後，確認仍在「切線與半徑」的CAP範圍且沒有只憑圖形目測。"
+      "check": "長度取正平方根，並回代 OP²=OT²+PT² 確認等式成立。"
     }
   ],
   "workedExamples": [
@@ -168,10 +168,10 @@
     }
   ],
   "difficultyConnections": {
-    "basic": "辨認「切線與半徑」的定義、符號與單一步驟關係。",
-    "standard": "把「切線與半徑」與前置技能、比例或一次代數連接。",
-    "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「切線與半徑」。",
-    "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「切線與半徑」的數學模型。"
+    "basic": "使用切線與切點半徑垂直，判定 90°。",
+    "standard": "在直角三角形 OPT 中以畢氏定理求切線段或半徑。",
+    "advanced": "把半徑、切線段與圓心到外點距離寫成代數方程。",
+    "literacy": "把支架、繩索或步道恰好接觸圓形邊界的情境轉成切點直角三角形。"
   },
   "commonMistakes": [
     {
@@ -196,10 +196,10 @@
     }
   ],
   "selfCheck": [
-    "我是否先確認「切線與半徑」的適用條件？",
-    "我是否分清半徑、直徑、弦、弧與角的角色？",
-    "我是否寫出必要單位，並在最後才取近似值？",
-    "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+    "T 點是否有題意支持為切點？",
+    "我標示的直角是否在 OT 與 PT 之間？",
+    "畢氏定理中，OP 是否位於斜邊的平方項？",
+    "開平方後是否取正長度，且所得 OP 大於 OT、PT？"
   ],
   "summary": [
     "切線與切點半徑垂直。",
@@ -249,5 +249,5 @@
   },
   "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-  "contentSha256": "87736e41edde532dd6d7ba0ee603a97293b3ccb6361439f863bfc971d9da4a60"
+  "contentSha256": "9b49d64d34d9d55af751015e680985004dcd26d3e459208f484388c901764f4f"
 }

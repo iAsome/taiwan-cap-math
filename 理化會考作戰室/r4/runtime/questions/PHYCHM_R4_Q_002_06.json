@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解量測尺度選擇合適儀器，哪項修正合理？",
+  "stem": "某生用 1 L 量杯量取 12 mL 藥液，讀值差異很大。主要問題是？",
   "options": [
-    "只要答案含有數字，就可把它當成直接測量的基本物理量",
-    "刻度儀器只能記到最小刻度，任何估讀都是作假",
-    "2.35 m＝0.0235 cm，因為換成較小單位時數字也應變小",
-    "最小刻度要能分辨所需差異"
+    "液體不能用有刻度容器量",
+    "量杯容量太小",
+    "儀器量程雖足夠，但刻度對 12 mL 太粗",
+    "12 mL 沒有單位"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要答案含有數字，就可把它當成直接測量的基本物理量」不成立；長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得。"
+      "reason": "液體可用合適量筒量測。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「刻度儀器只能記到最小刻度，任何估讀都是作假」不成立；視線應與刻度面垂直，先讀到最小刻度，再估讀一位，並連同單位記錄。"
+      "reason": "1 L 量杯容量很大。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「2.35 m＝0.0235 cm，因為換成較小單位時數字也…」不成立；2.35 m＝235 cm；公制換算要保持同一物理量，並讓數值和單位的改變相互補償。"
+      "isCorrect": true,
+      "reason": "小體積落在大量程器材的粗刻度區。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「量約 12 cm 的鉛筆適合用毫米刻度直尺；儀器量程要大於待測量，最小刻度要能分辨所需差異」。"
+      "isCorrect": false,
+      "reason": "12 mL 已包含單位。"
     }
   ],
   "difficulty": "standard",
@@ -48,16 +48,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要答案含有數字，就可把它當成直接測量的基本物理量",
-    "刻度儀器只能記到最小刻度，任何估讀都是作假",
-    "2.35 m＝0.0235 cm，因為換成較小單位時數字也應變小"
+    "液體不能用有刻度容器量",
+    "量杯容量太小",
+    "12 mL 沒有單位"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

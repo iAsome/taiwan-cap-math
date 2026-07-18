@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LC-NA-4-4"
   ],
   "stimulusId": null,
-  "stem": "有人誤解生活中常見烷類醇類有機酸與酯，哪項修正合理？",
+  "stem": "烷類燃料缺氧燃燒的主要風險？",
   "options": [
-    "所有含碳物質都必然是有機物，所有不含碳物質都不可能與有機化學有關",
-    "只要有芳香氣味的物質都是同一種酯，可直接品嘗以鑑定",
-    "酯化是把酯和水混合以生成醇與酸，生成物和反應物位置可任意對調",
-    "應根據名稱與性質辨識"
+    "烷類缺氧燃燒時必定只產生純氧",
+    "可能產生一氧化碳",
+    "所有碳消失",
+    "完全沒有熱"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「所有含碳物質都必然是有機物，所有不含碳物質都不可能與有機化…」不成立；許多有機化合物含碳，但 CO₂、碳酸鹽等常列為無機物；分類要依課程定義與組成性質。"
+      "reason": "氧是反應物。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「只要有芳香氣味的物質都是同一種酯，可直接品嘗以鑑定」不成立；乙醇易揮發且可燃，醋酸具酸性，酯類常有特定香味；用途要與具體性質連結。"
+      "isCorrect": true,
+      "reason": "不完全燃燒可產CO。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「酯化是把酯和水混合以生成醇與酸，生成物和反應物位置可任意對調」不成立；酯化反應可由醇與有機酸反應生成酯和水，實際操作需依條件與安全規範。"
+      "reason": "碳進入產物。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「甲烷屬烷類，乙醇屬醇類，醋酸屬有機酸，乙酸乙酯屬酯類；應根據名稱與性質辨識」。"
+      "isCorrect": false,
+      "reason": "燃燒放熱。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "燃燒安全"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "所有含碳物質都必然是有機物，所有不含碳物質都不可能與有機化學有關",
-    "只要有芳香氣味的物質都是同一種酯，可直接品嘗以鑑定",
-    "酯化是把酯和水混合以生成醇與酸，生成物和反應物位置可任意對調"
+    "烷類缺氧燃燒時必定只產生純氧",
+    "所有碳消失",
+    "完全沒有熱"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科有機物、材料性質與永續判讀層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JF-4-1",
       "AUTH-NATURAL-LC-JF-4-2",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LC-NA-4-4"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

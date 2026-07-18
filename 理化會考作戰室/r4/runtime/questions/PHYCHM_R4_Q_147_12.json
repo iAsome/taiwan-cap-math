@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估混合熱平衡報告時，哪項說明正確？",
+  "stem": "實測吸熱比理論小，最可能因何簡化失效？",
   "options": [
-    "Q＝mcΔT 中應把質量、比熱與溫差相加，所以為 109.2 J",
-    "溫度和熱量是同一物理量，50 °C 就表示物體內有 50 J 熱量",
-    "升溫 5 °C 需熱量 Q＝100×4.2×5＝2100 J",
-    "熱量會自然由低溫物體流向高溫物體，因為低溫處需要更多熱"
+    "質量必增加",
+    "實測偏小是因焦耳並不是能量的單位",
+    "部分能量散失到環境",
+    "水沒有比熱"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「Q＝mcΔT 中應把質量、比熱與溫差相加，所以為 109.…」不成立；若 100 g 水的比熱為 4.2 J/(g·°C)，升溫 5 °C 需熱量 Q＝100×4.…。"
+      "reason": "不必增加。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「溫度和熱量是同一物理量，50 °C 就表示物體內有 50 …」不成立；溫度描述物體熱狀態，熱量是因溫差而移轉的能量；物體不是「含有某度熱量」。"
+      "reason": "J是能量。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「若 100 g 水的比熱為 4.2 J/(g·°C)，升溫 5 °C 需熱量 Q＝100×4.2×5＝2100 J」。"
+      "reason": "加熱非完全絕熱。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「熱量會自然由低溫物體流向高溫物體，因為低溫處需要更多熱」不成立；兩物體接觸時，熱量淨傳自高溫物體至低溫物體，直到達熱平衡。"
+      "reason": "水有比熱。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "誤差解釋"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "Q＝mcΔT 中應把質量、比熱與溫差相加，所以為 109.2 J",
-    "溫度和熱量是同一物理量，50 °C 就表示物體內有 50 J 熱量",
-    "熱量會自然由低溫物體流向高溫物體，因為低溫處需要更多熱"
+    "質量必增加",
+    "實測偏小是因焦耳並不是能量的單位",
+    "水沒有比熱"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱學與能量; 臺灣國中教育會考自然科熱量、比熱、相變與生活現象題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-BA-4-1",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

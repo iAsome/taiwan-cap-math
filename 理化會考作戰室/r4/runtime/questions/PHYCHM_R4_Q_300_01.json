@@ -49,34 +49,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組討論能源系統、效率與證據決策中的現象，哪項敘述正確？",
+  "stem": "用電量和室外均溫在基準兩週為平均 42 kWh/日、30°C，到措施兩週為平均 35 kWh/日、30°C。處理用電量後，室外均溫要依提出可檢驗的節能或能源決策並標明不確定性判斷大小、方向或類別？",
   "options": [
-    "可檢驗的節能決策應寫明基準用能、具體措施、量測期間、成功指標與氣溫、使用人數等不確定因素",
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統",
-    "能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 100% 且持續創能"
+    "僅喊節能口號，並漏掉基準用電、量測期間與成功指標",
+    "做比較時措施前後用電時忽略氣溫與使用人數的變化",
+    "解題時將假日 6 kWh 與上班日 42 kWh 相比，就把差異全歸功於節能措施",
+    "基準與措施期溫度、使用人數近似，可估措施使日用電下降約 16.7%"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「可檢驗的節能決策應寫明基準用能、具體措施、量測期間、成功指標與氣溫、使用人數等不確定因素」。"
+      "isCorrect": false,
+      "reason": "僅喊節能口號，沒有基準用電、量測期間與成功指標，結果會錯判使用人數。可檢驗的節能決策應寫明基準用能、具體措施、量測期間、成功指標與氣溫、使用人數等不確定因素；照原做法會把使用人數算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標…」不成立；可檢驗的節能決策應寫明基準用能、具體措施、量測期間、成功指標與氣溫、使用人數等不確定因素。"
+      "reason": "做比較時措施前後用電時忽略氣溫與使用人數的變化。需事先寫明基準、期間、成功指標並記錄氣溫、人數等干擾因素，才能檢驗而非只喊口號；使用人數差異若未通過提出可檢驗的節能或能源決策並標明不確定性對用電量的控制，就不能只歸給室外均溫。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源…」不成立；能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式。"
+      "reason": "解題時錯將假日 6 kWh 與上班日 42 kWh 相比，就把差異全歸功於節能措施，結果會錯判使用人數。基準與措施期溫度、使用人數近似，可估措施使日用電下降約 16.7%；室外均溫的數值若未依用電量核對，會使使用人數無法通過提出可檢驗的節能或能源決策並標明不確定性檢查。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 10…」不成立；能源效率＝有用輸出能量÷總輸入能量×100%；輸入 500 J、有用輸出 150 J 的效率為…。"
+      "isCorrect": true,
+      "reason": "基準與措施期溫度、使用人數近似，可估措施使日用電下降約 16.7%。基準兩週列的用電量為平均 42 kWh/日、室外均溫為30°C；措施兩週列的用電量為平均 35 kWh/日、室外均溫為30°C。"
     }
   ],
   "difficulty": "foundation",
@@ -84,16 +84,16 @@
     "辨認",
     "概念理解"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "「大家少用電」已是完整可檢驗方案，不需基準、時間、量測指標或不確定性",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統",
-    "能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 100% 且持續創能"
+    "僅喊節能口號，並漏掉基準用電、量測期間與成功指標",
+    "做比較時措施前後用電時忽略氣溫與使用人數的變化",
+    "解題時將假日 6 kWh 與上班日 42 kWh 相比，就把差異全歸功於節能措施"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-INA-4-1",
       "AUTH-NATURAL-LC-INA-4-2",
@@ -139,19 +139,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

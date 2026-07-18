@@ -82,7 +82,12 @@ function renderAssets(ids) {
 function renderStimulus(stimulus) {
   const block = document.createElement("section");
   block.className = "stimulus";
-  block.append(text("h3", stimulus.content.title), renderStructured(stimulus.content));
+  block.append(
+    text("h3", stimulus.content.title),
+    text("p", stimulus.content.scenario),
+    renderStructured(stimulus.content.table),
+    text("p", stimulus.content.readingGuide),
+  );
   if (stimulus.assets.length) block.append(renderAssets(stimulus.assets));
   const alternative = text("p", stimulus.accessibility.textAlternative, "text-alternative");
   alternative.hidden = stimulus.assets.length === 0;

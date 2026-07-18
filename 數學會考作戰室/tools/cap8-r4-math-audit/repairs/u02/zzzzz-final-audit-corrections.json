@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u02",
+  "batch": "003-u02-complete",
+  "skills": ["s001", "s004"],
+  "mc": [],
+  "constructedResponse": [
+    {
+      "questionId": "u02-s001-cr002",
+      "expectedContentSha256": "962df39efd4e3763d35efeb844eb2b5417193173443ace42cca388cdfb93c4e3",
+      "set": {
+        "commonErrors": [
+          "把最小公倍數 24 誤當成唯一答案，沒有繼續列出其倍數。",
+          "只列出 24 而漏掉同樣符合條件的 48、72。",
+          "把 96 也列入，忽略題目要求 n<80。"
+        ],
+        "independentReview": {
+          "derivedResult": "n=24、48、72。",
+          "ambiguity": "正整數與 n<80 的條件明確；24 的正倍數中僅 24、48、72 符合。",
+          "decision": "pass"
+        }
+      }
+    },
+    {
+      "questionId": "u02-s004-cr002",
+      "expectedContentSha256": "4e71cbb572d197060fff814412b61d44dd19c7b52814e2ab22ceacc53744b7cb",
+      "set": {
+        "commonErrors": [
+          "選 42 時沒有回算；gcd(84,42)=42，不是題目指定的 28。",
+          "選 70 時只確認它是 28 的倍數；實際 gcd(84,70)=14，仍不符合條件。"
+        ],
+        "independentReview": {
+          "derivedResult": "例如 n=28、56；兩者與 84 的最大公因數皆為 28。",
+          "ambiguity": "題目要求舉兩例而非列出所有值；28、56 均小於 100 且逐一驗證成立。",
+          "decision": "pass"
+        }
+      }
+    }
+  ],
+  "lectures": [],
+  "drawingSpecs": [],
+  "textFiles": []
+}

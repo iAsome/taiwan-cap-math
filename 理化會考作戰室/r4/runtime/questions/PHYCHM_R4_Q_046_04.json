@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查元素與化合物分類紀錄，哪項判讀正確？",
+  "stem": "一般化學反應前後哪項守恆？",
   "options": [
-    "一個模型若不能同時精準呈現所有原子性質，就完全沒有科學用途",
-    "石墨和金剛石都由碳原子組成",
-    "只要原子種類相同，不論排列和連結如何，巨觀性質都必然完全相同",
-    "原子和分子模型是肉眼直接看到的實物照片，不含任何推論"
+    "物質性質",
+    "所有連接",
+    "各類原子總數",
+    "分子種類"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「一個模型若不能同時精準呈現所有原子性質，就完全沒有科學用途」不成立；球棒模型適合呈現種類、數目與連接，但不宜由球的顯示大小推斷實際原子尺寸。"
+      "reason": "新物質性質不同。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「石墨和金剛石都由碳原子組成，但原子排列與連結不同，因而性質明顯不同」。"
+      "isCorrect": false,
+      "reason": "連接會改。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「只要原子種類相同，不論排列和連結如何，巨觀性質都必然完全相同」不成立；石墨和金剛石都由碳原子組成，但原子排列與連結不同，因而性質明顯不同。"
+      "isCorrect": true,
+      "reason": "原子只重排。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「原子和分子模型是肉眼直接看到的實物照片，不含任何推論」不成立；原子和分子是用來解釋物質組成與性質的粒子模型；分子由特定種類與數目的原子結合。"
+      "reason": "可生成新分子。"
     }
   ],
-  "difficulty": "standard",
+  "difficulty": "foundation",
   "cognitiveProcess": [
-    "資料判讀",
-    "應用"
+    "守恆"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "一個模型若不能同時精準呈現所有原子性質，就完全沒有科學用途",
-    "只要原子種類相同，不論排列和連結如何，巨觀性質都必然完全相同",
-    "原子和分子模型是肉眼直接看到的實物照片，不含任何推論"
+    "物質性質",
+    "所有連接",
+    "分子種類"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-1",
       "AUTH-NATURAL-LC-AA-4-2",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

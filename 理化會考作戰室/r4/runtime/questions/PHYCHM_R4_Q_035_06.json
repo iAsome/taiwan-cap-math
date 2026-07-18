@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解沸點差理解蒸餾分離，哪項修正合理？",
+  "stem": "為何蒸餾裝置不可完全密閉加熱？",
   "options": [
-    "蒸餾加熱混合液，使沸點較低的成分先汽化，再經冷凝收集；需有足夠沸點差",
-    "只要回收物的總質量較大，就能同時證明回收率和純度都較高",
-    "將容器完全密閉後加熱可防止溶劑逃散，是最安全的分離方法",
-    "蒸餾時收集的是永遠留在蒸餾瓶底的高沸點成分"
+    "蒸氣累積可能造成危險高壓",
+    "密閉會消除質量",
+    "蒸氣沒有體積",
+    "密閉會讓沸點變成零"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「蒸餾加熱混合液，使沸點較低的成分先汽化，再經冷凝收集；需有足夠沸點差」。"
+      "reason": "受熱蒸氣需有通路。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要回收物的總質量較大，就能同時證明回收率和純度都較高」不成立；回收率比較取回的目標物比例，純度比較回收物中目標成分比例；高回收率不保證高純度。"
+      "reason": "質量仍在系統。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「將容器完全密閉後加熱可防止溶劑逃散，是最安全的分離方法」不成立；加熱時容器不可密閉，熱過濾要用合適器材，易燃溶劑應遠離明火並在通風處操作。"
+      "reason": "氣體占體積。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「蒸餾時收集的是永遠留在蒸餾瓶底的高沸點成分」不成立；蒸餾加熱混合液，使沸點較低的成分先汽化，再經冷凝收集；需有足夠沸點差。"
+      "reason": "壓力影響沸點但非歸零。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "安全判斷"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要回收物的總質量較大，就能同時證明回收率和純度都較高",
-    "將容器完全密閉後加熱可防止溶劑逃散，是最安全的分離方法",
-    "蒸餾時收集的是永遠留在蒸餾瓶底的高沸點成分"
+    "密閉會消除質量",
+    "蒸氣沒有體積",
+    "密閉會讓沸點變成零"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-4",
       "AUTH-NATURAL-LC-CA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組檢查電器標示紀錄，哪項判讀正確？",
+  "stem": "解題時錯將電功率算成 V/I，120 V、2.0 A 得到 60 W。用由電壓電流計算電功率檢查這個做法，功率應如何重判？",
   "options": [
-    "電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W",
-    "額定電壓只是建議值，110 V 電器直接接 220 V 也一定保持 550 W 且無風險",
-    "電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道",
-    "電阻只會降低溫度，過載與短路都不會使導線發熱"
+    "主張功率越大表示任何使用時間下的用電量都一定相同",
+    "解題時將電功率算成 V/I，120 V、2.0 A 得到 60 W",
+    "解題時將不同電器、不同工作狀態的電壓與電流交叉相乘",
+    "電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W」。"
+      "isCorrect": false,
+      "reason": "誤以為功率越大表示任何使用時間下的用電量都一定相同。電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W；電壓未列入由電壓電流計算電功率時，功率的電流大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「額定電壓只是建議值，110 V 電器直接接 220 V 也…」不成立；額定 110 V、550 W 表示電器在 110 V 正常工作時功率約 550 W，不可任意接…。"
+      "reason": "解題時錯將電功率算成 V/I，120 V、2.0 A 得到 60 W。電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W；照原做法會把功率算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道」不成立；基本電費情境先將各電器功率轉為 kW，乘使用小時得 kWh，加總後再依題給單價或級距計算。"
+      "reason": "解題時錯將不同電器、不同工作狀態的電壓與電流交叉相乘，結果會錯判功率。比較前確認電壓與電流屬於同一電器、同一工作狀態，不能用 V/I 代替功率；功率差異若未通過由電壓電流計算電功率對電壓的控制，就不能只歸給電流。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「電阻只會降低溫度，過載與短路都不會使導線發熱」不成立；過載是同一路線總電流過大，短路是低電阻路徑造成大電流；兩者均可因電阻發熱引起火災。"
+      "isCorrect": true,
+      "reason": "電器在 120 V 下電流 2.0 A，電功率 P＝VI＝240 W。丁列的電壓為12 V，電流為0.50 A；甲列的電壓為120 V，電流為2.0 A。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀",
+    "條件判斷",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "額定電壓只是建議值，110 V 電器直接接 220 V 也一定保持 550 W 且無風險",
-    "電費只由電器數量決定，每台功率、使用時間與電價規則都不必知道",
-    "電阻只會降低溫度，過載與短路都不會使導線發熱"
+    "主張功率越大表示任何使用時間下的用電量都一定相同",
+    "解題時將電功率算成 V/I，120 V、2.0 A 得到 60 W",
+    "解題時將不同電器、不同工作狀態的電壓與電流交叉相乘"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-4",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

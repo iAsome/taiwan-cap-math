@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於溶解度與溫度差選擇結晶法，哪項結論符合題給條件？",
+  "stem": "何種物質最適合冷卻結晶？",
   "options": [
-    "只要回收物的總質量較大，就能同時證明回收率和純度都較高",
-    "將容器完全密閉後加熱可防止溶劑逃散，是最安全的分離方法",
-    "冷卻使溶解度隨溫度降低的溶質結晶析出",
-    "結晶法只依成分粒徑大小，和溶解度的溫度變化無關"
+    "高溫溶解度大、低溫明顯較小",
+    "各溫度溶解度幾乎相同",
+    "加熱立刻危險分解且資料未知",
+    "完全不溶於任何溫度"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要回收物的總質量較大，就能同時證明回收率和純度都較高」不成立；回收率比較取回的目標物比例，純度比較回收物中目標成分比例；高回收率不保證高純度。"
+      "isCorrect": true,
+      "reason": "降溫可析出大量溶質。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「將容器完全密閉後加熱可防止溶劑逃散，是最安全的分離方法」不成立；加熱時容器不可密閉，熱過濾要用合適器材，易燃溶劑應遠離明火並在通風處操作。"
+      "reason": "析出量小。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「可先製成高溫飽和溶液，再冷卻使溶解度隨溫度降低的溶質結晶析出」。"
+      "isCorrect": false,
+      "reason": "缺乏安全與物性條件。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「結晶法只依成分粒徑大小，和溶解度的溫度變化無關」不成立；可先製成高溫飽和溶液，再冷卻使溶解度隨溫度降低的溶質結晶析出。"
+      "reason": "無法先熱溶。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "條件判斷",
-    "分析"
+    "方法選擇"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要回收物的總質量較大，就能同時證明回收率和純度都較高",
-    "將容器完全密閉後加熱可防止溶劑逃散，是最安全的分離方法",
-    "結晶法只依成分粒徑大小，和溶解度的溫度變化無關"
+    "各溫度溶解度幾乎相同",
+    "加熱立刻危險分解且資料未知",
+    "完全不溶於任何溫度"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-4",
       "AUTH-NATURAL-LC-CA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理化學式讀取資料後，哪項說明正確？",
+  "stem": "NaCl 含幾種元素？",
   "options": [
-    "H₂SO₄ 含氫、硫、氧三種元素；元素種類由不同元素符號判定，不由下標大小判定",
-    "H₂SO₄ 含 2＋1＋4＝7 種元素，因為每個原子都算一種",
-    "元素符號的大小寫只是排版選擇，Co、CO 與 co 意義完全相同",
-    "H₂SO₄ 中未寫下標的 S 表示沒有硫原子"
+    "4",
+    "2",
+    "3",
+    "1"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「H₂SO₄ 含氫、硫、氧三種元素；元素種類由不同元素符號判定，不由下標大小判定」。"
+      "isCorrect": false,
+      "reason": "錯拆小寫。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「H₂SO₄ 含 2＋1＋4＝7 種元素，因為每個原子都算一種」不成立；H₂SO₄ 含氫、硫、氧三種元素；元素種類由不同元素符號判定，不由下標大小判定。"
+      "isCorrect": true,
+      "reason": "Na、Cl 兩種。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「元素符號的大小寫只是排版選擇，Co、CO 與 co 意義完…」不成立；元素符號第一個字母大寫、第二個字母小寫，例如 Co 是鈷而 CO 是由碳與氧組成的化學式。"
+      "reason": "無第三種。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「H₂SO₄ 中未寫下標的 S 表示沒有硫原子」不成立；一個 H₂SO₄ 粒子含 2 個氫、1 個硫、4 個氧原子，共 7 個原子。"
+      "reason": "漏一符號。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "解析"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "H₂SO₄ 含 2＋1＋4＝7 種元素，因為每個原子都算一種",
-    "元素符號的大小寫只是排版選擇，Co、CO 與 co 意義完全相同",
-    "H₂SO₄ 中未寫下標的 S 表示沒有硫原子"
+    "4",
+    "3",
+    "1"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AA-4-5",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

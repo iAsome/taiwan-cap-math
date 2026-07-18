@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理串聯電路資料，哪項敘述合理？",
+  "stem": "解題時錯將 6.0 V 記成 6.0 A，卻仍稱為元件兩端的電壓，結果會錯判單位。按區分電流電壓與電阻概念檢查物理意義與數值時，哪一步先做？",
   "options": [
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "電壓是每單位電荷的能量差",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換"
+    "必須同時核對量測位置與儀器接法",
+    "主張電阻是電荷每秒流過多少",
+    "解題時將電流、電壓與電阻視為同一物理量，只因它們都和電路有關",
+    "數值同為 6.0 就互換 A 與 V，並漏掉核對量測意義和儀器接法"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆」不成立；並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。"
+      "isCorrect": true,
+      "reason": "必須同時核對量測位置與儀器接法。錯誤紀錄列的物理意義為把電壓寫成電流，數值為6.0；電流列的物理意義為每秒通過截面的電荷量，數值為0.50。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「短路和斷路都只會使電流完全為零，不可能出現過大電流」不成立；斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險。"
+      "reason": "誤以為電阻是電荷每秒流過多少，混淆電阻與電流的定義。電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙；物理意義未列入區分電流電壓與電阻概念時，單位的數值大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙」。"
+      "isCorrect": false,
+      "reason": "解題時錯將電流、電壓與電阻視為同一物理量，只因它們都和電路有關。電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙；照原做法會把單位算錯或判反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「電流、電壓與電阻是同一物理量的三個名稱，單位也可互換」不成立；電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。"
+      "reason": "數值同為 6.0 就互換 A 與 V，卻未核對量測意義和儀器接法，結果會錯判單位。數值相同也不能互換名稱與單位；單位差異若未通過區分電流電壓與電阻概念對物理意義的控制，就不能只歸給數值。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "電流、電壓與電阻是同一物理量的三個名稱，單位也可互換"
+    "主張電阻是電荷每秒流過多少",
+    "解題時將電流、電壓與電阻視為同一物理量，只因它們都和電路有關",
+    "數值同為 6.0 就互換 A 與 V，並漏掉核對量測意義和儀器接法"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

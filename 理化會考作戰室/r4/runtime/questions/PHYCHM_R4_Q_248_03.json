@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "整理高處位能資料後，哪項說明正確？",
+  "stem": "表中甲的重力位能為40 J，對應重量20 N與相對參考面高度2 m。重量和相對參考面高度如何連結才能重算重力位能？",
   "options": [
-    "重力位能是物體固定不變的性質，與參考面、重量和高度都無關",
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "重力位能在選定參考高度後",
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J"
+    "重力位能在選定參考高度後，隨物體重量與高度增加而增大",
+    "解題時將丁的 40 N×5 m 算成 45 J",
+    "主張物體一旦靜止就並漏掉重力位能，即使它仍位於參考面上方",
+    "僅憑高度就比較重力位能，忽略不同物體的重量也會影響結果"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「重力位能是物體固定不變的性質，與參考面、重量和高度都無關」不成立；重力位能在選定參考高度後，隨物體重量與高度增加而增大。"
+      "isCorrect": true,
+      "reason": "重力位能在選定參考高度後，隨物體重量與高度增加而增大。丙列的重量為40 N，相對參考面高度為2 m；丁列的重量為40 N，相對參考面高度為5 m。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關」不成立；力對物體作功要有物體沿力的分量方向發生位移；用力提住靜止物體時對物體作功為零。"
+      "reason": "解題時錯將丁的 40 N×5 m 算成 45 J，混用相加與相乘。同一參考面下重力位能＝重量×高度；相對參考面高度的數值若未依重量核對，會使重力位能無法通過比較重力位能與重量高度的關係檢查。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「重力位能在選定參考高度後，隨物體重量與高度增加而增大」。"
+      "isCorrect": false,
+      "reason": "誤以為物體一旦靜止就沒有重力位能，即使它仍位於參考面上方。重力位能在選定參考高度後，隨物體重量與高度增加而增大；重量未列入比較重力位能與重量高度的關係時，重力位能的相對參考面高度大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「功是力除以位移，所以 20 N 推 3 m 作功為 6.6…」不成立；恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J。"
+      "reason": "僅憑高度就比較重力位能，忽略不同物體的重量也會影響結果。重力位能在選定參考高度後，隨物體重量與高度增加而增大；照原做法會把重力位能算錯或判反。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "單位檢核",
-    "資料判讀"
+    "辨認",
+    "概念理解"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "重力位能是物體固定不變的性質，與參考面、重量和高度都無關",
-    "只要人感到疲累就一定在物理上對物體作了功，物體是否位移無關",
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J"
+    "解題時將丁的 40 N×5 m 算成 45 J",
+    "主張物體一旦靜止就並漏掉重力位能，即使它仍位於參考面上方",
+    "僅憑高度就比較重力位能，忽略不同物體的重量也會影響結果"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

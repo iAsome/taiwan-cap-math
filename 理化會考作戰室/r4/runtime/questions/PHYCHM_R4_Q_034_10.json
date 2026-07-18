@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "報告根據鐵粉與砂分離下結論，哪項符合資料？",
+  "stem": "使用溶解度表計算時，最先確認什麼？",
   "options": [
-    "可先蒸發乾燥沙鹽混合物，這樣便能在未加水前分開兩種固體",
-    "只要回收物的總質量較大，就能同時證明回收率和純度都較高",
-    "將容器完全密閉後加熱可防止溶劑逃散，是最安全的分離方法",
-    "可先製成高溫飽和溶液"
+    "只比較數值大小而忽略溫度欄",
+    "數值基準是每多少水或溶液",
+    "先將溶解度與水量直接相加",
+    "把所有數值都當成每 100 g 溶液"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「可先蒸發乾燥沙鹽混合物，這樣便能在未加水前分開兩種固體」不成立；分離沙與食鹽時，可依序加水溶鹽、過濾取沙、蒸發或結晶取鹽，每步只利用一個性質差。"
+      "reason": "溶解度會隨溫度變化，必須讀取對應列。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「只要回收物的總質量較大，就能同時證明回收率和純度都較高」不成立；回收率比較取回的目標物比例，純度比較回收物中目標成分比例；高回收率不保證高純度。"
+      "isCorrect": true,
+      "reason": "基準決定比例中的分母。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「將容器完全密閉後加熱可防止溶劑逃散，是最安全的分離方法」不成立；加熱時容器不可密閉，熱過濾要用合適器材，易燃溶劑應遠離明火並在通風處操作。"
+      "reason": "兩者角色與單位基準不同，直接相加不能得溶質量。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「可先製成高溫飽和溶液，再冷卻使溶解度隨溫度降低的溶質結晶析出」。"
+      "isCorrect": false,
+      "reason": "常見表格可能以每 100 g 水為基準，不能自行改成溶液。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "foundation",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "資料素養"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "可先蒸發乾燥沙鹽混合物，這樣便能在未加水前分開兩種固體",
-    "只要回收物的總質量較大，就能同時證明回收率和純度都較高",
-    "將容器完全密閉後加熱可防止溶劑逃散，是最安全的分離方法"
+    "只比較數值大小而忽略溫度欄",
+    "先將溶解度與水量直接相加",
+    "把所有數值都當成每 100 g 溶液"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-4",
       "AUTH-NATURAL-LC-CA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

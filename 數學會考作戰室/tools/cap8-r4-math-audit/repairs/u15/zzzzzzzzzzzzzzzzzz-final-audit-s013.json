@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u15",
+  "batch": "016-u15-complete",
+  "skills": ["s013"],
+  "mc": [
+    {
+      "questionId": "u15-s013-mc02",
+      "expectedContentSha256": "1fc0928fdcbac55864a3fcc9054662bca8c7f3fc8d2bfab98c79decb0d6a57b7",
+      "replaceText": {
+        "名次→所有同名次選手與時間": "參賽者號碼→兩個不同完賽時間（同一號碼重複記錄）",
+        "輸出描述混合多項且同名次情況未限定。": "同一號碼對應兩個分開記錄的輸出，違反函數的唯一性。"
+      },
+      "reviewReplaceText": {
+        "名次→所有同名次選手與時間": "參賽者號碼→兩個不同完賽時間（同一號碼重複記錄）",
+        "輸出描述混合多項且同名次情況未限定。": "同一號碼對應兩個分開記錄的輸出，違反函數的唯一性。"
+      }
+    },
+    {
+      "questionId": "u15-s013-mc04",
+      "expectedContentSha256": "20c94315e7a247abb26c50ccc8c7642a215585683a65e4faf6e77a4dc2969ccc",
+      "replaceText": {
+        "要找 P 較便宜的範圍": "要找甲較便宜的範圍",
+        "驗證 P 确實較低": "驗證甲確實較低"
+      },
+      "reviewReplaceText": {
+        "要找 P 較便宜的範圍": "要找甲較便宜的範圍",
+        "驗證 P 确實較低": "驗證甲確實較低"
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [
+    {
+      "lectureId": "u15-s013-lecture",
+      "expectedContentSha256": "1d939795e39e65522352a7bede24134549cf51eb2050bdabb219104520b1750b",
+      "set": {
+        "definitionsAndMeaning": "函數素養題先確定輸入、唯一輸出、單位與適用範圍，再檢查計算、圖表刻度和主張強度是否有足夠證據支持。"
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

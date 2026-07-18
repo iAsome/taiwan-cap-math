@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對秒表重複計時結果，哪項說法正確？",
+  "stem": "兩人用同一量筒讀同一水面，一人高看、一人低看。如何判斷哪筆較可信？",
   "options": [
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受",
-    "刻度儀器只能記到最小刻度，任何估讀都是作假",
-    "只要答案含有數字，就可把它當成直接測量的基本物理量",
-    "視線應與刻度面垂直"
+    "取較大的那筆",
+    "將兩筆直接相加",
+    "重讀並讓視線與凹液面最低點同高",
+    "取較小的那筆"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受」不成立；成人桌子高度約 0.7 m；若記成 70 m，即使計算步驟完整，也應由量級發現單位或小數點錯誤。"
+      "reason": "大小不能決定視線正確。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「刻度儀器只能記到最小刻度，任何估讀都是作假」不成立；視線應與刻度面垂直，先讀到最小刻度，再估讀一位，並連同單位記錄。"
+      "reason": "相加沒有體積意義。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「只要答案含有數字，就可把它當成直接測量的基本物理量」不成立；長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得。"
+      "isCorrect": true,
+      "reason": "按標準位置重讀能消除主要偏差。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「視線應與刻度面垂直，先讀到最小刻度，再估讀一位，並連同單位記錄」。"
+      "isCorrect": false,
+      "reason": "較小也可能是視差。"
     }
   ],
   "difficulty": "advanced",
@@ -48,16 +48,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "數學運算沒有算錯就不必比對實際大小，70 m 的桌高也可接受",
-    "刻度儀器只能記到最小刻度，任何估讀都是作假",
-    "只要答案含有數字，就可把它當成直接測量的基本物理量"
+    "取較大的那筆",
+    "將兩筆直接相加",
+    "取較小的那筆"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

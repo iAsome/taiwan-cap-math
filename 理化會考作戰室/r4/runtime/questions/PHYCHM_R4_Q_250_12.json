@@ -15,51 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "評估車輛動能報告時，哪項說明正確？",
+  "stem": "乙條件下，先知動能35 J和位能45 J，再看總能量100 J。為使總能量可重現，紀錄中缺少什麼？",
   "options": [
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J",
-    "選定系統若不與外界交換能量",
-    "動能只由物體所在高度決定，質量與速度都不影響",
-    "重力位能是物體固定不變的性質，與參考面、重量和高度都無關"
+    "主張總能量守恆表示物體速度、位置和形變都不能改變",
+    "若有外力作功，必須列入能量帳",
+    "解題時將能量守恆解釋成每一種能量都各自不變，而不是各形式總和不變",
+    "把系統有外力作功時仍把外界輸入排除，硬把內部能量總和判成固定"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「功是力除以位移，所以 20 N 推 3 m 作功為 6.6…」不成立；恆力 20 N 沿位移方向推動 3 m，作功 W＝Fd＝60 J。"
+      "reason": "誤以為總能量守恆表示物體速度、位置和形變都不能改變。選定系統若不與外界交換能量，總能量守恆；動能未列入用能量守恆檢查理想系統時，總能量的位能大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「選定系統若不與外界交換能量，總能量守恆；若動能增加 30 J，其他能量形式總量應減少 30 J」。"
+      "reason": "若有外力作功，必須列入能量帳。丁列的動能為90 J，位能為5 J；甲列的動能為10 J，位能為60 J。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「動能只由物體所在高度決定，質量與速度都不影響」不成立；動能與質量成正比、與速度平方成正比；同質量者速度加倍，動能變為四倍。"
+      "reason": "解題時錯將能量守恆解釋成每一種能量都各自不變，而不是各形式總和不變，結果會錯判總能量。選定系統若不與外界交換能量，總能量守恆；照原做法會把總能量算錯或判反。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「重力位能是物體固定不變的性質，與參考面、重量和高度都無關」不成立；重力位能在選定參考高度後，隨物體重量與高度增加而增大。"
+      "reason": "解題時誤把系統有外力作功時仍把外界輸入排除，硬把內部能量總和判成固定。守恆結論以所選系統不與外界交換能量為前提；總能量差異若未通過用能量守恆檢查理想系統對動能的控制，就不能只歸給位能。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "功是力除以位移，所以 20 N 推 3 m 作功為 6.67 J",
-    "動能只由物體所在高度決定，質量與速度都不影響",
-    "重力位能是物體固定不變的性質，與參考面、重量和高度都無關"
+    "主張總能量守恆表示物體速度、位置和形變都不能改變",
+    "解題時將能量守恆解釋成每一種能量都各自不變，而不是各形式總和不變",
+    "把系統有外力作功時仍把外界輸入排除，硬把內部能量總和判成固定"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

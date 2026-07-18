@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "鍋具傳導出現四種說法，哪項有理化概念支持？",
+  "stem": "白衣一定比黑衣涼嗎？",
   "options": [
-    "在相同溫度與面積下，不同顏色和表面狀態可有不同熱輻射吸收與發射效果，比較時要控制其他條件",
-    "比較表面輻射時可同時改變容器材質、大小、初溫與照射距離，結果仍只由顏色造成",
-    "傳導必須由熱物質粒子一路移動到冷端，否則能量不能傳遞",
-    "對流是固體內粒子在原位碰撞，不包含流體的整體移動"
+    "白色主動製冷",
+    "黑色沒有散熱",
+    "不一定，風、濕度與材質也影響",
+    "一定"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「在相同溫度與面積下，不同顏色和表面狀態可有不同熱輻射吸收與發射效果，比較時要控制其他條件」。"
+      "isCorrect": false,
+      "reason": "不製冷。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「比較表面輻射時可同時改變容器材質、大小、初溫與照射距離，結…」不成立；在相同溫度與面積下，不同顏色和表面狀態可有不同熱輻射吸收與發射效果，比較時要控制其他條件。"
+      "reason": "仍散熱。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「傳導必須由熱物質粒子一路移動到冷端，否則能量不能傳遞」不成立；熱傳導可由相鄰粒子碰撞與振動傳遞能量，金屬中自由電子也有助於快速傳熱。"
+      "isCorrect": true,
+      "reason": "總熱平衡多因素。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「對流是固體內粒子在原位碰撞，不包含流體的整體移動」不成立；流體受熱後密度常減小而上升，較冷流體下沉形成對流循環。"
+      "reason": "過度絕對。"
     }
   ],
-  "difficulty": "standard",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "評估"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "比較表面輻射時可同時改變容器材質、大小、初溫與照射距離，結果仍只由顏色造成",
-    "傳導必須由熱物質粒子一路移動到冷端，否則能量不能傳遞",
-    "對流是固體內粒子在原位碰撞，不包含流體的整體移動"
+    "白色主動製冷",
+    "黑色沒有散熱",
+    "一定"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱傳播與生活應用; 臺灣國中教育會考自然科導熱、對流、輻射與保溫題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BB-4-1",
       "AUTH-NATURAL-LC-BB-4-3",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

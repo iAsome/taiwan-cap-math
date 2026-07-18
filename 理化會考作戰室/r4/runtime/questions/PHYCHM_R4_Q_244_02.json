@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據木塊漂浮紀錄，哪項判讀合理？",
+  "stem": "從排出壓載水改成部分進水時，總質量由900 t變為1000 t，外形排水體積由1000 m³變為1000 m³。兩列交由連結船潛水艇與密度調整應用判讀，外形排水體積呈現哪個量化或方向結果？",
   "options": [
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要",
-    "潛水艇藉壓載水量調整平均密度與浮沉",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水"
+    "在水密度約 1000 kg/m³ 時，三種壓載狀態分別有上浮、懸浮、下沉趨勢",
+    "把討論潛水艇進排水時假定外殼體積也同比改變，混淆質量與排水體積",
+    "看到壓載水增加到總質量 1080 t，仍判定平均密度只有 900 kg/m³",
+    "主張潛水艇只要下潛到更深處，平均密度就會在未進水時自動增加"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「浮沉只由物體總質量大小決定，體積與平均密度完全不重要」不成立；物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉。"
+      "isCorrect": true,
+      "reason": "在水密度約 1000 kg/m³ 時，三種壓載狀態分別有上浮、懸浮、下沉趨勢。排出壓載水列的總質量為900 t、外形排水體積為1000 m³；部分進水列的總質量為1000 t、外形排水體積為1000 m³。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉」。"
+      "isCorrect": false,
+      "reason": "解題時誤把討論潛水艇進排水時假定外殼體積也同比改變，混淆質量與排水體積。假設外殼體積近似固定且忽略海水密度隨深度的小變化；平均密度差異若未通過連結船潛水艇與密度調整應用對總質量的控制，就不能只歸給外形排水體積。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「漂浮物體既然在水面上，就完全不受浮力，只受向下重力」不成立；漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力。"
+      "reason": "一看到壓載水增加到總質量 1080 t，仍判定平均密度只有 900 kg/m³。在水密度約 1000 kg/m³ 時，三種壓載狀態分別有上浮、懸浮、下沉趨勢；外形排水體積的數值若未依總質量核對，會使平均密度無法通過連結船潛水艇與密度調整應用檢查。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水」不成立；船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉。"
+      "reason": "誤以為潛水艇只要下潛到更深處，平均密度就會在未進水時自動增加。船以中空結構降低整體平均密度；總質量未列入連結船潛水艇與密度調整應用時，平均密度的外形排水體積大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
+    "辨認",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水"
+    "把討論潛水艇進排水時假定外殼體積也同比改變，混淆質量與排水體積",
+    "看到壓載水增加到總質量 1080 t，仍判定平均密度只有 900 kg/m³",
+    "主張潛水艇只要下潛到更深處，平均密度就會在未進水時自動增加"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

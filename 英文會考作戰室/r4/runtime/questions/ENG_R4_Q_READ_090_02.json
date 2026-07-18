@@ -2,55 +2,56 @@
   "id": "ENG_R4_Q_READ_090_02",
   "subject": "english",
   "skillIds": [
-    "ENG_R4_S257"
+    "ENG_R4_S250"
   ],
   "authorityRefs": [
-    "AUTH-ENGLISH-LC-D-4-1",
-    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
     "AUTH-ENGLISH-LP-1-4-7",
-    "AUTH-ENGLISH-LP-3-4-11",
-    "AUTH-ENGLISH-LP-3-4-12",
-    "AUTH-ENGLISH-LP-7-4-2",
-    "AUTH-ENGLISH-LP-9-4-1",
-    "AUTH-ENGLISH-LP-9-4-3"
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
   ],
   "stimulusId": "ENG_R4_READ_090",
-  "stem": "What result follows this event in the passage: “this subject over Silver River was too narrow for cars”?",
+  "stem": "Which answer is supported by the passage that includes “They said the bridge was part of their memories.”?",
   "options": [
-    "It gave her more soft songs every day",
-    "He sat quietly while others bought food",
-    "The city built a new one beside it",
-    "The club made a new rule"
+    "The city had to balance business, memory, and local life.",
+    "She planned to throw it away, but her brother said it looked nice and asked to keep it.",
+    "But local residents asked the city to keep it for walkers and bikes.",
+    "Local residents asked to keep it as a museum and weather station."
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "本文沒有陳述「It gave her more soft songs every day」；這個選項混入另一個情境的資訊。"
+      "reason": "本文沒有陳述「The city had to balance business, memory, and local life.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "本文沒有陳述「He sat quietly while others bought food」；這個選項混入另一個情境的資訊。"
+      "reason": "本文沒有陳述「She planned to throw it away, but her brother said it looked nice and asked to keep it.」；這個選項混入另一個情境的資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "本文可直接核對「the city built a new one beside it」，所以這個選項符合完整語境。"
+      "reason": "本文可直接核對「But local residents asked the city to keep it for walkers and bikes.」，所以這個選項符合完整語境。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "本文沒有陳述「The club made a new rule」；這個選項混入另一個情境的資訊。"
+      "reason": "本文沒有陳述「Local residents asked to keep it as a museum and weather station.」；這個選項混入另一個情境的資訊。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
     "read-locked-passage-evidence",
-    "connect-stated-event-to-result"
+    "distinguish-supported-detail-from-related-near-misses"
   ],
-  "representationType": "reading-stated-result",
+  "representationType": "reading-supported-detail",
   "misconceptionTargets": [
     "choose-a-familiar-or-repeated-line-without-checking-its-meaning-in-this-passage"
   ],
@@ -59,27 +60,28 @@
     "authorRole": "Codex R4 English content author",
     "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
     "sourceRefs": [
-      "AUTH-ENGLISH-LC-D-4-1",
-      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
       "AUTH-ENGLISH-LP-1-4-7",
-      "AUTH-ENGLISH-LP-3-4-11",
-      "AUTH-ENGLISH-LP-3-4-12",
-      "AUTH-ENGLISH-LP-7-4-2",
-      "AUTH-ENGLISH-LP-9-4-1",
-      "AUTH-ENGLISH-LP-9-4-3"
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
     ]
   },
   "independentReviews": [
     {
       "reviewerRole": "english-grammar-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "獨立覆核 A：在鎖定文章中定位「the city built a new one beside it」，答案為「The city built a new one beside it」。",
+      "evidence": "獨立覆核 A：在鎖定文章中定位「But local residents asked the city to keep it for walkers and bikes.」，答案為「But local residents asked the city to keep it for walkers and bikes.」。",
       "status": "pass"
     },
     {
       "reviewerRole": "english-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "獨立覆核 B：逐項回查文章，只有「The city built a new one beside it」有同篇證據，三個干擾項均來自不同情境。",
+      "evidence": "獨立覆核 B：逐項回查文章，只有「But local residents asked the city to keep it for walkers and bikes.」有同篇證據，三個干擾項均來自不同情境。",
       "status": "pass"
     }
   ],

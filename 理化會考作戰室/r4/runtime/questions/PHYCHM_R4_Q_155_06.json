@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解不需介質的熱輻射，哪項修正合理？",
+  "stem": "真空層主要抑制？",
   "options": [
-    "熱輻射以電磁波傳遞能量",
-    "海風是因太陽直接推動空氣水平移動，與海陸升溫差和對流無關",
-    "只要物體摸起來較冷，就代表「冷」當作物質流入手中，無需描述能量流向",
-    "太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞"
+    "真空層主要用來消除紅外線的存在",
+    "氣體傳導與對流",
+    "物體溫度",
+    "所有輻射"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「熱輻射以電磁波傳遞能量，不需介質，因此太陽能穿過太空將能量傳至地球」。"
+      "isCorrect": false,
+      "reason": "仍存在。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「海風是因太陽直接推動空氣水平移動，與海陸升溫差和對流無關」不成立；白天陸地升溫較快，陸地上方空氣上升，較冷海上空氣向陸地流動，形成海風。"
+      "isCorrect": true,
+      "reason": "缺少介質。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只要物體摸起來較冷，就代表「冷」當作物質流入手中，無需描述…」不成立；解釋熱現象要先標出高低溫與能量淨流向，再判斷介質、流體移動或電磁波對應的機制。"
+      "reason": "不直接消除。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞」不成立；熱輻射以電磁波傳遞能量，不需介質，因此太陽能穿過太空將能量傳至地球。"
+      "reason": "輻射仍在。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "比較"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "海風是因太陽直接推動空氣水平移動，與海陸升溫差和對流無關",
-    "只要物體摸起來較冷，就代表「冷」當作物質流入手中，無需描述能量流向",
-    "太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞"
+    "真空層主要用來消除紅外線的存在",
+    "物體溫度",
+    "所有輻射"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱傳播與生活應用; 臺灣國中教育會考自然科導熱、對流、輻射與保溫題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BB-4-1",
       "AUTH-NATURAL-LC-BB-4-3",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

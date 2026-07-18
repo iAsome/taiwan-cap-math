@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄根據液壓機下結論，哪項符合資料？",
+  "stem": "解題時誤把對開口容器中的氣體也直接套用定量密閉氣體的反比關係，結果會錯判壓力。用丁列的體積30 mL檢驗，應改採哪個判準？",
   "options": [
-    "固體壓力是力乘面積，所以面積越大壓力必然越大",
-    "液體壓力只由容器底面積決定，和深度與液體種類無關",
-    "密閉的定量氣體在溫度近似不變時，體積被壓縮而變小，粒子撞壁更頻繁，壓力較大",
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁"
+    "做比較時氣體壓力與體積時忽略溫度",
+    "解題時將 60 mL 到 30 mL 的變化解讀成體積減半、壓力也減半",
+    "定量氣體定溫壓縮時，體積越小，壓力越大",
+    "把對開口容器中的氣體也直接套用定量密閉氣體的反比關係"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「固體壓力是力乘面積，所以面積越大壓力必然越大」不成立；固體壓力 p＝F/A；100 N 均勻作用在 0.020 m² 面積上，壓力為 5000 Pa。"
+      "reason": "做比較時氣體壓力與體積時忽略溫度，將 50°C 的資料併入定溫關係。反比判斷只適用於密閉定量氣體且溫度近似不變；壓力差異若未通過定性判斷密閉定量氣體壓力與體積關係對體積的控制，就不能只歸給溫度。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「液體壓力只由容器底面積決定，和深度與液體種類無關」不成立；同一液體中深度越大壓力越大；同深度時液體密度較大者壓力較大。"
+      "reason": "解題時錯將 60 mL 到 30 mL 的變化解讀成體積減半、壓力也減半，結果會錯判壓力。甲乙丙的氣體量與溫度相同，PV 都約 6000 kPa·mL，體積越小壓力越大；溫度的數值若未依體積核對，會使壓力無法通過定性判斷密閉定量氣體壓力與體積關係檢查。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「密閉的定量氣體在溫度近似不變時，體積被壓縮而變小，粒子撞壁更頻繁，壓力較大」。"
+      "reason": "定量氣體定溫壓縮時，體積越小，壓力越大。乙列的體積為40 mL，溫度為25°C；丙列的體積為30 mL，溫度為25°C。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁」不成立；靜止液體中同一點的壓力可向各方向作用，不只向下；容器側壁也受液體壓力。"
+      "reason": "解題時誤把對開口容器中的氣體也直接套用定量密閉氣體的反比關係，結果會錯判壓力。密閉的定量氣體在溫度近似不變時，體積被壓縮而變小，粒子撞壁更頻繁，壓力較大；體積未列入定性判斷密閉定量氣體壓力與體積關係時，壓力的溫度大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "固體壓力是力乘面積，所以面積越大壓力必然越大",
-    "液體壓力只由容器底面積決定，和深度與液體種類無關",
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁"
+    "做比較時氣體壓力與體積時忽略溫度",
+    "解題時將 60 mL 到 30 mL 的變化解讀成體積減半、壓力也減半",
+    "把對開口容器中的氣體也直接套用定量密閉氣體的反比關係"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

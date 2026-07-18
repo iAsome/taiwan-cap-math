@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "關於通電線圈與永久磁鐵，哪項結論符合題給條件？",
+  "stem": "並列丙與丁，兩者線圈圈數是100、100，電流是1.0 A、1.0 A。由比較通電線圈與永久磁鐵作結論前，哪項線圈圈數前提不能省略？",
   "options": [
-    "變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大",
-    "只要裝置含線圈就能跳過輸入、輸出的分析，直接說能量在線圈中消失",
-    "通電線圈與永久磁鐵完全相同，斷電後磁場必永久保持且不可調整",
-    "通電線圈會形成類似棒形磁鐵的磁場，可藉改變電流、線圈圈數與鐵心調整電磁鐵強弱"
+    "比較單一變因時其餘條件要固定",
+    "主張通電線圈並漏掉磁極",
+    "做比較時圈數影響時同時改變電流和鐵心，卻把差異全歸因於圈數",
+    "把甲 50 圈吸 8 枚、乙 100 圈吸 15 枚，卻判定圈數增加使磁力減弱"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大」不成立；變壓器以交流造成變動磁場，改變電壓以利輸電；遠距離高電壓可在同功率下降低電流與線路損耗。"
+      "isCorrect": true,
+      "reason": "比較單一變因時其餘條件要固定。甲列的線圈圈數為50，電流為0.5 A；乙列的線圈圈數為100，電流為0.5 A。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只要裝置含線圈就能跳過輸入、輸出的分析，直接說能量在線圈中…」不成立；裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出，例如手搖發電機為機械能→電能→光與熱。"
+      "reason": "誤以為通電線圈沒有磁極，不能呈現類似棒形磁鐵的磁場。通電線圈會形成類似棒形磁鐵的磁場，可藉改變電流、線圈圈數與鐵心調整電磁鐵強弱；照原做法會把吸起迴紋針數算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「通電線圈與永久磁鐵完全相同，斷電後磁場必永久保持且不可調整」不成立；通電線圈會形成類似棒形磁鐵的磁場，可藉改變電流、線圈圈數與鐵心調整電磁鐵強弱。"
+      "reason": "做比較時圈數影響時同時改變電流和鐵心，卻把差異全歸因於圈數，結果會錯判吸起迴紋針數。比較單一變因時其餘條件要固定；吸起迴紋針數差異若未通過比較通電線圈與永久磁鐵對線圈圈數的控制，就不能只歸給電流。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「通電線圈會形成類似棒形磁鐵的磁場，可藉改變電流、線圈圈數與鐵心調整電磁鐵強弱」。"
+      "isCorrect": false,
+      "reason": "解題時誤把甲 50 圈吸 8 枚、乙 100 圈吸 15 枚，卻判定圈數增加使磁力減弱。甲乙顯示圈數增加磁效應增強；電流的數值若未依線圈圈數核對，會使吸起迴紋針數無法通過比較通電線圈與永久磁鐵檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
     "條件判斷",
-    "分析"
+    "應用"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大",
-    "只要裝置含線圈就能跳過輸入、輸出的分析，直接說能量在線圈中消失",
-    "通電線圈與永久磁鐵完全相同，斷電後磁場必永久保持且不可調整"
+    "主張通電線圈並漏掉磁極",
+    "做比較時圈數影響時同時改變電流和鐵心，卻把差異全歸因於圈數",
+    "把甲 50 圈吸 8 枚、乙 100 圈吸 15 枚，卻判定圈數增加使磁力減弱"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-KC-4-4",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

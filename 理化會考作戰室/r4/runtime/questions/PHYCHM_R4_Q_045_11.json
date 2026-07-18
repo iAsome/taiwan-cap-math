@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "換成另一組相對質量加總資料，哪項判讀仍合理？",
+  "stem": "只知分子量較大，能否必定斷定液體密度較大？",
   "options": [
-    "一個模型若不能同時精準呈現所有原子性質，就完全沒有科學用途",
-    "H₂O 的相對分子量為 1＋16＝17，因為下標 2 不需乘入",
-    "原子和分子模型是肉眼直接看到的實物照片，不含任何推論",
-    "水 H₂O 的相對分子量為 2×1＋16＝18"
+    "不能，因密度無法量",
+    "不能，還需粒子排列與狀態等條件",
+    "能，所有液體間距相同",
+    "能，分子量唯一決定密度"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「一個模型若不能同時精準呈現所有原子性質，就完全沒有科學用途」不成立；球棒模型適合呈現種類、數目與連接，但不宜由球的顯示大小推斷實際原子尺寸。"
+      "reason": "密度可量。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「H₂O 的相對分子量為 1＋16＝17，因為下標 2 不需…」不成立；水 H₂O 的相對分子量為 2×1＋16＝18；這是相對比較值，未直接表示一個分子質量為 18…。"
+      "isCorrect": true,
+      "reason": "正確限制。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「原子和分子模型是肉眼直接看到的實物照片，不含任何推論」不成立；原子和分子是用來解釋物質組成與性質的粒子模型；分子由特定種類與數目的原子結合。"
+      "reason": "不一定。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「水 H₂O 的相對分子量為 2×1＋16＝18；這是相對比較值，未直接表示一個分子質量為 18 g」。"
+      "isCorrect": false,
+      "reason": "過度單因。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "外推限制"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "一個模型若不能同時精準呈現所有原子性質，就完全沒有科學用途",
-    "H₂O 的相對分子量為 1＋16＝17，因為下標 2 不需乘入",
-    "原子和分子模型是肉眼直接看到的實物照片，不含任何推論"
+    "不能，因密度無法量",
+    "能，所有液體間距相同",
+    "能，分子量唯一決定密度"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-1",
       "AUTH-NATURAL-LC-AA-4-2",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

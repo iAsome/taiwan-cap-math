@@ -28,34 +28,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": "EARTH_R4_ST_214",
-  "stem": "閱讀「比較模型預報和實測路徑」的資料後，為了釐清地圖剖面衛星圖與時間序列對準共同時空範圍，哪一項讀值正確？",
+  "stem": "依「圖層時空資料」，哪兩圖層各欄相同？",
   "options": [
-    "在「比較模型預報和實測路徑」的地圖剖面衛星圖與時間序列對準共同時空範圍資料中，當站點為丙時，資料完整率%為98。",
-    "在「比較模型預報和實測路徑」的地圖剖面衛星圖與時間序列對準共同時空範圍資料中，當站點為丙時，資料完整率%為100。",
-    "在「比較模型預報和實測路徑」的地圖剖面衛星圖與時間序列對準共同時空範圍資料中，當站點為丙時，資料完整率%為72。",
-    "在「比較模型預報和實測路徑」的地圖剖面衛星圖與時間序列對準共同時空範圍資料中，附表找不到站點為丙的紀錄。"
+    "A與C",
+    "B與D",
+    "A與B",
+    "C與D"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「98」來自其他資料列；本列記錄的是「72」。"
+      "reason": "選項「A與C」：此選項誤讀表格、忽略限制或過度外推，與指定欄位及觀測值不一致。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「100」來自其他資料列；本列記錄的是「72」。"
+      "reason": "選項「B與D」：此選項誤讀表格、忽略限制或過度外推，與指定欄位及觀測值不一致。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "逐欄讀值可直接得到「資料完整率%為72」。"
+      "reason": "選項「A與B」：此選項可由表內指定欄位、數值與本技能限制逐項推出，沒有超出資料範圍。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "表中第3列已列出「丙」，不能說沒有記錄。"
+      "reason": "選項「C與D」：此選項誤讀表格、忽略限制或過度外推，與指定欄位及觀測值不一致。"
     }
   ],
   "difficulty": "standard",
@@ -64,7 +64,7 @@
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "兩條曲線相似即可證明因果"
+    "A與C"
   ],
   "provenance": {
     "status": "original",
@@ -98,17 +98,15 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "逐項核對「比較模型預報和實測路徑」的條件後，「在「比較模型預報和實測路徑」的地圖剖面衛星圖與時間序列對準共同時空範圍資料中，當站點為丙時，資料完整率%為72。」符合題目資料；查核依據為：資料品質包含來源、單位、取樣、解析度、缺值與校正。",
+      "evidence": "題示「依「圖層時空資料」，哪兩圖層各欄相同」中，「A與B」符合資料或技能判準；具體依據為：選項「A與B」：此選項可由表內指定欄位、數值與本技能限制逐項推出，沒有超出資料範圍。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「漂亮的圖不等於可靠資料」。",
+      "evidence": "交叉核對「A與C」與「B與D」：前者選項「A與C」：此選項誤讀表格、忽略限制或過度外推，與指定欄位及觀測值不一致。後者選項「B與D」：此選項誤讀表格、忽略限制或過度外推，與指定欄位及觀測值不一致。兩項均不能取代「A與B」。",
       "status": "pass"
     }
   ],
-  "assets": [
-    "EARTH_R4_ASSET_DATA_REASONING"
-  ]
+  "assets": []
 }

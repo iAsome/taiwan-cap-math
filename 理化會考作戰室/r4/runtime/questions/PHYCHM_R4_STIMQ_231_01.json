@@ -12,50 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_231",
-  "stem": "根據鞋底壓力表中紀錄，哪項結論最合理？",
+  "stem": "甲的垂直作用力為600 N、接觸面積為0.030 m²；乙則是600 N、0.015 m²。從由作用力與面積計算固體壓力的定義看，垂直作用力與接觸面積結果如何連結？",
   "options": [
-    "固體壓力 p＝F/A；100 N 均勻作用在 0.020 m² 面積上，壓力為 5000 Pa",
-    "固體壓力是力乘面積，所以面積越大壓力必然越大",
-    "液體壓力只由容器底面積決定，和深度與液體種類無關",
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁"
+    "解題時將壓力公式寫成 p＝F×A，所以判成接觸面越大壓力越大",
+    "乙的壓力為 600÷0.015＝40000 Pa，是甲的兩倍",
+    "僅憑接觸面積就比較壓力，並漏掉先確認兩次實驗的垂直作用力相同",
+    "直接把平方公分數值當成平方公尺數值"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「固體壓力 p＝F/A；100 N 均勻作用在 0.020 m² 面積上，壓力為 5000 Pa」。"
+      "isCorrect": false,
+      "reason": "乙的壓力為 600÷0.015＝40000 Pa，是甲的兩倍。甲列的垂直作用力為600 N、接觸面積為0.030 m²；乙列的垂直作用力為600 N、接觸面積為0.015 m²。解題時錯將壓力公式寫成 p＝F×A，因而認為接觸面越大壓力越大。固體壓力 p＝F/A；照原做法會把壓力算錯或判反。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「固體壓力是力乘面積，所以面積越大壓力必然越大」不成立；固體壓力 p＝F/A；100 N 均勻作用在 0.020 m² 面積上，壓力為 5000 Pa。"
+      "isCorrect": true,
+      "reason": "乙的壓力為 600÷0.015＝40000 Pa，是甲的兩倍。甲列的垂直作用力為600 N、接觸面積為0.030 m²；乙列的垂直作用力為600 N、接觸面積為0.015 m²。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「液體壓力只由容器底面積決定，和深度與液體種類無關」不成立；同一液體中深度越大壓力越大；同深度時液體密度較大者壓力較大。"
+      "reason": "乙的壓力為 600÷0.015＝40000 Pa，是甲的兩倍。甲列的垂直作用力為600 N、接觸面積為0.030 m²；乙列的垂直作用力為600 N、接觸面積為0.015 m²。僅憑接觸面積就比較壓力，卻未先確認兩次實驗的垂直作用力相同，結果會錯判壓力。只比較面積影響時必須固定垂直作用力，面積還要換成 m²；壓力差異若未通過由作用力與面積計算固體壓力對垂直作用力的控制，就不能只歸給接觸面積。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁」不成立；靜止液體中同一點的壓力可向各方向作用，不只向下；容器側壁也受液體壓力。"
+      "reason": "乙的壓力為 600÷0.015＝40000 Pa，是甲的兩倍。甲列的垂直作用力為600 N、接觸面積為0.030 m²；乙列的垂直作用力為600 N、接觸面積為0.015 m²。把 200 cm² 直接代成 200 m²，算出的壓力因此小了許多。乙的壓力為 600÷0.015＝40000 Pa，是甲的兩倍；接觸面積的數值若未依垂直作用力核對，會使壓力無法通過由作用力與面積計算固體壓力檢查。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "資料判讀"
+    "資料判讀",
+    "計算"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "固體壓力是力乘面積，所以面積越大壓力必然越大",
-    "液體壓力只由容器底面積決定，和深度與液體種類無關",
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁"
+    "解題時將壓力公式寫成 p＝F×A，所以判成接觸面越大壓力越大",
+    "僅憑接觸面積就比較壓力，並漏掉先確認兩次實驗的垂直作用力相同",
+    "直接把平方公分數值當成平方公尺數值"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -64,20 +65,6 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_011"
   ]

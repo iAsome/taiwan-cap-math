@@ -13,43 +13,43 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "處理截切關係判斷斷層或岩脈年代的資料時，哪一個推理順序較完整？",
+  "stem": "處理隧道口截切剖面資料時，哪個推理順序合理？（用截切關係判斷斷層或岩脈年代）",
   "options": [
-    "先公布截切關係判斷斷層或岩脈年代結論，再決定量哪個變因",
-    "判讀截切關係判斷斷層或岩脈年代時先逐一列出沉積、變形、侵蝕、侵入與斷層事件，再檢查反例",
-    "解讀「以相同化石對比兩地岩層」時把事件與相對判斷直接相減",
-    "判斷截切關係判斷斷層或岩脈年代時只保留「以相同化石對比兩地岩層」最符合預期的一次觀察"
+    "先把缺少接觸的事件判成同時，再用圖面左右補出先後。",
+    "先核對題述接觸或尺度，再建立甲乙早於丁，丁早於戊，最後檢查交會處未見穿切、終止或錯移就不能排序。",
+    "先按岩色或線條粗細排序，再忽略未定關係。",
+    "先採信「被切過的地層一定比截切它的岩脈年輕。」，再省略「交會處未見穿切、終止或錯移就不能排序」的查核，最後把同一排序套到所有未觀察露頭。"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "在「以相同化石對比兩地岩層」前先公布結論會影響後續選擇資料。"
+      "reason": "缺少接觸只表示證據不足，圖面左右也不能補成地質事件的形成先後。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "順序保留從觀測、比較到結論的可檢核鏈。"
+      "reason": "題述接觸或尺度可建立甲乙早於丁，丁早於戊；再檢查「交會處未見穿切、終止或錯移就不能排序」可防止超出資料。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "不同變因或單位不能直接運算。"
+      "reason": "岩色與線條粗細不是年代證據，忽略未定關係會捏造題目未給的先後。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "忽略「以相同化石對比兩地岩層」的變異與反例會高估結論強度。"
+      "reason": "迷思與題述證據衝突；省略適用限制並推廣到未觀察露頭，會造成三次無根據的推論。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
     "order-reasoning-steps"
   ],
-  "representationType": "procedure",
+  "representationType": "evidence-reasoning",
   "misconceptionTargets": [
-    "地層缺一層表示該時期不存在"
+    "先採信「被切過的地層一定比截切它的岩脈年輕。」，再省略「交會處未見穿切、終止或錯移就不能排序」的查核，最後把同一排序套到所有未觀察露頭。"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "逐項核對「以相同化石對比兩地岩層」的條件後，「判讀截切關係判斷斷層或岩脈年代時先逐一列出沉積、變形、侵蝕、侵入與斷層事件，再檢查反例」符合題目資料；查核依據為：未翻轉沉積層通常下老上新。",
+      "evidence": "先讀「岩脈丁穿過砂岩甲和頁岩乙，斷層戊又把丁錯開」，再導出甲乙早於丁，丁早於戊。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地層可能翻轉、缺失或受侵蝕」。",
+      "evidence": "完成排序後以「交會處未見穿切、終止或錯移就不能排序」回查，能保留未定而不補猜。",
       "status": "pass"
     }
   ],

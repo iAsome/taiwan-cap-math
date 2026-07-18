@@ -12,50 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "PHYCHM_R4_STIM_017",
-  "stem": "冰水加熱曲線題組中，哪項說明符合紀錄？",
+  "stem": "若要公平比較三態的壓縮性，題述中哪項控制最重要？",
   "options": [
-    "液體粒子可相對移動",
-    "固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹",
-    "液體和氣體都沒有固定體積，所以兩者的性質完全相同",
-    "水蒸氣變成液態水稱為凝固，液態水變成冰稱為凝結"
+    "只比較三種內容物的起始體積",
+    "活塞面積與施力相同",
+    "讓氣體組使用較大的活塞面積",
+    "各組施力不同但壓下相同距離"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「固體粒子緊密且在平衡位置附近振動，液體粒子可相對移動，氣體粒子間距大且運動自由」。"
+      "isCorrect": false,
+      "reason": "起始體積相同仍不足以確保外加壓力相同。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹」不成立；固體粒子緊密且在平衡位置附近振動，液體粒子可相對移動，氣體粒子間距大且運動自由。"
+      "isCorrect": true,
+      "reason": "同面積、同力可使施加壓力可比較。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「液體和氣體都沒有固定體積，所以兩者的性質完全相同」不成立；固體保有固定形狀與體積；液體有固定體積但隨容器改變形狀；氣體充滿容器。"
+      "reason": "改變面積會同時改變壓力，無法歸因物態。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「水蒸氣變成液態水稱為凝固，液態水變成冰稱為凝結」不成立；冰吸熱熔化成水，水吸熱汽化；水蒸氣冷卻凝結，水再凝固成冰。"
+      "reason": "壓下距離是結果之一，不能取代共同施力條件。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "證據評估"
+    "實驗設計"
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "固體完全沒有粒子運動，氣體則是因粒子本身體積變大才膨脹",
-    "液體和氣體都沒有固定體積，所以兩者的性質完全相同",
-    "水蒸氣變成液態水稱為凝固，液態水變成冰稱為凝結"
+    "只比較三種內容物的起始體積",
+    "讓氣體組使用較大的活塞面積",
+    "各組施力不同但壓下相同距離"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-1",
       "AUTH-NATURAL-LC-AB-4-2",
@@ -64,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

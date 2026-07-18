@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對混合熱平衡結果，哪項說法正確？",
+  "stem": "熱流方向在何時可能反轉？",
   "options": [
-    "Q＝mcΔT 中應把質量、比熱與溫差相加，所以為 109.2 J",
-    "比熱較大表示物質每吸收一點熱就升溫更多，所以一定更快變熱",
-    "兩物體接觸時，熱量淨傳自高溫物體至低溫物體，直到達熱平衡",
-    "比較吸熱量只需看最後溫度，不必知道質量、初溫或比熱"
+    "顏色改變時必反轉",
+    "質量不變時永不反轉",
+    "單位改寫時",
+    "外界加熱使原低溫端變成高溫端"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「Q＝mcΔT 中應把質量、比熱與溫差相加，所以為 109.…」不成立；若 100 g 水的比熱為 4.2 J/(g·°C)，升溫 5 °C 需熱量 Q＝100×4.…。"
+      "reason": "顏色不決定。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「比熱較大表示物質每吸收一點熱就升溫更多，所以一定更快變熱」不成立；相同質量吸收相同熱量時，比熱較大的物質溫度上升較少。"
+      "reason": "質量不是關鍵。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「兩物體接觸時，熱量淨傳自高溫物體至低溫物體，直到達熱平衡」。"
+      "isCorrect": false,
+      "reason": "單位不改物理。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「比較吸熱量只需看最後溫度，不必知道質量、初溫或比熱」不成立；沒有相變時，吸放熱大小由 Q＝mcΔT 比較；質量、比熱與溫差都必須納入。"
+      "isCorrect": true,
+      "reason": "方向隨當下溫差。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "條件推論"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "Q＝mcΔT 中應把質量、比熱與溫差相加，所以為 109.2 J",
-    "比熱較大表示物質每吸收一點熱就升溫更多，所以一定更快變熱",
-    "比較吸熱量只需看最後溫度，不必知道質量、初溫或比熱"
+    "顏色改變時必反轉",
+    "質量不變時永不反轉",
+    "單位改寫時"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱學與能量; 臺灣國中教育會考自然科熱量、比熱、相變與生活現象題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-BA-4-1",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

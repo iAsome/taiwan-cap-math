@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理限量反應物資料，哪項敘述合理？",
+  "stem": "反應前42.0 g，反應後表格兩項合計41.9 g，天平最小顯示0.1 g。哪個處理合理？",
   "options": [
-    "反應物初始質量較少的一方永遠是過量物，因此 3 g A 會剩下",
-    "200 g、10% 溶液中有 200 g 可反應溶質，濃度數字不影響反應量",
-    "已知生成物甲 11 g",
-    "只要數字大小相合，質量比可直接與體積比或粒子數比互換"
+    "保留數據並檢查量測與重複結果",
+    "刪除整列",
+    "把任一項加0.1 g",
+    "宣布原子消失"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「反應物初始質量較少的一方永遠是過量物，因此 3 g A 會…」不成立；若 A 與 B 的完全消耗比是 1：2，提供 3 g A、10 g B 時 A 先用完，B 消…。"
+      "isCorrect": true,
+      "reason": "差值在解析度一格。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「200 g、10% 溶液中有 200 g 可反應溶質，濃度…」不成立；200 g、10% 溶液中的溶質質量是 20 g；反應定量應使用 20 g，不是整份溶液 20…。"
+      "reason": "沒有排除原因。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「密閉系統反應物共 18 g，已知生成物甲 11 g，資料表的乙應補為 7 g」。"
+      "isCorrect": false,
+      "reason": "不可改數據。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要數字大小相合，質量比可直接與體積比或粒子數比互換」不成立；使用比例前要確認兩邊都是質量、體積或粒子數，並先統一 g、kg、mL 等單位。"
+      "reason": "證據不足。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "數據品質"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "反應物初始質量較少的一方永遠是過量物，因此 3 g A 會剩下",
-    "200 g、10% 溶液中有 200 g 可反應溶質，濃度數字不影響反應量",
-    "只要數字大小相合，質量比可直接與體積比或粒子數比互換"
+    "刪除整列",
+    "把任一項加0.1 g",
+    "宣布原子消失"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-2",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

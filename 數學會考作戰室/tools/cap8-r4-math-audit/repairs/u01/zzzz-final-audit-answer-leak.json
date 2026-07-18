@@ -1,0 +1,177 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u01",
+  "batch": "002-u01-complete",
+  "skills": ["s003", "s007", "s013"],
+  "mc": [
+    {
+      "questionId": "u01-s003-v003",
+      "expectedContentSha256": "418506db530e740c6785b97dbeec658a46e149c09d73f935fd4cfb7f6c4030c4",
+      "set": {
+        "explanation": "圖上 -4 到 0 之間分成 4 個等距格，所以每格代表 1。P 在 -4 右側第一個刻度，也就是原點左側三格，因此 P=−3；3 只表示到原點的距離，不能作為坐標。",
+        "steps": ["由 -4 到 0 的四格確認每格代表 1。", "從 -4 向右一格找到 P。", "讀得 P 的坐標是 −3。"]
+      },
+      "reviewSet": {
+        "independentSolution": "圖上 -4 到 0 之間有四個等距格，因此每格 1；P 在 -4 右側第一格，所以坐標為 -3。",
+        "reviewerNote": "圖上 -4 到 0 之間有四個等距格，因此每格 1；P 在 -4 右側第一格，所以坐標為 -3。不參照儲存答案，四個選項逐一核對後，-2 與 -4 各差一格，3 的方向錯誤，因此只有 -3 成立。圖與替代文字只提供刻度關係，不直接印出所求坐標。",
+        "reviewedAt": "2026-07-18"
+      }
+    },
+    {
+      "questionId": "u01-s003-v006",
+      "expectedContentSha256": "3e450ad5f2e37c48b480da0002a34222d2713fb56f6dca4525a46376f8f19e57",
+      "set": {
+        "explanation": "圖上 -6 到 0 之間分成 3 個等距格，所以每格代表 2。Q 在 0 右側第二個刻度，因此坐標是 0+2×2=4；不能把到原點的格數 2 當成坐標，而 6 位於右側第三格。",
+        "steps": ["由 -6 到 0 的三格確認每格代表 2。", "Q 在 0 右側第二格。", "計算 0+2×2=4。"],
+        "optionAnalysis": [
+          {"choice": "5", "truth": false, "reason": "刻度值每次增加 2，不會得到 5。"},
+          {"choice": "4", "truth": true, "reason": "Q 在 0 右側第二格，坐標為 0+2×2=4。"},
+          {"choice": "6", "truth": false, "reason": "6 是 Q 右側下一個刻度的數值。"},
+          {"choice": "2", "truth": false, "reason": "把 Q 到原點的兩格誤當成坐標，漏乘每格 2。"}
+        ]
+      },
+      "reviewSet": {
+        "independentSolution": "圖上 -6 到 0 之間有三個等距格，因此每格 2；Q 在 0 右側第二格，所以坐標為 0+2×2=4。",
+        "reviewerNote": "圖上 -6 到 0 之間有三個等距格，因此每格 2；Q 在 0 右側第二格，所以坐標為 0+2×2=4。不參照儲存答案，選項 5 不合刻度，6 是右側下一格，2 漏乘每格 2，因此只有 4 成立。圖與替代文字只提供刻度關係，不直接印出所求坐標。",
+        "reviewedAt": "2026-07-18"
+      }
+    },
+    {
+      "questionId": "u01-s013-v008",
+      "expectedContentSha256": "2e74a1e51f8adf80c773c3d0e15f89ebdc45558feaa62d07b3ff0002aa6a5e31",
+      "set": {
+        "optionAnalysis": [
+          {"choice": "5¹²", "truth": false, "reason": "錯把冪的乘方與後續除法合併成指數 12；正確總指數是 2×3−4=2。"},
+          {"choice": "5⁵", "truth": false, "reason": "把冪的乘方誤算為指數相加 2+3=5，且漏掉後續除以 5⁴。"},
+          {"choice": "5¹", "truth": false, "reason": "先把冪的乘方誤算為 5⁵，才會再以 5−4 得到錯誤指數 1。"},
+          {"choice": "5²", "truth": true, "reason": "先將冪的乘方指數相乘，再做同底數相除；2×3−4=2，所以得到 5²。"}
+        ]
+      },
+      "reviewReplaceText": {
+        "把2×3×?錯。": "錯把冪的乘方與後續除法合併成指數 12；正確總指數是 2×3−4=2。",
+        "只做加法。": "把冪的乘方誤算為指數相加 2+3=5，且漏掉後續除以 5⁴。",
+        "同底數相除應用指數 9−4=5；寫成 3⁴ 是把指數相減算錯。": "先把冪的乘方誤算為 5⁵，才會再以 5−4 得到錯誤指數 1。"
+      },
+      "reviewSet": {
+        "reviewedAt": "2026-07-18"
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [],
+  "drawingSpecs": [
+    {
+      "figureId": "fig-u01-s003-v003",
+      "expectedContentSha256": "3c4c6a9118cf075fd7168a982603b44608054021a3185744e38587a3a7edffb4",
+      "set": {
+        "altText": "水平數線從 -4 到 4，共有九個等距刻度，每格代表 1；圖中標示 -4、0、4，點 P 位於 -4 右側第一個刻度。",
+        "drawingSpec": {
+          "canvas": "720×220，viewBox 0 0 720 220，四周至少留白 45 像素",
+          "axis": "水平實線由 (80,110) 到 (640,110)，左右端各有箭頭",
+          "scale": "刻度 -4 到 4，相鄰刻度 70 像素，每格代表 1",
+          "point": "P 位於 -4 右側第一個刻度，中心 (150,110)，使用半徑 7 的實心圓",
+          "labels": "除 P 所在的待求刻度外，各整數標在軸下 28 像素；P 標在點上方 28 像素",
+          "lineStyle": "軸 3 像素黑色實線；刻度 2 像素；不得使用虛線",
+          "proportionNote": "按比例繪製，可由已知刻度與等距關係讀值",
+          "accessibility": "先由 -4 到 0 的四個等距格確認每格 1，再指出 P 位於 -4 右側第一格；不直接說出待求坐標"
+        },
+        "svgAssertions": ["<circle cx=\"150\" cy=\"110\"", ">P</text>", ">-4</text>", ">0</text>", ">4</text>"],
+        "figureReview": {
+          "reviewVersion": "human-figure-review-r2.1",
+          "coordinateAndScaleCheck": "pass",
+          "labelPlacementCheck": "pass",
+          "solidDashedLineCheck": "pass",
+          "questionConsistencyCheck": "pass",
+          "answerLeakCheck": "pass",
+          "mobileReadabilityCheck": "pass at 360 CSS px width",
+          "accessibilityCheck": "pass: SVG title, relational desc, role=img and equivalent relational altText present",
+          "reviewNote": "逐刻度核對 -4 至 4 每格 1；P 的圓心在 -4 右側第一格。待求刻度不印數值，SVG desc 與 altText 只描述等距關係，不直接洩漏答案。",
+          "reviewedAt": "2026-07-18",
+          "decision": "pass"
+        }
+      }
+    },
+    {
+      "figureId": "fig-u01-s003-v006",
+      "expectedContentSha256": "1e6283781e3a2102f7edd00867c1524225518928249bdd76bb7d5ede22767aa1",
+      "set": {
+        "altText": "水平數線共有七個等距刻度，從 -6 到 6，每格代表 2；圖中標示 -6、0、6，點 Q 位於 0 右側第二個刻度。",
+        "drawingSpec": {
+          "canvas": "720×220，viewBox 0 0 720 220",
+          "axis": "水平實線由 (80,110) 到 (640,110)，左右箭頭",
+          "scale": "七個等距刻度從 -6 到 6，相鄰刻度 80 像素，每格 2 單位",
+          "point": "Q 位於 0 右側第二個刻度，中心 (480,110)，實心圓半徑 7",
+          "labels": "除 Q 所在的待求刻度外，其餘刻度值在下方；Q 在上方",
+          "lineStyle": "全部實線，無虛線",
+          "proportionNote": "按比例繪製",
+          "accessibility": "先由 -6 到 0 的三個等距格確認每格 2，再指出 Q 位於 0 右側第二格；不直接說出待求坐標"
+        },
+        "svgAssertions": ["<circle cx=\"480\" cy=\"110\"", ">Q</text>", ">-6</text>", ">0</text>", ">6</text>"],
+        "figureReview": {
+          "reviewVersion": "human-figure-review-r2.1",
+          "coordinateAndScaleCheck": "pass",
+          "labelPlacementCheck": "pass",
+          "solidDashedLineCheck": "pass",
+          "questionConsistencyCheck": "pass",
+          "answerLeakCheck": "pass",
+          "mobileReadabilityCheck": "pass at 360 CSS px width",
+          "accessibilityCheck": "pass: SVG title, relational desc, role=img and equivalent relational altText present",
+          "reviewNote": "逐刻度核對 -6 至 6 每格 2；Q 的圓心在 0 右側第二格。待求刻度不印數值，SVG desc 與 altText 只描述等距關係，不直接洩漏答案。",
+          "reviewedAt": "2026-07-18",
+          "decision": "pass"
+        }
+      }
+    },
+    {
+      "figureId": "fig-u01-s007-v004",
+      "expectedContentSha256": "94d70e567f3fc29349c55a37842e1d9de2b0cd97ba4ead8474268a6fca59544f",
+      "replaceText": {
+        "距離等於 |5-(-4)|，即 9": "說明 M=-4、N=5，並詢問兩點距離；不計算或提供結果",
+        "M=-4 與 N=5 的刻度相差 9 格；": "M=-4 與 N=5 分居已標示刻度；",
+        "而未寫答案 9": "而未寫計算結果"
+      },
+      "set": {
+        "altText": "數線每格代表 1；點 M 位於 -4，點 N 位於 5，上方雙向箭頭由 M 指向 N 並標示「距離？」。"
+      }
+    },
+    {
+      "figureId": "fig-u01-s007-v010",
+      "expectedContentSha256": "33fe9f5d6c57e1453a4855dcec374f144ec541849b7953d0cb20c0ff3951d5a4",
+      "replaceText": {
+        "文字說明清晨 -6°C、中午 3°C，溫差為 |3-(-6)|": "文字說明清晨 -6°C、中午 3°C，並詢問兩次溫度的差距；不列算式或結果",
+        "圖中未標示溫差 9°C": "圖中未標示溫差的計算結果"
+      },
+      "set": {
+        "altText": "水平溫度刻度每格代表 1°C；清晨以圓點標在 -6°C，中午以方形標在 3°C。"
+      }
+    }
+  ],
+  "textFiles": [
+    {
+      "path": "figures/u01/fig-u01-s003-v003.svg",
+      "replacements": [
+        {
+          "from": "<desc id=\"d\">數線從負四到四，每格一單位，P 在負三。</desc>",
+          "to": "<desc id=\"d\">水平數線從負四到四，共有九個等距刻度，每格一單位；圖中標示負四、零、四，P 位於負四右側第一個刻度。</desc>"
+        },
+        {
+          "from": "<text x=\"150\" y=\"150\" text-anchor=\"middle\" font-size=\"20\">-3</text>",
+          "to": "<!-- queried tick label intentionally omitted -->"
+        }
+      ]
+    },
+    {
+      "path": "figures/u01/fig-u01-s003-v006.svg",
+      "replacements": [
+        {
+          "from": "<desc id=\"d\">數線刻度從負六到六，每格二單位，Q 位在四。</desc>",
+          "to": "<desc id=\"d\">水平數線共有七個等距刻度，從負六到六，每格二單位；圖中標示負六、零、六，Q 位於零右側第二個刻度。</desc>"
+        },
+        {
+          "from": "<text x=\"480\" y=\"150\" text-anchor=\"middle\" font-size=\"20\">4</text>",
+          "to": "<!-- queried tick label intentionally omitted -->"
+        }
+      ]
+    }
+  ]
+}

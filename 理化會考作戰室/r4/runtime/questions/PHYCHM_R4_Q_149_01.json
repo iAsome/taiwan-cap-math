@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "學生討論質量比熱與溫差比較吸放熱，哪項敘述正確？",
+  "stem": "熱量大小比較應看？",
   "options": [
-    "比較吸熱量只需看最後溫度，不必知道質量、初溫或比熱",
-    "沒有相變時，吸放熱大小由 Q＝mcΔT 比較；質量、比熱與溫差都必須納入",
-    "溫度和熱量是同一物理量，50 °C 就表示物體內有 50 J 熱量",
-    "熱量會自然由低溫物體流向高溫物體，因為低溫處需要更多熱"
+    "只看m",
+    "只比較兩物體的最終溫度即可得到熱量大小",
+    "只看顏色",
+    "mc|ΔT|"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「比較吸熱量只需看最後溫度，不必知道質量、初溫或比熱」不成立；沒有相變時，吸放熱大小由 Q＝mcΔT 比較；質量、比熱與溫差都必須納入。"
+      "reason": "少c、ΔT。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「沒有相變時，吸放熱大小由 Q＝mcΔT 比較；質量、比熱與溫差都必須納入」。"
+      "isCorrect": false,
+      "reason": "不是溫差。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「溫度和熱量是同一物理量，50 °C 就表示物體內有 50 …」不成立；溫度描述物體熱狀態，熱量是因溫差而移轉的能量；物體不是「含有某度熱量」。"
+      "reason": "顏色不能取代質量、比熱與溫差，無法由顏色計算熱量。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「熱量會自然由低溫物體流向高溫物體，因為低溫處需要更多熱」不成立；兩物體接觸時，熱量淨傳自高溫物體至低溫物體，直到達熱平衡。"
+      "isCorrect": true,
+      "reason": "三因子完整。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "辨認",
-    "概念理解"
+    "公式"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "比較吸熱量只需看最後溫度，不必知道質量、初溫或比熱",
-    "溫度和熱量是同一物理量，50 °C 就表示物體內有 50 J 熱量",
-    "熱量會自然由低溫物體流向高溫物體，因為低溫處需要更多熱"
+    "只看m",
+    "只比較兩物體的最終溫度即可得到熱量大小",
+    "只看顏色"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱學與能量; 臺灣國中教育會考自然科熱量、比熱、相變與生活現象題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-BA-4-1",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

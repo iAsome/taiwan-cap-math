@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對濃度與反應量結果，哪項說法正確？",
+  "stem": "A 5 g、B 10 mL，已知B密度0.5 g/mL。A：B質量比為何？",
   "options": [
-    "生成物乙應為 29 g，因為要把已知生成物加到反應物上",
-    "只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比",
-    "反應物初始質量較少的一方永遠是過量物，因此 3 g A 會剩下",
-    "使用比例前要確認兩邊都是質量、體積或粒子數"
+    "1：1",
+    "2：1",
+    "5：10",
+    "1：2"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「生成物乙應為 29 g，因為要把已知生成物加到反應物上」不成立；密閉系統反應物共 18 g，已知生成物甲 11 g，資料表的乙應補為 7 g。"
+      "isCorrect": true,
+      "reason": "B＝0.5×10＝5 g，故1：1。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比」不成立；一系列實驗中若 A、B 剛好完全反應的消耗質量一直維持 2：3，可以該恆定比來推算同反應資料。"
+      "reason": "順序不符。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「反應物初始質量較少的一方永遠是過量物，因此 3 g A 會…」不成立；若 A 與 B 的完全消耗比是 1：2，提供 3 g A、10 g B 時 A 先用完，B 消…。"
+      "reason": "仍把mL當g。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「使用比例前要確認兩邊都是質量、體積或粒子數，並先統一 g、kg、mL 等單位」。"
+      "isCorrect": false,
+      "reason": "B質量不是10 g。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "證據判讀",
-    "分析"
+    "密度轉換"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "生成物乙應為 29 g，因為要把已知生成物加到反應物上",
-    "只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比",
-    "反應物初始質量較少的一方永遠是過量物，因此 3 g A 會剩下"
+    "2：1",
+    "5：10",
+    "1：2"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-2",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u16",
+  "batch": "017-u16-complete",
+  "skills": ["s013", "s014", "s015", "s016", "s017", "s018"],
+  "mc": [
+    {
+      "questionId": "u16-s013-v002",
+      "expectedContentSha256": "8500315e68cbe951dfca87d7cc64139f7665ddcffa22e52bae1224eecfa31564",
+      "set": {"explanation": "設另一個遠內角為x，由外角定理得57°+x=132°，所以x=132°-57°=75°。代回後57°+75°=132°，且兩角都是正內角。所得75°也小於132°，符合遠內角範圍。相鄰內角則為48°，與外角合成平角。"}
+    },
+    {
+      "questionId": "u16-s013-v004",
+      "expectedContentSha256": "5952fcb6f34d71eaab4e40a06b87338681ce00fc1fcb5c7cfdf51d5f5d8fb7ce",
+      "set": {"explanation": "依外角定理列式4x+8=(x+20)+(2x+18)，整理得4x+8=3x+38，所以x=30。代回後外角為128°，兩個遠內角為50°、78°，相加確為128°。三個相關角度皆在合法範圍內。相鄰內角為52°，與128°外角互補。"}
+    },
+    {
+      "questionId": "u16-s013-v006",
+      "expectedContentSha256": "29a8ce5740a11af6242ca89282c97b2ce8bb43ec6387ab3bbcef4679f2f431bf",
+      "set": {"explanation": "∠ACD的兩個遠內角是∠A與∠B，因此3x+(x+12)=104，解得4x=92、x=23。題目問∠A，所以∠A=3x=69°；此時∠B=35°，兩角和確為104°。結果也使相鄰內角為76°，全圖相容。三個內角相加也確實等於一百八十度。"}
+    },
+    {
+      "questionId": "u16-s013-v011",
+      "expectedContentSha256": "b337bfda6d32514f80b59b01b05069bb5c42481a2aaf2c92eb5a83cfe1bb0287",
+      "set": {"explanation": "126°的外轉角等於兩個不相鄰內角的和。已知其中一個為49°，另一個便是126°-49°=77°；代回可得49°+77°=126°。所得77°小於126°且為正，範圍正確。相鄰內角為54°，與外角互補。"}
+    },
+    {
+      "questionId": "u16-s014-v002",
+      "expectedContentSha256": "b464d926e8993818c83fb9e86cf2e331750062b10f6c0453f4ba3318365ca682",
+      "set": {"explanation": "三邊中BC=11最長，而BC不接觸的對面頂點是A，因此∠A最大。∠B的對邊AC=6最短，∠C的對邊AB=8居中。三組對邊配對完整，排序沒有並列。所以三個角由大到小依序為A、C、B。"}
+    },
+    {
+      "questionId": "u16-s014-v003",
+      "expectedContentSha256": "238899d7ef619997ed5ed3a8af4403aa6f71d619c14ef02db494ca2cb7ff96df",
+      "set": {"explanation": "三個角中∠Q=71°最大，所以它的對邊PR最長。PQ對∠R=67°，QR對∠P=42°，都不可能是最長邊。三個角互異，所以最長邊也唯一。其餘兩邊排序為PQ大於QR。"}
+    },
+    {
+      "questionId": "u16-s014-v004",
+      "expectedContentSha256": "da4a178f3a72c59c791554b65d110bd10aa36dd8133854762cb2540118827d53",
+      "set": {"explanation": "代入x=4得AB=9、AC=10、BC=9。相等的AB、BC分別對∠C、∠A，所以∠A=∠C；最長邊AC對∠B，因此∠A=∠C<∠B。等邊對等角的等號必須保留。最短兩邊同長，因此最小兩角也同大。"}
+    },
+    {
+      "questionId": "u16-s014-v005",
+      "expectedContentSha256": "976e98e20d402bde853f0a5fb80cca73c14f9c363af3867de63ec3563ec5886e",
+      "set": {"explanation": "∠A的對邊是BC，∠B的對邊是AC。同一三角形中大角對大邊，所以∠A>∠B必然推出BC>AC；已知AC=9，故BC>9。這是嚴格不等式，BC不能等於9。若取等號，兩個對角也應相等，違反題設。"}
+    },
+    {
+      "questionId": "u16-s014-v006",
+      "expectedContentSha256": "9dbc4fa3a32f62d1bcbe10bf1bd42842a545a9ea41e23133055b39cf8b48b0cf",
+      "set": {"explanation": "a、b、c分別是∠A、∠B、∠C的對邊，邊角大小在同一三角形中保持相同順序。因此a<c<b直接對應A<C<B。三組皆為嚴格大小，沒有等角情形。因此最大角是B，最小角是A。"}
+    },
+    {
+      "questionId": "u16-s014-v007",
+      "expectedContentSha256": "24a1ff05d78b6c0713d55f0dfde4dbc47d91deebf9a88a152bf1778b9368f33f",
+      "set": {"explanation": "∠B的對邊AC=10，∠C的對邊AB=13。由10<13必有∠B<∠C，與題設∠B>∠C矛盾；這個矛盾與BC取何整數無關，所以可能數為0。因此不必再檢查第三邊範圍。無論BC如何，已知兩邊已決定角的反序。"}
+    },
+    {
+      "questionId": "u16-s014-v008",
+      "expectedContentSha256": "573bba4e3c22c51112c30aff47bc73968d0e68302f64ae601f6a2b1e09274171",
+      "set": {"explanation": "角比2:3:4的各項皆為正，所以∠A<∠B<∠C。它們的對邊依序是BC、CA、AB，故邊長關係為BC<CA<AB。最大角C正確對應最長邊AB。中間角B對應中間邊CA，三組一致。"}
+    },
+    {
+      "questionId": "u16-s015-v002",
+      "expectedContentSha256": "109cbd60a7ae6d00ccf6f4b53b1c82d2e8ae97cecfffb6c71667d3cc0a8259ed",
+      "set": {"explanation": "正九邊形的九個同方向外角相等，總和為360°，所以每個外角是360°÷9=40°。140°是與40°互補的內角。九個40°相加也回到360°。內角與外角相加為180°，兩項也一致。"}
+    },
+    {
+      "questionId": "u16-s015-v004",
+      "expectedContentSha256": "e1241209477ab2d10674c3aeaf460447b67f5f747f1a39678df10f122eafe5ec",
+      "set": {"explanation": "四個已知外角和為68°+75°+92°+61°=296°。五個同方向外角總和是360°，所以第五個外角為360°-296°=64°。回加64°後總和恰為360°。64°亦介於零度與一百八十度之間，符合凸角範圍。"}
+    },
+    {
+      "questionId": "u16-s015-v005",
+      "expectedContentSha256": "a5a6b4ce79310506e59751bc967dbdcb37d5f55f7865b6b29b4bce2e14a8049d",
+      "set": {"explanation": "每個內角150°與相鄰外角互補，所以每個外角為180°-150°=30°。正多邊形邊數為360°÷30°=12。十二個30°外角正好合成一周。所得邊數是大於等於三的整數，圖形可成立。"}
+    },
+    {
+      "questionId": "u16-s015-v006",
+      "expectedContentSha256": "dfd00868c54fadf5b842ecdc85902a1ced7fcbf0c75a1fa87de910c18c080d64",
+      "set": {"explanation": "比值總份數為1+2+3+4+5+3=18，一份外角為360°÷18=20°。最小外角對應一份，因此是20°；最大外角為100°，也小於180°。各外角均為正，凸角條件成立。六個角依比例回算後總和正好360°。"}
+    },
+    {
+      "questionId": "u16-s015-v007",
+      "expectedContentSha256": "1ed1fd015e50ab20ba938c8497bcc1e525904939497aecb740d5fcc35652c82e",
+      "set": {"explanation": "七個40°外角合計280°，離360°還差80°。其餘外角每個20°，所以還有80°÷20°=4個；總邊數為7+4=11。十一個外角的總和可回算為360°。七大角加四小角的數量也與邊數一致。"}
+    },
+    {
+      "questionId": "u16-s015-v008",
+      "expectedContentSha256": "460beaa30da78b8b283b386264aa789a1384a4a9e869f3a5f53f3c0f9aac717f",
+      "set": {"explanation": "五個外角和為x+2x+2x+3x+4x=12x=360°，所以x=30°。最大內角與最小外角30°相鄰，故為180°-30°=150°。其他內角都不會大於這個值。最小外角唯一對應最大內角，配對沒有歧義。"}
+    },
+    {
+      "questionId": "u16-s015-v009",
+      "expectedContentSha256": "14f9f790262504b25d4b22dca294e185960767f23a34730409180c9135ad8454",
+      "set": {"explanation": "(15-2)×180°=2340°及2340°÷15=156°都算對，但156°是正十五邊形的每一內角。相鄰外角應為180°-156°=24°，也可由360°÷15得到。兩種外角算法相符，答案唯一。所得24°為正且小於180°，符合凸外角範圍。"}
+    },
+    {
+      "questionId": "u16-s015-v010",
+      "expectedContentSha256": "1fb342e0505c4885af58abaa93436769fc794a0e3a811d758ee54762023c6472",
+      "set": {"explanation": "順時針繞一圈的總轉向為360°。前五次合計50°+72°+65°+48°+55°=290°，所以最後一次應右轉360°-290°=70°。六次轉向合計360°，方向閉合。閉合行走的最終朝向因此與起點相同。"}
+    },
+    {
+      "questionId": "u16-s016-v002",
+      "expectedContentSha256": "a4ea70ca3ca37fd1fb2e95d58a89b3a4da7b5deddb088c79730b1b932c47ced1",
+      "set": {"explanation": "D是BC中點，所以BD=DC，且BD+DC=BC=14 cm。兩段相等，因此BD=14÷2=7 cm。以7+7=14也能核對整段長度。中點必須位在線段上，且兩側長度相等；這兩個條件都已由題目給定。"}
+    },
+    {
+      "questionId": "u16-s016-v004",
+      "expectedContentSha256": "e059c189f64504d07bd7ceacecaca73f07a7b1764dd21ee6ce70195a8a11f2d8",
+      "set": {"explanation": "重心沿中線滿足AG:GD=2:1，靠頂點A的AG是兩份。已知AG=8 cm，所以一份GD=8÷2=4 cm。三份合計12 cm，正是完整中線。四公分位於重心到中點的較短一段。"}
+    },
+    {
+      "questionId": "u16-s016-v005",
+      "expectedContentSha256": "136e4dcb03fc70f5dd997f3c976ab0773bed598096f749ffac440bedf53db8c8",
+      "set": {"explanation": "重心把中線PM分成PG:GM=2:1，所以PG占完整中線的2/3。PG=15×2/3=10 cm，剩下的GM為5 cm。十加五回到完整中線15 cm。十公分靠近頂點，符合二比一的較長部分。"}
+    },
+    {
+      "questionId": "u16-s016-v006",
+      "expectedContentSha256": "a527206bf6f9b9f729c904002009458e5511d6ea12f7bde49aa5dbd5ef35140e",
+      "set": {"explanation": "AD是中線，所以BD=DC。△ABD與△ACD的底分別為BD、DC，且對直線BC的高相同，因此面積比為1:1，△ACD面積也是18 cm²。面積單位維持平方公分，結果一致。兩個十八平方公分合計為原三角形面積三十六平方公分。"}
+    },
+    {
+      "questionId": "u16-s016-v007",
+      "expectedContentSha256": "88ffcf320d1f3c3f389dff635c6184838714e091208466d02accce60aab8b704",
+      "set": {"explanation": "每一條中線上，頂點到重心的長度都是完整中線的2/3。所求總和為(12+15+18)×2/3=45×2/3=30 cm。三條中線分別計算後再相加，不會混線。每一項都取靠頂點的兩份，比例方向一致。"}
+    },
+    {
+      "questionId": "u16-s016-v008",
+      "expectedContentSha256": "11e47158cee333047bfdca4d4280e930dfffe72cc32364bbadefbd9665cad5bd",
+      "set": {"explanation": "設GD=k，則由AG:GD=2:1得AG=2k。已知AG-GD=k=5 cm，所以整條中線AD=AG+GD=3k=15 cm。比例、差與總長三項資料彼此一致。五公分正好是兩段的差，也是一個比例份。"}
+    },
+    {
+      "questionId": "u16-s016-v012",
+      "expectedContentSha256": "41b9939f70f857e79de04f6ba2397b5f8d06d3ea88b04304bad25151f914ea2d",
+      "set": {"explanation": "沿中線AD，重心滿足AG:GD=2:1，所以從頂點A到G是整條AD的2/3。AG=1.8×2/3=1.2 m；0.6 m是從G到D的距離。兩段1.2與0.6相加正好是1.8 m。較長的1.2公尺確實位於頂點一側。"}
+    },
+    {
+      "questionId": "u16-s017-v004",
+      "expectedContentSha256": "ec9c114496363be6e67cbb02c8b0e94617b0928bc004b0cf1e58af09d04ddf68",
+      "set": {"explanation": "底12 cm與高7 cm互相對應，三角形面積為12×7÷2=42 cm²。84 cm²是漏除以2所得。平方單位來自兩個長度相乘。底高都有公分單位，面積才改用平方公分。"}
+    },
+    {
+      "questionId": "u16-s017-v005",
+      "expectedContentSha256": "9098abaf0e95ae321467b74e81e128f6f06428d769efda954679c82708d992ec",
+      "set": {"explanation": "設對應高為h cm，由54=9h÷2得9h=108，所以h=12。代回9×12÷2=54 cm²，面積與單位都吻合。12公分為長度，沒有平方單位。九乘十二再除以二，確實回到五十四平方公分。"}
+    },
+    {
+      "questionId": "u16-s017-v007",
+      "expectedContentSha256": "bda2d31d21c90263c6a7109c7ee29ac01fd43ffa875010e3da961c8a7f5dcf3e",
+      "set": {"explanation": "D是BC中點，所以BD=DC=7.5 cm。△ABD與△ACD對直線BC的高同為8 cm，等底共高使兩面積都為7.5×8÷2=30 cm²，面積差為0。兩片合計60平方公分，亦等於原面積。中點裁切的兩個底長都為七點五公分。"}
+    },
+    {
+      "questionId": "u16-s017-v009",
+      "expectedContentSha256": "ccda2553acf607a1231b353b83bca42e3ee5c9ce74d0d3cf6eed69c242753afe",
+      "set": {"explanation": "由面積36 cm²得2S=72。a=72÷9=8 cm，b=72÷6=12 cm，所以a:b=8:12=2:3；底長與其對應高成反比。比值化簡後仍保持反比次序。高九對底八，高六對底十二，乘積相同。"}
+    },
+    {
+      "questionId": "u16-s017-v011",
+      "expectedContentSha256": "c4c316db3140ee2d02558a2f7ac84afc43ffafa29819226f2c25fcf39293088d",
+      "set": {"explanation": "設垂直距離為h，由1.35=1.8h÷2得h=2×1.35÷1.8=2.7÷1.8=1.5 m。代回可得1.8×1.5÷2=1.35 m²。所求為垂直長度，單位應是公尺。距離為正且小於已知底邊，數值在情境中合理。"}
+    },
+    {
+      "questionId": "u16-s018-v006",
+      "expectedContentSha256": "0929d7ec24c170ba230a0e55c7a25e533b198404bb0725194124d41ba1300728",
+      "set": {"explanation": "G是重心，從頂點A到G的線段占完整中線的2/3。因此AG=180×2/3=120 m；剩餘60 m是G到對邊中點的距離。兩段120與60相加回完整中線180 m。重心靠頂點的一段正是另一段的兩倍。"}
+    },
+    {
+      "questionId": "u16-s018-v008",
+      "expectedContentSha256": "9b1d7cfb4b97cc9f9aac594e03768efa327edba6bec5d2d8d31e3eb485c468b0",
+      "set": {"explanation": "兩個遠內角和等於外角128°，比值總份數為3+5=8，所以一份是128°÷8=16°。較小角占3份，為3×16°=48°。另一角為80°，兩角和回到128°。兩個遠內角都為正且各自小於外角。"}
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [
+    {
+      "lectureId": "u16-s014-lecture-r1",
+      "expectedContentSha256": "f6ecbba5ba038321583b13aa034ccea00f4ad6744211ed05f46ffa83fe9f6349",
+      "replaceText": {"三條邊與其對角分別是BC↔A、AC↔B、AB↔C；在同一三角形中，邊長大小與對角大小同序，因此最大邊必對最大角。": "三條邊與其對角分別是BC↔A、AC↔B、AB↔C；在同一三角形中，邊長大小與對角大小同序，因此最大邊必對最大角，其餘兩組配對也維持同一排序。"}
+    },
+    {
+      "lectureId": "u16-s015-lecture-r1",
+      "expectedContentSha256": "a0999400398578658c9ad131d181348de814d618911bc64607fd3ced2bc5dd85",
+      "replaceText": {"邊數公式使用的是外角而不是內角；先轉成15°外角後，才能用一整圈360°計算等份數，回乘24個15°也得到360°。": "邊數公式使用的是外角而不是內角；先轉成15°外角後，才能用一整圈360°計算等份數，回乘24個15°也得到360°，所得邊數也為合法正整數。"}
+    },
+    {
+      "lectureId": "u16-s016-lecture-r1",
+      "expectedContentSha256": "899d2d1150e759cd7de7a6adcccd8a4fad6a3e220d28db95e656f6a5b60f04b5",
+      "replaceText": {"較長的兩份靠近頂點X；兩段相加16+8=24，比例與完整中線長度都吻合，靠頂點段確為另一段的兩倍。": "較長的兩份靠近頂點X；兩段相加16+8=24，比例與完整中線長度都吻合，靠頂點段確為另一段的兩倍，並且兩段的單位都為公分。"}
+    },
+    {
+      "lectureId": "u16-s017-lecture-r1",
+      "expectedContentSha256": "051f0e3ba6c0f34c231712693364ff055de5c3684e38793856bc7cd43aa7c82b",
+      "replaceText": {"反求高時要用h=2A÷b，不能只做面積除以底；代回14×12÷2可恢復84，12公分亦符合長度單位。": "反求高時要用h=2A÷b，不能只做面積除以底；代回14×12÷2可恢復84，12公分亦符合長度單位，所得高度為正且與指定底邊垂直。"}
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

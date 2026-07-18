@@ -49,34 +49,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄討論證據評估臺灣能源選擇與限制，哪項敘述正確？",
+  "stem": "並列甲與乙，兩者年份是2025、2015，定義是淨發電量占比、裝置容量占比。處理年份後，定義要依由證據評估臺灣能源選擇與限制判斷大小、方向或類別？",
   "options": [
-    "只需引用一個沒有日期與定義的百分比，就能永久決定臺灣唯一正確能源方案",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統",
-    "評估臺灣能源選擇要使用有日期、定義一致的需電、發電、排放、成本與風險資料，並把進口、電網與地理限制納入",
-    "能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 100% 且持續創能"
+    "解題時將不同年份、裝置容量占比與淨發電量占比直接放在同一分母比較",
+    "能源資料並漏掉日期或定義仍用來做永久性的政策結論",
+    "只有同年、同定義、同系統邊界的資料可直接比較",
+    "解題時將 2015 年裝置容量占比和 2025 年淨發電占比視為同一指標"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只需引用一個沒有日期與定義的百分比，就能永久決定臺灣唯一正…」不成立；評估臺灣能源選擇要使用有日期、定義一致的需電、發電、排放、成本與風險資料，並把進口、電網與地理…。"
+      "reason": "解題時錯將不同年份、裝置容量占比與淨發電量占比直接放在同一分母比較，結果會錯判可否直接比較。評估臺灣能源選擇要使用有日期、定義一致的需電、發電、排放、成本與風險資料，並把進口、電網與地理限制納入；照原做法會把可否直接比較算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源…」不成立；能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式。"
+      "reason": "能源資料沒有日期或定義仍用來做永久性的政策結論，結果會錯判可否直接比較。能源情勢會變動，結論要標日期並納入進口、電網與地理限制，不可永久外推；可否直接比較差異若未通過由證據評估臺灣能源選擇與限制對年份的控制，就不能只歸給定義。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "判讀依據是「評估臺灣能源選擇要使用有日期、定義一致的需電、發電、排放、成本與風險資料，並把進口、電網與地理限制納入」。"
+      "reason": "只有同年、同定義、同系統邊界的資料可直接比較。甲列的年份為2025、定義為淨發電量占比；乙列的年份為2015、定義為裝置容量占比。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 10…」不成立；能源效率＝有用輸出能量÷總輸入能量×100%；輸入 500 J、有用輸出 150 J 的效率為…。"
+      "reason": "解題時錯將 2015 年裝置容量占比和 2025 年淨發電占比視為同一指標，結果會錯判可否直接比較。只有同年、同定義、同系統邊界的資料可直接比較；定義的數值若未依年份核對，會使可否直接比較無法通過由證據評估臺灣能源選擇與限制檢查。"
     }
   ],
   "difficulty": "foundation",
@@ -84,16 +84,16 @@
     "辨認",
     "概念理解"
   ],
-  "representationType": "concept",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只需引用一個沒有日期與定義的百分比，就能永久決定臺灣唯一正確能源方案",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統",
-    "能源效率＝總輸入÷有用輸出×100%，因此可輕易超過 100% 且持續創能"
+    "解題時將不同年份、裝置容量占比與淨發電量占比直接放在同一分母比較",
+    "能源資料並漏掉日期或定義仍用來做永久性的政策結論",
+    "解題時將 2015 年裝置容量占比和 2025 年淨發電占比視為同一指標"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-INA-4-1",
       "AUTH-NATURAL-LC-INA-4-2",
@@ -139,19 +139,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

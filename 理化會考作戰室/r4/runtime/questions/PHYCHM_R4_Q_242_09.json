@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對潛水艇調整結果，哪項說法正確？",
+  "stem": "甲的質量為80 g、外形體積為100 cm³；乙則是100 g、100 cm³。由平均密度判斷浮沉狀態對外形體積隨質量變化的解釋為何？",
   "options": [
-    "浮力大小永遠等於物體自身重量，不論它沉沒、漂浮或被外力拉住",
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量",
-    "物體平均密度小於液體時可上浮並漂浮",
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大"
+    "僅憑造船材料密度大於水，就斷定中空船體一定下沉",
+    "把計算平均密度時只用材料實心體積，漏掉中空物外形所排開的體積",
+    "把甲的 80 g 除以 100 cm³ 算成 1.25 g/cm³，因而誤判下沉",
+    "平均密度依序為 0.80、1.00、1.30、0.75 g/cm³，與水比較可解釋各浮沉結果"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「浮力大小永遠等於物體自身重量，不論它沉沒、漂浮或被外力拉住」不成立；阿基米德原理：物體所受向上浮力的大小，等於它所排開流體的重量。"
+      "reason": "僅憑造船材料密度大於水，就斷定中空船體一定下沉。物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉；照原做法會把放入 1.00 g/cm³ 水中算錯或判反。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「浮力為 12＋7＝19 N，因為水中讀值要加回原重量」不成立；物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N。"
+      "reason": "解題時誤把計算平均密度時只用材料實心體積，漏掉中空物外形所排開的體積。判斷船等中空物須用含空腔的整體平均密度，不能只用材料本身密度；放入 1.00 g/cm³ 水中差異若未通過由平均密度判斷浮沉狀態對質量的控制，就不能只歸給外形體積。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉」。"
+      "isCorrect": false,
+      "reason": "把甲的 80 g 除以 100 cm³ 算成 1.25 g/cm³，因而誤判下沉。平均密度依序為 0.80、1.00、1.30、0.75 g/cm³，與水比較可解釋各浮沉結果；外形體積的數值若未依質量核對，會使放入 1.00 g/cm³ 水中無法通過由平均密度判斷浮沉狀態檢查。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限…」不成立；完全沒入時，浮力隨液體密度與排開體積增大；同液體中排開體積相同則浮力相同。"
+      "isCorrect": true,
+      "reason": "平均密度依序為 0.80、1.00、1.30、0.75 g/cm³，與水比較可解釋各浮沉結果。甲列的質量為80 g、外形體積為100 cm³；乙列的質量為100 g、外形體積為100 cm³。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
     "證據判讀",
-    "分析"
+    "推論"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "浮力大小永遠等於物體自身重量，不論它沉沒、漂浮或被外力拉住",
-    "浮力為 12＋7＝19 N，因為水中讀值要加回原重量",
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大"
+    "僅憑造船材料密度大於水，就斷定中空船體一定下沉",
+    "把計算平均密度時只用材料實心體積，漏掉中空物外形所排開的體積",
+    "把甲的 80 g 除以 100 cm³ 算成 1.25 g/cm³，因而誤判下沉"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -91,28 +91,28 @@
   "method": [
     {
       "step": 1,
-      "instruction": "找共同外點P。",
-      "check": "完成此步後，確認仍在「切線段相等」的CAP範圍且沒有只憑圖形目測。"
+      "instruction": "找共同外點 P。",
+      "check": "要比較的兩條線段必須同由 P 點出發，不同外點的切線段不保證相等。"
     },
     {
       "step": 2,
-      "instruction": "確認A、B為同一圓的切點。",
-      "check": "完成此步後，確認仍在「切線段相等」的CAP範圍且沒有只憑圖形目測。"
+      "instruction": "確認 A、B 為同一圓的切點。",
+      "check": "PA、PB 都要是切線段，不能將任意連到圓上點的線段納入定理。"
     },
     {
       "step": 3,
-      "instruction": "列PA=PB。",
-      "check": "完成此步後，確認仍在「切線段相等」的CAP範圍且沒有只憑圖形目測。"
+      "instruction": "列 PA=PB。",
+      "check": "等式只比較外點到兩切點的線段，不包含切點間弦 AB。"
     },
     {
       "step": 4,
       "instruction": "代入代數式求未知數。",
-      "check": "完成此步後，確認仍在「切線段相等」的CAP範圍且沒有只憑圖形目測。"
+      "check": "所有方程根都是候選，需分別回代 PA 與 PB。"
     },
     {
       "step": 5,
-      "instruction": "回代確認長度為正。",
-      "check": "完成此步後，確認仍在「切線段相等」的CAP範圍且沒有只憑圖形目測。"
+      "instruction": "回代確認共同長度為正。",
+      "check": "兩式回代後必須相等且大於 0；導致零或負長度的根要排除。"
     }
   ],
   "workedExamples": [
@@ -161,10 +161,10 @@
     }
   ],
   "difficultyConnections": {
-    "basic": "辨認「切線段相等」的定義、符號與單一步驟關係。",
-    "standard": "把「切線段相等」與前置技能、比例或一次代數連接。",
-    "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「切線段相等」。",
-    "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「切線段相等」的數學模型。"
+    "basic": "由同一外點的兩切線段相等直接求長度。",
+    "standard": "以 PA=PB 建立一次方程，或結合等腰三角形周長。",
+    "advanced": "解二次方程後回代篩除非正長度，並說明全等形的對稱來源。",
+    "literacy": "將同一入口、觀景點或固定點通往圓形邊界的兩條切線轉成等長條件。"
   },
   "commonMistakes": [
     {
@@ -189,10 +189,10 @@
     }
   ],
   "selfCheck": [
-    "我是否先確認「切線段相等」的適用條件？",
-    "我是否分清半徑、直徑、弦、弧與角的角色？",
-    "我是否寫出必要單位，並在最後才取近似值？",
-    "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+    "兩條切線段是否同由一個圓外點出發？",
+    "兩個端點是否都是同一圓的切點？",
+    "我列的等式是否只比較 PA 與 PB，沒有誤加弦 AB？",
+    "每個代數根回代後，兩切線段是否相等且為正？"
   ],
   "summary": [
     "同一圓外點引出的兩切線段相等。",
@@ -242,5 +242,5 @@
   },
   "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-  "contentSha256": "c29d2cf2710fa59da026e93072c808d0a80bc75e8c2fba39574c8501b6f32d3f"
+  "contentSha256": "1dd919f0c73d8d1050c80c3c9674678760add20a1243360414c301edb78f54f9"
 }

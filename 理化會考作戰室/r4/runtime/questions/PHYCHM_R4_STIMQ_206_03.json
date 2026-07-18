@@ -11,50 +11,50 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_206",
-  "stem": "速度時間圖題組中，哪項說明符合紀錄？",
+  "stem": "依表格，從 t=0 到 t=6 s，速度如何變化？",
   "options": [
-    "速度數值變得更負就一定是減速，無需比較速度大小與方向",
-    "速度—時間圖的縱座標直接給各時刻速度；水平線表示速度恆定",
-    "把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間與位置",
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸"
+    "由 -2 m/s 增加到 +4 m/s",
+    "由 +4 m/s 降到 -2 m/s",
+    "此時物體始終維持 0 m/s",
+    "由 -2 m/s 降到 -4 m/s"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「速度數值變得更負就一定是減速，無需比較速度大小與方向」不成立；速度—時間圖上數值由 2 增至 6 m/s 表示正向加速；速度由 −2 變 −6 m/s 則是…。"
+      "isCorrect": true,
+      "reason": "速度依序為 -2、0、+2、+4 m/s，數值持續增加。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「速度—時間圖的縱座標直接給各時刻速度；水平線表示速度恆定」。"
+      "isCorrect": false,
+      "reason": "由 +4 m/s 降到 -2 m/s不成立。速度依序為 -2、0、+2、+4 m/s，數值持續增加。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間…」不成立；「向東等速、停留、向西返回」的位置—時間圖應依序是正斜率、水平、負斜率。"
+      "reason": "此時物體始終維持 0 m/s不成立。速度依序為 -2、0、+2、+4 m/s，數值持續增加。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸」不成立；位置—時間圖的線形描述位置如何隨時間變化，不是物體在空間中的軌跡外觀。"
+      "reason": "由 -2 m/s 降到 -4 m/s不成立。速度依序為 -2、0、+2、+4 m/s，數值持續增加。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "證據評估"
+    "情境轉譯"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "速度數值變得更負就一定是減速，無需比較速度大小與方向",
-    "把文字情境畫成圖時，只需照路徑在地圖上的形狀，不必對應時間與位置",
-    "圖線彎曲就表示物體實際沿彎曲道路移動，無需讀橫縱軸"
+    "由 +4 m/s 降到 -2 m/s",
+    "此時物體始終維持 0 m/s",
+    "由 -2 m/s 降到 -4 m/s"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-8",
       "AUTH-NATURAL-LP-PA-4-1",
@@ -62,20 +62,6 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_007"
   ]

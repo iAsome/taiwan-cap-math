@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "研究「解釋閏年調整的週期來源」中的自轉方向判斷不同地區先後見到日出時，哪一種資料來源較可靠？",
+  "stem": "要檢驗臺灣東西兩地日出先後，哪份資料最具辨識力？",
   "options": [
-    "查核自轉方向判斷不同地區先後見到日出只需一張來源不明的網路圖片",
-    "刪除與同一日期且緯度相近時，位置較東的地區通常較早因地球自轉進入日照而見到日出不一致的資料後再判讀",
-    "查核自轉方向判斷不同地區先後見到日出時採用有日期、位置與單位的太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型",
-    "以個人印象取代日期位置、臺灣日出、臺灣日落、正午影長相對值紀錄"
+    "兩地居民對清晨景色的喜好問卷",
+    "兩地不同月份各拍一張天空照片",
+    "同日同時區記錄兩地經度與天文日出時刻",
+    "只比較兩地當日最高氣溫與降雨量"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "來源、時間與尺度不明，不能驗證「解釋閏年調整的週期來源」的條件。"
+      "reason": "喜好不會提供越過晨昏線的實際時刻，也不能排序日出先後。 日出先後須以同日、同時區的經度與時刻資料查核。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "刪除反例會扭曲證據分布。"
+      "reason": "月份不同會混入季節日出變化，單張照片也缺少精確時間基準。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "資料具備來源與量測條件，可重現解釋閏年調整的週期來源的判讀。"
+      "reason": "同日、同時區與經度讓兩地時刻可直接比較，能檢查較東地點是否先日出。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "主觀印象不能取代可檢核觀測。"
+      "reason": "氣溫與降雨受天氣系統影響，不能替代兩地天文日出紀錄。 日出先後須以同日、同時區的經度與時刻資料查核。"
     }
   ],
   "difficulty": "standard",
@@ -49,7 +49,7 @@
   ],
   "representationType": "source-evaluation",
   "misconceptionTargets": [
-    "晝夜交替由地球公轉造成"
+    "兩地不同月份各拍一張天空照片"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "逐項核對「解釋閏年調整的週期來源」的條件後，「查核自轉方向判斷不同地區先後見到日出時採用有日期、位置與單位的太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "統一日期與時區後，經度和日出時刻形成可重做的東西向比較。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "不同月份的照片同時改變日期與地點，無法把時刻差歸因於經度。",
       "status": "pass"
     }
   ],

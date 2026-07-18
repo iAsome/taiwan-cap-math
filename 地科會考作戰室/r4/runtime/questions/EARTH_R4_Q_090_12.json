@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-PA-4-1"
   ],
   "stimulusId": null,
-  "stem": "把風向與海陸分布理解表層海流的判準移到另一個情境時，哪一項作法較適當？",
+  "stem": "把表層海流模型用到另一海盆前，哪一項檢查最完整？",
   "options": [
-    "改看「從逐時水位辨認潮汐週期」後，只採用支持原想法的一筆紀錄",
-    "把判讀移到「從逐時水位辨認潮汐週期」時，仍先先辨認資料描述的是週期水位、波能傳遞或水團位移",
-    "改看「從逐時水位辨認潮汐週期」後，省略所有單位",
-    "只寫風向與海陸分布理解表層海流的概念名稱，不記錄「從逐時水位辨認潮汐週期」的觀測"
+    "直接複製原圖所有箭頭，不確認新海盆所在半球、盛行風與大陸位置。",
+    "取得平均風場、所在半球與海岸線，再檢查流線偏轉及沿岸轉向。",
+    "只比較鹽度，忽略風向、緯度與邊界。",
+    "只選一日瞬時流向，就代表新海盆長期盛行海流，無須核對季節平均風場。"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "換情境仍須比較完整資料與替代解釋。"
+      "reason": "不同海盆的半球、風場與大陸形狀可能不同，不能直接複製原圖箭頭。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "新情境保留相同變因、證據與適用範圍。"
+      "reason": "平均風場提供推力條件，半球決定偏轉方向，海岸線則限制流線並造成沿岸轉向。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "跨情境比較更需要一致單位。"
+      "reason": "只比較鹽度會漏掉盛行風、地球自轉與海陸邊界三個必要條件。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "概念名稱不能取代實際資料。"
+      "reason": "單日瞬時流向可能受短期天氣影響，不能代替季節平均風場與長期海流。"
     }
   ],
   "difficulty": "transfer",
@@ -49,7 +49,7 @@
   ],
   "representationType": "transfer-scenario",
   "misconceptionTargets": [
-    "全年海流方向在任何海域都固定不變"
+    "直接複製原圖所有箭頭，不確認新海盆所在半球、盛行風與大陸位置。"
   ],
   "provenance": {
     "status": "original",
@@ -68,17 +68,15 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "逐項核對「從逐時水位辨認潮汐週期」的條件後，「把判讀移到「從逐時水位辨認潮汐週期」時，仍先先辨認資料描述的是週期水位、波能傳遞或水團位移」符合題目資料；查核依據為：海溫、鹽度、密度、流向、波向與海岸沉積資料可連結海洋運動和沿岸環境。",
+      "evidence": "移用模型前取得平均風、半球與海岸線，便能逐一檢查主要推力、偏轉方向及邊界轉折。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「波浪前進不表示同一團海水一路移到岸邊」。",
+      "evidence": "複製箭頭、只看鹽度或以單日流向代表長期，都至少刪去一項決定新海盆流線的必要資料。",
       "status": "pass"
     }
   ],
-  "assets": [
-    "EARTH_R4_ASSET_TIDE"
-  ]
+  "assets": []
 }

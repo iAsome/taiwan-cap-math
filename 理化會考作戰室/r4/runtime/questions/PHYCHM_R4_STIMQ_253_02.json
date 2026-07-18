@@ -12,50 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_253",
-  "stem": "檢查表中關於合力矩為零判斷轉動平衡的說法，哪項判讀正確？",
+  "stem": "從甲改成乙時，方向由向下變為向下，力矩由6 N·m變為4 N·m。使用合力矩為零判斷轉動平衡在此受到哪個力矩適用限制？",
   "options": [
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功",
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量",
-    "轉動平衡時順時針總力矩大小等於逆時針總力矩"
+    "把順時針與逆時針力矩全部相加，並漏掉依轉動方向相抵",
+    "轉動平衡比較的是帶方向的力矩總和，不要求左右各力大小逐一相等",
+    "把順時針與逆時針力矩全部相加",
+    "主張合力為零必然等於合力矩為零，忽略力的作用線位置"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功」不成立；輪軸利用不同力臂，齒輪利用齒數比改變轉速與力矩，斜面以增加距離換取較小力。"
+      "reason": "轉動平衡比較的是帶方向的力矩總和，不要求左右各力大小逐一相等。乙列的方向為向下，力矩為4 N·m；丙列的方向為向下，力矩為2 N·m。把順時針與逆時針力矩全部相加，卻未依轉動方向相抵，結果會錯判轉動效果。轉動平衡比較的是帶方向的力矩總和，不要求左右各力大小逐一相等；轉動效果差異若未通過使用合力矩為零判斷轉動平衡對方向的控制，就不能只歸給力矩。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「機械只要省力就一定同時省距離與省時，不存在任何交換」不成立；省力機械通常要施力移動較長距離；改變方向不必然省力，「省時」與「省力」要分開。"
+      "isCorrect": true,
+      "reason": "轉動平衡比較的是帶方向的力矩總和，不要求左右各力大小逐一相等。乙列的方向為向下，力矩為4 N·m；丙列的方向為向下，力矩為2 N·m。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量」不成立；理想機械輸入功等於輸出功；可用較小力換較長施力距離，但不能無中生有省功。"
+      "reason": "轉動平衡比較的是帶方向的力矩總和，不要求左右各力大小逐一相等。乙列的方向為向下，力矩為4 N·m；丙列的方向為向下，力矩為2 N·m。僅根據逆 6、順 4 與順 2 N·m 誤算成合力矩 12 N·m。順時針力矩 4＋2＝6 N·m，恰與逆時針 6 N·m 抵消，合力矩為零；力矩的數值若未依方向核對，會使轉動效果無法通過使用合力矩為零判斷轉動平衡檢查。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零」。"
+      "isCorrect": false,
+      "reason": "轉動平衡比較的是帶方向的力矩總和，不要求左右各力大小逐一相等。乙列的方向為向下，力矩為4 N·m；丙列的方向為向下，力矩為2 N·m。誤以為合力為零必然等於合力矩為零，忽略力的作用線位置。轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零；方向未列入使用合力矩為零判斷轉動平衡時，轉動效果的力矩大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "資料判讀"
+    "證據判讀",
+    "推論"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功",
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量"
+    "把順時針與逆時針力矩全部相加，並漏掉依轉動方向相抵",
+    "把順時針與逆時針力矩全部相加",
+    "主張合力為零必然等於合力矩為零，忽略力的作用線位置"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -64,20 +65,6 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_013"
   ]

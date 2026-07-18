@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解pH計並避免污染溶液，哪項修正合理？",
+  "stem": "校正液使用後為何不倒回原瓶？",
   "options": [
-    "pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗",
-    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關",
-    "電極清洗後輕吸水分",
-    "pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目自由決定"
+    "原瓶沒有空間概念",
+    "校正液倒回原瓶會因質量守恆而使濃度改變",
+    "液體會變成固體",
+    "可能已被探頭或容器污染"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗」不成立；pH 計使用前要依規範校正，電極清洗後輕吸水分，不把測過的溶液倒回原瓶。"
+      "reason": "可有空間但仍不回倒。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「酸和鹼只由溶液顏色定義，和水溶液中的離子無關」不成立；在課程模型中，酸性水溶液的酸性與氫離子有關，鹼性水溶液的鹼性與氫氧根離子有關。"
+      "reason": "質量轉移不違反守恆。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「pH 計使用前要依規範校正，電極清洗後輕吸水分，不把測過的溶液倒回原瓶」。"
+      "isCorrect": false,
+      "reason": "不會因此凝固。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目…」不成立；pH＜7 為酸性、pH＝7 為中性、pH＞7 為鹼性；pH 本身沒有單位。"
+      "isCorrect": true,
+      "reason": "會破壞整瓶標準值。"
     }
   ],
-  "difficulty": "standard",
+  "difficulty": "foundation",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "品質控制"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "pH 電極上保留前一溶液可加快反應，因此測量之間不需清洗",
-    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關",
-    "pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目自由決定"
+    "原瓶沒有空間概念",
+    "校正液倒回原瓶會因質量守恆而使濃度改變",
+    "液體會變成固體"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科酸鹼證據與生活安全題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JB-4-2",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

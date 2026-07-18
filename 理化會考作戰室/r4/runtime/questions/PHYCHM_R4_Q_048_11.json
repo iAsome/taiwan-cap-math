@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "換成另一組原子模型證據資料，哪項判讀仍合理？",
+  "stem": "某模型能正確預測粒子數比例，是否因此也能準確預測沸點？",
   "options": [
-    "只要原子種類相同，不論排列和連結如何，巨觀性質都必然完全相同",
-    "任何性質不同的物質都必定含有不同元素，與原子排列無關",
-    "球棒模型適合呈現種類、數目與連接",
-    "一個模型若不能同時精準呈現所有原子性質，就完全沒有科學用途"
+    "不一定，沸點還需粒子間作用等資訊",
+    "不可能，模型不能做任何預測",
+    "一定，比例決定所有性質",
+    "一定，所有粒子模型相同"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「只要原子種類相同，不論排列和連結如何，巨觀性質都必然完全相同」不成立；石墨和金剛石都由碳原子組成，但原子排列與連結不同，因而性質明顯不同。"
+      "isCorrect": true,
+      "reason": "功能要由所含機制判斷。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「任何性質不同的物質都必定含有不同元素，與原子排列無關」不成立；同一元素可因原子排列不同形成性質不同的物質；不同元素若以固定比例化學結合，則形成化合物。"
+      "reason": "模型可支持特定預測。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「球棒模型適合呈現種類、數目與連接，但不宜由球的顯示大小推斷實際原子尺寸」。"
+      "isCorrect": false,
+      "reason": "過度外推。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「一個模型若不能同時精準呈現所有原子性質，就完全沒有科學用途」不成立；球棒模型適合呈現種類、數目與連接，但不宜由球的顯示大小推斷實際原子尺寸。"
+      "reason": "模型並非相同。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "用途邊界"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要原子種類相同，不論排列和連結如何，巨觀性質都必然完全相同",
-    "任何性質不同的物質都必定含有不同元素，與原子排列無關",
-    "一個模型若不能同時精準呈現所有原子性質，就完全沒有科學用途"
+    "不可能，模型不能做任何預測",
+    "一定，比例決定所有性質",
+    "一定，所有粒子模型相同"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-1",
       "AUTH-NATURAL-LC-AA-4-2",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

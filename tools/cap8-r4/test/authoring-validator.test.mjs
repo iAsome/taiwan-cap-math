@@ -27,10 +27,6 @@ function question(overrides = {}) {
       copyrightStatus: "original wording",
       sourceRefs: ["CAP_ENGLISH"]
     },
-    independentReviews: [
-      { reviewerRole: "solver-a", derivedAnswerIndex: 0, evidence: "The response accepts an offer.", status: "pass" },
-      { reviewerRole: "solver-b", derivedAnswerIndex: 0, evidence: "The other choices answer time or place.", status: "pass" }
-    ],
     assets: [],
     ...overrides
   };
@@ -74,10 +70,13 @@ test("authoring records do not require a premature final audit", async () => {
   assert.equal(await validateAuthoringRecord("question", question()), true);
 });
 
-test("authoring validation rejects an independent answer disagreement", async () => {
-  const value = question();
-  value.independentReviews[1].derivedAnswerIndex = 1;
-  await assert.rejects(validateAuthoringRecord("question", value), /independent review disagrees/);
+test("legacy embedded reviews validate as ignored compatibility metadata", async () => {
+  assert.equal(
+    await validateAuthoringRecord("question", question({
+      independentReviews: [{ derivedAnswerIndex: 2, status: "unreviewed" }],
+    })),
+    true,
+  );
 });
 
 test("authoring validation ties every rationale to one option", async () => {

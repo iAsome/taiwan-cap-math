@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "換成另一組電表接法資料，哪項判讀仍合理？",
+  "stem": "主線的電流為0.90 A、電壓為12 V；支路 R2則是0.30 A、12 V。要把觀察連到電阻，應採用什麼模型？",
   "options": [
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "主線電流等於各支路電流之和",
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路"
+    "解題時將 0.60 A 與 0.30 A 相減，誤算主線電流為 0.30 A",
+    "主張電阻較大的並聯支路電流一定較大",
+    "主張並聯支路會分掉電壓，所以每一支路電壓小於電源電壓",
+    "並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「短路和斷路都只會使電流完全為零，不可能出現過大電流」不成立；斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險。"
+      "reason": "解題時錯將 0.60 A 與 0.30 A 相減，誤算主線電流為 0.30 A，結果會錯判電阻。並聯支路電壓皆 12 V，主線電流 0.90 A 等於 0.60＋0.30 A；電壓的數值若未依電流核對，會使電阻無法通過分析並聯電路的電流與電壓檢查。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和」。"
+      "isCorrect": false,
+      "reason": "誤以為電阻較大的並聯支路電流一定較大。並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和；電流未列入分析並聯電路的電流與電壓時，電阻的電壓大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆」不成立；並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。"
+      "reason": "誤以為並聯支路會分掉電壓，所以每一支路電壓小於電源電壓。並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和；照原做法會把電阻算錯或判反。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路」不成立；電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整。"
+      "isCorrect": true,
+      "reason": "並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。主線列的電流為0.90 A，電壓為12 V；支路 R2列的電流為0.30 A，電壓為12 V。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "證據判讀",
+    "推論"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "短路和斷路都只會使電流完全為零，不可能出現過大電流",
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆",
-    "電池只要接到一條導線就能持續讓電流通過燈泡，不需形成回路"
+    "解題時將 0.60 A 與 0.30 A 相減，誤算主線電流為 0.30 A",
+    "主張電阻較大的並聯支路電流一定較大",
+    "主張並聯支路會分掉電壓，所以每一支路電壓小於電源電壓"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

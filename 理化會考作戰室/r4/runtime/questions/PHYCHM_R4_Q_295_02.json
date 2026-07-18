@@ -49,51 +49,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "根據家庭節能紀錄，哪項判讀合理？",
+  "stem": "丁列含總輸入400 J及有用輸出420 J；甲列含500 J及150 J。依以有用能量比例比較能源效率完成總輸入與有用輸出比較，應如何解釋？",
   "options": [
-    "輸入 500 J、有用輸出 150 J 的效率為 30%",
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統",
-    "可再生能源必然零環境影響且可全天恆定發電，化石燃料則沒有任何系統優點",
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除"
+    "丁超過 100%，顯示量測、邊界或資料有誤",
+    "做比較時不同功能設備時並漏掉統一有用輸出的定義與系統邊界",
+    "把甲輸入 500 J、輸出 150 J 被算成 70% 效率",
+    "看到丁有用輸出 420 J 大於輸入 400 J，仍直接接受資料無須檢查"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「能源效率＝有用輸出能量÷總輸入能量×100%；輸入 500 J、有用輸出 150 J 的效率為 30%」。"
+      "reason": "丁超過 100%，顯示量測、邊界或資料有誤。丁列的總輸入為400 J、有用輸出為420 J；甲列的總輸入為500 J、有用輸出為150 J。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源…」不成立；能源系統應從一次能源開始，追蹤發電或轉換、輸送、儲存到終端使用的每一段能量形式。"
+      "reason": "做比較時不同功能設備時卻未統一有用輸出的定義與系統邊界，結果會錯判效率。比較設備必須把有用輸出的定義與量測邊界設為相同，不能拿不同功能直接比百分比；效率差異若未通過以有用能量比例比較能源效率對總輸入的控制，就不能只歸給有用輸出。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「可再生能源必然零環境影響且可全天恆定發電，化石燃料則沒有任…」不成立；化石燃料能量密度高但會排放溫室氣體；太陽、風能可再生但有間歇性與土地、儲能需求，新興能源也需證…。"
+      "reason": "解題時誤把甲輸入 500 J、輸出 150 J 被算成 70% 效率。效率＝有用輸出÷總輸入×100%；有用輸出的數值若未依總輸入核對，會使效率無法通過以有用能量比例比較能源效率檢查。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「發電決策只要比較單一小時電價，其他環境、系統與社會資料都應…」不成立；比較發電方式要同時評估全生命週期排放、土地與用水、可靠性、成本、安全與社會影響。"
+      "reason": "一看到丁有用輸出 420 J 大於輸入 400 J，仍直接接受資料無須檢查，結果會錯判效率。能源效率＝有用輸出能量÷總輸入能量×100%；總輸入未列入以有用能量比例比較能源效率時，效率的有用輸出大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
+    "辨認",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "評估電力只需看插座輸出，發電燃料、輸電與儲存過程都不屬能源系統",
-    "可再生能源必然零環境影響且可全天恆定發電，化石燃料則沒有任何系統優點",
-    "發電決策只要比較單一小時電價，其他環境、系統與社會資料都應排除"
+    "做比較時不同功能設備時並漏掉統一有用輸出的定義與系統邊界",
+    "把甲輸入 500 J、輸出 150 J 被算成 70% 效率",
+    "看到丁有用輸出 420 J 大於輸入 400 J，仍直接接受資料無須檢查"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-INA-4-1",
       "AUTH-NATURAL-LC-INA-4-2",
@@ -139,19 +139,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

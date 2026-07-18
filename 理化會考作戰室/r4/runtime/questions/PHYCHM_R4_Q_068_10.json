@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "學生根據鐵生鏽下結論，哪項符合資料？",
+  "stem": "觀察紀錄哪一項最科學？",
   "options": [
-    "只要肉眼看不到原物質，就表示它已化學分解成新物質",
-    "沉澱、特定氣體、難以由物理過程解釋的顏色或溫度變化",
-    "只要觀察到任一顏色或溫度變化，就已唯一證明發生特定化學反應",
-    "只要外觀或形狀改變，無論有無新物質，都必然是化學變化"
+    "感覺反應很厲害",
+    "答案一定是放熱",
+    "混合後 30 秒由 25.0°C 升至 31.2°C",
+    "看起來應該有化學"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只要肉眼看不到原物質，就表示它已化學分解成新物質」不成立；糖溶於水雖外觀消失，可由蒸發水回收糖，沒有證據顯示新物質，屬物理變化。"
+      "reason": "主觀。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「沉澱、特定氣體、難以由物理過程解釋的顏色或溫度變化，都可作反應線索」。"
+      "isCorrect": false,
+      "reason": "是結論非觀察。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「只要觀察到任一顏色或溫度變化，就已唯一證明發生特定化學反應」不成立；沉澱、特定氣體、難以由物理過程解釋的顏色或溫度變化，都可作反應線索。"
+      "isCorrect": true,
+      "reason": "具時間與量化數據。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要外觀或形狀改變，無論有無新物質，都必然是化學變化」不成立；物理變化不產生新物質；化學變化形成性質不同的新物質，應以反應前後證據判斷。"
+      "reason": "未描述現象。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "foundation",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "觀察陳述"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只要肉眼看不到原物質，就表示它已化學分解成新物質",
-    "只要觀察到任一顏色或溫度變化，就已唯一證明發生特定化學反應",
-    "只要外觀或形狀改變，無論有無新物質，都必然是化學變化"
+    "感覺反應很厲害",
+    "答案一定是放熱",
+    "看起來應該有化學"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-2",
       "AUTH-NATURAL-LC-AB-4-3",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

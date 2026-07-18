@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組根據化學式讀取下結論，哪項符合資料？",
+  "stem": "一盒含 2A₂、3B₂，粒子總數和原子總數各為何？",
   "options": [
-    "若模型顯示每個粒子由兩個 A 與一個 B 連結，其化學式可表為 A₂B；多粒子再用係數計數",
-    "Ca²⁺ 表示一個粒子含 2 個鈣原子，右上角數字是原子個數",
-    "若原子數不等，最快方法是直接改生成物的下標，化學式仍代表原物質",
-    "模型圖上一共有幾個球，就把該數字全部寫成一個化學式的下標"
+    "2 個粒子、3 個原子",
+    "5 個粒子、10 個原子",
+    "10 個粒子、5 個原子",
+    "5 個粒子、5 個原子"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「若模型顯示每個粒子由兩個 A 與一個 B 連結，其化學式可表為 A₂B；多粒子再用係數計數」。"
+      "isCorrect": false,
+      "reason": "只報種類數。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「Ca²⁺ 表示一個粒子含 2 個鈣原子，右上角數字是原子個數」不成立；Ca²⁺ 表示帶 2 個正電單位的鈣離子，Cl⁻ 表示帶 1 個負電單位的氯離子。"
+      "isCorrect": true,
+      "reason": "2＋3＝5 組；2×2＋3×2＝10 原子。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「若原子數不等，最快方法是直接改生成物的下標，化學式仍代表原…」不成立；配平反應式只能調整化學式前係數；改動 H₂O 的下標會把水變成不同組成的物質。"
+      "reason": "兩數顛倒。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「模型圖上一共有幾個球，就把該數字全部寫成一個化學式的下標」不成立；若模型顯示每個粒子由兩個 A 與一個 B 連結，其化學式可表為 A₂B；多粒子再用係數計數。"
+      "reason": "漏展開。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "混合計數"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "Ca²⁺ 表示一個粒子含 2 個鈣原子，右上角數字是原子個數",
-    "若原子數不等，最快方法是直接改生成物的下標，化學式仍代表原物質",
-    "模型圖上一共有幾個球，就把該數字全部寫成一個化學式的下標"
+    "2 個粒子、3 個原子",
+    "10 個粒子、5 個原子",
+    "5 個粒子、5 個原子"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AA-4-5",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

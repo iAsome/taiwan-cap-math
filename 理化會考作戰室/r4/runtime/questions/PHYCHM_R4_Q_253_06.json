@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解合力矩為零判斷轉動平衡，哪項修正合理？",
+  "stem": "丙列給出方向向下，另記力矩2 N·m及轉動效果順時針。哪項檢查可防止方向與力矩混用？",
   "options": [
-    "理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量",
-    "轉動平衡只需左右作用力大小相同，施力位置和力臂不重要",
-    "轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零",
-    "力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離"
+    "把順時針與逆時針力矩全部相加，並漏掉依轉動方向相抵",
+    "僅根據逆 6、順 4 與順 2 N·m 誤算成合力矩 12 N·m",
+    "主張合力為零必然等於合力矩為零，忽略力的作用線位置",
+    "轉動平衡比較的是帶方向的力矩總和，不要求左右各力大小逐一相等"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量」不成立；理想機械輸入功等於輸出功；可用較小力換較長施力距離，但不能無中生有省功。"
+      "reason": "把順時針與逆時針力矩全部相加，卻未依轉動方向相抵，結果會錯判轉動效果。轉動平衡比較的是帶方向的力矩總和，不要求左右各力大小逐一相等；轉動效果差異若未通過使用合力矩為零判斷轉動平衡對方向的控制，就不能只歸給力矩。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「轉動平衡只需左右作用力大小相同，施力位置和力臂不重要」不成立；轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零。"
+      "reason": "僅根據逆 6、順 4 與順 2 N·m 誤算成合力矩 12 N·m。順時針力矩 4＋2＝6 N·m，恰與逆時針 6 N·m 抵消，合力矩為零；力矩的數值若未依方向核對，會使轉動效果無法通過使用合力矩為零判斷轉動平衡檢查。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零」。"
+      "isCorrect": false,
+      "reason": "誤以為合力為零必然等於合力矩為零，忽略力的作用線位置。轉動平衡時順時針總力矩大小等於逆時針總力矩，合力矩為零；方向未列入使用合力矩為零判斷轉動平衡時，轉動效果的力矩大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離」不成立；力矩大小為力乘以作用線到轉軸的垂直距離；10 N 作用於 0.30 m 力臂產生 3.0 N·m。"
+      "isCorrect": true,
+      "reason": "轉動平衡比較的是帶方向的力矩總和，不要求左右各力大小逐一相等。乙列的方向為向下，力矩為4 N·m；丙列的方向為向下，力矩為2 N·m。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量",
-    "轉動平衡只需左右作用力大小相同，施力位置和力臂不重要",
-    "力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離"
+    "把順時針與逆時針力矩全部相加，並漏掉依轉動方向相抵",
+    "僅根據逆 6、順 4 與順 2 N·m 誤算成合力矩 12 N·m",
+    "主張合力為零必然等於合力矩為零，忽略力的作用線位置"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "催化劑實驗出現四種說法，哪項有理化概念支持？",
+  "stem": "哪項最能證明某粉末是催化劑？",
   "options": [
-    "任何平衡系統一旦達平衡，就不可能因溫度或濃度改變而轉移",
-    "實驗前十秒產氣較快的組別，最終生成氣體必然比其他組多",
-    "催化劑可提供不同反應路徑而改變反應速率",
-    "催化劑加快反應是因為它大量變成生成物，因此用得越多產量必無限增加"
+    "顏色漂亮",
+    "加快反應且回收後仍可再次使用",
+    "粉末名稱較長",
+    "加入後總質量增加"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「任何平衡系統一旦達平衡，就不可能因溫度或濃度改變而轉移」不成立；改變溫度或濃度後，平衡系統可調整到新的巨觀穩定狀態；方向需依題目提供的反應資訊判斷。"
+      "reason": "顏色無關。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「實驗前十秒產氣較快的組別，最終生成氣體必然比其他組多」不成立；反應較快只表示達到某狀態所需時間較短；最終生成量還受反應物量與平衡等條件影響。"
+      "isCorrect": true,
+      "reason": "同時符合速率與不淨耗。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「催化劑可提供不同反應路徑而改變反應速率，且在反應過程中不被大量消耗成最終產物」。"
+      "isCorrect": false,
+      "reason": "名稱無關。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「催化劑加快反應是因為它大量變成生成物，因此用得越多產量必無…」不成立；催化劑可提供不同反應路徑而改變反應速率，且在反應過程中不被大量消耗成最終產物。"
+      "reason": "加入物本來有質量。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "證據整合"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "任何平衡系統一旦達平衡，就不可能因溫度或濃度改變而轉移",
-    "實驗前十秒產氣較快的組別，最終生成氣體必然比其他組多",
-    "催化劑加快反應是因為它大量變成生成物，因此用得越多產量必無限增加"
+    "顏色漂亮",
+    "粉末名稱較長",
+    "加入後總質量增加"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科反應速率、控制變因與動態平衡層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JE-4-1",
       "AUTH-NATURAL-LC-JE-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

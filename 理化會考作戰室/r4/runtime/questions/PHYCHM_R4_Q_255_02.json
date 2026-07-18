@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "根據翹翹板紀錄，哪項判讀合理？",
+  "stem": "定滑輪列含承重繩段數1及負載120 N；單動滑輪列含2及120 N。依比較定滑輪動滑輪與滑輪組核對承重繩段數後，應算出或辨認什麼？",
   "options": [
-    "理想定滑輪主要改變施力方向",
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功",
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量"
+    "忽略摩擦且同一繩張力相同時，承重繩段越多，每段需分擔的力越小",
+    "計算承重繩段時把並漏掉直接支撐移動滑輪的繩段也算入",
+    "把三段繩支撐 120 N 負載卻除以 2，誤算理想施力 60 N",
+    "解題時將自由端拉繩距離與負載上升距離視為相同，忽略省力須多拉距離"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「理想定滑輪主要改變施力方向；動滑輪或滑輪組可由支撐繩段數分擔負載而省力」。"
+      "reason": "忽略摩擦且同一繩張力相同時，承重繩段越多，每段需分擔的力越小。定滑輪列的承重繩段數為1、負載為120 N；單動滑輪列的承重繩段數為2、負載為120 N。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功」不成立；輪軸利用不同力臂，齒輪利用齒數比改變轉速與力矩，斜面以增加距離換取較小力。"
+      "reason": "計算承重繩段時把卻未直接支撐移動滑輪的繩段也算入，結果會錯判理想施力。繩段必須直接支撐移動負載才計入；理想施力差異若未通過比較定滑輪動滑輪與滑輪組對承重繩段數的控制，就不能只歸給負載。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「機械只要省力就一定同時省距離與省時，不存在任何交換」不成立；省力機械通常要施力移動較長距離；改變方向不必然省力，「省時」與「省力」要分開。"
+      "reason": "解題時誤把三段繩支撐 120 N 負載卻除以 2，誤算理想施力 60 N，結果會錯判理想施力。忽略摩擦且同一繩張力相同時，承重繩段越多，每段需分擔的力越小；負載的數值若未依承重繩段數核對，會使理想施力無法通過比較定滑輪動滑輪與滑輪組檢查。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量」不成立；理想機械輸入功等於輸出功；可用較小力換較長施力距離，但不能無中生有省功。"
+      "reason": "解題時錯將自由端拉繩距離與負載上升距離視為相同，忽略省力須多拉距離。理想定滑輪主要改變施力方向；承重繩段數未列入比較定滑輪動滑輪與滑輪組時，理想施力的負載大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "foundation",
   "cognitiveProcess": [
-    "關係判讀",
+    "辨認",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "輪軸、齒輪和斜面都能在不改變距離與速度下任意增大輸出功",
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量"
+    "計算承重繩段時把並漏掉直接支撐移動滑輪的繩段也算入",
+    "把三段繩支撐 120 N 負載卻除以 2，誤算理想施力 60 N",
+    "解題時將自由端拉繩距離與負載上升距離視為相同，忽略省力須多拉距離"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

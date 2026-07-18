@@ -13,51 +13,51 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "重新核對線圈感應結果，哪項說法正確？",
+  "stem": "從手搖燈改成電風扇時，第一段由手的化學能→機械能變為插座電能，第二段由發電機→電能變為馬達→機械能。兩列交由由裝置圖追蹤電磁能量轉換判讀，第二段呈現哪個量化或方向結果？",
   "options": [
-    "發電機和電動機都只將電能轉成熱能，與機械能無關",
-    "裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出",
-    "變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大",
-    "只要裝置含線圈就能跳過輸入、輸出的分析，直接說能量在線圈中消失"
+    "解題時將線圈或磁鐵本身列為能量來源，而不是轉換裝置",
+    "把能量圖只寫開始與結束，漏掉發電機、馬達或感應的轉換階段",
+    "把手搖燈的光能被排在手的化學能之前，顛倒能量流向",
+    "依裝置逐段標出輸入、電磁轉換與輸出，便能檢查是否漏列能量來源"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「發電機和電動機都只將電能轉成熱能，與機械能無關」不成立；發電機主要將機械能轉電能，電動機主要將電能轉機械能，兩者能量流向相反。"
+      "reason": "解題時錯將線圈或磁鐵本身列為能量來源，而不是轉換裝置，結果會錯判終端輸出。裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出，例如手搖發電機為機械能→電能→光與熱；照原做法會把終端輸出算錯或判反。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出，例如手搖發電機為機械能→電能→光與熱」。"
+      "isCorrect": false,
+      "reason": "解題時誤把能量圖只寫開始與結束，漏掉發電機、馬達或感應的轉換階段。線圈或磁鐵只是轉換元件，不能當成能量來源；終端輸出差異若未通過由裝置圖追蹤電磁能量轉換對第一段的控制，就不能只歸給第二段。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大」不成立；變壓器以交流造成變動磁場，改變電壓以利輸電；遠距離高電壓可在同功率下降低電流與線路損耗。"
+      "reason": "解題時誤把手搖燈的光能被排在手的化學能之前，顛倒能量流向。依裝置逐段標出輸入、電磁轉換與輸出，便能檢查是否漏列能量來源；第二段的數值若未依第一段核對，會使終端輸出無法通過由裝置圖追蹤電磁能量轉換檢查。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「只要裝置含線圈就能跳過輸入、輸出的分析，直接說能量在線圈中…」不成立；裝置圖的能量追蹤要依序標出輸入、電磁作用與輸出，例如手搖發電機為機械能→電能→光與熱。"
+      "isCorrect": true,
+      "reason": "依裝置逐段標出輸入、電磁轉換與輸出，便能檢查是否漏列能量來源。手搖燈列的第一段為手的化學能→機械能、第二段為發電機→電能；電風扇列的第一段為插座電能、第二段為馬達→機械能。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
     "證據判讀",
-    "分析"
+    "推論"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "發電機和電動機都只將電能轉成熱能，與機械能無關",
-    "變壓器可在沒有輸入能量時同時把電壓、電流和輸出功率無限增大",
-    "只要裝置含線圈就能跳過輸入、輸出的分析，直接說能量在線圈中消失"
+    "解題時將線圈或磁鐵本身列為能量來源，而不是轉換裝置",
+    "把能量圖只寫開始與結束，漏掉發電機、馬達或感應的轉換階段",
+    "把手搖燈的光能被排在手的化學能之前，顛倒能量流向"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-KC-4-4",
@@ -67,19 +67,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

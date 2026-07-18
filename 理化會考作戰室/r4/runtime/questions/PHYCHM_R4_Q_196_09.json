@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對往返步行結果，哪項說法正確？",
+  "stem": "某人座標為 +3 m，下列哪一資訊仍不足以判斷他的實際地點？",
   "options": [
-    "物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整",
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘",
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同",
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率"
+    "尚未知道原點與正方向如何設定",
+    "已知他在原點正側 3 m",
+    "已知他的有號位置是 +3 m",
+    "已知他離原點 3 m"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整」。"
+      "reason": "座標必須搭配原點和正方向，否則無法對應到實際地點。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「72 km/h＝72×1000×3600 m/s，分子分母…」不成立；72 km/h＝20 m/s，因為 1 km＝1000 m、1 h＝3600 s；長度與時間都…。"
+      "reason": "已知他在原點正側 3 m不符合題目資料。座標必須搭配原點和正方向，否則無法對應到實際地點。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「速度只是一個正數快慢，向東與向西 10 m/s 在任何分析…」不成立；速度同時含快慢與方向；「向東 10 m/s」比只寫「10 m/s」多了運動方向。"
+      "reason": "已知他的有號位置是 +3 m不符合題目資料。座標必須搭配原點和正方向，否則無法對應到實際地點。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均…」不成立；儀表在某一刻顯示的是瞬時資訊；一段旅程的平均速率必須以全路程除以全時間。"
+      "reason": "已知他離原點 3 m不符合題目資料。座標必須搭配原點和正方向，否則無法對應到實際地點。"
     }
   ],
   "difficulty": "advanced",
@@ -46,16 +46,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘",
-    "速度只是一個正數快慢，向東與向西 10 m/s 在任何分析中都完全相同",
-    "只要把出發與到達兩個儀表讀值相加除以二，就必然等於整段平均速率"
+    "已知他在原點正側 3 m",
+    "已知他的有號位置是 +3 m",
+    "已知他離原點 3 m"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

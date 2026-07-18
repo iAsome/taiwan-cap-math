@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理鞋底壓力資料，哪項敘述合理？",
+  "stem": "解題時錯將 60 mL 到 30 mL 的變化解讀成體積減半、壓力也減半，結果會錯判壓力。按定性判斷密閉定量氣體壓力與體積關係檢查體積與溫度時，哪一步先做？",
   "options": [
-    "密閉的定量氣體在溫度近似不變時",
-    "液體壓力只由容器底面積決定，和深度與液體種類無關",
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁",
-    "液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量"
+    "把對開口容器中的氣體也直接套用定量密閉氣體的反比關係",
+    "主張密閉氣體體積縮小後粒子數也會自動減少，所以壓力下降",
+    "丁不能直接併入定溫比較",
+    "做比較時氣體壓力與體積時忽略溫度，將 50°C 的資料併入定溫關係"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「密閉的定量氣體在溫度近似不變時，體積被壓縮而變小，粒子撞壁更頻繁，壓力較大」。"
+      "isCorrect": false,
+      "reason": "解題時誤把對開口容器中的氣體也直接套用定量密閉氣體的反比關係，結果會錯判壓力。密閉的定量氣體在溫度近似不變時，體積被壓縮而變小，粒子撞壁更頻繁，壓力較大；體積未列入定性判斷密閉定量氣體壓力與體積關係時，壓力的溫度大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「液體壓力只由容器底面積決定，和深度與液體種類無關」不成立；同一液體中深度越大壓力越大；同深度時液體密度較大者壓力較大。"
+      "reason": "誤以為密閉氣體體積縮小後粒子數也會自動減少，所以壓力下降。密閉的定量氣體在溫度近似不變時，體積被壓縮而變小，粒子撞壁更頻繁，壓力較大；照原做法會把壓力算錯或判反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁」不成立；靜止液體中同一點的壓力可向各方向作用，不只向下；容器側壁也受液體壓力。"
+      "isCorrect": true,
+      "reason": "丁不能直接併入定溫比較。丁列的體積為30 mL，溫度為50°C；丁列的體積為30 mL，溫度為50°C。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量」不成立；帕斯卡原理說明密閉流體上的壓力變化可傳至各處；液壓機可以大面積活塞得到較大力。"
+      "reason": "做比較時氣體壓力與體積時忽略溫度，將 50°C 的資料併入定溫關係。反比判斷只適用於密閉定量氣體且溫度近似不變；壓力差異若未通過定性判斷密閉定量氣體壓力與體積關係對體積的控制，就不能只歸給溫度。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "液體壓力只由容器底面積決定，和深度與液體種類無關",
-    "液體重量向下，所以液體壓力只會垂直向下，不會壓迫側壁",
-    "液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量"
+    "把對開口容器中的氣體也直接套用定量密閉氣體的反比關係",
+    "主張密閉氣體體積縮小後粒子數也會自動減少，所以壓力下降",
+    "做比較時氣體壓力與體積時忽略溫度，將 50°C 的資料併入定溫關係"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

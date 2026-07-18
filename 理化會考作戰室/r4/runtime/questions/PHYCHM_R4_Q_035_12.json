@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "評估墨水色層報告時，哪項說明正確？",
+  "stem": "蒸餾混合物時溫度由 78 °C 緩升至 110 °C，最合理的解釋？",
   "options": [
-    "蒸餾時收集的是永遠留在蒸餾瓶底的高沸點成分",
-    "食鹽水倒過濾紙後，比濾紙孔洞小的水會留下，鹽會通過",
-    "蒸餾加熱混合液，使沸點較低的成分先汽化，再經冷凝收集；需有足夠沸點差",
-    "結晶法只依成分粒徑大小，和溶解度的溫度變化無關"
+    "溫度計一定壞",
+    "低沸點成分逐減，蒸氣組成轉向高沸點成分",
+    "液體質量增加",
+    "兩成分沸點完全相同"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「蒸餾時收集的是永遠留在蒸餾瓶底的高沸點成分」不成立；蒸餾加熱混合液，使沸點較低的成分先汽化，再經冷凝收集；需有足夠沸點差。"
+      "reason": "規律變化可有物理解釋。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「食鹽水倒過濾紙後，比濾紙孔洞小的水會留下，鹽會通過」不成立；濾紙可截留粒徑較大的不溶性固體，因此可分開沙與水，不能直接分開已溶解的食鹽。"
+      "isCorrect": true,
+      "reason": "符合分段蒸餾組成變化。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「蒸餾加熱混合液，使沸點較低的成分先汽化，再經冷凝收集；需有足夠沸點差」。"
+      "isCorrect": false,
+      "reason": "蒸餾通常使燒瓶質量減少。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「結晶法只依成分粒徑大小，和溶解度的溫度變化無關」不成立；可先製成高溫飽和溶液，再冷卻使溶解度隨溫度降低的溶質結晶析出。"
+      "reason": "溫度跨度反駁。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "advanced",
   "cognitiveProcess": [
-    "限制評估",
-    "高層推論"
+    "曲線推論"
   ],
-  "representationType": "evaluation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "蒸餾時收集的是永遠留在蒸餾瓶底的高沸點成分",
-    "食鹽水倒過濾紙後，比濾紙孔洞小的水會留下，鹽會通過",
-    "結晶法只依成分粒徑大小，和溶解度的溫度變化無關"
+    "溫度計一定壞",
+    "液體質量增加",
+    "兩成分沸點完全相同"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-4",
       "AUTH-NATURAL-LC-CA-4-1",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

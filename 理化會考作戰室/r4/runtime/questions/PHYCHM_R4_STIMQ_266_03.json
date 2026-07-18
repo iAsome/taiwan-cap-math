@@ -13,50 +13,51 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_266",
-  "stem": "電表接法題組中，哪項說明符合紀錄？",
+  "stem": "紀錄丁時，開關是閉合，回路是導線繞過燈泡，燈泡為燈泡不亮且有短路風險。由全表歸納，燈泡受哪些條件支配？",
   "options": [
-    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓",
-    "電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整",
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少",
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆"
+    "把配置丙只接電池一端仍被判成完整回路",
+    "主張導線直接跨接電池兩端只是讓燈更亮，不會有短路風險",
+    "把電池只接到燈泡一端就判定有持續電流，忽略必須形成閉合通路",
+    "電源、導線、開關與用電器必須形成閉合通路才有持續電流"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「電阻為 I/V＝0.083 Ω，因為電流應除以電壓」不成立；某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω。"
+      "reason": "電源、導線、開關與用電器必須形成閉合通路才有持續電流。丙列的開關為閉合，回路為只接電池一端；丁列的開關為閉合，回路為導線繞過燈泡。解題時誤把配置丙只接電池一端仍被判成完整回路。只有甲形成電流必須經過燈泡的完整回路；回路的數值若未依開關核對，會使燈泡無法通過辨識電源導線開關與用電器形成通路檢查。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關斷開時電路不完整」。"
+      "isCorrect": false,
+      "reason": "電源、導線、開關與用電器必須形成閉合通路才有持續電流。丙列的開關為閉合，回路為只接電池一端；丁列的開關為閉合，回路為導線繞過燈泡。誤以為導線直接跨接電池兩端只是讓燈更亮，不會有短路風險。電源、導線、開關與用電器必須形成閉合通路才有持續電流；開關未列入辨識電源導線開關與用電器形成通路時，燈泡的回路大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少」不成立；串聯電路各元件的電流相同，電源電壓等於各元件電壓降總和。"
+      "reason": "電源、導線、開關與用電器必須形成閉合通路才有持續電流。丙列的開關為閉合，回路為只接電池一端；丁列的開關為閉合，回路為導線繞過燈泡。解題時誤把電池只接到燈泡一端就判定有持續電流，忽略必須形成閉合通路。電源、導線、開關與用電器必須形成閉合通路才有持續電流；照原做法會把燈泡算錯或判反。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆」不成立；並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。"
+      "isCorrect": true,
+      "reason": "電源、導線、開關與用電器必須形成閉合通路才有持續電流。丙列的開關為閉合，回路為只接電池一端；丁列的開關為閉合，回路為導線繞過燈泡。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "證據評估"
+    "限制評估",
+    "遷移"
   ],
   "representationType": "stimulus-figure-and-data",
   "misconceptionTargets": [
-    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓",
-    "串聯電路各元件兩端電壓都必然等於完整電源電壓，且電流逐個減少",
-    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆"
+    "把配置丙只接電池一端仍被判成完整回路",
+    "主張導線直接跨接電池兩端只是讓燈更亮，不會有短路風險",
+    "把電池只接到燈泡一端就判定有持續電流，忽略必須形成閉合通路"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JC-4-5",
@@ -66,20 +67,6 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": [
     "PHYCHM_R4_ASSET_014"
   ]

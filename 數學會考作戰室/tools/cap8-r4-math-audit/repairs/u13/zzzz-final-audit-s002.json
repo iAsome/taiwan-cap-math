@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u13",
+  "batch": "014-u13-complete",
+  "skills": ["s002"],
+  "mc": [
+    {
+      "questionId": "u13-s002-v003",
+      "expectedContentSha256": "27f83277a6228709e729908289f200a5c0349a67acc939f8f61ac167150b39bc",
+      "set": {
+        "optionAnalysis": [
+          {
+            "choice": "(x+3)²+2",
+            "truth": false,
+            "reason": "展開後常數為 11。"
+          },
+          {
+            "choice": "(x+6)²-34",
+            "truth": false,
+            "reason": "此式展開為 x²+12x+2，一次項係數為 12，不等於原式。"
+          },
+          {
+            "choice": "(x-3)²-7",
+            "truth": false,
+            "reason": "一次項符號變成 -6x。"
+          },
+          {
+            "choice": "(x+3)²-7",
+            "truth": true,
+            "reason": "補 9 再扣回 9，故常數 2-9=-7。"
+          }
+        ]
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [
+    {
+      "lectureId": "u13-s002-lecture-r1",
+      "expectedContentSha256": "b14feae8cd46231e6d155c459a7f932b2ba9b3d9083a87fa01ac765d86abcbb7",
+      "replaceText": {
+        "x²+4x+8 的右端為 -4": "x²+4x+7 的右端為 -3"
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

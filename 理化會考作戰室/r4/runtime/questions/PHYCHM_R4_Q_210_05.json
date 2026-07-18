@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "關於速度改變理解加速度，哪項結論符合題給條件？",
+  "stem": "速度為 20 m/s 是否能單獨決定加速度？",
   "options": [
-    "物體質量越大，在相同合力下速度改變必然越快",
-    "加速度只要是負值就一定減速，只要是正值就一定加速",
-    "加速度表示速度隨時間的變化",
-    "加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度"
+    "能，加速度就是 20 m/s²",
+    "能，加速度必為零",
+    "不能，因為速度沒有單位",
+    "不能，還需知道速度如何隨時間改變"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「物體質量越大，在相同合力下速度改變必然越快」不成立；質量相同時，合力較大者速度改變較快；合力相同時，質量較大者速度改變較慢。"
+      "reason": "能，加速度就是 20 m/s²不成立。單一時刻速度不含速度差與時間差，無法求加速度。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「加速度只要是負值就一定減速，只要是正值就一定加速」不成立；加速度與速度同向時快慢增加，反向時快慢減少；加速度為負不代表一定減速。"
+      "reason": "能，加速度必為零不成立。單一時刻速度不含速度差與時間差，無法求加速度。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「加速度表示速度隨時間的變化；速度大小、方向或兩者改變都可產生加速度」。"
+      "isCorrect": false,
+      "reason": "不能，因為速度沒有單位不成立。單一時刻速度不含速度差與時間差，無法求加速度。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度」不成立；加速度表示速度隨時間的變化；速度大小、方向或兩者改變都可產生加速度。"
+      "isCorrect": true,
+      "reason": "單一時刻速度不含速度差與時間差，無法求加速度。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "條件判斷",
     "分析"
   ],
-  "representationType": "boundary",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體質量越大，在相同合力下速度改變必然越快",
-    "加速度只要是負值就一定減速，只要是正值就一定加速",
-    "加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度"
+    "能，加速度就是 20 m/s²",
+    "能，加速度必為零",
+    "不能，因為速度沒有單位"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-11",
       "AUTH-NATURAL-LC-EB-4-8",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

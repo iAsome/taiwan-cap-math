@@ -99,7 +99,13 @@ export async function loadEarthScienceUnitSource(unitId, { repoRoot = REPO_ROOT 
 export async function materializeEarthScienceUnit(source, { graphPath = GRAPH_PATH } = {}) {
   const graph = JSON.parse(await readFile(graphPath, "utf8"));
   assert.equal(graph.status, "frozen-reviewed", "authority graph must be frozen and reviewed");
-  const skills = graph.skills.filter((skill) => skill.subject === "earth_science" && skill.unitId === source.unitId);
+  const graphSkills = graph.skills.filter((skill) => skill.subject === "earth_science" && skill.unitId === source.unitId);
+  assert(source.skillTitles && typeof source.skillTitles === "object", `${source.unitId}: display skill titles required`);
+  const skills = graphSkills.map((skill) => ({
+    ...skill,
+    title: source.skillTitles[skill.id],
+  }));
+  assert(skills.every((skill) => typeof skill.title === "string" && skill.title.trim()), `${source.unitId}: missing display skill title`);
   const skillById = new Map(skills.map((skill) => [skill.id, skill]));
   assert(skills.length > 0, `${source.unitId}: no frozen skills`);
   assert.equal(source.lectures.length, skills.length, `${source.unitId}: one lecture per skill required`);

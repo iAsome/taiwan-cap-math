@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "飲品稀釋出現四種說法，哪項有理化概念支持？",
+  "stem": "一杯水底有未溶食鹽，上層清澈。整杯樣品應如何描述？",
   "options": [
-    "外觀透明無色的物質一定是純物質，不可能含多種成分",
-    "食鹽水在各處取樣組成近似相同，屬均勻混合；泥水可見沉降且組成不一，屬非均勻混合",
-    "溶液中含量較少的一方永遠是溶劑，和物態與作用無關",
-    "20 g 食鹽加 80 g 水的濃度是 20÷80×100%＝25%"
+    "只有固態食鹽",
+    "單一均勻溶液",
+    "上層溶液與底部固體形成非均勻整體",
+    "純水"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「外觀透明無色的物質一定是純物質，不可能含多種成分」不成立；純物質在固定條件下有固定組成；空氣、海水等由多種物質以可變比例組成，是混合物。"
+      "reason": "杯中也有液體。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「食鹽水在各處取樣組成近似相同，屬均勻混合；泥水可見沉降且組成不一，屬非均勻混合」。"
+      "isCorrect": false,
+      "reason": "忽略底部相。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「溶液中含量較少的一方永遠是溶劑，和物態與作用無關」不成立；食鹽水中食鹽是溶質、水是溶劑、均勻混合系統是溶液。"
+      "isCorrect": true,
+      "reason": "完整描述兩相。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「20 g 食鹽加 80 g 水的濃度是 20÷80×100…」不成立；20 g 食鹽加 80 g 水形成 100 g 溶液，重量百分濃度為 20%。"
+      "reason": "上層仍含鹽。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "多相描述"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "外觀透明無色的物質一定是純物質，不可能含多種成分",
-    "溶液中含量較少的一方永遠是溶劑，和物態與作用無關",
-    "20 g 食鹽加 80 g 水的濃度是 20÷80×100%＝25%"
+    "只有固態食鹽",
+    "單一均勻溶液",
+    "純水"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AB-4-4",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

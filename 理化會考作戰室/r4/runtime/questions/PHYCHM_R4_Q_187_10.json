@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組根據水中視位置下結論，哪項符合資料？",
+  "stem": "兩條作圖光線沒有精確交於同一點，只差少量。應如何處理？",
   "options": [
-    "凸透鏡作圖可選用平行主軸後通過焦點、通過光心近似不偏折等主要光線",
-    "水中物體看來較淺是因物體實際漂浮上升，與光的折射無關",
-    "凸透鏡與凹透鏡都只能使光發散，兩者的形狀與光線作用無關",
-    "凸透鏡無論物距如何都只會形成正立實像，像的性質不隨物距改變"
+    "檢查線寬、焦點與量角，取合理交會區並報告作圖誤差",
+    "任意選最遠點",
+    "宣稱透鏡不成像",
+    "刪除其中一條光線"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「凸透鏡作圖可選用平行主軸後通過焦點、通過光心近似不偏折等主要光線」。"
+      "reason": "幾何作圖有線寬與標點誤差，應先檢查基準。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「水中物體看來較淺是因物體實際漂浮上升，與光的折射無關」不成立；水中物體的光進入空氣後折射，眼睛沿折射光反向延伸，使物體看來比實際淺。"
+      "reason": "最遠點沒有依據。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「凸透鏡與凹透鏡都只能使光發散，兩者的形狀與光線作用無關」不成立；凸透鏡可使與主軸平行的光近似會聚至焦點，凹透鏡使光發散，反向延長似來自虛焦點。"
+      "reason": "小差異常來自繪圖精度。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「凸透鏡無論物距如何都只會形成正立實像，像的性質不隨物距改變」不成立；物距大於凸透鏡焦距時可成倒立實像；物在焦點內時成正立放大虛像。"
+      "reason": "刪線會失去交會驗證。"
     }
   ],
   "difficulty": "advanced",
@@ -47,16 +47,16 @@
     "主張評估",
     "證據評估"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "水中物體看來較淺是因物體實際漂浮上升，與光的折射無關",
-    "凸透鏡與凹透鏡都只能使光發散，兩者的形狀與光線作用無關",
-    "凸透鏡無論物距如何都只會形成正立實像，像的性質不隨物距改變"
+    "任意選最遠點",
+    "宣稱透鏡不成像",
+    "刪除其中一條光線"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-7",
       "AUTH-NATURAL-LC-KA-4-8",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

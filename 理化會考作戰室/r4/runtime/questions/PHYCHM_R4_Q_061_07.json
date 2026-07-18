@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PC-4-2"
   ],
   "stimulusId": null,
-  "stem": "離子符號出現四種說法，哪項有理化概念支持？",
+  "stem": "碳酸鈣的化學式是哪一項？",
   "options": [
-    "H₂SO₄ 中未寫下標的 S 表示沒有硫原子",
-    "3H₂O 表示每個水分子含 3 個氫，係數只乘第一個元素",
-    "Ca²⁺ 表示一個粒子含 2 個鈣原子，右上角數字是原子個數",
-    "水是 H₂O、二氧化碳是 CO₂、氯化鈉是 NaCl"
+    "CaCO₃",
+    "CO₂",
+    "CaCl₂",
+    "CaO"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「H₂SO₄ 中未寫下標的 S 表示沒有硫原子」不成立；一個 H₂SO₄ 粒子含 2 個氫、1 個硫、4 個氧原子，共 7 個原子。"
+      "isCorrect": true,
+      "reason": "含 Ca、C、O。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「3H₂O 表示每個水分子含 3 個氫，係數只乘第一個元素」不成立；3H₂O 表示 3 個水分子，共含 6 個 H 原子與 3 個 O 原子；係數乘入整個化學式。"
+      "reason": "二氧化碳。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「Ca²⁺ 表示一個粒子含 2 個鈣原子，右上角數字是原子個數」不成立；Ca²⁺ 表示帶 2 個正電單位的鈣離子，Cl⁻ 表示帶 1 個負電單位的氯離子。"
+      "reason": "氯化鈣。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「水是 H₂O、二氧化碳是 CO₂、氯化鈉是 NaCl；配對時要同時核對元素種類與比例」。"
+      "isCorrect": false,
+      "reason": "氧化鈣。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "組成排除"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "H₂SO₄ 中未寫下標的 S 表示沒有硫原子",
-    "3H₂O 表示每個水分子含 3 個氫，係數只乘第一個元素",
-    "Ca²⁺ 表示一個粒子含 2 個鈣原子，右上角數字是原子個數"
+    "CO₂",
+    "CaCl₂",
+    "CaO"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-3",
       "AUTH-NATURAL-LC-AA-4-5",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PC-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

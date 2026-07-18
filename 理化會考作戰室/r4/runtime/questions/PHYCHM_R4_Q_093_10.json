@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "實驗紀錄根據限量反應物下結論，哪項符合資料？",
+  "stem": "某計算得到B剩−2 g，這表示什麼？",
   "options": [
-    "只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比",
-    "200 g、10% 溶液中有 200 g 可反應溶質，濃度數字不影響反應量",
-    "提供 3 g A、10 g B 時 A 先用完",
-    "只要數字大小相合，質量比可直接與體積比或粒子數比互換"
+    "反應產生2 g B",
+    "B是限量物，原先假設消耗過多",
+    "B真的具有負質量",
+    "應把負號刪掉"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比」不成立；一系列實驗中若 A、B 剛好完全反應的消耗質量一直維持 2：3，可以該恆定比來推算同反應資料。"
+      "reason": "與列式不符。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「200 g、10% 溶液中有 200 g 可反應溶質，濃度…」不成立；200 g、10% 溶液中的溶質質量是 20 g；反應定量應使用 20 g，不是整份溶液 20…。"
+      "isCorrect": true,
+      "reason": "消耗量超過供應量，B先用完。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「若 A 與 B 的完全消耗比是 1：2，提供 3 g A、10 g B 時 A 先用完，B 消耗 6 g 並剩 4 g」。"
+      "isCorrect": false,
+      "reason": "質量不可負。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「只要數字大小相合，質量比可直接與體積比或粒子數比互換」不成立；使用比例前要確認兩邊都是質量、體積或粒子數，並先統一 g、kg、mL 等單位。"
+      "reason": "不能任意改答案。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "合理性檢查"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "只取一組含有剩餘反應物的初始質量比，就能當成完全反應的消耗比",
-    "200 g、10% 溶液中有 200 g 可反應溶質，濃度數字不影響反應量",
-    "只要數字大小相合，質量比可直接與體積比或粒子數比互換"
+    "反應產生2 g B",
+    "B真的具有負質量",
+    "應把負號刪掉"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AA-4-2",
       "AUTH-NATURAL-LC-JA-4-1",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

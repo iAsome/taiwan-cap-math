@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "EARTH_R4_ST_151",
-  "stem": "閱讀「由日出日落算晝長」的資料後，為了釐清地球自轉解釋晝夜交替，哪一項讀值正確？",
+  "stem": "依「臺灣測站一日照明序列」，測站在哪個時刻由背光面進入受光面？",
   "options": [
-    "在「由日出日落算晝長」的地球自轉解釋晝夜交替資料中，當日期位置為丙時，正午影長相對值為0.6。",
-    "在「由日出日落算晝長」的地球自轉解釋晝夜交替資料中，當日期位置為丙時，正午影長相對值為1.4。",
-    "在「由日出日落算晝長」的地球自轉解釋晝夜交替資料中，附表找不到日期位置為丙的紀錄。",
-    "在「由日出日落算晝長」的地球自轉解釋晝夜交替資料中，當日期位置為丙時，正午影長相對值為1。"
+    "12:00，測站位於受光面中央附近",
+    "18:30，測站由受光面進入背光面",
+    "04:30，測站仍在背光面且接近晨昏線",
+    "05:30，測站越過晨昏線並記錄日出"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「0.6」來自其他資料列；本列記錄的是「1」。"
+      "reason": "12:00已是白晝，資料沒有記錄此時由背光轉入受光，不能當作日出時刻。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「1.4」來自其他資料列；本列記錄的是「1」。"
+      "reason": "18:30的方向相反，是由受光面離開至背光面，表中對應的是日落。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "表中第3列已列出「丙」，不能說沒有記錄。"
+      "reason": "04:30仍位於背光面，雖接近晨昏線但尚未進入受光區，天空仍黑暗。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "逐欄讀值可直接得到「正午影長相對值為1」。"
+      "reason": "05:30一列同時記錄由背光面進入受光面與日出，兩項資料彼此一致。"
     }
   ],
   "difficulty": "standard",
@@ -49,7 +49,7 @@
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "夏季是因地球明顯更靠近太陽"
+    "18:30，測站由受光面進入背光面"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "逐項核對「由日出日落算晝長」的條件後，「在「由日出日落算晝長」的地球自轉解釋晝夜交替資料中，當日期位置為丙時，正午影長相對值為1。」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "沿表格的時序追蹤，04:30仍黑暗而05:30進入受光面，因此轉換發生在05:30。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "若誤選18:30，會把離開受光面的日落過程當成日出，方向與紀錄均相反。",
       "status": "pass"
     }
   ],

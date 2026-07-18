@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組檢查眼鏡矯正紀錄，哪項判讀正確？",
+  "stem": "法線在折射作圖中的正確描述為何？",
   "options": [
-    "入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾",
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線",
-    "入射角是入射光與法線夾角，折射角是折射光與法線夾角，都不從介面量",
-    "水中物體看來較淺是因物體實際漂浮上升，與光的折射無關"
+    "此時物體沿界面方向",
+    "通過入射點且垂直界面，延伸到兩側介質",
+    "只存在空氣側",
+    "必與入射線重合"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾」不成立；入射角是入射光與法線夾角，折射角是折射光與法線夾角，都不從介面量。"
+      "reason": "沿界面的是切線方向。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「光由任何介質進入另一介質時速率都不變，也永遠折向法線」不成立；光由空氣進入玻璃時速率降低，斜入射通常折向法線；由玻璃進空氣則通常偏離法線。"
+      "isCorrect": true,
+      "reason": "同一條法線提供i與r的共同基準。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「入射角是入射光與法線夾角，折射角是折射光與法線夾角，都不從介面量」。"
+      "isCorrect": false,
+      "reason": "折射角需在第二介質側由同一法線量。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「水中物體看來較淺是因物體實際漂浮上升，與光的折射無關」不成立；水中物體的光進入空氣後折射，眼睛沿折射光反向延伸，使物體看來比實際淺。"
+      "reason": "只有正入射時才重合。"
     }
   ],
   "difficulty": "standard",
@@ -47,16 +47,16 @@
     "資料判讀",
     "應用"
   ],
-  "representationType": "data-interpretation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾",
-    "光由任何介質進入另一介質時速率都不變，也永遠折向法線",
-    "水中物體看來較淺是因物體實際漂浮上升，與光的折射無關"
+    "此時物體沿界面方向",
+    "只存在空氣側",
+    "必與入射線重合"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-7",
       "AUTH-NATURAL-LC-KA-4-8",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

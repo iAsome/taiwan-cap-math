@@ -17,51 +17,50 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "小組根據金屬燃燒下結論，哪項符合資料？",
+  "stem": "某裝置沒有外部電源卻能讓小馬達轉動，裝置最可能正在？",
   "options": [
-    "電池放電是化學能轉電能",
-    "電池先在內部儲存固定的電流，接上導線後把電流倒出而無化學反應",
-    "電壓低的電池不可能短路發熱，電解產生的氣體也可直接靠近火源檢驗",
-    "放電、充電與電解的能量流向都是化學能自動轉成電能"
+    "放電",
+    "電解",
+    "充電",
+    "蒸發"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "判讀依據是「電池放電是化學能轉電能；充電和電解都需外加電能驅動非自發化學改變」。"
+      "reason": "它向馬達輸出電能。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「電池先在內部儲存固定的電流，接上導線後把電流倒出而無化學反應」不成立；鋅銅電池放電時，自發化學反應驅動外電路電流，將化學能轉為電能。"
+      "reason": "電解需外電源。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「電壓低的電池不可能短路發熱，電解產生的氣體也可直接靠近火源…」不成立；燃燒應控制火源與可燃物，電池電解應防短路、腐蝕液接觸與未知氣體累積。"
+      "reason": "充電需能量輸入。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「放電、充電與電解的能量流向都是化學能自動轉成電能」不成立；電池放電是化學能轉電能；充電和電解都需外加電能驅動非自發化學改變。"
+      "reason": "蒸發不能直接供電。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "情境推論"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "電池先在內部儲存固定的電流，接上導線後把電流倒出而無化學反應",
-    "電壓低的電池不可能短路發熱，電解產生的氣體也可直接靠近火源檢驗",
-    "放電、充電與電解的能量流向都是化學能自動轉成電能"
+    "電解",
+    "充電",
+    "蒸發"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科公開題型之證據判讀與生活情境層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-4",
       "AUTH-NATURAL-LC-JB-4-3",
@@ -75,19 +74,5 @@
       "AUTH-NATURAL-LP-PE-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

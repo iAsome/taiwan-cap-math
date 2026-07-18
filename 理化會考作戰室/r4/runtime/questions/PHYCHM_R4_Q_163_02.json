@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "根據繩波紀錄，哪項判讀合理？",
+  "stem": "水波速度為 1.5 m/s，頻率為 3.0 Hz。波長是多少？",
   "options": [
-    "計算前要統一單位",
-    "若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動",
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差"
+    "4.5 m",
+    "0.50 m",
+    "2.0 m",
+    "0.20 m"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「頻率 5.0 Hz、波長 0.80 m 的波速為 v＝fλ＝4.0 m/s；計算前要統一單位」。"
+      "isCorrect": false,
+      "reason": "相乘得到的不是待求波長；應用 v/f。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動」不成立；在介質波模型中，標記粒子應在平衡位置兩側往復運動；波形則表示擾動依序傳開。"
+      "isCorrect": true,
+      "reason": "λ＝v/f＝1.5/3.0＝0.50 m。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「波速為 f/λ＝6.25 m/s，因為頻率應除以波長」不成立；頻率 5.0 Hz、波長 0.80 m 的波速為 v＝fλ＝4.0 m/s；計算前要統一單位。"
+      "reason": "1.5 與 3.0 的差不代表波長。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「振幅是波峰到波谷的全高，波長是相鄰波峰的高度差」不成立；波峰是橫波最高點、波谷是最低點；振幅由平衡位置量到波峰，波長是沿傳播方向相鄰同相位點的距離。"
+      "reason": "倒數頻率是週期約 0.33 s，不是 0.20 m。"
     }
   ],
   "difficulty": "foundation",
@@ -46,16 +46,16 @@
     "關係判讀",
     "概念理解"
   ],
-  "representationType": "relation",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "若波形向前移動，單一標記粒子的平均位置也必須以波速向前移動",
-    "波速為 f/λ＝6.25 m/s，因為頻率應除以波長",
-    "振幅是波峰到波谷的全高，波長是相鄰波峰的高度差"
+    "4.5 m",
+    "2.0 m",
+    "0.20 m"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-1",
       "AUTH-NATURAL-LC-KA-4-2",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

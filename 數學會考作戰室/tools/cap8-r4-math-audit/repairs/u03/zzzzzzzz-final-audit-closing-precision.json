@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u03",
+  "batch": "004-u03-complete",
+  "skills": ["s011", "s012", "s014", "s015"],
+  "mc": [
+    {
+      "questionId": "u03-s011-v001",
+      "expectedContentSha256": "23281f679c8d79de7b38449752dec687d8b7cb726b822a13193675a7ceb78fd8",
+      "replaceText": {
+        "角色顫倒": "角色顛倒"
+      }
+    },
+    {
+      "questionId": "u03-s011-v003",
+      "expectedContentSha256": "a94125ad542a58f61e24e554943c2b24688fd28e443bffca3422d99c81ee22d5",
+      "replaceText": {
+        "遗漏": "遺漏"
+      }
+    },
+    {
+      "questionId": "u03-s011-v007",
+      "expectedContentSha256": "959cd32ae78ef5cb76bd44a7796e47549d660532bc9302763d9660a3ca5441fe",
+      "optionReasons": {
+        "0": "把請假的 6 人又從實到 130 人扣除，再用 (130-6)\u00f74 得到 31。",
+        "1": "直接用實到 130 人除以 4 並捨去餘數，沒有先加回請假的 6 人。"
+      }
+    },
+    {
+      "questionId": "u03-s011-v010",
+      "expectedContentSha256": "0920572409d777c7f839a36f10bf61323e62f3853b95230fa3f944c0d314bfcc",
+      "optionReasons": {
+        "1": "代入每排 18 張時，九排原有 162 張，扣除 5 張後仍有 157 張，不是 148 張。"
+      }
+    },
+    {
+      "questionId": "u03-s011-v011",
+      "expectedContentSha256": "b90d305b9b49f7193246348e1e1f636e3e3356a6446be8be8c619b104619ddec",
+      "optionReasons": {
+        "1": "把整批 24 頁平均成每本 2 頁後，在正確的 40 頁之外又多扣一次 2 頁。"
+      }
+    },
+    {
+      "questionId": "u03-s012-v008",
+      "expectedContentSha256": "39480766e9a8c86e908eb5d1fd105f0199a465704b87ace75c2e8e73e4175d6f",
+      "replaceText": {
+        "顫倒數線順序": "顛倒數線順序"
+      }
+    },
+    {
+      "questionId": "u03-s012-v009",
+      "expectedContentSha256": "4964e871a7659f0229c462e9e34568931def993943f890f50b3807aa80ad802e",
+      "optionReasons": {
+        "0": "若中間座號為 100，三個座號是 99、100、101，總和只有 300。"
+      }
+    },
+    {
+      "questionId": "u03-s015-v005",
+      "expectedContentSha256": "8a090faff28bd7b4b24ef79fb4e7e7ace1375293990506e798086650d7bf4116",
+      "optionReasons": {
+        "0": "代入十小時時，水量只有 120+5\u00d710=170 公升，尚未達 220 公升。"
+      }
+    },
+    {
+      "questionId": "u03-s015-v008",
+      "expectedContentSha256": "3f5f839f036eef6ccf124fdbb53c3dfa9e6fce5a592c3b0359dfcd278f893973",
+      "optionReasons": {
+        "1": "代入每天 12 頁時，九天後累計為 35+9\u00d712=143 頁，不是 170 頁。",
+        "2": "代入每天 18 頁時，九天後累計為 197 頁，超過題目的 170 頁。",
+        "3": "代入每天 22.5 頁時，九天後累計為 237.5 頁，不符合題意。"
+      }
+    },
+    {
+      "questionId": "u03-s015-v010",
+      "expectedContentSha256": "9184ab6f9a323fb7f8eeceb3df3d3ef8cd4f412e20ab70ee688f93a982f1ce59",
+      "optionReasons": {
+        "0": "五瓶飲料加蛋白粉只有 12\u00d75+18=78 克蛋白質。",
+        "2": "九瓶飲料再加蛋白粉會有 12\u00d79+18=126 克，超過 90 克。"
+      }
+    },
+    {
+      "questionId": "u03-s015-v012",
+      "expectedContentSha256": "7ef022141464bb4f569e655004718b2aaf73055ab31b8a23e7eef69cb9eb2323",
+      "set": {
+        "commonMistake": "直接用扣除場租後的 3800 元除以每組 190 元，忽略付款後還必須保留 190 元。"
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [
+    {
+      "lectureId": "u03-s014-lecture-r1",
+      "expectedContentSha256": "8c24293f78e3fab5e713f7ef5e07e69bed79d287c932fb91fe235cf1be90608d",
+      "set": {
+        "connections": {
+          "previous": "需要會解兩邊含未知數的一元一次方程式並檢查合理性。",
+          "next": [
+            "綜合素養題會把方案比較與預算、用量限制結合。",
+            "後續學習函數圖形時，可把兩方案同價點看成兩條圖形的交點。"
+          ]
+        }
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

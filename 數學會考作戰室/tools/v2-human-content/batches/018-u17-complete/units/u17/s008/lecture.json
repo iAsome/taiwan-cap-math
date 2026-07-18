@@ -10,7 +10,7 @@
   "reviewStatus": "independently-reviewed",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-  "prerequisiteBridge": "先備技能：parallel-consecutive-interior。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "prerequisiteBridge": "承接平行四邊形定義與角性質；本節專注依頂點順序配對兩組對邊，分清平行、等長與周長資訊。",
   "learningOutcomes": [
     "正確配對兩組對邊",
     "運用對邊平行與等長",
@@ -97,35 +97,35 @@
     }
   ],
   "nonApplicableCases": [
-    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
-    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
-    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+    "一組對邊只有平行而未同時等長，不能單靠該組判為平行四邊形。",
+    "AB與BC共用頂點，是相鄰邊而不是對邊。",
+    "由圖形外觀不能量得邊長或判定刻痕以外的等長關係。"
   ],
   "method": [
     {
       "step": 1,
       "instruction": "依頂點順序列出對邊",
-      "check": "完成第1步後，確認未引入題目未給的條件。"
+      "check": "AB對CD、BC對AD，兩組都沒有共用頂點。"
     },
     {
       "step": 2,
       "instruction": "辨認題目給的是平行或等長",
-      "check": "完成第2步後，確認未引入題目未給的條件。"
+      "check": "平行記號與等長刻痕分開記錄，沒有把符號混讀。"
     },
     {
       "step": 3,
       "instruction": "套用性質或判定",
-      "check": "完成第3步後，確認未引入題目未給的條件。"
+      "check": "已知是平行四邊形可用對邊等長；反向判定須滿足完整條件。"
     },
     {
       "step": 4,
       "instruction": "建立長度方程",
-      "check": "完成第4步後，確認未引入題目未給的條件。"
+      "check": "方程兩邊代表同一組對邊，且未知數只對應題目給的長度。"
     },
     {
       "step": 5,
       "instruction": "用周長或正值檢查",
-      "check": "完成第5步後，確認未引入題目未給的條件。"
+      "check": "所有邊長為正，周長等於2(AB＋BC)並附長度單位。"
     }
   ],
   "workedExamples": [
@@ -177,40 +177,41 @@
   "commonMistakes": [
     {
       "mistake": "把相鄰邊當對邊",
-      "why": "AB與BC共頂點，不是對邊",
-      "correction": "AB與BC共頂點，不是對邊"
+      "why": "AB與BC共用B點，位置上不相對。",
+      "correction": "沿ABCD周界配成AB與CD、BC與AD。"
     },
     {
       "mistake": "由平行直接說長度相等",
-      "why": "需利用平行四邊形整體條件",
-      "correction": "需利用平行四邊形整體條件"
+      "why": "單獨兩條平行線之間沒有固定邊長關係。",
+      "correction": "先確認整個四邊形為平行四邊形，再用對邊等長。"
     },
     {
       "mistake": "只證明一組對邊平行",
-      "why": "可能只是梯形",
-      "correction": "可能只是梯形"
+      "why": "此條件也可能出現在梯形，判定資訊不足。",
+      "correction": "再證另一組對邊平行，或使用一組對邊同時平行且等長。"
     },
     {
       "mistake": "周長只算AB+BC",
-      "why": "應乘2",
-      "correction": "應乘2"
+      "why": "只加了兩條相鄰邊，未走完整個邊界。",
+      "correction": "利用對邊等長把鄰邊和乘2。"
     },
     {
       "mistake": "解出負邊長仍接受",
-      "why": "邊長必須為正",
-      "correction": "邊長必須為正"
+      "why": "幾何線段長不可能為負值。",
+      "correction": "把解代回所有邊式，確認每一邊都大於0。"
     }
   ],
   "selfCheck": [
-    "我能否不用目測，說明「平行四邊形對邊」所需的條件？",
-    "我是否先辨認角、邊、對角線、底或高的正確位置？",
-    "方程解出後是否代回題目真正所求？",
-    "角度、長度與面積單位是否正確？"
+    "我是否依頂點順序正確配出兩組對邊？",
+    "題目給的是平行記號、等長刻痕，還是已知平行四邊形？",
+    "使用判定時條件是否完整，而非只有一組平行？",
+    "解出的邊長與周長是否皆為正且單位正確？"
   ],
   "summary": [
-    "在ABCD中，AB與CD是一組對邊，BC與AD是另一組。",
-    "AB=CD，BC=AD",
-    "解題時先確認「ABCD為平行四邊形」。"
+    "平行四邊形ABCD的對邊配對為AB與CD、BC與AD。",
+    "已知平行四邊形可得AB＝CD、BC＝AD；平行與等長是不同資訊。",
+    "一組對邊同時平行且等長可作判定，只有一組平行則不足。",
+    "周長可寫成2(AB＋BC)，最後檢查每條邊為正。"
   ],
   "connections": {
     "previous": "承接parallel-consecutive-interior。",
@@ -249,5 +250,5 @@
     "figureChecked": true,
     "reviewNote": "講義刻意分離方向性質與長度性質，並加入一組對邊平行且等長的判定。"
   },
-  "contentSha256": "c6c0b8c498b14c6e5d0f7ef4c9ae48ade99f1fc14ec6999e5d577b5f78c1014b"
+  "contentSha256": "446479f213128b9a9d191c3a75bbd008f75a1d8294556095c0c83b0ac8d9e962"
 }

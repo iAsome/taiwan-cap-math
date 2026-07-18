@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "cap8-r4-math-normalized-batch-audit-r1",
+  "contentVersion": "681a40a14624818603abb60a47b6ee6ac25ac3352e9b5e6ac92591a32ad49cd5",
+  "units": [
+    "u15"
+  ],
+  "counts": {
+    "units": 1,
+    "skills": 13,
+    "lectures": 13,
+    "mc": 156,
+    "cr": 26,
+    "figures": 14
+  },
+  "findingCounts": {
+    "BLOCKER": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 0
+  },
+  "findings": [],
+  "reviewCandidateCounts": {
+    "question-essence-candidate": 2
+  },
+  "unresolvedReviewCandidateCounts": {
+    "question-essence-candidate": 0
+  },
+  "reviewCandidates": [
+    {
+      "rule": "question-essence-candidate",
+      "id": "u15-s004-mc08",
+      "field": "text+choices",
+      "evidence": "u15-s004-mc07",
+      "resolution": "adjudicated-legitimate"
+    },
+    {
+      "rule": "question-essence-candidate",
+      "id": "u15-s011-mc02",
+      "field": "text+choices",
+      "evidence": "u15-s011-mc01",
+      "resolution": "adjudicated-legitimate"
+    }
+  ],
+  "semanticReviewComplete": true,
+  "semanticReviewEvidence": "tools/cap8-r4-math-audit/results/final-duplicate-reference-audit.json",
+  "semanticDisclaimer": "Mechanical normalization checks do not prove mathematical or pedagogical correctness; review candidates require separate human adjudication."
+}

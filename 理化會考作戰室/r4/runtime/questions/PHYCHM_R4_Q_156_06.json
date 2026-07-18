@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解材料導熱快慢與隔熱用途，哪項修正合理？",
+  "stem": "低導熱塑膠可直接接火嗎？",
   "options": [
-    "太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞",
-    "金屬導熱快適合鍋底",
-    "保溫瓶只要有真空就能完全阻斷一切熱傳，無需考慮輻射與瓶口",
-    "比較表面輻射時可同時改變容器材質、大小、初溫與照射距離，結果仍只由顏色造成"
+    "可，塑膠沒有溫度",
+    "可以，材料導熱慢就等於耐火而且不會燃燒",
+    "不可，還須看耐熱與可燃性",
+    "不可，因完全導電"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞」不成立；熱輻射以電磁波傳遞能量，不需介質，因此太陽能穿過太空將能量傳至地球。"
+      "reason": "有溫度。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": true,
-      "reason": "判讀依據是「金屬導熱快適合鍋底，木材或低導熱材料適合握柄與隔熱層；用途取決所需熱流」。"
+      "isCorrect": false,
+      "reason": "概念不同。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「保溫瓶只要有真空就能完全阻斷一切熱傳，無需考慮輻射與瓶口」不成立；保溫瓶的真空層減少傳導與對流，低輻射表面減少輻射，瓶塞也限制空氣交換。"
+      "isCorrect": true,
+      "reason": "安全性另評估。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「比較表面輻射時可同時改變容器材質、大小、初溫與照射距離，結…」不成立；在相同溫度與面積下，不同顏色和表面狀態可有不同熱輻射吸收與發射效果，比較時要控制其他條件。"
+      "reason": "非導電主因。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "安全評估"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞",
-    "保溫瓶只要有真空就能完全阻斷一切熱傳，無需考慮輻射與瓶口",
-    "比較表面輻射時可同時改變容器材質、大小、初溫與照射距離，結果仍只由顏色造成"
+    "可，塑膠沒有溫度",
+    "可以，材料導熱慢就等於耐火而且不會燃燒",
+    "不可，因完全導電"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱傳播與生活應用; 臺灣國中教育會考自然科導熱、對流、輻射與保溫題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BB-4-1",
       "AUTH-NATURAL-LC-BB-4-3",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

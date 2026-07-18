@@ -15,50 +15,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_250",
-  "stem": "檢查表中關於能量守恆檢查理想系統的說法，哪項判讀正確？",
+  "stem": "動能和位能在甲為10 J、60 J，到乙為35 J、45 J。套用用能量守恆檢查理想系統到這兩列，哪項動能條件必須保留？",
   "options": [
-    "選定系統若不與外界交換能量，總能量守恆；若動能增加 30 J，其他能量形式總量應減少 30 J",
-    "動能只由物體所在高度決定，質量與速度都不影響",
-    "重力位能是物體固定不變的性質，與參考面、重量和高度都無關",
-    "有摩擦時機械能直接消失且不轉成其他能量，因此總能量不守恆"
+    "把系統有外力作功時仍把外界輸入排除，硬把內部能量總和判成固定",
+    "看到甲到丙動能增加 60 J，卻並漏掉核對位能與彈性位能合計也減少 60 J",
+    "若有外力作功，必須列入能量帳",
+    "主張總能量守恆表示物體速度、位置和形變都不能改變"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「選定系統若不與外界交換能量，總能量守恆；若動能增加 30 J，其他能量形式總量應減少 30 J」。"
+      "isCorrect": false,
+      "reason": "若有外力作功，必須列入能量帳。乙列的動能為35 J，位能為45 J；丙列的動能為70 J，位能為20 J。解題時誤把系統有外力作功時仍把外界輸入排除，硬把內部能量總和判成固定。守恆結論以所選系統不與外界交換能量為前提；總能量差異若未通過用能量守恆檢查理想系統對動能的控制，就不能只歸給位能。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「動能只由物體所在高度決定，質量與速度都不影響」不成立；動能與質量成正比、與速度平方成正比；同質量者速度加倍，動能變為四倍。"
+      "reason": "若有外力作功，必須列入能量帳。乙列的動能為35 J，位能為45 J；丙列的動能為70 J，位能為20 J。一看到甲到丙動能增加 60 J，卻沒有核對位能與彈性位能合計也減少 60 J。各時刻三種能量形式合計皆為 100 J；位能的數值若未依動能核對，會使總能量無法通過用能量守恆檢查理想系統檢查。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「重力位能是物體固定不變的性質，與參考面、重量和高度都無關」不成立；重力位能在選定參考高度後，隨物體重量與高度增加而增大。"
+      "isCorrect": true,
+      "reason": "若有外力作功，必須列入能量帳。乙列的動能為35 J，位能為45 J；丙列的動能為70 J，位能為20 J。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「有摩擦時機械能直接消失且不轉成其他能量，因此總能量不守恆」不成立；物體下落時重力位能可轉成動能；有摩擦時，部分機械能轉成內能與聲能。"
+      "reason": "若有外力作功，必須列入能量帳。乙列的動能為35 J，位能為45 J；丙列的動能為70 J，位能為20 J。誤以為總能量守恆表示物體速度、位置和形變都不能改變。選定系統若不與外界交換能量，總能量守恆；動能未列入用能量守恆檢查理想系統時，總能量的位能大小、方向或類別會判錯。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "資料判讀"
+    "證據判讀",
+    "推論"
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "動能只由物體所在高度決定，質量與速度都不影響",
-    "重力位能是物體固定不變的性質，與參考面、重量和高度都無關",
-    "有摩擦時機械能直接消失且不轉成其他能量，因此總能量不守恆"
+    "把系統有外力作功時仍把外界輸入排除，硬把內部能量總和判成固定",
+    "看到甲到丙動能增加 60 J，卻並漏掉核對位能與彈性位能合計也減少 60 J",
+    "主張總能量守恆表示物體速度、位置和形變都不能改變"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-1",
       "AUTH-NATURAL-LC-BA-4-2",
@@ -70,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

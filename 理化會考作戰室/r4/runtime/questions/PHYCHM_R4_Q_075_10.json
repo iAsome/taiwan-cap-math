@@ -14,51 +14,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "小組根據氣體檢驗下結論，哪項符合資料？",
+  "stem": "放熱反應結束後溫度逐漸回室溫，是否表示反應變成吸熱？",
   "options": [
-    "放熱反應將能量傳向周遭，吸熱反應由周遭吸收能量；應用溫度資料與能量流向判斷",
-    "實驗者預期會反應就是足夠證據，無需記錄前後性質",
-    "文字反應只需寫「發光發熱」，無需指出哪些物質消耗或形成",
-    "生成物圖可任意少畫或多畫原子，因為化學反應不需保留原子"
+    "不表示，因溫度不會變",
+    "表示，生成物倒轉",
+    "表示，降溫必吸熱反應",
+    "不表示，可能只是熱散失到環境"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「放熱反應將能量傳向周遭，吸熱反應由周遭吸收能量；應用溫度資料與能量流向判斷」。"
+      "isCorrect": false,
+      "reason": "溫度確會回復。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「實驗者預期會反應就是足夠證據，無需記錄前後性質」不成立；要判斷反應可能發生，應記錄操作前後現象，排除物理原因，再用產物性質或對照試驗支持。"
+      "reason": "無逆反應證據。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「文字反應只需寫「發光發熱」，無需指出哪些物質消耗或形成」不成立；「碳與氧氣反應生成二氧化碳」應保留反應物、生成物和方向，不把觀察現象當成物質名稱。"
+      "reason": "反應可能已結束。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「生成物圖可任意少畫或多畫原子，因為化學反應不需保留原子」不成立；粒子圖中反應前後每種原子數必須相等，只是原子重新排列成新粒子。"
+      "isCorrect": true,
+      "reason": "後續冷卻是熱傳。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "時間階段"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "實驗者預期會反應就是足夠證據，無需記錄前後性質",
-    "文字反應只需寫「發光發熱」，無需指出哪些物質消耗或形成",
-    "生成物圖可任意少畫或多畫原子，因為化學反應不需保留原子"
+    "不表示，因溫度不會變",
+    "表示，生成物倒轉",
+    "表示，降溫必吸熱反應"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-3",
       "AUTH-NATURAL-LC-JA-4-2",
@@ -69,19 +68,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

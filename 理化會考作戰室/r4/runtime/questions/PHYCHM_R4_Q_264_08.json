@@ -10,70 +10,56 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "報告整理防靜電接地資料，哪項敘述合理？",
+  "stem": "解題時誤把負棒靠近中性金屬球時，把近端判成偏負、遠端偏正。按辨識靜電感應的基本現象檢查帶電棒與是否接觸時，哪一步先做？",
   "options": [
-    "帶正電物體吸引另一物體就唯一證明另一物必帶負電",
-    "物體帶負電是因大量質子從別的物體移入，電子位置不會改變",
-    "接地線的功能是在物體上累積更多靜電，以增加火花能量",
-    "近端與遠端電性分布不同"
+    "把感應後近遠端分離的電性當成導體總電量一定不為零",
+    "主張帶電棒未接觸導體就不會使導體內電荷重新分布",
+    "把接地起電時先移開帶電棒再斷開接地",
+    "若先移開帶電棒再斷地，電荷可能經接地重新中和"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「帶正電物體吸引另一物體就唯一證明另一物必帶負電」不成立；帶電物可藉靜電感應吸引電中性物，因此只觀察吸引不能確定另一物的電性。"
+      "reason": "把感應後近遠端分離的電性當成導體總電量一定不為零。帶電物靠近導體時可使導體內電荷重新分布，雖總電量可仍為零，近端與遠端電性分布不同；帶電棒未列入辨識靜電感應的基本現象時，金屬球電荷分布的是否接觸大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「物體帶負電是因大量質子從別的物體移入，電子位置不會改變」不成立；摩擦過程中主要是電子在物體間轉移，原子核內質子不會在一般摩擦中跑到另一物體。"
+      "reason": "誤以為帶電棒未接觸導體就不會使導體內電荷重新分布。帶電物靠近導體時可使導體內電荷重新分布，雖總電量可仍為零，近端與遠端電性分布不同；照原做法會把金屬球電荷分布算錯或判反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「接地線的功能是在物體上累積更多靜電，以增加火花能量」不成立；接地提供電荷與大地間移動的路徑，可減少靜電累積；在易燃環境更需防止靜電火花。"
+      "reason": "解題時誤把接地起電時先移開帶電棒再斷開接地，卻期待導體保留淨電荷，結果會錯判金屬球電荷分布。操作順序很重要；金屬球電荷分布差異若未通過辨識靜電感應的基本現象對帶電棒的控制，就不能只歸給是否接觸。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "判讀依據是「帶電物靠近導體時可使導體內電荷重新分布，雖總電量可仍為零，近端與遠端電性分布不同」。"
+      "reason": "若先移開帶電棒再斷地，電荷可能經接地重新中和。先斷地再移棒列的帶電棒為移開，是否接觸為否；初始列的帶電棒為遠離，是否接觸為否。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "帶正電物體吸引另一物體就唯一證明另一物必帶負電",
-    "物體帶負電是因大量質子從別的物體移入，電子位置不會改變",
-    "接地線的功能是在物體上累積更多靜電，以增加火花能量"
+    "把感應後近遠端分離的電性當成導體總電量一定不為零",
+    "主張帶電棒未接觸導體就不會使導體內電荷重新分布",
+    "把接地起電時先移開帶電棒再斷開接地"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KC-4-1",
       "AUTH-NATURAL-LC-KC-4-2",
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

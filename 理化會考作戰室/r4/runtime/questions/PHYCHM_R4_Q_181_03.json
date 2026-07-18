@@ -12,34 +12,34 @@
     "AUTH-NATURAL-LP-PE-4-1"
   ],
   "stimulusId": null,
-  "stem": "整理反射定律實驗資料後，哪項說明正確？",
+  "stem": "四組反射角為 29°、30°、31°、30°。平均值為何？",
   "options": [
-    "影子與針孔成像表示光會自動繞過遮蔽物後沿曲線前進",
-    "法線是鏡面本身的水平線，入射角應從光線與鏡面之間量起",
-    "入射角與反射角都要從鏡面量起，因此兩者和法線無關",
-    "驗證反射定律應固定鏡面與入射點，準確畫法線，改變入射角並成對記錄入射、反射角"
+    "29.0°",
+    "30.5°",
+    "30.0°",
+    "120°"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「影子與針孔成像表示光會自動繞過遮蔽物後沿曲線前進」不成立；均勻介質中光沿直線傳播，因而形成清楚影子並使針孔可將景物倒立成像。"
+      "reason": "只取最小值不是平均。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「法線是鏡面本身的水平線，入射角應從光線與鏡面之間量起」不成立；入射線射向反射面，法線垂直於入射點的表面，反射線由入射點離開。"
+      "reason": "四數總和 120 除以4是30。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「入射角與反射角都要從鏡面量起，因此兩者和法線無關」不成立；反射定律規定入射角等於反射角，兩角均由光線與法線之間量得。"
+      "isCorrect": true,
+      "reason": "(29＋30＋31＋30)/4＝30.0°。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「驗證反射定律應固定鏡面與入射點，準確畫法線，改變入射角並成對記錄入射、反射角」。"
+      "isCorrect": false,
+      "reason": "120° 是總和。"
     }
   ],
   "difficulty": "foundation",
@@ -47,16 +47,16 @@
     "單位檢核",
     "資料判讀"
   ],
-  "representationType": "unit",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "影子與針孔成像表示光會自動繞過遮蔽物後沿曲線前進",
-    "法線是鏡面本身的水平線，入射角應從光線與鏡面之間量起",
-    "入射角與反射角都要從鏡面量起，因此兩者和法線無關"
+    "29.0°",
+    "30.5°",
+    "120°"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-KA-4-6",
       "AUTH-NATURAL-LC-KA-4-7",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PE-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

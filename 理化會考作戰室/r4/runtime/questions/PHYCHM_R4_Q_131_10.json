@@ -15,51 +15,50 @@
     "AUTH-NATURAL-LC-NA-4-4"
   ],
   "stimulusId": null,
-  "stem": "小組根據酒精與醋酸下結論，哪項符合資料？",
+  "stem": "某液體能使藍色石蕊變紅，這項結果最直接顯示什麼？",
   "options": [
-    "乙醇易揮發且可燃，醋酸具酸性，酯類常有特定香味；用途要與具體性質連結",
-    "烷類、醇類、有機酸和酯類只是不同商品名，化學性質完全一樣",
-    "酯化是把酯和水混合以生成醇與酸，生成物和反應物位置可任意對調",
-    "皂化只是把成品肥皂溶於水，過程中沒有化學反應或新產物"
+    "一定是乙醇",
+    "一定不含碳",
+    "水溶液呈酸性",
+    "可在火旁安全使用"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「乙醇易揮發且可燃，醋酸具酸性，酯類常有特定香味；用途要與具體性質連結」。"
+      "isCorrect": false,
+      "reason": "乙醇不以此特徵辨識。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「烷類、醇類、有機酸和酯類只是不同商品名，化學性質完全一樣」不成立；甲烷屬烷類，乙醇屬醇類，醋酸屬有機酸，乙酸乙酯屬酯類；應根據名稱與性質辨識。"
+      "reason": "酸性不能判斷是否含碳。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「酯化是把酯和水混合以生成醇與酸，生成物和反應物位置可任意對調」不成立；酯化反應可由醇與有機酸反應生成酯和水，實際操作需依條件與安全規範。"
+      "isCorrect": true,
+      "reason": "藍色石蕊變紅是酸性證據。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「皂化只是把成品肥皂溶於水，過程中沒有化學反應或新產物」不成立；油脂與鹼的皂化反應可生成肥皂等產物；肥皂分子的結構有助於分散油污。"
+      "reason": "指示劑結果不能證明不可燃。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "foundation",
   "cognitiveProcess": [
-    "主張評估",
-    "證據評估"
+    "實驗解讀"
   ],
-  "representationType": "claim",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "烷類、醇類、有機酸和酯類只是不同商品名，化學性質完全一樣",
-    "酯化是把酯和水混合以生成醇與酸，生成物和反應物位置可任意對調",
-    "皂化只是把成品肥皂溶於水，過程中沒有化學反應或新產物"
+    "一定是乙醇",
+    "一定不含碳",
+    "可在火旁安全使用"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科有機物、材料性質與永續判讀層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JF-4-1",
       "AUTH-NATURAL-LC-JF-4-2",
@@ -71,19 +70,5 @@
       "AUTH-NATURAL-LC-NA-4-4"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

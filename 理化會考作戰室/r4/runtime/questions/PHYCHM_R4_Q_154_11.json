@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TR-4-1"
   ],
   "stimulusId": null,
-  "stem": "換成另一組鍋具傳導資料，哪項判讀仍合理？",
+  "stem": "對流同時傳遞？",
   "options": [
-    "較冷流體下沉形成對流循環",
-    "對流是固體內粒子在原位碰撞，不包含流體的整體移動",
-    "傳導必須由熱物質粒子一路移動到冷端，否則能量不能傳遞",
-    "太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞"
+    "只有電荷",
+    "能量並伴隨流體質量移動",
+    "完全無物質移動",
+    "只有光"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「流體受熱後密度常減小而上升，較冷流體下沉形成對流循環」。"
+      "isCorrect": false,
+      "reason": "非必要。"
     },
     {
       "optionIndex": 1,
-      "isCorrect": false,
-      "reason": "「對流是固體內粒子在原位碰撞，不包含流體的整體移動」不成立；流體受熱後密度常減小而上升，較冷流體下沉形成對流循環。"
+      "isCorrect": true,
+      "reason": "流體整體流動。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「傳導必須由熱物質粒子一路移動到冷端，否則能量不能傳遞」不成立；熱傳導可由相鄰粒子碰撞與振動傳遞能量，金屬中自由電子也有助於快速傳熱。"
+      "reason": "這是傳導特徵。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞」不成立；熱輻射以電磁波傳遞能量，不需介質，因此太陽能穿過太空將能量傳至地球。"
+      "reason": "非輻射。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "比較"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "對流是固體內粒子在原位碰撞，不包含流體的整體移動",
-    "傳導必須由熱物質粒子一路移動到冷端，否則能量不能傳遞",
-    "太陽的熱是由太空中空氣對流到地球，真空中不可能有能量傳遞"
+    "只有電荷",
+    "完全無物質移動",
+    "只有光"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "十二年國教自然科學第四學習階段熱傳播與生活應用; 臺灣國中教育會考自然科導熱、對流、輻射與保溫題型",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BB-4-1",
       "AUTH-NATURAL-LC-BB-4-3",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TR-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

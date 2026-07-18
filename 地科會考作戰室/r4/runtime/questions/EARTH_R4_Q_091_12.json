@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-PA-4-1"
   ],
   "stimulusId": null,
-  "stem": "把臺灣附近海流的季節變化的判準移到另一個情境時，哪一項作法較適當？",
+  "stem": "要把季節流場結論移到下一年度，哪一項作法最完整？",
   "options": [
-    "改看「從逐時水位辨認潮汐週期」後，只採用支持原想法的一筆紀錄",
-    "改看「從逐時水位辨認潮汐週期」後，省略所有單位",
-    "把判讀移到「從逐時水位辨認潮汐週期」時，仍先先辨認資料描述的是週期水位、波能傳遞或水團位移",
-    "只寫臺灣附近海流的季節變化的概念名稱，不記錄「從逐時水位辨認潮汐週期」的觀測"
+    "只追蹤下一年度夏季一天的表層流，就直接推定該年冬季與各深度流向。",
+    "改換測站與量測深度後，仍把兩年資料差異全部歸因於季風季節轉換，且不查黑潮位置。",
+    "沿用相同測線與深度，取得冬夏多日平均，再與季風及黑潮位置對照。",
+    "保留東岸資料，刪除海峽轉向紀錄。"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "換情境仍須比較完整資料與替代解釋。"
+      "reason": "夏季單日表層流不能代表冬季或其他深度，也不足以處理年度間變動。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "跨情境比較更需要一致單位。"
+      "reason": "同時更換測站與深度會混入空間及垂直差異，且未核對黑潮位置，不能只歸因於季節。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "新情境保留相同變因、證據與適用範圍。"
+      "reason": "保持測線與深度一致並比較冬夏多日平均，可把季節流場與季風及黑潮位置相互核對。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "概念名稱不能取代實際資料。"
+      "reason": "刪除海峽轉向紀錄會排除季風影響較明顯的證據，無法檢驗臺灣周邊的季節差異。"
     }
   ],
   "difficulty": "transfer",
@@ -49,7 +49,7 @@
   ],
   "representationType": "transfer-scenario",
   "misconceptionTargets": [
-    "全年海流方向在任何海域都固定不變"
+    "改換測站與量測深度後，仍把兩年資料差異全部歸因於季風季節轉換，且不查黑潮位置。"
   ],
   "provenance": {
     "status": "original",
@@ -68,17 +68,15 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "逐項核對「由漂流浮標判讀表層海流」的條件後，「把判讀移到「從逐時水位辨認潮汐週期」時，仍先先辨認資料描述的是週期水位、波能傳遞或水團位移」符合題目資料；查核依據為：海溫、鹽度、密度、流向、波向與海岸沉積資料可連結海洋運動和沿岸環境。",
+      "evidence": "下一年度沿用相同測線與深度，再取冬夏多日平均，可把觀測差異和季風轉換、黑潮位置逐項比對。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「波浪前進不表示同一團海水一路移到岸邊」。",
+      "evidence": "單日外推、改換測站深度與刪除海峽轉向，分別缺少季節樣本、控制條件或關鍵反例。",
       "status": "pass"
     }
   ],
-  "assets": [
-    "EARTH_R4_ASSET_TIDE"
-  ]
+  "assets": []
 }

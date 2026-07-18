@@ -15,34 +15,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "重新核對車輛慣性結果，哪項說法正確？",
+  "stem": "若向右定為正，向左 9 N 應寫成何值？",
   "options": [
-    "力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的意義",
-    "合力為零時物體速度必立即變為零，不可能繼續等速運動",
-    "同直線上向右 8 N 與向左 3 N 的合力為向右 5 N",
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他"
+    "力為 +9 N",
+    "力為 0 N",
+    "力為 +18 N",
+    "力為 -9 N"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的…」不成立；力的箭頭長度表示大小、箭頭指向表示方向、起點標在作用點，三項都是力的表示資訊。"
+      "reason": "力為 +9 N與受力條件不符。向左與正方向相反，因此有號力為 -9 N。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「合力為零時物體速度必立即變為零，不可能繼續等速運動」不成立；物體所受合力為零時加速度為零，可保持靜止或等速直線運動，不限於靜止。"
+      "reason": "力為 0 N與受力條件不符。向左與正方向相反，因此有號力為 -9 N。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": true,
-      "reason": "判讀依據是「同直線上向右 8 N 與向左 3 N 的合力為向右 5 N；相反方向力要取差並保留方向」。"
+      "isCorrect": false,
+      "reason": "力為 +18 N與受力條件不符。向左與正方向相反，因此有號力為 -9 N。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": false,
-      "reason": "「乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他」不成立；慣性是物體維持原運動狀態的性質；車突然剎車時乘客上半身傾向前就是慣性現象。"
+      "isCorrect": true,
+      "reason": "向左與正方向相反，因此有號力為 -9 N。"
     }
   ],
   "difficulty": "advanced",
@@ -50,16 +50,16 @@
     "證據判讀",
     "分析"
   ],
-  "representationType": "evidence-check",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "力的箭頭只需畫在頁面任意位置，長度、方向與起點都不影響力的意義",
-    "合力為零時物體速度必立即變為零，不可能繼續等速運動",
-    "乘客剎車時前傾是因有一個真實「慣性力」從車後向前推他"
+    "力為 +9 N",
+    "力為 0 N",
+    "力為 +18 N"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-1",
       "AUTH-NATURAL-LC-EB-4-10",
@@ -71,19 +71,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 C 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 2,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 C。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

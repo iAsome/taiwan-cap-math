@@ -12,51 +12,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "滑輪組出現四種說法，哪項有理化概念支持？",
+  "stem": "計算承重繩段時把卻未直接支撐移動滑輪的繩段也算入，結果會錯判理想施力。依比較定滑輪動滑輪與滑輪組修正時，承重繩段數與負載應採哪個原理連結？",
   "options": [
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "理想定滑輪主要改變施力方向；動滑輪或滑輪組可由支撐繩段數分擔負載而省力",
-    "理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量",
-    "定滑輪一定把所需力減半，動滑輪則只改變方向而不省力"
+    "把三段繩支撐 120 N 負載卻除以 2，誤算理想施力 60 N",
+    "理想定滑輪主要改變施力方向",
+    "解題時將自由端拉繩距離與負載上升距離視為相同，忽略省力須多拉距離",
+    "主張定滑輪一定把施力減半"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「機械只要省力就一定同時省距離與省時，不存在任何交換」不成立；省力機械通常要施力移動較長距離；改變方向不必然省力，「省時」與「省力」要分開。"
+      "reason": "解題時誤把三段繩支撐 120 N 負載卻除以 2，誤算理想施力 60 N，結果會錯判理想施力。忽略摩擦且同一繩張力相同時，承重繩段越多，每段需分擔的力越小；負載的數值若未依承重繩段數核對，會使理想施力無法通過比較定滑輪動滑輪與滑輪組檢查。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「理想定滑輪主要改變施力方向；動滑輪或滑輪組可由支撐繩段數分擔負載而省力」。"
+      "reason": "理想定滑輪主要改變施力方向。定滑輪列的承重繩段數為1，負載為120 N；滑輪組甲列的承重繩段數為3，負載為120 N。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量」不成立；理想機械輸入功等於輸出功；可用較小力換較長施力距離，但不能無中生有省功。"
+      "reason": "解題時錯將自由端拉繩距離與負載上升距離視為相同，忽略省力須多拉距離。理想定滑輪主要改變施力方向；承重繩段數未列入比較定滑輪動滑輪與滑輪組時，理想施力的負載大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「定滑輪一定把所需力減半，動滑輪則只改變方向而不省力」不成立；理想定滑輪主要改變施力方向；動滑輪或滑輪組可由支撐繩段數分擔負載而省力。"
+      "reason": "誤以為定滑輪一定把施力減半，忽略它理想上主要改變方向。理想定滑輪主要改變施力方向；照原做法會把理想施力算錯或判反。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "證據判讀",
-    "推論"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "evidence",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "機械只要省力就一定同時省距離與省時，不存在任何交換",
-    "理想機械的主要功能是使輸出功大於輸入功，因此可永續創造能量",
-    "定滑輪一定把所需力減半，動滑輪則只改變方向而不省力"
+    "把三段繩支撐 120 N 負載卻除以 2，誤算理想施力 60 N",
+    "解題時將自由端拉繩距離與負載上升距離視為相同，忽略省力須多拉距離",
+    "主張定滑輪一定把施力減半"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-BA-4-5",
       "AUTH-NATURAL-LC-EB-4-2",
@@ -65,19 +65,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

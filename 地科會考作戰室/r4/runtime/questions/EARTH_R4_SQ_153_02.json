@@ -13,34 +13,34 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": "EARTH_R4_ST_153",
-  "stem": "閱讀「比較夏至冬至正午影長」的資料後，為了釐清不同季節的晝夜長短，哪一項限制最需要寫入報告？",
+  "stem": "由三筆臺北資料可支持哪一項季節判斷？",
   "options": [
-    "分析不同季節的晝夜長短時，有3列資料就沒有不確定性",
-    "電腦繪製的「比較夏至冬至正午影長」表格可保證來源正確",
-    "分析不同季節的晝夜長短時，報告需註明：地球軌道遠近不是四季主因",
-    "不同季節的晝夜長短結果符合預期便不必檢查反例"
+    "北半球冬至附近日出較早、日落較晚，所以白晝較長",
+    "臺北全年晝長固定，日期只改變鐘面寫法",
+    "北半球中緯度接近夏至時白晝較長，接近冬至時較短",
+    "表格證明南北半球在六月都具有全年最長白晝"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "資料列數不會消除量測與取樣不確定性。"
+      "reason": "十二月日出06:35且日落17:10，兩端都使白晝縮短，不支持此描述。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "製圖工具不會自動保證「比較夏至冬至正午影長」的來源可靠。"
+      "reason": "晝長由13小時42分降到10小時35分，已明確顯示並非全年固定。"
     },
     {
       "optionIndex": 2,
       "isCorrect": true,
-      "reason": "這項限制界定「比較夏至冬至正午影長」的資料可支持到哪裡。"
+      "reason": "六月與十二月的晝長差達3小時07分，方向符合北半球季節性日長變化。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "符合「地軸傾斜配合公轉使同一地點的白晝長度隨季節改變，南北半球的季節變化相反」仍須檢查替代解釋與反例。"
+      "reason": "資料只有臺北測站，且南半球季節相反，不能推出全球六月最長。"
     }
   ],
   "difficulty": "advanced",
@@ -49,7 +49,7 @@
   ],
   "representationType": "shared-data-table",
   "misconceptionTargets": [
-    "全球同一天的晝長完全相等"
+    "表格證明南北半球在六月都具有全年最長白晝"
   ],
   "provenance": {
     "status": "original",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "earth-science-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "逐項核對「比較夏至冬至正午影長」的條件後，「分析不同季節的晝夜長短時，報告需註明：地球軌道遠近不是四季主因」符合題目資料；查核依據為：太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "evidence": "同一測站在六月白晝較十二月長，排除了地點差異，能連到北半球夏長冬短。",
       "status": "pass"
     },
     {
       "reviewerRole": "earth-science-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其餘三項至少違反一項觀測或資料限制；本題採用的限制是「地球軌道遠近不是四季主因」。",
+      "evidence": "這份臺北表沒有南半球觀測；把局部結果外推全球會超出資料範圍。",
       "status": "pass"
     }
   ],

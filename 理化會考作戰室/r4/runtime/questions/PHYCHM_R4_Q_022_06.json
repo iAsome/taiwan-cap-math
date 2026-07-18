@@ -12,51 +12,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "有人誤解加熱曲線判斷狀態變化區段，哪項修正合理？",
+  "stem": "曲線第二個平台通常表示液體正在做什麼？",
   "options": [
-    "熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小",
-    "狀態改變必然產生新分子，因此冰和水屬於不同化學物質",
-    "教科書的粒子圖是顯微鏡直接拍到的照片，圖上比例可當成實際大小",
-    "純物質加熱曲線的水平平臺可表示相變"
+    "沸騰並與氣態共存",
+    "凝固",
+    "只做固態升溫",
+    "變成不同元素"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": false,
-      "reason": "「熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小」不成立；物體受熱時常是粒子間平均距離增加，不是單個粒子自身膨脹。"
+      "isCorrect": true,
+      "reason": "液態到氣態的相變形成平台。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「狀態改變必然產生新分子，因此冰和水屬於不同化學物質」不成立；冰熔化成水時 H₂O 粒子種類不變，改變的是粒子排列、間距與運動狀態。"
+      "reason": "方向相反。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「教科書的粒子圖是顯微鏡直接拍到的照片，圖上比例可當成實際大小」不成立；粒子圖是解釋現象的模型；可表現排列與運動差異，但圖上大小和間距通常不是實際比例。"
+      "reason": "已通過熔化。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「純物質加熱曲線的水平平臺可表示相變；平臺期間仍吸熱，但溫度可維持」。"
+      "isCorrect": false,
+      "reason": "相變不改元素。"
     }
   ],
   "difficulty": "standard",
   "cognitiveProcess": [
-    "錯誤分析",
-    "分析"
+    "序列判讀"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "熱脹冷縮表示每一個原子或分子都像氣球一樣變大或變小",
-    "狀態改變必然產生新分子，因此冰和水屬於不同化學物質",
-    "教科書的粒子圖是顯微鏡直接拍到的照片，圖上比例可當成實際大小"
+    "凝固",
+    "只做固態升溫",
+    "變成不同元素"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-AB-4-1",
       "AUTH-NATURAL-LC-AB-4-2",
@@ -65,19 +64,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

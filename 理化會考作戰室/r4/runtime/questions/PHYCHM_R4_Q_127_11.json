@@ -13,51 +13,50 @@
     "AUTH-NATURAL-LP-TM-4-1"
   ],
   "stimulusId": null,
-  "stem": "換成另一組粉末與塊狀比較資料，哪項判讀仍合理？",
+  "stem": "濃度擾動後重新平衡時，何時停止淨變化？",
   "options": [
-    "反應速率只能由最後生成物總量判斷，和所需時間無關",
-    "改變溫度或濃度後",
-    "只要實驗條件一樣，任何反應物的反應速率都必然相同",
-    "同時增加溫度、濃度與表面積的實驗，可單獨證明其中任一因素的效果"
+    "溫度變零",
+    "正逆速率再次相等",
+    "所有反應物完全耗盡後才會停止淨變化",
+    "兩濃度變相等"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「反應速率只能由最後生成物總量判斷，和所需時間無關」不成立；反應速率可用單位時間內反應物的減少量，或生成物的增加量表示。"
+      "reason": "無此要求。"
     },
     {
       "optionIndex": 1,
       "isCorrect": true,
-      "reason": "判讀依據是「改變溫度或濃度後，平衡系統可調整到新的巨觀穩定狀態；方向需依題目提供的反應資訊判斷」。"
+      "reason": "建立新動態平衡。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "「只要實驗條件一樣，任何反應物的反應速率都必然相同」不成立；在溫度、濃度、表面積均相同時，不同物質因本性不同可有不同反應速率。"
+      "reason": "平衡通常共存。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「同時增加溫度、濃度與表面積的實驗，可單獨證明其中任一因素的…」不成立；其他條件相同時，提高溫度、增加反應物濃度或將固體磨細，通常可加快反應。"
+      "reason": "濃度不必相等。"
     }
   ],
-  "difficulty": "transfer",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "情境遷移",
-    "應用"
+    "平衡重建"
   ],
-  "representationType": "transfer",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "反應速率只能由最後生成物總量判斷，和所需時間無關",
-    "只要實驗條件一樣，任何反應物的反應速率都必然相同",
-    "同時增加溫度、濃度與表面積的實驗，可單獨證明其中任一因素的效果"
+    "溫度變零",
+    "所有反應物完全耗盡後才會停止淨變化",
+    "兩濃度變相等"
   ],
   "provenance": {
     "status": "original",
-    "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "authorRole": "original-static-r4",
+    "copyrightStatus": "臺灣十二年國教自然科學第四學習階段; 國中教育會考自然科反應速率、控制變因與動態平衡層次",
     "sourceRefs": [
       "AUTH-NATURAL-LC-JE-4-1",
       "AUTH-NATURAL-LC-JE-4-2",
@@ -67,19 +66,5 @@
       "AUTH-NATURAL-LP-TM-4-1"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 B 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 1,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 B。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

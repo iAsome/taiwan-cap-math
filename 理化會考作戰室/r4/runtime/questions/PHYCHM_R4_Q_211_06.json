@@ -11,34 +11,34 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "有人誤解快慢改變與方向改變造成的加速度，哪項修正合理？",
+  "stem": "速度由 +8 m/s 變為 +2 m/s，速度變化量為何？",
   "options": [
-    "直線上快慢改變有加速度；物體以恆定快慢轉彎時方向改變，也有加速度",
-    "加速度只要是負值就一定減速，只要是正值就一定加速",
-    "只要速率計數字不變，不論運動方向如何改變，加速度都為零",
-    "加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度"
+    "物體的速度變化量為 +6 m/s",
+    "物體的速度變化量為 +10 m/s",
+    "速度變化量為 -6 m/s",
+    "物體的速度變化量為 -10 m/s"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
-      "isCorrect": true,
-      "reason": "判讀依據是「直線上快慢改變有加速度；物體以恆定快慢轉彎時方向改變，也有加速度」。"
+      "isCorrect": false,
+      "reason": "物體的速度變化量為 +6 m/s不成立。Δv=2-8=-6 m/s。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「加速度只要是負值就一定減速，只要是正值就一定加速」不成立；加速度與速度同向時快慢增加，反向時快慢減少；加速度為負不代表一定減速。"
+      "reason": "物體的速度變化量為 +10 m/s不成立。Δv=2-8=-6 m/s。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「只要速率計數字不變，不論運動方向如何改變，加速度都為零」不成立；直線上快慢改變有加速度；物體以恆定快慢轉彎時方向改變，也有加速度。"
+      "isCorrect": true,
+      "reason": "Δv=2-8=-6 m/s。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "「加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度」不成立；加速度表示速度隨時間的變化；速度大小、方向或兩者改變都可產生加速度。"
+      "reason": "物體的速度變化量為 -10 m/s不成立。Δv=2-8=-6 m/s。"
     }
   ],
   "difficulty": "standard",
@@ -46,16 +46,16 @@
     "錯誤分析",
     "分析"
   ],
-  "representationType": "error-analysis",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "加速度只要是負值就一定減速，只要是正值就一定加速",
-    "只要速率計數字不變，不論運動方向如何改變，加速度都為零",
-    "加速度只表示物體越來越快，只要快慢沒增加就永遠沒有加速度"
+    "物體的速度變化量為 +6 m/s",
+    "物體的速度變化量為 +10 m/s",
+    "物體的速度變化量為 -10 m/s"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EB-4-11",
       "AUTH-NATURAL-LC-EB-4-8",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 0,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

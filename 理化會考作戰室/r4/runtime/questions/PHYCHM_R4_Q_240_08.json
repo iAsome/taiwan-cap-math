@@ -11,51 +11,51 @@
     "AUTH-NATURAL-LP-PA-4-2"
   ],
   "stimulusId": null,
-  "stem": "報告整理船的平均密度資料，哪項敘述合理？",
+  "stem": "把 12 N 與 7 N 相加，誤算甲物體浮力為 19 N，結果會錯判水中浮力。按由視重量差求浮力檢查空氣中讀值與完全浸水讀值時，哪一步先做？",
   "options": [
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力",
-    "物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N"
+    "把未完全浸沒的丁與完全浸沒的甲視為排開體積一定相同",
+    "拿水中彈簧秤讀值減空氣中讀值，算出負值後就說浮力向下",
+    "未完全浸沒時排開體積不同，不能直接與完全浸沒比較",
+    "把物體碰到容器底仍拿彈簧秤讀值計算浮力"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "「物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限…」不成立；完全沒入時，浮力隨液體密度與排開體積增大；同液體中排開體積相同則浮力相同。"
+      "reason": "把未完全浸沒的丁與完全浸沒的甲視為排開體積一定相同。物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N；空氣中讀值未列入由視重量差求浮力時，水中浮力的完全浸水讀值大小、方向或類別會判錯。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "「浮沉只由物體總質量大小決定，體積與平均密度完全不重要」不成立；物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉。"
+      "reason": "拿水中彈簧秤讀值減空氣中讀值，算出負值後就說浮力向下，結果會錯判水中浮力。物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N；照原做法會把水中浮力算錯或判反。"
     },
     {
       "optionIndex": 2,
-      "isCorrect": false,
-      "reason": "「漂浮物體既然在水面上，就完全不受浮力，只受向下重力」不成立；漂浮或懸浮且靜止時合力為零，浮力等於重力；下沉加速時，重力大於浮力與其他向上力的合力。"
+      "isCorrect": true,
+      "reason": "未完全浸沒時排開體積不同，不能直接與完全浸沒比較。丁（未完全浸沒）列的空氣中讀值為12 N，完全浸水讀值為9 N；甲列的空氣中讀值為12 N，完全浸水讀值為7 N。"
     },
     {
       "optionIndex": 3,
-      "isCorrect": true,
-      "reason": "判讀依據是「物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N」。"
+      "isCorrect": false,
+      "reason": "解題時誤把物體碰到容器底仍拿彈簧秤讀值計算浮力，漏掉底部支持力。彈簧秤必須穩定且物體未接觸容器；水中浮力差異若未通過由視重量差求浮力對空氣中讀值的控制，就不能只歸給完全浸水讀值。"
     }
   ],
-  "difficulty": "advanced",
+  "difficulty": "standard",
   "cognitiveProcess": [
-    "關係應用",
-    "多步驟推理"
+    "條件判斷",
+    "應用"
   ],
-  "representationType": "multi-step",
+  "representationType": "static-authored-choice",
   "misconceptionTargets": [
-    "物體只要沒得較深，即使液體密度與排開體積不變，浮力也必無限增大",
-    "浮沉只由物體總質量大小決定，體積與平均密度完全不重要",
-    "漂浮物體既然在水面上，就完全不受浮力，只受向下重力"
+    "把未完全浸沒的丁與完全浸沒的甲視為排開體積一定相同",
+    "拿水中彈簧秤讀值減空氣中讀值，算出負值後就說浮力向下",
+    "把物體碰到容器底仍拿彈簧秤讀值計算浮力"
   ],
   "provenance": {
     "status": "original",
     "authorRole": "Codex R4 physics and chemistry content author",
-    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "copyrightStatus": "Original wording; official curriculum and CAP materials used for scope and assessment calibration only.",
     "sourceRefs": [
       "AUTH-NATURAL-LC-EA-4-1",
       "AUTH-NATURAL-LC-EB-4-5",
@@ -63,19 +63,5 @@
       "AUTH-NATURAL-LP-PA-4-2"
     ]
   },
-  "independentReviews": [
-    {
-      "reviewerRole": "physics-chemistry-independent-solution-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
-      "status": "pass"
-    },
-    {
-      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
-      "derivedAnswerIndex": 3,
-      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
-      "status": "pass"
-    }
-  ],
   "assets": []
 }

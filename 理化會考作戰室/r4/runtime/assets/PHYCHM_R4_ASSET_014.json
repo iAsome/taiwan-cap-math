@@ -12,7 +12,7 @@
   ],
   "type": "science-diagram",
   "path": "理化會考作戰室/r4/assets/physics-chemistry/circuit-diagram.svg",
-  "sha256": "fc21bfcb7454816a7c536b25d9e8afdfbf37c9f651462bc421ddc51f0967fa4c",
+  "sha256": "94f8717791f508a1b17d389b0cacfe4e8927686b6b5af8fc6619b056011e7c8c",
   "creator": "Codex R4 Physics/Chemistry original diagram author",
   "source": "Original data-driven SVG calibrated against official CAP figure clarity; no external artwork copied.",
   "license": "Repository original educational content",
@@ -27,34 +27,34 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "caption": "安培計串聯與伏特計並聯的量測電路",
-  "altText": "安培計串聯與伏特計並聯的量測電路；圖內以文字、線型、箭頭與位置共同標示，不需依靠顏色辨認。",
-  "longDescription": "電池、安培計與電阻串成主回路；伏特計跨接在電阻兩端。所有導線交接點以實心圓標示。",
+  "altText": "電池、安培計與電阻串聯，伏特計跨接電阻；電池與兩電表正負端及傳統電流方向均標示。",
+  "longDescription": "電池長線端為正極、短線端為負極。傳統電流由正極沿上方導線向右，依序通過安培計與電阻，再由下方導線回到負極；安培計正端接近電池正極。伏特計跨接電阻兩端，正端接電阻的高電位左端、負端接右端；四個分接點以實心圓標示。",
   "dataFallback": {
     "summary": "安培計串聯與伏特計並聯的量測電路的文字資料替代",
     "columns": [
       "項目",
-      "圖中資訊"
+      "文字／數據替代"
     ],
     "rows": [
       [
-        "電池",
-        "圖上明確標示：電池"
+        "電池極性",
+        "長線為正極、短線為負極。"
       ],
       [
-        "安培計",
-        "圖上明確標示：安培計"
+        "主回路",
+        "傳統電流由正極向右，依序通過安培計與電阻，再沿下方導線回負極。"
       ],
       [
-        "伏特計",
-        "圖上明確標示：伏特計"
+        "安培計 A",
+        "串聯在主回路中，正端接近電池正極、負端接近電阻。"
       ],
       [
-        "電阻",
-        "圖上明確標示：電阻"
+        "伏特計 V",
+        "並聯在電阻兩端，正端接電阻左側高電位端、負端接右側。"
       ],
       [
         "節點",
-        "圖上明確標示：節點"
+        "電阻兩端的分接處以實心圓標示。"
       ]
     ]
   },
@@ -81,8 +81,8 @@
     "legend": "實線表示元件或主要路徑，虛線表示法線或輔助線，箭頭表示方向。",
     "controlledVariables": [
       "同一電池與電阻",
-      "安培計串聯",
-      "伏特計並聯且導線節點固定"
+      "安培計串聯且正端接近電池正極",
+      "伏特計並聯且正端接電阻高電位端"
     ]
   }
 }

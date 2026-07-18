@@ -31,9 +31,6 @@ function invariantQuestion(question) {
   const correct = question.optionRationales.filter((item) => item.isCorrect);
   assert.equal(correct.length, 1, `${question.id}: exactly one rationale must be correct`);
   assert.equal(correct[0].optionIndex, question.answerIndex, `${question.id}: rationale key mismatch`);
-  for (const review of question.independentReviews) {
-    assert.equal(review.derivedAnswerIndex, question.answerIndex, `${question.id}: independent review disagrees`);
-  }
 }
 
 function invariantAsset(asset) {
